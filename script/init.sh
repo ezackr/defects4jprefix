@@ -1,20 +1,22 @@
-# Get current directory
+# get current directory
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
-# Setup global variables
+# setup global variables
 . "${current_dir}/util/global_variables.sh"
 cd "${ROOT_DIR}" || exit 1
 
-# Download sdkman
+# download sdkman
 bash "${UTIL_DIR}/install_sdkman.sh"
 source "${UTIL_DIR}/init_sdkman.sh"
+# download EvoSuite
+wget https://github.com/EvoSuite/evosuite/releases/download/v1.0.6/evosuite-1.0.6.jar
 
-# Install Java 8
+# install Java 8
 sdk install java 8.0.382-amzn
-# Install Java 17
+# install Java 17
 sdk install java 17.0.8-oracle
-# Install maven
+# install maven
 sdk install maven 3.9.4
-# Install ant
+# install ant
 sdk install ant 1.10.13
-# Install gradle
+# install gradle
 sdk install gradle 8.3
