@@ -10,12 +10,6 @@ elif [ ! -d "${2}" ]; then
   exit 1
 fi
 
-# get current directory
-# shellcheck disable=SC2128
-current_dir=$(realpath "$(dirname "${BASH_SOURCE}")")
-# setup global variables
-source "${current_dir}/utils/global_variables.sh"
-
 # setup local variables
 target_class="${1}"  # Fully-qualified name of target class
 target_dir="${2}"    # Directory of binary files of the system under test
