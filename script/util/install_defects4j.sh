@@ -6,3 +6,9 @@ if [ ! -d "" ]; then
 else
   echo "Defects4J repository is already cloned."
 fi
+
+cd "${DEFECTS4J_DIR}" || exit 1
+cpan --installdeps .
+./init.sh
+
+export PATH=$PATH:"${DEFECTS4J_DIR}"/framework/bin
