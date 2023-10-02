@@ -9,6 +9,6 @@ fi
 
 cd "${DEFECTS4J_DIR}" || exit 1
 cpan --installdeps .
-./init.sh
+source ./init.sh
 
 export PATH=$PATH:"${DEFECTS4J_DIR}"/framework/bin
