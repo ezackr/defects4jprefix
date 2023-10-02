@@ -14,6 +14,8 @@ if [ ! -f "${ROOT_DIR}/evosuite-1.0.6.jar" ]; then
 else
   echo "EvoSuite is already installed."
 fi
+# download Defects4J
+source "${UTIL_DIR}/install_defects4j.sh"
 
 # install Java 8
 sdk install java 8.0.382-amzn
