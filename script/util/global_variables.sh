@@ -1,5 +1,5 @@
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
-ROOT_DIR="$(dirname "${current_dir}")"
+ROOT_DIR=$(dirname "$(dirname "${current_dir}")")
 
 # sdkman Java versions
 JAVA8="8.0.382-amzn"
