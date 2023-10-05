@@ -24,7 +24,7 @@ cd ..
 Add Defects4J executables to your `PATH`:
 
 ```bash
-export PATH=$PATH:"path2defects4j"/framework/bin
+export PATH=$PATH:$(realpath .)"/defects4j/framework/bin"
 ```
 
 Check installation:
