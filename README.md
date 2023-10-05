@@ -38,3 +38,13 @@ We automate the installation of SDKMan by running the script:
 ```bash
 bash ./script/util/init.sh
 ```
+
+## Generate prefixes
+
+### Modified classes
+
+Get a list of all modified classes in Defects4J.
+
+```bash
+bash ./script/util/modified_classes.sh
+```
