@@ -18,6 +18,7 @@ Initialize Defects4J:
 cd defects4j || exit 1
 cpan --installdeps .
 ./init.sh
+cd ..
 ```
 
 Add Defects4J executables to your `PATH`:
