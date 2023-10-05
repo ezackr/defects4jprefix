@@ -11,8 +11,6 @@ if [ ! -f "${ROOT_DIR}/evosuite-1.0.6.jar" ]; then
 else
   echo "EvoSuite is already installed."
 fi
-# download Defects4J
-source "${UTIL_DIR}/install_defects4j.sh"
 # download sdkman
 bash "${UTIL_DIR}/install_sdkman.sh"
 source "${UTIL_DIR}/init_sdkman.sh"
