@@ -30,5 +30,5 @@ fi
 mkdir -p "${output_dir}/evosuite-tests"
 mv "${root_dir}/evosuite-tests" "${output_dir}"
 
-sdk use java "${JAVA17}"
+sdk use java "17.0.8-oracle"
 java -jar "${root_dir}/remover.jar" "remove_oracles" "${target_class}"
