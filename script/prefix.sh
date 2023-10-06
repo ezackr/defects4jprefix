@@ -1,7 +1,7 @@
 #!/bin/bash
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
 root_dir=$(dirname "${current_dir}")
-. "${current_dir}/util/init_sdkman.sh"
+source "${current_dir}/util/init_sdkman.sh"
 sdk use java "8.0.382-amzn"
 
 while IFS=, read -r project_id bug_id modified_class; do
@@ -22,4 +22,5 @@ while IFS=, read -r project_id bug_id modified_class; do
   # generate prefixes using evosuite
   bash "${current_dir}/evosuite.sh" "${modified_class}" "${project_dir}/${binary_path}"
   bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}" "${modified_class}"
+  rm -r "${current_dir}/temp"
 done < "${root_dir}/modified_classes.csv"
