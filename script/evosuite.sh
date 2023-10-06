@@ -20,13 +20,9 @@ target_dir="${2}"  # Directory of binary files of the system under test
 java -jar "${root_dir}/evosuite-1.0.6.jar" -class "${target_class}" -projectCP "${target_dir}" -seed 13042023
 rm -r "${root_dir}/evosuite-report"
 
-if ! [ -d "${output_dir}" ]; then
-  mkdir "${output_dir}"
-fi
 if [ -d "${output_dir}/evosuite-tests" ]; then
   rm - r "${output_dir}/evosuite-tests"
 fi
-# Moves EvoSuite tests to "output/evosuite-tests"
 mkdir -p "${output_dir}/evosuite-tests"
 mv "${root_dir}/evosuite-tests" "${output_dir}"
 
