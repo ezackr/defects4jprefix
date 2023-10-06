@@ -44,8 +44,14 @@ bash ./script/util/init.sh
 
 ### Modified classes
 
-Get a list of all modified classes in Defects4J.
+Get a list of all modified classes in Defects4J:
 
 ```bash
 bash ./script/util/modified_classes.sh
+```
+
+Generate prefixes for each class in each Defects4J bug:
+
+```bash
+bash ./script/prefix.sh
 ```
