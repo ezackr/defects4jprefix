@@ -22,5 +22,5 @@ while IFS=, read -r project_id bug_id modified_class; do
   # generate prefixes using evosuite
   bash "${current_dir}/evosuite.sh" "${modified_class}" "${project_dir}/${binary_path}"
   bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}" "${modified_class}"
-  rm -r "${current_dir}/temp"
+  rm -r "${root_dir}/temp"
 done < "${root_dir}/modified_classes.csv"
