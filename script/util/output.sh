@@ -12,20 +12,20 @@ if [ ! -d "${ROOT_DIR}/output" ]; then
 fi
 
 src_dir="${ROOT_DIR}/src/main"
-test_dir="${src_dir}/evosuite-tests/${project_id}/${bug_id}"
-simple_test_dir="${src_dir}/evosuite-simple-tests/${project_id}/${bug_id}"
-prefix_dir="${src_dir}/evosuite-prefixes/${project_id}/${bug_id}"
 # move tests
+test_dir="${src_dir}/evosuite-tests/${project_id}/${bug_id}"
 if [ ! -d "${test_dir}" ]; then
   mkdir -p "${test_dir}"
 fi
 mv "${ROOT_DIR}/output/evosuite-tests" "${test_dir}"
 # move simple tests
+simple_test_dir="${src_dir}/evosuite-simple-tests/${project_id}/${bug_id}"
 if [ ! -d "${simple_test_dir}" ]; then
   mkdir -p "${simple_test_dir}"
 fi
 mv "${ROOT_DIR}/output/evosuite-simple-tests" "${simple_test_dir}"
 # move prefixes
+prefix_dir="${src_dir}/evosuite-prefixes/${project_id}/${bug_id}"
 if [ ! -d "${prefix_dir}" ]; then
   mkdir -p "${prefix_dir}"
 fi
