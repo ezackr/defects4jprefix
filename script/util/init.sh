@@ -11,6 +11,7 @@ if [ ! -f "${ROOT_DIR}/evosuite-1.0.6.jar" ]; then
 else
   echo "EvoSuite is already installed."
 fi
+chmod +x "${ROOT_DIR}/evosuite-1.0.6.jar"
 # download sdkman
 bash "${UTIL_DIR}/install_sdkman.sh"
 source "${UTIL_DIR}/init_sdkman.sh"
