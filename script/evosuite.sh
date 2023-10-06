@@ -16,7 +16,6 @@ fi
 
 target_class="${1}"  # Fully-qualified name of target class
 target_dir="${2}"  # Directory of binary files of the system under test
-# Generate tests
 java -jar "${root_dir}/evosuite-1.0.6.jar" -class "${target_class}" -projectCP "${target_dir}" -seed 13042023
 rm -r "${root_dir}/evosuite-report"
 
