@@ -5,6 +5,11 @@ source "${current_dir}/util/init_sdkman.sh"
 sdk use java "8.0.382-amzn"
 
 while IFS=, read -r project_id bug_id modified_class; do
+  if [ ${#} -gt 0 ]; then
+    if [ "${project_id}" != "${1}" ]; then
+      continue
+    fi
+  fi
   project_dir="${root_dir}/temp/${project_id}_${bug_id}b"
   defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
   defects4j compile -w "${project_dir}"
@@ -16,7 +21,7 @@ while IFS=, read -r project_id bug_id modified_class; do
   elif [ -d "${project_dir}/target/classes" ]; then
     binary_path="target/classes"  # maven
   else
-    echo -e "Unable to find system binaries for project ${project_id}."
+    echo -e "Unable to find system binaries for project ${project_id}"
     exit 1
   fi
   # generate prefixes using evosuite
