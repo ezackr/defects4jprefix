@@ -55,3 +55,9 @@ Generate prefixes for each class in each Defects4J bug:
 ```bash
 bash ./script/prefix.sh
 ```
+
+To only generate prefixes for a specific project, add a project name as an argument:
+
+```bash
+bash ./script/prefix.sh [project-name]
+```
