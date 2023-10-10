@@ -28,4 +28,5 @@ while IFS=, read -r project_id bug_id modified_class; do
   bash "${current_dir}/evosuite.sh" "${modified_class}" "${project_dir}/${binary_path}"
   bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}"
   rm -r "${root_dir}/temp"
+  rm -r "${root_dir}/output"
 done < "${root_dir}/modified_classes.csv"
