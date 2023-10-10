@@ -24,6 +24,8 @@ while IFS=, read -r project_id bug_id modified_class; do
     echo -e "Unable to find system binaries for project ${project_id}"
     exit 1
   fi
+  # get project JAR
+  jar cf "${project_dir}/${project_id}".jar -C "${project_dir}/${binary_path}" .
   # generate prefixes using evosuite
   bash "${current_dir}/evosuite.sh" "${modified_class}" "${project_dir}/${binary_path}"
   bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}"
