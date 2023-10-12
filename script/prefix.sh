@@ -9,6 +9,9 @@ while IFS=, read -r project_id bug_id modified_class; do
     if [ "${project_id}" != "${1}" ]; then
       continue
     fi
+    if [ "${bug_id}" != "${2}" ]; then
+      continuead
+    fi
   fi
   project_dir="${root_dir}/temp/${project_id}_${bug_id}b"
   defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
