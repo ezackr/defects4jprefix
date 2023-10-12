@@ -10,7 +10,7 @@ while IFS=, read -r project_id bug_id modified_class; do
       continue
     fi
     if [ "${bug_id}" != "${2}" ]; then
-      continuead
+      continue
     fi
   fi
   project_dir="${root_dir}/temp/${project_id}_${bug_id}b"
