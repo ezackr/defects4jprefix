@@ -8,8 +8,10 @@ while IFS=, read -r project_id bug_id modified_class; do
     if [ "${project_id}" != "${1}" ]; then
       continue
     fi
-    if [ "${bug_id}" != "${2}" ]; then
-      continue
+    if [ ${#} -gt 1 ]; then
+      if [ "${bug_id}" != "${2}" ]; then
+        continue
+      fi
     fi
   fi
   sdk use java "8.0.382-amzn"
