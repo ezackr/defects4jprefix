@@ -13,25 +13,20 @@ while IFS=, read -r project_id bug_id modified_class; do
       continue
     fi
   fi
-  project_dir="${root_dir}/temp/${project_id}_${bug_id}b"
-  defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
-  defects4j compile -w "${project_dir}"
-  # get binary path (dependent on build system)
-  if [ -d "${project_dir}/build/classes" ]; then
-    binary_path="build/classes"  # gradle
-  elif [ -d "${project_dir}/build" ]; then
-    binary_path="build"  # ant
-  elif [ -d "${project_dir}/target/classes" ]; then
-    binary_path="target/classes"  # maven
-  else
-    echo -e "Unable to find system binaries for project ${project_id}"
-    exit 1
-  fi
-  # get project JAR
-  jar cf "${project_dir}/${project_id}".jar -C "${project_dir}/${binary_path}" .
-  # generate prefixes using evosuite
-  bash "${current_dir}/evosuite.sh" "${modified_class}" "${project_dir}/${binary_path}"
-  bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}"
+  echo "${modified_class}" > "${root_dir}/modified_class.txt"
+  mkdir "${root_dir}/output"
+  gen_tests.pl -g "evosuite" \
+    -p "${project_id}" \
+    -v "${bug_id}b" \
+    -n 10 \
+    -o "${root_dir}/output" \
+    -b 300 \
+    -c "${root_dir}/modified_class.txt" \
+    -s 13042023 \
+    -t "${root_dir}/temp"
+#  bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}"
+  rm -r "${root_dir}/modified_class.txt"
   rm -r "${root_dir}/temp"
-  rm -r "${root_dir}/output"
+  rm -r "${root_dir}/evosuite-report"
+#  rm -r "${root_dir}/output"
 done < "${root_dir}/modified_classes.csv"
