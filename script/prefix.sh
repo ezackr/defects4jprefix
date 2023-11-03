@@ -41,4 +41,5 @@ while IFS=, read -r project_id bug_id modified_class; do
   rm -r "${root_dir}/temp"
   rm -r "${root_dir}/evosuite-report"
   rm -r "${root_dir}/output"
+  rm "${root_dir}/.tmp_file_needed_by_mock_of_FileHandler"*
 done < "${root_dir}/modified_classes.csv"
