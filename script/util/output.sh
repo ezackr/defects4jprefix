@@ -30,9 +30,3 @@ if [ ! -d "${prefix_dir}" ]; then
   mkdir -p "${prefix_dir}"
 fi
 mv "${ROOT_DIR}/output/evosuite-prefixes/"* "${prefix_dir}"
-# move project jar
-jar_dir="${src_dir}/project-jars/${project_id}/${bug_id}"
-if [ ! -d "${jar_dir}" ]; then
-  mkdir -p "${jar_dir}"
-fi
-mv "${ROOT_DIR}/temp/${project_id}_${bug_id}b/${project_id}".jar "${jar_dir}/${project_id}".jar
