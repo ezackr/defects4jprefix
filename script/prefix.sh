@@ -14,6 +14,10 @@ while IFS=, read -r project_id bug_id modified_class; do
       fi
     fi
   fi
+  if [ -d "${root_dir}/src/main/evosuite-prefixes/${project_id}/${bug_id}" ]; then
+    echo "Test prefixes already generated for ${project_id}-${bug_id}."
+    continue
+  fi
   sdk use java "8.0.382-amzn"
   echo "${modified_class}" > "${root_dir}/modified_class.txt"
   mkdir "${root_dir}/output"
@@ -27,7 +31,7 @@ while IFS=, read -r project_id bug_id modified_class; do
     -s 13042023 \
     -t "${root_dir}/temp"
   # decompress generated tests
-  cd "${root_dir}/output/${project_id}/evosuite/0" || exit 1
+  cd "${root_dir}/output/${project_id}/evosuite/0" || { echo -e "Unable to generate tests for ${project_id}-${bug_id}."; continue; }
   tar -xf "${project_id}-${bug_id}b-evosuite.0.tar.bz2"
   rm "${project_id}-${bug_id}b-evosuite.0.tar.bz2"
   cd - || exit 1
