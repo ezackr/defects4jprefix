@@ -6,30 +6,10 @@ This repository generates test prefixes from the Defects4J buggy project version
 
 ### Defects4J
 
-To setup the repository to generate prefixes, we must setup Defects4J. First, clone the repository:
+Follow the instructions on the [Defects4J GitHub page](https://github.com/rjust/defects4j) to clone and set up the Defects4J repository. Then, add the Defects4J directory to your path in a local terminal window:
 
 ```bash
-git clone https://github.com/rjust/defects4j
-```
-
-Initialize Defects4J:
-
-```bash
-cd defects4j || exit 1
-cpan --installdeps .
-./init.sh
-cd ..
-```
-
-Add Defects4J executables to your `PATH`:
-
-```bash
-export PATH=$PATH:$(realpath .)"/defects4j/framework/bin"
-```
-
-Check installation:
-```bash
-defects4j info -p Lang
+export DEFECTS4J_HOME="path/to/defects4j"
 ```
 
 ### SDKMan
