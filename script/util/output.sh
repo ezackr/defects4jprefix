@@ -30,3 +30,10 @@ if [ ! -d "${prefix_dir}" ]; then
   mkdir -p "${prefix_dir}"
 fi
 mv "${ROOT_DIR}/output/evosuite-prefixes/"* "${prefix_dir}"
+
+# cleanup directories
+rm -r "${ROOT_DIR}/modified_class.txt"
+rm -r "${ROOT_DIR}/temp"
+rm -r "${ROOT_DIR}/evosuite-report"
+rm -r "${ROOT_DIR}/output"
+rm "${ROOT_DIR}/.tmp_file_needed_by_mock_of_FileHandler"*
