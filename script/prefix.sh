@@ -1,6 +1,8 @@
 #!/bin/bash
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
 root_dir=$(dirname "${current_dir}")
+# setup defects4j and sdkman
+export PATH=$PATH:"${DEFECTS4J_HOME}"/framework/bin
 source "${current_dir}/util/init_sdkman.sh"
 
 while IFS=, read -r project_id bug_id modified_class; do
