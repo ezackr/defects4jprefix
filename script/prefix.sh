@@ -19,7 +19,7 @@ while IFS=, read -r project_id bug_id modified_class; do
   fi
   # check if prefixes are already generated
   qualifiers=$(echo "${modified_class}" | sed 's/\./\//g')
-  if [ -d "${root_dir}/src/main/evosuite-prefixes/${project_id}/${bug_id}/${qualifiers}Test.java" ]; then
+  if [ -f "${root_dir}/src/main/evosuite-prefixes/${project_id}/${bug_id}/${qualifiers}Test.java" ]; then
     echo "Test prefixes already generated for ${project_id}-${bug_id}."
     continue
   fi
