@@ -46,5 +46,5 @@ while IFS=, read -r project_id bug_id modified_class; do
   mv "${root_dir}/output/${project_id}/evosuite/0" "${root_dir}/output/evosuite-tests"
   java -jar "${root_dir}/remover.jar" "remove_oracles" "${modified_class}"
   # move and cleanup output
-  bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}"
+  bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}" "${modified_class}"
 done < "${root_dir}/modified_classes.csv"
