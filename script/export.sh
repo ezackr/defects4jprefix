@@ -1,4 +1,5 @@
 #!/bin/bash
+# This script tests the Defects4J export command for future reference.
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
 root_dir=$(dirname "${current_dir}")
 # setup defects4j and sdkman
