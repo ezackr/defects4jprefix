@@ -1,4 +1,5 @@
 #!/bin/bash
+# This script generates test prefixes for all bugs in Defects4J.
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
 root_dir=$(dirname "${current_dir}")
 # setup defects4j and sdkman
