@@ -23,8 +23,7 @@ while IFS=, read -r project_id bug_id modified_class; do
   # checkout project
   project_dir="${root_dir}/temp/${project_id}_${bug_id}"
   defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
-  cd "${project_dir}" || exit 1
-  test_dir="${project_dir}/$(defects4j export -p "dir.src.tests")"
+  test_dir="${project_dir}/$(defects4j export -p "dir.src.tests" -w "${project_dir}")"
   # remove original tests
   rm -r "${test_dir}"
   mkdir -p "$(dirname "${test_dir}/${qualifiers}Test.java")"
@@ -32,9 +31,8 @@ while IFS=, read -r project_id bug_id modified_class; do
   cp "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}/${qualifiers}_ESTest.java" "${test_dir}/${qualifiers}_ESTest.java"
   cp "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}/${qualifiers}_ESTest_scaffolding.java" "${test_dir}/${qualifiers}_ESTest_scaffolding.java"
   # cd into project and test
-  defects4j compile
-  defects4j test
+  defects4j compile -w "${project_dir}"
+  defects4j test -w "${project_dir}"
   # cleanup
-  cd - || exit 1
   rm -r "${root_dir}/temp"
 done < "${root_dir}/modified_classes.csv"
