@@ -28,9 +28,9 @@ while IFS=, read -r project_id bug_id modified_class; do
   # remove original tests
   rm -r "${test_dir}"
   mkdir -p "$(dirname "${test_dir}/${qualifiers}Test.java")"
-  # copy prefixes into empty test directory
-  prefix_path="${root_dir}/src/main/evosuite-prefixes/${project_id}/${bug_id}/${qualifiers}Test.java"
-  cp "${prefix_path}" "${test_dir}/${qualifiers}Test.java"
+  # copy EvoSuite tests into empty test directory
+  cp "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}/${qualifiers}_ESTest.java" "${test_dir}/${qualifiers}_ESTest.java"
+  cp "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}/${qualifiers}_ESTest_scaffolding.java" "${test_dir}/${qualifiers}_ESTest_scaffolding.java"
   # cd into project and test
   defects4j compile
   defects4j test
