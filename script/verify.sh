@@ -6,8 +6,11 @@ root_dir=$(dirname "${current_dir}")
 export PATH=$PATH:"${DEFECTS4J_HOME}"/framework/bin
 source "${current_dir}/util/init_sdkman.sh"
 
-while IFS=, read -r project_id bug_id modified_class; do
-  qualifiers=$(echo "${modified_class}" | sed 's/\./\//g')
+# create bug detection output directory
+if [ ! -d "${root_dir}/test-suite" ]; then
+  mkdir "${root_dir}/test-suite"
+fi
+while IFS=, read -r project_id bug_id _; do
   # check for a given project or bug id
   if [ ${#} -gt 0 ]; then
     if [ "${project_id}" != "${1}" ]; then
@@ -20,19 +23,16 @@ while IFS=, read -r project_id bug_id modified_class; do
     fi
   fi
   sdk use java "8.0.382-amzn"
-  # checkout project
-  project_dir="${root_dir}/temp/${project_id}_${bug_id}"
-  defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
-  test_dir="${project_dir}/$(defects4j export -p "dir.src.tests" -w "${project_dir}")"
-  # remove original tests
-  rm -r "${test_dir}"
-  mkdir -p "$(dirname "${test_dir}/${qualifiers}Test.java")"
-  # copy EvoSuite tests into empty test directory
-  cp "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}/${qualifiers}_ESTest.java" "${test_dir}/${qualifiers}_ESTest.java"
-  cp "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}/${qualifiers}_ESTest_scaffolding.java" "${test_dir}/${qualifiers}_ESTest_scaffolding.java"
-  # cd into project and test
-  defects4j compile -w "${project_dir}"
-  defects4j test -w "${project_dir}"
+  # compress test suite
+  cd "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}" || exit 1
+  tar -cvjSf "${project_id}-${bug_id}b-evosuite.tar.bz2" .
+  mv "${project_id}-${bug_id}b-evosuite.tar.bz2" "${root_dir}/test-suite"
+  cd - || exit 1
+  # run bug detection
+  run_bug_detection.pl -p "${project_id}" -d "${root_dir}/test-suite" -o "${root_dir}/test-suite"
   # cleanup
-  rm -r "${root_dir}/temp"
+  rm "${root_dir}/test-suite/${project_id}-${bug_id}b-evosuite.tar.bz2"
 done < "${root_dir}/modified_classes.csv"
+
+# cleanup
+rm -r "${root_dir}/test-suite"
