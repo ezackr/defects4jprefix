@@ -24,7 +24,7 @@ while IFS=, read -r project_id bug_id _; do
   fi
   sdk use java "8.0.382-amzn"
   # compress test suite
-  cd "${root_dir}/src/main/evosuite-tests/${project_id}/${bug_id}" || exit 1
+  cd "${root_dir}/src/main/evosuite-prefixes/${project_id}/${bug_id}" || exit 1
   tar -cvjSf "${project_id}-${bug_id}b-evosuite.tar.bz2" .
   mv "${project_id}-${bug_id}b-evosuite.tar.bz2" "${root_dir}/test-suite"
   cd - || exit 1
