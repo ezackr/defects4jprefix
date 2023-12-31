@@ -36,7 +36,6 @@ while IFS=, read -r project_id bug_id modified_class; do
       -o "${root_dir}/output" \
       -b 300 \
       -c "${root_dir}/modified_class.txt" \
-      -s 13042023 \
       -t "${root_dir}/temp"
     # decompress generated tests
     cd "${root_dir}/output/${project_id}/evosuite/0" || { echo -e "Unable to generate tests for ${project_id}-${bug_id}."; continue; }
