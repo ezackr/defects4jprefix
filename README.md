@@ -1,6 +1,6 @@
 # Defects4JPrefix
 
-This project generates test prefixes for each bug in [Defects4J](https://github.com/rjust/defects4j). A test prefix is defined as the non-assertion statements in a test case that setup a program state to be evaluated. For example:
+This project generates test prefixes for each bug in [Defects4J](https://github.com/rjust/defects4j). A test prefix is defined as the non-assertion statements in a test case that set up a program state to be evaluated. For example:
 
 ```java
 public class MyClassTest {
