@@ -41,10 +41,14 @@ while IFS=, read -r project_id bug_id _; do
   fi
   # update jar with other classpath elements
   for ((i = num_elts - 2; i >= 0; i--)); do
-    echo "${cp_elts[i]}"
+    if [ -d "${cp_elts[i]}" ]; then
+      jar uf "${jar_path}" "${cp_elts[i]}"
+    else
+      jar xf "${cp_elts[i]}" "${root_dir}/temp_jar"
+      jar uf "${jar_path}" "${root_dir}/temp_jar"
+      rm -r "${root_dir}/temp_jar"
+    fi
   done
-
-  echo "Found classpath: ${classpath}"
   # cleanup
   rm -r "${root_dir}/temp"
 done < "${root_dir}/modified_classes.csv"
