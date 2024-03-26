@@ -443,13 +443,6 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04063() throws Throwable {
-        Node node0 = Node.newNumber((-751.64));
-        Node node1 = NodeUtil.newVarNode("CwCrk$?)C&kUh&", node0);
-        String string0 = NodeUtil.getFunctionName(node1, node0);
-    }
-
-    @Test(timeout = 4000)
     public void test04064() throws Throwable {
         Node node0 = Node.newNumber((-751.64));
         Node node1 = NodeUtil.newVarNode("CwCrk$?)C&kUh&", node0);
@@ -3863,33 +3856,6 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test517601() throws Throwable {
-        Node node0 = new Node(64, 64, 64);
-        LinkedList<Node> linkedList0 = new LinkedList<Node>();
-        FunctionNode functionNode0 = NodeUtil.newFunctionNode("msg.unterminated.re.lit", linkedList0, node0, 25, 25);
-        node0.addChildrenToFront(functionNode0);
-        functionNode0.getLineno();
-    }
-
-    @Test(timeout = 4000)
-    public void test517602() throws Throwable {
-        Node node0 = new Node(64, 64, 64);
-        LinkedList<Node> linkedList0 = new LinkedList<Node>();
-        FunctionNode functionNode0 = NodeUtil.newFunctionNode("msg.unterminated.re.lit", linkedList0, node0, 25, 25);
-        node0.addChildrenToFront(functionNode0);
-        functionNode0.getFunctionName();
-    }
-
-    @Test(timeout = 4000)
-    public void test517603() throws Throwable {
-        Node node0 = new Node(64, 64, 64);
-        LinkedList<Node> linkedList0 = new LinkedList<Node>();
-        FunctionNode functionNode0 = NodeUtil.newFunctionNode("msg.unterminated.re.lit", linkedList0, node0, 25, 25);
-        node0.addChildrenToFront(functionNode0);
-        functionNode0.getCharno();
-    }
-
-    @Test(timeout = 4000)
     public void test517604() throws Throwable {
         Node node0 = new Node(64, 64, 64);
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
@@ -4001,11 +3967,6 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test538625() throws Throwable {
-        String string0 = NodeUtil.opToStr(29);
-    }
-
-    @Test(timeout = 4000)
-    public void test538626() throws Throwable {
         String string0 = NodeUtil.opToStr(29);
     }
 
@@ -4545,64 +4506,65 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test642731() throws Throwable {
-        Node node0 = NodeUtil.newQualifiedNameNode("9", 56, 56);
-        boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
+    public void test641731() throws Throwable {
+        Node node0 = new Node(125);
+        Node node1 = NodeUtil.newVarNode("S{stFDph!", node0);
+        node0.addChildToBack(node1);
+        // Undeclared exception!
+        NodeUtil.redeclareVarsInsideBranch(node1);
     }
 
     @Test(timeout = 4000)
     public void test642732() throws Throwable {
         Node node0 = NodeUtil.newQualifiedNameNode("9", 56, 56);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
-        node0.getLineno();
     }
 
     @Test(timeout = 4000)
     public void test642733() throws Throwable {
         Node node0 = NodeUtil.newQualifiedNameNode("9", 56, 56);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
+        node0.getLineno();
+    }
+
+    @Test(timeout = 4000)
+    public void test642734() throws Throwable {
+        Node node0 = NodeUtil.newQualifiedNameNode("9", 56, 56);
+        boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
         node0.getCharno();
     }
 
     @Test(timeout = 4000)
-    public void test643734() throws Throwable {
+    public void test643735() throws Throwable {
         Node node0 = new Node(64, 64, 64);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
-    }
-
-    @Test(timeout = 4000)
-    public void test644735() throws Throwable {
-        Node node0 = NodeUtil.newQualifiedNameNode(".prototype.", 89, 33);
-        boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
-        node0.getCharno();
     }
 
     @Test(timeout = 4000)
     public void test644736() throws Throwable {
         Node node0 = NodeUtil.newQualifiedNameNode(".prototype.", 89, 33);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
-        node0.getLineno();
+        node0.getCharno();
     }
 
     @Test(timeout = 4000)
     public void test644737() throws Throwable {
         Node node0 = NodeUtil.newQualifiedNameNode(".prototype.", 89, 33);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
-        node0.getChildCount();
+        node0.getLineno();
     }
 
     @Test(timeout = 4000)
     public void test644738() throws Throwable {
         Node node0 = NodeUtil.newQualifiedNameNode(".prototype.", 89, 33);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
+        node0.getChildCount();
     }
 
     @Test(timeout = 4000)
-    public void test645739() throws Throwable {
-        Node node0 = NodeUtil.newUndefinedNode();
-        Node node1 = NodeUtil.newQualifiedNameNode("com.googl.commn.collect.Iterables", node0, "com.googl.commn.collect.Iterables");
-        Node node2 = NodeUtil.getPrototypeClassName(node1);
-        node1.isUnscopedQualifiedName();
+    public void test644739() throws Throwable {
+        Node node0 = NodeUtil.newQualifiedNameNode(".prototype.", 89, 33);
+        boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
     }
 
     @Test(timeout = 4000)
@@ -4610,6 +4572,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         Node node0 = NodeUtil.newUndefinedNode();
         Node node1 = NodeUtil.newQualifiedNameNode("com.googl.commn.collect.Iterables", node0, "com.googl.commn.collect.Iterables");
         Node node2 = NodeUtil.getPrototypeClassName(node1);
+        node1.isUnscopedQualifiedName();
     }
 
     @Test(timeout = 4000)
@@ -4617,7 +4580,6 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         Node node0 = NodeUtil.newUndefinedNode();
         Node node1 = NodeUtil.newQualifiedNameNode("com.googl.commn.collect.Iterables", node0, "com.googl.commn.collect.Iterables");
         Node node2 = NodeUtil.getPrototypeClassName(node1);
-        node1.getChildCount();
     }
 
     @Test(timeout = 4000)
@@ -4625,15 +4587,15 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         Node node0 = NodeUtil.newUndefinedNode();
         Node node1 = NodeUtil.newQualifiedNameNode("com.googl.commn.collect.Iterables", node0, "com.googl.commn.collect.Iterables");
         Node node2 = NodeUtil.getPrototypeClassName(node1);
-        node1.isQualifiedName();
+        node1.getChildCount();
     }
 
     @Test(timeout = 4000)
-    public void test646743() throws Throwable {
-        Node node0 = new Node(3674, (-986), 3674);
-        Node node1 = NodeUtil.newQualifiedNameNode("cases", node0, "EoSBc8");
-        boolean boolean0 = NodeUtil.isNameReferenced(node1, "EoSBc8");
-        node1.isUnscopedQualifiedName();
+    public void test645743() throws Throwable {
+        Node node0 = NodeUtil.newUndefinedNode();
+        Node node1 = NodeUtil.newQualifiedNameNode("com.googl.commn.collect.Iterables", node0, "com.googl.commn.collect.Iterables");
+        Node node2 = NodeUtil.getPrototypeClassName(node1);
+        node1.isQualifiedName();
     }
 
     @Test(timeout = 4000)
@@ -4641,30 +4603,38 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         Node node0 = new Node(3674, (-986), 3674);
         Node node1 = NodeUtil.newQualifiedNameNode("cases", node0, "EoSBc8");
         boolean boolean0 = NodeUtil.isNameReferenced(node1, "EoSBc8");
+        node1.isUnscopedQualifiedName();
     }
 
     @Test(timeout = 4000)
-    public void test647745() throws Throwable {
+    public void test646745() throws Throwable {
+        Node node0 = new Node(3674, (-986), 3674);
+        Node node1 = NodeUtil.newQualifiedNameNode("cases", node0, "EoSBc8");
+        boolean boolean0 = NodeUtil.isNameReferenced(node1, "EoSBc8");
+    }
+
+    @Test(timeout = 4000)
+    public void test647746() throws Throwable {
         Node node0 = new Node(105);
         NodeUtil.redeclareVarsInsideBranch(node0);
         node0.hasOneChild();
     }
 
     @Test(timeout = 4000)
-    public void test648746() throws Throwable {
+    public void test648747() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         NodeUtil.MatchNodeType nodeUtil_MatchNodeType0 = new NodeUtil.MatchNodeType(48);
         boolean boolean0 = NodeUtil.has(node0, nodeUtil_MatchNodeType0, nodeUtil_MatchNodeType0);
     }
 
     @Test(timeout = 4000)
-    public void test649747() throws Throwable {
+    public void test649748() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         boolean boolean0 = NodeUtil.containsType(node0, 39);
     }
 
     @Test(timeout = 4000)
-    public void test650748() throws Throwable {
+    public void test650749() throws Throwable {
         Node[] nodeArray0 = new Node[2];
         Node node0 = Node.newString((-5426), "H:f");
         Node node1 = NodeUtil.newName("H:f", node0);
@@ -4673,7 +4643,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test651749() throws Throwable {
+    public void test651750() throws Throwable {
         NodeUtil.MatchNodeType nodeUtil_MatchNodeType0 = new NodeUtil.MatchNodeType(90);
         Node node0 = new Node(90, 90, 90);
         Node node1 = NodeUtil.newQualifiedNameNode("Nf\"sYV", 8192, 1);
@@ -4682,38 +4652,22 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test652750() throws Throwable {
+    public void test652751() throws Throwable {
         NodeUtil.MatchNodeType nodeUtil_MatchNodeType0 = new NodeUtil.MatchNodeType(90);
         Node node0 = new Node(90, 90, 90);
         NodeUtil.visitPostOrder(node0, (NodeUtil.Visitor) null, nodeUtil_MatchNodeType0);
     }
 
     @Test(timeout = 4000)
-    public void test653751() throws Throwable {
+    public void test653752() throws Throwable {
         Node node0 = new Node(47);
         NodeUtil.hasFinally(node0);
     }
 
     @Test(timeout = 4000)
-    public void test654752() throws Throwable {
+    public void test654753() throws Throwable {
         Node node0 = new Node(77);
         boolean boolean0 = NodeUtil.hasFinally(node0);
-    }
-
-    @Test(timeout = 4000)
-    public void test655753() throws Throwable {
-        Node node0 = new Node(77);
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        LinkedList<JSType> linkedList0 = new LinkedList<JSType>();
-        Node node1 = jSTypeRegistry0.createParameters((List<JSType>) linkedList0);
-        node0.addChildrenToFront(node1);
-        LinkedList<Node> linkedList1 = new LinkedList<Node>();
-        Node node2 = new Node((-1), 2, (-1));
-        node0.addChildToBack(node2);
-        FunctionNode functionNode0 = NodeUtil.newFunctionNode("C'Q)FG,hx*m2XE", linkedList1, node0, 2, 1);
-        node0.addChildrenToFront(functionNode0);
-        functionNode0.getCharno();
     }
 
     @Test(timeout = 4000)
@@ -4729,7 +4683,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         node0.addChildToBack(node2);
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("C'Q)FG,hx*m2XE", linkedList1, node0, 2, 1);
         node0.addChildrenToFront(functionNode0);
-        functionNode0.getFunctionName();
+        functionNode0.getCharno();
     }
 
     @Test(timeout = 4000)
@@ -4745,7 +4699,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         node0.addChildToBack(node2);
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("C'Q)FG,hx*m2XE", linkedList1, node0, 2, 1);
         node0.addChildrenToFront(functionNode0);
-        functionNode0.getLineno();
+        functionNode0.getFunctionName();
     }
 
     @Test(timeout = 4000)
@@ -4761,53 +4715,60 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         node0.addChildToBack(node2);
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("C'Q)FG,hx*m2XE", linkedList1, node0, 2, 1);
         node0.addChildrenToFront(functionNode0);
+        functionNode0.getLineno();
+    }
+
+    @Test(timeout = 4000)
+    public void test655757() throws Throwable {
+        Node node0 = new Node(77);
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        LinkedList<JSType> linkedList0 = new LinkedList<JSType>();
+        Node node1 = jSTypeRegistry0.createParameters((List<JSType>) linkedList0);
+        node0.addChildrenToFront(node1);
+        LinkedList<Node> linkedList1 = new LinkedList<Node>();
+        Node node2 = new Node((-1), 2, (-1));
+        node0.addChildToBack(node2);
+        FunctionNode functionNode0 = NodeUtil.newFunctionNode("C'Q)FG,hx*m2XE", linkedList1, node0, 2, 1);
+        node0.addChildrenToFront(functionNode0);
         boolean boolean0 = NodeUtil.hasFinally(node0);
     }
 
     @Test(timeout = 4000)
-    public void test656757() throws Throwable {
+    public void test656758() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         NodeUtil.getCatchBlock(node0);
     }
 
     @Test(timeout = 4000)
-    public void test657758() throws Throwable {
+    public void test657759() throws Throwable {
         Node node0 = new Node(77);
         NodeUtil.getCatchBlock(node0);
     }
 
     @Test(timeout = 4000)
-    public void test658759() throws Throwable {
+    public void test658760() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         NodeUtil.hasCatchHandler(node0);
     }
 
     @Test(timeout = 4000)
-    public void test659760() throws Throwable {
+    public void test659761() throws Throwable {
         Node node0 = new Node(125);
         boolean boolean0 = NodeUtil.hasCatchHandler(node0);
     }
 
     @Test(timeout = 4000)
-    public void test660761() throws Throwable {
+    public void test660762() throws Throwable {
         Node node0 = new Node(125);
         node0.addChildToBack(node0);
         boolean boolean0 = NodeUtil.hasCatchHandler(node0);
     }
 
     @Test(timeout = 4000)
-    public void test661762() throws Throwable {
+    public void test661763() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         NodeUtil.getFnParameters(node0);
-    }
-
-    @Test(timeout = 4000)
-    public void test662763() throws Throwable {
-        Node node0 = new Node(115);
-        LinkedList<Node> linkedList0 = new LinkedList<Node>();
-        FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
-        Node node1 = NodeUtil.getFnParameters(functionNode0);
-        functionNode0.getFunctionName();
     }
 
     @Test(timeout = 4000)
@@ -4816,7 +4777,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
         Node node1 = NodeUtil.getFnParameters(functionNode0);
-        node1.getType();
+        functionNode0.getFunctionName();
     }
 
     @Test(timeout = 4000)
@@ -4825,7 +4786,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
         Node node1 = NodeUtil.getFnParameters(functionNode0);
-        functionNode0.getLineno();
+        node1.getType();
     }
 
     @Test(timeout = 4000)
@@ -4834,7 +4795,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
         Node node1 = NodeUtil.getFnParameters(functionNode0);
-        node1.getLineno();
+        functionNode0.getLineno();
     }
 
     @Test(timeout = 4000)
@@ -4843,7 +4804,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
         Node node1 = NodeUtil.getFnParameters(functionNode0);
-        node1.getCharno();
+        node1.getLineno();
     }
 
     @Test(timeout = 4000)
@@ -4852,22 +4813,31 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
         Node node1 = NodeUtil.getFnParameters(functionNode0);
+        node1.getCharno();
+    }
+
+    @Test(timeout = 4000)
+    public void test662769() throws Throwable {
+        Node node0 = new Node(115);
+        LinkedList<Node> linkedList0 = new LinkedList<Node>();
+        FunctionNode functionNode0 = NodeUtil.newFunctionNode("y", linkedList0, node0, 27, 46);
+        Node node1 = NodeUtil.getFnParameters(functionNode0);
         functionNode0.getCharno();
     }
 
     @Test(timeout = 4000)
-    public void test663769() throws Throwable {
+    public void test663770() throws Throwable {
         JSDocInfo jSDocInfo0 = NodeUtil.getInfoForNameNode((Node) null);
     }
 
     @Test(timeout = 4000)
-    public void test664770() throws Throwable {
+    public void test664771() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         JSDocInfo jSDocInfo0 = NodeUtil.getInfoForNameNode(node0);
     }
 
     @Test(timeout = 4000)
-    public void test665771() throws Throwable {
+    public void test665772() throws Throwable {
         Node node0 = new Node(117, 117, 117);
         JSDocInfo jSDocInfo0 = new JSDocInfo();
         node0.setJSDocInfo(jSDocInfo0);
@@ -4876,21 +4846,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test666772() throws Throwable {
+    public void test666773() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         node0.addChildrenToBack(node0);
         JSDocInfo jSDocInfo0 = NodeUtil.getInfoForNameNode(node0);
     }
 
     @Test(timeout = 4000)
-    public void test667773() throws Throwable {
+    public void test667774() throws Throwable {
         Node node0 = new Node(105, 105, 105);
         node0.addChildrenToBack(node0);
         JSDocInfo jSDocInfo0 = NodeUtil.getInfoForNameNode(node0);
     }
 
     @Test(timeout = 4000)
-    public void test668774() throws Throwable {
+    public void test668775() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedList<JSType> linkedList0 = new LinkedList<JSType>();

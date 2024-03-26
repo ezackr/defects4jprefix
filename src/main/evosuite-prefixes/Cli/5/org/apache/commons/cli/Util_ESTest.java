@@ -16,27 +16,32 @@ import org.junit.runner.RunWith;
 public class Util_ESTest extends Util_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        Util util0 = new Util();
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         String string0 = Util.stripLeadingHyphens("-");
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test22() throws Throwable {
         String string0 = Util.stripLeadingHyphens("--");
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         String string0 = Util.stripLeadingHyphens("b*h{p} jzFE");
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         String string0 = Util.stripLeadingAndTrailingQuotes("\"ED.Cahr");
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         String string0 = Util.stripLeadingAndTrailingQuotes("~ejLg;=`mCF'-$5=e\"");
     }
 }

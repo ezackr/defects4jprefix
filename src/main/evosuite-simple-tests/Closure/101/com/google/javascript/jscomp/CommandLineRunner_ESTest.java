@@ -29,7 +29,13 @@ public class CommandLineRunner_ESTest extends CommandLineRunner_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test11() throws Throwable {
+        String[] stringArray0 = new String[0];
+        CommandLineRunner commandLineRunner0 = new CommandLineRunner(stringArray0, (PrintStream) null, (PrintStream) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         String[] stringArray0 = new String[0];
         // Undeclared exception!
         try {
@@ -44,7 +50,7 @@ public class CommandLineRunner_ESTest extends CommandLineRunner_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         String[] stringArray0 = new String[1];
         stringArray0[0] = "com.google.javascript.jscomp.CommandLineRunner$FormattingOption";
         CommandLineRunner commandLineRunner0 = null;
@@ -60,7 +66,7 @@ public class CommandLineRunner_ESTest extends CommandLineRunner_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         String[] stringArray0 = new String[2];
         stringArray0[0] = "--A=";
         CommandLineRunner commandLineRunner0 = null;
@@ -76,7 +82,7 @@ public class CommandLineRunner_ESTest extends CommandLineRunner_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         String[] stringArray0 = new String[0];
         CommandLineRunner commandLineRunner0 = new CommandLineRunner(stringArray0);
         CompilerOptions compilerOptions0 = commandLineRunner0.createOptions();
@@ -84,7 +90,7 @@ public class CommandLineRunner_ESTest extends CommandLineRunner_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test55() throws Throwable {
+    public void test56() throws Throwable {
         String[] stringArray0 = new String[0];
         CommandLineRunner commandLineRunner0 = new CommandLineRunner(stringArray0);
         CompilerOptions compilerOptions0 = commandLineRunner0.createOptions();

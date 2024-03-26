@@ -28,29 +28,37 @@ public class ProcessCommonJSModules_ESTest extends ProcessCommonJSModules_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test11() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseTestCode("module.exports");
+        ProcessCommonJSModules processCommonJSModules0 = new ProcessCommonJSModules(compiler0, "module$");
+        processCommonJSModules0.process(node0, node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         Compiler compiler0 = new Compiler();
         ProcessCommonJSModules processCommonJSModules0 = new ProcessCommonJSModules(compiler0, "S)(o.R!-j`Km/");
         String string0 = processCommonJSModules0.guessCJSModuleName("S)(o.R!-j`Km/");
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         String string0 = ProcessCommonJSModules.toModuleName("./'=", "./'=");
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         ProcessCommonJSModules.toModuleName("..//", "_5.`A1tl{d2");
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         String string0 = ProcessCommonJSModules.toModuleName("c~n", "c~n");
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         Compiler compiler0 = new Compiler();
         ProcessCommonJSModules processCommonJSModules0 = new ProcessCommonJSModules(compiler0, "/A=F2+tB");
         Node node0 = compiler0.parseTestCode("./");
@@ -60,7 +68,7 @@ public class ProcessCommonJSModules_ESTest extends ProcessCommonJSModules_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test76() throws Throwable {
+    public void test77() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("P1H'-{xTS.");
         SourceFile sourceFile0 = SourceFile.fromFile("./");
@@ -71,7 +79,7 @@ public class ProcessCommonJSModules_ESTest extends ProcessCommonJSModules_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test87() throws Throwable {
+    public void test88() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("exports");
         ProcessCommonJSModules processCommonJSModules0 = new ProcessCommonJSModules(compiler0, "<>|=b_E$>8]");
@@ -80,7 +88,7 @@ public class ProcessCommonJSModules_ESTest extends ProcessCommonJSModules_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test98() throws Throwable {
+    public void test99() throws Throwable {
         Compiler compiler0 = new Compiler();
         ProcessCommonJSModules processCommonJSModules0 = new ProcessCommonJSModules(compiler0, "module$exports");
         Node node0 = compiler0.parseTestCode("./");

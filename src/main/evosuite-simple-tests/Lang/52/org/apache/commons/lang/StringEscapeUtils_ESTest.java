@@ -474,14 +474,19 @@ public class StringEscapeUtils_ESTest extends StringEscapeUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5556() throws Throwable {
+    public void test5456() throws Throwable {
+        StringEscapeUtils stringEscapeUtils0 = new StringEscapeUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test5557() throws Throwable {
         StringWriter stringWriter0 = new StringWriter();
         StringEscapeUtils.escapeJava((Writer) stringWriter0, "CYl\u0006d");
         assertEquals("CYl\\u0006d", stringWriter0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test5657() throws Throwable {
+    public void test5658() throws Throwable {
         String string0 = StringEscapeUtils.escapeJavaScript((String) null);
         String string1 = StringEscapeUtils.unescapeJavaScript(string0);
         assertNull(string1);

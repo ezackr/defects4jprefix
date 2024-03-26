@@ -28,16 +28,6 @@ public class MultivariateNormalDistribution_ESTest extends MultivariateNormalDis
     }
 
     @Test(timeout = 4000)
-    public void test01() throws Throwable {
-        double[] doubleArray0 = new double[1];
-        doubleArray0[0] = 2.6197411946856397E-8;
-        double[][] doubleArray1 = new double[1][1];
-        doubleArray1[0] = doubleArray0;
-        MultivariateNormalDistribution multivariateNormalDistribution0 = new MultivariateNormalDistribution(doubleArray0, doubleArray1);
-        double double0 = multivariateNormalDistribution0.density(doubleArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test12() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 2.6197411946856397E-8;

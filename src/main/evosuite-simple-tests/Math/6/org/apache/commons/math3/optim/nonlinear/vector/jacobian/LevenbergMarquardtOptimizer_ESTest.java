@@ -19,7 +19,13 @@ import org.junit.runner.RunWith;
 public class LevenbergMarquardtOptimizer_ESTest extends LevenbergMarquardtOptimizer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        SimplePointChecker<PointVectorValuePair> simplePointChecker0 = new SimplePointChecker<PointVectorValuePair>((-1603.965), (-1603.965));
+        LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer(simplePointChecker0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         // Undeclared exception!
         try {
@@ -31,5 +37,10 @@ public class LevenbergMarquardtOptimizer_ESTest extends LevenbergMarquardtOptimi
             //
             verifyException("org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
+        LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer(1.0E-4, 1.0E-4, 1.0E-4);
     }
 }

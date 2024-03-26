@@ -338,17 +338,6 @@ public class PrototypeObjectType_ESTest extends PrototypeObjectType_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1127() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        RecordType recordType0 = new RecordType(jSTypeRegistry0, hashMap0);
-        FunctionType functionType0 = jSTypeRegistry0.createFunctionType((JSType) recordType0, (Node) null);
-        boolean boolean0 = functionType0.defineProperty(", ", recordType0, false, (Node) null);
-        boolean boolean1 = functionType0.isPropertyTypeInferred(", ");
-    }
-
-    @Test(timeout = 4000)
     public void test1228() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
@@ -746,37 +735,7 @@ public class PrototypeObjectType_ESTest extends PrototypeObjectType_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3368() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, (String) null);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        Node node0 = Node.newString(0, "Not declared as a constructor");
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(errorFunctionType0, node0);
-        hashMap0.put("Not declared as a constructor", recordTypeBuilder_RecordProperty0);
-        RecordType recordType0 = new RecordType(jSTypeRegistry0, hashMap0);
-        String string0 = recordType0.toStringHelper(true);
-    }
-
-    @Test(timeout = 4000)
     public void test3469() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        RecordType recordType0 = new RecordType(jSTypeRegistry0, hashMap0);
-        Node node0 = new Node(1, 1, 105);
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(recordType0, node0);
-        BiFunction<RecordTypeBuilder.RecordProperty, Object, RecordTypeBuilder.RecordProperty> biFunction0 = (BiFunction<RecordTypeBuilder.RecordProperty, Object, RecordTypeBuilder.RecordProperty>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty1 = hashMap0.merge("tR*i:", recordTypeBuilder_RecordProperty0, biFunction0);
-        hashMap0.put("Unknown class name", recordTypeBuilder_RecordProperty0);
-        hashMap0.put("Not declared as a type name", recordTypeBuilder_RecordProperty0);
-        hashMap0.put("Not declared as a constructor", recordTypeBuilder_RecordProperty1);
-        RecordType recordType1 = jSTypeRegistry0.createRecordType(hashMap0);
-        String string0 = recordType1.toStringHelper(false);
-    }
-
-    @Test(timeout = 4000)
-    public void test3470() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();

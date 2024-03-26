@@ -166,4 +166,9 @@ public class LookupTranslator_ESTest extends LookupTranslator_ESTest_scaffolding
         LookupTranslator lookupTranslator0 = null;
         lookupTranslator0 = new LookupTranslator(charSequenceArray0);
     }
+
+    @Test(timeout = 4000)
+    public void test910() throws Throwable {
+        LookupTranslator lookupTranslator0 = new LookupTranslator((CharSequence[][]) null);
+    }
 }

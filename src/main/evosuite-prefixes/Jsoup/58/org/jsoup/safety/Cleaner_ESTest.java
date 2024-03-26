@@ -37,16 +37,6 @@ public class Cleaner_ESTest extends Cleaner_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12() throws Throwable {
-        Whitelist whitelist0 = Whitelist.basic();
-        Whitelist whitelist1 = whitelist0.addEnforcedAttribute("body", "body", "body");
-        Document document0 = Document.createShell("body");
-        Cleaner cleaner0 = new Cleaner(whitelist1);
-        Document document1 = cleaner0.clean(document0);
-        boolean boolean0 = cleaner0.isValid(document1);
-    }
-
-    @Test(timeout = 4000)
     public void test23() throws Throwable {
         Whitelist whitelist0 = Whitelist.none();
         Whitelist whitelist1 = whitelist0.addEnforcedAttribute("body", "body", "body");

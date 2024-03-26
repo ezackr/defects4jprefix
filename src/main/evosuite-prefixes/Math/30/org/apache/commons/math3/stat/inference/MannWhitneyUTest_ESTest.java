@@ -30,14 +30,34 @@ public class MannWhitneyUTest_ESTest extends MannWhitneyUTest_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test011() throws Throwable {
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest();
+        mannWhitneyUTest0.mannWhitneyU((double[]) null, (double[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest();
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, (double[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest();
         double[] doubleArray0 = new double[0];
         mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test052() throws Throwable {
+    public void test044() throws Throwable {
+        NaNStrategy naNStrategy0 = NaNStrategy.REMOVED;
+        TiesStrategy tiesStrategy0 = TiesStrategy.SEQUENTIAL;
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest(naNStrategy0, tiesStrategy0);
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         NaNStrategy naNStrategy0 = NaNStrategy.FIXED;
         TiesStrategy tiesStrategy0 = TiesStrategy.AVERAGE;
         MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest(naNStrategy0, tiesStrategy0);
@@ -46,7 +66,17 @@ public class MannWhitneyUTest_ESTest extends MannWhitneyUTest_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test073() throws Throwable {
+    public void test066() throws Throwable {
+        NaNStrategy naNStrategy0 = NaNStrategy.MINIMAL;
+        TiesStrategy tiesStrategy0 = TiesStrategy.MAXIMUM;
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest(naNStrategy0, tiesStrategy0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = Double.NaN;
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest();
         double[] doubleArray0 = new double[1];
         mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray0);
@@ -71,7 +101,17 @@ public class MannWhitneyUTest_ESTest extends MannWhitneyUTest_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test094() throws Throwable {
+    public void test088() throws Throwable {
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest();
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = 0.0;
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         NaNStrategy naNStrategy0 = NaNStrategy.MAXIMAL;
         TiesStrategy tiesStrategy0 = TiesStrategy.MAXIMUM;
         MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest(naNStrategy0, tiesStrategy0);
@@ -102,7 +142,24 @@ public class MannWhitneyUTest_ESTest extends MannWhitneyUTest_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test115() throws Throwable {
+    public void test1010() throws Throwable {
+        NaNStrategy naNStrategy0 = NaNStrategy.REMOVED;
+        TiesStrategy tiesStrategy0 = TiesStrategy.RANDOM;
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest(naNStrategy0, tiesStrategy0);
+        double[] doubleArray0 = new double[9];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = 2093.946;
+        doubleArray0[2] = 3891.778;
+        double double0 = 1144.9324598;
+        double[] doubleArray1 = new double[0];
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray1);
+        doubleArray0[3] = double0;
+        double double1 = (-1.0);
+        doubleArray0[4] = double1;
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         TiesStrategy tiesStrategy0 = TiesStrategy.MINIMUM;
         MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest((NaNStrategy) null, tiesStrategy0);
         double[] doubleArray0 = new double[2];
@@ -112,7 +169,35 @@ public class MannWhitneyUTest_ESTest extends MannWhitneyUTest_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test136() throws Throwable {
+    public void test1212() throws Throwable {
+        NaNStrategy naNStrategy0 = NaNStrategy.MAXIMAL;
+        TiesStrategy tiesStrategy0 = TiesStrategy.MINIMUM;
+        MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest(naNStrategy0, tiesStrategy0);
+        double[] doubleArray0 = new double[20];
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+        doubleArray0[12] = 2.0;
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray0);
+        double[] doubleArray1 = new double[2];
+        doubleArray1[0] = 552.0;
+        doubleArray1[1] = 552.0;
+        mannWhitneyUTest0.mannWhitneyU(doubleArray1, doubleArray0);
+        doubleArray0[1] = 0.0;
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray0);
+        double[] doubleArray2 = new double[0];
+        mannWhitneyUTest0.mannWhitneyU(doubleArray0, doubleArray1);
+        mannWhitneyUTest0.mannWhitneyUTest(doubleArray0, doubleArray2);
+        double[] doubleArray3 = new double[1];
+        double[] doubleArray4 = null;
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         TiesStrategy tiesStrategy0 = TiesStrategy.MINIMUM;
         MannWhitneyUTest mannWhitneyUTest0 = new MannWhitneyUTest((NaNStrategy) null, tiesStrategy0);
         double[] doubleArray0 = new double[1];

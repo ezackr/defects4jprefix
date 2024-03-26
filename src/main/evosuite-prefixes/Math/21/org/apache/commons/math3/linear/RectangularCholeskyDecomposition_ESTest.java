@@ -21,13 +21,19 @@ import org.junit.runner.RunWith;
 public class RectangularCholeskyDecomposition_ESTest extends RectangularCholeskyDecomposition_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(801, 801);
+        RectangularCholeskyDecomposition rectangularCholeskyDecomposition0 = new RectangularCholeskyDecomposition(array2DRowRealMatrix0, (-2277.04674082));
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         RectangularCholeskyDecomposition rectangularCholeskyDecomposition0 = null;
         rectangularCholeskyDecomposition0 = new RectangularCholeskyDecomposition((RealMatrix) null, 2028.36210992623);
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test22() throws Throwable {
         double[] doubleArray0 = new double[4];
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
         RectangularCholeskyDecomposition rectangularCholeskyDecomposition0 = null;
@@ -35,7 +41,7 @@ public class RectangularCholeskyDecomposition_ESTest extends RectangularCholesky
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         double[][] doubleArray0 = new double[2][1];
         double[] doubleArray1 = new double[18];
         doubleArray1[1] = 1183.0008;
@@ -47,14 +53,14 @@ public class RectangularCholeskyDecomposition_ESTest extends RectangularCholesky
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(31, 31);
         RectangularCholeskyDecomposition rectangularCholeskyDecomposition0 = null;
         rectangularCholeskyDecomposition0 = new RectangularCholeskyDecomposition(openMapRealMatrix0, 31);
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         double[] doubleArray0 = new double[3];
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0);
         RealMatrix realMatrix0 = arrayRealVector0.outerProduct(arrayRealVector0);
@@ -64,7 +70,7 @@ public class RectangularCholeskyDecomposition_ESTest extends RectangularCholesky
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         double[][] doubleArray0 = new double[2][1];
         double[] doubleArray1 = new double[18];
         doubleArray1[1] = 1183.0008;

@@ -18,7 +18,18 @@ import org.junit.runner.RunWith;
 public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        String[] stringArray0 = new String[0];
+        posixParser0.parse(options0, stringArray0);
+        options0.addOption("", true, "6-^");
+        posixParser0.burstToken("6-^", true);
+        posixParser0.burstToken("H%s", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[7];
@@ -27,7 +38,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[7];
@@ -36,7 +47,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[3];
@@ -45,7 +56,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[8];
@@ -54,7 +65,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[7];
@@ -64,7 +75,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[5];
@@ -73,7 +84,18 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test077() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        String[] stringArray0 = new String[1];
+        stringArray0[0] = "6-^";
+        Options options1 = options0.addOption("", "6-^", false, "");
+        posixParser0.flatten(options1, stringArray0, false);
+        posixParser0.burstToken("6-^", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[7];
@@ -86,11 +108,21 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[6];
         stringArray0[0] = "-v";
         posixParser0.flatten(options0, stringArray0, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        String[] stringArray0 = new String[0];
+        posixParser0.parse(options0, stringArray0);
+        options0.addOption("", true, "6-");
+        posixParser0.burstToken("6-", true);
     }
 }

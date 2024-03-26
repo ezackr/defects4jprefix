@@ -136,7 +136,12 @@ public class ISO8601Utils_ESTest extends ISO8601Utils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1818() throws Throwable {
+        ISO8601Utils iSO8601Utils0 = new ISO8601Utils();
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         ISO8601Utils.format((Date) null);
     }
 }

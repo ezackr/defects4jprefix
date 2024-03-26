@@ -31,7 +31,338 @@ import org.junit.runner.RunWith;
 public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test280() throws Throwable {
+    public void test000() throws Throwable {
+        Double[] doubleArray0 = new Double[3];
+        Double double0 = new Double(0.0);
+        doubleArray0[0] = double0;
+        doubleArray0[1] = double0;
+        doubleArray0[2] = doubleArray0[0];
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-3133.86376687968));
+        simplexTableau0.numArtificialVariables = (-76);
+        simplexTableau0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        Double[] doubleArray0 = new Double[3];
+        Double double0 = new Double(0.0);
+        doubleArray0[0] = double0;
+        doubleArray0[1] = double0;
+        doubleArray0[2] = double0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        double[] doubleArray1 = new double[5];
+        Relationship relationship0 = Relationship.LEQ;
+        LinearConstraint linearConstraint0 = new LinearConstraint(doubleArray1, relationship0, 269.7);
+        linkedList0.add(linearConstraint0);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-3133.86376687968));
+        simplexTableau0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        double[] doubleArray0 = new double[4];
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, false);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 1.0);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 1.0);
+        SimplexTableau simplexTableau1 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-2138.39));
+        simplexTableau0.equals(simplexTableau1);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, (-12.247700000000123));
+        SimplexTableau simplexTableau1 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 597.47170576792);
+        simplexTableau1.numArtificialVariables = 3;
+        simplexTableau0.equals(simplexTableau1);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        double[] doubleArray0 = new double[6];
+        doubleArray0[1] = (-194.0);
+        doubleArray0[2] = 3123.5268003220604;
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 0.5);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        Relationship relationship0 = Relationship.EQ;
+        LinearConstraint linearConstraint0 = new LinearConstraint(doubleArray0, relationship0, (-3842.0992));
+        linkedList0.add(linearConstraint0);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 0.5);
+        simplexTableau0.getSolution();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        double[] doubleArray0 = new double[8];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-1018.446063554));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, Double.NaN);
+        simplexTableau0.numArtificialVariables = 2;
+        simplexTableau0.getSolution();
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, (-1.0));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 0.0);
+        simplexTableau0.subtractRow(0, 0, (-1564.3082268));
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        Double[] doubleArray0 = new Double[2];
+        Double double0 = new Double(1.0);
+        doubleArray0[0] = double0;
+        doubleArray0[1] = double0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (double) doubleArray0[1]);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, (double) doubleArray0[0]);
+        simplexTableau0.setEntry(0, 0, 657.54855);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(4168);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, (-837.8517546));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 4168);
+        simplexTableau0.equals(goalType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-0.06985575287115274));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-0.06985575287115274));
+        simplexTableau0.getWidth();
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1376, 795, 1.0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 2);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 1.0E-12);
+        simplexTableau0.getSlackVariableOffset();
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-3274.953659960202));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 1.0);
+        simplexTableau0.getOriginalNumDecisionVariables();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(11, 11);
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(11, 40, 40);
+        RealVector realVector0 = openMapRealMatrix0.preMultiply((RealVector) openMapRealVector0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVector0, Double.NaN);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 1249.5626846370565);
+        simplexTableau0.getOriginalNumDecisionVariables();
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(0, 2199.834661);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 2199.834661);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 0.0);
+        simplexTableau0.getNumVariables();
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        double[] doubleArray0 = new double[9];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 1.0);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        Relationship relationship0 = Relationship.LEQ;
+        LinearConstraint linearConstraint0 = new LinearConstraint(doubleArray0, 1.0, relationship0, doubleArray0, 1.0);
+        linkedList0.add(linearConstraint0);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-2861.0));
+        simplexTableau0.getNumSlackVariables();
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        Double[] doubleArray0 = new Double[3];
+        Double double0 = new Double(0.0);
+        doubleArray0[0] = double0;
+        doubleArray0[1] = double0;
+        doubleArray0[2] = double0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-3133.86376687968));
+        simplexTableau0.getNumObjectiveFunctions();
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        Double[] doubleArray0 = new Double[2];
+        Double double0 = new Double(1.0);
+        doubleArray0[0] = double0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, (double) doubleArray0[0]);
+        simplexTableau0.getNumDecisionVariables();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-0.06985575287115274));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        Relationship relationship0 = Relationship.EQ;
+        LinearConstraint linearConstraint0 = new LinearConstraint(doubleArray0, relationship0, (-3842.09919628));
+        linkedList0.add(linearConstraint0);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-0.06985575287115274));
+        simplexTableau0.getNumArtificialVariables();
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(4183);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 5416.317680548);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-1630.19976589));
+        simplexTableau0.getNormalizedConstraints();
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        Double[] doubleArray0 = new Double[3];
+        Double double0 = new Double(0.0);
+        doubleArray0[0] = double0;
+        doubleArray0[1] = double0;
+        doubleArray0[2] = doubleArray0[1];
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        SimplexTableau.getInvertedCoeffiecientSum(openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(3111, (-2825.5792749552156));
+        SimplexTableau.getInvertedCoeffiecientSum(realVectorImpl0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
+        Double[] doubleArray0 = new Double[3];
+        Double double0 = new Double((-1.0));
+        doubleArray0[0] = double0;
+        Double double1 = new Double(2358.0);
+        doubleArray0[1] = double1;
+        doubleArray0[2] = double1;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, Double.NaN);
+        SimplexTableau.getInvertedCoeffiecientSum(openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
+        double[] doubleArray0 = new double[7];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 956.6877);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, (-1080.595));
+        RealMatrixImpl realMatrixImpl0 = new RealMatrixImpl();
+        simplexTableau0.tableau = (RealMatrix) realMatrixImpl0;
+        simplexTableau0.getHeight();
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(4183);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 5416.317680548);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-1630.19976589));
+        simplexTableau0.getHeight();
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 0.0);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        Relationship relationship0 = Relationship.EQ;
+        LinearConstraint linearConstraint0 = new LinearConstraint(doubleArray0, relationship0, (-3842.09919628));
+        linkedList0.add(linearConstraint0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 4.9E-324);
+        simplexTableau0.getEntry(2, 2);
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-3770.941893308484));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 3087.04427599);
+        simplexTableau0.getEntry(0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-3791.389667581878));
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 3087.04427599);
+        simplexTableau0.getEntry(0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(0, (-1353.912426));
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 0.0);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-1353.912426));
+        simplexTableau0.getArtificialVariableOffset();
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
         double[] doubleArray0 = new double[3];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 0.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -50,7 +381,20 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test301() throws Throwable {
+    public void test2929() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(2096);
+        RealVectorImpl realVectorImpl1 = new RealVectorImpl(realVectorImpl0, realVectorImpl0);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl1, 0.0);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, true, 3159.691);
+        simplexTableau0.getSolution();
+        // Undeclared exception!
+        simplexTableau0.getSolution();
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
         Double[] doubleArray0 = new Double[2];
         Double double0 = new Double(1.0);
         doubleArray0[0] = double0;
@@ -73,7 +417,19 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test322() throws Throwable {
+    public void test3131() throws Throwable {
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1376, 795, 1.0);
+        openMapRealVector0.mapLog1pToSelf();
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 2);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 1.0E-12);
+        // Undeclared exception!
+        SimplexTableau.getInvertedCoeffiecientSum(openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
         // Undeclared exception!
         try {
             SimplexTableau.getInvertedCoeffiecientSum((RealVector) null);
@@ -86,7 +442,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test333() throws Throwable {
+    public void test3333() throws Throwable {
         Double[] doubleArray0 = new Double[0];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, (-2288.929830948728));
@@ -106,7 +462,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test344() throws Throwable {
+    public void test3434() throws Throwable {
         Double[] doubleArray0 = new Double[3];
         Double double0 = new Double(0.0);
         doubleArray0[0] = double0;
@@ -130,7 +486,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test355() throws Throwable {
+    public void test3535() throws Throwable {
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(2096);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 0.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -150,7 +506,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test366() throws Throwable {
+    public void test3636() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -171,7 +527,19 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test387() throws Throwable {
+    public void test3737() throws Throwable {
+        RealVectorImpl realVectorImpl0 = new RealVectorImpl(4183);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 5416.317680548);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, (-1630.19976589));
+        simplexTableau0.createTableau(true);
+        // Undeclared exception!
+        simplexTableau0.createTableau(false);
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
         double[] doubleArray0 = new double[7];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 956.6877);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -191,7 +559,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test398() throws Throwable {
+    public void test3939() throws Throwable {
         double[] doubleArray0 = new double[7];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 1.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -211,7 +579,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test409() throws Throwable {
+    public void test4040() throws Throwable {
         double[] doubleArray0 = new double[0];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 0.0);
@@ -235,7 +603,16 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4210() throws Throwable {
+    public void test4141() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(5, 4158, (-2754.0899799999997));
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 235.7901);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 4158);
+    }
+
+    @Test(timeout = 4000)
+    public void test4242() throws Throwable {
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
         GoalType goalType0 = GoalType.MINIMIZE;
         SimplexTableau simplexTableau0 = null;
@@ -250,7 +627,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4311() throws Throwable {
+    public void test4343() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-3466), (-3466), (-3466));
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -268,7 +645,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4412() throws Throwable {
+    public void test4444() throws Throwable {
         double[] doubleArray0 = new double[2];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 0.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -286,7 +663,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4513() throws Throwable {
+    public void test4545() throws Throwable {
         double[] doubleArray0 = new double[3];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 253.165282);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -300,7 +677,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4614() throws Throwable {
+    public void test4646() throws Throwable {
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
         double[] doubleArray0 = new double[8];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 0.0);
@@ -311,7 +688,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4715() throws Throwable {
+    public void test4747() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -327,7 +704,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4816() throws Throwable {
+    public void test4848() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -340,7 +717,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4917() throws Throwable {
+    public void test4949() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -354,7 +731,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4918() throws Throwable {
+    public void test4950() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -368,7 +745,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5019() throws Throwable {
+    public void test5051() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -381,7 +758,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5120() throws Throwable {
+    public void test5152() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -394,7 +771,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5221() throws Throwable {
+    public void test5253() throws Throwable {
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(4183);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 5416.317680548);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -405,7 +782,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5322() throws Throwable {
+    public void test5354() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, (-12.247700000000123));
@@ -417,7 +794,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5423() throws Throwable {
+    public void test5455() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -433,7 +810,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5524() throws Throwable {
+    public void test5556() throws Throwable {
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(2096);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 0.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -444,7 +821,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5625() throws Throwable {
+    public void test5657() throws Throwable {
         double[] doubleArray0 = new double[8];
         doubleArray0[2] = 1.0;
         doubleArray0[3] = (-1316.0582);
@@ -460,7 +837,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5726() throws Throwable {
+    public void test5758() throws Throwable {
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(2096);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 0.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -471,7 +848,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5827() throws Throwable {
+    public void test5859() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-0.06985575287115274);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-0.06985575287115274));
@@ -487,7 +864,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5928() throws Throwable {
+    public void test5960() throws Throwable {
         Double[] doubleArray0 = new Double[2];
         Double double0 = new Double(1.0);
         doubleArray0[0] = double0;
@@ -502,7 +879,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6029() throws Throwable {
+    public void test6061() throws Throwable {
         double[] doubleArray0 = new double[5];
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(doubleArray0, 1, 1);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 691.0);
@@ -514,7 +891,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6130() throws Throwable {
+    public void test6162() throws Throwable {
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(2096);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 0.0);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -525,7 +902,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6231() throws Throwable {
+    public void test6263() throws Throwable {
         double[] doubleArray0 = new double[5];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-0.06985575287115274));
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -536,7 +913,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6332() throws Throwable {
+    public void test6364() throws Throwable {
         double[] doubleArray0 = new double[5];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-0.06985575287115274));
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -550,7 +927,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6433() throws Throwable {
+    public void test6465() throws Throwable {
         double[] doubleArray0 = new double[5];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, (-0.06985575287115274));
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
@@ -569,7 +946,7 @@ public class SimplexTableau_ESTest extends SimplexTableau_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6534() throws Throwable {
+    public void test6566() throws Throwable {
         RealVectorImpl realVectorImpl0 = new RealVectorImpl(4183);
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(realVectorImpl0, 5416.317680548);
         LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();

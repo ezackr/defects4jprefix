@@ -89,7 +89,63 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105() throws Throwable {
+    public void test045() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        char[] charArray0 = new char[10];
+        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
+        CSVPrinter cSVPrinter0 = new CSVPrinter(charBuffer0, cSVFormat0);
+        cSVPrinter0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(byteArrayOutputStream0);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(bufferedOutputStream0);
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        cSVPrinter0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test067() throws Throwable {
+        char[] charArray0 = new char[2];
+        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(charBuffer0, cSVFormat0);
+        cSVPrinter0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("org.apache.commons.csv.CSVPrinter$1");
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        cSVPrinter0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test089() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        MockPrintStream mockPrintStream0 = new MockPrintStream("x_XctZ;Lm1%Yo");
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("Delimiter=<,> QuoteChar=<\"> RecordSeparator=<\r\n> SkipHeaderRecord:false");
+        CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(false);
+        CSVPrinter cSVPrinter0 = cSVFormat2.print(mockPrintStream0);
+        cSVPrinter0.print((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test0910() throws Throwable {
+        MockFileWriter mockFileWriter0 = new MockFileWriter("sh [P#W6*\"H%0y-", true);
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        QuoteMode quoteMode0 = QuoteMode.ALL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockFileWriter0, cSVFormat0);
+        cSVPrinter0.print(quoteMode0);
+        cSVPrinter0.print((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1011() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("m-dDQ^z+5=W)v/r}4*");
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
@@ -99,7 +155,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test116() throws Throwable {
+    public void test1112() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
@@ -110,7 +166,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117() throws Throwable {
+    public void test1113() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
@@ -121,7 +177,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test128() throws Throwable {
+    public void test1214() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
@@ -132,7 +188,28 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test159() throws Throwable {
+    public void test1315() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(byteArrayOutputStream0);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(bufferedOutputStream0);
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString(" ydzoB%YeeDd@");
+        CSVPrinter cSVPrinter0 = cSVFormat1.print(mockPrintStream0);
+        cSVPrinter0.print((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1416() throws Throwable {
+        MockFileWriter mockFileWriter0 = new MockFileWriter("sh [P#W6*\"H%0y-", true);
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        QuoteMode quoteMode0 = QuoteMode.ALL;
+        CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockFileWriter0, cSVFormat1);
+        cSVPrinter0.print(quoteMode0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1517() throws Throwable {
         MockFileWriter mockFileWriter0 = new MockFileWriter("sh [P#W6*\"H%0y-", true);
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
@@ -144,7 +221,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1610() throws Throwable {
+    public void test1618() throws Throwable {
         MockFileWriter mockFileWriter0 = new MockFileWriter("sh [P#W6*\"H%0y-", true);
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
@@ -156,7 +233,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1711() throws Throwable {
+    public void test1719() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockFileWriter mockFileWriter0 = new MockFileWriter(" [", false);
         CSVFormat cSVFormat0 = CSVFormat.TDF;
@@ -168,7 +245,16 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1912() throws Throwable {
+    public void test1820() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        MockPrintStream mockPrintStream0 = new MockPrintStream("x_XctZ;Lm1%Yo");
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString(" ydzoB%YeeDd@");
+        CSVPrinter cSVPrinter0 = cSVFormat1.print(mockPrintStream0);
+        cSVPrinter0.print((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1921() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(21);
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0, false);
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
@@ -180,7 +266,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1913() throws Throwable {
+    public void test1922() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(21);
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0, false);
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
@@ -192,7 +278,50 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2414() throws Throwable {
+    public void test2023() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(byteArrayOutputStream0);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(bufferedOutputStream0);
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("t5\"rk\"pdWV,5B{aB6");
+        CSVFormat cSVFormat2 = cSVFormat1.withRecordSeparator("t5\"rk\"pdWV,5B{aB6");
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat2);
+        cSVPrinter0.print((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2124() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        MockPrintStream mockPrintStream0 = new MockPrintStream("x_XctZ;Lm1%Yo");
+        Character character0 = Character.valueOf('m');
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker(character0);
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat1);
+        cSVPrinter0.print(mockPrintStream0);
+        cSVPrinter0.printComment("x_XctZ;Lm1%Yo");
+    }
+
+    @Test(timeout = 4000)
+    public void test2225() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("m-dDQ^z+5=W)v/r}4*");
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        Character character0 = Character.valueOf('>');
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker(character0);
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat1);
+        cSVPrinter0.printComment("Delimiter=<\t> Escape=<> RecordSeparator=<\n> EmptyLines:ignored SkipHeaderRecord:false");
+    }
+
+    @Test(timeout = 4000)
+    public void test2326() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        MockPrintStream mockPrintStream0 = new MockPrintStream("x_XctZ;Lm1%Yo");
+        Character character0 = Character.valueOf('m');
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker(character0);
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat1);
+        cSVPrinter0.printComment("Delimiter=<,> QuoteChar=<\"> RecordSeparator=<\r\n> SkipHeaderRecord:false");
+    }
+
+    @Test(timeout = 4000)
+    public void test2427() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
@@ -204,7 +333,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2515() throws Throwable {
+    public void test2528() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
@@ -216,7 +345,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2516() throws Throwable {
+    public void test2529() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
@@ -228,7 +357,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2617() throws Throwable {
+    public void test2630() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
@@ -238,5 +367,34 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
         objectArray0[2] = (Object) sQLRecoverableException0;
         cSVPrinter0.printRecords(objectArray0);
         assertEquals(57, byteArrayOutputStream0.size());
+    }
+
+    @Test(timeout = 4000)
+    public void test2731() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(byteArrayOutputStream0);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(bufferedOutputStream0);
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        RowSetMetaDataImpl rowSetMetaDataImpl0 = new RowSetMetaDataImpl();
+        ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+        doReturn(rowSetMetaDataImpl0).when(resultSet0).getMetaData();
+        doReturn(false).when(resultSet0).next();
+        cSVPrinter0.printRecords(resultSet0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2832() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(byteArrayOutputStream0);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(bufferedOutputStream0);
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        RowSetMetaDataImpl rowSetMetaDataImpl0 = new RowSetMetaDataImpl();
+        ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+        doReturn(rowSetMetaDataImpl0).when(resultSet0).getMetaData();
+        doReturn(true, true, true, true, true).when(resultSet0).next();
+        // Undeclared exception!
+        cSVPrinter0.printRecords(resultSet0);
     }
 }

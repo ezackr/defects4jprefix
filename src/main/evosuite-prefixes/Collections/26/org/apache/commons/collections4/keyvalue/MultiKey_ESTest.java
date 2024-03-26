@@ -83,27 +83,35 @@ public class MultiKey_ESTest extends MultiKey_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test099() throws Throwable {
+        Integer integer0 = new Integer(595);
+        MultiKey<Object> multiKey0 = new MultiKey<Object>(integer0, integer0);
+        MultiKey<MultiKey<Object>> multiKey1 = new MultiKey<MultiKey<Object>>(multiKey0, multiKey0, multiKey0, multiKey0, multiKey0);
+        multiKey1.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
         MultiKey<String> multiKey0 = new MultiKey<String>("<+}qzMrYq", "<+}qzMrYq", "<+}qzMrYq");
         String string0 = multiKey0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Integer integer0 = new Integer(595);
         MultiKey<Object> multiKey0 = new MultiKey<Object>(integer0, integer0);
         Object[] objectArray0 = multiKey0.getKeys();
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         Integer[] integerArray0 = new Integer[9];
         MultiKey<Integer> multiKey0 = new MultiKey<Integer>(integerArray0);
         boolean boolean0 = multiKey0.equals(integerArray0[3]);
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         Integer[] integerArray0 = new Integer[9];
         Integer integer0 = new Integer(0);
         MultiKey<Integer> multiKey0 = new MultiKey<Integer>(integerArray0[4], integerArray0[2], integerArray0[7], integer0);

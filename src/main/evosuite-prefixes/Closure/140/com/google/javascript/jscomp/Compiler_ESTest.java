@@ -105,7 +105,19 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test088() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.setNormalized();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.resetUniqueNameId();
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromFile("r@tfHZG; $d6");
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
@@ -119,7 +131,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1011() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromFile("r@tfHZG; $d6");
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
@@ -133,142 +145,168 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1112() throws Throwable {
         Level level0 = Level.SEVERE;
         Compiler.setLoggingLevel(level0);
         level0.getName();
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1213() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getCssRenamingMap();
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1314() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseSyntheticCode("7}", "7}");
         compiler0.getErrorCount();
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1415() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Compiler.IntermediateState compiler_IntermediateState0 = compiler0.getState();
+        compiler0.setState(compiler_IntermediateState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1516() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.disableThreads();
+    }
+
+    @Test(timeout = 4000)
+    public void test1617() throws Throwable {
         Compiler compiler0 = new Compiler((PrintStream) null);
         ScopeCreator scopeCreator0 = compiler0.getScopeCreator();
     }
 
     @Test(timeout = 4000)
-    public void test1714() throws Throwable {
+    public void test1718() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.rebuildInputsFromModules();
     }
 
     @Test(timeout = 4000)
-    public void test1815() throws Throwable {
+    public void test1819() throws Throwable {
         Compiler compiler0 = new Compiler();
         boolean boolean0 = compiler0.precheck();
     }
 
     @Test(timeout = 4000)
-    public void test1916() throws Throwable {
+    public void test1920() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.computeCFG();
     }
 
     @Test(timeout = 4000)
-    public void test2017() throws Throwable {
+    public void test2021() throws Throwable {
         Compiler compiler0 = new Compiler();
         boolean boolean0 = compiler0.isNormalized();
     }
 
     @Test(timeout = 4000)
-    public void test2118() throws Throwable {
+    public void test2122() throws Throwable {
         Compiler compiler0 = new Compiler();
         VariableMap variableMap0 = compiler0.getPropertyMap();
     }
 
     @Test(timeout = 4000)
-    public void test2219() throws Throwable {
+    public void test2223() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseSyntheticCode((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test2320() throws Throwable {
+    public void test2324() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.processDefines();
     }
 
     @Test(timeout = 4000)
-    public void test2421() throws Throwable {
+    public void test2425() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         compiler0.optimize();
     }
 
     @Test(timeout = 4000)
-    public void test2622() throws Throwable {
+    public void test2526() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        CheckAccessControls checkAccessControls0 = new CheckAccessControls(compiler0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2627() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.setCssRenamingMap((CssRenamingMap) null);
     }
 
     @Test(timeout = 4000)
-    public void test2723() throws Throwable {
+    public void test2728() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getWarningCount();
     }
 
     @Test(timeout = 4000)
-    public void test2824() throws Throwable {
+    public void test2829() throws Throwable {
         Compiler compiler0 = new Compiler();
         VariableMap variableMap0 = compiler0.getVariableMap();
     }
 
     @Test(timeout = 4000)
-    public void test2925() throws Throwable {
+    public void test2930() throws Throwable {
         Compiler compiler0 = new Compiler((PrintStream) null);
         FunctionInformationMap functionInformationMap0 = compiler0.getFunctionalInformationMap();
     }
 
     @Test(timeout = 4000)
-    public void test3026() throws Throwable {
+    public void test3031() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
     }
 
     @Test(timeout = 4000)
-    public void test3127() throws Throwable {
+    public void test3132() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.recordFunctionInformation();
     }
 
     @Test(timeout = 4000)
-    public void test3228() throws Throwable {
+    public void test3233() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.toSource((Node) null);
     }
 
     @Test(timeout = 4000)
-    public void test3329() throws Throwable {
+    public void test3334() throws Throwable {
         Compiler compiler0 = new Compiler();
         SourceMap sourceMap0 = compiler0.getSourceMap();
     }
 
     @Test(timeout = 4000)
-    public void test3430() throws Throwable {
+    public void test3435() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.isTypeCheckingEnabled();
     }
 
     @Test(timeout = 4000)
-    public void test3531() throws Throwable {
+    public void test3536() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.getRoot();
     }
 
     @Test(timeout = 4000)
-    public void test3732() throws Throwable {
+    public void test3637() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        CodeChangeHandler.RecentChange codeChangeHandler_RecentChange0 = new CodeChangeHandler.RecentChange();
+        compiler0.removeChangeHandler(codeChangeHandler_RecentChange0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3738() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager(logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -276,58 +314,58 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3833() throws Throwable {
+    public void test3839() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromCode("r@t<HZG;!$d6", "}s");
         compiler0.compile(jSSourceFile0, (JSModule[]) null, (CompilerOptions) null);
     }
 
     @Test(timeout = 4000)
-    public void test3934() throws Throwable {
+    public void test3940() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getMessages();
     }
 
     @Test(timeout = 4000)
-    public void test4035() throws Throwable {
+    public void test4041() throws Throwable {
         Compiler compiler0 = new Compiler();
         Scope scope0 = compiler0.getTopScope();
     }
 
     @Test(timeout = 4000)
-    public void test4136() throws Throwable {
+    public void test4142() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         int int0 = compiler_CodeBuilder0.getLength();
     }
 
     @Test(timeout = 4000)
-    public void test4237() throws Throwable {
+    public void test4243() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         String string0 = compiler_CodeBuilder0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test4338() throws Throwable {
+    public void test4344() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         int int0 = compiler_CodeBuilder0.getLineIndex();
     }
 
     @Test(timeout = 4000)
-    public void test4439() throws Throwable {
+    public void test4445() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         compiler_CodeBuilder0.reset();
         compiler_CodeBuilder0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test4540() throws Throwable {
+    public void test4546() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.acquireSymbolTable();
         compiler0.acquireSymbolTable();
     }
 
     @Test(timeout = 4000)
-    public void test4641() throws Throwable {
+    public void test4647() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("value");
         Compiler compiler0 = new Compiler(mockPrintStream0);
         compiler0.initCompilerOptionsIfTesting();
@@ -335,7 +373,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4742() throws Throwable {
+    public void test4748() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         compilerOptions0.sourceMapOutputPath = "M,a8X>)j8";
@@ -345,7 +383,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4843() throws Throwable {
+    public void test4849() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
@@ -355,7 +393,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4944() throws Throwable {
+    public void test4950() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("u?>t]k");
         JSModule jSModule0 = new JSModule("u?>t]k");
@@ -371,7 +409,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5045() throws Throwable {
+    public void test5051() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -383,7 +421,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5146() throws Throwable {
+    public void test5152() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("u?>t]k");
         JSModule jSModule0 = new JSModule("u?>t]k");
@@ -411,7 +449,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5247() throws Throwable {
+    public void test5253() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -426,7 +464,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5348() throws Throwable {
+    public void test5354() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -436,21 +474,28 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5549() throws Throwable {
+    public void test5455() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        PassConfig passConfig0 = compiler0.createPassConfigInternal();
+        compiler0.setPassConfig(passConfig0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5556() throws Throwable {
         Compiler compiler0 = new Compiler();
         PassConfig passConfig0 = compiler0.getPassConfig();
         compiler0.setPassConfig(passConfig0);
     }
 
     @Test(timeout = 4000)
-    public void test5650() throws Throwable {
+    public void test5657() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         compiler0.check();
     }
 
     @Test(timeout = 4000)
-    public void test5751() throws Throwable {
+    public void test5758() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
         compiler0.startPass((String) null);
@@ -458,13 +503,13 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5852() throws Throwable {
+    public void test5859() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.endPass();
     }
 
     @Test(timeout = 4000)
-    public void test5953() throws Throwable {
+    public void test5960() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.reportCodeChange();
         compiler0.getErrorManager();
@@ -472,7 +517,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6054() throws Throwable {
+    public void test6061() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -482,14 +527,14 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6155() throws Throwable {
+    public void test6162() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.common.collect.Iterators$3");
         boolean boolean0 = compiler0.areNodesEqualForInlining(node0, node0);
     }
 
     @Test(timeout = 4000)
-    public void test6256() throws Throwable {
+    public void test6263() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -499,7 +544,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6357() throws Throwable {
+    public void test6364() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[4];
@@ -514,7 +559,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6458() throws Throwable {
+    public void test6465() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromCode("u?>t]k", "'?0l.vA$cU?Vki&K");
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -524,7 +569,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6559() throws Throwable {
+    public void test6566() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -536,7 +581,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6660() throws Throwable {
+    public void test6667() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
@@ -544,7 +589,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6761() throws Throwable {
+    public void test6768() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -554,7 +599,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6862() throws Throwable {
+    public void test6869() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromFile("Creating extern file for exports", (Charset) null);
@@ -564,26 +609,26 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6963() throws Throwable {
+    public void test6970() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         Compiler.CodeBuilder compiler_CodeBuilder1 = compiler_CodeBuilder0.append("Normalize constraints violated:\n");
         int int0 = compiler_CodeBuilder1.getColumnIndex();
     }
 
     @Test(timeout = 4000)
-    public void test7064() throws Throwable {
+    public void test7071() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         int int0 = compiler_CodeBuilder0.getColumnIndex();
     }
 
     @Test(timeout = 4000)
-    public void test7165() throws Throwable {
+    public void test7172() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         boolean boolean0 = compiler_CodeBuilder0.endsWith("w**AwnWa8Qk+|>2");
     }
 
     @Test(timeout = 4000)
-    public void test7266() throws Throwable {
+    public void test7273() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         Compiler.CodeBuilder compiler_CodeBuilder1 = compiler_CodeBuilder0.append("r9ri.j6RkjxK8]E");
         Compiler.CodeBuilder compiler_CodeBuilder2 = compiler_CodeBuilder1.append("\"");
@@ -591,14 +636,14 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7367() throws Throwable {
+    public void test7374() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         compiler_CodeBuilder0.append("d{/X");
         boolean boolean0 = compiler_CodeBuilder0.endsWith("");
     }
 
     @Test(timeout = 4000)
-    public void test7468() throws Throwable {
+    public void test7475() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -609,14 +654,14 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7569() throws Throwable {
+    public void test7576() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
         boolean boolean0 = compiler0.isInliningForbidden();
     }
 
     @Test(timeout = 4000)
-    public void test7670() throws Throwable {
+    public void test7677() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("com.google.common.collect.Iterators$3");
         Node node0 = compiler0.parseTestCode("com.google.common.collect.Iterators$3");
@@ -624,7 +669,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7771() throws Throwable {
+    public void test7778() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -635,13 +680,13 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7872() throws Throwable {
+    public void test7879() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.throwInternalError("Duplicate input: {0}", (Exception) null);
     }
 
     @Test(timeout = 4000)
-    public void test7973() throws Throwable {
+    public void test7980() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
@@ -650,13 +695,13 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8074() throws Throwable {
+    public void test8081() throws Throwable {
         Compiler compiler0 = new Compiler();
         Region region0 = compiler0.getSourceRegion("/Users/elliottzackrone/IdeaProjects/defects4jprefix/Recording function information/Recording function information", (-1645));
     }
 
     @Test(timeout = 4000)
-    public void test8175() throws Throwable {
+    public void test8182() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -665,7 +710,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8276() throws Throwable {
+    public void test8283() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[1];
@@ -678,14 +723,14 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8377() throws Throwable {
+    public void test8384() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSModule jSModule0 = new JSModule((String) null);
         compiler0.getNodeForCodeInsertion(jSModule0);
     }
 
     @Test(timeout = 4000)
-    public void test8478() throws Throwable {
+    public void test8485() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromFile("", (Charset) null);
@@ -697,7 +742,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8579() throws Throwable {
+    public void test8586() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -706,7 +751,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8680() throws Throwable {
+    public void test8687() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSModule jSModule0 = new JSModule((String) null);
         JSSourceFile jSSourceFile0 = JSSourceFile.fromFile("n");
@@ -715,13 +760,13 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8781() throws Throwable {
+    public void test8788() throws Throwable {
         Compiler compiler0 = new Compiler();
         String string0 = compiler0.getAstDotGraph();
     }
 
     @Test(timeout = 4000)
-    public void test8882() throws Throwable {
+    public void test8889() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -730,7 +775,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8983() throws Throwable {
+    public void test8990() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
         ErrorManager errorManager0 = compiler0.getErrorManager();

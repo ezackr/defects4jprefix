@@ -18,4 +18,17 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class GaussNewtonOptimizer_ESTest extends GaussNewtonOptimizer_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        GaussNewtonOptimizer gaussNewtonOptimizer0 = new GaussNewtonOptimizer((ConvergenceChecker<PointVectorValuePair>) null);
+        gaussNewtonOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        SimpleVectorValueChecker simpleVectorValueChecker0 = new SimpleVectorValueChecker(1378.515258208318, 1378.515258208318);
+        GaussNewtonOptimizer gaussNewtonOptimizer0 = new GaussNewtonOptimizer(simpleVectorValueChecker0);
+        gaussNewtonOptimizer0.doOptimize();
+    }
 }

@@ -322,7 +322,12 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2123() throws Throwable {
+        IOUtils.closeQuietly((Closeable) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2224() throws Throwable {
         byte[] byteArray0 = new byte[0];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
@@ -331,7 +336,7 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         // Undeclared exception!
@@ -347,7 +352,7 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         byte[] byteArray0 = new byte[4];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         // Undeclared exception!
@@ -363,7 +368,7 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 1, (-809));
         // Undeclared exception!
@@ -379,7 +384,7 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2628() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 69, 0);
         PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
@@ -388,7 +393,7 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2628() throws Throwable {
+    public void test2629() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 69, 0);
         PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
@@ -397,21 +402,11 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2729() throws Throwable {
+    public void test2730() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         long long0 = IOUtils.skip(byteArrayInputStream0, (-1157L));
         assertEquals(0L, long0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2830() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        MockFile mockFile0 = new MockFile("qayi", "/GC`");
-        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
-        long long0 = IOUtils.copy((InputStream) byteArrayInputStream0, (OutputStream) mockFileOutputStream0);
-        assertEquals(3L, long0);
     }
 
     @Test(timeout = 4000)
@@ -421,11 +416,21 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
         MockFile mockFile0 = new MockFile("qayi", "/GC`");
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
         long long0 = IOUtils.copy((InputStream) byteArrayInputStream0, (OutputStream) mockFileOutputStream0);
+        assertEquals(3L, long0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2832() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+        MockFile mockFile0 = new MockFile("qayi", "/GC`");
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
+        long long0 = IOUtils.copy((InputStream) byteArrayInputStream0, (OutputStream) mockFileOutputStream0);
         assertEquals(3L, mockFile0.length());
     }
 
     @Test(timeout = 4000)
-    public void test2932() throws Throwable {
+    public void test2933() throws Throwable {
         Enumeration<MockFileInputStream> enumeration0 = (Enumeration<MockFileInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
         doReturn(false).when(enumeration0).hasMoreElements();
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);

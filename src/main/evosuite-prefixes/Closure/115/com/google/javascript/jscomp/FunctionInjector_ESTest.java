@@ -50,7 +50,22 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
+        FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, false);
+        ReferenceCollectingCallback.Behavior referenceCollectingCallback_Behavior0 = ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR;
+        ReferenceCollectingCallback referenceCollectingCallback0 = new ReferenceCollectingCallback(compiler0, referenceCollectingCallback_Behavior0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, referenceCollectingCallback0);
+        LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
+        Node node0 = Node.newString("$VALES", (-525), (-525));
+        Node node1 = new Node(31, node0, node0, node0, node0);
+        FunctionInjector.InliningMode functionInjector_InliningMode0 = FunctionInjector.InliningMode.BLOCK;
+        functionInjector0.canInlineReferenceToFunction(nodeTraversal0, node1, node0, linkedHashSet0, functionInjector_InliningMode0, true, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, false, false, false);
@@ -65,7 +80,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -76,7 +91,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -87,7 +102,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         Node node0 = Node.newString(2929, "; ");
@@ -100,7 +115,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector.InliningMode functionInjector_InliningMode0 = FunctionInjector.InliningMode.DIRECT;
@@ -111,7 +126,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -121,7 +136,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -135,7 +150,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -148,7 +163,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -162,7 +177,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, false, false, false);
@@ -173,7 +188,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
         FunctionInjector functionInjector0 = new FunctionInjector(compiler0, supplier0, true, true, true);
@@ -184,7 +199,7 @@ public class FunctionInjector_ESTest extends FunctionInjector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Set<String> set0 = NameAnalyzer.DEFAULT_GLOBAL_NAMES;
         Compiler compiler0 = new Compiler();
         Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();

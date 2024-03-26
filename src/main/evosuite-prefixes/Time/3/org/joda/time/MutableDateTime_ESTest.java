@@ -147,18 +147,6 @@ public class MutableDateTime_ESTest extends MutableDateTime_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01112() throws Throwable {
-        IslamicChronology islamicChronology0 = IslamicChronology.getInstance();
-        LenientChronology lenientChronology0 = LenientChronology.getInstance(islamicChronology0);
-        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
-        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance(dateTimeZone0);
-        DateTimeZone dateTimeZone1 = buddhistChronology0.getZone();
-        Chronology chronology0 = lenientChronology0.withZone(dateTimeZone1);
-        MutableDateTime mutableDateTime0 = new MutableDateTime((-172L), chronology0);
-        mutableDateTime0.setZoneRetainFields(dateTimeZone1);
-    }
-
-    @Test(timeout = 4000)
     public void test01213() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance((DateTimeZone) fixedDateTimeZone0);

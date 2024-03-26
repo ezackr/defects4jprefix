@@ -2036,4 +2036,10 @@ public class Rotation_ESTest extends Rotation_ESTest_scaffolding {
         Rotation rotation1 = rotation0.IDENTITY.revert();
         assertEquals(0.0, rotation1.getQ2(), 0.01);
     }
+
+    @Test(timeout = 4000)
+    public void test94206() throws Throwable {
+        Rotation rotation0 = Rotation.IDENTITY;
+        Rotation.distance(rotation0, rotation0);
+    }
 }

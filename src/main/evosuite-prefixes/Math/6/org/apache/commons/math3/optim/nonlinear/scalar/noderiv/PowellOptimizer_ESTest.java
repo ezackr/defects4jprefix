@@ -21,7 +21,18 @@ import org.junit.runner.RunWith;
 public class PowellOptimizer_ESTest extends PowellOptimizer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test20() throws Throwable {
+    public void test00() throws Throwable {
+        PowellOptimizer powellOptimizer0 = new PowellOptimizer(1.0E-15, 1.0E-15, 1.0E-15, 1.0E-15);
+        powellOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        PowellOptimizer powellOptimizer0 = new PowellOptimizer((-193.6399867), (-193.6399867));
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         PowellOptimizer powellOptimizer0 = new PowellOptimizer(1.0E-15, 1.0E-15);
         powellOptimizer0.getIterations();
         OptimizationData[] optimizationDataArray0 = new OptimizationData[2];
@@ -32,7 +43,12 @@ public class PowellOptimizer_ESTest extends PowellOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test41() throws Throwable {
+    public void test33() throws Throwable {
+        PowellOptimizer powellOptimizer0 = new PowellOptimizer(1.0E-15, (-2620.5297696579287));
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
         OptimizationData[] optimizationDataArray0 = new OptimizationData[8];
         double[] doubleArray0 = new double[1];
         InitialGuess initialGuess0 = new InitialGuess(doubleArray0);
@@ -43,7 +59,7 @@ public class PowellOptimizer_ESTest extends PowellOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test52() throws Throwable {
+    public void test55() throws Throwable {
         OptimizationData[] optimizationDataArray0 = new OptimizationData[1];
         double[] doubleArray0 = new double[0];
         InitialGuess initialGuess0 = new InitialGuess(doubleArray0);

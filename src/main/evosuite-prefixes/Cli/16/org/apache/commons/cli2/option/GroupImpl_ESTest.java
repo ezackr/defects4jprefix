@@ -354,16 +354,19 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1430() throws Throwable {
+    public void test1330() throws Throwable {
         LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Passes properties and values to the application", "Passes properties and values to the application", (-2343), (-2343));
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
-        LinkedList<String> linkedList1 = new LinkedList<String>();
-        linkedList1.add("-D");
-        ListIterator<String> listIterator0 = linkedList1.listIterator();
+        linkedList0.add(propertyOption0);
+        PropertyOption propertyOption1 = new PropertyOption("", "", 2676);
+        linkedList0.add(propertyOption1);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "-D", 2676, 2676);
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
+        ListIterator<String> listIterator0 = (ListIterator<String>) mock(ListIterator.class, new ViolatedAssumptionAnswer());
+        doReturn(true, false).when(listIterator0).hasNext();
+        doReturn("Passes properties and values to the application", (Object) null, (Object) null).when(listIterator0).next();
+        doReturn("-D", (Object) null).when(listIterator0).previous();
         groupImpl0.process(writeableCommandLineImpl0, listIterator0);
-        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
@@ -376,7 +379,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         linkedList1.add("-D");
         ListIterator<String> listIterator0 = linkedList1.listIterator();
         groupImpl0.process(writeableCommandLineImpl0, listIterator0);
-        listIterator0.hasNext();
+        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
@@ -389,11 +392,24 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         linkedList1.add("-D");
         ListIterator<String> listIterator0 = linkedList1.listIterator();
         groupImpl0.process(writeableCommandLineImpl0, listIterator0);
+        listIterator0.hasNext();
+    }
+
+    @Test(timeout = 4000)
+    public void test1433() throws Throwable {
+        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
+        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Passes properties and values to the application", "Passes properties and values to the application", (-2343), (-2343));
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
+        LinkedList<String> linkedList1 = new LinkedList<String>();
+        linkedList1.add("-D");
+        ListIterator<String> listIterator0 = linkedList1.listIterator();
+        groupImpl0.process(writeableCommandLineImpl0, listIterator0);
         groupImpl0.getMinimum();
     }
 
     @Test(timeout = 4000)
-    public void test1533() throws Throwable {
+    public void test1534() throws Throwable {
         LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 45, 45);
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
@@ -401,23 +417,12 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1634() throws Throwable {
+    public void test1635() throws Throwable {
         LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "", 60, 60);
         linkedList0.add(groupImpl0);
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
         groupImpl0.validate(writeableCommandLineImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1735() throws Throwable {
-        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
-        PropertyOption propertyOption0 = new PropertyOption();
-        linkedList0.offerLast(propertyOption0);
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "eAP^/,L}F1laI:", "eAP^/,L}F1laI:", 0, 0);
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
-        groupImpl0.validate(writeableCommandLineImpl0);
-        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
@@ -428,11 +433,22 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "eAP^/,L}F1laI:", "eAP^/,L}F1laI:", 0, 0);
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
         groupImpl0.validate(writeableCommandLineImpl0);
+        groupImpl0.getMaximum();
+    }
+
+    @Test(timeout = 4000)
+    public void test1737() throws Throwable {
+        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
+        PropertyOption propertyOption0 = new PropertyOption();
+        linkedList0.offerLast(propertyOption0);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "eAP^/,L}F1laI:", "eAP^/,L}F1laI:", 0, 0);
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
+        groupImpl0.validate(writeableCommandLineImpl0);
         groupImpl0.getMinimum();
     }
 
     @Test(timeout = 4000)
-    public void test1837() throws Throwable {
+    public void test1838() throws Throwable {
         LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "3S-TqUp'", "3S-TqUp'", (-386), (-386));
         linkedList0.add(groupImpl0);
@@ -443,7 +459,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1938() throws Throwable {
+    public void test1939() throws Throwable {
         LinkedList<SourceDestArgument> linkedList0 = new LinkedList<SourceDestArgument>();
         NumberValidator numberValidator0 = NumberValidator.getNumberInstance();
         ArgumentImpl argumentImpl0 = new ArgumentImpl("so", "so", (-1), (-1), 'f', 'f', numberValidator0, "cdl/0m\"T4T}e|y)x0", linkedList0, (-1));
@@ -455,34 +471,23 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2039() throws Throwable {
-        LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 0, 0);
-        LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
-        Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        groupImpl0.appendUsage((StringBuffer) null, (Set) linkedHashSet0, (Comparator) comparator0, (String) null);
-        groupImpl0.getMaximum();
-    }
-
-    @Test(timeout = 4000)
     public void test2040() throws Throwable {
         LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 0, 0);
         LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
         Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         groupImpl0.appendUsage((StringBuffer) null, (Set) linkedHashSet0, (Comparator) comparator0, (String) null);
-        groupImpl0.getMinimum();
+        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
-    public void test2141() throws Throwable {
-        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
-        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
-        linkedList0.offerLast(propertyOption0);
-        linkedList0.add(propertyOption0);
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Ix", "Ix", 0, 0);
-        String string0 = groupImpl0.toString();
-        groupImpl0.getMaximum();
+    public void test2041() throws Throwable {
+        LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 0, 0);
+        LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
+        Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        groupImpl0.appendUsage((StringBuffer) null, (Set) linkedHashSet0, (Comparator) comparator0, (String) null);
+        groupImpl0.getMinimum();
     }
 
     @Test(timeout = 4000)
@@ -493,15 +498,17 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         linkedList0.add(propertyOption0);
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Ix", "Ix", 0, 0);
         String string0 = groupImpl0.toString();
+        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
-    public void test2243() throws Throwable {
-        LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "org.apache.commons.cli2.option.SourceDestArgument", "org.apache.commons.cli2.option.SourceDestArgument", 0, 0);
-        LinkedHashSet<GroupImpl> linkedHashSet0 = new LinkedHashSet<GroupImpl>();
-        List list0 = groupImpl0.helpLines(0, linkedHashSet0, (Comparator) null);
-        groupImpl0.getMaximum();
+    public void test2143() throws Throwable {
+        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
+        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
+        linkedList0.offerLast(propertyOption0);
+        linkedList0.add(propertyOption0);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Ix", "Ix", 0, 0);
+        String string0 = groupImpl0.toString();
     }
 
     @Test(timeout = 4000)
@@ -510,7 +517,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "org.apache.commons.cli2.option.SourceDestArgument", "org.apache.commons.cli2.option.SourceDestArgument", 0, 0);
         LinkedHashSet<GroupImpl> linkedHashSet0 = new LinkedHashSet<GroupImpl>();
         List list0 = groupImpl0.helpLines(0, linkedHashSet0, (Comparator) null);
-        list0.size();
+        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
@@ -519,16 +526,16 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "org.apache.commons.cli2.option.SourceDestArgument", "org.apache.commons.cli2.option.SourceDestArgument", 0, 0);
         LinkedHashSet<GroupImpl> linkedHashSet0 = new LinkedHashSet<GroupImpl>();
         List list0 = groupImpl0.helpLines(0, linkedHashSet0, (Comparator) null);
-        groupImpl0.getMinimum();
+        list0.size();
     }
 
     @Test(timeout = 4000)
-    public void test2346() throws Throwable {
-        LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
-        DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "DIS9LAY_ARxUMENT_BRACKETED", "DIS9LAY_ARxUMENT_BRACKETED", 2865, 2865);
-        List list0 = groupImpl0.helpLines(2865, displaySetting0.ALL, (Comparator) null);
-        list0.size();
+    public void test2246() throws Throwable {
+        LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "org.apache.commons.cli2.option.SourceDestArgument", "org.apache.commons.cli2.option.SourceDestArgument", 0, 0);
+        LinkedHashSet<GroupImpl> linkedHashSet0 = new LinkedHashSet<GroupImpl>();
+        List list0 = groupImpl0.helpLines(0, linkedHashSet0, (Comparator) null);
+        groupImpl0.getMinimum();
     }
 
     @Test(timeout = 4000)
@@ -537,7 +544,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "DIS9LAY_ARxUMENT_BRACKETED", "DIS9LAY_ARxUMENT_BRACKETED", 2865, 2865);
         List list0 = groupImpl0.helpLines(2865, displaySetting0.ALL, (Comparator) null);
-        groupImpl0.getMaximum();
+        list0.size();
     }
 
     @Test(timeout = 4000)
@@ -546,17 +553,16 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "DIS9LAY_ARxUMENT_BRACKETED", "DIS9LAY_ARxUMENT_BRACKETED", 2865, 2865);
         List list0 = groupImpl0.helpLines(2865, displaySetting0.ALL, (Comparator) null);
-        groupImpl0.getMinimum();
+        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
-    public void test2449() throws Throwable {
+    public void test2349() throws Throwable {
         LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
-        Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "", 1325, 1325);
-        List list0 = groupImpl0.helpLines(1325, displaySetting0.ALL, comparator0);
-        groupImpl0.getMaximum();
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "DIS9LAY_ARxUMENT_BRACKETED", "DIS9LAY_ARxUMENT_BRACKETED", 2865, 2865);
+        List list0 = groupImpl0.helpLines(2865, displaySetting0.ALL, (Comparator) null);
+        groupImpl0.getMinimum();
     }
 
     @Test(timeout = 4000)
@@ -566,7 +572,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "", 1325, 1325);
         List list0 = groupImpl0.helpLines(1325, displaySetting0.ALL, comparator0);
-        groupImpl0.getMinimum();
+        groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
@@ -576,11 +582,21 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "", 1325, 1325);
         List list0 = groupImpl0.helpLines(1325, displaySetting0.ALL, comparator0);
+        groupImpl0.getMinimum();
+    }
+
+    @Test(timeout = 4000)
+    public void test2452() throws Throwable {
+        LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
+        DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
+        Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "", 1325, 1325);
+        List list0 = groupImpl0.helpLines(1325, displaySetting0.ALL, comparator0);
         list0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test2552() throws Throwable {
+    public void test2553() throws Throwable {
         LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "\"p", "\"p", (-1929), (-1929));
@@ -591,22 +607,12 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2653() throws Throwable {
-        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
-        PropertyOption propertyOption0 = new PropertyOption("", "", 2676);
-        linkedList0.add(propertyOption0);
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "-D", "-D", 2676, 2676);
-        Option option0 = groupImpl0.findOption("");
-    }
-
-    @Test(timeout = 4000)
     public void test2654() throws Throwable {
         LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
         PropertyOption propertyOption0 = new PropertyOption("", "", 2676);
         linkedList0.add(propertyOption0);
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "-D", "-D", 2676, 2676);
         Option option0 = groupImpl0.findOption("");
-        groupImpl0.getMinimum();
     }
 
     @Test(timeout = 4000)
@@ -616,11 +622,21 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         linkedList0.add(propertyOption0);
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "-D", "-D", 2676, 2676);
         Option option0 = groupImpl0.findOption("");
+        groupImpl0.getMinimum();
+    }
+
+    @Test(timeout = 4000)
+    public void test2656() throws Throwable {
+        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
+        PropertyOption propertyOption0 = new PropertyOption("", "", 2676);
+        linkedList0.add(propertyOption0);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "-D", "-D", 2676, 2676);
+        Option option0 = groupImpl0.findOption("");
         groupImpl0.getMaximum();
     }
 
     @Test(timeout = 4000)
-    public void test2756() throws Throwable {
+    public void test2757() throws Throwable {
         LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "6fH~_%MC", "6fH~_%MC", 3, 3);
         linkedList0.offer(groupImpl0);
@@ -629,7 +645,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2857() throws Throwable {
+    public void test2858() throws Throwable {
         LinkedList<SourceDestArgument> linkedList0 = new LinkedList<SourceDestArgument>();
         FileValidator fileValidator0 = FileValidator.getExistingDirectoryInstance();
         ArgumentImpl argumentImpl0 = new ArgumentImpl("x:zZJ-", "x:zZJ-", 61, 61, '7', 'G', fileValidator0, "joE%RX$7", linkedList0, 61);
@@ -644,7 +660,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2858() throws Throwable {
+    public void test2859() throws Throwable {
         LinkedList<SourceDestArgument> linkedList0 = new LinkedList<SourceDestArgument>();
         FileValidator fileValidator0 = FileValidator.getExistingDirectoryInstance();
         ArgumentImpl argumentImpl0 = new ArgumentImpl("x:zZJ-", "x:zZJ-", 61, 61, '7', 'G', fileValidator0, "joE%RX$7", linkedList0, 61);

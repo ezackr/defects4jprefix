@@ -405,7 +405,23 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3032() throws Throwable {
+        Attribute attribute0 = new Attribute("readonly", "readonly", (Attributes) null);
+        attribute0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3133() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        Attribute attribute0 = new Attribute("limiteQQuirks", (String) null, attributes0);
+        Attribute attribute1 = Attribute.createFromEncoded("limiteQQuirks", "limiteQQuirks");
+        boolean boolean0 = attribute0.equals(attribute1);
+        //  // Unstable assertion: assertFalse(boolean0);
+        //  // Unstable assertion: assertTrue(attribute1.equals((Object)attribute0));
+    }
+
+    @Test(timeout = 4000)
+    public void test3234() throws Throwable {
         Attributes attributes0 = new Attributes();
         String[] stringArray0 = new String[2];
         Attribute attribute0 = new Attribute("limitedQuirks", stringArray0[0], attributes0);
@@ -415,7 +431,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3235() throws Throwable {
         Attributes attributes0 = new Attributes();
         String[] stringArray0 = new String[2];
         Attribute attribute0 = new Attribute("limitedQuirks", stringArray0[0], attributes0);
@@ -425,14 +441,14 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3334() throws Throwable {
+    public void test3336() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("disabled", "disabled");
         boolean boolean0 = attribute0.equals("disabled");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3435() throws Throwable {
+    public void test3437() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("goat qhu+e\"1[\"/c", "r?y[b", attributes0);
         boolean boolean0 = attribute0.equals((Object) null);
@@ -440,7 +456,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3436() throws Throwable {
+    public void test3438() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("goat qhu+e\"1[\"/c", "r?y[b", attributes0);
         boolean boolean0 = attribute0.equals((Object) null);
@@ -448,14 +464,14 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3537() throws Throwable {
+    public void test3539() throws Throwable {
         Attribute attribute0 = new Attribute("readonly", "readonly", (Attributes) null);
         boolean boolean0 = attribute0.equals(attribute0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3638() throws Throwable {
+    public void test3640() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("qt+0, DI8j.Wy", (String) null, attributes0);
         boolean boolean0 = attribute0.isBooleanAttribute();
@@ -463,21 +479,21 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3739() throws Throwable {
+    public void test3741() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("'E,Yo(J_Pk0m&", "'E,Yo(J_Pk0m&");
         boolean boolean0 = attribute0.isBooleanAttribute();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3840() throws Throwable {
+    public void test3842() throws Throwable {
         Attribute attribute0 = new Attribute("readonly", "readonly", (Attributes) null);
         boolean boolean0 = attribute0.isBooleanAttribute();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3941() throws Throwable {
+    public void test3943() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("data-&3R.DsL>ZsE.Xf", "data-&3R.DsL>ZsE.Xf");
         attributes0.put(attribute0);
@@ -487,7 +503,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4042() throws Throwable {
+    public void test4044() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("T", "", attributes0);
         String string0 = attribute0.toString();
@@ -495,14 +511,14 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4143() throws Throwable {
+    public void test4145() throws Throwable {
         Attribute attribute0 = new Attribute("|*ssaQ}t", (String) null);
         String string0 = attribute0.html();
         assertEquals("|*ssaQ}t", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4244() throws Throwable {
+    public void test4246() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Document.OutputSettings.Syntax document_OutputSettings_Syntax0 = Document.OutputSettings.Syntax.xml;
         document_OutputSettings0.syntax(document_OutputSettings_Syntax0);
@@ -511,13 +527,13 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4345() throws Throwable {
+    public void test4347() throws Throwable {
         boolean boolean0 = Attribute.isDataAttribute("data-");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4446() throws Throwable {
+    public void test4448() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("goat qhu+e\"1[\"/c", "r?y[b", attributes0);
         attribute0.setValue("KucdgcT8[E{;fsBS(.(");
@@ -525,7 +541,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4547() throws Throwable {
+    public void test4549() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("data-&3R.DsL>ZsE.Xf", "data-&3R.DsL>ZsE.Xf");
         attributes0.put(attribute0);
@@ -534,7 +550,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4648() throws Throwable {
+    public void test4650() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("d", "d", attributes0);
         attribute0.setKey("c");
@@ -544,7 +560,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4749() throws Throwable {
+    public void test4751() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("'E,Yo(J_Pk0m&", "'E,Yo(J_Pk0m&");
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         boolean boolean0 = attribute0.shouldCollapseAttribute(document_OutputSettings0);
@@ -552,7 +568,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4850() throws Throwable {
+    public void test4852() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("d", "d", attributes0);
         String string0 = attribute0.getValue();
@@ -560,7 +576,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4951() throws Throwable {
+    public void test4953() throws Throwable {
         Attribute attribute0 = new Attribute("readonly", "readonly", (Attributes) null);
         Attribute attribute1 = attribute0.clone();
         boolean boolean0 = attribute1.equals(attribute0);
@@ -568,14 +584,14 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5052() throws Throwable {
+    public void test5054() throws Throwable {
         Attribute attribute0 = new Attribute("data-&3R.DsL>ZsE.Xf", "data-&3R.DsL>ZsE.Xf");
         boolean boolean0 = attribute0.isDataAttribute();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5153() throws Throwable {
+    public void test5155() throws Throwable {
         Attribute attribute0 = new Attribute("readonly", "readonly", (Attributes) null);
         String string0 = attribute0.getKey();
         assertEquals("readonly", string0);

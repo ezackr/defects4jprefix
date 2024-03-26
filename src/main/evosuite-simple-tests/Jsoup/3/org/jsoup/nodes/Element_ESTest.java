@@ -343,7 +343,16 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3537() throws Throwable {
+        Document document0 = new Document("script");
+        Element element0 = document0.prependElement("script");
+        element0.addChild(document0);
+        document0.prependText("script");
+        document0.text();
+    }
+
+    @Test(timeout = 4000)
+    public void test3638() throws Throwable {
         Document document0 = new Document("XBq\fJ-9m7]J5?@>");
         Comment comment0 = new Comment("XBq\fJ-9m7]J5?@>", "XBq\fJ-9m7]J5?@>");
         document0.appendChild(comment0);
@@ -352,7 +361,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3739() throws Throwable {
         Document document0 = new Document("script");
         document0.prependElement("script");
         String string0 = document0.text();
@@ -360,7 +369,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3840() throws Throwable {
         Document document0 = new Document("L");
         Element element0 = document0.prependElement("L");
         boolean boolean0 = element0.preserveWhitespace();
@@ -368,7 +377,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3941() throws Throwable {
         Document document0 = new Document("c");
         DataNode dataNode0 = DataNode.createFromEncoded("c", "c");
         document0.addChild(dataNode0);
@@ -377,7 +386,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4042() throws Throwable {
         Document document0 = new Document("");
         document0.appendText("");
         boolean boolean0 = document0.hasText();
@@ -385,7 +394,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4143() throws Throwable {
         Document document0 = new Document("O)@ofCBU");
         document0.prependElement("O)@ofCBU");
         boolean boolean0 = document0.hasText();
@@ -393,7 +402,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4244() throws Throwable {
         Document document0 = new Document("O)@ofCBU");
         Element element0 = document0.prependElement("O)@ofCBU");
         element0.text("O)@ofCBU");
@@ -402,7 +411,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4344() throws Throwable {
+    public void test4345() throws Throwable {
         Document document0 = new Document("!o?`4_;LM#Z0DXM");
         DataNode dataNode0 = DataNode.createFromEncoded("!o?`4_;LM#Z0DXM", "!o?`4_;LM#Z0DXM");
         document0.addChild(dataNode0);
@@ -411,7 +420,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4445() throws Throwable {
+    public void test4446() throws Throwable {
         Document document0 = new Document("$>");
         document0.prependElement("$>");
         String string0 = document0.data();
@@ -419,7 +428,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4546() throws Throwable {
+    public void test4547() throws Throwable {
         Document document0 = new Document("W");
         Element element0 = document0.appendText("W");
         String string0 = element0.data();
@@ -427,7 +436,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4647() throws Throwable {
+    public void test4648() throws Throwable {
         Document document0 = new Document("$W");
         document0.toggleClass("$W");
         String string0 = document0.className();
@@ -435,28 +444,28 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4748() throws Throwable {
+    public void test4749() throws Throwable {
         Document document0 = new Document("");
         boolean boolean0 = document0.hasClass("");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4849() throws Throwable {
+    public void test4850() throws Throwable {
         Document document0 = new Document("");
         Element element0 = document0.toggleClass("");
         assertFalse(element0.isBlock());
     }
 
     @Test(timeout = 4000)
-    public void test4950() throws Throwable {
+    public void test4951() throws Throwable {
         Document document0 = new Document("j#");
         String string0 = document0.val();
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5051() throws Throwable {
+    public void test5052() throws Throwable {
         Document document0 = new Document("4p");
         Element element0 = document0.createElement("textarea");
         String string0 = element0.val();
@@ -464,14 +473,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5152() throws Throwable {
+    public void test5153() throws Throwable {
         Document document0 = new Document("W");
         Element element0 = document0.val("W");
         assertFalse(element0.isBlock());
     }
 
     @Test(timeout = 4000)
-    public void test5253() throws Throwable {
+    public void test5254() throws Throwable {
         Tag tag0 = Tag.valueOf("textarea");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "textarea", attributes0);
@@ -480,7 +489,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5354() throws Throwable {
+    public void test5355() throws Throwable {
         Document document0 = new Document("P");
         document0.prependElement("meta");
         String string0 = document0.outerHtml();
@@ -488,7 +497,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5455() throws Throwable {
+    public void test5456() throws Throwable {
         Document document0 = new Document("e[");
         document0.prependElement("e[");
         String string0 = document0.outerHtml();
@@ -496,7 +505,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5556() throws Throwable {
+    public void test5557() throws Throwable {
         Document document0 = new Document("e[");
         document0.prependElement("e[");
         Element element0 = document0.prependText("e[");
@@ -505,7 +514,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5657() throws Throwable {
+    public void test5658() throws Throwable {
         Document document0 = new Document("W");
         Document document1 = (Document) document0.appendText("W");
         StringBuilder stringBuilder0 = new StringBuilder("W");
@@ -514,7 +523,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5758() throws Throwable {
+    public void test5759() throws Throwable {
         Document document0 = new Document("script");
         document0.prependElement("script");
         String string0 = document0.outerHtml();
@@ -522,7 +531,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5859() throws Throwable {
+    public void test5860() throws Throwable {
         Document document0 = new Document("J<dzT,U'~mWOg?*4[T");
         boolean boolean0 = document0.equals("J<dzT,U'~mWOg?*4[T");
         assertFalse(boolean0);

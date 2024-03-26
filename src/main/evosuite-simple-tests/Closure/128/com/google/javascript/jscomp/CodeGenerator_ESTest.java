@@ -186,7 +186,13 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1515() throws Throwable {
+        CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
+        codeGenerator0.addList((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
         Node node0 = Node.newNumber((double) 0);
         // Undeclared exception!
@@ -202,7 +208,13 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1717() throws Throwable {
+        CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         Charset charset0 = Charset.defaultCharset();
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
@@ -211,7 +223,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         CompilerOptions compilerOptions0 = new CompilerOptions();
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, compilerOptions0);
         String string0 = codeGenerator0.escapeToDoubleQuotedJsString("s=m-ihe");
@@ -219,7 +231,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         CompilerOptions compilerOptions0 = new CompilerOptions();
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, compilerOptions0);
         String string0 = codeGenerator0.regexpEscape("3]H9H76k'=VM");
@@ -227,14 +239,14 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
         String string0 = codeGenerator0.escapeToDoubleQuotedJsString("8&##;8H*nOd#c");
         assertEquals("\"8&##;8H\\u007f*nOd#c\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         CompilerOptions compilerOptions0 = new CompilerOptions();
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, compilerOptions0);
         String string0 = codeGenerator0.regexpEscape("}VK:}M&/N%>-A");
@@ -242,28 +254,28 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
         String string0 = codeGenerator0.regexpEscape("~>vnr|Tq33:!:{1T;");
         assertEquals("/~>vnr|Tq33:!:{1T;/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
         String string0 = codeGenerator0.escapeToDoubleQuotedJsString(" -> ");
         assertEquals("\" -> \"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
         String string0 = codeGenerator0.escapeToDoubleQuotedJsString("6]>=J0]S54Epx$");
         assertEquals("\"6]>=J0]S54Epx$\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         CompilerOptions compilerOptions0 = new CompilerOptions();
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, compilerOptions0);
         String string0 = codeGenerator0.escapeToDoubleQuotedJsString("pb2V?-P03D<M@");
@@ -271,7 +283,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2725() throws Throwable {
+    public void test2727() throws Throwable {
         CompilerOptions compilerOptions0 = new CompilerOptions();
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, compilerOptions0);
         String string0 = codeGenerator0.regexpEscape("</scriptlvyqv^vrplb");
@@ -279,20 +291,20 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2826() throws Throwable {
+    public void test2828() throws Throwable {
         CodeGenerator codeGenerator0 = CodeGenerator.forCostEstimation((CodeConsumer) null);
         String string0 = codeGenerator0.escapeToDoubleQuotedJsString("<:X^k%K\"LVYQV^VRplB");
         assertEquals("\"<:X^k%K\\\"LVY\\u007fQV^VRplB\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2927() throws Throwable {
+    public void test2929() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("\u0000\u05BE\u05D0\u05F3\u0600\u0750$\u1E00\u2100i\uFE70\uFF61");
         assertEquals("\\u0000\\u05be\\u05d0\\u05f3\\u0600\\u0750$\\u1e00\\u2100i\\ufe70\\uff61", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3028() throws Throwable {
+    public void test3030() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("in");
         assertEquals("in", string0);
     }

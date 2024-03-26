@@ -83,4 +83,37 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
         PosixParser posixParser0 = new PosixParser();
         String[] stringArray1 = posixParser0.flatten(options0, stringArray0, true);
     }
+
+    @Test(timeout = 4000)
+    public void test77() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("", true, "");
+        String[] stringArray0 = new String[2];
+        stringArray0[0] = "-+A";
+        posixParser0.flatten(options1, stringArray0, true);
+        posixParser0.burstToken("--", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test88() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("h", false, "rhAvr}Hm%r0rXZ8h");
+        String[] stringArray0 = new String[1];
+        stringArray0[0] = "h";
+        posixParser0.flatten(options1, stringArray0, false);
+        posixParser0.burstToken("rhAvr}Hm%r0rXZ8h", false);
+    }
+
+    @Test(timeout = 4000)
+    public void test99() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("h", true, "rhAvr}Hm%r0rXZ8h");
+        String[] stringArray0 = new String[1];
+        stringArray0[0] = "h";
+        posixParser0.flatten(options1, stringArray0, true);
+        posixParser0.burstToken("rhAvr}Hm%r0rXZ8h", true);
+    }
 }

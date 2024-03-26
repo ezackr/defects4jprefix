@@ -244,7 +244,22 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2927() throws Throwable {
+    public void test2727() throws Throwable {
+        Token.EndTag token_EndTag0 = new Token.EndTag();
+        char[] charArray0 = new char[3];
+        token_EndTag0.appendAttributeValue(charArray0);
+        token_EndTag0.appendAttributeValue("|");
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
+        Token.StartTag token_StartTag0 = new Token.StartTag();
+        token_StartTag0.appendAttributeName('G');
+        token_StartTag0.appendAttributeName("");
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         Token.Tag token_Tag0 = token_StartTag0.name("2l.-EN7/NU;bq");
         token_StartTag0.appendTagName("org.jsoup.parser.Token$Doctype");
@@ -252,49 +267,89 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3628() throws Throwable {
+    public void test3030() throws Throwable {
+        Token.EndTag token_EndTag0 = new Token.EndTag();
+        token_EndTag0.finaliseTag();
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        Token.StartTag token_StartTag0 = new Token.StartTag();
+        token_StartTag0.appendAttributeName('A');
+        token_StartTag0.setEmptyAttributeValue();
+        token_StartTag0.newAttribute();
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        Token.StartTag token_StartTag0 = new Token.StartTag();
+        token_StartTag0.appendAttributeValue("");
+        token_StartTag0.appendAttributeName('G');
+        token_StartTag0.newAttribute();
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
+        Token.EndTag token_EndTag0 = new Token.EndTag();
+        token_EndTag0.appendAttributeName("SA_{6bI");
+        token_EndTag0.finaliseTag();
+    }
+
+    @Test(timeout = 4000)
+    public void test3434() throws Throwable {
+        Token.EndTag token_EndTag0 = new Token.EndTag();
+        token_EndTag0.newAttribute();
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        Token.reset((StringBuilder) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
         Token.Character token_Character0 = new Token.Character();
         Token.Character token_Character1 = token_Character0.data("_Y1\" Km`hOh~z");
         assertEquals("_Y1\" Km`hOh~z", token_Character1.toString());
     }
 
     @Test(timeout = 4000)
-    public void test3729() throws Throwable {
+    public void test3737() throws Throwable {
         Token.Character token_Character0 = new Token.Character();
         Token token0 = token_Character0.reset();
         assertNull(token0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test3830() throws Throwable {
+    public void test3838() throws Throwable {
         Token.Character token_Character0 = new Token.Character();
         String string0 = token_Character0.toString();
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test3931() throws Throwable {
+    public void test3939() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         boolean boolean0 = token_Doctype0.isForceQuirks();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4032() throws Throwable {
+    public void test4040() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         token_Doctype0.getPublicIdentifier();
         assertFalse(token_Doctype0.isForceQuirks());
     }
 
     @Test(timeout = 4000)
-    public void test4133() throws Throwable {
+    public void test4141() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         token_Doctype0.getPubSysKey();
         assertFalse(token_Doctype0.isForceQuirks());
     }
 
     @Test(timeout = 4000)
-    public void test4234() throws Throwable {
+    public void test4242() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         Token.Doctype token_Doctype1 = (Token.Doctype) token_Doctype0.reset();
         token_Doctype1.forceQuirks = true;
@@ -303,42 +358,42 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4335() throws Throwable {
+    public void test4343() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         token_Doctype0.getName();
         assertFalse(token_Doctype0.isForceQuirks());
     }
 
     @Test(timeout = 4000)
-    public void test4436() throws Throwable {
+    public void test4444() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         token_Doctype0.getSystemIdentifier();
         assertFalse(token_Doctype0.isForceQuirks());
     }
 
     @Test(timeout = 4000)
-    public void test4537() throws Throwable {
+    public void test4545() throws Throwable {
         Token.Comment token_Comment0 = new Token.Comment();
         Token token0 = token_Comment0.reset();
         assertSame(token0, token_Comment0);
     }
 
     @Test(timeout = 4000)
-    public void test4638() throws Throwable {
+    public void test4646() throws Throwable {
         Token.Comment token_Comment0 = new Token.Comment();
         String string0 = token_Comment0.toString();
         assertEquals("<!---->", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4739() throws Throwable {
+    public void test4747() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         boolean boolean0 = token_StartTag0.isSelfClosing();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4840() throws Throwable {
+    public void test4848() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.appendTagName('J');
         String string0 = token_EndTag0.toString();
@@ -346,14 +401,29 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5141() throws Throwable {
+    public void test4949() throws Throwable {
+        Token.StartTag token_StartTag0 = new Token.StartTag();
+        token_StartTag0.appendAttributeValue('U');
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
+        Token.EndTag token_EndTag0 = new Token.EndTag();
+        char[] charArray0 = new char[3];
+        token_EndTag0.appendAttributeValue(charArray0);
+        token_EndTag0.appendAttributeName('F');
+        token_EndTag0.newAttribute();
+    }
+
+    @Test(timeout = 4000)
+    public void test5151() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         Attributes attributes0 = token_EndTag0.getAttributes();
         assertNull(attributes0);
     }
 
     @Test(timeout = 4000)
-    public void test5242() throws Throwable {
+    public void test5252() throws Throwable {
         Token.Character token_Character0 = new Token.Character();
         // Undeclared exception!
         try {
@@ -368,7 +438,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5343() throws Throwable {
+    public void test5353() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         // Undeclared exception!
         try {
@@ -383,7 +453,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5444() throws Throwable {
+    public void test5454() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         // Undeclared exception!
         try {
@@ -398,7 +468,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5545() throws Throwable {
+    public void test5555() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         // Undeclared exception!
         try {
@@ -413,7 +483,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5646() throws Throwable {
+    public void test5656() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         // Undeclared exception!
         try {
@@ -428,21 +498,21 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5747() throws Throwable {
+    public void test5757() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         String string0 = token_StartTag0.tokenType();
         assertEquals("StartTag", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5848() throws Throwable {
+    public void test5858() throws Throwable {
         Token.EOF token_EOF0 = new Token.EOF();
         Token token0 = token_EOF0.reset();
         assertSame(token0, token_EOF0);
     }
 
     @Test(timeout = 4000)
-    public void test5949() throws Throwable {
+    public void test5959() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         Token.Tag token_Tag0 = token_StartTag0.reset();
         assertSame(token_StartTag0, token_Tag0);

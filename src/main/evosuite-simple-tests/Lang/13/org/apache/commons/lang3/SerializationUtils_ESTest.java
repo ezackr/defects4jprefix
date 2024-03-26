@@ -32,14 +32,21 @@ import org.junit.runner.RunWith;
 public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(pipedOutputStream0, 1982);
+        SerializationUtils.serialize((Serializable) (byte) 117, (OutputStream) bufferedOutputStream0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         byte[] byteArray0 = SerializationUtils.serialize((Serializable) null);
         Object object0 = SerializationUtils.deserialize(byteArray0);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         Certificate[] certificateArray0 = new Certificate[8];
         UnresolvedPermission unresolvedPermission0 = new UnresolvedPermission("W(", "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream", "W(", certificateArray0);
         // Undeclared exception!
@@ -55,7 +62,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         byte[] byteArray0 = new byte[1];
         // Undeclared exception!
         try {
@@ -70,7 +77,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         BufferedInputStream bufferedInputStream0 = new BufferedInputStream((InputStream) null);
         // Undeclared exception!
         try {
@@ -85,7 +92,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         byte[] byteArray0 = SerializationUtils.serialize((Serializable) (byte) 126);
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
@@ -103,7 +110,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         // Undeclared exception!
         try {
             SerializationUtils.deserialize((byte[]) null);
@@ -117,7 +124,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
         // Undeclared exception!
         try {
@@ -132,7 +139,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         // Undeclared exception!
         try {
             SerializationUtils.deserialize((InputStream) null);
@@ -146,7 +153,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Integer integer0 = new Integer((-1));
         byte[] byteArray0 = SerializationUtils.serialize((Serializable) integer0);
         Object object0 = SerializationUtils.deserialize(byteArray0);
@@ -154,7 +161,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         // Undeclared exception!
         try {
@@ -169,7 +176,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Locale.FilteringMode locale_FilteringMode0 = Locale.FilteringMode.IGNORE_EXTENDED_RANGES;
         // Undeclared exception!
         try {
@@ -184,13 +191,13 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         Integer integer0 = SerializationUtils.clone((Integer) null);
         assertNull(integer0);
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         SerializationUtils serializationUtils0 = new SerializationUtils();
         Object[] objectArray0 = new Object[16];
         objectArray0[2] = (Object) serializationUtils0;
@@ -209,7 +216,7 @@ public class SerializationUtils_ESTest extends SerializationUtils_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Integer integer0 = new Integer((-1));
         Integer integer1 = SerializationUtils.clone(integer0);
         assertEquals((-1), (int) integer1);

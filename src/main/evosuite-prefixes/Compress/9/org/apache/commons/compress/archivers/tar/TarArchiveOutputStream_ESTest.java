@@ -100,13 +100,21 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test088() throws Throwable {
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(pipedOutputStream0, 10240, 10240);
+        // Undeclared exception!
+        tarArchiveOutputStream0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream((OutputStream) null, 0, 1);
         tarArchiveOutputStream0.close();
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         File file0 = MockFile.createTempFile("Z6N!L8e6!=J?(JzYNZQ", "Z6N!L8e6!=J?(JzYNZQ");
         MockPrintStream mockPrintStream0 = new MockPrintStream(file0);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockPrintStream0, 55, 5567);
@@ -114,7 +122,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         MockFile mockFile0 = new MockFile(",", ",");
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0, 4665, 4665);
@@ -123,14 +131,14 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("' bytes for entry '");
         TarArchiveOutputStream tarArchiveOutputStream0 = null;
         tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0, (-4869), (-1));
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("Unknown header type");
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockPrintStream0);
         TarArchiveOutputStream tarArchiveOutputStream1 = null;
@@ -138,13 +146,13 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         TarArchiveOutputStream tarArchiveOutputStream0 = null;
         tarArchiveOutputStream0 = new TarArchiveOutputStream((OutputStream) null, (-374));
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("xfe!*`l@X1");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0, false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockPrintStream0);
@@ -154,7 +162,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" bytes)", false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0);
         byte[] byteArray0 = new byte[2];
@@ -162,7 +170,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" bytes)", false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0);
         byte[] byteArray0 = new byte[2];
@@ -171,7 +179,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(10240);
         pipedOutputStream0.connect(pipedInputStream0);
@@ -181,14 +189,14 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" bytes)", false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0);
         tarArchiveOutputStream0.closeArchiveEntry();
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" bytes)", false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0);
         MockFile mockFile0 = new MockFile(" bytes)", "S");
@@ -199,7 +207,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         MockFile mockFile0 = new MockFile("b&WezVn38K");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockPrintStream0, 553);
@@ -209,7 +217,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("xfe!*`l@X1");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0, false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockPrintStream0);
@@ -218,7 +226,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         DataOutputStream dataOutputStream0 = new DataOutputStream((OutputStream) null);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(dataOutputStream0, 10240);
         MockFile mockFile0 = new MockFile("");
@@ -228,7 +236,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(" but is ");
         DataOutputStream dataOutputStream0 = new DataOutputStream(mockFileOutputStream0);
         MockPrintStream mockPrintStream0 = new MockPrintStream(dataOutputStream0, false);
@@ -238,7 +246,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("xfe!*`l@X1");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0, false);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockPrintStream0);
@@ -246,7 +254,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         MockFile mockFile0 = new MockFile("'@", "D(i:WAj-XQ83E8");
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0, 54);
@@ -254,7 +262,7 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         MockFile mockFile0 = new MockFile("!", "!");
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(mockFileOutputStream0);
@@ -263,9 +271,18 @@ public class TarArchiveOutputStream_ESTest extends TarArchiveOutputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream(pipedOutputStream0);
         tarArchiveOutputStream0.putArchiveEntry((ArchiveEntry) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        TarArchiveOutputStream tarArchiveOutputStream0 = new TarArchiveOutputStream((OutputStream) null, 10240, 10240);
+        MockFile mockFile0 = new MockFile("");
+        ArchiveEntry archiveEntry0 = tarArchiveOutputStream0.createArchiveEntry(mockFile0, "");
+        // Undeclared exception!
+        tarArchiveOutputStream0.putArchiveEntry(archiveEntry0);
     }
 }

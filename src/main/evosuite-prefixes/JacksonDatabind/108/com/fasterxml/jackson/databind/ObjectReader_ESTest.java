@@ -964,7 +964,15 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9696() throws Throwable {
+    public void test9596() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        DeserializationFeature deserializationFeature0 = DeserializationFeature.FAIL_ON_NULL_CREATOR_PROPERTIES;
+        ObjectReader objectReader0 = objectMapper0.reader(deserializationFeature0);
+        objectReader0._verifySchemaType((FormatSchema) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test9697() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<DoubleNode> class0 = DoubleNode.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView(class0);

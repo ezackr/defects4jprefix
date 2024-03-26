@@ -79,87 +79,83 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+    public void test1010() throws Throwable {
+        Tag tag0 = Tag.valueOf("meta");
         tag0.hashCode();
-        tag0.isData();
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+    public void test1111() throws Throwable {
+        Tag tag0 = Tag.valueOf("title");
         tag0.hashCode();
-        tag0.isBlock();
     }
 
     @Test(timeout = 4000)
     public void test1212() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         tag0.hashCode();
-        tag0.formatAsBlock();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test1213() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         tag0.hashCode();
-        tag0.canContainBlock();
+        tag0.isBlock();
     }
 
     @Test(timeout = 4000)
     public void test1214() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         tag0.hashCode();
-        tag0.preserveWhitespace();
+        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
     public void test1215() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         tag0.hashCode();
+        tag0.canContainBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test1216() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        tag0.hashCode();
+        tag0.preserveWhitespace();
+    }
+
+    @Test(timeout = 4000)
+    public void test1217() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        tag0.hashCode();
         tag0.isSelfClosing();
-    }
-
-    @Test(timeout = 4000)
-    public void test1316() throws Throwable {
-        Tag tag0 = Tag.valueOf("=");
-        Tag tag1 = Tag.valueOf("4");
-        tag1.isSelfClosing();
-    }
-
-    @Test(timeout = 4000)
-    public void test1317() throws Throwable {
-        Tag tag0 = Tag.valueOf("=");
-        Tag tag1 = Tag.valueOf("4");
-        tag1.setSelfClosing();
-        tag0.setSelfClosing();
-        boolean boolean0 = tag1.equals(tag0);
-        tag1.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test1318() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         Tag tag1 = Tag.valueOf("4");
+        tag1.isSelfClosing();
+    }
+
+    @Test(timeout = 4000)
+    public void test1319() throws Throwable {
+        Tag tag0 = Tag.valueOf("=");
+        Tag tag1 = Tag.valueOf("4");
         tag1.setSelfClosing();
         tag0.setSelfClosing();
         boolean boolean0 = tag1.equals(tag0);
+        tag1.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test1419() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+    public void test1320() throws Throwable {
+        Tag tag0 = Tag.valueOf("=");
+        Tag tag1 = Tag.valueOf("4");
+        tag1.setSelfClosing();
+        tag0.setSelfClosing();
         boolean boolean0 = tag1.equals(tag0);
-        tag1.isInline();
-    }
-
-    @Test(timeout = 4000)
-    public void test1420() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag1.equals(tag0);
-        tag1.formatAsBlock();
     }
 
     @Test(timeout = 4000)
@@ -167,7 +163,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag1.equals(tag0);
-        tag1.isData();
+        tag1.isInline();
     }
 
     @Test(timeout = 4000)
@@ -175,7 +171,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag1.equals(tag0);
-        tag1.preserveWhitespace();
+        tag1.formatAsBlock();
     }
 
     @Test(timeout = 4000)
@@ -183,6 +179,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag1.equals(tag0);
+        tag1.isData();
     }
 
     @Test(timeout = 4000)
@@ -190,7 +187,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag1.equals(tag0);
-        tag1.canContainBlock();
+        tag1.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
@@ -198,29 +195,29 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag1.equals(tag0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1426() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag1.equals(tag0);
+        tag1.canContainBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test1427() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag1.equals(tag0);
         tag1.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test1526() throws Throwable {
+    public void test1528() throws Throwable {
         Tag tag0 = Tag.valueOf("title");
         Tag tag1 = Tag.valueOf("h6");
         boolean boolean0 = tag0.equals(tag1);
-    }
-
-    @Test(timeout = 4000)
-    public void test1627() throws Throwable {
-        Tag tag0 = Tag.valueOf("@,_LPe[ECX");
-        Tag tag1 = Tag.valueOf("thead");
-        boolean boolean0 = tag1.equals(tag0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1628() throws Throwable {
-        Tag tag0 = Tag.valueOf("@,_LPe[ECX");
-        Tag tag1 = Tag.valueOf("thead");
-        boolean boolean0 = tag1.equals(tag0);
-        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
@@ -228,7 +225,6 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("@,_LPe[ECX");
         Tag tag1 = Tag.valueOf("thead");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.isData();
     }
 
     @Test(timeout = 4000)
@@ -236,7 +232,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("@,_LPe[ECX");
         Tag tag1 = Tag.valueOf("thead");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.canContainBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
@@ -244,7 +240,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("@,_LPe[ECX");
         Tag tag1 = Tag.valueOf("thead");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.isSelfClosing();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
@@ -252,7 +248,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("@,_LPe[ECX");
         Tag tag1 = Tag.valueOf("thead");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.isInline();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
@@ -260,23 +256,23 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("@,_LPe[ECX");
         Tag tag1 = Tag.valueOf("thead");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.formatAsBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test1734() throws Throwable {
-        Tag tag0 = Tag.valueOf("c7o");
-        Tag tag1 = Tag.valueOf("P");
-        boolean boolean0 = tag1.equals(tag0);
         tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test1735() throws Throwable {
-        Tag tag0 = Tag.valueOf("c7o");
-        Tag tag1 = Tag.valueOf("P");
+    public void test1634() throws Throwable {
+        Tag tag0 = Tag.valueOf("@,_LPe[ECX");
+        Tag tag1 = Tag.valueOf("thead");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.preserveWhitespace();
+        tag0.isInline();
+    }
+
+    @Test(timeout = 4000)
+    public void test1635() throws Throwable {
+        Tag tag0 = Tag.valueOf("@,_LPe[ECX");
+        Tag tag1 = Tag.valueOf("thead");
+        boolean boolean0 = tag1.equals(tag0);
+        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
@@ -284,6 +280,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("c7o");
         Tag tag1 = Tag.valueOf("P");
         boolean boolean0 = tag1.equals(tag0);
+        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
@@ -291,7 +288,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("c7o");
         Tag tag1 = Tag.valueOf("P");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.canContainBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
@@ -299,7 +296,6 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("c7o");
         Tag tag1 = Tag.valueOf("P");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
@@ -307,7 +303,7 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("c7o");
         Tag tag1 = Tag.valueOf("P");
         boolean boolean0 = tag1.equals(tag0);
-        tag0.isBlock();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
@@ -315,82 +311,84 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         Tag tag0 = Tag.valueOf("c7o");
         Tag tag1 = Tag.valueOf("P");
         boolean boolean0 = tag1.equals(tag0);
+        tag0.formatAsBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test1741() throws Throwable {
+        Tag tag0 = Tag.valueOf("c7o");
+        Tag tag1 = Tag.valueOf("P");
+        boolean boolean0 = tag1.equals(tag0);
+        tag0.isBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test1742() throws Throwable {
+        Tag tag0 = Tag.valueOf("c7o");
+        Tag tag1 = Tag.valueOf("P");
+        boolean boolean0 = tag1.equals(tag0);
         tag0.isData();
     }
 
     @Test(timeout = 4000)
-    public void test1841() throws Throwable {
+    public void test1843() throws Throwable {
         Tag tag0 = Tag.valueOf("device");
         Tag tag1 = Tag.valueOf("time");
         boolean boolean0 = tag0.equals(tag1);
     }
 
     @Test(timeout = 4000)
-    public void test1942() throws Throwable {
+    public void test1944() throws Throwable {
         Tag tag0 = Tag.valueOf("title");
         Tag tag1 = Tag.valueOf("param");
         boolean boolean0 = tag0.equals(tag1);
     }
 
     @Test(timeout = 4000)
-    public void test2043() throws Throwable {
+    public void test2045() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.equals("qmW[f)a/#V");
         tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
-    public void test2044() throws Throwable {
-        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.equals("qmW[f)a/#V");
-    }
-
-    @Test(timeout = 4000)
-    public void test2045() throws Throwable {
-        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.equals("qmW[f)a/#V");
-        tag0.isData();
-    }
-
-    @Test(timeout = 4000)
     public void test2046() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.equals("qmW[f)a/#V");
-        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test2047() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.equals("qmW[f)a/#V");
-        tag0.isSelfClosing();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test2048() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.equals("qmW[f)a/#V");
-        tag0.preserveWhitespace();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test2049() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.equals("qmW[f)a/#V");
-        tag0.isInline();
-    }
-
-    @Test(timeout = 4000)
-    public void test2150() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.equals(tag0);
         tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test2151() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.equals(tag0);
+    public void test2050() throws Throwable {
+        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.equals("qmW[f)a/#V");
+        tag0.preserveWhitespace();
+    }
+
+    @Test(timeout = 4000)
+    public void test2051() throws Throwable {
+        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.equals("qmW[f)a/#V");
         tag0.isInline();
     }
 
@@ -398,44 +396,58 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
     public void test2152() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.equals(tag0);
-        tag0.preserveWhitespace();
+        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test2153() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.equals(tag0);
-        tag0.canContainBlock();
+        tag0.isInline();
     }
 
     @Test(timeout = 4000)
     public void test2154() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.equals(tag0);
-        tag0.isData();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test2155() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.equals(tag0);
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test2156() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.equals(tag0);
+        tag0.isData();
+    }
+
+    @Test(timeout = 4000)
+    public void test2157() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.equals(tag0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2158() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.equals(tag0);
         tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
-    public void test2257() throws Throwable {
+    public void test2259() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test2258() throws Throwable {
+    public void test2260() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         Tag tag1 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         tag0.setSelfClosing();
@@ -443,181 +455,167 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2359() throws Throwable {
+    public void test2361() throws Throwable {
         boolean boolean0 = Tag.isKnownTag("tr");
     }
 
     @Test(timeout = 4000)
-    public void test2460() throws Throwable {
+    public void test2462() throws Throwable {
         boolean boolean0 = Tag.isKnownTag(".K0");
     }
 
     @Test(timeout = 4000)
-    public void test2561() throws Throwable {
+    public void test2563() throws Throwable {
         Tag tag0 = Tag.valueOf("title");
         boolean boolean0 = tag0.isKnownTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test2662() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.isKnownTag();
-        tag0.isSelfClosing();
-    }
-
-    @Test(timeout = 4000)
-    public void test2663() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.isKnownTag();
-        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test2664() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isKnownTag();
+        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test2665() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isKnownTag();
-        tag0.canContainBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test2666() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isKnownTag();
-        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
     public void test2667() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isKnownTag();
-        tag0.isBlock();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test2668() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isKnownTag();
+        tag0.formatAsBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test2669() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.isKnownTag();
+        tag0.isBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test2670() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.isKnownTag();
         tag0.isData();
     }
 
     @Test(timeout = 4000)
-    public void test2769() throws Throwable {
+    public void test2771() throws Throwable {
         Tag tag0 = Tag.valueOf("U{`I:]TtR#tRkv");
         tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test2770() throws Throwable {
+    public void test2772() throws Throwable {
         Tag tag0 = Tag.valueOf("U{`I:]TtR#tRkv");
         tag0.setSelfClosing();
         boolean boolean0 = tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test2871() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.isSelfClosing();
-        tag0.isInline();
-    }
-
-    @Test(timeout = 4000)
-    public void test2872() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.isSelfClosing();
-        tag0.canContainBlock();
-    }
-
-    @Test(timeout = 4000)
     public void test2873() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isSelfClosing();
-        tag0.preserveWhitespace();
+        tag0.isInline();
     }
 
     @Test(timeout = 4000)
     public void test2874() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isSelfClosing();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test2875() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isSelfClosing();
-        tag0.isData();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test2876() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isSelfClosing();
+    }
+
+    @Test(timeout = 4000)
+    public void test2877() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.isSelfClosing();
+        tag0.isData();
+    }
+
+    @Test(timeout = 4000)
+    public void test2878() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.isSelfClosing();
         tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
-    public void test2977() throws Throwable {
+    public void test2979() throws Throwable {
         Tag tag0 = Tag.valueOf("meta");
         boolean boolean0 = tag0.isSelfClosing();
-    }
-
-    @Test(timeout = 4000)
-    public void test3078() throws Throwable {
-        Tag tag0 = Tag.valueOf("=");
-        boolean boolean0 = tag0.isData();
-        tag0.formatAsBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test3079() throws Throwable {
-        Tag tag0 = Tag.valueOf("=");
-        boolean boolean0 = tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test3080() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         boolean boolean0 = tag0.isData();
-        tag0.isSelfClosing();
+        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
     public void test3081() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         boolean boolean0 = tag0.isData();
-        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test3082() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         boolean boolean0 = tag0.isData();
-        tag0.isInline();
+        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test3083() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         boolean boolean0 = tag0.isData();
-        tag0.canContainBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
-    public void test3184() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.isInline();
-        tag0.formatAsBlock();
+    public void test3084() throws Throwable {
+        Tag tag0 = Tag.valueOf("=");
+        boolean boolean0 = tag0.isData();
+        tag0.isInline();
     }
 
     @Test(timeout = 4000)
-    public void test3185() throws Throwable {
-        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
-        boolean boolean0 = tag0.isInline();
+    public void test3085() throws Throwable {
+        Tag tag0 = Tag.valueOf("=");
+        boolean boolean0 = tag0.isData();
         tag0.canContainBlock();
     }
 
@@ -625,260 +623,274 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
     public void test3186() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isInline();
+        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
     public void test3187() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isInline();
-        tag0.isSelfClosing();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test3188() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isInline();
-        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test3189() throws Throwable {
         Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
         boolean boolean0 = tag0.isInline();
+        tag0.isSelfClosing();
+    }
+
+    @Test(timeout = 4000)
+    public void test3190() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.isInline();
+        tag0.isData();
+    }
+
+    @Test(timeout = 4000)
+    public void test3191() throws Throwable {
+        Tag tag0 = Tag.valueOf("#|o*(7LY^}'R#m4))");
+        boolean boolean0 = tag0.isInline();
         tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
-    public void test3290() throws Throwable {
+    public void test3292() throws Throwable {
         Tag tag0 = Tag.valueOf("fieldset");
         boolean boolean0 = tag0.isInline();
-    }
-
-    @Test(timeout = 4000)
-    public void test3391() throws Throwable {
-        Tag tag0 = Tag.valueOf("c7o");
-        boolean boolean0 = tag0.canContainBlock();
-        tag0.preserveWhitespace();
-    }
-
-    @Test(timeout = 4000)
-    public void test3392() throws Throwable {
-        Tag tag0 = Tag.valueOf("c7o");
-        boolean boolean0 = tag0.canContainBlock();
-        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test3393() throws Throwable {
         Tag tag0 = Tag.valueOf("c7o");
         boolean boolean0 = tag0.canContainBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test3394() throws Throwable {
         Tag tag0 = Tag.valueOf("c7o");
         boolean boolean0 = tag0.canContainBlock();
-        tag0.formatAsBlock();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test3395() throws Throwable {
         Tag tag0 = Tag.valueOf("c7o");
         boolean boolean0 = tag0.canContainBlock();
-        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test3396() throws Throwable {
         Tag tag0 = Tag.valueOf("c7o");
         boolean boolean0 = tag0.canContainBlock();
+        tag0.formatAsBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test3397() throws Throwable {
+        Tag tag0 = Tag.valueOf("c7o");
+        boolean boolean0 = tag0.canContainBlock();
+        tag0.isSelfClosing();
+    }
+
+    @Test(timeout = 4000)
+    public void test3398() throws Throwable {
+        Tag tag0 = Tag.valueOf("c7o");
+        boolean boolean0 = tag0.canContainBlock();
         tag0.isInline();
-    }
-
-    @Test(timeout = 4000)
-    public void test3497() throws Throwable {
-        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.isBlock();
-        tag0.isData();
-    }
-
-    @Test(timeout = 4000)
-    public void test3498() throws Throwable {
-        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.isBlock();
-        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test3499() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.isBlock();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test34100() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.isBlock();
-        tag0.formatAsBlock();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test34101() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.isBlock();
-        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test34102() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.isBlock();
-        tag0.preserveWhitespace();
+        tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
-    public void test35103() throws Throwable {
-        Tag tag0 = Tag.valueOf("title");
-        String string0 = tag0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test36104() throws Throwable {
-        Tag tag0 = Tag.valueOf("=");
-        tag0.getName();
+    public void test34103() throws Throwable {
+        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.isBlock();
         tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
-    public void test36105() throws Throwable {
-        Tag tag0 = Tag.valueOf("=");
-        tag0.getName();
+    public void test34104() throws Throwable {
+        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.isBlock();
         tag0.preserveWhitespace();
+    }
+
+    @Test(timeout = 4000)
+    public void test35105() throws Throwable {
+        Tag tag0 = Tag.valueOf("title");
+        String string0 = tag0.toString();
     }
 
     @Test(timeout = 4000)
     public void test36106() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         tag0.getName();
-        tag0.isData();
+        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test36107() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         tag0.getName();
-        tag0.formatAsBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test36108() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         tag0.getName();
-        tag0.canContainBlock();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test36109() throws Throwable {
         Tag tag0 = Tag.valueOf("=");
         tag0.getName();
+        tag0.formatAsBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test36110() throws Throwable {
+        Tag tag0 = Tag.valueOf("=");
+        tag0.getName();
+        tag0.canContainBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test36111() throws Throwable {
+        Tag tag0 = Tag.valueOf("=");
+        tag0.getName();
         tag0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test37110() throws Throwable {
-        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.formatAsBlock();
-        tag0.preserveWhitespace();
-    }
-
-    @Test(timeout = 4000)
-    public void test37111() throws Throwable {
-        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.formatAsBlock();
-        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test37112() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.formatAsBlock();
-        tag0.canContainBlock();
+        tag0.preserveWhitespace();
     }
 
     @Test(timeout = 4000)
     public void test37113() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.formatAsBlock();
-        tag0.isInline();
+        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test37114() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.formatAsBlock();
-        tag0.isData();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test37115() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.formatAsBlock();
+        tag0.isInline();
     }
 
     @Test(timeout = 4000)
-    public void test38116() throws Throwable {
+    public void test37116() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.formatAsBlock();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
-    public void test38117() throws Throwable {
+    public void test37117() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.preserveWhitespace();
-        tag0.canContainBlock();
+        boolean boolean0 = tag0.formatAsBlock();
     }
 
     @Test(timeout = 4000)
     public void test38118() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
-        boolean boolean0 = tag0.preserveWhitespace();
-        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test38119() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.preserveWhitespace();
+        tag0.canContainBlock();
     }
 
     @Test(timeout = 4000)
     public void test38120() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.preserveWhitespace();
-        tag0.formatAsBlock();
+        tag0.isData();
     }
 
     @Test(timeout = 4000)
     public void test38121() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.preserveWhitespace();
-        tag0.isSelfClosing();
     }
 
     @Test(timeout = 4000)
     public void test38122() throws Throwable {
         Tag tag0 = Tag.valueOf("qmW[f)a/#V");
         boolean boolean0 = tag0.preserveWhitespace();
+        tag0.formatAsBlock();
+    }
+
+    @Test(timeout = 4000)
+    public void test38123() throws Throwable {
+        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.preserveWhitespace();
+        tag0.isSelfClosing();
+    }
+
+    @Test(timeout = 4000)
+    public void test38124() throws Throwable {
+        Tag tag0 = Tag.valueOf("qmW[f)a/#V");
+        boolean boolean0 = tag0.preserveWhitespace();
         tag0.isBlock();
     }
 
     @Test(timeout = 4000)
-    public void test39123() throws Throwable {
+    public void test39125() throws Throwable {
         Tag tag0 = Tag.valueOf("device");
         boolean boolean0 = tag0.isData();
     }
 
     @Test(timeout = 4000)
-    public void test39124() throws Throwable {
+    public void test39126() throws Throwable {
         Tag tag0 = Tag.valueOf("device");
         boolean boolean0 = tag0.isData();
         tag0.isEmpty();

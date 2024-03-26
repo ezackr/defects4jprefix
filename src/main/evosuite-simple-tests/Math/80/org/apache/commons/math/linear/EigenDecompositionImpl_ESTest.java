@@ -10042,4 +10042,12 @@ public class EigenDecompositionImpl_ESTest extends EigenDecompositionImpl_ESTest
         eigenDecompositionImpl0.getImagEigenvalues();
         assertEquals(0.0, eigenDecompositionImpl0.getDeterminant(), 0.01);
     }
+
+    @Test(timeout = 4000)
+    public void test45886() throws Throwable {
+        Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(52, 52);
+        EigenDecompositionImpl eigenDecompositionImpl0 = new EigenDecompositionImpl(array2DRowRealMatrix0, 4.186838380410498E-10);
+        // Undeclared exception!
+        eigenDecompositionImpl0.getV();
+    }
 }

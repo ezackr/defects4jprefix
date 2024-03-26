@@ -26,10 +26,10 @@ public class SpyAnnotationEngine_ESTest extends SpyAnnotationEngine_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test11() throws Throwable {
         SpyAnnotationEngine spyAnnotationEngine0 = new SpyAnnotationEngine();
         Class<String> class0 = String.class;
-        Class<Object>[] classArray0 = (Class<Object>[]) Array.newInstance(Class.class, 0);
+        spyAnnotationEngine0.process(class0, class0);
     }
 
     @Test(timeout = 4000)
@@ -40,7 +40,7 @@ public class SpyAnnotationEngine_ESTest extends SpyAnnotationEngine_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test33() throws Throwable {
+    public void test34() throws Throwable {
         SpyAnnotationEngine spyAnnotationEngine0 = new SpyAnnotationEngine();
         Class<String> class0 = String.class;
         Class<Object>[] classArray0 = (Class<Object>[]) Array.newInstance(Class.class, 1);

@@ -24,7 +24,26 @@ import org.junit.runner.RunWith;
 public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test020() throws Throwable {
+    public void test000() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
+        InlineFunctions inlineFunctions0 = new InlineFunctions(compiler0, supplier0, false, false, false);
+        inlineFunctions0.enableSpecialization((SpecializeModule.SpecializationState) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
+        InlineFunctions inlineFunctions0 = new InlineFunctions(compiler0, supplier0, false, false, false);
+        Node node0 = Node.newNumber(0.0, 37, 37);
+        JSModule jSModule0 = new JSModule("Inline fuction: ");
+        FunctionInjector.InliningMode functionInjector_InliningMode0 = FunctionInjector.InliningMode.DIRECT;
+        InlineFunctions.Reference inlineFunctions_Reference0 = inlineFunctions0.new Reference(node0, jSModule0, functionInjector_InliningMode0, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         InlineFunctions inlineFunctions0 = null;
         try {
             inlineFunctions0 = new InlineFunctions((AbstractCompiler) null, (Supplier<String>) null, false, false, false);
@@ -38,7 +57,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test033() throws Throwable {
         Compiler compiler0 = new Compiler();
         InlineFunctions inlineFunctions0 = null;
         try {
@@ -53,7 +72,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test044() throws Throwable {
         Compiler compiler0 = new Compiler();
         AbstractCompiler.LifeCycleStage abstractCompiler_LifeCycleStage0 = AbstractCompiler.LifeCycleStage.NORMALIZED_OBFUSCATED;
         compiler0.setLifeCycleStage(abstractCompiler_LifeCycleStage0);
@@ -65,7 +84,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         AbstractCompiler.LifeCycleStage abstractCompiler_LifeCycleStage0 = AbstractCompiler.LifeCycleStage.NORMALIZED_OBFUSCATED;
         compiler0.setLifeCycleStage(abstractCompiler_LifeCycleStage0);
@@ -90,7 +109,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test066() throws Throwable {
         Node node0 = Node.newNumber(Double.NEGATIVE_INFINITY);
         // Undeclared exception!
         try {
@@ -105,7 +124,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         Node node0 = new Node(38, 38, 38);
         Node node1 = new Node(118, node0, node0, node0);
         boolean boolean0 = InlineFunctions.isCandidateUsage(node0);
@@ -113,7 +132,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         Node node0 = new Node(38);
         Node node1 = new Node(2, node0, node0, node0);
         boolean boolean0 = InlineFunctions.isCandidateUsage(node0);
@@ -121,7 +140,7 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         Node node0 = new Node(38);
         Node node1 = new Node(105, node0, node0, node0);
         boolean boolean0 = InlineFunctions.isCandidateUsage(node0);
@@ -129,10 +148,26 @@ public class InlineFunctions_ESTest extends InlineFunctions_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         Node node0 = new Node(38, 38, 38);
         Node node1 = new Node(37, node0, node0, node0);
         boolean boolean0 = InlineFunctions.isCandidateUsage(node0);
         assertTrue(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
+        InlineFunctions inlineFunctions0 = new InlineFunctions(compiler0, supplier0, false, false, false);
+        inlineFunctions0.trimCanidatesUsingOnCost();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Supplier<String> supplier0 = compiler0.getUniqueNameIdSupplier();
+        InlineFunctions inlineFunctions0 = new InlineFunctions(compiler0, supplier0, false, false, false);
+        inlineFunctions0.removeInlinedFunctions();
     }
 }

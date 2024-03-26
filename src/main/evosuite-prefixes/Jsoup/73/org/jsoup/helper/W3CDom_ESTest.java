@@ -169,7 +169,16 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1616() throws Throwable {
+        W3CDom w3CDom0 = new W3CDom();
+        Document document0 = Document.createShell("8]*ZQD");
+        org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
+        W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder(document1);
+        w3CDom_W3CBuilder0.head((Node) null, (-341));
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell("");
         org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
@@ -177,7 +186,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder((org.w3c.dom.Document) null);
         Tag tag0 = Tag.valueOf("!&{`(r6rww]'I\"");
         Attributes attributes0 = new Attributes();

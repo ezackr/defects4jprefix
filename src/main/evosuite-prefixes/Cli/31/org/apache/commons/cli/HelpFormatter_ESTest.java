@@ -53,12 +53,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test004() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.getWidth();
-    }
-
-    @Test(timeout = 4000)
     public void test005() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.getWidth();
@@ -70,12 +64,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.getWidth();
         helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test007() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.getWidth();
     }
 
     @Test(timeout = 4000)
@@ -92,12 +80,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0110() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setLongOptPrefix("--");
-    }
-
-    @Test(timeout = 4000)
     public void test0111() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setLongOptPrefix("--");
@@ -109,12 +91,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setLongOptPrefix("--");
         helpFormatter0.getSyntaxPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0113() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setLongOptPrefix("--");
     }
 
     @Test(timeout = 4000)
@@ -159,12 +135,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0220() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.getDescPadding();
-    }
-
-    @Test(timeout = 4000)
     public void test0221() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.getDescPadding();
@@ -176,12 +146,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.getDescPadding();
         helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test0223() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.getDescPadding();
     }
 
     @Test(timeout = 4000)
@@ -212,12 +176,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0528() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setLeftPadding(1);
-    }
-
-    @Test(timeout = 4000)
     public void test0529() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setLeftPadding(1);
@@ -243,12 +201,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setLeftPadding(1);
         helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test0533() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setLeftPadding(1);
     }
 
     @Test(timeout = 4000)
@@ -289,18 +241,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setSyntaxPrefix("usage: ");
         helpFormatter0.getArgName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0840() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setSyntaxPrefix("usage: ");
-    }
-
-    @Test(timeout = 4000)
-    public void test0841() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setSyntaxPrefix("usage: ");
     }
 
     @Test(timeout = 4000)
@@ -347,18 +287,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1048() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test1049() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
     public void test1050() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptSeparator();
@@ -370,12 +298,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptSeparator();
         helpFormatter0.getArgName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1052() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptSeparator();
     }
 
     @Test(timeout = 4000)
@@ -406,12 +328,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1157() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setWidth(74);
-    }
-
-    @Test(timeout = 4000)
     public void test1158() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setWidth(74);
@@ -423,12 +339,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setWidth(74);
         helpFormatter0.getLongOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1160() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setWidth(74);
     }
 
     @Test(timeout = 4000)
@@ -452,22 +362,10 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1264() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setOptPrefix("-");
-    }
-
-    @Test(timeout = 4000)
     public void test1265() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptPrefix("-");
         helpFormatter0.getOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1266() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setOptPrefix("-");
     }
 
     @Test(timeout = 4000)
@@ -512,12 +410,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1373() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.getLeftPadding();
-    }
-
-    @Test(timeout = 4000)
     public void test1374() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.getLeftPadding();
@@ -536,12 +428,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.getLeftPadding();
         helpFormatter0.getSyntaxPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1377() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.getLeftPadding();
     }
 
     @Test(timeout = 4000)
@@ -580,18 +466,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1783() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getNewLine();
-    }
-
-    @Test(timeout = 4000)
-    public void test1784() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getNewLine();
-    }
-
-    @Test(timeout = 4000)
     public void test1785() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
@@ -603,12 +477,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
         helpFormatter0.getArgName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1787() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getNewLine();
     }
 
     @Test(timeout = 4000)
@@ -638,13 +506,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1892() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        Options options0 = new Options();
-        helpFormatter0.printHelp("R{nqH9d", options0, true);
-    }
-
-    @Test(timeout = 4000)
     public void test1993() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
@@ -653,18 +514,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test1994() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1995() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1996() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
     }
@@ -681,12 +530,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
         helpFormatter0.getSyntaxPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1999() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptPrefix();
     }
 
     @Test(timeout = 4000)
@@ -717,12 +560,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test20104() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getSyntaxPrefix();
-    }
-
-    @Test(timeout = 4000)
     public void test20105() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
@@ -730,22 +567,10 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test20106() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getSyntaxPrefix();
-    }
-
-    @Test(timeout = 4000)
     public void test20107() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
         helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test20108() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getSyntaxPrefix();
     }
 
     @Test(timeout = 4000)
@@ -759,18 +584,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
         helpFormatter0.getSyntaxPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test21111() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test21112() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getOptPrefix();
     }
 
     @Test(timeout = 4000)
@@ -792,12 +605,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
         helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test21116() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getOptPrefix();
     }
 
     @Test(timeout = 4000)
@@ -850,25 +657,11 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test23123() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        helpFormatter0.setOptionComparator(comparator0);
-    }
-
-    @Test(timeout = 4000)
     public void test23124() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         helpFormatter0.setOptionComparator(comparator0);
         helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test23125() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        helpFormatter0.setOptionComparator(comparator0);
     }
 
     @Test(timeout = 4000)
@@ -896,18 +689,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptionComparator((Comparator) null);
         helpFormatter0.getOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test24130() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setOptionComparator((Comparator) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test24131() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setOptionComparator((Comparator) null);
     }
 
     @Test(timeout = 4000)
@@ -942,11 +723,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         Options options0 = new Options();
         helpFormatter0.printHelp(3, " ", "--", options0, " ");
         helpFormatter0.getOptPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test28137() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
     }
 
     @Test(timeout = 4000)
@@ -1025,27 +801,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test30144() throws Throwable {
-        OptionGroup optionGroup0 = new OptionGroup();
-        Option option0 = new Option("ubU", "Oa");
-        OptionGroup optionGroup1 = optionGroup0.addOption(option0);
-        Options options0 = new Options();
-        Options options1 = options0.addOptionGroup(optionGroup1);
-        optionGroup1.setRequired(true);
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.printHelp("Oa", "Oa", options1, "Oa", true);
-    }
-
-    @Test(timeout = 4000)
     public void test31145() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        Options options0 = new Options();
-        Options options1 = options0.addOption((String) null, "@} P0M+z<_W6%q,Ke", true, "usage: ");
-        helpFormatter0.printHelp("usage: ", "@} P0M+z<_W6%q,Ke", options1, "@} P0M+z<_W6%q,Ke", true);
-    }
-
-    @Test(timeout = 4000)
-    public void test31146() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Options options1 = options0.addOption((String) null, "@} P0M+z<_W6%q,Ke", true, "usage: ");
@@ -1091,13 +847,6 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test35151() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        Options options0 = new Options();
-        helpFormatter0.printHelp("w1J^j", "usage: ", options0, "[ Options: [ short java.util.HashMap@0000000005 ] [ long {\n=[ option: arg \n  ::   ]} ]", false);
-    }
-
-    @Test(timeout = 4000)
     public void test36152() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "usage: ");
@@ -1105,15 +854,18 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test38153() throws Throwable {
+    public void test37153() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.findWrapPos("\n", (-1048), (-1048));
+        MockFile mockFile0 = new MockFile("\n");
+        MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockFile0);
+        // Undeclared exception!
+        helpFormatter0.printWrapped((PrintWriter) mockPrintWriter0, 0, " ");
     }
 
     @Test(timeout = 4000)
-    public void test39154() throws Throwable {
+    public void test38154() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
+        helpFormatter0.findWrapPos("\n", (-1048), (-1048));
     }
 
     @Test(timeout = 4000)
@@ -1123,29 +875,17 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test39156() throws Throwable {
+    public void test39157() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
         helpFormatter0.getLongOptPrefix();
     }
 
     @Test(timeout = 4000)
-    public void test39157() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
-    }
-
-    @Test(timeout = 4000)
-    public void test40158() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim((String) null);
-        helpFormatter0.getOptPrefix();
-    }
-
-    @Test(timeout = 4000)
     public void test40159() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
+        helpFormatter0.getOptPrefix();
     }
 
     @Test(timeout = 4000)
@@ -1155,94 +895,64 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test40161() throws Throwable {
+    public void test40162() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
         helpFormatter0.getLongOptPrefix();
     }
 
     @Test(timeout = 4000)
-    public void test40162() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test40163() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test40164() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim((String) null);
-        helpFormatter0.getLongOptSeparator();
-    }
-
-    @Test(timeout = 4000)
     public void test40165() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        helpFormatter0.getArgName();
+        helpFormatter0.getLongOptSeparator();
     }
 
     @Test(timeout = 4000)
     public void test40166() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        helpFormatter0.getSyntaxPrefix();
+        helpFormatter0.getArgName();
     }
 
     @Test(timeout = 4000)
-    public void test41167() throws Throwable {
+    public void test40167() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim(" ");
+        String string0 = helpFormatter0.rtrim((String) null);
+        helpFormatter0.getSyntaxPrefix();
     }
 
     @Test(timeout = 4000)
     public void test41168() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim(" ");
-        helpFormatter0.getOptPrefix();
     }
 
     @Test(timeout = 4000)
     public void test41169() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim(" ");
-    }
-
-    @Test(timeout = 4000)
-    public void test41170() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim(" ");
-        helpFormatter0.getSyntaxPrefix();
+        helpFormatter0.getOptPrefix();
     }
 
     @Test(timeout = 4000)
     public void test41171() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim(" ");
-    }
-
-    @Test(timeout = 4000)
-    public void test41172() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim(" ");
-        helpFormatter0.getArgName();
+        helpFormatter0.getSyntaxPrefix();
     }
 
     @Test(timeout = 4000)
     public void test41173() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim(" ");
-        helpFormatter0.getLongOptSeparator();
+        helpFormatter0.getArgName();
     }
 
     @Test(timeout = 4000)
     public void test41174() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim(" ");
+        helpFormatter0.getLongOptSeparator();
     }
 }

@@ -28,7 +28,18 @@ import org.junit.runner.RunWith;
 public class DisambiguateProperties_ESTest extends DisambiguateProperties_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.getErrorManager();
+        TightenTypes tightenTypes0 = new TightenTypes(compiler0);
+        CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
+        Map<String, CheckLevel> map0 = compilerOptions0.propertyInvalidationErrors;
+        DisambiguateProperties<ConcreteType> disambiguateProperties0 = DisambiguateProperties.forConcreteTypeSystem(compiler0, tightenTypes0, map0);
+        disambiguateProperties0.renameProperties();
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -43,7 +54,12 @@ public class DisambiguateProperties_ESTest extends DisambiguateProperties_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test31() throws Throwable {
+    public void test22() throws Throwable {
+        DisambiguateProperties.Warnings disambiguateProperties_Warnings0 = new DisambiguateProperties.Warnings();
+    }
+
+    @Test(timeout = 4000)
+    public void test33() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         TightenTypes tightenTypes0 = new TightenTypes(compiler0);
@@ -55,7 +71,7 @@ public class DisambiguateProperties_ESTest extends DisambiguateProperties_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test42() throws Throwable {
+    public void test44() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -74,7 +90,7 @@ public class DisambiguateProperties_ESTest extends DisambiguateProperties_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test53() throws Throwable {
+    public void test55() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getErrorManager();
         CompilerOptions compilerOptions0 = new CompilerOptions();

@@ -1430,26 +1430,12 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test48181() throws Throwable {
-        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
-        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry();
-        zipArchiveEntry1.equals((Object) zipArchiveEntry0);
-    }
-
-    @Test(timeout = 4000)
     public void test48182() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry();
         zipArchiveEntry1.setCrc(3);
         zipArchiveEntry1.equals(zipArchiveEntry0);
         zipArchiveEntry0.getPlatform();
-    }
-
-    @Test(timeout = 4000)
-    public void test49183() throws Throwable {
-        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
-        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry();
-        zipArchiveEntry1.equals((Object) zipArchiveEntry0);
     }
 
     @Test(timeout = 4000)

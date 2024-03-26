@@ -193,7 +193,25 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0032() throws Throwable {
+    public void test0022() throws Throwable {
+        double[][] doubleArray0 = new double[1][7];
+        double[] doubleArray1 = new double[8];
+        doubleArray1[2] = 0.0;
+        doubleArray1[3] = 2992.2094992533757;
+        doubleArray1[4] = (-320.9347322552927);
+        doubleArray1[6] = 623.349;
+        doubleArray1[7] = 842.78474997;
+        doubleArray0[0] = doubleArray1;
+        CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset(":/pX-Jfo^1pNyn", "", doubleArray0);
+        ((DefaultCategoryDataset) categoryDataset0).getColumnCount();
+        DatasetUtilities.findMinimumRangeValue(categoryDataset0);
+        SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset("");
+        simpleHistogramDataset0.validateObject();
+        DatasetUtilities.findDomainBounds((XYDataset) simpleHistogramDataset0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test0033() throws Throwable {
         DefaultMultiValueCategoryDataset defaultMultiValueCategoryDataset0 = new DefaultMultiValueCategoryDataset();
         TableOrder tableOrder0 = TableOrder.BY_ROW;
         CategoryToPieDataset categoryToPieDataset0 = new CategoryToPieDataset(defaultMultiValueCategoryDataset0, tableOrder0, 1830);
@@ -213,7 +231,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0043() throws Throwable {
+    public void test0044() throws Throwable {
         Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
         JDBCCategoryDataset jDBCCategoryDataset0 = new JDBCCategoryDataset(connection0);
         Year year0 = new Year((-689));
@@ -240,7 +258,107 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0094() throws Throwable {
+    public void test0055() throws Throwable {
+        double[][] doubleArray0 = new double[7][1];
+        double[] doubleArray1 = new double[2];
+        doubleArray1[0] = Double.POSITIVE_INFINITY;
+        doubleArray1[1] = 1.5;
+        doubleArray0[0] = doubleArray1;
+        double[] doubleArray2 = new double[5];
+        doubleArray2[0] = (-1770.07);
+        doubleArray2[1] = (-4291.547029677244);
+        doubleArray2[2] = Double.POSITIVE_INFINITY;
+        doubleArray2[3] = (-2478.4);
+        doubleArray2[4] = 1.5;
+        doubleArray0[1] = doubleArray2;
+        double[] doubleArray3 = new double[2];
+        doubleArray3[0] = (-1770.07);
+        doubleArray3[1] = (-4291.547029677244);
+        doubleArray0[2] = doubleArray3;
+        double[] doubleArray4 = new double[6];
+        doubleArray4[0] = (-4291.547029677244);
+        doubleArray4[1] = Double.POSITIVE_INFINITY;
+        doubleArray4[2] = 1.5;
+        doubleArray4[3] = Double.POSITIVE_INFINITY;
+        doubleArray4[4] = 1.5;
+        doubleArray4[5] = 1.5;
+        doubleArray0[3] = doubleArray4;
+        double[] doubleArray5 = new double[5];
+        doubleArray5[0] = (-1770.07);
+        doubleArray5[1] = (-4291.547029677244);
+        doubleArray5[2] = (-1770.07);
+        doubleArray5[3] = (-4291.547029677244);
+        doubleArray5[4] = (-2478.4);
+        doubleArray0[4] = doubleArray5;
+        double[] doubleArray6 = new double[4];
+        doubleArray6[0] = Double.POSITIVE_INFINITY;
+        doubleArray6[1] = (-2478.4);
+        doubleArray6[2] = (-2478.4);
+        doubleArray6[3] = 1.5;
+        doubleArray0[5] = doubleArray6;
+        double[] doubleArray7 = new double[5];
+        doubleArray7[0] = (-4291.547029677244);
+        doubleArray7[1] = Double.POSITIVE_INFINITY;
+        doubleArray7[2] = (-4291.547029677244);
+        doubleArray7[3] = (-1770.07);
+        doubleArray7[4] = (-1770.07);
+        doubleArray0[6] = doubleArray7;
+        CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset("", "", doubleArray0);
+        DatasetUtilities.findRangeBounds(categoryDataset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0066() throws Throwable {
+        double[][] doubleArray0 = new double[1][7];
+        double[] doubleArray1 = new double[8];
+        doubleArray1[0] = 411.805232725492;
+        doubleArray1[1] = (-153.30124);
+        doubleArray1[2] = 3344.261;
+        doubleArray1[3] = 2992.2094992533757;
+        doubleArray1[4] = (-321.14284);
+        doubleArray1[5] = Double.NaN;
+        doubleArray1[6] = 623.349;
+        doubleArray1[7] = 842.78474997;
+        doubleArray0[0] = doubleArray1;
+        DefaultCategoryDataset defaultCategoryDataset0 = (DefaultCategoryDataset) DatasetUtilities.createCategoryDataset(":/pX-Jfo^1pNyn", "", doubleArray0);
+        defaultCategoryDataset0.setSelectionState((CategoryDatasetSelectionState) null);
+        DatasetUtilities.iterateRangeBounds((CategoryDataset) defaultCategoryDataset0);
+        DatasetUtilities.iterateRangeBounds((CategoryDataset) defaultCategoryDataset0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test0077() throws Throwable {
+        DefaultStatisticalCategoryDataset defaultStatisticalCategoryDataset0 = new DefaultStatisticalCategoryDataset();
+        DatasetUtilities.findMinimumRangeValue((CategoryDataset) defaultStatisticalCategoryDataset0);
+        defaultStatisticalCategoryDataset0.clear();
+        Vector<JDBCXYDataset> vector0 = new Vector<JDBCXYDataset>();
+        DatasetUtilities.findRangeBounds((CategoryDataset) defaultStatisticalCategoryDataset0, (List) vector0, true);
+        Minute minute0 = new Minute();
+        TimeSeries timeSeries0 = new TimeSeries(minute0);
+        TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection(timeSeries0, (TimeZone) null);
+        DatasetUtilities.iterateDomainBounds((XYDataset) timeSeriesCollection0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0088() throws Throwable {
+        double[][] doubleArray0 = new double[1][7];
+        double[] doubleArray1 = new double[8];
+        doubleArray1[0] = 411.805232725492;
+        doubleArray1[1] = (-153.30124);
+        doubleArray1[2] = 3344.261;
+        doubleArray1[3] = 2992.2094992533757;
+        doubleArray1[4] = (-321.14284);
+        doubleArray1[5] = Double.NaN;
+        doubleArray1[6] = 623.349;
+        doubleArray1[7] = 842.78474997;
+        doubleArray0[0] = doubleArray1;
+        CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset(":/pX-Jfo^1pNyn", "", doubleArray0);
+        DatasetUtilities.iterateRangeBounds(categoryDataset0);
+        DatasetUtilities.iterateCategoryRangeBounds(categoryDataset0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test0099() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         int int0 = (-1954);
         // Undeclared exception!
@@ -256,7 +374,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0105() throws Throwable {
+    public void test01010() throws Throwable {
         double[][] doubleArray0 = new double[1][7];
         double[] doubleArray1 = new double[8];
         doubleArray1[0] = 411.805232725492;
@@ -282,7 +400,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0116() throws Throwable {
+    public void test01111() throws Throwable {
         TableXYDataset tableXYDataset0 = null;
         // Undeclared exception!
         try {
@@ -297,7 +415,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0127() throws Throwable {
+    public void test01212() throws Throwable {
         double[][] doubleArray0 = new double[0][6];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);
         defaultIntervalCategoryDataset0.validateObject();
@@ -334,7 +452,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0138() throws Throwable {
+    public void test01313() throws Throwable {
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(true);
         XYDatasetTableModel xYDatasetTableModel0 = new XYDatasetTableModel();
         defaultTableXYDataset0.removeChangeListener(xYDatasetTableModel0);
@@ -354,7 +472,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0149() throws Throwable {
+    public void test01414() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         IntervalXYDelegate intervalXYDelegate0 = new IntervalXYDelegate(xYSeriesCollection0, false);
         intervalXYDelegate0.setAutoWidth(true);
@@ -375,7 +493,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test01510() throws Throwable {
+    public void test01515() throws Throwable {
         DefaultBoxAndWhiskerCategoryDataset defaultBoxAndWhiskerCategoryDataset0 = new DefaultBoxAndWhiskerCategoryDataset();
         DatasetUtilities.findRangeBounds((CategoryDataset) defaultBoxAndWhiskerCategoryDataset0, true);
         LineFunction2D lineFunction2D0 = new LineFunction2D(3547.0, 250.3764192399988);
@@ -396,7 +514,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test01611() throws Throwable {
+    public void test01616() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);
         defaultIntervalCategoryDataset0.validateObject();
@@ -421,7 +539,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test01712() throws Throwable {
+    public void test01717() throws Throwable {
         double[][] doubleArray0 = new double[4][9];
         double[] doubleArray1 = new double[4];
         doubleArray1[0] = 2285.945769167;
@@ -461,7 +579,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test01813() throws Throwable {
+    public void test01818() throws Throwable {
         XYDataset xYDataset0 = null;
         Stack<Float> stack0 = new Stack<Float>();
         Float float0 = new Float(0.0);
@@ -484,7 +602,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test01914() throws Throwable {
+    public void test01919() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findRangeBounds((CategoryDataset) null);
@@ -498,7 +616,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02015() throws Throwable {
+    public void test02020() throws Throwable {
         Comparable<IntervalXYDelegate>[] comparableArray0 = (Comparable<IntervalXYDelegate>[]) Array.newInstance(Comparable.class, 1);
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(4L);
         RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
@@ -535,7 +653,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02116() throws Throwable {
+    public void test02121() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         LinkedList<XYBarDataset> linkedList0 = new LinkedList<XYBarDataset>();
         DatasetUtilities.findDomainBounds((XYDataset) xYSeriesCollection0, (List) linkedList0, true);
@@ -557,7 +675,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02217() throws Throwable {
+    public void test02222() throws Throwable {
         DefaultWindDataset defaultWindDataset0 = new DefaultWindDataset();
         // Undeclared exception!
         try {
@@ -572,7 +690,21 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02418() throws Throwable {
+    public void test02323() throws Throwable {
+        DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(true);
+        XYDatasetTableModel xYDatasetTableModel0 = new XYDatasetTableModel();
+        defaultTableXYDataset0.removeChangeListener(xYDatasetTableModel0);
+        DatasetUtilities.iterateRangeBounds((XYDataset) defaultTableXYDataset0);
+        TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
+        int int0 = 2146658270;
+        SlidingGanttCategoryDataset slidingGanttCategoryDataset0 = new SlidingGanttCategoryDataset(taskSeriesCollection0, 2146658270, 2146658270);
+        DatasetUtilities.findMinimumRangeValue((CategoryDataset) slidingGanttCategoryDataset0);
+        // Undeclared exception!
+        DatasetUtilities.findStackedRangeBounds((CategoryDataset) slidingGanttCategoryDataset0, (double) 2146658270);
+    }
+
+    @Test(timeout = 4000)
+    public void test02424() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.calculatePieDatasetTotal((PieDataset) null);
@@ -586,7 +718,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02519() throws Throwable {
+    public void test02525() throws Throwable {
         LinkedList<CategoryTableXYDataset> linkedList0 = new LinkedList<CategoryTableXYDataset>();
         // Undeclared exception!
         try {
@@ -601,7 +733,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02620() throws Throwable {
+    public void test02626() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[23];
         doubleArray1[0] = (-995.7472);
@@ -653,7 +785,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02721() throws Throwable {
+    public void test02727() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("Requires 'samples' > 1");
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, 0, timeZone0);
         // Undeclared exception!
@@ -669,7 +801,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02822() throws Throwable {
+    public void test02828() throws Throwable {
         Number[][] numberArray0 = new Number[5][0];
         Number[] numberArray1 = new Number[6];
         Integer integer0 = JLayeredPane.POPUP_LAYER;
@@ -740,7 +872,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test02923() throws Throwable {
+    public void test02929() throws Throwable {
         double[][] doubleArray0 = new double[0][6];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);
         defaultIntervalCategoryDataset0.validateObject();
@@ -769,7 +901,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03024() throws Throwable {
+    public void test03030() throws Throwable {
         DefaultXYZDataset defaultXYZDataset0 = new DefaultXYZDataset();
         ArrayList<DefaultIntervalXYDataset> arrayList0 = new ArrayList<DefaultIntervalXYDataset>();
         DefaultIntervalXYDataset defaultIntervalXYDataset0 = new DefaultIntervalXYDataset();
@@ -788,7 +920,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03125() throws Throwable {
+    public void test03131() throws Throwable {
         Number[][] numberArray0 = new Number[0][4];
         CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset("|?F})&*JK:tm,JUs", "|?F})&*JK:tm,JUs", numberArray0);
         DatasetUtilities.iterateCategoryRangeBounds(categoryDataset0, true);
@@ -804,7 +936,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03226() throws Throwable {
+    public void test03232() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Millisecond millisecond0 = new Millisecond(mockDate0);
         mockDate0.toInstant();
@@ -829,14 +961,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03327() throws Throwable {
+    public void test03333() throws Throwable {
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, 4004);
         Range range0 = DatasetUtilities.iterateRangeBounds((XYDataset) dynamicTimeSeriesCollection0, false);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test03328() throws Throwable {
+    public void test03334() throws Throwable {
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, 4004);
         Range range0 = DatasetUtilities.iterateRangeBounds((XYDataset) dynamicTimeSeriesCollection0, false);
         double[][] doubleArray0 = new double[6][0];
@@ -889,7 +1021,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03429() throws Throwable {
+    public void test03435() throws Throwable {
         DefaultXYZDataset defaultXYZDataset0 = new DefaultXYZDataset();
         ArrayList<DefaultIntervalXYDataset> arrayList0 = new ArrayList<DefaultIntervalXYDataset>();
         arrayList0.clear();
@@ -910,7 +1042,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03530() throws Throwable {
+    public void test03536() throws Throwable {
         System.setCurrentTimeMillis(277L);
         double[][] doubleArray0 = new double[5][9];
         double[] doubleArray1 = new double[4];
@@ -953,7 +1085,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03631() throws Throwable {
+    public void test03637() throws Throwable {
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, 4004);
         Number[][] numberArray0 = new Number[2][2];
         Number[] numberArray1 = new Number[3];
@@ -978,7 +1110,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03732() throws Throwable {
+    public void test03738() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[23];
         doubleArray1[0] = (-995.7472);
@@ -1013,7 +1145,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03833() throws Throwable {
+    public void test03839() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[23];
         doubleArray1[0] = (-995.7472);
@@ -1048,7 +1180,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test03934() throws Throwable {
+    public void test03940() throws Throwable {
         XIntervalSeriesCollection xIntervalSeriesCollection0 = new XIntervalSeriesCollection();
         DatasetUtilities.findMaximumRangeValue((XYDataset) xIntervalSeriesCollection0);
         Number[][] numberArray0 = new Number[1][9];
@@ -1070,7 +1202,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04035() throws Throwable {
+    public void test04041() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -1085,7 +1217,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04136() throws Throwable {
+    public void test04142() throws Throwable {
         double[] doubleArray0 = new double[23];
         doubleArray0[0] = (-995.7472);
         doubleArray0[1] = (-884.0);
@@ -1115,7 +1247,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04237() throws Throwable {
+    public void test04243() throws Throwable {
         Statement statement0 = mock(Statement.class, new ViolatedAssumptionAnswer());
         Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
         doReturn((Statement) null).when(connection0).createStatement();
@@ -1136,7 +1268,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04338() throws Throwable {
+    public void test04344() throws Throwable {
         double[][] doubleArray0 = new double[2][9];
         double[] doubleArray1 = new double[7];
         doubleArray1[0] = (double) 0;
@@ -1169,7 +1301,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04439() throws Throwable {
+    public void test04445() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = (-995.7472);
@@ -1206,7 +1338,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04540() throws Throwable {
+    public void test04546() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = (-995.7472);
@@ -1243,7 +1375,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04641() throws Throwable {
+    public void test04647() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Millisecond millisecond0 = new Millisecond(mockDate0);
         mockDate0.toInstant();
@@ -1270,7 +1402,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04742() throws Throwable {
+    public void test04748() throws Throwable {
         DefaultCategoryDataset defaultCategoryDataset0 = new DefaultCategoryDataset();
         Quarter quarter0 = new Quarter();
         TimePeriodValues timePeriodValues0 = new TimePeriodValues(quarter0, "Vb?!O1XUIL+p{", "Vb?!O1XUIL+p{");
@@ -1281,7 +1413,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04843() throws Throwable {
+    public void test04849() throws Throwable {
         ArrayList<Double> arrayList0 = new ArrayList<Double>();
         Stack<Double> stack0 = new Stack<Double>();
         stack0.listIterator();
@@ -1301,7 +1433,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test04944() throws Throwable {
+    public void test04950() throws Throwable {
         ArrayList<Double> arrayList0 = new ArrayList<Double>();
         Stack<Double> stack0 = new Stack<Double>();
         stack0.listIterator();
@@ -1337,7 +1469,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05045() throws Throwable {
+    public void test05051() throws Throwable {
         PowerFunction2D powerFunction2D0 = new PowerFunction2D((-70.34), Double.POSITIVE_INFINITY);
         int int0 = (-2146986242);
         Comparable<Month> comparable0 = null;
@@ -1354,7 +1486,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05146() throws Throwable {
+    public void test05152() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         IntervalXYDelegate intervalXYDelegate0 = new IntervalXYDelegate(xYSeriesCollection0, false);
         intervalXYDelegate0.setAutoWidth(false);
@@ -1391,7 +1523,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05247() throws Throwable {
+    public void test05253() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Millisecond millisecond0 = new Millisecond(mockDate0);
         mockDate0.toInstant();
@@ -1419,7 +1551,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05348() throws Throwable {
+    public void test05354() throws Throwable {
         MockDate mockDate0 = new MockDate(17, 6, 2, (-989), 17);
         ZoneOffset zoneOffset0 = ZoneOffset.MIN;
         TimeZone timeZone0 = TimeZone.getTimeZone((ZoneId) zoneOffset0);
@@ -1440,7 +1572,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05449() throws Throwable {
+    public void test05455() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = (-995.7472);
@@ -1478,14 +1610,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05550() throws Throwable {
+    public void test05556() throws Throwable {
         MatrixSeriesCollection matrixSeriesCollection0 = new MatrixSeriesCollection();
         Range range0 = DatasetUtilities.iterateDomainBounds((XYDataset) matrixSeriesCollection0, true);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test05651() throws Throwable {
+    public void test05657() throws Throwable {
         TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
         DatasetUtilities.iterateCategoryRangeBounds(taskSeriesCollection0, true);
         OHLCDataItem[] oHLCDataItemArray0 = new OHLCDataItem[8];
@@ -1513,7 +1645,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05752() throws Throwable {
+    public void test05758() throws Throwable {
         DefaultXYZDataset defaultXYZDataset0 = new DefaultXYZDataset();
         ArrayList<DefaultIntervalXYDataset> arrayList0 = new ArrayList<DefaultIntervalXYDataset>();
         DatasetUtilities.findDomainBounds((XYDataset) defaultXYZDataset0, (List) arrayList0, true);
@@ -1522,7 +1654,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05853() throws Throwable {
+    public void test05859() throws Throwable {
         double[][] doubleArray0 = new double[2][6];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = (-4863.12431);
@@ -1550,7 +1682,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05954() throws Throwable {
+    public void test05960() throws Throwable {
         Comparable<IntervalXYDelegate>[] comparableArray0 = (Comparable<IntervalXYDelegate>[]) Array.newInstance(Comparable.class, 1);
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(4L);
         RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
@@ -1586,7 +1718,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06055() throws Throwable {
+    public void test06061() throws Throwable {
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset();
         DatasetUtilities.findDomainBounds((XYDataset) defaultTableXYDataset0, true);
         double[][] doubleArray0 = new double[1][5];
@@ -1604,7 +1736,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06156() throws Throwable {
+    public void test06162() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -1619,7 +1751,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06257() throws Throwable {
+    public void test06263() throws Throwable {
         Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
         JDBCPieDataset jDBCPieDataset0 = new JDBCPieDataset(connection0);
         double double0 = DatasetUtilities.calculatePieDatasetTotal(jDBCPieDataset0);
@@ -1627,7 +1759,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06358() throws Throwable {
+    public void test06364() throws Throwable {
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
         categoryTableXYDataset0.getDomainBounds(true);
         // Undeclared exception!
@@ -1643,7 +1775,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06459() throws Throwable {
+    public void test06465() throws Throwable {
         double[][] doubleArray0 = new double[0][3];
         CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset("@/)?omcFS,eQy`J^J;", "@/)?omcFS,eQy`J^J;", doubleArray0);
         DatasetUtilities.findMinimumRangeValue(categoryDataset0);
@@ -1664,7 +1796,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06560() throws Throwable {
+    public void test06566() throws Throwable {
         TimeTableXYDataset timeTableXYDataset0 = new TimeTableXYDataset();
         SerialDate serialDate0 = SerialDate.createInstance(2);
         timeTableXYDataset0.indexOf(serialDate0);
@@ -1675,7 +1807,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06561() throws Throwable {
+    public void test06567() throws Throwable {
         TimeTableXYDataset timeTableXYDataset0 = new TimeTableXYDataset();
         SerialDate serialDate0 = SerialDate.createInstance(2);
         timeTableXYDataset0.indexOf(serialDate0);
@@ -1686,7 +1818,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06662() throws Throwable {
+    public void test06668() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = (-995.7472);
@@ -1709,7 +1841,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06763() throws Throwable {
+    public void test06769() throws Throwable {
         double[] doubleArray0 = new double[9];
         doubleArray0[0] = (-995.7472);
         doubleArray0[1] = (-884.0);
@@ -1730,7 +1862,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06864() throws Throwable {
+    public void test06870() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -1745,7 +1877,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test06965() throws Throwable {
+    public void test06971() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.iterateDomainBounds((XYDataset) null);
@@ -1759,7 +1891,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07066() throws Throwable {
+    public void test07072() throws Throwable {
         int int0 = 0;
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(false);
         ArrayList<DefaultHighLowDataset> arrayList0 = new ArrayList<DefaultHighLowDataset>();
@@ -1777,7 +1909,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07167() throws Throwable {
+    public void test07173() throws Throwable {
         Comparable<IntervalXYDelegate>[] comparableArray0 = (Comparable<IntervalXYDelegate>[]) Array.newInstance(Comparable.class, 1);
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(4L);
         RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
@@ -1801,7 +1933,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07268() throws Throwable {
+    public void test07274() throws Throwable {
         double[][] doubleArray0 = new double[8][2];
         double[] doubleArray1 = new double[5];
         doubleArray1[0] = 2841.068717;
@@ -1859,7 +1991,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07269() throws Throwable {
+    public void test07275() throws Throwable {
         double[][] doubleArray0 = new double[8][2];
         double[] doubleArray1 = new double[5];
         doubleArray1[0] = 2841.068717;
@@ -1917,7 +2049,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07370() throws Throwable {
+    public void test07376() throws Throwable {
         DefaultKeyedValuesDataset defaultKeyedValuesDataset0 = new DefaultKeyedValuesDataset();
         Quarter quarter0 = new Quarter();
         RegularTimePeriod regularTimePeriod0 = quarter0.next();
@@ -1938,7 +2070,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07471() throws Throwable {
+    public void test07477() throws Throwable {
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
         Statement statement0 = mock(Statement.class, new ViolatedAssumptionAnswer());
         TableOrder tableOrder0 = TableOrder.BY_COLUMN;
@@ -1959,7 +2091,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07572() throws Throwable {
+    public void test07578() throws Throwable {
         double[][] doubleArray0 = new double[1][9];
         double[] doubleArray1 = new double[6];
         doubleArray1[0] = Double.POSITIVE_INFINITY;
@@ -1975,7 +2107,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07573() throws Throwable {
+    public void test07579() throws Throwable {
         double[][] doubleArray0 = new double[1][9];
         double[] doubleArray1 = new double[6];
         doubleArray1[0] = Double.POSITIVE_INFINITY;
@@ -1991,7 +2123,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07674() throws Throwable {
+    public void test07680() throws Throwable {
         Month month0 = Month.AUGUST;
         Month month1 = month0.firstMonthOfQuarter();
         double double0 = 0.0;
@@ -2008,7 +2140,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07775() throws Throwable {
+    public void test07781() throws Throwable {
         Statement statement0 = mock(Statement.class, new ViolatedAssumptionAnswer());
         doReturn((ResultSet) null).when(statement0).executeQuery(anyString());
         Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
@@ -2029,7 +2161,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07876() throws Throwable {
+    public void test07882() throws Throwable {
         Number[][] numberArray0 = new Number[3][3];
         Number[] numberArray1 = new Number[1];
         SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset("Requires 'samples' > 1");
@@ -2065,7 +2197,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test07977() throws Throwable {
+    public void test07983() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findDomainBounds((XYDataset) null);
@@ -2079,7 +2211,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08078() throws Throwable {
+    public void test08084() throws Throwable {
         XYDataset xYDataset0 = null;
         // Undeclared exception!
         try {
@@ -2094,7 +2226,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08179() throws Throwable {
+    public void test08185() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -2109,7 +2241,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08280() throws Throwable {
+    public void test08286() throws Throwable {
         int int0 = 0;
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, 0);
         Stack<DefaultBoxAndWhiskerCategoryDataset> stack0 = new Stack<DefaultBoxAndWhiskerCategoryDataset>();
@@ -2130,7 +2262,18 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08481() throws Throwable {
+    public void test08387() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (-441.89);
+        doubleArray0[2] = (-1.0);
+        PolynomialFunction2D polynomialFunction2D0 = new PolynomialFunction2D(doubleArray0);
+        // Undeclared exception!
+        DatasetUtilities.sampleFunction2D(polynomialFunction2D0, (-441.89), 1650.443, 1380, 0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test08488() throws Throwable {
         MatrixSeriesCollection matrixSeriesCollection0 = new MatrixSeriesCollection();
         Vector<DefaultOHLCDataset> vector0 = new Vector<DefaultOHLCDataset>();
         MockDate mockDate0 = new MockDate((-1L));
@@ -2171,7 +2314,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08582() throws Throwable {
+    public void test08589() throws Throwable {
         TimePeriodValuesCollection timePeriodValuesCollection0 = new TimePeriodValuesCollection();
         LinkedList<DefaultStatisticalCategoryDataset> linkedList0 = new LinkedList<DefaultStatisticalCategoryDataset>();
         DefaultMultiValueCategoryDataset defaultMultiValueCategoryDataset0 = new DefaultMultiValueCategoryDataset();
@@ -2189,7 +2332,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08683() throws Throwable {
+    public void test08690() throws Throwable {
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
         DatasetUtilities.calculateStackTotal(categoryTableXYDataset0, (-2045));
         categoryTableXYDataset0.add((-511.7527853), (-511.7527853), "nbeXU/c/agdpHU)BCN$");
@@ -2211,7 +2354,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08784() throws Throwable {
+    public void test08791() throws Throwable {
         double[][] doubleArray0 = new double[7][3];
         double[] doubleArray1 = new double[6];
         doubleArray1[0] = 1.0;
@@ -2264,7 +2407,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08885() throws Throwable {
+    public void test08892() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -2279,7 +2422,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test08986() throws Throwable {
+    public void test08993() throws Throwable {
         String string0 = "";
         Number[][] numberArray0 = new Number[0][6];
         CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset("", "", numberArray0);
@@ -2297,7 +2440,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09087() throws Throwable {
+    public void test09094() throws Throwable {
         Number[][] numberArray0 = new Number[0][2];
         CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset("<srp", "0`F7+b{", numberArray0);
         boolean boolean0 = false;
@@ -2316,7 +2459,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09188() throws Throwable {
+    public void test09195() throws Throwable {
         DefaultKeyedValues2DDataset defaultKeyedValues2DDataset0 = new DefaultKeyedValues2DDataset();
         Comparable<DefaultHighLowDataset> comparable0 = null;
         DefaultXYDataset defaultXYDataset0 = new DefaultXYDataset();
@@ -2335,7 +2478,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09289() throws Throwable {
+    public void test09296() throws Throwable {
         YIntervalSeriesCollection yIntervalSeriesCollection0 = new YIntervalSeriesCollection();
         Vector<DefaultBoxAndWhiskerCategoryDataset> vector0 = new Vector<DefaultBoxAndWhiskerCategoryDataset>();
         DatasetUtilities.findDomainBounds((XYDataset) yIntervalSeriesCollection0, (List) vector0, false);
@@ -2354,7 +2497,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09390() throws Throwable {
+    public void test09397() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -2369,7 +2512,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09491() throws Throwable {
+    public void test09498() throws Throwable {
         XYIntervalSeriesCollection xYIntervalSeriesCollection0 = new XYIntervalSeriesCollection();
         DatasetUtilities.iterateXYRangeBounds(xYIntervalSeriesCollection0);
         DefaultKeyedValues2DDataset defaultKeyedValues2DDataset0 = new DefaultKeyedValues2DDataset();
@@ -2391,7 +2534,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09592() throws Throwable {
+    public void test09599() throws Throwable {
         XYDataset xYDataset0 = null;
         // Undeclared exception!
         try {
@@ -2406,7 +2549,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09693() throws Throwable {
+    public void test096100() throws Throwable {
         Number[][] numberArray0 = new Number[0][2];
         CategoryDataset categoryDataset0 = DatasetUtilities.createCategoryDataset("a.#CazwtE`h>JM${", "a.#CazwtE`h>JM${", numberArray0);
         TableOrder tableOrder0 = TableOrder.BY_COLUMN;
@@ -2452,7 +2595,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09794() throws Throwable {
+    public void test097101() throws Throwable {
         int int0 = 0;
         Day day0 = new Day();
         Hour hour0 = new Hour(0, day0);
@@ -2479,7 +2622,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09895() throws Throwable {
+    public void test098102() throws Throwable {
         XYDataset xYDataset0 = null;
         boolean boolean0 = false;
         // Undeclared exception!
@@ -2495,7 +2638,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test09996() throws Throwable {
+    public void test099103() throws Throwable {
         XYDataset xYDataset0 = null;
         boolean boolean0 = false;
         // Undeclared exception!
@@ -2511,7 +2654,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test10097() throws Throwable {
+    public void test100104() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "", 1, 1, 0, 1, 0, (-4), (-4), 0);
         Locale locale0 = Locale.FRENCH;
         Year year0 = new Year(304);
@@ -2535,7 +2678,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test10198() throws Throwable {
+    public void test101105() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findRangeBounds((XYDataset) null);
@@ -2549,7 +2692,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test10299() throws Throwable {
+    public void test102106() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection((TimeSeries) null);
         SeriesChangeEvent seriesChangeEvent0 = new SeriesChangeEvent(timeSeriesCollection0);
         SeriesChangeInfo seriesChangeInfo0 = new SeriesChangeInfo((SeriesChangeType) null, 0, 0);
@@ -2597,14 +2740,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test103100() throws Throwable {
+    public void test103107() throws Throwable {
         DefaultCategoryDataset defaultCategoryDataset0 = new DefaultCategoryDataset();
         Range range0 = DatasetUtilities.findStackedRangeBounds((CategoryDataset) defaultCategoryDataset0);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test104101() throws Throwable {
+    public void test104108() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findMaximumDomainValue((XYDataset) null);
@@ -2618,7 +2761,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test105102() throws Throwable {
+    public void test105109() throws Throwable {
         LinkedList<Long> linkedList0 = new LinkedList<Long>();
         ArrayList<Short> arrayList0 = new ArrayList<Short>();
         linkedList0.retainAll(arrayList0);
@@ -2636,7 +2779,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test106103() throws Throwable {
+    public void test106110() throws Throwable {
         LinkedList<Long> linkedList0 = new LinkedList<Long>();
         ArrayList<Short> arrayList0 = new ArrayList<Short>();
         linkedList0.retainAll(arrayList0);
@@ -2654,7 +2797,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test107104() throws Throwable {
+    public void test107111() throws Throwable {
         String string0 = "Null 'visibleSeriesKeys' argument.";
         String string1 = "'3&m";
         Number[][] numberArray0 = new Number[5][0];
@@ -2727,7 +2870,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test108105() throws Throwable {
+    public void test108112() throws Throwable {
         double[][] doubleArray0 = new double[2][3];
         double[] doubleArray1 = new double[3];
         doubleArray1[0] = 0.0;
@@ -2747,7 +2890,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test108106() throws Throwable {
+    public void test108113() throws Throwable {
         double[][] doubleArray0 = new double[2][3];
         double[] doubleArray1 = new double[3];
         doubleArray1[0] = 0.0;
@@ -2768,7 +2911,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test108107() throws Throwable {
+    public void test108114() throws Throwable {
         double[][] doubleArray0 = new double[2][3];
         double[] doubleArray1 = new double[3];
         doubleArray1[0] = 0.0;
@@ -2789,7 +2932,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test109108() throws Throwable {
+    public void test109115() throws Throwable {
         DefaultXYDataset defaultXYDataset0 = new DefaultXYDataset();
         DefaultMultiValueCategoryDataset defaultMultiValueCategoryDataset0 = new DefaultMultiValueCategoryDataset();
         SeriesChangeType seriesChangeType0 = SeriesChangeType.ADD_AND_REMOVE;
@@ -2829,7 +2972,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test110109() throws Throwable {
+    public void test110116() throws Throwable {
         DefaultMultiValueCategoryDataset defaultMultiValueCategoryDataset0 = new DefaultMultiValueCategoryDataset();
         DatasetUtilities.iterateRangeBounds((CategoryDataset) defaultMultiValueCategoryDataset0, true);
         DefaultKeyedValuesDataset defaultKeyedValuesDataset0 = new DefaultKeyedValuesDataset();
@@ -2850,7 +2993,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test111110() throws Throwable {
+    public void test111117() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -2865,7 +3008,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test112111() throws Throwable {
+    public void test112118() throws Throwable {
         TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
         ArrayList<Object> arrayList0 = new ArrayList<Object>(1737);
         Range range0 = DatasetUtilities.iterateToFindRangeBounds((CategoryDataset) taskSeriesCollection0, (List) arrayList0, true);
@@ -2873,7 +3016,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test113112() throws Throwable {
+    public void test113119() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         xYSeriesCollection0.getRangeLowerBound(false);
         Number number0 = DatasetUtilities.findMinimumDomainValue(xYSeriesCollection0);
@@ -2881,7 +3024,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test114113() throws Throwable {
+    public void test114120() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         double double0 = 0.0;
         // Undeclared exception!
@@ -2897,7 +3040,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test115114() throws Throwable {
+    public void test115121() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -2912,7 +3055,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test116115() throws Throwable {
+    public void test116122() throws Throwable {
         double[][] doubleArray0 = new double[2][5];
         double[] doubleArray1 = new double[7];
         doubleArray1[0] = 1272.0406384985379;
@@ -2939,7 +3082,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test117116() throws Throwable {
+    public void test117123() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Millisecond millisecond0 = new Millisecond(mockDate0);
         mockDate0.toInstant();
@@ -2966,7 +3109,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test118117() throws Throwable {
+    public void test118124() throws Throwable {
         XYDataset xYDataset0 = null;
         // Undeclared exception!
         try {
@@ -2981,7 +3124,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test119118() throws Throwable {
+    public void test119125() throws Throwable {
         VectorSeriesCollection vectorSeriesCollection0 = new VectorSeriesCollection();
         DatasetUtilities.iterateRangeBounds((XYDataset) vectorSeriesCollection0, true);
         Comparable<Float>[] comparableArray0 = (Comparable<Float>[]) Array.newInstance(Comparable.class, 5);
@@ -3061,7 +3204,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test120119() throws Throwable {
+    public void test120126() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.createCategoryDataset("org.jfree.data.resources.DataPackageResources", (String) null, (Number[][]) null);
@@ -3075,7 +3218,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test121120() throws Throwable {
+    public void test121127() throws Throwable {
         DefaultPieDataset defaultPieDataset0 = new DefaultPieDataset();
         Minute.parseMinute("e\"^JD!w d3S");
         PieDataset pieDataset0 = DatasetUtilities.createConsolidatedPieDataset((PieDataset) defaultPieDataset0, (Comparable) null, (-248.48335696));
@@ -3093,14 +3236,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test122121() throws Throwable {
+    public void test122128() throws Throwable {
         DefaultIntervalXYDataset defaultIntervalXYDataset0 = new DefaultIntervalXYDataset();
         Range range0 = DatasetUtilities.findRangeBounds((XYDataset) defaultIntervalXYDataset0, true);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test123122() throws Throwable {
+    public void test123129() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findRangeBounds((XYDataset) null, true);
@@ -3114,7 +3257,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test124123() throws Throwable {
+    public void test124130() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = 418.62818443988;
         doubleArray0[1] = 435.69181581094;
@@ -3137,7 +3280,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test125124() throws Throwable {
+    public void test125131() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = (-995.7472);
@@ -3173,7 +3316,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test126125() throws Throwable {
+    public void test126132() throws Throwable {
         double[][] doubleArray0 = new double[6][7];
         double[] doubleArray1 = new double[3];
         doubleArray1[0] = Double.POSITIVE_INFINITY;
@@ -3223,7 +3366,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test127126() throws Throwable {
+    public void test127133() throws Throwable {
         XYIntervalSeriesCollection xYIntervalSeriesCollection0 = new XYIntervalSeriesCollection();
         xYIntervalSeriesCollection0.clone();
         xYIntervalSeriesCollection0.getDomainOrder();
@@ -3241,7 +3384,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test128127() throws Throwable {
+    public void test128134() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.createPieDatasetForRow((CategoryDataset) null, (-622));
@@ -3255,7 +3398,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test129128() throws Throwable {
+    public void test129135() throws Throwable {
         XYDataset xYDataset0 = null;
         // Undeclared exception!
         try {
@@ -3270,7 +3413,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test130129() throws Throwable {
+    public void test130136() throws Throwable {
         TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
         DatasetUtilities.isEmptyOrNull((CategoryDataset) taskSeriesCollection0);
         taskSeriesCollection0.getSeriesCount();
@@ -3289,7 +3432,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test131130() throws Throwable {
+    public void test131137() throws Throwable {
         int int0 = 0;
         int int1 = 1450;
         Day day0 = new Day();
@@ -3308,7 +3451,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test132131() throws Throwable {
+    public void test132138() throws Throwable {
         String string0 = "";
         // Undeclared exception!
         try {
@@ -3322,7 +3465,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test133132() throws Throwable {
+    public void test133139() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection();
         DatasetUtilities.findMaximumDomainValue(timeSeriesCollection0);
         int int0 = (-176);
@@ -3339,7 +3482,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test134133() throws Throwable {
+    public void test134140() throws Throwable {
         double[][] doubleArray0 = new double[8][2];
         double[] doubleArray1 = new double[5];
         doubleArray1[0] = 2841.068717;
@@ -3397,7 +3540,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test134134() throws Throwable {
+    public void test134141() throws Throwable {
         double[][] doubleArray0 = new double[8][2];
         double[] doubleArray1 = new double[5];
         doubleArray1[0] = 2841.068717;
@@ -3455,7 +3598,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test135135() throws Throwable {
+    public void test135142() throws Throwable {
         TimeTableXYDataset timeTableXYDataset0 = new TimeTableXYDataset();
         ArrayList<DefaultMultiValueCategoryDataset> arrayList0 = new ArrayList<DefaultMultiValueCategoryDataset>();
         ArrayList<DefaultMultiValueCategoryDataset> arrayList1 = new ArrayList<DefaultMultiValueCategoryDataset>(arrayList0);
@@ -3474,7 +3617,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test136136() throws Throwable {
+    public void test136143() throws Throwable {
         LinkedList<YIntervalSeriesCollection> linkedList0 = new LinkedList<YIntervalSeriesCollection>();
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset();
         defaultTableXYDataset0.getDomainBounds(true);
@@ -3491,7 +3634,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test137137() throws Throwable {
+    public void test137144() throws Throwable {
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, (-3288));
         Vector<Float> vector0 = new Vector<Float>();
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
@@ -3512,7 +3655,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test138138() throws Throwable {
+    public void test138145() throws Throwable {
         Number[][] numberArray0 = new Number[1][6];
         Number[] numberArray1 = new Number[0];
         numberArray0[0] = numberArray1;
@@ -3532,7 +3675,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test139139() throws Throwable {
+    public void test139146() throws Throwable {
         double[][] doubleArray0 = new double[6][4];
         double[] doubleArray1 = new double[5];
         doubleArray1[0] = (-1057.49404);
@@ -3578,7 +3721,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test139140() throws Throwable {
+    public void test139147() throws Throwable {
         double[][] doubleArray0 = new double[6][4];
         double[] doubleArray1 = new double[5];
         doubleArray1[0] = (-1057.49404);
@@ -3624,7 +3767,35 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test142141() throws Throwable {
+    public void test140148() throws Throwable {
+        double[] doubleArray0 = new double[9];
+        doubleArray0[0] = 3332.926112469845;
+        doubleArray0[1] = Double.NaN;
+        doubleArray0[2] = (-873.614);
+        doubleArray0[3] = Double.POSITIVE_INFINITY;
+        doubleArray0[4] = Double.NaN;
+        doubleArray0[5] = 0.0;
+        doubleArray0[6] = (-1159.0);
+        doubleArray0[7] = 0.0;
+        doubleArray0[8] = 1059.11;
+        PolynomialFunction2D polynomialFunction2D0 = new PolynomialFunction2D(doubleArray0);
+        // Undeclared exception!
+        DatasetUtilities.sampleFunction2DToSeries(polynomialFunction2D0, Double.NaN, Double.NaN, 3528, (-873.614));
+    }
+
+    @Test(timeout = 4000)
+    public void test141149() throws Throwable {
+        PowerFunction2D powerFunction2D0 = new PowerFunction2D(1713.2591525, 1713.2591525);
+        int int0 = 1900;
+        MockDate mockDate0 = new MockDate();
+        Day day0 = new Day(mockDate0);
+        day0.getSerialIndex();
+        // Undeclared exception!
+        DatasetUtilities.sampleFunction2D(powerFunction2D0, 0.0, 1713.2591525, 1900, day0);
+    }
+
+    @Test(timeout = 4000)
+    public void test142150() throws Throwable {
         double[] doubleArray0 = new double[4];
         doubleArray0[0] = 0.0;
         doubleArray0[1] = 1145.837375;
@@ -3644,7 +3815,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test143142() throws Throwable {
+    public void test143151() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         IntervalXYDelegate intervalXYDelegate0 = new IntervalXYDelegate(xYSeriesCollection0, false);
         xYSeriesCollection0.equals(intervalXYDelegate0);
@@ -3679,7 +3850,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test144143() throws Throwable {
+    public void test144152() throws Throwable {
         XYIntervalSeriesCollection xYIntervalSeriesCollection0 = new XYIntervalSeriesCollection();
         Vector<Long> vector0 = new Vector<Long>();
         DatasetUtilities.iterateToFindDomainBounds(xYIntervalSeriesCollection0, vector0, false);
@@ -3714,7 +3885,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test145144() throws Throwable {
+    public void test145153() throws Throwable {
         CategoryDataset categoryDataset0 = null;
         // Undeclared exception!
         try {
@@ -3729,7 +3900,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test146145() throws Throwable {
+    public void test146154() throws Throwable {
         DefaultStatisticalCategoryDataset defaultStatisticalCategoryDataset0 = new DefaultStatisticalCategoryDataset();
         PieDataset pieDataset0 = DatasetUtilities.createPieDatasetForColumn((CategoryDataset) defaultStatisticalCategoryDataset0, 2);
         KeyToGroupMap keyToGroupMap0 = new KeyToGroupMap();
@@ -3738,7 +3909,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test146146() throws Throwable {
+    public void test146155() throws Throwable {
         DefaultStatisticalCategoryDataset defaultStatisticalCategoryDataset0 = new DefaultStatisticalCategoryDataset();
         PieDataset pieDataset0 = DatasetUtilities.createPieDatasetForColumn((CategoryDataset) defaultStatisticalCategoryDataset0, 2);
         KeyToGroupMap keyToGroupMap0 = new KeyToGroupMap();
@@ -3752,7 +3923,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test147147() throws Throwable {
+    public void test147156() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findMaximumStackedRangeValue((CategoryDataset) null);
@@ -3766,7 +3937,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test148148() throws Throwable {
+    public void test148157() throws Throwable {
         TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
         SlidingGanttCategoryDataset slidingGanttCategoryDataset0 = new SlidingGanttCategoryDataset(taskSeriesCollection0, 1022, 1022);
         MockDate mockDate0 = new MockDate();
@@ -3792,7 +3963,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test149149() throws Throwable {
+    public void test149158() throws Throwable {
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(false);
         LinkedList<DynamicTimeSeriesCollection> linkedList0 = new LinkedList<DynamicTimeSeriesCollection>();
         linkedList0.remove((Object) defaultTableXYDataset0);
@@ -3808,7 +3979,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test150150() throws Throwable {
+    public void test150159() throws Throwable {
         MockDate mockDate0 = new MockDate(9223372036854775807L);
         Year year0 = new Year(mockDate0);
         TimeSeries timeSeries0 = new TimeSeries(year0);
@@ -3820,14 +3991,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test151151() throws Throwable {
+    public void test151160() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection();
         Range range0 = DatasetUtilities.iterateRangeBounds((XYDataset) timeSeriesCollection0);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test152152() throws Throwable {
+    public void test152161() throws Throwable {
         Comparable<IntervalXYDelegate>[] comparableArray0 = (Comparable<IntervalXYDelegate>[]) Array.newInstance(Comparable.class, 1);
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(4L);
         RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
@@ -3851,7 +4022,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test153153() throws Throwable {
+    public void test153162() throws Throwable {
         Number[][] numberArray0 = new Number[7][1];
         Number[] numberArray1 = new Number[2];
         Integer integer0 = new Integer(2);
@@ -3895,7 +4066,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test153154() throws Throwable {
+    public void test153163() throws Throwable {
         Number[][] numberArray0 = new Number[7][1];
         Number[] numberArray1 = new Number[2];
         Integer integer0 = new Integer(2);
@@ -3939,7 +4110,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test154155() throws Throwable {
+    public void test154164() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.createCategoryDataset("lj", "bmSNVlg4vV0xm7+b", (double[][]) null);
@@ -3952,7 +4123,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test155156() throws Throwable {
+    public void test155165() throws Throwable {
         TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
         SlidingGanttCategoryDataset slidingGanttCategoryDataset0 = new SlidingGanttCategoryDataset(taskSeriesCollection0, (-379), (-379));
         SlidingCategoryDataset slidingCategoryDataset0 = new SlidingCategoryDataset(slidingGanttCategoryDataset0, 479, (-620));
@@ -3961,21 +4132,21 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test156157() throws Throwable {
+    public void test156166() throws Throwable {
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(true);
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) defaultTableXYDataset0, (-2190.475756));
         assertNotNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test156158() throws Throwable {
+    public void test156167() throws Throwable {
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(true);
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) defaultTableXYDataset0, (-2190.475756));
         assertEquals((-2190.475756), range0.getCentralValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test156159() throws Throwable {
+    public void test156168() throws Throwable {
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(true);
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) defaultTableXYDataset0, (-2190.475756));
         DefaultPieDataset defaultPieDataset0 = new DefaultPieDataset();
@@ -3984,7 +4155,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test157160() throws Throwable {
+    public void test157169() throws Throwable {
         TimeTableXYDataset timeTableXYDataset0 = new TimeTableXYDataset();
         timeTableXYDataset0.getSeriesCount();
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) timeTableXYDataset0, 1.7976931348623157E308);
@@ -3992,7 +4163,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test157161() throws Throwable {
+    public void test157170() throws Throwable {
         TimeTableXYDataset timeTableXYDataset0 = new TimeTableXYDataset();
         timeTableXYDataset0.getSeriesCount();
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) timeTableXYDataset0, 1.7976931348623157E308);
@@ -4000,14 +4171,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test158162() throws Throwable {
+    public void test158171() throws Throwable {
         TaskSeriesCollection taskSeriesCollection0 = new TaskSeriesCollection();
         Range range0 = DatasetUtilities.iterateRangeBounds((CategoryDataset) taskSeriesCollection0, true);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test159163() throws Throwable {
+    public void test159172() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.calculateStackTotal((TableXYDataset) null, (-1863));
@@ -4021,7 +4192,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test160164() throws Throwable {
+    public void test160173() throws Throwable {
         // Undeclared exception!
         try {
             DatasetUtilities.findMaximumRangeValue((XYDataset) null);
@@ -4035,14 +4206,14 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test161165() throws Throwable {
+    public void test161174() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         Range range0 = DatasetUtilities.findRangeBounds((XYDataset) xYSeriesCollection0);
         assertNull(range0);
     }
 
     @Test(timeout = 4000)
-    public void test162166() throws Throwable {
+    public void test162175() throws Throwable {
         DefaultMultiValueCategoryDataset defaultMultiValueCategoryDataset0 = new DefaultMultiValueCategoryDataset();
         DatasetUtilities.findMinimumRangeValue((CategoryDataset) defaultMultiValueCategoryDataset0);
         DefaultIntervalXYDataset defaultIntervalXYDataset0 = new DefaultIntervalXYDataset();
@@ -4078,21 +4249,21 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test163167() throws Throwable {
+    public void test163176() throws Throwable {
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) categoryTableXYDataset0);
         assertEquals(0.0, range0.getLowerBound(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test163168() throws Throwable {
+    public void test163177() throws Throwable {
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
         Range range0 = DatasetUtilities.findStackedRangeBounds((TableXYDataset) categoryTableXYDataset0);
         assertEquals(0.0, range0.getUpperBound(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test164169() throws Throwable {
+    public void test164178() throws Throwable {
         Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
         JDBCCategoryDataset jDBCCategoryDataset0 = new JDBCCategoryDataset(connection0);
         DatasetUtilities.iterateRangeBounds((CategoryDataset) jDBCCategoryDataset0);
@@ -4115,7 +4286,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test165170() throws Throwable {
+    public void test165179() throws Throwable {
         double[][] doubleArray0 = new double[0][6];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);
         defaultIntervalCategoryDataset0.validateObject();
@@ -4145,7 +4316,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test166171() throws Throwable {
+    public void test166180() throws Throwable {
         DefaultKeyedValues2DDataset defaultKeyedValues2DDataset0 = new DefaultKeyedValues2DDataset();
         Vector<YIntervalSeriesCollection> vector0 = new Vector<YIntervalSeriesCollection>();
         DatasetUtilities.iterateToFindRangeBounds((CategoryDataset) defaultKeyedValues2DDataset0, (List) vector0, false);
@@ -4154,7 +4325,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test166172() throws Throwable {
+    public void test166181() throws Throwable {
         DefaultKeyedValues2DDataset defaultKeyedValues2DDataset0 = new DefaultKeyedValues2DDataset();
         Vector<YIntervalSeriesCollection> vector0 = new Vector<YIntervalSeriesCollection>();
         DatasetUtilities.iterateToFindRangeBounds((CategoryDataset) defaultKeyedValues2DDataset0, (List) vector0, false);
@@ -4178,7 +4349,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test167173() throws Throwable {
+    public void test167182() throws Throwable {
         Comparable<DynamicTimeSeriesCollection>[] comparableArray0 = (Comparable<DynamicTimeSeriesCollection>[]) Array.newInstance(Comparable.class, 0);
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(comparableArray0, comparableArray0, (Number[][]) null, (Number[][]) null);
         // Undeclared exception!
@@ -4193,7 +4364,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test168174() throws Throwable {
+    public void test168183() throws Throwable {
         DefaultBoxAndWhiskerCategoryDataset defaultBoxAndWhiskerCategoryDataset0 = new DefaultBoxAndWhiskerCategoryDataset();
         Vector<Short> vector0 = new Vector<Short>();
         DatasetUtilities.findRangeBounds((CategoryDataset) defaultBoxAndWhiskerCategoryDataset0, (List) vector0, true);
@@ -4202,7 +4373,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test169175() throws Throwable {
+    public void test169184() throws Throwable {
         Minute minute0 = new Minute();
         TimeSeriesDataItem timeSeriesDataItem0 = new TimeSeriesDataItem((RegularTimePeriod) minute0, (-1.0));
         SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(timeSeriesDataItem0);
@@ -4220,7 +4391,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test170176() throws Throwable {
+    public void test170185() throws Throwable {
         double[][] doubleArray0 = new double[1][7];
         double[] doubleArray1 = new double[8];
         doubleArray1[1] = (-153.30124);
@@ -4237,7 +4408,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test170177() throws Throwable {
+    public void test170186() throws Throwable {
         double[][] doubleArray0 = new double[1][7];
         double[] doubleArray1 = new double[8];
         doubleArray1[1] = (-153.30124);
@@ -4256,7 +4427,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test170178() throws Throwable {
+    public void test170187() throws Throwable {
         double[][] doubleArray0 = new double[1][7];
         double[] doubleArray1 = new double[8];
         doubleArray1[1] = (-153.30124);
@@ -4275,7 +4446,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test171179() throws Throwable {
+    public void test171188() throws Throwable {
         Minute minute0 = new Minute();
         TimeSeriesDataItem timeSeriesDataItem0 = new TimeSeriesDataItem((RegularTimePeriod) minute0, (-1.0));
         SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(timeSeriesDataItem0);
@@ -4292,7 +4463,45 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test173180() throws Throwable {
+    public void test172189() throws Throwable {
+        DefaultBoxAndWhiskerCategoryDataset defaultBoxAndWhiskerCategoryDataset0 = new DefaultBoxAndWhiskerCategoryDataset();
+        Clock clock0 = MockClock.systemUTC();
+        Instant instant0 = MockInstant.now(clock0);
+        Date date0 = Date.from(instant0);
+        DatasetUtilities.findCumulativeRangeBounds(defaultBoxAndWhiskerCategoryDataset0);
+        PieDataset pieDataset0 = DatasetUtilities.createPieDatasetForRow((CategoryDataset) defaultBoxAndWhiskerCategoryDataset0, (Comparable) date0);
+        DatasetUtilities.isEmptyOrNull((CategoryDataset) defaultBoxAndWhiskerCategoryDataset0);
+        DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset();
+        DatasetUtilities.findStackedRangeBounds((TableXYDataset) defaultTableXYDataset0);
+        DatasetUtilities.createConsolidatedPieDataset(pieDataset0, (Comparable) instant0, 1243.114928959583);
+        double[][] doubleArray0 = new double[5][8];
+        double[] doubleArray1 = new double[4];
+        doubleArray0[0] = doubleArray1;
+        double[] doubleArray2 = new double[8];
+        doubleArray2[0] = 832.2;
+        doubleArray2[2] = (double) (-1142);
+        doubleArray2[3] = Double.NEGATIVE_INFINITY;
+        doubleArray2[6] = (double) (-4204);
+        doubleArray0[1] = doubleArray2;
+        double[] doubleArray3 = new double[5];
+        doubleArray3[2] = (-3182.6);
+        doubleArray3[3] = 832.2;
+        doubleArray0[2] = doubleArray3;
+        double[] doubleArray4 = new double[8];
+        doubleArray4[0] = 832.2;
+        doubleArray4[2] = Double.NEGATIVE_INFINITY;
+        doubleArray4[3] = (double) (-4204);
+        doubleArray4[4] = 1243.114928959583;
+        doubleArray4[7] = (double) (-1142);
+        doubleArray0[3] = doubleArray4;
+        double[] doubleArray5 = new double[2];
+        doubleArray5[0] = 832.2;
+        doubleArray5[1] = (double) (-1142);
+        doubleArray0[4] = doubleArray5;
+    }
+
+    @Test(timeout = 4000)
+    public void test173190() throws Throwable {
         double[][] doubleArray0 = new double[6][4];
         double[] doubleArray1 = new double[9];
         doubleArray1[0] = 1425.078056;
@@ -4358,7 +4567,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test174181() throws Throwable {
+    public void test174191() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[23];
         doubleArray1[0] = (-995.7472);
@@ -4396,7 +4605,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test175182() throws Throwable {
+    public void test175192() throws Throwable {
         double[][] doubleArray0 = new double[1][5];
         double[] doubleArray1 = new double[23];
         doubleArray1[0] = (-995.7472);
@@ -4432,7 +4641,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test176183() throws Throwable {
+    public void test176193() throws Throwable {
         XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection();
         IntervalXYDelegate intervalXYDelegate0 = new IntervalXYDelegate(xYSeriesCollection0, false);
         intervalXYDelegate0.setAutoWidth(true);
@@ -4461,7 +4670,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test177184() throws Throwable {
+    public void test177194() throws Throwable {
         double[][] doubleArray0 = new double[9][3];
         double[] doubleArray1 = new double[0];
         doubleArray0[0] = doubleArray1;
@@ -4531,7 +4740,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test178185() throws Throwable {
+    public void test178195() throws Throwable {
         Number[][] numberArray0 = new Number[5][0];
         Number[] numberArray1 = new Number[6];
         Integer integer0 = JLayeredPane.POPUP_LAYER;
@@ -4601,7 +4810,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test179186() throws Throwable {
+    public void test179196() throws Throwable {
         Comparable<IntervalXYDelegate>[] comparableArray0 = (Comparable<IntervalXYDelegate>[]) Array.newInstance(Comparable.class, 1);
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(4L);
         RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
@@ -4639,7 +4848,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test180187() throws Throwable {
+    public void test180197() throws Throwable {
         double[][] doubleArray0 = new double[9][2];
         double[] doubleArray1 = new double[7];
         doubleArray1[0] = 1.7976931348623157E308;
@@ -4714,7 +4923,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test181188() throws Throwable {
+    public void test181198() throws Throwable {
         double[][] doubleArray0 = new double[0][6];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);
         defaultIntervalCategoryDataset0.validateObject();
@@ -4739,7 +4948,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test182189() throws Throwable {
+    public void test182199() throws Throwable {
         String string0 = "";
         YIntervalSeriesCollection yIntervalSeriesCollection0 = new YIntervalSeriesCollection();
         YIntervalSeries yIntervalSeries0 = new YIntervalSeries("]%*TW,hG%53s[");
@@ -4760,7 +4969,7 @@ public class DatasetUtilities_ESTest extends DatasetUtilities_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test183190() throws Throwable {
+    public void test183200() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Millisecond millisecond0 = new Millisecond(mockDate0);
         mockDate0.toInstant();

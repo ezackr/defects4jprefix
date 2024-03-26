@@ -74,7 +74,19 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test055() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        options0.addOption("", true, "U-)");
+        String[] stringArray0 = new String[20];
+        stringArray0[0] = "U-)";
+        defaultParser0.parse(options0, stringArray0, true);
+        defaultParser0.handleConcatenatedOptions("U-)");
+        defaultParser0.handleConcatenatedOptions("U-)");
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -83,7 +95,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addOption("o", true, "-o");
@@ -94,7 +106,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         options0.addOption("o", true, "o");
@@ -106,7 +118,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -115,7 +127,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addOption("o", "o", true, "o");
@@ -126,7 +138,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         options0.addOption("o", true, "H");
@@ -137,7 +149,15 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1212() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        defaultParser0.parse(options0, (String[]) null, true);
+        defaultParser0.handleConcatenatedOptions("--I");
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[11];
@@ -146,7 +166,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         options0.addOption("o", "---", false, "---");
@@ -156,7 +176,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addOption("", "---", false, "---");
@@ -167,7 +187,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[2];
@@ -176,7 +196,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[3];
@@ -186,7 +206,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addOption("true", false, "-true");
@@ -198,7 +218,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Option option0 = new Option("o", true, "o");
@@ -212,7 +232,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -221,7 +241,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addOption("t", true, "-t=");
@@ -232,7 +252,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         options0.addOption("t", false, "-t=");
@@ -242,7 +262,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[5];
@@ -256,11 +276,46 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2622() throws Throwable {
+    public void test2424() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        Option option0 = new Option("", false, "");
+        String[] stringArray0 = new String[0];
+        options0.addOption(option0);
+        option0.setRequired(true);
+        defaultParser0.parse(options0, stringArray0, true);
+        defaultParser0.handleConcatenatedOptions("--");
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        OptionGroup optionGroup0 = new OptionGroup();
+        Option option0 = new Option("", true, "");
+        OptionGroup optionGroup1 = optionGroup0.addOption(option0);
+        Options options1 = options0.addOptionGroup(optionGroup1);
+        optionGroup0.setRequired(true);
+        String[] stringArray0 = new String[0];
+        defaultParser0.parse(options1, stringArray0, true);
+        defaultParser0.handleConcatenatedOptions("--");
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
         stringArray0[0] = "-org.apach4.ommons.zli.AlreadySelectedExcepion";
         defaultParser0.parse(options0, stringArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        options0.addOption("", false, "U-)");
+        defaultParser0.parse(options0, (String[]) null, true);
+        defaultParser0.handleConcatenatedOptions("U-)");
     }
 }

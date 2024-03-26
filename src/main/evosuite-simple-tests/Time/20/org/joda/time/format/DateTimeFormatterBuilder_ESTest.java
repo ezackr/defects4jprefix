@@ -21636,7 +21636,13 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1842276() throws Throwable {
+    public void test1832276() throws Throwable {
+        DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
+        dateTimeFormatterBuilder0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test1842277() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         // Undeclared exception!
         try {
@@ -21651,7 +21657,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1852277() throws Throwable {
+    public void test1852278() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         dateTimeFormatterBuilder0.appendDayOfWeekText();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendTwoDigitYear(260, true);
@@ -21660,7 +21666,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1862278() throws Throwable {
+    public void test1862279() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         // Undeclared exception!
         try {
@@ -21675,33 +21681,24 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1872279() throws Throwable {
+    public void test1872280() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendMonthOfYearText();
         assertSame(dateTimeFormatterBuilder1, dateTimeFormatterBuilder0);
     }
 
     @Test(timeout = 4000)
-    public void test1882280() throws Throwable {
+    public void test1882281() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         boolean boolean0 = dateTimeFormatterBuilder0.canBuildFormatter();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1892281() throws Throwable {
+    public void test1892282() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendHourOfHalfday(12825000);
         assertSame(dateTimeFormatterBuilder0, dateTimeFormatterBuilder1);
-    }
-
-    @Test(timeout = 4000)
-    public void test1902282() throws Throwable {
-        DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
-        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.clockhourOfDay();
-        DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 10, 10);
-        dateTimeFormatterBuilder0.append((DateTimePrinter) dateTimeFormatterBuilder_Fraction0, (DateTimeParser) dateTimeFormatterBuilder_Fraction0);
-        assertEquals(10, dateTimeFormatterBuilder_Fraction0.estimateParsedLength());
     }
 
     @Test(timeout = 4000)
@@ -21710,11 +21707,20 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.clockhourOfDay();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 10, 10);
         dateTimeFormatterBuilder0.append((DateTimePrinter) dateTimeFormatterBuilder_Fraction0, (DateTimeParser) dateTimeFormatterBuilder_Fraction0);
+        assertEquals(10, dateTimeFormatterBuilder_Fraction0.estimateParsedLength());
+    }
+
+    @Test(timeout = 4000)
+    public void test1902284() throws Throwable {
+        DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.clockhourOfDay();
+        DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 10, 10);
+        dateTimeFormatterBuilder0.append((DateTimePrinter) dateTimeFormatterBuilder_Fraction0, (DateTimeParser) dateTimeFormatterBuilder_Fraction0);
         assertEquals(10, dateTimeFormatterBuilder_Fraction0.estimatePrintedLength());
     }
 
     @Test(timeout = 4000)
-    public void test1912284() throws Throwable {
+    public void test1912285() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         // Undeclared exception!
         try {
@@ -21729,21 +21735,21 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1922285() throws Throwable {
+    public void test1922286() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendYearOfEra(5, 574);
         assertSame(dateTimeFormatterBuilder0, dateTimeFormatterBuilder1);
     }
 
     @Test(timeout = 4000)
-    public void test1932286() throws Throwable {
+    public void test1932287() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendTwoDigitYear(0);
         assertSame(dateTimeFormatterBuilder0, dateTimeFormatterBuilder1);
     }
 
     @Test(timeout = 4000)
-    public void test1942287() throws Throwable {
+    public void test1942288() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer("V(!E)5");
         Locale locale0 = Locale.ITALIAN;
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
@@ -21752,7 +21758,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1952288() throws Throwable {
+    public void test1952289() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendEraText();
         dateTimeFormatterBuilder1.appendTimeZoneId();
@@ -21761,7 +21767,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1952289() throws Throwable {
+    public void test1952290() throws Throwable {
         DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new DateTimeFormatterBuilder();
         DateTimeFormatterBuilder dateTimeFormatterBuilder1 = dateTimeFormatterBuilder0.appendEraText();
         dateTimeFormatterBuilder1.appendTimeZoneId();
@@ -21770,7 +21776,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1962290() throws Throwable {
+    public void test1962291() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneOffset dateTimeFormatterBuilder_TimeZoneOffset0 = new DateTimeFormatterBuilder.TimeZoneOffset((String) null, "U=J", true, 44, 1584);
         StringBuffer stringBuffer0 = new StringBuffer(0);
         LocalDateTime localDateTime0 = new LocalDateTime();
@@ -21780,7 +21786,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1972291() throws Throwable {
+    public void test1972292() throws Throwable {
         Instant instant0 = null;
         try {
             instant0 = new Instant("kFdI~^pqIY}sv");
@@ -21794,7 +21800,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1982292() throws Throwable {
+    public void test1982293() throws Throwable {
         DateTimeFormatterBuilder.PaddedNumber dateTimeFormatterBuilder_PaddedNumber0 = new DateTimeFormatterBuilder.PaddedNumber((DateTimeFieldType) null, 162, true, (-2317));
         StringBuffer stringBuffer0 = new StringBuffer(0);
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
@@ -21804,7 +21810,7 @@ public class DateTimeFormatterBuilder_ESTest extends DateTimeFormatterBuilder_ES
     }
 
     @Test(timeout = 4000)
-    public void test1982293() throws Throwable {
+    public void test1982294() throws Throwable {
         DateTimeFormatterBuilder.PaddedNumber dateTimeFormatterBuilder_PaddedNumber0 = new DateTimeFormatterBuilder.PaddedNumber((DateTimeFieldType) null, 162, true, (-2317));
         StringBuffer stringBuffer0 = new StringBuffer(0);
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();

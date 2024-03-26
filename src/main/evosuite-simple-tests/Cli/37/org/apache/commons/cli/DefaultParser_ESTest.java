@@ -384,4 +384,17 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
         CommandLine commandLine0 = defaultParser0.parse(options0, stringArray0);
         assertNotNull(commandLine0);
     }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        options0.addOption("1", true, "1");
+        Options options1 = options0.addOption("", "1");
+        String[] stringArray0 = new String[2];
+        stringArray0[0] = "";
+        Properties properties0 = new Properties();
+        defaultParser0.parse(options1, stringArray0, properties0, true);
+        defaultParser0.handleConcatenatedOptions("---1");
+    }
 }

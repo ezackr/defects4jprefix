@@ -2401,7 +2401,19 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test123133() throws Throwable {
+    public void test122133() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        StringReader stringReader0 = new StringReader("p");
+        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, objectCodec0, charsToNameCanonicalizer0);
+        stringReader0.skip(2);
+        readerBasedJsonParser0.nextToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test123134() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("ALLOW_SINGLE_QUOTES");
@@ -2422,7 +2434,7 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test124134() throws Throwable {
+    public void test124135() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("' (code 0x");
@@ -2433,7 +2445,7 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test125135() throws Throwable {
+    public void test125136() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -2454,7 +2466,7 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test126136() throws Throwable {
+    public void test126137() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("p");
@@ -2467,7 +2479,7 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test127137() throws Throwable {
+    public void test127138() throws Throwable {
         IOContext iOContext0 = mock(IOContext.class, new ViolatedAssumptionAnswer());
         doReturn((TextBuffer) null).when(iOContext0).constructTextBuffer();
         StringReader stringReader0 = new StringReader("");
@@ -2480,7 +2492,7 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test128138() throws Throwable {
+    public void test128139() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         StringReader stringReader0 = new StringReader("I`RBJA");
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -2500,7 +2512,7 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test129139() throws Throwable {
+    public void test129140() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, true);
         StringReader stringReader0 = new StringReader("Numeric value (");

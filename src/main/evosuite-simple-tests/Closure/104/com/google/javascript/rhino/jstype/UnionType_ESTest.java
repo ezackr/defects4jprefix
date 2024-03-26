@@ -274,7 +274,35 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test1919() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
+        NumberType numberType0 = new NumberType(jSTypeRegistry0);
+        JSType jSType0 = numberType0.autoboxesTo();
+        linkedHashSet0.add(jSType0);
+        UnionType unionType0 = new UnionType(jSTypeRegistry0, linkedHashSet0);
+        NoType noType0 = new NoType(jSTypeRegistry0);
+        linkedHashSet0.add(noType0);
+        unionType0.testForEquality(numberType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
+        NumberType numberType0 = new NumberType(jSTypeRegistry0);
+        JSType jSType0 = numberType0.autoboxesTo();
+        linkedHashSet0.add(numberType0);
+        linkedHashSet0.add(jSType0);
+        UnionType unionType0 = new UnionType(jSTypeRegistry0, linkedHashSet0);
+        JSType.TypePair jSType_TypePair0 = unionType0.getTypesUnderShallowInequality(numberType0);
+        unionType0.testForEquality(jSType_TypePair0.typeB);
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -285,7 +313,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -298,7 +326,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         UnknownType unknownType0 = new UnknownType((JSTypeRegistry) null, false);
         linkedHashSet0.add(unknownType0);
@@ -317,7 +345,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -328,7 +356,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -341,7 +369,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -354,7 +382,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2725() throws Throwable {
+    public void test2727() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -367,7 +395,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2728() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -380,7 +408,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2829() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -393,7 +421,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2930() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -406,7 +434,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3031() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -417,7 +445,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3132() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -428,7 +456,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3233() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -438,7 +466,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3334() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -451,7 +479,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3335() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -464,7 +492,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3436() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -476,7 +504,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3537() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -488,7 +516,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3638() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -501,7 +529,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3739() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -513,7 +541,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3840() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         UnknownType unknownType0 = new UnknownType((JSTypeRegistry) null, false);
         linkedHashSet0.add(unknownType0);
@@ -531,7 +559,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3941() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -544,7 +572,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4042() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -557,7 +585,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4143() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -567,7 +595,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4242() throws Throwable {
+    public void test4244() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, linkedHashSet0);
         linkedHashSet0.add(unionType0);
@@ -583,7 +611,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4343() throws Throwable {
+    public void test4345() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -596,7 +624,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4444() throws Throwable {
+    public void test4446() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, linkedHashSet0);
         NumberType numberType0 = new NumberType((JSTypeRegistry) null);
@@ -606,7 +634,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4545() throws Throwable {
+    public void test4547() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
@@ -618,7 +646,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4646() throws Throwable {
+    public void test4648() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         VoidType voidType0 = new VoidType((JSTypeRegistry) null);
         linkedHashSet0.add(voidType0);
@@ -637,7 +665,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4747() throws Throwable {
+    public void test4749() throws Throwable {
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         VoidType voidType0 = new VoidType((JSTypeRegistry) null);
         linkedHashSet0.add(voidType0);
@@ -655,7 +683,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4848() throws Throwable {
+    public void test4850() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -668,7 +696,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4949() throws Throwable {
+    public void test4951() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         LinkedHashSet<JSType> linkedHashSet0 = new LinkedHashSet<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);

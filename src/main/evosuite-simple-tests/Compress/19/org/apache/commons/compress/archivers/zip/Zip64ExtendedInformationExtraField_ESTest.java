@@ -172,7 +172,15 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1212() throws Throwable {
+        ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(1L);
+        ZipLong zipLong0 = ZipLong.ZIP64_MAGIC;
+        Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
+        zip64ExtendedInformationExtraField0.reparseCentralDirectoryData(true, false, false, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField((ZipEightByteInteger) null, (ZipEightByteInteger) null);
         byte[] byteArray0 = new byte[6];
         try {
@@ -187,7 +195,7 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(bigInteger0);
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0);
@@ -197,7 +205,7 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
         byte[] byteArray0 = new byte[8];
         // Undeclared exception!
@@ -213,14 +221,24 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1616() throws Throwable {
+        ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(1L);
+        ZipLong zipLong0 = ZipLong.ZIP64_MAGIC;
+        Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
+        byte[] byteArray0 = zip64ExtendedInformationExtraField0.getCentralDirectoryData();
+        zip64ExtendedInformationExtraField0.parseFromCentralDirectoryData(byteArray0, 4, 4);
+        zip64ExtendedInformationExtraField0.reparseCentralDirectoryData(false, false, false, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
         byte[] byteArray0 = zip64ExtendedInformationExtraField0.getCentralDirectoryData();
         assertEquals(0, byteArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(814L);
         ZipLong zipLong0 = ZipLong.LFH_SIG;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, (ZipEightByteInteger) null, (ZipEightByteInteger) null, zipLong0);
@@ -237,7 +255,7 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
         ZipEightByteInteger zipEightByteInteger0 = ZipEightByteInteger.ZERO;
         zip64ExtendedInformationExtraField0.setCompressedSize(zipEightByteInteger0);
@@ -254,14 +272,14 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
         byte[] byteArray0 = zip64ExtendedInformationExtraField0.getLocalFileDataData();
         assertArrayEquals(new byte[] {}, byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = ZipEightByteInteger.ZERO;
         ZipLong zipLong0 = ZipLong.DD_SIG;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
@@ -270,7 +288,7 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = ZipEightByteInteger.ZERO;
         ZipLong zipLong0 = ZipLong.DD_SIG;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
@@ -279,14 +297,14 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField((ZipEightByteInteger) null, (ZipEightByteInteger) null);
         ZipShort zipShort0 = zip64ExtendedInformationExtraField0.getCentralDirectoryLength();
         assertEquals(0, zipShort0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = ZipEightByteInteger.ZERO;
         ZipLong zipLong0 = ZipLong.DD_SIG;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
@@ -295,14 +313,14 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField((ZipEightByteInteger) null, (ZipEightByteInteger) null);
         ZipShort zipShort0 = zip64ExtendedInformationExtraField0.getLocalFileDataLength();
         assertEquals(0, zipShort0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(1L);
         ZipLong zipLong0 = ZipLong.ZIP64_MAGIC;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
@@ -311,14 +329,14 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test2725() throws Throwable {
+    public void test2727() throws Throwable {
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField((ZipEightByteInteger) null, (ZipEightByteInteger) null);
         ZipShort zipShort0 = zip64ExtendedInformationExtraField0.getHeaderId();
         assertEquals(1, zipShort0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test2826() throws Throwable {
+    public void test2828() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = ZipEightByteInteger.ZERO;
         ZipLong zipLong0 = ZipLong.LFH_SIG;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
@@ -327,11 +345,32 @@ public class Zip64ExtendedInformationExtraField_ESTest extends Zip64ExtendedInfo
     }
 
     @Test(timeout = 4000)
-    public void test3027() throws Throwable {
+    public void test2929() throws Throwable {
+        ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(1L);
+        ZipLong zipLong0 = ZipLong.ZIP64_MAGIC;
+        Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
+        zip64ExtendedInformationExtraField0.setRelativeHeaderOffset(zipEightByteInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
         ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(1L);
         ZipLong zipLong0 = ZipLong.ZIP64_MAGIC;
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField(zipEightByteInteger0, zipEightByteInteger0, zipEightByteInteger0, zipLong0);
         ZipLong zipLong1 = zip64ExtendedInformationExtraField0.getDiskStartNumber();
         assertSame(zipLong1, zipLong0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField((ZipEightByteInteger) null, (ZipEightByteInteger) null);
+        zip64ExtendedInformationExtraField0.setSize((ZipEightByteInteger) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
+        ZipEightByteInteger zipEightByteInteger0 = zip64ExtendedInformationExtraField0.getCompressedSize();
+        zip64ExtendedInformationExtraField0.setCompressedSize(zipEightByteInteger0);
     }
 }

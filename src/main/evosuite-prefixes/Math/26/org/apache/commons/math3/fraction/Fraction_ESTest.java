@@ -1031,67 +1031,73 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test85142() throws Throwable {
-        Fraction fraction0 = new Fraction(1);
-        int int0 = fraction0.intValue();
+    public void test84142() throws Throwable {
+        Fraction fraction0 = Fraction.TWO_QUARTERS;
+        fraction0.hashCode();
     }
 
     @Test(timeout = 4000)
     public void test85143() throws Throwable {
         Fraction fraction0 = new Fraction(1);
         int int0 = fraction0.intValue();
-        fraction0.getDenominator();
     }
 
     @Test(timeout = 4000)
-    public void test86144() throws Throwable {
-        Fraction fraction0 = Fraction.TWO_QUARTERS;
-        long long0 = fraction0.longValue();
-        fraction0.floatValue();
+    public void test85144() throws Throwable {
+        Fraction fraction0 = new Fraction(1);
+        int int0 = fraction0.intValue();
+        fraction0.getDenominator();
     }
 
     @Test(timeout = 4000)
     public void test86145() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         long long0 = fraction0.longValue();
+        fraction0.floatValue();
     }
 
     @Test(timeout = 4000)
-    public void test87146() throws Throwable {
-        Fraction fraction0 = new Fraction((-4313.770396564076));
-        Fraction fraction1 = fraction0.reciprocal();
-        fraction1.floatValue();
+    public void test86146() throws Throwable {
+        Fraction fraction0 = Fraction.TWO_QUARTERS;
+        long long0 = fraction0.longValue();
     }
 
     @Test(timeout = 4000)
     public void test87147() throws Throwable {
         Fraction fraction0 = new Fraction((-4313.770396564076));
         Fraction fraction1 = fraction0.reciprocal();
+        fraction1.floatValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test87148() throws Throwable {
+        Fraction fraction0 = new Fraction((-4313.770396564076));
+        Fraction fraction1 = fraction0.reciprocal();
         fraction1.getNumerator();
     }
 
     @Test(timeout = 4000)
-    public void test88148() throws Throwable {
+    public void test88149() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         FractionField fractionField0 = fraction0.TWO_THIRDS.getField();
-    }
-
-    @Test(timeout = 4000)
-    public void test89149() throws Throwable {
-        Fraction fraction0 = Fraction.TWO_QUARTERS;
-        Fraction fraction1 = fraction0.ONE_HALF.subtract(fraction0);
-        fraction1.getDenominator();
     }
 
     @Test(timeout = 4000)
     public void test89150() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         Fraction fraction1 = fraction0.ONE_HALF.subtract(fraction0);
+        fraction1.getDenominator();
+    }
+
+    @Test(timeout = 4000)
+    public void test89151() throws Throwable {
+        Fraction fraction0 = Fraction.TWO_QUARTERS;
+        Fraction fraction1 = fraction0.ONE_HALF.subtract(fraction0);
         fraction1.percentageValue();
     }
 
     @Test(timeout = 4000)
-    public void test90151() throws Throwable {
+    public void test90152() throws Throwable {
         Fraction fraction0 = Fraction.ONE;
         int int0 = fraction0.getDenominator();
     }

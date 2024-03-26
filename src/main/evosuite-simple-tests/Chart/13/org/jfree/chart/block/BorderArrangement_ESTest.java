@@ -275,7 +275,21 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test089() throws Throwable {
+        BorderArrangement borderArrangement0 = new BorderArrangement();
+        borderArrangement0.equals(borderArrangement0);
+        BlockContainer blockContainer0 = new BlockContainer();
+        AffineTransform affineTransform0 = AffineTransform.getTranslateInstance((-2100.724604096333), (-2100.724604096333));
+        HashMap<RenderingHints.Key, ChronoLocalDate> hashMap0 = new HashMap<RenderingHints.Key, ChronoLocalDate>();
+        RenderingHints renderingHints0 = new RenderingHints(hashMap0);
+        AffineTransformOp affineTransformOp0 = new AffineTransformOp(affineTransform0, renderingHints0);
+        byte[] byteArray0 = new byte[1];
+        RectangleConstraint rectangleConstraint0 = RectangleConstraint.NONE;
+        borderArrangement0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test0910() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         borderArrangement0.arrangeNN(blockContainer0, (Graphics2D) null);
@@ -285,7 +299,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0910() throws Throwable {
+    public void test0911() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         borderArrangement0.arrangeNN(blockContainer0, (Graphics2D) null);
@@ -298,7 +312,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1012() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         RectangleEdge rectangleEdge0 = RectangleEdge.BOTTOM;
@@ -324,7 +338,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1112() throws Throwable {
+    public void test1113() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -350,7 +364,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1213() throws Throwable {
+    public void test1214() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -387,7 +401,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1314() throws Throwable {
+    public void test1315() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Graphics2D graphics2D0 = null;
@@ -413,7 +427,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1415() throws Throwable {
+    public void test1416() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -446,7 +460,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1516() throws Throwable {
+    public void test1517() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -484,7 +498,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1617() throws Throwable {
+    public void test1618() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -522,7 +536,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1718() throws Throwable {
+    public void test1719() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -560,7 +574,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1819() throws Throwable {
+    public void test1820() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         IsoEra isoEra0 = IsoEra.BCE;
         borderArrangement0.equals(isoEra0);
@@ -579,7 +593,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1920() throws Throwable {
+    public void test1921() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Graphics2D graphics2D0 = null;
@@ -601,7 +615,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2021() throws Throwable {
+    public void test2022() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         BufferedImage bufferedImage0 = new BufferedImage(193, 193, 7);
@@ -622,7 +636,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2122() throws Throwable {
+    public void test2123() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         TimeZone timeZone0 = TimeZone.getTimeZone("Not implemented.");
@@ -645,7 +659,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2224() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -665,7 +679,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -703,7 +717,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "");
@@ -725,7 +739,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         EmptyBlock emptyBlock0 = new EmptyBlock(5905.80729, Double.POSITIVE_INFINITY);
@@ -746,7 +760,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2628() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         BufferedImage bufferedImage0 = new BufferedImage(193, 193, 7);
@@ -757,7 +771,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2729() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Size2D size2D0 = borderArrangement0.arrangeNN(blockContainer0, (Graphics2D) null);
@@ -765,7 +779,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2830() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Color color0 = Color.getColor("Ve!CDbg19FKCi", 3441);
@@ -785,7 +799,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
+    public void test2931() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         // Undeclared exception!
@@ -801,7 +815,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3031() throws Throwable {
+    public void test3032() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         CenterArrangement centerArrangement0 = new CenterArrangement();
         BlockContainer blockContainer0 = new BlockContainer(centerArrangement0);
@@ -821,7 +835,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3132() throws Throwable {
+    public void test3133() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         borderArrangement0.equals((Object) null);
         Object object0 = new Object();
@@ -841,7 +855,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3234() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -859,7 +873,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3334() throws Throwable {
+    public void test3335() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -882,7 +896,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3435() throws Throwable {
+    public void test3436() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         // Undeclared exception!
@@ -898,7 +912,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3536() throws Throwable {
+    public void test3537() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         Block block0 = null;
         String string0 = "FbXJ`I2+'9,v";
@@ -915,7 +929,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3638() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -935,7 +949,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3739() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         // Undeclared exception!
@@ -951,7 +965,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3840() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
@@ -970,7 +984,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3941() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         DynamicTimeSeriesCollection dynamicTimeSeriesCollection0 = new DynamicTimeSeriesCollection(0, 0);
@@ -983,7 +997,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4042() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         borderArrangement0.add((Block) null, (Object) null);
         BlockContainer blockContainer0 = null;
@@ -1006,7 +1020,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4143() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         EmptyBlock emptyBlock0 = new EmptyBlock(0.0, 0.0);
         // Undeclared exception!
@@ -1022,7 +1036,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4244() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BorderArrangement borderArrangement1 = new BorderArrangement();
         boolean boolean0 = borderArrangement0.equals(borderArrangement1);
@@ -1030,7 +1044,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4244() throws Throwable {
+    public void test4245() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BorderArrangement borderArrangement1 = new BorderArrangement();
         boolean boolean0 = borderArrangement0.equals(borderArrangement1);
@@ -1046,7 +1060,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4245() throws Throwable {
+    public void test4246() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BorderArrangement borderArrangement1 = new BorderArrangement();
         boolean boolean0 = borderArrangement0.equals(borderArrangement1);
@@ -1064,7 +1078,13 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4446() throws Throwable {
+    public void test4347() throws Throwable {
+        BorderArrangement borderArrangement0 = new BorderArrangement();
+        borderArrangement0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test4448() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         RectangleEdge rectangleEdge0 = RectangleEdge.RIGHT;
         borderArrangement0.equals(rectangleEdge0);
@@ -1089,7 +1109,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4547() throws Throwable {
+    public void test4549() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -1119,7 +1139,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4648() throws Throwable {
+    public void test4650() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         RectangleEdge rectangleEdge0 = RectangleEdge.LEFT;
         borderArrangement0.equals(rectangleEdge0);
@@ -1149,7 +1169,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4749() throws Throwable {
+    public void test4751() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) 0;
@@ -1187,7 +1207,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4850() throws Throwable {
+    public void test4852() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Range range0 = new Range(1.5, 1.5);
@@ -1205,7 +1225,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4951() throws Throwable {
+    public void test4953() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Graphics2D graphics2D0 = null;
@@ -1226,7 +1246,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5052() throws Throwable {
+    public void test5054() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer();
         Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double((-186.01), 1428.270794, 1.0, (-186.01));
@@ -1250,7 +1270,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5153() throws Throwable {
+    public void test5155() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Graphics2D graphics2D0 = null;
@@ -1272,7 +1292,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5254() throws Throwable {
+    public void test5256() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         BlockContainer blockContainer0 = new BlockContainer(borderArrangement0);
         Graphics2D graphics2D0 = null;
@@ -1294,7 +1314,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5355() throws Throwable {
+    public void test5357() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         RectangleEdge rectangleEdge0 = RectangleEdge.BOTTOM;
         borderArrangement0.equals(rectangleEdge0);
@@ -1321,7 +1341,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5456() throws Throwable {
+    public void test5458() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         RectangleEdge rectangleEdge0 = RectangleEdge.RIGHT;
         borderArrangement0.equals(rectangleEdge0);
@@ -1334,7 +1354,7 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5557() throws Throwable {
+    public void test5559() throws Throwable {
         BorderArrangement borderArrangement0 = new BorderArrangement();
         RectangleEdge rectangleEdge0 = RectangleEdge.TOP;
         borderArrangement0.equals(rectangleEdge0);
@@ -1348,11 +1368,25 @@ public class BorderArrangement_ESTest extends BorderArrangement_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5758() throws Throwable {
+    public void test5660() throws Throwable {
+        BorderArrangement borderArrangement0 = new BorderArrangement();
+        borderArrangement0.equals(borderArrangement0);
+        AffineTransform.getTranslateInstance((-2100.724604096333), (-2100.724604096333));
+        byte[] byteArray0 = new byte[0];
+        borderArrangement0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test5761() throws Throwable {
         BlockContainer blockContainer0 = new BlockContainer();
         RectangleConstraint rectangleConstraint0 = new RectangleConstraint(7, 7);
         FlowArrangement flowArrangement0 = new FlowArrangement();
         BlockContainer blockContainer1 = new BlockContainer(flowArrangement0);
         assertEquals(0.0, blockContainer1.getHeight(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test5862() throws Throwable {
+        int[] intArray0 = new int[0];
     }
 }

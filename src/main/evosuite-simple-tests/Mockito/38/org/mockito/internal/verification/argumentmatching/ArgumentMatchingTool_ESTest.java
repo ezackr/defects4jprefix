@@ -14,4 +14,9 @@ import org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class ArgumentMatchingTool_ESTest extends ArgumentMatchingTool_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        ArgumentMatchingTool argumentMatchingTool0 = new ArgumentMatchingTool();
+    }
 }

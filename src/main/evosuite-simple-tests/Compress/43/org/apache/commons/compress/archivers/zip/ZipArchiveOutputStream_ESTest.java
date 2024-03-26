@@ -13,4 +13,9 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
 public class ZipArchiveOutputStream_ESTest extends ZipArchiveOutputStream_ESTest_scaffolding {
+
+    @Test
+    public void notGeneratedAnyTest0() {
+        // EvoSuite did not generate any tests
+    }
 }

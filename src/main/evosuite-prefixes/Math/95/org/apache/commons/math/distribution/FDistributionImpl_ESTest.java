@@ -101,130 +101,138 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0813() throws Throwable {
+    public void test0713() throws Throwable {
+        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 1701.2);
+        fDistributionImpl0.setNumeratorDegreesOfFreedom(1.0E-6);
+        // Undeclared exception!
+        fDistributionImpl0.inverseCumulativeProbability(0.9999967531099152);
+    }
+
+    @Test(timeout = 4000)
+    public void test0814() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         fDistributionImpl0.inverseCumulativeProbability(1.7976931348623157E308);
     }
 
     @Test(timeout = 4000)
-    public void test0914() throws Throwable {
+    public void test0915() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         fDistributionImpl0.setDenominatorDegreesOfFreedom(1023.111003045955);
         fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
-    public void test1015() throws Throwable {
+    public void test1016() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(4347.3109934, 4347.3109934);
         fDistributionImpl0.setNumeratorDegreesOfFreedom(0.0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1116() throws Throwable {
-        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
-        double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
-        fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
     public void test1117() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
         double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
-        fDistributionImpl0.getNumeratorDegreesOfFreedom();
+        fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
     public void test1118() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
         double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
+        fDistributionImpl0.getNumeratorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
-    public void test1219() throws Throwable {
-        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
-        double double0 = fDistributionImpl0.getDenominatorDegreesOfFreedom();
-        fDistributionImpl0.getNumeratorDegreesOfFreedom();
+    public void test1119() throws Throwable {
+        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
+        double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
     }
 
     @Test(timeout = 4000)
     public void test1220() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         double double0 = fDistributionImpl0.getDenominatorDegreesOfFreedom();
+        fDistributionImpl0.getNumeratorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
-    public void test1321() throws Throwable {
+    public void test1221() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
-        double double0 = fDistributionImpl0.getNumeratorDegreesOfFreedom();
-        fDistributionImpl0.getDenominatorDegreesOfFreedom();
+        double double0 = fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
     public void test1322() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         double double0 = fDistributionImpl0.getNumeratorDegreesOfFreedom();
+        fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
-    public void test1423() throws Throwable {
+    public void test1323() throws Throwable {
+        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
+        double double0 = fDistributionImpl0.getNumeratorDegreesOfFreedom();
+    }
+
+    @Test(timeout = 4000)
+    public void test1424() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(8.441822398385275E-5, 0.9999999999999971);
         fDistributionImpl0.setDenominatorDegreesOfFreedom(0.0);
     }
 
     @Test(timeout = 4000)
-    public void test1524() throws Throwable {
+    public void test1525() throws Throwable {
         FDistributionImpl fDistributionImpl0 = null;
         fDistributionImpl0 = new FDistributionImpl((-2976.553895288), (-2976.553895288));
-    }
-
-    @Test(timeout = 4000)
-    public void test1625() throws Throwable {
-        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
-        double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
     }
 
     @Test(timeout = 4000)
     public void test1626() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
-        fDistributionImpl0.getNumeratorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
     public void test1627() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
-        fDistributionImpl0.getDenominatorDegreesOfFreedom();
+        fDistributionImpl0.getNumeratorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
-    public void test1728() throws Throwable {
-        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
-        double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
+    public void test1628() throws Throwable {
+        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
+        double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
+        fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
     public void test1729() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
-        fDistributionImpl0.getNumeratorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
     public void test1730() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
+        fDistributionImpl0.getNumeratorDegreesOfFreedom();
+    }
+
+    @Test(timeout = 4000)
+    public void test1731() throws Throwable {
+        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
+        double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
         fDistributionImpl0.getDenominatorDegreesOfFreedom();
     }
 
     @Test(timeout = 4000)
-    public void test1831() throws Throwable {
+    public void test1832() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(234.30556717516757, 234.30556717516757);
         fDistributionImpl0.inverseCumulativeProbability(0.9999999999999999);
     }
 
     @Test(timeout = 4000)
-    public void test1932() throws Throwable {
+    public void test1933() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.cumulativeProbability(1389.8747);
     }

@@ -183,7 +183,25 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1414() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = 865.9414599382999;
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        // Undeclared exception!
+        UnivariateRealSolverUtils.bracket((UnivariateRealFunction) polynomialFunctionLagrangeForm0, 865.9414599382999, 865.9414599382999, 2142582.8990391945, 2022);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = 2514.9414599383;
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        // Undeclared exception!
+        UnivariateRealSolverUtils.bracket((UnivariateRealFunction) polynomialFunctionLagrangeForm0, 2514.9414599383, 0.0, 2514.9414599383);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (-1454.0);
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
@@ -199,7 +217,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         double[] doubleArray0 = new double[7];
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         // Undeclared exception!
@@ -215,7 +233,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         double[] doubleArray0 = new double[3];
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
         // Undeclared exception!
@@ -231,7 +249,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         // Undeclared exception!
         try {
             UnivariateRealSolverUtils.bracket((UnivariateRealFunction) null, (-1490.0), (-1490.0), 0.5, 0);
@@ -245,7 +263,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[1] = (-127.63355408236791);
         doubleArray0[2] = (-2963.22064613);
@@ -256,7 +274,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         double[] doubleArray0 = new double[8];
         doubleArray0[4] = (-1836.04);
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
@@ -272,7 +290,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         double[] doubleArray0 = new double[7];
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         try {
@@ -287,7 +305,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         double[] doubleArray0 = new double[17];
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         // Undeclared exception!
@@ -303,7 +321,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         double[] doubleArray0 = new double[6];
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
         // Undeclared exception!
@@ -319,7 +337,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         double[] doubleArray0 = new double[5];
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         // Undeclared exception!
@@ -335,7 +353,7 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         double[] doubleArray0 = new double[6];
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
         try {
@@ -350,13 +368,13 @@ public class UnivariateRealSolverUtils_ESTest extends UnivariateRealSolverUtils_
     }
 
     @Test(timeout = 4000)
-    public void test2725() throws Throwable {
+    public void test2727() throws Throwable {
         double double0 = UnivariateRealSolverUtils.midpoint((-4935.6723), (-4935.6723));
         assertEquals((-4935.6723), double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2826() throws Throwable {
+    public void test2828() throws Throwable {
         // Undeclared exception!
         try {
             UnivariateRealSolverUtils.solve((UnivariateRealFunction) null, 0.0, 0.0);

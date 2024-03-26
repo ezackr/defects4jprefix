@@ -510,7 +510,27 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05250() throws Throwable {
+    public void test05050() throws Throwable {
+        PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
+        PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(46, 46, 46, true, 12825000, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
+        Minutes minutes0 = Minutes.MAX_VALUE;
+        PeriodType periodType0 = minutes0.getPeriodType();
+        MutablePeriod mutablePeriod0 = new MutablePeriod(periodType0);
+        periodFormatterBuilder_FieldFormatter0.setFieldValue(mutablePeriod0, 46, 10);
+    }
+
+    @Test(timeout = 4000)
+    public void test05151() throws Throwable {
+        PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("y?l!oHH", "No formatter supplied");
+        PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
+        PeriodFormatterBuilder.FieldFormatter[] periodFormatterBuilder_FieldFormatterArray0 = new PeriodFormatterBuilder.FieldFormatter[0];
+        PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-4058), 0, 0, false, (-4058), periodFormatterBuilder_FieldFormatterArray0, periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_CompositeAffix0);
+        MutablePeriod mutablePeriod0 = new MutablePeriod();
+        periodFormatterBuilder_FieldFormatter0.setFieldValue(mutablePeriod0, 0, 2384);
+    }
+
+    @Test(timeout = 4000)
+    public void test05252() throws Throwable {
         PeriodFormatterBuilder.FieldFormatter[] periodFormatterBuilder_FieldFormatterArray0 = new PeriodFormatterBuilder.FieldFormatter[0];
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("America/Anchorage");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
@@ -522,7 +542,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05351() throws Throwable {
+    public void test05353() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("PST", "PST");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(0, 0, 0, true, 8, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "PST");
@@ -533,7 +553,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05352() throws Throwable {
+    public void test05354() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("PST", "PST");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(0, 0, 0, true, 8, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "PST");
@@ -544,7 +564,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05453() throws Throwable {
+    public void test05455() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("@# Z'shUP7A4ykh'Q", "@# Z'shUP7A4ykh'Q");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(1829, 1829, 10, false, 7, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
         PeriodType periodType0 = PeriodType.hours();
@@ -557,12 +577,12 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05554() throws Throwable {
+    public void test05556() throws Throwable {
         Period.parse("P;$");
     }
 
     @Test(timeout = 4000)
-    public void test05655() throws Throwable {
+    public void test05657() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-26), 0, 0, true, 0, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, (PeriodFormatterBuilder.PeriodFieldAffix) null);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -575,7 +595,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05656() throws Throwable {
+    public void test05658() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-26), 0, 0, true, 0, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, (PeriodFormatterBuilder.PeriodFieldAffix) null);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -588,7 +608,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05757() throws Throwable {
+    public void test05759() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(1369, 0, 0, true, 0, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -601,7 +621,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05858() throws Throwable {
+    public void test05860() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("C");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-26), 1, 1, true, 1, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -614,7 +634,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05859() throws Throwable {
+    public void test05861() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("C");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-26), 1, 1, true, 1, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -627,7 +647,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test05960() throws Throwable {
+    public void test05962() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-26), 0, 0, true, 0, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         Hours hours0 = Hours.SIX;
@@ -638,7 +658,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test06061() throws Throwable {
+    public void test06063() throws Throwable {
         PeriodFormatterBuilder.FieldFormatter[] periodFormatterBuilder_FieldFormatterArray0 = new PeriodFormatterBuilder.FieldFormatter[3];
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("WL 00Q\"Q8gl1S!s?ig", "WL 00Q\"Q8gl1S!s?ig");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(0, 45, (-231), true, (-231), periodFormatterBuilder_FieldFormatterArray0, periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
@@ -651,7 +671,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test06162() throws Throwable {
+    public void test06164() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("org.joda.time.format.PeriodFormatterBuilder$FieldFormatter");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter(45, 968, 1068, false, 3138, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter1 = new PeriodFormatterBuilder.FieldFormatter(periodFormatterBuilder_FieldFormatter0, periodFormatterBuilder_SimpleAffix0);
@@ -659,45 +679,45 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test06263() throws Throwable {
+    public void test06265() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         int int0 = periodFormatterBuilder_CompositeAffix0.parse("", 1117);
     }
 
     @Test(timeout = 4000)
-    public void test06364() throws Throwable {
+    public void test06366() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("$1<0k(~JhI! ", "uC");
         int int0 = periodFormatterBuilder_PluralAffix0.scan("uC", 909);
     }
 
     @Test(timeout = 4000)
-    public void test06465() throws Throwable {
+    public void test06467() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("%c3jr9u8ipj*/nj", " for ");
         int int0 = periodFormatterBuilder_PluralAffix0.parse(" for ", 0);
     }
 
     @Test(timeout = 4000)
-    public void test06566() throws Throwable {
+    public void test06568() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("$1<0k(~JhI! ", "uC");
         int int0 = periodFormatterBuilder_PluralAffix0.parse("No printer supplied", (-910));
     }
 
     @Test(timeout = 4000)
-    public void test06667() throws Throwable {
+    public void test06669() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("y?l!oHH", "No formatter supplied");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
         int int0 = periodFormatterBuilder_CompositeAffix0.parse("No formatter supplied", 0);
     }
 
     @Test(timeout = 4000)
-    public void test06768() throws Throwable {
+    public void test06770() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("org.joda.time.format.PeriodFormatterBuilder$Separator", "U");
         int int0 = periodFormatterBuilder_PluralAffix0.calculatePrintedLength(29);
     }
 
     @Test(timeout = 4000)
-    public void test06869() throws Throwable {
+    public void test06871() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("LMODo<b;fS'", "LMODo<b;fS'");
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("LMODo<b;fS'");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_SimpleAffix0);
@@ -705,7 +725,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test06970() throws Throwable {
+    public void test06972() throws Throwable {
         PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("LMODo<b;fS'", "org.joda.time.format.PeriodFormatterBuilder");
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("org.joda.time.format.PeriodFormatterBuilder");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_SimpleAffix0);
@@ -713,20 +733,20 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test07071() throws Throwable {
+    public void test07073() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("Cannot have two adjacent separators");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         int int0 = periodFormatterBuilder_CompositeAffix0.scan(":J", 43);
     }
 
     @Test(timeout = 4000)
-    public void test07172() throws Throwable {
+    public void test07174() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("p");
         int int0 = periodFormatterBuilder_SimpleAffix0.parse("p", 0);
     }
 
     @Test(timeout = 4000)
-    public void test07273() throws Throwable {
+    public void test07275() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSeparatorIfFieldsAfter("N4| mL+}:>t~[b2+");
         periodFormatterBuilder0.toParser();
@@ -734,7 +754,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test07374() throws Throwable {
+    public void test07376() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendMillis();
         periodFormatterBuilder1.appendSeparatorIfFieldsBefore("U");
@@ -743,14 +763,14 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test07475() throws Throwable {
+    public void test07477() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendPrefix("org/joda/time/tz/data");
         periodFormatterBuilder0.appendSeparator("%Ds:9=pzD", "4(Z~N<LUBT9sA");
     }
 
     @Test(timeout = 4000)
-    public void test07576() throws Throwable {
+    public void test07578() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendHours();
         PeriodFormatterBuilder periodFormatterBuilder2 = periodFormatterBuilder1.appendSeparator("840PJ5:}KX7'Wr,EPHC", "840PJ5:}KX7'Wr,EPHC");
@@ -761,19 +781,19 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test07677() throws Throwable {
+    public void test07679() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendSeparatorIfFieldsBefore("LMODo<b;fS'");
     }
 
     @Test(timeout = 4000)
-    public void test07778() throws Throwable {
+    public void test07780() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSeparator("yk{$k&Ob4Ww ", (String) null);
     }
 
     @Test(timeout = 4000)
-    public void test07879() throws Throwable {
+    public void test07881() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         String[] stringArray0 = new String[2];
         stringArray0[0] = "iv|j!27lXl";
@@ -787,56 +807,56 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test07980() throws Throwable {
+    public void test07982() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSuffix("] |a", (String) null);
     }
 
     @Test(timeout = 4000)
-    public void test08081() throws Throwable {
+    public void test08083() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSuffix((String) null, "Builder has created neither a printer nor a parser");
     }
 
     @Test(timeout = 4000)
-    public void test08182() throws Throwable {
+    public void test08184() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSuffix((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test08283() throws Throwable {
+    public void test08285() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSuffix("");
     }
 
     @Test(timeout = 4000)
-    public void test08384() throws Throwable {
+    public void test08386() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendPrefix("org/joda/time/tz/data");
         PeriodFormatterBuilder periodFormatterBuilder2 = periodFormatterBuilder0.appendPrefix("Asia/Yerevan", "");
     }
 
     @Test(timeout = 4000)
-    public void test08485() throws Throwable {
+    public void test08487() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendPrefix("Y%<uO}'}=q7F6QTt/C", (String) null);
     }
 
     @Test(timeout = 4000)
-    public void test08586() throws Throwable {
+    public void test08588() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendPrefix((String) null, "Cannot have two adjacent separators");
     }
 
     @Test(timeout = 4000)
-    public void test08687() throws Throwable {
+    public void test08689() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendPrefix((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test08788() throws Throwable {
+    public void test08790() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendPrefix("mJ^bQ? uQ");
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
@@ -845,25 +865,31 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test08889() throws Throwable {
+    public void test08891() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendLiteral((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test08990() throws Throwable {
+    public void test08992() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendLiteral("mJ^bQ? uQ");
     }
 
     @Test(timeout = 4000)
-    public void test09091() throws Throwable {
+    public void test09093() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.append((PeriodFormatter) null);
     }
 
     @Test(timeout = 4000)
-    public void test09292() throws Throwable {
+    public void test09194() throws Throwable {
+        PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
+        periodFormatterBuilder0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test09295() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder.Literal periodFormatterBuilder_Literal0 = new PeriodFormatterBuilder.Literal("~z<$p");
         periodFormatterBuilder0.append((PeriodPrinter) null, (PeriodParser) periodFormatterBuilder_Literal0);
@@ -871,7 +897,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test09393() throws Throwable {
+    public void test09396() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("org.joda.time.format.PeriodFormatterBuilder");
         StringBuffer stringBuffer0 = new StringBuffer(43);
         periodFormatterBuilder_SimpleAffix0.printTo(stringBuffer0, (-2291));
@@ -879,7 +905,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test09494() throws Throwable {
+    public void test09497() throws Throwable {
         String[] stringArray0 = new String[3];
         stringArray0[0] = "";
         stringArray0[1] = "s3+V''gb6";
@@ -895,7 +921,7 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test09595() throws Throwable {
+    public void test09598() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("");
         PeriodFormatterBuilder.FieldFormatter periodFormatterBuilder_FieldFormatter0 = new PeriodFormatterBuilder.FieldFormatter((-26), 0, 0, true, 0, (PeriodFormatterBuilder.FieldFormatter[]) null, periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         Hours hours0 = Hours.SIX;
@@ -916,38 +942,38 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test09696() throws Throwable {
+    public void test09699() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendMillis3Digit();
     }
 
     @Test(timeout = 4000)
-    public void test09797() throws Throwable {
+    public void test097100() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendSecondsWithOptionalMillis();
     }
 
     @Test(timeout = 4000)
-    public void test09898() throws Throwable {
+    public void test098101() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSeparator((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test09999() throws Throwable {
+    public void test099102() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.minimumPrintedDigits(702);
     }
 
     @Test(timeout = 4000)
-    public void test100100() throws Throwable {
+    public void test100103() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendWeeks();
         PeriodFormatterBuilder periodFormatterBuilder2 = periodFormatterBuilder0.appendSuffix("o],", "o],");
     }
 
     @Test(timeout = 4000)
-    public void test101101() throws Throwable {
+    public void test101104() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendMonths();
         String[] stringArray0 = new String[2];
@@ -958,13 +984,13 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test102102() throws Throwable {
+    public void test102105() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendSeparatorIfFieldsBefore((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test103103() throws Throwable {
+    public void test103106() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         periodFormatterBuilder0.appendDays();
         PeriodFormatterBuilder.Composite periodFormatterBuilder_Composite0 = (PeriodFormatterBuilder.Composite) periodFormatterBuilder0.toParser();
@@ -973,49 +999,49 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test104104() throws Throwable {
+    public void test104107() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendMinutes();
     }
 
     @Test(timeout = 4000)
-    public void test105105() throws Throwable {
+    public void test105108() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.printZeroNever();
     }
 
     @Test(timeout = 4000)
-    public void test106106() throws Throwable {
+    public void test106109() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.maximumParsedDigits(0);
     }
 
     @Test(timeout = 4000)
-    public void test107107() throws Throwable {
+    public void test107110() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodPrinter periodPrinter0 = periodFormatterBuilder0.toPrinter();
     }
 
     @Test(timeout = 4000)
-    public void test108108() throws Throwable {
+    public void test108111() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.printZeroRarelyFirst();
     }
 
     @Test(timeout = 4000)
-    public void test109109() throws Throwable {
+    public void test109112() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendYears();
     }
 
     @Test(timeout = 4000)
-    public void test110110() throws Throwable {
+    public void test110113() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.printZeroIfSupported();
     }
 
     @Test(timeout = 4000)
-    public void test111111() throws Throwable {
+    public void test111114() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendSeconds();
         PeriodFormatterBuilder periodFormatterBuilder2 = periodFormatterBuilder1.appendSeparatorIfFieldsBefore("c!58'_:^z+=");
@@ -1023,25 +1049,25 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test112112() throws Throwable {
+    public void test112115() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.rejectSignedValues(true);
     }
 
     @Test(timeout = 4000)
-    public void test113113() throws Throwable {
+    public void test113116() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.printZeroAlways();
     }
 
     @Test(timeout = 4000)
-    public void test114114() throws Throwable {
+    public void test114117() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.printZeroRarelyLast();
     }
 
     @Test(timeout = 4000)
-    public void test115115() throws Throwable {
+    public void test115118() throws Throwable {
         PeriodFormatterBuilder periodFormatterBuilder0 = new PeriodFormatterBuilder();
         PeriodFormatterBuilder periodFormatterBuilder1 = periodFormatterBuilder0.appendHours();
         periodFormatterBuilder1.appendSeparator("840PJ5:}KX7'Wr,EPHC", "840PJ5:}KX7'Wr,EPHC");
@@ -1049,7 +1075,16 @@ public class PeriodFormatterBuilder_ESTest extends PeriodFormatterBuilder_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test117116() throws Throwable {
+    public void test116119() throws Throwable {
+        PeriodFormatterBuilder.PluralAffix periodFormatterBuilder_PluralAffix0 = new PeriodFormatterBuilder.PluralAffix("Literal must not be null", "Literal must not be null");
+        PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_PluralAffix0, periodFormatterBuilder_PluralAffix0);
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        MockPrintWriter mockPrintWriter0 = new MockPrintWriter(pipedOutputStream0);
+        periodFormatterBuilder_CompositeAffix0.printTo((Writer) mockPrintWriter0, (-478));
+    }
+
+    @Test(timeout = 4000)
+    public void test117120() throws Throwable {
         PeriodFormatterBuilder.SimpleAffix periodFormatterBuilder_SimpleAffix0 = new PeriodFormatterBuilder.SimpleAffix("~z<$p");
         PeriodFormatterBuilder.CompositeAffix periodFormatterBuilder_CompositeAffix0 = new PeriodFormatterBuilder.CompositeAffix(periodFormatterBuilder_SimpleAffix0, periodFormatterBuilder_SimpleAffix0);
         int int0 = periodFormatterBuilder_CompositeAffix0.calculatePrintedLength(0);

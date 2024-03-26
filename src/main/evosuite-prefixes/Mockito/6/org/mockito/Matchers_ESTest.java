@@ -307,7 +307,12 @@ public class Matchers_ESTest extends Matchers_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4948() throws Throwable {
+    public void test4848() throws Throwable {
+        Matchers matchers0 = new Matchers();
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
         boolean boolean0 = Matchers.eq(true);
     }
 }

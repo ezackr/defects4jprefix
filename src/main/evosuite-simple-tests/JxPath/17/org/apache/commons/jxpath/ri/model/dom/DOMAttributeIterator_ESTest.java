@@ -99,7 +99,18 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test055() throws Throwable {
+    public void test045() throws Throwable {
+        QName qName0 = new QName("*", "*");
+        VariablePointer variablePointer0 = new VariablePointer(qName0);
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
+        iIOMetadataNode0.insertBefore(iIOMetadataNode0, iIOMetadataNode0);
+        iIOMetadataNode0.setAttributeNS("<<unknown namespace>>", "<<unknown namespace>>", "*");
+        NodePointer nodePointer0 = NodePointer.newChildNodePointer(variablePointer0, (QName) null, iIOMetadataNode0);
+        DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
         DOMAttributeIterator dOMAttributeIterator0 = null;
         try {
             dOMAttributeIterator0 = new DOMAttributeIterator((NodePointer) null, (QName) null);
@@ -113,7 +124,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test066() throws Throwable {
+    public void test067() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("^|E");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -130,7 +141,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test078() throws Throwable {
         QName qName0 = new QName("Bvu");
         Object object0 = new Object();
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, object0, (Locale) null);
@@ -147,7 +158,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test089() throws Throwable {
         QName qName0 = new QName("*");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -158,7 +169,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
+    public void test0810() throws Throwable {
         QName qName0 = new QName("*");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -170,7 +181,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test0910() throws Throwable {
+    public void test0911() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -191,7 +202,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1012() throws Throwable {
         QName qName0 = new QName("*");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -202,7 +213,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1012() throws Throwable {
+    public void test1013() throws Throwable {
         QName qName0 = new QName("*");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -213,7 +224,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1113() throws Throwable {
+    public void test1114() throws Throwable {
         QName qName0 = new QName("xmlns", "xmlns");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
@@ -224,7 +235,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1214() throws Throwable {
+    public void test1215() throws Throwable {
         QName qName0 = new QName("*", "*");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
@@ -235,7 +246,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1315() throws Throwable {
+    public void test1316() throws Throwable {
         QName qName0 = new QName("xml", "xml");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
@@ -246,7 +257,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1416() throws Throwable {
+    public void test1417() throws Throwable {
         QName qName0 = new QName("xmlns", "xmlns");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("xmlns");
         Locale locale0 = Locale.ITALIAN;
@@ -265,7 +276,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1517() throws Throwable {
+    public void test1518() throws Throwable {
         QName qName0 = new QName("*");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -276,7 +287,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1618() throws Throwable {
+    public void test1619() throws Throwable {
         QName qName0 = new QName("*", "*");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
@@ -287,7 +298,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1719() throws Throwable {
+    public void test1720() throws Throwable {
         QName qName0 = new QName("9|w3d1qEt7rbnZ");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("9|w3d1qEt7rbnZ");
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -297,7 +308,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1720() throws Throwable {
+    public void test1721() throws Throwable {
         QName qName0 = new QName("9|w3d1qEt7rbnZ");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("9|w3d1qEt7rbnZ");
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, (Locale) null);
@@ -308,7 +319,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1821() throws Throwable {
+    public void test1822() throws Throwable {
         QName qName0 = new QName("xmlns", "xmlns");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();

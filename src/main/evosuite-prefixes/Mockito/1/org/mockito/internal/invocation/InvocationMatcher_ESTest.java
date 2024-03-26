@@ -35,15 +35,6 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11() throws Throwable {
-        Object[] objectArray0 = new Object[8];
-        Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
-        doReturn((Object[]) null).when(invocation0).getArguments();
-        InvocationMatcher invocationMatcher0 = null;
-        invocationMatcher0 = new InvocationMatcher(invocation0);
-    }
-
-    @Test(timeout = 4000)
     public void test22() throws Throwable {
         Object[] objectArray0 = new Object[1];
         Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());

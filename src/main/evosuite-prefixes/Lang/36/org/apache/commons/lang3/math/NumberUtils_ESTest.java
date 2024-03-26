@@ -314,11 +314,6 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04647() throws Throwable {
-        Number number0 = NumberUtils.createNumber("5");
-    }
-
-    @Test(timeout = 4000)
     public void test04748() throws Throwable {
         Float float0 = NumberUtils.createFloat("5");
     }

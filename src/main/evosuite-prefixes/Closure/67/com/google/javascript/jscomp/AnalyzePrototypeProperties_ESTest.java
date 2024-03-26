@@ -163,7 +163,16 @@ public class AnalyzePrototypeProperties_ESTest extends AnalyzePrototypePropertie
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1717() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        AnalyzePrototypeProperties analyzePrototypeProperties0 = new AnalyzePrototypeProperties(compiler0, (JSModuleGraph) null, true, false);
+        Node node0 = compiler0.parseSyntheticCode("pHnez2M51ib^|d)t4", "cnalyzePrototypePropertirs$Proc=ssProperties");
+        Node node1 = new Node(118, node0, node0, 21, 2);
+        AnalyzePrototypeProperties.GlobalFunction analyzePrototypeProperties_GlobalFunction0 = analyzePrototypeProperties0.new GlobalFunction(node1, node1, node1, (JSModule) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("Z[anonymousJ");
         JSModule jSModule0 = new JSModule("Z[anonymousJ");
@@ -173,7 +182,7 @@ public class AnalyzePrototypeProperties_ESTest extends AnalyzePrototypePropertie
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("[w#fVQl|l}4$]'Bh");
         PrintStreamErrorManager printStreamErrorManager0 = new PrintStreamErrorManager(mockPrintStream0);
         Compiler compiler0 = new Compiler(printStreamErrorManager0);

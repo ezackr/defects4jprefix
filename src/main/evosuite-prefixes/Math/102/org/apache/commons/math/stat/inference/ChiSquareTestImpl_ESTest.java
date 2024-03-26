@@ -244,64 +244,122 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1819() throws Throwable {
+        ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
+        long[] longArray0 = new long[2];
+        longArray0[0] = 8977L;
+        long[] longArray1 = new long[2];
+        longArray1[1] = 32L;
+        // Undeclared exception!
+        chiSquareTestImpl0.chiSquareTestDataSetsComparison(longArray0, longArray1, 0.5);
+    }
+
+    @Test(timeout = 4000)
+    public void test1920() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         chiSquareTestImpl0.chiSquareTestDataSetsComparison((long[]) null, (long[]) null, 0.10231944551008393);
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2021() throws Throwable {
+        ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
+        long[] longArray0 = new long[2];
+        longArray0[0] = 8977L;
+        long[] longArray1 = new long[2];
+        longArray1[1] = 32L;
+        // Undeclared exception!
+        chiSquareTestImpl0.chiSquareTestDataSetsComparison(longArray0, longArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test2122() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         chiSquareTestImpl0.chiSquareTestDataSetsComparison((long[]) null, (long[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2223() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         chiSquareTestImpl0.chiSquareTest((long[][]) null, 1.580887032249125E-4);
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2324() throws Throwable {
+        ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
+        long[][] longArray0 = new long[2][5];
+        long[] longArray1 = new long[2];
+        longArray1[1] = 8977L;
+        longArray0[0] = longArray1;
+        long[] longArray2 = new long[2];
+        longArray2[0] = 8977L;
+        longArray0[1] = longArray2;
+        // Undeclared exception!
+        chiSquareTestImpl0.chiSquareTest(longArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2425() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         chiSquareTestImpl0.chiSquareTest((long[][]) null);
     }
 
     @Test(timeout = 4000)
-    public void test2623() throws Throwable {
+    public void test2526() throws Throwable {
+        ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
+        long[] longArray0 = new long[2];
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = 3086.612227273;
+        doubleArray0[1] = 36.097;
+        // Undeclared exception!
+        chiSquareTestImpl0.chiSquareTest(doubleArray0, longArray0, 0.5);
+    }
+
+    @Test(timeout = 4000)
+    public void test2627() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         double[] doubleArray0 = new double[6];
         chiSquareTestImpl0.chiSquareTest(doubleArray0, (long[]) null, 1.0E-14);
     }
 
     @Test(timeout = 4000)
-    public void test2824() throws Throwable {
+    public void test2728() throws Throwable {
+        ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = 2184.7654358368245;
+        doubleArray0[1] = 2184.7654358368245;
+        long[] longArray0 = new long[2];
+        // Undeclared exception!
+        chiSquareTestImpl0.chiSquareTest(doubleArray0, longArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2829() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         double[] doubleArray0 = new double[8];
         chiSquareTestImpl0.chiSquareTest(doubleArray0, (long[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test2925() throws Throwable {
+    public void test2930() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         chiSquareTestImpl0.chiSquareDataSetsComparison((long[]) null, (long[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3026() throws Throwable {
+    public void test3031() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl((ChiSquaredDistribution) null);
         chiSquareTestImpl0.chiSquare((long[][]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3127() throws Throwable {
+    public void test3132() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[7];
         chiSquareTestImpl0.chiSquare((double[]) null, longArray0);
     }
 
     @Test(timeout = 4000)
-    public void test3228() throws Throwable {
+    public void test3233() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl((ChiSquaredDistribution) null);
         long[] longArray0 = new long[9];
         longArray0[1] = (-2062L);
@@ -309,7 +367,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3329() throws Throwable {
+    public void test3334() throws Throwable {
         GammaDistributionImpl gammaDistributionImpl0 = new GammaDistributionImpl(1686.38465643, 1686.38465643);
         ChiSquaredDistributionImpl chiSquaredDistributionImpl0 = new ChiSquaredDistributionImpl(1686.38465643, gammaDistributionImpl0);
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl(chiSquaredDistributionImpl0);
@@ -319,7 +377,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3430() throws Throwable {
+    public void test3435() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         double[] doubleArray0 = new double[2];
@@ -329,7 +387,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3531() throws Throwable {
+    public void test3536() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         double[] doubleArray0 = new double[2];
         long[] longArray0 = new long[2];
@@ -337,7 +395,13 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3732() throws Throwable {
+    public void test3637() throws Throwable {
+        ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl((ChiSquaredDistribution) null);
+        chiSquareTestImpl0.setDistribution((ChiSquaredDistribution) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test3738() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[2][5];
         long[] longArray1 = new long[2];
@@ -349,7 +413,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3833() throws Throwable {
+    public void test3839() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[11][4];
         long[] longArray1 = new long[19];
@@ -358,14 +422,14 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3934() throws Throwable {
+    public void test3940() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[1][3];
         chiSquareTestImpl0.chiSquare(longArray0);
     }
 
     @Test(timeout = 4000)
-    public void test4035() throws Throwable {
+    public void test4041() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[3];
         longArray0[0] = 9291L;
@@ -375,28 +439,28 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4136() throws Throwable {
+    public void test4142() throws Throwable {
         long[] longArray0 = new long[6];
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         chiSquareTestImpl0.chiSquareTestDataSetsComparison(longArray0, longArray0, (double) 6L);
     }
 
     @Test(timeout = 4000)
-    public void test4237() throws Throwable {
+    public void test4243() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[3];
         chiSquareTestImpl0.chiSquareTestDataSetsComparison(longArray0, longArray0, 0.5);
     }
 
     @Test(timeout = 4000)
-    public void test4338() throws Throwable {
+    public void test4344() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[23];
         chiSquareTestImpl0.chiSquareTestDataSetsComparison(longArray0, longArray0, (-1.0));
     }
 
     @Test(timeout = 4000)
-    public void test4439() throws Throwable {
+    public void test4445() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         longArray0[0] = 32L;
@@ -407,7 +471,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4540() throws Throwable {
+    public void test4546() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         longArray0[0] = 32L;
@@ -417,7 +481,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4641() throws Throwable {
+    public void test4647() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         longArray0[0] = 32L;
@@ -426,7 +490,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4742() throws Throwable {
+    public void test4748() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         longArray0[1] = 8977L;
@@ -436,7 +500,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4843() throws Throwable {
+    public void test4849() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         long[] longArray1 = new long[2];
@@ -445,7 +509,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4944() throws Throwable {
+    public void test4950() throws Throwable {
         ChiSquaredDistributionImpl chiSquaredDistributionImpl0 = new ChiSquaredDistributionImpl(0.5);
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl(chiSquaredDistributionImpl0);
         long[] longArray0 = new long[9];
@@ -454,21 +518,21 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5045() throws Throwable {
+    public void test5051() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         chiSquareTestImpl0.chiSquareDataSetsComparison(longArray0, longArray0);
     }
 
     @Test(timeout = 4000)
-    public void test5146() throws Throwable {
+    public void test5152() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[0];
         chiSquareTestImpl0.chiSquareDataSetsComparison(longArray0, longArray0);
     }
 
     @Test(timeout = 4000)
-    public void test5247() throws Throwable {
+    public void test5253() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[2][5];
         long[] longArray1 = new long[2];
@@ -481,7 +545,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5348() throws Throwable {
+    public void test5354() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         long[][] longArray1 = new long[5][0];
@@ -494,28 +558,28 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5449() throws Throwable {
+    public void test5455() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[8][1];
         chiSquareTestImpl0.chiSquareTest(longArray0, (double) 737L);
     }
 
     @Test(timeout = 4000)
-    public void test5550() throws Throwable {
+    public void test5556() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[3][3];
         chiSquareTestImpl0.chiSquareTest(longArray0, (double) (-16L));
     }
 
     @Test(timeout = 4000)
-    public void test5651() throws Throwable {
+    public void test5657() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[2][5];
         double double0 = chiSquareTestImpl0.chiSquareTest(longArray0);
     }
 
     @Test(timeout = 4000)
-    public void test5752() throws Throwable {
+    public void test5758() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         double[] doubleArray0 = new double[2];
@@ -525,7 +589,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5853() throws Throwable {
+    public void test5859() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[2];
         double[] doubleArray0 = new double[2];
@@ -533,7 +597,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5954() throws Throwable {
+    public void test5960() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         double[] doubleArray0 = new double[1];
         long[] longArray0 = new long[7];
@@ -541,7 +605,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6055() throws Throwable {
+    public void test6061() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         double[] doubleArray0 = new double[2];
         doubleArray0[0] = 2184.765435837;
@@ -552,7 +616,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6156() throws Throwable {
+    public void test6162() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[] longArray0 = new long[3];
         double[] doubleArray0 = new double[9];
@@ -560,20 +624,20 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6257() throws Throwable {
+    public void test6263() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         double[] doubleArray0 = new double[0];
         chiSquareTestImpl0.chiSquare(doubleArray0, (long[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test6358() throws Throwable {
+    public void test6364() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         DistributionFactory distributionFactory0 = chiSquareTestImpl0.getDistributionFactory();
     }
 
     @Test(timeout = 4000)
-    public void test6459() throws Throwable {
+    public void test6465() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[2][5];
         long[] longArray1 = new long[2];
@@ -581,7 +645,7 @@ public class ChiSquareTestImpl_ESTest extends ChiSquareTestImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6560() throws Throwable {
+    public void test6566() throws Throwable {
         ChiSquareTestImpl chiSquareTestImpl0 = new ChiSquareTestImpl();
         long[][] longArray0 = new long[5][0];
         chiSquareTestImpl0.chiSquareTest(longArray0, 0.5);

@@ -50,39 +50,57 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test055() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addList((Node) null, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        Charset charset0 = Charset.forName("default");
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        Charset charset0 = Charset.defaultCharset();
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("");
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test099() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("\"h</script>e\"");
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("662");
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("yk7)</scriptle_a+");
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("0");
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         Node node0 = new Node(85);
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addArrayList(node0);
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1414() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = Node.newString("h<!--(s>>e");
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -90,7 +108,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = Node.newString(51, "?5+IBxkrW!Wvx");
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -98,61 +116,67 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1713() throws Throwable {
+    public void test1616() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         Node node0 = new Node(92, 92, 92);
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addAllSiblings(node0);
     }
 
     @Test(timeout = 4000)
-    public void test1814() throws Throwable {
+    public void test1818() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("\"[h<!--\"(.s>>e\"");
     }
 
     @Test(timeout = 4000)
-    public void test1915() throws Throwable {
+    public void test1919() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("{1)S3CQ.}'nM0%9%R");
     }
 
     @Test(timeout = 4000)
-    public void test2016() throws Throwable {
+    public void test2020() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString(">A=9fq");
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("!-->%");
     }
 
     @Test(timeout = 4000)
-    public void test2218() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("]a->N~b?7=E");
     }
 
     @Test(timeout = 4000)
-    public void test2319() throws Throwable {
+    public void test2323() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("!.(K0C=]Kg]><S)/G");
     }
 
     @Test(timeout = 4000)
-    public void test2420() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("h</script");
     }
 
     @Test(timeout = 4000)
-    public void test2521() throws Throwable {
+    public void test2525() throws Throwable {
         Charset charset0 = Charset.defaultCharset();
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.regexpEscape(":6Do(`&gRv^", charsetEncoder0);
     }
 
     @Test(timeout = 4000)
-    public void test2622() throws Throwable {
+    public void test2626() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("\t\n\u000B\f\r \u0085\u1680\u2028\u2029");
     }
 
     @Test(timeout = 4000)
-    public void test2723() throws Throwable {
+    public void test2727() throws Throwable {
         String string0 = CodeGenerator.identifierEscape(":+P)%`a");
     }
 }

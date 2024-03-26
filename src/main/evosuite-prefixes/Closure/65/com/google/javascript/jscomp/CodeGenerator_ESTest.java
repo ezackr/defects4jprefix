@@ -53,34 +53,53 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test055() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addList((Node) null, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        Charset charset0 = Charset.forName("default");
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        Charset charset0 = Charset.defaultCharset();
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("8");
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test099() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("9,/*l'+");
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         boolean boolean0 = CodeGenerator.isSimpleNumber("ts$?9[ D3(7Zr!~c");
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("");
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = new Node(85, 85, 85);
         codeGenerator0.addArrayList(node0);
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         Node node0 = new Node(97, 97, 97);
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -88,79 +107,79 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1414() throws Throwable {
         Node node0 = new Node(1020);
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addAllSiblings(node0);
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addJsString("5!=QA'C");
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1616() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addJsString("Bad binary operator \"%s\": expected 2 arguments but got %s");
     }
 
     @Test(timeout = 4000)
-    public void test1714() throws Throwable {
+    public void test1717() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("\n\ndeprecated\u0018\u0003 \u0001(\b:\u0005false\u0012\u001C\n\u0014experimental_map_key\u0018\t \u0001(\t\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption\"/\n\u0005CType\u0012\n\n\u0006STRING\u0010\u0000\u0012\b\n\u0004CORD\u0010\u0001\u0012\u0010\n\fSTRING_PIECE\u0010\u0002*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"]\n\u000BEnumOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"b\n\u0010EnumValueOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"`\n\u000EServiceOptions\u0012C\n");
     }
 
     @Test(timeout = 4000)
-    public void test1815() throws Throwable {
+    public void test1818() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addJsString("`j;T!yoElE<!--y-b?");
     }
 
     @Test(timeout = 4000)
-    public void test1916() throws Throwable {
+    public void test1919() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("_(]]>PY1wRdl%");
     }
 
     @Test(timeout = 4000)
-    public void test2017() throws Throwable {
+    public void test2020() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("~>HA<!--5");
     }
 
     @Test(timeout = 4000)
-    public void test2118() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("<!-->-s");
     }
 
     @Test(timeout = 4000)
-    public void test2219() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("<np->-s");
     }
 
     @Test(timeout = 4000)
-    public void test2320() throws Throwable {
+    public void test2323() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("QbR]>3Lryt+un/^n");
     }
 
     @Test(timeout = 4000)
-    public void test2421() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("g</scriptyx-hd&l");
     }
 
     @Test(timeout = 4000)
-    public void test2522() throws Throwable {
+    public void test2525() throws Throwable {
         Charset charset0 = Charset.defaultCharset();
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.regexpEscape("zg2", charsetEncoder0);
     }
 
     @Test(timeout = 4000)
-    public void test2623() throws Throwable {
+    public void test2626() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("\n\ndeprecated\u0018\u0003 \u0001(\b:\u0005false\u0012\u001C\n\u0014experimental_map_key\u0018\t \u0001(\t\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption\"/\n\u0005CType\u0012\n\n\u0006STRING\u0010\u0000\u0012\b\n\u0004CORD\u0010\u0001\u0012\u0010\n\fSTRING_PIECE\u0010\u0002*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"]\n\u000BEnumOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"b\n\u0010EnumValueOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"`\n\u000EServiceOptions\u0012C\n");
     }
 
     @Test(timeout = 4000)
-    public void test2724() throws Throwable {
+    public void test2727() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("com.google.javascript.jscomp.DiagnosticGroup");
     }
 }

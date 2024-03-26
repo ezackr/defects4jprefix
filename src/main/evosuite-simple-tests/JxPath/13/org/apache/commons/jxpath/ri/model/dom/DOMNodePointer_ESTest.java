@@ -140,7 +140,15 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test088() throws Throwable {
+        Locale locale0 = Locale.ITALIAN;
+        HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
+        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
+        dOMNodePointer0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         AttrNSImpl attrNSImpl0 = new AttrNSImpl();
@@ -161,7 +169,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -170,7 +178,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         TextImpl textImpl0 = new TextImpl();
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(textImpl0, locale0);
@@ -179,7 +187,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.GERMAN;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -188,7 +196,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLAppletElementImpl hTMLAppletElementImpl0 = new HTMLAppletElementImpl(hTMLDocumentImpl0, "xmlns");
         Locale locale0 = Locale.ITALIAN;
@@ -207,7 +215,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -217,7 +225,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLInputElementImpl hTMLInputElementImpl0 = new HTMLInputElementImpl(hTMLDocumentImpl0, ")&");
         QName qName0 = new QName("K7]QMt_tN+|K9:*");
@@ -227,7 +235,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(4);
         DeferredDocumentImpl deferredDocumentImpl0 = new DeferredDocumentImpl();
         ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(deferredDocumentImpl0, "_~3%EWzz#hPodH-w+", "c=xd");
@@ -236,7 +244,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         TextImpl textImpl0 = new TextImpl();
         NodeNameTest nodeNameTest0 = new NodeNameTest((QName) null);
         boolean boolean0 = DOMNodePointer.testNode((Node) textImpl0, (NodeTest) nodeNameTest0);
@@ -244,7 +252,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         QName qName0 = new QName("Cannot create a relative context for a n0n-exBstent node: ");
         PSVIDocumentImpl pSVIDocumentImpl0 = new PSVIDocumentImpl();
         PSVIElementNSImpl pSVIElementNSImpl0 = new PSVIElementNSImpl(pSVIDocumentImpl0, "Cannot create a relative context for a n0n-exBstent node: ", "Cannot create a relative context for a n0n-exBstent node: ", "<<unknown namespace>>");
@@ -254,7 +262,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         QName qName0 = new QName("j_mjC<X},X[zu^@");
         PSVIDocumentImpl pSVIDocumentImpl0 = new PSVIDocumentImpl();
         PSVIElementNSImpl pSVIElementNSImpl0 = new PSVIElementNSImpl(pSVIDocumentImpl0, "j_mjC<X},X[zu^@", "j_mjC<X},X[zu^@", (String) null);
@@ -264,7 +272,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLInputElementImpl hTMLInputElementImpl0 = new HTMLInputElementImpl(hTMLDocumentImpl0, "%");
         QName qName0 = new QName("%");
@@ -274,7 +282,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLInputElementImpl hTMLInputElementImpl0 = new HTMLInputElementImpl(hTMLDocumentImpl0, ":");
         QName qName0 = new QName(":");
@@ -284,7 +292,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, "el]{JH", "el]{JH");
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("el]{JH");
@@ -293,7 +301,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         CDATASection cDATASection0 = hTMLDocumentImpl0.createCDATASection("el]{JH");
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(1);
@@ -302,7 +310,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         TextImpl textImpl0 = new TextImpl();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2);
         boolean boolean0 = DOMNodePointer.testNode((Node) textImpl0, (NodeTest) nodeTypeTest0);
@@ -310,7 +318,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3);
         DocumentTypeImpl documentTypeImpl0 = new DocumentTypeImpl((CoreDocumentImpl) null, "xmlns", "xmlns", "xmlns");
         CoreDocumentImpl coreDocumentImpl0 = new CoreDocumentImpl(documentTypeImpl0, true);
@@ -320,7 +328,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(24);
         boolean boolean0 = DOMNodePointer.testNode((Node) hTMLDocumentImpl0, (NodeTest) nodeTypeTest0);
@@ -328,7 +336,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLInputElementImpl hTMLInputElementImpl0 = new HTMLInputElementImpl(hTMLDocumentImpl0, "Cannot c7eate a relative context for5a non-existent node: ");
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(1);
@@ -337,7 +345,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(1);
         boolean boolean0 = DOMNodePointer.testNode((Node) hTMLDocumentImpl0, (NodeTest) nodeTypeTest0);
@@ -345,7 +353,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         CDATASection cDATASection0 = hTMLDocumentImpl0.createCDATASection("&quot;");
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2);
@@ -354,7 +362,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         PSVIDocumentImpl pSVIDocumentImpl0 = new PSVIDocumentImpl();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2);
         boolean boolean0 = DOMNodePointer.testNode((Node) pSVIDocumentImpl0, (NodeTest) nodeTypeTest0);
@@ -362,7 +370,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3131() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3);
         boolean boolean0 = DOMNodePointer.testNode((Node) hTMLDocumentImpl0, (NodeTest) nodeTypeTest0);
@@ -370,7 +378,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(4);
         boolean boolean0 = DOMNodePointer.testNode((Node) hTMLDocumentImpl0, (NodeTest) nodeTypeTest0);
@@ -378,21 +386,11 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("\"/KJU");
         boolean boolean0 = DOMNodePointer.testNode((Node) hTMLDocumentImpl0, (NodeTest) processingInstructionTest0);
         assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3433() throws Throwable {
-        HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
-        ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, "http://www.w3.org/2000/xmlns/", "http://www.w3.org/2000/xmlns/");
-        Locale locale0 = Locale.GERMANY;
-        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(processingInstructionImpl0, locale0);
-        QName qName0 = dOMNodePointer0.getName();
-        assertEquals("http://www.w3.org/2000/xmlns/", qName0.toString());
     }
 
     @Test(timeout = 4000)
@@ -402,24 +400,25 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
         Locale locale0 = Locale.GERMANY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(processingInstructionImpl0, locale0);
         QName qName0 = dOMNodePointer0.getName();
+        assertEquals("http://www.w3.org/2000/xmlns/", qName0.toString());
+    }
+
+    @Test(timeout = 4000)
+    public void test3435() throws Throwable {
+        HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
+        ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, "http://www.w3.org/2000/xmlns/", "http://www.w3.org/2000/xmlns/");
+        Locale locale0 = Locale.GERMANY;
+        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(processingInstructionImpl0, locale0);
+        QName qName0 = dOMNodePointer0.getName();
         assertEquals("http://www.w3.org/2000/xmlns/", qName0.getName());
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3536() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, (Locale) null);
         String string0 = dOMNodePointer0.getNamespaceURI("");
         assertNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3636() throws Throwable {
-        HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
-        Locale locale0 = Locale.PRC;
-        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
-        String string0 = dOMNodePointer0.getNamespaceURI("xml");
-        assertEquals("http://www.w3.org/XML/1998/namespace", string0);
     }
 
     @Test(timeout = 4000)
@@ -428,11 +427,20 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
         Locale locale0 = Locale.PRC;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
         String string0 = dOMNodePointer0.getNamespaceURI("xml");
+        assertEquals("http://www.w3.org/XML/1998/namespace", string0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3638() throws Throwable {
+        HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
+        Locale locale0 = Locale.PRC;
+        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
+        String string0 = dOMNodePointer0.getNamespaceURI("xml");
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3739() throws Throwable {
         Locale locale0 = Locale.CANADA;
         TextImpl textImpl0 = new TextImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(textImpl0, locale0);
@@ -442,7 +450,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3840() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.PRC;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -452,7 +460,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3941() throws Throwable {
         Locale locale0 = Locale.UK;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0);
         String string0 = dOMNodePointer0.getDefaultNamespaceURI();
@@ -460,7 +468,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4042() throws Throwable {
         Locale locale0 = Locale.TAIWAN;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -470,7 +478,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4143() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -479,7 +487,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4244() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.US;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -489,7 +497,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4344() throws Throwable {
+    public void test4345() throws Throwable {
         Locale locale0 = Locale.JAPANESE;
         TextImpl textImpl0 = new TextImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(textImpl0, locale0);
@@ -506,7 +514,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4445() throws Throwable {
+    public void test4446() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.ROOT;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -515,7 +523,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4546() throws Throwable {
+    public void test4547() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         CDATASection cDATASection0 = hTMLDocumentImpl0.createCDATASection("http://www.w3.org/XML/1998/namespace");
         Locale locale0 = Locale.FRENCH;
@@ -533,7 +541,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4647() throws Throwable {
+    public void test4648() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         CDATASection cDATASection0 = hTMLDocumentImpl0.createCDATASection("?^@{HBqi");
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(cDATASection0, (Locale) null, "?^@{HBqi");
@@ -550,7 +558,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4748() throws Throwable {
+    public void test4749() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, (Locale) null);
         dOMNodePointer0.getDefaultNamespaceURI();
@@ -559,7 +567,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4849() throws Throwable {
+    public void test4850() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, (Locale) null);
         HTMLImageElementImpl hTMLImageElementImpl0 = new HTMLImageElementImpl(hTMLDocumentImpl0, "<<unknown namespace>>");
@@ -568,7 +576,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4950() throws Throwable {
+    public void test4951() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, "@v&y}^,`l+x}F", "@v&y}^,`l+x}F");
         Locale locale0 = Locale.US;
@@ -586,7 +594,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5051() throws Throwable {
+    public void test5052() throws Throwable {
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         AttrNSImpl attrNSImpl0 = new AttrNSImpl();
@@ -605,7 +613,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5152() throws Throwable {
+    public void test5153() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, (Locale) null, (String) null);
         dOMNodePointer0.setValue((Object) null);
@@ -613,7 +621,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5253() throws Throwable {
+    public void test5254() throws Throwable {
         CoreDocumentImpl coreDocumentImpl0 = new CoreDocumentImpl();
         Locale locale0 = Locale.CANADA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(coreDocumentImpl0, locale0);
@@ -630,7 +638,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5354() throws Throwable {
+    public void test5355() throws Throwable {
         CoreDocumentImpl coreDocumentImpl0 = new CoreDocumentImpl();
         Locale locale0 = Locale.CANADA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(coreDocumentImpl0, locale0);
@@ -649,7 +657,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5455() throws Throwable {
+    public void test5456() throws Throwable {
         Locale locale0 = Locale.CHINA;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -668,7 +676,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5556() throws Throwable {
+    public void test5557() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Element element0 = hTMLDocumentImpl0.getDocumentElement();
         Locale locale0 = Locale.CHINA;
@@ -680,7 +688,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5657() throws Throwable {
+    public void test5658() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLAppletElementImpl hTMLAppletElementImpl0 = new HTMLAppletElementImpl(hTMLDocumentImpl0, "[Jd'U?Tdjz' .]6F<W");
         Locale locale0 = Locale.forLanguageTag("[Jd'U?Tdjz' .]6F<W");
@@ -699,7 +707,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5758() throws Throwable {
+    public void test5759() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DocumentTypeImpl documentTypeImpl0 = new DocumentTypeImpl(hTMLDocumentImpl0, "true()", "true()", "FRAMESET");
         WMLDocumentImpl wMLDocumentImpl0 = new WMLDocumentImpl(documentTypeImpl0);
@@ -714,7 +722,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5859() throws Throwable {
+    public void test5860() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Element element0 = hTMLDocumentImpl0.getDocumentElement();
         Locale locale0 = Locale.CHINA;
@@ -724,7 +732,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5960() throws Throwable {
+    public void test5961() throws Throwable {
         DocumentImpl documentImpl0 = new DocumentImpl();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(documentImpl0, locale0);
@@ -741,7 +749,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6061() throws Throwable {
+    public void test6062() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.CHINA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0, "M'e1MqNI'<emq^R*h)");
@@ -750,7 +758,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6162() throws Throwable {
+    public void test6163() throws Throwable {
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         AttrNSImpl attrNSImpl0 = new AttrNSImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(attrNSImpl0, locale0);
@@ -759,7 +767,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6263() throws Throwable {
+    public void test6264() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         CDATASection cDATASection0 = hTMLDocumentImpl0.createCDATASection("http://www.w3.org/XML/1998/namespace");
         Locale locale0 = Locale.FRENCH;
@@ -769,7 +777,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6364() throws Throwable {
+    public void test6365() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         EntityReference entityReference0 = hTMLDocumentImpl0.createEntityReference("US");
@@ -779,7 +787,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6465() throws Throwable {
+    public void test6466() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Entity entity0 = hTMLDocumentImpl0.createEntity("xml");
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -789,7 +797,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6566() throws Throwable {
+    public void test6567() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, "]}%W", "]}%W");
@@ -799,7 +807,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6667() throws Throwable {
+    public void test6668() throws Throwable {
         Locale locale0 = Locale.JAPAN;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Comment comment0 = hTMLDocumentImpl0.createComment("F_B4{kFdir");
@@ -809,7 +817,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6768() throws Throwable {
+    public void test6769() throws Throwable {
         DocumentFragmentImpl documentFragmentImpl0 = new DocumentFragmentImpl();
         Locale locale0 = Locale.GERMANY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(documentFragmentImpl0, locale0);
@@ -818,7 +826,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6869() throws Throwable {
+    public void test6870() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         HTMLInputElementImpl hTMLInputElementImpl0 = new HTMLInputElementImpl(hTMLDocumentImpl0, "~5`1xS");
         JXPathContext jXPathContext0 = JXPathContext.newContext((Object) hTMLInputElementImpl0);
@@ -840,7 +848,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6970() throws Throwable {
+    public void test6971() throws Throwable {
         QName qName0 = new QName("Cannot create a relative context for a non-existent node: ", "Cannot create a relative context for a non-existent node: ");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         PSVIDocumentImpl pSVIDocumentImpl0 = new PSVIDocumentImpl();
@@ -860,7 +868,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7071() throws Throwable {
+    public void test7072() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0, "Cannot ;reaE a reativU conte\"t for a n9n-ee8stent node: ");
@@ -869,7 +877,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7172() throws Throwable {
+    public void test7173() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -878,7 +886,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7273() throws Throwable {
+    public void test7274() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, (Locale) null);
         HTMLImageElementImpl hTMLImageElementImpl0 = new HTMLImageElementImpl(hTMLDocumentImpl0, "<<unknown namespace>>");
@@ -887,7 +895,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7374() throws Throwable {
+    public void test7375() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -897,7 +905,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7475() throws Throwable {
+    public void test7476() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -908,7 +916,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7576() throws Throwable {
+    public void test7577() throws Throwable {
         PSVIDocumentImpl pSVIDocumentImpl0 = new PSVIDocumentImpl();
         PSVIElementNSImpl pSVIElementNSImpl0 = new PSVIElementNSImpl(pSVIDocumentImpl0, "Cannot create a relative context for a non-existent node: ", "Cannot create a relative context for a non-existent node: ", "<<unknown namespace>>");
         String string0 = DOMNodePointer.getPrefix(pSVIElementNSImpl0);
@@ -916,7 +924,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7677() throws Throwable {
+    public void test7678() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, (Locale) null);
         String string0 = dOMNodePointer0.getNamespaceURI();
@@ -924,7 +932,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7778() throws Throwable {
+    public void test7779() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Comment comment0 = hTMLDocumentImpl0.createComment("+M,e}MY3.6Qn,g");
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(comment0, (Locale) null);
@@ -933,7 +941,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7879() throws Throwable {
+    public void test7880() throws Throwable {
         Locale locale0 = Locale.PRC;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Comment comment0 = hTMLDocumentImpl0.createComment((String) null);
@@ -943,7 +951,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7980() throws Throwable {
+    public void test7981() throws Throwable {
         TextImpl textImpl0 = new TextImpl();
         Locale locale0 = Locale.US;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(textImpl0, locale0);
@@ -952,7 +960,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8081() throws Throwable {
+    public void test8082() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.CHINESE;
         CDATASection cDATASection0 = hTMLDocumentImpl0.createCDATASection("HTMLTableCellElementImpl");
@@ -962,7 +970,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8182() throws Throwable {
+    public void test8183() throws Throwable {
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         Locale locale0 = Locale.TAIWAN;
         ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, (String) null, (String) null);
@@ -972,7 +980,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8283() throws Throwable {
+    public void test8284() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         ProcessingInstructionImpl processingInstructionImpl0 = new ProcessingInstructionImpl(hTMLDocumentImpl0, "xml:lang", "xml:lang");
@@ -982,7 +990,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8384() throws Throwable {
+    public void test8385() throws Throwable {
         TextImpl textImpl0 = new TextImpl();
         Locale locale0 = Locale.US;
         JXPathContext jXPathContext0 = JXPathContext.newContext((Object) textImpl0);
@@ -1000,7 +1008,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8485() throws Throwable {
+    public void test8486() throws Throwable {
         Locale locale0 = Locale.CHINA;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -1010,7 +1018,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8586() throws Throwable {
+    public void test8587() throws Throwable {
         Locale locale0 = Locale.UK;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         AttrNSImpl attrNSImpl0 = new AttrNSImpl();
@@ -1021,7 +1029,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8687() throws Throwable {
+    public void test8688() throws Throwable {
         Locale locale0 = Locale.FRENCH;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         AttrNSImpl attrNSImpl0 = new AttrNSImpl();
@@ -1033,7 +1041,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8788() throws Throwable {
+    public void test8789() throws Throwable {
         Locale locale0 = Locale.TAIWAN;
         HTMLDocumentImpl hTMLDocumentImpl0 = new HTMLDocumentImpl();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(hTMLDocumentImpl0, locale0);
@@ -1044,7 +1052,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8889() throws Throwable {
+    public void test8890() throws Throwable {
         DeferredDocumentImpl deferredDocumentImpl0 = new DeferredDocumentImpl(true, true);
         DocumentTypeImpl documentTypeImpl0 = new DocumentTypeImpl(deferredDocumentImpl0, "-fuH]");
         DocumentImpl documentImpl0 = new DocumentImpl(documentTypeImpl0);

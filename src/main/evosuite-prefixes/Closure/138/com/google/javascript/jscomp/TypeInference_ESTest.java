@@ -126,7 +126,82 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0105() throws Throwable {
+    public void test0055() throws Throwable {
+        Node node0 = new Node(122, 122, 122);
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
+        Scope scope0 = new Scope(node0, (ObjectType) null);
+        Compiler compiler0 = new Compiler();
+        ArrayList<Scope.Var> arrayList0 = new ArrayList<Scope.Var>();
+        Scope.Var scope_Var0 = scope0.declare("*1dnJG?,fw7di>", node0, (JSType) null, (CompilerInput) null);
+        arrayList0.add(scope_Var0);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, (ReverseAbstractInterpreter) null, scope0, arrayList0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0066() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = new Node(96, 96, 100);
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
+        DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(defaultCodingConvention0, jSTypeRegistry0);
+        Scope scope0 = new Scope(node0, (ObjectType) null);
+        Scope.Var scope_Var0 = scope0.declare("K<", node0, (JSType) null, (CompilerInput) null);
+        scope0.undeclare(scope_Var0);
+        ArrayList<Scope.Var> arrayList0 = new ArrayList<Scope.Var>();
+        arrayList0.add(scope_Var0);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, semanticReverseAbstractInterpreter0, scope0, arrayList0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0077() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = new Node(51, 51, 51);
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
+        GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(googleCodingConvention0, jSTypeRegistry0);
+        TypedScopeCreator typedScopeCreator0 = new TypedScopeCreator(compiler0, googleCodingConvention0);
+        Scope scope0 = typedScopeCreator0.createScope(node0, (Scope) null);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, semanticReverseAbstractInterpreter0, scope0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0088() throws Throwable {
+        Node node0 = new Node(62);
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(closureCodingConvention0, jSTypeRegistry0);
+        Scope scope0 = new Scope(node0, (ObjectType) null);
+        Node node1 = new Node(1, node0);
+        JSType[] jSTypeArray0 = new JSType[0];
+        JSType jSType0 = jSTypeRegistry0.createUnionType(jSTypeArray0);
+        scope0.declare("]*oxk\"/_", node0, jSType0, (CompilerInput) null);
+        ArrayList<Scope.Var> arrayList0 = new ArrayList<Scope.Var>();
+        Compiler compiler0 = new Compiler((PrintStream) null);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, semanticReverseAbstractInterpreter0, scope0, arrayList0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0099() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = new Node((-117), (-117), (-117));
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
+        ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(closureCodingConvention0, jSTypeRegistry0);
+        Scope scope0 = new Scope(node0, (ObjectType) null);
+        Node node1 = new Node(117, node0);
+        scope0.declare("Te@GYj7bIY9", node0, (JSType) null, (CompilerInput) null);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, semanticReverseAbstractInterpreter0, scope0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(63);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -143,7 +218,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0116() throws Throwable {
+    public void test01111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(51, 51, 123);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -162,7 +237,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0127() throws Throwable {
+    public void test01212() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -178,7 +253,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0138() throws Throwable {
+    public void test01313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(111, 111, 995);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -198,7 +273,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0149() throws Throwable {
+    public void test01414() throws Throwable {
         Node node0 = new Node(122);
         Node node1 = new Node(4, node0, node0, node0, node0, 1, 33);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -216,7 +291,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01510() throws Throwable {
+    public void test01515() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -231,7 +306,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01611() throws Throwable {
+    public void test01616() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(51, 51, 123);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -246,7 +321,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01712() throws Throwable {
+    public void test01717() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(7);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -263,7 +338,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01813() throws Throwable {
+    public void test01818() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -278,7 +353,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01914() throws Throwable {
+    public void test01919() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(148, 148, 148);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -294,7 +369,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02015() throws Throwable {
+    public void test02020() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(148);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -311,7 +386,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02116() throws Throwable {
+    public void test02121() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-593), (-593), (-593));
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -327,7 +402,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02217() throws Throwable {
+    public void test02222() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -342,7 +417,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02318() throws Throwable {
+    public void test02323() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(13, (-2663), (-2614));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -355,7 +430,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02419() throws Throwable {
+    public void test02424() throws Throwable {
         Node node0 = new Node(74, 74, 74);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -372,7 +447,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02520() throws Throwable {
+    public void test02525() throws Throwable {
         Node node0 = new Node(15);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -389,7 +464,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02621() throws Throwable {
+    public void test02626() throws Throwable {
         Node node0 = new Node(122, 122, 122);
         Node node1 = new Node(16, node0, node0, node0, node0, 1, 33);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -407,7 +482,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02722() throws Throwable {
+    public void test02727() throws Throwable {
         Node node0 = new Node(17);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -424,7 +499,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02823() throws Throwable {
+    public void test02828() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.getRoot();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
@@ -439,7 +514,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02924() throws Throwable {
+    public void test02929() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-117), (-117), (-117));
         Node node1 = new Node(20, 36, 18);
@@ -452,7 +527,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03025() throws Throwable {
+    public void test03030() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(101, 101, 101);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -468,7 +543,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03126() throws Throwable {
+    public void test03131() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(122, 122, 122);
         Node node1 = new Node(22, node0, node0, node0, node0, 3, 14);
@@ -484,7 +559,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03227() throws Throwable {
+    public void test03232() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(99);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -500,7 +575,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03328() throws Throwable {
+    public void test03333() throws Throwable {
         Node node0 = new Node(74);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -517,7 +592,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03429() throws Throwable {
+    public void test03434() throws Throwable {
         Node node0 = new Node(1695, 1887, (-1314));
         Node node1 = new Node(25, node0, node0, node0, node0, 31, 84);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -535,7 +610,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03530() throws Throwable {
+    public void test03535() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(51, 51, 123);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -552,7 +627,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03631() throws Throwable {
+    public void test03636() throws Throwable {
         Node node0 = new Node(81, 81, 81);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -570,7 +645,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03732() throws Throwable {
+    public void test03737() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -585,7 +660,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03833() throws Throwable {
+    public void test03838() throws Throwable {
         Node node0 = new Node(122, 122, 122);
         Node node1 = new Node(30, node0, node0, node0);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -598,7 +673,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03934() throws Throwable {
+    public void test03939() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(31, 31, 123);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -613,7 +688,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04035() throws Throwable {
+    public void test04040() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(122, (-671), 122);
         Node node1 = new Node(34, node0, node0);
@@ -630,7 +705,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04136() throws Throwable {
+    public void test04141() throws Throwable {
         Node node0 = new Node(74);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -647,7 +722,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04237() throws Throwable {
+    public void test04242() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(122, 123, 123);
         Node node1 = new Node(37, node0, node0, node0, node0, 34, 1);
@@ -663,7 +738,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04338() throws Throwable {
+    public void test04343() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -680,7 +755,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04439() throws Throwable {
+    public void test04444() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -694,7 +769,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04540() throws Throwable {
+    public void test04545() throws Throwable {
         Node node0 = new Node(41);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -710,7 +785,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04641() throws Throwable {
+    public void test04646() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(111, 111, 111);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -726,7 +801,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04742() throws Throwable {
+    public void test04747() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -741,7 +816,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04843() throws Throwable {
+    public void test04848() throws Throwable {
         Node node0 = new Node(44);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -757,7 +832,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04944() throws Throwable {
+    public void test04949() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(101, 101, 101);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -773,7 +848,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05045() throws Throwable {
+    public void test05050() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(101, 101, 101);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -790,7 +865,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05146() throws Throwable {
+    public void test05151() throws Throwable {
         Node node0 = new Node(74, 74, 74);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -807,7 +882,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05247() throws Throwable {
+    public void test05252() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-584), (-584), (-584));
         Node node1 = new Node(48, node0, node0, node0, node0, 33, 9);
@@ -821,7 +896,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05348() throws Throwable {
+    public void test05353() throws Throwable {
         Node node0 = new Node(122, 122, 122);
         Node node1 = new Node(49, node0, node0, node0, node0, 1, 33);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -839,7 +914,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05449() throws Throwable {
+    public void test05454() throws Throwable {
         Node node0 = new Node(52);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         Scope scope0 = new Scope(node0, (ObjectType) null);
@@ -853,7 +928,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05550() throws Throwable {
+    public void test05555() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(54, 54, 54);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -866,7 +941,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05651() throws Throwable {
+    public void test05656() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(56, 56, 123);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -883,7 +958,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05752() throws Throwable {
+    public void test05757() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(57);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -900,7 +975,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05853() throws Throwable {
+    public void test05858() throws Throwable {
         Node node0 = new Node(58, 58, 58);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -917,7 +992,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05954() throws Throwable {
+    public void test05959() throws Throwable {
         Node node0 = new Node(60);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -933,7 +1008,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06055() throws Throwable {
+    public void test06060() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(61, 61, 61);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -950,7 +1025,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06156() throws Throwable {
+    public void test06161() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -966,7 +1041,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06257() throws Throwable {
+    public void test06262() throws Throwable {
         Node node0 = new Node(66);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -982,7 +1057,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06358() throws Throwable {
+    public void test06363() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(67, 67, 67);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -997,7 +1072,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06459() throws Throwable {
+    public void test06464() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(51, 118, 68);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1014,7 +1089,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06560() throws Throwable {
+    public void test06565() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(69, 42, 42);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1027,7 +1102,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06661() throws Throwable {
+    public void test06666() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(70);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1044,7 +1119,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06762() throws Throwable {
+    public void test06767() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -1059,7 +1134,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06863() throws Throwable {
+    public void test06868() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(73, (-2949), (-2949));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1075,7 +1150,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06964() throws Throwable {
+    public void test06969() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(90);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1091,7 +1166,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07065() throws Throwable {
+    public void test07070() throws Throwable {
         Node node0 = new Node(77);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1108,7 +1183,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07166() throws Throwable {
+    public void test07171() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-584), (-584), (-584));
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1124,7 +1199,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07267() throws Throwable {
+    public void test07272() throws Throwable {
         Node node0 = new Node(81, 81, 81);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1140,7 +1215,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07368() throws Throwable {
+    public void test07373() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(82);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1157,7 +1232,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07469() throws Throwable {
+    public void test07474() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
@@ -1172,7 +1247,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07570() throws Throwable {
+    public void test07575() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(111, 111, 111);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1188,7 +1263,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07671() throws Throwable {
+    public void test07676() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(87, 71, (-2533));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1203,7 +1278,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07772() throws Throwable {
+    public void test07777() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(88);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1218,7 +1293,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07873() throws Throwable {
+    public void test07878() throws Throwable {
         Node node0 = new Node(90, 90, 90);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1235,7 +1310,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07974() throws Throwable {
+    public void test07979() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(91, 42, 42);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1248,7 +1323,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08075() throws Throwable {
+    public void test08080() throws Throwable {
         Node node0 = new Node(62, 62, 62);
         Node node1 = new Node(92, node0, node0, node0, node0, (-2313), 22);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -1266,7 +1341,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08176() throws Throwable {
+    public void test08181() throws Throwable {
         Node node0 = new Node(94);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1282,7 +1357,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08277() throws Throwable {
+    public void test08282() throws Throwable {
         Compiler compiler0 = new Compiler();
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>((Node) null);
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1298,7 +1373,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08378() throws Throwable {
+    public void test08383() throws Throwable {
         Node node0 = new Node(74, 74, 74);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1315,7 +1390,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08479() throws Throwable {
+    public void test08484() throws Throwable {
         Node node0 = new Node(98, 98, 98);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1330,7 +1405,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08580() throws Throwable {
+    public void test08585() throws Throwable {
         Node node0 = new Node(1767, 1767, 117);
         Node node1 = new Node(102, node0, node0, 91, 47);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1346,7 +1421,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08681() throws Throwable {
+    public void test08686() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(103, 103, 995);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1363,7 +1438,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08782() throws Throwable {
+    public void test08787() throws Throwable {
         Node node0 = new Node(62);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1380,7 +1455,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08883() throws Throwable {
+    public void test08888() throws Throwable {
         Node node0 = new Node(105, 105, 105);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1396,7 +1471,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08984() throws Throwable {
+    public void test08989() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(103, 103, 103);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1412,7 +1487,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09085() throws Throwable {
+    public void test09090() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(107);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1428,7 +1503,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09186() throws Throwable {
+    public void test09191() throws Throwable {
         Node node0 = new Node(108);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1445,7 +1520,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09287() throws Throwable {
+    public void test09292() throws Throwable {
         Node node0 = new Node(165, 165, 165);
         Node node1 = new Node(109, node0, node0, node0, node0, 1, 33);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -1463,7 +1538,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09388() throws Throwable {
+    public void test09393() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(112, (-2003), (-1891));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1479,7 +1554,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09489() throws Throwable {
+    public void test09494() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(113, 113, 113);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1495,7 +1570,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09590() throws Throwable {
+    public void test09595() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(111, 111, (-5));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1511,7 +1586,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09691() throws Throwable {
+    public void test09696() throws Throwable {
         Node node0 = new Node(122, 122, 122);
         Node node1 = new Node(115, node0, node0, node0, node0, 1, 33);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1);
@@ -1529,7 +1604,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09792() throws Throwable {
+    public void test09797() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-117), (-117), (-117));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1546,7 +1621,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09893() throws Throwable {
+    public void test09898() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(111, 111, 111);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1562,7 +1637,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09994() throws Throwable {
+    public void test09999() throws Throwable {
         Node node0 = new Node(74, 74, 74);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1578,7 +1653,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10095() throws Throwable {
+    public void test100100() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(51, (-60), 670);
         Node node1 = new Node(121, node0, node0, 0, 12);
@@ -1594,7 +1669,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10196() throws Throwable {
+    public void test101101() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(123, 5, (-3884));
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1609,7 +1684,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10297() throws Throwable {
+    public void test102102() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(124);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1625,7 +1700,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10398() throws Throwable {
+    public void test103103() throws Throwable {
         Node node0 = new Node(122, 122, 122);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         Scope scope0 = new Scope(node0, (ObjectType) null);
@@ -1638,7 +1713,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10499() throws Throwable {
+    public void test104104() throws Throwable {
         Node node0 = new Node(81);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1655,7 +1730,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105100() throws Throwable {
+    public void test105105() throws Throwable {
         Node node0 = new Node(127, 127, 122);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1672,7 +1747,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106101() throws Throwable {
+    public void test106106() throws Throwable {
         Node node0 = new Node(128, 128, 128);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1689,7 +1764,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107102() throws Throwable {
+    public void test107107() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(129, 71, 129);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1704,7 +1779,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108103() throws Throwable {
+    public void test108108() throws Throwable {
         Node node0 = new Node(27);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1720,7 +1795,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109104() throws Throwable {
+    public void test109109() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(122, 122, 122);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1735,7 +1810,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110105() throws Throwable {
+    public void test110110() throws Throwable {
         Node node0 = new Node(1767, 1767, 117);
         Node node1 = Node.newNumber((double) 37);
         Node node2 = new Node(93, node0, node1, 89, 47);
@@ -1752,7 +1827,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111106() throws Throwable {
+    public void test111111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(18, 18, 18);
         Node node1 = new Node(37, node0, node0, node0, node0, 34, 1);
@@ -1766,7 +1841,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112107() throws Throwable {
+    public void test112112() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(148, 148, 148);
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1782,7 +1857,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113108() throws Throwable {
+    public void test113113() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(96, 96, 100);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
@@ -1799,7 +1874,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test114109() throws Throwable {
+    public void test114114() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(93, 93, 123);
         Node node1 = new Node(32);
@@ -1816,7 +1891,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test115110() throws Throwable {
+    public void test115115() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-584), (-584), (-584));
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1832,7 +1907,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test116111() throws Throwable {
+    public void test116116() throws Throwable {
         Node node0 = new Node(78);
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
@@ -1849,7 +1924,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117112() throws Throwable {
+    public void test117117() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(122);
         Node node1 = new Node(101, node0, node0, 1, 0);
@@ -1866,7 +1941,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118113() throws Throwable {
+    public void test118118() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(101, (-1), (-1));
         Node node1 = new Node(100, node0, node0, node0);
@@ -1880,7 +1955,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119114() throws Throwable {
+    public void test119119() throws Throwable {
         BooleanLiteralSet booleanLiteralSet0 = BooleanLiteralSet.BOTH;
         BooleanLiteralSet booleanLiteralSet1 = TypeInference.getBooleanOutcomes(booleanLiteralSet0, booleanLiteralSet0, true);
     }

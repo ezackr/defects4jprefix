@@ -321,7 +321,17 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2323() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        ContextAttributes contextAttributes0 = ContextAttributes.Impl.getEmpty();
+        objectMapper0.reader(contextAttributes0);
+        ShortNode shortNode0 = new ShortNode((short) (-1));
+        objectMapper0.treeAsTokens(shortNode0);
+        Class<POJONode> class0 = POJONode.class;
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         JsonNode jsonNode0 = objectReader0.createObjectNode();
@@ -329,7 +339,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
         BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory(deserializerFactoryConfig0);
@@ -342,14 +352,14 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         objectReader0.with((DeserializationConfig) null);
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BigIntegerNode> class0 = BigIntegerNode.class;
         Class<JsonToken> class1 = JsonToken.class;
@@ -361,7 +371,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader((JavaType) null);
         ContextAttributes contextAttributes0 = ContextAttributes.getEmpty();
@@ -369,7 +379,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
@@ -378,7 +388,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectReader objectReader0 = objectMapper0.reader();
@@ -394,7 +404,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3131() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ArrayNode arrayNode0 = objectMapper0.createArrayNode();
@@ -407,7 +417,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, (DefaultSerializerProvider) null, (DefaultDeserializationContext) null);
         ObjectReader objectReader0 = objectMapper0.reader();
@@ -417,7 +427,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectReader objectReader0 = objectMapper0.reader();
@@ -427,7 +437,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3434() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         Class<Integer> class0 = Integer.class;
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
@@ -438,14 +448,14 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3535() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         objectReader0.withFeatures((DeserializationFeature[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3636() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -454,7 +464,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3736() throws Throwable {
+    public void test3737() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.TYPE;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -463,7 +473,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3837() throws Throwable {
+    public void test3838() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -472,7 +482,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3938() throws Throwable {
+    public void test3939() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Object> class0 = Object.class;
         SimpleType simpleType0 = SimpleType.constructUnsafe(class0);
@@ -482,7 +492,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4039() throws Throwable {
+    public void test4040() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.READ_DATE_TIMESTAMPS_AS_NANOSECONDS;
@@ -490,7 +500,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4140() throws Throwable {
+    public void test4141() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         FloatNode floatNode0 = FloatNode.valueOf(1.0F);
         ObjectReader objectReader0 = objectMapper0.readerForUpdating((Object) floatNode0);
@@ -502,7 +512,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4241() throws Throwable {
+    public void test4242() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -510,7 +520,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4342() throws Throwable {
+    public void test4343() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonNodeFactory jsonNodeFactory0 = JsonNodeFactory.withExactBigDecimals(false);
         ObjectReader objectReader0 = objectMapper0.reader(jsonNodeFactory0);
@@ -519,7 +529,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4443() throws Throwable {
+    public void test4444() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         BooleanNode booleanNode0 = BooleanNode.TRUE;
@@ -527,14 +537,14 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4544() throws Throwable {
+    public void test4545() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         objectReader0.with((TimeZone) null);
     }
 
     @Test(timeout = 4000)
-    public void test4645() throws Throwable {
+    public void test4646() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -544,7 +554,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4746() throws Throwable {
+    public void test4747() throws Throwable {
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
         BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory(deserializerFactoryConfig0);
@@ -558,7 +568,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4847() throws Throwable {
+    public void test4848() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectReader objectReader0 = objectMapper0.readerForUpdating((Object) jsonFactory0);
@@ -566,7 +576,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4948() throws Throwable {
+    public void test4949() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectReader objectReader0 = objectMapper0.reader((ContextAttributes) null);
@@ -576,7 +586,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5049() throws Throwable {
+    public void test5050() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         InjectableValues.Std injectableValues_Std0 = new InjectableValues.Std();
         ObjectReader objectReader0 = objectMapper0.reader((InjectableValues) injectableValues_Std0);
@@ -584,7 +594,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5150() throws Throwable {
+    public void test5151() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -594,7 +604,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5251() throws Throwable {
+    public void test5252() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
@@ -611,7 +621,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5352() throws Throwable {
+    public void test5353() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
@@ -619,7 +629,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5453() throws Throwable {
+    public void test5454() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         Class<Integer> class0 = Integer.class;
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
@@ -628,7 +638,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5554() throws Throwable {
+    public void test5555() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, (DefaultSerializerProvider) null, (DefaultDeserializationContext) null);
         ObjectReader objectReader0 = objectMapper0.reader();
@@ -636,14 +646,14 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5655() throws Throwable {
+    public void test5656() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.readerForUpdating((Object) objectMapper0);
         objectReader0.withValueToUpdate((Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test5756() throws Throwable {
+    public void test5757() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
@@ -651,7 +661,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5857() throws Throwable {
+    public void test5858() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -660,7 +670,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5958() throws Throwable {
+    public void test5959() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -668,7 +678,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6059() throws Throwable {
+    public void test6060() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BuilderBasedDeserializer> class0 = BuilderBasedDeserializer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -676,7 +686,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6160() throws Throwable {
+    public void test6161() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.TYPE;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -685,7 +695,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6261() throws Throwable {
+    public void test6262() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         File file0 = MockFile.createTempFile("JSON", "JSON");
@@ -693,7 +703,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6362() throws Throwable {
+    public void test6363() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ContextAttributes contextAttributes0 = ContextAttributes.getEmpty();
@@ -703,7 +713,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6463() throws Throwable {
+    public void test6464() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.TYPE;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -712,14 +722,14 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6564() throws Throwable {
+    public void test6565() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         objectReader0.readTree("JSON");
     }
 
     @Test(timeout = 4000)
-    public void test6665() throws Throwable {
+    public void test6666() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Object object0 = new Object();
         ObjectReader objectReader0 = objectMapper0.readerForUpdating(object0);
@@ -727,7 +737,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6766() throws Throwable {
+    public void test6767() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         MockFile mockFile0 = new MockFile(":,b~SK3");
@@ -735,7 +745,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6867() throws Throwable {
+    public void test6868() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ContextAttributes contextAttributes0 = ContextAttributes.Impl.getEmpty();
         ObjectReader objectReader0 = objectMapper0.reader(contextAttributes0);
@@ -747,7 +757,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6968() throws Throwable {
+    public void test6969() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         Class<Module> class0 = Module.class;
@@ -758,7 +768,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7069() throws Throwable {
+    public void test7070() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectReader objectReader0 = objectMapper0.readerForUpdating((Object) jsonFactory0);
@@ -771,7 +781,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7170() throws Throwable {
+    public void test7171() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
         JsonNodeFactory jsonNodeFactory0 = JsonNodeFactory.withExactBigDecimals(true);
@@ -783,7 +793,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7271() throws Throwable {
+    public void test7272() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ContextAttributes contextAttributes0 = ContextAttributes.getEmpty();
@@ -794,7 +804,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7372() throws Throwable {
+    public void test7373() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -807,7 +817,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7473() throws Throwable {
+    public void test7474() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView((Class<?>) class0);
@@ -826,7 +836,7 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7574() throws Throwable {
+    public void test7575() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         DeserializationFeature deserializationFeature0 = DeserializationFeature.READ_UNKNOWN_ENUM_VALUES_AS_NULL;
@@ -836,5 +846,18 @@ public class ObjectReader_ESTest extends ObjectReader_ESTest_scaffolding {
         PipedInputStream pipedInputStream0 = new PipedInputStream(4015);
         DataFormatReaders.Match dataFormatReaders_Match0 = dataFormatReaders0.findFormat((InputStream) pipedInputStream0);
         objectReader0._detectBindAndClose(dataFormatReaders_Match0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test7676() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        Class<Integer> class0 = Integer.class;
+        Class<Object> class1 = Object.class;
+        SimpleType simpleType0 = SimpleType.construct(class0);
+        CollectionType collectionType0 = CollectionType.construct(class1, simpleType0);
+        MapLikeType mapLikeType0 = MapLikeType.construct(class0, collectionType0, collectionType0);
+        MapType mapType0 = MapType.construct(class0, collectionType0, mapLikeType0);
+        ObjectReader objectReader0 = objectMapper0.reader((JavaType) mapType0);
+        objectReader0._verifySchemaType((FormatSchema) null);
     }
 }

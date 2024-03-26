@@ -32,25 +32,200 @@ import org.junit.runner.RunWith;
 public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test240() throws Throwable {
+    public void test000() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setExternalAttributes(638L);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setUnixMode((byte) 2);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setInternalAttributes((-591));
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setTime((-117L));
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setPlatform((-2736));
+        zipArchiveEntry0.setName(" - ");
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        MockFile mockFile0 = new MockFile("0jM8;", "");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
+        zipArchiveEntry0.setUnixMode((-539));
+        zipArchiveEntry0.getUnixMode();
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
+        zipArchiveEntry0.setPlatform(16);
+        zipArchiveEntry0.getUnixMode();
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%r/8&E).&ivm/");
+        zipArchiveEntry0.setName("");
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%r8&E).&ivm");
+        zipArchiveEntry0.equals(zipArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
+        zipArchiveEntry0.isDirectory();
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        MockFile mockFile0 = new MockFile("KS!!0%&{&8{b(W'LqVf", "KS!!0%&{&8{b(W'LqVf");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
+        zipArchiveEntry0.getSize();
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setSize(628L);
+        zipArchiveEntry0.getSize();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setPlatform((-2736));
+        zipArchiveEntry0.getPlatform();
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("GQ?+REZy+?");
+        zipArchiveEntry0.setMethod(0);
+        zipArchiveEntry0.getMethod();
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setMethod(1594);
+        zipArchiveEntry0.getMethod();
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[8];
+        zipArchiveEntry0.setExtra(byteArray0);
+        zipArchiveEntry0.getLocalFileDataExtra();
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setInternalAttributes((byte) 1);
+        zipArchiveEntry0.getInternalAttributes();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setInternalAttributes((-457));
+        zipArchiveEntry0.getInternalAttributes();
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("Error parsing extra fields for entry: ");
+        GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
+        generalPurposeBit0.useStrongEncryption(true);
+        zipArchiveEntry0.getGeneralPurposeBit();
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("Error parsing extra fields for entry: ");
+        GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
+        generalPurposeBit0.useDataDescriptor(true);
+        zipArchiveEntry0.getGeneralPurposeBit();
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        AsiExtraField asiExtraField0 = new AsiExtraField();
+        zipArchiveEntry0.addAsFirstExtraField(asiExtraField0);
+        zipArchiveEntry0.getExtraFields();
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setExternalAttributes(134695760L);
+        zipArchiveEntry0.getExternalAttributes();
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.setExternalAttributes((-1L));
+        zipArchiveEntry0.getExternalAttributes();
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[5];
+        zipArchiveEntry0.setExtra(byteArray0);
+        zipArchiveEntry0.getCentralDirectoryExtra();
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.setExtra((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test251() throws Throwable {
+    public void test2525() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.setCentralDirectoryExtra((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test262() throws Throwable {
+    public void test2626() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("GQ?+REZy+?");
         zipArchiveEntry0.addExtraField((ZipExtraField) null);
     }
 
     @Test(timeout = 4000)
-    public void test273() throws Throwable {
+    public void test2727() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
         ZipEightByteInteger zipEightByteInteger0 = new ZipEightByteInteger(0);
@@ -59,31 +234,75 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test284() throws Throwable {
+    public void test2828() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = null;
         zipArchiveEntry0 = new ZipArchiveEntry((ZipArchiveEntry) null);
     }
 
     @Test(timeout = 4000)
-    public void test295() throws Throwable {
+    public void test2929() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = null;
         zipArchiveEntry0 = new ZipArchiveEntry((ZipEntry) null);
     }
 
     @Test(timeout = 4000)
-    public void test306() throws Throwable {
+    public void test3030() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = null;
         zipArchiveEntry0 = new ZipArchiveEntry((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test317() throws Throwable {
+    public void test3131() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = null;
         zipArchiveEntry0 = new ZipArchiveEntry((File) null, "s1aT[?@{%;&56t6i`d");
     }
 
     @Test(timeout = 4000)
-    public void test388() throws Throwable {
+    public void test3232() throws Throwable {
+        File file0 = MockFile.createTempFile("Su<m;p%NHpo4", "Su<m;p%NHpo4");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(file0, "Su<m;p%NHpo4");
+        zipArchiveEntry0.getName();
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[5];
+        byteArray0[2] = (byte) (-92);
+        zipArchiveEntry0.setExtra(byteArray0);
+        zipArchiveEntry0.getExtraFields(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test3434() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        Zip64ExtendedInformationExtraField zip64ExtendedInformationExtraField0 = new Zip64ExtendedInformationExtraField();
+        zipArchiveEntry0.addExtraField(zip64ExtendedInformationExtraField0);
+        zipArchiveEntry0.getExtraFields(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("Error parsing extra fields for entry: ");
+        zipArchiveEntry0.getExtraFields(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("'s no-arg constructor is not public");
+        zipArchiveEntry0.getExtraFields(false);
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("GQ?+REZy+?");
+        byte[] byteArray0 = new byte[8];
+        zipArchiveEntry0.setExtra(byteArray0);
+        zipArchiveEntry0.getExtraFields(false);
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipExtraField[] zipExtraFieldArray0 = new ZipExtraField[6];
         UnparseableExtraFieldData unparseableExtraFieldData0 = new UnparseableExtraFieldData();
@@ -92,32 +311,281 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test409() throws Throwable {
+    public void test3939() throws Throwable {
+        MockFile mockFile0 = new MockFile("aFu6!");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
+        ZipExtraField[] zipExtraFieldArray0 = new ZipExtraField[0];
+        zipArchiveEntry0.setExtraFields(zipExtraFieldArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4040() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         zipArchiveEntry0.setMethod((-1));
     }
 
     @Test(timeout = 4000)
-    public void test4110() throws Throwable {
+    public void test4141() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("invalid entry size");
         ZipArchiveEntry zipArchiveEntry1 = null;
         zipArchiveEntry1 = new ZipArchiveEntry((ZipEntry) zipArchiveEntry0);
     }
 
     @Test(timeout = 4000)
-    public void test6811() throws Throwable {
+    public void test4242() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.getSize();
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%r8&E).&ivm");
+        zipArchiveEntry0.getMethod();
+    }
+
+    @Test(timeout = 4000)
+    public void test4444() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("F=mS7\".s@);//");
+        zipArchiveEntry0.isDirectory();
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("F]L0WvI+um]W6");
+        zipArchiveEntry0.getExternalAttributes();
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.getPlatform();
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.getInternalAttributes();
+    }
+
+    @Test(timeout = 4000)
+    public void test4848() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        byte[] byteArray0 = new byte[5];
+        zipArchiveEntry1.setComment(" is not a concrete class");
+        byteArray0[3] = (byte) 62;
+        zipArchiveEntry0.setComment(" is not a concrete class");
+        GeneralPurposeBit generalPurposeBit0 = GeneralPurposeBit.parse(byteArray0, 3);
+        zipArchiveEntry1.setGeneralPurposeBit(generalPurposeBit0);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        byte[] byteArray0 = new byte[9];
+        zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setCompressedSize((byte) 40);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5151() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setCrc(2107L);
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setSize(5661L);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5353() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setMethod(11);
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5454() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setExternalAttributes((byte) (-10));
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5555() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setUnixMode((byte) 40);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5656() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setInternalAttributes(243);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5757() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        TimeUnit timeUnit0 = TimeUnit.MILLISECONDS;
+        FileTime fileTime0 = FileTime.from((long) 3, timeUnit0);
+        zipArchiveEntry0.setLastModifiedTime(fileTime0);
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5858() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setComment(" is not a concrete class");
+        zipArchiveEntry0.setComment(" is not a concrete class");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5959() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry1.setComment(" is not a concrete class");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test6060() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(" is not a concrete class");
+        zipArchiveEntry0.setComment(" is not a concrete class");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test6161() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry(".");
+        zipArchiveEntry0.equals(zipArchiveEntry1);
+    }
+
+    @Test(timeout = 4000)
+    public void test6262() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        UnparseableExtraFieldData unparseableExtraFieldData0 = new UnparseableExtraFieldData();
+        zipArchiveEntry0.equals(unparseableExtraFieldData0);
+    }
+
+    @Test(timeout = 4000)
+    public void test6363() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.equals((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test6464() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[8];
+        zipArchiveEntry0.setExtra(byteArray0);
+        zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test6565() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[5];
+        byteArray0[2] = (byte) (-92);
+        zipArchiveEntry0.setExtra(byteArray0);
+        zipArchiveEntry0.setExtra(byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test6666() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[3];
+        zipArchiveEntry0.setName("d)^AT0^G", byteArray0);
+        zipArchiveEntry0.getRawName();
+    }
+
+    @Test(timeout = 4000)
+    public void test6767() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        zipArchiveEntry0.getRawName();
+    }
+
+    @Test(timeout = 4000)
+    public void test6868() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.setSize((-524L));
     }
 
     @Test(timeout = 4000)
-    public void test7412() throws Throwable {
+    public void test6969() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
+        byte[] byteArray0 = zipArchiveEntry0.getLocalFileDataExtra();
+        zipArchiveEntry0.setUnixMode(310);
+        zipArchiveEntry0.setName("%]\"", byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test7070() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[0];
+        zipArchiveEntry0.setName((String) null, byteArray0);
+        zipArchiveEntry0.getName();
+    }
+
+    @Test(timeout = 4000)
+    public void test7171() throws Throwable {
+        MockFile mockFile0 = new MockFile("KS!!0%&{&8{b(W'LqVf", "KS!!0%&{&8{b(W'LqVf");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
+        zipArchiveEntry0.setExtra();
+        zipArchiveEntry0.getLocalFileDataExtra();
+    }
+
+    @Test(timeout = 4000)
+    public void test7272() throws Throwable {
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
+        byte[] byteArray0 = new byte[5];
+        zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
+        zipArchiveEntry0.getExtraField((ZipShort) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test7373() throws Throwable {
+        MockFile mockFile0 = new MockFile("KS!!0%&{&8{b(W'LqVf", "KS!!0%&{&8{b(W'LqVf");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
+        JarMarker jarMarker0 = new JarMarker();
+        ZipShort zipShort0 = jarMarker0.getHeaderId();
+        zipArchiveEntry0.getExtraField(zipShort0);
+    }
+
+    @Test(timeout = 4000)
+    public void test7474() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         zipArchiveEntry0.removeUnparseableExtraFieldData();
     }
 
     @Test(timeout = 4000)
-    public void test7513() throws Throwable {
+    public void test7575() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-92);
@@ -128,7 +596,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7614() throws Throwable {
+    public void test7676() throws Throwable {
         MockFile mockFile0 = new MockFile("KS!!0%&{&8{b(W'LqVf", "KS!!0%&{&8{b(W'LqVf");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         JarMarker jarMarker0 = new JarMarker();
@@ -137,7 +605,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7715() throws Throwable {
+    public void test7777() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-92);
@@ -148,7 +616,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7816() throws Throwable {
+    public void test7878() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         JarMarker jarMarker0 = new JarMarker();
         zipArchiveEntry0.addExtraField(jarMarker0);
@@ -157,7 +625,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7817() throws Throwable {
+    public void test7879() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         JarMarker jarMarker0 = new JarMarker();
         zipArchiveEntry0.addExtraField(jarMarker0);
@@ -166,7 +634,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7818() throws Throwable {
+    public void test7880() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         JarMarker jarMarker0 = new JarMarker();
         zipArchiveEntry0.addExtraField(jarMarker0);
@@ -175,7 +643,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7819() throws Throwable {
+    public void test7881() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         JarMarker jarMarker0 = new JarMarker();
         zipArchiveEntry0.addExtraField(jarMarker0);
@@ -184,7 +652,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7820() throws Throwable {
+    public void test7882() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         JarMarker jarMarker0 = new JarMarker();
         zipArchiveEntry0.addExtraField(jarMarker0);
@@ -193,7 +661,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7921() throws Throwable {
+    public void test7983() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         JarMarker jarMarker0 = new JarMarker();
@@ -202,7 +670,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7922() throws Throwable {
+    public void test7984() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         JarMarker jarMarker0 = new JarMarker();
@@ -211,7 +679,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7923() throws Throwable {
+    public void test7985() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         JarMarker jarMarker0 = new JarMarker();
@@ -220,7 +688,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7924() throws Throwable {
+    public void test7986() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         JarMarker jarMarker0 = new JarMarker();
@@ -229,7 +697,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7925() throws Throwable {
+    public void test7987() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         JarMarker jarMarker0 = new JarMarker();
@@ -238,7 +706,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8026() throws Throwable {
+    public void test8088() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -248,7 +716,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8027() throws Throwable {
+    public void test8089() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -258,7 +726,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8028() throws Throwable {
+    public void test8090() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -268,7 +736,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8029() throws Throwable {
+    public void test8091() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -278,7 +746,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8030() throws Throwable {
+    public void test8092() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -288,7 +756,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8131() throws Throwable {
+    public void test8193() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-4);
@@ -297,7 +765,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8132() throws Throwable {
+    public void test8194() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-4);
@@ -308,7 +776,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8133() throws Throwable {
+    public void test8195() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-4);
@@ -319,7 +787,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8134() throws Throwable {
+    public void test8196() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-4);
@@ -330,7 +798,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8135() throws Throwable {
+    public void test8197() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         byte[] byteArray0 = new byte[5];
         byteArray0[2] = (byte) (-4);
@@ -341,97 +809,97 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8236() throws Throwable {
+    public void test8298() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         UnparseableExtraFieldData unparseableExtraFieldData0 = new UnparseableExtraFieldData();
         zipArchiveEntry0.addAsFirstExtraField(unparseableExtraFieldData0);
     }
 
     @Test(timeout = 4000)
-    public void test8337() throws Throwable {
+    public void test8399() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         int int0 = zipArchiveEntry0.getUnixMode();
         zipArchiveEntry0.getSize();
     }
 
     @Test(timeout = 4000)
-    public void test8338() throws Throwable {
+    public void test83100() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         int int0 = zipArchiveEntry0.getUnixMode();
         zipArchiveEntry0.getExternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8339() throws Throwable {
+    public void test83101() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         int int0 = zipArchiveEntry0.getUnixMode();
         zipArchiveEntry0.getPlatform();
     }
 
     @Test(timeout = 4000)
-    public void test8340() throws Throwable {
+    public void test83102() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         int int0 = zipArchiveEntry0.getUnixMode();
         zipArchiveEntry0.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test8341() throws Throwable {
+    public void test83103() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         int int0 = zipArchiveEntry0.getUnixMode();
         zipArchiveEntry0.getInternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8342() throws Throwable {
+    public void test83104() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         int int0 = zipArchiveEntry0.getUnixMode();
     }
 
     @Test(timeout = 4000)
-    public void test8443() throws Throwable {
+    public void test84105() throws Throwable {
         MockFile mockFile0 = new MockFile("");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, " is not a concrete class/");
         zipArchiveEntry0.getPlatform();
     }
 
     @Test(timeout = 4000)
-    public void test8444() throws Throwable {
+    public void test84106() throws Throwable {
         MockFile mockFile0 = new MockFile("");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, " is not a concrete class/");
         zipArchiveEntry0.getSize();
     }
 
     @Test(timeout = 4000)
-    public void test8445() throws Throwable {
+    public void test84107() throws Throwable {
         MockFile mockFile0 = new MockFile("");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, " is not a concrete class/");
         zipArchiveEntry0.getInternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8446() throws Throwable {
+    public void test84108() throws Throwable {
         MockFile mockFile0 = new MockFile("");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, " is not a concrete class/");
         zipArchiveEntry0.getExternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8447() throws Throwable {
+    public void test84109() throws Throwable {
         MockFile mockFile0 = new MockFile("");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, " is not a concrete class/");
         zipArchiveEntry0.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test8548() throws Throwable {
+    public void test85110() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         zipArchiveEntry0.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test8549() throws Throwable {
+    public void test85111() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
         zipArchiveEntry0.setMethod(0);
@@ -440,7 +908,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8650() throws Throwable {
+    public void test86112() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setExtra(byteArray0);
@@ -449,7 +917,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8751() throws Throwable {
+    public void test87113() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
         generalPurposeBit0.useUTF8ForNames(true);
@@ -458,7 +926,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8752() throws Throwable {
+    public void test87114() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
         generalPurposeBit0.useUTF8ForNames(true);
@@ -467,7 +935,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8753() throws Throwable {
+    public void test87115() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
         generalPurposeBit0.useUTF8ForNames(true);
@@ -476,7 +944,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8754() throws Throwable {
+    public void test87116() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
         generalPurposeBit0.useUTF8ForNames(true);
@@ -485,7 +953,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8755() throws Throwable {
+    public void test87117() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         GeneralPurposeBit generalPurposeBit0 = zipArchiveEntry0.getGeneralPurposeBit();
         generalPurposeBit0.useUTF8ForNames(true);
@@ -494,77 +962,77 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8856() throws Throwable {
+    public void test88118() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.getUnparseableExtraFieldData();
         zipArchiveEntry0.getExternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8857() throws Throwable {
+    public void test88119() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.getUnparseableExtraFieldData();
         zipArchiveEntry0.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test8858() throws Throwable {
+    public void test88120() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.getUnparseableExtraFieldData();
         zipArchiveEntry0.getInternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8859() throws Throwable {
+    public void test88121() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.getUnparseableExtraFieldData();
         zipArchiveEntry0.getPlatform();
     }
 
     @Test(timeout = 4000)
-    public void test8860() throws Throwable {
+    public void test88122() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.getUnparseableExtraFieldData();
         zipArchiveEntry0.getSize();
     }
 
     @Test(timeout = 4000)
-    public void test8961() throws Throwable {
+    public void test89123() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.hashCode();
         zipArchiveEntry0.getExternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test8962() throws Throwable {
+    public void test89124() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.hashCode();
         zipArchiveEntry0.getPlatform();
     }
 
     @Test(timeout = 4000)
-    public void test8963() throws Throwable {
+    public void test89125() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.hashCode();
         zipArchiveEntry0.getSize();
     }
 
     @Test(timeout = 4000)
-    public void test8964() throws Throwable {
+    public void test89126() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.hashCode();
         zipArchiveEntry0.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test8965() throws Throwable {
+    public void test89127() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         zipArchiveEntry0.hashCode();
         zipArchiveEntry0.getInternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test9066() throws Throwable {
+    public void test90128() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -573,7 +1041,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9067() throws Throwable {
+    public void test90129() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -582,7 +1050,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9068() throws Throwable {
+    public void test90130() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -591,7 +1059,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9069() throws Throwable {
+    public void test90131() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -600,7 +1068,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9070() throws Throwable {
+    public void test90132() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -609,7 +1077,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9071() throws Throwable {
+    public void test90133() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%]\"");
         byte[] byteArray0 = zipArchiveEntry0.getCentralDirectoryExtra();
         zipArchiveEntry0.setCentralDirectoryExtra(byteArray0);
@@ -618,90 +1086,90 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9172() throws Throwable {
+    public void test91134() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         zipArchiveEntry0.getLastModifiedDate();
         zipArchiveEntry0.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test9173() throws Throwable {
+    public void test91135() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         zipArchiveEntry0.getLastModifiedDate();
         zipArchiveEntry0.getExternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test9174() throws Throwable {
+    public void test91136() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         zipArchiveEntry0.getLastModifiedDate();
         zipArchiveEntry0.getInternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test9175() throws Throwable {
+    public void test91137() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         zipArchiveEntry0.getLastModifiedDate();
         zipArchiveEntry0.getPlatform();
     }
 
     @Test(timeout = 4000)
-    public void test9176() throws Throwable {
+    public void test91138() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         zipArchiveEntry0.getLastModifiedDate();
         zipArchiveEntry0.getSize();
     }
 
     @Test(timeout = 4000)
-    public void test9277() throws Throwable {
+    public void test92139() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(" is not a concrete class");
         ZipArchiveEntry zipArchiveEntry1 = null;
         zipArchiveEntry1 = new ZipArchiveEntry(zipArchiveEntry0);
     }
 
     @Test(timeout = 4000)
-    public void test9378() throws Throwable {
+    public void test93140() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
         zipArchiveEntry1.getPlatform();
     }
 
     @Test(timeout = 4000)
-    public void test9379() throws Throwable {
+    public void test93141() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
         zipArchiveEntry1.getInternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test9380() throws Throwable {
+    public void test93142() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
         zipArchiveEntry1.getMethod();
     }
 
     @Test(timeout = 4000)
-    public void test9381() throws Throwable {
+    public void test93143() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
         zipArchiveEntry1.getExternalAttributes();
     }
 
     @Test(timeout = 4000)
-    public void test9382() throws Throwable {
+    public void test93144() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
     }
 
     @Test(timeout = 4000)
-    public void test9383() throws Throwable {
+    public void test93145() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
         zipArchiveEntry1.getSize();
     }
 
     @Test(timeout = 4000)
-    public void test9484() throws Throwable {
+    public void test94146() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%r/8&E).&ivm/");
         zipArchiveEntry0.setUnixMode(1865);
         int int0 = zipArchiveEntry0.getPlatform();
@@ -709,7 +1177,7 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test9485() throws Throwable {
+    public void test94147() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry("%r/8&E).&ivm/");
         zipArchiveEntry0.setUnixMode(1865);
         int int0 = zipArchiveEntry0.getPlatform();

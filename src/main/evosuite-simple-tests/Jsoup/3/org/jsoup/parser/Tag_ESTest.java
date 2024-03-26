@@ -749,23 +749,35 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3599() throws Throwable {
-        Tag tag0 = Tag.valueOf("r[zmHb.(TH");
+    public void test3499() throws Throwable {
+        Tag tag0 = Tag.valueOf("link");
         tag0.hashCode();
-        assertFalse(tag0.preserveWhitespace());
     }
 
     @Test(timeout = 4000)
     public void test35100() throws Throwable {
         Tag tag0 = Tag.valueOf("r[zmHb.(TH");
         tag0.hashCode();
-        assertTrue(tag0.isInline());
+        assertFalse(tag0.preserveWhitespace());
     }
 
     @Test(timeout = 4000)
     public void test35101() throws Throwable {
         Tag tag0 = Tag.valueOf("r[zmHb.(TH");
         tag0.hashCode();
+        assertTrue(tag0.isInline());
+    }
+
+    @Test(timeout = 4000)
+    public void test35102() throws Throwable {
+        Tag tag0 = Tag.valueOf("r[zmHb.(TH");
+        tag0.hashCode();
         assertFalse(tag0.isData());
+    }
+
+    @Test(timeout = 4000)
+    public void test36103() throws Throwable {
+        Tag tag0 = Tag.valueOf("FORM");
+        tag0.hashCode();
     }
 }

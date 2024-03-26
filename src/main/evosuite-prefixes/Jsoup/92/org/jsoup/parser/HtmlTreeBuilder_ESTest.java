@@ -631,17 +631,6 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5964() throws Throwable {
-        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
-        Attributes attributes0 = new Attributes();
-        Tag tag0 = Tag.valueOf("th");
-        FormElement formElement0 = new FormElement(tag0, "th", attributes0);
-        Parser parser0 = Parser.xmlParser();
-        List<Node> list0 = htmlTreeBuilder0.parseFragment("th", formElement0, "th", parser0);
-        list0.size();
-    }
-
-    @Test(timeout = 4000)
     public void test5965() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Attributes attributes0 = new Attributes();

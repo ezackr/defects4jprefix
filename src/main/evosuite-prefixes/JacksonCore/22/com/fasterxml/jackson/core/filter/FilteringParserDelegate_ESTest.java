@@ -674,7 +674,47 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test06360() throws Throwable {
+    public void test06060() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        StringReader stringReader0 = new StringReader("");
+        TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        char[] charArray0 = new char[2];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 2, 0, false);
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(readerBasedJsonParser0, tokenFilter0, true, true);
+        filteringParserDelegate0.nextValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test06161() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        StringReader stringReader0 = new StringReader("");
+        TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        char[] charArray0 = new char[2];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 2, 0, false);
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(readerBasedJsonParser0, tokenFilter0, true, true);
+        TokenFilterContext tokenFilterContext0 = filteringParserDelegate0._exposedContext;
+        filteringParserDelegate0._nextTokenWithBuffering(tokenFilterContext0);
+    }
+
+    @Test(timeout = 4000)
+    public void test06262() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        StringReader stringReader0 = new StringReader("");
+        TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        char[] charArray0 = new char[2];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 2, 0, false);
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(readerBasedJsonParser0, tokenFilter0, true, true);
+        filteringParserDelegate0._nextToken2();
+    }
+
+    @Test(timeout = 4000)
+    public void test06363() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("\"");
@@ -685,7 +725,18 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test06561() throws Throwable {
+    public void test06464() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        StringReader stringReader0 = new StringReader("");
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 1545, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0);
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(readerBasedJsonParser0, (TokenFilter) null, false, false);
+        filteringParserDelegate0.nextToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test06565() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -698,7 +749,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test06662() throws Throwable {
+    public void test06666() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, false, true);
         filteringParserDelegate0.clearCurrentToken();
@@ -706,7 +757,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test06763() throws Throwable {
+    public void test06767() throws Throwable {
         JsonParserDelegate jsonParserDelegate0 = new JsonParserDelegate((JsonParser) null);
         TokenFilter tokenFilter0 = new TokenFilter();
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(jsonParserDelegate0, tokenFilter0, false, false);
@@ -714,7 +765,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test06864() throws Throwable {
+    public void test06868() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -727,14 +778,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test06965() throws Throwable {
+    public void test06969() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, false, false);
         boolean boolean0 = filteringParserDelegate0.hasToken((JsonToken) null);
     }
 
     @Test(timeout = 4000)
-    public void test07066() throws Throwable {
+    public void test07070() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -748,7 +799,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07167() throws Throwable {
+    public void test07171() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -761,7 +812,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07268() throws Throwable {
+    public void test07272() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -774,7 +825,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07369() throws Throwable {
+    public void test07373() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -785,7 +836,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07470() throws Throwable {
+    public void test07474() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -796,7 +847,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07571() throws Throwable {
+    public void test07575() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -807,7 +858,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07672() throws Throwable {
+    public void test07676() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -818,14 +869,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07773() throws Throwable {
+    public void test07777() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, false, true);
         filteringParserDelegate0.getValueAsLong(0L);
     }
 
     @Test(timeout = 4000)
-    public void test07874() throws Throwable {
+    public void test07878() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -838,14 +889,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test07975() throws Throwable {
+    public void test07979() throws Throwable {
         TokenFilter tokenFilter0 = new TokenFilter();
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, true, false);
         filteringParserDelegate0.getBinaryValue((Base64Variant) null);
     }
 
     @Test(timeout = 4000)
-    public void test08076() throws Throwable {
+    public void test08080() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Object object0 = new Object();
         IOContext iOContext0 = new IOContext(bufferRecycler0, object0, true);
@@ -858,14 +909,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08177() throws Throwable {
+    public void test08181() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, true, true);
         filteringParserDelegate0.getTextLength();
     }
 
     @Test(timeout = 4000)
-    public void test08278() throws Throwable {
+    public void test08282() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -876,7 +927,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08379() throws Throwable {
+    public void test08383() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("={o0L|mch");
@@ -889,14 +940,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08480() throws Throwable {
+    public void test08484() throws Throwable {
         TokenFilter tokenFilter0 = new TokenFilter();
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, false, true);
         filteringParserDelegate0.getValueAsBoolean();
     }
 
     @Test(timeout = 4000)
-    public void test08581() throws Throwable {
+    public void test08585() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -909,7 +960,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08682() throws Throwable {
+    public void test08686() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -920,7 +971,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08783() throws Throwable {
+    public void test08787() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -932,7 +983,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08884() throws Throwable {
+    public void test08888() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -943,14 +994,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test08985() throws Throwable {
+    public void test08989() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, true, true);
         filteringParserDelegate0.getValueAsDouble();
     }
 
     @Test(timeout = 4000)
-    public void test09086() throws Throwable {
+    public void test09090() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -961,7 +1012,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09187() throws Throwable {
+    public void test09191() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -974,7 +1025,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09288() throws Throwable {
+    public void test09292() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -987,14 +1038,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09389() throws Throwable {
+    public void test09393() throws Throwable {
         TokenFilter tokenFilter0 = new TokenFilter();
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, true, false);
         int int0 = filteringParserDelegate0.getMatchCount();
     }
 
     @Test(timeout = 4000)
-    public void test09490() throws Throwable {
+    public void test09494() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1007,7 +1058,20 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09691() throws Throwable {
+    public void test09595() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        StringReader stringReader0 = new StringReader("");
+        TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        char[] charArray0 = new char[2];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 2, 0, false);
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(readerBasedJsonParser0, tokenFilter0, true, true);
+        filteringParserDelegate0.getLastClearedToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test09696() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1018,7 +1082,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09792() throws Throwable {
+    public void test09797() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1031,7 +1095,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09893() throws Throwable {
+    public void test09898() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, true);
         StringReader stringReader0 = new StringReader("kE");
@@ -1044,7 +1108,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test09994() throws Throwable {
+    public void test09999() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -1057,7 +1121,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test10095() throws Throwable {
+    public void test100100() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1068,7 +1132,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test10196() throws Throwable {
+    public void test101101() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1079,14 +1143,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test10297() throws Throwable {
+    public void test102102() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, true, true);
         filteringParserDelegate0.getValueAsLong();
     }
 
     @Test(timeout = 4000)
-    public void test10398() throws Throwable {
+    public void test103103() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1098,14 +1162,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test10499() throws Throwable {
+    public void test104104() throws Throwable {
         TokenFilter tokenFilter0 = new TokenFilter();
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, false, false);
         filteringParserDelegate0.getEmbeddedObject();
     }
 
     @Test(timeout = 4000)
-    public void test105100() throws Throwable {
+    public void test105105() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("");
@@ -1118,7 +1182,7 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test106101() throws Throwable {
+    public void test106106() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("Unexpected problem: chain of filtered context broken");
@@ -1130,7 +1194,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test108102() throws Throwable {
+    public void test107107() throws Throwable {
+        TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, false, false);
+        filteringParserDelegate0.getCurrentToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test108108() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("-.mfBBFyC7");
@@ -1142,7 +1213,20 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test110103() throws Throwable {
+    public void test109109() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        StringReader stringReader0 = new StringReader("");
+        TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        char[] charArray0 = new char[2];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 2, 0, false);
+        FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate(readerBasedJsonParser0, tokenFilter0, true, true);
+        filteringParserDelegate0.currentToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test110110() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -1153,14 +1237,14 @@ public class FilteringParserDelegate_ESTest extends FilteringParserDelegate_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test111104() throws Throwable {
+    public void test111111() throws Throwable {
         TokenFilter tokenFilter0 = TokenFilter.INCLUDE_ALL;
         FilteringParserDelegate filteringParserDelegate0 = new FilteringParserDelegate((JsonParser) null, tokenFilter0, true, true);
         filteringParserDelegate0.getValueAsString();
     }
 
     @Test(timeout = 4000)
-    public void test112105() throws Throwable {
+    public void test112112() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Object object0 = new Object();
         IOContext iOContext0 = new IOContext(bufferRecycler0, object0, true);

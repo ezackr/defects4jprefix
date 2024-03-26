@@ -39,42 +39,39 @@ import org.junit.runner.RunWith;
 public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivariateRealOptimizer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test020() throws Throwable {
+    public void test000() throws Throwable {
         System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
-        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test021() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test022() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
-        assertNotNull(univariateRealPointValuePair0);
-    }
-
-    @Test(timeout = 4000)
-    public void test023() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 0L);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(47, 47, 68, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(555, 33, 68, 68, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
         doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        Well19937c well19937c0 = new Well19937c(2450);
-        assertNotNull(well19937c0);
+        Well19937c well19937c0 = new Well19937c(100);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[3] = (byte) 3;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 555, well19937c0);
+        well19937c0.nextFloat();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 869, (double) 0L);
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        Random.setNextRandom(33);
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 100;
+        doubleArray0[1] = 253.362;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        System.setCurrentTimeMillis(869);
     }
 
     @Test(timeout = 4000)
-    public void test024() throws Throwable {
+    public void test011() throws Throwable {
         System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
         doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
@@ -84,10 +81,46 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byte[] byteArray0 = new byte[4];
         byteArray0[0] = (byte) 5;
         byteArray0[1] = (byte) 3;
-        byteArray0[2] = (byte) 5;
-        byteArray0[3] = (byte) 0;
+        byteArray0[3] = (byte) 3;
         well19937c0.nextBytes(byteArray0);
-        assertArrayEquals(new byte[] { (byte) (-4), (byte) 21, (byte) 69, (byte) (-66) }, byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        well19937c0.nextBoolean();
+        well19937c0.nextFloat();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        Random.setNextRandom(2450);
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        Random.setNextRandom(245616);
+        Random.setNextRandom(245616);
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 100;
+        doubleArray0[1] = (-126.151);
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType1 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, (-1.0), 2853.149559891947, 4003.82806161574);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test023() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test024() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        assertNotNull(univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
@@ -99,14 +132,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
         doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         Well19937c well19937c0 = new Well19937c(2450);
-        well19937c0.setSeed(0L);
-        byte[] byteArray0 = new byte[4];
-        byteArray0[0] = (byte) 5;
-        byteArray0[1] = (byte) 3;
-        byteArray0[2] = (byte) 5;
-        byteArray0[3] = (byte) 0;
-        well19937c0.nextBytes(byteArray0);
-        assertEquals(4, byteArray0.length);
+        assertNotNull(well19937c0);
     }
 
     @Test(timeout = 4000)
@@ -125,8 +151,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[2] = (byte) 5;
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertArrayEquals(new byte[] { (byte) (-4), (byte) 21, (byte) 69, (byte) (-66) }, byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -145,8 +170,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[2] = (byte) 5;
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(4, byteArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -166,7 +190,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -186,7 +210,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -206,7 +230,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -226,8 +250,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        boolean boolean0 = well19937c0.nextBoolean();
-        assertTrue(boolean0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -247,9 +270,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        boolean boolean0 = well19937c0.nextBoolean();
-        float float0 = well19937c0.nextFloat();
-        assertEquals(0.21316564F, float0, 0.01F);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -270,10 +291,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
         boolean boolean0 = well19937c0.nextBoolean();
-        float float0 = well19937c0.nextFloat();
-        GoalType goalType0 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -295,9 +313,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
         boolean boolean0 = well19937c0.nextBoolean();
         float float0 = well19937c0.nextFloat();
-        GoalType goalType0 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(0.21316564F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
@@ -321,7 +337,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -345,7 +361,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -369,7 +385,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(253.362, univariateRealPointValuePair1.getPoint(), 0.01);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -393,7 +409,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(53.0, univariateRealPointValuePair1.getValue(), 0.01);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -417,7 +433,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertNotNull(univariateRealPointValuePair1);
+        assertEquals(253.362, univariateRealPointValuePair1.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -441,7 +457,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertEquals(53.0, univariateRealPointValuePair1.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -465,7 +481,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
+        assertNotNull(univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -489,8 +505,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -514,8 +529,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
@@ -540,7 +554,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -565,7 +579,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -590,7 +604,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertNotNull(univariateRealPointValuePairArray0);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -615,7 +629,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -640,7 +654,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(2450, univariateRealPointValuePairArray0.length);
+        assertNotNull(univariateRealPointValuePairArray0);
     }
 
     @Test(timeout = 4000)
@@ -665,8 +679,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertFalse(univariateRealPointValuePairArray1.equals((Object) univariateRealPointValuePairArray0));
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -691,8 +704,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(2450, univariateRealPointValuePairArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -718,7 +730,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertFalse(univariateRealPointValuePairArray1.equals((Object) univariateRealPointValuePairArray0));
     }
 
     @Test(timeout = 4000)
@@ -744,7 +756,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -770,7 +782,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -796,7 +808,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertNotNull(univariateRealPointValuePairArray1);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -822,7 +834,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertNotSame(univariateRealPointValuePairArray1, univariateRealPointValuePairArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -848,7 +860,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertNotNull(univariateRealPointValuePairArray1);
     }
 
     @Test(timeout = 4000)
@@ -874,7 +886,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(2450, univariateRealPointValuePairArray1.length);
+        assertNotSame(univariateRealPointValuePairArray1, univariateRealPointValuePairArray0);
     }
 
     @Test(timeout = 4000)
@@ -900,9 +912,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        Random.setNextRandom(2450);
-        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -928,9 +938,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        Random.setNextRandom(2450);
-        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(2450, univariateRealPointValuePairArray1.length);
     }
 
     @Test(timeout = 4000)
@@ -958,7 +966,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(53.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -986,7 +994,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1014,7 +1022,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1042,25 +1050,63 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test0244() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        Well19937c well19937c0 = new Well19937c(2450);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[2] = (byte) 5;
+        byteArray0[3] = (byte) 0;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        boolean boolean0 = well19937c0.nextBoolean();
+        float float0 = well19937c0.nextFloat();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
+        Random.setNextRandom(2450);
+        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+    }
+
+    @Test(timeout = 4000)
+    public void test0245() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, 53);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        Well19937c well19937c0 = new Well19937c(2450);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[2] = (byte) 5;
+        byteArray0[3] = (byte) 0;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        boolean boolean0 = well19937c0.nextBoolean();
+        float float0 = well19937c0.nextFloat();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
+        Random.setNextRandom(2450);
+        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
         assertEquals(245616, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0344() throws Throwable {
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well512a well512a0 = new Well512a();
-        assertNotNull(well512a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0345() throws Throwable {
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well512a well512a0 = new Well512a();
-        well512a0.setSeed(4420);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1068,9 +1114,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well512a well512a0 = new Well512a();
-        well512a0.setSeed(4420);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(well512a0);
     }
 
     @Test(timeout = 4000)
@@ -1080,7 +1124,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a();
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1090,8 +1134,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a();
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1101,8 +1144,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a();
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -1113,57 +1155,47 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test0351() throws Throwable {
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well512a well512a0 = new Well512a();
+        well512a0.setSeed(4420);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
+        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test0352() throws Throwable {
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well512a well512a0 = new Well512a();
+        well512a0.setSeed(4420);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
+        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
         assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0451() throws Throwable {
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
-        assertEquals(2906.946, univariateRealPointValuePair0.getPoint(), 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test0452() throws Throwable {
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
-        assertEquals(0.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
     public void test0453() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
-        assertNotNull(univariateRealPointValuePair0);
+        assertEquals(2906.946, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
     public void test0454() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(253, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(1655, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int[] intArray0 = new int[4];
-        intArray0[0] = 1;
-        intArray0[1] = 1;
-        intArray0[2] = 1;
-        intArray0[3] = 1;
-        Well1024a well1024a0 = new Well1024a(intArray0);
-        assertNotNull(well1024a0);
+        assertEquals(0.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
     public void test0455() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(253, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(1655, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int[] intArray0 = new int[4];
-        intArray0[0] = 1;
-        intArray0[1] = 1;
-        intArray0[2] = 1;
-        intArray0[3] = 1;
-        Well1024a well1024a0 = new Well1024a(intArray0);
-        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
+        assertNotNull(univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
@@ -1179,7 +1211,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[2] = 1;
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
-        assertEquals(4, intArray0.length);
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
@@ -1195,8 +1227,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[2] = 1;
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(2906.946, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -1212,8 +1243,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[2] = 1;
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(0.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(4, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -1230,7 +1260,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(2906.946, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1247,7 +1277,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(0.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1264,7 +1294,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1281,7 +1311,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1298,7 +1328,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(4, intArray0.length);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -1315,15 +1345,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) 1;
-        doubleArray0[1] = (double) 1;
-        doubleArray0[2] = (double) 1;
-        doubleArray0[3] = (double) 1;
-        doubleArray0[4] = (double) 1;
-        doubleArray0[5] = (double) 1;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(5, polynomialFunction0.degree());
+        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -1340,15 +1362,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) 1;
-        doubleArray0[1] = (double) 1;
-        doubleArray0[2] = (double) 1;
-        doubleArray0[3] = (double) 1;
-        doubleArray0[4] = (double) 1;
-        doubleArray0[5] = (double) 1;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertEquals(4, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -1373,7 +1387,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
+        assertEquals(5, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -1398,7 +1412,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(6, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -1423,10 +1437,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        GoalType goalType0 = GoalType.MINIMIZE;
-        GoalType goalType1 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(5, polynomialFunction0.degree());
+        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1451,10 +1462,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        GoalType goalType0 = GoalType.MINIMIZE;
-        GoalType goalType1 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(2906.946, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(6, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -1482,7 +1490,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(0.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(5, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -1510,7 +1518,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(2906.946, univariateRealPointValuePair1.getPoint(), 0.01);
+        assertEquals(2906.946, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1538,7 +1546,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(0.0, univariateRealPointValuePair1.getValue(), 0.01);
+        assertEquals(0.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1566,7 +1574,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(2906.946, univariateRealPointValuePair1.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1594,7 +1602,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(253, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(0.0, univariateRealPointValuePair1.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1622,7 +1630,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertNotNull(univariateRealPointValuePair1);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1650,7 +1658,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
+        assertEquals(253, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1678,7 +1686,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
+        assertNotNull(univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -1706,7 +1714,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -1734,7 +1742,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertSame(goalType1, goalType0);
+        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -1762,7 +1770,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -1790,7 +1798,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(4, intArray0.length);
+        assertSame(goalType1, goalType0);
     }
 
     @Test(timeout = 4000)
@@ -1818,11 +1826,67 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(6, doubleArray0.length);
+        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
     public void test0483() throws Throwable {
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(253, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(1655, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[4];
+        intArray0[0] = 1;
+        intArray0[1] = 1;
+        intArray0[2] = 1;
+        intArray0[3] = 1;
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 1;
+        doubleArray0[1] = (double) 1;
+        doubleArray0[2] = (double) 1;
+        doubleArray0[3] = (double) 1;
+        doubleArray0[4] = (double) 1;
+        doubleArray0[5] = (double) 1;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        GoalType goalType1 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
+        assertEquals(4, intArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test0484() throws Throwable {
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(253, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(1655, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[4];
+        intArray0[0] = 1;
+        intArray0[1] = 1;
+        intArray0[2] = 1;
+        intArray0[3] = 1;
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 1;
+        doubleArray0[1] = (double) 1;
+        doubleArray0[2] = (double) 1;
+        doubleArray0[3] = (double) 1;
+        doubleArray0[4] = (double) 1;
+        doubleArray0[5] = (double) 1;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        GoalType goalType1 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
+        assertEquals(6, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test0485() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(2906.946, 0.0);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(253, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -1859,29 +1923,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test0584() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int0 = 3694;
-        Well44497b well44497b0 = new Well44497b();
-        assertNotNull(well44497b0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0585() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int0 = 3694;
-        Well44497b well44497b0 = new Well44497b();
-        boolean boolean0 = well44497b0.nextBoolean();
-        assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
     public void test0586() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -1889,9 +1930,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         int int0 = 3694;
         Well44497b well44497b0 = new Well44497b();
-        boolean boolean0 = well44497b0.nextBoolean();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well44497b0);
     }
 
     @Test(timeout = 4000)
@@ -1903,8 +1942,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int int0 = 3694;
         Well44497b well44497b0 = new Well44497b();
         boolean boolean0 = well44497b0.nextBoolean();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -1917,7 +1955,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well44497b well44497b0 = new Well44497b();
         boolean boolean0 = well44497b0.nextBoolean();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1930,16 +1968,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well44497b well44497b0 = new Well44497b();
         boolean boolean0 = well44497b0.nextBoolean();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
-        double[] doubleArray0 = new double[7];
-        doubleArray0[0] = (double) 3694;
-        doubleArray0[1] = (double) 3694;
-        doubleArray0[2] = (double) 3694;
-        doubleArray0[3] = (double) 3694;
-        doubleArray0[4] = (double) 3694;
-        doubleArray0[5] = (double) 3694;
-        doubleArray0[6] = (double) 3694;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(6, polynomialFunction0.degree());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -1952,16 +1981,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well44497b well44497b0 = new Well44497b();
         boolean boolean0 = well44497b0.nextBoolean();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
-        double[] doubleArray0 = new double[7];
-        doubleArray0[0] = (double) 3694;
-        doubleArray0[1] = (double) 3694;
-        doubleArray0[2] = (double) 3694;
-        doubleArray0[3] = (double) 3694;
-        doubleArray0[4] = (double) 3694;
-        doubleArray0[5] = (double) 3694;
-        doubleArray0[6] = (double) 3694;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -1983,7 +2003,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[5] = (double) 3694;
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
+        assertEquals(6, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -2005,7 +2025,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[5] = (double) 3694;
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(7, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -2027,8 +2047,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[5] = (double) 3694;
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        assertTrue(polynomialFunction1.equals((Object) polynomialFunction0));
+        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -2050,8 +2069,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[5] = (double) 3694;
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        assertEquals(6, polynomialFunction1.degree());
+        assertEquals(7, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -2074,7 +2092,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction1);
+        assertTrue(polynomialFunction1.equals((Object) polynomialFunction0));
     }
 
     @Test(timeout = 4000)
@@ -2097,7 +2115,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
+        assertEquals(6, polynomialFunction1.degree());
     }
 
     @Test(timeout = 4000)
@@ -2120,7 +2138,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        assertEquals(7, doubleArray0.length);
+        assertNotNull(polynomialFunction1);
     }
 
     @Test(timeout = 4000)
@@ -2143,8 +2161,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertTrue(polynomialFunction0.equals((Object) polynomialFunction1));
+        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -2167,8 +2184,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[6] = (double) 3694;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
-        PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertTrue(polynomialFunction1.equals((Object) polynomialFunction0));
+        assertEquals(7, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -2192,7 +2208,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertFalse(polynomialFunction2.equals((Object) polynomialFunction0));
+        assertTrue(polynomialFunction0.equals((Object) polynomialFunction1));
     }
 
     @Test(timeout = 4000)
@@ -2216,7 +2232,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertFalse(polynomialFunction2.equals((Object) polynomialFunction1));
+        assertTrue(polynomialFunction1.equals((Object) polynomialFunction0));
     }
 
     @Test(timeout = 4000)
@@ -2240,7 +2256,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertEquals(6, polynomialFunction0.degree());
+        assertFalse(polynomialFunction2.equals((Object) polynomialFunction0));
     }
 
     @Test(timeout = 4000)
@@ -2264,7 +2280,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertEquals(6, polynomialFunction1.degree());
+        assertFalse(polynomialFunction2.equals((Object) polynomialFunction1));
     }
 
     @Test(timeout = 4000)
@@ -2288,7 +2304,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertEquals(12, polynomialFunction2.degree());
+        assertEquals(6, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -2312,7 +2328,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotNull(polynomialFunction2);
+        assertEquals(6, polynomialFunction1.degree());
     }
 
     @Test(timeout = 4000)
@@ -2336,7 +2352,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
+        assertEquals(12, polynomialFunction2.degree());
     }
 
     @Test(timeout = 4000)
@@ -2360,7 +2376,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotSame(polynomialFunction0, polynomialFunction2);
+        assertNotNull(polynomialFunction2);
     }
 
     @Test(timeout = 4000)
@@ -2384,7 +2400,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotSame(polynomialFunction0, polynomialFunction1);
+        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -2408,7 +2424,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotSame(polynomialFunction1, polynomialFunction0);
+        assertNotSame(polynomialFunction0, polynomialFunction2);
     }
 
     @Test(timeout = 4000)
@@ -2432,7 +2448,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotSame(polynomialFunction1, polynomialFunction2);
+        assertNotSame(polynomialFunction0, polynomialFunction1);
     }
 
     @Test(timeout = 4000)
@@ -2456,7 +2472,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotSame(polynomialFunction2, polynomialFunction0);
+        assertNotSame(polynomialFunction1, polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -2480,7 +2496,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertNotSame(polynomialFunction2, polynomialFunction1);
+        assertNotSame(polynomialFunction1, polynomialFunction2);
     }
 
     @Test(timeout = 4000)
@@ -2504,7 +2520,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        assertEquals(7, doubleArray0.length);
+        assertNotSame(polynomialFunction2, polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -2528,8 +2544,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertFalse(polynomialFunction3.equals((Object) polynomialFunction0));
+        assertNotSame(polynomialFunction2, polynomialFunction1);
     }
 
     @Test(timeout = 4000)
@@ -2553,8 +2568,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
-        PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertFalse(polynomialFunction3.equals((Object) polynomialFunction1));
+        assertEquals(7, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -2579,7 +2593,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertFalse(polynomialFunction3.equals((Object) polynomialFunction2));
+        assertFalse(polynomialFunction3.equals((Object) polynomialFunction0));
     }
 
     @Test(timeout = 4000)
@@ -2604,7 +2618,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertFalse(polynomialFunction0.equals((Object) polynomialFunction2));
+        assertFalse(polynomialFunction3.equals((Object) polynomialFunction1));
     }
 
     @Test(timeout = 4000)
@@ -2629,7 +2643,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertTrue(polynomialFunction0.equals((Object) polynomialFunction1));
+        assertFalse(polynomialFunction3.equals((Object) polynomialFunction2));
     }
 
     @Test(timeout = 4000)
@@ -2654,7 +2668,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertFalse(polynomialFunction1.equals((Object) polynomialFunction2));
+        assertFalse(polynomialFunction0.equals((Object) polynomialFunction2));
     }
 
     @Test(timeout = 4000)
@@ -2679,7 +2693,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertTrue(polynomialFunction1.equals((Object) polynomialFunction0));
+        assertTrue(polynomialFunction0.equals((Object) polynomialFunction1));
     }
 
     @Test(timeout = 4000)
@@ -2704,7 +2718,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertEquals(6, polynomialFunction3.degree());
+        assertFalse(polynomialFunction1.equals((Object) polynomialFunction2));
     }
 
     @Test(timeout = 4000)
@@ -2729,7 +2743,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertEquals(6, polynomialFunction0.degree());
+        assertTrue(polynomialFunction1.equals((Object) polynomialFunction0));
     }
 
     @Test(timeout = 4000)
@@ -2754,7 +2768,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertEquals(6, polynomialFunction1.degree());
+        assertEquals(6, polynomialFunction3.degree());
     }
 
     @Test(timeout = 4000)
@@ -2779,7 +2793,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotNull(polynomialFunction3);
+        assertEquals(6, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -2804,7 +2818,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
+        assertEquals(6, polynomialFunction1.degree());
     }
 
     @Test(timeout = 4000)
@@ -2829,7 +2843,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction3, polynomialFunction0);
+        assertNotNull(polynomialFunction3);
     }
 
     @Test(timeout = 4000)
@@ -2854,7 +2868,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction3, polynomialFunction1);
+        assertArrayEquals(new double[] { 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0, 3694.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -2879,7 +2893,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction3, polynomialFunction2);
+        assertNotSame(polynomialFunction3, polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -2904,7 +2918,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction0, polynomialFunction3);
+        assertNotSame(polynomialFunction3, polynomialFunction1);
     }
 
     @Test(timeout = 4000)
@@ -2929,7 +2943,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction0, polynomialFunction2);
+        assertNotSame(polynomialFunction3, polynomialFunction2);
     }
 
     @Test(timeout = 4000)
@@ -2954,7 +2968,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction0, polynomialFunction1);
+        assertNotSame(polynomialFunction0, polynomialFunction3);
     }
 
     @Test(timeout = 4000)
@@ -2979,7 +2993,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction1, polynomialFunction0);
+        assertNotSame(polynomialFunction0, polynomialFunction2);
     }
 
     @Test(timeout = 4000)
@@ -3004,7 +3018,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction1, polynomialFunction2);
+        assertNotSame(polynomialFunction0, polynomialFunction1);
     }
 
     @Test(timeout = 4000)
@@ -3029,7 +3043,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
-        assertNotSame(polynomialFunction1, polynomialFunction3);
+        assertNotSame(polynomialFunction1, polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -3054,31 +3068,57 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
         PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
         PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
+        assertNotSame(polynomialFunction1, polynomialFunction2);
+    }
+
+    @Test(timeout = 4000)
+    public void test05136() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 3694;
+        Well44497b well44497b0 = new Well44497b();
+        boolean boolean0 = well44497b0.nextBoolean();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
+        double[] doubleArray0 = new double[7];
+        doubleArray0[0] = (double) 3694;
+        doubleArray0[1] = (double) 3694;
+        doubleArray0[2] = (double) 3694;
+        doubleArray0[3] = (double) 3694;
+        doubleArray0[4] = (double) 3694;
+        doubleArray0[5] = (double) 3694;
+        doubleArray0[6] = (double) 3694;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
+        PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
+        PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
+        assertNotSame(polynomialFunction1, polynomialFunction3);
+    }
+
+    @Test(timeout = 4000)
+    public void test05137() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 3694;
+        Well44497b well44497b0 = new Well44497b();
+        boolean boolean0 = well44497b0.nextBoolean();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 3694, well44497b0);
+        double[] doubleArray0 = new double[7];
+        doubleArray0[0] = (double) 3694;
+        doubleArray0[1] = (double) 3694;
+        doubleArray0[2] = (double) 3694;
+        doubleArray0[3] = (double) 3694;
+        doubleArray0[4] = (double) 3694;
+        doubleArray0[5] = (double) 3694;
+        doubleArray0[6] = (double) 3694;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        PolynomialFunction polynomialFunction1 = new PolynomialFunction(doubleArray0);
+        PolynomialFunction polynomialFunction2 = polynomialFunction1.multiply(polynomialFunction0);
+        PolynomialFunction polynomialFunction3 = polynomialFunction0.add(polynomialFunction1);
         assertEquals(7, doubleArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test06136() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int[] intArray0 = new int[1];
-        intArray0[0] = (-1);
-        Well1024a well1024a0 = new Well1024a(intArray0);
-        assertNotNull(well1024a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06137() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int[] intArray0 = new int[1];
-        intArray0[0] = (-1);
-        Well1024a well1024a0 = new Well1024a(intArray0);
-        assertArrayEquals(new int[] { (-1) }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -3090,7 +3130,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int[] intArray0 = new int[1];
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
-        assertEquals(1, intArray0.length);
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
@@ -3102,8 +3142,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int[] intArray0 = new int[1];
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertArrayEquals(new int[] { (-1) }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -3115,8 +3154,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int[] intArray0 = new int[1];
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(1, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -3129,7 +3167,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -3142,7 +3180,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        assertArrayEquals(new int[] { (-1) }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -3155,7 +3193,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        assertEquals(1, intArray0.length);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -3168,11 +3206,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        double[] doubleArray0 = new double[2];
-        doubleArray0[0] = (double) 213;
-        doubleArray0[1] = (double) (-1);
-        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertEquals(1, polynomialFunctionLagrangeForm0.degree());
+        assertArrayEquals(new int[] { (-1) }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -3185,11 +3219,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[0] = (-1);
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
-        double[] doubleArray0 = new double[2];
-        doubleArray0[0] = (double) 213;
-        doubleArray0[1] = (double) (-1);
-        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertNotNull(polynomialFunctionLagrangeForm0);
+        assertEquals(1, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -3206,7 +3236,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[0] = (double) 213;
         doubleArray0[1] = (double) (-1);
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertArrayEquals(new double[] { 213.0, (-1.0) }, doubleArray0, 0.01);
+        assertEquals(1, polynomialFunctionLagrangeForm0.degree());
     }
 
     @Test(timeout = 4000)
@@ -3223,11 +3253,45 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[0] = (double) 213;
         doubleArray0[1] = (double) (-1);
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertEquals(2, doubleArray0.length);
+        assertNotNull(polynomialFunctionLagrangeForm0);
     }
 
     @Test(timeout = 4000)
     public void test06148() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[1];
+        intArray0[0] = (-1);
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 213;
+        doubleArray0[1] = (double) (-1);
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        assertArrayEquals(new double[] { 213.0, (-1.0) }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test06149() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[1];
+        intArray0[0] = (-1);
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 878, well1024a0);
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 213;
+        doubleArray0[1] = (double) (-1);
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        assertEquals(2, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test06150() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
@@ -3254,53 +3318,21 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test07149() throws Throwable {
+    public void test07151() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
         assertEquals(95.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test07150() throws Throwable {
+    public void test07152() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
         assertEquals(95.0, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test07151() throws Throwable {
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
-        assertNotNull(univariateRealPointValuePair0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07152() throws Throwable {
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((-1), 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(95, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int[] intArray0 = new int[4];
-        intArray0[0] = 1;
-        intArray0[1] = 1;
-        intArray0[2] = 1;
-        intArray0[3] = 1;
-        Well1024a well1024a0 = new Well1024a(intArray0);
-        assertNotNull(well1024a0);
-    }
-
-    @Test(timeout = 4000)
     public void test07153() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((-1), 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(95, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int[] intArray0 = new int[4];
-        intArray0[0] = 1;
-        intArray0[1] = 1;
-        intArray0[2] = 1;
-        intArray0[3] = 1;
-        Well1024a well1024a0 = new Well1024a(intArray0);
-        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
+        assertNotNull(univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
@@ -3316,7 +3348,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[2] = 1;
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
-        assertEquals(4, intArray0.length);
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
@@ -3332,8 +3364,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[2] = 1;
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(95.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -3349,8 +3380,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[2] = 1;
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(95.0, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(4, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -3367,7 +3397,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(95.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3384,7 +3414,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(95.0, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3401,7 +3431,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -3418,7 +3448,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -3435,7 +3465,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        assertEquals(4, intArray0.length);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -3452,15 +3482,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) 1;
-        doubleArray0[1] = (double) 1;
-        doubleArray0[2] = (double) 1;
-        doubleArray0[3] = (double) 1;
-        doubleArray0[4] = (double) 1;
-        doubleArray0[5] = (double) 1;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(5, polynomialFunction0.degree());
+        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -3477,15 +3499,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[3] = 1;
         Well1024a well1024a0 = new Well1024a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) 1;
-        doubleArray0[1] = (double) 1;
-        doubleArray0[2] = (double) 1;
-        doubleArray0[3] = (double) 1;
-        doubleArray0[4] = (double) 1;
-        doubleArray0[5] = (double) 1;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertEquals(4, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -3510,7 +3524,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
+        assertEquals(5, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -3535,7 +3549,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(6, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -3560,10 +3574,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        GoalType goalType0 = GoalType.MINIMIZE;
-        GoalType goalType1 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(5, polynomialFunction0.degree());
+        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3588,10 +3599,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[4] = (double) 1;
         doubleArray0[5] = (double) 1;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        GoalType goalType0 = GoalType.MINIMIZE;
-        GoalType goalType1 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(95.0, univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(6, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -3619,7 +3627,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(95.0, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(5, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -3647,7 +3655,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(95.0, univariateRealPointValuePair1.getValue(), 0.01);
+        assertEquals(95.0, univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3675,7 +3683,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(95.0, univariateRealPointValuePair1.getPoint(), 0.01);
+        assertEquals(95.0, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3703,7 +3711,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals((-1), multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(95.0, univariateRealPointValuePair1.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3731,7 +3739,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(95.0, univariateRealPointValuePair1.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3759,7 +3767,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertNotNull(univariateRealPointValuePair1);
+        assertEquals((-1), multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -3787,7 +3795,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -3815,7 +3823,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
+        assertNotNull(univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -3843,7 +3851,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertArrayEquals(new int[] { 1, 1, 1, 1 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -3871,7 +3879,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertSame(goalType1, goalType0);
+        assertArrayEquals(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3899,7 +3907,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -3927,7 +3935,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(4, intArray0.length);
+        assertSame(goalType1, goalType0);
     }
 
     @Test(timeout = 4000)
@@ -3955,11 +3963,67 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         GoalType goalType1 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
-        assertEquals(6, doubleArray0.length);
+        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
     public void test07181() throws Throwable {
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((-1), 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(95, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[4];
+        intArray0[0] = 1;
+        intArray0[1] = 1;
+        intArray0[2] = 1;
+        intArray0[3] = 1;
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 1;
+        doubleArray0[1] = (double) 1;
+        doubleArray0[2] = (double) 1;
+        doubleArray0[3] = (double) 1;
+        doubleArray0[4] = (double) 1;
+        doubleArray0[5] = (double) 1;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        GoalType goalType1 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
+        assertEquals(4, intArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test07182() throws Throwable {
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((-1), 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(95, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[4];
+        intArray0[0] = 1;
+        intArray0[1] = 1;
+        intArray0[2] = 1;
+        intArray0[3] = 1;
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1, well1024a0);
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 1;
+        doubleArray0[1] = (double) 1;
+        doubleArray0[2] = (double) 1;
+        doubleArray0[3] = (double) 1;
+        doubleArray0[4] = (double) 1;
+        doubleArray0[5] = (double) 1;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        GoalType goalType1 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize(polynomialFunction0, goalType1, 1.0, (double) 1, (-58.37));
+        assertEquals(6, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test07183() throws Throwable {
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(95, 95);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((-1), 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -3996,55 +4060,24 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test08182() throws Throwable {
+    public void test08184() throws Throwable {
         System.setCurrentTimeMillis(0L);
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
         assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test08183() throws Throwable {
+    public void test08185() throws Throwable {
         System.setCurrentTimeMillis(0L);
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
         assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test08184() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
-        assertNotNull(univariateRealPointValuePair0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08185() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        Well19937c well19937c0 = new Well19937c(2450);
-        assertNotNull(well19937c0);
-    }
-
-    @Test(timeout = 4000)
     public void test08186() throws Throwable {
         System.setCurrentTimeMillis(0L);
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        Well19937c well19937c0 = new Well19937c(2450);
-        well19937c0.setSeed(0L);
-        byte[] byteArray0 = new byte[4];
-        byteArray0[0] = (byte) 5;
-        byteArray0[1] = (byte) 3;
-        byteArray0[2] = (byte) (-1);
-        byteArray0[3] = (byte) 0;
-        well19937c0.nextBytes(byteArray0);
-        assertArrayEquals(new byte[] { (byte) (-4), (byte) 21, (byte) 69, (byte) (-66) }, byteArray0);
+        assertNotNull(univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
@@ -4056,14 +4089,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
         doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         Well19937c well19937c0 = new Well19937c(2450);
-        well19937c0.setSeed(0L);
-        byte[] byteArray0 = new byte[4];
-        byteArray0[0] = (byte) 5;
-        byteArray0[1] = (byte) 3;
-        byteArray0[2] = (byte) (-1);
-        byteArray0[3] = (byte) 0;
-        well19937c0.nextBytes(byteArray0);
-        assertEquals(4, byteArray0.length);
+        assertNotNull(well19937c0);
     }
 
     @Test(timeout = 4000)
@@ -4082,8 +4108,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[2] = (byte) (-1);
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertArrayEquals(new byte[] { (byte) (-4), (byte) 21, (byte) 69, (byte) (-66) }, byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -4102,8 +4127,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[2] = (byte) (-1);
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(4, byteArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -4123,7 +4147,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4143,7 +4167,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4163,7 +4187,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4183,8 +4207,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        boolean boolean0 = well19937c0.nextBoolean();
-        assertTrue(boolean0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4204,9 +4227,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        boolean boolean0 = well19937c0.nextBoolean();
-        float float0 = well19937c0.nextFloat();
-        assertEquals(0.21316564F, float0, 0.01F);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -4227,10 +4248,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
         boolean boolean0 = well19937c0.nextBoolean();
-        float float0 = well19937c0.nextFloat();
-        GoalType goalType0 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -4252,9 +4270,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
         boolean boolean0 = well19937c0.nextBoolean();
         float float0 = well19937c0.nextFloat();
-        GoalType goalType0 = GoalType.MINIMIZE;
-        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(0.21316564F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
@@ -4278,7 +4294,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4302,7 +4318,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4326,7 +4342,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals((-126.151), univariateRealPointValuePair1.getValue(), 0.01);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4350,7 +4366,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertEquals(253.362, univariateRealPointValuePair1.getPoint(), 0.01);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4374,7 +4390,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertNotNull(univariateRealPointValuePair1);
+        assertEquals((-126.151), univariateRealPointValuePair1.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4398,7 +4414,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertEquals(253.362, univariateRealPointValuePair1.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4422,7 +4438,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
+        assertNotNull(univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -4446,8 +4462,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -4471,8 +4486,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well19937c0.nextFloat();
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
+        assertSame(univariateRealPointValuePair1, univariateRealPointValuePair0);
     }
 
     @Test(timeout = 4000)
@@ -4497,7 +4511,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4522,7 +4536,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4547,7 +4561,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertNotNull(univariateRealPointValuePairArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4572,7 +4586,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4597,7 +4611,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(2450, univariateRealPointValuePairArray0.length);
+        assertNotNull(univariateRealPointValuePairArray0);
     }
 
     @Test(timeout = 4000)
@@ -4622,8 +4636,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertFalse(univariateRealPointValuePairArray1.equals((Object) univariateRealPointValuePairArray0));
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -4648,8 +4661,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         GoalType goalType0 = GoalType.MINIMIZE;
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
-        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertEquals(2450, univariateRealPointValuePairArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -4675,7 +4687,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
+        assertFalse(univariateRealPointValuePairArray1.equals((Object) univariateRealPointValuePairArray0));
     }
 
     @Test(timeout = 4000)
@@ -4701,7 +4713,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4727,7 +4739,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4753,7 +4765,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertNotNull(univariateRealPointValuePairArray1);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4779,7 +4791,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertNotSame(univariateRealPointValuePairArray1, univariateRealPointValuePairArray0);
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4805,7 +4817,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertNotNull(univariateRealPointValuePairArray1);
     }
 
     @Test(timeout = 4000)
@@ -4831,7 +4843,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        assertEquals(2450, univariateRealPointValuePairArray1.length);
+        assertNotSame(univariateRealPointValuePairArray1, univariateRealPointValuePairArray0);
     }
 
     @Test(timeout = 4000)
@@ -4857,9 +4869,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        Random.setNextRandom(2450);
-        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
     }
 
     @Test(timeout = 4000)
@@ -4885,9 +4895,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
-        Random.setNextRandom(2450);
-        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
+        assertEquals(2450, univariateRealPointValuePairArray1.length);
     }
 
     @Test(timeout = 4000)
@@ -4915,7 +4923,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(253.362, univariateRealPointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4943,7 +4951,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals((-126.151), univariateRealPointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4971,7 +4979,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -4999,28 +5007,63 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
         Random.setNextRandom(2450);
         int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        assertEquals(245616, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test08226() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        Well19937c well19937c0 = new Well19937c(2450);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[2] = (byte) (-1);
+        byteArray0[3] = (byte) 0;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        boolean boolean0 = well19937c0.nextBoolean();
+        float float0 = well19937c0.nextFloat();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
+        Random.setNextRandom(2450);
+        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        assertSame(univariateRealPointValuePair0, univariateRealPointValuePair1);
+    }
+
+    @Test(timeout = 4000)
+    public void test08227() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(47, 47, 53, 869, 100).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(555, 33, 53, 53, 33).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn(univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0, univariateRealPointValuePair0).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        Well19937c well19937c0 = new Well19937c(2450);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[2] = (byte) (-1);
+        byteArray0[3] = (byte) 0;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        boolean boolean0 = well19937c0.nextBoolean();
+        float float0 = well19937c0.nextFloat();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        UnivariateRealPointValuePair univariateRealPointValuePair1 = multiStartUnivariateRealOptimizer0.optimize((PolynomialFunction) null, goalType0, (double) 2450, (double) 0L);
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray0 = multiStartUnivariateRealOptimizer0.getOptima();
+        UnivariateRealPointValuePair[] univariateRealPointValuePairArray1 = multiStartUnivariateRealOptimizer0.getOptima();
+        Random.setNextRandom(2450);
+        int int0 = multiStartUnivariateRealOptimizer0.getEvaluations();
         assertEquals(245616, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09226() throws Throwable {
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
-        doReturn((String) null).when(convergenceChecker0).toString();
-        BaseUnivariateRealOptimizer<PolynomialSplineFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialSplineFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
-        MersenneTwister mersenneTwister0 = new MersenneTwister(53);
-        assertNotNull(mersenneTwister0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09227() throws Throwable {
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
-        doReturn((String) null).when(convergenceChecker0).toString();
-        BaseUnivariateRealOptimizer<PolynomialSplineFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialSplineFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
-        MersenneTwister mersenneTwister0 = new MersenneTwister(53);
-        MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5030,8 +5073,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialSplineFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialSplineFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
-        MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(mersenneTwister0);
     }
 
     @Test(timeout = 4000)
@@ -5042,7 +5084,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5053,8 +5095,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5065,8 +5106,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -5078,7 +5118,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertNotNull(convergenceChecker1);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5090,7 +5130,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertSame(convergenceChecker1, convergenceChecker0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5102,9 +5142,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertNotNull(convergenceChecker1);
     }
 
     @Test(timeout = 4000)
@@ -5116,9 +5154,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MersenneTwister mersenneTwister0 = new MersenneTwister(53);
         MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertSame(convergenceChecker1, convergenceChecker0);
     }
 
     @Test(timeout = 4000)
@@ -5132,7 +5168,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
-        assertNotNull(multiStartUnivariateRealOptimizer1);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5146,8 +5182,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
-        int int0 = multiStartUnivariateRealOptimizer1.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5161,8 +5196,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
-        int int0 = multiStartUnivariateRealOptimizer1.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer1);
     }
 
     @Test(timeout = 4000)
@@ -5177,11 +5211,41 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
         int int0 = multiStartUnivariateRealOptimizer1.getEvaluations();
-        assertEquals(0, int0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test09240() throws Throwable {
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
+        doReturn((String) null).when(convergenceChecker0).toString();
+        BaseUnivariateRealOptimizer<PolynomialSplineFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialSplineFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
+        MersenneTwister mersenneTwister0 = new MersenneTwister(53);
+        MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
+        int int0 = multiStartUnivariateRealOptimizer1.getEvaluations();
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test09241() throws Throwable {
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
+        doReturn((String) null).when(convergenceChecker0).toString();
+        BaseUnivariateRealOptimizer<PolynomialSplineFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialSplineFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(convergenceChecker0).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
+        MersenneTwister mersenneTwister0 = new MersenneTwister(53);
+        MultiStartUnivariateRealOptimizer<PolynomialSplineFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialSplineFunction>(baseUnivariateRealOptimizer0, 2555, mersenneTwister0);
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker1 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-1), mersenneTwister0);
+        int int0 = multiStartUnivariateRealOptimizer1.getEvaluations();
+        assertEquals(0, int0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09242() throws Throwable {
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariateRealPointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
         doReturn((String) null).when(convergenceChecker0).toString();
         BaseUnivariateRealOptimizer<PolynomialSplineFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialSplineFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
@@ -5205,37 +5269,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test10241() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int0 = 2450;
-        Well19937c well19937c0 = new Well19937c(2450);
-        assertNotNull(well19937c0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10242() throws Throwable {
-        System.setCurrentTimeMillis(0L);
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int0 = 2450;
-        Well19937c well19937c0 = new Well19937c(2450);
-        well19937c0.setSeed(0L);
-        byte[] byteArray0 = new byte[4];
-        byteArray0[0] = (byte) 5;
-        byteArray0[1] = (byte) 3;
-        byteArray0[2] = (byte) (-1);
-        byteArray0[3] = (byte) 0;
-        well19937c0.nextBytes(byteArray0);
-        assertArrayEquals(new byte[] { (byte) (-4), (byte) 21, (byte) 69, (byte) (-66) }, byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test10243() throws Throwable {
         System.setCurrentTimeMillis(0L);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
@@ -5244,14 +5277,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         int int0 = 2450;
         Well19937c well19937c0 = new Well19937c(2450);
-        well19937c0.setSeed(0L);
-        byte[] byteArray0 = new byte[4];
-        byteArray0[0] = (byte) 5;
-        byteArray0[1] = (byte) 3;
-        byteArray0[2] = (byte) (-1);
-        byteArray0[3] = (byte) 0;
-        well19937c0.nextBytes(byteArray0);
-        assertEquals(4, byteArray0.length);
+        assertNotNull(well19937c0);
     }
 
     @Test(timeout = 4000)
@@ -5270,8 +5296,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[2] = (byte) (-1);
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertArrayEquals(new byte[] { (byte) (-4), (byte) 21, (byte) 69, (byte) (-66) }, byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -5290,8 +5315,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[2] = (byte) (-1);
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(4, byteArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -5311,11 +5335,51 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         byteArray0[3] = (byte) 0;
         well19937c0.nextBytes(byteArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test10247() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 2450;
+        Well19937c well19937c0 = new Well19937c(2450);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[2] = (byte) (-1);
+        byteArray0[3] = (byte) 0;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test10248() throws Throwable {
+        System.setCurrentTimeMillis(0L);
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 2450;
+        Well19937c well19937c0 = new Well19937c(2450);
+        well19937c0.setSeed(0L);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 5;
+        byteArray0[1] = (byte) 3;
+        byteArray0[2] = (byte) (-1);
+        byteArray0[3] = (byte) 0;
+        well19937c0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2450, well19937c0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test10249() throws Throwable {
         System.setCurrentTimeMillis(0L);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -5336,7 +5400,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test10248() throws Throwable {
+    public void test10250() throws Throwable {
         System.setCurrentTimeMillis(0L);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -5358,7 +5422,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test10249() throws Throwable {
+    public void test10251() throws Throwable {
         System.setCurrentTimeMillis(0L);
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -5390,7 +5454,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test11250() throws Throwable {
+    public void test11252() throws Throwable {
         int int0 = 0;
         RandomGenerator randomGenerator0 = null;
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
@@ -5398,7 +5462,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test11251() throws Throwable {
+    public void test11253() throws Throwable {
         int int0 = 0;
         RandomGenerator randomGenerator0 = null;
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
@@ -5406,33 +5470,11 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test11252() throws Throwable {
-        int int0 = 0;
-        RandomGenerator randomGenerator0 = null;
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11253() throws Throwable {
-        int int0 = 0;
-        RandomGenerator randomGenerator0 = null;
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test11254() throws Throwable {
         int int0 = 0;
         RandomGenerator randomGenerator0 = null;
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -5443,7 +5485,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
-        assertNotNull(multiStartUnivariateRealOptimizer1);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5454,8 +5496,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5466,8 +5507,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer1);
     }
 
     @Test(timeout = 4000)
@@ -5479,11 +5519,35 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        assertNull(convergenceChecker0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test11259() throws Throwable {
+        int int0 = 0;
+        RandomGenerator randomGenerator0 = null;
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test11260() throws Throwable {
+        int int0 = 0;
+        RandomGenerator randomGenerator0 = null;
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 0, (RandomGenerator) null);
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
+        assertNull(convergenceChecker0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11261() throws Throwable {
         int int0 = 0;
         RandomGenerator randomGenerator0 = null;
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>((BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) null, 0, (RandomGenerator) null);
@@ -5504,27 +5568,10 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test12260() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well1024a well1024a0 = new Well1024a();
-        assertNotNull(well1024a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12261() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well1024a well1024a0 = new Well1024a();
-        float float0 = well1024a0.nextFloat();
-        assertEquals(0.37931466F, float0, 0.01F);
-    }
-
-    @Test(timeout = 4000)
     public void test12262() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
-        float float0 = well1024a0.nextFloat();
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
@@ -5532,8 +5579,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
         float float0 = well1024a0.nextFloat();
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(0.37931466F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
@@ -5542,7 +5588,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well1024a well1024a0 = new Well1024a();
         float float0 = well1024a0.nextFloat();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5551,8 +5597,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well1024a well1024a0 = new Well1024a();
         float float0 = well1024a0.nextFloat();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
-        multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
-        assertEquals(116, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5561,8 +5606,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well1024a well1024a0 = new Well1024a();
         float float0 = well1024a0.nextFloat();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
-        multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -5572,8 +5616,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well1024a0.nextFloat();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 116, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertEquals(116, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5583,8 +5626,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         float float0 = well1024a0.nextFloat();
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 116, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5595,11 +5637,33 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 116, well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer1);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test12270() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well1024a well1024a0 = new Well1024a();
+        float float0 = well1024a0.nextFloat();
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 116, well1024a0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test12271() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well1024a well1024a0 = new Well1024a();
+        float float0 = well1024a0.nextFloat();
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, (-18), well1024a0);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations(116);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 116, well1024a0);
+        assertNotNull(multiStartUnivariateRealOptimizer1);
+    }
+
+    @Test(timeout = 4000)
+    public void test12272() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
         float float0 = well1024a0.nextFloat();
@@ -5619,7 +5683,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test13271() throws Throwable {
+    public void test13273() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
         doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
@@ -5629,7 +5693,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test13272() throws Throwable {
+    public void test13274() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
         doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
@@ -5639,39 +5703,13 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test13273() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1039, (RandomGenerator) null);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13274() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1039, (RandomGenerator) null);
-        double[] doubleArray0 = new double[1];
-        doubleArray0[0] = (double) 1039;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(0, polynomialFunction0.degree());
-    }
-
-    @Test(timeout = 4000)
     public void test13275() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
         doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
         doReturn((UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1039, (RandomGenerator) null);
-        double[] doubleArray0 = new double[1];
-        doubleArray0[0] = (double) 1039;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -5684,7 +5722,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 1039;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 1039.0 }, doubleArray0, 0.01);
+        assertEquals(0, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -5697,11 +5735,37 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 1039;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(1, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
     public void test13278() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1039, (RandomGenerator) null);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 1039;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        assertArrayEquals(new double[] { 1039.0 }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test13279() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 1039, (RandomGenerator) null);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 1039;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        assertEquals(1, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test13280() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(baseUnivariateRealOptimizer0).getEvaluations();
         doReturn(0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
@@ -5723,26 +5787,10 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test14279() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well1024a well1024a0 = new Well1024a();
-        assertNotNull(well1024a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14280() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well1024a well1024a0 = new Well1024a();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test14281() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
@@ -5750,7 +5798,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5758,7 +5806,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
-        multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
         assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
@@ -5767,8 +5814,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
-        multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
-        assertEquals(1, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -5777,7 +5823,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well1024a well1024a0 = new Well1024a();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
-        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
         assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
@@ -5787,7 +5832,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well1024a well1024a0 = new Well1024a();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
-        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
         assertEquals(1, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
@@ -5798,7 +5842,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(1, int0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5808,9 +5852,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-2728), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertEquals(1, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5820,9 +5862,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
         multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-2728), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
@@ -5834,11 +5874,35 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-2728), well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer1);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test14291() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well1024a well1024a0 = new Well1024a();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
+        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-2728), well1024a0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test14292() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well1024a well1024a0 = new Well1024a();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations(1);
+        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, (-2728), well1024a0);
+        assertNotNull(multiStartUnivariateRealOptimizer1);
+    }
+
+    @Test(timeout = 4000)
+    public void test14293() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well1024a well1024a0 = new Well1024a();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, (-2728), well1024a0);
@@ -5864,26 +5928,10 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test15292() throws Throwable {
-        int int0 = 112;
-        Well19937c well19937c0 = new Well19937c((long) 112);
-        assertNotNull(well19937c0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15293() throws Throwable {
-        int int0 = 112;
-        Well19937c well19937c0 = new Well19937c((long) 112);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 112, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test15294() throws Throwable {
         int int0 = 112;
         Well19937c well19937c0 = new Well19937c((long) 112);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 112, well19937c0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well19937c0);
     }
 
     @Test(timeout = 4000)
@@ -5891,11 +5939,27 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int int0 = 112;
         Well19937c well19937c0 = new Well19937c((long) 112);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 112, well19937c0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test15296() throws Throwable {
+        int int0 = 112;
+        Well19937c well19937c0 = new Well19937c((long) 112);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 112, well19937c0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test15297() throws Throwable {
+        int int0 = 112;
+        Well19937c well19937c0 = new Well19937c((long) 112);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 112, well19937c0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test15298() throws Throwable {
         int int0 = 112;
         Well19937c well19937c0 = new Well19937c((long) 112);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 112, well19937c0);
@@ -5912,7 +5976,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test16297() throws Throwable {
+    public void test16299() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[2];
         intArray0[0] = (-1468);
@@ -5922,7 +5986,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test16298() throws Throwable {
+    public void test16300() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[2];
         intArray0[0] = (-1468);
@@ -5932,35 +5996,13 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test16299() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int[] intArray0 = new int[2];
-        intArray0[0] = (-1468);
-        intArray0[1] = (-1468);
-        Well44497a well44497a0 = new Well44497a(intArray0);
-        assertEquals(2, intArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test16300() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int[] intArray0 = new int[2];
-        intArray0[0] = (-1468);
-        intArray0[1] = (-1468);
-        Well44497a well44497a0 = new Well44497a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test16301() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[2];
         intArray0[0] = (-1468);
         intArray0[1] = (-1468);
         Well44497a well44497a0 = new Well44497a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(2, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -5971,7 +6013,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = (-1468);
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5982,7 +6024,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = (-1468);
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        assertArrayEquals(new int[] { (-1468), (-1468) }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -5993,7 +6035,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = (-1468);
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        assertEquals(2, intArray0.length);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -6004,13 +6046,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = (-1468);
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        double[] doubleArray0 = new double[4];
-        doubleArray0[0] = (double) (-1468);
-        doubleArray0[1] = (double) (-1468);
-        doubleArray0[2] = (double) (-1468);
-        doubleArray0[3] = (double) (-1468);
-        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertEquals(3, polynomialFunctionLagrangeForm0.degree());
+        assertArrayEquals(new int[] { (-1468), (-1468) }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -6021,13 +6057,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = (-1468);
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
-        double[] doubleArray0 = new double[4];
-        doubleArray0[0] = (double) (-1468);
-        doubleArray0[1] = (double) (-1468);
-        doubleArray0[2] = (double) (-1468);
-        doubleArray0[3] = (double) (-1468);
-        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertNotNull(polynomialFunctionLagrangeForm0);
+        assertEquals(2, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -6044,7 +6074,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[2] = (double) (-1468);
         doubleArray0[3] = (double) (-1468);
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertArrayEquals(new double[] { (-1468.0), (-1468.0), (-1468.0), (-1468.0) }, doubleArray0, 0.01);
+        assertEquals(3, polynomialFunctionLagrangeForm0.degree());
     }
 
     @Test(timeout = 4000)
@@ -6061,11 +6091,45 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[2] = (double) (-1468);
         doubleArray0[3] = (double) (-1468);
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
-        assertEquals(4, doubleArray0.length);
+        assertNotNull(polynomialFunctionLagrangeForm0);
     }
 
     @Test(timeout = 4000)
     public void test16309() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int[] intArray0 = new int[2];
+        intArray0[0] = (-1468);
+        intArray0[1] = (-1468);
+        Well44497a well44497a0 = new Well44497a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
+        double[] doubleArray0 = new double[4];
+        doubleArray0[0] = (double) (-1468);
+        doubleArray0[1] = (double) (-1468);
+        doubleArray0[2] = (double) (-1468);
+        doubleArray0[3] = (double) (-1468);
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        assertArrayEquals(new double[] { (-1468.0), (-1468.0), (-1468.0), (-1468.0) }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test16310() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int[] intArray0 = new int[2];
+        intArray0[0] = (-1468);
+        intArray0[1] = (-1468);
+        Well44497a well44497a0 = new Well44497a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, (-1468), well44497a0);
+        double[] doubleArray0 = new double[4];
+        doubleArray0[0] = (double) (-1468);
+        doubleArray0[1] = (double) (-1468);
+        doubleArray0[2] = (double) (-1468);
+        doubleArray0[3] = (double) (-1468);
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        assertEquals(4, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test16311() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[2];
         intArray0[0] = (-1468);
@@ -6092,30 +6156,11 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test17310() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        long long0 = 0L;
-        Well19937a well19937a0 = new Well19937a(0L);
-        assertNotNull(well19937a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test17311() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        long long0 = 0L;
-        Well19937a well19937a0 = new Well19937a(0L);
-        RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
-        assertNotNull(randomAdaptor0);
-    }
-
-    @Test(timeout = 4000)
     public void test17312() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         long long0 = 0L;
         Well19937a well19937a0 = new Well19937a(0L);
-        RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(well19937a0);
     }
 
     @Test(timeout = 4000)
@@ -6124,8 +6169,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         long long0 = 0L;
         Well19937a well19937a0 = new Well19937a(0L);
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(randomAdaptor0);
     }
 
     @Test(timeout = 4000)
@@ -6135,7 +6179,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well19937a well19937a0 = new Well19937a(0L);
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6145,8 +6189,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well19937a well19937a0 = new Well19937a(0L);
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
-        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6156,8 +6199,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well19937a well19937a0 = new Well19937a(0L);
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
-        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -6168,7 +6210,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(0, int0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6179,14 +6221,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer1).getConvergenceChecker();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int1 = 52;
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6197,14 +6232,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer1).getConvergenceChecker();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int1 = 52;
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
@@ -6222,7 +6250,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         int int1 = 52;
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
-        assertNotNull(multiStartUnivariateRealOptimizer1);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6240,11 +6268,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         int int1 = 52;
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) 185;
-        doubleArray0[1] = (double) 52;
-        int int2 = randomAdaptor0.nextInt(52);
-        assertFalse(int2 == int0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6262,11 +6286,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         int int1 = 52;
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) 185;
-        doubleArray0[1] = (double) 52;
-        int int2 = randomAdaptor0.nextInt(52);
-        assertFalse(int2 == int1);
+        assertNotNull(multiStartUnivariateRealOptimizer1);
     }
 
     @Test(timeout = 4000)
@@ -6288,7 +6308,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[0] = (double) 185;
         doubleArray0[1] = (double) 52;
         int int2 = randomAdaptor0.nextInt(52);
-        assertEquals(46, int2);
+        assertFalse(int2 == int0);
     }
 
     @Test(timeout = 4000)
@@ -6310,8 +6330,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[0] = (double) 185;
         doubleArray0[1] = (double) 52;
         int int2 = randomAdaptor0.nextInt(52);
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertFalse(int2 == int1);
     }
 
     @Test(timeout = 4000)
@@ -6333,8 +6352,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[0] = (double) 185;
         doubleArray0[1] = (double) 52;
         int int2 = randomAdaptor0.nextInt(52);
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertEquals(46, int2);
     }
 
     @Test(timeout = 4000)
@@ -6357,7 +6375,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[1] = (double) 52;
         int int2 = randomAdaptor0.nextInt(52);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        assertNull(convergenceChecker0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6380,9 +6398,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[1] = (double) 52;
         int int2 = randomAdaptor0.nextInt(52);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        doubleArray0[2] = (double) 0L;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(1, polynomialFunction0.degree());
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6405,9 +6421,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[1] = (double) 52;
         int int2 = randomAdaptor0.nextInt(52);
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
-        doubleArray0[2] = (double) 0L;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertNull(convergenceChecker0);
     }
 
     @Test(timeout = 4000)
@@ -6432,7 +6446,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
         doubleArray0[2] = (double) 0L;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 185.0, 52.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+        assertEquals(1, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -6457,11 +6471,61 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
         doubleArray0[2] = (double) 0L;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(6, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
     public void test17331() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        long long0 = 0L;
+        Well19937a well19937a0 = new Well19937a(0L);
+        RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
+        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer1).getConvergenceChecker();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int1 = 52;
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 185;
+        doubleArray0[1] = (double) 52;
+        int int2 = randomAdaptor0.nextInt(52);
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
+        doubleArray0[2] = (double) 0L;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        assertArrayEquals(new double[] { 185.0, 52.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test17332() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        long long0 = 0L;
+        Well19937a well19937a0 = new Well19937a(0L);
+        RandomAdaptor randomAdaptor0 = new RandomAdaptor(well19937a0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 185, randomAdaptor0);
+        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer1).getConvergenceChecker();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer1).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer1).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int1 = 52;
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer1, 52, randomAdaptor0);
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 185;
+        doubleArray0[1] = (double) 52;
+        int int2 = randomAdaptor0.nextInt(52);
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer1.getConvergenceChecker();
+        doubleArray0[2] = (double) 0L;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        assertEquals(6, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test17333() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         long long0 = 0L;
         Well19937a well19937a0 = new Well19937a(0L);
@@ -6496,26 +6560,10 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test18332() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        MersenneTwister mersenneTwister0 = new MersenneTwister(1);
-        assertNotNull(mersenneTwister0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18333() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        MersenneTwister mersenneTwister0 = new MersenneTwister(1);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test18334() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MersenneTwister mersenneTwister0 = new MersenneTwister(1);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(mersenneTwister0);
     }
 
     @Test(timeout = 4000)
@@ -6523,11 +6571,27 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MersenneTwister mersenneTwister0 = new MersenneTwister(1);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test18336() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MersenneTwister mersenneTwister0 = new MersenneTwister(1);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test18337() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MersenneTwister mersenneTwister0 = new MersenneTwister(1);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test18338() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MersenneTwister mersenneTwister0 = new MersenneTwister(1);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
@@ -6536,7 +6600,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test18337() throws Throwable {
+    public void test18339() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MersenneTwister mersenneTwister0 = new MersenneTwister(1);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer0, 5116, mersenneTwister0);
@@ -6545,34 +6609,34 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test19338() throws Throwable {
-        MersenneTwister mersenneTwister0 = new MersenneTwister();
-        assertNotNull(mersenneTwister0);
-    }
-
-    @Test(timeout = 4000)
-    public void test19339() throws Throwable {
-        MersenneTwister mersenneTwister0 = new MersenneTwister();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test19340() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(mersenneTwister0);
     }
 
     @Test(timeout = 4000)
     public void test19341() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, mersenneTwister0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test19342() throws Throwable {
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, mersenneTwister0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test19343() throws Throwable {
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, mersenneTwister0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test19344() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, mersenneTwister0);
         // Undeclared exception!
@@ -6588,26 +6652,10 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test20343() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well512a well512a0 = new Well512a((long) 0);
-        assertNotNull(well512a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test20344() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        Well512a well512a0 = new Well512a((long) 0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test20345() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well512a well512a0 = new Well512a((long) 0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well512a0);
     }
 
     @Test(timeout = 4000)
@@ -6615,7 +6663,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well512a well512a0 = new Well512a((long) 0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6623,8 +6671,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well512a well512a0 = new Well512a((long) 0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
-        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6632,8 +6679,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well512a well512a0 = new Well512a((long) 0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
-        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -6642,38 +6688,56 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a((long) 0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
         int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test21350() throws Throwable {
-        JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
-        assertNotNull(jDKRandomGenerator0);
-    }
-
-    @Test(timeout = 4000)
-    public void test21351() throws Throwable {
-        JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, jDKRandomGenerator0);
         assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test20350() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well512a well512a0 = new Well512a((long) 0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
+        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test20351() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Well512a well512a0 = new Well512a((long) 0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 0, well512a0);
+        int int0 = multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
     public void test21352() throws Throwable {
         JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, jDKRandomGenerator0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(jDKRandomGenerator0);
     }
 
     @Test(timeout = 4000)
     public void test21353() throws Throwable {
         JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, jDKRandomGenerator0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test21354() throws Throwable {
+        JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, jDKRandomGenerator0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test21355() throws Throwable {
+        JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, jDKRandomGenerator0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test21356() throws Throwable {
         JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, 0, jDKRandomGenerator0);
         GoalType goalType0 = GoalType.MAXIMIZE;
@@ -6689,29 +6753,11 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test22355() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int int0 = 3765;
-        Well1024a well1024a0 = new Well1024a((long) 3765);
-        assertNotNull(well1024a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test22356() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int int0 = 3765;
-        Well1024a well1024a0 = new Well1024a((long) 3765);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test22357() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 3765;
         Well1024a well1024a0 = new Well1024a((long) 3765);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
@@ -6720,7 +6766,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int int0 = 3765;
         Well1024a well1024a0 = new Well1024a((long) 3765);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6729,19 +6775,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int int0 = 3765;
         Well1024a well1024a0 = new Well1024a((long) 3765);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int[] intArray0 = new int[9];
-        intArray0[0] = 3765;
-        intArray0[1] = 3765;
-        intArray0[2] = 3765;
-        intArray0[3] = 3765;
-        intArray0[4] = 3765;
-        intArray0[5] = 4531;
-        intArray0[6] = 3765;
-        intArray0[7] = 3765;
-        intArray0[8] = 3765;
-        Well44497a well44497a0 = new Well44497a(intArray0);
-        assertNotNull(well44497a0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6750,19 +6784,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         int int0 = 3765;
         Well1024a well1024a0 = new Well1024a((long) 3765);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
-        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int[] intArray0 = new int[9];
-        intArray0[0] = 3765;
-        intArray0[1] = 3765;
-        intArray0[2] = 3765;
-        intArray0[3] = 3765;
-        intArray0[4] = 3765;
-        intArray0[5] = 4531;
-        intArray0[6] = 3765;
-        intArray0[7] = 3765;
-        intArray0[8] = 3765;
-        Well44497a well44497a0 = new Well44497a(intArray0);
-        assertArrayEquals(new int[] { 3765, 3765, 3765, 3765, 3765, 4531, 3765, 3765, 3765 }, intArray0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -6783,7 +6805,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[7] = 3765;
         intArray0[8] = 3765;
         Well44497a well44497a0 = new Well44497a(intArray0);
-        assertEquals(9, intArray0.length);
+        assertNotNull(well44497a0);
     }
 
     @Test(timeout = 4000)
@@ -6804,8 +6826,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[7] = 3765;
         intArray0[8] = 3765;
         Well44497a well44497a0 = new Well44497a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
+        assertArrayEquals(new int[] { 3765, 3765, 3765, 3765, 3765, 4531, 3765, 3765, 3765 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -6826,8 +6847,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[7] = 3765;
         intArray0[8] = 3765;
         Well44497a well44497a0 = new Well44497a(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
+        assertEquals(9, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -6849,7 +6869,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[8] = 3765;
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
-        assertNotNull(multiStartUnivariateRealOptimizer1);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6871,7 +6891,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[8] = 3765;
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
-        assertArrayEquals(new int[] { 3765, 3765, 3765, 3765, 3765, 4531, 3765, 3765, 3765 }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer1.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -6893,11 +6913,55 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[8] = 3765;
         Well44497a well44497a0 = new Well44497a(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
-        assertEquals(9, intArray0.length);
+        assertNotNull(multiStartUnivariateRealOptimizer1);
     }
 
     @Test(timeout = 4000)
     public void test22367() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int int0 = 3765;
+        Well1024a well1024a0 = new Well1024a((long) 3765);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int[] intArray0 = new int[9];
+        intArray0[0] = 3765;
+        intArray0[1] = 3765;
+        intArray0[2] = 3765;
+        intArray0[3] = 3765;
+        intArray0[4] = 3765;
+        intArray0[5] = 4531;
+        intArray0[6] = 3765;
+        intArray0[7] = 3765;
+        intArray0[8] = 3765;
+        Well44497a well44497a0 = new Well44497a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
+        assertArrayEquals(new int[] { 3765, 3765, 3765, 3765, 3765, 4531, 3765, 3765, 3765 }, intArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test22368() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int int0 = 3765;
+        Well1024a well1024a0 = new Well1024a((long) 3765);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer0, 3765, well1024a0);
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int[] intArray0 = new int[9];
+        intArray0[0] = 3765;
+        intArray0[1] = 3765;
+        intArray0[2] = 3765;
+        intArray0[3] = 3765;
+        intArray0[4] = 3765;
+        intArray0[5] = 4531;
+        intArray0[6] = 3765;
+        intArray0[7] = 3765;
+        intArray0[8] = 3765;
+        Well44497a well44497a0 = new Well44497a(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>((BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) null, 4531, well44497a0);
+        assertEquals(9, intArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test22369() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 3765;
         Well1024a well1024a0 = new Well1024a((long) 3765);
@@ -6928,56 +6992,30 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test23368() throws Throwable {
-        Well1024a well1024a0 = new Well1024a((long) (-571));
-        assertNotNull(well1024a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test23369() throws Throwable {
-        Well1024a well1024a0 = new Well1024a((long) (-571));
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test23370() throws Throwable {
         Well1024a well1024a0 = new Well1024a((long) (-571));
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well1024a0);
     }
 
     @Test(timeout = 4000)
     public void test23371() throws Throwable {
         Well1024a well1024a0 = new Well1024a((long) (-571));
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test23372() throws Throwable {
         Well1024a well1024a0 = new Well1024a((long) (-571));
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
-        double[] doubleArray0 = new double[4];
-        doubleArray0[0] = (-1777.9833);
-        doubleArray0[1] = (double) (-571);
-        doubleArray0[2] = (double) (-571);
-        doubleArray0[3] = (double) (-571);
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(3, polynomialFunction0.degree());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test23373() throws Throwable {
         Well1024a well1024a0 = new Well1024a((long) (-571));
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
-        double[] doubleArray0 = new double[4];
-        doubleArray0[0] = (-1777.9833);
-        doubleArray0[1] = (double) (-571);
-        doubleArray0[2] = (double) (-571);
-        doubleArray0[3] = (double) (-571);
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -6990,7 +7028,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[2] = (double) (-571);
         doubleArray0[3] = (double) (-571);
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { (-1777.9833), (-571.0), (-571.0), (-571.0) }, doubleArray0, 0.01);
+        assertEquals(3, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -7003,11 +7041,37 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[2] = (double) (-571);
         doubleArray0[3] = (double) (-571);
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(4, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
     public void test23376() throws Throwable {
+        Well1024a well1024a0 = new Well1024a((long) (-571));
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
+        double[] doubleArray0 = new double[4];
+        doubleArray0[0] = (-1777.9833);
+        doubleArray0[1] = (double) (-571);
+        doubleArray0[2] = (double) (-571);
+        doubleArray0[3] = (double) (-571);
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        assertArrayEquals(new double[] { (-1777.9833), (-571.0), (-571.0), (-571.0) }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test23377() throws Throwable {
+        Well1024a well1024a0 = new Well1024a((long) (-571));
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
+        double[] doubleArray0 = new double[4];
+        doubleArray0[0] = (-1777.9833);
+        doubleArray0[1] = (double) (-571);
+        doubleArray0[2] = (double) (-571);
+        doubleArray0[3] = (double) (-571);
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        assertEquals(4, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test23378() throws Throwable {
         Well1024a well1024a0 = new Well1024a((long) (-571));
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>((BaseUnivariateRealOptimizer<PolynomialFunction>) null, (-571), well1024a0);
         double[] doubleArray0 = new double[4];
@@ -7030,7 +7094,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test24377() throws Throwable {
+    public void test24379() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 0;
         int[] intArray0 = new int[2];
@@ -7041,7 +7105,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test24378() throws Throwable {
+    public void test24380() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 0;
         int[] intArray0 = new int[2];
@@ -7052,29 +7116,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test24379() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int int0 = 0;
-        int[] intArray0 = new int[2];
-        intArray0[0] = 0;
-        intArray0[1] = 205;
-        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
-        assertEquals(2, intArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test24380() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        int int0 = 0;
-        int[] intArray0 = new int[2];
-        intArray0[0] = 0;
-        intArray0[1] = 205;
-        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test24381() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 0;
@@ -7082,8 +7123,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[0] = 0;
         intArray0[1] = 205;
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(2, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -7095,7 +7135,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = 205;
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -7107,7 +7147,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = 205;
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        assertArrayEquals(new int[] { 0, 205 }, intArray0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -7119,7 +7159,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = 205;
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        assertEquals(2, intArray0.length);
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -7131,10 +7171,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = 205;
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        double[] doubleArray0 = new double[1];
-        doubleArray0[0] = (double) 0;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(0, polynomialFunction0.degree());
+        assertArrayEquals(new int[] { 0, 205 }, intArray0);
     }
 
     @Test(timeout = 4000)
@@ -7146,10 +7183,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         intArray0[1] = 205;
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
-        double[] doubleArray0 = new double[1];
-        doubleArray0[0] = (double) 0;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertNotNull(polynomialFunction0);
+        assertEquals(2, intArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -7164,7 +7198,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertArrayEquals(new double[] { 0.0 }, doubleArray0, 0.01);
+        assertEquals(0, polynomialFunction0.degree());
     }
 
     @Test(timeout = 4000)
@@ -7179,7 +7213,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        assertEquals(1, doubleArray0.length);
+        assertNotNull(polynomialFunction0);
     }
 
     @Test(timeout = 4000)
@@ -7194,8 +7228,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        float float0 = mersenneTwister0.nextFloat();
-        assertArrayEquals(new int[] { 0, 205 }, intArray0);
+        assertArrayEquals(new double[] { 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -7210,8 +7243,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        float float0 = mersenneTwister0.nextFloat();
-        assertEquals(2, intArray0.length);
+        assertEquals(1, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -7227,11 +7259,43 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doubleArray0[0] = (double) 0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         float float0 = mersenneTwister0.nextFloat();
-        assertEquals(0.8827251F, float0, 0.01F);
+        assertArrayEquals(new int[] { 0, 205 }, intArray0);
     }
 
     @Test(timeout = 4000)
     public void test24392() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int int0 = 0;
+        int[] intArray0 = new int[2];
+        intArray0[0] = 0;
+        intArray0[1] = 205;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 0;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        float float0 = mersenneTwister0.nextFloat();
+        assertEquals(2, intArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test24393() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int int0 = 0;
+        int[] intArray0 = new int[2];
+        intArray0[0] = 0;
+        intArray0[1] = 205;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, mersenneTwister0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 0;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        float float0 = mersenneTwister0.nextFloat();
+        assertEquals(0.8827251F, float0, 0.01F);
+    }
+
+    @Test(timeout = 4000)
+    public void test24394() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 0;
         int[] intArray0 = new int[2];
@@ -7256,32 +7320,6 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test25393() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int0 = 4420;
-        Well512a well512a0 = new Well512a();
-        assertNotNull(well512a0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25394() throws Throwable {
-        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
-        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
-        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
-        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
-        int int0 = 4420;
-        Well512a well512a0 = new Well512a();
-        well512a0.setSeed(4420);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
-    }
-
-    @Test(timeout = 4000)
     public void test25395() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
@@ -7290,9 +7328,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
         int int0 = 4420;
         Well512a well512a0 = new Well512a();
-        well512a0.setSeed(4420);
-        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertNotNull(well512a0);
     }
 
     @Test(timeout = 4000)
@@ -7306,7 +7342,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a();
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        assertNotNull(multiStartUnivariateRealOptimizer0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -7320,8 +7356,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a();
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertFalse(int1 == int0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -7335,8 +7370,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         Well512a well512a0 = new Well512a();
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
-        int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertNotNull(multiStartUnivariateRealOptimizer0);
     }
 
     @Test(timeout = 4000)
@@ -7351,7 +7385,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
         int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertFalse(int1 == int0);
     }
 
     @Test(timeout = 4000)
@@ -7366,7 +7400,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
         int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        assertEquals(0, int1);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -7381,8 +7415,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
         int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
     }
 
     @Test(timeout = 4000)
@@ -7397,8 +7430,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         well512a0.setSeed(4420);
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
         int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
-        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+        assertEquals(0, int1);
     }
 
     @Test(timeout = 4000)
@@ -7414,11 +7446,43 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
         int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
         ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
-        assertNull(convergenceChecker0);
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getMaxEvaluations());
     }
 
     @Test(timeout = 4000)
     public void test25404() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 4420;
+        Well512a well512a0 = new Well512a();
+        well512a0.setSeed(4420);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
+        int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
+        assertEquals(0, multiStartUnivariateRealOptimizer0.getEvaluations());
+    }
+
+    @Test(timeout = 4000)
+    public void test25405() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
+        doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getMaxEvaluations();
+        doReturn((UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null, (UnivariateRealPointValuePair) null).when(baseUnivariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.polynomials.PolynomialFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 4420;
+        Well512a well512a0 = new Well512a();
+        well512a0.setSeed(4420);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 4420, well512a0);
+        int int1 = multiStartUnivariateRealOptimizer0.getEvaluations();
+        ConvergenceChecker<UnivariateRealPointValuePair> convergenceChecker0 = multiStartUnivariateRealOptimizer0.getConvergenceChecker();
+        assertNull(convergenceChecker0);
+    }
+
+    @Test(timeout = 4000)
+    public void test25406() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer0).getConvergenceChecker();
         doReturn(0, 0, 0, 0, 0).when(baseUnivariateRealOptimizer0).getEvaluations();
@@ -7446,7 +7510,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test26405() throws Throwable {
+    public void test26407() throws Throwable {
         System.setCurrentTimeMillis(0L);
         UnivariateRealPointValuePair univariateRealPointValuePair0 = new UnivariateRealPointValuePair(253.362, (-126.151));
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
@@ -7474,7 +7538,52 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test29406() throws Throwable {
+    public void test27408() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        double[] doubleArray1 = new double[8];
+        doubleArray1[1] = (-1.0);
+        doubleArray1[3] = (-1.0);
+        doubleArray1[5] = 1325.0;
+        doubleArray1[7] = (-1.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test28409() throws Throwable {
+        BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int[] intArray0 = new int[7];
+        intArray0[0] = 2327;
+        intArray0[1] = 2327;
+        intArray0[2] = 2327;
+        intArray0[3] = 2327;
+        intArray0[4] = 2327;
+        intArray0[5] = 2327;
+        intArray0[6] = 2327;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        mersenneTwister0.nextDouble();
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 2327, mersenneTwister0);
+        MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer1 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(multiStartUnivariateRealOptimizer0, 2327, mersenneTwister0);
+        BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm> baseUnivariateRealOptimizer1 = (BaseUnivariateRealOptimizer<PolynomialFunctionNewtonForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((ConvergenceChecker) null).when(baseUnivariateRealOptimizer1).getConvergenceChecker();
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm> multiStartUnivariateRealOptimizer2 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionNewtonForm>(baseUnivariateRealOptimizer1, 2327, mersenneTwister0);
+        multiStartUnivariateRealOptimizer2.getConvergenceChecker();
+        multiStartUnivariateRealOptimizer1.setConvergenceChecker((ConvergenceChecker<UnivariateRealPointValuePair>) null);
+        BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> baseUnivariateRealOptimizer2 = (BaseUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm> multiStartUnivariateRealOptimizer3 = new MultiStartUnivariateRealOptimizer<PolynomialFunctionLagrangeForm>(baseUnivariateRealOptimizer2, 2327, mersenneTwister0);
+        double[] doubleArray0 = new double[8];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (double) 2327;
+        doubleArray0[2] = 0.0;
+        doubleArray0[3] = (double) 2327;
+        doubleArray0[4] = (double) 2327;
+        doubleArray0[5] = (double) 2327;
+        doubleArray0[6] = (double) 2327;
+        doubleArray0[7] = (double) 2327;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test29410() throws Throwable {
         BaseUnivariateRealOptimizer<PolynomialFunction> baseUnivariateRealOptimizer0 = (BaseUnivariateRealOptimizer<PolynomialFunction>) mock(BaseUnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         Well19937a well19937a0 = new Well19937a((-1L));
         MultiStartUnivariateRealOptimizer<PolynomialFunction> multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer<PolynomialFunction>(baseUnivariateRealOptimizer0, 0, well19937a0);
@@ -7488,5 +7597,11 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
             //
             verifyException("org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizer", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test30411() throws Throwable {
+        int[] intArray0 = new int[6];
+        Well1024a well1024a0 = new Well1024a(intArray0);
     }
 }

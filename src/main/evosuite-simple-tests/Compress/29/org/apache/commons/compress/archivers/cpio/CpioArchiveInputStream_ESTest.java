@@ -208,4 +208,18 @@ public class CpioArchiveInputStream_ESTest extends CpioArchiveInputStream_ESTest
         long long0 = cpioArchiveInputStream0.skip(3776L);
         assertEquals(0L, long0);
     }
+
+    @Test(timeout = 4000)
+    public void test1516() throws Throwable {
+        byte[] byteArray0 = new byte[5];
+        byteArray0[0] = (byte) 113;
+        CpioArchiveInputStream.matches(byteArray0, (byte) 113);
+    }
+
+    @Test(timeout = 4000)
+    public void test1617() throws Throwable {
+        byte[] byteArray0 = new byte[9];
+        byteArray0[1] = (byte) 113;
+        CpioArchiveInputStream.matches(byteArray0, 204);
+    }
 }

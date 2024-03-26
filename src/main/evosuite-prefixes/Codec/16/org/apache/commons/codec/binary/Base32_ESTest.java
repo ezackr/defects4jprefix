@@ -215,14 +215,6 @@ public class Base32_ESTest extends Base32_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
-        Base32 base32_0 = new Base32(true, (byte) (-117));
-        byte[] byteArray0 = base32_0.decode("%=F)H`0");
-        BaseNCodec.Context baseNCodec_Context0 = new BaseNCodec.Context();
-        base32_0.encode(byteArray0, (int) (byte) (-117), (-11), baseNCodec_Context0);
-    }
-
-    @Test(timeout = 4000)
     public void test2728() throws Throwable {
         Base32 base32_0 = new Base32(99);
         byte[] byteArray0 = new byte[4];
@@ -276,12 +268,6 @@ public class Base32_ESTest extends Base32_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3335() throws Throwable {
-        Base32 base32_0 = new Base32(true);
-        byte[] byteArray0 = base32_0.decode("UTF-16LE");
-    }
-
-    @Test(timeout = 4000)
     public void test3436() throws Throwable {
         Base32 base32_0 = new Base32();
         byte[] byteArray0 = new byte[5];
@@ -297,19 +283,7 @@ public class Base32_ESTest extends Base32_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3538() throws Throwable {
-        Base32 base32_0 = new Base32(340);
-        byte[] byteArray0 = base32_0.decode("8eTUas[3] BT");
-    }
-
-    @Test(timeout = 4000)
     public void test3639() throws Throwable {
-        Base32 base32_0 = new Base32((byte) (-7));
-        byte[] byteArray0 = base32_0.decode("H$_VMWBde]]oUy");
-    }
-
-    @Test(timeout = 4000)
-    public void test3640() throws Throwable {
         Base32 base32_0 = new Base32((byte) (-7));
         byte[] byteArray0 = base32_0.decode("H$_VMWBde]]oUy");
     }

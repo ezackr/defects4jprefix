@@ -55,7 +55,16 @@ public class CombiningEvaluator_ESTest extends CombiningEvaluator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test33() throws Throwable {
+        LinkedList<Evaluator> linkedList0 = new LinkedList<Evaluator>();
+        CombiningEvaluator.And combiningEvaluator_And0 = new CombiningEvaluator.And(linkedList0);
+        linkedList0.add((Evaluator) combiningEvaluator_And0);
+        linkedList0.add((Evaluator) combiningEvaluator_And0);
+        CombiningEvaluator.Or combiningEvaluator_Or0 = new CombiningEvaluator.Or(linkedList0);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
         LinkedHashSet<Evaluator> linkedHashSet0 = new LinkedHashSet<Evaluator>();
         CombiningEvaluator.Or combiningEvaluator_Or0 = new CombiningEvaluator.Or(linkedHashSet0);
         Evaluator[] evaluatorArray0 = new Evaluator[5];
@@ -67,7 +76,7 @@ public class CombiningEvaluator_ESTest extends CombiningEvaluator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         LinkedList<Evaluator> linkedList0 = new LinkedList<Evaluator>();
         CombiningEvaluator.And combiningEvaluator_And0 = new CombiningEvaluator.And(linkedList0);
         linkedList0.add((Evaluator) combiningEvaluator_And0);
@@ -78,7 +87,7 @@ public class CombiningEvaluator_ESTest extends CombiningEvaluator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         LinkedList<Evaluator> linkedList0 = new LinkedList<Evaluator>();
         CombiningEvaluator.And combiningEvaluator_And0 = new CombiningEvaluator.And(linkedList0);
         String string0 = combiningEvaluator_And0.toString();
@@ -86,7 +95,7 @@ public class CombiningEvaluator_ESTest extends CombiningEvaluator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test76() throws Throwable {
+    public void test77() throws Throwable {
         Evaluator[] evaluatorArray0 = new Evaluator[5];
         CombiningEvaluator.And combiningEvaluator_And0 = new CombiningEvaluator.And(evaluatorArray0);
         Document document0 = Document.createShell("$Uc^fz}?");
@@ -104,7 +113,7 @@ public class CombiningEvaluator_ESTest extends CombiningEvaluator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test87() throws Throwable {
+    public void test88() throws Throwable {
         LinkedHashSet<Evaluator> linkedHashSet0 = new LinkedHashSet<Evaluator>();
         CombiningEvaluator.Or combiningEvaluator_Or0 = new CombiningEvaluator.Or(linkedHashSet0);
         String string0 = combiningEvaluator_Or0.toString();

@@ -93,59 +93,64 @@ public class Mockito_ESTest extends Mockito_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1313() throws Throwable {
+        Mockito mockito0 = new Mockito();
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         Stubber stubber0 = Mockito.doAnswer((Answer) null);
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         VerificationMode verificationMode0 = Mockito.atMost(0);
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         Mockito.stubVoid("Zk_mhRIBa<tWv-i");
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         Mockito.stub("");
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         String[] stringArray0 = new String[1];
         Mockito.verifyNoMoreInteractions(stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         VerificationMode verificationMode0 = Mockito.atLeastOnce();
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         Mockito.atLeast((-5));
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         VerificationMode verificationMode0 = Mockito.only();
         Stubber stubber0 = Mockito.doReturn(verificationMode0);
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         Mockito.verify((Object) "'oL.~H?Uxt#r=W.P@&");
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         Mockito.validateMockitoUsage();
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         Stubber stubber0 = Mockito.doThrow((Throwable) null);
     }
 }

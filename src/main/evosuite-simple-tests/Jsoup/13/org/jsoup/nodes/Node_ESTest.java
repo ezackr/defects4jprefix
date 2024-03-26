@@ -261,7 +261,17 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2324() throws Throwable {
+        TextNode textNode0 = TextNode.createFromEncoded("succapprox", "?");
+        StringBuilder stringBuilder0 = new StringBuilder();
+        Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
+        Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.indentAmount(1919);
+        // Undeclared exception!
+        textNode0.indent(stringBuilder0, 894, document_OutputSettings1);
+    }
+
+    @Test(timeout = 4000)
+    public void test2425() throws Throwable {
         Document document0 = new Document(";p%NHpo40W+k;$J4L");
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         // Undeclared exception!
@@ -276,7 +286,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2526() throws Throwable {
         Document document0 = new Document("");
         // Undeclared exception!
         try {
@@ -291,7 +301,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2627() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("gv.`hUM_V?f9", "*J,?T^9a");
         // Undeclared exception!
         try {
@@ -306,7 +316,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2728() throws Throwable {
         Document document0 = new Document("TPE*=");
         // Undeclared exception!
         try {
@@ -321,7 +331,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2828() throws Throwable {
+    public void test2829() throws Throwable {
         Tag tag0 = Tag.valueOf("?");
         Element element0 = new Element(tag0, "varepsilon");
         DataNode dataNode0 = DataNode.createFromEncoded("?", "org.jsoup.nodes.Node$OuterHtmlVisitor");
@@ -339,7 +349,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2929() throws Throwable {
+    public void test2930() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("Fv%#VPEt/2h|qXI,", "Fv%#VPEt/2h|qXI,");
         Node[] nodeArray0 = new Node[2];
         nodeArray0[0] = (Node) textNode0;
@@ -356,7 +366,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3030() throws Throwable {
+    public void test3031() throws Throwable {
         Document document0 = new Document("");
         Node[] nodeArray0 = new Node[3];
         nodeArray0[0] = (Node) document0;
@@ -375,7 +385,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
+    public void test3132() throws Throwable {
         Comment comment0 = new Comment("", "");
         // Undeclared exception!
         try {
@@ -390,14 +400,21 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3233() throws Throwable {
+        TextNode textNode0 = new TextNode("rightleftharpoons", "\n<!---->");
+        textNode0.absUrl("#text");
+        textNode0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3334() throws Throwable {
         Document document0 = new Document("");
         Node node0 = document0.nextSibling();
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3435() throws Throwable {
         Document document0 = Document.createShell("(Ou]rYY'S");
         Node[] nodeArray0 = new Node[4];
         nodeArray0[0] = (Node) document0;
@@ -415,14 +432,14 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3536() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("gv.`hUM_V?f9", "*J,?T^9a");
         Document document0 = textNode0.ownerDocument();
         assertNull(document0);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3637() throws Throwable {
         Document document0 = Document.createShell("prnsim");
         Element element0 = document0.prependElement("AMP");
         Document document1 = element0.ownerDocument();
@@ -430,7 +447,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3638() throws Throwable {
         Document document0 = Document.createShell("prnsim");
         Element element0 = document0.prependElement("AMP");
         Document document1 = element0.ownerDocument();
@@ -438,28 +455,28 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3739() throws Throwable {
         Document document0 = Document.createShell("t#T");
         String string0 = document0.attr("y>0m-0L0K)");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3840() throws Throwable {
         Document document0 = Document.createShell("$~BGq1gBP");
         List<Node> list0 = document0.childNodes();
         assertFalse(list0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3941() throws Throwable {
         TextNode textNode0 = new TextNode("^xYza6M*RD\u0005'ET$Qj(", (String) null);
         int int0 = textNode0.siblingIndex();
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4042() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("", "\u0006}-BeBAV&OK");
         Document document0 = Document.createShell("nequiv");
         // Undeclared exception!
@@ -475,14 +492,14 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4143() throws Throwable {
         Document document0 = Document.createShell("");
         Element element0 = document0.head();
         assertNotNull(element0);
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4144() throws Throwable {
         Document document0 = Document.createShell("");
         Element element0 = document0.head();
         element0.outerHtml();
@@ -490,7 +507,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4245() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("nRWVc_ysz", "nRWVc_ysz");
         StringBuilder stringBuilder0 = new StringBuilder((CharSequence) "nRWVc_ysz");
         textNode0.outerHtml(stringBuilder0);
@@ -498,35 +515,35 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4344() throws Throwable {
+    public void test4346() throws Throwable {
         DataNode dataNode0 = new DataNode("LA|OV1$Kj>Z]1 OWk^", "");
         Node node0 = dataNode0.clone();
         assertEquals(0, node0.siblingIndex());
     }
 
     @Test(timeout = 4000)
-    public void test4345() throws Throwable {
+    public void test4347() throws Throwable {
         DataNode dataNode0 = new DataNode("LA|OV1$Kj>Z]1 OWk^", "");
         Node node0 = dataNode0.clone();
         assertNotSame(node0, dataNode0);
     }
 
     @Test(timeout = 4000)
-    public void test4446() throws Throwable {
+    public void test4448() throws Throwable {
         Document document0 = new Document("");
         String string0 = document0.baseUri();
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4547() throws Throwable {
+    public void test4549() throws Throwable {
         XmlDeclaration xmlDeclaration0 = new XmlDeclaration("", "", false);
         Node node0 = xmlDeclaration0.parent();
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4648() throws Throwable {
+    public void test4650() throws Throwable {
         Document document0 = Document.createShell("{T#");
         // Undeclared exception!
         try {
@@ -540,28 +557,28 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4749() throws Throwable {
+    public void test4751() throws Throwable {
         Document document0 = Document.createShell("uIL&1\"");
         Attributes attributes0 = document0.attributes();
         assertNotNull(attributes0);
     }
 
     @Test(timeout = 4000)
-    public void test4850() throws Throwable {
+    public void test4852() throws Throwable {
         Comment comment0 = new Comment("", "");
         Node node0 = comment0.attr("7f0y", "7f0y");
         assertSame(comment0, node0);
     }
 
     @Test(timeout = 4000)
-    public void test4951() throws Throwable {
+    public void test4953() throws Throwable {
         Document document0 = new Document(" wd$D");
         boolean boolean0 = document0.hasAttr(",{J=fV");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5052() throws Throwable {
+    public void test5054() throws Throwable {
         Document document0 = new Document("abs:succapprox");
         TextNode textNode0 = new TextNode((String) null, "#tex");
         // Undeclared exception!
@@ -577,7 +594,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5153() throws Throwable {
+    public void test5155() throws Throwable {
         Comment comment0 = new Comment("}uTFEjqb/", "}uTFEjqb/");
         // Undeclared exception!
         try {
@@ -592,7 +609,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5254() throws Throwable {
+    public void test5256() throws Throwable {
         Comment comment0 = new Comment("", "");
         TextNode textNode0 = new TextNode("rightleftharpoons", "\n<!---->");
         Node node0 = textNode0.doClone(comment0);
@@ -601,7 +618,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5255() throws Throwable {
+    public void test5257() throws Throwable {
         Comment comment0 = new Comment("", "");
         TextNode textNode0 = new TextNode("rightleftharpoons", "\n<!---->");
         Node node0 = textNode0.doClone(comment0);
@@ -610,7 +627,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5356() throws Throwable {
+    public void test5358() throws Throwable {
         Document document0 = new Document(">5~");
         // Undeclared exception!
         try {
@@ -625,7 +642,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5457() throws Throwable {
+    public void test5459() throws Throwable {
         Comment comment0 = new Comment("", "");
         TextNode textNode0 = new TextNode("rightleftharpoons", "\n<!---->");
         Node node0 = textNode0.doClone(comment0);
@@ -642,7 +659,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5558() throws Throwable {
+    public void test5560() throws Throwable {
         Document document0 = Document.createShell("lbrace");
         // Undeclared exception!
         try {
@@ -657,7 +674,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5659() throws Throwable {
+    public void test5661() throws Throwable {
         Document document0 = new Document("!M%\"icZur");
         document0.prependChild(document0);
         Element element0 = document0.wrap("!M%\"icZur");
@@ -665,7 +682,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5760() throws Throwable {
+    public void test5762() throws Throwable {
         TextNode textNode0 = new TextNode("rightleftharpoons", "\n<!---->");
         // Undeclared exception!
         try {
@@ -680,7 +697,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5861() throws Throwable {
+    public void test5863() throws Throwable {
         Document document0 = new Document("!M%\"icZur");
         document0.prependChild(document0);
         document0.after("!M%\"icZur");
@@ -688,14 +705,14 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5962() throws Throwable {
+    public void test5964() throws Throwable {
         DataNode dataNode0 = new DataNode("[[*=A,X", "7");
         String string0 = dataNode0.absUrl("[[*=A,X");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test6063() throws Throwable {
+    public void test6065() throws Throwable {
         Document document0 = new Document("org.jsoup.nodes.Node");
         // Undeclared exception!
         try {
@@ -710,7 +727,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6164() throws Throwable {
+    public void test6166() throws Throwable {
         Document document0 = Document.createShell("lbrace");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Element element0 = document0.classNames((Set<String>) linkedHashSet0);
@@ -719,7 +736,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6165() throws Throwable {
+    public void test6167() throws Throwable {
         Document document0 = Document.createShell("lbrace");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Element element0 = document0.classNames((Set<String>) linkedHashSet0);
@@ -728,7 +745,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6266() throws Throwable {
+    public void test6268() throws Throwable {
         Document document0 = new Document("!M%\"icZur");
         // Undeclared exception!
         try {
@@ -743,7 +760,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6367() throws Throwable {
+    public void test6369() throws Throwable {
         Comment comment0 = new Comment("", "");
         TextNode textNode0 = new TextNode("rightleftharpoons", "\n<!---->");
         // Undeclared exception!
@@ -759,7 +776,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6468() throws Throwable {
+    public void test6470() throws Throwable {
         Document document0 = new Document("c?E1wKu0iW&P");
         // Undeclared exception!
         try {
@@ -774,7 +791,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6569() throws Throwable {
+    public void test6571() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("Fv%#VPEt/2h|qXI,", "Fv%#VPEt/2h|qXI,");
         // Undeclared exception!
         try {
@@ -789,14 +806,14 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6670() throws Throwable {
+    public void test6672() throws Throwable {
         Document document0 = new Document("!M%\"icZur");
         Node[] nodeArray0 = document0.childNodesAsArray();
         assertEquals(0, nodeArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test6771() throws Throwable {
+    public void test6773() throws Throwable {
         Comment comment0 = new Comment("", "");
         // Undeclared exception!
         try {
@@ -811,7 +828,7 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6872() throws Throwable {
+    public void test6874() throws Throwable {
         Document document0 = new Document("Rnu{");
         // Undeclared exception!
         try {

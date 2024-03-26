@@ -129,15 +129,6 @@ public class BeanSerializerFactory_ESTest extends BeanSerializerFactory_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test067() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-        SimpleSerializers simpleSerializers0 = new SimpleSerializers();
-        SerializerFactory serializerFactory0 = beanSerializerFactory0.withAdditionalSerializers(simpleSerializers0);
-        objectMapper0.setSerializerFactory(serializerFactory0);
-    }
-
-    @Test(timeout = 4000)
     public void test068() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;

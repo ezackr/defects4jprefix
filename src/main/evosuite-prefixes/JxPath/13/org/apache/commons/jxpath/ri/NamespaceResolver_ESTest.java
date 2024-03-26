@@ -48,16 +48,6 @@ public class NamespaceResolver_ESTest extends NamespaceResolver_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test023() throws Throwable {
-        NamespaceResolver namespaceResolver0 = new NamespaceResolver();
-        QName qName0 = new QName((String) null, "j;");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        namespaceResolver0.registerNamespace("", "SdpXe2");
-        namespaceResolver0.setNamespaceContextPointer(variablePointer0);
-        String string0 = namespaceResolver0.getPrefix("SdpXe2");
-    }
-
-    @Test(timeout = 4000)
     public void test034() throws Throwable {
         NamespaceResolver namespaceResolver0 = new NamespaceResolver();
         namespaceResolver0.registerNamespace("<<unknown namespace>>", "<<unknown namespace>>");
@@ -206,11 +196,5 @@ public class NamespaceResolver_ESTest extends NamespaceResolver_ESTest_scaffoldi
         NamespaceResolver namespaceResolver0 = new NamespaceResolver((NamespaceResolver) null);
         NamespaceResolver namespaceResolver1 = (NamespaceResolver) namespaceResolver0.clone();
         namespaceResolver1.isSealed();
-    }
-
-    @Test(timeout = 4000)
-    public void test2023() throws Throwable {
-        NamespaceResolver namespaceResolver0 = new NamespaceResolver((NamespaceResolver) null);
-        NamespaceResolver namespaceResolver1 = (NamespaceResolver) namespaceResolver0.clone();
     }
 }

@@ -372,7 +372,15 @@ public class ArArchiveInputStream_ESTest extends ArArchiveInputStream_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2426() throws Throwable {
+        PipedInputStream pipedInputStream0 = new PipedInputStream();
+        ArArchiveInputStream arArchiveInputStream0 = new ArArchiveInputStream(pipedInputStream0);
+        arArchiveInputStream0.close();
+        arArchiveInputStream0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test2527() throws Throwable {
         byte[] byteArray0 = new byte[7];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         ArArchiveInputStream arArchiveInputStream0 = new ArArchiveInputStream(byteArrayInputStream0);
@@ -388,7 +396,7 @@ public class ArArchiveInputStream_ESTest extends ArArchiveInputStream_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2628() throws Throwable {
         byte[] byteArray0 = new byte[8];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         ArArchiveInputStream arArchiveInputStream0 = new ArArchiveInputStream(byteArrayInputStream0);
@@ -404,7 +412,7 @@ public class ArArchiveInputStream_ESTest extends ArArchiveInputStream_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2729() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) (-31);
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
@@ -416,7 +424,7 @@ public class ArArchiveInputStream_ESTest extends ArArchiveInputStream_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2830() throws Throwable {
         ArArchiveInputStream arArchiveInputStream0 = new ArArchiveInputStream((InputStream) null);
         // Undeclared exception!
         try {

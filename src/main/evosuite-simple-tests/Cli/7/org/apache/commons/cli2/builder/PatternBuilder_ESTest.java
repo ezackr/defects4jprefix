@@ -43,7 +43,49 @@ public class PatternBuilder_ESTest extends PatternBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093() throws Throwable {
+    public void test023() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("zy^?*!BxLN+>^&S\"@");
+    }
+
+    @Test(timeout = 4000)
+    public void test034() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("@kp+)3l#w");
+    }
+
+    @Test(timeout = 4000)
+    public void test045() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("-cW9xb-)%'HS`eL/");
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("T\"|0KFIn/-2(");
+    }
+
+    @Test(timeout = 4000)
+    public void test067() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("tT;(< ,vN9~{TwrG");
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("org.apache.commons.cli2.commandline.CommandLineImpl");
+    }
+
+    @Test(timeout = 4000)
+    public void test089() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("v6C#A]`q2A!I3>1Im3");
+    }
+
+    @Test(timeout = 4000)
+    public void test0910() throws Throwable {
         PatternBuilder patternBuilder0 = new PatternBuilder();
         // Undeclared exception!
         try {
@@ -55,5 +97,17 @@ public class PatternBuilder_ESTest extends PatternBuilder_ESTest_scaffolding {
             //
             verifyException("org.apache.commons.cli2.builder.ArgumentBuilder", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test1011() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("zy^?*=BxLN+>^&S\"8");
+    }
+
+    @Test(timeout = 4000)
+    public void test1112() throws Throwable {
+        PatternBuilder patternBuilder0 = new PatternBuilder();
+        patternBuilder0.withPattern("");
     }
 }

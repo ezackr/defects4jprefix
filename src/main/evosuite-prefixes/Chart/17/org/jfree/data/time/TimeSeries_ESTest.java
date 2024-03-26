@@ -396,14 +396,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01035() throws Throwable {
-        Day day0 = new Day();
-        TimeSeries timeSeries0 = new TimeSeries(day0);
-        timeSeries0.add((RegularTimePeriod) day0, 718.0, false);
-        Number number0 = timeSeries0.getValue((RegularTimePeriod) day0);
-    }
-
-    @Test(timeout = 4000)
     public void test01036() throws Throwable {
         Day day0 = new Day();
         TimeSeries timeSeries0 = new TimeSeries(day0);
@@ -755,14 +747,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
         timeSeries0.setMaximumItemCount(0);
         timeSeries0.createCopy(0, 999);
         timeSeries0.getMaximumItemCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test02472() throws Throwable {
-        MockDate mockDate0 = new MockDate(0, 45, 0, 1525, 1525, 1525);
-        Millisecond millisecond0 = new Millisecond(mockDate0);
-        TimeSeries timeSeries0 = new TimeSeries(millisecond0);
-        timeSeries0.getMaximumItemAge();
     }
 
     @Test(timeout = 4000)
@@ -1265,14 +1249,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test064130() throws Throwable {
-        Day day0 = new Day();
-        Class<Month> class0 = Month.class;
-        TimeSeries timeSeries0 = new TimeSeries(day0, "=wzUe FC9tegUK,&]d", (String) null, class0);
-        String string0 = timeSeries0.getDomainDescription();
-    }
-
-    @Test(timeout = 4000)
-    public void test064131() throws Throwable {
         Day day0 = new Day();
         Class<Month> class0 = Month.class;
         TimeSeries timeSeries0 = new TimeSeries(day0, "=wzUe FC9tegUK,&]d", (String) null, class0);

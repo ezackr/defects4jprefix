@@ -64,40 +64,53 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test066() throws Throwable {
+        MockitoCore mockitoCore0 = new MockitoCore();
+        mockitoCore0.validateMockitoUsage();
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.stub();
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Only only0 = new Only();
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.verify((Object) only0, (VerificationMode) only0);
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.verify((Object) null, (VerificationMode) null);
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1010() throws Throwable {
+        MockitoCore mockitoCore0 = new MockitoCore();
+        Invocation[] invocationArray0 = new Invocation[0];
+        mockitoCore0.reset(invocationArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Invocation[] invocationArray0 = new Invocation[1];
         mockitoCore0.reset(invocationArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[1];
         mockitoCore0.verifyNoMoreInteractions(objectArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[2];
         objectArray0[0] = (Object) mockitoCore0;
@@ -105,40 +118,40 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.verifyNoMoreInteractions((Object[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[0];
         mockitoCore0.verifyNoMoreInteractions(objectArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.inOrder((Object[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[2];
         mockitoCore0.inOrder(objectArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[0];
         mockitoCore0.inOrder(objectArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[2];
         objectArray0[0] = (Object) mockitoCore0;

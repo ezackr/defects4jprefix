@@ -215,4 +215,9 @@ public class LookupTranslator_ESTest extends LookupTranslator_ESTest_scaffolding
             //
         }
     }
+
+    @Test(timeout = 4000)
+    public void test910() throws Throwable {
+        LookupTranslator lookupTranslator0 = new LookupTranslator((CharSequence[][]) null);
+    }
 }

@@ -99,65 +99,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0110() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test0111() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-    }
-
-    @Test(timeout = 4000)
-    public void test0112() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test0113() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test0114() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test0115() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0116() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test0117() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test0118() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-    }
-
-    @Test(timeout = 4000)
     public void test0119() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
         Locale locale0 = Locale.ENGLISH;
@@ -218,13 +159,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         Locale locale0 = Locale.ENGLISH;
         String string0 = FastDateFormat.getTimeZoneDisplay(timeZone0, true, 0, locale0);
         locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test0127() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("a3i%lC&UrL#\"u8FX");
-        Locale locale0 = Locale.ENGLISH;
-        String string0 = FastDateFormat.getTimeZoneDisplay(timeZone0, true, 0, locale0);
     }
 
     @Test(timeout = 4000)
@@ -422,34 +356,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0255() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone((-237), "}63CIv2");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0256() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone((-237), "}63CIv2");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0257() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone((-237), "}63CIv2");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0258() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone((-237), "}63CIv2");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0359() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("H,'-ra^I)", (TimeZone) null);
         fastDateFormat0.getMaxLengthEstimate();
@@ -463,26 +369,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0361() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("H,'-ra^I)", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0362() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("H,'-ra^I)", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0363() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("H,'-ra^I)", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0364() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("H,'-ra^I)", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0365() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("H,'-ra^I)", (TimeZone) null);
     }
 
@@ -590,30 +476,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0482() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("|", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0483() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("|", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0484() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("|", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0485() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("|", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0586() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("h:mm a");
         fastDateFormat0.getMaxLengthEstimate();
@@ -627,26 +489,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0588() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("h:mm a");
-    }
-
-    @Test(timeout = 4000)
-    public void test0589() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("h:mm a");
-    }
-
-    @Test(timeout = 4000)
-    public void test0590() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("h:mm a");
-    }
-
-    @Test(timeout = 4000)
-    public void test0591() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("h:mm a");
-    }
-
-    @Test(timeout = 4000)
-    public void test0592() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("h:mm a");
     }
 
@@ -715,30 +557,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06103() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(2, "z@9R#W8%Q&dA}l\"");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06104() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(2, "z@9R#W8%Q&dA}l\"");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06105() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(2, "z@9R#W8%Q&dA}l\"");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06106() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(2, "z@9R#W8%Q&dA}l\"");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test07107() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         fastDateFormat0.getMaxLengthEstimate();
@@ -752,26 +570,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test07109() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test07110() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test07111() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test07112() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test07113() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
     }
 
@@ -804,14 +602,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test07118() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07119() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         StringBuffer stringBuffer0 = new StringBuffer();
         MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
@@ -882,46 +672,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07127() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07128() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07129() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07130() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07131() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        MockDate mockDate0 = new MockDate(2, 90, 3, 58, 1, 2623);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
     public void test08132() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         fastDateFormat0.getPattern();
@@ -935,26 +685,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test08134() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test08135() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test08136() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test08137() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test08138() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
     }
 
@@ -996,41 +726,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08144() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-845), 1, 2605, 2605, 13, 1);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08145() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-845), 1, 2605, 2605, 13, 1);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08146() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-845), 1, 2605, 2605, 13, 1);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08147() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-845), 1, 2605, 2605, 13, 1);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08148() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-845), 1, 2605, 2605, 13, 1);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
     public void test09149() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         timeZone0.getID();
@@ -1069,30 +764,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09155() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09156() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09157() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09158() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test09159() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
@@ -1121,78 +792,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
         String string0 = fastDateFormat0.format((Calendar) null);
         fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test09163() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        String string0 = fastDateFormat0.format((Calendar) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09164() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        String string0 = fastDateFormat0.format((Calendar) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09165() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        String string0 = fastDateFormat0.format((Calendar) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09166() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        String string0 = fastDateFormat0.format((Calendar) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09167() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        String string0 = fastDateFormat0.format((Calendar) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test10168() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test10169() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test10170() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test10171() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test10172() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test10173() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test10174() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
     }
 
     @Test(timeout = 4000)
@@ -1323,17 +922,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test10190() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Locale locale0 = Locale.TAIWAN;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 2);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockGregorianCalendar0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10191() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         StringBuffer stringBuffer0 = new StringBuffer();
         Locale locale0 = Locale.TAIWAN;
@@ -1572,126 +1160,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10211() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Locale locale0 = Locale.TAIWAN;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 2);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockGregorianCalendar0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10212() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Locale locale0 = Locale.TAIWAN;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 2);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockGregorianCalendar0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10213() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Locale locale0 = Locale.TAIWAN;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 2);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockGregorianCalendar0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10214() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Locale locale0 = Locale.TAIWAN;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 2);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockGregorianCalendar0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10215() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Locale locale0 = Locale.TAIWAN;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(locale0);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 2);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockGregorianCalendar0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11216() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test11217() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test11218() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test11219() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test11220() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test11221() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test11222() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test11223() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test11224() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        stringBuffer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test11225() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-    }
-
-    @Test(timeout = 4000)
     public void test11226() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11227() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         StringBuffer stringBuffer0 = new StringBuffer();
         StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
@@ -1743,41 +1212,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
         stringBuffer1.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test11234() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11235() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11236() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11237() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11238() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format(0L, stringBuffer0);
     }
 
     @Test(timeout = 4000)
@@ -1884,30 +1318,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12255() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12256() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12257() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12258() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test12259() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
@@ -1976,41 +1386,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
         String string0 = fastDateFormat0.format(1L);
         fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test12268() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        String string0 = fastDateFormat0.format(1L);
-    }
-
-    @Test(timeout = 4000)
-    public void test12269() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        String string0 = fastDateFormat0.format(1L);
-    }
-
-    @Test(timeout = 4000)
-    public void test12270() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        String string0 = fastDateFormat0.format(1L);
-    }
-
-    @Test(timeout = 4000)
-    public void test12271() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        String string0 = fastDateFormat0.format(1L);
-    }
-
-    @Test(timeout = 4000)
-    public void test12272() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        String string0 = fastDateFormat0.format(1L);
     }
 
     @Test(timeout = 4000)
@@ -2117,30 +1492,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13289() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13290() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13291() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13292() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test13293() throws Throwable {
         Locale locale0 = Locale.GERMAN;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
@@ -2237,16 +1588,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test13304() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        Calendar calendar0 = MockCalendar.getInstance();
-        StringWriter stringWriter0 = new StringWriter(87);
-        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.applyRules(calendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13305() throws Throwable {
         Locale locale0 = Locale.GERMAN;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
         Calendar calendar0 = MockCalendar.getInstance();
@@ -2443,56 +1784,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13323() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        Calendar calendar0 = MockCalendar.getInstance();
-        StringWriter stringWriter0 = new StringWriter(87);
-        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.applyRules(calendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13324() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        Calendar calendar0 = MockCalendar.getInstance();
-        StringWriter stringWriter0 = new StringWriter(87);
-        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.applyRules(calendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13325() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        Calendar calendar0 = MockCalendar.getInstance();
-        StringWriter stringWriter0 = new StringWriter(87);
-        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.applyRules(calendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13326() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        Calendar calendar0 = MockCalendar.getInstance();
-        StringWriter stringWriter0 = new StringWriter(87);
-        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.applyRules(calendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13327() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        Calendar calendar0 = MockCalendar.getInstance();
-        StringWriter stringWriter0 = new StringWriter(87);
-        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.applyRules(calendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
     public void test14328() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
         fastDateFormat0.getMaxLengthEstimate();
@@ -2506,26 +1797,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test14330() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14331() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14332() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14333() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14334() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
     }
 
@@ -2640,76 +1911,11 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15352() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15353() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15354() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15355() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test15356() throws Throwable {
         Locale locale0 = Locale.JAPANESE;
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0, locale0);
         int[] intArray0 = new int[2];
         fastDateFormat0.parseToken((String) null, intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16357() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test16358() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test16359() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test16360() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test16361() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test16362() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test16363() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
     }
 
     @Test(timeout = 4000)
@@ -2775,30 +1981,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16373() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16374() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16375() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16376() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test16377() throws Throwable {
         Locale locale0 = Locale.KOREAN;
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, locale0);
@@ -2807,61 +1989,9 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17378() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test17379() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test17380() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test17381() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test17382() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test17383() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test17384() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-    }
-
-    @Test(timeout = 4000)
     public void test17385() throws Throwable {
         Locale locale0 = Locale.KOREAN;
         FastDateFormat.getTimeZoneDisplay((TimeZone) null, false, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18386() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test18387() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
     }
 
     @Test(timeout = 4000)
@@ -3243,47 +2373,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test27450() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test27451() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test27452() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test27453() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test27454() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test27455() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test27456() throws Throwable {
-        Locale locale0 = Locale.ITALIAN;
-    }
-
-    @Test(timeout = 4000)
     public void test27457() throws Throwable {
         Locale locale0 = Locale.ITALIAN;
         FastDateFormat.getDateTimeInstance(6, 6, locale0);
@@ -3292,47 +2381,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     @Test(timeout = 4000)
     public void test28458() throws Throwable {
         FastDateFormat.getDateTimeInstance((-761), (-761));
-    }
-
-    @Test(timeout = 4000)
-    public void test29459() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test29460() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test29461() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test29462() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test29463() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test29464() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test29465() throws Throwable {
-        Locale locale0 = Locale.FRANCE;
     }
 
     @Test(timeout = 4000)
@@ -3408,47 +2456,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test32478() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test32479() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test32480() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test32481() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test32482() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test32483() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test32484() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-    }
-
-    @Test(timeout = 4000)
     public void test32485() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
@@ -3511,30 +2518,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test32494() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test32495() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test32496() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test32497() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test32498() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
@@ -3550,174 +2533,10 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test33500() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test33501() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test33502() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test33503() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test33504() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test33505() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test33506() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-    }
-
-    @Test(timeout = 4000)
-    public void test33507() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test33508() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test33509() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test33510() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test33511() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test33512() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test33513() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test33514() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test33515() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33516() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33517() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33518() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33519() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test33520() throws Throwable {
         Locale locale0 = Locale.GERMAN;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
         fastDateFormat0.format((Date) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test34521() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test34522() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test34523() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test34524() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test34525() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test34526() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test34527() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
     }
 
     @Test(timeout = 4000)
@@ -3748,103 +2567,9 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test35532() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test35533() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test35534() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test35535() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test35536() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test35537() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test35538() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test35539() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         fastDateFormat0.format((long) 43, (StringBuffer) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test36540() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test36541() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test36542() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test36543() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test36544() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test36545() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test36546() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test36547() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test36548() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        stringBuffer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test36549() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        StringBuffer stringBuffer0 = new StringBuffer();
     }
 
     @Test(timeout = 4000)
@@ -3855,58 +2580,10 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test37551() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test37552() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
     public void test37553() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         FastDateFormat fastDateFormat0 = null;
         fastDateFormat0 = new FastDateFormat("kzU*z", timeZone0, (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test38554() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test38555() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test38556() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test38557() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test38558() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test38559() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test38560() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
     }
 
     @Test(timeout = 4000)
@@ -3940,14 +2617,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test38565() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-2233), 2, 0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test38566() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         MockDate mockDate0 = new MockDate((-2233), 2, 0);
         StringBuffer stringBuffer0 = new StringBuffer();
@@ -4018,83 +2687,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test38574() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-2233), 2, 0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test38575() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-2233), 2, 0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test38576() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-2233), 2, 0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test38577() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-2233), 2, 0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test38578() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        MockDate mockDate0 = new MockDate((-2233), 2, 0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39579() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test39580() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test39581() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test39582() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test39583() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test39584() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test39585() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test39586() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         TimeZone timeZone0 = TimeZone.getDefault();
@@ -4139,34 +2731,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test39592() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39593() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39594() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39595() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test39596() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         TimeZone timeZone0 = TimeZone.getDefault();
@@ -4175,30 +2739,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test39597() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test39598() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39599() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39600() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         TimeZone timeZone0 = TimeZone.getDefault();
         FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
@@ -4251,70 +2792,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test39606() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39607() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39608() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39609() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39610() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39611() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39612() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39613() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
-        boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
     public void test39614() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         TimeZone timeZone0 = TimeZone.getDefault();
@@ -4330,43 +2807,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(3, timeZone0);
         boolean boolean0 = fastDateFormat1.equals(fastDateFormat0);
         fastDateFormat1.equals((Object) fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test40616() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test40617() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test40618() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test40619() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test40620() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test40621() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test40622() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
     }
 
     @Test(timeout = 4000)
@@ -4387,67 +2827,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
         fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test40626() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test40627() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test40628() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test40629() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41630() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test41631() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test41632() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41633() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41634() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41635() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41636() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
     }
 
     @Test(timeout = 4000)
@@ -4518,50 +2897,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test42646() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test42647() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test42648() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test42649() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test42650() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test42651() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test42652() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test42653() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test42654() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         Long long0 = new Long(0);
     }
@@ -4630,16 +2966,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test42662() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 1084);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test42663() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         Long long0 = new Long(0);
         StringBuffer stringBuffer0 = new StringBuffer();
@@ -4748,93 +3074,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test42673() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 1084);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test42674() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 1084);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test42675() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 1084);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test42676() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 1084);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test42677() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(0);
-        StringBuffer stringBuffer0 = new StringBuffer();
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0, 1084);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43678() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test43679() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test43680() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test43681() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test43682() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test43683() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test43684() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test43685() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         ParsePosition parsePosition0 = new ParsePosition(3);
@@ -4938,43 +3177,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test44698() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test44699() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test44700() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test44701() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test44702() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test44703() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test44704() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test44705() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         MockDate mockDate0 = new MockDate();
@@ -5044,16 +3246,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test44713() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        MockDate mockDate0 = new MockDate();
-        StringBuffer stringBuffer0 = new StringBuffer(97);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockDate0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44714() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         MockDate mockDate0 = new MockDate();
         StringBuffer stringBuffer0 = new StringBuffer(97);
@@ -5173,108 +3365,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test44725() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        MockDate mockDate0 = new MockDate();
-        StringBuffer stringBuffer0 = new StringBuffer(97);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockDate0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44726() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        MockDate mockDate0 = new MockDate();
-        StringBuffer stringBuffer0 = new StringBuffer(97);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockDate0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44727() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        MockDate mockDate0 = new MockDate();
-        StringBuffer stringBuffer0 = new StringBuffer(97);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockDate0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44728() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        MockDate mockDate0 = new MockDate();
-        StringBuffer stringBuffer0 = new StringBuffer(97);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockDate0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44729() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        MockDate mockDate0 = new MockDate();
-        StringBuffer stringBuffer0 = new StringBuffer(97);
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) mockDate0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45730() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test45731() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test45732() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test45733() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test45734() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test45735() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test45736() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test45737() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45738() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45739() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         int[] intArray0 = new int[9];
         String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
@@ -5294,52 +3385,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         int[] intArray0 = new int[9];
         String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
         fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test45742() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45743() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45744() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45745() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45746() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        int[] intArray0 = new int[9];
-        String string0 = fastDateFormat0.parseToken("United Kingdom", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46747() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test46748() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
     }
 
     @Test(timeout = 4000)
@@ -5446,13 +3491,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test46763() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-    }
-
-    @Test(timeout = 4000)
     public void test46764() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -5542,48 +3580,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test46774() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46775() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46776() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46777() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test46778() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46779() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         String string0 = locale0.getScript();
@@ -5702,78 +3699,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test46791() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46792() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46793() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46794() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46795() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46796() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46797() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test46798() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
     public void test46799() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -5784,26 +3709,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test46800() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
     public void test46801() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46802() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         String string0 = locale0.getScript();
@@ -5901,46 +3807,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test46811() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46812() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46813() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test46814() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test46815() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -5963,39 +3829,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test46817() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test46818() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test46819() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test46820() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         String string0 = locale0.getScript();
@@ -6027,50 +3861,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
         FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
         fastDateFormat3.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test46823() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test46824() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test46825() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test46826() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
     }
 
     @Test(timeout = 4000)
@@ -6107,76 +3897,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
         FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
         fastDateFormat3.equals((Object) fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test46830() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        String string0 = locale0.getScript();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(1, 0, timeZone0, locale0);
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getTimeInstance(2, locale0);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test47831() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test47832() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
-    public void test47833() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test47834() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test47835() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test47836() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test47837() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test47838() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test47839() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
     }
 
     @Test(timeout = 4000)
@@ -6259,34 +3979,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47850() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47851() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47852() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47853() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test47854() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -6346,14 +4038,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
         String string0 = locale0.getScript();
         locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test47861() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
     }
 
     @Test(timeout = 4000)
@@ -6456,42 +4140,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47872() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test47873() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test47874() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test47875() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-    }
-
-    @Test(timeout = 4000)
     public void test47876() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -6499,15 +4147,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         String string0 = locale0.getScript();
         String string1 = fastDateFormat0.toString();
         string1.equals((Object) string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47877() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
     }
 
     @Test(timeout = 4000)
@@ -6620,58 +4259,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47888() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test47889() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test47890() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test47891() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
     public void test47892() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47893() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
@@ -6802,86 +4390,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47904() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47905() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47906() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47907() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47908() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
     public void test47909() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47910() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47911() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
@@ -7036,102 +4545,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47923() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47924() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47925() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47926() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47927() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47928() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47929() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test47930() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
     public void test47931() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -7145,84 +4558,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47932() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-    }
-
-    @Test(timeout = 4000)
     public void test47933() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47934() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47935() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47936() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47937() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47938() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
@@ -7403,110 +4739,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47951() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47952() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47953() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47954() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47955() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47956() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47957() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
-    public void test47958() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
     public void test47959() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -7549,48 +4781,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47962() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-    }
-
-    @Test(timeout = 4000)
     public void test47963() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47964() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47965() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
@@ -7724,62 +4915,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47974() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47975() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47976() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47977() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test47978() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -7822,20 +4957,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
         FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
         fastDateFormat3.equals((Object) fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test47981() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-        String string0 = locale0.getScript();
-        String string1 = fastDateFormat0.toString();
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat1 = (FastDateFormat) fastDateFormat0.clone();
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(1, 0, timeZone1);
-        FastDateFormat fastDateFormat3 = FastDateFormat.getTimeInstance(2, locale0);
     }
 
     @Test(timeout = 4000)
@@ -7949,47 +5070,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     @Test(timeout = 4000)
     public void test51999() throws Throwable {
         FastDateFormat.getInstance("(mplnD");
-    }
-
-    @Test(timeout = 4000)
-    public void test521000() throws Throwable {
-        Locale locale0 = Locale.CANADA;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test521001() throws Throwable {
-        Locale locale0 = Locale.CANADA;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test521002() throws Throwable {
-        Locale locale0 = Locale.CANADA;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test521003() throws Throwable {
-        Locale locale0 = Locale.CANADA;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test521004() throws Throwable {
-        Locale locale0 = Locale.CANADA;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test521005() throws Throwable {
-        Locale locale0 = Locale.CANADA;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test521006() throws Throwable {
-        Locale locale0 = Locale.CANADA;
     }
 
     @Test(timeout = 4000)
@@ -8146,17 +5226,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     @Test(timeout = 4000)
     public void test581033() throws Throwable {
         FastDateFormat.getInstance("Wednesday, April 16, 0346 4:01:00 PM");
-    }
-
-    @Test(timeout = 4000)
-    public void test591034() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test591035() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
     }
 
     @Test(timeout = 4000)
@@ -8355,91 +5424,9 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test671068() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test671069() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test671070() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test671071() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test671072() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test671073() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test671074() throws Throwable {
-        Locale locale0 = Locale.GERMAN;
-    }
-
-    @Test(timeout = 4000)
     public void test671075() throws Throwable {
         Locale locale0 = Locale.GERMAN;
         FastDateFormat.getInstance("LNFm7E%BIjN", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test681076() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test681077() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test681078() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test681079() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test681080() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test681081() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test681082() throws Throwable {
-        Locale locale0 = Locale.JAPANESE;
     }
 
     @Test(timeout = 4000)

@@ -38,15 +38,6 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test012() throws Throwable {
-        PosixParser posixParser0 = new PosixParser();
-        Options options0 = new Options();
-        String[] stringArray0 = Locale.getISOCountries();
-        String[] stringArray1 = posixParser0.flatten(options0, stringArray0, true);
-        String[] stringArray2 = posixParser0.flatten(options0, stringArray1, true);
-    }
-
-    @Test(timeout = 4000)
     public void test023() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
@@ -82,7 +73,17 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test067() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("", "", false, "");
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options1, stringArray0, true);
+        posixParser0.burstToken("--o", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         Option option0 = new Option("A", "", false, "-A");
@@ -93,11 +94,40 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test089() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
         stringArray0[0] = "-j";
         String[] stringArray1 = posixParser0.flatten(options0, stringArray0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test0910() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("", "", true, "");
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options1, stringArray0, true);
+        posixParser0.burstToken("-w-", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1011() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("", "", true, "");
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options1, stringArray0, true);
+        posixParser0.burstToken("--o", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1112() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options0, stringArray0, false);
+        posixParser0.burstToken("N44Q4mz ", false);
     }
 }

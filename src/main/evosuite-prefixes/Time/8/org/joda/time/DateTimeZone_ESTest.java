@@ -90,13 +90,26 @@ import org.junit.runner.RunWith;
 public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(1, 1);
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.forOffsetMillis(86399999);
+        Locale locale0 = Locale.GERMAN;
+        fixedDateTimeZone0.UTC.getName(1202L, locale0);
+        ((DateTimeZone) fixedDateTimeZone0).writeReplace();
+        dateTimeZone0.getID();
+        fixedDateTimeZone0.previousTransition((-2049L));
+        DateTimeZone.getProvider();
+        fixedDateTimeZone0.isStandardOffset((-2049L));
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         int int0 = 2649;
         DateTimeZone.forOffsetHoursMinutes(2649, 2649);
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         DefaultNameProvider defaultNameProvider0 = new DefaultNameProvider();
         Locale locale0 = Locale.US;
         defaultNameProvider0.getName(locale0, "org.joda.time.field.ScaledDurationField", "org.joda.time.field.ScaledDurationField");
@@ -108,7 +121,7 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         String string0 = "~S{E4n";
         ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
         ZoneInfoProvider zoneInfoProvider0 = null;
@@ -116,7 +129,7 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         long long0 = 0L;
         String string0 = dateTimeZone0.UTC.getNameKey(0L);
@@ -136,7 +149,7 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         DateTimeZone.forOffsetMillis(0);
         DateTimeZone.forID("k`");
         DateTimeUtils.MillisProvider dateTimeUtils_MillisProvider0 = mock(DateTimeUtils.MillisProvider.class, new ViolatedAssumptionAnswer());
@@ -144,38 +157,248 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         int int0 = (-3740);
         DateTimeZone.forOffsetHours((-3740));
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         String string0 = "MIT";
         ZoneOffset.of("MIT");
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test088() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forID("UTC");
+        DateTimeUtils.MillisProvider dateTimeUtils_MillisProvider0 = mock(DateTimeUtils.MillisProvider.class, new ViolatedAssumptionAnswer());
+        DateTimeUtils.setCurrentMillisProvider(dateTimeUtils_MillisProvider0);
+        dateTimeZone0.convertLocalToUTC(0L, false, 44L);
+        dateTimeZone0.getID();
+        DateTimeZone dateTimeZone1 = DateTimeZone.getDefault();
+        DateTimeZone dateTimeZone2 = DateTimeZone.forOffsetMillis(834);
+        Locale locale0 = Locale.PRC;
+        dateTimeZone2.UTC.getShortName(44L, locale0);
+        dateTimeZone1.convertLocalToUTC(0L, false);
+        DateTimeZone.getProvider();
+        dateTimeZone0.previousTransition((-2229L));
+        DateTimeZone.setDefault(dateTimeZone1);
+        dateTimeZone1.convertLocalToUTC(0L, false, 0L);
+        dateTimeZone1.toTimeZone();
+        dateTimeZone0.toTimeZone();
+        DateTimeZone.getDefault();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         int int0 = 578;
         DateTimeZone.forOffsetHoursMinutes(578, 578);
     }
 
     @Test(timeout = 4000)
-    public void test128() throws Throwable {
+    public void test1010() throws Throwable {
+        UTCProvider uTCProvider0 = new UTCProvider();
+        uTCProvider0.getZone("MST");
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance((DateTimeZone) null);
+        CachedDateTimeZone cachedDateTimeZone0 = (CachedDateTimeZone) buddhistChronology0.getZone();
+        ((DateTimeZone) cachedDateTimeZone0).writeReplace();
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        TimeZone timeZone0 = TimeZone.getDefault();
+        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
+        DateMidnight dateMidnight0 = DateMidnight.now();
+        dateTimeZone0.getOffset((ReadableInstant) dateMidnight0);
+        dateTimeZone0.getNameKey(408L);
+        dateTimeZone0.UTC.previousTransition(366L);
+        dateTimeZone0.toString();
+        dateTimeZone0.getStandardOffset(408L);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(0);
+        DateTimeZone.getAvailableIDs();
+        dateTimeZone1.getShortName(0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         int int0 = 578;
         DateTimeZone.forOffsetHours(578);
     }
 
     @Test(timeout = 4000)
-    public void test189() throws Throwable {
+    public void test1313() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        dateTimeZone0.isFixed();
+        dateTimeZone0.getID();
+        dateTimeZone0.previousTransition(1);
+        dateTimeZone0.convertLocalToUTC(2153L, true);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(1);
+        dateTimeZone0.getMillisKeepLocal(dateTimeZone1, 2153L);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        dateTimeZone0.UTC.convertLocalToUTC((long) 1, false, 1772L);
+        dateTimeZone0.getMillisKeepLocal(fixedDateTimeZone0, 1);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(1);
+        dateTimeZone1.UTC.getMillisKeepLocal(dateTimeZone0, (-28799999L));
+        dateTimeZone0.toString();
+        DateTimeZone.forID("America/Los_Angeles");
+        DateTimeZone.getAvailableIDs();
+        dateTimeZone0.getStandardOffset(0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        DateTimeZone.getAvailableIDs();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        fixedDateTimeZone0.getName(1064L);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-674));
+        dateTimeZone0.UTC.nextTransition(0L);
+        DateTimeUtils.setCurrentMillisFixed((-1328L));
+        DateTimeUtils.setCurrentMillisSystem();
+        dateTimeZone0.getName((long) (-674), (Locale) null);
+        int int0 = (-4253);
+        int int1 = 57;
+        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone((-674), "America/Los_Angeles", (-1319), (-4253), 928, 928, 11, 1, 0, 11, 0, 459, 57);
+        int int2 = 2976;
+        int int3 = 60;
+        simpleTimeZone0.setEndRule(int2, int3, int1);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forTimeZone(simpleTimeZone0);
+        DateTimeZone dateTimeZone2 = DateTimeZone.forTimeZone(simpleTimeZone0);
+        dateTimeZone1.isStandardOffset(int0);
+        dateTimeZone1.isStandardOffset(int0);
+        dateTimeZone2.isFixed();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        NameProvider nameProvider0 = DateTimeZone.getNameProvider();
+        DateTimeZone.setNameProvider(nameProvider0);
+        DateTimeZone.getDefault();
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         int int0 = 24;
         int int1 = 1000;
         DateTimeZone.forOffsetHoursMinutes(24, 1000);
     }
 
     @Test(timeout = 4000)
-    public void test2910() throws Throwable {
+    public void test1919() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        DateTimeUtils.setCurrentMillisSystem();
+        DateTimeZone.setDefault(dateTimeZone0);
+        dateTimeZone0.getNameKey(2660L);
+        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
+        Locale locale1 = locale0.stripExtensions();
+        dateTimeZone0.UTC.getShortName(2660L, locale1);
+        dateTimeZone0.getName((-4462L));
+        dateTimeZone0.getName(10800000L);
+        dateTimeZone0.getShortName((-4462L));
+        dateTimeZone0.isFixed();
+        dateTimeZone0.isStandardOffset(2660L);
+        dateTimeZone0.getStandardOffset(2660L);
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        fixedDateTimeZone0.UTC.getStandardOffset((-1L));
+        fixedDateTimeZone0.UTC.toTimeZone();
+        Locale locale0 = Locale.CHINESE;
+        fixedDateTimeZone0.getName(2075L, locale0);
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        DateTimeUtils.setCurrentMillisFixed(13L);
+        dateTimeZone0.UTC.nextTransition(0);
+        fixedDateTimeZone0.convertLocalToUTC((long) 0, false);
+        DateTimeZone.getNameProvider();
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        DateTimeZone.forTimeZone((TimeZone) null);
+        dateTimeZone0.getStandardOffset((-257L));
+        dateTimeZone0.convertLocalToUTC((-1682L), true, 1658L);
+        DateTimeZone.setDefault((DateTimeZone) null);
+        long long0 = 0L;
+        String string0 = "S6C>.6qu=KV";
+        Locale locale0 = Locale.forLanguageTag(string0);
+        dateTimeZone0.getName(long0, locale0);
+        dateTimeZone0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(2186);
+        dateTimeZone0.isLocalDateTimeGap((LocalDateTime) null);
+        DateTimeZone.getAvailableIDs();
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
+        DateTimeZone.getProvider();
+        DateTimeZone.setDefault((DateTimeZone) null);
+        int int0 = 578;
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
+        TimeZone timeZone0 = TimeZone.getTimeZone("America/Denver");
+        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
+        dateTimeZone0.UTC.getNameKey(0L);
+        dateTimeZone0.nextTransition(0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        dateTimeZone0.convertUTCToLocal(0L);
+        Hours hours0 = Hours.SIX;
+        PeriodType periodType0 = hours0.getPeriodType();
+        Period period0 = new Period(0L, periodType0, (Chronology) buddhistChronology0);
+        buddhistChronology0.get((ReadablePeriod) period0, (-1L));
+        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(1, "/y<.b,", 1, 1, 1, 0, 0, 1, 1, 1915, 1);
+        DateTimeZone.forTimeZone(simpleTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
+        ZoneOffset zoneOffset0 = ZoneOffset.MAX;
+        TimeZone timeZone0 = TimeZone.getTimeZone((ZoneId) zoneOffset0);
+        DateTimeZone.forTimeZone(timeZone0);
+        DateTimeUtils.setCurrentMillisOffset(10800000L);
+        LocalDateTime.parse("4|rmN$}!tZmIy~tl$c");
+        ReadableDuration readableDuration0 = null;
+        int int0 = 1;
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
+        DateTimeZone.setProvider((Provider) null);
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        dateTimeZone0.getOffset((-351L));
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        fixedDateTimeZone0.adjustOffset(100000L, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
         DateTimeZone.getAvailableIDs();
         UTCProvider uTCProvider0 = new UTCProvider();
         uTCProvider0.getAvailableIDs();
@@ -191,7 +414,50 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3311() throws Throwable {
+    public void test3030() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        dateTimeZone0.UTC.adjustOffset(1, true);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis((-216));
+        Locale locale0 = Locale.CANADA;
+        dateTimeZone0.getName(0L, locale0);
+        Locale locale1 = Locale.FRANCE;
+        dateTimeZone0.getName(0L, locale1);
+        dateTimeZone0.convertLocalToUTC((-1107L), true);
+        TimeZone timeZone0 = TimeZone.getTimeZone("");
+        dateTimeZone0.UTC.toTimeZone();
+        DateTimeZone dateTimeZone2 = DateTimeZone.forTimeZone(timeZone0);
+        LocalDateTime localDateTime0 = LocalDateTime.now(dateTimeZone1);
+        dateTimeZone2.UTC.isLocalDateTimeGap(localDateTime0);
+        DateTimeZone.getAvailableIDs();
+        dateTimeZone0.getShortName(0L);
+        dateTimeZone2.previousTransition(0L);
+        DateTimeZone dateTimeZone3 = DateTimeZone.forOffsetMillis((-1858));
+        dateTimeZone3.UTC.getOffset((long) 1);
+        UTCProvider uTCProvider0 = new UTCProvider();
+        DateTimeZone.setProvider(uTCProvider0);
+        dateTimeZone3.nextTransition(1L);
+        DateTimeZone.getProvider();
+        dateTimeZone2.getNameKey(1L);
+        dateTimeZone0.isLocalDateTimeGap(localDateTime0);
+        dateTimeZone1.getOffsetFromLocal(0L);
+        DateTimeZone dateTimeZone4 = DateTimeZone.forTimeZone(timeZone0);
+        dateTimeZone4.getName((long) (-1858));
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        DateTimeZone.forID("z6gMi");
+        long long0 = (-1360L);
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        DateTimeZone.forOffsetHours(2);
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(1, 50);
         dateTimeZone0.UTC.previousTransition((-1425L));
         int int0 = dateTimeZone0.UTC.getOffset(0L);
@@ -209,7 +475,35 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3712() throws Throwable {
+    public void test3434() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetHours(0);
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone1);
+        DateTimeZone dateTimeZone2 = zonedChronology0.getZone();
+        dateTimeZone2.adjustOffset(0, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        TimeZone timeZone0 = TimeZone.getDefault();
+        DateTimeZone.forTimeZone(timeZone0);
+        DateTimeZone.forID("+&OxR7{L] |au,X");
+        long long0 = 2138L;
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        DateTime dateTime0 = new DateTime(498L);
+        DateTime dateTime1 = dateTime0.minusDays(1);
+        DateTime dateTime2 = dateTime1.withEarlierOffsetAtOverlap();
+        GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) dateTime2, 1);
+        DateTimeZone dateTimeZone0 = gJChronology0.getZone();
+        dateTimeZone0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(10, 10);
         dateTimeZone0.hashCode();
         DateTimeUtils.MillisProvider dateTimeUtils_MillisProvider0 = mock(DateTimeUtils.MillisProvider.class, new ViolatedAssumptionAnswer());
@@ -240,7 +534,17 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3913() throws Throwable {
+    public void test3838() throws Throwable {
+        TimeZone timeZone0 = TimeZone.getDefault();
+        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
+        DefaultNameProvider defaultNameProvider0 = new DefaultNameProvider();
+        Locale locale0 = Locale.ENGLISH;
+        defaultNameProvider0.getName(locale0, "America/St_Johns", "=8,))}b`:-");
+        dateTimeZone0.equals(defaultNameProvider0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3939() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         NameProvider nameProvider0 = DateTimeZone.getNameProvider();
         DateTimeZone.setNameProvider(nameProvider0);
@@ -255,7 +559,22 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4114() throws Throwable {
+    public void test4040() throws Throwable {
+        DateTimeZone.getAvailableIDs();
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(1000);
+        GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null);
+        DateMidnight dateMidnight0 = new DateMidnight((Chronology) gJChronology0);
+        Duration duration0 = Duration.parse((String) null);
+        Duration duration1 = duration0.withDurationAdded(2629800000L, 1000);
+        PeriodType periodType0 = PeriodType.standard();
+        PeriodType periodType1 = periodType0.withMinutesRemoved();
+        Period period0 = duration1.toPeriod(periodType1, (Chronology) gJChronology0);
+        dateMidnight0.plus((ReadablePeriod) period0);
+        dateTimeZone0.getOffset((ReadableInstant) dateMidnight0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4141() throws Throwable {
         int int0 = 1;
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(1);
         Interval interval0 = new Interval((-272L), 10800000L);
@@ -284,7 +603,139 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5215() throws Throwable {
+    public void test4242() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        IslamicChronology islamicChronology0 = IslamicChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
+        LenientChronology lenientChronology0 = LenientChronology.getInstance(islamicChronology0);
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(lenientChronology0, fixedDateTimeZone0);
+        DateTimeZone dateTimeZone0 = zonedChronology0.getZone();
+        LocalDateTime localDateTime0 = LocalDateTime.now(dateTimeZone0);
+        LocalDateTime localDateTime1 = localDateTime0.withMonthOfYear(1);
+        dateTimeZone0.isLocalDateTimeGap(localDateTime1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
+        Provider provider0 = DateTimeZone.getProvider();
+        DateTimeZone.setProvider(provider0);
+        ISOChronology iSOChronology0 = ISOChronology.getInstance();
+        Chronology chronology0 = iSOChronology0.withUTC();
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = gJChronology0.getZone();
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(chronology0, dateTimeZone0);
+        DateTimeZone dateTimeZone1 = zonedChronology0.getZone();
+        LocalTime localTime0 = LocalTime.now((Chronology) iSOChronology0);
+        zonedChronology0.set(localTime0, 605L);
+        dateTimeZone1.getName(605L);
+        dateTimeZone0.getMillisKeepLocal(dateTimeZone1, 0L);
+        DateTimeZone.forOffsetMillis((-970));
+        dateTimeZone0.convertLocalToUTC(605L, true);
+        dateTimeZone0.isLocalDateTimeGap((LocalDateTime) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test4444() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(2363);
+        dateTimeZone0.hashCode();
+        dateTimeZone0.toString();
+        dateTimeZone0.previousTransition(2596L);
+        dateTimeZone0.convertUTCToLocal(100000000000L);
+        dateTimeZone0.getOffsetFromLocal(1660L);
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
+        DateTimeZone.getNameProvider();
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        long long0 = (-47L);
+        dateTimeZone0.adjustOffset((-47L), false);
+        Locale locale0 = Locale.ITALIAN;
+        dateTimeZone0.getShortName((-47L), locale0);
+        dateTimeZone0.convertLocalToUTC((-47L), false);
+        UTCProvider uTCProvider0 = new UTCProvider();
+        dateTimeZone0.equals(uTCProvider0);
+        dateTimeZone0.getID();
+        JulianChronology julianChronology0 = JulianChronology.getInstance(dateTimeZone0);
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetHours(1822);
+        ZonedChronology.getInstance(julianChronology0, dateTimeZone1);
+        ReadablePartial readablePartial0 = null;
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(4);
+        dateTimeZone1.UTC.previousTransition(100L);
+        UTCProvider uTCProvider0 = new UTCProvider();
+        uTCProvider0.getAvailableIDs();
+        DateTimeZone.setProvider(uTCProvider0);
+        Locale locale0 = Locale.FRENCH;
+        locale0.toLanguageTag();
+        dateTimeZone0.getShortName((-922L), locale0);
+        dateTimeZone0.convertUTCToLocal(0L);
+        dateTimeZone0.convertLocalToUTC(1777L, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forID((String) null);
+        dateTimeZone0.isStandardOffset(30L);
+    }
+
+    @Test(timeout = 4000)
+    public void test4848() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.forOffsetMillis((-23));
+        ((DateTimeZone) fixedDateTimeZone0).writeReplace();
+        CachedDateTimeZone cachedDateTimeZone0 = (CachedDateTimeZone) DateTimeZone.getDefault();
+        Locale locale0 = Locale.CANADA;
+        Locale.Category locale_Category0 = Locale.Category.FORMAT;
+        Locale.setDefault(locale_Category0, locale0);
+        cachedDateTimeZone0.getShortName((long) (-23), locale0);
+        cachedDateTimeZone0.getName((long) (-23));
+        fixedDateTimeZone0.UTC.getMillisKeepLocal(cachedDateTimeZone0, (-2202L));
+        FixedDateTimeZone fixedDateTimeZone1 = (FixedDateTimeZone) DateTimeZone.forOffsetHoursMinutes((-23), 2);
+        fixedDateTimeZone0.equals(fixedDateTimeZone1);
+        CachedDateTimeZone cachedDateTimeZone1 = (CachedDateTimeZone) DateTimeZone.getDefault();
+        cachedDateTimeZone1.isFixed();
+        cachedDateTimeZone0.getOffsetFromLocal(1068L);
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
+        UTCProvider uTCProvider0 = new UTCProvider();
+        DateTimeZone dateTimeZone0 = uTCProvider0.getZone("UTC");
+        dateTimeZone0.nextTransition((-175L));
+        dateTimeZone0.adjustOffset(3386L, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        fixedDateTimeZone0.UTC.getOffsetFromLocal(9223372036854775807L);
+        fixedDateTimeZone0.UTC.getShortName(9223372036854775807L, (Locale) null);
+        fixedDateTimeZone0.isStandardOffset(31083663600000L);
+        fixedDateTimeZone0.getOffset(10000000000000L);
+        fixedDateTimeZone0.getID();
+        fixedDateTimeZone0.nextTransition(245L);
+    }
+
+    @Test(timeout = 4000)
+    public void test5151() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone((TimeZone) null);
+        DateTimeZone.getDefault();
+        dateTimeZone0.nextTransition(31557600000L);
+        dateTimeZone0.hashCode();
+        DateTimeZone dateTimeZone1 = DateTimeZone.getDefault();
+        DateTimeZone dateTimeZone2 = DateTimeZone.forTimeZone((TimeZone) null);
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        DateMidnight dateMidnight0 = new DateMidnight(0L, (Chronology) gJChronology0);
+        DateMidnight dateMidnight1 = dateMidnight0.withZoneRetainFields(dateTimeZone2);
+        dateTimeZone1.getOffset((ReadableInstant) dateMidnight1);
+        dateTimeZone2.isLocalDateTimeGap((LocalDateTime) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
         NameProvider nameProvider0 = null;
         DateTimeZone.setNameProvider((NameProvider) null);
         int int0 = 1139;
@@ -292,16 +743,88 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5416() throws Throwable {
+    public void test5353() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        DateTimeUtils.setCurrentMillisFixed((-845L));
+        dateTimeZone0.UTC.getStandardOffset(0L);
+        dateTimeZone0.UTC.previousTransition(0L);
+        JapaneseDate japaneseDate0 = MockJapaneseDate.now();
+        dateTimeZone0.getShortName((-845L));
+        dateTimeZone0.equals(japaneseDate0);
+        dateTimeZone0.UTC.previousTransition((-845L));
+        DateTimeZone.getDefault();
+        DateTimeUtils.setCurrentMillisFixed((-2720L));
+        dateTimeZone0.getNameKey((-128L));
+        dateTimeZone0.getOffsetFromLocal(1687L);
+        dateTimeZone0.convertLocalToUTC((long) (-28800000), false);
+        dateTimeZone0.convertUTCToLocal((-28800000));
+        Locale locale0 = Locale.UK;
+        dateTimeZone0.getName((-2720L), locale0);
+        DateTimeZone.setDefault(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5454() throws Throwable {
         int int0 = 86400000;
         DateTimeZone.forOffsetMillis(86400000);
     }
 
     @Test(timeout = 4000)
-    public void test5517() throws Throwable {
+    public void test5555() throws Throwable {
         int int0 = 204;
         DateTimeZone.forOffsetHoursMinutes(0, 204);
         DefaultNameProvider defaultNameProvider0 = null;
         defaultNameProvider0 = new DefaultNameProvider();
+    }
+
+    @Test(timeout = 4000)
+    public void test5656() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        fixedDateTimeZone0.UTC.convertLocalToUTC((-1066L), true);
+        TimeZone timeZone0 = fixedDateTimeZone0.toTimeZone();
+        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
+        DateTimeUtils.setCurrentMillisFixed((-1066L));
+        dateTimeZone0.UTC.getName(2451L);
+        dateTimeZone0.hashCode();
+        fixedDateTimeZone0.previousTransition((-1066L));
+        DateTimeZone dateTimeZone1 = DateTimeZone.forTimeZone(timeZone0);
+        Locale locale0 = Locale.FRENCH;
+        dateTimeZone1.UTC.getShortName(2451L, locale0);
+        dateTimeZone1.UTC.getStandardOffset((-1L));
+        DateTimeZone.getDefault();
+        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
+        LinkedList<Locale.LanguageRange> linkedList1 = new LinkedList<Locale.LanguageRange>();
+        LinkedList<Locale> linkedList2 = new LinkedList<Locale>();
+        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList1, (Collection<Locale>) linkedList2);
+        List<Locale> list1 = Locale.filter((List<Locale.LanguageRange>) linkedList1, (Collection<Locale>) list0);
+        Locale.FilteringMode locale_FilteringMode0 = Locale.FilteringMode.MAP_EXTENDED_RANGES;
+        Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) list1, locale_FilteringMode0);
+        dateTimeZone0.getOffsetFromLocal((-1066L));
+        dateTimeZone0.convertLocalToUTC((-354L), true);
+        dateTimeZone0.getName((long) 0, locale0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5757() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        long long0 = 1796L;
+        DateTimeUtils.setCurrentMillisFixed(1796L);
+        boolean boolean0 = true;
+        dateTimeZone0.convertLocalToUTC(9223372036854775807L, true);
+        long long1 = 60L;
+    }
+
+    @Test(timeout = 4000)
+    public void test5858() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(23);
+        DateTimeZone.setDefault(dateTimeZone0);
+        dateTimeZone0.UTC.getStandardOffset(23);
+        int int0 = 1;
+        int int1 = 32;
+        NameProvider nameProvider0 = DateTimeZone.getNameProvider();
+        DateTimeZone.setNameProvider(nameProvider0);
+        LocalDateTime localDateTime0 = new LocalDateTime(1, 1, 32, 32, 1265);
+        BuddhistChronology.getInstance();
+        int int2 = 435;
     }
 }

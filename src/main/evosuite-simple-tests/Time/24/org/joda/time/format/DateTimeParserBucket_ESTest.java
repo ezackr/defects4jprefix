@@ -43,7 +43,18 @@ import org.junit.runner.RunWith;
 public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        Locale locale0 = Locale.ENGLISH;
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.millisOfDay();
+        DateTimeField dateTimeField0 = dateTimeFieldType0.getField((Chronology) null);
+        OffsetDateTimeField offsetDateTimeField0 = new OffsetDateTimeField(dateTimeField0, dateTimeFieldType0, 73, 73, 73);
+        DateTimeParserBucket.SavedField dateTimeParserBucket_SavedField0 = new DateTimeParserBucket.SavedField(offsetDateTimeField0, 73);
+        DateTimeParserBucket.SavedField dateTimeParserBucket_SavedField1 = new DateTimeParserBucket.SavedField(dateTimeField0, "57600146", locale0);
+        dateTimeParserBucket_SavedField0.compareTo(dateTimeParserBucket_SavedField1);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.parse("43r]uw&4");
@@ -57,7 +68,18 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test022() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeField dateTimeField0 = buddhistChronology0.secondOfDay();
+        Locale locale0 = Locale.ITALY;
+        DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(0, buddhistChronology0, locale0, (Integer) 1);
+        dateTimeParserBucket0.saveField(dateTimeField0, 0);
+        DateTimeParserBucket.SavedState dateTimeParserBucket_SavedState0 = (DateTimeParserBucket.SavedState) dateTimeParserBucket0.saveState();
+        dateTimeParserBucket_SavedState0.restoreState(dateTimeParserBucket0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Locale locale0 = Locale.CANADA_FRENCH;
         Integer integer0 = new Integer(949);
@@ -77,7 +99,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test044() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
         Locale locale0 = Locale.CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(24L, buddhistChronology0, locale0, (Integer) buddhistChronology0.BE, 1);
@@ -86,7 +108,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test045() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
         Locale locale0 = Locale.CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(24L, buddhistChronology0, locale0, (Integer) buddhistChronology0.BE, 1);
@@ -95,7 +117,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test056() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.ITALIAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-2036L), gregorianChronology0, locale0);
@@ -104,7 +126,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test067() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID((String) null);
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance(dateTimeZone0);
         Locale locale0 = Locale.JAPANESE;
@@ -115,7 +137,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test078() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
@@ -126,7 +148,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test089() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(gJChronology0, dateTimeZone0);
@@ -140,7 +162,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test0910() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.TAIWAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1328L), gregorianChronology0, locale0);
@@ -150,7 +172,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1011() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         IslamicChronology.LeapYearPatternType islamicChronology_LeapYearPatternType0 = IslamicChronology.LEAP_YEAR_INDIAN;
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance((DateTimeZone) fixedDateTimeZone0, islamicChronology_LeapYearPatternType0);
@@ -161,7 +183,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1112() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone((TimeZone) null);
         CopticChronology copticChronology0 = CopticChronology.getInstance(dateTimeZone0);
         Chronology chronology0 = copticChronology0.withUTC();
@@ -172,7 +194,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1213() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
         Locale locale0 = Locale.ITALY;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(0L, buddhistChronology0, locale0, (Integer) 1);
@@ -181,7 +203,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1314() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
         DateTimeField dateTimeField0 = buddhistChronology0.secondOfDay();
         Locale locale0 = Locale.ITALY;
@@ -192,7 +214,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1415() throws Throwable {
         MillisDurationField millisDurationField0 = (MillisDurationField) MillisDurationField.INSTANCE;
         DurationFieldType durationFieldType0 = DurationFieldType.millis();
         ScaledDurationField scaledDurationField0 = new ScaledDurationField(millisDurationField0, durationFieldType0, 606);
@@ -201,7 +223,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1516() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
         Locale locale0 = Locale.ITALY;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(0L, buddhistChronology0, locale0, (Integer) 1);
@@ -218,7 +240,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1617() throws Throwable {
         JulianChronology julianChronology0 = JulianChronology.getInstance();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(912L, julianChronology0, locale0);
@@ -235,7 +257,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1718() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         Locale locale0 = Locale.JAPANESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(0L, ethiopicChronology0, locale0, (Integer) 1, 169200000);
@@ -253,7 +275,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1819() throws Throwable {
         Locale locale0 = Locale.PRC;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1321L), (Chronology) null, locale0);
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfHalfday();
@@ -271,7 +293,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1920() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Locale locale0 = Locale.CANADA_FRENCH;
         Integer integer0 = new Integer(949);
@@ -290,13 +312,13 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2021() throws Throwable {
         int int0 = DateTimeParserBucket.compareReverse((DurationField) null, (DurationField) null);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2122() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.clockhourOfDay();
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-1814));
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance(dateTimeZone0);
@@ -311,7 +333,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2223() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
         LenientChronology lenientChronology0 = LenientChronology.getInstance(ethiopicChronology0);
         Chronology chronology0 = lenientChronology0.withZone((DateTimeZone) null);
@@ -321,7 +343,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2224() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
         LenientChronology lenientChronology0 = LenientChronology.getInstance(ethiopicChronology0);
         Chronology chronology0 = lenientChronology0.withZone((DateTimeZone) null);
@@ -331,7 +353,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2325() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(243L, (Chronology) null, locale0, (Integer) null, (-3230));
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
@@ -350,7 +372,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2426() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstanceUTC();
         Locale locale0 = Locale.US;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1120L), iSOChronology0, locale0, (Integer) null, 32);
@@ -369,7 +391,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2527() throws Throwable {
         JulianChronology julianChronology0 = JulianChronology.getInstanceUTC();
         Locale locale0 = Locale.CANADA;
         Integer integer0 = Integer.valueOf(0);
@@ -385,7 +407,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2528() throws Throwable {
         JulianChronology julianChronology0 = JulianChronology.getInstanceUTC();
         Locale locale0 = Locale.CANADA;
         Integer integer0 = Integer.valueOf(0);
@@ -402,7 +424,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2629() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
         Locale locale0 = Locale.ITALY;
@@ -412,7 +434,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2730() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         Locale locale0 = Locale.ITALY;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(2077L, ethiopicChronology0, locale0, (Integer) 1, 1);
@@ -423,14 +445,14 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2831() throws Throwable {
         Integer integer0 = new Integer(0);
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(0L, (Chronology) null, (Locale) null, integer0, 0);
         assertEquals(0, dateTimeParserBucket0.getOffset());
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
+    public void test2932() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
         DateTimeField dateTimeField0 = buddhistChronology0.year();
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfDay();
@@ -442,7 +464,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3031() throws Throwable {
+    public void test3033() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstanceUTC();
         Locale locale0 = Locale.TAIWAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1120L), iSOChronology0, locale0, (Integer) null, (-3660));
@@ -463,7 +485,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3132() throws Throwable {
+    public void test3134() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.weeks();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         int int0 = DateTimeParserBucket.compareReverse(unsupportedDurationField0, unsupportedDurationField0);
@@ -471,7 +493,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3235() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstanceUTC();
         Locale locale0 = Locale.TAIWAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1120L), iSOChronology0, locale0, (Integer) null, (-3660));
@@ -491,7 +513,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3334() throws Throwable {
+    public void test3336() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Locale locale0 = Locale.CANADA_FRENCH;
         Integer integer0 = new Integer(949);
@@ -513,7 +535,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3435() throws Throwable {
+    public void test3437() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID((String) null);
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance(dateTimeZone0);
         DateTimeField dateTimeField0 = buddhistChronology0.secondOfDay();
@@ -523,7 +545,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3536() throws Throwable {
+    public void test3538() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -535,7 +557,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3537() throws Throwable {
+    public void test3539() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -548,7 +570,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3538() throws Throwable {
+    public void test3540() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -561,7 +583,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3639() throws Throwable {
+    public void test3641() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.ENGLISH;
         Integer integer0 = new Integer((-2347));
@@ -572,7 +594,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3640() throws Throwable {
+    public void test3642() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.ENGLISH;
         Integer integer0 = new Integer((-2347));
@@ -584,7 +606,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3641() throws Throwable {
+    public void test3643() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.ENGLISH;
         Integer integer0 = new Integer((-2347));
@@ -596,7 +618,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3742() throws Throwable {
+    public void test3744() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -605,7 +627,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3743() throws Throwable {
+    public void test3745() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -614,7 +636,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3844() throws Throwable {
+    public void test3846() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -624,7 +646,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3845() throws Throwable {
+    public void test3847() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         Locale locale0 = Locale.KOREAN;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(31449599966L, gregorianChronology0, locale0);
@@ -634,7 +656,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3946() throws Throwable {
+    public void test3948() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1328L), gregorianChronology0, locale0);
@@ -648,7 +670,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3947() throws Throwable {
+    public void test3949() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1328L), gregorianChronology0, locale0);
@@ -663,7 +685,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4048() throws Throwable {
+    public void test4050() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.JAPANESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1295L), gregorianChronology0, locale0);
@@ -673,7 +695,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4149() throws Throwable {
+    public void test4151() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.ENGLISH;
         Integer integer0 = new Integer((-2347));
@@ -683,7 +705,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4250() throws Throwable {
+    public void test4252() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         Locale locale0 = Locale.ITALY;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(2077L, ethiopicChronology0, locale0, (Integer) 1, 1);
@@ -692,7 +714,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4251() throws Throwable {
+    public void test4253() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         Locale locale0 = Locale.ITALY;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(2077L, ethiopicChronology0, locale0, (Integer) 1, 1);
@@ -701,7 +723,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4352() throws Throwable {
+    public void test4354() throws Throwable {
         JulianChronology julianChronology0 = JulianChronology.getInstance();
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(912L, julianChronology0, locale0);
@@ -710,7 +732,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4453() throws Throwable {
+    public void test4455() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID((String) null);
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance(dateTimeZone0);
         Locale locale0 = Locale.UK;
@@ -720,7 +742,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4554() throws Throwable {
+    public void test4556() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.JAPANESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1295L), gregorianChronology0, locale0);
@@ -729,7 +751,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4655() throws Throwable {
+    public void test4657() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         Locale locale0 = Locale.ITALY;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(2077L, ethiopicChronology0, locale0, (Integer) 1, 1);
@@ -738,7 +760,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4756() throws Throwable {
+    public void test4758() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1328L), gregorianChronology0, locale0);
@@ -747,7 +769,7 @@ public class DateTimeParserBucket_ESTest extends DateTimeParserBucket_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4757() throws Throwable {
+    public void test4759() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket((-1328L), gregorianChronology0, locale0);

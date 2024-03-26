@@ -57,7 +57,60 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0041() throws Throwable {
+    public void test0011() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((-552));
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.mark((-552));
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        char[] charArray0 = new char[8];
+        charArray0[0] = 'f';
+        charArray0[1] = 'f';
+        charArray0[2] = '{';
+        charArray0[3] = 'L';
+        charArray0[4] = 'O';
+        charArray0[5] = '[';
+        charArray0[6] = '+';
+        charArray0[7] = 'G';
+        strBuilder_StrBuilderWriter0.write(charArray0);
+        strBuilder_StrBuilderWriter0.write(4);
+        strBuilder_StrBuilderWriter0.flush();
+        StrBuilder strBuilder1 = strBuilder0.deleteAll('N');
+        strBuilder_StrBuilderReader0.close();
+        strBuilder1.replaceAll((String) null, "!E|@^;:4aA79");
+        strBuilder1.insert(0, "0VrUXQ*z");
+        strBuilder1.lastIndexOf("0VrUXQ*z", 101);
+    }
+
+    @Test(timeout = 4000)
+    public void test0022() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        strBuilder0.midString(0, 0);
+        strBuilder0.size = 0;
+        StrBuilder strBuilder1 = strBuilder0.appendln('[');
+        StrBuilder strBuilder2 = strBuilder1.insert(0, ']');
+        strBuilder2.appendln(strBuilder0, 0, 0);
+        StrBuilder strBuilder3 = strBuilder2.ensureCapacity(4);
+        strBuilder3.setNewLineText("");
+        strBuilder1.asReader();
+        strBuilder0.appendln((StringBuffer) null);
+        strBuilder0.hashCode();
+        StrBuilder strBuilder4 = strBuilder1.appendln((Object) strBuilder0);
+        StrMatcher strMatcher0 = StrMatcher.doubleQuoteMatcher();
+        strBuilder4.lastIndexOf(strMatcher0, 685);
+        StrBuilder strBuilder5 = strBuilder4.append('q');
+        strBuilder5.asTokenizer();
+        strBuilder1.replaceFirst((String) null, "");
+    }
+
+    @Test(timeout = 4000)
+    public void test0033() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("R/6*Sy");
+        strBuilder0.setNewLineText("E/rUkv\"*AV\"z./;IRE7");
+        strBuilder0.append(108);
+    }
+
+    @Test(timeout = 4000)
+    public void test0044() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((String) null);
         char[] charArray0 = new char[3];
         StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
@@ -94,7 +147,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0052() throws Throwable {
+    public void test0055() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(834);
         String string0 = "IP";
         strBuilder0.setNullText("IP");
@@ -117,7 +170,29 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0073() throws Throwable {
+    public void test0066() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = strBuilder0.insert(0, true);
+        StrBuilder strBuilder2 = strBuilder1.appendln(strBuilder0);
+        StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
+        strBuilder0.lastIndexOf((StrMatcher) strMatcher_NoMatcher0, 0);
+        StrBuilder strBuilder3 = strBuilder0.setLength(1959);
+        strBuilder0.contains((StrMatcher) null);
+        strBuilder0.asTokenizer();
+        StrBuilder strBuilder4 = strBuilder0.appendln((double) 0);
+        strBuilder2.equalsIgnoreCase(strBuilder4);
+        strBuilder4.substring(0);
+        strBuilder1.midString(1, 1);
+        strBuilder3.asReader();
+        strBuilder3.toString();
+        strBuilder0.midString(114, 2859);
+        strBuilder2.indexOf((StrMatcher) strMatcher_NoMatcher0);
+        strBuilder3.insert(989, false);
+        strBuilder4.deleteCharAt(114);
+    }
+
+    @Test(timeout = 4000)
+    public void test0077() throws Throwable {
         String string0 = "Invalid startIndex: ";
         StrBuilder strBuilder0 = new StrBuilder("Invalid startIndex: ");
         String string1 = "end < start";
@@ -135,7 +210,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0084() throws Throwable {
+    public void test0088() throws Throwable {
         String string0 = "Invalid startIndex: ";
         StrBuilder strBuilder0 = new StrBuilder("Invalid startIndex: ");
         int int0 = 102;
@@ -152,7 +227,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0095() throws Throwable {
+    public void test0099() throws Throwable {
         int int0 = 0;
         StrBuilder strBuilder0 = new StrBuilder(0);
         int int1 = 359;
@@ -170,7 +245,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0106() throws Throwable {
+    public void test01010() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         Object object0 = new Object();
         StrBuilder strBuilder1 = strBuilder0.appendln(object0);
@@ -197,7 +272,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0117() throws Throwable {
+    public void test01111() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("Invalid offset: ");
         StrBuilder strBuilder1 = strBuilder0.insert(0, 0.0);
         strBuilder0.asTokenizer();
@@ -241,7 +316,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0128() throws Throwable {
+    public void test01212() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StringBuffer stringBuffer0 = new StringBuffer();
         // Undeclared exception!
@@ -257,7 +332,18 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0149() throws Throwable {
+    public void test01313() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((-2289));
+        char[] charArray0 = new char[1];
+        charArray0[0] = 'U';
+        StrMatcher strMatcher0 = StrMatcher.charSetMatcher(charArray0);
+        strBuilder0.indexOf(strMatcher0, (-2289));
+        strBuilder0.lastIndexOf('U', 0);
+        strBuilder0.append((StringBuffer) null, 39, (-2289));
+    }
+
+    @Test(timeout = 4000)
+    public void test01414() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         // Undeclared exception!
         try {
@@ -272,7 +358,26 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01810() throws Throwable {
+    public void test01515() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((-4755));
+        strBuilder0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test01616() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(5);
+        strBuilder0.appendFixedWidthPadLeft((-3054), 5, '@');
+    }
+
+    @Test(timeout = 4000)
+    public void test01717() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("end < start");
+        strBuilder0.appendln(2231.297820044);
+        strBuilder0.append("end < start", 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01818() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         // Undeclared exception!
         try {
@@ -287,7 +392,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01911() throws Throwable {
+    public void test01919() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(102);
         StrBuilder strBuilder1 = strBuilder0.replaceAll('\"', '}');
         // Undeclared exception!
@@ -303,7 +408,55 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02512() throws Throwable {
+    public void test02020() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(834);
+        strBuilder0.setNullText("");
+        StrMatcher strMatcher0 = StrMatcher.charSetMatcher("Zur`0X0?1G`1b ^\"");
+        strBuilder0.contains(strMatcher0);
+        strBuilder0.appendFixedWidthPadRight(834, 1754, 'a');
+        StrBuilder strBuilder1 = strBuilder0.insert(834, "O{Foni=+j>qdQ");
+        strBuilder0.insert(32, 2432);
+        strBuilder1.lastIndexOf("", 2432);
+    }
+
+    @Test(timeout = 4000)
+    public void test02121() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
+        StrBuilder strBuilder1 = strBuilder0.deleteFirst((StrMatcher) strMatcher_NoMatcher0);
+        strBuilder1.insert(0, (-1177.988));
+        strBuilder0.append(102);
+    }
+
+    @Test(timeout = 4000)
+    public void test02222() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(2510);
+        strBuilder0.indexOf("", 2510);
+    }
+
+    @Test(timeout = 4000)
+    public void test02323() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("m7C:={b?9kU0J;pg");
+        StrBuilder strBuilder1 = strBuilder0.append('^');
+        StrBuilder strBuilder2 = strBuilder0.append(2059);
+        strBuilder2.midString(360, 360);
+        strBuilder0.isEmpty();
+        strBuilder0.asWriter();
+        StrBuilder strBuilder3 = strBuilder1.appendln((double) 2059);
+        strBuilder3.toString();
+        strBuilder1.appendSeparator('$');
+    }
+
+    @Test(timeout = 4000)
+    public void test02424() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("");
+        Integer integer0 = new Integer((-2195));
+        StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadLeft((Object) integer0, (-2195), '_');
+        strBuilder1.appendln(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test02525() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("org.apache.commons.lang.ArrayUtils");
         strBuilder0.deleteFirst("org.apache.commons.lang.ArrayUtils");
         strBuilder0.contains('{');
@@ -321,7 +474,18 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02713() throws Throwable {
+    public void test02626() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("@.k");
+        strBuilder0.append(true);
+        StringBuffer stringBuffer0 = new StringBuffer(1346);
+        strBuilder0.appendln(stringBuffer0);
+        strBuilder0.contains('7');
+        strBuilder0.asReader();
+        strBuilder0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test02727() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(456);
         char[] charArray0 = new char[0];
         // Undeclared exception!
@@ -337,7 +501,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02814() throws Throwable {
+    public void test02828() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(31);
         StringBuffer stringBuffer0 = new StringBuffer(31);
         // Undeclared exception!
@@ -353,7 +517,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02915() throws Throwable {
+    public void test02929() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((-36));
         StrBuilder strBuilder1 = strBuilder0.append('[');
         strBuilder1.appendNewLine();
@@ -377,7 +541,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03016() throws Throwable {
+    public void test03030() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(3);
         char[] charArray0 = new char[3];
         charArray0[0] = '8';
@@ -396,7 +560,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03117() throws Throwable {
+    public void test03131() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         strBuilder0.asTokenizer();
         StrBuilder strBuilder1 = strBuilder0.setNullText("org.apache.commons.lang.text.StrBuilder$StrBuilderReader");
@@ -417,7 +581,16 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03318() throws Throwable {
+    public void test03232() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(4769);
+        strBuilder0.toString();
+        StrBuilder strBuilder1 = strBuilder0.appendSeparator('r');
+        strBuilder1.appendln(4769);
+        strBuilder0.equalsIgnoreCase(strBuilder1);
+    }
+
+    @Test(timeout = 4000)
+    public void test03333() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(325);
         char[] charArray0 = new char[4];
         charArray0[0] = 'G';
@@ -437,7 +610,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03419() throws Throwable {
+    public void test03434() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("F@o!8");
         StrBuilder strBuilder1 = strBuilder0.deleteAll((StrMatcher) null);
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
@@ -465,7 +638,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03520() throws Throwable {
+    public void test03535() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(1147);
         StrMatcher strMatcher0 = StrMatcher.trimMatcher();
         StrMatcher.charSetMatcher("VEvev5~fcs[");
@@ -490,7 +663,76 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04121() throws Throwable {
+    public void test03636() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = strBuilder0.append("");
+        StrBuilder strBuilder2 = new StrBuilder(0);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder2.new StrBuilderTokenizer();
+        StrMatcher strMatcher0 = strBuilder_StrBuilderTokenizer0.getQuoteMatcher();
+        strBuilder1.replaceFirst(strMatcher0, "");
+        strBuilder0.append(true);
+        strBuilder0.insert(0, "nOfir>3qi9T!m");
+        StrBuilder strBuilder3 = strBuilder0.appendNewLine();
+        strBuilder0.contains("nOfir>3qi9T!m");
+        strBuilder3.appendln(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test03737() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        strBuilder0.toStringBuffer();
+        StrMatcher strMatcher0 = StrMatcher.trimMatcher();
+        char[] charArray0 = new char[6];
+        charArray0[0] = 'G';
+        charArray0[1] = 'v';
+        charArray0[2] = 'F';
+        charArray0[3] = ')';
+        charArray0[4] = 'z';
+        charArray0[5] = 'K';
+        StrMatcher.charSetMatcher(charArray0);
+        strBuilder0.replaceFirst(strMatcher0, "qJAKF$}f4^#)k}");
+    }
+
+    @Test(timeout = 4000)
+    public void test03838() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(1);
+        StrBuilder strBuilder1 = strBuilder0.appendln((long) 1);
+        strBuilder1.replaceFirst("^}(QHCFk ]cM", "^}(QHCFk ]cM");
+        StrBuilder strBuilder2 = strBuilder1.append(1);
+        strBuilder2.equals((Object) "b-rZ@n:cnT*bzu`");
+        StrBuilder strBuilder3 = strBuilder1.replaceAll("end < start", "end < start");
+        char[] charArray0 = new char[9];
+        charArray0[0] = 't';
+        charArray0[1] = '@';
+        charArray0[2] = 'P';
+        charArray0[3] = '~';
+        charArray0[4] = '*';
+        charArray0[5] = '!';
+        charArray0[6] = 'K';
+        charArray0[7] = '/';
+        charArray0[8] = 't';
+        strBuilder3.append(charArray0, 1, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test03939() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((-480));
+        strBuilder0.appendSeparator((String) null);
+        strBuilder0.replaceAll('!', '!');
+    }
+
+    @Test(timeout = 4000)
+    public void test04040() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        char[] charArray0 = new char[3];
+        charArray0[0] = 'r';
+        charArray0[1] = '8';
+        charArray0[2] = 'a';
+        strBuilder0.appendln(charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04141() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         strBuilder_StrBuilderTokenizer0.hasPrevious();
@@ -512,7 +754,18 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04322() throws Throwable {
+    public void test04242() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        StrTokenizer strTokenizer0 = strBuilder_StrBuilderTokenizer0.setEmptyTokenAsNull(false);
+        strBuilder0.appendWithSeparators((Iterator) strTokenizer0, "nX%?OQrc\"CY\"1z(nX*");
+        strBuilder_StrBuilderWriter0.write(539);
+        strBuilder0.appendFixedWidthPadLeft(48, 1972, 'R');
+    }
+
+    @Test(timeout = 4000)
+    public void test04343() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         StrBuilder strBuilder1 = strBuilder0.insert(0, 'd');
         String string0 = "";
@@ -531,7 +784,21 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04523() throws Throwable {
+    public void test04444() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.reset();
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        StrMatcher strMatcher0 = strBuilder_StrBuilderTokenizer0.getDelimiterMatcher();
+        strBuilder0.indexOf(strMatcher0, 0);
+        strBuilder0.lastIndexOf('m');
+        strBuilder0.trim();
+        StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadLeft((Object) "2P.nU#v77@y", 0, 'H');
+        strBuilder1.reverse();
+    }
+
+    @Test(timeout = 4000)
+    public void test04545() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = strBuilder0.append(4090.064F);
         StrMatcher strMatcher0 = StrMatcher.doubleQuoteMatcher();
@@ -551,7 +818,36 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04824() throws Throwable {
+    public void test04646() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("aQGev(0");
+        StrBuilder strBuilder1 = strBuilder0.setLength(0);
+        strBuilder1.append(false);
+        strBuilder1.appendFixedWidthPadLeft(0, 0, '$');
+        strBuilder0.appendln((float) 0);
+        strBuilder0.getNullText();
+        strBuilder0.appendFixedWidthPadRight((Object) "aQGev(0", 0, '&');
+    }
+
+    @Test(timeout = 4000)
+    public void test04747() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = strBuilder0.deleteFirst("");
+        strBuilder1.setLength(779);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        strBuilder_StrBuilderTokenizer0.getContent();
+        char[] charArray0 = new char[7];
+        charArray0[0] = 'J';
+        charArray0[1] = 'r';
+        charArray0[2] = 'p';
+        charArray0[3] = 'x';
+        charArray0[4] = 'c';
+        charArray0[5] = '.';
+        charArray0[6] = 'v';
+        strBuilder0.insert(115, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04848() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("F8rnT");
         // Undeclared exception!
         try {
@@ -566,7 +862,18 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05025() throws Throwable {
+    public void test04949() throws Throwable {
+        StrMatcher.stringMatcher("0sr$z5YcO{Qh!-");
+        StrMatcher.stringMatcher("0sr$z5YcO{Qh!-");
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = new StrBuilder("evj=I");
+        strBuilder0.appendln((Object) strBuilder1);
+        StrMatcher.stringMatcher("");
+        strBuilder0.trim();
+    }
+
+    @Test(timeout = 4000)
+    public void test05050() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("Invalid offset: ");
         StrMatcher.StringMatcher strMatcher_StringMatcher0 = new StrMatcher.StringMatcher("Invalid offset: ");
         strBuilder0.indexOf((StrMatcher) strMatcher_StringMatcher0);
@@ -591,7 +898,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05126() throws Throwable {
+    public void test05151() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((-1411));
         char[] charArray0 = new char[2];
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
@@ -614,7 +921,70 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05727() throws Throwable {
+    public void test05252() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("[-'7ZJ8:PDo");
+        strBuilder0.contains((StrMatcher) null);
+        strBuilder0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test05353() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = new StrBuilder("}Fks{,-}\"j");
+        strBuilder0.append(strBuilder1, 0, 0);
+        char[] charArray0 = strBuilder0.toCharArray(0, 0);
+        strBuilder0.getNewLineText();
+        StrTokenizer strTokenizer0 = StrTokenizer.getTSVInstance(charArray0);
+        StrBuilder strBuilder2 = strBuilder0.appendWithSeparators((Iterator) strTokenizer0, (String) null);
+        strBuilder2.appendPadding(101, 'M');
+        strBuilder0.contains((String) null);
+        strBuilder0.clear();
+        strBuilder1.append("}Fks{,-}\"j");
+    }
+
+    @Test(timeout = 4000)
+    public void test05454() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("hfA.sSygE5K RmG>j@");
+        strBuilder0.getNullText();
+        Reader reader0 = strBuilder0.asReader();
+        StrBuilder strBuilder1 = strBuilder0.appendln(1);
+        Object[] objectArray0 = new Object[9];
+        objectArray0[0] = (Object) strBuilder0;
+        objectArray0[1] = (Object) null;
+        objectArray0[2] = (Object) null;
+        objectArray0[3] = (Object) null;
+        objectArray0[4] = (Object) strBuilder1;
+        objectArray0[5] = (Object) strBuilder0;
+        objectArray0[6] = (Object) strBuilder1;
+        objectArray0[7] = (Object) reader0;
+        objectArray0[8] = (Object) strBuilder1;
+        strBuilder1.appendWithSeparators(objectArray0, "");
+        strBuilder0.append(strBuilder1);
+    }
+
+    @Test(timeout = 4000)
+    public void test05555() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = new StrBuilder((-1976));
+        strBuilder0.appendSeparator("length must be valid");
+    }
+
+    @Test(timeout = 4000)
+    public void test05656() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("!cw?O'");
+        StrMatcher strMatcher0 = StrMatcher.tabMatcher();
+        StrBuilder strBuilder1 = strBuilder0.deleteAll(strMatcher0);
+        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "!cw?O'");
+        strBuilder1.append(stringBuffer0, 5, 0);
+        StrBuilder strBuilder2 = strBuilder0.deleteAll('2');
+        strBuilder2.asReader();
+        strBuilder0.appendSeparator(",@T \r *13=", 0);
+        strBuilder0.insert(0, 0L);
+        strBuilder1.minimizeCapacity();
+    }
+
+    @Test(timeout = 4000)
+    public void test05757() throws Throwable {
         String string0 = "";
         StrBuilder strBuilder0 = new StrBuilder("");
         StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
@@ -642,7 +1012,24 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05928() throws Throwable {
+    public void test05858() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = strBuilder0.appendln(0.0F);
+        strBuilder1.setNullText("~lK+A\"=1tR");
+        StrBuilder strBuilder2 = strBuilder0.setNewLineText("Invalid offset: ");
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder2.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.reset();
+        strBuilder_StrBuilderReader0.ready();
+        strBuilder2.lastIndexOf('-', 0);
+        StrBuilder strBuilder3 = strBuilder2.appendSeparator("~mx");
+        strBuilder0.append("");
+        strBuilder3.appendPadding(0, '8');
+        strBuilder2.appendln((long) (-1));
+        strBuilder1.indexOf('8', (-1));
+    }
+
+    @Test(timeout = 4000)
+    public void test05959() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         StrBuilder strBuilder1 = new StrBuilder("hOe");
         strBuilder0.appendln((Object) strBuilder1);
@@ -662,7 +1049,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06029() throws Throwable {
+    public void test06060() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         char char0 = 'C';
         String string0 = "";
@@ -685,7 +1072,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06130() throws Throwable {
+    public void test06161() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadRight(0, 0, '?');
         int int0 = 97;
@@ -715,7 +1102,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06231() throws Throwable {
+    public void test06262() throws Throwable {
         String string0 = "";
         StrBuilder strBuilder0 = new StrBuilder("");
         StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
@@ -745,7 +1132,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06332() throws Throwable {
+    public void test06363() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         StrMatcher strMatcher0 = strBuilder_StrBuilderTokenizer0.getDelimiterMatcher();
@@ -774,7 +1161,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06433() throws Throwable {
+    public void test06464() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(44);
         char[] charArray0 = new char[8];
         charArray0[0] = 'J';
@@ -799,7 +1186,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06534() throws Throwable {
+    public void test06565() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         StrBuilder strBuilder1 = new StrBuilder("hOe");
         strBuilder0.appendln((Object) strBuilder1);
@@ -820,7 +1207,15 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06735() throws Throwable {
+    public void test06666() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = new StrBuilder((-1976));
+        strBuilder0.appendFixedWidthPadLeft((Object) strBuilder1, (-1976), ')');
+        strBuilder0.appendSeparator("length must be valid");
+    }
+
+    @Test(timeout = 4000)
+    public void test06767() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = new StrBuilder(0);
         StrBuilder strBuilder2 = strBuilder1.append("StrTokenizer");
@@ -848,7 +1243,16 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06936() throws Throwable {
+    public void test06868() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        Object object0 = strBuilder_StrBuilderTokenizer0.cloneReset();
+        strBuilder0.appendFixedWidthPadRight(object0, (-1066), 'r');
+        strBuilder0.insert(0, (Object) "");
+    }
+
+    @Test(timeout = 4000)
+    public void test06969() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         char char0 = '_';
@@ -867,7 +1271,44 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07337() throws Throwable {
+    public void test07070() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((String) null);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        strBuilder_StrBuilderTokenizer0.getContent();
+        StrBuilder strBuilder1 = new StrBuilder(0);
+        strBuilder0.appendln(strBuilder1);
+    }
+
+    @Test(timeout = 4000)
+    public void test07171() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((String) null);
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
+        strBuilder0.leftString(46);
+        strBuilder0.rightString(46);
+        StrBuilder strBuilder1 = strBuilder0.appendln("w}?TDcHSVa_C\u0000]");
+        strBuilder1.hashCode();
+        strBuilder1.indexOf("xs{*:,");
+    }
+
+    @Test(timeout = 4000)
+    public void test07272() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        StrTokenizer strTokenizer0 = strBuilder_StrBuilderTokenizer0.setQuoteChar('i');
+        StrBuilder strBuilder1 = strBuilder0.appendWithSeparators((Iterator) strTokenizer0, "");
+        Object[] objectArray0 = new Object[7];
+        objectArray0[0] = (Object) "";
+        objectArray0[1] = (Object) strBuilder_StrBuilderTokenizer0;
+        objectArray0[2] = (Object) strBuilder0;
+        objectArray0[3] = (Object) strBuilder1;
+        objectArray0[4] = (Object) strTokenizer0;
+        objectArray0[5] = (Object) "";
+        objectArray0[6] = (Object) strBuilder0;
+        strBuilder0.appendAll(objectArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07373() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(31);
         // Undeclared exception!
         try {
@@ -882,7 +1323,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07438() throws Throwable {
+    public void test07474() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         String string0 = null;
         StrBuilder strBuilder1 = strBuilder0.appendSeparator((String) null, 0);
@@ -896,7 +1337,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07539() throws Throwable {
+    public void test07575() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((-727));
         int int0 = (-45);
         char char0 = 'o';
@@ -917,7 +1358,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07640() throws Throwable {
+    public void test07676() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         String string0 = null;
         StrBuilder strBuilder1 = new StrBuilder((String) null);
@@ -942,7 +1383,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07741() throws Throwable {
+    public void test07777() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(5);
         StrBuilder strBuilder1 = new StrBuilder();
         char[] charArray0 = new char[2];
@@ -965,7 +1406,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07842() throws Throwable {
+    public void test07878() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("user.region");
         strBuilder0.clear();
         strBuilder0.capacity();
@@ -985,7 +1426,36 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08143() throws Throwable {
+    public void test07979() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((String) null);
+        Object[] objectArray0 = new Object[7];
+        objectArray0[0] = (Object) strBuilder0;
+        objectArray0[1] = (Object) strBuilder0;
+        objectArray0[2] = (Object) null;
+        objectArray0[3] = (Object) strBuilder0;
+        objectArray0[4] = (Object) null;
+        StrBuilder strBuilder1 = strBuilder0.append(731);
+        objectArray0[5] = (Object) strBuilder0;
+        objectArray0[6] = (Object) strBuilder0;
+        strBuilder0.appendWithSeparators(objectArray0, (String) null);
+        strBuilder0.capacity();
+        StrBuilder strBuilder2 = strBuilder1.appendNewLine();
+        strBuilder2.validateRange(117, 731);
+        strBuilder2.insert(253, (char[]) null);
+        strBuilder2.insert(117, 'L');
+        strBuilder0.rightString(731);
+        strBuilder1.append(false);
+    }
+
+    @Test(timeout = 4000)
+    public void test08080() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        strBuilder0.deleteFirst("E^|YbFb@Ba:A[Q");
+        strBuilder0.toStringBuffer();
+    }
+
+    @Test(timeout = 4000)
+    public void test08181() throws Throwable {
         int int0 = 5;
         StrBuilder strBuilder0 = new StrBuilder(5);
         StrBuilder strBuilder1 = new StrBuilder();
@@ -1016,7 +1486,44 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08544() throws Throwable {
+    public void test08282() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("M&Us");
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.read();
+    }
+
+    @Test(timeout = 4000)
+    public void test08383() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("");
+        StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadRight(48, 0, 'q');
+        StrMatcher strMatcher0 = StrMatcher.quoteMatcher();
+        strBuilder0.indexOf(strMatcher0, 0);
+        strBuilder1.minimizeCapacity();
+        strBuilder0.deleteFirst("");
+        strBuilder0.append(strBuilder1);
+    }
+
+    @Test(timeout = 4000)
+    public void test08484() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        strBuilder0.endsWith("'-!4W[0we($ST");
+        Object[] objectArray0 = new Object[9];
+        objectArray0[0] = (Object) "'-!4W[0we($ST";
+        objectArray0[1] = (Object) strBuilder0;
+        objectArray0[2] = (Object) strBuilder0;
+        objectArray0[3] = (Object) strBuilder0;
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        Object object0 = strBuilder_StrBuilderTokenizer0.clone();
+        objectArray0[4] = object0;
+        objectArray0[5] = (Object) strBuilder0;
+        objectArray0[6] = (Object) strBuilder0;
+        objectArray0[7] = (Object) "'-!4W[0we($ST";
+        objectArray0[8] = (Object) strBuilder0;
+        strBuilder0.appendWithSeparators(objectArray0, "");
+    }
+
+    @Test(timeout = 4000)
+    public void test08585() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("java.specification.name");
         StringBuffer stringBuffer0 = new StringBuffer(0);
         strBuilder0.append(stringBuffer0, 0, 0);
@@ -1041,7 +1548,23 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08745() throws Throwable {
+    public void test08686() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        StrMatcher strMatcher0 = strBuilder_StrBuilderTokenizer0.getQuoteMatcher();
+        char[] charArray0 = new char[3];
+        charArray0[0] = '4';
+        charArray0[1] = 'f';
+        charArray0[2] = '}';
+        strMatcher0.isMatch(charArray0, 3724, 3724, 3724);
+        strBuilder0.append((StrBuilder) null, 0, 0);
+        StrMatcher.charMatcher('U');
+        strBuilder0.indexOf(strMatcher0, 1955);
+        strBuilder0.lastIndexOf('w');
+    }
+
+    @Test(timeout = 4000)
+    public void test08787() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("j=:4,XR*");
         int int0 = 9;
         strBuilder0.appendSeparator("j=:4,XR*", 9);
@@ -1064,7 +1587,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08846() throws Throwable {
+    public void test08888() throws Throwable {
         String string0 = "&=a='<@]7\"SL)mn";
         StrBuilder strBuilder0 = new StrBuilder("&=a='<@]7\"SL)mn");
         StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
@@ -1084,7 +1607,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08947() throws Throwable {
+    public void test08989() throws Throwable {
         int int0 = 0;
         StrBuilder strBuilder0 = new StrBuilder(0);
         char char0 = 'X';
@@ -1110,7 +1633,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09048() throws Throwable {
+    public void test09090() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = (-632);
         // Undeclared exception!
@@ -1126,7 +1649,22 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09249() throws Throwable {
+    public void test09191() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = strBuilder0.insert(0, (-1L));
+        strBuilder0.append("org.apache.commons.lang.text.StrBuilder$StrBuilderWriter");
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder1.new StrBuilderWriter();
+        strBuilder_StrBuilderWriter0.write(0);
+        char[] charArray0 = new char[4];
+        charArray0[0] = '9';
+        charArray0[1] = '>';
+        charArray0[2] = '0';
+        charArray0[3] = 'K';
+        strBuilder0.insert(0, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09292() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = new StrBuilder();
         strBuilder0.appendFixedWidthPadRight((Object) strBuilder1, (-416), '[');
@@ -1143,7 +1681,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09350() throws Throwable {
+    public void test09393() throws Throwable {
         String string0 = "V!^/XJ_6vB*2=";
         StrBuilder strBuilder0 = new StrBuilder("V!^/XJ_6vB*2=");
         StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
@@ -1163,7 +1701,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09451() throws Throwable {
+    public void test09494() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("T0/f*");
         int int0 = 0;
         char[] charArray0 = new char[4];
@@ -1180,7 +1718,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09552() throws Throwable {
+    public void test09595() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         strBuilder0.size = 0;
         strBuilder0.indexOf((StrMatcher) null);
@@ -1206,7 +1744,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09653() throws Throwable {
+    public void test09696() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = strBuilder0.append(579.8806005091);
         strBuilder1.append(0.0F);
@@ -1224,7 +1762,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09754() throws Throwable {
+    public void test09797() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("e\"l^5QU3z");
         strBuilder0.minimizeCapacity();
         strBuilder0.asTokenizer();
@@ -1243,7 +1781,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09855() throws Throwable {
+    public void test09898() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         String string0 = "user.timezone";
         strBuilder0.appendSeparator("user.timezone");
@@ -1263,7 +1801,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09956() throws Throwable {
+    public void test09999() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         char[] charArray0 = new char[5];
         charArray0[0] = 'D';
@@ -1297,7 +1835,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10057() throws Throwable {
+    public void test100100() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(1817);
         // Undeclared exception!
         try {
@@ -1312,7 +1850,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10158() throws Throwable {
+    public void test101101() throws Throwable {
         int int0 = (-1286);
         StrBuilder strBuilder0 = new StrBuilder((-1286));
         int int1 = 44;
@@ -1329,7 +1867,15 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10359() throws Throwable {
+    public void test102102() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        strBuilder_StrBuilderWriter0.write((String) null, 0, 2);
+        strBuilder_StrBuilderWriter0.write(138);
+    }
+
+    @Test(timeout = 4000)
+    public void test103103() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         // Undeclared exception!
         try {
@@ -1344,7 +1890,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10460() throws Throwable {
+    public void test104104() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = 500;
         char char0 = 'I';
@@ -1361,7 +1907,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10561() throws Throwable {
+    public void test105105() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         strBuilder0.ensureCapacity(1950);
         int int0 = 101;
@@ -1378,7 +1924,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10662() throws Throwable {
+    public void test106106() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((String) null);
         int int0 = 3;
         strBuilder0.append(3);
@@ -1395,7 +1941,13 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10863() throws Throwable {
+    public void test107107() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("1.5");
+        strBuilder0.replaceAll('B', 'B');
+    }
+
+    @Test(timeout = 4000)
+    public void test108108() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(5);
         StrBuilder strBuilder1 = strBuilder0.appendln(false);
         char[] charArray0 = new char[8];
@@ -1421,7 +1973,27 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11064() throws Throwable {
+    public void test109109() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        LinkedList<Object> linkedList0 = new LinkedList<Object>();
+        StrBuilder strBuilder1 = strBuilder0.appendWithSeparators((Collection) linkedList0, "WHu-'I|;vxdN");
+        strBuilder1.appendSeparator('m');
+        strBuilder0.appendWithSeparators((Collection) linkedList0, "WHu-'I|;vxdN");
+        StrBuilder strBuilder2 = strBuilder0.deleteAll(' ');
+        strBuilder2.appendSeparator('j', 0);
+        StrBuilder strBuilder3 = strBuilder0.appendAll((Collection) linkedList0);
+        strBuilder3.appendWithSeparators((Collection) linkedList0, "WHu-'I|;vxdN");
+        strBuilder0.appendln(false);
+        StrBuilder strBuilder4 = strBuilder2.append((char[]) null, 1720, 0);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder4.new StrBuilderTokenizer();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        strBuilder4.appendln(stringBuffer0);
+        strBuilder_StrBuilderTokenizer0.tokenize((char[]) null, 48, 1720);
+        strBuilder3.append((long) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test110110() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         char[] charArray0 = new char[8];
@@ -1447,7 +2019,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11165() throws Throwable {
+    public void test111111() throws Throwable {
         int int0 = (-1644);
         StrBuilder strBuilder0 = new StrBuilder((-1644));
         StrMatcher strMatcher0 = StrMatcher.trimMatcher();
@@ -1466,7 +2038,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11266() throws Throwable {
+    public void test112112() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         String string0 = "startIndex must be valid";
         StrMatcher.StringMatcher strMatcher_StringMatcher0 = new StrMatcher.StringMatcher("startIndex must be valid");
@@ -1499,7 +2071,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11367() throws Throwable {
+    public void test113113() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         String string0 = "";
         StrBuilder strBuilder1 = new StrBuilder("");
@@ -1517,7 +2089,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11468() throws Throwable {
+    public void test114114() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         strBuilder0.append(0);
         char char0 = '9';
@@ -1535,7 +2107,31 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11669() throws Throwable {
+    public void test115115() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("!cw?O'");
+        StrMatcher strMatcher0 = StrMatcher.tabMatcher();
+        StrBuilder strBuilder1 = strBuilder0.deleteAll(strMatcher0);
+        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "!cw?O'");
+        strBuilder1.append(stringBuffer0, 5, 0);
+        StrBuilder strBuilder2 = strBuilder0.deleteAll('2');
+        char[] charArray0 = new char[6];
+        charArray0[0] = '2';
+        charArray0[1] = '2';
+        charArray0[2] = '2';
+        charArray0[3] = '2';
+        charArray0[4] = '`';
+        charArray0[5] = '2';
+        StrBuilder strBuilder3 = strBuilder2.appendln(charArray0);
+        strBuilder2.asReader();
+        strBuilder0.appendSeparator(",@T \r *13=", 0);
+        strBuilder0.insert(0, 0L);
+        StrBuilder strBuilder4 = strBuilder3.replaceFirst('2', '`');
+        strBuilder1.minimizeCapacity();
+        strBuilder4.appendSeparator(",@T \r *13=");
+    }
+
+    @Test(timeout = 4000)
+    public void test116116() throws Throwable {
         String string0 = "> 2$q @(zkv()&";
         StrBuilder strBuilder0 = new StrBuilder("> 2$q @(zkv()&");
         StrBuilder strBuilder1 = strBuilder0.appendln(0.0F);
@@ -1558,7 +2154,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11770() throws Throwable {
+    public void test117117() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("UPjo(AzNrC%:");
         StrBuilder strBuilder1 = strBuilder0.append(0.0);
         char char0 = 'n';
@@ -1578,7 +2174,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11871() throws Throwable {
+    public void test118118() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         strBuilder0.replace((StrMatcher) null, "B iI'(", 0, 0, 57);
         int int0 = 26;
@@ -1600,7 +2196,17 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12072() throws Throwable {
+    public void test119119() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("OmsjU;A*2A$S");
+        strBuilder0.substring(5);
+        StrBuilder strBuilder1 = strBuilder0.deleteAll(";A*2A$S");
+        strBuilder1.deleteAll('H');
+        strBuilder0.asTokenizer();
+        strBuilder0.replaceAll("OmsjU;A*2A$S", "OmsjU;A*2A$S");
+    }
+
+    @Test(timeout = 4000)
+    public void test120120() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((-818));
         StrMatcher.splitMatcher();
         char[] charArray0 = new char[2];
@@ -1620,7 +2226,22 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12373() throws Throwable {
+    public void test121121() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("user.language");
+        LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
+        linkedList0.remove((Object) "user.language");
+        strBuilder0.appendAll((Collection) linkedList0);
+        strBuilder0.appendNewLine();
+    }
+
+    @Test(timeout = 4000)
+    public void test122122() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(">");
+        strBuilder0.appendSeparator('1', 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test123123() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         strBuilder_StrBuilderTokenizer0.hasNext();
@@ -1647,7 +2268,20 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12574() throws Throwable {
+    public void test124124() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((String) null);
+        LinkedList<Object> linkedList0 = new LinkedList<Object>();
+        StrBuilder strBuilder1 = strBuilder0.setNullText((String) null);
+        strBuilder0.indexOf((StrMatcher) null, 514);
+        strBuilder1.asTokenizer();
+        StrBuilder strBuilder2 = strBuilder1.append((long) (-1));
+        strBuilder2.asWriter();
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder1.new StrBuilderWriter();
+        strBuilder_StrBuilderWriter0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test125125() throws Throwable {
         String string0 = "java.vm.info";
         StrBuilder strBuilder0 = new StrBuilder("java.vm.info");
         int int0 = 1647;
@@ -1664,7 +2298,39 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12875() throws Throwable {
+    public void test126126() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        char[] charArray0 = new char[6];
+        charArray0[0] = 'a';
+        charArray0[1] = '.';
+        charArray0[3] = 'a';
+        charArray0[4] = '/';
+        charArray0[5] = '[';
+        strBuilder0.append(charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test127127() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = strBuilder0.deleteAll("");
+        strBuilder1.append(0);
+        strBuilder1.replaceFirst("", "3($^nL:uM.7pnb]");
+        strBuilder1.indexOf("java.vm.name");
+        char[] charArray0 = new char[9];
+        charArray0[0] = 'm';
+        charArray0[1] = '$';
+        charArray0[2] = 'G';
+        charArray0[3] = 'Y';
+        charArray0[4] = '0';
+        charArray0[5] = 'Z';
+        charArray0[6] = ']';
+        charArray0[7] = 't';
+        charArray0[8] = 'c';
+        strBuilder0.insert(0, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test128128() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         StrMatcher strMatcher0 = StrMatcher.trimMatcher();
         strBuilder0.indexOf(strMatcher0);
@@ -1687,7 +2353,47 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13176() throws Throwable {
+    public void test129129() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("startIndex must be valid");
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer1 = strBuilder0.new StrBuilderTokenizer();
+        StrMatcher strMatcher0 = strBuilder_StrBuilderTokenizer1.getQuoteMatcher();
+        strBuilder0.appendNull();
+        strBuilder_StrBuilderTokenizer0.setTrimmerMatcher(strMatcher0);
+        strBuilder_StrBuilderTokenizer0.tokenize((char[]) null, 31, 578);
+        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "startIndex must be valid");
+        stringBuffer0.appendCodePoint(9);
+        StrBuilder strBuilder1 = strBuilder0.appendln(stringBuffer0);
+        strMatcher0.isMatch((char[]) null, 5, 2553, 9);
+        strBuilder0.deleteAll("");
+        strBuilder1.replace(strMatcher0, "", 31, 578, 31);
+        strBuilder0.setNewLineText("HP-UX");
+        strBuilder1.substring(31);
+        strBuilder1.append(true);
+        char[] charArray0 = new char[3];
+        charArray0[0] = '';
+        charArray0[1] = 'R';
+        charArray0[2] = '\'';
+        strBuilder0.insert(0, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test130130() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        StrBuilder strBuilder1 = strBuilder0.append(0L);
+        strBuilder1.appendln(0L);
+        StrBuilder strBuilder2 = strBuilder0.append(stringBuffer0);
+        StrBuilder strBuilder3 = strBuilder0.appendln(stringBuffer0);
+        strBuilder3.replace(0, 0, "qJNt5V[5(A?N}qe");
+        StrBuilder strBuilder4 = strBuilder0.appendSeparator('%');
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder4.new StrBuilderTokenizer();
+        StrTokenizer strTokenizer0 = strBuilder_StrBuilderTokenizer0.setIgnoreEmptyTokens(false);
+        strBuilder2.appendWithSeparators((Iterator) strTokenizer0, "org.apache.commons.lang.text.StrBuilder$StrBuilderWriter");
+    }
+
+    @Test(timeout = 4000)
+    public void test131131() throws Throwable {
         int int0 = 934;
         StrBuilder strBuilder0 = new StrBuilder(934);
         StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
@@ -1705,7 +2411,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13277() throws Throwable {
+    public void test132132() throws Throwable {
         String string0 = " K,ZgkkB4El|e";
         StrBuilder strBuilder0 = new StrBuilder(" K,ZgkkB4El|e");
         StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
@@ -1727,7 +2433,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13378() throws Throwable {
+    public void test133133() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         char[] charArray0 = new char[2];
         charArray0[0] = 'n';
@@ -1751,7 +2457,14 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13579() throws Throwable {
+    public void test134134() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("00}nq%<");
+        strBuilder0.indexOf("m~");
+        strBuilder0.startsWith("SO]1");
+    }
+
+    @Test(timeout = 4000)
+    public void test135135() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(39);
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         StrBuilder strBuilder1 = strBuilder0.clear();
@@ -1774,7 +2487,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13680() throws Throwable {
+    public void test136136() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         char[] charArray0 = new char[1];
         charArray0[0] = '(';
@@ -1805,7 +2518,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13781() throws Throwable {
+    public void test137137() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         String string0 = "xLN+>^&S\"@";
         StrBuilder strBuilder1 = strBuilder0.deleteAll("xLN+>^&S\"@");
@@ -1841,7 +2554,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13882() throws Throwable {
+    public void test138138() throws Throwable {
         int int0 = 1494;
         StrBuilder strBuilder0 = new StrBuilder(1494);
         StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadLeft(1494, 5, 'e');
@@ -1869,7 +2582,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13983() throws Throwable {
+    public void test139139() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = strBuilder0.clear();
         strBuilder1.appendSeparator("g?G", (-1));
@@ -1891,7 +2604,62 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14484() throws Throwable {
+    public void test140140() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = strBuilder0.append((double) 0);
+        StrBuilder strBuilder2 = new StrBuilder(" O9'^, B1?:[!Xro._$");
+        StrBuilder strBuilder3 = strBuilder0.appendln(strBuilder2);
+        strBuilder3.deleteCharAt(0);
+        strBuilder1.appendPadding(0, 'y');
+    }
+
+    @Test(timeout = 4000)
+    public void test141141() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(1373);
+        strBuilder0.appendFixedWidthPadLeft((Object) "z?8BI%.?IOfF", 1373, '@');
+        char[] charArray0 = new char[0];
+        StrMatcher.CharSetMatcher strMatcher_CharSetMatcher0 = new StrMatcher.CharSetMatcher(charArray0);
+        StrMatcher.charSetMatcher("");
+        StrMatcher.charSetMatcher(charArray0);
+        strBuilder0.indexOf((StrMatcher) strMatcher_CharSetMatcher0, 1373);
+        strBuilder0.asReader();
+        StrBuilder strBuilder1 = strBuilder0.insert(3, 1373);
+        strBuilder1.insert(1373, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test142142() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(7);
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        strBuilder_StrBuilderWriter0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test143143() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = strBuilder0.insert(0, true);
+        StrBuilder strBuilder2 = strBuilder1.appendln(strBuilder0);
+        StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
+        strBuilder0.lastIndexOf((StrMatcher) strMatcher_NoMatcher0, 0);
+        StrBuilder strBuilder3 = strBuilder0.setLength(1959);
+        strBuilder0.contains((StrMatcher) null);
+        StrTokenizer strTokenizer0 = strBuilder0.asTokenizer();
+        strBuilder0.endsWith("");
+        StrBuilder strBuilder4 = strBuilder0.appendln((double) 0);
+        strBuilder2.equalsIgnoreCase(strBuilder4);
+        strBuilder4.substring(0);
+        StrBuilder strBuilder5 = strBuilder0.appendAll((Iterator) strTokenizer0);
+        strBuilder5.midString(1, 1);
+        strBuilder5.asReader();
+        strBuilder5.toString();
+        strBuilder0.midString(114, 2859);
+        strBuilder2.indexOf((StrMatcher) strMatcher_NoMatcher0);
+        strBuilder3.insert(989, true);
+        strBuilder4.deleteCharAt(114);
+    }
+
+    @Test(timeout = 4000)
+    public void test144144() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         char[] charArray0 = new char[7];
         charArray0[0] = 'B';
@@ -1912,7 +2680,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14585() throws Throwable {
+    public void test145145() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(9);
         strBuilder0.toString();
         // Undeclared exception!
@@ -1928,7 +2696,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14686() throws Throwable {
+    public void test146146() throws Throwable {
         String string0 = "2P,obrHA.QSc}M";
         StrBuilder strBuilder0 = new StrBuilder("2P,obrHA.QSc}M");
         StrMatcher.StringMatcher strMatcher_StringMatcher0 = new StrMatcher.StringMatcher("2P,obrHA.QSc}M");
@@ -1952,7 +2720,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14787() throws Throwable {
+    public void test147147() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         int int0 = (-1541);
         // Undeclared exception!
@@ -1968,7 +2736,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14888() throws Throwable {
+    public void test148148() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         char char0 = 'Z';
         StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadLeft((-3023), (-3023), 'k');
@@ -2000,7 +2768,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14989() throws Throwable {
+    public void test149149() throws Throwable {
         int int0 = (-1);
         StrBuilder strBuilder0 = new StrBuilder((-1));
         char[] charArray0 = new char[0];
@@ -2022,7 +2790,35 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15190() throws Throwable {
+    public void test150150() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        StrBuilder strBuilder1 = new StrBuilder();
+        StrBuilder strBuilder2 = strBuilder0.append((Object) strBuilder1);
+        StrBuilder strBuilder3 = strBuilder2.append(false);
+        strBuilder0.startsWith("");
+        StrBuilder strBuilder4 = strBuilder0.replaceAll("", "");
+        strBuilder4.leftString(2255);
+        StrMatcher strMatcher0 = StrMatcher.singleQuoteMatcher();
+        strBuilder0.lastIndexOf(strMatcher0, 0);
+        StrBuilder strBuilder5 = strBuilder1.appendln((double) 0);
+        strBuilder1.substring(0, 723);
+        strBuilder5.setNewLineText("\nYt$6%kn");
+        LinkedList<String> linkedList0 = new LinkedList<String>();
+        Object[] objectArray0 = new Object[4];
+        objectArray0[0] = (Object) "\nYt$6%kn";
+        objectArray0[1] = (Object) "";
+        objectArray0[2] = (Object) "";
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder3.new StrBuilderTokenizer();
+        Object object0 = strBuilder_StrBuilderTokenizer0.cloneReset();
+        objectArray0[3] = object0;
+        strBuilder4.appendAll(objectArray0);
+        StrBuilder strBuilder6 = strBuilder4.appendAll((Collection) linkedList0);
+        strBuilder6.setNewLineText("org.apache.commons.lang.text.StrBuilder@0000000002false");
+        strBuilder4.indexOf('+');
+    }
+
+    @Test(timeout = 4000)
+    public void test151151() throws Throwable {
         String string0 = "NAUa0Jo/(HK*3";
         StrBuilder strBuilder0 = new StrBuilder("NAUa0Jo/(HK*3");
         strBuilder0.endsWith("NAUa0Jo/(HK*3");
@@ -2049,7 +2845,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15291() throws Throwable {
+    public void test152152() throws Throwable {
         int int0 = 0;
         StrBuilder strBuilder0 = new StrBuilder(0);
         char char0 = '\\';
@@ -2077,7 +2873,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15392() throws Throwable {
+    public void test153153() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         int int0 = (-1371);
         StrBuilder strBuilder1 = strBuilder0.appendln((String) null, 354, 354);
@@ -2095,7 +2891,22 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15593() throws Throwable {
+    public void test154154() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(92);
+        strBuilder0.appendFixedWidthPadRight(92, 92, '{');
+        Object[] objectArray0 = new Object[1];
+        objectArray0[0] = (Object) strBuilder0;
+        StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadRight(objectArray0[0], 0, 'y');
+        strBuilder1.appendln(0.0F);
+        StrBuilder strBuilder2 = strBuilder0.appendWithSeparators(objectArray0, "org.apache.commons.lang.text.StrBuilder$StrBuilderReader");
+        strBuilder2.append(strBuilder1);
+        strBuilder1.asTokenizer();
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.markSupported();
+    }
+
+    @Test(timeout = 4000)
+    public void test155155() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("303~[");
         StrMatcher strMatcher0 = StrMatcher.spaceMatcher();
         strBuilder0.indexOf(strMatcher0);
@@ -2117,7 +2928,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15694() throws Throwable {
+    public void test156156() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         StrBuilder strBuilder1 = strBuilder0.insert(0, 0);
         StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder1.new StrBuilderReader();
@@ -2148,7 +2959,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15795() throws Throwable {
+    public void test157157() throws Throwable {
         int int0 = 696;
         StrBuilder strBuilder0 = new StrBuilder(696);
         StrBuilder strBuilder1 = strBuilder0.appendAll((Iterator) null);
@@ -2166,7 +2977,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15896() throws Throwable {
+    public void test158158() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         strBuilder0.validateIndex(0);
         StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
@@ -2199,7 +3010,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15997() throws Throwable {
+    public void test159159() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(247);
         StringBuffer stringBuffer0 = new StringBuffer(0);
         StrBuilder strBuilder1 = strBuilder0.append(stringBuffer0);
@@ -2221,7 +3032,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16098() throws Throwable {
+    public void test160160() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("j5\"");
         strBuilder0.appendSeparator(", Length: ", 0);
         String string0 = "";
@@ -2242,7 +3053,23 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16299() throws Throwable {
+    public void test161161() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        strBuilder0.insert(0, (float) 0);
+        strBuilder0.midString(0, 0);
+        strBuilder0.asReader();
+        strBuilder0.insert(0, 1541.137F);
+        StrBuilder strBuilder1 = strBuilder0.deleteAll('e');
+        strBuilder1.insert(0, "org.apache.commons.lang.text.StrMatcher$CharMatcher");
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        char[] charArray0 = new char[2];
+        charArray0[0] = 'e';
+        charArray0[1] = 'p';
+        strBuilder_StrBuilderWriter0.write(charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test162162() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("org.apache.commons.lang.text.StrBuilder$StrBuilderReader");
         char[] charArray0 = new char[8];
         charArray0[0] = 'B';
@@ -2262,7 +3089,29 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test164100() throws Throwable {
+    public void test163163() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(97);
+        StringBuffer stringBuffer0 = new StringBuffer(1);
+        StrBuilder strBuilder1 = strBuilder0.append(stringBuffer0);
+        StrBuilder strBuilder2 = strBuilder1.appendln((char[]) null);
+        StrBuilder strBuilder3 = strBuilder0.appendln((float) 97);
+        strBuilder2.contains("{F=]qq_.^QC");
+        StrBuilder strBuilder4 = strBuilder3.clear();
+        StringBuffer stringBuffer1 = new StringBuffer("{F=]qq_.^QC");
+        StrBuilder strBuilder5 = strBuilder1.appendln(stringBuffer1);
+        StrBuilder strBuilder6 = new StrBuilder(1);
+        strBuilder5.appendFixedWidthPadLeft((Object) strBuilder6, 1, '-');
+        strBuilder4.asTokenizer();
+        strBuilder4.appendln((long) 1);
+        StrBuilder strBuilder7 = strBuilder0.appendln("8h");
+        strBuilder7.ensureCapacity(97);
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder2.new StrBuilderWriter();
+        strBuilder_StrBuilderWriter0.write(97);
+        strBuilder0.setLength(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test164164() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = (-975);
         strBuilder0.size = (-975);
@@ -2280,7 +3129,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test165101() throws Throwable {
+    public void test165165() throws Throwable {
         String string0 = "[K";
         StrBuilder strBuilder0 = new StrBuilder("[K");
         // Undeclared exception!
@@ -2296,7 +3145,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test166102() throws Throwable {
+    public void test166166() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
         strBuilder0.lastIndexOf((StrMatcher) strMatcher_NoMatcher0);
@@ -2323,7 +3172,37 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test169103() throws Throwable {
+    public void test167167() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("A#");
+        strBuilder0.rightString((-1832));
+        strBuilder0.equals((Object) "A#");
+    }
+
+    @Test(timeout = 4000)
+    public void test168168() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("]3ph");
+        StrBuilder strBuilder1 = strBuilder0.deleteFirst('w');
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        StrMatcher strMatcher0 = strBuilder_StrBuilderTokenizer0.getTrimmerMatcher();
+        strBuilder0.indexOf(strMatcher0, 388);
+        strBuilder0.appendNewLine();
+        strBuilder1.rightString(0);
+        strBuilder0.isEmpty();
+        strBuilder1.append(1293);
+        char[] charArray0 = new char[8];
+        charArray0[0] = 'w';
+        charArray0[1] = 'w';
+        charArray0[2] = 'w';
+        charArray0[3] = 'w';
+        charArray0[4] = 'w';
+        charArray0[5] = 'w';
+        charArray0[6] = 'w';
+        charArray0[7] = 'w';
+        strBuilder0.appendln(charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test169169() throws Throwable {
         int int0 = (-3693);
         StrBuilder strBuilder0 = new StrBuilder((-3693));
         String string0 = "";
@@ -2344,7 +3223,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test170104() throws Throwable {
+    public void test170170() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
         String string0 = "user.region";
@@ -2362,7 +3241,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test171105() throws Throwable {
+    public void test171171() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(1581);
         int int0 = (-2769);
         Integer integer0 = new Integer(1581);
@@ -2379,7 +3258,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test172106() throws Throwable {
+    public void test172172() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((-4288));
         strBuilder0.getNullText();
         strBuilder0.hashCode();
@@ -2404,7 +3283,34 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test174107() throws Throwable {
+    public void test173173() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((-2323));
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        char[] charArray0 = new char[6];
+        charArray0[0] = 'i';
+        charArray0[1] = 'C';
+        charArray0[2] = 'M';
+        charArray0[3] = 'v';
+        charArray0[4] = 'D';
+        strBuilder_StrBuilderWriter0.write("Naq=EJ[a4ZQ");
+        StrBuilder strBuilder1 = strBuilder0.append((-3965.6216974608983));
+        StrBuilder strBuilder2 = strBuilder1.appendln('M');
+        charArray0[5] = '}';
+        strBuilder_StrBuilderWriter0.write(charArray0);
+        strBuilder1.appendln((long) (-2323));
+        strBuilder1.replaceAll(']', 'C');
+        strBuilder2.asWriter();
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        strBuilder_StrBuilderTokenizer0.getContent();
+        StrBuilder strBuilder3 = strBuilder1.minimizeCapacity();
+        strBuilder3.appendln((float) (-2323));
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder2.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.mark((-1009));
+        strBuilder1.size();
+    }
+
+    @Test(timeout = 4000)
+    public void test174174() throws Throwable {
         String string0 = "";
         StrBuilder strBuilder0 = new StrBuilder("");
         StrMatcher strMatcher0 = StrMatcher.trimMatcher();
@@ -2426,7 +3332,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175108() throws Throwable {
+    public void test175175() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(0);
         strBuilder0.appendFixedWidthPadRight((-1106), 0, 'E');
         strBuilder0.lastIndexOf('O', 34);
@@ -2452,7 +3358,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176109() throws Throwable {
+    public void test176176() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("%rbHP");
         StrTokenizer strTokenizer0 = strBuilder0.asTokenizer();
         String string0 = "O{,l";
@@ -2491,7 +3397,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test177110() throws Throwable {
+    public void test177177() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("6.0");
         char[] charArray0 = new char[4];
         charArray0[0] = 'u';
@@ -2513,7 +3419,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178111() throws Throwable {
+    public void test178178() throws Throwable {
         String string0 = "xLGvMV>QU@B_}M8pe,x";
         StrBuilder strBuilder0 = new StrBuilder("xLGvMV>QU@B_}M8pe,x");
         StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
@@ -2535,7 +3441,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test179112() throws Throwable {
+    public void test179179() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
         StrBuilder strBuilder1 = strBuilder0.appendln(0L);
@@ -2562,7 +3468,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test180113() throws Throwable {
+    public void test180180() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder((String) null);
         StrBuilder strBuilder1 = strBuilder0.appendln((-464.78));
         StrBuilder strBuilder2 = strBuilder1.clear();
@@ -2597,7 +3503,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test181114() throws Throwable {
+    public void test181181() throws Throwable {
         int int0 = 0;
         StrBuilder strBuilder0 = new StrBuilder(0);
         int int1 = 0;
@@ -2614,7 +3520,29 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test183115() throws Throwable {
+    public void test182182() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        strBuilder0.appendNull();
+        Object object0 = new Object();
+        strBuilder0.appendFixedWidthPadRight(object0, 528, 'Z');
+        StrBuilder strBuilder1 = strBuilder0.clear();
+        strBuilder1.asReader();
+        char[] charArray0 = new char[8];
+        charArray0[0] = 'Z';
+        charArray0[1] = 'Z';
+        charArray0[2] = 'c';
+        charArray0[3] = 'Z';
+        charArray0[4] = 'V';
+        charArray0[5] = 'R';
+        charArray0[6] = 'Z';
+        charArray0[7] = 'Z';
+        StrBuilder strBuilder2 = strBuilder1.append(charArray0);
+        strBuilder2.appendln(0.0);
+        strBuilder1.appendln((char[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test183183() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = 4035;
         strBuilder0.ensureCapacity(4035);
@@ -2639,7 +3567,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test184116() throws Throwable {
+    public void test184184() throws Throwable {
         int int0 = 0;
         StrBuilder strBuilder0 = new StrBuilder(0);
         String string0 = null;
@@ -2658,7 +3586,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test185117() throws Throwable {
+    public void test185185() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         StrBuilder strBuilder1 = new StrBuilder();
         StrBuilder strBuilder2 = strBuilder0.appendWithSeparators((Collection) null, "5RIgD:9X");
@@ -2677,7 +3605,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test186118() throws Throwable {
+    public void test186186() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         String string0 = "M.1yKs5~eH|q";
         StrBuilder strBuilder1 = strBuilder0.appendWithSeparators((Collection) null, "M.1yKs5~eH|q");
@@ -2695,7 +3623,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187119() throws Throwable {
+    public void test187187() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("w\\.1hrMj");
         char[] charArray0 = strBuilder0.toCharArray();
         LinkedList<String> linkedList0 = new LinkedList<String>();
@@ -2719,7 +3647,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test188120() throws Throwable {
+    public void test188188() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = 1;
         StrBuilder strBuilder1 = strBuilder0.append(1);
@@ -2740,7 +3668,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test189121() throws Throwable {
+    public void test189189() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         char char0 = 'z';
         char char1 = ':';
@@ -2765,7 +3693,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test190122() throws Throwable {
+    public void test190190() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         StrBuilder strBuilder1 = strBuilder0.append((-481L));
         strBuilder0.append(strBuilder1, 0, 0);
@@ -2783,7 +3711,22 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test192123() throws Throwable {
+    public void test191191() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = new StrBuilder((String) null);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder1.new StrBuilderTokenizer();
+        Object object0 = strBuilder_StrBuilderTokenizer0.clone();
+        strBuilder0.insert(0, "");
+        strBuilder_StrBuilderTokenizer0.toString();
+        StrBuilder strBuilder2 = strBuilder0.appendln(object0);
+        StrBuilder strBuilder3 = strBuilder2.appendln(0.0F);
+        StrBuilder strBuilder4 = strBuilder3.appendFixedWidthPadLeft(0, 0, '\\');
+        strBuilder4.asTokenizer();
+        strBuilder3.deleteAll("36");
+    }
+
+    @Test(timeout = 4000)
+    public void test192192() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         char[] charArray0 = new char[5];
         charArray0[0] = 'D';
@@ -2820,7 +3763,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test193124() throws Throwable {
+    public void test193193() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = 117;
         StringBuffer stringBuffer0 = new StringBuffer();
@@ -2837,7 +3780,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test194125() throws Throwable {
+    public void test194194() throws Throwable {
         int int0 = (-1371);
         StrBuilder strBuilder0 = new StrBuilder((-1371));
         strBuilder0.size();
@@ -2854,7 +3797,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test195126() throws Throwable {
+    public void test195195() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder(":`?w`vm_:");
         char[] charArray0 = new char[3];
         strBuilder0.append('`');
@@ -2881,7 +3824,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test196127() throws Throwable {
+    public void test196196() throws Throwable {
         int int0 = (-1);
         StrBuilder strBuilder0 = new StrBuilder((-1));
         char[] charArray0 = new char[0];
@@ -2903,7 +3846,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test197128() throws Throwable {
+    public void test197197() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("j5\"");
         strBuilder0.appendSeparator("j5\"", 0);
         String string0 = "";
@@ -2923,7 +3866,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test198129() throws Throwable {
+    public void test198198() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("Invalid startIndex: ");
         Object[] objectArray0 = new Object[7];
         objectArray0[0] = (Object) strBuilder0;
@@ -2953,7 +3896,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test199130() throws Throwable {
+    public void test199199() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         StrMatcher.quoteMatcher();
         strBuilder0.asWriter();
@@ -2975,7 +3918,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test200131() throws Throwable {
+    public void test200200() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         StrBuilder strBuilder1 = strBuilder0.appendln('\'');
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "E*}Ew5RVb26|aZ");
@@ -3007,7 +3950,32 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test203132() throws Throwable {
+    public void test201201() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("java.endorsed.dirs");
+        StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
+        StrBuilder strBuilder1 = strBuilder0.append((Object) strMatcher_NoMatcher0);
+        strBuilder1.setLength(1330);
+        strBuilder0.contains((StrMatcher) strMatcher_NoMatcher0);
+        strBuilder0.deleteAll("java.endorsed.dirs");
+    }
+
+    @Test(timeout = 4000)
+    public void test202202() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder();
+        char[] charArray0 = new char[6];
+        charArray0[0] = 'j';
+        StrMatcher strMatcher0 = StrMatcher.stringMatcher("%Gj;mWhsgtSZ%");
+        strBuilder0.lastIndexOf(strMatcher0, 107);
+        charArray0[1] = '3';
+        charArray0[2] = 'Q';
+        charArray0[3] = 'k';
+        charArray0[4] = '/';
+        charArray0[5] = '[';
+        strBuilder0.append(charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test203203() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         Object object0 = new Object();
         StrBuilder strBuilder1 = strBuilder0.appendln(object0);
@@ -3035,7 +4003,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test204133() throws Throwable {
+    public void test204204() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         StrBuilder strBuilder1 = strBuilder0.appendln((-731.6734F));
         StrBuilder strBuilder2 = strBuilder1.appendNull();
@@ -3070,7 +4038,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test205134() throws Throwable {
+    public void test205205() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         int int0 = (-1277);
         char char0 = ']';
@@ -3088,7 +4056,7 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test206135() throws Throwable {
+    public void test206206() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         strBuilder0.lastIndexOf("");
         // Undeclared exception!
@@ -3104,7 +4072,35 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test208136() throws Throwable {
+    public void test207207() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(0);
+        StrBuilder strBuilder1 = strBuilder0.insert(0, true);
+        StrBuilder strBuilder2 = strBuilder1.appendln(strBuilder0);
+        StrMatcher.NoMatcher strMatcher_NoMatcher0 = new StrMatcher.NoMatcher();
+        strBuilder0.lastIndexOf((StrMatcher) strMatcher_NoMatcher0, 0);
+        StrBuilder strBuilder3 = strBuilder0.setLength(1959);
+        strBuilder0.contains((StrMatcher) null);
+        StrTokenizer strTokenizer0 = strBuilder0.asTokenizer();
+        strBuilder0.endsWith("");
+        StrBuilder strBuilder4 = strBuilder0.appendln((double) 0);
+        strBuilder2.equalsIgnoreCase(strBuilder4);
+        strBuilder4.substring(0);
+        StrBuilder strBuilder5 = strBuilder0.appendAll((Iterator) strTokenizer0);
+        strBuilder5.midString(1, 1);
+        strBuilder5.asReader();
+        strBuilder5.toString();
+        String string0 = strBuilder0.midString(114, 2859);
+        strBuilder2.indexOf((StrMatcher) strMatcher_NoMatcher0);
+        int int0 = 989;
+        strBuilder3.insert(989, true);
+        StrBuilder strBuilder6 = strBuilder4.deleteCharAt(114);
+        StrBuilder strBuilder7 = strBuilder6.appendln((-1848));
+        // Undeclared exception!
+        strBuilder7.lastIndexOf(string0);
+    }
+
+    @Test(timeout = 4000)
+    public void test208208() throws Throwable {
         String string0 = "NAUa0Jo/(HK*3";
         StrBuilder strBuilder0 = new StrBuilder("NAUa0Jo/(HK*3");
         strBuilder0.endsWith("NAUa0Jo/(HK*3");
@@ -3137,7 +4133,42 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test211137() throws Throwable {
+    public void test209209() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("A#");
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder0.new StrBuilderTokenizer();
+        strBuilder0.appendWithSeparators((Iterator) strBuilder_StrBuilderTokenizer0, "A#");
+        strBuilder0.rightString((-1832));
+        strBuilder0.equals((Object) "A#");
+        strBuilder0.lastIndexOf((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test210210() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder((-552));
+        StrBuilder.StrBuilderReader strBuilder_StrBuilderReader0 = strBuilder0.new StrBuilderReader();
+        strBuilder_StrBuilderReader0.mark((-552));
+        StrBuilder.StrBuilderWriter strBuilder_StrBuilderWriter0 = strBuilder0.new StrBuilderWriter();
+        char[] charArray0 = new char[8];
+        charArray0[0] = 'f';
+        charArray0[1] = 'f';
+        charArray0[2] = '{';
+        charArray0[3] = 'L';
+        charArray0[4] = 'O';
+        charArray0[5] = '[';
+        charArray0[6] = '+';
+        charArray0[7] = 'G';
+        strBuilder_StrBuilderWriter0.write(charArray0);
+        strBuilder_StrBuilderWriter0.write(4);
+        strBuilder_StrBuilderWriter0.flush();
+        StrBuilder strBuilder1 = strBuilder0.deleteAll('N');
+        strBuilder_StrBuilderReader0.close();
+        strBuilder1.replaceAll((String) null, "!E|@^;:4aA79");
+        strBuilder1.insert(0, "!E|@^;:4aA79");
+        strBuilder1.lastIndexOf((String) null, 101);
+    }
+
+    @Test(timeout = 4000)
+    public void test211211() throws Throwable {
         String string0 = "";
         StrBuilder strBuilder0 = new StrBuilder("");
         char char0 = '\'';
@@ -3168,7 +4199,15 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test213138() throws Throwable {
+    public void test212212() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder("*{O3bitJLa_# R:2p*");
+        char[] charArray0 = new char[0];
+        strBuilder0.append(charArray0);
+        strBuilder0.contains("79m\\M&(8r");
+    }
+
+    @Test(timeout = 4000)
+    public void test213213() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder("");
         StrBuilder strBuilder1 = strBuilder0.appendFixedWidthPadRight(48, 0, 'q');
         StrMatcher strMatcher0 = StrMatcher.quoteMatcher();
@@ -3196,7 +4235,28 @@ public class StrBuilder_ESTest extends StrBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test215139() throws Throwable {
+    public void test214214() throws Throwable {
+        StrBuilder strBuilder0 = new StrBuilder(">7fjPzegH2xU&=:qkX");
+        StrBuilder strBuilder1 = new StrBuilder(">7fjPzegH2xU&=:qkX");
+        strBuilder0.appendln(strBuilder1, 4, 4);
+        Object[] objectArray0 = new Object[10];
+        objectArray0[0] = (Object) strBuilder0;
+        objectArray0[4] = (Object) strBuilder0;
+        objectArray0[6] = (Object) ">7fjPzegH2xU&=:qkX";
+        strBuilder0.asReader();
+        char[] charArray0 = new char[0];
+        StrBuilder strBuilder2 = strBuilder0.appendln(charArray0);
+        StringBuffer stringBuffer0 = new StringBuffer();
+        strBuilder0.appendln(stringBuffer0);
+        StrBuilder.StrBuilderTokenizer strBuilder_StrBuilderTokenizer0 = strBuilder2.new StrBuilderTokenizer();
+        strBuilder_StrBuilderTokenizer0.tokenize(charArray0, 3575, (-1019));
+        strBuilder0.clear();
+        StrMatcher strMatcher0 = StrMatcher.stringMatcher(">7fjPzegH2xU&=:qkX");
+        strBuilder1.lastIndexOf(strMatcher0, 97);
+    }
+
+    @Test(timeout = 4000)
+    public void test215215() throws Throwable {
         StrBuilder strBuilder0 = new StrBuilder();
         Object object0 = new Object();
         StrBuilder strBuilder1 = strBuilder0.appendln(object0);

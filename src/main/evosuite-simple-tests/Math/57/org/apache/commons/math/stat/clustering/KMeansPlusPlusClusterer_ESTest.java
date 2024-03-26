@@ -123,7 +123,20 @@ public class KMeansPlusPlusClusterer_ESTest extends KMeansPlusPlusClusterer_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test55() throws Throwable {
+        MockRandom mockRandom0 = new MockRandom();
+        KMeansPlusPlusClusterer<EuclideanIntegerPoint> kMeansPlusPlusClusterer0 = new KMeansPlusPlusClusterer<EuclideanIntegerPoint>(mockRandom0);
+        int[] intArray0 = new int[4];
+        EuclideanIntegerPoint euclideanIntegerPoint0 = new EuclideanIntegerPoint(intArray0);
+        Cluster<EuclideanIntegerPoint> cluster0 = new Cluster<EuclideanIntegerPoint>(euclideanIntegerPoint0);
+        List<EuclideanIntegerPoint> list0 = cluster0.getPoints();
+        cluster0.addPoint(euclideanIntegerPoint0);
+        // Undeclared exception!
+        kMeansPlusPlusClusterer0.cluster(list0, 1796, (-149));
+    }
+
+    @Test(timeout = 4000)
+    public void test66() throws Throwable {
         MockRandom mockRandom0 = new MockRandom();
         KMeansPlusPlusClusterer<EuclideanIntegerPoint> kMeansPlusPlusClusterer0 = new KMeansPlusPlusClusterer<EuclideanIntegerPoint>(mockRandom0);
         int[] intArray0 = new int[4];
@@ -136,7 +149,20 @@ public class KMeansPlusPlusClusterer_ESTest extends KMeansPlusPlusClusterer_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test86() throws Throwable {
+    public void test77() throws Throwable {
+        MockRandom mockRandom0 = new MockRandom();
+        KMeansPlusPlusClusterer<EuclideanIntegerPoint> kMeansPlusPlusClusterer0 = new KMeansPlusPlusClusterer<EuclideanIntegerPoint>(mockRandom0);
+        int[] intArray0 = new int[0];
+        EuclideanIntegerPoint euclideanIntegerPoint0 = new EuclideanIntegerPoint(intArray0);
+        Cluster<EuclideanIntegerPoint> cluster0 = new Cluster<EuclideanIntegerPoint>(euclideanIntegerPoint0);
+        cluster0.addPoint(euclideanIntegerPoint0);
+        List<EuclideanIntegerPoint> list0 = cluster0.getPoints();
+        cluster0.addPoint(euclideanIntegerPoint0);
+        kMeansPlusPlusClusterer0.cluster(list0, 2, 2);
+    }
+
+    @Test(timeout = 4000)
+    public void test88() throws Throwable {
         MockRandom mockRandom0 = new MockRandom((-546L));
         KMeansPlusPlusClusterer.EmptyClusterStrategy kMeansPlusPlusClusterer_EmptyClusterStrategy0 = KMeansPlusPlusClusterer.EmptyClusterStrategy.ERROR;
         KMeansPlusPlusClusterer<EuclideanIntegerPoint> kMeansPlusPlusClusterer0 = new KMeansPlusPlusClusterer<EuclideanIntegerPoint>(mockRandom0, kMeansPlusPlusClusterer_EmptyClusterStrategy0);

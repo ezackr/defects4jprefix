@@ -20,4 +20,9 @@ public class TreeBuilderState_ESTest extends TreeBuilderState_ESTest_scaffolding
         TreeBuilderState[] treeBuilderStateArray0 = TreeBuilderState.values();
         assertEquals(23, treeBuilderStateArray0.length);
     }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        TreeBuilderState.valueOf("AfterAfterFrameset");
+    }
 }

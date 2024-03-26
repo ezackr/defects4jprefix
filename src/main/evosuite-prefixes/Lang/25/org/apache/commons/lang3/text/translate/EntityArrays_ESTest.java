@@ -54,33 +54,38 @@ public class EntityArrays_ESTest extends EntityArrays_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test077() throws Throwable {
+        EntityArrays entityArrays0 = new EntityArrays();
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         String[][] stringArray0 = EntityArrays.HTML40_EXTENDED_UNESCAPE();
         String[][] stringArray1 = EntityArrays.invert(stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         String[][] stringArray0 = EntityArrays.ISO8859_1_ESCAPE();
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         String[][] stringArray0 = EntityArrays.APOS_UNESCAPE();
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         String[][] stringArray0 = EntityArrays.BASIC_UNESCAPE();
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         String[][] stringArray0 = EntityArrays.JAVA_CTRL_CHARS_ESCAPE();
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         String[][] stringArray0 = EntityArrays.BASIC_ESCAPE();
     }
 }

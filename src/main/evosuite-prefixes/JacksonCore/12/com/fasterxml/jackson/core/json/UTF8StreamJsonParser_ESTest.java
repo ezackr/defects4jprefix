@@ -312,18 +312,6 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02123() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
-        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
-        PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0);
-        byte[] byteArray0 = new byte[0];
-        ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
-        UTF8StreamJsonParser uTF8StreamJsonParser0 = new UTF8StreamJsonParser(iOContext0, 5, pipedInputStream0, (ObjectCodec) null, byteQuadsCanonicalizer0, byteArray0, 1, 1, true);
-        String string0 = uTF8StreamJsonParser0.getValueAsString("sbLt,J'}}0~gXX%uA");
-    }
-
-    @Test(timeout = 4000)
     public void test02224() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);

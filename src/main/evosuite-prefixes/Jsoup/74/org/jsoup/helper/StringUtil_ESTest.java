@@ -88,12 +88,19 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1010() throws Throwable {
+        StringUtil.padding(5263);
+        // Undeclared exception!
+        StringUtil.padding(5263);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         StringUtil.normaliseWhitespace((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         StringBuilder stringBuilder0 = StringUtil.stringBuilder();
         LinkedList<StringBuilder> linkedList0 = new LinkedList<StringBuilder>();
         Iterator<StringBuilder> iterator0 = linkedList0.iterator();
@@ -102,29 +109,29 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         StringUtil.join((Iterator) null, "");
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         linkedList0.add((Object) null);
         StringUtil.join((Collection) linkedList0, "");
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         StringUtil.inSorted("", (String[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         StringUtil.appendNormalisedWhitespace((StringBuilder) null, (String) null, true);
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         String string0 = StringUtil.padding(1800);
         StringBuilder stringBuilder0 = StringUtil.stringBuilder();
         StringUtil.appendNormalisedWhitespace(stringBuilder0, string0, false);
@@ -132,22 +139,22 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(32);
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         boolean boolean0 = StringUtil.isWhitespace(32);
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         boolean boolean0 = StringUtil.isWhitespace(1800);
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         StringBuilder stringBuilder0 = StringUtil.stringBuilder();
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         linkedList0.add((Object) stringBuilder0);
@@ -158,7 +165,7 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = "C)Yj0Yb6S\\Az]KXZ?W";
         StringUtil.normaliseWhitespace("C)Yj0Yb6SAz]KXZ?W");
         Iterator<String> iterator0 = (Iterator<String>) mock(Iterator.class, new ViolatedAssumptionAnswer());
@@ -179,28 +186,28 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         Iterator<Integer> iterator0 = (Iterator<Integer>) mock(Iterator.class, new ViolatedAssumptionAnswer());
         doReturn(false).when(iterator0).hasNext();
         String string0 = StringUtil.join(iterator0, "B");
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         URL uRL0 = MockURL.getFileExample();
         URL uRL1 = StringUtil.resolve(uRL0, "?");
         uRL1.getDefaultPort();
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         String[] stringArray0 = new String[3];
         stringArray0[1] = "";
         boolean boolean0 = StringUtil.inSorted("", stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         String[] stringArray0 = new String[3];
         stringArray0[1] = "";
         stringArray0[2] = "";
@@ -208,7 +215,7 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         String[] stringArray0 = new String[4];
         stringArray0[0] = "7rDC]G>BIEe";
         stringArray0[1] = "";
@@ -216,7 +223,7 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         String string0 = StringUtil.normaliseWhitespace("E");
         String[] stringArray0 = new String[7];
         stringArray0[0] = string0;
@@ -224,123 +231,128 @@ public class StringUtil_ESTest extends StringUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         String[] stringArray0 = new String[0];
         boolean boolean0 = StringUtil.in("", stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         StringBuilder stringBuilder0 = new StringBuilder((CharSequence) "");
         StringUtil.appendNormalisedWhitespace(stringBuilder0, "              * ", true);
         stringBuilder0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3131() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(160);
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(13);
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(12);
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3434() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(10);
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3535() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(9);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3636() throws Throwable {
         boolean boolean0 = StringUtil.isActuallyWhitespace(8);
     }
 
     @Test(timeout = 4000)
-    public void test3736() throws Throwable {
+    public void test3737() throws Throwable {
         boolean boolean0 = StringUtil.isWhitespace(13);
     }
 
     @Test(timeout = 4000)
-    public void test3837() throws Throwable {
+    public void test3838() throws Throwable {
         boolean boolean0 = StringUtil.isWhitespace(12);
     }
 
     @Test(timeout = 4000)
-    public void test3938() throws Throwable {
+    public void test3939() throws Throwable {
         boolean boolean0 = StringUtil.isWhitespace(10);
     }
 
     @Test(timeout = 4000)
-    public void test4039() throws Throwable {
+    public void test4040() throws Throwable {
         boolean boolean0 = StringUtil.isWhitespace(9);
     }
 
     @Test(timeout = 4000)
-    public void test4140() throws Throwable {
+    public void test4141() throws Throwable {
         boolean boolean0 = StringUtil.isNumeric("2");
     }
 
     @Test(timeout = 4000)
-    public void test4241() throws Throwable {
+    public void test4242() throws Throwable {
         boolean boolean0 = StringUtil.isNumeric("           ");
     }
 
     @Test(timeout = 4000)
-    public void test4342() throws Throwable {
+    public void test4343() throws Throwable {
         boolean boolean0 = StringUtil.isNumeric((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test4443() throws Throwable {
+    public void test4444() throws Throwable {
         boolean boolean0 = StringUtil.isBlank("java.lang.String@0000000001$");
     }
 
     @Test(timeout = 4000)
-    public void test4544() throws Throwable {
+    public void test4545() throws Throwable {
         boolean boolean0 = StringUtil.isBlank("");
     }
 
     @Test(timeout = 4000)
-    public void test4645() throws Throwable {
+    public void test4646() throws Throwable {
         boolean boolean0 = StringUtil.isBlank((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test4746() throws Throwable {
+    public void test4747() throws Throwable {
         StringUtil.padding((-578));
     }
 
     @Test(timeout = 4000)
-    public void test4847() throws Throwable {
+    public void test4848() throws Throwable {
         String[] stringArray0 = new String[1];
         stringArray0[0] = "";
         String string0 = StringUtil.join(stringArray0, "");
     }
 
     @Test(timeout = 4000)
-    public void test4948() throws Throwable {
+    public void test4949() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         String string0 = StringUtil.join((Collection) linkedList0, "tQl3}");
     }
 
     @Test(timeout = 4000)
-    public void test5049() throws Throwable {
+    public void test5050() throws Throwable {
         String string0 = StringUtil.resolve("", " ");
     }
 
     @Test(timeout = 4000)
-    public void test5250() throws Throwable {
+    public void test5151() throws Throwable {
+        StringUtil stringUtil0 = new StringUtil();
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
         String[] stringArray0 = new String[7];
         StringUtil.join(stringArray0, "B");
     }

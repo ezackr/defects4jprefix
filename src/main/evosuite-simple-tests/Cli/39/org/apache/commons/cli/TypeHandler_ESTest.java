@@ -59,7 +59,12 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        TypeHandler typeHandler0 = new TypeHandler();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         try {
             TypeHandler.createURL("");
             fail("Expecting exception: Exception");
@@ -72,7 +77,7 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         // Undeclared exception!
         try {
             TypeHandler.createDate("Unable to find the class: ");
@@ -86,13 +91,13 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         File file0 = TypeHandler.createFile("");
         assertEquals(0L, file0.getTotalSpace());
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Class<Object> class0 = Object.class;
         try {
             TypeHandler.createValue("", class0);
@@ -106,21 +111,21 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Class<String> class0 = String.class;
         Object object0 = TypeHandler.createValue("Not yet implemented", class0);
         assertEquals("Not yet implemented", object0);
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Class<Integer> class0 = Integer.class;
         Object object0 = TypeHandler.createValue("Not yet implemented", class0);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         try {
             TypeHandler.createNumber("Not yet implemented");
             fail("Expecting exception: Exception");
@@ -133,7 +138,7 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         try {
             TypeHandler.createNumber("org.apache.commons.cli.PatternOptionBuilder");
             fail("Expecting exception: Exception");

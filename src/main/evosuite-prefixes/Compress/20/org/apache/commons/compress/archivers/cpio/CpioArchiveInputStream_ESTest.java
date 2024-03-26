@@ -70,7 +70,14 @@ public class CpioArchiveInputStream_ESTest extends CpioArchiveInputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test055() throws Throwable {
+        CpioArchiveInputStream cpioArchiveInputStream0 = new CpioArchiveInputStream((InputStream) null);
+        byte[] byteArray0 = new byte[1];
+        cpioArchiveInputStream0.read(byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         FileDescriptor fileDescriptor0 = new FileDescriptor();
         MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
         CpioArchiveInputStream cpioArchiveInputStream0 = new CpioArchiveInputStream(mockFileInputStream0, 1429);
@@ -79,13 +86,45 @@ public class CpioArchiveInputStream_ESTest extends CpioArchiveInputStream_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test077() throws Throwable {
+        CpioArchiveInputStream cpioArchiveInputStream0 = new CpioArchiveInputStream((InputStream) null);
+        cpioArchiveInputStream0.skip(0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         CpioArchiveInputStream cpioArchiveInputStream0 = new CpioArchiveInputStream((InputStream) null);
         cpioArchiveInputStream0.skip((-163L));
     }
 
     @Test(timeout = 4000)
-    public void test137() throws Throwable {
+    public void test099() throws Throwable {
+        PipedInputStream pipedInputStream0 = new PipedInputStream();
+        CpioArchiveInputStream cpioArchiveInputStream0 = new CpioArchiveInputStream(pipedInputStream0);
+        cpioArchiveInputStream0.skip((byte) 34);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        byte[] byteArray0 = new byte[7];
+        CpioArchiveInputStream.matches(byteArray0, (byte) 43);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        CpioArchiveInputStream.matches(byteArray0, (byte) (-39));
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        CpioArchiveInputStream cpioArchiveInputStream0 = new CpioArchiveInputStream((InputStream) null);
+        byte[] byteArray0 = new byte[7];
+        cpioArchiveInputStream0.read(byteArray0, 1, (int) (byte) 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) (-20);
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);

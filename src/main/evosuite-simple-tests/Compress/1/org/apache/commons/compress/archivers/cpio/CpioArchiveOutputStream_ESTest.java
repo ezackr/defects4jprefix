@@ -193,7 +193,15 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1111() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("O>OHGn9/");
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0);
+        cpioArchiveOutputStream0.close();
+        cpioArchiveOutputStream0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         MockFile mockFile0 = new MockFile("Q_H ^I:?pEqpZb${bE", "Q_H ^I:?pEqpZb${bE");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0);
@@ -204,7 +212,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         MockFile mockFile0 = new MockFile("Q_H ^I:?pEqpZb${bE", "Q_H ^I:?pEqpZb${bE");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0);
@@ -223,7 +231,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("YhNE?");
         byte[] byteArray0 = new byte[3];
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockFileOutputStream0);
@@ -240,7 +248,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream((OutputStream) null);
         byte[] byteArray0 = new byte[1];
         // Undeclared exception!
@@ -256,7 +264,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         MockFile mockFile0 = new MockFile("Q_H ^I:?pEqpZb${bE", "Q_H ^I:?pEqpZb${bE");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0);
@@ -273,7 +281,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("c@T");
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0, (short) 8);
         byte[] byteArray0 = new byte[5];
@@ -290,7 +298,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         MockFile mockFile0 = new MockFile("Q_H ^I:?pEqpZb${bE", "Q_H ^I:?pEqpZb${bE");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0);
@@ -309,7 +317,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         MockFile mockFile0 = new MockFile("Q_H ^I:?pEqpZb${bE", "Q_H ^I:?pEqpZb${bE");
         MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0);
@@ -327,7 +335,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         CpioArchiveOutputStream cpioArchiveOutputStream0 = null;
         try {
             cpioArchiveOutputStream0 = new CpioArchiveOutputStream((OutputStream) null, (short) (-1));
@@ -341,7 +349,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         File file0 = MockFile.createTempFile("Stream closed", "Stream closed");
         MockPrintStream mockPrintStream0 = new MockPrintStream(file0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = null;
@@ -357,7 +365,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("duplicate entry: ", true);
         FilterOutputStream filterOutputStream0 = new FilterOutputStream(mockFileOutputStream0);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = null;
@@ -373,7 +381,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         CpioArchiveOutputStream cpioArchiveOutputStream0 = null;
         try {
             cpioArchiveOutputStream0 = new CpioArchiveOutputStream((OutputStream) null, (short) 5);
@@ -387,7 +395,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         CpioArchiveOutputStream cpioArchiveOutputStream0 = null;
         try {
             cpioArchiveOutputStream0 = new CpioArchiveOutputStream((OutputStream) null, (short) 3);
@@ -401,7 +409,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream((short) 2);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 2);
         cpioArchiveOutputStream0.finish();
@@ -409,7 +417,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2526() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream((short) 2);
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 2);
         cpioArchiveOutputStream0.finish();
@@ -417,7 +425,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2627() throws Throwable {
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream((OutputStream) null);
         CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry("org.apache.commons.compress.archivers.zip.JarMarker");
         cpioArchiveOutputStream0.close();
@@ -433,7 +441,39 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3127() throws Throwable {
+    public void test2728() throws Throwable {
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("YhNE?");
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockFileOutputStream0, (short) 4);
+        CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry("YhNE?");
+        cpioArchiveOutputStream0.putNextEntry(cpioArchiveEntry0);
+        cpioArchiveOutputStream0.closeArchiveEntry();
+    }
+
+    @Test(timeout = 4000)
+    public void test2829() throws Throwable {
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("YhNE?");
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockFileOutputStream0, (short) 4);
+        cpioArchiveOutputStream0.finish();
+    }
+
+    @Test(timeout = 4000)
+    public void test2930() throws Throwable {
+        MockFile mockFile0 = new MockFile("ustar");
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
+        ObjectOutputStream objectOutputStream0 = new ObjectOutputStream(mockFileOutputStream0);
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(objectOutputStream0);
+        cpioArchiveOutputStream0.write(716);
+    }
+
+    @Test(timeout = 4000)
+    public void test3031() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("c@T");
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0, (short) 8);
+        cpioArchiveOutputStream0.finish();
+    }
+
+    @Test(timeout = 4000)
+    public void test3132() throws Throwable {
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream((OutputStream) null);
         CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry(" instead of ");
         // Undeclared exception!

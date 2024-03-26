@@ -36,13 +36,53 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test011() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("TI");
+        PrintStreamErrorManager printStreamErrorManager0 = new PrintStreamErrorManager(mockPrintStream0);
+        Compiler compiler0 = new Compiler(printStreamErrorManager0);
+        Node node0 = compiler0.parseTestCode("TI");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        Scope scope0 = new Scope(node0, compiler0);
+        MaybeReachingVariableUse maybeReachingVariableUse0 = new MaybeReachingVariableUse(controlFlowGraph0, scope0, compiler0);
+        maybeReachingVariableUse0.analyze();
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("TI");
+        PrintStreamErrorManager printStreamErrorManager0 = new PrintStreamErrorManager(mockPrintStream0);
+        Compiler compiler0 = new Compiler(printStreamErrorManager0);
+        Node node0 = compiler0.parseTestCode("TI");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
+        Scope scope0 = new Scope(node0, compiler0);
+        MaybeReachingVariableUse maybeReachingVariableUse0 = new MaybeReachingVariableUse(controlFlowGraph0, scope0, compiler0);
+        MaybeReachingVariableUse.ReachingUses maybeReachingVariableUse_ReachingUses0 = maybeReachingVariableUse0.createEntryLattice();
+        mockPrintStream0.println((Object) maybeReachingVariableUse_ReachingUses0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         MaybeReachingVariableUse.ReachingUses maybeReachingVariableUse_ReachingUses0 = new MaybeReachingVariableUse.ReachingUses();
         boolean boolean0 = maybeReachingVariableUse_ReachingUses0.equals("\"/3Q]<;`G']WVI]hu");
     }
 
     @Test(timeout = 4000)
-    public void test052() throws Throwable {
+    public void test044() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("TI");
+        PrintStreamErrorManager printStreamErrorManager0 = new PrintStreamErrorManager(mockPrintStream0);
+        Compiler compiler0 = new Compiler(printStreamErrorManager0);
+        Node node0 = compiler0.parseTestCode("TI");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        Scope scope0 = new Scope(node0, compiler0);
+        MaybeReachingVariableUse maybeReachingVariableUse0 = new MaybeReachingVariableUse(controlFlowGraph0, scope0, compiler0);
+        InputId inputId0 = node0.getInputId();
+        CompilerInput compilerInput0 = compiler0.getInput(inputId0);
+        scope0.declare("TI", node0, (JSType) null, compilerInput0, false);
+        maybeReachingVariableUse0.analyze();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(";");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -53,7 +93,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test063() throws Throwable {
+    public void test066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("TI");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -65,7 +105,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test074() throws Throwable {
+    public void test077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("TI", "TI");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -77,7 +117,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test088() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("TI");
         PrintStreamErrorManager printStreamErrorManager0 = new PrintStreamErrorManager(mockPrintStream0);
         Compiler compiler0 = new Compiler(printStreamErrorManager0);
@@ -91,7 +131,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("TI");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -103,7 +143,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("Tb");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -115,7 +155,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("TI");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -127,7 +167,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(";");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -139,7 +179,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("Tb");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -151,7 +191,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1414() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("TI");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -163,7 +203,7 @@ public class MaybeReachingVariableUse_ESTest extends MaybeReachingVariableUse_ES
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         MockPrintStream mockPrintStream0 = new MockPrintStream("TI");
         PrintStreamErrorManager printStreamErrorManager0 = new PrintStreamErrorManager(mockPrintStream0);
         Compiler compiler0 = new Compiler(printStreamErrorManager0);

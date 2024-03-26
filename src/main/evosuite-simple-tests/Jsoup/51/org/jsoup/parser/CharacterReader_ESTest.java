@@ -1807,4 +1807,10 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         String string0 = characterReader0.consumeTagName();
         assertEquals("k_mAEp]<", string0);
     }
+
+    @Test(timeout = 4000)
+    public void test144188() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("9k_mAEp]<");
+        characterReader0.mark();
+    }
 }

@@ -846,12 +846,10 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04287() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        JFreeChart jFreeChart0 = new JFreeChart(combinedRangeXYPlot0);
-        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo((EntityCollection) null);
-        jFreeChart0.createBufferedImage(10, 10, (-249.2377048665138), (double) 1.0F, chartRenderingInfo0);
-        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
+    public void test04187() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        // Undeclared exception!
+        combinedDomainXYPlot0.add((XYPlot) combinedDomainXYPlot0, 10);
     }
 
     @Test(timeout = 4000)
@@ -860,36 +858,30 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         JFreeChart jFreeChart0 = new JFreeChart(combinedRangeXYPlot0);
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo((EntityCollection) null);
         jFreeChart0.createBufferedImage(10, 10, (-249.2377048665138), (double) 1.0F, chartRenderingInfo0);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test04389() throws Throwable {
+    public void test04289() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        combinedRangeXYPlot0.zoomRangeAxes((-3651.1937073819), (PlotRenderingInfo) null, (Point2D) null);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        JFreeChart jFreeChart0 = new JFreeChart(combinedRangeXYPlot0);
+        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo((EntityCollection) null);
+        jFreeChart0.createBufferedImage(10, 10, (-249.2377048665138), (double) 1.0F, chartRenderingInfo0);
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test04390() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.zoomRangeAxes((-3651.1937073819), (PlotRenderingInfo) null, (Point2D) null);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test04491() throws Throwable {
+    public void test04391() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        XYSeries xYSeries0 = new XYSeries(false, false);
-        XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection(xYSeries0);
-        CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(1.0F, (-669.2495376363));
-        DefaultPolarItemRenderer defaultPolarItemRenderer0 = new DefaultPolarItemRenderer();
-        PolarPlot polarPlot0 = new PolarPlot(xYSeriesCollection0, cyclicNumberAxis0, defaultPolarItemRenderer0);
-        PlotOrientation plotOrientation0 = polarPlot0.getOrientation();
-        combinedRangeXYPlot0.setOrientation(plotOrientation0);
-        CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
-        boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
-        assertEquals(1, combinedRangeXYPlot1.getWeight());
+        combinedRangeXYPlot0.zoomRangeAxes((-3651.1937073819), (PlotRenderingInfo) null, (Point2D) null);
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -904,7 +896,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         combinedRangeXYPlot0.setOrientation(plotOrientation0);
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
         boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
-        assertFalse(boolean0);
+        assertEquals(1, combinedRangeXYPlot1.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -919,11 +911,26 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         combinedRangeXYPlot0.setOrientation(plotOrientation0);
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
         boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
+        assertFalse(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04494() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        XYSeries xYSeries0 = new XYSeries(false, false);
+        XYSeriesCollection xYSeriesCollection0 = new XYSeriesCollection(xYSeries0);
+        CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(1.0F, (-669.2495376363));
+        DefaultPolarItemRenderer defaultPolarItemRenderer0 = new DefaultPolarItemRenderer();
+        PolarPlot polarPlot0 = new PolarPlot(xYSeriesCollection0, cyclicNumberAxis0, defaultPolarItemRenderer0);
+        PlotOrientation plotOrientation0 = polarPlot0.getOrientation();
+        combinedRangeXYPlot0.setOrientation(plotOrientation0);
+        CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
+        boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
         assertTrue(combinedRangeXYPlot1.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test04594() throws Throwable {
+    public void test04595() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -938,7 +945,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04695() throws Throwable {
+    public void test04696() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         PlotOrientation plotOrientation0 = PlotOrientation.VERTICAL;
         combinedRangeXYPlot0.setOrientation(plotOrientation0);
@@ -946,7 +953,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04696() throws Throwable {
+    public void test04697() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         PlotOrientation plotOrientation0 = PlotOrientation.VERTICAL;
         combinedRangeXYPlot0.setOrientation(plotOrientation0);
@@ -954,7 +961,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04797() throws Throwable {
+    public void test04798() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -969,28 +976,28 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04898() throws Throwable {
+    public void test04899() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.clearDomainAxes();
         assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test04999() throws Throwable {
+    public void test049100() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.clearDomainAxes();
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test049100() throws Throwable {
+    public void test049101() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.clearDomainAxes();
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test050101() throws Throwable {
+    public void test050102() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-48.9523527142181), (-48.9523527142181));
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -1015,7 +1022,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test051102() throws Throwable {
+    public void test051103() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1030,7 +1037,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test052103() throws Throwable {
+    public void test052104() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         DateAxis dateAxis0 = new DateAxis();
         xYPlot0.setRangeAxis((ValueAxis) dateAxis0);
@@ -1038,14 +1045,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053104() throws Throwable {
+    public void test053105() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         XYPlot xYPlot0 = new XYPlot();
         assertEquals(1, xYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test053105() throws Throwable {
+    public void test053106() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         XYPlot xYPlot0 = new XYPlot();
         combinedRangeXYPlot0.add(xYPlot0, 10);
@@ -1053,7 +1060,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054106() throws Throwable {
+    public void test054107() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(0, 0, (String) null);
         combinedRangeXYPlot0.setRangeAxis(0, (ValueAxis) cyclicNumberAxis0);
@@ -1061,7 +1068,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054107() throws Throwable {
+    public void test054108() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(0, 0, (String) null);
         combinedRangeXYPlot0.setRangeAxis(0, (ValueAxis) cyclicNumberAxis0);
@@ -1069,7 +1076,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054108() throws Throwable {
+    public void test054109() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(0, 0, (String) null);
         combinedRangeXYPlot0.setRangeAxis(0, (ValueAxis) cyclicNumberAxis0);
@@ -1077,18 +1084,10 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test055109() throws Throwable {
+    public void test055110() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setRangeAxis(3, (ValueAxis) null, false);
         assertEquals(4, combinedRangeXYPlot0.getRangeAxisCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test056110() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        ValueAxis[] valueAxisArray0 = new ValueAxis[1];
-        combinedDomainXYPlot0.setRangeAxes(valueAxisArray0);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1096,60 +1095,68 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ValueAxis[] valueAxisArray0 = new ValueAxis[1];
         combinedDomainXYPlot0.setRangeAxes(valueAxisArray0);
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test056112() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        ValueAxis[] valueAxisArray0 = new ValueAxis[1];
+        combinedDomainXYPlot0.setRangeAxes(valueAxisArray0);
         assertEquals(1, combinedDomainXYPlot0.getRangeAxisCount());
     }
 
     @Test(timeout = 4000)
-    public void test057112() throws Throwable {
+    public void test057113() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.clearRangeAxes();
         assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test058113() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        combinedDomainXYPlot0.clearRangeAxes();
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
     public void test058114() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.clearRangeAxes();
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test058115() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.clearRangeAxes();
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test059116() throws Throwable {
+    public void test058116() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        AxisLocation axisLocation0 = combinedDomainXYPlot0.getRangeAxisLocation(52);
-        assertNotNull(axisLocation0);
+        combinedDomainXYPlot0.clearRangeAxes();
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test059117() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         AxisLocation axisLocation0 = combinedDomainXYPlot0.getRangeAxisLocation(52);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        assertNotNull(axisLocation0);
     }
 
     @Test(timeout = 4000)
     public void test059118() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         AxisLocation axisLocation0 = combinedDomainXYPlot0.getRangeAxisLocation(52);
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test059119() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        AxisLocation axisLocation0 = combinedDomainXYPlot0.getRangeAxisLocation(52);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test060119() throws Throwable {
+    public void test060120() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1164,7 +1171,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test061120() throws Throwable {
+    public void test061121() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection();
         XYPlot xYPlot0 = new XYPlot();
         xYPlot0.setDataset(500, (XYDataset) timeSeriesCollection0);
@@ -1174,32 +1181,24 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test062121() throws Throwable {
+    public void test062122() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDataset(0, (XYDataset) null);
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test062122() throws Throwable {
+    public void test062123() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDataset(0, (XYDataset) null);
         assertEquals(1, combinedDomainXYPlot0.getDatasetCount());
     }
 
     @Test(timeout = 4000)
-    public void test062123() throws Throwable {
+    public void test062124() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDataset(0, (XYDataset) null);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test063124() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        CombinedDataset combinedDataset0 = new CombinedDataset();
-        int int0 = combinedRangeXYPlot0.indexOf(combinedDataset0);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1207,7 +1206,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDataset combinedDataset0 = new CombinedDataset();
         int int0 = combinedRangeXYPlot0.indexOf(combinedDataset0);
-        assertEquals((-1), int0);
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1215,7 +1214,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDataset combinedDataset0 = new CombinedDataset();
         int int0 = combinedRangeXYPlot0.indexOf(combinedDataset0);
-        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
@@ -1223,25 +1222,33 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDataset combinedDataset0 = new CombinedDataset();
         int int0 = combinedRangeXYPlot0.indexOf(combinedDataset0);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test064128() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        int int0 = combinedDomainXYPlot0.indexOf((XYDataset) null);
-        assertEquals(0, int0);
+    public void test063128() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        CombinedDataset combinedDataset0 = new CombinedDataset();
+        int int0 = combinedRangeXYPlot0.indexOf(combinedDataset0);
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
     public void test064129() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         int int0 = combinedDomainXYPlot0.indexOf((XYDataset) null);
+        assertEquals(0, int0);
+    }
+
+    @Test(timeout = 4000)
+    public void test064130() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        int int0 = combinedDomainXYPlot0.indexOf((XYDataset) null);
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test065130() throws Throwable {
+    public void test065131() throws Throwable {
         ThermometerPlot thermometerPlot0 = new ThermometerPlot();
         ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
         SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(3);
@@ -1252,7 +1259,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066131() throws Throwable {
+    public void test066132() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYItemRenderer[] xYItemRendererArray0 = new XYItemRenderer[1];
         combinedDomainXYPlot0.setRenderers(xYItemRendererArray0);
@@ -1260,7 +1267,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066132() throws Throwable {
+    public void test066133() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYItemRenderer[] xYItemRendererArray0 = new XYItemRenderer[1];
         combinedDomainXYPlot0.setRenderers(xYItemRendererArray0);
@@ -1268,18 +1275,10 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066133() throws Throwable {
+    public void test066134() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYItemRenderer[] xYItemRendererArray0 = new XYItemRenderer[1];
         combinedDomainXYPlot0.setRenderers(xYItemRendererArray0);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test067134() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        DatasetRenderingOrder datasetRenderingOrder0 = combinedDomainXYPlot0.getDatasetRenderingOrder();
-        combinedDomainXYPlot0.setDatasetRenderingOrder(datasetRenderingOrder0);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
@@ -1288,11 +1287,19 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         DatasetRenderingOrder datasetRenderingOrder0 = combinedDomainXYPlot0.getDatasetRenderingOrder();
         combinedDomainXYPlot0.setDatasetRenderingOrder(datasetRenderingOrder0);
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test067136() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        DatasetRenderingOrder datasetRenderingOrder0 = combinedDomainXYPlot0.getDatasetRenderingOrder();
+        combinedDomainXYPlot0.setDatasetRenderingOrder(datasetRenderingOrder0);
         assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test068136() throws Throwable {
+    public void test068137() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1307,7 +1314,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test069137() throws Throwable {
+    public void test069138() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         SeriesRenderingOrder seriesRenderingOrder0 = combinedDomainXYPlot0.getSeriesRenderingOrder();
         combinedDomainXYPlot0.setSeriesRenderingOrder(seriesRenderingOrder0);
@@ -1315,7 +1322,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test069138() throws Throwable {
+    public void test069139() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         SeriesRenderingOrder seriesRenderingOrder0 = combinedDomainXYPlot0.getSeriesRenderingOrder();
         combinedDomainXYPlot0.setSeriesRenderingOrder(seriesRenderingOrder0);
@@ -1323,7 +1330,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test070139() throws Throwable {
+    public void test070140() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1338,7 +1345,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test071140() throws Throwable {
+    public void test071141() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(2137, "org.jfree.chart.labels.AbstractXYItemLabelGenerator");
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection(simpleTimeZone0);
@@ -1347,7 +1354,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test071141() throws Throwable {
+    public void test071142() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(2137, "org.jfree.chart.labels.AbstractXYItemLabelGenerator");
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection(simpleTimeZone0);
@@ -1356,7 +1363,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test072142() throws Throwable {
+    public void test072143() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(1.0F, 10, (String) null);
         DefaultTableXYDataset defaultTableXYDataset0 = new DefaultTableXYDataset(false);
         XYPlot xYPlot0 = new XYPlot(defaultTableXYDataset0, cyclicNumberAxis0, cyclicNumberAxis0, (XYItemRenderer) null);
@@ -1366,39 +1373,31 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test073143() throws Throwable {
+    public void test073144() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDomainGridlinesVisible(true);
         assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test073144() throws Throwable {
+    public void test073145() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDomainGridlinesVisible(true);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test073145() throws Throwable {
+    public void test073146() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDomainGridlinesVisible(true);
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test074146() throws Throwable {
+    public void test074147() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDomainGridlinesVisible(false);
         assertFalse(combinedDomainXYPlot0.isDomainGridlinesVisible());
-    }
-
-    @Test(timeout = 4000)
-    public void test075147() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        BasicStroke basicStroke0 = (BasicStroke) PiePlot.DEFAULT_LABEL_OUTLINE_STROKE;
-        combinedDomainXYPlot0.setDomainGridlineStroke(basicStroke0);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1406,7 +1405,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         BasicStroke basicStroke0 = (BasicStroke) PiePlot.DEFAULT_LABEL_OUTLINE_STROKE;
         combinedDomainXYPlot0.setDomainGridlineStroke(basicStroke0);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1414,11 +1413,19 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         BasicStroke basicStroke0 = (BasicStroke) PiePlot.DEFAULT_LABEL_OUTLINE_STROKE;
         combinedDomainXYPlot0.setDomainGridlineStroke(basicStroke0);
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test075150() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        BasicStroke basicStroke0 = (BasicStroke) PiePlot.DEFAULT_LABEL_OUTLINE_STROKE;
+        combinedDomainXYPlot0.setDomainGridlineStroke(basicStroke0);
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test076150() throws Throwable {
+    public void test076151() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1433,7 +1440,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077151() throws Throwable {
+    public void test077152() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         SystemColor systemColor0 = SystemColor.control;
         combinedRangeXYPlot0.setDomainGridlinePaint(systemColor0);
@@ -1441,7 +1448,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077152() throws Throwable {
+    public void test077153() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         SystemColor systemColor0 = SystemColor.control;
         combinedRangeXYPlot0.setDomainGridlinePaint(systemColor0);
@@ -1449,7 +1456,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077153() throws Throwable {
+    public void test077154() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         SystemColor systemColor0 = SystemColor.control;
         combinedRangeXYPlot0.setDomainGridlinePaint(systemColor0);
@@ -1457,7 +1464,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test078154() throws Throwable {
+    public void test078155() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1472,25 +1479,17 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test079155() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        combinedDomainXYPlot0.setRangeGridlinesVisible(true);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
     public void test079156() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setRangeGridlinesVisible(true);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test080157() throws Throwable {
+    public void test079157() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        BasicStroke basicStroke0 = new BasicStroke();
-        combinedDomainXYPlot0.setRangeGridlineStroke(basicStroke0);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        combinedDomainXYPlot0.setRangeGridlinesVisible(true);
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1498,7 +1497,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         BasicStroke basicStroke0 = new BasicStroke();
         combinedDomainXYPlot0.setRangeGridlineStroke(basicStroke0);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1506,11 +1505,19 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         BasicStroke basicStroke0 = new BasicStroke();
         combinedDomainXYPlot0.setRangeGridlineStroke(basicStroke0);
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test080160() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        BasicStroke basicStroke0 = new BasicStroke();
+        combinedDomainXYPlot0.setRangeGridlineStroke(basicStroke0);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test081160() throws Throwable {
+    public void test081161() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1525,21 +1532,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test082161() throws Throwable {
+    public void test082162() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setRangeGridlinePaint(combinedRangeXYPlot0.DEFAULT_GRIDLINE_PAINT);
         assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test082162() throws Throwable {
+    public void test082163() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setRangeGridlinePaint(combinedRangeXYPlot0.DEFAULT_GRIDLINE_PAINT);
         assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test083163() throws Throwable {
+    public void test083164() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1554,7 +1561,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test084164() throws Throwable {
+    public void test084165() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Stroke stroke0 = combinedDomainXYPlot0.getDomainCrosshairStroke();
         combinedDomainXYPlot0.setDomainZeroBaselineStroke(stroke0);
@@ -1562,7 +1569,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085165() throws Throwable {
+    public void test085166() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot((ValueAxis) null);
         // Undeclared exception!
         try {
@@ -1577,7 +1584,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086166() throws Throwable {
+    public void test086167() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-1449.3398049104687));
         CyclicXYItemRenderer cyclicXYItemRenderer0 = new CyclicXYItemRenderer();
@@ -1587,7 +1594,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087167() throws Throwable {
+    public void test087168() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1602,7 +1609,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088168() throws Throwable {
+    public void test088169() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1617,7 +1624,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089169() throws Throwable {
+    public void test089170() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1632,7 +1639,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090170() throws Throwable {
+    public void test090171() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Point2D.Double point2D_Double0 = new Point2D.Double();
         combinedRangeXYPlot0.setQuadrantOrigin(point2D_Double0);
@@ -1640,7 +1647,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091171() throws Throwable {
+    public void test091172() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         // Undeclared exception!
         try {
@@ -1655,7 +1662,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092172() throws Throwable {
+    public void test092173() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         // Undeclared exception!
         try {
@@ -1670,21 +1677,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093173() throws Throwable {
+    public void test093174() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.getQuadrantPaint(0);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test093174() throws Throwable {
+    public void test093175() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.getQuadrantPaint(0);
         assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test094175() throws Throwable {
+    public void test094176() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1699,7 +1706,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095176() throws Throwable {
+    public void test095177() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = Color.black;
         // Undeclared exception!
@@ -1715,7 +1722,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096177() throws Throwable {
+    public void test096178() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = Color.orange;
         combinedDomainXYPlot0.setQuadrantPaint(1, color0);
@@ -1723,7 +1730,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096178() throws Throwable {
+    public void test096179() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = Color.orange;
         combinedDomainXYPlot0.setQuadrantPaint(1, color0);
@@ -1731,7 +1738,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097179() throws Throwable {
+    public void test097180() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = (Color) FastScatterPlot.DEFAULT_GRIDLINE_PAINT;
         // Undeclared exception!
@@ -1747,7 +1754,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098180() throws Throwable {
+    public void test098181() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         IntervalMarker intervalMarker0 = new IntervalMarker(1.0F, 1.0F);
         Layer layer0 = Layer.BACKGROUND;
@@ -1757,7 +1764,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099181() throws Throwable {
+    public void test099182() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ValueMarker valueMarker0 = new ValueMarker(10, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_GRIDLINE_STROKE, 0);
         combinedDomainXYPlot0.addDomainMarker((Marker) valueMarker0);
@@ -1766,7 +1773,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099182() throws Throwable {
+    public void test099183() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ValueMarker valueMarker0 = new ValueMarker(10, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_GRIDLINE_STROKE, 0);
         combinedDomainXYPlot0.addDomainMarker((Marker) valueMarker0);
@@ -1775,7 +1782,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100183() throws Throwable {
+    public void test100184() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -1790,7 +1797,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101184() throws Throwable {
+    public void test101185() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CategoryMarker categoryMarker0 = new CategoryMarker(10);
         // Undeclared exception!
@@ -1806,7 +1813,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102185() throws Throwable {
+    public void test102186() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         IntervalMarker intervalMarker0 = new IntervalMarker(14.0, 0);
         Layer layer0 = Layer.FOREGROUND;
@@ -1816,7 +1823,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103186() throws Throwable {
+    public void test103187() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         IntervalMarker intervalMarker0 = new IntervalMarker(1.0F, 1.0F);
         Layer layer0 = Layer.BACKGROUND;
@@ -1826,34 +1833,23 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103187() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        IntervalMarker intervalMarker0 = new IntervalMarker(1.0F, 1.0F);
-        Layer layer0 = Layer.BACKGROUND;
-        combinedRangeXYPlot0.addDomainMarker((-2080), (Marker) intervalMarker0, layer0, false);
-        combinedRangeXYPlot0.addDomainMarker((-2080), (Marker) intervalMarker0, layer0, false);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
-    }
-
-    @Test(timeout = 4000)
     public void test103188() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         IntervalMarker intervalMarker0 = new IntervalMarker(1.0F, 1.0F);
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((-2080), (Marker) intervalMarker0, layer0, false);
         combinedRangeXYPlot0.addDomainMarker((-2080), (Marker) intervalMarker0, layer0, false);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test104189() throws Throwable {
+    public void test103189() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        IntervalMarker intervalMarker0 = new IntervalMarker(0.5F, 15);
-        ValueMarker valueMarker0 = new ValueMarker(1236.10482);
+        IntervalMarker intervalMarker0 = new IntervalMarker(1.0F, 1.0F);
         Layer layer0 = Layer.BACKGROUND;
-        combinedRangeXYPlot0.addDomainMarker((Marker) intervalMarker0, layer0);
-        combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        combinedRangeXYPlot0.addDomainMarker((-2080), (Marker) intervalMarker0, layer0, false);
+        combinedRangeXYPlot0.addDomainMarker((-2080), (Marker) intervalMarker0, layer0, false);
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1864,7 +1860,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((Marker) intervalMarker0, layer0);
         combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -1875,18 +1871,18 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((Marker) intervalMarker0, layer0);
         combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
-        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test105192() throws Throwable {
-        DateAxis dateAxis0 = new DateAxis("Z]wbb3qfX<");
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot(dateAxis0);
-        ValueMarker valueMarker0 = new ValueMarker(688.32824277761);
+    public void test104192() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        IntervalMarker intervalMarker0 = new IntervalMarker(0.5F, 15);
+        ValueMarker valueMarker0 = new ValueMarker(1236.10482);
         Layer layer0 = Layer.BACKGROUND;
-        combinedRangeXYPlot0.addDomainMarker((Marker) valueMarker0, layer0);
-        boolean boolean0 = combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        combinedRangeXYPlot0.addDomainMarker((Marker) intervalMarker0, layer0);
+        combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
+        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1897,17 +1893,18 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((Marker) valueMarker0, layer0);
         boolean boolean0 = combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
-        assertTrue(boolean0);
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test106194() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        ValueMarker valueMarker0 = new ValueMarker(2.0);
+    public void test105194() throws Throwable {
+        DateAxis dateAxis0 = new DateAxis("Z]wbb3qfX<");
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot(dateAxis0);
+        ValueMarker valueMarker0 = new ValueMarker(688.32824277761);
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((Marker) valueMarker0, layer0);
-        combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, true);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+        boolean boolean0 = combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, false);
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -1917,7 +1914,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((Marker) valueMarker0, layer0);
         combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, true);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1927,18 +1924,17 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addDomainMarker((Marker) valueMarker0, layer0);
         combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, true);
-        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test107197() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+    public void test106197() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        CategoryMarker categoryMarker0 = new CategoryMarker(10, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE);
+        ValueMarker valueMarker0 = new ValueMarker(2.0);
         Layer layer0 = Layer.BACKGROUND;
-        combinedRangeXYPlot0.addRangeMarker(10, (Marker) categoryMarker0, layer0);
-        combinedRangeXYPlot0.clearRangeMarkers();
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        combinedRangeXYPlot0.addDomainMarker((Marker) valueMarker0, layer0);
+        combinedRangeXYPlot0.removeDomainMarker(0, (Marker) valueMarker0, layer0, true);
+        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1949,26 +1945,27 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.BACKGROUND;
         combinedRangeXYPlot0.addRangeMarker(10, (Marker) categoryMarker0, layer0);
         combinedRangeXYPlot0.clearRangeMarkers();
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test107199() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        CategoryMarker categoryMarker0 = new CategoryMarker(10, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE);
+        Layer layer0 = Layer.BACKGROUND;
+        combinedRangeXYPlot0.addRangeMarker(10, (Marker) categoryMarker0, layer0);
+        combinedRangeXYPlot0.clearRangeMarkers();
         assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test108199() throws Throwable {
+    public void test108200() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ValueMarker valueMarker0 = new ValueMarker(1.0F);
         combinedDomainXYPlot0.addRangeMarker((Marker) valueMarker0);
         combinedDomainXYPlot0.clearRangeMarkers();
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test109200() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        IntervalMarker intervalMarker0 = new IntervalMarker(482.0, 942.9754205);
-        combinedDomainXYPlot0.addRangeMarker((Marker) intervalMarker0);
-        CategoryMarker categoryMarker0 = new CategoryMarker(false, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_CROSSHAIR_STROKE);
-        combinedDomainXYPlot0.addRangeMarker((Marker) categoryMarker0);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -1978,11 +1975,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         combinedDomainXYPlot0.addRangeMarker((Marker) intervalMarker0);
         CategoryMarker categoryMarker0 = new CategoryMarker(false, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_CROSSHAIR_STROKE);
         combinedDomainXYPlot0.addRangeMarker((Marker) categoryMarker0);
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test109202() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        IntervalMarker intervalMarker0 = new IntervalMarker(482.0, 942.9754205);
+        combinedDomainXYPlot0.addRangeMarker((Marker) intervalMarker0);
+        CategoryMarker categoryMarker0 = new CategoryMarker(false, combinedDomainXYPlot0.DEFAULT_GRIDLINE_PAINT, combinedDomainXYPlot0.DEFAULT_CROSSHAIR_STROKE);
+        combinedDomainXYPlot0.addRangeMarker((Marker) categoryMarker0);
         assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test110202() throws Throwable {
+    public void test110203() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -1997,7 +2004,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111203() throws Throwable {
+    public void test111204() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Layer layer0 = Layer.BACKGROUND;
         IntervalMarker intervalMarker0 = new IntervalMarker(2730.74, 10);
@@ -2007,7 +2014,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111204() throws Throwable {
+    public void test111205() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Layer layer0 = Layer.BACKGROUND;
         IntervalMarker intervalMarker0 = new IntervalMarker(2730.74, 10);
@@ -2017,7 +2024,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112205() throws Throwable {
+    public void test112206() throws Throwable {
         Layer layer0 = Layer.BACKGROUND;
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         ValueMarker valueMarker0 = new ValueMarker((-5141.2983), combinedRangeXYPlot0.DEFAULT_OUTLINE_PAINT, combinedRangeXYPlot0.DEFAULT_OUTLINE_STROKE);
@@ -2028,17 +2035,6 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113206() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        ValueMarker valueMarker0 = new ValueMarker(1.0F, combinedDomainXYPlot0.DEFAULT_OUTLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE);
-        Layer layer0 = Layer.BACKGROUND;
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        combinedRangeXYPlot0.addRangeMarker(10, (Marker) valueMarker0, layer0);
-        boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(10, (Marker) valueMarker0, layer0, false);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
-    }
-
-    @Test(timeout = 4000)
     public void test113207() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ValueMarker valueMarker0 = new ValueMarker(1.0F, combinedDomainXYPlot0.DEFAULT_OUTLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE);
@@ -2046,7 +2042,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.addRangeMarker(10, (Marker) valueMarker0, layer0);
         boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(10, (Marker) valueMarker0, layer0, false);
-        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -2057,16 +2053,17 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.addRangeMarker(10, (Marker) valueMarker0, layer0);
         boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(10, (Marker) valueMarker0, layer0, false);
-        assertTrue(boolean0);
+        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test114209() throws Throwable {
+    public void test113209() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        ValueMarker valueMarker0 = new ValueMarker(1.0F, combinedDomainXYPlot0.DEFAULT_OUTLINE_PAINT, combinedDomainXYPlot0.DEFAULT_OUTLINE_STROKE);
+        Layer layer0 = Layer.BACKGROUND;
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        CategoryMarker categoryMarker0 = new CategoryMarker(10);
-        Layer layer0 = Layer.FOREGROUND;
-        combinedRangeXYPlot0.addRangeMarker(389, (Marker) categoryMarker0, layer0);
-        boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(389, (Marker) categoryMarker0, layer0, true);
+        combinedRangeXYPlot0.addRangeMarker(10, (Marker) valueMarker0, layer0);
+        boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(10, (Marker) valueMarker0, layer0, false);
         assertTrue(boolean0);
     }
 
@@ -2077,7 +2074,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.FOREGROUND;
         combinedRangeXYPlot0.addRangeMarker(389, (Marker) categoryMarker0, layer0);
         boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(389, (Marker) categoryMarker0, layer0, true);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -2087,11 +2084,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.FOREGROUND;
         combinedRangeXYPlot0.addRangeMarker(389, (Marker) categoryMarker0, layer0);
         boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(389, (Marker) categoryMarker0, layer0, true);
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test114212() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        CategoryMarker categoryMarker0 = new CategoryMarker(10);
+        Layer layer0 = Layer.FOREGROUND;
+        combinedRangeXYPlot0.addRangeMarker(389, (Marker) categoryMarker0, layer0);
+        boolean boolean0 = combinedRangeXYPlot0.removeRangeMarker(389, (Marker) categoryMarker0, layer0, true);
         assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test115212() throws Throwable {
+    public void test115213() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -2106,7 +2113,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test116213() throws Throwable {
+    public void test116214() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYShapeAnnotation xYShapeAnnotation0 = new XYShapeAnnotation(combinedRangeXYPlot0.DEFAULT_LEGEND_ITEM_BOX, combinedRangeXYPlot0.DEFAULT_GRIDLINE_STROKE, combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -2116,7 +2123,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test116214() throws Throwable {
+    public void test116215() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYShapeAnnotation xYShapeAnnotation0 = new XYShapeAnnotation(combinedRangeXYPlot0.DEFAULT_LEGEND_ITEM_BOX, combinedRangeXYPlot0.DEFAULT_GRIDLINE_STROKE, combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -2126,7 +2133,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test116215() throws Throwable {
+    public void test116216() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYShapeAnnotation xYShapeAnnotation0 = new XYShapeAnnotation(combinedRangeXYPlot0.DEFAULT_LEGEND_ITEM_BOX, combinedRangeXYPlot0.DEFAULT_GRIDLINE_STROKE, combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -2136,7 +2143,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117216() throws Throwable {
+    public void test117217() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
         try {
@@ -2151,7 +2158,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118217() throws Throwable {
+    public void test118218() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYShapeAnnotation xYShapeAnnotation0 = new XYShapeAnnotation(combinedDomainXYPlot0.DEFAULT_LEGEND_ITEM_BOX, combinedRangeXYPlot0.DEFAULT_OUTLINE_STROKE, combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -2161,7 +2168,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118218() throws Throwable {
+    public void test118219() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYShapeAnnotation xYShapeAnnotation0 = new XYShapeAnnotation(combinedDomainXYPlot0.DEFAULT_LEGEND_ITEM_BOX, combinedRangeXYPlot0.DEFAULT_OUTLINE_STROKE, combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -2171,7 +2178,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118219() throws Throwable {
+    public void test118220() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         XYShapeAnnotation xYShapeAnnotation0 = new XYShapeAnnotation(combinedDomainXYPlot0.DEFAULT_LEGEND_ITEM_BOX, combinedRangeXYPlot0.DEFAULT_OUTLINE_STROKE, combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -2181,7 +2188,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119220() throws Throwable {
+    public void test119221() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2196,7 +2203,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test120221() throws Throwable {
+    public void test120222() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         DefaultCaret defaultCaret0 = new DefaultCaret();
         // Undeclared exception!
@@ -2212,7 +2219,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test121222() throws Throwable {
+    public void test121223() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         JFreeChart jFreeChart0 = new JFreeChart(xYPlot0);
         // Undeclared exception!
@@ -2228,7 +2235,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test122223() throws Throwable {
+    public void test122224() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         JFreeChart jFreeChart0 = new JFreeChart(xYPlot0);
@@ -2237,32 +2244,12 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test122224() throws Throwable {
+    public void test122225() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         JFreeChart jFreeChart0 = new JFreeChart(xYPlot0);
         jFreeChart0.createBufferedImage(335, 10, 10, chartRenderingInfo0);
         assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test123225() throws Throwable {
-        CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-13.322859994304387), (-13.322859994304387));
-        XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
-        HistogramDataset histogramDataset0 = new HistogramDataset();
-        XYPlot xYPlot0 = new XYPlot(histogramDataset0, cyclicNumberAxis0, cyclicNumberAxis0, xYAreaRenderer0);
-        JFreeChart jFreeChart0 = new JFreeChart((String) null, cyclicNumberAxis0.DEFAULT_TICK_LABEL_FONT, xYPlot0, false);
-        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
-        BufferedImage bufferedImage0 = jFreeChart0.createBufferedImage(15, 15, 10, chartRenderingInfo0);
-        Graphics2D graphics2D0 = bufferedImage0.createGraphics();
-        ChartPanel chartPanel0 = new ChartPanel(jFreeChart0);
-        Dimension dimension0 = chartPanel0.getPreferredSize();
-        Rectangle rectangle0 = new Rectangle(dimension0);
-        Point point0 = new Point(0, 0);
-        PlotState plotState0 = new PlotState();
-        PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
-        xYPlot0.draw(graphics2D0, rectangle0, point0, plotState0, plotRenderingInfo0);
-        assertEquals(8, rectangle0.x);
     }
 
     @Test(timeout = 4000)
@@ -2282,11 +2269,31 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         PlotState plotState0 = new PlotState();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
         xYPlot0.draw(graphics2D0, rectangle0, point0, plotState0, plotRenderingInfo0);
+        assertEquals(8, rectangle0.x);
+    }
+
+    @Test(timeout = 4000)
+    public void test123227() throws Throwable {
+        CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-13.322859994304387), (-13.322859994304387));
+        XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
+        HistogramDataset histogramDataset0 = new HistogramDataset();
+        XYPlot xYPlot0 = new XYPlot(histogramDataset0, cyclicNumberAxis0, cyclicNumberAxis0, xYAreaRenderer0);
+        JFreeChart jFreeChart0 = new JFreeChart((String) null, cyclicNumberAxis0.DEFAULT_TICK_LABEL_FONT, xYPlot0, false);
+        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
+        BufferedImage bufferedImage0 = jFreeChart0.createBufferedImage(15, 15, 10, chartRenderingInfo0);
+        Graphics2D graphics2D0 = bufferedImage0.createGraphics();
+        ChartPanel chartPanel0 = new ChartPanel(jFreeChart0);
+        Dimension dimension0 = chartPanel0.getPreferredSize();
+        Rectangle rectangle0 = new Rectangle(dimension0);
+        Point point0 = new Point(0, 0);
+        PlotState plotState0 = new PlotState();
+        PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
+        xYPlot0.draw(graphics2D0, rectangle0, point0, plotState0, plotRenderingInfo0);
         assertEquals(412.0, rectangle0.getHeight(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test124227() throws Throwable {
+    public void test124228() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-48.9523527142181), (-48.9523527142181));
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2299,7 +2306,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125228() throws Throwable {
+    public void test125229() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(9.792397218116802, 9.792397218116802);
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2312,7 +2319,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126229() throws Throwable {
+    public void test126230() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
@@ -2322,31 +2329,13 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126230() throws Throwable {
+    public void test126231() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
         Rectangle2D.Float rectangle2D_Float0 = new Rectangle2D.Float();
         xYPlot0.drawAxes((Graphics2D) null, rectangle2D_Float0, rectangle2D_Float0, plotRenderingInfo0);
         assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test127231() throws Throwable {
-        CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-48.9523527142181), (-48.9523527142181));
-        XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
-        HistogramDataset histogramDataset0 = new HistogramDataset();
-        XYPlot xYPlot0 = new XYPlot(histogramDataset0, cyclicNumberAxis0, cyclicNumberAxis0, xYAreaRenderer0);
-        JFreeChart jFreeChart0 = new JFreeChart("", cyclicNumberAxis0.DEFAULT_TICK_LABEL_FONT, xYPlot0, true);
-        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
-        ValueAxis[] valueAxisArray0 = new ValueAxis[2];
-        valueAxisArray0[0] = (ValueAxis) cyclicNumberAxis0;
-        ZoneInfo zoneInfo0 = (ZoneInfo) SegmentedTimeline.DEFAULT_TIME_ZONE;
-        DateAxis dateAxis0 = new DateAxis("/jfU@$R]U5;RDcJ", zoneInfo0);
-        valueAxisArray0[1] = (ValueAxis) dateAxis0;
-        xYPlot0.setDomainAxes(valueAxisArray0);
-        jFreeChart0.createBufferedImage(140, 500, 1, chartRenderingInfo0);
-        assertEquals(2, xYPlot0.getDomainAxisCount());
     }
 
     @Test(timeout = 4000)
@@ -2364,11 +2353,29 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         valueAxisArray0[1] = (ValueAxis) dateAxis0;
         xYPlot0.setDomainAxes(valueAxisArray0);
         jFreeChart0.createBufferedImage(140, 500, 1, chartRenderingInfo0);
+        assertEquals(2, xYPlot0.getDomainAxisCount());
+    }
+
+    @Test(timeout = 4000)
+    public void test127233() throws Throwable {
+        CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-48.9523527142181), (-48.9523527142181));
+        XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
+        HistogramDataset histogramDataset0 = new HistogramDataset();
+        XYPlot xYPlot0 = new XYPlot(histogramDataset0, cyclicNumberAxis0, cyclicNumberAxis0, xYAreaRenderer0);
+        JFreeChart jFreeChart0 = new JFreeChart("", cyclicNumberAxis0.DEFAULT_TICK_LABEL_FONT, xYPlot0, true);
+        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
+        ValueAxis[] valueAxisArray0 = new ValueAxis[2];
+        valueAxisArray0[0] = (ValueAxis) cyclicNumberAxis0;
+        ZoneInfo zoneInfo0 = (ZoneInfo) SegmentedTimeline.DEFAULT_TIME_ZONE;
+        DateAxis dateAxis0 = new DateAxis("/jfU@$R]U5;RDcJ", zoneInfo0);
+        valueAxisArray0[1] = (ValueAxis) dateAxis0;
+        xYPlot0.setDomainAxes(valueAxisArray0);
+        jFreeChart0.createBufferedImage(140, 500, 1, chartRenderingInfo0);
         assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test128233() throws Throwable {
+    public void test128234() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-13.322859994304387), (-13.322859994304387));
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2382,7 +2389,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129234() throws Throwable {
+    public void test129235() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2397,7 +2404,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130235() throws Throwable {
+    public void test130236() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2412,7 +2419,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test131236() throws Throwable {
+    public void test131237() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-1449.3398049104687));
         CyclicXYItemRenderer cyclicXYItemRenderer0 = new CyclicXYItemRenderer();
@@ -2423,7 +2430,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test132237() throws Throwable {
+    public void test132238() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2438,7 +2445,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test133238() throws Throwable {
+    public void test133239() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2453,24 +2460,12 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test134239() throws Throwable {
+    public void test134240() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         CategoryTableXYDataset categoryTableXYDataset0 = new CategoryTableXYDataset();
         combinedDomainXYPlot0.setDataset(4, (XYDataset) categoryTableXYDataset0);
         combinedDomainXYPlot0.getRangeAxisForDataset(3);
         assertEquals(5, combinedDomainXYPlot0.getDatasetCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test135240() throws Throwable {
-        DefaultXYZDataset defaultXYZDataset0 = new DefaultXYZDataset();
-        XYLine3DRenderer xYLine3DRenderer0 = new XYLine3DRenderer();
-        XYPlot xYPlot0 = new XYPlot(defaultXYZDataset0, (ValueAxis) null, (ValueAxis) null, xYLine3DRenderer0);
-        BufferedImage bufferedImage0 = new BufferedImage(500, 979, 10);
-        Graphics2D graphics2D0 = bufferedImage0.createGraphics();
-        LinkedList<DefaultIntervalXYDataset> linkedList0 = new LinkedList<DefaultIntervalXYDataset>();
-        xYPlot0.drawRangeGridlines(graphics2D0, (Rectangle2D) null, linkedList0);
-        assertEquals(1, xYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -2482,7 +2477,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Graphics2D graphics2D0 = bufferedImage0.createGraphics();
         LinkedList<DefaultIntervalXYDataset> linkedList0 = new LinkedList<DefaultIntervalXYDataset>();
         xYPlot0.drawRangeGridlines(graphics2D0, (Rectangle2D) null, linkedList0);
-        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals(1, xYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -2494,11 +2489,23 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Graphics2D graphics2D0 = bufferedImage0.createGraphics();
         LinkedList<DefaultIntervalXYDataset> linkedList0 = new LinkedList<DefaultIntervalXYDataset>();
         xYPlot0.drawRangeGridlines(graphics2D0, (Rectangle2D) null, linkedList0);
+        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test135243() throws Throwable {
+        DefaultXYZDataset defaultXYZDataset0 = new DefaultXYZDataset();
+        XYLine3DRenderer xYLine3DRenderer0 = new XYLine3DRenderer();
+        XYPlot xYPlot0 = new XYPlot(defaultXYZDataset0, (ValueAxis) null, (ValueAxis) null, xYLine3DRenderer0);
+        BufferedImage bufferedImage0 = new BufferedImage(500, 979, 10);
+        Graphics2D graphics2D0 = bufferedImage0.createGraphics();
+        LinkedList<DefaultIntervalXYDataset> linkedList0 = new LinkedList<DefaultIntervalXYDataset>();
+        xYPlot0.drawRangeGridlines(graphics2D0, (Rectangle2D) null, linkedList0);
         assertTrue(xYPlot0.isRangeGridlinesVisible());
     }
 
     @Test(timeout = 4000)
-    public void test136243() throws Throwable {
+    public void test136244() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-1747.52805662683));
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2515,34 +2522,24 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test137244() throws Throwable {
+    public void test137245() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.getDomainMarkers(1944, (Layer) null);
         assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test137245() throws Throwable {
+    public void test137246() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.getDomainMarkers(1944, (Layer) null);
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test137246() throws Throwable {
+    public void test137247() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.getDomainMarkers(1944, (Layer) null);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test138247() throws Throwable {
-        XYPlot xYPlot0 = new XYPlot();
-        CategoryMarker categoryMarker0 = new CategoryMarker(1.0F);
-        Layer layer0 = Layer.FOREGROUND;
-        xYPlot0.addRangeMarker((-1088), (Marker) categoryMarker0, layer0, true);
-        Collection collection0 = xYPlot0.getRangeMarkers((-1088), layer0);
-        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2552,7 +2549,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.FOREGROUND;
         xYPlot0.addRangeMarker((-1088), (Marker) categoryMarker0, layer0, true);
         Collection collection0 = xYPlot0.getRangeMarkers((-1088), layer0);
-        assertEquals(1, xYPlot0.getWeight());
+        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2562,11 +2559,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Layer layer0 = Layer.FOREGROUND;
         xYPlot0.addRangeMarker((-1088), (Marker) categoryMarker0, layer0, true);
         Collection collection0 = xYPlot0.getRangeMarkers((-1088), layer0);
+        assertEquals(1, xYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test138250() throws Throwable {
+        XYPlot xYPlot0 = new XYPlot();
+        CategoryMarker categoryMarker0 = new CategoryMarker(1.0F);
+        Layer layer0 = Layer.FOREGROUND;
+        xYPlot0.addRangeMarker((-1088), (Marker) categoryMarker0, layer0, true);
+        Collection collection0 = xYPlot0.getRangeMarkers((-1088), layer0);
         assertNotNull(collection0);
     }
 
     @Test(timeout = 4000)
-    public void test139250() throws Throwable {
+    public void test139251() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         DefaultCaret defaultCaret0 = new DefaultCaret();
         Color color0 = Color.YELLOW;
@@ -2584,7 +2591,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140251() throws Throwable {
+    public void test140252() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         ThermometerPlot thermometerPlot0 = new ThermometerPlot();
         DefaultCaret defaultCaret0 = new DefaultCaret();
@@ -2593,21 +2600,11 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140252() throws Throwable {
+    public void test140253() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         ThermometerPlot thermometerPlot0 = new ThermometerPlot();
         DefaultCaret defaultCaret0 = new DefaultCaret();
         combinedRangeXYPlot0.drawHorizontalLine((Graphics2D) null, defaultCaret0, 2, thermometerPlot0.DEFAULT_OUTLINE_STROKE, thermometerPlot0.DEFAULT_OUTLINE_PAINT);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
-    public void test141253() throws Throwable {
-        ThermometerPlot thermometerPlot0 = new ThermometerPlot();
-        PlotOrientation plotOrientation0 = thermometerPlot0.getOrientation();
-        LogAxis logAxis0 = new LogAxis("{0}: ({1}, {2})");
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot(logAxis0);
-        combinedRangeXYPlot0.drawDomainCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 10, logAxis0, logAxis0.DEFAULT_AXIS_LINE_STROKE, logAxis0.DEFAULT_TICK_LABEL_PAINT);
         assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
@@ -2618,7 +2615,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         LogAxis logAxis0 = new LogAxis("{0}: ({1}, {2})");
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot(logAxis0);
         combinedRangeXYPlot0.drawDomainCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 10, logAxis0, logAxis0.DEFAULT_AXIS_LINE_STROKE, logAxis0.DEFAULT_TICK_LABEL_PAINT);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2628,11 +2625,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         LogAxis logAxis0 = new LogAxis("{0}: ({1}, {2})");
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot(logAxis0);
         combinedRangeXYPlot0.drawDomainCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 10, logAxis0, logAxis0.DEFAULT_AXIS_LINE_STROKE, logAxis0.DEFAULT_TICK_LABEL_PAINT);
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test141256() throws Throwable {
+        ThermometerPlot thermometerPlot0 = new ThermometerPlot();
+        PlotOrientation plotOrientation0 = thermometerPlot0.getOrientation();
+        LogAxis logAxis0 = new LogAxis("{0}: ({1}, {2})");
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot(logAxis0);
+        combinedRangeXYPlot0.drawDomainCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 10, logAxis0, logAxis0.DEFAULT_AXIS_LINE_STROKE, logAxis0.DEFAULT_TICK_LABEL_PAINT);
         assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test142256() throws Throwable {
+    public void test142257() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(1.0F);
         BufferedImage bufferedImage0 = new BufferedImage(500, 235, 10);
@@ -2651,7 +2658,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test143257() throws Throwable {
+    public void test143258() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         PlotOrientation plotOrientation0 = PlotOrientation.HORIZONTAL;
         combinedRangeXYPlot0.setOrientation(plotOrientation0);
@@ -2668,23 +2675,13 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test144258() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        Rectangle rectangle0 = new Rectangle();
-        BasicStroke basicStroke0 = (BasicStroke) XYPlot.DEFAULT_CROSSHAIR_STROKE;
-        Color color0 = (Color) PeriodAxisLabelInfo.DEFAULT_LABEL_PAINT;
-        combinedDomainXYPlot0.drawVerticalLine((Graphics2D) null, rectangle0, (-435.203067591), basicStroke0, color0);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
     public void test144259() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Rectangle rectangle0 = new Rectangle();
         BasicStroke basicStroke0 = (BasicStroke) XYPlot.DEFAULT_CROSSHAIR_STROKE;
         Color color0 = (Color) PeriodAxisLabelInfo.DEFAULT_LABEL_PAINT;
         combinedDomainXYPlot0.drawVerticalLine((Graphics2D) null, rectangle0, (-435.203067591), basicStroke0, color0);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2694,17 +2691,17 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         BasicStroke basicStroke0 = (BasicStroke) XYPlot.DEFAULT_CROSSHAIR_STROKE;
         Color color0 = (Color) PeriodAxisLabelInfo.DEFAULT_LABEL_PAINT;
         combinedDomainXYPlot0.drawVerticalLine((Graphics2D) null, rectangle0, (-435.203067591), basicStroke0, color0);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test145261() throws Throwable {
+    public void test144261() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        FastScatterPlot fastScatterPlot0 = new FastScatterPlot();
-        PlotOrientation plotOrientation0 = fastScatterPlot0.getOrientation();
-        PeriodAxis periodAxis0 = new PeriodAxis("Z_ p$}NnIA");
-        combinedDomainXYPlot0.drawRangeCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 1.0F, periodAxis0, periodAxis0.DEFAULT_TICK_MARK_STROKE, periodAxis0.DEFAULT_AXIS_LABEL_PAINT);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        Rectangle rectangle0 = new Rectangle();
+        BasicStroke basicStroke0 = (BasicStroke) XYPlot.DEFAULT_CROSSHAIR_STROKE;
+        Color color0 = (Color) PeriodAxisLabelInfo.DEFAULT_LABEL_PAINT;
+        combinedDomainXYPlot0.drawVerticalLine((Graphics2D) null, rectangle0, (-435.203067591), basicStroke0, color0);
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2714,22 +2711,17 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         PlotOrientation plotOrientation0 = fastScatterPlot0.getOrientation();
         PeriodAxis periodAxis0 = new PeriodAxis("Z_ p$}NnIA");
         combinedDomainXYPlot0.drawRangeCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 1.0F, periodAxis0, periodAxis0.DEFAULT_TICK_MARK_STROKE, periodAxis0.DEFAULT_AXIS_LABEL_PAINT);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test146263() throws Throwable {
-        String[] stringArray0 = new String[6];
-        SymbolAxis symbolAxis0 = new SymbolAxis("VD*UDSt", stringArray0);
-        XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
-        BufferedImage bufferedImage0 = new BufferedImage(500, 500, 10);
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+    public void test145263() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        Graphics2D graphics2D0 = bufferedImage0.createGraphics();
-        Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double(1.0E-8, 1.0F, 3, 15);
-        PlotOrientation plotOrientation0 = PlotOrientation.HORIZONTAL;
-        combinedDomainXYPlot0.drawRangeCrosshair(graphics2D0, rectangle2D_Double0, plotOrientation0, 0.05, symbolAxis0, xYAreaRenderer2_0.DEFAULT_OUTLINE_STROKE, combinedRangeXYPlot0.DEFAULT_BACKGROUND_PAINT);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        FastScatterPlot fastScatterPlot0 = new FastScatterPlot();
+        PlotOrientation plotOrientation0 = fastScatterPlot0.getOrientation();
+        PeriodAxis periodAxis0 = new PeriodAxis("Z_ p$}NnIA");
+        combinedDomainXYPlot0.drawRangeCrosshair((Graphics2D) null, (Rectangle2D) null, plotOrientation0, 1.0F, periodAxis0, periodAxis0.DEFAULT_TICK_MARK_STROKE, periodAxis0.DEFAULT_AXIS_LABEL_PAINT);
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2744,11 +2736,26 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double(1.0E-8, 1.0F, 3, 15);
         PlotOrientation plotOrientation0 = PlotOrientation.HORIZONTAL;
         combinedDomainXYPlot0.drawRangeCrosshair(graphics2D0, rectangle2D_Double0, plotOrientation0, 0.05, symbolAxis0, xYAreaRenderer2_0.DEFAULT_OUTLINE_STROKE, combinedRangeXYPlot0.DEFAULT_BACKGROUND_PAINT);
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test146265() throws Throwable {
+        String[] stringArray0 = new String[6];
+        SymbolAxis symbolAxis0 = new SymbolAxis("VD*UDSt", stringArray0);
+        XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
+        BufferedImage bufferedImage0 = new BufferedImage(500, 500, 10);
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        Graphics2D graphics2D0 = bufferedImage0.createGraphics();
+        Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double(1.0E-8, 1.0F, 3, 15);
+        PlotOrientation plotOrientation0 = PlotOrientation.HORIZONTAL;
+        combinedDomainXYPlot0.drawRangeCrosshair(graphics2D0, rectangle2D_Double0, plotOrientation0, 0.05, symbolAxis0, xYAreaRenderer2_0.DEFAULT_OUTLINE_STROKE, combinedRangeXYPlot0.DEFAULT_BACKGROUND_PAINT);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test147265() throws Throwable {
+    public void test147266() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         BorderLayout borderLayout0 = new BorderLayout(468, 4);
         byte[] byteArray0 = new byte[1];
@@ -2773,7 +2780,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test148266() throws Throwable {
+    public void test148267() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
@@ -2782,7 +2789,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test148267() throws Throwable {
+    public void test148268() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
@@ -2791,24 +2798,13 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test149268() throws Throwable {
+    public void test149269() throws Throwable {
         TimeSeriesCollection timeSeriesCollection0 = new TimeSeriesCollection();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis((-1452.3506622));
         XYPlot xYPlot0 = new XYPlot();
         xYPlot0.setDomainAxis(2, (ValueAxis) cyclicNumberAxis0);
         xYPlot0.setDataset(500, (XYDataset) timeSeriesCollection0);
         assertEquals(3, xYPlot0.getDomainAxisCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test150269() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        SpiderWebPlot spiderWebPlot0 = new SpiderWebPlot();
-        combinedRangeXYPlot0.setParent(spiderWebPlot0);
-        DefaultCategoryDataset defaultCategoryDataset0 = new DefaultCategoryDataset();
-        DatasetChangeEvent datasetChangeEvent0 = new DatasetChangeEvent(spiderWebPlot0, defaultCategoryDataset0);
-        combinedRangeXYPlot0.datasetChanged(datasetChangeEvent0);
-        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2819,7 +2815,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         DefaultCategoryDataset defaultCategoryDataset0 = new DefaultCategoryDataset();
         DatasetChangeEvent datasetChangeEvent0 = new DatasetChangeEvent(spiderWebPlot0, defaultCategoryDataset0);
         combinedRangeXYPlot0.datasetChanged(datasetChangeEvent0);
-        assertEquals(1, combinedRangeXYPlot0.getWeight());
+        assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -2830,65 +2826,76 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         DefaultCategoryDataset defaultCategoryDataset0 = new DefaultCategoryDataset();
         DatasetChangeEvent datasetChangeEvent0 = new DatasetChangeEvent(spiderWebPlot0, defaultCategoryDataset0);
         combinedRangeXYPlot0.datasetChanged(datasetChangeEvent0);
-        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test151272() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        combinedDomainXYPlot0.setDomainCrosshairVisible(false);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
+    public void test150272() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        SpiderWebPlot spiderWebPlot0 = new SpiderWebPlot();
+        combinedRangeXYPlot0.setParent(spiderWebPlot0);
+        DefaultCategoryDataset defaultCategoryDataset0 = new DefaultCategoryDataset();
+        DatasetChangeEvent datasetChangeEvent0 = new DatasetChangeEvent(spiderWebPlot0, defaultCategoryDataset0);
+        combinedRangeXYPlot0.datasetChanged(datasetChangeEvent0);
+        assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test151273() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDomainCrosshairVisible(false);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test151274() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setDomainCrosshairVisible(false);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test152275() throws Throwable {
-        XYPlot xYPlot0 = new XYPlot();
-        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
+    public void test151275() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        combinedDomainXYPlot0.setDomainCrosshairVisible(false);
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
     public void test152276() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
-        xYPlot0.setDomainCrosshairLockedOnData(true);
-        assertEquals(1, xYPlot0.getWeight());
+        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test152277() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         xYPlot0.setDomainCrosshairLockedOnData(true);
+        assertEquals(1, xYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test152278() throws Throwable {
+        XYPlot xYPlot0 = new XYPlot();
+        xYPlot0.setDomainCrosshairLockedOnData(true);
         assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test153278() throws Throwable {
+    public void test153279() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test153279() throws Throwable {
+    public void test153280() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         xYPlot0.setDomainCrosshairLockedOnData(false);
         assertFalse(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test154280() throws Throwable {
+    public void test154281() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(1.9613068442834365, 1.9613068442834365);
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2899,7 +2906,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test155281() throws Throwable {
+    public void test155282() throws Throwable {
         XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setDomainCrosshairStroke(xYAreaRenderer2_0.DEFAULT_STROKE);
@@ -2907,7 +2914,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test155282() throws Throwable {
+    public void test155283() throws Throwable {
         XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setDomainCrosshairStroke(xYAreaRenderer2_0.DEFAULT_STROKE);
@@ -2915,7 +2922,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test156283() throws Throwable {
+    public void test156284() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2930,7 +2937,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test157284() throws Throwable {
+    public void test157285() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -2945,28 +2952,28 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test158285() throws Throwable {
+    public void test158286() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setRangeCrosshairVisible(false);
         assertTrue(combinedRangeXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test158286() throws Throwable {
+    public void test158287() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setRangeCrosshairVisible(false);
         assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test158287() throws Throwable {
+    public void test158288() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setRangeCrosshairVisible(false);
         assertTrue(combinedRangeXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test159288() throws Throwable {
+    public void test159289() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setRangeCrosshairVisible(true);
         combinedDomainXYPlot0.setRangeCrosshairValue((double) 2.0F, true);
@@ -2974,7 +2981,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test160289() throws Throwable {
+    public void test160290() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(9.17284099856);
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2983,7 +2990,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test160290() throws Throwable {
+    public void test160291() throws Throwable {
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(9.17284099856);
         XYAreaRenderer xYAreaRenderer0 = new XYAreaRenderer(500);
         HistogramDataset histogramDataset0 = new HistogramDataset();
@@ -2993,22 +3000,11 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test161291() throws Throwable {
+    public void test161292() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setRangeCrosshairVisible(true);
         combinedDomainXYPlot0.setRangeCrosshairValue((-411.2747621676), false);
         assertEquals((-411.2747621676), combinedDomainXYPlot0.getRangeCrosshairValue(), 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test162292() throws Throwable {
-        YIntervalSeriesCollection yIntervalSeriesCollection0 = new YIntervalSeriesCollection();
-        String[] stringArray0 = new String[6];
-        SymbolAxis symbolAxis0 = new SymbolAxis("VD*UDSt", stringArray0);
-        XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
-        XYPlot xYPlot0 = new XYPlot(yIntervalSeriesCollection0, symbolAxis0, symbolAxis0, xYAreaRenderer2_0);
-        xYPlot0.setRangeCrosshairStroke(xYAreaRenderer2_0.DEFAULT_OUTLINE_STROKE);
-        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -3019,11 +3015,22 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
         XYPlot xYPlot0 = new XYPlot(yIntervalSeriesCollection0, symbolAxis0, symbolAxis0, xYAreaRenderer2_0);
         xYPlot0.setRangeCrosshairStroke(xYAreaRenderer2_0.DEFAULT_OUTLINE_STROKE);
+        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test162294() throws Throwable {
+        YIntervalSeriesCollection yIntervalSeriesCollection0 = new YIntervalSeriesCollection();
+        String[] stringArray0 = new String[6];
+        SymbolAxis symbolAxis0 = new SymbolAxis("VD*UDSt", stringArray0);
+        XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
+        XYPlot xYPlot0 = new XYPlot(yIntervalSeriesCollection0, symbolAxis0, symbolAxis0, xYAreaRenderer2_0);
+        xYPlot0.setRangeCrosshairStroke(xYAreaRenderer2_0.DEFAULT_OUTLINE_STROKE);
         assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test163294() throws Throwable {
+    public void test163295() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -3038,7 +3045,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test164295() throws Throwable {
+    public void test164296() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = (Color) SpiderWebPlot.DEFAULT_LABEL_BACKGROUND_PAINT;
         combinedDomainXYPlot0.setRangeCrosshairPaint(color0);
@@ -3046,7 +3053,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test164296() throws Throwable {
+    public void test164297() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = (Color) SpiderWebPlot.DEFAULT_LABEL_BACKGROUND_PAINT;
         combinedDomainXYPlot0.setRangeCrosshairPaint(color0);
@@ -3054,7 +3061,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test164297() throws Throwable {
+    public void test164298() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         Color color0 = (Color) SpiderWebPlot.DEFAULT_LABEL_BACKGROUND_PAINT;
         combinedDomainXYPlot0.setRangeCrosshairPaint(color0);
@@ -3062,7 +3069,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test165298() throws Throwable {
+    public void test165299() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         // Undeclared exception!
         try {
@@ -3077,42 +3084,42 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test166299() throws Throwable {
+    public void test166300() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setFixedDomainAxisSpace((AxisSpace) null, false);
         assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test166300() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        combinedDomainXYPlot0.setFixedDomainAxisSpace((AxisSpace) null, false);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
-    }
-
-    @Test(timeout = 4000)
     public void test166301() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setFixedDomainAxisSpace((AxisSpace) null, false);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test167302() throws Throwable {
+    public void test166302() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        combinedDomainXYPlot0.setFixedRangeAxisSpace((AxisSpace) null, false);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        combinedDomainXYPlot0.setFixedDomainAxisSpace((AxisSpace) null, false);
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
     public void test167303() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.setFixedRangeAxisSpace((AxisSpace) null, false);
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test167304() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        combinedDomainXYPlot0.setFixedRangeAxisSpace((AxisSpace) null, false);
         assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test168304() throws Throwable {
+    public void test168305() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Point point0 = new Point(10, 10);
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
@@ -3124,7 +3131,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test169305() throws Throwable {
+    public void test169306() throws Throwable {
         Point point0 = new Point();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.zoomDomainAxes((double) 0, (PlotRenderingInfo) null, (Point2D) point0, false);
@@ -3132,7 +3139,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test169306() throws Throwable {
+    public void test169307() throws Throwable {
         Point point0 = new Point();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         combinedDomainXYPlot0.zoomDomainAxes((double) 0, (PlotRenderingInfo) null, (Point2D) point0, false);
@@ -3140,7 +3147,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test170307() throws Throwable {
+    public void test170308() throws Throwable {
         Point point0 = new Point();
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         PlotOrientation plotOrientation0 = PlotOrientation.HORIZONTAL;
@@ -3158,7 +3165,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test171308() throws Throwable {
+    public void test171309() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
@@ -3168,34 +3175,23 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test171309() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
-        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
-        PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
-        Point2D.Double point2D_Double0 = new Point2D.Double();
-        combinedDomainXYPlot0.zoomDomainAxes((-3959.811535), 0.4, plotRenderingInfo0, (Point2D) point2D_Double0);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
     public void test171310() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
         Point2D.Double point2D_Double0 = new Point2D.Double();
         combinedDomainXYPlot0.zoomDomainAxes((-3959.811535), 0.4, plotRenderingInfo0, (Point2D) point2D_Double0);
-        assertEquals(1, combinedDomainXYPlot0.getWeight());
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test172311() throws Throwable {
+    public void test171311() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
-        GridBagLayout gridBagLayout0 = new GridBagLayout();
-        Point point0 = gridBagLayout0.location(10, (-4139));
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot((ValueAxis) null);
-        combinedDomainXYPlot0.zoomDomainAxes((double) 1.0F, 1523.770865133526, plotRenderingInfo0, (Point2D) point0);
-        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
+        Point2D.Double point2D_Double0 = new Point2D.Double();
+        combinedDomainXYPlot0.zoomDomainAxes((-3959.811535), 0.4, plotRenderingInfo0, (Point2D) point2D_Double0);
+        assertEquals(1, combinedDomainXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -3206,17 +3202,18 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         Point point0 = gridBagLayout0.location(10, (-4139));
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot((ValueAxis) null);
         combinedDomainXYPlot0.zoomDomainAxes((double) 1.0F, 1523.770865133526, plotRenderingInfo0, (Point2D) point0);
-        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
+        assertTrue(combinedDomainXYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test173313() throws Throwable {
+    public void test172313() throws Throwable {
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
-        XYPlot xYPlot0 = new XYPlot();
         PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
-        Point2D.Float point2D_Float0 = new Point2D.Float();
-        xYPlot0.zoomRangeAxes((-3040.783315968), plotRenderingInfo0, (Point2D) point2D_Float0, true);
-        assertEquals(1, xYPlot0.getWeight());
+        GridBagLayout gridBagLayout0 = new GridBagLayout();
+        Point point0 = gridBagLayout0.location(10, (-4139));
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot((ValueAxis) null);
+        combinedDomainXYPlot0.zoomDomainAxes((double) 1.0F, 1523.770865133526, plotRenderingInfo0, (Point2D) point0);
+        assertTrue(combinedDomainXYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -3226,11 +3223,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
         Point2D.Float point2D_Float0 = new Point2D.Float();
         xYPlot0.zoomRangeAxes((-3040.783315968), plotRenderingInfo0, (Point2D) point2D_Float0, true);
+        assertEquals(1, xYPlot0.getWeight());
+    }
+
+    @Test(timeout = 4000)
+    public void test173315() throws Throwable {
+        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
+        XYPlot xYPlot0 = new XYPlot();
+        PlotRenderingInfo plotRenderingInfo0 = chartRenderingInfo0.getPlotInfo();
+        Point2D.Float point2D_Float0 = new Point2D.Float();
+        xYPlot0.zoomRangeAxes((-3040.783315968), plotRenderingInfo0, (Point2D) point2D_Float0, true);
         assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test174315() throws Throwable {
+    public void test174316() throws Throwable {
         Point point0 = new Point();
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         // Undeclared exception!
@@ -3246,7 +3253,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175316() throws Throwable {
+    public void test175317() throws Throwable {
         Point point0 = new Point();
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         PlotOrientation plotOrientation0 = PlotOrientation.HORIZONTAL;
@@ -3264,7 +3271,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176317() throws Throwable {
+    public void test176318() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
@@ -3275,7 +3282,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176318() throws Throwable {
+    public void test176319() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
@@ -3286,7 +3293,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176319() throws Throwable {
+    public void test176320() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
         PlotRenderingInfo plotRenderingInfo0 = new PlotRenderingInfo(chartRenderingInfo0);
@@ -3297,7 +3304,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test177320() throws Throwable {
+    public void test177321() throws Throwable {
         Point point0 = new Point();
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
@@ -3315,7 +3322,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178321() throws Throwable {
+    public void test178322() throws Throwable {
         ThermometerPlot thermometerPlot0 = new ThermometerPlot();
         ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
         SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(3);
@@ -3326,17 +3333,6 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178322() throws Throwable {
-        ThermometerPlot thermometerPlot0 = new ThermometerPlot();
-        ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
-        SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(3);
-        StackedXYAreaRenderer2 stackedXYAreaRenderer2_0 = new StackedXYAreaRenderer2();
-        XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, valueAxis0, valueAxis0, stackedXYAreaRenderer2_0);
-        int int0 = xYPlot0.getSeriesCount();
-        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
-    }
-
-    @Test(timeout = 4000)
     public void test178323() throws Throwable {
         ThermometerPlot thermometerPlot0 = new ThermometerPlot();
         ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
@@ -3344,19 +3340,18 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         StackedXYAreaRenderer2 stackedXYAreaRenderer2_0 = new StackedXYAreaRenderer2();
         XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, valueAxis0, valueAxis0, stackedXYAreaRenderer2_0);
         int int0 = xYPlot0.getSeriesCount();
-        assertEquals(1, int0);
+        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test179324() throws Throwable {
-        SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(1.0F);
+    public void test178324() throws Throwable {
+        ThermometerPlot thermometerPlot0 = new ThermometerPlot();
+        ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
+        SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(3);
         StackedXYAreaRenderer2 stackedXYAreaRenderer2_0 = new StackedXYAreaRenderer2();
-        XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, (ValueAxis) null, (ValueAxis) null, stackedXYAreaRenderer2_0);
-        MultiplePiePlot multiplePiePlot0 = new MultiplePiePlot();
-        LegendItemCollection legendItemCollection0 = multiplePiePlot0.getLegendItems();
-        xYPlot0.setFixedLegendItems(legendItemCollection0);
-        xYPlot0.getLegendItems();
-        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
+        XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, valueAxis0, valueAxis0, stackedXYAreaRenderer2_0);
+        int int0 = xYPlot0.getSeriesCount();
+        assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
@@ -3368,18 +3363,19 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         LegendItemCollection legendItemCollection0 = multiplePiePlot0.getLegendItems();
         xYPlot0.setFixedLegendItems(legendItemCollection0);
         xYPlot0.getLegendItems();
-        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
+        assertTrue(xYPlot0.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test180326() throws Throwable {
-        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+    public void test179326() throws Throwable {
         SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(1.0F);
         StackedXYAreaRenderer2 stackedXYAreaRenderer2_0 = new StackedXYAreaRenderer2();
         XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, (ValueAxis) null, (ValueAxis) null, stackedXYAreaRenderer2_0);
-        combinedDomainXYPlot0.setRenderer(10, (XYItemRenderer) stackedXYAreaRenderer2_0, false);
-        LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
-        assertNotNull(legendItemCollection0);
+        MultiplePiePlot multiplePiePlot0 = new MultiplePiePlot();
+        LegendItemCollection legendItemCollection0 = multiplePiePlot0.getLegendItems();
+        xYPlot0.setFixedLegendItems(legendItemCollection0);
+        xYPlot0.getLegendItems();
+        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -3390,7 +3386,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, (ValueAxis) null, (ValueAxis) null, stackedXYAreaRenderer2_0);
         combinedDomainXYPlot0.setRenderer(10, (XYItemRenderer) stackedXYAreaRenderer2_0, false);
         LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
-        assertEquals(1, xYPlot0.getWeight());
+        assertNotNull(legendItemCollection0);
     }
 
     @Test(timeout = 4000)
@@ -3401,7 +3397,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, (ValueAxis) null, (ValueAxis) null, stackedXYAreaRenderer2_0);
         combinedDomainXYPlot0.setRenderer(10, (XYItemRenderer) stackedXYAreaRenderer2_0, false);
         LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
-        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
+        assertEquals(1, xYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
@@ -3412,11 +3408,22 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, (ValueAxis) null, (ValueAxis) null, stackedXYAreaRenderer2_0);
         combinedDomainXYPlot0.setRenderer(10, (XYItemRenderer) stackedXYAreaRenderer2_0, false);
         LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
+        assertTrue(xYPlot0.isDomainCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test180330() throws Throwable {
+        CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+        SimpleHistogramDataset simpleHistogramDataset0 = new SimpleHistogramDataset(1.0F);
+        StackedXYAreaRenderer2 stackedXYAreaRenderer2_0 = new StackedXYAreaRenderer2();
+        XYPlot xYPlot0 = new XYPlot(simpleHistogramDataset0, (ValueAxis) null, (ValueAxis) null, stackedXYAreaRenderer2_0);
+        combinedDomainXYPlot0.setRenderer(10, (XYItemRenderer) stackedXYAreaRenderer2_0, false);
+        LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
         assertEquals(0, legendItemCollection0.getItemCount());
     }
 
     @Test(timeout = 4000)
-    public void test181330() throws Throwable {
+    public void test181331() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(1.0F, 10, (String) null);
         combinedRangeXYPlot0.setDomainAxis(10, (ValueAxis) cyclicNumberAxis0);
@@ -3427,7 +3434,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test182331() throws Throwable {
+    public void test182332() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
         boolean boolean0 = xYPlot0.equals(legendItemCollection0);
@@ -3435,7 +3442,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test182332() throws Throwable {
+    public void test182333() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
         boolean boolean0 = xYPlot0.equals(legendItemCollection0);
@@ -3443,7 +3450,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test182333() throws Throwable {
+    public void test182334() throws Throwable {
         XYPlot xYPlot0 = new XYPlot();
         LegendItemCollection legendItemCollection0 = xYPlot0.getLegendItems();
         boolean boolean0 = xYPlot0.equals(legendItemCollection0);
@@ -3451,14 +3458,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test183334() throws Throwable {
+    public void test183335() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         assertEquals(1, combinedRangeXYPlot0.getWeight());
     }
 
     @Test(timeout = 4000)
-    public void test183335() throws Throwable {
+    public void test183336() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         combinedRangeXYPlot1.add((XYPlot) combinedRangeXYPlot0, 10);
@@ -3467,7 +3474,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test184336() throws Throwable {
+    public void test184337() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
@@ -3475,7 +3482,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test184337() throws Throwable {
+    public void test184338() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
@@ -3483,7 +3490,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test184338() throws Throwable {
+    public void test184339() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
@@ -3491,14 +3498,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test185339() throws Throwable {
+    public void test185340() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Object object0 = combinedRangeXYPlot0.clone();
         assertTrue(object0.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
-    public void test185340() throws Throwable {
+    public void test185341() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Object object0 = combinedRangeXYPlot0.clone();
         combinedRangeXYPlot0.setRangeGridlinesVisible(false);
@@ -3507,7 +3514,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test186341() throws Throwable {
+    public void test186342() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setDomainZeroBaselineVisible(true);
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
@@ -3516,7 +3523,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test186342() throws Throwable {
+    public void test186343() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         combinedRangeXYPlot0.setDomainZeroBaselineVisible(true);
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
@@ -3525,14 +3532,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187343() throws Throwable {
+    public void test187344() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
         assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
-    public void test187344() throws Throwable {
+    public void test187345() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
         combinedRangeXYPlot1.setAxisOffset(combinedRangeXYPlot0.DEFAULT_INSETS);
@@ -3541,20 +3548,10 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test188345() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
-    }
-
-    @Test(timeout = 4000)
     public void test188346() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        StackedXYAreaRenderer stackedXYAreaRenderer0 = new StackedXYAreaRenderer();
-        combinedRangeXYPlot1.setRenderer((XYItemRenderer) stackedXYAreaRenderer0);
-        boolean boolean0 = combinedRangeXYPlot0.equals(combinedRangeXYPlot1);
-        assertFalse(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
+        assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
@@ -3564,11 +3561,21 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         StackedXYAreaRenderer stackedXYAreaRenderer0 = new StackedXYAreaRenderer();
         combinedRangeXYPlot1.setRenderer((XYItemRenderer) stackedXYAreaRenderer0);
         boolean boolean0 = combinedRangeXYPlot0.equals(combinedRangeXYPlot1);
+        assertFalse(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
+    }
+
+    @Test(timeout = 4000)
+    public void test188348() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
+        StackedXYAreaRenderer stackedXYAreaRenderer0 = new StackedXYAreaRenderer();
+        combinedRangeXYPlot1.setRenderer((XYItemRenderer) stackedXYAreaRenderer0);
+        boolean boolean0 = combinedRangeXYPlot0.equals(combinedRangeXYPlot1);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test189348() throws Throwable {
+    public void test189349() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot((ValueAxis) null);
         boolean boolean0 = combinedRangeXYPlot1.equals(combinedRangeXYPlot0);
@@ -3576,14 +3583,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test190349() throws Throwable {
+    public void test190350() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
         assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
-    public void test190350() throws Throwable {
+    public void test190351() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = new CombinedRangeXYPlot();
         combinedRangeXYPlot1.mapDatasetToRangeAxis(10, 10);
@@ -3592,14 +3599,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test191351() throws Throwable {
+    public void test191352() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
-    public void test191352() throws Throwable {
+    public void test191353() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         combinedRangeXYPlot1.setRangeZeroBaselinePaint(combinedRangeXYPlot0.DEFAULT_BACKGROUND_PAINT);
@@ -3608,19 +3615,10 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test192353() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
-    }
-
-    @Test(timeout = 4000)
     public void test192354() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        combinedRangeXYPlot1.setDomainCrosshairPaint(combinedRangeXYPlot0.DEFAULT_OUTLINE_PAINT);
-        boolean boolean0 = combinedRangeXYPlot0.equals(combinedRangeXYPlot1);
-        assertFalse(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
+        assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
@@ -3629,18 +3627,27 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         combinedRangeXYPlot1.setDomainCrosshairPaint(combinedRangeXYPlot0.DEFAULT_OUTLINE_PAINT);
         boolean boolean0 = combinedRangeXYPlot0.equals(combinedRangeXYPlot1);
+        assertFalse(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
+    }
+
+    @Test(timeout = 4000)
+    public void test192356() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
+        combinedRangeXYPlot1.setDomainCrosshairPaint(combinedRangeXYPlot0.DEFAULT_OUTLINE_PAINT);
+        boolean boolean0 = combinedRangeXYPlot0.equals(combinedRangeXYPlot1);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test193356() throws Throwable {
+    public void test193357() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Object object0 = combinedRangeXYPlot0.clone();
         assertTrue(object0.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
-    public void test193357() throws Throwable {
+    public void test193358() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         Object object0 = combinedRangeXYPlot0.clone();
         CategoryMarker categoryMarker0 = new CategoryMarker(10);
@@ -3650,7 +3657,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test194358() throws Throwable {
+    public void test194359() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         ValueMarker valueMarker0 = new ValueMarker(10);
@@ -3661,14 +3668,14 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test195359() throws Throwable {
+    public void test195360() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         assertTrue(combinedRangeXYPlot1.equals((Object) combinedRangeXYPlot0));
     }
 
     @Test(timeout = 4000)
-    public void test195360() throws Throwable {
+    public void test195361() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
         combinedRangeXYPlot1.setDomainTickBandPaint(combinedRangeXYPlot0.DEFAULT_CROSSHAIR_PAINT);
@@ -3677,35 +3684,24 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test196361() throws Throwable {
+    public void test196362() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot1 = (CombinedDomainXYPlot) combinedDomainXYPlot0.clone();
         assertTrue(combinedDomainXYPlot1.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test196362() throws Throwable {
+    public void test196363() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot1 = (CombinedDomainXYPlot) combinedDomainXYPlot0.clone();
         assertTrue(combinedDomainXYPlot1.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test196363() throws Throwable {
+    public void test196364() throws Throwable {
         CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
         CombinedDomainXYPlot combinedDomainXYPlot1 = (CombinedDomainXYPlot) combinedDomainXYPlot0.clone();
         assertEquals(1, combinedDomainXYPlot1.getDomainAxisCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test197364() throws Throwable {
-        CombinedDataset combinedDataset0 = new CombinedDataset();
-        ThermometerPlot thermometerPlot0 = new ThermometerPlot();
-        ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
-        XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
-        XYPlot xYPlot0 = new XYPlot(combinedDataset0, valueAxis0, valueAxis0, xYAreaRenderer2_0);
-        XYPlot xYPlot1 = (XYPlot) xYPlot0.clone();
-        assertTrue(xYPlot1.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -3716,16 +3712,18 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
         XYPlot xYPlot0 = new XYPlot(combinedDataset0, valueAxis0, valueAxis0, xYAreaRenderer2_0);
         XYPlot xYPlot1 = (XYPlot) xYPlot0.clone();
-        assertTrue(xYPlot1.equals((Object) xYPlot0));
+        assertTrue(xYPlot1.isRangeCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
-    public void test198366() throws Throwable {
-        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
-        AxisSpace axisSpace0 = new AxisSpace();
-        combinedRangeXYPlot0.setFixedDomainAxisSpace(axisSpace0, true);
-        CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        assertTrue(combinedRangeXYPlot1.isDomainCrosshairLockedOnData());
+    public void test197366() throws Throwable {
+        CombinedDataset combinedDataset0 = new CombinedDataset();
+        ThermometerPlot thermometerPlot0 = new ThermometerPlot();
+        ValueAxis valueAxis0 = thermometerPlot0.getRangeAxis();
+        XYAreaRenderer2 xYAreaRenderer2_0 = new XYAreaRenderer2();
+        XYPlot xYPlot0 = new XYPlot(combinedDataset0, valueAxis0, valueAxis0, xYAreaRenderer2_0);
+        XYPlot xYPlot1 = (XYPlot) xYPlot0.clone();
+        assertTrue(xYPlot1.equals((Object) xYPlot0));
     }
 
     @Test(timeout = 4000)
@@ -3734,7 +3732,7 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         AxisSpace axisSpace0 = new AxisSpace();
         combinedRangeXYPlot0.setFixedDomainAxisSpace(axisSpace0, true);
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        assertEquals(1, combinedRangeXYPlot1.getRangeAxisCount());
+        assertTrue(combinedRangeXYPlot1.isDomainCrosshairLockedOnData());
     }
 
     @Test(timeout = 4000)
@@ -3743,11 +3741,20 @@ public class XYPlot_ESTest extends XYPlot_ESTest_scaffolding {
         AxisSpace axisSpace0 = new AxisSpace();
         combinedRangeXYPlot0.setFixedDomainAxisSpace(axisSpace0, true);
         CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
-        assertTrue(combinedRangeXYPlot1.isRangeCrosshairLockedOnData());
+        assertEquals(1, combinedRangeXYPlot1.getRangeAxisCount());
     }
 
     @Test(timeout = 4000)
     public void test198369() throws Throwable {
+        CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
+        AxisSpace axisSpace0 = new AxisSpace();
+        combinedRangeXYPlot0.setFixedDomainAxisSpace(axisSpace0, true);
+        CombinedRangeXYPlot combinedRangeXYPlot1 = (CombinedRangeXYPlot) combinedRangeXYPlot0.clone();
+        assertTrue(combinedRangeXYPlot1.isRangeCrosshairLockedOnData());
+    }
+
+    @Test(timeout = 4000)
+    public void test198370() throws Throwable {
         CombinedRangeXYPlot combinedRangeXYPlot0 = new CombinedRangeXYPlot();
         AxisSpace axisSpace0 = new AxisSpace();
         combinedRangeXYPlot0.setFixedDomainAxisSpace(axisSpace0, true);

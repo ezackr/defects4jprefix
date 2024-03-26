@@ -257,7 +257,13 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1010() throws Throwable {
+        ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
+        archiveStreamFactory0.setEntryEncoding("m4RASdK%JHwUdMZ)Mm");
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory("jar");
         // Undeclared exception!
         try {
@@ -272,7 +278,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory("@w,4Gt<*hB:-f3ha~^");
         MockPrintStream mockPrintStream0 = new MockPrintStream("_");
         try {
@@ -287,7 +293,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         archiveStreamFactory0.getEntryEncoding();
         // Undeclared exception!
@@ -303,7 +309,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory((String) null);
         String string0 = "s>";
         // Undeclared exception!
@@ -319,7 +325,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
         try {
@@ -334,7 +340,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         String string0 = ",";
         MockFile mockFile0 = new MockFile("'PF:vg&>96:qIxO", "ar");
@@ -352,7 +358,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         String string0 = "Archiver: ";
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory("Archiver: ");
         FileDescriptor fileDescriptor0 = new FileDescriptor();
@@ -370,7 +376,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         byte[] byteArray0 = new byte[2];
         byteArray0[0] = (byte) 96;
@@ -388,7 +394,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         archiveStreamFactory0.setEntryEncoding(".jb1AOICW");
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
@@ -406,7 +412,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         byte[] byteArray0 = new byte[7];
         byteArray0[0] = (byte) 59;
@@ -430,7 +436,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = "=KsU+-";
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory("=KsU+-");
         archiveStreamFactory0.getEntryEncoding();
@@ -450,7 +456,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         pipedOutputStream0.flush();
@@ -469,7 +475,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory("");
         // Undeclared exception!
         try {
@@ -484,7 +490,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         archiveStreamFactory0.getEntryEncoding();
         archiveStreamFactory0.getEntryEncoding();
@@ -502,7 +508,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         FilterOutputStream filterOutputStream0 = new FilterOutputStream((OutputStream) null);
         // Undeclared exception!
@@ -518,7 +524,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0);
@@ -540,7 +546,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         String string0 = null;
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory((String) null);
         archiveStreamFactory0.setEntryEncoding((String) null);
@@ -562,7 +568,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         char[] charArray0 = new char[4];
         charArray0[0] = 'i';
         char char0 = '+';
@@ -585,7 +591,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0);
@@ -608,7 +614,7 @@ public class ArchiveStreamFactory_ESTest extends ArchiveStreamFactory_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         ArchiveStreamFactory archiveStreamFactory0 = new ArchiveStreamFactory();
         archiveStreamFactory0.setEntryEncoding("");
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();

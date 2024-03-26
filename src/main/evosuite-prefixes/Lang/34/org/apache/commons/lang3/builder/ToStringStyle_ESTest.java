@@ -712,492 +712,486 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02583() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isUseClassName();
+    public void test02483() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
+        toStringStyle0.setUseShortClassName(false);
     }
 
     @Test(timeout = 4000)
     public void test02584() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test02585() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test02586() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test02587() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test02588() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test02589() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test02590() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test02591() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test02592() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test02593() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test02594() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test02595() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test02596() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test02597() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test02598() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test02599() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test025100() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test025101() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test025102() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseIdentityHashCode(true);
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test025103() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.setUseIdentityHashCode(true);
         standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
-    public void test026103() throws Throwable {
+    public void test026104() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
-    public void test026104() throws Throwable {
+    public void test026105() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setUseFieldNames(false);
         standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
-    public void test027105() throws Throwable {
+    public void test027106() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
-    public void test027106() throws Throwable {
+    public void test027107() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSummaryObjectStartText("");
         standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
-    public void test028107() throws Throwable {
+    public void test028108() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
-    public void test028108() throws Throwable {
+    public void test028109() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSizeStartText("");
         standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
-    public void test029109() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
     public void test029110() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test029111() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test029112() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test029113() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test029114() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test029115() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test029116() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test029117() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test029118() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test029119() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test029120() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test029121() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test029122() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test029123() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test029124() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test029125() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test029126() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test029127() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test029128() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test029129() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.SHORT_PREFIX_STYLE.setFieldSeparatorAtStart(false);
         standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
-    public void test031129() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test031130() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getArrayEnd();
+    public void test030130() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
+        toStringStyle0.setFieldSeparatorAtEnd(false);
     }
 
     @Test(timeout = 4000)
     public void test031131() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test031132() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test031133() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test031134() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test031135() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test031136() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test031137() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test031138() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test031139() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test031140() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test031141() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test031142() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test031143() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test031144() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test031145() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test031146() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test031147() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test031148() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test031149() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
+        standardToStringStyle0.getContentEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test031150() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setArrayContentDetail(true);
         standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
-    public void test033149() throws Throwable {
+    public void test032151() throws Throwable {
+        Integer integer0 = new Integer((-4831));
+        ToStringStyle.register(integer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033152() throws Throwable {
         Map<Object, Object> map0 = ToStringStyle.getRegistry();
         map0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test034150() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test034151() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test034152() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -1205,7 +1199,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -1213,7 +1207,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
@@ -1221,7 +1215,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -1229,7 +1223,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
@@ -1237,7 +1231,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
@@ -1245,7 +1239,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -1253,7 +1247,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -1261,7 +1255,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -1269,7 +1263,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -1277,7 +1271,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -1285,7 +1279,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -1293,7 +1287,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
@@ -1301,7 +1295,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -1309,7 +1303,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
@@ -1317,7 +1311,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -1325,7 +1319,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
@@ -1333,11 +1327,35 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test034170() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test034171() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test034172() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendNullText(stringBuffer0, "6x(8n1{-z*-A");
         standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test035170() throws Throwable {
+    public void test035173() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("");
         standardToStringStyle0.appendFieldStart(stringBuffer0, "C=");
@@ -1345,7 +1363,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test035171() throws Throwable {
+    public void test035174() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("");
         standardToStringStyle0.appendFieldStart(stringBuffer0, "C=");
@@ -1353,7 +1371,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test036172() throws Throwable {
+    public void test036175() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, (String) null, '^');
@@ -1361,7 +1379,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test036173() throws Throwable {
+    public void test036176() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, (String) null, '^');
@@ -1369,7 +1387,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test037174() throws Throwable {
+    public void test037177() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendContentEnd(stringBuffer0);
@@ -1377,7 +1395,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test037175() throws Throwable {
+    public void test037178() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendContentEnd(stringBuffer0);
@@ -1385,480 +1403,456 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test038176() throws Throwable {
+    public void test038179() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         boolean boolean0 = toStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
-    public void test039177() throws Throwable {
+    public void test039180() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         boolean boolean0 = toStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test040178() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getSizeEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test040179() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test040180() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test040181() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test040182() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test040183() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test040184() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test040185() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test040186() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test040187() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test040188() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test040189() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test040190() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test040191() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test040192() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test040193() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test040194() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test040195() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test040196() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test040197() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test040198() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test040199() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test040200() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isUseIdentityHashCode();
         standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
-    public void test041198() throws Throwable {
+    public void test041201() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         boolean boolean0 = toStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test042199() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test042200() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isUseClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test042201() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test042202() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test042203() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test042204() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test042205() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test042206() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test042207() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test042208() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test042209() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test042210() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test042211() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test042212() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test042213() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test042214() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test042215() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test042216() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test042217() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test042218() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test042219() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test042220() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test042221() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isUseFieldNames();
         standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
-    public void test043219() throws Throwable {
+    public void test043222() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         boolean boolean0 = toStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
-    public void test044220() throws Throwable {
+    public void test044223() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         boolean boolean0 = toStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
-    public void test045221() throws Throwable {
+    public void test045224() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer(";");
         boolean boolean0 = ToStringStyle.isRegistered(stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test046222() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test046223() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test046224() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test046225() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test046226() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test046227() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test046228() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test046229() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test046230() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test046231() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test046232() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test046233() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test046234() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test046235() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test046236() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test046237() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test046238() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test046239() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test046240() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test046241() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
-    public void test047242() throws Throwable {
+    public void test046242() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        Boolean boolean0 = Boolean.valueOf(false);
-        standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test047243() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        Boolean boolean0 = Boolean.valueOf(false);
-        standardToStringStyle0.isFullDetail(boolean0);
+        boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
         standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test047244() throws Throwable {
+    public void test046243() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        Boolean boolean0 = Boolean.valueOf(false);
-        standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getArraySeparator();
+        boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test046244() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFullDetail((Boolean) null);
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -1866,7 +1860,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
@@ -1874,7 +1868,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -1882,7 +1876,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -1890,7 +1884,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
@@ -1898,7 +1892,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -1906,7 +1900,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -1914,7 +1908,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
@@ -1922,7 +1916,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -1930,7 +1924,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -1938,7 +1932,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -1946,7 +1940,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -1954,7 +1948,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
@@ -1962,7 +1956,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -1970,7 +1964,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
@@ -1978,7 +1972,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -1986,7 +1980,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -1994,168 +1988,192 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.valueOf(false);
         standardToStringStyle0.isFullDetail(boolean0);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test047262() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        Boolean boolean0 = Boolean.valueOf(false);
+        standardToStringStyle0.isFullDetail(boolean0);
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test047263() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        Boolean boolean0 = Boolean.valueOf(false);
+        standardToStringStyle0.isFullDetail(boolean0);
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test047264() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        Boolean boolean0 = Boolean.valueOf(false);
+        standardToStringStyle0.isFullDetail(boolean0);
         standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
-    public void test048262() throws Throwable {
+    public void test048265() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         boolean boolean0 = toStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test049263() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test049264() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test049265() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test049266() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test049267() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test049268() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test049269() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test049270() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test049271() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test049272() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test049273() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test049274() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test049275() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test049276() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test049277() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test049278() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test049279() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test049280() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test049281() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test049282() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test049283() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test049284() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getContentEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test049285() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtStart();
         standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
-    public void test050283() throws Throwable {
+    public void test050286() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         boolean boolean0 = toStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
-    public void test051284() throws Throwable {
+    public void test051287() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
-    public void test051285() throws Throwable {
+    public void test051288() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSummaryObjectEndText("");
         standardToStringStyle0.getSummaryObjectEndText();
@@ -2163,13 +2181,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test052286() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.getSizeStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test052287() throws Throwable {
+    public void test052290() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSizeStartText("");
         standardToStringStyle0.getSizeStartText();
@@ -2177,26 +2189,26 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053288() throws Throwable {
+    public void test053291() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         String string0 = toStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
-    public void test054289() throws Throwable {
+    public void test054292() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
-    public void test054290() throws Throwable {
+    public void test054293() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSizeEndText((String) null);
         String string0 = standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
-    public void test054291() throws Throwable {
+    public void test054294() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSizeEndText((String) null);
         String string0 = standardToStringStyle0.getSizeEndText();
@@ -2204,152 +2216,152 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test055292() throws Throwable {
+    public void test055295() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         String string0 = toStringStyle0.getShortClassName((Class<?>) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test056293() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test056294() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test056295() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test056296() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test056297() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test056298() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test056299() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test056300() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test056301() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test056302() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test056303() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test056304() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test056305() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test056306() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test056307() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test056308() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test056309() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test056310() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test056311() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test056312() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test056313() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test056314() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getNullText();
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test056315() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getNullText();
         standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
-    public void test057313() throws Throwable {
+    public void test057316() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         toStringStyle0.getSizeStartText();
         toStringStyle0.SIMPLE_STYLE.setNullText("");
@@ -2363,575 +2375,575 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test058314() throws Throwable {
+    public void test058317() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         String string0 = toStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test059315() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test059316() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test059317() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test059318() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test059319() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test059320() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test059321() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test059322() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test059323() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test059324() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test059325() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test059326() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test059327() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test059328() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test059329() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test059330() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test059331() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test059332() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test059333() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test059334() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getContentEnd();
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
-    public void test060335() throws Throwable {
-        ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
-        String string0 = toStringStyle0.getContentEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test061336() throws Throwable {
+    public void test059335() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getNullText();
-    }
-
-    @Test(timeout = 4000)
-    public void test061337() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArrayStart();
+        String string0 = standardToStringStyle0.getContentEnd();
         standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
-    public void test061338() throws Throwable {
+    public void test059336() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getSummaryObjectStartText();
+        String string0 = standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test059337() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test060338() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+        String string0 = toStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test061339() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test061340() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test061341() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test061342() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test061343() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test061344() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test061345() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test061346() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test061347() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test061348() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test061349() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test061350() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test061351() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test061352() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test061353() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test061354() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test061355() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getSummaryObjectEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test061356() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test061357() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test061358() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArrayStart();
         standardToStringStyle0.getArrayEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test062356() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test062357() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getArrayEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test062358() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test062359() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test062360() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test062361() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test062362() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test062363() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test062364() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test062365() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test062366() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test062367() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test062368() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test062369() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test062370() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test062371() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test062372() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test062373() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test062374() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test062375() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArraySeparator();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
-    public void test063376() throws Throwable {
+    public void test062376() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test063377() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArrayEnd();
+        String string0 = standardToStringStyle0.getArraySeparator();
         standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
-    public void test063378() throws Throwable {
+    public void test062377() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getSummaryObjectStartText();
+        String string0 = standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test062378() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test063379() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test063380() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test063381() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test063382() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test063383() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test063384() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test063385() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test063386() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test063387() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test063388() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test063389() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test063390() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test063391() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test063392() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test063393() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test063394() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test063395() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSizeEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test063396() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test063397() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test063398() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getArrayEnd();
         standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
-    public void test064396() throws Throwable {
+    public void test064399() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         toStringStyle0.NO_FIELD_NAMES_STYLE.append(stringBuffer0, "Windows", 2104.87105);
@@ -2956,7 +2968,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064397() throws Throwable {
+    public void test064400() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         toStringStyle0.NO_FIELD_NAMES_STYLE.append(stringBuffer0, "Windows", 2104.87105);
@@ -2984,19 +2996,19 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065398() throws Throwable {
+    public void test065401() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         toStringStyle0.DEFAULT_STYLE.removeLastFieldSeparator((StringBuffer) null);
     }
 
     @Test(timeout = 4000)
-    public void test066399() throws Throwable {
+    public void test066402() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         toStringStyle0.reflectionAppendArrayDetail((StringBuffer) null, "<", "");
     }
 
     @Test(timeout = 4000)
-    public void test067400() throws Throwable {
+    public void test067403() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(";");
         Object object0 = new Object();
@@ -3004,239 +3016,239 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test068401() throws Throwable {
+    public void test068404() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendSummarySize((StringBuffer) null, (String) null, 3);
     }
 
     @Test(timeout = 4000)
-    public void test069402() throws Throwable {
+    public void test069405() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean[] booleanArray0 = new boolean[7];
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendSummary((StringBuffer) null, "sr={?R/p wjTv/A*$l", booleanArray0);
     }
 
     @Test(timeout = 4000)
-    public void test070403() throws Throwable {
+    public void test070406() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         toStringStyle0.appendSummary((StringBuffer) null, "[", (short[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test071404() throws Throwable {
+    public void test071407() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         Object[] objectArray0 = new Object[4];
         toStringStyle0.appendSummary((StringBuffer) null, "", objectArray0);
     }
 
     @Test(timeout = 4000)
-    public void test072405() throws Throwable {
+    public void test072408() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendSummary(stringBuffer0, ";", (long[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test073406() throws Throwable {
+    public void test073409() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         int[] intArray0 = new int[8];
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary((StringBuffer) null, "[pan#ITis`#pMDw.`", intArray0);
     }
 
     @Test(timeout = 4000)
-    public void test074407() throws Throwable {
+    public void test074410() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         float[] floatArray0 = new float[3];
         toStringStyle0.MULTI_LINE_STYLE.appendSummary((StringBuffer) null, "bzu`$.qaZQ!n=X", floatArray0);
     }
 
     @Test(timeout = 4000)
-    public void test075408() throws Throwable {
+    public void test075411() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         double[] doubleArray0 = new double[6];
         standardToStringStyle0.appendSummary((StringBuffer) null, "  ", doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test076409() throws Throwable {
+    public void test076412() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendSummary(stringBuffer0, "6.1", (char[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test077410() throws Throwable {
+    public void test077413() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         byte[] byteArray0 = new byte[0];
         toStringStyle0.DEFAULT_STYLE.appendSummary((StringBuffer) null, "'xy;`27`}", byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test078411() throws Throwable {
+    public void test078414() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Float float0 = new Float(0.0F);
         standardToStringStyle0.SHORT_PREFIX_STYLE.appendSummary((StringBuffer) null, "java.specification.name", float0);
     }
 
     @Test(timeout = 4000)
-    public void test079412() throws Throwable {
+    public void test079415() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Character character0 = Character.valueOf('=');
         standardToStringStyle0.appendStart((StringBuffer) null, character0);
     }
 
     @Test(timeout = 4000)
-    public void test080413() throws Throwable {
+    public void test080416() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         toStringStyle0.appendFieldSeparator((StringBuffer) null);
     }
 
     @Test(timeout = 4000)
-    public void test081414() throws Throwable {
+    public void test081417() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.appendFieldEnd((StringBuffer) null, "");
     }
 
     @Test(timeout = 4000)
-    public void test082415() throws Throwable {
+    public void test082418() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         toStringStyle0.appendEnd((StringBuffer) null, (Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test083416() throws Throwable {
+    public void test083419() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "}");
         standardToStringStyle0.appendDetail(stringBuffer0, "=", (boolean[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test084417() throws Throwable {
+    public void test084420() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         short[] shortArray0 = new short[0];
         toStringStyle0.appendDetail((StringBuffer) null, "<null>", shortArray0);
     }
 
     @Test(timeout = 4000)
-    public void test085418() throws Throwable {
+    public void test085421() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         toStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "<", (Object[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test086419() throws Throwable {
+    public void test086422() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(4);
         toStringStyle0.appendDetail(stringBuffer0, "96NF:'d)CA5[~Wm", (long[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test087420() throws Throwable {
+    public void test087423() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         int[] intArray0 = new int[4];
         standardToStringStyle0.SIMPLE_STYLE.appendDetail((StringBuffer) null, "d>-wRj[~]yZPH", intArray0);
     }
 
     @Test(timeout = 4000)
-    public void test088421() throws Throwable {
+    public void test088424() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("#");
         standardToStringStyle0.appendDetail(stringBuffer0, "]", (float[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test089422() throws Throwable {
+    public void test089425() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(47);
         standardToStringStyle0.SIMPLE_STYLE.appendDetail(stringBuffer0, (String) null, (double[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test090423() throws Throwable {
+    public void test090426() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         char[] charArray0 = new char[5];
         standardToStringStyle0.appendDetail((StringBuffer) null, "org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle", charArray0);
     }
 
     @Test(timeout = 4000)
-    public void test091424() throws Throwable {
+    public void test091427() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(0);
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ",", (byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test092425() throws Throwable {
+    public void test092428() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         toStringStyle0.appendDetail((StringBuffer) null, "mx,?+17", false);
     }
 
     @Test(timeout = 4000)
-    public void test093426() throws Throwable {
+    public void test093429() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         toStringStyle0.appendDetail((StringBuffer) null, "", (short) 1821);
     }
 
     @Test(timeout = 4000)
-    public void test094427() throws Throwable {
+    public void test094430() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         WeakHashMap<Character, String> weakHashMap0 = new WeakHashMap<Character, String>();
         toStringStyle0.appendDetail((StringBuffer) null, "kmcPk,.)S8f(:*|3>z", weakHashMap0);
     }
 
     @Test(timeout = 4000)
-    public void test095428() throws Throwable {
+    public void test095431() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Short short0 = new Short((short) 81);
         standardToStringStyle0.DEFAULT_STYLE.appendDetail((StringBuffer) null, "5*g8", short0);
     }
 
     @Test(timeout = 4000)
-    public void test096429() throws Throwable {
+    public void test096432() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail((StringBuffer) null, "", (-1165L));
     }
 
     @Test(timeout = 4000)
-    public void test097430() throws Throwable {
+    public void test097433() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         toStringStyle0.SHORT_PREFIX_STYLE.appendDetail((StringBuffer) null, "r@89NlD0iY0UI", 105);
     }
 
     @Test(timeout = 4000)
-    public void test098431() throws Throwable {
+    public void test098434() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         toStringStyle0.appendDetail((StringBuffer) null, "[{Wp9", 200.1037F);
     }
 
     @Test(timeout = 4000)
-    public void test099432() throws Throwable {
+    public void test099435() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         toStringStyle0.appendDetail((StringBuffer) null, "*<,+ZmCzhNR<!<#R", 1.0);
     }
 
     @Test(timeout = 4000)
-    public void test100433() throws Throwable {
+    public void test100436() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         toStringStyle0.appendDetail((StringBuffer) null, "MA_Y|U", (byte) 1);
     }
 
     @Test(timeout = 4000)
-    public void test101434() throws Throwable {
+    public void test101437() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         toStringStyle0.SHORT_PREFIX_STYLE.appendContentStart((StringBuffer) null);
     }
 
     @Test(timeout = 4000)
-    public void test102435() throws Throwable {
+    public void test102438() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         short[] shortArray0 = new short[8];
         toStringStyle0.DEFAULT_STYLE.append((StringBuffer) null, "4.1", shortArray0, (Boolean) null);
     }
 
     @Test(timeout = 4000)
-    public void test103436() throws Throwable {
+    public void test103439() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         Object[] objectArray0 = new Object[1];
         Boolean boolean0 = new Boolean("java.util.prefs.PreferencesFactory");
@@ -3244,14 +3256,14 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104437() throws Throwable {
+    public void test104440() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         long[] longArray0 = new long[2];
         toStringStyle0.SHORT_PREFIX_STYLE.append((StringBuffer) null, "", longArray0, (Boolean) null);
     }
 
     @Test(timeout = 4000)
-    public void test105438() throws Throwable {
+    public void test105441() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         int[] intArray0 = new int[3];
         Boolean boolean0 = Boolean.FALSE;
@@ -3259,57 +3271,57 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106439() throws Throwable {
+    public void test106442() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         Boolean boolean0 = Boolean.valueOf(false);
         toStringStyle0.SHORT_PREFIX_STYLE.append((StringBuffer) null, "java.vm.vendor", (double[]) null, boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test107440() throws Throwable {
+    public void test107443() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.FALSE;
         standardToStringStyle0.append((StringBuffer) null, "d=Fg@ryywr@HmQ^zjz", (char[]) null, boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test108441() throws Throwable {
+    public void test108444() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.append((StringBuffer) null, "@Pw6=C]h", false);
     }
 
     @Test(timeout = 4000)
-    public void test109442() throws Throwable {
+    public void test109445() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.append((StringBuffer) null, "zkk\"\"v!j.#09xhx<w", (short) (-1221));
     }
 
     @Test(timeout = 4000)
-    public void test110443() throws Throwable {
+    public void test110446() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.SHORT_PREFIX_STYLE.append((StringBuffer) null, "", 0L);
     }
 
     @Test(timeout = 4000)
-    public void test111444() throws Throwable {
+    public void test111447() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         toStringStyle0.SHORT_PREFIX_STYLE.append((StringBuffer) null, "org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle", (-2245.6836F));
     }
 
     @Test(timeout = 4000)
-    public void test112445() throws Throwable {
+    public void test112448() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.append((StringBuffer) null, (String) null, 0.0);
     }
 
     @Test(timeout = 4000)
-    public void test113446() throws Throwable {
+    public void test113449() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         toStringStyle0.SIMPLE_STYLE.append((StringBuffer) null, "`IP[a^(:(%AJL", 'T');
     }
 
     @Test(timeout = 4000)
-    public void test114447() throws Throwable {
+    public void test114450() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("]\"9-G");
         toStringStyle0.NO_FIELD_NAMES_STYLE.appendToString(stringBuffer0, "BhZS]5)Ry!'y");
@@ -3317,35 +3329,11 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test114448() throws Throwable {
+    public void test114451() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("]\"9-G");
         toStringStyle0.NO_FIELD_NAMES_STYLE.appendToString(stringBuffer0, "BhZS]5)Ry!'y");
         stringBuffer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test115449() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(57);
-        standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test115450() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(57);
-        standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test115451() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(57);
-        standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -3353,7 +3341,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -3361,7 +3349,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
@@ -3369,7 +3357,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -3377,7 +3365,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -3385,7 +3373,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
@@ -3393,7 +3381,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
@@ -3401,7 +3389,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -3409,7 +3397,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -3417,7 +3405,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -3425,7 +3413,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
@@ -3433,7 +3421,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
@@ -3441,7 +3429,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -3449,7 +3437,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -3457,7 +3445,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -3465,7 +3453,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -3473,7 +3461,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -3481,350 +3469,362 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(57);
         standardToStringStyle0.appendToString(stringBuffer0, (String) null);
+        standardToStringStyle0.getFieldSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test115469() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(57);
+        standardToStringStyle0.appendToString(stringBuffer0, (String) null);
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test115470() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(57);
+        standardToStringStyle0.appendToString(stringBuffer0, (String) null);
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test115471() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(57);
+        standardToStringStyle0.appendToString(stringBuffer0, (String) null);
         standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
-    public void test116469() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test116470() throws Throwable {
+    public void test116473() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSummaryObjectEndText((String) null);
         standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
-    public void test117471() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test117472() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test117473() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
     public void test117474() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test117475() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test117476() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test117477() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test117478() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test117479() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test117480() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test117481() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test117482() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test117483() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test117484() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test117485() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test117486() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test117487() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test117488() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test117489() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test117490() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test117491() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test117492() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test117493() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setSummaryObjectEndText("B5KX");
         standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
-    public void test118491() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test118492() throws Throwable {
+    public void test118495() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSummaryObjectStartText((String) null);
         standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
-    public void test119493() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.getSizeStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test119494() throws Throwable {
+    public void test119497() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setSizeStartText((String) null);
         standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
-    public void test120495() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test120496() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test120497() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
     public void test120498() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test120499() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test120500() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test120501() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test120502() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test120503() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test120504() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test120505() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test120506() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test120507() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test120508() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test120509() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test120510() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test120511() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test120512() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test120513() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test120514() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test120515() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test120516() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test120517() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setNullText((String) null);
         standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
-    public void test122515() throws Throwable {
+    public void test121518() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+        toStringStyle0.setFieldSeparator((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test122519() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setFieldSeparator("double");
         standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test123516() throws Throwable {
+    public void test123520() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test123517() throws Throwable {
+    public void test123521() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setFieldNameValueSeparator((String) null);
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test123518() throws Throwable {
+    public void test123522() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setFieldNameValueSeparator((String) null);
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
@@ -3832,650 +3832,616 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124519() throws Throwable {
+    public void test124523() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setFieldNameValueSeparator("<");
         standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test125520() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test125521() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getSizeEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test125522() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test125523() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
     public void test125524() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test125525() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test125526() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test125527() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test125528() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test125529() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test125530() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test125531() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test125532() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test125533() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test125534() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test125535() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test125536() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test125537() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test125538() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test125539() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test125540() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test125541() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test125542() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test125543() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.setContentEnd((String) null);
         standardToStringStyle0.getArrayEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test126540() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test126541() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test126542() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test126543() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test126544() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test126545() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test126546() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test126547() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test126548() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test126549() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test126550() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test126551() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test126552() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test126553() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test126554() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test126555() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test126556() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test126557() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test126558() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test126559() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test126560() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test126561() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test126562() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test126563() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.MULTI_LINE_STYLE.setContentStart((String) null);
         standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
-    public void test127560() throws Throwable {
+    public void test127564() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setContentStart("T");
         standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
-    public void test128561() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test128562() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test128563() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test128564() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
     public void test128565() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test128566() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test128567() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test128568() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test128569() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test128570() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test128571() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test128572() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test128573() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test128574() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test128575() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test128576() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test128577() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test128578() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test128579() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test128580() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
-    public void test129581() throws Throwable {
+    public void test128581() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
+        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
         standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
-    public void test129582() throws Throwable {
+    public void test128582() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
+        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test128583() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
         standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
-    public void test129583() throws Throwable {
+    public void test128584() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test129584() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.MULTI_LINE_STYLE.setArraySeparator((String) null);
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test129585() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test129586() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test129587() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test129588() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test129589() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test129590() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test129591() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test129592() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test129593() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test129594() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test129595() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test129596() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test129597() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test129598() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test129599() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test129600() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
+        standardToStringStyle0.getArraySeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test129601() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test129602() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
+        standardToStringStyle0.getContentEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test129603() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
+        standardToStringStyle0.getFieldSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test129604() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.DEFAULT_STYLE.setArraySeparator("'Q=6Y_YwN");
         standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test130601() throws Throwable {
+    public void test130605() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
-    public void test130602() throws Throwable {
+    public void test130606() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setArrayEnd((String) null);
         standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
-    public void test132603() throws Throwable {
+    public void test131607() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+        toStringStyle0.setArrayEnd("");
+    }
+
+    @Test(timeout = 4000)
+    public void test132608() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
-    public void test132604() throws Throwable {
+    public void test132609() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setArrayStart((String) null);
         standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
-    public void test133605() throws Throwable {
+    public void test133610() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setArrayStart("double");
         standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test134606() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test134607() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test134608() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test134609() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test134610() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
-        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -4483,7 +4449,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
@@ -4491,7 +4457,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -4499,7 +4465,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -4507,7 +4473,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
@@ -4515,7 +4481,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -4523,7 +4489,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
@@ -4531,7 +4497,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -4539,7 +4505,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -4547,7 +4513,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        stringBuffer0.length();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -4555,7 +4521,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -4563,7 +4529,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
@@ -4571,7 +4537,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -4579,7 +4545,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -4587,7 +4553,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isArrayContentDetail();
+        stringBuffer0.length();
     }
 
     @Test(timeout = 4000)
@@ -4595,7 +4561,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -4603,11 +4569,51 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
         standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test134627() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test134628() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test134629() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test134630() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test134631() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer("6x(8n1{-z*-A");
+        standardToStringStyle0.appendIdentityHashCode(stringBuffer0, (Object) null);
         standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
-    public void test135627() throws Throwable {
+    public void test135632() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("[");
         Object object0 = new Object();
@@ -4616,7 +4622,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test135628() throws Throwable {
+    public void test135633() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("[");
         Object object0 = new Object();
@@ -4625,7 +4631,13 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test137629() throws Throwable {
+    public void test136634() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+        toStringStyle0.appendClassName((StringBuffer) null, (Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test137635() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "[");
         toStringStyle0.SIMPLE_STYLE.appendStart(stringBuffer0, stringBuffer0);
@@ -4633,7 +4645,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test137630() throws Throwable {
+    public void test137636() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "[");
         toStringStyle0.SIMPLE_STYLE.appendStart(stringBuffer0, stringBuffer0);
@@ -4641,7 +4653,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test138631() throws Throwable {
+    public void test138637() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         boolean[] booleanArray0 = new boolean[8];
@@ -4650,7 +4662,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test138632() throws Throwable {
+    public void test138638() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         boolean[] booleanArray0 = new boolean[8];
@@ -4659,7 +4671,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139633() throws Throwable {
+    public void test139639() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("[");
         boolean[] booleanArray0 = new boolean[2];
@@ -4668,7 +4680,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139634() throws Throwable {
+    public void test139640() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("[");
         boolean[] booleanArray0 = new boolean[2];
@@ -4677,7 +4689,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140635() throws Throwable {
+    public void test140641() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         float[] floatArray0 = new float[1];
@@ -4687,7 +4699,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140636() throws Throwable {
+    public void test140642() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         float[] floatArray0 = new float[1];
@@ -4697,7 +4709,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141637() throws Throwable {
+    public void test141643() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer("_+X$'k");
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = new Boolean(true);
@@ -4706,7 +4718,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141638() throws Throwable {
+    public void test141644() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer("_+X$'k");
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = new Boolean(true);
@@ -4715,7 +4727,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test142639() throws Throwable {
+    public void test142645() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(0);
         float[] floatArray0 = new float[5];
@@ -4724,7 +4736,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test142640() throws Throwable {
+    public void test142646() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(0);
         float[] floatArray0 = new float[5];
@@ -4733,7 +4745,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test143641() throws Throwable {
+    public void test143647() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "[");
         double[] doubleArray0 = new double[8];
@@ -4742,7 +4754,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test143642() throws Throwable {
+    public void test143648() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "[");
         double[] doubleArray0 = new double[8];
@@ -4751,7 +4763,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test144643() throws Throwable {
+    public void test144649() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         double[] doubleArray0 = new double[1];
@@ -4761,7 +4773,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test144644() throws Throwable {
+    public void test144650() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         double[] doubleArray0 = new double[1];
@@ -4771,7 +4783,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test145645() throws Throwable {
+    public void test145651() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "}");
         Boolean boolean0 = new Boolean((String) null);
@@ -4780,7 +4792,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test145646() throws Throwable {
+    public void test145652() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "}");
         Boolean boolean0 = new Boolean((String) null);
@@ -4789,7 +4801,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test146647() throws Throwable {
+    public void test146653() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         char[] charArray0 = new char[3];
@@ -4799,7 +4811,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test146648() throws Throwable {
+    public void test146654() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         char[] charArray0 = new char[3];
@@ -4809,7 +4821,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test147649() throws Throwable {
+    public void test147655() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(64);
         toStringStyle0.NO_FIELD_NAMES_STYLE.append(stringBuffer0, "", (char[]) null, (Boolean) null);
@@ -4817,7 +4829,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test147650() throws Throwable {
+    public void test147656() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(64);
         toStringStyle0.NO_FIELD_NAMES_STYLE.append(stringBuffer0, "", (char[]) null, (Boolean) null);
@@ -4825,7 +4837,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test148651() throws Throwable {
+    public void test148657() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         Boolean boolean0 = Boolean.valueOf("org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle");
@@ -4835,7 +4847,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test148652() throws Throwable {
+    public void test148658() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         Boolean boolean0 = Boolean.valueOf("org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle");
@@ -4845,7 +4857,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test149653() throws Throwable {
+    public void test149659() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         byte[] byteArray0 = new byte[5];
@@ -4855,7 +4867,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test149654() throws Throwable {
+    public void test149660() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         byte[] byteArray0 = new byte[5];
@@ -4865,7 +4877,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test150655() throws Throwable {
+    public void test150661() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         byte[] byteArray0 = new byte[0];
         Boolean boolean0 = new Boolean("8?}}");
@@ -4873,7 +4885,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151656() throws Throwable {
+    public void test151662() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = Boolean.TRUE;
@@ -4882,7 +4894,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151657() throws Throwable {
+    public void test151663() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = Boolean.TRUE;
@@ -4891,7 +4903,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test152658() throws Throwable {
+    public void test152664() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         short[] shortArray0 = new short[6];
@@ -4900,7 +4912,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test152659() throws Throwable {
+    public void test152665() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         short[] shortArray0 = new short[6];
@@ -4909,7 +4921,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test153660() throws Throwable {
+    public void test153666() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("n|e");
         Boolean boolean0 = Boolean.valueOf(true);
@@ -4918,7 +4930,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test153661() throws Throwable {
+    public void test153667() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("n|e");
         Boolean boolean0 = Boolean.valueOf(true);
@@ -4927,7 +4939,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test154662() throws Throwable {
+    public void test154668() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         int[] intArray0 = new int[6];
@@ -4936,7 +4948,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test154663() throws Throwable {
+    public void test154669() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         int[] intArray0 = new int[6];
@@ -4945,7 +4957,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test155664() throws Throwable {
+    public void test155670() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = Boolean.valueOf("CcVeA>G=R# YV");
@@ -4954,7 +4966,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test155665() throws Throwable {
+    public void test155671() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = Boolean.valueOf("CcVeA>G=R# YV");
@@ -4963,7 +4975,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test156666() throws Throwable {
+    public void test156672() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(4);
         int[] intArray0 = new int[8];
@@ -4973,7 +4985,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test156667() throws Throwable {
+    public void test156673() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(4);
         int[] intArray0 = new int[8];
@@ -4983,7 +4995,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test157668() throws Throwable {
+    public void test157674() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(";");
         long[] longArray0 = new long[4];
@@ -4992,7 +5004,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test157669() throws Throwable {
+    public void test157675() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(";");
         long[] longArray0 = new long[4];
@@ -5001,7 +5013,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test158670() throws Throwable {
+    public void test158676() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = Boolean.valueOf("{1XvUuYRt-0)%[AEC[");
@@ -5010,7 +5022,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test158671() throws Throwable {
+    public void test158677() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = Boolean.valueOf("{1XvUuYRt-0)%[AEC[");
@@ -5019,7 +5031,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test159672() throws Throwable {
+    public void test159678() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = new Boolean(true);
@@ -5028,7 +5040,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test159673() throws Throwable {
+    public void test159679() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = new Boolean(true);
@@ -5037,7 +5049,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test160674() throws Throwable {
+    public void test160680() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Integer, Object> weakHashMap0 = new WeakHashMap<Integer, Object>();
@@ -5047,7 +5059,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test160675() throws Throwable {
+    public void test160681() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Integer, Object> weakHashMap0 = new WeakHashMap<Integer, Object>();
@@ -5057,7 +5069,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test161676() throws Throwable {
+    public void test161682() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("");
         LinkedList<Byte> linkedList0 = new LinkedList<Byte>();
@@ -5066,7 +5078,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test161677() throws Throwable {
+    public void test161683() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("");
         LinkedList<Byte> linkedList0 = new LinkedList<Byte>();
@@ -5075,7 +5087,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test162678() throws Throwable {
+    public void test162684() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("");
         LinkedList<Byte> linkedList0 = new LinkedList<Byte>();
@@ -5085,7 +5097,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test162679() throws Throwable {
+    public void test162685() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("");
         LinkedList<Byte> linkedList0 = new LinkedList<Byte>();
@@ -5095,64 +5107,10 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test163680() throws Throwable {
+    public void test163686() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = new Boolean(true);
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.append((StringBuffer) null, "Windows", (Object) null, boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test164681() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(0);
-        stringBuffer0.appendCodePoint(12);
-        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getNullText();
-    }
-
-    @Test(timeout = 4000)
-    public void test164682() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(0);
-        stringBuffer0.appendCodePoint(12);
-        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSizeStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test164683() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(0);
-        stringBuffer0.appendCodePoint(12);
-        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test164684() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(0);
-        stringBuffer0.appendCodePoint(12);
-        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test164685() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(0);
-        stringBuffer0.appendCodePoint(12);
-        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test164686() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(0);
-        stringBuffer0.appendCodePoint(12);
-        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
@@ -5161,7 +5119,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -5170,7 +5128,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -5179,7 +5137,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
@@ -5188,7 +5146,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
@@ -5197,7 +5155,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -5206,7 +5164,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
@@ -5215,7 +5173,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -5224,7 +5182,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -5233,7 +5191,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5242,7 +5200,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
@@ -5251,7 +5209,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5260,7 +5218,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -5269,7 +5227,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -5278,11 +5236,65 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(0);
         stringBuffer0.appendCodePoint(12);
         standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test164701() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        stringBuffer0.appendCodePoint(12);
+        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test164702() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        stringBuffer0.appendCodePoint(12);
+        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test164703() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        stringBuffer0.appendCodePoint(12);
+        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
+        standardToStringStyle0.getContentEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test164704() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        stringBuffer0.appendCodePoint(12);
+        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
+        standardToStringStyle0.getSummaryObjectEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test164705() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        stringBuffer0.appendCodePoint(12);
+        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test164706() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(0);
+        stringBuffer0.appendCodePoint(12);
+        standardToStringStyle0.MULTI_LINE_STYLE.appendEnd(stringBuffer0, (Object) null);
         standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
-    public void test165701() throws Throwable {
+    public void test165707() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(",");
         toStringStyle0.SIMPLE_STYLE.removeLastFieldSeparator(stringBuffer0);
@@ -5290,7 +5302,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test165702() throws Throwable {
+    public void test165708() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer(",");
         toStringStyle0.SIMPLE_STYLE.removeLastFieldSeparator(stringBuffer0);
@@ -5298,7 +5310,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test166703() throws Throwable {
+    public void test166709() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummarySize(stringBuffer0, "X", (-386));
@@ -5307,7 +5319,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test166704() throws Throwable {
+    public void test166710() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummarySize(stringBuffer0, "X", (-386));
@@ -5316,7 +5328,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test167705() throws Throwable {
+    public void test167711() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.setFieldSeparatorAtEnd(true);
@@ -5325,7 +5337,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test167706() throws Throwable {
+    public void test167712() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.setFieldSeparatorAtEnd(true);
@@ -5334,7 +5346,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test168707() throws Throwable {
+    public void test168713() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle");
         toStringStyle0.MULTI_LINE_STYLE.appendStart(stringBuffer0, "org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle");
@@ -5342,59 +5354,11 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test169708() throws Throwable {
-        StringBuffer stringBuffer0 = new StringBuffer(1395);
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test169709() throws Throwable {
-        StringBuffer stringBuffer0 = new StringBuffer(1395);
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test169710() throws Throwable {
-        StringBuffer stringBuffer0 = new StringBuffer(1395);
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test169711() throws Throwable {
-        StringBuffer stringBuffer0 = new StringBuffer(1395);
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test169712() throws Throwable {
-        StringBuffer stringBuffer0 = new StringBuffer(1395);
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test169713() throws Throwable {
-        StringBuffer stringBuffer0 = new StringBuffer(1395);
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
-    }
-
-    @Test(timeout = 4000)
     public void test169714() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -5402,7 +5366,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
@@ -5410,7 +5374,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
@@ -5418,7 +5382,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -5426,7 +5390,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
@@ -5434,7 +5398,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -5442,7 +5406,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
@@ -5450,7 +5414,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -5458,7 +5422,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
@@ -5466,7 +5430,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -5474,7 +5438,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5482,7 +5446,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -5490,7 +5454,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -5498,7 +5462,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -5506,11 +5470,59 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test169729() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(1395);
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
+        standardToStringStyle0.getFieldSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test169730() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(1395);
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
+        standardToStringStyle0.getArraySeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test169731() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(1395);
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
+        standardToStringStyle0.getSizeEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test169732() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(1395);
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test169733() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(1395);
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test169734() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(1395);
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        standardToStringStyle0.appendStart(stringBuffer0, (Object) null);
         stringBuffer0.length();
     }
 
     @Test(timeout = 4000)
-    public void test170729() throws Throwable {
+    public void test170735() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         toStringStyle0.appendToString(stringBuffer0, "JH=7HZ&3CL{Ud!\"i");
@@ -5518,7 +5530,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test170730() throws Throwable {
+    public void test170736() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         toStringStyle0.appendToString(stringBuffer0, "JH=7HZ&3CL{Ud!\"i");
@@ -5526,7 +5538,13 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test172731() throws Throwable {
+    public void test171737() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
+        toStringStyle0.SHORT_PREFIX_STYLE.appendSuper((StringBuffer) null, "]");
+    }
+
+    @Test(timeout = 4000)
+    public void test172738() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         toStringStyle0.NO_FIELD_NAMES_STYLE.appendIdentityHashCode(stringBuffer0, "J?`=t'w}9O");
@@ -5538,7 +5556,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test172732() throws Throwable {
+    public void test172739() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         toStringStyle0.NO_FIELD_NAMES_STYLE.appendIdentityHashCode(stringBuffer0, "J?`=t'w}9O");
@@ -5550,14 +5568,14 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test173733() throws Throwable {
+    public void test173740() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer(0);
         standardToStringStyle0.appendInternal(stringBuffer0, "]", (Object) null, false);
     }
 
     @Test(timeout = 4000)
-    public void test174734() throws Throwable {
+    public void test174741() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         float[] floatArray0 = new float[1];
@@ -5569,7 +5587,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test174735() throws Throwable {
+    public void test174742() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         float[] floatArray0 = new float[1];
@@ -5581,7 +5599,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175736() throws Throwable {
+    public void test175743() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("java.awt.graphicsenv");
         byte[] byteArray0 = new byte[3];
@@ -5590,68 +5608,12 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175737() throws Throwable {
+    public void test175744() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("java.awt.graphicsenv");
         byte[] byteArray0 = new byte[3];
         toStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "U.wFF@", byteArray0);
         stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test176738() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test176739() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test176740() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test176741() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isUseClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test176742() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test176743() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getNullText();
-    }
-
-    @Test(timeout = 4000)
-    public void test176744() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -5659,7 +5621,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
@@ -5667,7 +5629,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
@@ -5675,7 +5637,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -5683,7 +5645,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -5691,7 +5653,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
@@ -5699,7 +5661,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -5707,7 +5669,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -5715,7 +5677,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -5723,7 +5685,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5731,7 +5693,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -5739,7 +5701,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -5747,7 +5709,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -5755,11 +5717,67 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test176758() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test176759() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test176760() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test176761() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test176762() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test176763() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test176764() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.SIMPLE_STYLE.appendEnd(stringBuffer0, stringBuffer0);
         standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
-    public void test177758() throws Throwable {
+    public void test177765() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("<");
         float[] floatArray0 = new float[6];
@@ -5768,7 +5786,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test177759() throws Throwable {
+    public void test177766() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("<");
         float[] floatArray0 = new float[6];
@@ -5777,7 +5795,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178760() throws Throwable {
+    public void test178767() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = new Boolean("fH_3jDXW~o\"iQY+1xx");
@@ -5787,7 +5805,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178761() throws Throwable {
+    public void test178768() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         Boolean boolean0 = new Boolean("fH_3jDXW~o\"iQY+1xx");
@@ -5797,7 +5815,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test179762() throws Throwable {
+    public void test179769() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SHORT_PREFIX_STYLE.append(stringBuffer0, (String) null, (short) 0);
@@ -5805,7 +5823,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test179763() throws Throwable {
+    public void test179770() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.SHORT_PREFIX_STYLE.append(stringBuffer0, (String) null, (short) 0);
@@ -5813,7 +5831,13 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test181764() throws Throwable {
+    public void test180771() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+        toStringStyle0.MULTI_LINE_STYLE.setDefaultFullDetail(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test181772() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         boolean[] booleanArray0 = new boolean[1];
@@ -5822,7 +5846,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test181765() throws Throwable {
+    public void test181773() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         boolean[] booleanArray0 = new boolean[1];
@@ -5831,7 +5855,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test182766() throws Throwable {
+    public void test182774() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("<");
         standardToStringStyle0.SIMPLE_STYLE.append(stringBuffer0, "<", 456);
@@ -5839,7 +5863,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test182767() throws Throwable {
+    public void test182775() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer("<");
         standardToStringStyle0.SIMPLE_STYLE.append(stringBuffer0, "<", 456);
@@ -5847,13 +5871,13 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test183768() throws Throwable {
+    public void test183776() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
-    public void test183769() throws Throwable {
+    public void test183777() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setArrayContentDetail(false);
         boolean boolean0 = standardToStringStyle0.isArrayContentDetail();
@@ -5861,80 +5885,16 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test183770() throws Throwable {
+    public void test183778() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setArrayContentDetail(false);
         boolean boolean0 = standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
-    public void test184771() throws Throwable {
+    public void test184779() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         String string0 = toStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test185772() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test185773() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test185774() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test185775() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test185776() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test185777() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getNullText();
-    }
-
-    @Test(timeout = 4000)
-    public void test185778() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test185779() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -5942,7 +5902,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
@@ -5950,7 +5910,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5958,7 +5918,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -5966,7 +5926,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
@@ -5974,7 +5934,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -5982,7 +5942,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -5990,7 +5950,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
@@ -5998,7 +5958,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -6006,7 +5966,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -6014,7 +5974,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -6022,7 +5982,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -6030,11 +5990,75 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test185792() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test185793() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test185794() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test185795() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test185796() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test185797() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test185798() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test185799() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.appendCyclicObject(stringBuffer0, "", standardToStringStyle0);
         standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
-    public void test186792() throws Throwable {
+    public void test186800() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.append(stringBuffer0, "", true);
@@ -6042,7 +6066,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test186793() throws Throwable {
+    public void test186801() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.append(stringBuffer0, "", true);
@@ -6050,7 +6074,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187794() throws Throwable {
+    public void test187802() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         Object[] objectArray0 = new Object[5];
@@ -6060,7 +6084,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187795() throws Throwable {
+    public void test187803() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         Object[] objectArray0 = new Object[5];
@@ -6070,13 +6094,13 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test188796() throws Throwable {
+    public void test188804() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
-    public void test188797() throws Throwable {
+    public void test188805() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setFieldSeparatorAtEnd(true);
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
@@ -6084,20 +6108,20 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test188798() throws Throwable {
+    public void test188806() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.setFieldSeparatorAtEnd(true);
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
-    public void test189799() throws Throwable {
+    public void test189807() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         boolean boolean0 = toStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
-    public void test190800() throws Throwable {
+    public void test190808() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "}");
         char[] charArray0 = new char[6];
@@ -6106,7 +6130,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test190801() throws Throwable {
+    public void test190809() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "}");
         char[] charArray0 = new char[6];
@@ -6115,7 +6139,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test191802() throws Throwable {
+    public void test191810() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
@@ -6123,7 +6147,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test191803() throws Throwable {
+    public void test191811() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
@@ -6131,7 +6155,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test191804() throws Throwable {
+    public void test191812() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
@@ -6139,75 +6163,11 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test191805() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getSizeStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test191806() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test191807() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getNullText();
-    }
-
-    @Test(timeout = 4000)
-    public void test191808() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getContentEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test191809() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test191810() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test191811() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test191812() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.isUseClassName();
-    }
-
-    @Test(timeout = 4000)
     public void test191813() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -6215,7 +6175,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -6223,7 +6183,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
@@ -6231,7 +6191,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -6239,7 +6199,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -6247,7 +6207,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -6255,7 +6215,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -6263,7 +6223,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
@@ -6271,79 +6231,71 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test192822() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getArrayEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test192823() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test192824() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test192825() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test192826() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test192827() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
         standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
-    public void test192828() throws Throwable {
+    public void test191822() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getSummaryObjectEndText();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
-    public void test192829() throws Throwable {
+    public void test191823() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
-        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
-        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getSizeStartText();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test191824() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test191825() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test191826() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test191827() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test191828() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test191829() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        standardToStringStyle0.MULTI_LINE_STYLE.appendSummary(stringBuffer0, "double", "double");
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
@@ -6352,7 +6304,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
@@ -6361,7 +6313,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -6370,7 +6322,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
@@ -6379,7 +6331,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -6388,7 +6340,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -6397,7 +6349,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -6406,7 +6358,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -6415,7 +6367,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
@@ -6424,7 +6376,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -6433,7 +6385,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
@@ -6442,7 +6394,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
@@ -6451,11 +6403,83 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
         LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
         standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test192842() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test192843() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test192844() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test192845() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test192846() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test192847() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test192848() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test192849() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer(";v.kmBuy(g/,");
+        LinkedList<StandardToStringStyle> linkedList0 = new LinkedList<StandardToStringStyle>();
+        standardToStringStyle0.DEFAULT_STYLE.appendDetail(stringBuffer0, ":Eyhv?(a6;Ii?2", linkedList0);
         standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
-    public void test193842() throws Throwable {
+    public void test193850() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) ",");
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         int[] intArray0 = new int[5];
@@ -6464,433 +6488,433 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test193843() throws Throwable {
+    public void test193851() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) ",");
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         int[] intArray0 = new int[5];
         standardToStringStyle0.appendSummary(stringBuffer0, ",", intArray0);
         standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test194844() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test194845() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getContentEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test194846() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getFieldNameValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test194847() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test194848() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getSizeEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test194849() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test194850() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test194851() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test194852() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test194853() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test194854() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test194855() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test194856() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test194857() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test194858() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test194859() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test194860() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test194861() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test194862() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test194863() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test194864() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test194865() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test194866() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test194867() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test194868() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test194869() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test194870() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test194871() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectEndText();
         standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test195864() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getArraySeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test195865() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test195866() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test195867() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test195868() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getContentEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test195869() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test195870() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test195871() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test195872() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
     public void test195873() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
     public void test195874() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
     public void test195875() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test195876() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test195877() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test195878() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
     public void test195879() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test195880() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
     public void test195881() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
     public void test195882() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test195883() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldNameValueSeparator();
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
-    public void test196884() throws Throwable {
+    public void test195884() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test196885() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
         standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
-    public void test196886() throws Throwable {
+    public void test195885() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getArrayEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test196887() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test196888() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
         standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
-    public void test196889() throws Throwable {
+    public void test195886() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test195887() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getSizeStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test195888() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
         standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
-    public void test196890() throws Throwable {
+    public void test195889() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getArrayStart();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
-    public void test196891() throws Throwable {
+    public void test195890() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getSummaryObjectEndText();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test195891() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test196892() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test196893() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test196894() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test196895() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test196896() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test196897() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test196898() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test196899() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test196900() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test196901() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test196902() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test196903() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test196904() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test196905() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test196906() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test196907() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test196908() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getSizeEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test196909() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test196910() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getArraySeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test196911() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getFieldSeparator();
         standardToStringStyle0.getNullText();
     }
 
     @Test(timeout = 4000)
-    public void test197904() throws Throwable {
+    public void test197912() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         short[] shortArray0 = new short[1];
@@ -6900,7 +6924,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test197905() throws Throwable {
+    public void test197913() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "<size=");
         short[] shortArray0 = new short[1];
@@ -6910,7 +6934,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test198906() throws Throwable {
+    public void test198914() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.append(stringBuffer0, "[", 0.0F);
@@ -6918,7 +6942,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test198907() throws Throwable {
+    public void test198915() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer(1395);
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.MULTI_LINE_STYLE.append(stringBuffer0, "[", 0.0F);
@@ -6926,7 +6950,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test199908() throws Throwable {
+    public void test199916() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         int[] intArray0 = new int[6];
@@ -6935,155 +6959,155 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test199909() throws Throwable {
+    public void test199917() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer();
         int[] intArray0 = new int[6];
         toStringStyle0.appendDetail(stringBuffer0, "fH_3jDXW~o\"iQY+1xx", intArray0);
         stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test200910() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isUseShortClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test200911() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getFieldNameValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test200912() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getArrayEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test200913() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test200914() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test200915() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test200916() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test200917() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test200918() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseShortClassName();
     }
 
     @Test(timeout = 4000)
     public void test200919() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
     public void test200920() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test200921() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isUseFieldNames();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test200922() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test200923() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test200924() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
     public void test200925() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getSizeEndText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test200926() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.getSummaryObjectStartText();
     }
 
     @Test(timeout = 4000)
     public void test200927() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test200928() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test200929() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test200930() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test200931() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test200932() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getFieldSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test200933() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getSizeEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test200934() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test200935() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test200936() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test200937() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        boolean boolean0 = standardToStringStyle0.isFieldSeparatorAtEnd();
         standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
-    public void test201930() throws Throwable {
+    public void test201938() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.append(stringBuffer0, "jf$Qb>`iQb@,", 'y');
@@ -7091,7 +7115,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test201931() throws Throwable {
+    public void test201939() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         standardToStringStyle0.append(stringBuffer0, "jf$Qb>`iQb@,", 'y');
@@ -7099,146 +7123,152 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test203932() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isArrayContentDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test203933() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isDefaultFullDetail();
-    }
-
-    @Test(timeout = 4000)
-    public void test203934() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isUseClassName();
-    }
-
-    @Test(timeout = 4000)
-    public void test203935() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getSizeStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test203936() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isFieldSeparatorAtStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test203937() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isFieldSeparatorAtEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test203938() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-    }
-
-    @Test(timeout = 4000)
-    public void test203939() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getArrayStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test203940() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getArrayEnd();
+    public void test202940() throws Throwable {
+        ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+        toStringStyle0.setUseClassName(true);
     }
 
     @Test(timeout = 4000)
     public void test203941() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getContentEnd();
+        standardToStringStyle0.isArrayContentDetail();
     }
 
     @Test(timeout = 4000)
     public void test203942() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getFieldNameValueSeparator();
+        standardToStringStyle0.isDefaultFullDetail();
     }
 
     @Test(timeout = 4000)
     public void test203943() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getSummaryObjectEndText();
+        standardToStringStyle0.isUseClassName();
     }
 
     @Test(timeout = 4000)
     public void test203944() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getContentStart();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test203945() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getArraySeparator();
+        standardToStringStyle0.isFieldSeparatorAtStart();
     }
 
     @Test(timeout = 4000)
     public void test203946() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isUseIdentityHashCode();
+        standardToStringStyle0.isFieldSeparatorAtEnd();
     }
 
     @Test(timeout = 4000)
     public void test203947() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
     public void test203948() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.isUseShortClassName();
+        standardToStringStyle0.getArrayStart();
     }
 
     @Test(timeout = 4000)
     public void test203949() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getArrayEnd();
     }
 
     @Test(timeout = 4000)
     public void test203950() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
-        standardToStringStyle0.getFieldSeparator();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
     public void test203951() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getFieldNameValueSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test203952() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getSummaryObjectEndText();
+    }
+
+    @Test(timeout = 4000)
+    public void test203953() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getContentStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test203954() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getArraySeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test203955() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseIdentityHashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test203956() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseFieldNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test203957() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.isUseShortClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test203958() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test203959() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getFieldSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test203960() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        String string0 = standardToStringStyle0.getSummaryObjectStartText();
         standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
-    public void test204952() throws Throwable {
+    public void test204961() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("java.awt.graphicsenv");
         Object[] objectArray0 = new Object[1];
@@ -7248,7 +7278,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test204953() throws Throwable {
+    public void test204962() throws Throwable {
         ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
         StringBuffer stringBuffer0 = new StringBuffer("java.awt.graphicsenv");
         Object[] objectArray0 = new Object[1];
@@ -7258,7 +7288,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test205954() throws Throwable {
+    public void test205963() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer("java.awt.graphicsenv");
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendDetail(stringBuffer0, (String) null, (short) (-207));
@@ -7266,7 +7296,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test205955() throws Throwable {
+    public void test205964() throws Throwable {
         StringBuffer stringBuffer0 = new StringBuffer("java.awt.graphicsenv");
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         standardToStringStyle0.appendDetail(stringBuffer0, (String) null, (short) (-207));
@@ -7274,91 +7304,10 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test206956() throws Throwable {
+    public void test206965() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         Boolean boolean0 = Boolean.FALSE;
         standardToStringStyle0.SIMPLE_STYLE.append((StringBuffer) null, "", (boolean[]) null, boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test207957() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getContentEnd();
-    }
-
-    @Test(timeout = 4000)
-    public void test207958() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getContentStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test207959() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getSizeEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test207960() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getFieldNameValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test207961() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isUseIdentityHashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test207962() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getFieldSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test207963() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isUseFieldNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test207964() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getSummaryObjectEndText();
-    }
-
-    @Test(timeout = 4000)
-    public void test207965() throws Throwable {
-        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
-        StringBuffer stringBuffer0 = new StringBuffer();
-        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
-        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -7367,7 +7316,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getSizeStartText();
+        standardToStringStyle0.getContentEnd();
     }
 
     @Test(timeout = 4000)
@@ -7376,7 +7325,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isFieldSeparatorAtEnd();
+        standardToStringStyle0.getContentStart();
     }
 
     @Test(timeout = 4000)
@@ -7385,7 +7334,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isFieldSeparatorAtStart();
+        standardToStringStyle0.getSizeEndText();
     }
 
     @Test(timeout = 4000)
@@ -7394,7 +7343,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getArrayEnd();
+        standardToStringStyle0.getFieldNameValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -7403,7 +7352,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getArrayStart();
+        standardToStringStyle0.isUseIdentityHashCode();
     }
 
     @Test(timeout = 4000)
@@ -7412,7 +7361,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getSummaryObjectStartText();
+        standardToStringStyle0.getFieldSeparator();
     }
 
     @Test(timeout = 4000)
@@ -7421,7 +7370,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isArrayContentDetail();
+        standardToStringStyle0.isUseFieldNames();
     }
 
     @Test(timeout = 4000)
@@ -7430,7 +7379,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isDefaultFullDetail();
+        standardToStringStyle0.getSummaryObjectEndText();
     }
 
     @Test(timeout = 4000)
@@ -7439,7 +7388,7 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.isUseClassName();
+        standardToStringStyle0.getArraySeparator();
     }
 
     @Test(timeout = 4000)
@@ -7448,11 +7397,92 @@ public class ToStringStyle_ESTest extends ToStringStyle_ESTest_scaffolding {
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
         standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
-        standardToStringStyle0.getNullText();
+        standardToStringStyle0.getSizeStartText();
     }
 
     @Test(timeout = 4000)
     public void test207976() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.isFieldSeparatorAtEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test207977() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.isFieldSeparatorAtStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test207978() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.getArrayEnd();
+    }
+
+    @Test(timeout = 4000)
+    public void test207979() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.getArrayStart();
+    }
+
+    @Test(timeout = 4000)
+    public void test207980() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.getSummaryObjectStartText();
+    }
+
+    @Test(timeout = 4000)
+    public void test207981() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.isArrayContentDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test207982() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.isDefaultFullDetail();
+    }
+
+    @Test(timeout = 4000)
+    public void test207983() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.isUseClassName();
+    }
+
+    @Test(timeout = 4000)
+    public void test207984() throws Throwable {
+        StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
+        StringBuffer stringBuffer0 = new StringBuffer();
+        WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();
+        standardToStringStyle0.NO_FIELD_NAMES_STYLE.appendDetail(stringBuffer0, "", weakHashMap0);
+        standardToStringStyle0.getNullText();
+    }
+
+    @Test(timeout = 4000)
+    public void test207985() throws Throwable {
         StandardToStringStyle standardToStringStyle0 = new StandardToStringStyle();
         StringBuffer stringBuffer0 = new StringBuffer();
         WeakHashMap<Float, StandardToStringStyle> weakHashMap0 = new WeakHashMap<Float, StandardToStringStyle>();

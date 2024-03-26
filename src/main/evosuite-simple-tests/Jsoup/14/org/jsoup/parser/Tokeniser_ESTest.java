@@ -38,7 +38,30 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test012() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.emit(";");
+    }
+
+    @Test(timeout = 4000)
+    public void test023() throws Throwable {
+        Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null);
+        Token.Doctype token_Doctype0 = new Token.Doctype();
+        tokeniser0.doctypePending = token_Doctype0;
+        tokeniser0.emitDoctypePending();
+    }
+
+    @Test(timeout = 4000)
+    public void test034() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("?O+3%");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.createCommentPending();
+        tokeniser0.emitCommentPending();
+    }
+
+    @Test(timeout = 4000)
+    public void test045() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         tokeniser0.setTrackErrors(false);
@@ -47,7 +70,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test056() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("#");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token.EndTag token_EndTag0 = new Token.EndTag("gamma");
@@ -59,7 +82,17 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test074() throws Throwable {
+    public void test067() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        TokeniserState tokeniserState0 = TokeniserState.ScriptDataEndTagName;
+        tokeniser0.transition(tokeniserState0);
+        // Undeclared exception!
+        tokeniser0.read();
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("&Dg;V@q.");
         characterReader0.unconsume();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
@@ -72,7 +105,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test089() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("mRb9w(\"4xGtwS ");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         TokeniserState tokeniserState0 = TokeniserState.DoctypeSystemIdentifier_doubleQuoted;
@@ -90,7 +123,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test0910() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("5[H0K");
         characterReader0.unconsume();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
@@ -104,7 +137,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1011() throws Throwable {
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null);
         TokeniserState tokeniserState0 = TokeniserState.RawtextEndTagOpen;
         // Undeclared exception!
@@ -120,7 +153,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1112() throws Throwable {
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null);
         TokeniserState tokeniserState0 = TokeniserState.RawtextEndTagOpen;
         // Undeclared exception!
@@ -136,7 +169,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1213() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("m>g");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         tokeniser0.createTagPending(false);
@@ -154,7 +187,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1314() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token.EndTag token_EndTag0 = new Token.EndTag();
@@ -172,7 +205,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1415() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("cM(Y");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token.EndTag token_EndTag0 = new Token.EndTag();
@@ -190,7 +223,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1516() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("8jfmDD");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         // Undeclared exception!
@@ -206,7 +239,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1617() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("]");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token.Comment token_Comment0 = new Token.Comment();
@@ -225,7 +258,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1714() throws Throwable {
+    public void test1718() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         characterReader0.unconsume();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
@@ -239,7 +272,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1815() throws Throwable {
+    public void test1819() throws Throwable {
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null);
         Character character0 = Character.valueOf('J');
         // Undeclared exception!
@@ -255,7 +288,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1916() throws Throwable {
+    public void test1920() throws Throwable {
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null);
         TokeniserState tokeniserState0 = TokeniserState.CharacterReferenceInData;
         // Undeclared exception!
@@ -271,7 +304,18 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test2021() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        Token.EndTag token_EndTag0 = new Token.EndTag("");
+        tokeniser0.setTrackErrors(false);
+        token_EndTag0.appendAttributeName(">On[.OET");
+        token_EndTag0.finaliseTag();
+        tokeniser0.emit(token_EndTag0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2122() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.Tokeniser");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         tokeniser0.setTrackErrors(false);
@@ -280,7 +324,32 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2518() throws Throwable {
+    public void test2223() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("#");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        TokeniserState tokeniserState0 = TokeniserState.Doctype;
+        tokeniser0.eofError(tokeniserState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2324() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("#");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        TokeniserState tokeniserState0 = TokeniserState.Doctype;
+        tokeniser0.error(tokeniserState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2425() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        TokeniserState tokeniserState0 = TokeniserState.AttributeValue_singleQuoted;
+        tokeniser0.setTrackErrors(false);
+        tokeniser0.error(tokeniserState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2526() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("#");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token.Tag token_Tag0 = tokeniser0.createTagPending(false);
@@ -298,7 +367,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2619() throws Throwable {
+    public void test2627() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("kcedil");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Character character0 = new Character('O');
@@ -307,7 +376,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2720() throws Throwable {
+    public void test2728() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.Tokeniser");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Character character0 = Character.valueOf('V');
@@ -316,7 +385,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2821() throws Throwable {
+    public void test2829() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("^Xc");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Character character0 = tokeniser0.consumeCharacterReference((Character) null, true);
@@ -324,7 +393,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2922() throws Throwable {
+    public void test2930() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("^Xc");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Character character0 = Character.valueOf('^');
@@ -333,7 +402,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3023() throws Throwable {
+    public void test3031() throws Throwable {
         Character character0 = new Character('@');
         CharacterReader characterReader0 = new CharacterReader("sup1");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
@@ -342,7 +411,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3124() throws Throwable {
+    public void test3132() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Character character0 = new Character('{');
@@ -351,7 +420,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3225() throws Throwable {
+    public void test3233() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("&Dg;V@q.");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token token0 = tokeniser0.read();
@@ -359,7 +428,25 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3526() throws Throwable {
+    public void test3334() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        Token.EndTag token_EndTag0 = new Token.EndTag("");
+        token_EndTag0.appendAttributeName(">On[.OET");
+        token_EndTag0.finaliseTag();
+        tokeniser0.emit(token_EndTag0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3435() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("uArr");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.createTagPending(true);
+        tokeniser0.emitTagPending();
+    }
+
+    @Test(timeout = 4000)
+    public void test3536() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("#");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         Token.StartTag token_StartTag0 = new Token.StartTag("#");
@@ -370,7 +457,21 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3827() throws Throwable {
+    public void test3637() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.getState();
+    }
+
+    @Test(timeout = 4000)
+    public void test3738() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("J{ bu^-SqP Wom:Z*E;");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.createDoctypePending();
+    }
+
+    @Test(timeout = 4000)
+    public void test3839() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         boolean boolean0 = tokeniser0.currentNodeInHtmlNS();
@@ -378,7 +479,16 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4028() throws Throwable {
+    public void test3940() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.setTrackErrors(false);
+        TokeniserState tokeniserState0 = TokeniserState.Comment;
+        tokeniser0.eofError(tokeniserState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4041() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("cM(Y");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         // Undeclared exception!
@@ -394,7 +504,14 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4229() throws Throwable {
+    public void test4142() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.emit('\'');
+    }
+
+    @Test(timeout = 4000)
+    public void test4243() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         boolean boolean0 = tokeniser0.isTrackErrors();
@@ -402,7 +519,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4330() throws Throwable {
+    public void test4344() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("m>g");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         // Undeclared exception!
@@ -418,7 +535,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4431() throws Throwable {
+    public void test4445() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("&Dg;V@q.");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         TokeniserState tokeniserState0 = TokeniserState.CharacterReferenceInData;
@@ -428,7 +545,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4532() throws Throwable {
+    public void test4546() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("2$\"4\"!NJW,?j f;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         // Undeclared exception!
@@ -444,7 +561,14 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4733() throws Throwable {
+    public void test4647() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.acknowledgeSelfClosingFlag();
+    }
+
+    @Test(timeout = 4000)
+    public void test4748() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0);
         // Undeclared exception!
@@ -457,5 +581,12 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
             //
             verifyException("org.jsoup.parser.Tokeniser", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test4849() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("2$\"4\"!NJW,?j f;");
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0);
+        tokeniser0.createTempBuffer();
     }
 }

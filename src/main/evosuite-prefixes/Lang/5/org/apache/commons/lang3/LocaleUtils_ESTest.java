@@ -126,21 +126,31 @@ public class LocaleUtils_ESTest extends LocaleUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1718() throws Throwable {
+        LocaleUtils.SyncAvoid localeUtils_SyncAvoid0 = new LocaleUtils.SyncAvoid();
+    }
+
+    @Test(timeout = 4000)
+    public void test1819() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         boolean boolean0 = LocaleUtils.isAvailableLocale(locale0);
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1920() throws Throwable {
         Set<Locale> set0 = LocaleUtils.availableLocaleSet();
         set0.size();
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2021() throws Throwable {
         Locale locale0 = Locale.GERMANY;
         List<Locale> list0 = LocaleUtils.localeLookupList(locale0);
         list0.size();
+    }
+
+    @Test(timeout = 4000)
+    public void test2122() throws Throwable {
+        LocaleUtils localeUtils0 = new LocaleUtils();
     }
 }

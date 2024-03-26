@@ -181,7 +181,22 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1010() throws Throwable {
+        DifferentiableMultivariateVectorialOptimizer differentiableMultivariateVectorialOptimizer0 = mock(DifferentiableMultivariateVectorialOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((VectorialPointValuePair) null, (VectorialPointValuePair) null, (VectorialPointValuePair) null, (VectorialPointValuePair) null).when(differentiableMultivariateVectorialOptimizer0).optimize(anyInt(), any(org.apache.commons.math.analysis.DifferentiableMultivariateVectorialFunction.class), any(double[].class), any(double[].class), any(double[].class));
+        doReturn(0, 0, 0, 0).when(differentiableMultivariateVectorialOptimizer0).getEvaluations();
+        Well19937a well19937a0 = new Well19937a(0);
+        GaussianRandomGenerator gaussianRandomGenerator0 = new GaussianRandomGenerator(well19937a0);
+        UncorrelatedRandomVectorGenerator uncorrelatedRandomVectorGenerator0 = new UncorrelatedRandomVectorGenerator(3289, gaussianRandomGenerator0);
+        MultiStartDifferentiableMultivariateVectorialOptimizer multiStartDifferentiableMultivariateVectorialOptimizer0 = new MultiStartDifferentiableMultivariateVectorialOptimizer(differentiableMultivariateVectorialOptimizer0, 3289, uncorrelatedRandomVectorGenerator0);
+        GaussianFitter gaussianFitter0 = new GaussianFitter(multiStartDifferentiableMultivariateVectorialOptimizer0);
+        double[] doubleArray0 = new double[5];
+        // Undeclared exception!
+        gaussianFitter0.fit(doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         DifferentiableMultivariateVectorialOptimizer differentiableMultivariateVectorialOptimizer0 = mock(DifferentiableMultivariateVectorialOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((VectorialPointValuePair) null).when(differentiableMultivariateVectorialOptimizer0).optimize(anyInt(), any(org.apache.commons.math.analysis.DifferentiableMultivariateVectorialFunction.class), any(double[].class), any(double[].class), any(double[].class));
         doReturn(0).when(differentiableMultivariateVectorialOptimizer0).getEvaluations();
@@ -201,7 +216,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         double[] doubleArray0 = new double[5];
         VectorialPointValuePair vectorialPointValuePair0 = new VectorialPointValuePair(doubleArray0, doubleArray0);
         DifferentiableMultivariateVectorialOptimizer differentiableMultivariateVectorialOptimizer0 = mock(DifferentiableMultivariateVectorialOptimizer.class, new ViolatedAssumptionAnswer());
@@ -223,7 +238,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         GaussianFitter gaussianFitter0 = new GaussianFitter((DifferentiableMultivariateVectorialOptimizer) null);
         gaussianFitter0.addObservedPoint(0.0, 0.0, 2540.861439);
         gaussianFitter0.addObservedPoint(849.066329945, 849.066329945, 849.066329945);
@@ -241,7 +256,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[1];
         GaussianFitter.ParameterGuesser gaussianFitter_ParameterGuesser0 = null;
         try {
@@ -256,7 +271,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[7];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint(0.0, 2019.60840652518, 0.0);
         weightedObservedPointArray0[1] = weightedObservedPoint0;
@@ -275,7 +290,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[7];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint(1639.0, 0.0, 1639.0);
         weightedObservedPointArray0[0] = weightedObservedPoint0;
@@ -292,7 +307,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[3];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint(4672.80624, 4672.80624, 4672.80624);
         weightedObservedPointArray0[0] = weightedObservedPoint0;
@@ -305,7 +320,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         GaussianFitter.ParameterGuesser gaussianFitter_ParameterGuesser0 = null;
         try {
             gaussianFitter_ParameterGuesser0 = new GaussianFitter.ParameterGuesser((WeightedObservedPoint[]) null);
@@ -319,7 +334,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         DifferentiableMultivariateVectorialOptimizer differentiableMultivariateVectorialOptimizer0 = mock(DifferentiableMultivariateVectorialOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((VectorialPointValuePair) null).when(differentiableMultivariateVectorialOptimizer0).optimize(anyInt(), any(org.apache.commons.math.analysis.DifferentiableMultivariateVectorialFunction.class), any(double[].class), any(double[].class), any(double[].class));
         GaussianFitter gaussianFitter0 = new GaussianFitter(differentiableMultivariateVectorialOptimizer0);
@@ -337,7 +352,7 @@ public class GaussianFitter_ESTest extends GaussianFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         DifferentiableMultivariateVectorialOptimizer differentiableMultivariateVectorialOptimizer0 = mock(DifferentiableMultivariateVectorialOptimizer.class, new ViolatedAssumptionAnswer());
         UncorrelatedRandomVectorGenerator uncorrelatedRandomVectorGenerator0 = new UncorrelatedRandomVectorGenerator(12, (NormalizedRandomGenerator) null);
         MultiStartDifferentiableMultivariateVectorialOptimizer multiStartDifferentiableMultivariateVectorialOptimizer0 = new MultiStartDifferentiableMultivariateVectorialOptimizer(differentiableMultivariateVectorialOptimizer0, 12, uncorrelatedRandomVectorGenerator0);

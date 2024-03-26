@@ -29,7 +29,13 @@ import org.junit.runner.RunWith;
 public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        Vector3D vector3D0 = Vector3D.NaN;
+        SubLine subLine0 = new SubLine(vector3D0, vector3D0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         Vector3D vector3D0 = Vector3D.PLUS_K;
         Vector3D vector3D1 = new Vector3D(291.5, vector3D0, (-397.80643760046), vector3D0, 1.0, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -39,7 +45,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         Vector3D vector3D0 = new Vector3D(4420.3, 1.0, 4420.3);
         Vector3D vector3D1 = Vector3D.MINUS_J;
         Line line0 = new Line(vector3D1, vector3D0);
@@ -49,7 +55,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         Vector3D vector3D0 = Vector3D.PLUS_J;
         Vector3D vector3D1 = Vector3D.MINUS_I;
         Line line0 = new Line(vector3D0, vector3D1);
@@ -59,7 +65,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         Vector3D vector3D0 = Vector3D.PLUS_J;
         Vector3D vector3D1 = new Vector3D(0.0, vector3D0);
         Line line0 = new Line(vector3D0, vector3D1);
@@ -70,7 +76,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Vector3D vector3D0 = Vector3D.PLUS_J;
         Vector3D vector3D1 = Vector3D.MINUS_I;
         Line line0 = new Line(vector3D0, vector3D1);
@@ -88,7 +94,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Vector3D vector3D0 = Vector3D.PLUS_K;
         Vector3D vector3D1 = new Vector3D(291.5, vector3D0, 291.5, vector3D0, 291.5, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -113,7 +119,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Vector3D vector3D0 = Vector3D.POSITIVE_INFINITY;
         Plane plane0 = new Plane(vector3D0, vector3D0);
         Line line0 = plane0.intersection(plane0);
@@ -133,7 +139,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Vector3D vector3D0 = Vector3D.POSITIVE_INFINITY;
         Plane plane0 = new Plane(vector3D0, vector3D0);
         Line line0 = plane0.intersection(plane0);
@@ -154,7 +160,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         SubLine subLine0 = null;
         try {
             subLine0 = new SubLine((Vector3D) null, (Vector3D) null);
@@ -168,7 +174,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         SubLine subLine0 = null;
         try {
             subLine0 = new SubLine((Segment) null);
@@ -182,7 +188,16 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1111() throws Throwable {
+        Vector3D vector3D0 = Vector3D.PLUS_J;
+        Vector3D vector3D1 = Vector3D.MINUS_I;
+        Line line0 = new Line(vector3D0, vector3D1);
+        Segment segment0 = new Segment(vector3D1, vector3D0, line0);
+        SubLine subLine0 = new SubLine(segment0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         Vector3D vector3D0 = Vector3D.MINUS_K;
         Vector3D vector3D1 = new Vector3D(332.8866725, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -193,7 +208,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         Vector3D vector3D0 = Vector3D.MINUS_K;
         Vector3D vector3D1 = new Vector3D(332.8866725, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -204,7 +219,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         Vector3D vector3D0 = Vector3D.MINUS_K;
         Vector3D vector3D1 = new Vector3D(332.8866725, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -215,7 +230,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         Vector3D vector3D0 = Vector3D.MINUS_K;
         Vector3D vector3D1 = new Vector3D(332.8866725, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -226,7 +241,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         Vector3D vector3D0 = Vector3D.MINUS_K;
         Vector3D vector3D1 = new Vector3D(332.8866725, vector3D0);
         Line line0 = new Line(vector3D1, vector3D0);
@@ -236,7 +251,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         RotationOrder rotationOrder0 = RotationOrder.YXY;
         Vector3D vector3D0 = rotationOrder0.getA1();
         Segment segment0 = new Segment(vector3D0, vector3D0, (Line) null);
@@ -253,7 +268,7 @@ public class SubLine_ESTest extends SubLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         Vector3D vector3D0 = Vector3D.MINUS_I;
         SubLine subLine0 = null;
         try {

@@ -76,7 +76,13 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test077() throws Throwable {
+        Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
+        entities_BinaryEntityMap0.add("", 1437);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         entities_ArrayEntityMap0.size = (-1719);
         int int0 = entities_ArrayEntityMap0.value((String) null);
@@ -84,7 +90,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         int[] intArray0 = new int[5];
         intArray0[0] = (-2765);
@@ -101,7 +107,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         entities_ArrayEntityMap0.size = (-1719);
         String string0 = entities_ArrayEntityMap0.name((-2145));
@@ -109,49 +115,66 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Entities.PrimitiveEntityMap entities_PrimitiveEntityMap0 = new Entities.PrimitiveEntityMap();
         int int0 = entities_PrimitiveEntityMap0.value("");
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1212() throws Throwable {
+        Entities.LookupEntityMap entities_LookupEntityMap0 = new Entities.LookupEntityMap();
+        entities_LookupEntityMap0.add((String) null, 4531);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         Entities.PrimitiveEntityMap entities_PrimitiveEntityMap0 = new Entities.PrimitiveEntityMap();
         String string0 = entities_PrimitiveEntityMap0.name((-3070));
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         Entities.TreeEntityMap entities_TreeEntityMap0 = new Entities.TreeEntityMap();
         String string0 = entities_TreeEntityMap0.name(1959);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
         int int0 = entities_BinaryEntityMap0.value("t4r_t`mT >=>HoNbh");
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         String string0 = entities_ArrayEntityMap0.name(1421);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test1915() throws Throwable {
+    public void test1717() throws Throwable {
+        Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
+        entities_ArrayEntityMap0.add("ciX?-maH5XWZ(", 6);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap(928);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         Entities entities0 = new Entities();
         String string0 = entities0.HTML32.unescape("");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2016() throws Throwable {
+    public void test2020() throws Throwable {
         Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
         Entities entities0 = new Entities();
         entities0.map = (Entities.EntityMap) entities_BinaryEntityMap0;
@@ -161,7 +184,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test2121() throws Throwable {
         Entities entities0 = new Entities();
         Entities.fillWithHtml40Entities(entities0);
         String string0 = entities0.entityName(38);
@@ -169,7 +192,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2118() throws Throwable {
+    public void test2122() throws Throwable {
         Entities entities0 = new Entities();
         Entities.fillWithHtml40Entities(entities0);
         String string0 = entities0.entityName(38);
@@ -177,7 +200,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2219() throws Throwable {
+    public void test2223() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         Entities entities0 = Entities.HTML40;
         entities0.map = (Entities.EntityMap) entities_ArrayEntityMap0;
@@ -187,7 +210,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2320() throws Throwable {
+    public void test2324() throws Throwable {
         Entities entities0 = Entities.HTML32;
         // Undeclared exception!
         try {
@@ -202,7 +225,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2421() throws Throwable {
+    public void test2425() throws Throwable {
         Entities entities0 = new Entities();
         // Undeclared exception!
         try {
@@ -217,7 +240,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2522() throws Throwable {
+    public void test2526() throws Throwable {
         // Undeclared exception!
         try {
             Entities.fillWithHtml40Entities((Entities) null);
@@ -231,7 +254,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2623() throws Throwable {
+    public void test2627() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         int[] intArray0 = new int[5];
         entities_ArrayEntityMap0.values = intArray0;
@@ -250,7 +273,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2724() throws Throwable {
+    public void test2728() throws Throwable {
         Entities entities0 = new Entities();
         // Undeclared exception!
         try {
@@ -265,7 +288,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2825() throws Throwable {
+    public void test2829() throws Throwable {
         Entities entities0 = Entities.HTML32;
         // Undeclared exception!
         try {
@@ -280,7 +303,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2926() throws Throwable {
+    public void test2930() throws Throwable {
         Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
         entities_BinaryEntityMap0.add("asymp", 256);
         Entities entities0 = new Entities();
@@ -299,7 +322,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3027() throws Throwable {
+    public void test3031() throws Throwable {
         Entities entities0 = Entities.XML;
         // Undeclared exception!
         try {
@@ -314,7 +337,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3128() throws Throwable {
+    public void test3132() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         Entities entities0 = Entities.HTML32;
         entities0.map = (Entities.EntityMap) entities_ArrayEntityMap0;
@@ -332,7 +355,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3229() throws Throwable {
+    public void test3233() throws Throwable {
         Entities entities0 = Entities.XML;
         // Undeclared exception!
         try {
@@ -346,7 +369,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3330() throws Throwable {
+    public void test3334() throws Throwable {
         Entities entities0 = Entities.HTML32;
         String[][] stringArray0 = new String[2][0];
         // Undeclared exception!
@@ -361,7 +384,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3431() throws Throwable {
+    public void test3435() throws Throwable {
         Entities entities0 = new Entities();
         String[][] stringArray0 = new String[0][3];
         entities0.XML.addEntities(stringArray0);
@@ -369,7 +392,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3532() throws Throwable {
+    public void test3536() throws Throwable {
         Entities entities0 = Entities.HTML32;
         String[][] stringArray0 = new String[9][7];
         // Undeclared exception!
@@ -385,7 +408,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3633() throws Throwable {
+    public void test3637() throws Throwable {
         Entities entities0 = Entities.HTML32;
         // Undeclared exception!
         try {
@@ -401,7 +424,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3734() throws Throwable {
+    public void test3738() throws Throwable {
         Entities entities0 = new Entities();
         StringWriter stringWriter0 = new StringWriter();
         entities0.unescape((Writer) stringWriter0, "^Uk2&=O*^X&5WpZ");
@@ -409,7 +432,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3835() throws Throwable {
+    public void test3839() throws Throwable {
         Entities entities0 = new Entities();
         StringWriter stringWriter0 = new StringWriter(472);
         entities0.XML.unescape((Writer) stringWriter0, "asymp");
@@ -417,14 +440,14 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3936() throws Throwable {
+    public void test3940() throws Throwable {
         Entities entities0 = Entities.HTML32;
         String string0 = entities0.unescape("@k)YGE2Pi&amp;FtC~");
         assertEquals("@k)YGE2Pi&FtC~", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4037() throws Throwable {
+    public void test4041() throws Throwable {
         Entities entities0 = new Entities();
         StringWriter stringWriter0 = new StringWriter();
         entities0.HTML32.escape((Writer) stringWriter0, "_&=X!Uw`QYh");
@@ -432,7 +455,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4138() throws Throwable {
+    public void test4142() throws Throwable {
         Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap(1925);
         String[] stringArray0 = new String[3];
         entities_BinaryEntityMap0.add((String) null, 113);
@@ -442,7 +465,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4239() throws Throwable {
+    public void test4243() throws Throwable {
         Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
         entities_BinaryEntityMap0.add("asymp", 256);
         Entities entities0 = new Entities();
@@ -452,7 +475,14 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4440() throws Throwable {
+    public void test4344() throws Throwable {
+        Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
+        entities_BinaryEntityMap0.add("asymp", 256);
+        entities_BinaryEntityMap0.add("", 4086);
+    }
+
+    @Test(timeout = 4000)
+    public void test4445() throws Throwable {
         Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap();
         entities_BinaryEntityMap0.add("asymp", 256);
         Entities entities0 = new Entities();
@@ -462,7 +492,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4541() throws Throwable {
+    public void test4546() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         entities_ArrayEntityMap0.add("yF-", (-1));
         int int0 = entities_ArrayEntityMap0.value("P[[");
@@ -470,7 +500,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4642() throws Throwable {
+    public void test4647() throws Throwable {
         Entities.ArrayEntityMap entities_ArrayEntityMap0 = new Entities.ArrayEntityMap();
         String[] stringArray0 = new String[15];
         stringArray0[2] = "EL49]oTg)Gj!L";
@@ -487,21 +517,21 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4743() throws Throwable {
+    public void test4748() throws Throwable {
         Entities entities0 = new Entities();
         String string0 = entities0.HTML40.entityName(256);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test4844() throws Throwable {
+    public void test4849() throws Throwable {
         Entities.TreeEntityMap entities_TreeEntityMap0 = new Entities.TreeEntityMap();
         int int0 = entities_TreeEntityMap0.value("M1uR QA'46X{]X`2*j");
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test4945() throws Throwable {
+    public void test4950() throws Throwable {
         String[] stringArray0 = new String[3];
         Entities.HashEntityMap entities_HashEntityMap0 = new Entities.HashEntityMap();
         entities_HashEntityMap0.add(stringArray0[2], 113);
@@ -510,7 +540,7 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5046() throws Throwable {
+    public void test5051() throws Throwable {
         Entities entities0 = Entities.HTML32;
         StringWriter stringWriter0 = new StringWriter(2636);
         entities0.HTML32.unescape((Writer) stringWriter0, "@k)YGE2Pi&amp;FtC~");
@@ -518,14 +548,22 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5247() throws Throwable {
+    public void test5152() throws Throwable {
+        Entities.BinaryEntityMap entities_BinaryEntityMap0 = new Entities.BinaryEntityMap(1925);
+        String[] stringArray0 = new String[3];
+        entities_BinaryEntityMap0.names = stringArray0;
+        entities_BinaryEntityMap0.ensureCapacity(38);
+    }
+
+    @Test(timeout = 4000)
+    public void test5253() throws Throwable {
         Entities entities0 = new Entities();
         int int0 = entities0.entityValue("");
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test5348() throws Throwable {
+    public void test5354() throws Throwable {
         Entities.LookupEntityMap entities_LookupEntityMap0 = new Entities.LookupEntityMap();
         String string0 = entities_LookupEntityMap0.name(722);
         assertNull(string0);

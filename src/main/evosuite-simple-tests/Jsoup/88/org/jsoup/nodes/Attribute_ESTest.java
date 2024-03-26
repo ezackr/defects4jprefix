@@ -412,7 +412,20 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test2930() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        Attribute attribute0 = new Attribute("orable", (String) null, attributes0);
+        attribute0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3031() throws Throwable {
+        Attribute attribute0 = new Attribute("compact", "compact");
+        attribute0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3132() throws Throwable {
         Attribute attribute0 = new Attribute("b", (String) null);
         Attribute attribute1 = attribute0.clone();
         boolean boolean0 = attribute1.equals(attribute0);
@@ -420,7 +433,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3233() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded(":N68\"K Hwz3~N )[|", ":N68\"K Hwz3~N )[|");
         Attribute attribute1 = Attribute.createFromEncoded("Kutofocus", "");
         boolean boolean0 = attribute1.equals(attribute0);
@@ -428,7 +441,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3234() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded(":N68\"K Hwz3~N )[|", ":N68\"K Hwz3~N )[|");
         Attribute attribute1 = Attribute.createFromEncoded("Kutofocus", "");
         boolean boolean0 = attribute1.equals(attribute0);
@@ -436,7 +449,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3335() throws Throwable {
         Attribute attribute0 = new Attribute("compact", "compact");
         Attribute attribute1 = attribute0.clone();
         boolean boolean0 = attribute1.equals(attribute0);
@@ -444,21 +457,21 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3436() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("class", "class");
         boolean boolean0 = attribute0.equals((Object) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3537() throws Throwable {
         Attribute attribute0 = new Attribute("compact", "compact");
         boolean boolean0 = attribute0.equals(attribute0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3638() throws Throwable {
         Attribute attribute0 = new Attribute("compact", "compact");
         Object object0 = new Object();
         boolean boolean0 = attribute0.equals(object0);
@@ -466,7 +479,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3739() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("orable", (String) null, attributes0);
         boolean boolean0 = attribute0.isBooleanAttribute();
@@ -474,35 +487,35 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3840() throws Throwable {
         Attribute attribute0 = new Attribute("T mqh5?y>?VmB\"7-", "T mqh5?y>?VmB\"7-");
         boolean boolean0 = attribute0.isBooleanAttribute();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3941() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("compact", "redonl");
         boolean boolean0 = attribute0.isBooleanAttribute();
         assertEquals("redonl", attribute0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3942() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("compact", "redonl");
         boolean boolean0 = attribute0.isBooleanAttribute();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4043() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         boolean boolean0 = Attribute.shouldCollapseAttribute(":N68\"K Hwz3~N )[|", "", document_OutputSettings0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4144() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("orable", (String) null, attributes0);
         String string0 = attribute0.html();
@@ -510,7 +523,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4245() throws Throwable {
         MockFile mockFile0 = new MockFile("x&v1}SNSCGt,5");
         MockFileWriter mockFileWriter0 = new MockFileWriter(mockFile0, false);
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
@@ -521,34 +534,34 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4344() throws Throwable {
+    public void test4346() throws Throwable {
         boolean boolean0 = Attribute.isDataAttribute("data-");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4445() throws Throwable {
+    public void test4447() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("data-data-readonly", "noshade");
         boolean boolean0 = attribute0.isDataAttribute();
         assertEquals("noshade", attribute0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test4446() throws Throwable {
+    public void test4448() throws Throwable {
         Attribute attribute0 = Attribute.createFromEncoded("data-data-readonly", "noshade");
         boolean boolean0 = attribute0.isDataAttribute();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4547() throws Throwable {
+    public void test4549() throws Throwable {
         Attribute attribute0 = new Attribute("compact", "compact");
         String string0 = attribute0.toString();
         assertEquals("compact", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4648() throws Throwable {
+    public void test4650() throws Throwable {
         Attribute attribute0 = new Attribute("as>c", "as>c");
         Attributes attributes0 = new Attributes();
         attributes0.put(attribute0);
@@ -557,7 +570,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4749() throws Throwable {
+    public void test4751() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("#root", "#root", attributes0);
         String string0 = attribute0.setValue("#root");
@@ -565,7 +578,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4750() throws Throwable {
+    public void test4752() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("#root", "#root", attributes0);
         String string0 = attribute0.setValue("#root");
@@ -573,7 +586,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4851() throws Throwable {
+    public void test4853() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = new Attribute("#root", "#root", attributes0);
         attribute0.setKey("declare");
@@ -581,7 +594,7 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4952() throws Throwable {
+    public void test4954() throws Throwable {
         Attribute attribute0 = new Attribute("as>c", "as>c");
         Attributes attributes0 = new Attributes();
         attributes0.put(attribute0);
@@ -590,21 +603,28 @@ public class Attribute_ESTest extends Attribute_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5153() throws Throwable {
+    public void test5055() throws Throwable {
+        Attribute attribute0 = Attribute.createFromEncoded("disBbleK", "disabled");
+        Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
+        attribute0.shouldCollapseAttribute(document_OutputSettings0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5156() throws Throwable {
         Attribute attribute0 = new Attribute("T mqh5?y>?VmB\"7-", "T mqh5?y>?VmB\"7-");
         String string0 = attribute0.getValue();
         assertEquals("T mqh5?y>?VmB\"7-", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5254() throws Throwable {
+    public void test5257() throws Throwable {
         Attribute attribute0 = new Attribute("compact", "compact");
         boolean boolean0 = attribute0.isDataAttribute();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5355() throws Throwable {
+    public void test5358() throws Throwable {
         Attribute attribute0 = new Attribute("T mqh5?y>?VmB\"7-", "T mqh5?y>?VmB\"7-");
         String string0 = attribute0.getKey();
         assertEquals("T mqh5?y>?VmB\"7-", string0);

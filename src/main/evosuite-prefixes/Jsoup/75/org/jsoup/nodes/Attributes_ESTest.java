@@ -807,21 +807,20 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7994() throws Throwable {
+    public void test8095() throws Throwable {
         Attributes attributes0 = new Attributes();
-        Attributes attributes1 = attributes0.clone();
-        boolean boolean0 = attributes0.equals(attributes1);
+        attributes0.hashCode();
     }
 
     @Test(timeout = 4000)
-    public void test8195() throws Throwable {
+    public void test8196() throws Throwable {
         Attributes attributes0 = new Attributes();
         Map<String, String> map0 = attributes0.dataset();
         map0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test8296() throws Throwable {
+    public void test8297() throws Throwable {
         Attributes attributes0 = new Attributes();
         String string0 = attributes0.toString();
     }

@@ -18,13 +18,19 @@ import org.mockito.internal.util.MockUtil;
 public class MockUtil_ESTest extends MockUtil_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        MockUtil mockUtil0 = new MockUtil();
+        mockUtil0.isMock(mockUtil0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         MockUtil mockUtil0 = new MockUtil();
         mockUtil0.resetMock((Object) mockUtil0);
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test22() throws Throwable {
         MockUtil mockUtil0 = new MockUtil();
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Class<Object> class0 = Object.class;
@@ -32,14 +38,26 @@ public class MockUtil_ESTest extends MockUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         MockUtil mockUtil0 = new MockUtil();
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         mockUtil0.getMockName(mockSettingsImpl0);
     }
 
     @Test(timeout = 4000)
-    public void test63() throws Throwable {
+    public void test44() throws Throwable {
+        MockUtil mockUtil0 = new MockUtil();
+        mockUtil0.getMockHandler((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test55() throws Throwable {
+        MockUtil mockUtil0 = new MockUtil();
+        mockUtil0.isMock((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test66() throws Throwable {
         MockUtil mockUtil0 = new MockUtil();
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         mockSettingsImpl0.serializable();

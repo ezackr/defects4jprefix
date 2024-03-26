@@ -64,7 +64,20 @@ public class BOBYQAOptimizer_ESTest extends BOBYQAOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(0);
+        double[] doubleArray0 = new double[1];
+        double[][] doubleArray1 = new double[1][7];
+        UnitSphereRandomVectorGenerator unitSphereRandomVectorGenerator0 = new UnitSphereRandomVectorGenerator(2);
+        MicrosphereInterpolatingFunction microsphereInterpolatingFunction0 = new MicrosphereInterpolatingFunction(doubleArray1, doubleArray0, 0, 650, unitSphereRandomVectorGenerator0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        bOBYQAOptimizer0.optimize(0, microsphereInterpolatingFunction0, goalType0, doubleArray1[0]);
+        bOBYQAOptimizer0.doOptimize();
+        long long0 = 0L;
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(150);
         double[] doubleArray0 = new double[1];
         double[][] doubleArray1 = new double[1][7];
@@ -77,7 +90,18 @@ public class BOBYQAOptimizer_ESTest extends BOBYQAOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test074() throws Throwable {
+    public void test055() throws Throwable {
+        BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer((-640));
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(524);
+        bOBYQAOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         double double0 = (-1645.832532305);
         BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(877, 877, (-1645.832532305));
         bOBYQAOptimizer0.doOptimize();
@@ -85,7 +109,7 @@ public class BOBYQAOptimizer_ESTest extends BOBYQAOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test088() throws Throwable {
         BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(0);
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 0;
@@ -100,7 +124,7 @@ public class BOBYQAOptimizer_ESTest extends BOBYQAOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test099() throws Throwable {
         BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(0);
         double[] doubleArray0 = new double[1];
         double[][] doubleArray1 = new double[1][7];
@@ -113,7 +137,7 @@ public class BOBYQAOptimizer_ESTest extends BOBYQAOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         BOBYQAOptimizer bOBYQAOptimizer0 = new BOBYQAOptimizer(34);
         double[] doubleArray0 = new double[1];
         double[][] doubleArray1 = new double[1][7];

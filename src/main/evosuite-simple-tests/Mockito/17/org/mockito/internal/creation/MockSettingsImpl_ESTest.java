@@ -60,28 +60,35 @@ public class MockSettingsImpl_ESTest extends MockSettingsImpl_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test055() throws Throwable {
+        MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
+        Class<Integer> class0 = Integer.class;
+        mockSettingsImpl0.initiateMockName(class0);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Answer<Object> answer0 = mockSettingsImpl0.getDefaultAnswer();
         assertNull(answer0);
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Object object0 = mockSettingsImpl0.getSpiedInstance();
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         MockName mockName0 = mockSettingsImpl0.getMockName();
         assertNull(mockName0);
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         // Undeclared exception!
         try {
@@ -92,7 +99,7 @@ public class MockSettingsImpl_ESTest extends MockSettingsImpl_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Class<Object>[] classArray0 = (Class<Object>[]) Array.newInstance(Class.class, 0);
         // Undeclared exception!
@@ -104,7 +111,7 @@ public class MockSettingsImpl_ESTest extends MockSettingsImpl_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Class<Integer>[] classArray0 = (Class<Integer>[]) Array.newInstance(Class.class, 1);
         // Undeclared exception!
@@ -116,7 +123,7 @@ public class MockSettingsImpl_ESTest extends MockSettingsImpl_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Class<String>[] classArray0 = (Class<String>[]) Array.newInstance(Class.class, 1);
         Class<String> class0 = String.class;
@@ -130,14 +137,14 @@ public class MockSettingsImpl_ESTest extends MockSettingsImpl_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         boolean boolean0 = mockSettingsImpl0.isSerializable();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
         Class<Annotation>[] classArray0 = (Class<Annotation>[]) Array.newInstance(Class.class, 2);
         Class<Annotation> class0 = Annotation.class;

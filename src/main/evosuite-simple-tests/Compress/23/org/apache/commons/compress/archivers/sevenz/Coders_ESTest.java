@@ -26,7 +26,12 @@ import org.junit.runner.RunWith;
 public class Coders_ESTest extends Coders_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        Coders coders0 = new Coders();
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         Coder coder0 = new Coder();
         Coders.LZMADecoder coders_LZMADecoder0 = new Coders.LZMADecoder();
         byte[] byteArray0 = new byte[6];
@@ -47,7 +52,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         byte[] byteArray0 = new byte[1];
         SevenZMethod sevenZMethod0 = SevenZMethod.BZIP2;
         // Undeclared exception!
@@ -63,7 +68,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         SevenZMethod sevenZMethod0 = SevenZMethod.DEFLATE;
         byte[] byteArray0 = new byte[1];
         // Undeclared exception!
@@ -79,7 +84,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         byte[] byteArray0 = new byte[1];
         SevenZMethod sevenZMethod0 = SevenZMethod.COPY;
         OutputStream outputStream0 = Coders.addEncoder((OutputStream) null, sevenZMethod0, byteArray0);
@@ -87,7 +92,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Coder coder0 = new Coder();
         byte[] byteArray0 = new byte[1];
         coder0.decompressionMethodId = byteArray0;
@@ -96,7 +101,14 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test066() throws Throwable {
+        SevenZMethod sevenZMethod0 = SevenZMethod.BZIP2;
+        Coders.CopyDecoder coders_CopyDecoder0 = new Coders.CopyDecoder();
+        Coders.CoderId coders_CoderId0 = new Coders.CoderId(sevenZMethod0, coders_CopyDecoder0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         SevenZMethod sevenZMethod0 = SevenZMethod.AES256SHA256;
         byte[] byteArray0 = new byte[0];
         // Undeclared exception!
@@ -112,7 +124,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Coder coder0 = new Coder();
         try {
@@ -127,7 +139,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         byte[] byteArray0 = new byte[10];
         try {
             Coders.addEncoder((OutputStream) null, (SevenZMethod) null, byteArray0);
@@ -141,7 +153,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         Coder coder0 = new Coder();
         byte[] byteArray0 = new byte[6];
         byteArray0[1] = (byte) (-40);
@@ -161,7 +173,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         Coder coder0 = new Coder();
         Coders.LZMADecoder coders_LZMADecoder0 = new Coders.LZMADecoder();
         byte[] byteArray0 = new byte[7];
@@ -181,7 +193,7 @@ public class Coders_ESTest extends Coders_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Coders.BZIP2Decoder coders_BZIP2Decoder0 = new Coders.BZIP2Decoder();
         Coders.DeflateDecoder coders_DeflateDecoder0 = new Coders.DeflateDecoder();

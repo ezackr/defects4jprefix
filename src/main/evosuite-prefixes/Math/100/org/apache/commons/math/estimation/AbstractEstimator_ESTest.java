@@ -283,14 +283,28 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2022() throws Throwable {
+    public void test1922() throws Throwable {
+        LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
+        SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
+        WeightedMeasurement weightedMeasurement0 = mock(WeightedMeasurement.class, new ViolatedAssumptionAnswer());
+        doReturn(2.2204E-16, 2.2204E-16).when(weightedMeasurement0).getResidual();
+        doReturn(2.2204E-16, (-2334.9), (-532.18208538391), 0.0).when(weightedMeasurement0).getWeight();
+        simpleEstimationProblem0.addMeasurement(weightedMeasurement0);
+        levenbergMarquardtEstimator0.estimate(simpleEstimationProblem0);
+        double double0 = levenbergMarquardtEstimator0.getChiSquare(simpleEstimationProblem0);
+        //  // Unstable assertion: assertEquals(1, levenbergMarquardtEstimator0.getJacobianEvaluations());
+        //  // Unstable assertion: assertEquals((-2.1115149085613945E-35), double0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test2023() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         levenbergMarquardtEstimator0.rows = 1278;
         levenbergMarquardtEstimator0.updateResidualsAndCost();
     }
 
     @Test(timeout = 4000)
-    public void test2123() throws Throwable {
+    public void test2124() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         levenbergMarquardtEstimator0.initializeEstimate(simpleEstimationProblem0);
@@ -299,19 +313,19 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2224() throws Throwable {
+    public void test2225() throws Throwable {
         GaussNewtonEstimator gaussNewtonEstimator0 = new GaussNewtonEstimator(0, 4984.32166029148, (-1721.36667));
         gaussNewtonEstimator0.updateJacobian();
     }
 
     @Test(timeout = 4000)
-    public void test2325() throws Throwable {
+    public void test2326() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         levenbergMarquardtEstimator0.initializeEstimate((EstimationProblem) null);
     }
 
     @Test(timeout = 4000)
-    public void test2426() throws Throwable {
+    public void test2427() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         WeightedMeasurement weightedMeasurement0 = mock(WeightedMeasurement.class, new ViolatedAssumptionAnswer());
@@ -322,7 +336,7 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2527() throws Throwable {
+    public void test2528() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         simpleEstimationProblem0.addMeasurement((WeightedMeasurement) null);
@@ -330,14 +344,14 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2628() throws Throwable {
+    public void test2629() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         levenbergMarquardtEstimator0.getCovariances(simpleEstimationProblem0);
     }
 
     @Test(timeout = 4000)
-    public void test2729() throws Throwable {
+    public void test2730() throws Throwable {
         GaussNewtonEstimator gaussNewtonEstimator0 = new GaussNewtonEstimator(938, 938, 938);
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         gaussNewtonEstimator0.initializeEstimate(simpleEstimationProblem0);
@@ -345,7 +359,7 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2831() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         levenbergMarquardtEstimator0.initializeEstimate(simpleEstimationProblem0);
@@ -356,13 +370,13 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2931() throws Throwable {
+    public void test2932() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         levenbergMarquardtEstimator0.getChiSquare((EstimationProblem) null);
     }
 
     @Test(timeout = 4000)
-    public void test3032() throws Throwable {
+    public void test3033() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         EstimatedParameter estimatedParameter0 = new EstimatedParameter("-$C#:Xv%H9/d", (-2025.2));
@@ -376,20 +390,20 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3133() throws Throwable {
+    public void test3134() throws Throwable {
         GaussNewtonEstimator gaussNewtonEstimator0 = new GaussNewtonEstimator(0, 0, 0);
         gaussNewtonEstimator0.estimate((EstimationProblem) null);
     }
 
     @Test(timeout = 4000)
-    public void test3234() throws Throwable {
+    public void test3235() throws Throwable {
         GaussNewtonEstimator gaussNewtonEstimator0 = new GaussNewtonEstimator((-584), (-584), (-584));
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         gaussNewtonEstimator0.estimate(simpleEstimationProblem0);
     }
 
     @Test(timeout = 4000)
-    public void test3335() throws Throwable {
+    public void test3336() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         WeightedMeasurement weightedMeasurement0 = mock(WeightedMeasurement.class, new ViolatedAssumptionAnswer());
@@ -408,7 +422,7 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3436() throws Throwable {
+    public void test3437() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         WeightedMeasurement weightedMeasurement0 = mock(WeightedMeasurement.class, new ViolatedAssumptionAnswer());
@@ -427,20 +441,20 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3537() throws Throwable {
+    public void test3538() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         double double0 = levenbergMarquardtEstimator0.getChiSquare(simpleEstimationProblem0);
     }
 
     @Test(timeout = 4000)
-    public void test3638() throws Throwable {
+    public void test3639() throws Throwable {
         GaussNewtonEstimator gaussNewtonEstimator0 = new GaussNewtonEstimator((-817), (-817), (-817));
         gaussNewtonEstimator0.updateResidualsAndCost();
     }
 
     @Test(timeout = 4000)
-    public void test3739() throws Throwable {
+    public void test3740() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         SimpleEstimationProblem simpleEstimationProblem0 = new SimpleEstimationProblem();
         levenbergMarquardtEstimator0.estimate(simpleEstimationProblem0);
@@ -449,13 +463,13 @@ public class AbstractEstimator_ESTest extends AbstractEstimator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3840() throws Throwable {
+    public void test3841() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         int int0 = levenbergMarquardtEstimator0.getJacobianEvaluations();
     }
 
     @Test(timeout = 4000)
-    public void test3941() throws Throwable {
+    public void test3942() throws Throwable {
         LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
         int int0 = levenbergMarquardtEstimator0.getCostEvaluations();
     }

@@ -734,4 +734,9 @@ public class Jsoup_ESTest extends Jsoup_ESTest_scaffolding {
         Document document0 = Jsoup.parse("<yA", "");
         assertEquals("", document0.location());
     }
+
+    @Test(timeout = 4000)
+    public void test5353() throws Throwable {
+        Jsoup.parseBodyFragment("del");
+    }
 }

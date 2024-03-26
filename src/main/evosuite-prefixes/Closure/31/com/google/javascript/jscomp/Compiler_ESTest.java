@@ -852,14 +852,6 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test082101() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Vector<SourceFile> vector0 = new Vector<SourceFile>();
-        CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
-        compiler0.getProgress();
-    }
-
-    @Test(timeout = 4000)
     public void test082102() throws Throwable {
         Compiler compiler0 = new Compiler();
         Vector<SourceFile> vector0 = new Vector<SourceFile>();
@@ -930,12 +922,6 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("computeCFG");
         compiler0.check();
-    }
-
-    @Test(timeout = 4000)
-    public void test087109() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        compiler0.getProgress();
     }
 
     @Test(timeout = 4000)
@@ -1133,12 +1119,6 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((double) 32, 32, 32);
         compiler0.updateGlobalVarReferences((Map<Scope.Var, ReferenceCollectingCallback.ReferenceCollection>) null, node0);
-    }
-
-    @Test(timeout = 4000)
-    public void test103132() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        compiler0.getProgress();
     }
 
     @Test(timeout = 4000)

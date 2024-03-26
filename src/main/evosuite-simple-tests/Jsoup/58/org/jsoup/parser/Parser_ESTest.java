@@ -40,29 +40,26 @@ public class Parser_ESTest extends Parser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        Parser.parseXmlFragment("t7dxUnYB+j", "t7dxUnYB+j");
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         Document document0 = Parser.parseBodyFragment("2f-J<xgD(UpF-F*>KB", "2f-J<xgD(UpF-F*>KB");
         assertEquals("#root", document0.tagName());
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Document document0 = Parser.parseBodyFragmentRelaxed("", "");
         assertEquals("", document0.location());
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
-        Parser parser0 = Parser.xmlParser();
-        assertFalse(parser0.isTrackErrors());
-    }
-
-    @Test(timeout = 4000)
     public void test066() throws Throwable {
         Parser parser0 = Parser.xmlParser();
-        Parser parser1 = parser0.setTrackErrors(1156);
-        Document document0 = parser1.parseInput("", "abs:");
-        assertTrue(parser0.isTrackErrors());
+        assertFalse(parser0.isTrackErrors());
     }
 
     @Test(timeout = 4000)
@@ -70,32 +67,40 @@ public class Parser_ESTest extends Parser_ESTest_scaffolding {
         Parser parser0 = Parser.xmlParser();
         Parser parser1 = parser0.setTrackErrors(1156);
         Document document0 = parser1.parseInput("", "abs:");
+        assertTrue(parser0.isTrackErrors());
+    }
+
+    @Test(timeout = 4000)
+    public void test068() throws Throwable {
+        Parser parser0 = Parser.xmlParser();
+        Parser parser1 = parser0.setTrackErrors(1156);
+        Document document0 = parser1.parseInput("", "abs:");
         assertEquals("abs:", document0.baseUri());
     }
 
     @Test(timeout = 4000)
-    public void test078() throws Throwable {
+    public void test079() throws Throwable {
         Parser parser0 = Parser.htmlParser();
         parser0.getErrors();
         assertFalse(parser0.isTrackErrors());
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
+    public void test0810() throws Throwable {
         Parser parser0 = Parser.htmlParser();
         parser0.getTreeBuilder();
         assertFalse(parser0.isTrackErrors());
     }
 
     @Test(timeout = 4000)
-    public void test0910() throws Throwable {
+    public void test0911() throws Throwable {
         Parser parser0 = Parser.htmlParser();
         parser0.settings();
         assertFalse(parser0.isTrackErrors());
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1012() throws Throwable {
         Parser parser0 = Parser.htmlParser();
         parser0.parseInput("", "");
         assertFalse(parser0.isTrackErrors());

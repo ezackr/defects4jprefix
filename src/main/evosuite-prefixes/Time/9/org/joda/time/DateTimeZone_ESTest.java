@@ -206,36 +206,6 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0410() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
-        DateMidnight dateMidnight0 = DateMidnight.now();
-        dateTimeZone0.getOffset((ReadableInstant) dateMidnight0);
-        dateTimeZone0.getNameKey(408L);
-        dateTimeZone0.UTC.previousTransition(366L);
-        dateTimeZone0.toString();
-        dateTimeZone0.getStandardOffset(408L);
-        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(0);
-        DateTimeZone.getAvailableIDs();
-        String string0 = dateTimeZone1.getShortName(0L);
-    }
-
-    @Test(timeout = 4000)
-    public void test0411() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
-        DateMidnight dateMidnight0 = DateMidnight.now();
-        dateTimeZone0.getOffset((ReadableInstant) dateMidnight0);
-        dateTimeZone0.getNameKey(408L);
-        dateTimeZone0.UTC.previousTransition(366L);
-        dateTimeZone0.toString();
-        dateTimeZone0.getStandardOffset(408L);
-        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(0);
-        DateTimeZone.getAvailableIDs();
-        String string0 = dateTimeZone1.getShortName(0L);
-    }
-
-    @Test(timeout = 4000)
     public void test0512() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-1));
         dateTimeZone0.toTimeZone();
@@ -352,33 +322,6 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0920() throws Throwable {
-        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
-        fixedDateTimeZone0.UTC.convertLocalToUTC((-1066L), true);
-        TimeZone timeZone0 = fixedDateTimeZone0.toTimeZone();
-        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
-        DateTimeUtils.setCurrentMillisFixed((-1066L));
-        dateTimeZone0.UTC.getName(2451L);
-        dateTimeZone0.hashCode();
-        fixedDateTimeZone0.previousTransition((-1066L));
-        DateTimeZone dateTimeZone1 = DateTimeZone.forTimeZone(timeZone0);
-        Locale locale0 = Locale.FRENCH;
-        String string0 = dateTimeZone1.UTC.getShortName(2451L, locale0);
-        dateTimeZone1.UTC.getStandardOffset((-1L));
-        DateTimeZone.getDefault();
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedList<Locale.LanguageRange> linkedList1 = new LinkedList<Locale.LanguageRange>();
-        LinkedList<Locale> linkedList2 = new LinkedList<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList1, (Collection<Locale>) linkedList2);
-        List<Locale> list1 = Locale.filter((List<Locale.LanguageRange>) linkedList1, (Collection<Locale>) list0);
-        Locale.FilteringMode locale_FilteringMode0 = Locale.FilteringMode.MAP_EXTENDED_RANGES;
-        Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) list1, locale_FilteringMode0);
-        dateTimeZone0.getOffsetFromLocal((-1066L));
-        long long0 = dateTimeZone0.convertLocalToUTC((-354L), true);
-        String string1 = dateTimeZone0.getName((long) 0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0921() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         fixedDateTimeZone0.UTC.convertLocalToUTC((-1066L), true);
         TimeZone timeZone0 = fixedDateTimeZone0.toTimeZone();
@@ -917,38 +860,6 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3361() throws Throwable {
-        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
-        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
-        dateTimeZone0.UTC.adjustOffset(1, true);
-        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis((-216));
-        Locale locale0 = Locale.CANADA;
-        dateTimeZone0.getName(0L, locale0);
-        Locale locale1 = Locale.FRANCE;
-        dateTimeZone0.getName(0L, locale1);
-        long long0 = dateTimeZone0.convertLocalToUTC((-1107L), true);
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        dateTimeZone0.UTC.toTimeZone();
-        DateTimeZone dateTimeZone2 = DateTimeZone.forTimeZone(timeZone0);
-        LocalDateTime localDateTime0 = LocalDateTime.now(dateTimeZone1);
-        dateTimeZone2.UTC.isLocalDateTimeGap(localDateTime0);
-        DateTimeZone.getAvailableIDs();
-        String string0 = dateTimeZone0.getShortName(0L);
-        dateTimeZone2.previousTransition(0L);
-        DateTimeZone dateTimeZone3 = DateTimeZone.forOffsetMillis((-1858));
-        dateTimeZone3.UTC.getOffset((long) 1);
-        UTCProvider uTCProvider0 = new UTCProvider();
-        DateTimeZone.setProvider(uTCProvider0);
-        dateTimeZone3.nextTransition(1L);
-        DateTimeZone.getProvider();
-        dateTimeZone2.getNameKey(1L);
-        dateTimeZone0.isLocalDateTimeGap(localDateTime0);
-        int int0 = dateTimeZone1.getOffsetFromLocal(0L);
-        DateTimeZone dateTimeZone4 = DateTimeZone.forTimeZone(timeZone0);
-        String string1 = dateTimeZone4.getName((long) (-1858));
-    }
-
-    @Test(timeout = 4000)
     public void test3462() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(2363);
         dateTimeZone0.hashCode();
@@ -1230,16 +1141,6 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4787() throws Throwable {
-        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
-        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
-        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
-        DateTimeZone dateTimeZone1 = gJChronology0.getZone();
-        Locale locale0 = Locale.KOREAN;
-        String string0 = dateTimeZone1.getName(9223372036854775807L, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test4888() throws Throwable {
         int int0 = 24;
         int int1 = 3600000;
@@ -1264,19 +1165,6 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test4991() throws Throwable {
-        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
-        DateTimeUtils.setCurrentMillisSystem();
-        DateTimeZone.setDefault(dateTimeZone0);
-        dateTimeZone0.getNameKey(2660L);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        String string0 = dateTimeZone0.UTC.getShortName(2660L, locale1);
-        dateTimeZone0.getName((-4462L));
-        String string1 = dateTimeZone0.getName(10800000L);
-    }
-
-    @Test(timeout = 4000)
-    public void test4992() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         DateTimeUtils.setCurrentMillisSystem();
         DateTimeZone.setDefault(dateTimeZone0);
@@ -1718,27 +1606,7 @@ public class DateTimeZone_ESTest extends DateTimeZone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test65121() throws Throwable {
-        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
     public void test65122() throws Throwable {
-        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
-        DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(60000);
-        Integer integer0 = new Integer(60000);
-        dateTimeZone1.UTC.previousTransition(100L);
-        UTCProvider uTCProvider0 = new UTCProvider();
-        uTCProvider0.getAvailableIDs();
-        uTCProvider0.getAvailableIDs();
-        DateTimeZone.setProvider(uTCProvider0);
-        Locale locale0 = Locale.US;
-        locale0.toLanguageTag();
-        String string0 = dateTimeZone0.getShortName((-922L), locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test65123() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis(60000);
         Integer integer0 = new Integer(60000);

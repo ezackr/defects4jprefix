@@ -147,24 +147,6 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test023() throws Throwable {
-        LevelRenderer levelRenderer0 = new LevelRenderer();
-        WaferMapPlot waferMapPlot0 = new WaferMapPlot();
-        JFreeChart jFreeChart0 = new JFreeChart("3(<", waferMapPlot0);
-        ChartRenderingInfo chartRenderingInfo0 = new ChartRenderingInfo();
-        BufferedImage bufferedImage0 = jFreeChart0.createBufferedImage(10, 10, chartRenderingInfo0);
-        BufferedImageRenderingSource bufferedImageRenderingSource0 = new BufferedImageRenderingSource(bufferedImage0);
-        SunGraphics2D sunGraphics2D0 = (SunGraphics2D) bufferedImageRenderingSource0.createGraphics2D();
-        NumberAxis3D numberAxis3D0 = new NumberAxis3D();
-        CombinedRangeCategoryPlot combinedRangeCategoryPlot0 = new CombinedRangeCategoryPlot(numberAxis3D0);
-        Point2D.Double point2D_Double0 = new Point2D.Double();
-        Line2D.Float line2D_Float0 = new Line2D.Float(point2D_Double0, point2D_Double0);
-        Rectangle2D.Float rectangle2D_Float0 = (Rectangle2D.Float) line2D_Float0.getBounds2D();
-        Rectangle2D.Double rectangle2D_Double0 = (Rectangle2D.Double) numberAxis3D0.DEFAULT_AXIS_LABEL_INSETS.createOutsetRectangle((Rectangle2D) rectangle2D_Float0, true, false);
-        levelRenderer0.drawRangeLine(sunGraphics2D0, combinedRangeCategoryPlot0, numberAxis3D0, rectangle2D_Double0, 0.5F, waferMapPlot0.DEFAULT_OUTLINE_PAINT, waferMapPlot0.DEFAULT_GRIDLINE_STROKE);
-    }
-
-    @Test(timeout = 4000)
     public void test034() throws Throwable {
         GanttRenderer ganttRenderer0 = new GanttRenderer();
         CategoryURLGenerator categoryURLGenerator0 = ganttRenderer0.getSeriesURLGenerator(0);
@@ -815,26 +797,32 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8182() throws Throwable {
+    public void test8082() throws Throwable {
+        ScatterRenderer scatterRenderer0 = new ScatterRenderer();
+        scatterRenderer0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test8183() throws Throwable {
         BarRenderer barRenderer0 = new BarRenderer();
         int int0 = barRenderer0.getPassCount();
     }
 
     @Test(timeout = 4000)
-    public void test8283() throws Throwable {
+    public void test8284() throws Throwable {
         GroupedStackedBarRenderer groupedStackedBarRenderer0 = new GroupedStackedBarRenderer();
         int int0 = groupedStackedBarRenderer0.getColumnCount();
     }
 
     @Test(timeout = 4000)
-    public void test8384() throws Throwable {
+    public void test8385() throws Throwable {
         BoxAndWhiskerRenderer boxAndWhiskerRenderer0 = new BoxAndWhiskerRenderer();
         boxAndWhiskerRenderer0.setLegendItemURLGenerator((CategorySeriesLabelGenerator) null);
         boxAndWhiskerRenderer0.getMaximumBarWidth();
     }
 
     @Test(timeout = 4000)
-    public void test8485() throws Throwable {
+    public void test8486() throws Throwable {
         BarRenderer3D barRenderer3D0 = new BarRenderer3D(759.363, 0.0);
         Number[][] numberArray0 = new Number[9][1];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(numberArray0, numberArray0);
@@ -842,7 +830,7 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8586() throws Throwable {
+    public void test8587() throws Throwable {
         CategoryStepRenderer categoryStepRenderer0 = new CategoryStepRenderer();
         DateAxis dateAxis0 = new DateAxis();
         CombinedRangeCategoryPlot combinedRangeCategoryPlot0 = new CombinedRangeCategoryPlot(dateAxis0);
@@ -852,7 +840,7 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8687() throws Throwable {
+    public void test8688() throws Throwable {
         LineAndShapeRenderer lineAndShapeRenderer0 = new LineAndShapeRenderer();
         CategoryPointerAnnotation categoryPointerAnnotation0 = new CategoryPointerAnnotation("1R_-?.w~e'", lineAndShapeRenderer0.ZERO, (-1149.0), (double) lineAndShapeRenderer0.ZERO);
         lineAndShapeRenderer0.addAnnotation((CategoryAnnotation) categoryPointerAnnotation0);
@@ -860,13 +848,13 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8788() throws Throwable {
+    public void test8789() throws Throwable {
         ScatterRenderer scatterRenderer0 = new ScatterRenderer();
         CategoryToolTipGenerator categoryToolTipGenerator0 = scatterRenderer0.getBaseToolTipGenerator();
     }
 
     @Test(timeout = 4000)
-    public void test8889() throws Throwable {
+    public void test8890() throws Throwable {
         StackedBarRenderer3D stackedBarRenderer3D0 = new StackedBarRenderer3D();
         IntervalCategoryItemLabelGenerator intervalCategoryItemLabelGenerator0 = new IntervalCategoryItemLabelGenerator();
         stackedBarRenderer3D0.setSeriesItemLabelGenerator(3, (CategoryItemLabelGenerator) intervalCategoryItemLabelGenerator0);

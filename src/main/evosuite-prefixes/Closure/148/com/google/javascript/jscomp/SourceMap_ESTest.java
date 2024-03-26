@@ -21,7 +21,19 @@ import org.junit.runner.RunWith;
 public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test030() throws Throwable {
+    public void test000() throws Throwable {
+        SourceMap sourceMap0 = new SourceMap();
+        sourceMap0.setStartingPosition(1950, 1950);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        SourceMap sourceMap0 = new SourceMap();
+        sourceMap0.reset();
+    }
+
+    @Test(timeout = 4000)
+    public void test032() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString("LC2'5#j2=^o1g^C_a");
         Position position0 = new Position(1, 4095);
@@ -29,7 +41,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test041() throws Throwable {
+    public void test043() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(22, "\"Z{)3m=.vhNxmrqpi");
         node0.putProp(38, "\"Z{)3m=.vhNxmrqpi");
@@ -38,7 +50,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test052() throws Throwable {
+    public void test054() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(22, "\"Z{)hm=.vhNxmOqpi", 22, 22);
         node0.putProp(38, "\"Z{)hm=.vhNxmOqpi");
@@ -51,7 +63,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test063() throws Throwable {
+    public void test065() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(22, "\"Z{)hm=.vhNxmOqpi", 22, 22);
         node0.putProp(38, "\"Z{)hm=.vhNxmOqpi");
@@ -62,14 +74,20 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test084() throws Throwable {
+    public void test076() throws Throwable {
+        SourceMap sourceMap0 = new SourceMap();
+        sourceMap0.setWrapperPrefix("[]\n");
+    }
+
+    @Test(timeout = 4000)
+    public void test087() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         StringWriter stringWriter0 = new StringWriter();
         sourceMap0.appendTo(stringWriter0, "F8`xq%`^\"KExo_3+5");
     }
 
     @Test(timeout = 4000)
-    public void test095() throws Throwable {
+    public void test098() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(22, "\"Z{)hm=.vhNxmOqpi", 22, 22);
         node0.putProp(38, "\"Z{)hm=.vhNxmOqpi");
@@ -83,7 +101,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106() throws Throwable {
+    public void test109() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(22, "WZ{)h^=.vTxmOqp+i", 22, 22);
         node0.putProp(38, "WZ{)h^=.vTxmOqp+i");
@@ -97,7 +115,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117() throws Throwable {
+    public void test1110() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = new Node(22, 22, 22);
         node0.putProp(38, "\"Z{)hm=.vhNxmOqpi");
@@ -110,7 +128,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test128() throws Throwable {
+    public void test1211() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(15, "WZ{)h:=.vTxmOq;+i", 15, 15);
         node0.putProp(38, "WZ{)h:=.vTxmOq;+i");
@@ -123,7 +141,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139() throws Throwable {
+    public void test1312() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = Node.newString(22, "\"Z{)hm=.vhNxmOqpi", 22, 22);
         node0.putProp(38, "\"Z{)hm=.vhNxmOqpi");
@@ -134,7 +152,7 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1410() throws Throwable {
+    public void test1413() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         Node node0 = new Node(26, 26, 95);
         node0.putProp(38, "aZ%$d9");

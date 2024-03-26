@@ -206,13 +206,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3132() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
-        int int0 = TarUtils.formatNameBytes("AEp]<", byteArray0, (int) (byte) 0, (int) (byte) 0, zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
     public void test3233() throws Throwable {
         byte[] byteArray0 = new byte[0];
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
@@ -323,13 +316,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4749() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        TarUtils.formatUnsignedOctalString(540L, byteArray0, 0, 9);
-        long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 2);
-    }
-
-    @Test(timeout = 4000)
     public void test4850() throws Throwable {
         byte[] byteArray0 = new byte[4];
         long long0 = TarUtils.parseOctal(byteArray0, (byte) 0, (byte) 67);
@@ -343,13 +329,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test5052() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
-        int int0 = TarUtils.formatNameBytes("dv@VnX%", byteArray0, 0, (-668), zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5053() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
         int int0 = TarUtils.formatNameBytes("dv@VnX%", byteArray0, 0, (-668), zipEncoding0);

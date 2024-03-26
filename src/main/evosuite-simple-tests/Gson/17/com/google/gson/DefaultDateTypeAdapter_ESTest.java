@@ -180,7 +180,13 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1010() throws Throwable {
+        Class<Timestamp> class0 = Timestamp.class;
+        DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         Class<Date> class0 = Date.class;
         DateFormat dateFormat0 = MockDateFormat.getTimeInstance();
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0, dateFormat0, dateFormat0);
@@ -198,7 +204,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         Class<Date> class0 = Date.class;
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0);
         // Undeclared exception!
@@ -214,7 +220,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = null;
         try {
             defaultDateTypeAdapter0 = new DefaultDateTypeAdapter((Class<? extends Date>) null);
@@ -228,7 +234,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Class<Timestamp> class0 = Timestamp.class;
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0);
         StringWriter stringWriter0 = new StringWriter();
@@ -249,7 +255,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(0, 0);
         MockDate mockDate0 = new MockDate(0);
         JsonElement jsonElement0 = defaultDateTypeAdapter0.toJsonTree(mockDate0);
@@ -258,7 +264,13 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1616() throws Throwable {
+        Class<Date> class0 = Date.class;
+        DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0, 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         Class<java.sql.Date> class0 = java.sql.Date.class;
         DateFormat dateFormat0 = MockDateFormat.getDateTimeInstance(0, 0);
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0, dateFormat0, dateFormat0);
@@ -269,7 +281,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         Class<java.sql.Date> class0 = java.sql.Date.class;
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0, "");
         // Undeclared exception!
@@ -285,7 +297,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         Class<java.sql.Date> class0 = java.sql.Date.class;
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = new DefaultDateTypeAdapter(class0);
         String string0 = defaultDateTypeAdapter0.toString();
@@ -293,7 +305,7 @@ public class DefaultDateTypeAdapter_ESTest extends DefaultDateTypeAdapter_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         Class<Date> class0 = Date.class;
         DefaultDateTypeAdapter defaultDateTypeAdapter0 = null;
         try {

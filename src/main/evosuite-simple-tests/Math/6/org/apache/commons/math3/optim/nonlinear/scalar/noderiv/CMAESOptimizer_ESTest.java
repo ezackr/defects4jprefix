@@ -27,7 +27,72 @@ import org.junit.runner.RunWith;
 public class CMAESOptimizer_ESTest extends CMAESOptimizer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test080() throws Throwable {
+    public void test000() throws Throwable {
+        SimpleValueChecker simpleValueChecker0 = new SimpleValueChecker((-2680), (-2680));
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer((-2680), (-2680), false, (-2680), (-2680), (RandomGenerator) null, false, simpleValueChecker0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
+        cMAESOptimizer_Sigma0.getSigma();
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        CMAESOptimizer.PopulationSize cMAESOptimizer_PopulationSize0 = new CMAESOptimizer.PopulationSize(5);
+        cMAESOptimizer_PopulationSize0.getPopulationSize();
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        SimpleValueChecker simpleValueChecker0 = new SimpleValueChecker((-2680), (-2680));
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer((-2680), (-2680), true, (-2680), (-2680), (RandomGenerator) null, true, simpleValueChecker0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[0];
+        cMAESOptimizer0.parseOptimizationData(optimizationDataArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        double[] doubleArray0 = new double[7];
+        CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
+        ISAACRandom iSAACRandom0 = new ISAACRandom();
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(3856, 3856, true, 3856, 3856, iSAACRandom0, true, (ConvergenceChecker<PointValuePair>) null);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[3];
+        optimizationDataArray0[0] = (OptimizationData) cMAESOptimizer_Sigma0;
+        cMAESOptimizer0.optimize(optimizationDataArray0);
+        cMAESOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        SimpleValueChecker simpleValueChecker0 = new SimpleValueChecker(419, 419);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(419, 419, true, 419, 419, (RandomGenerator) null, true, simpleValueChecker0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[1];
+        cMAESOptimizer0.parseOptimizationData(optimizationDataArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        SimpleValueChecker simpleValueChecker0 = new SimpleValueChecker(393, 393);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(393, 393, false, 393, 393, (RandomGenerator) null, false, simpleValueChecker0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[1];
+        CMAESOptimizer.PopulationSize cMAESOptimizer_PopulationSize0 = new CMAESOptimizer.PopulationSize(393);
+        optimizationDataArray0[0] = (OptimizationData) cMAESOptimizer_PopulationSize0;
+        cMAESOptimizer0.parseOptimizationData(optimizationDataArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        Well44497a well44497a0 = new Well44497a(2019);
+        SimplePointChecker<PointValuePair> simplePointChecker0 = new SimplePointChecker<PointValuePair>(2019, 2019, 2019);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2019, 2019, true, 2019, 2019, well44497a0, true, simplePointChecker0);
+        cMAESOptimizer0.getStatisticsFitnessHistory();
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         double[] doubleArray0 = new double[2];
         doubleArray0[1] = (-1484.941258534);
         CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
@@ -41,5 +106,101 @@ public class CMAESOptimizer_ESTest extends CMAESOptimizer_ESTest_scaffolding {
             //
             verifyException("org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$Sigma", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        CMAESOptimizer.PopulationSize cMAESOptimizer_PopulationSize0 = new CMAESOptimizer.PopulationSize((-36));
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        Well44497a well44497a0 = new Well44497a(2019);
+        SimplePointChecker<PointValuePair> simplePointChecker0 = new SimplePointChecker<PointValuePair>(2019, 2019, 2019);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2019, 2019, true, 2019, 2019, well44497a0, true, simplePointChecker0);
+        cMAESOptimizer0.getStatisticsDHistory();
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        Well44497a well44497a0 = new Well44497a();
+        SimplePointChecker<PointValuePair> simplePointChecker0 = new SimplePointChecker<PointValuePair>(2019, 2019, 2019);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2019, 2019, true, 2019, 2019, well44497a0, true, simplePointChecker0);
+        cMAESOptimizer0.getStatisticsMeanHistory();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
+        ISAACRandom iSAACRandom0 = new ISAACRandom(2021);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2021, 2021, true, 2021, 2021, iSAACRandom0, true, (ConvergenceChecker<PointValuePair>) null);
+        InitialGuess initialGuess0 = new InitialGuess(doubleArray0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[8];
+        optimizationDataArray0[1] = (OptimizationData) cMAESOptimizer_Sigma0;
+        optimizationDataArray0[2] = (OptimizationData) initialGuess0;
+        cMAESOptimizer0.parseOptimizationData(optimizationDataArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
+        ISAACRandom iSAACRandom0 = new ISAACRandom(2021);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2021, 2021, true, 2021, 2021, iSAACRandom0, true, (ConvergenceChecker<PointValuePair>) null);
+        InitialGuess initialGuess0 = new InitialGuess(doubleArray0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[8];
+        optimizationDataArray0[1] = (OptimizationData) cMAESOptimizer_Sigma0;
+        optimizationDataArray0[2] = (OptimizationData) initialGuess0;
+        cMAESOptimizer0.parseOptimizationData(optimizationDataArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        SimpleValueChecker simpleValueChecker0 = new SimpleValueChecker((-2700), (-2700));
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer((-2700), (-2700), true, (-2700), (-2700), (RandomGenerator) null, true, simpleValueChecker0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[0];
+        cMAESOptimizer0.optimize(optimizationDataArray0);
+        cMAESOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        Well44497a well44497a0 = new Well44497a();
+        SimplePointChecker<PointValuePair> simplePointChecker0 = new SimplePointChecker<PointValuePair>(2019, 2019, 2019);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2019, 2019, true, 2019, 2019, well44497a0, true, simplePointChecker0);
+        cMAESOptimizer0.getStatisticsSigmaHistory();
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        SimpleValueChecker simpleValueChecker0 = new SimpleValueChecker(2, 2);
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2, 2, true, 2, 2, (RandomGenerator) null, true, simpleValueChecker0);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[4];
+        double[] doubleArray0 = new double[7];
+        doubleArray0[1] = (double) 2;
+        InitialGuess initialGuess0 = new InitialGuess(doubleArray0);
+        optimizationDataArray0[0] = (OptimizationData) initialGuess0;
+        SimpleBounds simpleBounds0 = new SimpleBounds(doubleArray0, doubleArray0);
+        optimizationDataArray0[2] = (OptimizationData) simpleBounds0;
+        CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
+        optimizationDataArray0[3] = (OptimizationData) cMAESOptimizer_Sigma0;
+        cMAESOptimizer0.parseOptimizationData(optimizationDataArray0);
+        cMAESOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        double[] doubleArray0 = new double[7];
+        CMAESOptimizer.Sigma cMAESOptimizer_Sigma0 = new CMAESOptimizer.Sigma(doubleArray0);
+        ISAACRandom iSAACRandom0 = new ISAACRandom();
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(3913, 3913, false, 3913, 3913, iSAACRandom0, false, (ConvergenceChecker<PointValuePair>) null);
+        double[] doubleArray1 = new double[3];
+        InitialGuess initialGuess0 = new InitialGuess(doubleArray1);
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[9];
+        optimizationDataArray0[3] = (OptimizationData) cMAESOptimizer_Sigma0;
+        optimizationDataArray0[0] = (OptimizationData) initialGuess0;
+        cMAESOptimizer0.optimize(optimizationDataArray0);
+        cMAESOptimizer0.doOptimize();
     }
 }

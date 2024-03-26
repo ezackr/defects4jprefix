@@ -259,13 +259,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test00030() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test00031() throws Throwable {
         QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -280,14 +273,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "");
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test00033() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "");
     }
 
     @Test(timeout = 4000)
@@ -396,12 +381,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test00150() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
     }
 
     @Test(timeout = 4000)
@@ -590,14 +569,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test00173() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.setIndex(1698);
-        int int0 = variablePointer0.compareChildNodePointers(variablePointer0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test00274() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
     }
@@ -714,13 +685,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("POINTER: ");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test00290() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("POINTER: ");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -921,12 +885,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test003117() throws Throwable {
-        QName qName0 = new QName("(b]\"/{", "{O%xno)((");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test003118() throws Throwable {
         QName qName0 = new QName("(b]\"/{", "{O%xno)((");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -1113,12 +1071,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test004144() throws Throwable {
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test004145() throws Throwable {
         QName qName0 = new QName("@{g}t");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -1203,20 +1155,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NodePointer nodePointer0 = variablePointer0.getValuePointer();
         variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test004156() throws Throwable {
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test004157() throws Throwable {
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
     }
 
     @Test(timeout = 4000)
@@ -1318,22 +1256,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test004169() throws Throwable {
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
-    public void test004170() throws Throwable {
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
     public void test005171() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
     }
@@ -1365,12 +1287,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test005176() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test005177() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -1391,13 +1307,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test005180() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -1565,45 +1474,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test005198() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test005199() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test005200() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test005201() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test005202() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -1822,48 +1693,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test005222() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test005223() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test005224() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
     public void test005225() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test005226() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -2126,52 +1956,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test005248() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test005249() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test005250() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test005251() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
-    public void test005252() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -2456,42 +2241,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test005274() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
-    public void test005275() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
-    public void test005276() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
     public void test006277() throws Throwable {
         QName qName0 = new QName("");
     }
@@ -2591,12 +2340,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test006292() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test006293() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -2681,36 +2424,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         boolean boolean0 = variablePointer0.isDefaultNamespace((String) null);
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test006304() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        boolean boolean0 = variablePointer0.isDefaultNamespace((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test007305() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test007306() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test007307() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test007308() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
     }
 
     @Test(timeout = 4000)
@@ -2825,13 +2538,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test007324() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test007325() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
@@ -2900,14 +2606,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test007333() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -3057,24 +2755,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test007349() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test007350() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -3242,31 +2922,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test007366() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        boolean boolean0 = variablePointer0.isDefaultNamespace("");
-    }
-
-    @Test(timeout = 4000)
-    public void test007367() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        boolean boolean0 = variablePointer0.isDefaultNamespace("");
-    }
-
-    @Test(timeout = 4000)
-    public void test008368() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
     public void test008369() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("");
@@ -3381,13 +3036,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test008384() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test008385() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("");
@@ -3483,14 +3131,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         boolean boolean0 = variablePointer0.isContainer();
         variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test008396() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        boolean boolean0 = variablePointer0.isContainer();
     }
 
     @Test(timeout = 4000)
@@ -3607,12 +3247,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test009414() throws Throwable {
-        QName qName0 = new QName("ZP7J6;JS@");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test009415() throws Throwable {
         QName qName0 = new QName("ZP7J6;JS@");
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, qName0);
@@ -3716,13 +3350,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test009428() throws Throwable {
-        QName qName0 = new QName("ZP7J6;JS@");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, qName0);
-        boolean boolean0 = beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
     public void test010429() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
     }
@@ -3767,11 +3394,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     public void test010436() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test010437() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
     }
 
     @Test(timeout = 4000)
@@ -3827,12 +3449,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         boolean boolean0 = variablePointer0.isActual();
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test010446() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        boolean boolean0 = variablePointer0.isActual();
     }
 
     @Test(timeout = 4000)
@@ -3963,27 +3579,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test011466() throws Throwable {
-        QName qName0 = new QName("", "");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, (Object) null);
-    }
-
-    @Test(timeout = 4000)
     public void test011467() throws Throwable {
-        QName qName0 = new QName("", "");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, (Object) null);
-        NullPointer nullPointer1 = (NullPointer) nullPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test011468() throws Throwable {
-        QName qName0 = new QName("", "");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, (Object) null);
-        NullPointer nullPointer1 = (NullPointer) nullPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test011469() throws Throwable {
         QName qName0 = new QName("", "");
         NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, (Object) null);
         NullPointer nullPointer1 = (NullPointer) nullPointer0.getValuePointer();
@@ -4190,25 +3786,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test011495() throws Throwable {
-        QName qName0 = new QName("", "");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, (Object) null);
-        NullPointer nullPointer1 = (NullPointer) nullPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test011496() throws Throwable {
-        QName qName0 = new QName("", "");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, (Object) null);
-        NullPointer nullPointer1 = (NullPointer) nullPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test012497() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
     public void test012498() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("4v\"CmO@q|.~vebCE/");
@@ -4334,14 +3911,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test012513() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("4v\"CmO@q|.~vebCE/");
-        basicVariables0.declareVariable("4v\"CmO@q|.~vebCE/", (Object) null);
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test012514() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("4v\"CmO@q|.~vebCE/");
@@ -4448,20 +4017,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         Object object0 = variablePointer0.getRootNode();
         variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test012525() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("4v\"CmO@q|.~vebCE/");
-        basicVariables0.declareVariable("4v\"CmO@q|.~vebCE/", (Object) null);
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        Object object0 = variablePointer0.getRootNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test013526() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -4579,30 +4134,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test013542() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test013543() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test013544() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test013545() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -4763,59 +4295,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test013563() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test013564() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
     public void test013565() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test013566() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test013567() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test013568() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test013569() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -4994,380 +4474,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test013587() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test013588() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test014589() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test014590() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-    }
-
-    @Test(timeout = 4000)
-    public void test014591() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test014592() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test014593() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test014594() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test014595() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test014596() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test014597() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test014598() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test014599() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test014600() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test014601() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test014602() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test014603() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014604() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test014605() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test014606() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test014607() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test014608() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test014609() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test014610() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test014611() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test014612() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test014613() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test014614() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test014615() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test014616() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test014617() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014618() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test014619() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test014620() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test014621() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test014622() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test014623() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test014624() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014625() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        nodePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test014626() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
-    public void test014627() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-    }
-
-    @Test(timeout = 4000)
     public void test014628() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014629() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014630() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014631() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014632() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -5546,24 +4653,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test014650() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test014651() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.createPath((JXPathContext) null, (Object) basicVariables0);
-        Object object0 = nodePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
     public void test015652() throws Throwable {
         Object object0 = new Object();
     }
@@ -5582,12 +4671,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test015655() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-    }
-
-    @Test(timeout = 4000)
     public void test015656() throws Throwable {
         Object object0 = new Object();
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
@@ -5600,13 +4683,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test015658() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -5687,22 +4763,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
         variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test015668() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test015669() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -5795,432 +4855,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test015679() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        QName qName0 = variablePointer0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test015680() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        QName qName0 = variablePointer0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016681() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test016682() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016683() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016684() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test016685() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test016686() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016687() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016688() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test016689() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test016690() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test016691() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016692() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test016693() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016694() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016695() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test016696() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test016697() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test016698() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016699() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test016700() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test016701() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test016702() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016703() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016704() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test016705() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test016706() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test016707() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016708() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test016709() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test016710() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test016711() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016712() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016713() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test016714() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test016715() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test016716() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test016717() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test016718() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test016719() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test016720() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test016721() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test016722() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test016723() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test016724() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test016725() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test016726() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test016727() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        QName qName1 = variablePointer0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016728() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        QName qName1 = variablePointer0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016729() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
@@ -6417,131 +5052,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test016747() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        QName qName1 = variablePointer0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test016748() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        QName qName1 = variablePointer0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test017749() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test017750() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test017751() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test017752() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test017753() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test017754() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test017755() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test017756() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test017757() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test017758() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test017759() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test017760() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test017761() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test017762() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test017763() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test017764() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test017765() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -6629,421 +5139,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test017776() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        int int0 = variablePointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test018777() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test018778() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test018779() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018780() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test018781() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018782() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test018783() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018784() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test018785() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018786() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test018787() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test018788() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018789() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test018790() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018791() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test018792() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018793() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test018794() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test018795() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test018796() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018797() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test018798() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test018799() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018800() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test018801() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018802() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test018803() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test018804() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test018805() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test018806() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018807() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test018808() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018809() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test018810() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test018811() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test018812() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test018813() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test018814() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test018815() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test018816() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test018817() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test018818() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test018819() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test018820() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test018821() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018822() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test018823() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018824() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018825() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
@@ -7284,59 +5380,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test018847() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018848() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test018849() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test018850() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        int int0 = variablePointer1.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test018851() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        int int0 = variablePointer1.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test018852() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
@@ -7599,39 +5643,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test018874() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        int int0 = variablePointer1.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test018875() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        int int0 = variablePointer1.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test018876() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        int int0 = variablePointer1.getLength();
-    }
-
-    @Test(timeout = 4000)
     public void test019877() throws Throwable {
         QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
     }
@@ -7830,30 +5841,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test019904() throws Throwable {
-        QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test019905() throws Throwable {
-        QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, nodeNameTest0);
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test019906() throws Throwable {
-        QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, nodeNameTest0);
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test019907() throws Throwable {
         QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, nodeNameTest0);
@@ -8077,22 +6065,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test019932() throws Throwable {
-        QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, nodeNameTest0);
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test019933() throws Throwable {
-        QName qName0 = new QName(">.Y{GXqZPc3'h>0", ">.Y{GXqZPc3'h>0");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer((NodePointer) null, qName0, nodeNameTest0);
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test020934() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
     }
@@ -8124,12 +6096,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test020939() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test020940() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -8150,13 +6116,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test020943() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -8324,24 +6283,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test020961() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("J!:+~\"y|k\"vv&?kK:M", "#,7n8{Oq");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test020962() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("J!:+~\"y|k\"vv&?kK:M", "#,7n8{Oq");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test020963() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -8484,31 +6425,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test020976() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("J!:+~\"y|k\"vv&?kK:M", "#,7n8{Oq");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test020977() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(160);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("J!:+~\"y|k\"vv&?kK:M", "#,7n8{Oq");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test021978() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
     public void test021979() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("q");
@@ -8620,13 +6536,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("q");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test021994() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("q");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -8841,16 +6750,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0211017() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("q");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "<<unknown namespace>>");
-        variablePointer0.setValue(nodeNameTest0);
-        NodeNameTest nodeNameTest1 = (NodeNameTest) variablePointer0.getImmediateNode();
-    }
-
-    @Test(timeout = 4000)
     public void test0211018() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("q");
@@ -8994,16 +6893,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0211031() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("q");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "<<unknown namespace>>");
-        variablePointer0.setValue(nodeNameTest0);
-        NodeNameTest nodeNameTest1 = (NodeNameTest) variablePointer0.getImmediateNode();
-    }
-
-    @Test(timeout = 4000)
     public void test0221032() throws Throwable {
         QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
     }
@@ -9103,12 +6992,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0221047() throws Throwable {
-        QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0221048() throws Throwable {
         QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -9193,20 +7076,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0221059() throws Throwable {
-        QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0221060() throws Throwable {
-        QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
     }
 
     @Test(timeout = 4000)
@@ -9305,22 +7174,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         Object object0 = nodePointer0.getBaseValue();
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0221072() throws Throwable {
-        QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        Object object0 = nodePointer0.getBaseValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0221073() throws Throwable {
-        QName qName0 = new QName("/wHW6^NE$S", "org.apache.commons.jxpath.ri.compiler.NameAttributeTest");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        Object object0 = nodePointer0.getBaseValue();
     }
 
     @Test(timeout = 4000)
@@ -9531,22 +7384,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0231102() throws Throwable {
-        QName qName0 = new QName("", "org.apache.commons.jxpath.ri.compiler.NodeTypeTest");
-        Locale locale0 = new Locale("org.apache.commons.jxpath.ri.compiler.NodeTypeTest", "", "");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "org.apache.commons.jxpath.ri.compiler.NodeTypeTest", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0231103() throws Throwable {
-        QName qName0 = new QName("", "org.apache.commons.jxpath.ri.compiler.NodeTypeTest");
-        Locale locale0 = new Locale("org.apache.commons.jxpath.ri.compiler.NodeTypeTest", "", "");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "org.apache.commons.jxpath.ri.compiler.NodeTypeTest", locale0);
-        String string0 = (String) beanPointer0.getBaseValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0231104() throws Throwable {
         QName qName0 = new QName("", "org.apache.commons.jxpath.ri.compiler.NodeTypeTest");
         Locale locale0 = new Locale("org.apache.commons.jxpath.ri.compiler.NodeTypeTest", "", "");
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "org.apache.commons.jxpath.ri.compiler.NodeTypeTest", locale0);
@@ -9707,14 +7545,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0231122() throws Throwable {
-        QName qName0 = new QName("", "org.apache.commons.jxpath.ri.compiler.NodeTypeTest");
-        Locale locale0 = new Locale("org.apache.commons.jxpath.ri.compiler.NodeTypeTest", "", "");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "org.apache.commons.jxpath.ri.compiler.NodeTypeTest", locale0);
-        String string0 = (String) beanPointer0.getBaseValue();
-    }
-
-    @Test(timeout = 4000)
     public void test0241123() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
     }
@@ -9723,11 +7553,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     public void test0241124() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0241125() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
     }
 
     @Test(timeout = 4000)
@@ -9741,12 +7566,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0241128() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -9888,22 +7707,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0241145() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0241146() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0241147() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -9924,26 +7727,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0241149() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0241150() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0241151() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
@@ -10162,41 +7945,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0241171() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0241172() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0241173() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0251174() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
     public void test0251175() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName(", operation is not allowed for this type of node", "0");
@@ -10311,13 +8059,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0251190() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0251191() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName(", operation is not allowed for this type of node", "0");
@@ -10335,33 +8076,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0251193() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-    }
-
-    @Test(timeout = 4000)
     public void test0251194() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0251195() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0251196() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName(", operation is not allowed for this type of node", "0");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -10550,38 +8265,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0251215() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0251216() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0251217() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0261218() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
     public void test0261219() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("[", "");
@@ -10693,13 +8376,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("[", "");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0261234() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("[", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -10879,22 +8555,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
         beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0261255() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("[", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0261256() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("[", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
     }
 
     @Test(timeout = 4000)
@@ -11104,95 +8764,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
         BeanAttributeIterator beanAttributeIterator0 = (BeanAttributeIterator) beanPointer0.attributeIterator(qName0);
         beanAttributeIterator0.getPosition();
-    }
-
-    @Test(timeout = 4000)
-    public void test0261278() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("[", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        BeanAttributeIterator beanAttributeIterator0 = (BeanAttributeIterator) beanPointer0.attributeIterator(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0261279() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("[", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        BeanAttributeIterator beanAttributeIterator0 = (BeanAttributeIterator) beanPointer0.attributeIterator(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0271280() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0271281() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271282() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271283() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271284() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0271285() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271286() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271287() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271288() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271289() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271290() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.isWildcard();
     }
 
     @Test(timeout = 4000)
@@ -11448,24 +9019,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0271320() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0271321() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        String string0 = beanPointer0.asPath();
-    }
-
-    @Test(timeout = 4000)
-    public void test0271322() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
@@ -11684,15 +9238,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0271344() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        String string0 = beanPointer0.asPath();
-    }
-
-    @Test(timeout = 4000)
     public void test0281345() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1660));
     }
@@ -11724,12 +9269,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0281350() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1660));
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test0281351() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1660));
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -11750,13 +9289,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0281354() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1660));
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -11846,22 +9378,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0281365() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1660));
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0281366() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1660));
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -11973,21 +9489,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0291383() throws Throwable {
-        QName qName0 = new QName("JXPath can only create a path if it uses exclusively the child:: and attribute:: axes and has no context-dependent predicates");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0291384() throws Throwable {
         QName qName0 = new QName("JXPath can only create a path if it uses exclusively the child:: and attribute:: axes and has no context-dependent predicates");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.setValue(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0301385() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -12043,12 +9548,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BasicVariables basicVariables0 = new BasicVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0301394() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -12241,12 +9740,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0311423() throws Throwable {
-        Locale locale0 = Locale.US;
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer((QName) null, (Object) null, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0311424() throws Throwable {
         Locale locale0 = Locale.US;
         NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer((QName) null, (Object) null, locale0);
@@ -12254,81 +9747,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0321425() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321426() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0321427() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321428() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321429() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321430() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321431() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321432() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321433() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0321434() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0321435() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
         variablePointer0.remove();
-    }
-
-    @Test(timeout = 4000)
-    public void test0331436() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -12446,13 +9868,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0331452() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Hce<v[>5Q1");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0331453() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Hce<v[>5Q1");
@@ -12549,58 +9964,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.index = (int) (byte) 38;
         variablePointer0.printPointerChain();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341464() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0341465() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341466() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341467() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341468() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341469() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341470() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341471() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0341472() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
     }
 
     @Test(timeout = 4000)
@@ -12711,12 +10074,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0351489() throws Throwable {
-        QName qName0 = new QName("<<unknown namespace>>", "");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0351490() throws Throwable {
         QName qName0 = new QName("<<unknown namespace>>", "");
         VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
@@ -12768,11 +10125,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     public void test0361498() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
         variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0361499() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -12881,121 +10233,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0371516() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0371517() throws Throwable {
         QName qName0 = new QName("%", "%");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.isLeaf();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381518() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0381519() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381520() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381521() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381522() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0381523() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381524() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381525() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381526() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381527() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381528() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381529() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381530() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381531() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381532() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0381533() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
     }
 
     @Test(timeout = 4000)
@@ -13102,12 +10343,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName(">{Dz~nER$ 3[Z~zT");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0391550() throws Throwable {
-        QName qName0 = new QName(">{Dz~nER$ 3[Z~zT");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
     }
 
     @Test(timeout = 4000)
@@ -13234,84 +10469,11 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0401568() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0401569() throws Throwable {
         QName qName0 = new QName(" ", " ");
         BasicVariables basicVariables0 = new BasicVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411570() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411571() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0411572() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411573() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411574() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411575() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411576() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411577() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411578() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0411579() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -13353,12 +10515,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0421586() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2474);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test0421587() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2474);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -13379,13 +10535,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0421590() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2474);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -13553,24 +10702,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0421608() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2474);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("JXPath iterators cannot remove nodes", (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0421609() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2474);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("JXPath iterators cannot remove nodes", (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0421610() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2474);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -13680,21 +10811,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0431626() throws Throwable {
-        QName qName0 = new QName("-,_eC%Z~#X", "-,_eC%Z~#X");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0431627() throws Throwable {
         QName qName0 = new QName("-,_eC%Z~#X", "-,_eC%Z~#X");
         VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
         variablePointer0.getValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0441628() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -13812,70 +10932,11 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0441644() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0441645() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("", "");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.getValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451646() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0451647() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451648() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451649() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451650() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451651() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451652() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451653() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0451654() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -14107,41 +11168,11 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0461686() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0461687() throws Throwable {
         QName qName0 = new QName("b}suu:/Feh.z", "");
         Locale locale0 = Locale.CANADA_FRENCH;
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
         beanPointer0.getPointerByKey((JXPathContext) null, "", "<<unknown namespace>>");
-    }
-
-    @Test(timeout = 4000)
-    public void test0471688() throws Throwable {
-        QName qName0 = new QName("", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test0471689() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0471690() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0471691() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.getName();
     }
 
     @Test(timeout = 4000)
@@ -14221,694 +11252,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0471703() throws Throwable {
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0471704() throws Throwable {
         QName qName0 = new QName("", "");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.getNodeValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481705() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0481706() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481707() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481708() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481709() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481710() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481711() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481712() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481713() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481714() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481715() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481716() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481717() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481718() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481719() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481720() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481721() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481722() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481723() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481724() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481725() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481726() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481727() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481728() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481729() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481730() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481731() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481732() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481733() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481734() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481735() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481736() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481737() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481738() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481739() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481740() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481741() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481742() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481743() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481744() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481745() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481746() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481747() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481748() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481749() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481750() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481751() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481752() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481753() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481754() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481755() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481756() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481757() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481758() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481759() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481760() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481761() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481762() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481763() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481764() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481765() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481766() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481767() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481768() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481769() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481770() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481771() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481772() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481773() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481774() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0481775() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481776() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0481777() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
     }
 
     @Test(timeout = 4000)
@@ -15024,39 +11371,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0491794() throws Throwable {
-        QName qName0 = new QName("UNKNOWN");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0491795() throws Throwable {
         QName qName0 = new QName("UNKNOWN");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0501796() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0501797() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0501798() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0501799() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
     }
 
     @Test(timeout = 4000)
@@ -15136,12 +11454,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0501811() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0501812() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
@@ -15149,199 +11461,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0511813() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511814() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0511815() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511816() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511817() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511818() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511819() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511820() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511821() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0511822() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0511823() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
         variablePointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521824() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-    }
-
-    @Test(timeout = 4000)
-    public void test0521825() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521826() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521827() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521828() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521829() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0521830() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521831() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521832() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521833() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521834() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521835() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521836() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521837() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521838() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521839() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0521840() throws Throwable {
-        QName qName0 = new QName(" ", " ");
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -15353,66 +11476,9 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0531842() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0531843() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531844() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531845() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531846() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531847() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531848() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531849() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0531850() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0531851() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((Variables) null, (QName) null);
         variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0541852() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -15530,13 +11596,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0541868() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Mvl|(os?FVs1", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0541869() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Mvl|(os?FVs1", "");
@@ -15545,181 +11604,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0551870() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0551871() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551872() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551873() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551874() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0551875() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551876() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551877() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551878() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551879() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551880() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551881() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551882() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551883() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551884() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551885() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0551886() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.getImmediateNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561887() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561888() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0561889() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561890() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561891() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561892() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561893() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561894() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561895() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0561896() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
     }
 
     @Test(timeout = 4000)
@@ -15829,12 +11717,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0571913() throws Throwable {
-        QName qName0 = new QName("oWmo E;9F@");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0571914() throws Throwable {
         QName qName0 = new QName("oWmo E;9F@");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -15941,12 +11823,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0581930() throws Throwable {
-        QName qName0 = new QName((String) null, "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0581931() throws Throwable {
         QName qName0 = new QName((String) null, "");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -16031,20 +11907,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0581942() throws Throwable {
-        QName qName0 = new QName((String) null, "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0581943() throws Throwable {
-        QName qName0 = new QName((String) null, "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
     }
 
     @Test(timeout = 4000)
@@ -16227,59 +12089,12 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0581964() throws Throwable {
-        QName qName0 = new QName((String) null, "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, qName0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0581965() throws Throwable {
-        QName qName0 = new QName((String) null, "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, qName0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0581966() throws Throwable {
-        QName qName0 = new QName((String) null, "");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, qName0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test0581967() throws Throwable {
         QName qName0 = new QName((String) null, "");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, qName0, variablePointer0);
         beanPointer0.createPath((JXPathContext) null, (Object) variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0591968() throws Throwable {
-        QName qName0 = new QName("", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test0591969() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0591970() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0591971() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.getName();
     }
 
     @Test(timeout = 4000)
@@ -16516,14 +12331,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0592000() throws Throwable {
-        QName qName0 = new QName("", "");
-        Locale locale0 = Locale.KOREA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "cbsby", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0592001() throws Throwable {
         QName qName0 = new QName("", "");
         Locale locale0 = Locale.KOREA;
@@ -16550,15 +12357,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "cbsby", locale0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) linkedList0);
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0592004() throws Throwable {
-        QName qName0 = new QName("", "");
-        Locale locale0 = Locale.KOREA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "cbsby", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) linkedList0);
     }
 
     @Test(timeout = 4000)
@@ -16625,12 +12423,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0602013() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test0602014() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -16651,13 +12443,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0602017() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -16822,24 +12607,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("LPBVL", "LPBVL");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0602035() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("LPBVL", "LPBVL");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0602036() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("LPBVL", "LPBVL");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -17085,12 +12852,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0612065() throws Throwable {
-        QName qName0 = new QName((String) null, (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0612066() throws Throwable {
         QName qName0 = new QName((String) null, (String) null);
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -17263,20 +13024,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, (Object) null);
         nullPointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0612088() throws Throwable {
-        QName qName0 = new QName((String) null, (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, (Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0612089() throws Throwable {
-        QName qName0 = new QName((String) null, (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, (Object) null);
     }
 
     @Test(timeout = 4000)
@@ -17486,30 +13233,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0612113() throws Throwable {
-        QName qName0 = new QName((String) null, (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, (Object) null);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nullPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0612114() throws Throwable {
-        QName qName0 = new QName((String) null, (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, (Object) null);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nullPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0612115() throws Throwable {
-        QName qName0 = new QName((String) null, (String) null);
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, (Object) null);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nullPointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test0612116() throws Throwable {
         QName qName0 = new QName((String) null, (String) null);
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -17646,12 +13369,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0622136() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", ");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, (Locale) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0622137() throws Throwable {
         QName qName0 = new QName(", operation is not allowed for this type of node", ", ");
         NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, (Locale) null);
@@ -17667,13 +13384,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0622139() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", ");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, (Locale) null);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-    }
-
-    @Test(timeout = 4000)
     public void test0622140() throws Throwable {
         QName qName0 = new QName(", operation is not allowed for this type of node", ", ");
         NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, (Locale) null);
@@ -17682,120 +13392,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0632141() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0632142() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632143() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632144() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632145() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0632146() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632147() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632148() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632149() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632150() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632151() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632152() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632153() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632154() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632155() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0632156() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0632157() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.createPath((JXPathContext) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0642158() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -18115,16 +13715,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0642193() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName((String) null, "$1EB/;/R");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "' and '");
-        basicVariables0.declareVariable("e%p@XtA`N856w{D<X", nodeNameTest0);
-        QName qName1 = new QName("e%p@XtA`N856w{D<X");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName1);
-    }
-
-    @Test(timeout = 4000)
     public void test0642194() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName((String) null, "$1EB/;/R");
@@ -18145,17 +13735,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName1);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
         qName0.equals((Object) qName1);
-    }
-
-    @Test(timeout = 4000)
-    public void test0642196() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName((String) null, "$1EB/;/R");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "' and '");
-        basicVariables0.declareVariable("e%p@XtA`N856w{D<X", nodeNameTest0);
-        QName qName1 = new QName("e%p@XtA`N856w{D<X");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName1);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
     }
 
     @Test(timeout = 4000)
@@ -18240,17 +13819,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName1);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0642204() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName((String) null, "$1EB/;/R");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "' and '");
-        basicVariables0.declareVariable("e%p@XtA`N856w{D<X", nodeNameTest0);
-        QName qName1 = new QName("e%p@XtA`N856w{D<X");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName1);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
     }
 
     @Test(timeout = 4000)
@@ -18504,13 +14072,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0652238() throws Throwable {
-        QName qName0 = new QName("5QL%\"K4%S`U,tzlM-^", "fI 8@w!\"*W9FO]G");
-        Locale locale0 = Locale.ROOT;
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0652239() throws Throwable {
         QName qName0 = new QName("5QL%\"K4%S`U,tzlM-^", "fI 8@w!\"*W9FO]G");
         Locale locale0 = Locale.ROOT;
@@ -18525,111 +14086,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, locale0);
         Object object0 = new Object();
         nullPointer0.createChild((JXPathContext) null, qName0, 2937, object0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0662241() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0662242() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662243() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662244() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662245() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0662246() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662247() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662248() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662249() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662250() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662251() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662252() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662253() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662254() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662255() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0662256() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
     }
 
     @Test(timeout = 4000)
@@ -18648,13 +14104,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0662259() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "<<unknown namespace>>");
-    }
-
-    @Test(timeout = 4000)
     public void test0662260() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer((Variables) null, qName0);
@@ -18669,11 +14118,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "<<unknown namespace>>");
         Object object0 = new Object();
         variablePointer0.createChild((JXPathContext) jXPathContextReferenceImpl0, qName0, Integer.MIN_VALUE, object0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0672262() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -18791,13 +14235,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0672278() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Bn9pK", "Bn9pK");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0672279() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Bn9pK", "Bn9pK");
@@ -18906,167 +14343,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0682295() throws Throwable {
-        QName qName0 = new QName((String) null, ")d-]P't~)(E");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0682296() throws Throwable {
         QName qName0 = new QName((String) null, ")d-]P't~)(E");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.createChild((JXPathContext) null, qName0, 45);
-    }
-
-    @Test(timeout = 4000)
-    public void test0692297() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692298() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-    }
-
-    @Test(timeout = 4000)
-    public void test0692299() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692300() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692301() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692302() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0692303() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692304() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692305() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692306() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692307() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692308() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692309() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692310() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692311() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692312() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692313() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0692314() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-    }
-
-    @Test(timeout = 4000)
-    public void test0692315() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0692316() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName(", operation is not allowed for this type of node", "0");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) ", operation is not allowed for this type of node");
     }
 
     @Test(timeout = 4000)
@@ -19079,142 +14359,11 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0702318() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702319() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test0702320() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702321() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702322() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702323() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0702324() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702325() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702326() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702327() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702328() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702329() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702330() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702331() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702332() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702333() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0702334() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0702335() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("", "");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.compareTo((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0712336() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -19332,70 +14481,11 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0712352() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Simultaneous operations: should not request pointer list while iterating over an EvalContext", "");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0712353() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Simultaneous operations: should not request pointer list while iterating over an EvalContext", "");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.compareTo("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0722354() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0722355() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722356() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722357() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722358() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722359() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722360() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722361() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0722362() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
     }
 
     @Test(timeout = 4000)
@@ -19517,700 +14607,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0722380() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, (QName) null, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0722381() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, (QName) null, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test0722382() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, (QName) null, variablePointer0);
         beanPointer0.compareChildNodePointers(variablePointer0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732383() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0732384() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732385() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732386() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732387() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732388() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732389() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732390() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732391() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732392() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732393() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732394() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732395() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732396() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732397() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732398() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732399() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732400() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732401() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732402() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732403() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732404() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732405() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732406() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732407() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732408() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732409() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732410() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732411() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732412() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732413() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732414() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732415() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732416() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732417() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732418() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732419() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732420() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732421() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732422() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732423() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732424() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732425() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732426() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732427() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732428() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732429() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732430() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732431() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732432() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732433() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732434() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732435() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732436() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732437() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732438() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732439() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732440() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732441() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732442() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732443() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732444() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732445() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732446() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732447() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732448() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732449() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732450() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732451() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732452() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-        variablePointer1.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0732453() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732454() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0732455() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
     }
 
     @Test(timeout = 4000)
@@ -20222,29 +14622,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
         variablePointer0.childIterator(nodeNameTest0, false, variablePointer1);
-    }
-
-    @Test(timeout = 4000)
-    public void test0742457() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0742458() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0742459() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0742460() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
     }
 
     @Test(timeout = 4000)
@@ -20359,13 +14736,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0742476() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test0742477() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
@@ -20434,14 +14804,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0742485() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -20594,45 +14956,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0742501() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0742502() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0742503() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0742504() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0742505() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
@@ -20873,36 +15197,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0742527() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0742528() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0742529() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeNameTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test0742530() throws Throwable {
         QName qName0 = new QName("");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, "");
@@ -21082,12 +15376,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0752556() throws Throwable {
-        Locale locale0 = Locale.PRC;
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer((QName) null, (Object) null, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0752557() throws Throwable {
         Locale locale0 = Locale.PRC;
         NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer((QName) null, (Object) null, locale0);
@@ -21106,11 +15394,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0762560() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
-    }
-
-    @Test(timeout = 4000)
     public void test0762561() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -21121,12 +15404,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0762563() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
     }
 
     @Test(timeout = 4000)
@@ -21268,22 +15545,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0762580() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("(F");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0762581() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("(F");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0762582() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) "substring-before");
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -21293,495 +15554,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0772583() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772584() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772585() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772586() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772587() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772588() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772589() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-    }
-
-    @Test(timeout = 4000)
-    public void test0772590() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772591() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772592() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772593() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772594() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772595() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772596() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772597() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772598() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772599() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772600() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772601() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772602() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772603() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772604() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772605() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772606() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772607() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772608() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772609() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772610() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772611() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772612() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772613() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772614() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772615() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772616() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772617() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772618() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772619() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772620() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772621() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772622() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772623() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772624() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772625() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772626() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772627() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772628() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772629() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772630() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772631() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772632() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772633() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
     public void test0772634() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772635() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
@@ -22032,39 +15805,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0772656() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772657() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772658() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0772659() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -22087,42 +15827,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
         BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
         beanPointer1.equals((Object) beanPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772661() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772662() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772663() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
     }
 
     @Test(timeout = 4000)
@@ -22503,180 +16207,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0772693() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772694() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772695() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772696() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782697() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782698() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-    }
-
-    @Test(timeout = 4000)
-    public void test0782699() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782700() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782701() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782702() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0782703() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782704() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782705() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782706() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782707() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782708() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782709() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782710() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782711() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782712() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782713() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0782714() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
@@ -22691,22 +16221,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         VariablePointer variablePointer1 = (VariablePointer) variablePointer0.clone();
         variablePointer1.equals((Object) variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0782716() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782717() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.clone();
     }
 
     @Test(timeout = 4000)
@@ -22860,127 +16374,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         VariablePointer variablePointer1 = (VariablePointer) variablePointer0.clone();
         variablePointer1.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782735() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0782736() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.clone();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792737() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0792738() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792739() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792740() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792741() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0792742() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792743() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792744() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792745() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792746() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792747() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792748() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792749() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792750() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792751() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0792752() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
     }
 
     @Test(timeout = 4000)
@@ -23246,15 +16639,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0792783() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.GERMANY;
-        variablePointer0.locale = locale0;
-        Locale locale1 = variablePointer0.getLocale();
-    }
-
-    @Test(timeout = 4000)
     public void test0792784() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -23415,15 +16799,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0792800() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.GERMANY;
-        variablePointer0.locale = locale0;
-        Locale locale1 = variablePointer0.getLocale();
-    }
-
-    @Test(timeout = 4000)
     public void test0802801() throws Throwable {
         QName qName0 = new QName("h", "h");
     }
@@ -23523,12 +16898,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0802816() throws Throwable {
-        QName qName0 = new QName("h", "h");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0802817() throws Throwable {
         QName qName0 = new QName("h", "h");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -23613,20 +16982,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0802828() throws Throwable {
-        QName qName0 = new QName("h", "h");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0802829() throws Throwable {
-        QName qName0 = new QName("h", "h");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
     }
 
     @Test(timeout = 4000)
@@ -23766,129 +17121,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0802844() throws Throwable {
-        QName qName0 = new QName("h", "h");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("h");
-        boolean boolean0 = nodePointer0.testNode(processingInstructionTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0802845() throws Throwable {
-        QName qName0 = new QName("h", "h");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("h");
-        boolean boolean0 = nodePointer0.testNode(processingInstructionTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0812846() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0812847() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812848() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812849() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812850() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0812851() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812852() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812853() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812854() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812855() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812856() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812857() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812858() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812859() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812860() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812861() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0812862() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -24018,15 +17250,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0812877() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0812878() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -24127,24 +17350,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0812888() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0812889() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0812890() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -24174,26 +17379,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         NodePointer nodePointer0 = variablePointer0.getValuePointer();
         boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
         qName1.equals((Object) qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0812893() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0812894() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
     }
 
     @Test(timeout = 4000)
@@ -24373,131 +17558,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0812911() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0812912() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0822913() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0822914() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822915() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822916() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822917() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0822918() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822919() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822920() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822921() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822922() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822923() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822924() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822925() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822926() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822927() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822928() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0822929() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -24651,22 +17711,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0822947() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0822948() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0822949() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -24806,809 +17850,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0822963() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0822964() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        boolean boolean0 = nodePointer0.testNode(nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832965() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832966() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832967() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832968() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832969() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832970() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832971() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-    }
-
-    @Test(timeout = 4000)
-    public void test0832972() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832973() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832974() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832975() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832976() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832977() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832978() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832979() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832980() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832981() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832982() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832983() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832984() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832985() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832986() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832987() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832988() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832989() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832990() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832991() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832992() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832993() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0832994() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832995() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832996() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832997() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832998() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0832999() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833000() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833001() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833002() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833003() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833004() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833005() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833006() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833007() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833008() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833009() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833010() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833011() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833012() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        variablePointer1.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833013() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0833014() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0833015() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0833016() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833017() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833018() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833019() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833020() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833021() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833022() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833023() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833024() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833025() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833026() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833027() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833028() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833029() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833030() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833031() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833032() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isDynamicPropertyDeclarationSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833033() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833034() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833035() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833036() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833037() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833038() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833039() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0833040() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0833041() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.testNode(nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0833042() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
         QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
@@ -25893,147 +18135,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0833064() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.testNode(nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0833065() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.testNode(nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0833066() throws Throwable {
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("<<unknown namespace>>", "<<unknown namespace>>");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(Integer.MIN_VALUE);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) nodeTypeTest0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = beanPointer0.testNode(nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0843067() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0843068() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843069() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843070() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843071() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0843072() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843073() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843074() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843075() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843076() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843077() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843078() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843079() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843080() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843081() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843082() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0843083() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -26121,20 +18222,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0843094() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0843095() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0843096() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -26143,868 +18230,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0853097() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853098() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853099() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853100() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853101() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853102() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853103() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853104() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853105() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853106() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853107() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-    }
-
-    @Test(timeout = 4000)
-    public void test0853108() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853109() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853110() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853111() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853112() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853113() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853114() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853115() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853116() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853117() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853118() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853119() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853120() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853121() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853122() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853123() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853124() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853125() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853126() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853127() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853128() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853129() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853130() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853131() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853132() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853133() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853134() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853135() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853136() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853137() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853138() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853139() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853140() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853141() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853142() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853143() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853144() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853145() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853146() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853147() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        variablePointer1.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853148() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853149() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853150() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0853151() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853152() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853153() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853154() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853155() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853156() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853157() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853158() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853159() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853160() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853161() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853162() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853163() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853164() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853165() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853166() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isDynamicPropertyDeclarationSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853167() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853168() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853169() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853170() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853171() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853172() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853173() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        beanPointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853174() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853175() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853176() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test0853177() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853178() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853179() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853180() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -27406,292 +18632,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0853211() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853212() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853213() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0853214() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(749);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("@{g}t");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        VariablePointer variablePointer1 = (VariablePointer) variablePointer0.createPath((JXPathContext) jXPathContextReferenceImpl0, (Object) jXPathContextReferenceImpl0);
-        BeanPointer beanPointer0 = (BeanPointer) variablePointer0.getImmediateValuePointer();
-        BeanPointer beanPointer1 = (BeanPointer) beanPointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863215() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test0863216() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863217() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863218() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863219() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-    }
-
-    @Test(timeout = 4000)
-    public void test0863220() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863221() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863222() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863223() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863224() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863225() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863226() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0863227() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863228() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863229() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863230() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863231() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863232() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863233() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863234() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863235() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863236() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863237() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863238() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863239() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863240() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863241() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863242() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863243() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isDynamicPropertyDeclarationSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863244() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863245() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0863246() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        String string0 = (String) beanPointer0.getValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0863247() throws Throwable {
         QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
@@ -27861,14 +18802,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0863266() throws Throwable {
-        QName qName0 = new QName("zn>.Dq;=2q0U!|^pCV", "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        String string0 = (String) beanPointer0.getValue();
-    }
-
-    @Test(timeout = 4000)
     public void test0873267() throws Throwable {
         QName qName0 = new QName("$;g;e");
     }
@@ -27996,39 +18929,10 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0873286() throws Throwable {
-        QName qName0 = new QName("$;g;e");
-        NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, (Locale) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0873287() throws Throwable {
         QName qName0 = new QName("$;g;e");
         NullPointer nullPointer0 = (NullPointer) NodePointer.newNodePointer(qName0, (Object) null, (Locale) null);
         nullPointer0.getPointerByID((JXPathContext) null, "/");
-    }
-
-    @Test(timeout = 4000)
-    public void test0883288() throws Throwable {
-        QName qName0 = new QName("", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test0883289() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0883290() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0883291() throws Throwable {
-        QName qName0 = new QName("", "");
-        qName0.getPrefix();
     }
 
     @Test(timeout = 4000)
@@ -28231,13 +19135,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0883318() throws Throwable {
-        QName qName0 = new QName("", "");
-        Locale locale0 = Locale.GERMANY;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0883319() throws Throwable {
         QName qName0 = new QName("", "");
         Locale locale0 = Locale.GERMANY;
@@ -28408,197 +19305,11 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0883338() throws Throwable {
-        QName qName0 = new QName("", "");
-        Locale locale0 = Locale.GERMANY;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        int int0 = beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893339() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893340() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-    }
-
-    @Test(timeout = 4000)
-    public void test0893341() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893342() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893343() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893344() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0893345() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893346() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893347() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893348() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893349() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893350() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893351() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893352() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893353() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893354() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893355() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0893356() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.getNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903357() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0903358() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903359() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903360() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903361() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903362() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903363() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903364() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903365() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
     }
 
     @Test(timeout = 4000)
@@ -28654,18 +19365,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903374() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903375() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
     }
 
     @Test(timeout = 4000)
@@ -28729,20 +19428,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         boolean boolean0 = nodePointer0.isContainer();
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903384() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = nodePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0903385() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        boolean boolean0 = nodePointer0.isContainer();
     }
 
     @Test(timeout = 4000)
@@ -28845,12 +19530,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0913401() throws Throwable {
-        QName qName0 = new QName(",e2Z#_fstZ9RYK_*");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0913402() throws Throwable {
         QName qName0 = new QName(",e2Z#_fstZ9RYK_*");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -28935,344 +19614,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         String string0 = variablePointer0.getNamespaceURI((String) null);
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0913413() throws Throwable {
-        QName qName0 = new QName(",e2Z#_fstZ9RYK_*");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        String string0 = variablePointer0.getNamespaceURI((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0923414() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0923415() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923416() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923417() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923418() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0923419() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923420() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923421() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923422() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923423() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923424() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923425() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-    }
-
-    @Test(timeout = 4000)
-    public void test0923426() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923427() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923428() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923429() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923430() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923431() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923432() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0923433() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923434() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923435() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923436() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        nodeNameTest0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923437() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923438() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923439() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923440() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923441() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923442() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923443() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923444() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923445() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.isDynamicPropertyDeclarationSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923446() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923447() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923448() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923449() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923450() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923451() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923452() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923453() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0923454() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
     }
 
     @Test(timeout = 4000)
@@ -29495,141 +19836,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0923477() throws Throwable {
-        QName qName0 = new QName("");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, nodeNameTest0, locale0);
-        NodeIterator nodeIterator0 = beanPointer0.namespaceIterator();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933478() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933479() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-    }
-
-    @Test(timeout = 4000)
-    public void test0933480() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933481() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933482() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933483() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0933484() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933485() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933486() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933487() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933488() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933489() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933490() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933491() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933492() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933493() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933494() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0933495() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
@@ -29809,41 +20015,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0933515() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0933516() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test0933517() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        VariablePointer variablePointer1 = (VariablePointer) beanPointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933518() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        VariablePointer variablePointer1 = (VariablePointer) beanPointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933519() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("Vzm&]`p9tkIVzH");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -30112,185 +20284,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0933546() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        VariablePointer variablePointer1 = (VariablePointer) beanPointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933547() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        VariablePointer variablePointer1 = (VariablePointer) beanPointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0933548() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Vzm&]`p9tkIVzH");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
-        VariablePointer variablePointer1 = (VariablePointer) beanPointer0.getImmediateParentPointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943549() throws Throwable {
-        Object object0 = new Object();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943550() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0943551() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943552() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0943553() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943554() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943555() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943556() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0943557() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943558() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943559() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943560() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943561() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943562() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943563() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943564() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943565() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0943566() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0943567() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        String string0 = variablePointer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943568() throws Throwable {
         Object object0 = new Object();
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
         BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
@@ -30376,29 +20370,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
         String string0 = variablePointer0.toString();
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943577() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        String string0 = variablePointer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0943578() throws Throwable {
-        Object object0 = new Object();
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext(object0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, (QName) null);
-        String string0 = variablePointer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0953579() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
     }
 
     @Test(timeout = 4000)
@@ -30513,13 +20484,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("false()", "ffkD7dzT");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0953595() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("false()", "ffkD7dzT");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -30699,22 +20663,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, "ffkD7dzT");
         beanPointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0953616() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("false()", "ffkD7dzT");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, "ffkD7dzT");
-    }
-
-    @Test(timeout = 4000)
-    public void test0953617() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("false()", "ffkD7dzT");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, "ffkD7dzT");
     }
 
     @Test(timeout = 4000)
@@ -30917,82 +20865,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0953638() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("false()", "ffkD7dzT");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(variablePointer0, qName0, "ffkD7dzT");
-        beanPointer0.setNamespaceResolver((NamespaceResolver) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0963639() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-    }
-
-    @Test(timeout = 4000)
-    public void test0963640() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0963641() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0963642() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0963643() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0963644() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0963645() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
-    public void test0963646() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        nodeTypeTest0.getNodeType();
-    }
-
-    @Test(timeout = 4000)
-    public void test0963647() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0963648() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-    }
-
-    @Test(timeout = 4000)
     public void test0963649() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -31157,24 +21029,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0963666() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("LPBVL");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0963667() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("LPBVL");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0963668() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
@@ -31317,78 +21171,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0963681() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("LPBVL");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        int int0 = variablePointer0.compareTo(variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0963682() throws Throwable {
-        NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3122);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) nodeTypeTest0);
-        BasicVariables basicVariables0 = (BasicVariables) jXPathContextReferenceImpl0.getVariables();
-        QName qName0 = new QName("LPBVL");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        int int0 = variablePointer0.compareTo(variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0973683() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test0973684() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973685() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973686() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973687() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973688() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973689() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973690() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973691() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0973692() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         NodePointer nodePointer0 = variablePointer0.getValuePointer();
@@ -31441,18 +21223,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         NodePointer nodePointer0 = variablePointer0.getValuePointer();
         variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973700() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973701() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
     }
 
     @Test(timeout = 4000)
@@ -31591,27 +21361,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0973719() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, (QName) null, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0973720() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, (QName) null, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0973721() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, (QName) null, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test0973722() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         NodePointer nodePointer0 = variablePointer0.getValuePointer();
@@ -31689,22 +21438,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, (QName) null, variablePointer0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) variablePointer0);
         jXPathContextReferenceImpl0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test0973731() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, (QName) null, variablePointer0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0973732() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getValuePointer();
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newChildNodePointer(nodePointer0, (QName) null, variablePointer0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) variablePointer0);
     }
 
     @Test(timeout = 4000)
@@ -31853,12 +21586,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0983753() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
     }
 
     @Test(timeout = 4000)
@@ -32150,22 +21877,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0983787() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0983788() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0983789() throws Throwable {
         QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -32182,24 +21893,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
         BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
         beanPointer1.equals((Object) beanPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0983791() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-        BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0983792() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-        BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
     }
 
     @Test(timeout = 4000)
@@ -32543,33 +22236,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0983827() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-        BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0983828() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-        BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0983829() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-        BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test0983830() throws Throwable {
         QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -32591,16 +22257,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0983832() throws Throwable {
-        QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, variablePointer0, locale0);
-        BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
-    }
-
-    @Test(timeout = 4000)
     public void test0983833() throws Throwable {
         QName qName0 = new QName("T-9'|*M(xF[", "T-9'|*M(xF[");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -32609,221 +22265,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer1 = (BeanPointer) NodePointer.newChildNodePointer(beanPointer0, qName0, qName0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) null);
         beanPointer1.createChild((JXPathContext) jXPathContextReferenceImpl0, qName0, Integer.MIN_VALUE, (Object) variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993834() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0993835() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993836() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993837() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993838() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993839() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993840() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993841() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993842() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993843() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993844() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993845() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993846() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993847() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993848() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993849() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993850() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-    }
-
-    @Test(timeout = 4000)
-    public void test0993851() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        qName1.equals((Object) qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993852() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        qName1.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993853() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        qName1.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993854() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        qName1.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993855() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993856() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        qName1.equals((Object) qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993857() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        qName1.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993858() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        qName1.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993859() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        qName1.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993860() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        nodeNameTest0.isWildcard();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993861() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        nodeNameTest0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test0993862() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        nodeNameTest0.toString();
     }
 
     @Test(timeout = 4000)
@@ -32853,24 +22294,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
         NodeIterator nodeIterator0 = variablePointer0.childIterator(nodeNameTest0, false, variablePointer0);
         qName1.equals((Object) qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993866() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodeIterator nodeIterator0 = variablePointer0.childIterator(nodeNameTest0, false, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0993867() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodeIterator nodeIterator0 = variablePointer0.childIterator(nodeNameTest0, false, variablePointer0);
     }
 
     @Test(timeout = 4000)
@@ -33034,134 +22457,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0993884() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        QName qName1 = new QName("Was expecting one of:", "<<unknown namespace>>");
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName1);
-        NodeIterator nodeIterator0 = variablePointer0.childIterator(nodeNameTest0, false, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1003885() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test1003886() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003887() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003888() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003889() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003890() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003891() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003892() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003893() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test1003894() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003895() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003896() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003897() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003898() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003899() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003900() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003901() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003902() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003903() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-    }
-
-    @Test(timeout = 4000)
     public void test1003904() throws Throwable {
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
@@ -33222,125 +22517,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
         Locale locale0 = nodePointer0.getLocale();
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003912() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        Locale locale0 = nodePointer0.getLocale();
-    }
-
-    @Test(timeout = 4000)
-    public void test1003913() throws Throwable {
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodePointer nodePointer0 = variablePointer0.getImmediateValuePointer();
-        Locale locale0 = nodePointer0.getLocale();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013914() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-    }
-
-    @Test(timeout = 4000)
-    public void test1013915() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013916() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013917() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013918() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1013919() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013920() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013921() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013922() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013923() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013924() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013925() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013926() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013927() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013928() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test1013929() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
     }
 
     @Test(timeout = 4000)
@@ -33431,36 +22607,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1013941() throws Throwable {
-        QName qName0 = new QName(", operation is not allowed for this type of node", ", operation is not allowed for this type of node");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        Locale locale0 = variablePointer0.getLocale();
-    }
-
-    @Test(timeout = 4000)
-    public void test1023942() throws Throwable {
-        QName qName0 = new QName("");
-    }
-
-    @Test(timeout = 4000)
-    public void test1023943() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1023944() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1023945() throws Throwable {
-        QName qName0 = new QName("");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
     public void test1023946() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
@@ -33513,12 +22659,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer((QName) null);
         variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1023954() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
     }
 
     @Test(timeout = 4000)
@@ -33702,119 +22842,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1023976() throws Throwable {
-        QName qName0 = new QName("");
-        VariablePointer variablePointer0 = new VariablePointer((QName) null);
-        NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
-        boolean boolean0 = variablePointer0.testNode(nodeNameTest0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1033977() throws Throwable {
-        QName qName0 = new QName("%", "%");
-    }
-
-    @Test(timeout = 4000)
-    public void test1033978() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033979() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033980() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033981() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1033982() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033983() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033984() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033985() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033986() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isActual();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033987() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033988() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033989() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033990() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033991() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test1033992() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-    }
-
-    @Test(timeout = 4000)
     public void test1033993() throws Throwable {
         QName qName0 = new QName("%", "%");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
@@ -33899,13 +22926,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         boolean boolean0 = variablePointer0.testNode((NodeTest) null);
         variablePointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test1034004() throws Throwable {
-        QName qName0 = new QName("%", "%");
-        VariablePointer variablePointer0 = new VariablePointer(qName0);
-        boolean boolean0 = variablePointer0.testNode((NodeTest) null);
     }
 
     @Test(timeout = 4000)
@@ -34101,13 +23121,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1044031() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test1044032() throws Throwable {
         QName qName0 = new QName("(");
         Locale locale0 = new Locale("yj", "yj");
@@ -34161,14 +23174,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1044038() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test1044039() throws Throwable {
         QName qName0 = new QName("(");
         Locale locale0 = new Locale("yj", "yj");
@@ -34185,24 +23190,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
         jXPathContextReferenceImpl1.equals((Object) jXPathContextReferenceImpl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1044041() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1044042() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
     }
 
     @Test(timeout = 4000)
@@ -34386,44 +23373,7 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1044061() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1044062() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1044063() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
-    }
-
-    @Test(timeout = 4000)
     public void test1044064() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
-        String string0 = (String) beanPointer0.getRootNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1044065() throws Throwable {
         QName qName0 = new QName("(");
         Locale locale0 = new Locale("yj", "yj");
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
@@ -34609,245 +23559,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1044082() throws Throwable {
-        QName qName0 = new QName("(");
-        Locale locale0 = new Locale("yj", "yj");
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "yj", locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((Object) locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl1 = (JXPathContextReferenceImpl) jXPathContextReferenceImpl0.getRelativeContext(beanPointer0);
-        String string0 = (String) beanPointer0.getRootNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054083() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test1054084() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054085() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054086() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054087() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-    }
-
-    @Test(timeout = 4000)
-    public void test1054088() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054089() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054090() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054091() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054092() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054093() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054094() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1054095() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        qName0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054096() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        qName0.getName();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054097() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        qName0.getPrefix();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054098() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054099() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054100() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054101() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054102() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054103() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054104() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isContainer();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054105() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isRoot();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054106() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.getNamespaceURI();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054107() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.getLength();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054108() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054109() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isDynamicPropertyDeclarationSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054110() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isNode();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054111() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isAttribute();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054112() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054113() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test1054114() throws Throwable {
         QName qName0 = new QName("b}suu:/Feh.z", "");
         Locale locale0 = Locale.CANADA_FRENCH;
@@ -35015,14 +23726,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
         boolean boolean0 = beanPointer0.isActual();
         beanPointer0.isCollection();
-    }
-
-    @Test(timeout = 4000)
-    public void test1054133() throws Throwable {
-        QName qName0 = new QName("b}suu:/Feh.z", "");
-        Locale locale0 = Locale.CANADA_FRENCH;
-        BeanPointer beanPointer0 = (BeanPointer) NodePointer.newNodePointer(qName0, "", locale0);
-        boolean boolean0 = beanPointer0.isActual();
     }
 
     @Test(timeout = 4000)
@@ -35379,22 +24082,6 @@ public class NodePointer_ESTest extends NodePointer_ESTest_scaffolding {
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         NodePointer nodePointer0 = NodePointer.newChildNodePointer(variablePointer0, qName0, variablePointer0);
         nodePointer0.createPath((JXPathContext) null, (Object) variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1224174() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Hce<v[>5Q1");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test1224175() throws Throwable {
-        BasicVariables basicVariables0 = new BasicVariables();
-        QName qName0 = new QName("Hce<v[>5Q1");
-        VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
-        variablePointer0.isRoot();
     }
 
     @Test(timeout = 4000)

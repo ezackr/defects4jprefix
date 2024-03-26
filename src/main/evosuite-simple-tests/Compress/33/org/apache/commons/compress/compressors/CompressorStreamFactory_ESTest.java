@@ -32,7 +32,13 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test011() throws Throwable {
+        CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
+        compressorStreamFactory0.setDecompressConcatenated(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory(true);
         // Undeclared exception!
         try {
@@ -47,7 +53,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
@@ -63,7 +69,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         // Undeclared exception!
         try {
@@ -78,7 +84,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         // Undeclared exception!
@@ -94,7 +100,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         // Undeclared exception!
         try {
@@ -109,7 +115,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         byte[] byteArray0 = new byte[10];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
@@ -118,7 +124,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         // Undeclared exception!
         try {
@@ -133,7 +139,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
@@ -149,7 +155,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         byte[] byteArray0 = new byte[0];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
@@ -165,7 +171,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         try {
@@ -180,7 +186,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         try {
@@ -195,7 +201,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
@@ -211,7 +217,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         byte[] byteArray0 = new byte[13];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
@@ -220,7 +226,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         try {
@@ -235,7 +241,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         try {
@@ -250,7 +256,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         try {
@@ -265,7 +271,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         // Undeclared exception!
         try {
@@ -280,7 +286,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory(true);
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         try {
@@ -295,7 +301,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         // Undeclared exception!
         try {
@@ -310,7 +316,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         try {
@@ -325,7 +331,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         compressorStreamFactory0.createCompressorOutputStream("bzip2", byteArrayOutputStream0);
@@ -333,7 +339,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2223() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         compressorStreamFactory0.createCompressorOutputStream("bzip2", byteArrayOutputStream0);
@@ -341,7 +347,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2324() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         compressorStreamFactory0.createCompressorOutputStream("xz", byteArrayOutputStream0);
@@ -349,7 +355,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         compressorStreamFactory0.createCompressorOutputStream("xz", byteArrayOutputStream0);
@@ -357,7 +363,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         CompressorOutputStream compressorOutputStream0 = compressorStreamFactory0.createCompressorOutputStream("pack200", pipedOutputStream0);
@@ -365,7 +371,7 @@ public class CompressorStreamFactory_ESTest extends CompressorStreamFactory_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         CompressorStreamFactory compressorStreamFactory0 = new CompressorStreamFactory();
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CompressorOutputStream compressorOutputStream0 = compressorStreamFactory0.createCompressorOutputStream("deflate", byteArrayOutputStream0);

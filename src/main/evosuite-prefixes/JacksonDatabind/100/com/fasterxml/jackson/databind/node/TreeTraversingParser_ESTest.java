@@ -445,14 +445,6 @@ public class TreeTraversingParser_ESTest extends TreeTraversingParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4648() throws Throwable {
-        MissingNode missingNode0 = new MissingNode();
-        TreeTraversingParser treeTraversingParser0 = new TreeTraversingParser(missingNode0);
-        treeTraversingParser0.nextBooleanValue();
-        treeTraversingParser0.getCurrentTokenId();
-    }
-
-    @Test(timeout = 4000)
     public void test4649() throws Throwable {
         MissingNode missingNode0 = new MissingNode();
         TreeTraversingParser treeTraversingParser0 = new TreeTraversingParser(missingNode0);

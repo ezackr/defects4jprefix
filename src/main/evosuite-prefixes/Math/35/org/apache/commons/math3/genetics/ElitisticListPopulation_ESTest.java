@@ -34,7 +34,29 @@ public class ElitisticListPopulation_ESTest extends ElitisticListPopulation_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test041() throws Throwable {
+    public void test011() throws Throwable {
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(1080, 1080);
+        elitisticListPopulation0.setElitismRate(1080);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        linkedList0.spliterator();
+        linkedList0.add((Chromosome) null);
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 61, 1.0);
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 174, 174);
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
         int int0 = 0;
         ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 0, (-763.75318048848));
@@ -42,7 +64,7 @@ public class ElitisticListPopulation_ESTest extends ElitisticListPopulation_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test052() throws Throwable {
+    public void test055() throws Throwable {
         int int0 = (-881);
         double double0 = 700.3623;
         ElitisticListPopulation elitisticListPopulation0 = null;
@@ -50,14 +72,20 @@ public class ElitisticListPopulation_ESTest extends ElitisticListPopulation_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test073() throws Throwable {
+    public void test066() throws Throwable {
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(1466, 1466);
+        elitisticListPopulation0.setElitismRate((-1449.43));
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         List<Chromosome> list0 = null;
         ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation((List<Chromosome>) null, 0, 0);
         elitisticListPopulation0.setChromosomes(list0);
     }
 
     @Test(timeout = 4000)
-    public void test084() throws Throwable {
+    public void test088() throws Throwable {
         int int0 = 1054;
         ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(1054, 0.0);
         List<Chromosome> list0 = elitisticListPopulation0.getChromosomes();
@@ -68,7 +96,84 @@ public class ElitisticListPopulation_ESTest extends ElitisticListPopulation_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test185() throws Throwable {
+    public void test099() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 2727, 0.0);
+        elitisticListPopulation0.setPopulationLimit(0);
+        elitisticListPopulation0.getElitismRate();
+        elitisticListPopulation0.nextGeneration();
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(1, 1);
+        elitisticListPopulation0.setElitismRate(1);
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(2545, 0.0);
+        elitisticListPopulation0.getElitismRate();
+        elitisticListPopulation0.setElitismRate(1.0);
+        elitisticListPopulation0.getElitismRate();
+        elitisticListPopulation0.setElitismRate(0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        int int0 = 284;
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(284, 392.1632);
+        List<Chromosome> list0 = elitisticListPopulation0.getChromosomes();
+        ElitisticListPopulation elitisticListPopulation1 = new ElitisticListPopulation(list0, (-3205), (-1045.9));
+        elitisticListPopulation1.setElitismRate(int0);
+        elitisticListPopulation0.getFittestChromosome();
+        double double0 = 1912.3547646;
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(1, 501.0);
+        elitisticListPopulation0.setChromosomes((List<Chromosome>) null);
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(189, (-212.6545));
+        elitisticListPopulation0.iterator();
+        elitisticListPopulation0.getElitismRate();
+        Chromosome chromosome0 = elitisticListPopulation0.getFittestChromosome();
+        elitisticListPopulation0.addChromosome(chromosome0);
+        double double0 = 1879.401100615;
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 2144003123, (-461.0231362));
+        elitisticListPopulation0.setChromosomes(linkedList0);
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        int int0 = 2140129251;
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(2140129251, 2140129251);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        linkedList0.add((Chromosome) null);
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 61, 1204);
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(254, 254);
         Consumer<Object> consumer0 = (Consumer<Object>) mock(Consumer.class, new ViolatedAssumptionAnswer());
         elitisticListPopulation0.forEach(consumer0);
@@ -78,6 +183,18 @@ public class ElitisticListPopulation_ESTest extends ElitisticListPopulation_ESTe
         ElitisticListPopulation elitisticListPopulation1 = new ElitisticListPopulation(list0, 254, 254);
         elitisticListPopulation1.iterator();
         elitisticListPopulation1.nextGeneration();
+        elitisticListPopulation0.nextGeneration();
+        elitisticListPopulation0.nextGeneration();
+        elitisticListPopulation0.nextGeneration();
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        LinkedList<Chromosome> linkedList0 = new LinkedList<Chromosome>();
+        linkedList0.add((Chromosome) null);
+        ElitisticListPopulation elitisticListPopulation0 = new ElitisticListPopulation(linkedList0, 61, (-3312));
+        elitisticListPopulation0.nextGeneration();
+        linkedList0.add((Chromosome) null);
         elitisticListPopulation0.nextGeneration();
         elitisticListPopulation0.nextGeneration();
         elitisticListPopulation0.nextGeneration();

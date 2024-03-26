@@ -52,75 +52,87 @@ public class BitsStreamGenerator_ESTest extends BitsStreamGenerator_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test044() throws Throwable {
+        Well1024a well1024a0 = new Well1024a((-246));
+        well1024a0.setSeed((long) (-246));
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        mersenneTwister0.setSeed(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         int[] intArray0 = new int[20];
         Well512a well512a0 = new Well512a(intArray0);
         long long0 = well512a0.nextLong();
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         Well19937a well19937a0 = new Well19937a();
         long long0 = well19937a0.nextLong();
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         Well44497b well44497b0 = new Well44497b(1284L);
         long long0 = well44497b0.nextLong();
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test089() throws Throwable {
         Well44497b well44497b0 = new Well44497b(1284L);
         long long0 = well44497b0.nextLong();
         int int0 = well44497b0.nextInt();
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test0910() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister((-734));
         int[] intArray0 = new int[0];
         mersenneTwister0.setSeed(intArray0);
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1011() throws Throwable {
         Well512a well512a0 = new Well512a((int[]) null);
         well512a0.index = 32;
         well512a0.nextLong();
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1112() throws Throwable {
         Well44497b well44497b0 = new Well44497b(1345365059);
         well44497b0.index = 1345365059;
         well44497b0.nextInt(3491);
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1213() throws Throwable {
         Well44497a well44497a0 = new Well44497a();
         well44497a0.index = 3638;
         well44497a0.nextInt();
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1314() throws Throwable {
         Well44497b well44497b0 = new Well44497b(4607182418800017428L);
         well44497b0.index = 4704;
         well44497b0.nextGaussian();
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1415() throws Throwable {
         Well44497a well44497a0 = new Well44497a((-1122L));
         well44497a0.index = 3593;
         well44497a0.nextFloat();
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1516() throws Throwable {
         int[] intArray0 = new int[1];
         Well512a well512a0 = new Well512a(intArray0);
         well512a0.index = 1330;
@@ -128,13 +140,13 @@ public class BitsStreamGenerator_ESTest extends BitsStreamGenerator_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1617() throws Throwable {
         Well44497b well44497b0 = new Well44497b();
         well44497b0.nextBytes((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1718() throws Throwable {
         Well19937c well19937c0 = new Well19937c(1547);
         well19937c0.index = (-254);
         byte[] byteArray0 = new byte[1];
@@ -142,7 +154,7 @@ public class BitsStreamGenerator_ESTest extends BitsStreamGenerator_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1819() throws Throwable {
         Well19937a well19937a0 = new Well19937a(0L);
         well19937a0.index = 353;
         well19937a0.index = 1303;
@@ -150,45 +162,51 @@ public class BitsStreamGenerator_ESTest extends BitsStreamGenerator_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test1920() throws Throwable {
+        MersenneTwister mersenneTwister0 = new MersenneTwister((-2363));
+        mersenneTwister0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test2021() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         int int0 = mersenneTwister0.nextInt(1);
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2122() throws Throwable {
         Well44497b well44497b0 = new Well44497b(1345365059);
         int int0 = well44497b0.nextInt(3491);
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2223() throws Throwable {
         Well44497b well44497b0 = new Well44497b();
         well44497b0.nextInt((int) (byte) (-8));
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2324() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         double double0 = mersenneTwister0.nextGaussian();
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2325() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         double double0 = mersenneTwister0.nextGaussian();
         double double1 = mersenneTwister0.nextGaussian();
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2426() throws Throwable {
         Well44497b well44497b0 = new Well44497b(0L);
         byte[] byteArray0 = new byte[5];
         well44497b0.nextBytes(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2427() throws Throwable {
         Well44497b well44497b0 = new Well44497b(0L);
         byte[] byteArray0 = new byte[5];
         well44497b0.nextBytes(byteArray0);
@@ -196,7 +214,7 @@ public class BitsStreamGenerator_ESTest extends BitsStreamGenerator_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2428() throws Throwable {
         Well44497b well44497b0 = new Well44497b(0L);
         byte[] byteArray0 = new byte[5];
         well44497b0.nextBytes(byteArray0);
@@ -205,32 +223,32 @@ public class BitsStreamGenerator_ESTest extends BitsStreamGenerator_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2529() throws Throwable {
         Well44497b well44497b0 = new Well44497b(0L);
         boolean boolean0 = well44497b0.nextBoolean();
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2630() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister((-734));
         float float0 = mersenneTwister0.nextFloat();
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2731() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         int int0 = mersenneTwister0.nextInt();
     }
 
     @Test(timeout = 4000)
-    public void test2729() throws Throwable {
+    public void test2732() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         int int0 = mersenneTwister0.nextInt();
         int int1 = mersenneTwister0.nextInt(1140807170);
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2833() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister((-734));
         double double0 = mersenneTwister0.nextDouble();
     }

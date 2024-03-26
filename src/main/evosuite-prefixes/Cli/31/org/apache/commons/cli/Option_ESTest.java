@@ -749,13 +749,6 @@ public class Option_ESTest extends Option_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test42104() throws Throwable {
-        Option option0 = new Option("_", "_", false, "_");
-        Option option1 = (Option) option0.clone();
-        boolean boolean0 = option0.equals(option1);
-    }
-
-    @Test(timeout = 4000)
     public void test42105() throws Throwable {
         Option option0 = new Option("_", "_", false, "_");
         Option option1 = (Option) option0.clone();
@@ -811,12 +804,6 @@ public class Option_ESTest extends Option_ESTest_scaffolding {
         Option option0 = new Option("", "");
         option0.hashCode();
         option0.getArgs();
-    }
-
-    @Test(timeout = 4000)
-    public void test46113() throws Throwable {
-        Option option0 = new Option("", "");
-        option0.hasLongOpt();
     }
 
     @Test(timeout = 4000)

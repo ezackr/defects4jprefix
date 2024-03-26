@@ -192,20 +192,6 @@ public class RecordType_ESTest extends RecordType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0812() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        VoidType voidType0 = new VoidType(jSTypeRegistry0);
-        JSType jSType0 = voidType0.restrictByNotNullOrUndefined();
-        Node node0 = Node.newString(0, "Named type with empty name component");
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(jSType0, node0);
-        hashMap0.put("prototype", recordTypeBuilder_RecordProperty0);
-        RecordType recordType0 = new RecordType(jSTypeRegistry0, hashMap0);
-        recordType0.hasCachedValues();
-    }
-
-    @Test(timeout = 4000)
     public void test0813() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);

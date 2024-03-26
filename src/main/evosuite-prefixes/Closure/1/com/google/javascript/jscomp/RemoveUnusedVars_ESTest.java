@@ -21,7 +21,17 @@ import org.junit.runner.RunWith;
 public class RemoveUnusedVars_ESTest extends RemoveUnusedVars_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseTestCode("arcuments");
+        AbstractCompiler.LifeCycleStage abstractCompiler_LifeCycleStage0 = AbstractCompiler.LifeCycleStage.NORMALIZED;
+        compiler0.setLifeCycleStage(abstractCompiler_LifeCycleStage0);
+        RemoveUnusedVars removeUnusedVars0 = new RemoveUnusedVars(compiler0, false, true, false);
+        removeUnusedVars0.process(node0, node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("aruments");
         AbstractCompiler.LifeCycleStage abstractCompiler_LifeCycleStage0 = AbstractCompiler.LifeCycleStage.NORMALIZED;
@@ -31,7 +41,7 @@ public class RemoveUnusedVars_ESTest extends RemoveUnusedVars_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test22() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("argumens");
         RemoveUnusedVars removeUnusedVars0 = new RemoveUnusedVars(compiler0, true, true, true);
@@ -42,7 +52,7 @@ public class RemoveUnusedVars_ESTest extends RemoveUnusedVars_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("inlineP`erties");
         RemoveUnusedVars removeUnusedVars0 = new RemoveUnusedVars(compiler0, false, false, false);
@@ -52,7 +62,7 @@ public class RemoveUnusedVars_ESTest extends RemoveUnusedVars_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("arguments");
         RemoveUnusedVars removeUnusedVars0 = new RemoveUnusedVars(compiler0, false, false, false);

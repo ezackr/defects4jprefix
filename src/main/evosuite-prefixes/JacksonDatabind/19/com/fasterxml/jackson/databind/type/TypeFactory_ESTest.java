@@ -128,7 +128,13 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test088() throws Throwable {
+        TypeFactory typeFactory0 = TypeFactory.defaultInstance();
+        typeFactory0.clearCache();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<JsonEncoding> class0 = JsonEncoding.class;
         CollectionLikeType collectionLikeType0 = typeFactory0.constructRawCollectionLikeType(class0);
@@ -136,7 +142,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<String> class0 = String.class;
         Class<ArrayList> class1 = ArrayList.class;
@@ -147,7 +153,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<HashMap> class0 = HashMap.class;
         Class<InputStream> class1 = InputStream.class;
@@ -157,7 +163,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1112() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<HashMap> class0 = HashMap.class;
         Class<InputStream> class1 = InputStream.class;
@@ -167,13 +173,13 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
+    public void test1213() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         typeFactory0.constructType((TypeReference<?>) null);
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1314() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<HashMap> class0 = HashMap.class;
         MapType mapType0 = typeFactory0.constructRawMapType(class0);
@@ -184,7 +190,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1415() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<CollectionType> class0 = CollectionType.class;
         MapLikeType mapLikeType0 = typeFactory0.constructRawMapLikeType(class0);
@@ -192,7 +198,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1516() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         AtomicReference<SimpleType> atomicReference0 = new AtomicReference<SimpleType>();
         objectMapper0.readerForUpdating(atomicReference0);
@@ -204,7 +210,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<Object> class0 = Object.class;
         JavaType javaType0 = typeFactory0.constructType((Type) class0, (Class<?>) class0);
@@ -213,7 +219,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1617() throws Throwable {
+    public void test1618() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<Object> class0 = Object.class;
         JavaType javaType0 = typeFactory0.constructType((Type) class0, (Class<?>) class0);
@@ -222,7 +228,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1718() throws Throwable {
+    public void test1719() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<Object> class0 = Object.class;
         ArrayType arrayType0 = typeFactory0.constructArrayType(class0);
@@ -233,7 +239,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1819() throws Throwable {
+    public void test1820() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<BooleanNode> class0 = BooleanNode.class;
         TypeBindings typeBindings0 = new TypeBindings(typeFactory0, class0);
@@ -241,20 +247,20 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1920() throws Throwable {
+    public void test1921() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         TypeModifier typeModifier0 = mock(TypeModifier.class, new ViolatedAssumptionAnswer());
         TypeFactory typeFactory1 = typeFactory0.withModifier(typeModifier0);
     }
 
     @Test(timeout = 4000)
-    public void test2021() throws Throwable {
+    public void test2022() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         TypeFactory typeFactory1 = typeFactory0.withModifier((TypeModifier) null);
     }
 
     @Test(timeout = 4000)
-    public void test2122() throws Throwable {
+    public void test2123() throws Throwable {
         TypeParser typeParser0 = new TypeParser((TypeFactory) null);
         TypeModifier[] typeModifierArray0 = new TypeModifier[4];
         TypeModifier typeModifier0 = mock(TypeModifier.class, new ViolatedAssumptionAnswer());
@@ -263,14 +269,14 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2224() throws Throwable {
         Class<HashMap> class0 = HashMap.class;
         Class<?> class1 = TypeFactory.rawClass(class0);
         class1.isEnum();
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         JavaType javaType0 = typeFactory0._unknownType();
         Class<Object> class0 = Object.class;
@@ -279,7 +285,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<HashMap> class0 = HashMap.class;
         JavaType javaType0 = typeFactory0._unknownType();
@@ -288,7 +294,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<HashMap> class0 = HashMap.class;
         Class<Object> class1 = Object.class;
@@ -301,7 +307,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2628() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         JavaType javaType0 = typeFactory0._unknownType();
         Class<ArrayList> class0 = ArrayList.class;
@@ -311,7 +317,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2729() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         JavaType javaType0 = typeFactory0._unknownType();
         Class<MapType> class0 = MapType.class;
@@ -320,7 +326,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2830() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         SimpleType simpleType0 = TypeFactory.CORE_TYPE_BOOL;
         Class<ArrayList> class0 = ArrayList.class;
@@ -328,7 +334,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
+    public void test2931() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<CollectionLikeType> class0 = CollectionLikeType.class;
         ObjectReader objectReader0 = objectMapper0.readerWithView(class0);
@@ -341,7 +347,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3031() throws Throwable {
+    public void test3032() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<CollectionLikeType> class0 = CollectionLikeType.class;
         Class<CollectionType> class1 = CollectionType.class;
@@ -349,7 +355,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3132() throws Throwable {
+    public void test3133() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<HashMap> class0 = HashMap.class;
         ArrayType arrayType0 = typeFactory0.constructArrayType(class0);
@@ -361,20 +367,9 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3234() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         JavaType javaType0 = typeFactory0.moreSpecificType((JavaType) null, (JavaType) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test3334() throws Throwable {
-        TypeFactory typeFactory0 = TypeFactory.defaultInstance();
-        Class<HashMap> class0 = HashMap.class;
-        Class<Module> class1 = Module.class;
-        Class<CollectionType> class2 = CollectionType.class;
-        MapType mapType0 = typeFactory0.constructMapType(class0, class1, class2);
-        JavaType javaType0 = typeFactory0.moreSpecificType(mapType0, (JavaType) null);
-        javaType0.isFinal();
     }
 
     @Test(timeout = 4000)
@@ -385,6 +380,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
         Class<CollectionType> class2 = CollectionType.class;
         MapType mapType0 = typeFactory0.constructMapType(class0, class1, class2);
         JavaType javaType0 = typeFactory0.moreSpecificType(mapType0, (JavaType) null);
+        javaType0.isFinal();
     }
 
     @Test(timeout = 4000)
@@ -395,11 +391,21 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
         Class<CollectionType> class2 = CollectionType.class;
         MapType mapType0 = typeFactory0.constructMapType(class0, class1, class2);
         JavaType javaType0 = typeFactory0.moreSpecificType(mapType0, (JavaType) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test3337() throws Throwable {
+        TypeFactory typeFactory0 = TypeFactory.defaultInstance();
+        Class<HashMap> class0 = HashMap.class;
+        Class<Module> class1 = Module.class;
+        Class<CollectionType> class2 = CollectionType.class;
+        MapType mapType0 = typeFactory0.constructMapType(class0, class1, class2);
+        JavaType javaType0 = typeFactory0.moreSpecificType(mapType0, (JavaType) null);
         javaType0.isAbstract();
     }
 
     @Test(timeout = 4000)
-    public void test3437() throws Throwable {
+    public void test3438() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         JavaType javaType0 = typeFactory0._unknownType();
         JavaType javaType1 = typeFactory0.moreSpecificType(javaType0, javaType0);
@@ -407,7 +413,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3538() throws Throwable {
+    public void test3539() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<ReferenceType> class0 = ReferenceType.class;
         ArrayType arrayType0 = typeFactory0.constructArrayType(class0);
@@ -417,7 +423,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3639() throws Throwable {
+    public void test3640() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<HashMap> class0 = HashMap.class;
         JavaType javaType0 = typeFactory0.constructType((Type) class0, (Class<?>) null);
@@ -425,7 +431,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3740() throws Throwable {
+    public void test3741() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         SimpleType simpleType0 = TypeFactory.CORE_TYPE_BOOL;
         JavaType javaType0 = typeFactory0.constructType((Type) simpleType0, (JavaType) simpleType0);
@@ -433,13 +439,13 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3841() throws Throwable {
+    public void test3842() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         typeFactory0.constructType((Type) null, (JavaType) null);
     }
 
     @Test(timeout = 4000)
-    public void test3942() throws Throwable {
+    public void test3943() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<ArrayList> class0 = ArrayList.class;
         TypeParser typeParser0 = new TypeParser(typeFactory0);
@@ -451,7 +457,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4043() throws Throwable {
+    public void test4044() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<BooleanNode> class0 = BooleanNode.class;
         Class<ObjectIdResolver>[] classArray0 = (Class<ObjectIdResolver>[]) Array.newInstance(Class.class, 2);
@@ -462,7 +468,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4144() throws Throwable {
+    public void test4145() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<HashMap> class0 = HashMap.class;
         Class<Object> class1 = Object.class;
@@ -473,7 +479,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4245() throws Throwable {
+    public void test4246() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<HashMap> class0 = HashMap.class;
         Class<SimpleType>[] classArray0 = (Class<SimpleType>[]) Array.newInstance(Class.class, 0);
@@ -481,7 +487,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4346() throws Throwable {
+    public void test4347() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<LinkedList> class0 = LinkedList.class;
         Class<Integer> class1 = Integer.class;
@@ -490,7 +496,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4447() throws Throwable {
+    public void test4448() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         SimpleType simpleType0 = TypeFactory.CORE_TYPE_BOOL;
         Class<?> class0 = simpleType0.getRawClass();
@@ -498,7 +504,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4548() throws Throwable {
+    public void test4549() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<Integer> class0 = Integer.TYPE;
         JavaType javaType0 = typeFactory0.constructType((Type) class0, (Class<?>) class0);
@@ -506,7 +512,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4649() throws Throwable {
+    public void test4650() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         SimpleType simpleType0 = TypeFactory.CORE_TYPE_LONG;
         Class<?> class0 = simpleType0.getRawClass();
@@ -514,7 +520,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4750() throws Throwable {
+    public void test4751() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<Object> class0 = Object.class;
         ArrayType arrayType0 = typeFactory0.constructArrayType(class0);
@@ -525,7 +531,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4851() throws Throwable {
+    public void test4852() throws Throwable {
         Vector<JavaType> vector0 = new Vector<JavaType>();
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<JsonEncoding> class0 = JsonEncoding.class;
@@ -534,7 +540,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4952() throws Throwable {
+    public void test4953() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<ArrayList> class0 = ArrayList.class;
         Stack<JavaType> stack0 = new Stack<JavaType>();
@@ -543,7 +549,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5053() throws Throwable {
+    public void test5054() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<Object> class0 = Object.class;
         LinkedList<JavaType> linkedList0 = new LinkedList<JavaType>();
@@ -557,7 +563,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5154() throws Throwable {
+    public void test5155() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<Object> class0 = Object.class;
         Stack<JavaType> stack0 = new Stack<JavaType>();
@@ -568,7 +574,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5255() throws Throwable {
+    public void test5256() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<ArrayList> class0 = ArrayList.class;
         JavaType javaType0 = typeFactory0.constructType((Type) class0, (Class<?>) class0);
@@ -579,7 +585,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5356() throws Throwable {
+    public void test5357() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<ArrayType> class0 = ArrayType.class;
         TypeBindings typeBindings0 = new TypeBindings(typeFactory0, class0);
@@ -588,20 +594,11 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5457() throws Throwable {
-        TypeFactory typeFactory0 = TypeFactory.instance;
-        Class<SimpleObjectIdResolver> class0 = SimpleObjectIdResolver.class;
-        Class<Object> class1 = Object.class;
-        HierarchicType hierarchicType0 = typeFactory0._findSuperTypeChain(class0, class1);
-    }
-
-    @Test(timeout = 4000)
     public void test5458() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         Class<SimpleObjectIdResolver> class0 = SimpleObjectIdResolver.class;
         Class<Object> class1 = Object.class;
         HierarchicType hierarchicType0 = typeFactory0._findSuperTypeChain(class0, class1);
-        HierarchicType hierarchicType1 = typeFactory0._doFindSuperInterfaceChain(hierarchicType0, class1);
     }
 
     @Test(timeout = 4000)
@@ -614,7 +611,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5560() throws Throwable {
+    public void test5561() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<HashMap> class0 = HashMap.class;
         Class<CollectionLikeType> class1 = CollectionLikeType.class;
@@ -622,7 +619,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5661() throws Throwable {
+    public void test5662() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<HashMap> class0 = HashMap.class;
         Stack<JavaType> stack0 = new Stack<JavaType>();
@@ -631,7 +628,7 @@ public class TypeFactory_ESTest extends TypeFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5762() throws Throwable {
+    public void test5763() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.instance;
         typeFactory0._arrayListSuperInterfaceChain((HierarchicType) null);
     }

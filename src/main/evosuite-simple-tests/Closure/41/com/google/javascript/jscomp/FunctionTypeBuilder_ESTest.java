@@ -119,7 +119,14 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test078() throws Throwable {
+    public void test068() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "ARRAY_FUNCTION_TYPE", "ARRAY_FUNCTION_TYPE");
+        FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder((String) null, compiler0, node0, "ARRAY_FUNCTION_TYPE", (Scope) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test079() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("q3\"5}\"", "q3\"5}\"");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("q3\"5}\"", compiler0, node0, "q3\"5}\"", (Scope) null);
@@ -128,7 +135,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
+    public void test0810() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("@implemeots used without const:uctor or @intIrfce 4or `0}");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("@implemeots used without const:uctor or @intIrfce 4or `0}", compiler0, node0, "@implemeots used without const:uctor or @intIrfce 4or `0}", (Scope) null);
@@ -137,7 +144,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test0910() throws Throwable {
+    public void test0911() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("J;Cs9PINAjoARGYdEN_", "J;Cs9PINAjoARGYdEN_");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("J;Cs9PINAjoARGYdEN_", compiler0, node0, "J;Cs9PINAjoARGYdEN_", (Scope) null);
@@ -148,7 +155,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1012() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("J;C_OPTIONAL_ARG_ATEND");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("J;C_OPTIONAL_ARG_ATEND", compiler0, node0, "J;C_OPTIONAL_ARG_ATEND", (Scope) null);
@@ -160,7 +167,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1112() throws Throwable {
+    public void test1113() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.jscomp.FunctinTypeBuilder$ImplementedTypeVXlidator");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("com.google.javascript.jscomp.FunctinTypeBuilder$ImplementedTypeVXlidator", compiler0, node0, "com.google.javascript.jscomp.FunctinTypeBuilder$ImplementedTypeVXlidator", (Scope) null);
@@ -175,7 +182,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1213() throws Throwable {
+    public void test1214() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("J;C_OPTINAL_ARG_ATEND", "J;C_OPTINAL_ARG_ATEND");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("J;C_OPTINAL_ARG_ATEND", compiler0, node0, "J;C_OPTINAL_ARG_ATEND", (Scope) null);
@@ -186,7 +193,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1314() throws Throwable {
+    public void test1315() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("J;C_OPTIONAL_ARG_ATEND");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("J;C_OPTIONAL_ARG_ATEND", compiler0, node0, "J;C_OPTIONAL_ARG_ATEND", (Scope) null);
@@ -198,7 +205,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1415() throws Throwable {
+    public void test1416() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "SHRFu2Ur+qWU*w.9.~G", "SHRFu2Ur+qWU*w.9.~G");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("SHRFu2Ur+qWU*w.9.~G", compiler0, node0, "SHRFu2Ur+qWU*w.9.~G", (Scope) null);
@@ -207,7 +214,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1516() throws Throwable {
+    public void test1517() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "SHRFu2Ur+qWU*w.9.~G", "SHRFu2Ur+qWU*w.9.~G");
         JSDocInfo jSDocInfo0 = new JSDocInfo();
@@ -217,7 +224,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1617() throws Throwable {
+    public void test1618() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("", compiler0, node0, "", (Scope) null);
@@ -226,7 +233,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1718() throws Throwable {
+    public void test1719() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "d", "d");
         JSDocInfo jSDocInfo0 = new JSDocInfo();
@@ -236,7 +243,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1819() throws Throwable {
+    public void test1820() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("JSC_OPTIONAL_ARG_AT_END");
         JSDocInfo jSDocInfo0 = new JSDocInfo();
@@ -249,7 +256,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1920() throws Throwable {
+    public void test1921() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "SHRFu2Ur+qWU*w.9.~G", "SHRFu2Ur+qWU*w.9.~G");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("SHRFu2Ur+qWU*w.9.~G", compiler0, node0, "SHRFu2Ur+qWU*w.9.~G", (Scope) null);
@@ -258,7 +265,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2021() throws Throwable {
+    public void test2022() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("J;C_OPTINAL_ARG_AdEND");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("J;C_OPTINAL_ARG_AdEND", compiler0, node0, "J;C_OPTINAL_ARG_AdEND", (Scope) null);
@@ -269,7 +276,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2122() throws Throwable {
+    public void test2123() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "JSC_OPTIONAL_ARG_AT_END", "JSC_OPTIONAL_ARG_AT_END");
         JSDocInfo jSDocInfo0 = new JSDocInfo();
@@ -279,7 +286,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2224() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "JSC_OPTIONAL_ARG_AT_END", "JSC_OPTIONAL_ARG_AT_END");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("JSC_OPTIONAL_ARG_AT_END", compiler0, node0, "JSC_OPTIONAL_ARG_AT_END", (Scope) null);
@@ -288,7 +295,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.jscomp.FunctinTypeBuilder$ImplementedTypeVXlidator");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("com.google.javascript.jscomp.FunctinTypeBuilder$ImplementedTypeVXlidator", compiler0, node0, "com.google.javascript.jscomp.FunctinTypeBuilder$ImplementedTypeVXlidator", (Scope) null);
@@ -300,7 +307,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "JSC_OPTIONAL>ARG_AT_END", "JSC_OPTIONAL>ARG_AT_END");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("JSC_OPTIONAL>ARG_AT_END", compiler0, node0, "JSC_OPTIONAL>ARG_AT_END", (Scope) null);
@@ -309,7 +316,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSDocInfo jSDocInfo0 = new JSDocInfo();
@@ -319,7 +326,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2628() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "JSC_OPTIONjL_ARG_AT_END", "JSC_OPTIONjL_ARG_AT_END");
         JSDocInfo jSDocInfo0 = new JSDocInfo();
@@ -331,7 +338,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2729() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "q3\"5}\"", "q3\"5}\"");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("q3\"5}\"", compiler0, node0, "q3\"5}\"", (Scope) null);
@@ -348,14 +355,14 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2830() throws Throwable {
         JSDocInfo jSDocInfo0 = new JSDocInfo();
         boolean boolean0 = FunctionTypeBuilder.isFunctionTypeDeclaration(jSDocInfo0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
+    public void test2931() throws Throwable {
         FunctionTypeBuilder.AstFunctionContents functionTypeBuilder_AstFunctionContents0 = new FunctionTypeBuilder.AstFunctionContents((Node) null);
         functionTypeBuilder_AstFunctionContents0.recordEscapedVarName("com.google.javascript.jscomp.FunctionTypeBuilder$ExtendedTypeValidator");
         Iterable<String> iterable0 = functionTypeBuilder_AstFunctionContents0.getEscapedVarNames();
@@ -363,21 +370,21 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3031() throws Throwable {
+    public void test3032() throws Throwable {
         FunctionTypeBuilder.AstFunctionContents functionTypeBuilder_AstFunctionContents0 = new FunctionTypeBuilder.AstFunctionContents((Node) null);
         Iterable<String> iterable0 = functionTypeBuilder_AstFunctionContents0.getEscapedVarNames();
         assertNotNull(iterable0);
     }
 
     @Test(timeout = 4000)
-    public void test3032() throws Throwable {
+    public void test3033() throws Throwable {
         FunctionTypeBuilder.AstFunctionContents functionTypeBuilder_AstFunctionContents0 = new FunctionTypeBuilder.AstFunctionContents((Node) null);
         Iterable<String> iterable0 = functionTypeBuilder_AstFunctionContents0.getEscapedVarNames();
         assertFalse(functionTypeBuilder_AstFunctionContents0.mayHaveNonEmptyReturns());
     }
 
     @Test(timeout = 4000)
-    public void test3133() throws Throwable {
+    public void test3134() throws Throwable {
         FunctionTypeBuilder.AstFunctionContents functionTypeBuilder_AstFunctionContents0 = new FunctionTypeBuilder.AstFunctionContents((Node) null);
         functionTypeBuilder_AstFunctionContents0.recordEscapedVarName("B#p/>yftG\"8Q{AI");
         functionTypeBuilder_AstFunctionContents0.recordEscapedVarName("B#p/>yftG\"8Q{AI");

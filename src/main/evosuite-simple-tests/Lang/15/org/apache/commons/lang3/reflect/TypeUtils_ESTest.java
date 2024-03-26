@@ -506,7 +506,12 @@ public class TypeUtils_ESTest extends TypeUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3537() throws Throwable {
+        TypeUtils typeUtils0 = new TypeUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test3638() throws Throwable {
         Class<Object> class0 = Object.class;
         Class<String> class1 = String.class;
         Map<TypeVariable<?>, Type> map0 = TypeUtils.getTypeArguments((Type) class0, (Class<?>) class1);
@@ -514,7 +519,7 @@ public class TypeUtils_ESTest extends TypeUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3739() throws Throwable {
         // Undeclared exception!
         try {
             TypeUtils.getTypeArguments((ParameterizedType) null);

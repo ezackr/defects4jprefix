@@ -744,4 +744,22 @@ public class Tag_ESTest extends Tag_ESTest_scaffolding {
         tag0.hashCode();
         assertFalse(tag0.preserveWhitespace());
     }
+
+    @Test(timeout = 4000)
+    public void test26102() throws Throwable {
+        Tag tag0 = Tag.valueOf("menu");
+        tag0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test27103() throws Throwable {
+        Tag tag0 = Tag.valueOf("textarea");
+        tag0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test28104() throws Throwable {
+        Tag tag0 = Tag.valueOf("source");
+        tag0.hashCode();
+    }
 }

@@ -16,16 +16,14 @@ import org.mockito.internal.util.Primitives;
 public class Primitives_ESTest extends Primitives_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
-        Class<Short> class0 = Short.class;
-        Short short0 = Primitives.primitiveWrapperOf(class0);
+    public void test00() throws Throwable {
+        Primitives primitives0 = new Primitives();
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
-        Class<Integer> class0 = Integer.class;
-        Class<Integer> class1 = Primitives.primitiveTypeOf(class0);
-        Integer integer0 = Primitives.primitiveValueOrNullFor(class1);
+    public void test11() throws Throwable {
+        Class<Short> class0 = Short.class;
+        Short short0 = Primitives.primitiveWrapperOf(class0);
     }
 
     @Test(timeout = 4000)
@@ -36,7 +34,7 @@ public class Primitives_ESTest extends Primitives_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test33() throws Throwable {
+    public void test34() throws Throwable {
         Class<Long> class0 = Long.class;
         Class<Long> class1 = Primitives.primitiveTypeOf(class0);
         Class<Long> class2 = Primitives.primitiveTypeOf(class1);
@@ -44,14 +42,14 @@ public class Primitives_ESTest extends Primitives_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test44() throws Throwable {
+    public void test45() throws Throwable {
         Class<Integer> class0 = Integer.class;
         Class<Integer> class1 = Primitives.primitiveTypeOf(class0);
         boolean boolean0 = Primitives.isPrimitiveWrapper(class1);
     }
 
     @Test(timeout = 4000)
-    public void test55() throws Throwable {
+    public void test56() throws Throwable {
         Class<Float> class0 = Float.class;
         boolean boolean0 = Primitives.isPrimitiveWrapper(class0);
     }

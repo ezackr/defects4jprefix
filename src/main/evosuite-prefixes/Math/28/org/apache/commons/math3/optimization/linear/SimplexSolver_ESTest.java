@@ -52,13 +52,25 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        SimplexSolver simplexSolver0 = new SimplexSolver();
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1328);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 100);
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        simplexSolver0.optimize(linearObjectiveFunction0, linkedList0, goalType0, true);
+        // Undeclared exception!
+        simplexSolver0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         simplexSolver0.doOptimize();
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[1];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 100.0);
@@ -81,7 +93,19 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test055() throws Throwable {
+        SimplexSolver simplexSolver0 = new SimplexSolver();
+        LinkedList<LinearConstraint> linkedList0 = new LinkedList<LinearConstraint>();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(5183);
+        LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(openMapRealVector0, 1.0E-12);
+        SimplexTableau simplexTableau0 = new SimplexTableau(linearObjectiveFunction0, linkedList0, goalType0, false, 100);
+        // Undeclared exception!
+        simplexSolver0.doIteration(simplexTableau0);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = (double) 100;
@@ -104,12 +128,12 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver(1594.949, (-599));
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[1];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 100.0);
@@ -138,7 +162,7 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[1];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 100.0);
@@ -168,7 +192,7 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[14];
         doubleArray0[0] = (double) 100;
@@ -195,7 +219,7 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[3];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 100.0);
@@ -222,7 +246,7 @@ public class SimplexSolver_ESTest extends SimplexSolver_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         SimplexSolver simplexSolver0 = new SimplexSolver();
         double[] doubleArray0 = new double[14];
         LinearObjectiveFunction linearObjectiveFunction0 = new LinearObjectiveFunction(doubleArray0, 100.0);

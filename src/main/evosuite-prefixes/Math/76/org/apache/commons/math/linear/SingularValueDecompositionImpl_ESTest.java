@@ -67,16 +67,6 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test034() throws Throwable {
-        double[] doubleArray0 = new double[14];
-        doubleArray0[0] = (-119.0863408434962);
-        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
-        RealMatrix realMatrix0 = arrayRealVector0.outerProduct(arrayRealVector0);
-        SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(realMatrix0);
-        double[] doubleArray1 = singularValueDecompositionImpl0.getSingularValues();
-    }
-
-    @Test(timeout = 4000)
     public void test045() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = 1657.6410258812;
@@ -94,7 +84,35 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test067() throws Throwable {
+        double[] doubleArray0 = new double[14];
+        doubleArray0[0] = (-119.0863408434962);
+        doubleArray0[2] = (-200.7204561);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
+        RealMatrix realMatrix0 = arrayRealVector0.outerProduct(arrayRealVector0);
+        SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(realMatrix0);
+        singularValueDecompositionImpl0.getCovariance(0.0);
+        // Undeclared exception!
+        singularValueDecompositionImpl0.getU();
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
+        double[] doubleArray0 = new double[24];
+        doubleArray0[0] = (-1469.24165998819);
+        doubleArray0[2] = 1042.9999;
+        doubleArray0[5] = (-651.4657703215);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0);
+        RealMatrix realMatrix0 = arrayRealVector0.outerProduct(doubleArray0);
+        SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(realMatrix0, 5);
+        singularValueDecompositionImpl0.getSolver();
+        singularValueDecompositionImpl0.getSolver();
+        // Undeclared exception!
+        singularValueDecompositionImpl0.getSolver();
+    }
+
+    @Test(timeout = 4000)
+    public void test089() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix();
         double[][] doubleArray0 = new double[1][7];
         array2DRowRealMatrix0.data = doubleArray0;
@@ -103,14 +121,14 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test0910() throws Throwable {
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(7, 7);
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(openMapRealMatrix0);
         singularValueDecompositionImpl0.getRank();
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1011() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = (-4091.30585795025);
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
@@ -119,7 +137,13 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1112() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(2088, 2088);
+        SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(openMapRealMatrix0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1213() throws Throwable {
         double[] doubleArray0 = new double[12];
         doubleArray0[0] = (-1469.24165998819);
         doubleArray0[3] = 0.10664378144610108;
@@ -131,20 +155,20 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1314() throws Throwable {
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = null;
         singularValueDecompositionImpl0 = new SingularValueDecompositionImpl((RealMatrix) null, (-2635));
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1415() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix();
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = null;
         singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(array2DRowRealMatrix0, 0);
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1516() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(1, 1);
         double[][] doubleArray0 = new double[4][2];
         double[] doubleArray1 = new double[4];
@@ -155,7 +179,13 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test1714() throws Throwable {
+    public void test1617() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(2328, 2328);
+        SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(openMapRealMatrix0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1718() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         doubleArray0[1] = 3341.3125;
@@ -166,20 +196,20 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test1815() throws Throwable {
+    public void test1819() throws Throwable {
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = null;
         singularValueDecompositionImpl0 = new SingularValueDecompositionImpl((RealMatrix) null);
     }
 
     @Test(timeout = 4000)
-    public void test1916() throws Throwable {
+    public void test1920() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix();
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = null;
         singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(array2DRowRealMatrix0);
     }
 
     @Test(timeout = 4000)
-    public void test2017() throws Throwable {
+    public void test2021() throws Throwable {
         double[] doubleArray0 = new double[3];
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
         double[][] doubleArray1 = new double[8][2];
@@ -190,7 +220,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2118() throws Throwable {
+    public void test2122() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -200,7 +230,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2123() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -211,14 +241,14 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2224() throws Throwable {
         BlockRealMatrix blockRealMatrix0 = new BlockRealMatrix(9, 1);
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(blockRealMatrix0);
         singularValueDecompositionImpl0.getVT();
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2325() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -229,7 +259,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2326() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -241,7 +271,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2327() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -253,7 +283,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2428() throws Throwable {
         double[][] doubleArray0 = new double[2][5];
         double[] doubleArray1 = new double[3];
         doubleArray1[1] = (-1.0);
@@ -268,7 +298,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2429() throws Throwable {
         double[][] doubleArray0 = new double[2][5];
         double[] doubleArray1 = new double[3];
         doubleArray1[1] = (-1.0);
@@ -283,7 +313,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2530() throws Throwable {
         double[] doubleArray0 = new double[3];
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(array2DRowRealMatrix0);
@@ -291,7 +321,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2631() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix();
         double[][] doubleArray0 = new double[1][7];
         array2DRowRealMatrix0.data = doubleArray0;
@@ -300,7 +330,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2728() throws Throwable {
+    public void test2732() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[1] = (-1314.9147069);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
@@ -312,7 +342,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2833() throws Throwable {
         double[] doubleArray0 = new double[11];
         doubleArray0[0] = 0.5;
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
@@ -323,7 +353,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2834() throws Throwable {
         double[] doubleArray0 = new double[11];
         doubleArray0[0] = 0.5;
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
@@ -334,7 +364,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test2931() throws Throwable {
+    public void test2935() throws Throwable {
         double[] doubleArray0 = new double[3];
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
         openMapRealVector0.mapLog10ToSelf();
@@ -344,7 +374,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3032() throws Throwable {
+    public void test3036() throws Throwable {
         double[] doubleArray0 = new double[3];
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
         RealMatrix realMatrix0 = openMapRealVector0.outerProduct(doubleArray0);
@@ -353,7 +383,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3133() throws Throwable {
+    public void test3137() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         doubleArray0[2] = (-200.7204561);
@@ -365,7 +395,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3134() throws Throwable {
+    public void test3138() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         doubleArray0[2] = (-200.7204561);
@@ -377,7 +407,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3235() throws Throwable {
+    public void test3239() throws Throwable {
         double[][] doubleArray0 = new double[2][5];
         double[] doubleArray1 = new double[3];
         doubleArray1[1] = 1.05;
@@ -392,7 +422,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3236() throws Throwable {
+    public void test3240() throws Throwable {
         double[][] doubleArray0 = new double[2][5];
         double[] doubleArray1 = new double[3];
         doubleArray1[1] = 1.05;
@@ -407,7 +437,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3237() throws Throwable {
+    public void test3241() throws Throwable {
         double[][] doubleArray0 = new double[2][5];
         double[] doubleArray1 = new double[3];
         doubleArray1[1] = 1.05;
@@ -422,7 +452,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3338() throws Throwable {
+    public void test3342() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -433,7 +463,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3339() throws Throwable {
+    public void test3343() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -445,7 +475,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3340() throws Throwable {
+    public void test3344() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -457,7 +487,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3441() throws Throwable {
+    public void test3445() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -468,7 +498,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3442() throws Throwable {
+    public void test3446() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -480,7 +510,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3443() throws Throwable {
+    public void test3447() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -492,7 +522,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3544() throws Throwable {
+    public void test3548() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -504,7 +534,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3545() throws Throwable {
+    public void test3549() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -516,7 +546,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3546() throws Throwable {
+    public void test3550() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (-119.0863408434962);
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
@@ -527,7 +557,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3647() throws Throwable {
+    public void test3651() throws Throwable {
         double[][] doubleArray0 = new double[1][3];
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(doubleArray0);
         SingularValueDecompositionImpl singularValueDecompositionImpl0 = new SingularValueDecompositionImpl(array2DRowRealMatrix0, 2);
@@ -535,7 +565,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3748() throws Throwable {
+    public void test3752() throws Throwable {
         double[] doubleArray0 = new double[5];
         ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray0);
         RealMatrix realMatrix0 = arrayRealVector0.outerProduct(arrayRealVector0);
@@ -544,7 +574,7 @@ public class SingularValueDecompositionImpl_ESTest extends SingularValueDecompos
     }
 
     @Test(timeout = 4000)
-    public void test3849() throws Throwable {
+    public void test3853() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix();
         double[][] doubleArray0 = new double[1][7];
         array2DRowRealMatrix0.data = doubleArray0;

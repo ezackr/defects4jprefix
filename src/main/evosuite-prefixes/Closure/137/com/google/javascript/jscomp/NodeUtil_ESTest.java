@@ -431,14 +431,6 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03860() throws Throwable {
-        Node node0 = NodeUtil.newUndefinedNode();
-        LinkedList<Node> linkedList0 = new LinkedList<Node>();
-        FunctionNode functionNode0 = NodeUtil.newFunctionNode("znz([", linkedList0, node0, 23, 3);
-        String string0 = NodeUtil.getFunctionName(functionNode0, functionNode0);
-    }
-
-    @Test(timeout = 4000)
     public void test03861() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode();
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
@@ -3609,11 +3601,6 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test520578() throws Throwable {
-        String string0 = NodeUtil.opToStr(29);
-    }
-
-    @Test(timeout = 4000)
-    public void test520579() throws Throwable {
         String string0 = NodeUtil.opToStr(29);
     }
 

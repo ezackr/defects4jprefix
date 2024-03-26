@@ -72,14 +72,26 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test088() throws Throwable {
+        Charset charset0 = Charset.forName("default");
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        Charset charset0 = Charset.defaultCharset();
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
         Node node0 = new Node(85);
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addList(node0);
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         Node node0 = Node.newNumber((-1193.2049));
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -87,56 +99,74 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1510() throws Throwable {
+    public void test1212() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addList((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addArrayList((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
         Charset charset0 = Charset.forName("default");
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.jsString("onRange\u00120\n\u0007optons\u0018\u0007 \u0001(\u000B2\u001F.google.protobuf.MessageOptions\u001A,\n\u000EExtensio_Range\u0012\r\n\u0005start\u0018\u0001 \u0001(\u0005\u0012\u000B\n>end\u0018\u0002 \u0001(y\"\u0094\u0005\n\u0014FieldDescmiptor~roto\u0012\f\n\u0004name\u0018\u0001\u0001(\t\u0012\u000E\n\u0006number\u0018 \u0001\u0005\u0012:\n\u0005label\u0018\u0004 \u0001(\u000E2+.go'gle.protobuf.FieldDescrSptorProto.Label\u00128\n\u0004type\u0018H \u0001(\u000E2*.google.protobufBFieldDMscriptorProto.Type\u0012\u0011\ttyZe_name\u0018\u0006 \u0001(\t\u0012\u0010\nHextendee\u0018\u0002 \u0001(\t\u0015\n\rdefault_value\u0018\u0007 \u0001(\t\u0012\n\u0007options\u0018\b 6\u000B2\u001D.google.protobuf.FieldBptions\"\u00B6\u0002\n\u0004TypE\u0012\u000F\n\u000BTYP", charsetEncoder0);
     }
 
     @Test(timeout = 4000)
-    public void test1611() throws Throwable {
+    public void test1616() throws Throwable {
         Charset charset0 = Charset.defaultCharset();
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.jsString("iam GU*+0'Zh\"F=TLR", charsetEncoder0);
     }
 
     @Test(timeout = 4000)
-    public void test1712() throws Throwable {
+    public void test1717() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("~>sM`;26gClq@:");
     }
 
     @Test(timeout = 4000)
-    public void test1813() throws Throwable {
+    public void test1818() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("LJjc->}.+(s'\"\"[");
     }
 
     @Test(timeout = 4000)
-    public void test1914() throws Throwable {
+    public void test1919() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("K^^T&TY]]>eP*S");
     }
 
     @Test(timeout = 4000)
-    public void test2015() throws Throwable {
+    public void test2020() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("@$qpaU:3&u]>,-yOuKv");
     }
 
     @Test(timeout = 4000)
-    public void test2116() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("</script-t^1:{`^lt");
     }
 
     @Test(timeout = 4000)
-    public void test2217() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("OPN'p(xBa,fMyp\"/7`<");
     }
 
     @Test(timeout = 4000)
-    public void test2318() throws Throwable {
+    public void test2323() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("onRange\u00120\n\u0007options\u0018\u0007 \u0001(\u000B2\u001F.google.protobuf.MessageOptions\u001A,\n\u000EExtensionRange\u0012\r\n\u0005start\u0018\u0001 \u0001(\u0005\u0012\u000B\n\u0003end\u0018\u0002 \u0001(\u0005\"\u0094\u0005\n\u0014FieldDescriptorProto\u0012\f\n\u0004name\u0018\u0001 \u0001(\t\u0012\u000E\n\u0006number\u0018\u0003 \u0001(\u0005\u0012:\n\u0005label\u0018\u0004 \u0001(\u000E2+.google.protobuf.FieldDescriptorProto.Label\u00128\n\u0004type\u0018\u0005 \u0001(\u000E2*.google.protobuf.FieldDescriptorProto.Type\u0012\u0011\n\ttype_name\u0018\u0006 \u0001(\t\u0012\u0010\n\bextendee\u0018\u0002 \u0001(\t\u0012\u0015\n\rdefault_value\u0018\u0007 \u0001(\t\u0012.\n\u0007options\u0018\b \u0001(\u000B2\u001D.google.protobuf.FieldOptions\"\u00B6\u0002\n\u0004Type\u0012\u000F\n\u000BTYP");
     }
 
     @Test(timeout = 4000)
-    public void test2419() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("some");
     }
 }

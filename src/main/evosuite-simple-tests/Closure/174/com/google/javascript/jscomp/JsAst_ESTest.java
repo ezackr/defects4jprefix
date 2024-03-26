@@ -25,25 +25,19 @@ import org.junit.runner.RunWith;
 public class JsAst_ESTest extends JsAst_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        SyntheticAst syntheticAst0 = new SyntheticAst("com.google.javascript.rhino.head.ast.ParenthesizedExpression");
+        SourceFile sourceFile0 = syntheticAst0.getSourceFile();
+        JsAst jsAst0 = new JsAst(sourceFile0);
+        jsAst0.clearAst();
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         SourceFile sourceFile0 = SourceFile.fromFile("^,Pl%K");
         JsAst jsAst0 = new JsAst(sourceFile0);
         jsAst0.setSourceFile(sourceFile0);
         assertEquals("^,Pl%K", sourceFile0.getOriginalPath());
-    }
-
-    @Test(timeout = 4000)
-    public void test21() throws Throwable {
-        SourceFile sourceFile0 = SourceFile.fromCode("|XB12`zHog09(#(_", "");
-        ArrayList<SourceFile> arrayList0 = new ArrayList<SourceFile>();
-        Compiler compiler0 = new Compiler();
-        ImmutableList.of(sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0);
-        CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
-        compiler0.init((List<SourceFile>) arrayList0, (List<SourceFile>) arrayList0, compilerOptions0);
-        JsAst jsAst0 = new JsAst(sourceFile0);
-        jsAst0.getAstRoot(compiler0);
-        Node node0 = jsAst0.getAstRoot(compiler0);
-        assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
@@ -57,11 +51,25 @@ public class JsAst_ESTest extends JsAst_ESTest_scaffolding {
         JsAst jsAst0 = new JsAst(sourceFile0);
         jsAst0.getAstRoot(compiler0);
         Node node0 = jsAst0.getAstRoot(compiler0);
+        assertNotNull(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test23() throws Throwable {
+        SourceFile sourceFile0 = SourceFile.fromCode("|XB12`zHog09(#(_", "");
+        ArrayList<SourceFile> arrayList0 = new ArrayList<SourceFile>();
+        Compiler compiler0 = new Compiler();
+        ImmutableList.of(sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0, sourceFile0);
+        CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
+        compiler0.init((List<SourceFile>) arrayList0, (List<SourceFile>) arrayList0, compilerOptions0);
+        JsAst jsAst0 = new JsAst(sourceFile0);
+        jsAst0.getAstRoot(compiler0);
+        Node node0 = jsAst0.getAstRoot(compiler0);
         assertEquals(4096, node0.getSourcePosition());
     }
 
     @Test(timeout = 4000)
-    public void test33() throws Throwable {
+    public void test34() throws Throwable {
         CompilerOptions compilerOptions0 = new CompilerOptions();
         Compiler compiler0 = new Compiler();
         // Undeclared exception!
@@ -77,7 +85,7 @@ public class JsAst_ESTest extends JsAst_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test44() throws Throwable {
+    public void test45() throws Throwable {
         SourceFile sourceFile0 = SourceFile.fromCode("|XB12`zHog09(#(_", "");
         ArrayList<SourceFile> arrayList0 = new ArrayList<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -91,7 +99,7 @@ public class JsAst_ESTest extends JsAst_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test45() throws Throwable {
+    public void test46() throws Throwable {
         SourceFile sourceFile0 = SourceFile.fromCode("|XB12`zHog09(#(_", "");
         ArrayList<SourceFile> arrayList0 = new ArrayList<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();

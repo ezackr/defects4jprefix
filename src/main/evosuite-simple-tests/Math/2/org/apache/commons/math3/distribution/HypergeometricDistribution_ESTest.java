@@ -46,42 +46,50 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test033() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
-        double double0 = hypergeometricDistribution0.cumulativeProbability(0, 144);
-        assertEquals(0.0, double0, 0.01);
+    public void test023() throws Throwable {
+        ISAACRandom iSAACRandom0 = new ISAACRandom();
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(iSAACRandom0, 2548, 324, 324);
+        // Undeclared exception!
+        hypergeometricDistribution0.sample(2048);
     }
 
     @Test(timeout = 4000)
     public void test034() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         double double0 = hypergeometricDistribution0.cumulativeProbability(0, 144);
-        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
     public void test035() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         double double0 = hypergeometricDistribution0.cumulativeProbability(0, 144);
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
     public void test036() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         double double0 = hypergeometricDistribution0.cumulativeProbability(0, 144);
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test037() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
+        double double0 = hypergeometricDistribution0.cumulativeProbability(0, 144);
         assertEquals(1395, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
-    public void test047() throws Throwable {
+    public void test048() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         double double0 = hypergeometricDistribution0.cumulativeProbability(326);
         assertEquals(2.7617451183816397E-87, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test058() throws Throwable {
+    public void test059() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
             hypergeometricDistribution0 = new HypergeometricDistribution(0, 0, 0);
@@ -95,7 +103,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test069() throws Throwable {
+    public void test0610() throws Throwable {
         Well19937a well19937a0 = new Well19937a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well19937a0, 200, 1, 1);
         double double0 = hypergeometricDistribution0.probability(1);
@@ -103,67 +111,59 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test0710() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
-        int int0 = hypergeometricDistribution0.getSupportUpperBound();
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
     public void test0711() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSupportUpperBound();
-        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
     public void test0712() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSupportUpperBound();
+        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
+    }
+
+    @Test(timeout = 4000)
+    public void test0713() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
+        int int0 = hypergeometricDistribution0.getSupportUpperBound();
         assertEquals(1395, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
-    public void test0813() throws Throwable {
+    public void test0814() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         int int0 = hypergeometricDistribution0.getSupportLowerBound();
         assertEquals(326, int0);
     }
 
     @Test(timeout = 4000)
-    public void test0914() throws Throwable {
+    public void test0915() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(2, 2, 0);
         int int0 = hypergeometricDistribution0.getSampleSize();
         assertEquals(2, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
-    public void test0915() throws Throwable {
+    public void test0916() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(2, 2, 0);
         int int0 = hypergeometricDistribution0.getSampleSize();
         assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test0916() throws Throwable {
+    public void test0917() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(2, 2, 0);
         int int0 = hypergeometricDistribution0.getSampleSize();
         assertEquals(2, hypergeometricDistribution0.getNumberOfSuccesses());
     }
 
     @Test(timeout = 4000)
-    public void test0917() throws Throwable {
+    public void test0918() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(2, 2, 0);
         int int0 = hypergeometricDistribution0.getSampleSize();
         assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1018() throws Throwable {
-        Well19937c well19937c0 = new Well19937c();
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well19937c0, 1795, 1795, 0);
-        double double0 = hypergeometricDistribution0.getNumericalMean();
-        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -171,7 +171,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well19937c well19937c0 = new Well19937c();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well19937c0, 1795, 1795, 0);
         double double0 = hypergeometricDistribution0.getNumericalMean();
-        assertEquals(1795, hypergeometricDistribution0.getNumberOfSuccesses());
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -179,53 +179,61 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well19937c well19937c0 = new Well19937c();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well19937c0, 1795, 1795, 0);
         double double0 = hypergeometricDistribution0.getNumericalMean();
-        assertEquals(1795, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(1795, hypergeometricDistribution0.getNumberOfSuccesses());
     }
 
     @Test(timeout = 4000)
-    public void test1121() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
-        int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
-        assertEquals(474.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    public void test1021() throws Throwable {
+        Well19937c well19937c0 = new Well19937c();
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well19937c0, 1795, 1795, 0);
+        double double0 = hypergeometricDistribution0.getNumericalMean();
+        assertEquals(1795, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
     public void test1122() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
         int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
-        assertEquals(474, int0);
+        assertEquals(474.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1223() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
-        double double0 = hypergeometricDistribution0.calculateNumericalVariance();
-        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
+    public void test1123() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
+        int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
+        assertEquals(474, int0);
     }
 
     @Test(timeout = 4000)
     public void test1224() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         double double0 = hypergeometricDistribution0.calculateNumericalVariance();
-        assertEquals(1395, hypergeometricDistribution0.getSampleSize());
+        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
     public void test1225() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         double double0 = hypergeometricDistribution0.calculateNumericalVariance();
-        assertEquals(0, hypergeometricDistribution0.getNumberOfSuccesses());
+        assertEquals(1395, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
     public void test1226() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         double double0 = hypergeometricDistribution0.calculateNumericalVariance();
+        assertEquals(0, hypergeometricDistribution0.getNumberOfSuccesses());
+    }
+
+    @Test(timeout = 4000)
+    public void test1227() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
+        double double0 = hypergeometricDistribution0.calculateNumericalVariance();
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1327() throws Throwable {
+    public void test1328() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
             hypergeometricDistribution0 = new HypergeometricDistribution(807, 807, 1880);
@@ -239,14 +247,14 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test1428() throws Throwable {
+    public void test1429() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         double double0 = hypergeometricDistribution0.getNumericalVariance();
         assertEquals(47.58413228006463, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1529() throws Throwable {
+    public void test1530() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister(6722166367014452318L);
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
@@ -261,58 +269,51 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test1630() throws Throwable {
+    public void test1631() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
         double double0 = hypergeometricDistribution0.getNumericalMean();
         assertEquals(474.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1731() throws Throwable {
+    public void test1732() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
         int int0 = hypergeometricDistribution0.getPopulationSize();
         assertEquals(474.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1732() throws Throwable {
+    public void test1733() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
         int int0 = hypergeometricDistribution0.getPopulationSize();
         assertEquals(474, int0);
     }
 
     @Test(timeout = 4000)
-    public void test1833() throws Throwable {
+    public void test1834() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
         assertEquals(1395, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
-    public void test1834() throws Throwable {
+    public void test1835() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
         assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1835() throws Throwable {
+    public void test1836() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
         assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
-    public void test1836() throws Throwable {
+    public void test1837() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getNumberOfSuccesses();
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1937() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
-        int int0 = hypergeometricDistribution0.getSupportLowerBound();
         assertEquals(0, int0);
     }
 
@@ -320,71 +321,70 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     public void test1938() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSupportLowerBound();
-        assertEquals(1395, hypergeometricDistribution0.getSampleSize());
+        assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
     public void test1939() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSupportLowerBound();
-        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(1395, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
     public void test1940() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSupportLowerBound();
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
-    public void test2041() throws Throwable {
+    public void test1941() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
-        int int0 = hypergeometricDistribution0.getSampleSize();
-        assertEquals(1395, int0);
+        int int0 = hypergeometricDistribution0.getSupportLowerBound();
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
     public void test2042() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSampleSize();
-        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(1395, int0);
     }
 
     @Test(timeout = 4000)
     public void test2043() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
         int int0 = hypergeometricDistribution0.getSampleSize();
-        assertEquals(0, hypergeometricDistribution0.getNumberOfSuccesses());
+        assertEquals(1395, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
-    public void test2144() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
-        int int0 = hypergeometricDistribution0.getSupportUpperBound();
-        assertEquals(446.35752212389383, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    public void test2044() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1395, 0, 1395);
+        int int0 = hypergeometricDistribution0.getSampleSize();
+        assertEquals(0, hypergeometricDistribution0.getNumberOfSuccesses());
     }
 
     @Test(timeout = 4000)
     public void test2145() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         int int0 = hypergeometricDistribution0.getSupportUpperBound();
+        assertEquals(446.35752212389383, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test2146() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
+        int int0 = hypergeometricDistribution0.getSupportUpperBound();
         assertEquals(568, int0);
     }
 
     @Test(timeout = 4000)
-    public void test2246() throws Throwable {
+    public void test2247() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability(458);
         assertEquals(0.0529983853060436, double0, 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test2347() throws Throwable {
-        Well1024a well1024a0 = new Well1024a();
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
-        double double0 = hypergeometricDistribution0.upperCumulativeProbability((-2040));
-        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
@@ -392,7 +392,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability((-2040));
-        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
@@ -400,7 +400,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability((-2040));
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
@@ -408,15 +408,15 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability((-2040));
-        assertEquals(1.0, double0, 0.01);
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2451() throws Throwable {
+    public void test2351() throws Throwable {
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
-        double double0 = hypergeometricDistribution0.upperCumulativeProbability(835);
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        double double0 = hypergeometricDistribution0.upperCumulativeProbability((-2040));
+        assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -424,7 +424,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability(835);
-        assertEquals(0.0, double0, 0.01);
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -432,7 +432,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability(835);
-        assertEquals(835, hypergeometricDistribution0.getSampleSize());
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -440,14 +440,14 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.upperCumulativeProbability(835);
-        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
-    public void test2555() throws Throwable {
+    public void test2455() throws Throwable {
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
-        double double0 = hypergeometricDistribution0.probability(835);
+        double double0 = hypergeometricDistribution0.upperCumulativeProbability(835);
         assertEquals(835, hypergeometricDistribution0.getPopulationSize());
     }
 
@@ -456,7 +456,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.probability(835);
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
@@ -464,7 +464,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.probability(835);
-        assertEquals(0.0, double0, 0.01);
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -472,14 +472,14 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.probability(835);
-        assertEquals(835, hypergeometricDistribution0.getSampleSize());
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2659() throws Throwable {
+    public void test2559() throws Throwable {
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
-        double double0 = hypergeometricDistribution0.probability((-1892));
+        double double0 = hypergeometricDistribution0.probability(835);
         assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
@@ -488,7 +488,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.probability((-1892));
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
@@ -496,7 +496,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.probability((-1892));
-        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -504,15 +504,15 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.probability((-1892));
-        assertEquals(0.0, double0, 0.01);
+        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
-    public void test2763() throws Throwable {
+    public void test2663() throws Throwable {
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
-        double double0 = hypergeometricDistribution0.cumulativeProbability((-24));
-        assertEquals(835, hypergeometricDistribution0.getSampleSize());
+        double double0 = hypergeometricDistribution0.probability((-1892));
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -520,7 +520,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.cumulativeProbability((-24));
-        assertEquals(0.0, double0, 0.01);
+        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
@@ -528,7 +528,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.cumulativeProbability((-24));
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -536,11 +536,19 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         Well1024a well1024a0 = new Well1024a();
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         double double0 = hypergeometricDistribution0.cumulativeProbability((-24));
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test2767() throws Throwable {
+        Well1024a well1024a0 = new Well1024a();
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
+        double double0 = hypergeometricDistribution0.cumulativeProbability((-24));
         assertEquals(835, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
-    public void test2867() throws Throwable {
+    public void test2868() throws Throwable {
         Well1024a well1024a0 = new Well1024a(3952L);
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
@@ -555,7 +563,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test2968() throws Throwable {
+    public void test2969() throws Throwable {
         Well44497a well44497a0 = new Well44497a(860);
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
@@ -570,7 +578,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test3069() throws Throwable {
+    public void test3070() throws Throwable {
         Well512a well512a0 = new Well512a();
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
@@ -585,7 +593,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test3170() throws Throwable {
+    public void test3171() throws Throwable {
         Well44497b well44497b0 = new Well44497b(178);
         HypergeometricDistribution hypergeometricDistribution0 = null;
         try {
@@ -600,26 +608,17 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
     }
 
     @Test(timeout = 4000)
-    public void test3271() throws Throwable {
+    public void test3272() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
         boolean boolean0 = hypergeometricDistribution0.isSupportConnected();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3272() throws Throwable {
+    public void test3273() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(474, 474, 474);
         boolean boolean0 = hypergeometricDistribution0.isSupportConnected();
         assertEquals(474.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test3373() throws Throwable {
-        Well1024a well1024a0 = new Well1024a();
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
-        hypergeometricDistribution0.sample();
-        double double0 = hypergeometricDistribution0.getNumericalVariance();
-        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
@@ -628,7 +627,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         hypergeometricDistribution0.sample();
         double double0 = hypergeometricDistribution0.getNumericalVariance();
-        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
+        assertEquals(835, hypergeometricDistribution0.getSampleSize());
     }
 
     @Test(timeout = 4000)
@@ -637,7 +636,7 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         hypergeometricDistribution0.sample();
         double double0 = hypergeometricDistribution0.getNumericalVariance();
-        assertEquals(0.0, double0, 0.01);
+        assertEquals(835, hypergeometricDistribution0.getPopulationSize());
     }
 
     @Test(timeout = 4000)
@@ -646,25 +645,34 @@ public class HypergeometricDistribution_ESTest extends HypergeometricDistributio
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
         hypergeometricDistribution0.sample();
         double double0 = hypergeometricDistribution0.getNumericalVariance();
-        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
+        assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3477() throws Throwable {
-        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
-        double double0 = hypergeometricDistribution0.cumulativeProbability(1130);
-        assertEquals(446.35752212389383, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    public void test3377() throws Throwable {
+        Well1024a well1024a0 = new Well1024a();
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(well1024a0, 835, 0, 835);
+        hypergeometricDistribution0.sample();
+        double double0 = hypergeometricDistribution0.getNumericalVariance();
+        assertEquals(0.0, hypergeometricDistribution0.getNumericalMean(), 0.01);
     }
 
     @Test(timeout = 4000)
     public void test3478() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         double double0 = hypergeometricDistribution0.cumulativeProbability(1130);
+        assertEquals(446.35752212389383, hypergeometricDistribution0.getNumericalMean(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test3479() throws Throwable {
+        HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
+        double double0 = hypergeometricDistribution0.cumulativeProbability(1130);
         assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3579() throws Throwable {
+    public void test3580() throws Throwable {
         HypergeometricDistribution hypergeometricDistribution0 = new HypergeometricDistribution(1130, 888, 568);
         double double0 = hypergeometricDistribution0.calculateNumericalVariance();
         assertEquals(47.58413228006463, double0, 0.01);

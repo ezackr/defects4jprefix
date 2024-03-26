@@ -132,7 +132,34 @@ public class AbstractCommandLineRunner_ESTest extends AbstractCommandLineRunner_
     }
 
     @Test(timeout = 4000)
-    public void test1814() throws Throwable {
+    public void test1414() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("W;)sq!`2Ob[\"");
+        Compiler compiler0 = new Compiler();
+        AbstractCommandLineRunner.writeOutput(mockPrintStream0, compiler0, "W;)sq!`2Ob[\"", "W;)sq!`2Ob[\"", "3R}\"#GIfQ.");
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("u;");
+        Compiler compiler0 = new Compiler();
+        AbstractCommandLineRunner.writeOutput(mockPrintStream0, compiler0, "u;", "Bad --externs flag. ", ".");
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("{");
+        Compiler compiler0 = new Compiler();
+        AbstractCommandLineRunner.writeOutput(mockPrintStream0, compiler0, "{", "{", "{");
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("TYPE_BOOL");
+        AbstractCommandLineRunner.writeOutput(mockPrintStream0, (Compiler) null, "TYPE_BOOL", "TYPE_BOOL", "TYPE_BOOL");
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         String[] stringArray0 = new String[0];
         CommandLineRunner commandLineRunner0 = new CommandLineRunner(stringArray0);
         Compiler compiler0 = new Compiler();
@@ -144,7 +171,7 @@ public class AbstractCommandLineRunner_ESTest extends AbstractCommandLineRunner_
     }
 
     @Test(timeout = 4000)
-    public void test1915() throws Throwable {
+    public void test1919() throws Throwable {
         String[] stringArray0 = new String[0];
         CommandLineRunner commandLineRunner0 = new CommandLineRunner(stringArray0);
         Compiler compiler0 = new Compiler();
@@ -156,7 +183,7 @@ public class AbstractCommandLineRunner_ESTest extends AbstractCommandLineRunner_
     }
 
     @Test(timeout = 4000)
-    public void test2016() throws Throwable {
+    public void test2020() throws Throwable {
         Vector<String> vector0 = new Vector<String>();
         vector0.add("");
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -164,7 +191,7 @@ public class AbstractCommandLineRunner_ESTest extends AbstractCommandLineRunner_
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test2121() throws Throwable {
         List<String> list0 = ResourceBundle.Control.FORMAT_CLASS;
         CompilerOptions compilerOptions0 = new CompilerOptions();
         AbstractCommandLineRunner.createDefineReplacements(list0, compilerOptions0);

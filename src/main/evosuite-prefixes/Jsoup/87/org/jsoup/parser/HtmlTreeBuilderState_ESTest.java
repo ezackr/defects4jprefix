@@ -14,4 +14,9 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class HtmlTreeBuilderState_ESTest extends HtmlTreeBuilderState_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        HtmlTreeBuilderState.Constants htmlTreeBuilderState_Constants0 = new HtmlTreeBuilderState.Constants();
+    }
 }

@@ -135,4 +135,9 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
         String string0 = Entities.escape("sfr", document_OutputSettings1);
         assertEquals("sfr", string0);
     }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        Entities entities0 = new Entities();
+    }
 }

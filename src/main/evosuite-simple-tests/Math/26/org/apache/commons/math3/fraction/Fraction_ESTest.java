@@ -1233,70 +1233,76 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test85142() throws Throwable {
-        Fraction fraction0 = new Fraction(1);
-        int int0 = fraction0.intValue();
-        assertEquals(1, int0);
+    public void test84142() throws Throwable {
+        Fraction fraction0 = Fraction.TWO_QUARTERS;
+        fraction0.hashCode();
     }
 
     @Test(timeout = 4000)
     public void test85143() throws Throwable {
         Fraction fraction0 = new Fraction(1);
         int int0 = fraction0.intValue();
-        assertEquals(1, fraction0.getDenominator());
+        assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test86144() throws Throwable {
-        Fraction fraction0 = Fraction.TWO_QUARTERS;
-        long long0 = fraction0.longValue();
-        assertEquals(0.5F, fraction0.floatValue(), 0.01F);
+    public void test85144() throws Throwable {
+        Fraction fraction0 = new Fraction(1);
+        int int0 = fraction0.intValue();
+        assertEquals(1, fraction0.getDenominator());
     }
 
     @Test(timeout = 4000)
     public void test86145() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         long long0 = fraction0.longValue();
-        assertEquals(0L, long0);
+        assertEquals(0.5F, fraction0.floatValue(), 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test87146() throws Throwable {
-        Fraction fraction0 = new Fraction((-4313.770396564076));
-        Fraction fraction1 = fraction0.reciprocal();
-        assertEquals((-2.3181576E-4F), fraction1.floatValue(), 0.01F);
+    public void test86146() throws Throwable {
+        Fraction fraction0 = Fraction.TWO_QUARTERS;
+        long long0 = fraction0.longValue();
+        assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
     public void test87147() throws Throwable {
         Fraction fraction0 = new Fraction((-4313.770396564076));
         Fraction fraction1 = fraction0.reciprocal();
+        assertEquals((-2.3181576E-4F), fraction1.floatValue(), 0.01F);
+    }
+
+    @Test(timeout = 4000)
+    public void test87148() throws Throwable {
+        Fraction fraction0 = new Fraction((-4313.770396564076));
+        Fraction fraction1 = fraction0.reciprocal();
         assertEquals((-331), fraction1.getNumerator());
     }
 
     @Test(timeout = 4000)
-    public void test88148() throws Throwable {
+    public void test88149() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         FractionField fractionField0 = fraction0.TWO_THIRDS.getField();
         assertNotNull(fractionField0);
     }
 
     @Test(timeout = 4000)
-    public void test89149() throws Throwable {
+    public void test89150() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         Fraction fraction1 = fraction0.ONE_HALF.subtract(fraction0);
         assertEquals(1, fraction1.getDenominator());
     }
 
     @Test(timeout = 4000)
-    public void test89150() throws Throwable {
+    public void test89151() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         Fraction fraction1 = fraction0.ONE_HALF.subtract(fraction0);
         assertEquals(0.0, fraction1.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test90151() throws Throwable {
+    public void test90152() throws Throwable {
         Fraction fraction0 = Fraction.ONE;
         int int0 = fraction0.getDenominator();
         assertEquals(1, int0);

@@ -370,18 +370,23 @@ public class NumberInput_ESTest extends NumberInput_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6867() throws Throwable {
+    public void test6767() throws Throwable {
+        NumberInput numberInput0 = new NumberInput();
+    }
+
+    @Test(timeout = 4000)
+    public void test6868() throws Throwable {
         NumberInput.parseBigDecimal("w#c)d f}r[Td");
     }
 
     @Test(timeout = 4000)
-    public void test6968() throws Throwable {
+    public void test6969() throws Throwable {
         char[] charArray0 = new char[3];
         NumberInput.parseLong(charArray0, 0, (-1));
     }
 
     @Test(timeout = 4000)
-    public void test7069() throws Throwable {
+    public void test7070() throws Throwable {
         char[] charArray0 = new char[5];
         NumberInput.parseBigDecimal(charArray0);
     }

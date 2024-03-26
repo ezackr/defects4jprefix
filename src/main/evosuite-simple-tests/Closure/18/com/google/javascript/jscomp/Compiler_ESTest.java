@@ -987,7 +987,17 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07279() throws Throwable {
+    public void test07179() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Vector<SourceFile> vector0 = new Vector<SourceFile>();
+        CompilerOptions compilerOptions0 = new CompilerOptions();
+        compiler0.compile((List<SourceFile>) vector0, (List<SourceFile>) vector0, compilerOptions0);
+        InlineProperties inlineProperties0 = new InlineProperties(compiler0);
+        TypedScopeCreator typedScopeCreator0 = new TypedScopeCreator(compiler0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07280() throws Throwable {
         Compiler compiler0 = new Compiler();
         LinkedList<SourceFile> linkedList0 = new LinkedList<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -998,7 +1008,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07380() throws Throwable {
+    public void test07381() throws Throwable {
         Compiler compiler0 = new Compiler();
         LinkedList<SourceFile> linkedList0 = new LinkedList<SourceFile>();
         CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
@@ -1008,7 +1018,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07481() throws Throwable {
+    public void test07482() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("M+cS}@$n{0u@t@EE");
         compiler0.parseTestCode("M+cS}@$n{0u@t@EE");
@@ -1016,21 +1026,21 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07582() throws Throwable {
+    public void test07583() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         Compiler.CodeBuilder compiler_CodeBuilder1 = compiler_CodeBuilder0.append("JS property assignments:\n");
         assertSame(compiler_CodeBuilder1, compiler_CodeBuilder0);
     }
 
     @Test(timeout = 4000)
-    public void test07683() throws Throwable {
+    public void test07684() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         boolean boolean0 = compiler_CodeBuilder0.endsWith("variables, functions, and arguments cannot be deleted in ES5 strict mode");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07784() throws Throwable {
+    public void test07785() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         compiler_CodeBuilder0.append("com.google.javascript.jscomp.CheckMissingGetCssName");
         Compiler.CodeBuilder compiler_CodeBuilder1 = compiler_CodeBuilder0.append("com.google.javascript.jscomp.CheckMissingGetCssName");
@@ -1039,7 +1049,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07885() throws Throwable {
+    public void test07886() throws Throwable {
         Compiler.CodeBuilder compiler_CodeBuilder0 = new Compiler.CodeBuilder();
         compiler_CodeBuilder0.append("com.google.javascript.jscomp.CheckMissingGetCssName");
         Compiler.CodeBuilder compiler_CodeBuilder1 = compiler_CodeBuilder0.append("js/%s.js");
@@ -1048,7 +1058,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07986() throws Throwable {
+    public void test07987() throws Throwable {
         Compiler compiler0 = new Compiler();
         Vector<SourceFile> vector0 = new Vector<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -1059,7 +1069,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08087() throws Throwable {
+    public void test08088() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("*pJ?d%<~l");
         boolean boolean0 = compiler0.isInliningForbidden();
@@ -1067,7 +1077,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08088() throws Throwable {
+    public void test08089() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("*pJ?d%<~l");
         boolean boolean0 = compiler0.isInliningForbidden();
@@ -1075,13 +1085,13 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08189() throws Throwable {
+    public void test08190() throws Throwable {
         Compiler compiler0 = new Compiler();
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test08190() throws Throwable {
+    public void test08191() throws Throwable {
         Compiler compiler0 = new Compiler();
         Vector<SourceFile> vector0 = new Vector<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -1091,7 +1101,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08291() throws Throwable {
+    public void test08292() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
         CompilerOptions.LanguageMode compilerOptions_LanguageMode0 = CompilerOptions.LanguageMode.ECMASCRIPT5;
@@ -1110,7 +1120,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08292() throws Throwable {
+    public void test08293() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = compiler0.newCompilerOptions();
         CompilerOptions.LanguageMode compilerOptions_LanguageMode0 = CompilerOptions.LanguageMode.ECMASCRIPT5;
@@ -1130,7 +1140,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08393() throws Throwable {
+    public void test08394() throws Throwable {
         Compiler compiler0 = new Compiler();
         SourceFile sourceFile0 = SourceFile.fromFile("fk");
         Vector<SourceFile> vector0 = new Vector<SourceFile>();
@@ -1144,7 +1154,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08494() throws Throwable {
+    public void test08495() throws Throwable {
         Compiler compiler0 = new Compiler();
         // Undeclared exception!
         try {
@@ -1161,7 +1171,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08595() throws Throwable {
+    public void test08596() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("JSC_BASE_CLASS_ERROR");
         // Undeclared exception!
@@ -1173,14 +1183,14 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08696() throws Throwable {
+    public void test08697() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getSourceRegion((String) null, 8506);
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test08797() throws Throwable {
+    public void test08798() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("*pJ?d%<~l");
         LinkedList<SourceFile> linkedList0 = new LinkedList<SourceFile>();
@@ -1190,7 +1200,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08898() throws Throwable {
+    public void test08899() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromCode("*pJ?g%~l", ":rb[Ps+]^DnBZdH.ui");
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
@@ -1200,7 +1210,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08899() throws Throwable {
+    public void test088100() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSSourceFile jSSourceFile0 = JSSourceFile.fromCode("*pJ?g%~l", ":rb[Ps+]^DnBZdH.ui");
         JSSourceFile[] jSSourceFileArray0 = new JSSourceFile[0];
@@ -1210,14 +1220,14 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089100() throws Throwable {
+    public void test089101() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getSourceRegion((String) null, (-1));
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test090101() throws Throwable {
+    public void test090102() throws Throwable {
         SourceFile sourceFile0 = SourceFile.fromFile("4k");
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("4k");
@@ -1228,7 +1238,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091102() throws Throwable {
+    public void test091103() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSModule jSModule0 = new JSModule("com.google.javascript.rhino.head.gen.");
         // Undeclared exception!
@@ -1244,7 +1254,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092103() throws Throwable {
+    public void test092104() throws Throwable {
         Compiler compiler0 = new Compiler();
         LinkedList<SourceFile> linkedList0 = new LinkedList<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -1262,7 +1272,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093104() throws Throwable {
+    public void test093105() throws Throwable {
         Compiler compiler0 = new Compiler();
         Stack<SourceFile> stack0 = new Stack<SourceFile>();
         LinkedList<JSModule> linkedList0 = new LinkedList<JSModule>();
@@ -1281,7 +1291,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test094105() throws Throwable {
+    public void test094106() throws Throwable {
         Compiler compiler0 = new Compiler();
         JSModule jSModule0 = new JSModule("com.google.javascript.rhino.head.gen.");
         JSSourceFile jSSourceFile0 = JSSourceFile.fromFile("computeCFG");
@@ -1299,20 +1309,20 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095106() throws Throwable {
+    public void test095107() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.getAstDotGraph();
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test096107() throws Throwable {
+    public void test096108() throws Throwable {
         Compiler compiler0 = new Compiler();
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test096108() throws Throwable {
+    public void test096109() throws Throwable {
         Compiler compiler0 = new Compiler();
         Vector<SourceFile> vector0 = new Vector<SourceFile>();
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -1322,7 +1332,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097109() throws Throwable {
+    public void test097110() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("*pJ?d%<~l");
         compiler0.getErrorManager();
@@ -1330,21 +1340,21 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098110() throws Throwable {
+    public void test098111() throws Throwable {
         Compiler compiler0 = new Compiler();
         ErrorManager errorManager0 = compiler0.getErrorManager();
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test098111() throws Throwable {
+    public void test098112() throws Throwable {
         Compiler compiler0 = new Compiler();
         ErrorManager errorManager0 = compiler0.getErrorManager();
         assertNotNull(errorManager0);
     }
 
     @Test(timeout = 4000)
-    public void test099112() throws Throwable {
+    public void test099113() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("PassConfigs must eventually delegate to the DefaultPassConfig");
         TreeMap<Scope.Var, ReferenceCollectingCallback.ReferenceCollection> treeMap0 = new TreeMap<Scope.Var, ReferenceCollectingCallback.ReferenceCollection>();
@@ -1361,7 +1371,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100113() throws Throwable {
+    public void test100114() throws Throwable {
         Compiler compiler0 = new Compiler((PrintStream) null);
         TreeMap<Scope.Var, ReferenceCollectingCallback.ReferenceCollection> treeMap0 = new TreeMap<Scope.Var, ReferenceCollectingCallback.ReferenceCollection>();
         Node node0 = Node.newString("Root module has no inputs");
@@ -1378,7 +1388,7 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101114() throws Throwable {
+    public void test101115() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         LinkedList<SourceFile> linkedList0 = new LinkedList<SourceFile>();
@@ -1389,20 +1399,20 @@ public class Compiler_ESTest extends Compiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102115() throws Throwable {
+    public void test102116() throws Throwable {
         Compiler compiler0 = new Compiler();
         assertEquals(0.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test102116() throws Throwable {
+    public void test102117() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.setProgress(68.4);
         assertEquals(1.0, compiler0.getProgress(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test103117() throws Throwable {
+    public void test103118() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.setProgress((-1.0));
         assertEquals(0.0, compiler0.getProgress(), 0.01);

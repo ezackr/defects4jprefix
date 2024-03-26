@@ -646,13 +646,6 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05291() throws Throwable {
-        Fraction fraction0 = Fraction.ONE_QUARTER;
-        Fraction fraction1 = fraction0.invert();
-        String string0 = fraction1.toProperString();
-    }
-
-    @Test(timeout = 4000)
     public void test05392() throws Throwable {
         Fraction fraction0 = Fraction.ONE_FIFTH;
         String string0 = fraction0.toProperString();
@@ -1131,12 +1124,6 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test095157() throws Throwable {
-        Fraction fraction0 = Fraction.getFraction((-1), 0, 3);
-        String string0 = fraction0.toProperString();
-    }
-
-    @Test(timeout = 4000)
-    public void test095158() throws Throwable {
         Fraction fraction0 = Fraction.getFraction((-1), 0, 3);
         String string0 = fraction0.toProperString();
     }

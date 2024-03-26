@@ -22,10 +22,34 @@ import org.junit.runner.RunWith;
 public class FlowSensitiveInlineVariables_ESTest extends FlowSensitiveInlineVariables_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        FlowSensitiveInlineVariables flowSensitiveInlineVariables0 = new FlowSensitiveInlineVariables(compiler0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, flowSensitiveInlineVariables0);
+        flowSensitiveInlineVariables0.enterScope(nodeTraversal0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         Compiler compiler0 = new Compiler();
         FlowSensitiveInlineVariables flowSensitiveInlineVariables0 = new FlowSensitiveInlineVariables(compiler0);
         Node node0 = compiler0.externsRoot;
         flowSensitiveInlineVariables0.process((Node) null, (Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
+        FlowSensitiveInlineVariables flowSensitiveInlineVariables0 = new FlowSensitiveInlineVariables((AbstractCompiler) null);
+        NodeTraversal nodeTraversal0 = new NodeTraversal((AbstractCompiler) null, flowSensitiveInlineVariables0, (ScopeCreator) null);
+        flowSensitiveInlineVariables0.exitScope(nodeTraversal0);
+    }
+
+    @Test(timeout = 4000)
+    public void test33() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        FlowSensitiveInlineVariables flowSensitiveInlineVariables0 = new FlowSensitiveInlineVariables(compiler0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, flowSensitiveInlineVariables0);
+        Node node0 = Node.newNumber(1281.0);
+        flowSensitiveInlineVariables0.visit(nodeTraversal0, node0, node0);
     }
 }

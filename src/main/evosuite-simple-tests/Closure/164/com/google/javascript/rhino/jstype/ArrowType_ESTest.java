@@ -371,7 +371,16 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2028() throws Throwable {
+    public void test1928() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
+        arrowType0.returnType = null;
+        arrowType0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2029() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
@@ -381,7 +390,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2129() throws Throwable {
+    public void test2130() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         Node node0 = Node.newString("Not declared as a constructor", 0, 1);
@@ -392,7 +401,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2230() throws Throwable {
+    public void test2231() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         Node node0 = Node.newString("Not declared as a constructor", 0, 1);
@@ -403,7 +412,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2331() throws Throwable {
+    public void test2332() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         Node node0 = Node.newString("Not declared as a constructor", 0, 1);
@@ -423,7 +432,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2432() throws Throwable {
+    public void test2433() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         JSType[] jSTypeArray0 = new JSType[1];
@@ -434,7 +443,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2533() throws Throwable {
+    public void test2534() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "W2JoTp4|YTwH");
@@ -442,7 +451,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2534() throws Throwable {
+    public void test2535() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "W2JoTp4|YTwH");
@@ -455,7 +464,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2635() throws Throwable {
+    public void test2636() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
         boolean boolean0 = arrowType0.hasUnknownParamsOrReturn();
@@ -463,7 +472,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2736() throws Throwable {
+    public void test2737() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "W2JoTp4|YTwH");
@@ -473,7 +482,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2737() throws Throwable {
+    public void test2738() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "W2JoTp4|YTwH");

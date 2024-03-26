@@ -583,7 +583,17 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4241() throws Throwable {
+    public void test4141() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        char[] charArray0 = new char[4];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 2, (Reader) null, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 2, 1, false);
+        readerBasedJsonParser0.nextValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test4242() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, "'\u0529' (code 1321 / 0x529)", false);
         StringReader stringReader0 = new StringReader("'\u0529' (code 1321 / 0x529)");
@@ -595,7 +605,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4342() throws Throwable {
+    public void test4343() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
         IOContext iOContext0 = new IOContext(bufferRecycler0, dataInputStream0, true);
@@ -609,7 +619,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4443() throws Throwable {
+    public void test4444() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[8];
@@ -624,7 +634,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4544() throws Throwable {
+    public void test4545() throws Throwable {
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
         byte[] byteArray0 = new byte[4];
@@ -637,7 +647,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4645() throws Throwable {
+    public void test4646() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
         IOContext iOContext0 = new IOContext(bufferRecycler0, dataInputStream0, true);
@@ -650,7 +660,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4746() throws Throwable {
+    public void test4747() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Byte byte0 = new Byte((byte) 92);
         IOContext iOContext0 = new IOContext(bufferRecycler0, byte0, true);
@@ -662,7 +672,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4847() throws Throwable {
+    public void test4848() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
         IOContext iOContext0 = new IOContext(bufferRecycler0, dataInputStream0, true);
@@ -675,7 +685,21 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5048() throws Throwable {
+    public void test4949() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        FileDescriptor fileDescriptor0 = new FileDescriptor();
+        MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
+        DataInputStream dataInputStream0 = new DataInputStream(mockFileInputStream0);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, dataInputStream0, true);
+        StringReader stringReader0 = new StringReader(">-oENL`");
+        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 3, stringReader0, objectCodec0, charsToNameCanonicalizer0);
+        readerBasedJsonParser0.getCurrentToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, "", true);
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
@@ -697,7 +721,18 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5249() throws Throwable {
+    public void test5151() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        StringReader stringReader0 = new StringReader("=fS/>*3)!w");
+        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 0, stringReader0, objectCodec0, charsToNameCanonicalizer0);
+        readerBasedJsonParser0.getLastClearedToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
         // Undeclared exception!
         try {
             ParserMinimalBase._ascii((byte[]) null);

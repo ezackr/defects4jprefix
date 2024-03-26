@@ -119,18 +119,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0014() throws Throwable {
-        Document document0 = Document.createShell("rBarr");
-        Element element0 = document0.appendChild(document0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0015() throws Throwable {
-        Document document0 = Document.createShell("rBarr");
-        Element element0 = document0.appendChild(document0);
-    }
-
-    @Test(timeout = 4000)
     public void test0016() throws Throwable {
         Document document0 = Document.createShell("rBarr");
         Element element0 = document0.appendChild(document0);
@@ -202,13 +190,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0025() throws Throwable {
-        Document document0 = Document.createShell("rBarr");
-        Element element0 = document0.appendChild(document0);
-        document0.setParentNode(element0);
-    }
-
-    @Test(timeout = 4000)
     public void test0026() throws Throwable {
         Document document0 = Document.createShell("rBarr");
         Element element0 = document0.appendChild(document0);
@@ -246,14 +227,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0030() throws Throwable {
-        Document document0 = Document.createShell("rBarr");
-        Element element0 = document0.appendChild(document0);
-        document0.setParentNode(element0);
-        Node node0 = document0.nextSibling();
-    }
-
-    @Test(timeout = 4000)
-    public void test0031() throws Throwable {
         Document document0 = Document.createShell("rBarr");
         Element element0 = document0.appendChild(document0);
         document0.setParentNode(element0);
@@ -894,12 +867,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05116() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        String string0 = document0.toString();
-    }
-
-    @Test(timeout = 4000)
     public void test06117() throws Throwable {
         Document document0 = new Document("\n");
         document0.nodeName();
@@ -1160,38 +1127,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06136() throws Throwable {
-        Document document0 = new Document("\n");
-        Node[] nodeArray0 = new Node[8];
-        nodeArray0[0] = (Node) document0;
-        nodeArray0[1] = (Node) document0;
-        nodeArray0[2] = (Node) document0;
-        nodeArray0[3] = (Node) document0;
-        nodeArray0[4] = (Node) document0;
-        nodeArray0[5] = (Node) document0;
-        nodeArray0[6] = (Node) document0;
-        nodeArray0[7] = (Node) document0;
-        document0.addChildren(nodeArray0);
-        Element element0 = document0.prependText("UnderBar");
-    }
-
-    @Test(timeout = 4000)
-    public void test06137() throws Throwable {
-        Document document0 = new Document("\n");
-        Node[] nodeArray0 = new Node[8];
-        nodeArray0[0] = (Node) document0;
-        nodeArray0[1] = (Node) document0;
-        nodeArray0[2] = (Node) document0;
-        nodeArray0[3] = (Node) document0;
-        nodeArray0[4] = (Node) document0;
-        nodeArray0[5] = (Node) document0;
-        nodeArray0[6] = (Node) document0;
-        nodeArray0[7] = (Node) document0;
-        document0.addChildren(nodeArray0);
-        Element element0 = document0.prependText("UnderBar");
-    }
-
-    @Test(timeout = 4000)
     public void test06138() throws Throwable {
         Document document0 = new Document("\n");
         Node[] nodeArray0 = new Node[8];
@@ -1353,141 +1288,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06147() throws Throwable {
-        Document document0 = new Document("\n");
-        Node[] nodeArray0 = new Node[8];
-        nodeArray0[0] = (Node) document0;
-        nodeArray0[1] = (Node) document0;
-        nodeArray0[2] = (Node) document0;
-        nodeArray0[3] = (Node) document0;
-        nodeArray0[4] = (Node) document0;
-        nodeArray0[5] = (Node) document0;
-        nodeArray0[6] = (Node) document0;
-        nodeArray0[7] = (Node) document0;
-        document0.addChildren(nodeArray0);
-        Element element0 = document0.prependText("UnderBar");
-        Integer integer0 = element0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test06148() throws Throwable {
-        Document document0 = new Document("\n");
-        Node[] nodeArray0 = new Node[8];
-        nodeArray0[0] = (Node) document0;
-        nodeArray0[1] = (Node) document0;
-        nodeArray0[2] = (Node) document0;
-        nodeArray0[3] = (Node) document0;
-        nodeArray0[4] = (Node) document0;
-        nodeArray0[5] = (Node) document0;
-        nodeArray0[6] = (Node) document0;
-        nodeArray0[7] = (Node) document0;
-        document0.addChildren(nodeArray0);
-        Element element0 = document0.prependText("UnderBar");
-        Integer integer0 = element0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test06149() throws Throwable {
-        Document document0 = new Document("\n");
-        Node[] nodeArray0 = new Node[8];
-        nodeArray0[0] = (Node) document0;
-        nodeArray0[1] = (Node) document0;
-        nodeArray0[2] = (Node) document0;
-        nodeArray0[3] = (Node) document0;
-        nodeArray0[4] = (Node) document0;
-        nodeArray0[5] = (Node) document0;
-        nodeArray0[6] = (Node) document0;
-        nodeArray0[7] = (Node) document0;
-        document0.addChildren(nodeArray0);
-        Element element0 = document0.prependText("UnderBar");
-        Integer integer0 = element0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test07150() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test07151() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test07152() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test07153() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test07154() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-    }
-
-    @Test(timeout = 4000)
-    public void test07155() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test07156() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test07157() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test07158() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test07159() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        element0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test07160() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        element0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test07161() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        element0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test07162() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-    }
-
-    @Test(timeout = 4000)
     public void test07163() throws Throwable {
         Document document0 = Document.createShell("N&|u[bpkZ");
         Element element0 = document0.head();
@@ -1583,20 +1383,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07175() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        Element element1 = (Element) element0.parent();
-    }
-
-    @Test(timeout = 4000)
-    public void test07176() throws Throwable {
-        Document document0 = Document.createShell("N&|u[bpkZ");
-        Element element0 = document0.head();
-        Element element1 = (Element) element0.parent();
-    }
-
-    @Test(timeout = 4000)
     public void test08177() throws Throwable {
         Document document0 = new Document("I");
         document0.isBlock();
@@ -1660,12 +1446,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08187() throws Throwable {
-        Document document0 = new Document("I");
-        String string0 = document0.outerHtml();
-    }
-
-    @Test(timeout = 4000)
     public void test09188() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("Gcy", "Gcy");
         textNode0.siblingIndex();
@@ -1713,41 +1493,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     public void test09195() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("Gcy", "Gcy");
         String string0 = textNode0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test09196() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("Gcy", "Gcy");
-        String string0 = textNode0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test10197() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test10198() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test10199() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test10200() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test10201() throws Throwable {
-        Document document0 = new Document("\n");
     }
 
     @Test(timeout = 4000)
@@ -1848,12 +1593,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11217() throws Throwable {
-        Document document0 = Document.createShell("qT");
-        Node[] nodeArray0 = document0.childNodesAsArray();
-    }
-
-    @Test(timeout = 4000)
     public void test12218() throws Throwable {
         Document document0 = Document.createShell("");
         document0.baseUri();
@@ -1945,18 +1684,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12232() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.empty();
-    }
-
-    @Test(timeout = 4000)
-    public void test12233() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.empty();
-    }
-
-    @Test(timeout = 4000)
     public void test12234() throws Throwable {
         Document document0 = Document.createShell("");
         Document document1 = (Document) document0.empty();
@@ -2028,27 +1755,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12243() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.empty();
-        Node[] nodeArray0 = document1.childNodesAsArray();
-    }
-
-    @Test(timeout = 4000)
-    public void test12244() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.empty();
-        Node[] nodeArray0 = document1.childNodesAsArray();
-    }
-
-    @Test(timeout = 4000)
-    public void test12245() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.empty();
-        Node[] nodeArray0 = document1.childNodesAsArray();
-    }
-
-    @Test(timeout = 4000)
     public void test13246() throws Throwable {
         DataNode dataNode0 = DataNode.createFromEncoded("<6!e,t$\u0000GcZ", "~jSq;6d4g");
         dataNode0.siblingIndex();
@@ -2094,12 +1800,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test13253() throws Throwable {
-        DataNode dataNode0 = DataNode.createFromEncoded("<6!e,t$\u0000GcZ", "~jSq;6d4g");
-        String string0 = dataNode0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test13254() throws Throwable {
         DataNode dataNode0 = DataNode.createFromEncoded("<6!e,t$\u0000GcZ", "~jSq;6d4g");
         String string0 = dataNode0.baseUri();
     }
@@ -2278,35 +1978,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "body", attributes0);
         element0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test15280() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test15281() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test15282() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test15283() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test15284() throws Throwable {
-        Document document0 = new Document("\n");
     }
 
     @Test(timeout = 4000)
@@ -2769,68 +2440,10 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test25351() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test25352() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test25353() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test25354() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test25355() throws Throwable {
-        Document document0 = new Document("\n");
-    }
-
-    @Test(timeout = 4000)
     public void test25356() throws Throwable {
         Document document0 = new Document("\n");
         Node[] nodeArray0 = new Node[8];
         document0.addChildren(nodeArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test26357() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test26358() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test26359() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test26360() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test26361() throws Throwable {
-        Document document0 = new Document("\n");
     }
 
     @Test(timeout = 4000)
@@ -2978,35 +2591,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test30383() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test30384() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test30385() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test30386() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test30387() throws Throwable {
-        Document document0 = Document.createShell("");
-    }
-
-    @Test(timeout = 4000)
     public void test30388() throws Throwable {
         Document document0 = Document.createShell("");
         Document document1 = (Document) document0.val("");
@@ -3064,18 +2648,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test30396() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.val("");
-    }
-
-    @Test(timeout = 4000)
-    public void test30397() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.val("");
-    }
-
-    @Test(timeout = 4000)
-    public void test30398() throws Throwable {
         Document document0 = Document.createShell("");
         Document document1 = (Document) document0.val("");
     }
@@ -3146,13 +2718,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test30407() throws Throwable {
-        Document document0 = Document.createShell("");
-        Document document1 = (Document) document0.val("");
-        document1.setSiblingIndex((-757));
-    }
-
-    @Test(timeout = 4000)
-    public void test30408() throws Throwable {
         Document document0 = Document.createShell("");
         Document document1 = (Document) document0.val("");
         document1.setSiblingIndex((-757));
@@ -3344,12 +2909,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test32433() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "p");
-        String string0 = textNode0.absUrl("o0p`!2HQ]lZ?5+IBxk");
-    }
-
-    @Test(timeout = 4000)
-    public void test32434() throws Throwable {
         TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "p");
         String string0 = textNode0.absUrl("o0p`!2HQ]lZ?5+IBxk");
     }
@@ -3608,20 +3167,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test34471() throws Throwable {
-        Document document0 = Document.createShell("':$]p'");
-        Element element0 = document0.child(0);
-        Document document1 = element0.ownerDocument();
-    }
-
-    @Test(timeout = 4000)
-    public void test34472() throws Throwable {
-        Document document0 = Document.createShell("':$]p'");
-        Element element0 = document0.child(0);
-        Document document1 = element0.ownerDocument();
-    }
-
-    @Test(timeout = 4000)
     public void test35473() throws Throwable {
         DataNode dataNode0 = new DataNode("e]g#n6OYM|$wDE", "<>WEwfsF,KM=V;xm");
         dataNode0.siblingIndex();
@@ -3763,47 +3308,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36495() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        Document document1 = document0.ownerDocument();
-    }
-
-    @Test(timeout = 4000)
-    public void test36496() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        Document document1 = document0.ownerDocument();
-    }
-
-    @Test(timeout = 4000)
-    public void test37497() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test37498() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test37499() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test37500() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test37501() throws Throwable {
-        Document document0 = Document.createShell("))W");
-    }
-
-    @Test(timeout = 4000)
     public void test37502() throws Throwable {
         Document document0 = Document.createShell("))W");
         String string0 = document0.absUrl(",xte{(ib:\"DA");
@@ -3833,12 +3337,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test37506() throws Throwable {
-        Document document0 = Document.createShell("))W");
-        String string0 = document0.absUrl(",xte{(ib:\"DA");
-    }
-
-    @Test(timeout = 4000)
-    public void test37507() throws Throwable {
         Document document0 = Document.createShell("))W");
         String string0 = document0.absUrl(",xte{(ib:\"DA");
     }
@@ -3907,41 +3405,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test38518() throws Throwable {
-        Document document0 = Document.createShell("6:~ui3O|e\"s>;cq");
-        String string0 = document0.attr("6:~ui3O|e\"s>;cq");
-    }
-
-    @Test(timeout = 4000)
-    public void test39519() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test39520() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test39521() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test39522() throws Throwable {
-        Document document0 = new Document("\n");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test39523() throws Throwable {
-        Document document0 = new Document("\n");
-    }
-
-    @Test(timeout = 4000)
     public void test39524() throws Throwable {
         Document document0 = new Document("\n");
         document0.attr("abs:");
@@ -3995,41 +3458,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     public void test40532() throws Throwable {
         Comment comment0 = new Comment("h$0[~>RQv}cn4&@*", "html");
         Integer integer0 = comment0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test40533() throws Throwable {
-        Comment comment0 = new Comment("h$0[~>RQv}cn4&@*", "html");
-        Integer integer0 = comment0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test41534() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test41535() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test41536() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test41537() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test41538() throws Throwable {
-        Document document0 = Document.createShell("");
     }
 
     @Test(timeout = 4000)
@@ -4145,13 +3573,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test41554() throws Throwable {
-        Document document0 = Document.createShell("");
-        Element element0 = document0.head();
-        String string0 = element0.outerHtml();
-    }
-
-    @Test(timeout = 4000)
-    public void test41555() throws Throwable {
         Document document0 = Document.createShell("");
         Element element0 = document0.head();
         String string0 = element0.outerHtml();
@@ -4278,47 +3699,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43575() throws Throwable {
-        Document document0 = Document.createShell("]");
-        Document document1 = (Document) document0.removeAttr("]");
-    }
-
-    @Test(timeout = 4000)
-    public void test43576() throws Throwable {
-        Document document0 = Document.createShell("]");
-        Document document1 = (Document) document0.removeAttr("]");
-    }
-
-    @Test(timeout = 4000)
-    public void test44577() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test44578() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test44579() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test44580() throws Throwable {
-        Document document0 = Document.createShell("");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test44581() throws Throwable {
-        Document document0 = Document.createShell("");
-    }
-
-    @Test(timeout = 4000)
     public void test44582() throws Throwable {
         Document document0 = Document.createShell("");
         String string0 = document0.baseUri();
@@ -4350,35 +3730,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     public void test44586() throws Throwable {
         Document document0 = Document.createShell("");
         String string0 = document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test44587() throws Throwable {
-        Document document0 = Document.createShell("");
-        String string0 = document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test45588() throws Throwable {
-        DataNode dataNode0 = new DataNode("wkA^K6+6F=ez-JsEx", "?YNP2 ");
-        dataNode0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test45589() throws Throwable {
-        DataNode dataNode0 = new DataNode("wkA^K6+6F=ez-JsEx", "?YNP2 ");
-        dataNode0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test45590() throws Throwable {
-        DataNode dataNode0 = new DataNode("wkA^K6+6F=ez-JsEx", "?YNP2 ");
-        dataNode0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test45591() throws Throwable {
-        DataNode dataNode0 = new DataNode("wkA^K6+6F=ez-JsEx", "?YNP2 ");
     }
 
     @Test(timeout = 4000)
@@ -4565,18 +3916,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test48621() throws Throwable {
-        DataNode dataNode0 = DataNode.createFromEncoded("3jfH", "@ OyqWxy8");
-        Node node0 = dataNode0.attr("s(t", "3jfH");
-    }
-
-    @Test(timeout = 4000)
-    public void test48622() throws Throwable {
-        DataNode dataNode0 = DataNode.createFromEncoded("3jfH", "@ OyqWxy8");
-        Node node0 = dataNode0.attr("s(t", "3jfH");
-    }
-
-    @Test(timeout = 4000)
     public void test49623() throws Throwable {
         Document document0 = Document.createShell("kd)e\"|B/wHW6");
         document0.siblingIndex();
@@ -4637,35 +3976,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     public void test49632() throws Throwable {
         Document document0 = Document.createShell("kd)e\"|B/wHW6");
         boolean boolean0 = document0.hasAttr("");
-    }
-
-    @Test(timeout = 4000)
-    public void test50633() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test50634() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test50635() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test50636() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test50637() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
     }
 
     @Test(timeout = 4000)
@@ -4731,18 +4041,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test50647() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        Document document1 = document0.normalise();
-    }
-
-    @Test(timeout = 4000)
-    public void test50648() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        Document document1 = document0.normalise();
-    }
-
-    @Test(timeout = 4000)
     public void test50649() throws Throwable {
         Document document0 = new Document("/R&[^jW@`Wl");
         Document document1 = document0.normalise();
@@ -4776,20 +4074,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test50653() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        Document document1 = document0.normalise();
-        String string0 = document0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test50654() throws Throwable {
-        Document document0 = new Document("/R&[^jW@`Wl");
-        Document document1 = document0.normalise();
-        String string0 = document0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test50655() throws Throwable {
         Document document0 = new Document("/R&[^jW@`Wl");
         Document document1 = document0.normalise();
         String string0 = document0.toString();
@@ -4948,20 +4232,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test51677() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        Document document0 = new Document("@2vg");
-        Element element0 = document0.appendChild(textNode0);
-    }
-
-    @Test(timeout = 4000)
-    public void test51678() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        Document document0 = new Document("@2vg");
-        Element element0 = document0.appendChild(textNode0);
-    }
-
-    @Test(timeout = 4000)
     public void test51679() throws Throwable {
         TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
         Document document0 = new Document("@2vg");
@@ -4986,29 +4256,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
         Element element0 = document0.appendChild(textNode0);
         textNode0.hashCode();
         textNode0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test52682() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        textNode0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test52683() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        textNode0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test52684() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        textNode0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test52685() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
     }
 
     @Test(timeout = 4000)
@@ -5248,20 +4495,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test54720() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        Element element0 = document0.prependChild(textNode0);
-    }
-
-    @Test(timeout = 4000)
-    public void test54721() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        Element element0 = document0.prependChild(textNode0);
-    }
-
-    @Test(timeout = 4000)
     public void test54722() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
         Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
@@ -5369,37 +4602,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test54734() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        Element element0 = document0.prependChild(textNode0);
-        textNode0.replaceWith(element0);
-    }
-
-    @Test(timeout = 4000)
-    public void test55735() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        textNode0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test55736() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        textNode0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test55737() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-        textNode0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test55738() throws Throwable {
-        TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
-    }
-
-    @Test(timeout = 4000)
     public void test55739() throws Throwable {
         TextNode textNode0 = new TextNode("HBG<_5^tk'^*e'S'9", "");
         Document document0 = Document.createShell("6:~ui3O|e\"s>;cq");
@@ -5441,29 +4643,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test56745() throws Throwable {
-        Comment comment0 = new Comment("", "");
-        comment0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test56746() throws Throwable {
-        Comment comment0 = new Comment("", "");
-        comment0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test56747() throws Throwable {
-        Comment comment0 = new Comment("", "");
-        comment0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test56748() throws Throwable {
-        Comment comment0 = new Comment("", "");
-    }
-
-    @Test(timeout = 4000)
     public void test56749() throws Throwable {
         Comment comment0 = new Comment("", "");
         comment0.remove();
@@ -5496,63 +4675,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     public void test57754() throws Throwable {
         Comment comment0 = new Comment("", "7DBE^zJ1dd");
         comment0.siblingNodes();
-    }
-
-    @Test(timeout = 4000)
-    public void test58755() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        textNode0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test58756() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        textNode0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test58757() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        textNode0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test58758() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-    }
-
-    @Test(timeout = 4000)
-    public void test58759() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        document0.nodeName();
-    }
-
-    @Test(timeout = 4000)
-    public void test58760() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        document0.baseUri();
-    }
-
-    @Test(timeout = 4000)
-    public void test58761() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        document0.siblingIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test58762() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
-        document0.isBlock();
-    }
-
-    @Test(timeout = 4000)
-    public void test58763() throws Throwable {
-        TextNode textNode0 = TextNode.createFromEncoded("HBG<_5^tk'^*e'S'9", "boxUl");
-        Document document0 = Document.createShell("(g9mZ.4]5x3IIV06W96");
     }
 
     @Test(timeout = 4000)

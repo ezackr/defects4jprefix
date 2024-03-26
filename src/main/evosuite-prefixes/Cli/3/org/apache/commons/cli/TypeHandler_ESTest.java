@@ -39,30 +39,35 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test44() throws Throwable {
+        TypeHandler typeHandler0 = new TypeHandler();
+    }
+
+    @Test(timeout = 4000)
+    public void test55() throws Throwable {
         URL uRL0 = TypeHandler.createURL("lDb?p$J4@s");
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         File file0 = TypeHandler.createFile("");
         file0.isFile();
     }
 
     @Test(timeout = 4000)
-    public void test76() throws Throwable {
+    public void test77() throws Throwable {
         Class<Object> class0 = Object.class;
         Object object0 = TypeHandler.createValue(",9W5+1J}b!&8[", class0);
     }
 
     @Test(timeout = 4000)
-    public void test87() throws Throwable {
+    public void test88() throws Throwable {
         Class<String> class0 = String.class;
         Object object0 = TypeHandler.createValue("B.", class0);
     }
 
     @Test(timeout = 4000)
-    public void test98() throws Throwable {
+    public void test99() throws Throwable {
         Date date0 = TypeHandler.createDate("Jt!^");
     }
 }

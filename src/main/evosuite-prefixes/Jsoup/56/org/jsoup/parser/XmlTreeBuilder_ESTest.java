@@ -23,7 +23,13 @@ import org.junit.runner.RunWith;
 public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
+        xmlTreeBuilder0.parse("PK<!!F/EC", "PK<!!F/EC");
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         ParseSettings parseSettings0 = ParseSettings.htmlDefault;
         List<Node> list0 = xmlTreeBuilder0.parseFragment("CdataSection", "CdataSection", (ParseErrorList) null, parseSettings0);
@@ -31,14 +37,14 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.Doctype token_Doctype0 = new Token.Doctype();
         xmlTreeBuilder0.process(token_Doctype0);
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("colgroup", "colgroup");
         Token.StartTag token_StartTag0 = new Token.StartTag();
@@ -48,49 +54,49 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Document document0 = xmlTreeBuilder0.parse("<P% a$ne?tFiy/>d", "<P% a$ne?tFiy/>d");
         document0.childNodeSize();
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Document document0 = xmlTreeBuilder0.parse("<!--", "<!--");
         document0.isBlock();
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Document document0 = xmlTreeBuilder0.parse("<!", "<!");
         document0.baseUri();
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Document document0 = xmlTreeBuilder0.parse("jT: <?n&F$mcbjfk", "jT: <?n&F$mcbjfk");
         document0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Document document0 = xmlTreeBuilder0.parse("r<!YXKBj", "r<!YXKBj");
         document0.isBlock();
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("colgroup", "colgroup");
         boolean boolean0 = xmlTreeBuilder0.processEndTag("colgroup");
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("b<sefomn>", "b<sefomn>");
         boolean boolean0 = xmlTreeBuilder0.processEndTag("#document");

@@ -14,4 +14,9 @@ import org.mockito.internal.util.reflection.GenericMaster;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class GenericMaster_ESTest extends GenericMaster_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        GenericMaster genericMaster0 = new GenericMaster();
+    }
 }

@@ -149,7 +149,15 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1818() throws Throwable {
+        ZoneInfoCompiler zoneInfoCompiler0 = new ZoneInfoCompiler();
+        StringReader stringReader0 = new StringReader("\nFormat: ");
+        BufferedReader bufferedReader0 = new BufferedReader(stringReader0, 47);
+        zoneInfoCompiler0.parseDataFile(bufferedReader0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         ZoneInfoCompiler zoneInfoCompiler0 = new ZoneInfoCompiler();
         File file0 = MockFile.createTempFile("Mont>KhOfear: ", ")m)4=>MAYq@Lw]7");
         File[] fileArray0 = new File[1];
@@ -158,7 +166,7 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         ZoneInfoCompiler zoneInfoCompiler0 = new ZoneInfoCompiler();
         FileSystemHandling.shouldAllThrowIOExceptions();
         MockFile mockFile0 = new MockFile("E4kq\"mEi2kIZ?m(Zw#a", "Tho many time zon ids");
@@ -167,7 +175,7 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         ZoneInfoCompiler zoneInfoCompiler0 = new ZoneInfoCompiler();
         File[] fileArray0 = new File[0];
         Map<String, DateTimeZone> map0 = zoneInfoCompiler0.compile((File) null, fileArray0);
@@ -175,85 +183,85 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         ZoneInfoCompiler zoneInfoCompiler0 = new ZoneInfoCompiler();
         File file0 = MockFile.createTempFile("maximum", "co!");
         zoneInfoCompiler0.compile(file0, (File[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(3);
         boolean boolean0 = ZoneInfoCompiler.test("MonthOfYear: 1\nDayOfMonth: 1\nDayOfWeek: 0\nAdvanceDayOfWeek: false\nMillisOfDay: 0\nZoneChar: w\n", dateTimeZone0);
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('Q');
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('w');
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('u');
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('g');
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('U');
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('S');
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('W');
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3131() throws Throwable {
         char char0 = ZoneInfoCompiler.parseZoneChar('G');
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         ZoneInfoCompiler.parseTime("qJagA79?:");
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         int int0 = ZoneInfoCompiler.parseTime("-0L0K)xA");
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3434() throws Throwable {
         String string0 = ZoneInfoCompiler.parseOptional("");
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3535() throws Throwable {
         ZoneInfoCompiler.parseYear("zone", 83);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3636() throws Throwable {
         int int0 = ZoneInfoCompiler.parseYear("minimum", (-76));
     }
 
     @Test(timeout = 4000)
-    public void test3736() throws Throwable {
+    public void test3737() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         hashMap0.put("-*r* Error in ", dateTimeZone0);
@@ -262,24 +270,24 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test3837() throws Throwable {
+    public void test3838() throws Throwable {
         Chronology chronology0 = ZoneInfoCompiler.getLenientISOChronology();
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3839() throws Throwable {
         Chronology chronology0 = ZoneInfoCompiler.getLenientISOChronology();
         int int0 = ZoneInfoCompiler.parseTime("24,G0");
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3940() throws Throwable {
         ZoneInfoCompiler.DateTimeOfYear zoneInfoCompiler_DateTimeOfYear0 = ZoneInfoCompiler.getStartOfYear();
         ZoneInfoCompiler.DateTimeOfYear zoneInfoCompiler_DateTimeOfYear1 = ZoneInfoCompiler.getStartOfYear();
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4041() throws Throwable {
         String[] stringArray0 = new String[3];
         stringArray0[0] = "o";
         stringArray0[1] = "o";
@@ -288,17 +296,17 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4142() throws Throwable {
         ZoneInfoCompiler.parseDayOfWeek("MonthOfYear: 1\nDayOfMonth: 1\nDayOfWeek: 0\nAdvanceDayOfWeek: false\nMillisOfDay: 0\nZoneChar: w\n");
     }
 
     @Test(timeout = 4000)
-    public void test4242() throws Throwable {
+    public void test4243() throws Throwable {
         ZoneInfoCompiler.parseMonth("");
     }
 
     @Test(timeout = 4000)
-    public void test4343() throws Throwable {
+    public void test4344() throws Throwable {
         ZoneInfoCompiler zoneInfoCompiler0 = new ZoneInfoCompiler();
         MockFile mockFile0 = new MockFile("", "Too many time zone ids");
         File[] fileArray0 = new File[0];
@@ -307,15 +315,29 @@ public class ZoneInfoCompiler_ESTest extends ZoneInfoCompiler_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test4444() throws Throwable {
+    public void test4445() throws Throwable {
         String[] stringArray0 = new String[0];
         ZoneInfoCompiler.main(stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test4545() throws Throwable {
+    public void test4546() throws Throwable {
         StringTokenizer stringTokenizer0 = new StringTokenizer("2", "2", false);
         ZoneInfoCompiler.DateTimeOfYear zoneInfoCompiler_DateTimeOfYear0 = new ZoneInfoCompiler.DateTimeOfYear(stringTokenizer0);
         String string0 = zoneInfoCompiler_DateTimeOfYear0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test4647() throws Throwable {
+        ZoneInfoCompiler.DateTimeOfYear zoneInfoCompiler_DateTimeOfYear0 = new ZoneInfoCompiler.DateTimeOfYear();
+        DateTimeZoneBuilder dateTimeZoneBuilder0 = new DateTimeZoneBuilder();
+        zoneInfoCompiler_DateTimeOfYear0.addRecurring(dateTimeZoneBuilder0, "", (-1194), 594, 2050);
+    }
+
+    @Test(timeout = 4000)
+    public void test4748() throws Throwable {
+        ZoneInfoCompiler.DateTimeOfYear zoneInfoCompiler_DateTimeOfYear0 = new ZoneInfoCompiler.DateTimeOfYear();
+        DateTimeZoneBuilder dateTimeZoneBuilder0 = new DateTimeZoneBuilder();
+        zoneInfoCompiler_DateTimeOfYear0.addCutover(dateTimeZoneBuilder0, 0);
     }
 }

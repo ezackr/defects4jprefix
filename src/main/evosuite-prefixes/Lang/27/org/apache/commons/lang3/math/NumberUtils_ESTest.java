@@ -941,11 +941,6 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test163164() throws Throwable {
-        Number number0 = NumberUtils.createNumber("4");
-    }
-
-    @Test(timeout = 4000)
     public void test164165() throws Throwable {
         NumberUtils.createNumber("Array cannot be empty.");
     }

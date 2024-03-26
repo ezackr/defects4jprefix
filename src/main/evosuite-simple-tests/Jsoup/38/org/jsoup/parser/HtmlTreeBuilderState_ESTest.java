@@ -20,4 +20,9 @@ public class HtmlTreeBuilderState_ESTest extends HtmlTreeBuilderState_ESTest_sca
         HtmlTreeBuilderState[] htmlTreeBuilderStateArray0 = HtmlTreeBuilderState.values();
         assertEquals(23, htmlTreeBuilderStateArray0.length);
     }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        HtmlTreeBuilderState.valueOf("AfterAfterFrameset");
+    }
 }

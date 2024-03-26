@@ -240,7 +240,25 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1718() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
+        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
+        JSType jSType0 = jSTypeRegistry0.createOptionalType(noResolvedType0);
+        jSType0.testForEquality(noResolvedType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1819() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
+        NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
+        JSType jSType0 = jSTypeRegistry0.createOptionalType(noObjectType0);
+        jSType0.testForEquality(noObjectType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1920() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -250,7 +268,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2021() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -260,7 +278,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2122() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "eM&");
@@ -271,7 +289,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2223() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         VoidType voidType0 = new VoidType(jSTypeRegistry0);
@@ -283,7 +301,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2324() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -293,7 +311,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2425() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         Stack<JSType> stack0 = new Stack<JSType>();
@@ -303,7 +321,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2526() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -314,7 +332,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2627() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, ",");
@@ -327,7 +345,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2728() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ArrayDeque<JSType> arrayDeque0 = new ArrayDeque<JSType>();
@@ -338,7 +356,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2829() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -348,7 +366,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2930() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -361,7 +379,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3031() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ArrayDeque<JSType> arrayDeque0 = new ArrayDeque<JSType>();
@@ -374,7 +392,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3132() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         ArrayDeque<JSType> arrayDeque0 = new ArrayDeque<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -384,7 +402,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3531() throws Throwable {
+    public void test3533() throws Throwable {
         StringType stringType0 = new StringType((JSTypeRegistry) null);
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) stringType0, (JSType) stringType0, (JSType) stringType0);
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, immutableList0);
@@ -393,7 +411,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3632() throws Throwable {
+    public void test3634() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -403,7 +421,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3733() throws Throwable {
+    public void test3735() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -413,7 +431,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3834() throws Throwable {
+    public void test3836() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -424,7 +442,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3835() throws Throwable {
+    public void test3837() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -435,7 +453,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3936() throws Throwable {
+    public void test3938() throws Throwable {
         StringType stringType0 = new StringType((JSTypeRegistry) null);
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) stringType0, (JSType) stringType0, (JSType) stringType0);
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, immutableList0);
@@ -444,7 +462,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4037() throws Throwable {
+    public void test4039() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -454,7 +472,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4138() throws Throwable {
+    public void test4140() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "eM&");
@@ -465,7 +483,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4239() throws Throwable {
+    public void test4241() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -475,7 +493,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4340() throws Throwable {
+    public void test4342() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, (String) null);
@@ -486,7 +504,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4441() throws Throwable {
+    public void test4443() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -497,7 +515,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4542() throws Throwable {
+    public void test4544() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -507,7 +525,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4643() throws Throwable {
+    public void test4645() throws Throwable {
         StringType stringType0 = new StringType((JSTypeRegistry) null);
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) stringType0, (JSType) stringType0, (JSType) stringType0);
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, immutableList0);
@@ -516,7 +534,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4744() throws Throwable {
+    public void test4746() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -526,7 +544,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4845() throws Throwable {
+    public void test4847() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         StringType stringType0 = new StringType(jSTypeRegistry0);
@@ -538,7 +556,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4946() throws Throwable {
+    public void test4948() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -548,7 +566,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5047() throws Throwable {
+    public void test5049() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -558,7 +576,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5148() throws Throwable {
+    public void test5150() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -570,7 +588,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5149() throws Throwable {
+    public void test5151() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -582,7 +600,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5250() throws Throwable {
+    public void test5252() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -592,7 +610,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5351() throws Throwable {
+    public void test5353() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ArrayDeque<JSType> arrayDeque0 = new ArrayDeque<JSType>();
@@ -616,7 +634,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5452() throws Throwable {
+    public void test5454() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -626,7 +644,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5553() throws Throwable {
+    public void test5555() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         ArrayDeque<JSType> arrayDeque0 = new ArrayDeque<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -636,7 +654,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5654() throws Throwable {
+    public void test5656() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -654,7 +672,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5755() throws Throwable {
+    public void test5757() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         ArrayDeque<JSType> arrayDeque0 = new ArrayDeque<JSType>();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -664,7 +682,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5856() throws Throwable {
+    public void test5858() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "eM&");
@@ -675,7 +693,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5957() throws Throwable {
+    public void test5959() throws Throwable {
         StringType stringType0 = new StringType((JSTypeRegistry) null);
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) stringType0, (JSType) stringType0, (JSType) stringType0);
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, immutableList0);
@@ -692,7 +710,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6058() throws Throwable {
+    public void test6060() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -704,7 +722,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6159() throws Throwable {
+    public void test6161() throws Throwable {
         StringType stringType0 = new StringType((JSTypeRegistry) null);
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) stringType0, (JSType) stringType0, (JSType) stringType0);
         UnionType unionType0 = new UnionType((JSTypeRegistry) null, immutableList0);
@@ -713,7 +731,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6260() throws Throwable {
+    public void test6262() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -723,7 +741,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6361() throws Throwable {
+    public void test6363() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, (String) null);

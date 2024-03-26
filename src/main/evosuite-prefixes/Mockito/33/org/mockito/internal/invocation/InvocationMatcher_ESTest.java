@@ -91,7 +91,17 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test066() throws Throwable {
+        MockitoMethod mockitoMethod0 = mock(MockitoMethod.class, new ViolatedAssumptionAnswer());
+        doReturn(true).when(mockitoMethod0).isVarArgs();
+        Object[] objectArray0 = new Object[7];
+        Invocation invocation0 = new Invocation((Object) null, mockitoMethod0, objectArray0, 4078, (RealMethod) null);
+        List<Matcher> list0 = (List<Matcher>) invocation0.argumentsToMatchers();
+        InvocationMatcher invocationMatcher0 = new InvocationMatcher(invocation0, list0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         Integer integer0 = new Integer(61);
         Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
         doReturn(integer0).when(invocation0).getMock();
@@ -106,7 +116,7 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         MockitoMethod mockitoMethod0 = mock(MockitoMethod.class, new ViolatedAssumptionAnswer());
         doReturn(true).when(mockitoMethod0).isVarArgs();
         Object[] objectArray0 = new Object[7];
@@ -117,14 +127,14 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Vector<Invocation> vector0 = new Vector<Invocation>();
         List<InvocationMatcher> list0 = InvocationMatcher.createFrom(vector0);
         list0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Vector<Invocation> vector0 = new Vector<Invocation>();
         vector0.add((Invocation) null);
         InvocationMatcher.createFrom(vector0);

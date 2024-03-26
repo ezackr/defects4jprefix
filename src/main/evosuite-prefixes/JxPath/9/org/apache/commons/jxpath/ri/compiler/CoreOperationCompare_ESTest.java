@@ -207,7 +207,20 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1213() throws Throwable {
+        Expression[] expressionArray0 = new Expression[9];
+        Constant constant0 = new Constant("i%P");
+        CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(constant0, constant0);
+        CoreFunction coreFunction0 = new CoreFunction(0, expressionArray0);
+        expressionArray0[2] = (Expression) coreFunction0;
+        CoreOperationUnion coreOperationUnion0 = new CoreOperationUnion(expressionArray0);
+        NameAttributeTest nameAttributeTest0 = new NameAttributeTest(coreOperationUnion0, coreOperationNotEqual0);
+        // Undeclared exception!
+        nameAttributeTest0.equal(coreFunction0, "i%P");
+    }
+
+    @Test(timeout = 4000)
+    public void test1314() throws Throwable {
         Double double0 = Expression.ZERO;
         Constant constant0 = new Constant(double0);
         CoreOperationDivide coreOperationDivide0 = new CoreOperationDivide(constant0, constant0);
@@ -223,7 +236,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1415() throws Throwable {
         Expression[] expressionArray0 = new Expression[5];
         Step[] stepArray0 = new Step[5];
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest((-1815));
@@ -238,7 +251,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1516() throws Throwable {
         Expression[] expressionArray0 = new Expression[9];
         Constant constant0 = new Constant("i%P");
         CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(constant0, constant0);
@@ -251,7 +264,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual((Expression) null, (Expression) null);
         Expression[] expressionArray0 = new Expression[2];
         Step[] stepArray0 = new Step[6];
@@ -265,7 +278,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1718() throws Throwable {
         Constant constant0 = new Constant("W.<9sEY^59\"n!r");
         CoreOperationEqual coreOperationEqual0 = new CoreOperationEqual(constant0, constant0);
         NameAttributeTest nameAttributeTest0 = new NameAttributeTest(coreOperationEqual0, coreOperationEqual0);
@@ -278,14 +291,14 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1819() throws Throwable {
         CoreOperationEqual coreOperationEqual0 = new CoreOperationEqual((Expression) null, (Expression) null);
         Object object0 = new Object();
         boolean boolean0 = coreOperationEqual0.equal((Object) null, object0);
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1920() throws Throwable {
         Expression[] expressionArray0 = new Expression[6];
         CoreFunction coreFunction0 = new CoreFunction(0, expressionArray0);
         CoreOperationOr coreOperationOr0 = new CoreOperationOr(expressionArray0);
@@ -296,7 +309,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2021() throws Throwable {
         Expression[] expressionArray0 = new Expression[4];
         CoreFunction coreFunction0 = new CoreFunction((-2134), expressionArray0);
         CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(coreFunction0, coreFunction0);
@@ -306,7 +319,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2122() throws Throwable {
         Expression[] expressionArray0 = new Expression[6];
         CoreFunction coreFunction0 = new CoreFunction(0, expressionArray0);
         expressionArray0[0] = (Expression) coreFunction0;
@@ -319,7 +332,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2223() throws Throwable {
         QName qName0 = new QName("G8;4l0Xqg");
         VariableReference variableReference0 = new VariableReference(qName0);
         NameAttributeTest nameAttributeTest0 = new NameAttributeTest(variableReference0, variableReference0);
@@ -332,23 +345,6 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
         BasicVariables basicVariables0 = new BasicVariables();
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
         coreOperationNotEqual0.equal(object0, variablePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2323() throws Throwable {
-        Expression[] expressionArray0 = new Expression[4];
-        CoreFunction coreFunction0 = new CoreFunction((-2134), expressionArray0);
-        CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(coreFunction0, coreFunction0);
-        CoreOperationUnion coreOperationUnion0 = new CoreOperationUnion(expressionArray0);
-        expressionArray0[3] = (Expression) coreOperationUnion0;
-        CoreOperationAnd coreOperationAnd0 = new CoreOperationAnd(expressionArray0);
-        NameAttributeTest nameAttributeTest0 = new NameAttributeTest(coreOperationAnd0, coreOperationNotEqual0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = new JXPathContextReferenceImpl((JXPathContext) null, expressionArray0[3], (Pointer) null);
-        EvalContext evalContext0 = jXPathContextReferenceImpl0.getAbsoluteRootContext();
-        Object object0 = new Object();
-        nameAttributeTest0.contains(evalContext0, object0);
-        InitialContext initialContext0 = new InitialContext(evalContext0);
-        evalContext0.getPosition();
     }
 
     @Test(timeout = 4000)
@@ -365,21 +361,24 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
         Object object0 = new Object();
         nameAttributeTest0.contains(evalContext0, object0);
         InitialContext initialContext0 = new InitialContext(evalContext0);
-        boolean boolean0 = coreOperationNotEqual0.findMatch(evalContext0, initialContext0);
+        evalContext0.getPosition();
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2325() throws Throwable {
         Expression[] expressionArray0 = new Expression[4];
         CoreFunction coreFunction0 = new CoreFunction((-2134), expressionArray0);
         CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(coreFunction0, coreFunction0);
         CoreOperationUnion coreOperationUnion0 = new CoreOperationUnion(expressionArray0);
         expressionArray0[3] = (Expression) coreOperationUnion0;
+        CoreOperationAnd coreOperationAnd0 = new CoreOperationAnd(expressionArray0);
+        NameAttributeTest nameAttributeTest0 = new NameAttributeTest(coreOperationAnd0, coreOperationNotEqual0);
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = new JXPathContextReferenceImpl((JXPathContext) null, expressionArray0[3], (Pointer) null);
         EvalContext evalContext0 = jXPathContextReferenceImpl0.getAbsoluteRootContext();
+        Object object0 = new Object();
+        nameAttributeTest0.contains(evalContext0, object0);
         InitialContext initialContext0 = new InitialContext(evalContext0);
         boolean boolean0 = coreOperationNotEqual0.findMatch(evalContext0, initialContext0);
-        initialContext0.getPosition();
     }
 
     @Test(timeout = 4000)
@@ -393,10 +392,24 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
         EvalContext evalContext0 = jXPathContextReferenceImpl0.getAbsoluteRootContext();
         InitialContext initialContext0 = new InitialContext(evalContext0);
         boolean boolean0 = coreOperationNotEqual0.findMatch(evalContext0, initialContext0);
+        initialContext0.getPosition();
     }
 
     @Test(timeout = 4000)
-    public void test2527() throws Throwable {
+    public void test2427() throws Throwable {
+        Expression[] expressionArray0 = new Expression[4];
+        CoreFunction coreFunction0 = new CoreFunction((-2134), expressionArray0);
+        CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(coreFunction0, coreFunction0);
+        CoreOperationUnion coreOperationUnion0 = new CoreOperationUnion(expressionArray0);
+        expressionArray0[3] = (Expression) coreOperationUnion0;
+        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = new JXPathContextReferenceImpl((JXPathContext) null, expressionArray0[3], (Pointer) null);
+        EvalContext evalContext0 = jXPathContextReferenceImpl0.getAbsoluteRootContext();
+        InitialContext initialContext0 = new InitialContext(evalContext0);
+        boolean boolean0 = coreOperationNotEqual0.findMatch(evalContext0, initialContext0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2528() throws Throwable {
         QName qName0 = new QName("G8;4l0Xqg");
         VariableReference variableReference0 = new VariableReference(qName0);
         NameAttributeTest nameAttributeTest0 = new NameAttributeTest(variableReference0, variableReference0);
@@ -410,7 +423,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2628() throws Throwable {
+    public void test2629() throws Throwable {
         QName qName0 = new QName("G8;4l0Xqg");
         VariableReference variableReference0 = new VariableReference(qName0);
         NameAttributeTest nameAttributeTest0 = new NameAttributeTest(variableReference0, variableReference0);
@@ -423,7 +436,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2729() throws Throwable {
+    public void test2730() throws Throwable {
         Constant constant0 = new Constant("W.<9sEY^59\"n!r");
         CoreOperationEqual coreOperationEqual0 = new CoreOperationEqual(constant0, constant0);
         NameAttributeTest nameAttributeTest0 = new NameAttributeTest(coreOperationEqual0, coreOperationEqual0);
@@ -431,7 +444,7 @@ public class CoreOperationCompare_ESTest extends CoreOperationCompare_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2831() throws Throwable {
         Constant constant0 = new Constant("");
         CoreOperationEqual coreOperationEqual0 = new CoreOperationEqual(constant0, constant0);
         CoreOperationNegate coreOperationNegate0 = new CoreOperationNegate(coreOperationEqual0);

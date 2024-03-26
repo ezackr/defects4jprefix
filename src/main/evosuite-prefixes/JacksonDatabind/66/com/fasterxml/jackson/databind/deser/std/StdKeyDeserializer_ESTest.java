@@ -89,13 +89,6 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test035() throws Throwable {
-        Class<Float> class0 = Float.class;
-        StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
-        Object object0 = stdKeyDeserializer0.deserializeKey("76", (DeserializationContext) null);
-    }
-
-    @Test(timeout = 4000)
     public void test046() throws Throwable {
         Class<Double> class0 = Double.TYPE;
         StdKeyDeserializer.StringKD stdKeyDeserializer_StringKD0 = StdKeyDeserializer.StringKD.forType(class0);
@@ -186,13 +179,6 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1417() throws Throwable {
-        Class<Boolean> class0 = Boolean.class;
-        StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
-        Object object0 = stdKeyDeserializer0.deserializeKey("false", (DeserializationContext) null);
-    }
-
-    @Test(timeout = 4000)
     public void test1518() throws Throwable {
         Class<Byte> class0 = Byte.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
@@ -206,21 +192,7 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1520() throws Throwable {
-        Class<Byte> class0 = Byte.class;
-        StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
-        Object object0 = stdKeyDeserializer0.deserializeKey("6", (DeserializationContext) null);
-    }
-
-    @Test(timeout = 4000)
     public void test1621() throws Throwable {
-        Class<Character> class0 = Character.class;
-        StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
-        Object object0 = stdKeyDeserializer0.deserializeKey("/", (DeserializationContext) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test1622() throws Throwable {
         Class<Character> class0 = Character.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         Object object0 = stdKeyDeserializer0.deserializeKey("/", (DeserializationContext) null);

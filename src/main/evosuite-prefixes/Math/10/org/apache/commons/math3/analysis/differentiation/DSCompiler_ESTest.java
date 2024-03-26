@@ -210,7 +210,23 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1313() throws Throwable {
+        DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
+        double[] doubleArray0 = new double[9];
+        doubleArray0[0] = (double) 0;
+        doubleArray0[1] = (double) 0;
+        doubleArray0[2] = (double) 0;
+        doubleArray0[3] = (double) 0;
+        doubleArray0[4] = (double) 0;
+        doubleArray0[5] = (double) 0;
+        doubleArray0[6] = 0.0;
+        doubleArray0[7] = (double) 0;
+        doubleArray0[8] = (double) 0;
+        dSCompiler0.pow(doubleArray0, 0, 2308, doubleArray0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(2, 2);
         double[] doubleArray0 = new double[0];
         double[] doubleArray1 = new double[9];
@@ -232,7 +248,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         int int0 = 0;
         int int1 = 731;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 731);
@@ -251,7 +267,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         int int0 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[5];
@@ -267,7 +283,15 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1717() throws Throwable {
+        int int0 = 4569;
+        int int1 = 0;
+        // Undeclared exception!
+        DSCompiler.getCompiler(4569, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         dSCompiler0.getPartialDerivativeOrders(0);
         double[] doubleArray0 = new double[3];
@@ -280,7 +304,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         int int0 = 906;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(906, 0);
@@ -290,7 +314,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         int int0 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[9];
@@ -307,7 +331,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 2);
         dSCompiler0.getPartialDerivativeOrders(0);
         double[] doubleArray0 = new double[2];
@@ -317,7 +341,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         int int0 = 0;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
@@ -328,7 +352,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         int int0 = 458;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(458, 0);
@@ -347,7 +371,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (double) 0;
@@ -360,7 +384,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(3, 3);
         double[] doubleArray0 = new double[2];
         doubleArray0[0] = (double) 3;
@@ -369,7 +393,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         int int0 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[5];
@@ -383,7 +407,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2725() throws Throwable {
+    public void test2727() throws Throwable {
         int int0 = 0;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
@@ -395,7 +419,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2826() throws Throwable {
+    public void test2828() throws Throwable {
         int int0 = 0;
         int int1 = 520;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 520);
@@ -413,7 +437,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2927() throws Throwable {
+    public void test2929() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = (double) 0;
@@ -426,7 +450,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3028() throws Throwable {
+    public void test3030() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[8];
         doubleArray0[0] = (double) 0;
@@ -450,7 +474,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3129() throws Throwable {
+    public void test3131() throws Throwable {
         int int0 = 0;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
@@ -460,7 +484,19 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3330() throws Throwable {
+    public void test3232() throws Throwable {
+        DSCompiler dSCompiler0 = DSCompiler.getCompiler(863, 0);
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = (double) 0;
+        doubleArray0[1] = 0.0;
+        doubleArray0[2] = (double) 0;
+        doubleArray0[3] = (double) 863;
+        doubleArray0[4] = (double) 0;
+        dSCompiler0.log(doubleArray0, 0, doubleArray0, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
         int int0 = 0;
         int int1 = 245;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 245);
@@ -475,7 +511,17 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3531() throws Throwable {
+    public void test3434() throws Throwable {
+        DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = (double) 0;
+        doubleArray0[1] = (double) 0;
+        doubleArray0[2] = (double) 0;
+        dSCompiler0.acos(doubleArray0, 0, doubleArray0, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
         int int0 = 649;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(649, 0);
@@ -486,7 +532,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3632() throws Throwable {
+    public void test3636() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         dSCompiler0.getSize();
         double[] doubleArray0 = new double[5];
@@ -499,7 +545,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3733() throws Throwable {
+    public void test3737() throws Throwable {
         int int0 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[0];
@@ -508,7 +554,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3834() throws Throwable {
+    public void test3838() throws Throwable {
         int int0 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(36, 0);
         double[] doubleArray0 = new double[6];
@@ -522,7 +568,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3935() throws Throwable {
+    public void test3939() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         dSCompiler0.getOrder();
         double[] doubleArray0 = new double[3];
@@ -536,13 +582,13 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4036() throws Throwable {
+    public void test4040() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(2038, 0);
         dSCompiler0.log10((double[]) null, 2038, (double[]) null, 0);
     }
 
     @Test(timeout = 4000)
-    public void test4137() throws Throwable {
+    public void test4141() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         int[] intArray0 = new int[8];
         intArray0[0] = 0;
@@ -557,19 +603,27 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4338() throws Throwable {
+    public void test4242() throws Throwable {
+        int int0 = 700;
+        int int1 = 1;
+        // Undeclared exception!
+        DSCompiler.getCompiler(700, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
         int int0 = 3029;
         DSCompiler.getCompiler(3029, (-5080));
     }
 
     @Test(timeout = 4000)
-    public void test4439() throws Throwable {
+    public void test4444() throws Throwable {
         int int0 = (-2289);
         DSCompiler.getCompiler((-2289), (-2289));
     }
 
     @Test(timeout = 4000)
-    public void test4540() throws Throwable {
+    public void test4545() throws Throwable {
         int int0 = 2512;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(2512, 0);
@@ -587,7 +641,21 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4741() throws Throwable {
+    public void test4646() throws Throwable {
+        DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
+        double[] doubleArray0 = new double[7];
+        doubleArray0[0] = (double) 0;
+        doubleArray0[1] = (double) 0;
+        doubleArray0[2] = (double) 0;
+        doubleArray0[3] = (double) 0;
+        doubleArray0[4] = (double) 0;
+        doubleArray0[5] = (double) 0;
+        doubleArray0[6] = 1270.0335;
+        dSCompiler0.tanh(doubleArray0, 0, doubleArray0, 2);
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         int[] intArray0 = new int[2];
         intArray0[0] = 0;
@@ -596,7 +664,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4842() throws Throwable {
+    public void test4848() throws Throwable {
         int int0 = 0;
         int int1 = 46;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 46);
@@ -610,7 +678,23 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5143() throws Throwable {
+    public void test4949() throws Throwable {
+        int int0 = 559;
+        int int1 = 686;
+        // Undeclared exception!
+        DSCompiler.getCompiler(559, 686);
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
+        int int0 = 526;
+        int int1 = 569;
+        // Undeclared exception!
+        DSCompiler.getCompiler(526, 569);
+    }
+
+    @Test(timeout = 4000)
+    public void test5151() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(328, 0);
         double[] doubleArray0 = new double[2];
         doubleArray0[0] = (double) 328;
@@ -619,7 +703,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5244() throws Throwable {
+    public void test5252() throws Throwable {
         int int0 = 707;
         int int1 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(707, 0);
@@ -637,7 +721,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5345() throws Throwable {
+    public void test5353() throws Throwable {
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 615);
         double[] doubleArray0 = new double[4];
         doubleArray0[0] = (double) 0;
@@ -648,7 +732,7 @@ public class DSCompiler_ESTest extends DSCompiler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5446() throws Throwable {
+    public void test5454() throws Throwable {
         int int0 = 0;
         DSCompiler dSCompiler0 = DSCompiler.getCompiler(0, 0);
         double[] doubleArray0 = new double[3];

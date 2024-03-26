@@ -3343,4 +3343,12 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
             verifyException("org.apache.commons.math.util.MathUtils", e);
         }
     }
+
+    @Test(timeout = 4000)
+    public void test35424() throws Throwable {
+        PegasusSolver pegasusSolver0 = new PegasusSolver();
+        Sinc sinc0 = new Sinc();
+        AllowedSolution allowedSolution0 = AllowedSolution.ABOVE_SIDE;
+        pegasusSolver0.solve(5, (UnivariateRealFunction) sinc0, 1.0E-6, 951.9258407496, 951.9258407496, allowedSolution0);
+    }
 }

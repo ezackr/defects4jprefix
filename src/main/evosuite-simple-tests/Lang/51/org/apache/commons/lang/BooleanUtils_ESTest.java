@@ -1065,13 +1065,18 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test127137() throws Throwable {
+    public void test126137() throws Throwable {
+        BooleanUtils booleanUtils0 = new BooleanUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test127138() throws Throwable {
         String string0 = BooleanUtils.toStringYesNo(false);
         assertEquals("no", string0);
     }
 
     @Test(timeout = 4000)
-    public void test128138() throws Throwable {
+    public void test128139() throws Throwable {
         String string0 = BooleanUtils.toStringYesNo((Boolean) null);
         assertNull(string0);
     }

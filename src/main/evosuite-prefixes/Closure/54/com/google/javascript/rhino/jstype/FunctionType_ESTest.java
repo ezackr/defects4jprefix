@@ -1040,7 +1040,15 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6495() throws Throwable {
+    public void test6395() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        FunctionType functionType0 = jSTypeRegistry0.createInterfaceType("Unknown class name", (Node) null);
+        functionType0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test6496() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         JSTypeNative jSTypeNative0 = JSTypeNative.FUNCTION_INSTANCE_TYPE;
@@ -1049,7 +1057,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6596() throws Throwable {
+    public void test6597() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, ":c");
@@ -1058,7 +1066,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6697() throws Throwable {
+    public void test6698() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         FunctionType functionType0 = FunctionType.forInterface(jSTypeRegistry0, "Not declared as a constructor", (Node) null);
@@ -1067,7 +1075,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6698() throws Throwable {
+    public void test6699() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         FunctionType functionType0 = FunctionType.forInterface(jSTypeRegistry0, "Not declared as a constructor", (Node) null);
@@ -1076,7 +1084,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6799() throws Throwable {
+    public void test67100() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         VoidType voidType0 = new VoidType(jSTypeRegistry0);
         JSType[] jSTypeArray0 = new JSType[1];
@@ -1087,7 +1095,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test68100() throws Throwable {
+    public void test68101() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         VoidType voidType0 = new VoidType(jSTypeRegistry0);
@@ -1100,7 +1108,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test69101() throws Throwable {
+    public void test69102() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         JSTypeNative jSTypeNative0 = JSTypeNative.U2U_CONSTRUCTOR_TYPE;
@@ -1110,7 +1118,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test70102() throws Throwable {
+    public void test70103() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         JSTypeNative jSTypeNative0 = JSTypeNative.RANGE_ERROR_TYPE;
@@ -1118,18 +1126,6 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
         IndexedType indexedType0 = new IndexedType(jSTypeRegistry0, objectType0, objectType0);
         indexedType0.isPropertyInExterns("Function");
         indexedType0.isNativeObjectType();
-    }
-
-    @Test(timeout = 4000)
-    public void test71103() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
-        JSType[] jSTypeArray0 = new JSType[0];
-        FunctionType functionType0 = jSTypeRegistry0.createFunctionTypeWithVarArgs((JSType) noResolvedType0, jSTypeArray0);
-        FunctionType functionType1 = jSTypeRegistry0.createFunctionTypeWithVarArgs((JSType) functionType0, jSTypeArray0);
-        functionType0.setPrototypeBasedOn(functionType1);
-        functionType1.hasInstanceType();
     }
 
     @Test(timeout = 4000)
@@ -1141,27 +1137,28 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
         FunctionType functionType0 = jSTypeRegistry0.createFunctionTypeWithVarArgs((JSType) noResolvedType0, jSTypeArray0);
         FunctionType functionType1 = jSTypeRegistry0.createFunctionTypeWithVarArgs((JSType) functionType0, jSTypeArray0);
         functionType0.setPrototypeBasedOn(functionType1);
+        functionType1.hasInstanceType();
+    }
+
+    @Test(timeout = 4000)
+    public void test71105() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
+        JSType[] jSTypeArray0 = new JSType[0];
+        FunctionType functionType0 = jSTypeRegistry0.createFunctionTypeWithVarArgs((JSType) noResolvedType0, jSTypeArray0);
+        FunctionType functionType1 = jSTypeRegistry0.createFunctionTypeWithVarArgs((JSType) functionType0, jSTypeArray0);
+        functionType0.setPrototypeBasedOn(functionType1);
         functionType1.hasCachedValues();
     }
 
     @Test(timeout = 4000)
-    public void test72105() throws Throwable {
+    public void test72106() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         JSTypeNative jSTypeNative0 = JSTypeNative.STRING_OBJECT_FUNCTION_TYPE;
         FunctionType functionType0 = jSTypeRegistry0.getNativeFunctionType(jSTypeNative0);
         boolean boolean0 = jSTypeRegistry0.resetImplicitPrototype(functionType0, functionType0);
-    }
-
-    @Test(timeout = 4000)
-    public void test73106() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Not declared as a constructor");
-        JSType jSType0 = JSType.getGreatestSubtype((JSType) errorFunctionType0, (JSType) noObjectType0);
-        boolean boolean0 = jSTypeRegistry0.resetImplicitPrototype(jSType0, errorFunctionType0);
-        errorFunctionType0.hasCachedValues();
     }
 
     @Test(timeout = 4000)
@@ -1172,10 +1169,21 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Not declared as a constructor");
         JSType jSType0 = JSType.getGreatestSubtype((JSType) errorFunctionType0, (JSType) noObjectType0);
         boolean boolean0 = jSTypeRegistry0.resetImplicitPrototype(jSType0, errorFunctionType0);
+        errorFunctionType0.hasCachedValues();
     }
 
     @Test(timeout = 4000)
-    public void test74108() throws Throwable {
+    public void test73108() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
+        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Not declared as a constructor");
+        JSType jSType0 = JSType.getGreatestSubtype((JSType) errorFunctionType0, (JSType) noObjectType0);
+        boolean boolean0 = jSTypeRegistry0.resetImplicitPrototype(jSType0, errorFunctionType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test74109() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NamedType namedType0 = new NamedType(jSTypeRegistry0, "new:", "aGD", (-1389), 2);
@@ -1190,7 +1198,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test75109() throws Throwable {
+    public void test75110() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         JSTypeNative jSTypeNative0 = JSTypeNative.OBJECT_FUNCTION_TYPE;
@@ -1201,22 +1209,12 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test76110() throws Throwable {
+    public void test76111() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         JSTypeNative jSTypeNative0 = JSTypeNative.FUNCTION_FUNCTION_TYPE;
         FunctionType functionType0 = jSTypeRegistry0.getNativeFunctionType(jSTypeNative0);
         String string0 = functionType0.toDebugHashCodeString();
-    }
-
-    @Test(timeout = 4000)
-    public void test77111() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "call");
-        JSType jSType0 = errorFunctionType0.getPropertyType("call");
-        String string0 = jSType0.toDebugHashCodeString();
-        errorFunctionType0.hasCachedValues();
     }
 
     @Test(timeout = 4000)
@@ -1226,10 +1224,20 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "call");
         JSType jSType0 = errorFunctionType0.getPropertyType("call");
         String string0 = jSType0.toDebugHashCodeString();
+        errorFunctionType0.hasCachedValues();
     }
 
     @Test(timeout = 4000)
-    public void test78113() throws Throwable {
+    public void test77113() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "call");
+        JSType jSType0 = errorFunctionType0.getPropertyType("call");
+        String string0 = jSType0.toDebugHashCodeString();
+    }
+
+    @Test(timeout = 4000)
+    public void test78114() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         FunctionType functionType0 = jSTypeRegistry0.createInterfaceType("Unknown class name", (Node) null);
@@ -1237,7 +1245,7 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test79114() throws Throwable {
+    public void test79115() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         noResolvedType0.toDebugHashCodeString();

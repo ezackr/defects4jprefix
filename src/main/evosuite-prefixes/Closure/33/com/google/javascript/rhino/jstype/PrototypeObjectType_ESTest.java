@@ -751,19 +751,6 @@ public class PrototypeObjectType_ESTest extends PrototypeObjectType_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3668() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        NumberType numberType0 = new NumberType(jSTypeRegistry0);
-        Node node0 = Node.newString("com.google.javascript.jscomp.SemanticReverseAbstractInterpreter$RestrictByTrueInstanceOfResultVisitor", 0, 0);
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(numberType0, node0);
-        hashMap0.putIfAbsent("Not declared as a constructor", recordTypeBuilder_RecordProperty0);
-        RecordType recordType0 = jSTypeRegistry0.createRecordType(hashMap0);
-        String string0 = recordType0.toStringHelper(true);
-    }
-
-    @Test(timeout = 4000)
     public void test3769() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);

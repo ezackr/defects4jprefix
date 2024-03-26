@@ -250,12 +250,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
-        byte[] byteArray0 = new byte[28];
-        int int0 = TarUtils.formatOctalBytes(24L, byteArray0, (byte) 0, 8);
-    }
-
-    @Test(timeout = 4000)
     public void test3840() throws Throwable {
         byte[] byteArray0 = new byte[28];
         int int0 = TarUtils.formatOctalBytes(24L, byteArray0, (byte) 0, 8);
@@ -264,12 +258,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test3941() throws Throwable {
-        byte[] byteArray0 = new byte[8];
-        int int0 = TarUtils.formatCheckSumOctalBytes(0L, byteArray0, (byte) 3, (byte) 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3942() throws Throwable {
         byte[] byteArray0 = new byte[8];
         int int0 = TarUtils.formatCheckSumOctalBytes(0L, byteArray0, (byte) 3, (byte) 0);
     }

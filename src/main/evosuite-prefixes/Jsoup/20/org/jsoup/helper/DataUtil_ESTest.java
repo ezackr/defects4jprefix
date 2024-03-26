@@ -69,25 +69,33 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test044() throws Throwable {
+        ByteBuffer byteBuffer0 = ByteBuffer.allocate(9834);
+        Parser parser0 = Parser.xmlParser();
+        // Undeclared exception!
+        DataUtil.parseByteData(byteBuffer0, (String) null, "iy4MO", parser0);
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         ByteBuffer byteBuffer0 = ByteBuffer.allocateDirect(1270);
         DataUtil.parseByteData(byteBuffer0, "DGv", (String) null, (Parser) null);
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         ByteBuffer byteBuffer0 = ByteBuffer.allocate(0);
         DataUtil.parseByteData(byteBuffer0, "cZ<", "cZ<", (Parser) null);
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Parser parser0 = Parser.htmlParser();
         DataUtil.parseByteData((ByteBuffer) null, (String) null, (String) null, parser0);
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         byte[] byteArray0 = new byte[5];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 131072, 0);
         ByteBuffer byteBuffer0 = DataUtil.readToByteBuffer(byteArrayInputStream0);
@@ -96,7 +104,7 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         File file0 = MockFile.createTempFile("\"uL]>WwZ)Ve", "\"uL]>WwZ)Ve");
         MockFileInputStream mockFileInputStream0 = new MockFileInputStream(file0);
         Parser parser0 = Parser.xmlParser();
@@ -104,13 +112,13 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Parser parser0 = Parser.htmlParser();
         DataUtil.load((InputStream) null, "acronym", "acronym", parser0);
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Enumeration<PushbackInputStream> enumeration0 = (Enumeration<PushbackInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
         doReturn(false).when(enumeration0).hasMoreElements();
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
@@ -120,7 +128,7 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         byte[] byteArray0 = new byte[8];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-60), (byte) 45);
         Parser parser0 = Parser.xmlParser();
@@ -128,21 +136,21 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         Parser parser0 = Parser.xmlParser();
         DataUtil.load((InputStream) pipedInputStream0, "l%KuX':e", "Tb=0.jI'", parser0);
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         byte[] byteArray0 = new byte[8];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 0);
         DataUtil.load((InputStream) byteArrayInputStream0, "param", "!cw?O'");
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         byte[] byteArray0 = new byte[0];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
@@ -150,7 +158,7 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         byte[] byteArray0 = new byte[0];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         DataInputStream dataInputStream0 = new DataInputStream(byteArrayInputStream0);
@@ -159,41 +167,41 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         DataUtil.load((InputStream) pipedInputStream0, (String) null, "");
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         File file0 = MockFile.createTempFile("meta[http-equiv=content-type], meta[charset]", "o");
         DataUtil.load(file0, "\",>tv)7", "[%s^=%s]");
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         File file0 = MockFile.createTempFile("J^bQ? uQNA!jS", "J^bQ? uQNA!jS");
         DataUtil.load(file0, "", "S_5");
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         MockFile mockFile0 = new MockFile("(?i)\bcharset=s*\"?([^s;\"]*)");
         DataUtil.load((File) mockFile0, "(?i)\bcharset=s*\"?([^s;\"]*)", "");
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = DataUtil.getCharsetFromContentType((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = DataUtil.getCharsetFromContentType("");
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         Document document0 = DataUtil.load((InputStream) byteArrayInputStream0, (String) null, "VO;h9!Ubi*B");
@@ -201,31 +209,31 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         File file0 = MockFile.createTempFile("?DDX4fCsL(]", "UTF-8");
         Document document0 = DataUtil.load(file0, "UTF-8", "TU<]{!@.9<s7G");
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2425() throws Throwable {
         File file0 = MockFile.createTempFile("?DDX4fCsL(]", "UTF-8");
         Document document0 = DataUtil.load(file0, "UTF-8", "TU<]{!@.9<s7G");
         document0.baseUri();
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2526() throws Throwable {
         File file0 = MockFile.createTempFile("?DDX4fCsL(]", (String) null);
         DataUtil.load(file0, "x", "TU<]{!@.9<s7G");
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2627() throws Throwable {
         DataUtil.load((File) null, "", "");
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2728() throws Throwable {
         Enumeration<InputStream> enumeration0 = (Enumeration<InputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
         doReturn(false).when(enumeration0).hasMoreElements();
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
@@ -235,7 +243,7 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2828() throws Throwable {
+    public void test2829() throws Throwable {
         DataUtil.load((InputStream) null, (String) null, "");
     }
 }

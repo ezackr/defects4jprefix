@@ -14,4 +14,31 @@ import org.mockito.internal.matchers.Equality;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class Equality_ESTest extends Equality_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        Object object0 = new Object();
+        Equality.areEqual(object0, object0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        Equality equality0 = new Equality();
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
+        Equality.areEqual((Object) null, (Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test33() throws Throwable {
+        Object object0 = new Object();
+        Equality.areEqual((Object) null, object0);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
+        Equality.areEqual("", (Object) null);
+    }
 }

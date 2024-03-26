@@ -314,86 +314,87 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1141() throws Throwable {
+    public void test1041() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        MockPrintWriter mockPrintWriter0 = new MockPrintWriter("arg");
+        Options options0 = new Options();
+        // Undeclared exception!
+        helpFormatter0.printHelp((PrintWriter) mockPrintWriter0, 1, "-", "-", options0, 1, 1, "usage: ");
+    }
+
+    @Test(timeout = 4000)
+    public void test1142() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
-    public void test1142() throws Throwable {
+    public void test1143() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setDescPadding(1);
         assertEquals(1, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
-    public void test1243() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getNewLine();
-        assertEquals(74, helpFormatter0.defaultWidth);
-    }
-
-    @Test(timeout = 4000)
     public void test1244() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test1245() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals("arg", helpFormatter0.getArgName());
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
     public void test1246() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        assertEquals("arg", helpFormatter0.getArgName());
     }
 
     @Test(timeout = 4000)
     public void test1247() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1248() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals("\n", string0);
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1249() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals("-", helpFormatter0.getOptPrefix());
+        assertEquals("\n", string0);
     }
 
     @Test(timeout = 4000)
     public void test1250() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getNewLine();
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals("-", helpFormatter0.getOptPrefix());
     }
 
     @Test(timeout = 4000)
-    public void test1351() throws Throwable {
+    public void test1251() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        assertEquals(74, helpFormatter0.defaultWidth);
+        String string0 = helpFormatter0.getNewLine();
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test1352() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        Options options0 = new Options();
-        helpFormatter0.printHelp("--", options0, true);
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
@@ -401,7 +402,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         helpFormatter0.printHelp("--", options0, true);
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
@@ -409,170 +410,180 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         helpFormatter0.printHelp("--", options0, true);
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
-    public void test1455() throws Throwable {
+    public void test1355() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals("arg", helpFormatter0.getArgName());
+        Options options0 = new Options();
+        helpFormatter0.printHelp("--", options0, true);
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1456() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals("--", string0);
+        assertEquals("arg", helpFormatter0.getArgName());
     }
 
     @Test(timeout = 4000)
     public void test1457() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        assertEquals("--", string0);
     }
 
     @Test(timeout = 4000)
     public void test1458() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals(74, helpFormatter0.defaultWidth);
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1459() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test1460() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals("-", helpFormatter0.getOptPrefix());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test1461() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getLongOptPrefix();
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals("-", helpFormatter0.getOptPrefix());
     }
 
     @Test(timeout = 4000)
-    public void test1562() throws Throwable {
+    public void test1462() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        String string0 = helpFormatter0.getLongOptPrefix();
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
     public void test1563() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test1564() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals("arg", helpFormatter0.getArgName());
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1565() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals("-", helpFormatter0.getOptPrefix());
+        assertEquals("arg", helpFormatter0.getArgName());
     }
 
     @Test(timeout = 4000)
     public void test1566() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals("-", helpFormatter0.getOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1567() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals("usage: ", string0);
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
     public void test1568() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getSyntaxPrefix();
-        assertEquals(74, helpFormatter0.defaultWidth);
+        assertEquals("usage: ", string0);
     }
 
     @Test(timeout = 4000)
-    public void test1669() throws Throwable {
+    public void test1569() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.getOptPrefix();
-        assertEquals("-", string0);
+        String string0 = helpFormatter0.getSyntaxPrefix();
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test1670() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals("-", string0);
     }
 
     @Test(timeout = 4000)
     public void test1671() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test1672() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1673() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
-        assertEquals(74, helpFormatter0.defaultWidth);
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
     public void test1674() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test1675() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.getOptPrefix();
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test1676() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        String string0 = helpFormatter0.getOptPrefix();
         assertEquals("arg", helpFormatter0.getArgName());
     }
 
     @Test(timeout = 4000)
-    public void test1876() throws Throwable {
+    public void test1777() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
-        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        helpFormatter0.setOptionComparator(comparator0);
-        assertEquals(74, helpFormatter0.defaultWidth);
-    }
-
-    @Test(timeout = 4000)
-    public void test1877() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        helpFormatter0.setOptionComparator(comparator0);
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        Options options0 = new Options();
+        Option option0 = new Option("", true, "arg");
+        Option option1 = new Option("mvZl", true, "");
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(byteArrayOutputStream0);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(bufferedOutputStream0);
+        MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockPrintStream0, true);
+        OptionGroup optionGroup0 = new OptionGroup();
+        optionGroup0.addOption(option1);
+        optionGroup0.addOption(option0);
+        options0.addOptionGroup(optionGroup0);
+        // Undeclared exception!
+        helpFormatter0.printUsage((PrintWriter) mockPrintWriter0, 3, "usage: ", options0);
     }
 
     @Test(timeout = 4000)
@@ -580,7 +591,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         helpFormatter0.setOptionComparator(comparator0);
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
@@ -588,7 +599,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         helpFormatter0.setOptionComparator(comparator0);
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
     }
 
     @Test(timeout = 4000)
@@ -596,7 +607,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         helpFormatter0.setOptionComparator(comparator0);
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
@@ -604,7 +615,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         helpFormatter0.setOptionComparator(comparator0);
-        assertEquals("-", helpFormatter0.getOptPrefix());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
@@ -612,60 +623,76 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         helpFormatter0.setOptionComparator(comparator0);
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test1883() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        helpFormatter0.setOptionComparator(comparator0);
+        assertEquals("-", helpFormatter0.getOptPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test1884() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        helpFormatter0.setOptionComparator(comparator0);
         assertEquals("arg", helpFormatter0.getArgName());
-    }
-
-    @Test(timeout = 4000)
-    public void test1983() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setOptionComparator((Comparator) null);
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
-    }
-
-    @Test(timeout = 4000)
-    public void test1984() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        helpFormatter0.setOptionComparator((Comparator) null);
-        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test1985() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptionComparator((Comparator) null);
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1986() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptionComparator((Comparator) null);
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test1987() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptionComparator((Comparator) null);
-        assertEquals("arg", helpFormatter0.getArgName());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test1988() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptionComparator((Comparator) null);
-        assertEquals("-", helpFormatter0.getOptPrefix());
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test1989() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         helpFormatter0.setOptionComparator((Comparator) null);
+        assertEquals("arg", helpFormatter0.getArgName());
+    }
+
+    @Test(timeout = 4000)
+    public void test1990() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        helpFormatter0.setOptionComparator((Comparator) null);
+        assertEquals("-", helpFormatter0.getOptPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test1991() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        helpFormatter0.setOptionComparator((Comparator) null);
         assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
-    public void test2090() throws Throwable {
+    public void test2092() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         // Undeclared exception!
         try {
@@ -680,7 +707,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2191() throws Throwable {
+    public void test2193() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         // Undeclared exception!
@@ -696,7 +723,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2292() throws Throwable {
+    public void test2294() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Option option0 = new Option("arg", "--");
@@ -709,7 +736,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2393() throws Throwable {
+    public void test2395() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Option option0 = new Option((String) null, true, "-");
@@ -719,13 +746,13 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2494() throws Throwable {
+    public void test2496() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
-    public void test2495() throws Throwable {
+    public void test2497() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Option option0 = new Option("mvZl", true, "-");
@@ -736,7 +763,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2596() throws Throwable {
+    public void test2598() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Options options1 = options0.addOption("", "--", true, "arg");
@@ -746,7 +773,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2597() throws Throwable {
+    public void test2599() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Options options1 = options0.addOption("", "--", true, "arg");
@@ -756,7 +783,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2598() throws Throwable {
+    public void test25100() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Options options1 = options0.addOption("", "--", true, "arg");
@@ -766,13 +793,13 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2699() throws Throwable {
+    public void test26101() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
-    public void test26100() throws Throwable {
+    public void test26102() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         helpFormatter0.setLeftPadding(32);
@@ -783,7 +810,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test27101() throws Throwable {
+    public void test27103() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Option option0 = new Option("arg", "usage: ", false, (String) null);
@@ -793,7 +820,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test27102() throws Throwable {
+    public void test27104() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         Options options0 = new Options();
         Option option0 = new Option("arg", "usage: ", false, (String) null);
@@ -803,7 +830,7 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test28103() throws Throwable {
+    public void test28105() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         // Undeclared exception!
         try {
@@ -814,147 +841,147 @@ public class HelpFormatter_ESTest extends HelpFormatter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test29104() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
-        assertEquals("-", helpFormatter0.getOptPrefix());
-    }
-
-    @Test(timeout = 4000)
-    public void test29105() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
-        assertEquals(3, helpFormatter0.defaultDescPad);
-    }
-
-    @Test(timeout = 4000)
     public void test29106() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
-        assertEquals(0, int0);
+        assertEquals("-", helpFormatter0.getOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test29107() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test29108() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
+        assertEquals(0, int0);
+    }
+
+    @Test(timeout = 4000)
+    public void test29109() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test29110() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        int int0 = helpFormatter0.findWrapPos("\n", (-1), 1);
         assertEquals(74, helpFormatter0.defaultWidth);
-    }
-
-    @Test(timeout = 4000)
-    public void test30109() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim((String) null);
-        assertEquals("-", helpFormatter0.getOptPrefix());
-    }
-
-    @Test(timeout = 4000)
-    public void test30110() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim((String) null);
-        assertNull(string0);
     }
 
     @Test(timeout = 4000)
     public void test30111() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals("-", helpFormatter0.getOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test30112() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
+        assertNull(string0);
     }
 
     @Test(timeout = 4000)
     public void test30113() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        assertEquals(74, helpFormatter0.defaultWidth);
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
     }
 
     @Test(timeout = 4000)
     public void test30114() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());
     }
 
     @Test(timeout = 4000)
     public void test30115() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
-        assertEquals("arg", helpFormatter0.getArgName());
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test30116() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim((String) null);
+        assertEquals(1, helpFormatter0.defaultLeftPad);
+    }
+
+    @Test(timeout = 4000)
+    public void test30117() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        String string0 = helpFormatter0.rtrim((String) null);
+        assertEquals("arg", helpFormatter0.getArgName());
+    }
+
+    @Test(timeout = 4000)
+    public void test30118() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        String string0 = helpFormatter0.rtrim((String) null);
         assertEquals(3, helpFormatter0.defaultDescPad);
-    }
-
-    @Test(timeout = 4000)
-    public void test31117() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim("");
-        assertEquals("", string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test31118() throws Throwable {
-        HelpFormatter helpFormatter0 = new HelpFormatter();
-        String string0 = helpFormatter0.rtrim("");
-        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test31119() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim("");
-        assertEquals(1, helpFormatter0.defaultLeftPad);
+        assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
     public void test31120() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim("");
-        assertEquals("arg", helpFormatter0.getArgName());
+        assertEquals(74, helpFormatter0.defaultWidth);
     }
 
     @Test(timeout = 4000)
     public void test31121() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim("");
-        assertEquals(3, helpFormatter0.defaultDescPad);
+        assertEquals(1, helpFormatter0.defaultLeftPad);
     }
 
     @Test(timeout = 4000)
     public void test31122() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim("");
-        assertEquals("-", helpFormatter0.getOptPrefix());
+        assertEquals("arg", helpFormatter0.getArgName());
     }
 
     @Test(timeout = 4000)
     public void test31123() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim("");
-        assertEquals("--", helpFormatter0.getLongOptPrefix());
+        assertEquals(3, helpFormatter0.defaultDescPad);
     }
 
     @Test(timeout = 4000)
     public void test31124() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        String string0 = helpFormatter0.rtrim("");
+        assertEquals("-", helpFormatter0.getOptPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test31125() throws Throwable {
+        HelpFormatter helpFormatter0 = new HelpFormatter();
+        String string0 = helpFormatter0.rtrim("");
+        assertEquals("--", helpFormatter0.getLongOptPrefix());
+    }
+
+    @Test(timeout = 4000)
+    public void test31126() throws Throwable {
         HelpFormatter helpFormatter0 = new HelpFormatter();
         String string0 = helpFormatter0.rtrim("");
         assertEquals("usage: ", helpFormatter0.getSyntaxPrefix());

@@ -118,7 +118,15 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test089() throws Throwable {
+        Object object0 = new Object();
+        Locale locale0 = Locale.ITALIAN;
+        JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(object0, locale0);
+        jDOMNodePointer0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test0910() throws Throwable {
         Locale locale0 = Locale.UK;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         JXPathContext jXPathContext0 = JXPathContext.newContext((Object) jDOMNodePointer0);
@@ -126,21 +134,21 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test1011() throws Throwable {
         Locale locale0 = Locale.JAPANESE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         String string0 = jDOMNodePointer0.getNamespaceURI();
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1112() throws Throwable {
         Element element0 = new Element("double");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         String string0 = jDOMNodePointer0.getNamespaceURI("double");
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
+    public void test1213() throws Throwable {
         Element element0 = new Element("org.apache.commons.jxpath.JXPathAbsractFactoryException", "org.apache.commons.jxpath.JXPathAbsractFactoryException", "org.apache.commons.jxpath.JXPathAbsractFactoryException");
         Document document0 = new Document(element0);
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(document0, (Locale) null);
@@ -148,7 +156,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1314() throws Throwable {
         Element element0 = new Element("Tu");
         Document document0 = new Document(element0);
         Locale locale0 = Locale.PRC;
@@ -157,21 +165,21 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1415() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0, (String) null);
         String string0 = jDOMNodePointer0.getNamespaceURI((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1516() throws Throwable {
         Element element0 = new Element("double", "double", "double");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         String string0 = jDOMNodePointer0.getNamespaceURI("double");
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         Attribute attribute0 = new Attribute("gebe", "gebe");
         QName qName0 = new QName("gebe");
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, qName0, (Locale) null);
@@ -181,7 +189,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1718() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         QName qName0 = jDOMNodePointer0.getName();
@@ -190,7 +198,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1819() throws Throwable {
         Element element0 = new Element("dogble", "dogble");
         Locale locale0 = Locale.ITALY;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -201,7 +209,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1920() throws Throwable {
         Element element0 = new Element("dogble");
         Locale locale0 = Locale.FRANCE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -212,7 +220,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2021() throws Throwable {
         Element element0 = new Element("Gl", "Gl");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.setValue("Gl");
@@ -222,7 +230,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2021() throws Throwable {
+    public void test2022() throws Throwable {
         Element element0 = new Element("Gl", "Gl");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.setValue("Gl");
@@ -233,7 +241,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2122() throws Throwable {
+    public void test2123() throws Throwable {
         Locale locale0 = Locale.TAIWAN;
         Element element0 = new Element("ouble", "ouble");
         Document document0 = new Document(element0);
@@ -242,14 +250,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2224() throws Throwable {
         Element element0 = new Element("G", "G");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         boolean boolean0 = jDOMNodePointer0.isLeaf();
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         Element element0 = new Element("G", "G");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.setValue("G");
@@ -257,14 +265,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         boolean boolean0 = jDOMNodePointer0.isLeaf();
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         ProcessingInstruction processingInstruction0 = new ProcessingInstruction("double", "double");
         Locale locale0 = Locale.KOREAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(processingInstruction0, locale0);
@@ -273,20 +281,12 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2627() throws Throwable {
+    public void test2628() throws Throwable {
         Locale locale0 = Locale.CHINESE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         CDATA cDATA0 = new CDATA("<<unknown namespace>>");
         JDOMNodePointer jDOMNodePointer1 = new JDOMNodePointer(cDATA0, locale0);
         jDOMNodePointer1.setValue(jDOMNodePointer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2728() throws Throwable {
-        Locale locale0 = Locale.UK;
-        Comment comment0 = new Comment("(%cpP;zWgC/JC|]0");
-        JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(comment0, locale0);
-        Object object0 = jDOMNodePointer0.getValue();
     }
 
     @Test(timeout = 4000)
@@ -298,18 +298,10 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2831() throws Throwable {
         CDATA cDATA0 = new CDATA("p:+>qFT|");
         Locale locale0 = Locale.FRENCH;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(cDATA0, locale0);
-        Object object0 = jDOMNodePointer0.getValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test2931() throws Throwable {
-        ProcessingInstruction processingInstruction0 = new ProcessingInstruction("double", "double");
-        Locale locale0 = Locale.GERMAN;
-        JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(processingInstruction0, locale0);
         Object object0 = jDOMNodePointer0.getValue();
     }
 
@@ -322,20 +314,11 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3033() throws Throwable {
+    public void test3034() throws Throwable {
         CDATA cDATA0 = new CDATA("");
         Locale locale0 = Locale.PRC;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(cDATA0, locale0);
         jDOMNodePointer0.setValue("");
-    }
-
-    @Test(timeout = 4000)
-    public void test3134() throws Throwable {
-        CDATA cDATA0 = new CDATA("double");
-        Locale locale0 = Locale.ITALIAN;
-        JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(cDATA0, locale0);
-        jDOMNodePointer0.setValue("double");
-        cDATA0.getValue();
     }
 
     @Test(timeout = 4000)
@@ -344,11 +327,20 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
         Locale locale0 = Locale.ITALIAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(cDATA0, locale0);
         jDOMNodePointer0.setValue("double");
+        cDATA0.getValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test3136() throws Throwable {
+        CDATA cDATA0 = new CDATA("double");
+        Locale locale0 = Locale.ITALIAN;
+        JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(cDATA0, locale0);
+        jDOMNodePointer0.setValue("double");
         cDATA0.getText();
     }
 
     @Test(timeout = 4000)
-    public void test3236() throws Throwable {
+    public void test3237() throws Throwable {
         Element element0 = new Element("orgpa_he.commonsPjxJath.JXPalhAbstractFactoryExcetion");
         Locale locale0 = Locale.CHINA;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -359,7 +351,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3337() throws Throwable {
+    public void test3338() throws Throwable {
         Element element0 = new Element("doble");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         CDATA cDATA0 = new CDATA("<<unknown namespace>>");
@@ -368,7 +360,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3438() throws Throwable {
+    public void test3439() throws Throwable {
         Element element0 = new Element("dogbl", "dogbl", "dogbl");
         Locale locale0 = Locale.UK;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -378,7 +370,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3539() throws Throwable {
+    public void test3540() throws Throwable {
         Element element0 = new Element("org.apache.commons.jxpath.JXPathAbstractFactoryException", "org.apache.commons.jxpath.JXPathAbstractFactoryException");
         Locale locale0 = Locale.PRC;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -388,7 +380,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3640() throws Throwable {
+    public void test3641() throws Throwable {
         Element element0 = new Element("doble", "doble");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.setValue((Object) null);
@@ -396,7 +388,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3741() throws Throwable {
+    public void test3742() throws Throwable {
         Element element0 = new Element("double");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.setValue(jDOMNodePointer0);
@@ -404,7 +396,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3842() throws Throwable {
+    public void test3843() throws Throwable {
         Element element0 = new Element("double", "double");
         Element element1 = new Element("double", "double", "double");
         Element element2 = element1.setText("double");
@@ -415,18 +407,18 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3943() throws Throwable {
+    public void test3944() throws Throwable {
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) null, (NodeTest) null);
     }
 
     @Test(timeout = 4000)
-    public void test4044() throws Throwable {
+    public void test4045() throws Throwable {
         NodeNameTest nodeNameTest0 = new NodeNameTest((QName) null);
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) null, (NodeTest) nodeNameTest0);
     }
 
     @Test(timeout = 4000)
-    public void test4145() throws Throwable {
+    public void test4146() throws Throwable {
         Element element0 = new Element("double");
         Locale locale0 = Locale.TAIWAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -436,32 +428,32 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4246() throws Throwable {
+    public void test4247() throws Throwable {
         ProcessingInstruction processingInstruction0 = new ProcessingInstruction("HPorrg", "HPorrg");
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("HPorrg");
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) processingInstruction0, (NodeTest) processingInstructionTest0);
     }
 
     @Test(timeout = 4000)
-    public void test4347() throws Throwable {
+    public void test4348() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(1);
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) null, (NodeTest) nodeTypeTest0);
     }
 
     @Test(timeout = 4000)
-    public void test4448() throws Throwable {
+    public void test4449() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2);
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) null, (NodeTest) nodeTypeTest0);
     }
 
     @Test(timeout = 4000)
-    public void test4549() throws Throwable {
+    public void test4550() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3);
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) null, (NodeTest) nodeTypeTest0);
     }
 
     @Test(timeout = 4000)
-    public void test4650() throws Throwable {
+    public void test4651() throws Throwable {
         Element element0 = new Element("dogble", "dogble");
         Locale locale0 = Locale.ITALY;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -470,7 +462,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4751() throws Throwable {
+    public void test4752() throws Throwable {
         Element element0 = new Element("double");
         Locale locale0 = Locale.CANADA_FRENCH;
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(1);
@@ -479,7 +471,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4852() throws Throwable {
+    public void test4853() throws Throwable {
         Document document0 = new Document();
         Locale locale0 = Locale.CANADA;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(document0, locale0);
@@ -488,14 +480,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4953() throws Throwable {
+    public void test4954() throws Throwable {
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(2);
         Text text0 = new Text((String) null);
         boolean boolean0 = JDOMNodePointer.testNode((NodePointer) null, (Object) text0, (NodeTest) nodeTypeTest0);
     }
 
     @Test(timeout = 4000)
-    public void test5054() throws Throwable {
+    public void test5055() throws Throwable {
         Locale locale0 = Locale.CANADA_FRENCH;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("http://www.w3.org/XML/1998/namespace");
@@ -503,7 +495,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5155() throws Throwable {
+    public void test5156() throws Throwable {
         Element element0 = new Element("double", "double");
         QName qName0 = new QName("double", "double");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
@@ -511,15 +503,9 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5256() throws Throwable {
+    public void test5257() throws Throwable {
         Attribute attribute0 = new Attribute("ob", "ob");
         String string0 = JDOMNodePointer.getPrefix(attribute0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5357() throws Throwable {
-        Element element0 = new Element("double", "double", "double");
-        String string0 = JDOMNodePointer.getPrefix(element0);
     }
 
     @Test(timeout = 4000)
@@ -529,23 +515,15 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5459() throws Throwable {
+    public void test5460() throws Throwable {
         Element element0 = new Element("double");
         String string0 = JDOMNodePointer.getPrefix(element0);
     }
 
     @Test(timeout = 4000)
-    public void test5560() throws Throwable {
+    public void test5561() throws Throwable {
         Locale locale0 = Locale.CANADA_FRENCH;
         String string0 = JDOMNodePointer.getPrefix(locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5661() throws Throwable {
-        Attribute attribute0 = new Attribute("ob", "ob");
-        Namespace namespace0 = Namespace.getNamespace("ob", "ob");
-        attribute0.setNamespace(namespace0);
-        String string0 = JDOMNodePointer.getPrefix(attribute0);
     }
 
     @Test(timeout = 4000)
@@ -557,19 +535,19 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5763() throws Throwable {
+    public void test5764() throws Throwable {
         Attribute attribute0 = new Attribute("QidoHuble", "QidoHuble");
         String string0 = JDOMNodePointer.getLocalName(attribute0);
     }
 
     @Test(timeout = 4000)
-    public void test5864() throws Throwable {
+    public void test5865() throws Throwable {
         Locale locale0 = Locale.US;
         String string0 = JDOMNodePointer.getLocalName(locale0);
     }
 
     @Test(timeout = 4000)
-    public void test5965() throws Throwable {
+    public void test5966() throws Throwable {
         ProcessingInstruction processingInstruction0 = new ProcessingInstruction("double", "double");
         Locale locale0 = Locale.GERMAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(processingInstruction0, locale0);
@@ -577,14 +555,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6066() throws Throwable {
+    public void test6067() throws Throwable {
         Element element0 = new Element("double", "double", "double");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.isLanguage("double");
     }
 
     @Test(timeout = 4000)
-    public void test6167() throws Throwable {
+    public void test6168() throws Throwable {
         Locale locale0 = Locale.CANADA_FRENCH;
         Comment comment0 = new Comment("(%cpP;zWgC/JC|]0");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(comment0, locale0);
@@ -592,14 +570,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6268() throws Throwable {
+    public void test6269() throws Throwable {
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         boolean boolean0 = jDOMNodePointer0.isLanguage("<<unknown namespace>>");
     }
 
     @Test(timeout = 4000)
-    public void test6369() throws Throwable {
+    public void test6370() throws Throwable {
         Locale locale0 = Locale.CHINA;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         QName qName0 = new QName("http://www.w3.org/XML/1998/namespace");
@@ -608,7 +586,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6470() throws Throwable {
+    public void test6471() throws Throwable {
         Locale locale0 = Locale.GERMAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         QName qName0 = new QName("http://www.w3.org/XML/1998/namespace", "<<unknown namespace>>");
@@ -616,7 +594,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6571() throws Throwable {
+    public void test6572() throws Throwable {
         Element element0 = new Element("dUTNogl");
         Locale locale0 = Locale.UK;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -628,7 +606,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6672() throws Throwable {
+    public void test6673() throws Throwable {
         Element element0 = new Element("double");
         Locale locale0 = Locale.CANADA_FRENCH;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -637,7 +615,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6773() throws Throwable {
+    public void test6774() throws Throwable {
         Element element0 = new Element("dUTNogl", "dUTNogl", "dUTNogl");
         Locale locale0 = Locale.UK;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -649,7 +627,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6874() throws Throwable {
+    public void test6875() throws Throwable {
         Element element0 = new Element("Gta", "Gta", "Gta");
         Locale locale0 = Locale.PRC;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer("Gta", locale0, "Gta");
@@ -661,14 +639,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6975() throws Throwable {
+    public void test6976() throws Throwable {
         Element element0 = new Element("double");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, (Locale) null);
         jDOMNodePointer0.remove();
     }
 
     @Test(timeout = 4000)
-    public void test7076() throws Throwable {
+    public void test7077() throws Throwable {
         Element element0 = new Element("f");
         Locale locale0 = Locale.CANADA;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer("f", locale0, "f");
@@ -679,7 +657,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7177() throws Throwable {
+    public void test7178() throws Throwable {
         Element element0 = new Element("t3X", "t3X", "t3X");
         Locale locale0 = Locale.JAPANESE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -691,14 +669,14 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7278() throws Throwable {
+    public void test7279() throws Throwable {
         CDATA cDATA0 = new CDATA("k3");
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer((NodePointer) null, cDATA0);
         String string0 = jDOMNodePointer0.asPath();
     }
 
     @Test(timeout = 4000)
-    public void test7379() throws Throwable {
+    public void test7380() throws Throwable {
         Element element0 = new Element("dogble", "dogble");
         Locale locale0 = Locale.ITALY;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -708,21 +686,21 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7480() throws Throwable {
+    public void test7481() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0, "/processing-instruction('");
         String string0 = jDOMNodePointer0.asPath();
     }
 
     @Test(timeout = 4000)
-    public void test7581() throws Throwable {
+    public void test7582() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0, "\"lang\"");
         String string0 = jDOMNodePointer0.asPath();
     }
 
     @Test(timeout = 4000)
-    public void test7682() throws Throwable {
+    public void test7683() throws Throwable {
         Element element0 = new Element("Wdogbl", "Wdogbl");
         Locale locale0 = Locale.UK;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -735,7 +713,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7783() throws Throwable {
+    public void test7784() throws Throwable {
         Element element0 = new Element("Gtha", "Gtha");
         element0.addContent("Gtha");
         Locale locale0 = Locale.PRC;
@@ -747,7 +725,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7884() throws Throwable {
+    public void test7885() throws Throwable {
         Element element0 = new Element("dogble", "dogble");
         Locale locale0 = Locale.ITALY;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(element0, locale0);
@@ -758,7 +736,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7985() throws Throwable {
+    public void test7986() throws Throwable {
         Element element0 = new Element("k3", "k3");
         element0.addContent("k3");
         ProcessingInstruction processingInstruction0 = new ProcessingInstruction("k3", "k3");
@@ -768,20 +746,20 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8086() throws Throwable {
+    public void test8087() throws Throwable {
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer((Object) null, (Locale) null);
         boolean boolean0 = jDOMNodePointer0.equals((Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test8187() throws Throwable {
+    public void test8188() throws Throwable {
         Locale locale0 = Locale.GERMAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         boolean boolean0 = jDOMNodePointer0.equals(jDOMNodePointer0);
     }
 
     @Test(timeout = 4000)
-    public void test8288() throws Throwable {
+    public void test8289() throws Throwable {
         Locale locale0 = Locale.TAIWAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(locale0, locale0);
         JDOMNodePointer jDOMNodePointer1 = new JDOMNodePointer(locale0, locale0);
@@ -789,7 +767,7 @@ public class JDOMNodePointer_ESTest extends JDOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8389() throws Throwable {
+    public void test8390() throws Throwable {
         Object object0 = new Object();
         Locale locale0 = Locale.TAIWAN;
         JDOMNodePointer jDOMNodePointer0 = new JDOMNodePointer(object0, locale0);

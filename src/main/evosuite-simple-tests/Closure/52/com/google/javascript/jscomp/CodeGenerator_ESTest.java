@@ -94,37 +94,55 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test066() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addList((Node) null, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        Charset charset0 = Charset.forName("default");
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        Charset charset0 = Charset.defaultCharset();
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("0");
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         boolean boolean0 = CodeGenerator.isSimpleNumber("/RLj<!--");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         boolean boolean0 = CodeGenerator.isSimpleNumber("9lNGx+3>BTlv4B");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         boolean boolean0 = CodeGenerator.isSimpleNumber("");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("typeof");
         assertEquals(Double.NaN, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1414() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = new Node(85);
         // Undeclared exception!
@@ -140,7 +158,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         Node node0 = Node.newString("a1f</scriptueg");
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
@@ -157,7 +175,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1616() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = Node.newString(51, ".82?($G*r;|qOG");
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -174,7 +192,19 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1914() throws Throwable {
+    public void test1717() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addArrayList((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         Node node0 = Node.newString("\"U<!--`7\"");
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         // Undeclared exception!
@@ -190,7 +220,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2015() throws Throwable {
+    public void test2020() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         // Undeclared exception!
         try {
@@ -205,43 +235,43 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2116() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("\t\n\u000B\f\r \u0085\u1680\u2028\u2029\u205F\u3000\u00A0\u180E\u202F");
         assertEquals("/\\t\\n\\u000b\\u000c\\r \\u0085\\u1680\\u2028\\u2029\\u205f\\u3000\\u00a0\\u180e\\u202f/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2217() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("!--><!-");
         assertEquals("/!--\\><!-/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2318() throws Throwable {
+    public void test2323() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("q>I:1es(#F'>js");
         assertEquals("/q>I:1es(#F'>js/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2419() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("}Rb\"-6?->:ld&_");
         assertEquals("/}Rb\"-6?->:ld&_/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2520() throws Throwable {
+    public void test2525() throws Throwable {
         String string0 = CodeGenerator.regexpEscape("\"u</script\"");
         assertEquals("/\"u<\\/script\"/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2621() throws Throwable {
+    public void test2626() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("<!--W tgyS");
         assertEquals("\"<\\!--W tgyS\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2722() throws Throwable {
+    public void test2727() throws Throwable {
         Charset charset0 = Charset.forName("default");
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.regexpEscape("\t\n\u000B} \u0085<!-~0\u00A0\u202F", charsetEncoder0);
@@ -249,13 +279,13 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2823() throws Throwable {
+    public void test2828() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("\t\n\u000B\f\r \u0085\u1680\u2028\u2029\u205F\u3000\u00A0\u180E\u202F");
         assertEquals("\\u0009\\u000a\\u000b\\u000c\\u000d \\u0085\\u1680\\u2028\\u2029\\u205f\\u3000\\u00a0\\u180e\\u202f", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2924() throws Throwable {
+    public void test2929() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("typeof");
         assertEquals("typeof", string0);
     }

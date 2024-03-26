@@ -672,13 +672,6 @@ public class JsonPointer_ESTest extends JsonPointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test37101() throws Throwable {
-        JsonPointer jsonPointer0 = new JsonPointer();
-        JsonPointer jsonPointer1 = new JsonPointer("T", "T", jsonPointer0);
-        JsonPointer jsonPointer2 = jsonPointer1.matchProperty("T");
-    }
-
-    @Test(timeout = 4000)
     public void test38102() throws Throwable {
         JsonPointer jsonPointer0 = new JsonPointer();
         jsonPointer0.matchProperty("");
@@ -809,12 +802,6 @@ public class JsonPointer_ESTest extends JsonPointer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test46122() throws Throwable {
-        JsonPointer jsonPointer0 = JsonPointer._parseTail("G04");
-        String string0 = jsonPointer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test46123() throws Throwable {
         JsonPointer jsonPointer0 = JsonPointer._parseTail("G04");
         String string0 = jsonPointer0.toString();
     }

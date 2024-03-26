@@ -192,15 +192,6 @@ public class TypedScopeCreator_ESTest extends TypedScopeCreator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1517() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = compiler0.parseTestCode("jQGufry.prototype");
-        TypedScopeCreator typedScopeCreator0 = new TypedScopeCreator(compiler0);
-        Scope scope0 = typedScopeCreator0.createScope(node0, (Scope) null);
-        scope0.getVarCount();
-    }
-
-    @Test(timeout = 4000)
     public void test1518() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("jQGufry.prototype");

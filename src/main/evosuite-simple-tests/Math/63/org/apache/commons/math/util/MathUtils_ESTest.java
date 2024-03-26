@@ -1889,7 +1889,13 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089232() throws Throwable {
+    public void test088232() throws Throwable {
+        // Undeclared exception!
+        MathUtils.factorialLog(2143136515);
+    }
+
+    @Test(timeout = 4000)
+    public void test089233() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.distanceInf((int[]) null, (int[]) null);
@@ -1903,14 +1909,14 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090233() throws Throwable {
+    public void test090234() throws Throwable {
         int[] intArray0 = new int[6];
         int[] intArray1 = new int[1];
         assertFalse(intArray1.equals((Object) intArray0));
     }
 
     @Test(timeout = 4000)
-    public void test090234() throws Throwable {
+    public void test090235() throws Throwable {
         int[] intArray0 = new int[6];
         int[] intArray1 = new int[1];
         // Undeclared exception!
@@ -1926,7 +1932,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091235() throws Throwable {
+    public void test091236() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.distanceInf((double[]) null, (double[]) null);
@@ -1940,7 +1946,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092236() throws Throwable {
+    public void test092237() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.distance1((int[]) null, (int[]) null);
@@ -1954,7 +1960,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093237() throws Throwable {
+    public void test093238() throws Throwable {
         double[] doubleArray0 = new double[1];
         // Undeclared exception!
         try {
@@ -1969,7 +1975,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test094238() throws Throwable {
+    public void test094239() throws Throwable {
         int[] intArray0 = new int[5];
         // Undeclared exception!
         try {
@@ -1984,14 +1990,14 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095239() throws Throwable {
+    public void test095240() throws Throwable {
         int[] intArray0 = new int[7];
         int[] intArray1 = new int[1];
         assertFalse(intArray1.equals((Object) intArray0));
     }
 
     @Test(timeout = 4000)
-    public void test095240() throws Throwable {
+    public void test095241() throws Throwable {
         int[] intArray0 = new int[7];
         int[] intArray1 = new int[1];
         // Undeclared exception!
@@ -2007,7 +2013,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096241() throws Throwable {
+    public void test096242() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.distance((double[]) null, (double[]) null);
@@ -2021,14 +2027,14 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097242() throws Throwable {
+    public void test097243() throws Throwable {
         double[] doubleArray0 = new double[5];
         double[] doubleArray1 = new double[1];
         assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
-    public void test097243() throws Throwable {
+    public void test097244() throws Throwable {
         double[] doubleArray0 = new double[5];
         double[] doubleArray1 = new double[1];
         // Undeclared exception!
@@ -2044,7 +2050,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098244() throws Throwable {
+    public void test098245() throws Throwable {
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.INCREASING;
         // Undeclared exception!
         try {
@@ -2059,7 +2065,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099245() throws Throwable {
+    public void test099246() throws Throwable {
         double[] doubleArray0 = new double[0];
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.DECREASING;
         // Undeclared exception!
@@ -2075,7 +2081,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100246() throws Throwable {
+    public void test100247() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.binomialCoefficientDouble((-2147483647), 72);
@@ -2089,7 +2095,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101247() throws Throwable {
+    public void test101248() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.binomialCoefficient((-386), 1547);
@@ -2103,7 +2109,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102248() throws Throwable {
+    public void test102249() throws Throwable {
         double[] doubleArray0 = new double[6];
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.INCREASING;
         // Undeclared exception!
@@ -2119,7 +2125,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103249() throws Throwable {
+    public void test103250() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.mulAndCheck(287L, 2935890503282001226L);
@@ -2133,67 +2139,67 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104250() throws Throwable {
+    public void test104251() throws Throwable {
         long long0 = MathUtils.mulAndCheck((long) (short) 1, 336L);
         assertEquals(336L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test105251() throws Throwable {
+    public void test105252() throws Throwable {
         long long0 = MathUtils.mulAndCheck((-5034868814120038111L), 1L);
         assertEquals((-5034868814120038111L), long0);
     }
 
     @Test(timeout = 4000)
-    public void test106252() throws Throwable {
+    public void test106253() throws Throwable {
         long long0 = MathUtils.mulAndCheck(0L, 1800L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test107253() throws Throwable {
+    public void test107254() throws Throwable {
         int int0 = MathUtils.mulAndCheck((-473), (-1621));
         assertEquals(766733, int0);
     }
 
     @Test(timeout = 4000)
-    public void test108254() throws Throwable {
+    public void test108255() throws Throwable {
         float float0 = MathUtils.indicator((-1.0F));
         assertEquals((-1.0F), float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test109255() throws Throwable {
+    public void test109256() throws Throwable {
         long long0 = MathUtils.gcd(355687428096000L, 355687428096000L);
         assertEquals(355687428096000L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test110256() throws Throwable {
+    public void test110257() throws Throwable {
         int int0 = MathUtils.gcd(9, 1532);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test111257() throws Throwable {
+    public void test111258() throws Throwable {
         long long0 = MathUtils.factorial(13);
         assertEquals(6227020800L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test112258() throws Throwable {
+    public void test112259() throws Throwable {
         boolean boolean0 = MathUtils.equals((double) 1, (double) (-978), 123);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test113259() throws Throwable {
+    public void test113260() throws Throwable {
         boolean boolean0 = MathUtils.equals((-1409.0), (-1409.0), 902);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test114260() throws Throwable {
+    public void test114261() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.equals(0.5000000000042687, 3087.04427599, 1073741824);
@@ -2206,13 +2212,13 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test115261() throws Throwable {
+    public void test115262() throws Throwable {
         boolean boolean0 = MathUtils.equals(545.8799724201457, 545.8799724201457, 1030);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test116262() throws Throwable {
+    public void test116263() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.equals((-3010.7841332), 1439.9909648456148, (-2144));
@@ -2225,37 +2231,37 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117263() throws Throwable {
+    public void test117264() throws Throwable {
         boolean boolean0 = MathUtils.equals((-2259.94506036678), (-2259.94506036678), (-2259.94506036678));
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test118264() throws Throwable {
+    public void test118265() throws Throwable {
         boolean boolean0 = MathUtils.equals(2.2250738585072014E-308, (double) 1, 2.2250738585072014E-308);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test119265() throws Throwable {
+    public void test119266() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN(0.0, 0.0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test120266() throws Throwable {
+    public void test120267() throws Throwable {
         boolean boolean0 = MathUtils.equals((-3052.3), (-3052.3));
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test121267() throws Throwable {
+    public void test121268() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(2025, 14);
         assertEquals(81.35029006264689, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test122268() throws Throwable {
+    public void test122269() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.binomialCoefficient(119764, 927);
@@ -2269,7 +2275,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123269() throws Throwable {
+    public void test123270() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[2] = Double.NaN;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2277,7 +2283,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123270() throws Throwable {
+    public void test123271() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[2] = Double.NaN;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2285,7 +2291,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123271() throws Throwable {
+    public void test123272() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[2] = Double.NaN;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2293,7 +2299,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124272() throws Throwable {
+    public void test124273() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = 2.2250738585072014E-308;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2301,7 +2307,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124273() throws Throwable {
+    public void test124274() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = 2.2250738585072014E-308;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2309,7 +2315,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124274() throws Throwable {
+    public void test124275() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = 2.2250738585072014E-308;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2317,7 +2323,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125275() throws Throwable {
+    public void test125276() throws Throwable {
         double[] doubleArray0 = new double[7];
         doubleArray0[6] = Double.POSITIVE_INFINITY;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2325,7 +2331,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125276() throws Throwable {
+    public void test125277() throws Throwable {
         double[] doubleArray0 = new double[7];
         doubleArray0[6] = Double.POSITIVE_INFINITY;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2333,7 +2339,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125277() throws Throwable {
+    public void test125278() throws Throwable {
         double[] doubleArray0 = new double[7];
         doubleArray0[6] = Double.POSITIVE_INFINITY;
         double double0 = MathUtils.safeNorm(doubleArray0);
@@ -2341,28 +2347,28 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126278() throws Throwable {
+    public void test126279() throws Throwable {
         double[] doubleArray0 = new double[8];
         double double0 = MathUtils.safeNorm(doubleArray0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test126279() throws Throwable {
+    public void test126280() throws Throwable {
         double[] doubleArray0 = new double[8];
         double double0 = MathUtils.safeNorm(doubleArray0);
         assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test126280() throws Throwable {
+    public void test126281() throws Throwable {
         double[] doubleArray0 = new double[8];
         double double0 = MathUtils.safeNorm(doubleArray0);
         assertEquals(8, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test127281() throws Throwable {
+    public void test127282() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[1] = 1060.6;
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.DECREASING;
@@ -2379,7 +2385,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test128282() throws Throwable {
+    public void test128283() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = (double) 61;
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.DECREASING;
@@ -2396,7 +2402,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129283() throws Throwable {
+    public void test129284() throws Throwable {
         double[] doubleArray0 = new double[2];
         doubleArray0[1] = 1.0;
         MathUtils.checkOrder(doubleArray0);
@@ -2404,7 +2410,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129284() throws Throwable {
+    public void test129285() throws Throwable {
         double[] doubleArray0 = new double[2];
         doubleArray0[1] = 1.0;
         MathUtils.checkOrder(doubleArray0);
@@ -2412,7 +2418,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130285() throws Throwable {
+    public void test130286() throws Throwable {
         double[] doubleArray0 = new double[3];
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.INCREASING;
         MathUtils.checkOrder(doubleArray0, mathUtils_OrderDirection0, false);
@@ -2420,7 +2426,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130286() throws Throwable {
+    public void test130287() throws Throwable {
         double[] doubleArray0 = new double[3];
         MathUtils.OrderDirection mathUtils_OrderDirection0 = MathUtils.OrderDirection.INCREASING;
         MathUtils.checkOrder(doubleArray0, mathUtils_OrderDirection0, false);
@@ -2428,127 +2434,119 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test131287() throws Throwable {
+    public void test131288() throws Throwable {
         int[] intArray0 = new int[4];
         int int0 = MathUtils.distanceInf(intArray0, intArray0);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test131288() throws Throwable {
+    public void test131289() throws Throwable {
         int[] intArray0 = new int[4];
         int int0 = MathUtils.distanceInf(intArray0, intArray0);
         assertArrayEquals(new int[] { 0, 0, 0, 0 }, intArray0);
     }
 
     @Test(timeout = 4000)
-    public void test131289() throws Throwable {
+    public void test131290() throws Throwable {
         int[] intArray0 = new int[4];
         int int0 = MathUtils.distanceInf(intArray0, intArray0);
         assertEquals(4, intArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test132290() throws Throwable {
+    public void test132291() throws Throwable {
         double[] doubleArray0 = new double[4];
         double double0 = MathUtils.distanceInf(doubleArray0, doubleArray0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test132291() throws Throwable {
+    public void test132292() throws Throwable {
         double[] doubleArray0 = new double[4];
         double double0 = MathUtils.distanceInf(doubleArray0, doubleArray0);
         assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test132292() throws Throwable {
+    public void test132293() throws Throwable {
         double[] doubleArray0 = new double[4];
         double double0 = MathUtils.distanceInf(doubleArray0, doubleArray0);
         assertEquals(4, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test133293() throws Throwable {
+    public void test133294() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test133294() throws Throwable {
+    public void test133295() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         assertEquals((short) 10, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test133295() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.TEN;
-        assertEquals((byte) 10, bigInteger0.byteValue());
-    }
-
-    @Test(timeout = 4000)
     public void test133296() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
-        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertNotNull(bigInteger1);
+        assertEquals((byte) 10, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test133297() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertNotSame(bigInteger0, bigInteger1);
+        assertNotNull(bigInteger1);
     }
 
     @Test(timeout = 4000)
     public void test133298() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertNotSame(bigInteger1, bigInteger0);
+        assertNotSame(bigInteger0, bigInteger1);
     }
 
     @Test(timeout = 4000)
     public void test133299() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertFalse(bigInteger1.equals((Object) bigInteger0));
+        assertNotSame(bigInteger1, bigInteger0);
     }
 
     @Test(timeout = 4000)
     public void test133300() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((short) 10, bigInteger0.shortValue());
+        assertFalse(bigInteger1.equals((Object) bigInteger0));
     }
 
     @Test(timeout = 4000)
     public void test133301() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((byte) 10, bigInteger0.byteValue());
+        assertEquals((short) 10, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
     public void test133302() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((short) (-7168), bigInteger1.shortValue());
+        assertEquals((byte) 10, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test133303() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((byte) 0, bigInteger1.byteValue());
+        assertEquals((short) (-7168), bigInteger1.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test134304() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        byteArray0[0] = (byte) (-33);
-        BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertNotNull(bigInteger0);
+    public void test133304() throws Throwable {
+        BigInteger bigInteger0 = BigInteger.TEN;
+        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
+        assertEquals((byte) 0, bigInteger1.byteValue());
     }
 
     @Test(timeout = 4000)
@@ -2556,7 +2554,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) (-33);
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertArrayEquals(new byte[] { (byte) (-33), (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0 }, byteArray0);
+        assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
@@ -2564,7 +2562,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) (-33);
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertEquals(9, byteArray0.length);
+        assertArrayEquals(new byte[] { (byte) (-33), (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0 }, byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -2572,7 +2570,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) (-33);
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertEquals((short) 0, bigInteger0.shortValue());
+        assertEquals(9, byteArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -2580,11 +2578,19 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) (-33);
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertEquals((byte) 0, bigInteger0.byteValue());
+        assertEquals((short) 0, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
     public void test134309() throws Throwable {
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) (-33);
+        BigInteger bigInteger0 = new BigInteger(byteArray0);
+        assertEquals((byte) 0, bigInteger0.byteValue());
+    }
+
+    @Test(timeout = 4000)
+    public void test134310() throws Throwable {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) (-33);
         BigInteger bigInteger0 = new BigInteger(byteArray0);
@@ -2600,120 +2606,112 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test135310() throws Throwable {
+    public void test135311() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test135311() throws Throwable {
+    public void test135312() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         assertEquals((short) 0, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test135312() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.ZERO;
-        assertEquals((byte) 0, bigInteger0.byteValue());
-    }
-
-    @Test(timeout = 4000)
     public void test135313() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
-        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertNotNull(bigInteger1);
+        assertEquals((byte) 0, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test135314() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertNotSame(bigInteger0, bigInteger1);
+        assertNotNull(bigInteger1);
     }
 
     @Test(timeout = 4000)
     public void test135315() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertNotSame(bigInteger1, bigInteger0);
+        assertNotSame(bigInteger0, bigInteger1);
     }
 
     @Test(timeout = 4000)
     public void test135316() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertFalse(bigInteger1.equals((Object) bigInteger0));
+        assertNotSame(bigInteger1, bigInteger0);
     }
 
     @Test(timeout = 4000)
     public void test135317() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((short) 0, bigInteger0.shortValue());
+        assertFalse(bigInteger1.equals((Object) bigInteger0));
     }
 
     @Test(timeout = 4000)
     public void test135318() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((byte) 0, bigInteger0.byteValue());
+        assertEquals((short) 0, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
     public void test135319() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((short) 1, bigInteger1.shortValue());
+        assertEquals((byte) 0, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test135320() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
-        assertEquals((byte) 1, bigInteger1.byteValue());
+        assertEquals((short) 1, bigInteger1.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test136321() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertNotNull(bigInteger0);
+    public void test135321() throws Throwable {
+        BigInteger bigInteger0 = BigInteger.ZERO;
+        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, bigInteger0);
+        assertEquals((byte) 1, bigInteger1.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test136322() throws Throwable {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertArrayEquals(new byte[] { (byte) 0 }, byteArray0);
+        assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
     public void test136323() throws Throwable {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertEquals(1, byteArray0.length);
+        assertArrayEquals(new byte[] { (byte) 0 }, byteArray0);
     }
 
     @Test(timeout = 4000)
     public void test136324() throws Throwable {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertEquals((byte) 0, bigInteger0.byteValue());
+        assertEquals(1, byteArray0.length);
     }
 
     @Test(timeout = 4000)
     public void test136325() throws Throwable {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        assertEquals((short) 0, bigInteger0.shortValue());
+        assertEquals((byte) 0, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test136326() throws Throwable {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
-        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertNotNull(bigInteger1);
+        assertEquals((short) 0, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
@@ -2721,7 +2719,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertNotSame(bigInteger0, bigInteger1);
+        assertNotNull(bigInteger1);
     }
 
     @Test(timeout = 4000)
@@ -2729,7 +2727,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertNotSame(bigInteger1, bigInteger0);
+        assertNotSame(bigInteger0, bigInteger1);
     }
 
     @Test(timeout = 4000)
@@ -2737,7 +2735,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertTrue(bigInteger1.equals((Object) bigInteger0));
+        assertNotSame(bigInteger1, bigInteger0);
     }
 
     @Test(timeout = 4000)
@@ -2745,7 +2743,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertArrayEquals(new byte[] { (byte) 0 }, byteArray0);
+        assertTrue(bigInteger1.equals((Object) bigInteger0));
     }
 
     @Test(timeout = 4000)
@@ -2753,7 +2751,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertEquals(1, byteArray0.length);
+        assertArrayEquals(new byte[] { (byte) 0 }, byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -2761,7 +2759,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertEquals((byte) 0, bigInteger0.byteValue());
+        assertEquals(1, byteArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -2769,7 +2767,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertEquals((short) 0, bigInteger0.shortValue());
+        assertEquals((byte) 0, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
@@ -2777,7 +2775,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertEquals((short) 0, bigInteger1.shortValue());
+        assertEquals((short) 0, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
@@ -2785,29 +2783,37 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         byte[] byteArray0 = new byte[1];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
-        assertEquals((byte) 0, bigInteger1.byteValue());
+        assertEquals((short) 0, bigInteger1.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test137336() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.TEN;
-        assertNotNull(bigInteger0);
+    public void test136336() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        BigInteger bigInteger0 = new BigInteger(byteArray0);
+        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 544L);
+        assertEquals((byte) 0, bigInteger1.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test137337() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
-        assertEquals((short) 10, bigInteger0.shortValue());
+        assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
     public void test137338() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
-        assertEquals((byte) 10, bigInteger0.byteValue());
+        assertEquals((short) 10, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
     public void test137339() throws Throwable {
+        BigInteger bigInteger0 = BigInteger.TEN;
+        assertEquals((byte) 10, bigInteger0.byteValue());
+    }
+
+    @Test(timeout = 4000)
+    public void test137340() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         try {
             MathUtils.pow(bigInteger0, (-4607181111125649408L));
@@ -2821,25 +2827,25 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test138340() throws Throwable {
+    public void test138341() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test138341() throws Throwable {
+    public void test138342() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         assertEquals((byte) 1, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
-    public void test138342() throws Throwable {
+    public void test138343() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         assertEquals((short) 1, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test138343() throws Throwable {
+    public void test138344() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         try {
             MathUtils.pow(bigInteger0, (-997));
@@ -2853,81 +2859,81 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139344() throws Throwable {
+    public void test139345() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         assertNotNull(bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test139345() throws Throwable {
+    public void test139346() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         assertEquals((byte) 10, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
-    public void test139346() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.TEN;
-        assertEquals((short) 10, bigInteger0.shortValue());
-    }
-
-    @Test(timeout = 4000)
     public void test139347() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
-        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertNotNull(bigInteger1);
+        assertEquals((short) 10, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
     public void test139348() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertNotSame(bigInteger0, bigInteger1);
+        assertNotNull(bigInteger1);
     }
 
     @Test(timeout = 4000)
     public void test139349() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertNotSame(bigInteger1, bigInteger0);
+        assertNotSame(bigInteger0, bigInteger1);
     }
 
     @Test(timeout = 4000)
     public void test139350() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertFalse(bigInteger1.equals((Object) bigInteger0));
+        assertNotSame(bigInteger1, bigInteger0);
     }
 
     @Test(timeout = 4000)
     public void test139351() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertEquals((byte) 10, bigInteger0.byteValue());
+        assertFalse(bigInteger1.equals((Object) bigInteger0));
     }
 
     @Test(timeout = 4000)
     public void test139352() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertEquals((short) 10, bigInteger0.shortValue());
+        assertEquals((byte) 10, bigInteger0.byteValue());
     }
 
     @Test(timeout = 4000)
     public void test139353() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
-        assertEquals((byte) 0, bigInteger1.byteValue());
+        assertEquals((short) 10, bigInteger0.shortValue());
     }
 
     @Test(timeout = 4000)
     public void test139354() throws Throwable {
         BigInteger bigInteger0 = BigInteger.TEN;
         BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
+        assertEquals((byte) 0, bigInteger1.byteValue());
+    }
+
+    @Test(timeout = 4000)
+    public void test139355() throws Throwable {
+        BigInteger bigInteger0 = BigInteger.TEN;
+        BigInteger bigInteger1 = MathUtils.pow(bigInteger0, 992);
         assertEquals((short) 0, bigInteger1.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test140355() throws Throwable {
+    public void test140356() throws Throwable {
         try {
             MathUtils.pow(0L, (-638L));
             fail("Expecting exception: IllegalArgumentException");
@@ -2940,13 +2946,13 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141356() throws Throwable {
+    public void test141357() throws Throwable {
         long long0 = MathUtils.pow(0L, 1581L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test142357() throws Throwable {
+    public void test142358() throws Throwable {
         try {
             MathUtils.pow((long) 1, (-1841));
             fail("Expecting exception: IllegalArgumentException");
@@ -2959,19 +2965,19 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test143358() throws Throwable {
+    public void test143359() throws Throwable {
         long long0 = MathUtils.pow(4294967295L, 596);
         assertEquals((-2559800508415L), long0);
     }
 
     @Test(timeout = 4000)
-    public void test144359() throws Throwable {
+    public void test144360() throws Throwable {
         int int0 = MathUtils.pow((-2059), 2L);
         assertEquals(4239481, int0);
     }
 
     @Test(timeout = 4000)
-    public void test145360() throws Throwable {
+    public void test145361() throws Throwable {
         try {
             MathUtils.pow(14, (-1445L));
             fail("Expecting exception: IllegalArgumentException");
@@ -2984,13 +2990,13 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test146361() throws Throwable {
+    public void test146362() throws Throwable {
         int int0 = MathUtils.pow(395, (long) 0);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test147362() throws Throwable {
+    public void test147363() throws Throwable {
         try {
             MathUtils.pow((-3551), (-3551));
             fail("Expecting exception: IllegalArgumentException");
@@ -3003,19 +3009,19 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test148363() throws Throwable {
+    public void test148364() throws Throwable {
         int int0 = MathUtils.pow(0, 2682);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test149364() throws Throwable {
+    public void test149365() throws Throwable {
         int int0 = MathUtils.subAndCheck(220, (-967));
         assertEquals(1187, int0);
     }
 
     @Test(timeout = 4000)
-    public void test150365() throws Throwable {
+    public void test150366() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.subAndCheck((-2147483646), (int) (short) 238);
@@ -3029,121 +3035,121 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151366() throws Throwable {
+    public void test151367() throws Throwable {
         short short0 = MathUtils.sign((short) (-4654));
         assertEquals((short) (-1), short0);
     }
 
     @Test(timeout = 4000)
-    public void test152367() throws Throwable {
+    public void test152368() throws Throwable {
         short short0 = MathUtils.sign((short) 0);
         assertEquals((short) 0, short0);
     }
 
     @Test(timeout = 4000)
-    public void test153368() throws Throwable {
+    public void test153369() throws Throwable {
         short short0 = MathUtils.sign((short) 85);
         assertEquals((short) 1, short0);
     }
 
     @Test(timeout = 4000)
-    public void test154369() throws Throwable {
+    public void test154370() throws Throwable {
         long long0 = MathUtils.sign((long) (-1367));
         assertEquals((-1L), long0);
     }
 
     @Test(timeout = 4000)
-    public void test155370() throws Throwable {
+    public void test155371() throws Throwable {
         long long0 = MathUtils.sign(0L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test156371() throws Throwable {
+    public void test156372() throws Throwable {
         long long0 = MathUtils.sign((long) 916);
         assertEquals(1L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test157372() throws Throwable {
+    public void test157373() throws Throwable {
         int int0 = MathUtils.sign((-2355));
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test158373() throws Throwable {
+    public void test158374() throws Throwable {
         int int0 = MathUtils.sign(0);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test159374() throws Throwable {
+    public void test159375() throws Throwable {
         int int0 = MathUtils.sign(4239481);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test160375() throws Throwable {
+    public void test160376() throws Throwable {
         float float0 = MathUtils.sign(1694.555F);
         assertEquals(1.0F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test161376() throws Throwable {
+    public void test161377() throws Throwable {
         float float0 = MathUtils.sign((float) 0);
         assertEquals(0.0F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test162377() throws Throwable {
+    public void test162378() throws Throwable {
         float float0 = MathUtils.sign(Float.NaN);
         assertEquals(Float.NaN, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test163378() throws Throwable {
+    public void test163379() throws Throwable {
         float float0 = MathUtils.sign((-61.0F));
         assertEquals((-1.0F), float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test164379() throws Throwable {
+    public void test164380() throws Throwable {
         double double0 = MathUtils.sign((-48.01345));
         assertEquals((-1.0), double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test165380() throws Throwable {
+    public void test165381() throws Throwable {
         double double0 = MathUtils.sign(0.0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test166381() throws Throwable {
+    public void test166382() throws Throwable {
         double double0 = MathUtils.sign(323.0);
         assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test167382() throws Throwable {
+    public void test167383() throws Throwable {
         byte byte0 = MathUtils.sign((byte) (-31));
         assertEquals((byte) (-1), byte0);
     }
 
     @Test(timeout = 4000)
-    public void test168383() throws Throwable {
+    public void test168384() throws Throwable {
         byte byte0 = MathUtils.sign((byte) 0);
         assertEquals((byte) 0, byte0);
     }
 
     @Test(timeout = 4000)
-    public void test169384() throws Throwable {
+    public void test169385() throws Throwable {
         byte byte0 = MathUtils.sign((byte) 24);
         assertEquals((byte) 1, byte0);
     }
 
     @Test(timeout = 4000)
-    public void test170385() throws Throwable {
+    public void test170386() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.round((float) 0, 0, (-1687));
@@ -3157,30 +3163,21 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test171386() throws Throwable {
+    public void test171387() throws Throwable {
         float float0 = MathUtils.round((float) 2508, 2508, 1);
         assertEquals(Float.NaN, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test172387() throws Throwable {
+    public void test172388() throws Throwable {
         float float0 = MathUtils.round((float) 0L, 9998, 0);
         assertEquals(0.0F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test173388() throws Throwable {
+    public void test173389() throws Throwable {
         double double0 = MathUtils.round(Double.NEGATIVE_INFINITY, 61, 0);
         assertEquals(Double.NEGATIVE_INFINITY, double0, 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test174389() throws Throwable {
-        double[] doubleArray0 = new double[6];
-        doubleArray0[0] = (double) Float.NaN;
-        doubleArray0[2] = (double) 402;
-        double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertNotNull(doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3189,7 +3186,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertNotSame(doubleArray0, doubleArray1);
+        assertNotNull(doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3198,7 +3195,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertNotSame(doubleArray1, doubleArray0);
+        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3207,7 +3204,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
+        assertNotSame(doubleArray1, doubleArray0);
     }
 
     @Test(timeout = 4000)
@@ -3216,7 +3213,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertArrayEquals(new double[] { Double.NaN, 0.0, 402.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3225,7 +3222,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertArrayEquals(new double[] { Double.NaN, 0.0, 2202.8, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+        assertArrayEquals(new double[] { Double.NaN, 0.0, 402.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3234,7 +3231,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
-        assertEquals(6, doubleArray0.length);
+        assertArrayEquals(new double[] { Double.NaN, 0.0, 2202.8, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3243,11 +3240,20 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) Float.NaN;
         doubleArray0[2] = (double) 402;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
+        assertEquals(6, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test174397() throws Throwable {
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) Float.NaN;
+        doubleArray0[2] = (double) 402;
+        double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 2202.8);
         assertEquals(6, doubleArray1.length);
     }
 
     @Test(timeout = 4000)
-    public void test175397() throws Throwable {
+    public void test175398() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = (double) Float.NaN;
         try {
@@ -3262,7 +3268,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176398() throws Throwable {
+    public void test176399() throws Throwable {
         double[] doubleArray0 = new double[9];
         doubleArray0[4] = Double.POSITIVE_INFINITY;
         try {
@@ -3277,7 +3283,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test177399() throws Throwable {
+    public void test177400() throws Throwable {
         double[] doubleArray0 = new double[3];
         try {
             MathUtils.normalizeArray(doubleArray0, Double.NaN);
@@ -3291,25 +3297,25 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178400() throws Throwable {
+    public void test178401() throws Throwable {
         double double0 = MathUtils.scalb(Double.POSITIVE_INFINITY, (byte) 9);
         assertEquals(Double.POSITIVE_INFINITY, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test179401() throws Throwable {
+    public void test179402() throws Throwable {
         double double0 = MathUtils.scalb(0.0, (-64));
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test180402() throws Throwable {
+    public void test180403() throws Throwable {
         long long0 = MathUtils.mulAndCheck(2307L, 0L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test181403() throws Throwable {
+    public void test181404() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.mulAndCheck((long) (-1981), 2935890503282001226L);
@@ -3323,19 +3329,19 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test182404() throws Throwable {
+    public void test182405() throws Throwable {
         long long0 = MathUtils.mulAndCheck((-904L), 0L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test183405() throws Throwable {
+    public void test183406() throws Throwable {
         long long0 = MathUtils.mulAndCheck((-934L), (-934L));
         assertEquals(872356L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test184406() throws Throwable {
+    public void test184407() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.mulAndCheck((-976L), (-4035746434778044925L));
@@ -3349,7 +3355,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test185407() throws Throwable {
+    public void test185408() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.mulAndCheck(Integer.MIN_VALUE, Integer.MIN_VALUE);
@@ -3363,7 +3369,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test186408() throws Throwable {
+    public void test186409() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.mulAndCheck((-2146209931), 6);
@@ -3377,109 +3383,109 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187409() throws Throwable {
+    public void test187410() throws Throwable {
         long long0 = MathUtils.lcm((-95L), 0L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test188410() throws Throwable {
+    public void test188411() throws Throwable {
         long long0 = MathUtils.lcm(0L, (-5241L));
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test189411() throws Throwable {
+    public void test189412() throws Throwable {
         int int0 = MathUtils.lcm((-1712), 0);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test190412() throws Throwable {
+    public void test190413() throws Throwable {
         int int0 = MathUtils.lcm(70, 70);
         assertEquals(70, int0);
     }
 
     @Test(timeout = 4000)
-    public void test191413() throws Throwable {
+    public void test191414() throws Throwable {
         int int0 = MathUtils.lcm(0, 931);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test192414() throws Throwable {
+    public void test192415() throws Throwable {
         short short0 = MathUtils.indicator((short) 78);
         assertEquals((short) 1, short0);
     }
 
     @Test(timeout = 4000)
-    public void test193415() throws Throwable {
+    public void test193416() throws Throwable {
         short short0 = MathUtils.indicator((short) (-2116));
         assertEquals((short) (-1), short0);
     }
 
     @Test(timeout = 4000)
-    public void test194416() throws Throwable {
+    public void test194417() throws Throwable {
         long long0 = MathUtils.indicator((long) 70);
         assertEquals(1L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test195417() throws Throwable {
+    public void test195418() throws Throwable {
         long long0 = MathUtils.indicator((-2175L));
         assertEquals((-1L), long0);
     }
 
     @Test(timeout = 4000)
-    public void test196418() throws Throwable {
+    public void test196419() throws Throwable {
         int int0 = MathUtils.indicator(0);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test197419() throws Throwable {
+    public void test197420() throws Throwable {
         int int0 = MathUtils.indicator((-1400));
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test198420() throws Throwable {
+    public void test198421() throws Throwable {
         float float0 = MathUtils.indicator(1.0F);
         assertEquals(1.0F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test199421() throws Throwable {
+    public void test199422() throws Throwable {
         float float0 = MathUtils.indicator(Float.NaN);
         assertEquals(Float.NaN, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test200422() throws Throwable {
+    public void test200423() throws Throwable {
         double double0 = MathUtils.indicator(1.0);
         assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test201423() throws Throwable {
+    public void test201424() throws Throwable {
         double double0 = MathUtils.indicator((double) (-681));
         assertEquals((-1.0), double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test202424() throws Throwable {
+    public void test202425() throws Throwable {
         byte byte0 = MathUtils.indicator((byte) 0);
         assertEquals((byte) 1, byte0);
     }
 
     @Test(timeout = 4000)
-    public void test203425() throws Throwable {
+    public void test203426() throws Throwable {
         byte byte0 = MathUtils.indicator((byte) (-31));
         assertEquals((byte) (-1), byte0);
     }
 
     @Test(timeout = 4000)
-    public void test204426() throws Throwable {
+    public void test204427() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.gcd((-9223372036854775808L), (-9223372036854775808L));
@@ -3493,31 +3499,31 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test205427() throws Throwable {
+    public void test205428() throws Throwable {
         long long0 = MathUtils.lcm(395L, (-2144L));
         assertEquals(846880L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test206428() throws Throwable {
+    public void test206429() throws Throwable {
         long long0 = MathUtils.gcd((-1L), (long) (short) 0);
         assertEquals(1L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test207429() throws Throwable {
+    public void test207430() throws Throwable {
         long long0 = MathUtils.gcd((-9223372036854775808L), 4648655997399728128L);
         assertEquals(8796093022208L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test208430() throws Throwable {
+    public void test208431() throws Throwable {
         long long0 = MathUtils.gcd((long) 0, (long) 0);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test209431() throws Throwable {
+    public void test209432() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.gcd(Integer.MIN_VALUE, Integer.MIN_VALUE);
@@ -3531,37 +3537,37 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test210432() throws Throwable {
+    public void test210433() throws Throwable {
         int int0 = MathUtils.gcd((-1172), (-2567));
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test211433() throws Throwable {
+    public void test211434() throws Throwable {
         int int0 = MathUtils.gcd((-1), 0);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test212434() throws Throwable {
+    public void test212435() throws Throwable {
         int int0 = MathUtils.gcd(0, (-303));
         assertEquals(303, int0);
     }
 
     @Test(timeout = 4000)
-    public void test213435() throws Throwable {
+    public void test213436() throws Throwable {
         double double0 = MathUtils.factorialLog(1300);
         assertEquals(8025.659468892016, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test214436() throws Throwable {
+    public void test214437() throws Throwable {
         double double0 = MathUtils.factorialLog(0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test215437() throws Throwable {
+    public void test215438() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.factorialLog((-1192));
@@ -3575,7 +3581,13 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test217438() throws Throwable {
+    public void test216439() throws Throwable {
+        // Undeclared exception!
+        MathUtils.factorialDouble(2117237399);
+    }
+
+    @Test(timeout = 4000)
+    public void test217440() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.factorialDouble((-1108));
@@ -3589,7 +3601,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test218439() throws Throwable {
+    public void test218441() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.factorial(83);
@@ -3603,7 +3615,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test219440() throws Throwable {
+    public void test219442() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.factorial((-82));
@@ -3617,34 +3629,16 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test220441() throws Throwable {
+    public void test220443() throws Throwable {
         double double0 = MathUtils.factorialDouble(0);
         assertEquals(1.0, double0, 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test221442() throws Throwable {
-        double[] doubleArray0 = new double[2];
-        double[] doubleArray1 = new double[2];
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
-    }
-
-    @Test(timeout = 4000)
-    public void test221443() throws Throwable {
-        double[] doubleArray0 = new double[2];
-        double[] doubleArray1 = new double[2];
-        doubleArray1[0] = 49.053375057164;
-        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
     public void test221444() throws Throwable {
         double[] doubleArray0 = new double[2];
         double[] doubleArray1 = new double[2];
-        doubleArray1[0] = 49.053375057164;
-        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray1, doubleArray0);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3653,7 +3647,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertFalse(doubleArray0.equals((Object) doubleArray1));
+        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3662,7 +3656,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
+        assertNotSame(doubleArray1, doubleArray0);
     }
 
     @Test(timeout = 4000)
@@ -3671,7 +3665,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertFalse(boolean0);
+        assertFalse(doubleArray0.equals((Object) doubleArray1));
     }
 
     @Test(timeout = 4000)
@@ -3680,7 +3674,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 0.0, 0.0 }, doubleArray0, 0.01);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3689,7 +3683,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 49.053375057164, 0.0 }, doubleArray1, 0.01);
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -3698,7 +3692,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertEquals(2, doubleArray0.length);
+        assertArrayEquals(new double[] { 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3707,30 +3701,32 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray1 = new double[2];
         doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertEquals(2, doubleArray1.length);
+        assertArrayEquals(new double[] { 49.053375057164, 0.0 }, doubleArray1, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test222452() throws Throwable {
-        double[] doubleArray0 = new double[9];
-        double[] doubleArray1 = new double[5];
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
-    }
-
-    @Test(timeout = 4000)
-    public void test222453() throws Throwable {
-        double[] doubleArray0 = new double[9];
-        double[] doubleArray1 = new double[5];
+    public void test221452() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        double[] doubleArray1 = new double[2];
+        doubleArray1[0] = 49.053375057164;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray0, doubleArray1);
+        assertEquals(2, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test221453() throws Throwable {
+        double[] doubleArray0 = new double[2];
+        double[] doubleArray1 = new double[2];
+        doubleArray1[0] = 49.053375057164;
+        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
+        assertEquals(2, doubleArray1.length);
     }
 
     @Test(timeout = 4000)
     public void test222454() throws Throwable {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
-        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray1, doubleArray0);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3738,7 +3734,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertFalse(doubleArray0.equals((Object) doubleArray1));
+        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3746,7 +3742,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
+        assertNotSame(doubleArray1, doubleArray0);
     }
 
     @Test(timeout = 4000)
@@ -3754,7 +3750,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertFalse(boolean0);
+        assertFalse(doubleArray0.equals((Object) doubleArray1));
     }
 
     @Test(timeout = 4000)
@@ -3762,7 +3758,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3770,7 +3766,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -3778,7 +3774,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
-        assertEquals(9, doubleArray0.length);
+        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3786,31 +3782,29 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[9];
         double[] doubleArray1 = new double[5];
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
+        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test222462() throws Throwable {
+        double[] doubleArray0 = new double[9];
+        double[] doubleArray1 = new double[5];
+        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
+        assertEquals(9, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test222463() throws Throwable {
+        double[] doubleArray0 = new double[9];
+        double[] doubleArray1 = new double[5];
+        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray1);
         assertEquals(5, doubleArray1.length);
     }
 
     @Test(timeout = 4000)
-    public void test223462() throws Throwable {
+    public void test223464() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN((double[]) null, (double[]) null);
         assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test224463() throws Throwable {
-        double[] doubleArray0 = new double[8];
-        doubleArray0[0] = (double) 1.0F;
-        doubleArray0[2] = (double) 1.0F;
-        double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertNotNull(doubleArray1);
-    }
-
-    @Test(timeout = 4000)
-    public void test224464() throws Throwable {
-        double[] doubleArray0 = new double[8];
-        doubleArray0[0] = (double) 1.0F;
-        doubleArray0[2] = (double) 1.0F;
-        double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3819,7 +3813,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertNotSame(doubleArray1, doubleArray0);
+        assertNotNull(doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3828,7 +3822,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
+        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3837,7 +3831,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertArrayEquals(new double[] { 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+        assertNotSame(doubleArray1, doubleArray0);
     }
 
     @Test(timeout = 4000)
@@ -3846,7 +3840,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertArrayEquals(new double[] { 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3855,7 +3849,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertEquals(8, doubleArray0.length);
+        assertArrayEquals(new double[] { 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3864,7 +3858,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        assertEquals(8, doubleArray1.length);
+        assertArrayEquals(new double[] { 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3873,8 +3867,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray0, doubleArray1);
+        assertEquals(8, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -3883,8 +3876,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[0] = (double) 1.0F;
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
-        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray1, doubleArray0);
+        assertEquals(8, doubleArray1.length);
     }
 
     @Test(timeout = 4000)
@@ -3894,7 +3886,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertFalse(doubleArray0.equals((Object) doubleArray1));
+        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3904,7 +3896,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
+        assertNotSame(doubleArray1, doubleArray0);
     }
 
     @Test(timeout = 4000)
@@ -3914,7 +3906,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertFalse(boolean0);
+        assertFalse(doubleArray0.equals((Object) doubleArray1));
     }
 
     @Test(timeout = 4000)
@@ -3924,7 +3916,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3934,7 +3926,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -3944,7 +3936,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertEquals(8, doubleArray0.length);
+        assertArrayEquals(new double[] { 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -3954,30 +3946,34 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         doubleArray0[2] = (double) 1.0F;
         double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertEquals(8, doubleArray1.length);
+        assertArrayEquals(new double[] { 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test225480() throws Throwable {
-        double[] doubleArray0 = new double[4];
-        double[] doubleArray1 = new double[6];
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
-    }
-
-    @Test(timeout = 4000)
-    public void test225481() throws Throwable {
-        double[] doubleArray0 = new double[4];
-        double[] doubleArray1 = new double[6];
+    public void test224480() throws Throwable {
+        double[] doubleArray0 = new double[8];
+        doubleArray0[0] = (double) 1.0F;
+        doubleArray0[2] = (double) 1.0F;
+        double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray0, doubleArray1);
+        assertEquals(8, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test224481() throws Throwable {
+        double[] doubleArray0 = new double[8];
+        doubleArray0[0] = (double) 1.0F;
+        doubleArray0[2] = (double) 1.0F;
+        double[] doubleArray1 = MathUtils.normalizeArray(doubleArray0, 1.0);
+        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
+        assertEquals(8, doubleArray1.length);
     }
 
     @Test(timeout = 4000)
     public void test225482() throws Throwable {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
-        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertNotSame(doubleArray1, doubleArray0);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -3985,7 +3981,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertFalse(doubleArray0.equals((Object) doubleArray1));
+        assertNotSame(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
@@ -3993,7 +3989,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertFalse(doubleArray1.equals((Object) doubleArray0));
+        assertNotSame(doubleArray1, doubleArray0);
     }
 
     @Test(timeout = 4000)
@@ -4001,7 +3997,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertFalse(boolean0);
+        assertFalse(doubleArray0.equals((Object) doubleArray1));
     }
 
     @Test(timeout = 4000)
@@ -4009,7 +4005,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
+        assertFalse(doubleArray1.equals((Object) doubleArray0));
     }
 
     @Test(timeout = 4000)
@@ -4017,7 +4013,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -4025,7 +4021,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
-        assertEquals(4, doubleArray0.length);
+        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4033,77 +4029,93 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[4];
         double[] doubleArray1 = new double[6];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
+        assertArrayEquals(new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, doubleArray1, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test225490() throws Throwable {
+        double[] doubleArray0 = new double[4];
+        double[] doubleArray1 = new double[6];
+        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
+        assertEquals(4, doubleArray0.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test225491() throws Throwable {
+        double[] doubleArray0 = new double[4];
+        double[] doubleArray1 = new double[6];
+        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
         assertEquals(6, doubleArray1.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test226490() throws Throwable {
-        double[] doubleArray0 = new double[1];
-        boolean boolean0 = MathUtils.equals((double[]) null, doubleArray0);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test226491() throws Throwable {
-        double[] doubleArray0 = new double[1];
-        boolean boolean0 = MathUtils.equals((double[]) null, doubleArray0);
-        assertArrayEquals(new double[] { 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
     public void test226492() throws Throwable {
         double[] doubleArray0 = new double[1];
         boolean boolean0 = MathUtils.equals((double[]) null, doubleArray0);
-        assertEquals(1, doubleArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test227493() throws Throwable {
-        double[] doubleArray0 = new double[1];
-        boolean boolean0 = MathUtils.equals(doubleArray0, (double[]) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test227494() throws Throwable {
+    public void test226493() throws Throwable {
         double[] doubleArray0 = new double[1];
-        boolean boolean0 = MathUtils.equals(doubleArray0, (double[]) null);
+        boolean boolean0 = MathUtils.equals((double[]) null, doubleArray0);
         assertArrayEquals(new double[] { 0.0 }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test226494() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        boolean boolean0 = MathUtils.equals((double[]) null, doubleArray0);
+        assertEquals(1, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
     public void test227495() throws Throwable {
         double[] doubleArray0 = new double[1];
         boolean boolean0 = MathUtils.equals(doubleArray0, (double[]) null);
+        assertFalse(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test227496() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        boolean boolean0 = MathUtils.equals(doubleArray0, (double[]) null);
+        assertArrayEquals(new double[] { 0.0 }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test227497() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        boolean boolean0 = MathUtils.equals(doubleArray0, (double[]) null);
         assertEquals(1, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test228496() throws Throwable {
+    public void test228498() throws Throwable {
         boolean boolean0 = MathUtils.equals((double[]) null, (double[]) null);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test229497() throws Throwable {
+    public void test229499() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN(0.0, (double) 0.0F, 647);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test230498() throws Throwable {
+    public void test230500() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN((double) (short) 1, (double) (short) 19, 22);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test231499() throws Throwable {
+    public void test231501() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN((double) 0, (-1769.71));
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test232500() throws Throwable {
+    public void test232502() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.equalsIncludingNaN((double) 6L, 2.0, 4194304);
@@ -4116,49 +4128,33 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test233501() throws Throwable {
+    public void test233503() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN(11.0, 888.8365771801, 1242.851314);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test234502() throws Throwable {
+    public void test234504() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN(0.0, 2021.0989655927, (-189.65088836));
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test235503() throws Throwable {
+    public void test235505() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN(10.0, 10.0, 10.0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test236504() throws Throwable {
+    public void test236506() throws Throwable {
         boolean boolean0 = MathUtils.equals(87.0, (double) 916, (double) 1300);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test237505() throws Throwable {
+    public void test237507() throws Throwable {
         boolean boolean0 = MathUtils.equalsIncludingNaN(Double.NaN, 1568.3587501037364);
         assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test238506() throws Throwable {
-        double[] doubleArray0 = new double[3];
-        doubleArray0[0] = Double.NaN;
-        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray0);
-        assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test238507() throws Throwable {
-        double[] doubleArray0 = new double[3];
-        doubleArray0[0] = Double.NaN;
-        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray0);
-        assertArrayEquals(new double[] { Double.NaN, 0.0, 0.0 }, doubleArray0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -4166,23 +4162,23 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = Double.NaN;
         boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray0);
-        assertEquals(3, doubleArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test239509() throws Throwable {
-        double[] doubleArray0 = new double[3];
-        doubleArray0[0] = Double.NaN;
-        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test239510() throws Throwable {
+    public void test238509() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = Double.NaN;
-        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray0);
+        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray0);
         assertArrayEquals(new double[] { Double.NaN, 0.0, 0.0 }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test238510() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = Double.NaN;
+        boolean boolean0 = MathUtils.equalsIncludingNaN(doubleArray0, doubleArray0);
+        assertEquals(3, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
@@ -4190,29 +4186,45 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = Double.NaN;
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray0);
+        assertTrue(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test239512() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = Double.NaN;
+        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray0);
+        assertArrayEquals(new double[] { Double.NaN, 0.0, 0.0 }, doubleArray0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test239513() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = Double.NaN;
+        boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray0);
         assertEquals(3, doubleArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test240512() throws Throwable {
+    public void test240514() throws Throwable {
         int int0 = MathUtils.compareTo(Double.NaN, 0, 1);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test241513() throws Throwable {
+    public void test241515() throws Throwable {
         int int0 = MathUtils.compareTo(1.304E19, 1.304E19, 0.097);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test242514() throws Throwable {
+    public void test242516() throws Throwable {
         int int0 = MathUtils.compareTo(647.3, 2294L, 0.0);
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test243515() throws Throwable {
+    public void test243517() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.binomialCoefficientLog((-2595), (-2595));
@@ -4226,73 +4238,73 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test244516() throws Throwable {
+    public void test244518() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(1627, 1525);
         assertEquals(378.0249090546729, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test245517() throws Throwable {
+    public void test245519() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(524, (-3363));
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test246518() throws Throwable {
+    public void test246520() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(205, 0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test247519() throws Throwable {
+    public void test247521() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(1, (-681));
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test248520() throws Throwable {
+    public void test248522() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(0, 0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test249521() throws Throwable {
+    public void test249523() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(2471, 13);
         assertEquals(1.9922011497261004E34, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test250522() throws Throwable {
+    public void test250524() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(2513, 1);
         assertEquals(2513.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test251523() throws Throwable {
+    public void test251525() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(2513, 0);
         assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test252524() throws Throwable {
+    public void test252526() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(4, 4);
         assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test253525() throws Throwable {
+    public void test253527() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(1382, (-622));
         assertEquals(1L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test254526() throws Throwable {
+    public void test254528() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(66, 2);
         assertEquals(2145.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test255527() throws Throwable {
+    public void test255529() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.binomialCoefficient(3239, 1924);
@@ -4306,74 +4318,79 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test256528() throws Throwable {
+    public void test256530() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(57, 1);
         assertEquals(57L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test257529() throws Throwable {
+    public void test257531() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(1030, 0);
         assertEquals(1L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test258530() throws Throwable {
+    public void test258532() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(39, 22);
         assertEquals(5.102111781E10, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test259531() throws Throwable {
+    public void test259533() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(0, 0);
         assertEquals(1L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test260532() throws Throwable {
+    public void test260534() throws Throwable {
         long long0 = MathUtils.subAndCheck((-1862L), (-1862L));
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test261533() throws Throwable {
+    public void test261535() throws Throwable {
         long long0 = MathUtils.subAndCheck((-874L), 1421L);
         assertEquals((-2295L), long0);
     }
 
     @Test(timeout = 4000)
-    public void test262534() throws Throwable {
+    public void test262536() throws Throwable {
         int int0 = MathUtils.addAndCheck((-1), 0);
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test263535() throws Throwable {
+    public void test263537() throws Throwable {
         double double0 = MathUtils.round(1.4456468917292502E-16, 0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test264536() throws Throwable {
+    public void test264538() throws Throwable {
         double double0 = MathUtils.cosh((-442.158));
         assertEquals(5.3180147029954794E191, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test265537() throws Throwable {
+    public void test265539() throws Throwable {
         double double0 = MathUtils.normalizeAngle((-1493.0), 0);
         assertEquals(2.398103108741452, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test267538() throws Throwable {
+    public void test266540() throws Throwable {
+        MathUtils.sinh(1.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test267541() throws Throwable {
         double[] doubleArray0 = new double[0];
         int int0 = MathUtils.hash(doubleArray0);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test268539() throws Throwable {
+    public void test268542() throws Throwable {
         // Undeclared exception!
         try {
             MathUtils.checkOrder((double[]) null);
@@ -4387,7 +4404,7 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test269540() throws Throwable {
+    public void test269543() throws Throwable {
         int int0 = MathUtils.hash((double) 0);
         assertEquals(0, int0);
     }

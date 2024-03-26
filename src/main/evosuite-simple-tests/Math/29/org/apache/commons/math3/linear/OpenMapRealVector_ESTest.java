@@ -445,7 +445,12 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test01514() throws Throwable {
+    public void test01414() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(3184, 3184);
+    }
+
+    @Test(timeout = 4000)
+    public void test01515() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         OpenMapRealVector.OpenMapSparseIterator openMapRealVector_OpenMapSparseIterator0 = openMapRealVector0.new OpenMapSparseIterator();
         // Undeclared exception!
@@ -461,7 +466,46 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test02015() throws Throwable {
+    public void test01616() throws Throwable {
+        Double[] doubleArray0 = new Double[2];
+        Double double0 = new Double(1734.11);
+        doubleArray0[0] = double0;
+        Double double1 = new Double(1734.11);
+        Double.min((-1.0), 3495.3);
+        Double.min(3495.3, (double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        openMapRealVector0.getL1Norm();
+        openMapRealVector0.toArray();
+    }
+
+    @Test(timeout = 4000)
+    public void test01717() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0, 0, 1550.42645689037);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector(openMapRealVector1, 289);
+        OpenMapRealVector openMapRealVector3 = new OpenMapRealVector((RealVector) openMapRealVector2);
+        openMapRealVector3.copy();
+    }
+
+    @Test(timeout = 4000)
+    public void test01818() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(32, 1.0);
+        openMapRealVector0.getSparsity();
+    }
+
+    @Test(timeout = 4000)
+    public void test01919() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = 0.0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, Double.POSITIVE_INFINITY);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector((RealVector) openMapRealVector1);
+        openMapRealVector2.mapAdd(1375.243);
+    }
+
+    @Test(timeout = 4000)
+    public void test02020() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1100));
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = 1.0E-12;
@@ -481,7 +525,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test02116() throws Throwable {
+    public void test02121() throws Throwable {
         OpenMapRealVector openMapRealVector0 = null;
         try {
             openMapRealVector0 = new OpenMapRealVector((double[]) null);
@@ -495,7 +539,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test02217() throws Throwable {
+    public void test02222() throws Throwable {
         double[] doubleArray0 = null;
         OpenMapRealVector openMapRealVector0 = null;
         try {
@@ -510,7 +554,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test02318() throws Throwable {
+    public void test02323() throws Throwable {
         Double[] doubleArray0 = null;
         double double0 = 0.0;
         OpenMapRealVector openMapRealVector0 = null;
@@ -526,7 +570,50 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test02819() throws Throwable {
+    public void test02424() throws Throwable {
+        Double[] doubleArray0 = new Double[4];
+        Double double0 = new Double(1413.763634870159);
+        doubleArray0[0] = double0;
+        Double double1 = new Double((double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        Double double2 = new Double(1.0);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(1493.5658845);
+        doubleArray0[3] = double3;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0, 2007);
+        openMapRealVector1.getSparsity();
+    }
+
+    @Test(timeout = 4000)
+    public void test02525() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector0.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02626() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-527), 3029);
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(openIntToDoubleHashMap_Iterator0).value();
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector0.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+        openMapRealVector_OpenMapEntry0.getValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test02727() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(32, 190, 32);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        Asinh asinh0 = new Asinh();
+        UnivariateFunction univariateFunction0 = asinh0.derivative();
+        openMapRealVector1.map(univariateFunction0);
+        openMapRealVector0.outerProduct(openMapRealVector1);
+        openMapRealVector1.set(1746.922221);
+    }
+
+    @Test(timeout = 4000)
+    public void test02828() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1492);
         double[] doubleArray0 = new double[0];
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(doubleArray0);
@@ -543,7 +630,57 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test03320() throws Throwable {
+    public void test02929() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        openMapRealVector0.mapAdd(0.0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        openMapRealVector1.combineToSelf(0.0, (-1262.0), openMapRealVector0);
+        openMapRealVector1.dotProduct(openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03030() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(0, 0);
+        openMapRealVector1.getMinValue();
+        openMapRealVector0.getLInfDistance(openMapRealVector1);
+        OpenMapRealVector openMapRealVector2 = openMapRealVector1.append((RealVector) openMapRealVector0);
+        openMapRealVector1.getSparsity();
+        openMapRealVector1.sparseIterator();
+        openMapRealVector0.iterator();
+        openMapRealVector1.getMinIndex();
+        openMapRealVector0.isDefaultValue(0.0);
+        openMapRealVector1.isDefaultValue(0.0);
+        openMapRealVector0.projection(openMapRealVector2);
+    }
+
+    @Test(timeout = 4000)
+    public void test03131() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = (-4305.03);
+        doubleArray0[1] = Double.NEGATIVE_INFINITY;
+        doubleArray0[2] = (-2182.71593815);
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (-4305.03));
+        OpenMapRealVector.OpenMapSparseIterator openMapRealVector_OpenMapSparseIterator0 = openMapRealVector0.new OpenMapSparseIterator();
+        openMapRealVector0.isDefaultValue(0.0);
+        openMapRealVector_OpenMapSparseIterator0.next();
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        openMapRealVector1.mapDivide((-4305.03));
+        openMapRealVector0.append((RealVector) openMapRealVector1);
+        openMapRealVector0.isInfinite();
+        openMapRealVector0.mapAdd((-709.0431304857449));
+    }
+
+    @Test(timeout = 4000)
+    public void test03232() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1200, 4616.4);
+        openMapRealVector0.getMinIndex();
+        openMapRealVector0.isNaN();
+    }
+
+    @Test(timeout = 4000)
+    public void test03333() throws Throwable {
         int int0 = (-3079);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-3079), (-3079));
         openMapRealVector0.getMinIndex();
@@ -567,7 +704,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test03421() throws Throwable {
+    public void test03434() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
         openMapRealVector0.dotProduct((RealVector) openMapRealVector1);
@@ -597,7 +734,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test03522() throws Throwable {
+    public void test03535() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-132), (-309));
         // Undeclared exception!
         try {
@@ -612,7 +749,20 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test03723() throws Throwable {
+    public void test03636() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = 0.0;
+        doubleArray0[2] = 511.2578056;
+        doubleArray0[3] = 2173.7475097;
+        doubleArray0[4] = (-433.180479761631);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(arrayRealVector0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03737() throws Throwable {
         Double[] doubleArray0 = new Double[3];
         Double double0 = new Double((-383.63114));
         doubleArray0[0] = double0;
@@ -638,7 +788,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test03824() throws Throwable {
+    public void test03838() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(48, (-1.0));
         OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(openIntToDoubleHashMap_Iterator0).key();
@@ -664,7 +814,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test03925() throws Throwable {
+    public void test03939() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-50), 273, (-2070.890162066553));
         openMapRealVector0.isNaN();
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
@@ -683,7 +833,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04026() throws Throwable {
+    public void test04040() throws Throwable {
         int int0 = 928;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(921, 928);
         double double0 = 459.5574418;
@@ -706,7 +856,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04127() throws Throwable {
+    public void test04141() throws Throwable {
         double[] doubleArray0 = new double[8];
         doubleArray0[0] = (-1.0);
         doubleArray0[1] = (-555.23151285);
@@ -734,7 +884,25 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04328() throws Throwable {
+    public void test04242() throws Throwable {
+        Double[] doubleArray0 = new Double[4];
+        Double double0 = new Double((-1.0));
+        doubleArray0[0] = double0;
+        Double double1 = new Double((-1.0));
+        Double.isFinite((double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        Double double2 = new Double((double) doubleArray0[1]);
+        doubleArray0[2] = double2;
+        Double.isFinite((double) doubleArray0[2]);
+        Double double3 = new Double((double) doubleArray0[0]);
+        doubleArray0[3] = double3;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (double) doubleArray0[3]);
+        openMapRealVector0.hashCode();
+        openMapRealVector0.getSubVector(2, 2);
+    }
+
+    @Test(timeout = 4000)
+    public void test04343() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         openMapRealVector0.isInfinite();
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.subtract(openMapRealVector0);
@@ -753,7 +921,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04429() throws Throwable {
+    public void test04444() throws Throwable {
         Double[] doubleArray0 = new Double[0];
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
         // Undeclared exception!
@@ -769,7 +937,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04530() throws Throwable {
+    public void test04545() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         openMapRealVector0.mapMultiplyToSelf(0.0);
         openMapRealVector0.mapDivide((-2141.879062277274));
@@ -788,7 +956,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04631() throws Throwable {
+    public void test04646() throws Throwable {
         double[] doubleArray0 = new double[4];
         doubleArray0[0] = 0.73493;
         doubleArray0[1] = (-1139.0);
@@ -811,7 +979,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04732() throws Throwable {
+    public void test04747() throws Throwable {
         int int0 = (-1);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1), (-1));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
@@ -830,7 +998,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test04833() throws Throwable {
+    public void test04848() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(763);
         openMapRealVector0.isInfinite();
         Double[] doubleArray0 = new Double[6];
@@ -857,7 +1025,22 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05034() throws Throwable {
+    public void test04949() throws Throwable {
+        double[] doubleArray0 = new double[8];
+        doubleArray0[0] = 637.788936890229;
+        doubleArray0[1] = 1.0E-12;
+        doubleArray0[2] = (-2076.4462805);
+        doubleArray0[3] = 1391.8477101776673;
+        doubleArray0[4] = 1911.7;
+        doubleArray0[5] = (-886.20516);
+        doubleArray0[6] = 0.0;
+        doubleArray0[7] = 0.0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        openMapRealVector0.unitize();
+    }
+
+    @Test(timeout = 4000)
+    public void test05050() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = 1.0E-12;
         doubleArray0[1] = 2327.0;
@@ -891,7 +1074,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05135() throws Throwable {
+    public void test05151() throws Throwable {
         Double[] doubleArray0 = new Double[7];
         Double double0 = new Double((-938.4529));
         doubleArray0[0] = double0;
@@ -922,7 +1105,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05236() throws Throwable {
+    public void test05252() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-2114));
         int int0 = 32;
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((-2114), 32, (-2727.48584195589));
@@ -943,7 +1126,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05337() throws Throwable {
+    public void test05353() throws Throwable {
         OpenMapRealVector openMapRealVector0 = null;
         OpenMapRealVector openMapRealVector1 = null;
         try {
@@ -958,7 +1141,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05438() throws Throwable {
+    public void test05454() throws Throwable {
         Double[] doubleArray0 = new Double[4];
         Double double0 = new Double(0.0);
         doubleArray0[0] = double0;
@@ -984,7 +1167,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05539() throws Throwable {
+    public void test05555() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0, 0);
         // Undeclared exception!
         try {
@@ -999,7 +1182,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05640() throws Throwable {
+    public void test05656() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = (-2840.252126363322);
         doubleArray0[1] = 0.0;
@@ -1028,7 +1211,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05741() throws Throwable {
+    public void test05757() throws Throwable {
         RealVector realVector0 = null;
         OpenMapRealVector openMapRealVector0 = null;
         try {
@@ -1042,7 +1225,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05842() throws Throwable {
+    public void test05858() throws Throwable {
         int int0 = 293;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(293, Double.NEGATIVE_INFINITY);
         openMapRealVector0.toArray();
@@ -1062,7 +1245,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test05943() throws Throwable {
+    public void test05959() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 0.0;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, 0.0);
@@ -1088,7 +1271,22 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test06144() throws Throwable {
+    public void test06060() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (-93.2265);
+        doubleArray0[2] = 1720.67353737;
+        doubleArray0[3] = 0.0;
+        doubleArray0[4] = Double.POSITIVE_INFINITY;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        openMapRealVector1.ebeDivide(openMapRealVector0);
+        openMapRealVector0.getLInfDistance(openMapRealVector1);
+        openMapRealVector1.getEntry(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test06161() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         OpenMapRealVector.OpenMapSparseIterator openMapRealVector_OpenMapSparseIterator0 = openMapRealVector0.new OpenMapSparseIterator();
         // Undeclared exception!
@@ -1104,7 +1302,15 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test06345() throws Throwable {
+    public void test06262() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
+        openMapRealVector0.mapDivide((-459.7));
+        openMapRealVector0.isInfinite();
+        openMapRealVector0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test06363() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.copy();
         OpenMapRealVector openMapRealVector2 = openMapRealVector1.mapAdd((-1713.99593376706));
@@ -1121,7 +1327,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test06446() throws Throwable {
+    public void test06464() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(224);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
         openMapRealVector0.getDistance(openMapRealVector1);
@@ -1138,7 +1344,23 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test06647() throws Throwable {
+    public void test06565() throws Throwable {
+        Double[] doubleArray0 = new Double[4];
+        Double double0 = new Double(1.0);
+        doubleArray0[0] = double0;
+        Double double1 = Double.valueOf((double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        Double double2 = new Double(1.0);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(1.0);
+        doubleArray0[3] = double3;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        openMapRealVector0.subtract(openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test06666() throws Throwable {
         int int0 = (-1464);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1464), (-780.2));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0, 0);
@@ -1170,7 +1392,28 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test06948() throws Throwable {
+    public void test06767() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1), 1208, (-267.6035));
+        OpenMapRealVector.OpenMapSparseIterator openMapRealVector_OpenMapSparseIterator0 = openMapRealVector0.new OpenMapSparseIterator();
+        openMapRealVector_OpenMapSparseIterator0.hasNext();
+    }
+
+    @Test(timeout = 4000)
+    public void test06868() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (-132.09534419319735);
+        doubleArray0[2] = (-170.24);
+        doubleArray0[3] = 6.283185307179586;
+        doubleArray0[4] = 0.0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector(openMapRealVector1);
+        openMapRealVector2.dotProduct((RealVector) openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test06969() throws Throwable {
         Double[] doubleArray0 = new Double[3];
         Double double0 = new Double(0.0);
         doubleArray0[0] = double0;
@@ -1193,7 +1436,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07049() throws Throwable {
+    public void test07070() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 2685.3643084031;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
@@ -1217,7 +1460,36 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07250() throws Throwable {
+    public void test07171() throws Throwable {
+        Double[] doubleArray0 = new Double[8];
+        Double double0 = new Double((-2853.55932));
+        doubleArray0[0] = double0;
+        Double double1 = new Double((double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        Double double2 = new Double((double) doubleArray0[0]);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(1076.0);
+        doubleArray0[3] = double3;
+        Double double4 = new Double((double) doubleArray0[0]);
+        doubleArray0[4] = double4;
+        Double double5 = new Double((double) doubleArray0[1]);
+        doubleArray0[5] = double5;
+        Double.min(0.0, (double) doubleArray0[0]);
+        Double double6 = new Double((-1522.609231593));
+        doubleArray0[6] = double6;
+        Double double7 = new Double(0.0);
+        Double.sum((-1522.609231593), (-1135.1106966266227));
+        Double.min((double) doubleArray0[4], (double) doubleArray0[5]);
+        Double.max(933.1, 2140.88436858175);
+        Double.isFinite(237.0810242);
+        doubleArray0[7] = double7;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        openMapRealVector1.projection(openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07272() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(47, 47, (-1409.046116306145));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(47, 32);
         openMapRealVector1.getL1Distance(openMapRealVector0);
@@ -1237,7 +1509,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07351() throws Throwable {
+    public void test07373() throws Throwable {
         double[] doubleArray0 = new double[0];
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (-727.1219));
         RealVectorPreservingVisitor realVectorPreservingVisitor0 = mock(RealVectorPreservingVisitor.class, new ViolatedAssumptionAnswer());
@@ -1259,7 +1531,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07452() throws Throwable {
+    public void test07474() throws Throwable {
         double[] doubleArray0 = new double[4];
         doubleArray0[0] = 1905.041;
         doubleArray0[1] = (-1.0);
@@ -1280,7 +1552,20 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07653() throws Throwable {
+    public void test07575() throws Throwable {
+        Double[] doubleArray0 = new Double[3];
+        Double double0 = new Double((-2753.17));
+        doubleArray0[0] = double0;
+        Double double1 = new Double((-1.0));
+        doubleArray0[1] = double1;
+        Double double2 = new Double((-2753.17));
+        doubleArray0[2] = double2;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (double) doubleArray0[0]);
+        openMapRealVector0.mapAddToSelf(0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07676() throws Throwable {
         int int0 = 33;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(33);
         openMapRealVector0.setEntry(26, (-1311.847594703));
@@ -1302,7 +1587,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07754() throws Throwable {
+    public void test07777() throws Throwable {
         double[] doubleArray0 = new double[3];
         double double0 = (-2102.6039973958987);
         doubleArray0[0] = (-2102.6039973958987);
@@ -1330,7 +1615,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07855() throws Throwable {
+    public void test07878() throws Throwable {
         Double[] doubleArray0 = null;
         OpenMapRealVector openMapRealVector0 = null;
         try {
@@ -1345,7 +1630,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test07956() throws Throwable {
+    public void test07979() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1312);
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.copy();
         OpenMapRealVector openMapRealVector2 = openMapRealVector1.append((RealVector) openMapRealVector0);
@@ -1362,7 +1647,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test08057() throws Throwable {
+    public void test08080() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0, (-3039), 0);
         openMapRealVector0.mapAddToSelf(1732.69);
         // Undeclared exception!
@@ -1378,7 +1663,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test08158() throws Throwable {
+    public void test08181() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         openMapRealVector0.mapDivide((-1385.918928706));
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.copy();
@@ -1400,7 +1685,65 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test08559() throws Throwable {
+    public void test08282() throws Throwable {
+        Double[] doubleArray0 = new Double[5];
+        Double double0 = new Double(0.0);
+        doubleArray0[0] = double0;
+        Double double1 = new Double(982.8);
+        doubleArray0[1] = double1;
+        Double double2 = new Double((double) doubleArray0[0]);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(0.0);
+        doubleArray0[3] = double3;
+        Double double4 = new Double((-652.53616));
+        doubleArray0[4] = double4;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, 2954.84);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(doubleArray0, 982.8);
+        openMapRealVector0.getDistance(openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test08383() throws Throwable {
+        Double[] doubleArray0 = new Double[7];
+        Double double0 = new Double(2.0);
+        doubleArray0[0] = double0;
+        Double double1 = new Double((-2404.419386274));
+        doubleArray0[1] = double1;
+        Double double2 = new Double(0.0);
+        doubleArray0[2] = double2;
+        Double double3 = new Double((double) doubleArray0[1]);
+        doubleArray0[3] = double3;
+        Double double4 = new Double(0.0);
+        doubleArray0[4] = double4;
+        Double double5 = new Double(1328.5);
+        doubleArray0[5] = double5;
+        Double double6 = new Double((double) doubleArray0[0]);
+        doubleArray0[6] = double6;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(doubleArray0);
+        openMapRealVector0.append(openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test08484() throws Throwable {
+        Double[] doubleArray0 = new Double[4];
+        Double double0 = new Double(0.0);
+        doubleArray0[0] = double0;
+        Double double1 = new Double((-1.0));
+        doubleArray0[1] = double1;
+        Double double2 = new Double(0.0);
+        doubleArray0[2] = double2;
+        Double double3 = new Double((-1.0));
+        doubleArray0[3] = double3;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(openIntToDoubleHashMap_Iterator0).key();
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector0.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+        openMapRealVector_OpenMapEntry0.getIndex();
+    }
+
+    @Test(timeout = 4000)
+    public void test08585() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0, (-1));
         OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
         OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector0.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
@@ -1427,7 +1770,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test08660() throws Throwable {
+    public void test08686() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-2295), (-2295), (-2295));
         RealVectorChangingVisitor realVectorChangingVisitor0 = mock(RealVectorChangingVisitor.class, new ViolatedAssumptionAnswer());
         doReturn(0.0).when(realVectorChangingVisitor0).end();
@@ -1451,7 +1794,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test08761() throws Throwable {
+    public void test08787() throws Throwable {
         int int0 = (-1);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1));
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.mapAddToSelf((-1));
@@ -1470,7 +1813,32 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test08962() throws Throwable {
+    public void test08888() throws Throwable {
+        double[] doubleArray0 = new double[8];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (-16.0);
+        doubleArray0[2] = 2454.1874907714;
+        doubleArray0[3] = 1368.4981715;
+        doubleArray0[4] = 251.0;
+        doubleArray0[5] = (-70.87221);
+        doubleArray0[6] = 0.0;
+        doubleArray0[7] = (-1817.7996510790445);
+        double[] doubleArray1 = new double[7];
+        doubleArray1[0] = 0.0;
+        doubleArray1[1] = 0.0;
+        doubleArray1[2] = (-16.0);
+        doubleArray1[3] = (-16.0);
+        doubleArray1[4] = 0.0;
+        doubleArray1[5] = (-70.87221);
+        doubleArray1[6] = (-1817.7996510790445);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0, doubleArray1);
+        RealVector realVector0 = RealVector.unmodifiableRealVector(arrayRealVector0);
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(realVector0);
+        openMapRealVector0.getLInfDistance(arrayRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test08989() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(610, 610);
         RealVector realVector0 = RealVector.unmodifiableRealVector(openMapRealVector0);
         openMapRealVector0.add(realVector0);
@@ -1488,7 +1856,18 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09163() throws Throwable {
+    public void test09090() throws Throwable {
+        int int0 = 1313;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1313, 1313);
+        RealVector realVector0 = RealVector.unmodifiableRealVector(openMapRealVector0);
+        openMapRealVector0.getEntry(0);
+        realVector0.getL1Norm();
+        // Undeclared exception!
+        openMapRealVector0.add(realVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09191() throws Throwable {
         Double[] doubleArray0 = new Double[5];
         Double double0 = new Double(248.427);
         doubleArray0[0] = double0;
@@ -1517,7 +1896,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09264() throws Throwable {
+    public void test09292() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(32);
         // Undeclared exception!
         try {
@@ -1532,7 +1911,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09365() throws Throwable {
+    public void test09393() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
         openMapRealVector0.getDistance(openMapRealVector1);
@@ -1552,7 +1931,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09466() throws Throwable {
+    public void test09494() throws Throwable {
         Double[] doubleArray0 = new Double[5];
         Double double0 = new Double(2268.74527);
         doubleArray0[0] = double0;
@@ -1589,7 +1968,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09567() throws Throwable {
+    public void test09595() throws Throwable {
         Double[] doubleArray0 = new Double[4];
         double double0 = 0.0;
         Double double1 = new Double(0.0);
@@ -1618,7 +1997,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09668() throws Throwable {
+    public void test09696() throws Throwable {
         int int0 = (-442);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-442));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
@@ -1640,7 +2019,16 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09869() throws Throwable {
+    public void test09797() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(270, 270, 270);
+        OpenMapRealVector openMapRealVector1 = openMapRealVector0.mapAddToSelf(0.0);
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector0.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+        openMapRealVector0.setSubVector(0, openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test09898() throws Throwable {
         Double[] doubleArray0 = new Double[8];
         Double double0 = new Double(0.0);
         doubleArray0[0] = double0;
@@ -1684,7 +2072,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test09970() throws Throwable {
+    public void test09999() throws Throwable {
         int int0 = (-1399);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1399), Double.POSITIVE_INFINITY);
         double[] doubleArray0 = new double[4];
@@ -1720,7 +2108,39 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10171() throws Throwable {
+    public void test100100() throws Throwable {
+        Double[] doubleArray0 = new Double[6];
+        Double double0 = new Double(3502.98567);
+        doubleArray0[0] = double0;
+        Double double1 = new Double((double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        Double double2 = new Double(3502.98567);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(3502.98567);
+        doubleArray0[3] = double3;
+        Double double4 = new Double((-1.0));
+        doubleArray0[4] = double4;
+        Double double5 = new Double(Double.NaN);
+        doubleArray0[5] = double5;
+        Double.sum((double) doubleArray0[2], 0.0);
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        Double.isFinite(Double.NaN);
+        openMapRealVector0.sparseIterator();
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(openIntToDoubleHashMap_Iterator0).value();
+        Double.min(0.0, 386.034701613817);
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector0.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+        openMapRealVector_OpenMapEntry0.getValue();
+        OpenMapRealVector.OpenMapSparseIterator openMapRealVector_OpenMapSparseIterator0 = openMapRealVector0.new OpenMapSparseIterator();
+        openMapRealVector_OpenMapSparseIterator0.next();
+        openMapRealVector_OpenMapSparseIterator0.next();
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(208);
+        openMapRealVector0.append((RealVector) arrayRealVector0);
+        openMapRealVector0.set((double) doubleArray0[0]);
+    }
+
+    @Test(timeout = 4000)
+    public void test101101() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         openMapRealVector0.isInfinite();
         OpenMapRealVector openMapRealVector1 = null;
@@ -1737,7 +2157,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10272() throws Throwable {
+    public void test102102() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
         OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
@@ -1764,7 +2184,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10373() throws Throwable {
+    public void test103103() throws Throwable {
         int int0 = 0;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-695), 0, (-695));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
@@ -1783,7 +2203,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10474() throws Throwable {
+    public void test104104() throws Throwable {
         OpenMapRealVector openMapRealVector0 = null;
         int int0 = 0;
         OpenMapRealVector openMapRealVector1 = null;
@@ -1799,7 +2219,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10575() throws Throwable {
+    public void test105105() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = 6.283185307179586;
         doubleArray0[1] = 0.0;
@@ -1819,7 +2239,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10676() throws Throwable {
+    public void test106106() throws Throwable {
         OpenMapRealVector openMapRealVector0 = null;
         try {
             openMapRealVector0 = new OpenMapRealVector(2146590879, 2146590879, 1145.8947);
@@ -1833,7 +2253,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10777() throws Throwable {
+    public void test107107() throws Throwable {
         int int0 = 0;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0, (-3039), 0);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((-1), (-1062.57));
@@ -1850,7 +2270,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10878() throws Throwable {
+    public void test108108() throws Throwable {
         Double[] doubleArray0 = new Double[3];
         Double double0 = new Double((-1673.0146288));
         doubleArray0[0] = double0;
@@ -1882,7 +2302,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10979() throws Throwable {
+    public void test109109() throws Throwable {
         double[] doubleArray0 = new double[0];
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (-727.1219));
         RealVectorPreservingVisitor realVectorPreservingVisitor0 = mock(RealVectorPreservingVisitor.class, new ViolatedAssumptionAnswer());
@@ -1907,7 +2327,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11080() throws Throwable {
+    public void test110110() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1447, 0.0);
         openMapRealVector0.combine(0.0, 1447, openMapRealVector0);
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.unitVector();
@@ -1924,7 +2344,43 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11381() throws Throwable {
+    public void test111111() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (-132.09534419319735);
+        doubleArray0[2] = (-170.24);
+        doubleArray0[3] = 6.283185307179586;
+        doubleArray0[4] = 0.0;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        RealVectorPreservingVisitor realVectorPreservingVisitor0 = mock(RealVectorPreservingVisitor.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(realVectorPreservingVisitor0).end();
+        openMapRealVector1.walkInOptimizedOrder(realVectorPreservingVisitor0);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector(openMapRealVector1);
+        openMapRealVector2.dotProduct((RealVector) openMapRealVector1);
+        openMapRealVector0.unitVector();
+    }
+
+    @Test(timeout = 4000)
+    public void test112112() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (-727.1219));
+        RealVectorPreservingVisitor realVectorPreservingVisitor0 = mock(RealVectorPreservingVisitor.class, new ViolatedAssumptionAnswer());
+        RealVector realVector0 = RealVector.unmodifiableRealVector(openMapRealVector0);
+        realVector0.mapMultiply(2916.936571886845);
+        openMapRealVector0.ebeDivide(realVector0);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = openMapRealVector0.ebeDivide(arrayRealVector0);
+        openMapRealVector0.toArray();
+        openMapRealVector1.append(openMapRealVector0);
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(openIntToDoubleHashMap_Iterator0).key();
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector1.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+        openMapRealVector_OpenMapEntry0.getIndex();
+    }
+
+    @Test(timeout = 4000)
+    public void test113113() throws Throwable {
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = 4111.0;
         doubleArray0[1] = 649.9224;
@@ -1949,7 +2405,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11482() throws Throwable {
+    public void test114114() throws Throwable {
         int int0 = 995;
         int int1 = (-728);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(995, 995);
@@ -1969,7 +2425,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11583() throws Throwable {
+    public void test115115() throws Throwable {
         int int0 = 181;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(181, 181);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(2716, 181, 1.0E-12);
@@ -1986,7 +2442,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11684() throws Throwable {
+    public void test116116() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-21));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0, (-21));
         openMapRealVector0.hashCode();
@@ -2015,7 +2471,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11785() throws Throwable {
+    public void test117117() throws Throwable {
         int int0 = 0;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0, 0);
@@ -2048,7 +2504,15 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test11986() throws Throwable {
+    public void test118118() throws Throwable {
+        int int0 = 2146970693;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2146970693);
+        // Undeclared exception!
+        openMapRealVector0.set(2146970693);
+    }
+
+    @Test(timeout = 4000)
+    public void test119119() throws Throwable {
         Double[] doubleArray0 = new Double[4];
         Double double0 = new Double((-968.5766984261));
         doubleArray0[0] = double0;
@@ -2087,7 +2551,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12087() throws Throwable {
+    public void test120120() throws Throwable {
         int int0 = 2795;
         int int1 = (-3137);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, (-3137));
@@ -2103,7 +2567,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12188() throws Throwable {
+    public void test121121() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector();
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.mapAddToSelf((-7.3304404046850136E-9));
         openMapRealVector1.mapAddToSelf(2688.306219726303);
@@ -2124,7 +2588,26 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12389() throws Throwable {
+    public void test122122() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, (-727.1219));
+        RealVectorPreservingVisitor realVectorPreservingVisitor0 = mock(RealVectorPreservingVisitor.class, new ViolatedAssumptionAnswer());
+        RealVector realVector0 = RealVector.unmodifiableRealVector(openMapRealVector0);
+        realVector0.mapMultiply(2916.936571886845);
+        openMapRealVector0.ebeDivide(realVector0);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = openMapRealVector0.ebeDivide(arrayRealVector0);
+        openMapRealVector0.toArray();
+        openMapRealVector1.append(openMapRealVector0);
+        openMapRealVector1.unitVector();
+        OpenIntToDoubleHashMap.Iterator openIntToDoubleHashMap_Iterator0 = mock(OpenIntToDoubleHashMap.Iterator.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(openIntToDoubleHashMap_Iterator0).key();
+        OpenMapRealVector.OpenMapEntry openMapRealVector_OpenMapEntry0 = openMapRealVector1.new OpenMapEntry(openIntToDoubleHashMap_Iterator0);
+        openMapRealVector_OpenMapEntry0.getIndex();
+    }
+
+    @Test(timeout = 4000)
+    public void test123123() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(405, 5037.293389903);
         RealVector.unmodifiableRealVector(openMapRealVector0);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
@@ -2145,7 +2628,38 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12590() throws Throwable {
+    public void test124124() throws Throwable {
+        Double[] doubleArray0 = new Double[6];
+        Double double0 = new Double((-3520.949999));
+        doubleArray0[0] = double0;
+        Double double1 = new Double(Double.NaN);
+        doubleArray0[1] = double1;
+        Double double2 = new Double(3.141592653589793);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(588.5125100185);
+        doubleArray0[3] = double3;
+        Double.sum((-1922.0), 6176.2973302566);
+        Double double4 = new Double(2480.0);
+        doubleArray0[4] = double4;
+        Double double5 = new Double(3.141592653589793);
+        doubleArray0[5] = double5;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        double[] doubleArray1 = new double[6];
+        doubleArray1[0] = (-2139.08106043888);
+        doubleArray1[1] = 6176.2973302566;
+        doubleArray1[2] = 4254.2973302566;
+        doubleArray1[3] = (double) doubleArray0[0];
+        doubleArray1[4] = 6176.2973302566;
+        doubleArray1[5] = (-3520.949999);
+        ArrayRealVector arrayRealVector0 = new ArrayRealVector(doubleArray1, true);
+        openMapRealVector0.dotProduct((RealVector) arrayRealVector0);
+        openMapRealVector0.set((double) doubleArray0[2]);
+        openMapRealVector0.unitize();
+        openMapRealVector0.getDistance((RealVector) arrayRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test125125() throws Throwable {
         int int0 = (-1968);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1968), (-1968), 1731.65572417);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((-1968));
@@ -2174,7 +2688,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12691() throws Throwable {
+    public void test126126() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1570, 1570);
         OpenMapRealVector openMapRealVector1 = openMapRealVector0.copy();
         openMapRealVector1.outerProduct(openMapRealVector0);
@@ -2210,7 +2724,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12792() throws Throwable {
+    public void test127127() throws Throwable {
         Double[] doubleArray0 = new Double[7];
         Double double0 = new Double((-1282.0));
         doubleArray0[0] = double0;
@@ -2247,7 +2761,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12893() throws Throwable {
+    public void test128128() throws Throwable {
         int int0 = (-1968);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1968), (-1968), 1731.65572417);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((-1968), (-1968), (-1968));
@@ -2274,7 +2788,18 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13094() throws Throwable {
+    public void test129129() throws Throwable {
+        int int0 = 2795;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, 2795);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = openMapRealVector1.add(openMapRealVector0);
+        openMapRealVector1.append((RealVector) openMapRealVector0);
+        // Undeclared exception!
+        openMapRealVector0.getL1Distance((RealVector) openMapRealVector2);
+    }
+
+    @Test(timeout = 4000)
+    public void test130130() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 1477.7111623;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0, 1477.7111623);
@@ -2297,7 +2822,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13195() throws Throwable {
+    public void test131131() throws Throwable {
         int int0 = 33;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(33, (-901));
         openMapRealVector0.isDefaultValue(2.5440783580508475);
@@ -2314,7 +2839,22 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13396() throws Throwable {
+    public void test132132() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1338));
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+        openMapRealVector0.getL1Distance(openMapRealVector1);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector((RealVector) openMapRealVector1);
+        openMapRealVector2.getDimension();
+        openMapRealVector1.dotProduct((RealVector) openMapRealVector0);
+        OpenMapRealVector openMapRealVector3 = openMapRealVector2.mapAdd(0.0);
+        openMapRealVector1.projection(openMapRealVector0);
+        openMapRealVector1.equals(openMapRealVector3);
+        openMapRealVector3.getDistance(openMapRealVector2);
+        openMapRealVector2.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test133133() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = 0.0;
         doubleArray0[1] = (-132.09534419319735);
@@ -2342,7 +2882,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13497() throws Throwable {
+    public void test134134() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(31, 32);
         Double[] doubleArray0 = new Double[6];
         doubleArray0[0] = (Double) 1.0E-12;
@@ -2366,7 +2906,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13598() throws Throwable {
+    public void test135135() throws Throwable {
         int int0 = 0;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(0);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0, 0);
@@ -2393,7 +2933,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13699() throws Throwable {
+    public void test136136() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1033), (-1033));
         RealVector realVector0 = RealVector.unmodifiableRealVector(openMapRealVector0);
         openMapRealVector0.subtract(realVector0);
@@ -2410,7 +2950,19 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test138100() throws Throwable {
+    public void test137137() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = 587.63959690005;
+        doubleArray0[2] = (-1.0);
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0, 375);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector((RealVector) openMapRealVector1);
+        openMapRealVector2.setSubVector(375, openMapRealVector0);
+    }
+
+    @Test(timeout = 4000)
+    public void test138138() throws Throwable {
         int int0 = (-3137);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2808, (-3137));
         OpenMapRealVector openMapRealVector1 = null;
@@ -2425,7 +2977,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test139101() throws Throwable {
+    public void test139139() throws Throwable {
         int int0 = (-1968);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-1968), (-1968), (-1968));
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((-1968));
@@ -2454,7 +3006,26 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test141102() throws Throwable {
+    public void test140140() throws Throwable {
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = 0.0;
+        doubleArray0[1] = (-132.09534419319735);
+        doubleArray0[2] = (-170.24);
+        doubleArray0[3] = 6.283185307179586;
+        doubleArray0[4] = 2.5811686515808105;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        RealVectorPreservingVisitor realVectorPreservingVisitor0 = mock(RealVectorPreservingVisitor.class, new ViolatedAssumptionAnswer());
+        doReturn(3.775134371775124E-11).when(realVectorPreservingVisitor0).end();
+        openMapRealVector1.walkInOptimizedOrder(realVectorPreservingVisitor0);
+        OpenMapRealVector openMapRealVector2 = new OpenMapRealVector(openMapRealVector1);
+        openMapRealVector2.set(289.80654792);
+        openMapRealVector2.dotProduct((RealVector) openMapRealVector1);
+        OpenMapRealVector openMapRealVector3 = new OpenMapRealVector(openMapRealVector2);
+    }
+
+    @Test(timeout = 4000)
+    public void test141141() throws Throwable {
         Double[] doubleArray0 = new Double[4];
         Double double0 = new Double((-968.5766984261));
         doubleArray0[0] = double0;
@@ -2497,7 +3068,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test142103() throws Throwable {
+    public void test142142() throws Throwable {
         int int0 = (-3527);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector((-3527), (-3527));
         double[] doubleArray0 = new double[8];
@@ -2524,7 +3095,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test143104() throws Throwable {
+    public void test143143() throws Throwable {
         int int0 = 672366247;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(672366247, 672366247);
         // Undeclared exception!
@@ -2540,7 +3111,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test144105() throws Throwable {
+    public void test144144() throws Throwable {
         Double[] doubleArray0 = new Double[7];
         Double double0 = new Double(2.0);
         doubleArray0[0] = double0;
@@ -2574,7 +3145,31 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test146106() throws Throwable {
+    public void test145145() throws Throwable {
+        Double[] doubleArray0 = new Double[7];
+        Double double0 = new Double(2.0);
+        doubleArray0[0] = double0;
+        Double double1 = new Double(9.253781621373885E29);
+        doubleArray0[1] = double1;
+        Double double2 = new Double(0.0);
+        doubleArray0[2] = double2;
+        Double double3 = new Double((double) doubleArray0[1]);
+        doubleArray0[3] = double3;
+        Double double4 = new Double(0.0);
+        doubleArray0[4] = double4;
+        Double double5 = new Double(1328.5);
+        doubleArray0[5] = double5;
+        Double double6 = new Double((double) doubleArray0[0]);
+        doubleArray0[6] = double6;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector2 = openMapRealVector0.append(openMapRealVector1);
+        openMapRealVector1.getL1Distance(openMapRealVector2);
+        openMapRealVector0.toArray();
+    }
+
+    @Test(timeout = 4000)
+    public void test146146() throws Throwable {
         Double[] doubleArray0 = new Double[4];
         Double double0 = new Double((-968.5766984261));
         doubleArray0[0] = double0;
@@ -2617,7 +3212,18 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test148107() throws Throwable {
+    public void test147147() throws Throwable {
+        int int0 = 2795;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, 2795, 2795.0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(2795);
+        Sinc sinc0 = new Sinc(true);
+        openMapRealVector1.mapToSelf(sinc0);
+        // Undeclared exception!
+        openMapRealVector0.getLInfDistance(openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test148148() throws Throwable {
         int int0 = 2795;
         int int1 = (-3137);
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, (-3137));
@@ -2633,7 +3239,76 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test152108() throws Throwable {
+    public void test149149() throws Throwable {
+        Double[] doubleArray0 = new Double[7];
+        Double double0 = new Double((-1.0));
+        doubleArray0[0] = double0;
+        Double double1 = new Double((double) doubleArray0[0]);
+        doubleArray0[1] = double1;
+        Double double2 = new Double(1.0);
+        doubleArray0[2] = double2;
+        Double double3 = new Double(310.66427041);
+        doubleArray0[3] = double3;
+        Double double4 = new Double((-1177.585));
+        doubleArray0[4] = double4;
+        Double double5 = new Double((double) doubleArray0[1]);
+        doubleArray0[5] = double5;
+        Double.max((double) doubleArray0[3], 2568.2101);
+        Double double6 = new Double((double) doubleArray0[3]);
+        doubleArray0[6] = double6;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(doubleArray0);
+        openMapRealVector1.unitize();
+        OpenMapRealVector openMapRealVector2 = openMapRealVector0.subtract(openMapRealVector1);
+        Double.min(2568.2101, 1.0E-12);
+        openMapRealVector1.mapSubtractToSelf((double) doubleArray0[6]);
+        OpenMapRealVector openMapRealVector3 = new OpenMapRealVector(doubleArray0, 132.09534419319735);
+        Double.min(566.855241899, (-1.0));
+        openMapRealVector0.getLInfDistance(openMapRealVector3);
+        OpenMapRealVector openMapRealVector4 = openMapRealVector2.add(openMapRealVector3);
+        openMapRealVector4.getDistance(openMapRealVector3);
+        openMapRealVector0.getLInfDistance(openMapRealVector1);
+        openMapRealVector1.getSparsity();
+        openMapRealVector1.unitVector();
+    }
+
+    @Test(timeout = 4000)
+    public void test150150() throws Throwable {
+        int int0 = 2795;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, 2795);
+        int int1 = 929;
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = openMapRealVector1.add(openMapRealVector0);
+        RealVectorChangingVisitor realVectorChangingVisitor0 = mock(RealVectorChangingVisitor.class, new ViolatedAssumptionAnswer());
+        doReturn(1.0E-12).when(realVectorChangingVisitor0).end();
+        doReturn((double) 929, (double) 929, (double) 2795, 1.0, 1.0).when(realVectorChangingVisitor0).visit(anyInt(), anyDouble());
+        openMapRealVector0.walkInOptimizedOrder(realVectorChangingVisitor0);
+        openMapRealVector2.set(2795);
+        openMapRealVector2.mapDivideToSelf((-1193.745234));
+        int int2 = 23;
+        // Undeclared exception!
+        openMapRealVector1.getDistance(openMapRealVector2);
+    }
+
+    @Test(timeout = 4000)
+    public void test151151() throws Throwable {
+        int int0 = 2795;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, 2795);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = openMapRealVector1.add(openMapRealVector0);
+        RealVectorChangingVisitor realVectorChangingVisitor0 = mock(RealVectorChangingVisitor.class, new ViolatedAssumptionAnswer());
+        doReturn((double) 929).when(realVectorChangingVisitor0).end();
+        doReturn(1.0E-12, (-1.0), (double) 2795, (-1.0), (-1.0)).when(realVectorChangingVisitor0).visit(anyInt(), anyDouble());
+        openMapRealVector0.walkInOptimizedOrder(realVectorChangingVisitor0);
+        openMapRealVector2.set(2795);
+        int int1 = 23;
+        openMapRealVector1.getDistance(openMapRealVector2);
+        // Undeclared exception!
+        openMapRealVector2.toArray();
+    }
+
+    @Test(timeout = 4000)
+    public void test152152() throws Throwable {
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1962);
         OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
         // Undeclared exception!
@@ -2649,7 +3324,24 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test154109() throws Throwable {
+    public void test153153() throws Throwable {
+        int int0 = 2795;
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, 2795);
+        OpenMapRealVector openMapRealVector1 = new OpenMapRealVector((RealVector) openMapRealVector0);
+        OpenMapRealVector openMapRealVector2 = openMapRealVector1.add(openMapRealVector0);
+        RealVectorChangingVisitor realVectorChangingVisitor0 = mock(RealVectorChangingVisitor.class, new ViolatedAssumptionAnswer());
+        doReturn(1.0E-12).when(realVectorChangingVisitor0).end();
+        doReturn((double) 929, (-2454.879), 2.5811686515808105, (double) 929, 1.0E-12).when(realVectorChangingVisitor0).visit(anyInt(), anyDouble());
+        openMapRealVector0.walkInOptimizedOrder(realVectorChangingVisitor0);
+        openMapRealVector2.set(2795);
+        int int1 = 23;
+        openMapRealVector1.append(1.0E-12);
+        // Undeclared exception!
+        openMapRealVector0.ebeDivide(openMapRealVector2);
+    }
+
+    @Test(timeout = 4000)
+    public void test154154() throws Throwable {
         double[] doubleArray0 = new double[5];
         doubleArray0[0] = 0.0;
         doubleArray0[1] = (-132.09534419319735);
@@ -2687,7 +3379,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test155110() throws Throwable {
+    public void test155155() throws Throwable {
         double[] doubleArray0 = new double[6];
         doubleArray0[0] = (-837.1);
         doubleArray0[1] = 2239.0;
@@ -2716,7 +3408,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test156111() throws Throwable {
+    public void test156156() throws Throwable {
         int int0 = 2765;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2765);
         OpenMapRealVector openMapRealVector1 = null;
@@ -2733,7 +3425,15 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test158112() throws Throwable {
+    public void test157157() throws Throwable {
+        OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(3392, 3392);
+        OpenMapRealVector openMapRealVector1 = openMapRealVector0.mapAdd(3392);
+        // Undeclared exception!
+        openMapRealVector0.append((RealVector) openMapRealVector1);
+    }
+
+    @Test(timeout = 4000)
+    public void test158158() throws Throwable {
         int int0 = 2137567749;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2137567749, 3959, 3959);
         RealVectorChangingVisitor realVectorChangingVisitor0 = mock(RealVectorChangingVisitor.class, new ViolatedAssumptionAnswer());
@@ -2750,7 +3450,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test159113() throws Throwable {
+    public void test159159() throws Throwable {
         int int0 = 0;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(1709, 0);
         openMapRealVector0.isDefaultValue(0);
@@ -2771,7 +3471,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test160114() throws Throwable {
+    public void test160160() throws Throwable {
         int int0 = 2795;
         OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(2795, 2795);
         // Undeclared exception!
@@ -2787,7 +3487,7 @@ public class OpenMapRealVector_ESTest extends OpenMapRealVector_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test161115() throws Throwable {
+    public void test161161() throws Throwable {
         Double[] doubleArray0 = new Double[4];
         Double double0 = new Double((-968.5766984261));
         doubleArray0[0] = double0;

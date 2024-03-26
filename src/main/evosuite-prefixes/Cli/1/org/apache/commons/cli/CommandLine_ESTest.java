@@ -55,12 +55,6 @@ public class CommandLine_ESTest extends CommandLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test056() throws Throwable {
-        CommandLine commandLine0 = new CommandLine();
-        String string0 = commandLine0.getOptionValue('p', "NO_ARGS_ALLOWED");
-    }
-
-    @Test(timeout = 4000)
     public void test067() throws Throwable {
         CommandLine commandLine0 = new CommandLine();
         List list0 = commandLine0.getArgList();
@@ -80,7 +74,13 @@ public class CommandLine_ESTest extends CommandLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test0910() throws Throwable {
+        CommandLine commandLine0 = new CommandLine();
+        commandLine0.addArg("");
+    }
+
+    @Test(timeout = 4000)
+    public void test1011() throws Throwable {
         CommandLine commandLine0 = new CommandLine();
         Option option0 = new Option("mvZl", true, (String) null);
         commandLine0.addOption(option0);
@@ -88,7 +88,7 @@ public class CommandLine_ESTest extends CommandLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1112() throws Throwable {
         CommandLine commandLine0 = new CommandLine();
         Option option0 = new Option("", true, "");
         commandLine0.addOption(option0);
@@ -96,21 +96,12 @@ public class CommandLine_ESTest extends CommandLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
+    public void test1213() throws Throwable {
         CommandLine commandLine0 = new CommandLine();
         Option option0 = new Option("", true, "");
         option0.addValue("hA:a#%yP V$HK");
         commandLine0.addOption(option0);
         Object object0 = commandLine0.getOptionObject("");
-    }
-
-    @Test(timeout = 4000)
-    public void test1313() throws Throwable {
-        CommandLine commandLine0 = new CommandLine();
-        Option option0 = new Option("", true, "");
-        option0.setLongOpt("");
-        commandLine0.addOption(option0);
-        String string0 = commandLine0.getOptionValue("", "Strings must not be null");
     }
 
     @Test(timeout = 4000)
@@ -123,7 +114,7 @@ public class CommandLine_ESTest extends CommandLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1415() throws Throwable {
+    public void test1416() throws Throwable {
         CommandLine commandLine0 = new CommandLine();
         Option option0 = new Option("", true, "");
         option0.addValue("hA:a#%yP V$HK");
@@ -132,7 +123,7 @@ public class CommandLine_ESTest extends CommandLine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1516() throws Throwable {
+    public void test1517() throws Throwable {
         CommandLine commandLine0 = new CommandLine();
         Option option0 = new Option((String) null, false, "");
         commandLine0.addOption(option0);

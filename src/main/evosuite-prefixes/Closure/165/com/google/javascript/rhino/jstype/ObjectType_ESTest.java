@@ -547,25 +547,24 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3853() throws Throwable {
+    public void test3753() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
+        InstanceObjectType instanceObjectType0 = new InstanceObjectType(jSTypeRegistry0, noResolvedType0, false);
+        Node node0 = new Node(1);
+        EnumType enumType0 = new EnumType(jSTypeRegistry0, "Not declared as a constructor", node0, instanceObjectType0);
+        enumType0.testForEquality(enumType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3854() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ObjectType objectType0 = jSTypeRegistry0.createAnonymousObjectType();
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         noResolvedType0.getTypesUnderEquality(objectType0);
         noResolvedType0.hasCachedValues();
-    }
-
-    @Test(timeout = 4000)
-    public void test3954() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
-        Node node0 = Node.newString("Not declared as a type name", 1, 1);
-        EnumType enumType0 = new EnumType(jSTypeRegistry0, "Unknown class name", node0, noResolvedType0);
-        PrototypeObjectType prototypeObjectType0 = new PrototypeObjectType(jSTypeRegistry0, "Named type with empty name component", noResolvedType0);
-        enumType0.getTypesUnderInequality(prototypeObjectType0);
-        prototypeObjectType0.hasCachedValues();
     }
 
     @Test(timeout = 4000)
@@ -577,11 +576,23 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
         EnumType enumType0 = new EnumType(jSTypeRegistry0, "Unknown class name", node0, noResolvedType0);
         PrototypeObjectType prototypeObjectType0 = new PrototypeObjectType(jSTypeRegistry0, "Named type with empty name component", noResolvedType0);
         enumType0.getTypesUnderInequality(prototypeObjectType0);
+        prototypeObjectType0.hasCachedValues();
+    }
+
+    @Test(timeout = 4000)
+    public void test3956() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
+        Node node0 = Node.newString("Not declared as a type name", 1, 1);
+        EnumType enumType0 = new EnumType(jSTypeRegistry0, "Unknown class name", node0, noResolvedType0);
+        PrototypeObjectType prototypeObjectType0 = new PrototypeObjectType(jSTypeRegistry0, "Named type with empty name component", noResolvedType0);
+        enumType0.getTypesUnderInequality(prototypeObjectType0);
         noResolvedType0.hasCachedValues();
     }
 
     @Test(timeout = 4000)
-    public void test4056() throws Throwable {
+    public void test4057() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -593,7 +604,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4157() throws Throwable {
+    public void test4158() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -603,7 +614,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4258() throws Throwable {
+    public void test4259() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ObjectType objectType0 = jSTypeRegistry0.createAnonymousObjectType();
@@ -613,23 +624,12 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4359() throws Throwable {
+    public void test4360() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         JSType jSType0 = noResolvedType0.findPropertyType("Not declared as a type name");
         jSType0.isNullType();
-    }
-
-    @Test(timeout = 4000)
-    public void test4460() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
-        Node node0 = Node.newNumber((double) 1);
-        InstanceObjectType instanceObjectType0 = new InstanceObjectType(jSTypeRegistry0, noResolvedType0, false);
-        boolean boolean0 = instanceObjectType0.defineProperty("Unknown class name", noResolvedType0, false, node0);
-        boolean boolean1 = instanceObjectType0.defineProperty("Unknown class name", noResolvedType0, false, node0);
     }
 
     @Test(timeout = 4000)
@@ -644,7 +644,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4562() throws Throwable {
+    public void test4563() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "/@H8<%");
@@ -652,7 +652,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4663() throws Throwable {
+    public void test4664() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         JSTypeNative jSTypeNative0 = JSTypeNative.TYPE_ERROR_FUNCTION_TYPE;
@@ -661,7 +661,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4764() throws Throwable {
+    public void test4765() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -671,7 +671,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4865() throws Throwable {
+    public void test4866() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -681,7 +681,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4866() throws Throwable {
+    public void test4867() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -694,7 +694,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4967() throws Throwable {
+    public void test4968() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "8hCR'XRLo`qw");
@@ -707,7 +707,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5068() throws Throwable {
+    public void test5069() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -718,26 +718,13 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5069() throws Throwable {
+    public void test5070() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
         Node node0 = Node.newString("Named type with empty name component", 1, 1);
         ObjectType.Property objectType_Property0 = new ObjectType.Property("Not declared as a type name", noResolvedType0, true, node0);
         ObjectType.Property objectType_Property1 = objectType_Property0.getDeclaration();
-    }
-
-    @Test(timeout = 4000)
-    public void test5170() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "8hCR'XRLo`qw");
-        ProxyObjectType proxyObjectType0 = new ProxyObjectType(jSTypeRegistry0, errorFunctionType0);
-        IndexedType indexedType0 = new IndexedType(jSTypeRegistry0, proxyObjectType0, errorFunctionType0);
-        EnumType enumType0 = jSTypeRegistry0.createEnumType("8hCR'XRLo`qw", (Node) null, indexedType0);
-        ObjectType.Property objectType_Property0 = new ObjectType.Property("8hCR'XRLo`qw", enumType0, false, (Node) null);
-        ObjectType.Property objectType_Property1 = objectType_Property0.getDeclaration();
-        objectType_Property0.isTypeInferred();
     }
 
     @Test(timeout = 4000)
@@ -750,10 +737,23 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
         EnumType enumType0 = jSTypeRegistry0.createEnumType("8hCR'XRLo`qw", (Node) null, indexedType0);
         ObjectType.Property objectType_Property0 = new ObjectType.Property("8hCR'XRLo`qw", enumType0, false, (Node) null);
         ObjectType.Property objectType_Property1 = objectType_Property0.getDeclaration();
+        objectType_Property0.isTypeInferred();
     }
 
     @Test(timeout = 4000)
-    public void test5272() throws Throwable {
+    public void test5172() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "8hCR'XRLo`qw");
+        ProxyObjectType proxyObjectType0 = new ProxyObjectType(jSTypeRegistry0, errorFunctionType0);
+        IndexedType indexedType0 = new IndexedType(jSTypeRegistry0, proxyObjectType0, errorFunctionType0);
+        EnumType enumType0 = jSTypeRegistry0.createEnumType("8hCR'XRLo`qw", (Node) null, indexedType0);
+        ObjectType.Property objectType_Property0 = new ObjectType.Property("8hCR'XRLo`qw", enumType0, false, (Node) null);
+        ObjectType.Property objectType_Property1 = objectType_Property0.getDeclaration();
+    }
+
+    @Test(timeout = 4000)
+    public void test5273() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -764,7 +764,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5373() throws Throwable {
+    public void test5374() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);
@@ -773,7 +773,7 @@ public class ObjectType_ESTest extends ObjectType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5374() throws Throwable {
+    public void test5375() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoResolvedType noResolvedType0 = new NoResolvedType(jSTypeRegistry0);

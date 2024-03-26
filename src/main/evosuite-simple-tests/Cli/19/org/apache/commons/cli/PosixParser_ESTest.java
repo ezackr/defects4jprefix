@@ -158,7 +158,21 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1010() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        OptionGroup optionGroup0 = new OptionGroup();
+        Option option0 = new Option("", true, "");
+        OptionGroup optionGroup1 = optionGroup0.addOption(option0);
+        options0.addOptionGroup(optionGroup1);
+        String[] stringArray0 = new String[5];
+        stringArray0[0] = "";
+        posixParser0.flatten(options0, stringArray0, true);
+        posixParser0.burstToken("--", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[4];

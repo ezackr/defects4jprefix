@@ -182,13 +182,18 @@ public class ZipFile_ESTest extends ZipFile_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2222() throws Throwable {
+        ZipFile.closeQuietly((ZipFile) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
         ZipFile zipFile0 = null;
         zipFile0 = new ZipFile((File) null);
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         File file0 = MockFile.createTempFile("SZrrwyX4MFq[V,\"mRVJ", (String) null);
         ZipFile zipFile0 = null;
         zipFile0 = new ZipFile(file0, (String) null);

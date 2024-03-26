@@ -1029,4 +1029,10 @@ public class JsonPointer_ESTest extends JsonPointer_ESTest_scaffolding {
         String string0 = jsonPointer0.getMatchingProperty();
         assertEquals("", string0);
     }
+
+    @Test(timeout = 4000)
+    public void test51137() throws Throwable {
+        JsonPointer jsonPointer0 = JsonPointer.compile((String) null);
+        jsonPointer0.hashCode();
+    }
 }

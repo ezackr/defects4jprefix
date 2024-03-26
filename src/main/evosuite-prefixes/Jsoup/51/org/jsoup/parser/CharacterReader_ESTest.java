@@ -291,12 +291,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02940() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
-        String string0 = characterReader0.consumeAsString();
-    }
-
-    @Test(timeout = 4000)
     public void test02941() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
         String string0 = characterReader0.consumeAsString();
@@ -424,12 +418,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         CharacterReader characterReader0 = new CharacterReader(",k$prN");
         char char0 = characterReader0.consume();
         boolean boolean0 = characterReader0.matches(",k$prN");
-    }
-
-    @Test(timeout = 4000)
-    public void test04461() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("3KhZ)1<|YM%,N|p");
-        String string0 = characterReader0.consumeTagName();
     }
 
     @Test(timeout = 4000)
@@ -832,22 +820,10 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099121() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
-        String string0 = characterReader0.consumeLetterThenDigitSequence();
-    }
-
-    @Test(timeout = 4000)
     public void test099122() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
         String string0 = characterReader0.consumeLetterThenDigitSequence();
         boolean boolean0 = characterReader0.matchesDigit();
-    }
-
-    @Test(timeout = 4000)
-    public void test100123() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("9k_mAEp]<");
-        String string0 = characterReader0.consumeTagName();
     }
 
     @Test(timeout = 4000)
@@ -870,29 +846,10 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103127() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Object must not be null");
-        String string0 = characterReader0.consumeTagName();
-    }
-
-    @Test(timeout = 4000)
     public void test103128() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Object must not be null");
         String string0 = characterReader0.consumeTagName();
         boolean boolean0 = characterReader0.matchesLetter();
-    }
-
-    @Test(timeout = 4000)
-    public void test104129() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("P3sx6L/a+t_MUY");
-        String string0 = characterReader0.consumeLetterThenDigitSequence();
-    }
-
-    @Test(timeout = 4000)
-    public void test104130() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("P3sx6L/a+t_MUY");
-        String string0 = characterReader0.consumeLetterThenDigitSequence();
-        String string1 = characterReader0.consumeLetterSequence();
     }
 
     @Test(timeout = 4000)
@@ -931,12 +888,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     public void test107135() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Object must not be null");
         boolean boolean0 = characterReader0.matchConsumeIgnoreCase("|>*;&");
-    }
-
-    @Test(timeout = 4000)
-    public void test108136() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.joup.parser.Charac5erReader");
-        String string0 = characterReader0.consumeTagName();
     }
 
     @Test(timeout = 4000)
@@ -1003,12 +954,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         String string0 = characterReader0.consumeDigitSequence();
         char[] charArray0 = new char[0];
         boolean boolean0 = characterReader0.matchesAnySorted(charArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test116147() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Object must not be null");
-        String string0 = characterReader0.consumeTagName();
     }
 
     @Test(timeout = 4000)
@@ -1120,12 +1065,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126164() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.joup.parser.Charac5erReader");
-        String string0 = characterReader0.consumeTagName();
-    }
-
-    @Test(timeout = 4000)
     public void test126165() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("org.joup.parser.Charac5erReader");
         String string0 = characterReader0.consumeTagName();
@@ -1219,12 +1158,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test136178() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("LwPTmB1-~!u<W&c.s");
-        String string0 = characterReader0.consumeTo('h');
-    }
-
-    @Test(timeout = 4000)
     public void test136179() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("LwPTmB1-~!u<W&c.s");
         String string0 = characterReader0.consumeTo('h');
@@ -1281,5 +1214,11 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         CharacterReader characterReader0 = new CharacterReader("9k_mAEp]<");
         characterReader0.advance();
         String string0 = characterReader0.consumeTagName();
+    }
+
+    @Test(timeout = 4000)
+    public void test144188() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("9k_mAEp]<");
+        characterReader0.mark();
     }
 }

@@ -82,13 +82,24 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test055() throws Throwable {
+    public void test045() throws Throwable {
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
+        QName qName0 = new QName("*", "*");
+        iIOMetadataNode0.appendChild(iIOMetadataNode0);
+        iIOMetadataNode0.setAttribute(":\"", ":\"");
+        Locale locale0 = Locale.KOREAN;
+        NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
+        DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
         DOMAttributeIterator dOMAttributeIterator0 = null;
         dOMAttributeIterator0 = new DOMAttributeIterator((NodePointer) null, (QName) null);
     }
 
     @Test(timeout = 4000)
-    public void test066() throws Throwable {
+    public void test067() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("^|E");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -97,7 +108,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test078() throws Throwable {
         QName qName0 = new QName("&3QFSsY$M\nn`(");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.US;
@@ -108,7 +119,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test089() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         QName qName0 = new QName("xmlns", "xmlns");
         Locale locale0 = Locale.KOREAN;
@@ -119,7 +130,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test0910() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         QName qName0 = new QName("xmlns", "xmlns");
         Locale locale0 = Locale.KOREAN;
@@ -130,25 +141,13 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test1011() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("xmlns");
         QName qName0 = new QName("xmlns", "xmlns");
         iIOMetadataNode0.setAttribute("xmlns", "xmlns");
         Locale locale0 = Locale.ITALIAN;
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
         DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
-        dOMAttributeIterator0.getPosition();
-    }
-
-    @Test(timeout = 4000)
-    public void test1111() throws Throwable {
-        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
-        QName qName0 = new QName("", "*");
-        iIOMetadataNode0.setAttribute(":\"", "");
-        Locale locale0 = Locale.KOREAN;
-        NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
-        DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
-        NodePointer nodePointer1 = dOMAttributeIterator0.getNodePointer();
         dOMAttributeIterator0.getPosition();
     }
 
@@ -161,10 +160,22 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
         DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
         NodePointer nodePointer1 = dOMAttributeIterator0.getNodePointer();
+        dOMAttributeIterator0.getPosition();
     }
 
     @Test(timeout = 4000)
-    public void test1213() throws Throwable {
+    public void test1113() throws Throwable {
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
+        QName qName0 = new QName("", "*");
+        iIOMetadataNode0.setAttribute(":\"", "");
+        Locale locale0 = Locale.KOREAN;
+        NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
+        DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
+        NodePointer nodePointer1 = dOMAttributeIterator0.getNodePointer();
+    }
+
+    @Test(timeout = 4000)
+    public void test1214() throws Throwable {
         QName qName0 = new QName("xmlns", "xmlns");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.UK;
@@ -176,7 +187,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1314() throws Throwable {
+    public void test1315() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         QName qName0 = new QName("*");
         iIOMetadataNode0.setAttribute(":\"", ":\"");
@@ -187,25 +198,13 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1415() throws Throwable {
+    public void test1416() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         QName qName0 = new QName("*");
         iIOMetadataNode0.setAttribute("xmlns", "xmlns");
         Locale locale0 = Locale.KOREAN;
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
         DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
-        dOMAttributeIterator0.getPosition();
-    }
-
-    @Test(timeout = 4000)
-    public void test1516() throws Throwable {
-        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
-        QName qName0 = new QName("*");
-        iIOMetadataNode0.setAttribute("*", "*");
-        Locale locale0 = Locale.KOREAN;
-        NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
-        DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
-        boolean boolean0 = dOMAttributeIterator0.setPosition(1);
         dOMAttributeIterator0.getPosition();
     }
 
@@ -218,10 +217,22 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
         NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
         DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
         boolean boolean0 = dOMAttributeIterator0.setPosition(1);
+        dOMAttributeIterator0.getPosition();
     }
 
     @Test(timeout = 4000)
-    public void test1618() throws Throwable {
+    public void test1518() throws Throwable {
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
+        QName qName0 = new QName("*");
+        iIOMetadataNode0.setAttribute("*", "*");
+        Locale locale0 = Locale.KOREAN;
+        NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, iIOMetadataNode0, locale0);
+        DOMAttributeIterator dOMAttributeIterator0 = new DOMAttributeIterator(nodePointer0, qName0);
+        boolean boolean0 = dOMAttributeIterator0.setPosition(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test1619() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         QName qName0 = new QName("xmlns", ",");
         Locale locale0 = Locale.UK;
@@ -231,7 +242,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1619() throws Throwable {
+    public void test1620() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         QName qName0 = new QName("xmlns", ",");
         Locale locale0 = Locale.UK;
@@ -242,7 +253,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1720() throws Throwable {
+    public void test1721() throws Throwable {
         QName qName0 = new QName("&3QFSsY$M\nn`(");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.US;
@@ -252,7 +263,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1721() throws Throwable {
+    public void test1722() throws Throwable {
         QName qName0 = new QName("&3QFSsY$M\nn`(");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.US;
@@ -264,7 +275,7 @@ public class DOMAttributeIterator_ESTest extends DOMAttributeIterator_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1822() throws Throwable {
+    public void test1823() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("*");
         QName qName0 = new QName("*");
         Locale locale0 = Locale.KOREAN;

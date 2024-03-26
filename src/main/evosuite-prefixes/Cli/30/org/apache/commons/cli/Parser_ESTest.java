@@ -201,7 +201,19 @@ public class Parser_ESTest extends Parser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1415() throws Throwable {
+        BasicParser basicParser0 = new BasicParser();
+        Options options0 = new Options();
+        Option option0 = new Option("yes", "yes", false, "yes");
+        Options options1 = options0.addOption(option0);
+        String[] stringArray0 = new String[0];
+        Properties properties0 = new Properties();
+        basicParser0.parse(options1, stringArray0, properties0, false);
+        basicParser0.processOption("yes", (ListIterator) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1516() throws Throwable {
         BasicParser basicParser0 = new BasicParser();
         Options options0 = new Options();
         Option option0 = new Option("es", "es", true, "es");
@@ -214,7 +226,7 @@ public class Parser_ESTest extends Parser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         Option option0 = new Option("5", "5", true, (String) null);
         Options options0 = new Options();
         String[] stringArray0 = new String[3];

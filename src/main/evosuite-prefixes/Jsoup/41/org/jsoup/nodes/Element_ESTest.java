@@ -220,19 +220,27 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2626() throws Throwable {
+        Document document0 = new Document("DeQ?lm\"0kArR,?Sd");
+        document0.prependChild(document0);
+        // Undeclared exception!
+        document0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
         Document document0 = new Document("u^l c4;oYk=9XJG`wd");
         document0.select("u^l c4;oYk=9XJG`wd");
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         Document document0 = new Document("R*9j");
         document0.removeClass((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         Tag tag0 = Tag.valueOf("org.jsoup.nodes.Element$1");
         TextNode textNode0 = new TextNode("org.jsoup.nodes.Element$1", "org.jsoup.nodes.Element$1");
         Attributes attributes0 = textNode0.attributes();
@@ -241,13 +249,13 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         Document document0 = new Document("3,A]Bf\"A^");
         document0.lastElementSibling();
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3131() throws Throwable {
         Tag tag0 = Tag.valueOf("0N<(Ot=:HKA:t");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "sW5r17!w]sC9", attributes0);
@@ -255,7 +263,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         Tag tag0 = Tag.valueOf("eC");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "eC", attributes0);
@@ -263,31 +271,39 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         Document document0 = new Document("P[AFUSpAi`,\"_g2");
         document0.getElementsByAttributeValueNot("", "r=C|Ouk)~G0!vqzXGY");
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3434() throws Throwable {
         Document document0 = new Document("zI`2E`");
         document0.getElementsByAttributeValueEnding("", "");
     }
 
     @Test(timeout = 4000)
-    public void test3634() throws Throwable {
+    public void test3535() throws Throwable {
+        Document document0 = new Document("DssVG34\"5~cIH#JECW");
+        document0.prependChild(document0);
+        // Undeclared exception!
+        document0.getElementsByAttributeValue("DssVG34\"5~cIH#JECW", "iM[2");
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
         Document document0 = new Document("$`m?EumDF");
         document0.getElementsByAttributeValue("`jwc", "");
     }
 
     @Test(timeout = 4000)
-    public void test3735() throws Throwable {
+    public void test3737() throws Throwable {
         Document document0 = new Document("");
         document0.getElementsByAttributeStarting("");
     }
 
     @Test(timeout = 4000)
-    public void test3836() throws Throwable {
+    public void test3838() throws Throwable {
         Tag tag0 = Tag.valueOf(" \"");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "<", attributes0);
@@ -295,13 +311,13 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3937() throws Throwable {
+    public void test3939() throws Throwable {
         Document document0 = new Document("J?(JzYNZQ");
         document0.before("J?(JzYNZQ");
     }
 
     @Test(timeout = 4000)
-    public void test4038() throws Throwable {
+    public void test4040() throws Throwable {
         Tag tag0 = Tag.valueOf("Pattern syntax error: ");
         Element element0 = new Element(tag0, "q:N'*%oF");
         element0.reparentChild(element0);
@@ -309,13 +325,13 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4139() throws Throwable {
+    public void test4141() throws Throwable {
         Element element0 = null;
         element0 = new Element((Tag) null, (String) null);
     }
 
     @Test(timeout = 4000)
-    public void test4240() throws Throwable {
+    public void test4242() throws Throwable {
         Tag tag0 = Tag.valueOf("a.jb1AOICWz}PWEo8j}");
         Element element0 = new Element(tag0, "?EF'5F+\"");
         DocumentType documentType0 = new DocumentType("-b?J?(Y{}H>~;tY+U", "-b?J?(Y{}H>~;tY+U", "-b?J?(Y{}H>~;tY+U", "head");
@@ -323,20 +339,20 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4341() throws Throwable {
+    public void test4343() throws Throwable {
         Document document0 = new Document("R*9j");
         boolean boolean0 = document0.hasText();
     }
 
     @Test(timeout = 4000)
-    public void test4442() throws Throwable {
+    public void test4444() throws Throwable {
         Document document0 = new Document("wWwT]'I\"Bbb]/Y");
         Elements elements0 = document0.getElementsByIndexLessThan(60);
         document0.insertChildren(60, elements0);
     }
 
     @Test(timeout = 4000)
-    public void test4543() throws Throwable {
+    public void test4545() throws Throwable {
         Tag tag0 = Tag.valueOf(",o-'~|)F;y5jFW");
         Element element0 = new Element(tag0, " > ");
         Document document0 = new Document("u^l c4;oYk=9XJG`wd");
@@ -346,41 +362,41 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4644() throws Throwable {
+    public void test4646() throws Throwable {
         Document document0 = new Document("");
         Elements elements0 = document0.getElementsByAttributeStarting("6W`u@AC s8.y'");
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test4745() throws Throwable {
+    public void test4747() throws Throwable {
         Document document0 = new Document("R*9j");
         Elements elements0 = document0.getElementsByTag("R*9j");
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test4846() throws Throwable {
+    public void test4848() throws Throwable {
         Document document0 = new Document("5F1}$>CNgUA3WZ*K%&p");
         Element element0 = document0.prependText("");
         element0.tagName();
     }
 
     @Test(timeout = 4000)
-    public void test4947() throws Throwable {
+    public void test4949() throws Throwable {
         Document document0 = new Document("org.jsoup.select.Collector$Accumulator");
         boolean boolean0 = document0.isBlock();
     }
 
     @Test(timeout = 4000)
-    public void test5048() throws Throwable {
+    public void test5050() throws Throwable {
         Attributes attributes0 = new Attributes();
         Element element0 = null;
         element0 = new Element((Tag) null, "", attributes0);
     }
 
     @Test(timeout = 4000)
-    public void test5149() throws Throwable {
+    public void test5151() throws Throwable {
         Document document0 = new Document("3,A]Bf\"A^");
         Pattern pattern0 = Pattern.compile("body", (-2));
         Elements elements0 = document0.getElementsMatchingText(pattern0);
@@ -388,72 +404,72 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5250() throws Throwable {
+    public void test5252() throws Throwable {
         Tag tag0 = Tag.valueOf("%s");
         Element element0 = new Element(tag0, "%s");
         String string0 = element0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test5351() throws Throwable {
+    public void test5353() throws Throwable {
         Document document0 = new Document("DssVG34\"5~cIH#JECW");
         Element element0 = document0.append("e8(,OEgY0+y^6R!");
     }
 
     @Test(timeout = 4000)
-    public void test5452() throws Throwable {
+    public void test5454() throws Throwable {
         Document document0 = new Document("dl");
         document0.appendElement((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test5553() throws Throwable {
+    public void test5555() throws Throwable {
         Document document0 = new Document("zu:[Vv:3/");
         Set<String> set0 = document0.classNames();
         set0.size();
     }
 
     @Test(timeout = 4000)
-    public void test5654() throws Throwable {
+    public void test5656() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         document0.val("1NsD^'|");
         String string0 = document0.val();
     }
 
     @Test(timeout = 4000)
-    public void test5755() throws Throwable {
+    public void test5757() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         String string0 = document0.val();
     }
 
     @Test(timeout = 4000)
-    public void test5856() throws Throwable {
+    public void test5858() throws Throwable {
         TextNode textNode0 = TextNode.createFromEncoded("", "");
         boolean boolean0 = Element.preserveWhitespace(textNode0);
     }
 
     @Test(timeout = 4000)
-    public void test5957() throws Throwable {
+    public void test5959() throws Throwable {
         Document document0 = new Document("DssVG34\"5~cIH#JECW");
         Element element0 = document0.prependChild(document0);
         String string0 = element0.ownText();
     }
 
     @Test(timeout = 4000)
-    public void test6058() throws Throwable {
+    public void test6060() throws Throwable {
         Document document0 = new Document("sn9py<9Q{QjY]>d");
         Element element0 = document0.getElementById("sn9py<9Q{QjY]>d");
     }
 
     @Test(timeout = 4000)
-    public void test6159() throws Throwable {
+    public void test6161() throws Throwable {
         Document document0 = new Document("sn9py<9Q{QjY]>d");
         Elements elements0 = document0.getElementsByIndexGreaterThan(163);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test6260() throws Throwable {
+    public void test6262() throws Throwable {
         Document document0 = new Document("zu:[Vv:3/");
         Node[] nodeArray0 = new Node[5];
         nodeArray0[0] = (Node) document0;
@@ -466,13 +482,13 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6361() throws Throwable {
+    public void test6363() throws Throwable {
         Document document0 = new Document("sn9py<9Q{QjY]>d");
         String string0 = document0.cssSelector();
     }
 
     @Test(timeout = 4000)
-    public void test6462() throws Throwable {
+    public void test6464() throws Throwable {
         Tag tag0 = Tag.valueOf("%s");
         Element element0 = new Element(tag0, "%s");
         LinkedList<FormElement> linkedList0 = new LinkedList<FormElement>();
@@ -480,7 +496,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6563() throws Throwable {
+    public void test6565() throws Throwable {
         Document document0 = new Document("R*9j");
         TextNode textNode0 = new TextNode("s+", "");
         document0.prependChild(textNode0);
@@ -489,33 +505,33 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6664() throws Throwable {
+    public void test6666() throws Throwable {
         Document document0 = new Document("sn9py<9Q{QjY]>d");
         Elements elements0 = document0.parents();
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test6765() throws Throwable {
+    public void test6767() throws Throwable {
         Document document0 = new Document("DeQ?lm\"0kArR,?Sd");
         String string0 = document0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test6866() throws Throwable {
+    public void test6868() throws Throwable {
         Tag tag0 = Tag.valueOf("Pattern syntax error: ");
         Element element0 = new Element(tag0, "q:N'*%oF");
         element0.after((Node) element0);
     }
 
     @Test(timeout = 4000)
-    public void test6967() throws Throwable {
+    public void test6969() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         document0.after("1NsD^'|");
     }
 
     @Test(timeout = 4000)
-    public void test7068() throws Throwable {
+    public void test7070() throws Throwable {
         Tag tag0 = Tag.valueOf("org.jsoup.nodes.Element$1");
         TextNode textNode0 = new TextNode("org.jsoup.nodes.Element$1", "org.jsoup.nodes.Element$1");
         Attributes attributes0 = textNode0.attributes();
@@ -526,49 +542,49 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7169() throws Throwable {
+    public void test7171() throws Throwable {
         Document document0 = new Document("R*9j");
         Elements elements0 = document0.select("compact");
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test7270() throws Throwable {
+    public void test7272() throws Throwable {
         Document document0 = new Document("DssVG34\"5~cIH#JECW");
         Elements elements0 = document0.getElementsByAttributeValue("DssVG34\"5~cIH#JECW", "iM[2");
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test7371() throws Throwable {
+    public void test7373() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         Map<String, String> map0 = document0.dataset();
         map0.size();
     }
 
     @Test(timeout = 4000)
-    public void test7472() throws Throwable {
+    public void test7474() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         Element element0 = document0.prependElement("1NsD^'|");
         element0.tagName();
     }
 
     @Test(timeout = 4000)
-    public void test7573() throws Throwable {
+    public void test7575() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         Elements elements0 = document0.getElementsMatchingText("1NsD^'|");
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test7674() throws Throwable {
+    public void test7676() throws Throwable {
         Document document0 = new Document("1NsD^'|");
         document0.appendText("_nKYJAgb,");
         String string0 = document0.ownText();
     }
 
     @Test(timeout = 4000)
-    public void test7775() throws Throwable {
+    public void test7777() throws Throwable {
         Document.createShell("iframe");
     }
 }

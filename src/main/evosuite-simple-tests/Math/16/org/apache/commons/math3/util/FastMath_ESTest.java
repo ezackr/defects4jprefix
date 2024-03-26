@@ -1764,43 +1764,51 @@ public class FastMath_ESTest extends FastMath_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test292291() throws Throwable {
+    public void test291291() throws Throwable {
+        String[] stringArray0 = new String[2];
+        FastMath.main(stringArray0);
+        // Undeclared exception!
+        FastMath.main(stringArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test292292() throws Throwable {
         double double0 = FastMath.sinh(273L);
         assertEquals(1.8254231919310378E118, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test293292() throws Throwable {
+    public void test293293() throws Throwable {
         double double0 = FastMath.nextUp((double) 0.0F);
         assertEquals(4.9E-324, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test294293() throws Throwable {
+    public void test294294() throws Throwable {
         double double0 = FastMath.atan((-1205.0));
         assertEquals((-1.5699664514667342), double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test295294() throws Throwable {
+    public void test295295() throws Throwable {
         double double0 = FastMath.acosh(0.036);
         assertEquals(Double.NaN, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test296295() throws Throwable {
+    public void test296296() throws Throwable {
         double double0 = FastMath.expm1(0.0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test297296() throws Throwable {
+    public void test297297() throws Throwable {
         int int0 = FastMath.round((-1.0F));
         assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test298297() throws Throwable {
+    public void test298298() throws Throwable {
         long long0 = FastMath.round(849.5716377);
         assertEquals(850L, long0);
     }

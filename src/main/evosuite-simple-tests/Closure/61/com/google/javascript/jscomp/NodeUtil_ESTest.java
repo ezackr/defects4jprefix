@@ -139,7 +139,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test00910() throws Throwable {
+    public void test00810() throws Throwable {
+        Node node0 = new Node(64);
+        NodeUtil.getPureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test00911() throws Throwable {
         Node node0 = new Node(78, 78, 78);
         // Undeclared exception!
         try {
@@ -154,14 +160,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01011() throws Throwable {
+    public void test01012() throws Throwable {
         Node node0 = new Node(47, 47, 47);
         boolean boolean0 = NodeUtil.containsCall(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01112() throws Throwable {
+    public void test01113() throws Throwable {
         Node node0 = new Node(118, 118, 329);
         // Undeclared exception!
         try {
@@ -176,7 +182,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01213() throws Throwable {
+    public void test01214() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "===", (-849), 45);
         Node node1 = NodeUtil.newName(closureCodingConvention0, "===", node0, "===");
@@ -184,7 +190,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01214() throws Throwable {
+    public void test01215() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "===", (-849), 45);
         Node node1 = NodeUtil.newName(closureCodingConvention0, "===", node0, "===");
@@ -192,7 +198,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01215() throws Throwable {
+    public void test01216() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "===", (-849), 45);
         Node node1 = NodeUtil.newName(closureCodingConvention0, "===", node0, "===");
@@ -200,7 +206,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01216() throws Throwable {
+    public void test01217() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "===", (-849), 45);
         Node node1 = NodeUtil.newName(closureCodingConvention0, "===", node0, "===");
@@ -208,7 +214,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01317() throws Throwable {
+    public void test01318() throws Throwable {
         Node node0 = new Node(31);
         // Undeclared exception!
         try {
@@ -223,17 +229,9 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01418() throws Throwable {
-        Node node0 = NodeUtil.newUndefinedNode((Node) null);
-        assertNotNull(node0);
-    }
-
-    @Test(timeout = 4000)
     public void test01419() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode((Node) null);
-        SourceMap.DetailLevel sourceMap_DetailLevel0 = SourceMap.DetailLevel.SYMBOLS;
-        int int0 = NodeUtil.getNodeTypeReferenceCount(node0, 47, sourceMap_DetailLevel0);
-        assertEquals(0, int0);
+        assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
@@ -241,11 +239,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         Node node0 = NodeUtil.newUndefinedNode((Node) null);
         SourceMap.DetailLevel sourceMap_DetailLevel0 = SourceMap.DetailLevel.SYMBOLS;
         int int0 = NodeUtil.getNodeTypeReferenceCount(node0, 47, sourceMap_DetailLevel0);
+        assertEquals(0, int0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01421() throws Throwable {
+        Node node0 = NodeUtil.newUndefinedNode((Node) null);
+        SourceMap.DetailLevel sourceMap_DetailLevel0 = SourceMap.DetailLevel.SYMBOLS;
+        int int0 = NodeUtil.getNodeTypeReferenceCount(node0, 47, sourceMap_DetailLevel0);
         assertEquals(122, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test01521() throws Throwable {
+    public void test01522() throws Throwable {
         Node node0 = new Node(30, 30, 30);
         // Undeclared exception!
         try {
@@ -260,14 +266,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01622() throws Throwable {
+    public void test01623() throws Throwable {
         Node node0 = new Node(41);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01723() throws Throwable {
+    public void test01724() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.getFunctionBody((Node) null);
@@ -281,18 +287,10 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01824() throws Throwable {
+    public void test01825() throws Throwable {
         Node node0 = new Node(110, 110, 110);
         boolean boolean0 = NodeUtil.isFunctionObjectCallOrApply(node0);
         assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test01925() throws Throwable {
-        Node node0 = Node.newNumber((-2216.365954));
-        Node node1 = NodeUtil.newExpr(node0);
-        boolean boolean0 = NodeUtil.mayEffectMutableState(node1);
-        assertEquals(130, node1.getType());
     }
 
     @Test(timeout = 4000)
@@ -300,18 +298,26 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
         Node node0 = Node.newNumber((-2216.365954));
         Node node1 = NodeUtil.newExpr(node0);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node1);
+        assertEquals(130, node1.getType());
+    }
+
+    @Test(timeout = 4000)
+    public void test01927() throws Throwable {
+        Node node0 = Node.newNumber((-2216.365954));
+        Node node1 = NodeUtil.newExpr(node0);
+        boolean boolean0 = NodeUtil.mayEffectMutableState(node1);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02027() throws Throwable {
+    public void test02028() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         boolean boolean0 = NodeUtil.nodeTypeMayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02128() throws Throwable {
+    public void test02129() throws Throwable {
         NodeUtil.MayBeStringResultPredicate nodeUtil_MayBeStringResultPredicate0 = new NodeUtil.MayBeStringResultPredicate();
         Node node0 = Node.newString(24, "goog.tweak.registerString", 30, 2);
         boolean boolean0 = NodeUtil.has(node0, nodeUtil_MayBeStringResultPredicate0, nodeUtil_MayBeStringResultPredicate0);
@@ -319,14 +325,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02229() throws Throwable {
+    public void test02230() throws Throwable {
         Node node0 = new Node(22, 3315, 3315);
         boolean boolean0 = NodeUtil.mayBeString(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02430() throws Throwable {
+    public void test02331() throws Throwable {
+        NodeUtil.NumbericResultPredicate nodeUtil_NumbericResultPredicate0 = new NodeUtil.NumbericResultPredicate();
+    }
+
+    @Test(timeout = 4000)
+    public void test02432() throws Throwable {
         Node node0 = new Node(26);
         // Undeclared exception!
         try {
@@ -341,7 +352,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02531() throws Throwable {
+    public void test02533() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         NodeUtil.getImpureBooleanValue(node0);
@@ -349,7 +360,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02532() throws Throwable {
+    public void test02534() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         NodeUtil.getImpureBooleanValue(node0);
@@ -357,7 +368,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02833() throws Throwable {
+    public void test02635() throws Throwable {
+        Node node0 = new Node(63, 63, 63);
+        NodeUtil.getImpureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02736() throws Throwable {
+        Node node0 = new Node(64);
+        NodeUtil.getImpureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02837() throws Throwable {
         Node node0 = new Node(85, 85, 85);
         // Undeclared exception!
         try {
@@ -372,7 +395,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02934() throws Throwable {
+    public void test02938() throws Throwable {
         Node node0 = new Node(86, 86, 86);
         // Undeclared exception!
         try {
@@ -387,7 +410,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03035() throws Throwable {
+    public void test03039() throws Throwable {
         Node node0 = new Node(98);
         // Undeclared exception!
         try {
@@ -402,7 +425,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03136() throws Throwable {
+    public void test03140() throws Throwable {
         Node node0 = Node.newString(100, "2");
         // Undeclared exception!
         try {
@@ -417,7 +440,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03237() throws Throwable {
+    public void test03241() throws Throwable {
         Node node0 = new Node(26);
         // Undeclared exception!
         try {
@@ -432,14 +455,52 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03938() throws Throwable {
+    public void test03342() throws Throwable {
+        Node node0 = Node.newString("p", 117, 117);
+        NodeUtil.getImpureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03443() throws Throwable {
+        Node node0 = new Node(41, 41, 41);
+        NodeUtil.getPureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03544() throws Throwable {
+        Node node0 = new Node(43, 1535, 43);
+        NodeUtil.getPureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03645() throws Throwable {
+        Node node0 = new Node(115, 115, 115);
+        Node node1 = new Node(44, node0, node0, node0, node0);
+        NodeUtil.getImpureBooleanValue(node1);
+    }
+
+    @Test(timeout = 4000)
+    public void test03746() throws Throwable {
+        Node node0 = new Node(22, (-37), 3377);
+        Node node1 = new Node(47, node0);
+        NodeUtil.getImpureBooleanValue(node1);
+    }
+
+    @Test(timeout = 4000)
+    public void test03847() throws Throwable {
+        Node node0 = new Node(63, 63, 63);
+        NodeUtil.getPureBooleanValue(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03948() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode((Node) null);
         NodeUtil.getImpureBooleanValue(node0);
         assertEquals(122, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test04039() throws Throwable {
+    public void test04049() throws Throwable {
         Node node0 = new Node(1976);
         Node node1 = new Node(26, node0, node0, node0, node0, 91, 3);
         Double double0 = NodeUtil.getNumberValue(node1);
@@ -447,7 +508,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04140() throws Throwable {
+    public void test04150() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(442);
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         Compiler compiler0 = new Compiler(mockPrintStream0);
@@ -458,7 +519,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04141() throws Throwable {
+    public void test04151() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(442);
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         Compiler compiler0 = new Compiler(mockPrintStream0);
@@ -469,7 +530,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04242() throws Throwable {
+    public void test04252() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "Infinity", (-1605), 100);
         NodeUtil.getImpureBooleanValue(node0);
@@ -477,7 +538,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04243() throws Throwable {
+    public void test04253() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "Infinity", (-1605), 100);
         NodeUtil.getImpureBooleanValue(node0);
@@ -485,7 +546,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04244() throws Throwable {
+    public void test04254() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "Infinity", (-1605), 100);
         NodeUtil.getImpureBooleanValue(node0);
@@ -493,7 +554,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04345() throws Throwable {
+    public void test04355() throws Throwable {
         Node node0 = Node.newNumber(Double.POSITIVE_INFINITY, 26, 2676);
         Node node1 = new Node(26, node0, node0, node0, node0, 12, 3);
         String string0 = NodeUtil.getStringValue(node1);
@@ -501,7 +562,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04346() throws Throwable {
+    public void test04356() throws Throwable {
         Node node0 = Node.newNumber(Double.POSITIVE_INFINITY, 26, 2676);
         Node node1 = new Node(26, node0, node0, node0, node0, 12, 3);
         String string0 = NodeUtil.getStringValue(node1);
@@ -509,21 +570,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04447() throws Throwable {
+    public void test04457() throws Throwable {
         Node node0 = new Node(64);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertNotNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test04448() throws Throwable {
+    public void test04458() throws Throwable {
         Node node0 = new Node(64);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertEquals(Double.NaN, (double) double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test04549() throws Throwable {
+    public void test04559() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "\naent:", 803, 803);
         String string0 = NodeUtil.getArrayElementStringValue(node0);
@@ -531,7 +592,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04550() throws Throwable {
+    public void test04560() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "\naent:", 803, 803);
         String string0 = NodeUtil.getArrayElementStringValue(node0);
@@ -539,7 +600,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04551() throws Throwable {
+    public void test04561() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "\naent:", 803, 803);
         String string0 = NodeUtil.getArrayElementStringValue(node0);
@@ -547,7 +608,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04552() throws Throwable {
+    public void test04562() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "\naent:", 803, 803);
         String string0 = NodeUtil.getArrayElementStringValue(node0);
@@ -555,42 +616,42 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04653() throws Throwable {
+    public void test04663() throws Throwable {
         Node node0 = new Node(41);
         String string0 = NodeUtil.getStringValue(node0);
         assertEquals("null", string0);
     }
 
     @Test(timeout = 4000)
-    public void test04754() throws Throwable {
+    public void test04764() throws Throwable {
         Node node0 = new Node(43, 43, 43);
         String string0 = NodeUtil.getArrayElementStringValue(node0);
         assertEquals("false", string0);
     }
 
     @Test(timeout = 4000)
-    public void test04855() throws Throwable {
+    public void test04865() throws Throwable {
         Node node0 = new Node(44, 44, 44);
         String string0 = NodeUtil.getArrayElementStringValue(node0);
         assertEquals("true", string0);
     }
 
     @Test(timeout = 4000)
-    public void test04956() throws Throwable {
+    public void test04966() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertEquals(0.0, (double) double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test04957() throws Throwable {
+    public void test04967() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertNotNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test05058() throws Throwable {
+    public void test05068() throws Throwable {
         Node node0 = new Node(108);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         String string0 = NodeUtil.getStringValue(node1);
@@ -598,7 +659,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05059() throws Throwable {
+    public void test05069() throws Throwable {
         Node node0 = new Node(108);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         String string0 = NodeUtil.getStringValue(node1);
@@ -606,7 +667,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05160() throws Throwable {
+    public void test05170() throws Throwable {
         Node node0 = new Node(2679);
         Node node1 = new Node(26, node0, node0, node0, node0, 12, 3);
         String string0 = NodeUtil.getStringValue(node1);
@@ -614,13 +675,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05261() throws Throwable {
+    public void test05271() throws Throwable {
         String string0 = NodeUtil.getStringValue(2877.36018564);
         assertEquals("2877.36018564", string0);
     }
 
     @Test(timeout = 4000)
-    public void test05362() throws Throwable {
+    public void test05372() throws Throwable {
         Node node0 = new Node(78, 78, 78);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         String string0 = NodeUtil.getArrayElementStringValue(node1);
@@ -628,7 +689,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05363() throws Throwable {
+    public void test05373() throws Throwable {
         Node node0 = new Node(78, 78, 78);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         String string0 = NodeUtil.getArrayElementStringValue(node1);
@@ -636,7 +697,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05364() throws Throwable {
+    public void test05374() throws Throwable {
         Node node0 = new Node(78, 78, 78);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         String string0 = NodeUtil.getArrayElementStringValue(node1);
@@ -644,14 +705,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05465() throws Throwable {
+    public void test05475() throws Throwable {
         Node node0 = new Node(124, 124, (-27));
         String string0 = NodeUtil.getArrayElementStringValue(node0);
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test05566() throws Throwable {
+    public void test05576() throws Throwable {
         Node node0 = Node.newNumber(8233.0);
         Node node1 = new Node(0, node0, node0, 49, 12);
         String string0 = NodeUtil.arrayToString(node1);
@@ -659,7 +720,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05567() throws Throwable {
+    public void test05577() throws Throwable {
         Node node0 = Node.newNumber(8233.0);
         Node node1 = new Node(0, node0, node0, 49, 12);
         String string0 = NodeUtil.arrayToString(node1);
@@ -667,7 +728,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05668() throws Throwable {
+    public void test05678() throws Throwable {
         Node node0 = new Node(135, 135, 135);
         Node node1 = new Node(11, node0, node0, 110, 4095);
         String string0 = NodeUtil.arrayToString(node1);
@@ -675,7 +736,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05769() throws Throwable {
+    public void test05779() throws Throwable {
         Node node0 = Node.newString("Cmo<a@LP)", 18, 118);
         Node node1 = node0.cloneNode();
         Node node2 = new Node(38, node1, node0);
@@ -684,7 +745,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05770() throws Throwable {
+    public void test05780() throws Throwable {
         Node node0 = Node.newString("Cmo<a@LP)", 18, 118);
         Node node1 = node0.cloneNode();
         Node node2 = new Node(38, node1, node0);
@@ -693,14 +754,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05871() throws Throwable {
+    public void test05881() throws Throwable {
         Node node0 = new Node(29, 29, 29);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test05972() throws Throwable {
+    public void test05982() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 2836, 101);
         Double double0 = NodeUtil.getNumberValue(node0);
@@ -708,7 +769,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05973() throws Throwable {
+    public void test05983() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 2836, 101);
         Double double0 = NodeUtil.getNumberValue(node0);
@@ -716,7 +777,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05974() throws Throwable {
+    public void test05984() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 2836, 101);
         Double double0 = NodeUtil.getNumberValue(node0);
@@ -724,7 +785,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06075() throws Throwable {
+    public void test06085() throws Throwable {
         Node node0 = new Node(39);
         // Undeclared exception!
         try {
@@ -739,28 +800,28 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06176() throws Throwable {
+    public void test06186() throws Throwable {
         Node node0 = Node.newString("+infinity");
         Double double0 = NodeUtil.getNumberValue(node0);
         assertNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test06277() throws Throwable {
+    public void test06287() throws Throwable {
         Node node0 = new Node(41);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertEquals(0.0, (double) double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test06378() throws Throwable {
+    public void test06388() throws Throwable {
         Node node0 = new Node(43);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertEquals(0.0, (double) double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test06479() throws Throwable {
+    public void test06489() throws Throwable {
         Node node0 = new Node(108);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         Double double0 = NodeUtil.getNumberValue(node1);
@@ -768,7 +829,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06480() throws Throwable {
+    public void test06490() throws Throwable {
         Node node0 = new Node(108);
         Node node1 = NodeUtil.newUndefinedNode(node0);
         Double double0 = NodeUtil.getNumberValue(node1);
@@ -776,14 +837,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06581() throws Throwable {
+    public void test06591() throws Throwable {
         Node node0 = new Node(85, 85, 85);
         Double double0 = NodeUtil.getNumberValue(node0);
         assertNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test06682() throws Throwable {
+    public void test06692() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         Double double0 = NodeUtil.getNumberValue(node0);
@@ -791,7 +852,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06683() throws Throwable {
+    public void test06693() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         Double double0 = NodeUtil.getNumberValue(node0);
@@ -799,7 +860,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06684() throws Throwable {
+    public void test06694() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         Double double0 = NodeUtil.getNumberValue(node0);
@@ -807,7 +868,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06785() throws Throwable {
+    public void test06795() throws Throwable {
         Node node0 = Node.newNumber((double) 26, 1957, 1957);
         Node node1 = new Node(26, node0, node0, node0, node0, 91, 3);
         Double double0 = NodeUtil.getNumberValue(node1);
@@ -815,7 +876,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06786() throws Throwable {
+    public void test06796() throws Throwable {
         Node node0 = Node.newNumber((double) 26, 1957, 1957);
         Node node1 = new Node(26, node0, node0, node0, node0, 91, 3);
         Double double0 = NodeUtil.getNumberValue(node1);
@@ -823,43 +884,93 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06887() throws Throwable {
+    public void test06897() throws Throwable {
         Double double0 = NodeUtil.getStringNumberValue("g1");
         assertNotNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test06888() throws Throwable {
+    public void test06898() throws Throwable {
         Double double0 = NodeUtil.getStringNumberValue("g1");
         assertEquals(Double.NaN, (double) double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test06989() throws Throwable {
+    public void test06999() throws Throwable {
         Double double0 = NodeUtil.getStringNumberValue("infinity");
         assertNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test07090() throws Throwable {
+    public void test070100() throws Throwable {
         Double double0 = NodeUtil.getStringNumberValue("-infinity");
         assertNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test07191() throws Throwable {
+    public void test071101() throws Throwable {
         Double double0 = NodeUtil.getStringNumberValue(" invalidated ");
         assertEquals(Double.NaN, (double) double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test07192() throws Throwable {
+    public void test071102() throws Throwable {
         Double double0 = NodeUtil.getStringNumberValue(" invalidated ");
         assertNotNull(double0);
     }
 
     @Test(timeout = 4000)
-    public void test08293() throws Throwable {
+    public void test072103() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(9);
+    }
+
+    @Test(timeout = 4000)
+    public void test073104() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(10);
+    }
+
+    @Test(timeout = 4000)
+    public void test074105() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(11);
+    }
+
+    @Test(timeout = 4000)
+    public void test075106() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(12);
+    }
+
+    @Test(timeout = 4000)
+    public void test076107() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(13);
+    }
+
+    @Test(timeout = 4000)
+    public void test077108() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(160);
+    }
+
+    @Test(timeout = 4000)
+    public void test078109() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(8232);
+    }
+
+    @Test(timeout = 4000)
+    public void test079110() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(8233);
+    }
+
+    @Test(timeout = 4000)
+    public void test080111() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(65279);
+    }
+
+    @Test(timeout = 4000)
+    public void test081112() throws Throwable {
+        NodeUtil.isStrWhiteSpaceChar(12288);
+    }
+
+    @Test(timeout = 4000)
+    public void test082113() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -869,7 +980,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08294() throws Throwable {
+    public void test082114() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -879,7 +990,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08295() throws Throwable {
+    public void test082115() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -889,7 +1000,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08296() throws Throwable {
+    public void test082116() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -899,7 +1010,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08297() throws Throwable {
+    public void test082117() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -909,7 +1020,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08398() throws Throwable {
+    public void test083118() throws Throwable {
         Node node0 = new Node(145);
         Node node1 = new Node(26, node0);
         boolean boolean0 = NodeUtil.isLiteralValue(node1, false);
@@ -917,7 +1028,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08499() throws Throwable {
+    public void test084119() throws Throwable {
         Node node0 = new Node(29, 29, 29);
         // Undeclared exception!
         try {
@@ -932,14 +1043,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085100() throws Throwable {
+    public void test085120() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         assertTrue(node0.isQualifiedName());
     }
 
     @Test(timeout = 4000)
-    public void test085101() throws Throwable {
+    public void test085121() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
@@ -947,7 +1058,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085102() throws Throwable {
+    public void test085122() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
@@ -955,42 +1066,42 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086103() throws Throwable {
+    public void test086123() throws Throwable {
         Node node0 = Node.newString("Remove try/catch/finally");
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test087104() throws Throwable {
+    public void test087124() throws Throwable {
         Node node0 = new Node(41);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test088105() throws Throwable {
+    public void test088125() throws Throwable {
         Node node0 = new Node(43);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test089106() throws Throwable {
+    public void test089126() throws Throwable {
         Node node0 = new Node(44, 80, 44);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test090107() throws Throwable {
+    public void test090127() throws Throwable {
         Node node0 = NodeUtil.newUndefinedNode((Node) null);
         boolean boolean0 = NodeUtil.isLiteralValue(node0, false);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test091108() throws Throwable {
+    public void test091128() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", (-3815), (-518));
         boolean boolean0 = NodeUtil.isLiteralValue(node0, false);
@@ -998,7 +1109,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092109() throws Throwable {
+    public void test092129() throws Throwable {
         Node node0 = new Node(45);
         node0.setType(47);
         boolean boolean0 = NodeUtil.isLiteralValue(node0, false);
@@ -1006,21 +1117,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093110() throws Throwable {
+    public void test093130() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         boolean boolean0 = NodeUtil.isLiteralValue(node0, true);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test094111() throws Throwable {
+    public void test094131() throws Throwable {
         Node node0 = new Node(64);
         boolean boolean0 = NodeUtil.isLiteralValue(node0, false);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test095112() throws Throwable {
+    public void test095132() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1029,7 +1140,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095113() throws Throwable {
+    public void test095133() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1038,7 +1149,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095114() throws Throwable {
+    public void test095134() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1047,7 +1158,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095115() throws Throwable {
+    public void test095135() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1056,7 +1167,15 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097116() throws Throwable {
+    public void test096136() throws Throwable {
+        Node node0 = new Node(64, 64, (-1));
+        node0.addChildrenToBack(node0);
+        // Undeclared exception!
+        NodeUtil.isLiteralValue(node0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test097137() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1066,7 +1185,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097117() throws Throwable {
+    public void test097138() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1076,7 +1195,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097118() throws Throwable {
+    public void test097139() throws Throwable {
         Node node0 = Node.newNumber((double) 71, 71, 71);
         Vector<Node> vector0 = new Vector<Node>();
         Node node1 = NodeUtil.newFunctionNode("common", vector0, node0, 50, 1);
@@ -1086,7 +1205,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098119() throws Throwable {
+    public void test098140() throws Throwable {
         Node node0 = new Node(113, (-2175), 941);
         Node node1 = new Node(9, node0, node0, 2, 16);
         boolean boolean0 = NodeUtil.isValidDefineValue(node1, (Set<String>) null);
@@ -1094,7 +1213,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099120() throws Throwable {
+    public void test099141() throws Throwable {
         Node node0 = new Node(10);
         // Undeclared exception!
         try {
@@ -1109,7 +1228,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100121() throws Throwable {
+    public void test100142() throws Throwable {
         Node node0 = new Node(12, 12, (-387));
         // Undeclared exception!
         try {
@@ -1124,7 +1243,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101122() throws Throwable {
+    public void test101143() throws Throwable {
         Node node0 = new Node(13);
         // Undeclared exception!
         try {
@@ -1139,7 +1258,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102123() throws Throwable {
+    public void test102144() throws Throwable {
         Node node0 = new Node(14);
         // Undeclared exception!
         try {
@@ -1154,7 +1273,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103124() throws Throwable {
+    public void test103145() throws Throwable {
         Node node0 = new Node(15, 15, 15);
         // Undeclared exception!
         try {
@@ -1169,7 +1288,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104125() throws Throwable {
+    public void test104146() throws Throwable {
         Node node0 = new Node(85, (-399), (-120));
         Node node1 = new Node(16, node0, node0, node0, (-2159), (-399));
         boolean boolean0 = NodeUtil.isValidDefineValue(node1, (Set<String>) null);
@@ -1177,7 +1296,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105126() throws Throwable {
+    public void test105147() throws Throwable {
         Node node0 = new Node(18);
         // Undeclared exception!
         try {
@@ -1192,7 +1311,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106127() throws Throwable {
+    public void test106148() throws Throwable {
         Node node0 = new Node(19);
         // Undeclared exception!
         try {
@@ -1207,7 +1326,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107128() throws Throwable {
+    public void test107149() throws Throwable {
         Node node0 = Node.newNumber((double) 26, 26, 26);
         Node node1 = new Node(20, node0, node0, node0, node0, 25, 35);
         TreeSet<String> treeSet0 = new TreeSet<String>();
@@ -1216,7 +1335,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108129() throws Throwable {
+    public void test108150() throws Throwable {
         Node node0 = new Node(21);
         // Undeclared exception!
         try {
@@ -1231,7 +1350,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109130() throws Throwable {
+    public void test109151() throws Throwable {
         Node node0 = new Node(22, 884, 884);
         // Undeclared exception!
         try {
@@ -1246,7 +1365,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110131() throws Throwable {
+    public void test110152() throws Throwable {
         Node node0 = new Node(24);
         // Undeclared exception!
         try {
@@ -1261,7 +1380,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111132() throws Throwable {
+    public void test111153() throws Throwable {
         Node node0 = new Node(26);
         // Undeclared exception!
         try {
@@ -1276,7 +1395,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112133() throws Throwable {
+    public void test112154() throws Throwable {
         Node node0 = new Node(27);
         // Undeclared exception!
         try {
@@ -1291,7 +1410,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113134() throws Throwable {
+    public void test113155() throws Throwable {
         Node node0 = new Node(28, 28, 28);
         // Undeclared exception!
         try {
@@ -1306,7 +1425,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test114135() throws Throwable {
+    public void test114156() throws Throwable {
         Node node0 = new Node(29, 29, 29);
         HashSet<String> hashSet0 = new HashSet<String>();
         // Undeclared exception!
@@ -1322,14 +1441,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test115136() throws Throwable {
+    public void test115157() throws Throwable {
         Node node0 = new Node(30);
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, (Set<String>) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test116137() throws Throwable {
+    public void test116158() throws Throwable {
         Node node0 = new Node(31, 31, 31);
         CompilerOptions compilerOptions0 = new CompilerOptions();
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, compilerOptions0.stripNameSuffixes);
@@ -1337,14 +1456,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117138() throws Throwable {
+    public void test117159() throws Throwable {
         Node node0 = new Node(32);
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, (Set<String>) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test118139() throws Throwable {
+    public void test118160() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1353,7 +1472,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118140() throws Throwable {
+    public void test118161() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1362,7 +1481,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118141() throws Throwable {
+    public void test118162() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1371,7 +1490,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118142() throws Throwable {
+    public void test118163() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1380,7 +1499,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119143() throws Throwable {
+    public void test119164() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Node node1 = new Node(34, node0);
         TreeSet<String> treeSet0 = new TreeSet<String>();
@@ -1389,7 +1508,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test120144() throws Throwable {
+    public void test120165() throws Throwable {
         Node node0 = Node.newString("Y3$thk3h8iMyq2", (-861), (-861));
         Node node1 = new Node(36, node0, node0, node0, 26, 23);
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -1398,7 +1517,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test121145() throws Throwable {
+    public void test121166() throws Throwable {
         Node node0 = new Node(37);
         HashSet<String> hashSet0 = new HashSet<String>();
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, hashSet0);
@@ -1406,7 +1525,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test122146() throws Throwable {
+    public void test122167() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "Qgc", 1550, 1550);
         // Undeclared exception!
@@ -1418,7 +1537,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123147() throws Throwable {
+    public void test123168() throws Throwable {
         Node node0 = Node.newString("Y3$thk3h8iMyq2", (-886), (-886));
         CompilerOptions compilerOptions0 = new CompilerOptions();
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, compilerOptions0.aliasableStrings);
@@ -1426,14 +1545,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124148() throws Throwable {
+    public void test124169() throws Throwable {
         Node node0 = new Node(41);
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, (Set<String>) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test125149() throws Throwable {
+    public void test125170() throws Throwable {
         Node node0 = new Node(43);
         CompilerOptions compilerOptions0 = new CompilerOptions();
         boolean boolean0 = NodeUtil.isValidDefineValue(node0, compilerOptions0.stripNamePrefixes);
@@ -1441,7 +1560,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126150() throws Throwable {
+    public void test126171() throws Throwable {
         Node node0 = new Node(115, 115, 115);
         Node node1 = new Node(44, node0, node0, node0, node0);
         boolean boolean0 = NodeUtil.isValidDefineValue(node1, (Set<String>) null);
@@ -1449,7 +1568,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test127151() throws Throwable {
+    public void test127172() throws Throwable {
         Node node0 = new Node(45);
         // Undeclared exception!
         try {
@@ -1464,7 +1583,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test128152() throws Throwable {
+    public void test128173() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "com.google.javascript.jscomp.AnalyzePrototypeProperties$ProcessExternProperties", 803, 803);
         node0.removeFirstChild();
@@ -1472,7 +1591,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test128153() throws Throwable {
+    public void test128174() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "com.google.javascript.jscomp.AnalyzePrototypeProperties$ProcessExternProperties", 803, 803);
         node0.removeFirstChild();
@@ -1481,7 +1600,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129154() throws Throwable {
+    public void test129175() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1491,7 +1610,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129155() throws Throwable {
+    public void test129176() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1501,7 +1620,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129156() throws Throwable {
+    public void test129177() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         HashSet<String> hashSet0 = new HashSet<String>();
@@ -1511,7 +1630,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130157() throws Throwable {
+    public void test130178() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "&=", "&=");
         boolean boolean0 = NodeUtil.isEmptyBlock(node0);
@@ -1519,55 +1638,55 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test131158() throws Throwable {
+    public void test131179() throws Throwable {
         Node node0 = new Node(9, 9, 9);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test132159() throws Throwable {
+    public void test132180() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(10);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test133160() throws Throwable {
+    public void test133181() throws Throwable {
         Node node0 = new Node(11);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test134161() throws Throwable {
+    public void test134182() throws Throwable {
         Node node0 = new Node(12);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test135162() throws Throwable {
+    public void test135183() throws Throwable {
         Node node0 = new Node(13);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test136163() throws Throwable {
+    public void test136184() throws Throwable {
         Node node0 = new Node(14, 88, 80);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test137164() throws Throwable {
+    public void test137185() throws Throwable {
         Node node0 = new Node(15);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test138165() throws Throwable {
+    public void test138186() throws Throwable {
         Node node0 = new Node(118);
         Node node1 = new Node(16, node0, node0);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node1);
@@ -1575,71 +1694,71 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139166() throws Throwable {
+    public void test139187() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(17);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test140167() throws Throwable {
+    public void test140188() throws Throwable {
         Node node0 = new Node(18, 18, 18);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test141168() throws Throwable {
+    public void test141189() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(19);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test142169() throws Throwable {
+    public void test142190() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(20);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test143170() throws Throwable {
+    public void test143191() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(21);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test144171() throws Throwable {
+    public void test144192() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(22);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test145172() throws Throwable {
+    public void test145193() throws Throwable {
         Node node0 = new Node(23);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test146173() throws Throwable {
+    public void test146194() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(24);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test147174() throws Throwable {
+    public void test147195() throws Throwable {
         Node node0 = new Node(25);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test148175() throws Throwable {
+    public void test148196() throws Throwable {
         Node node0 = new Node(26);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test149176() throws Throwable {
+    public void test149197() throws Throwable {
         Node node0 = new Node(94, 94, 94);
         Node node1 = new Node(27, node0);
         // Undeclared exception!
@@ -1655,41 +1774,41 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test150177() throws Throwable {
+    public void test150198() throws Throwable {
         Node node0 = new Node(28, 28, 28);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test151178() throws Throwable {
+    public void test151199() throws Throwable {
         Node node0 = new Node(29);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test152179() throws Throwable {
+    public void test152200() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(30);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test153180() throws Throwable {
+    public void test153201() throws Throwable {
         Node node0 = new Node(31, 31, 31);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test154181() throws Throwable {
+    public void test154202() throws Throwable {
         Node node0 = new Node(32);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test155182() throws Throwable {
+    public void test155203() throws Throwable {
         Node node0 = new Node(78, 78, 78);
         Node node1 = new Node(33, node0, node0, node0, node0);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node1);
@@ -1697,73 +1816,73 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test156183() throws Throwable {
+    public void test156204() throws Throwable {
         Node node0 = new Node(34, 34, 34);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test157184() throws Throwable {
+    public void test157205() throws Throwable {
         Node node0 = new Node(35, 35, 35);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test158185() throws Throwable {
+    public void test158206() throws Throwable {
         Node node0 = new Node(36);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test159186() throws Throwable {
+    public void test159207() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(37);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test160187() throws Throwable {
+    public void test160208() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(38);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test161188() throws Throwable {
+    public void test161209() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(42);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test162189() throws Throwable {
+    public void test162210() throws Throwable {
         Node node0 = new Node(45);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test163190() throws Throwable {
+    public void test163211() throws Throwable {
         Node node0 = new Node(46, 46, 46);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test164191() throws Throwable {
+    public void test164212() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(47);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test165192() throws Throwable {
+    public void test165213() throws Throwable {
         Node node0 = new Node(48);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test166193() throws Throwable {
+    public void test166214() throws Throwable {
         Node node0 = new Node(49);
         // Undeclared exception!
         try {
@@ -1779,7 +1898,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test167194() throws Throwable {
+    public void test167215() throws Throwable {
         Node node0 = new Node(50);
         // Undeclared exception!
         try {
@@ -1795,13 +1914,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test168195() throws Throwable {
+    public void test168216() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(51);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test169196() throws Throwable {
+    public void test169217() throws Throwable {
         Node node0 = new Node(2119, 2119, 2119);
         Node node1 = new Node(52, node0, node0, node0, 403, 2);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node1);
@@ -1809,21 +1928,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test170197() throws Throwable {
+    public void test170218() throws Throwable {
         Node node0 = new Node(53);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test171198() throws Throwable {
+    public void test171219() throws Throwable {
         Node node0 = new Node(54, 54, 54);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test172199() throws Throwable {
+    public void test172220() throws Throwable {
         Node node0 = new Node(56, 56, 56);
         // Undeclared exception!
         try {
@@ -1839,14 +1958,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test173200() throws Throwable {
+    public void test173221() throws Throwable {
         Node node0 = Node.newString(57, "ExpectdCALL node, got");
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test174201() throws Throwable {
+    public void test174222() throws Throwable {
         Node node0 = new Node(58);
         // Undeclared exception!
         try {
@@ -1862,7 +1981,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175202() throws Throwable {
+    public void test175223() throws Throwable {
         Node node0 = new Node(59);
         // Undeclared exception!
         try {
@@ -1878,7 +1997,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176203() throws Throwable {
+    public void test176224() throws Throwable {
         Node node0 = new Node(60);
         // Undeclared exception!
         try {
@@ -1894,13 +2013,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test177204() throws Throwable {
+    public void test177225() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(61);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test178205() throws Throwable {
+    public void test178226() throws Throwable {
         Node node0 = new Node(62);
         // Undeclared exception!
         try {
@@ -1916,26 +2035,26 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test179206() throws Throwable {
+    public void test179227() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(63);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test180207() throws Throwable {
+    public void test180228() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(64);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test181208() throws Throwable {
+    public void test181229() throws Throwable {
         Node node0 = new Node(65);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test182209() throws Throwable {
+    public void test182230() throws Throwable {
         Node node0 = new Node(66, 66, 66);
         // Undeclared exception!
         try {
@@ -1951,14 +2070,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test183210() throws Throwable {
+    public void test183231() throws Throwable {
         Node node0 = new Node(67, 67, 67);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test184211() throws Throwable {
+    public void test184232() throws Throwable {
         Node node0 = Node.newString(68, "JSCompiler_renameProperty");
         // Undeclared exception!
         try {
@@ -1974,13 +2093,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test185212() throws Throwable {
+    public void test185233() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(69);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test186213() throws Throwable {
+    public void test186234() throws Throwable {
         Node node0 = new Node(70);
         // Undeclared exception!
         try {
@@ -1996,7 +2115,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187214() throws Throwable {
+    public void test187235() throws Throwable {
         Node node0 = new Node(71);
         // Undeclared exception!
         try {
@@ -2012,7 +2131,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test188215() throws Throwable {
+    public void test188236() throws Throwable {
         Node node0 = Node.newString(72, "mf0cU]UM]Dt", 72, 72);
         // Undeclared exception!
         try {
@@ -2028,21 +2147,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test189216() throws Throwable {
+    public void test189237() throws Throwable {
         Node node0 = new Node(73);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test190217() throws Throwable {
+    public void test190238() throws Throwable {
         Node node0 = new Node(74);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test191218() throws Throwable {
+    public void test191239() throws Throwable {
         Node node0 = new Node(75, 120, 122);
         // Undeclared exception!
         try {
@@ -2058,7 +2177,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test192219() throws Throwable {
+    public void test192240() throws Throwable {
         Node node0 = new Node(76);
         // Undeclared exception!
         try {
@@ -2074,7 +2193,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test193220() throws Throwable {
+    public void test193241() throws Throwable {
         Node node0 = new Node(77, (-8), 77);
         // Undeclared exception!
         try {
@@ -2090,7 +2209,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test194221() throws Throwable {
+    public void test194242() throws Throwable {
         Node node0 = new Node(79, 79, 79);
         // Undeclared exception!
         try {
@@ -2106,7 +2225,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test195222() throws Throwable {
+    public void test195243() throws Throwable {
         Node node0 = new Node(80, 80, 80);
         // Undeclared exception!
         try {
@@ -2122,14 +2241,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test196223() throws Throwable {
+    public void test196244() throws Throwable {
         Node node0 = new Node(81);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test197224() throws Throwable {
+    public void test197245() throws Throwable {
         Node node0 = new Node(82);
         // Undeclared exception!
         try {
@@ -2145,7 +2264,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test198225() throws Throwable {
+    public void test198246() throws Throwable {
         Node node0 = new Node(83);
         // Undeclared exception!
         try {
@@ -2161,7 +2280,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test199226() throws Throwable {
+    public void test199247() throws Throwable {
         Node node0 = new Node(84, 483, (-1894));
         // Undeclared exception!
         try {
@@ -2177,14 +2296,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test200227() throws Throwable {
+    public void test200248() throws Throwable {
         Node node0 = new Node(85);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test201228() throws Throwable {
+    public void test201249() throws Throwable {
         Node node0 = new Node(87);
         // Undeclared exception!
         try {
@@ -2199,7 +2318,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test202229() throws Throwable {
+    public void test202250() throws Throwable {
         Node node0 = new Node(88, 88, 88);
         // Undeclared exception!
         try {
@@ -2214,7 +2333,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test203230() throws Throwable {
+    public void test203251() throws Throwable {
         Node node0 = Node.newString("case expression doesn't match switch", 1547, 1547);
         Node node1 = new Node(89, node0, node0, node0, node0);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node1);
@@ -2222,7 +2341,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test204231() throws Throwable {
+    public void test204252() throws Throwable {
         Node node0 = new Node(90);
         // Undeclared exception!
         try {
@@ -2237,7 +2356,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test205232() throws Throwable {
+    public void test205253() throws Throwable {
         Node node0 = new Node(91);
         // Undeclared exception!
         try {
@@ -2252,7 +2371,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test206233() throws Throwable {
+    public void test206254() throws Throwable {
         Node node0 = new Node(92);
         // Undeclared exception!
         try {
@@ -2267,7 +2386,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test207234() throws Throwable {
+    public void test207255() throws Throwable {
         Node node0 = new Node(93, 51, 91);
         // Undeclared exception!
         try {
@@ -2282,7 +2401,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test208235() throws Throwable {
+    public void test208256() throws Throwable {
         Node node0 = new Node(95, 95, 425);
         // Undeclared exception!
         try {
@@ -2297,7 +2416,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test209236() throws Throwable {
+    public void test209257() throws Throwable {
         Node node0 = new Node(96);
         // Undeclared exception!
         try {
@@ -2312,7 +2431,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test210237() throws Throwable {
+    public void test210258() throws Throwable {
         Node node0 = new Node(97);
         // Undeclared exception!
         try {
@@ -2327,46 +2446,46 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test211238() throws Throwable {
+    public void test211259() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(98);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test212239() throws Throwable {
+    public void test212260() throws Throwable {
         Node node0 = new Node(99, (-2311), 99);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test213240() throws Throwable {
+    public void test213261() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(100);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test214241() throws Throwable {
+    public void test214262() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(101);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test215242() throws Throwable {
+    public void test215263() throws Throwable {
         Node node0 = new Node(102);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test216243() throws Throwable {
+    public void test216264() throws Throwable {
         Node node0 = new Node(103, 103, 103);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test217244() throws Throwable {
+    public void test217265() throws Throwable {
         Node node0 = new Node(104);
         // Undeclared exception!
         try {
@@ -2382,20 +2501,20 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test218245() throws Throwable {
+    public void test218266() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(105);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test219246() throws Throwable {
+    public void test219267() throws Throwable {
         Node node0 = new Node(106);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test220247() throws Throwable {
+    public void test220268() throws Throwable {
         Node node0 = new Node(108);
         // Undeclared exception!
         try {
@@ -2411,14 +2530,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test221248() throws Throwable {
+    public void test221269() throws Throwable {
         Node node0 = new Node(109);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test222249() throws Throwable {
+    public void test222270() throws Throwable {
         Node node0 = new Node(110);
         // Undeclared exception!
         try {
@@ -2434,41 +2553,41 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test223250() throws Throwable {
+    public void test223271() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(112);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test224251() throws Throwable {
+    public void test224272() throws Throwable {
         Node node0 = new Node(113, (-2175), 967);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test225252() throws Throwable {
+    public void test225273() throws Throwable {
         Node node0 = new Node(114);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test226253() throws Throwable {
+    public void test226274() throws Throwable {
         Node node0 = new Node(115);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test227254() throws Throwable {
+    public void test227275() throws Throwable {
         Node node0 = new Node(116);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test228255() throws Throwable {
+    public void test228276() throws Throwable {
         Node node0 = new Node(117);
         // Undeclared exception!
         try {
@@ -2484,34 +2603,34 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test229256() throws Throwable {
+    public void test229277() throws Throwable {
         boolean boolean0 = NodeUtil.isSimpleOperatorType(118);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test230257() throws Throwable {
+    public void test230278() throws Throwable {
         Node node0 = new Node(119);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test231258() throws Throwable {
+    public void test231279() throws Throwable {
         Node node0 = new Node(120);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test232259() throws Throwable {
+    public void test232280() throws Throwable {
         Node node0 = new Node(121);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test233260() throws Throwable {
+    public void test233281() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Node node1 = NodeUtil.newUndefinedNode(node0);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node1);
@@ -2519,14 +2638,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test234261() throws Throwable {
+    public void test234282() throws Throwable {
         Node node0 = new Node(32);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test235262() throws Throwable {
+    public void test235283() throws Throwable {
         Node node0 = Node.newNumber((double) 64);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -2535,7 +2654,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test235263() throws Throwable {
+    public void test235284() throws Throwable {
         Node node0 = Node.newNumber((double) 64);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -2544,7 +2663,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test236264() throws Throwable {
+    public void test236285() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 2836, 101);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
@@ -2552,7 +2671,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test236265() throws Throwable {
+    public void test236286() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 2836, 101);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
@@ -2560,49 +2679,49 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test237266() throws Throwable {
+    public void test237287() throws Throwable {
         Node node0 = new Node(41);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test238267() throws Throwable {
+    public void test238288() throws Throwable {
         Node node0 = new Node(42);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test239268() throws Throwable {
+    public void test239289() throws Throwable {
         Node node0 = new Node(43, 1535, 43);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test240269() throws Throwable {
+    public void test240290() throws Throwable {
         Node node0 = new Node(44);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test241270() throws Throwable {
+    public void test241291() throws Throwable {
         Node node0 = new Node(46, 46, 46);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test242271() throws Throwable {
+    public void test242292() throws Throwable {
         Node node0 = new Node(47, 47, 47);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test243272() throws Throwable {
+    public void test243293() throws Throwable {
         Node node0 = Node.newNumber(0.0, 144, 144);
         Node node1 = new Node(49, node0, node0, 84, 31);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node1);
@@ -2610,77 +2729,77 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test244273() throws Throwable {
+    public void test244294() throws Throwable {
         Node node0 = new Node(50);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test245274() throws Throwable {
+    public void test245295() throws Throwable {
         Node node0 = Node.newString(51, "W(%UJ7s`vyd<%##5", 51, 51);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test246275() throws Throwable {
+    public void test246296() throws Throwable {
         Node node0 = new Node(52, 52, 105);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test247276() throws Throwable {
+    public void test247297() throws Throwable {
         Node node0 = new Node(56);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test248277() throws Throwable {
+    public void test248298() throws Throwable {
         Node node0 = new Node(59);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test249278() throws Throwable {
+    public void test249299() throws Throwable {
         Node node0 = new Node(62);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test250279() throws Throwable {
+    public void test250300() throws Throwable {
         Node node0 = new Node(66, 66, 66);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test251280() throws Throwable {
+    public void test251301() throws Throwable {
         Node node0 = Node.newString(68, "3EF|WB+c#<&");
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test252281() throws Throwable {
+    public void test252302() throws Throwable {
         Node node0 = new Node(70);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test253282() throws Throwable {
+    public void test253303() throws Throwable {
         Node node0 = new Node(71, 71, 71);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test254283() throws Throwable {
+    public void test254304() throws Throwable {
         Node node0 = Node.newNumber(1.0, 118, (-2083));
         Node node1 = new Node(72, node0, node0, 2, 39);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node1);
@@ -2688,140 +2807,140 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test255284() throws Throwable {
+    public void test255305() throws Throwable {
         Node node0 = new Node(75);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test256285() throws Throwable {
+    public void test256306() throws Throwable {
         Node node0 = new Node(76, 76, 76);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test257286() throws Throwable {
+    public void test257307() throws Throwable {
         Node node0 = Node.newString(77, "3EF|WB+c#<&");
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test258287() throws Throwable {
+    public void test258308() throws Throwable {
         Node node0 = Node.newString(79, "msg.unexpected.eof");
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test259288() throws Throwable {
+    public void test259309() throws Throwable {
         Node node0 = new Node(80, 80, 80);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test260289() throws Throwable {
+    public void test260310() throws Throwable {
         Node node0 = new Node(82, 103, 103);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test261290() throws Throwable {
+    public void test261311() throws Throwable {
         Node node0 = Node.newString(83, "1bDRjaVE");
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test262291() throws Throwable {
+    public void test262312() throws Throwable {
         Node node0 = new Node(84, 84, 84);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test263292() throws Throwable {
+    public void test263313() throws Throwable {
         Node node0 = new Node(98);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test264293() throws Throwable {
+    public void test264314() throws Throwable {
         Node node0 = new Node(100);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test265294() throws Throwable {
+    public void test265315() throws Throwable {
         Node node0 = new Node(101, 118, 1227);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test266295() throws Throwable {
+    public void test266316() throws Throwable {
         Node node0 = new Node(104, 104, 104);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test267296() throws Throwable {
+    public void test267317() throws Throwable {
         Node node0 = Node.newString(107, ":qkXl");
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test268297() throws Throwable {
+    public void test268318() throws Throwable {
         Node node0 = new Node(108, 108, 108);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test269298() throws Throwable {
+    public void test269319() throws Throwable {
         Node node0 = new Node(110, 110, 110);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test270299() throws Throwable {
+    public void test270320() throws Throwable {
         Node node0 = new Node(111);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test271300() throws Throwable {
+    public void test271321() throws Throwable {
         Node node0 = new Node(117);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test272301() throws Throwable {
+    public void test272322() throws Throwable {
         Node node0 = new Node(123);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test273302() throws Throwable {
+    public void test273323() throws Throwable {
         Node node0 = new Node(124, 124, 124);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test274303() throws Throwable {
+    public void test274324() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("CGUL||Nl*k$5%z)h");
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
@@ -2829,35 +2948,35 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test275304() throws Throwable {
+    public void test275325() throws Throwable {
         Node node0 = new Node(126, 126, 126);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test276305() throws Throwable {
+    public void test276326() throws Throwable {
         Node node0 = new Node(127);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test277306() throws Throwable {
+    public void test277327() throws Throwable {
         Node node0 = new Node(128, 128, 128);
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test278307() throws Throwable {
+    public void test278328() throws Throwable {
         Node node0 = new Node(64, 64, 64);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test279308() throws Throwable {
+    public void test279329() throws Throwable {
         Node node0 = new Node(64);
         node0.addChildrenToBack(node0);
         // Undeclared exception!
@@ -2869,14 +2988,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test280309() throws Throwable {
+    public void test280330() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         boolean boolean0 = NodeUtil.mayEffectMutableState(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test281310() throws Throwable {
+    public void test281331() throws Throwable {
         Node node0 = new Node(99);
         Node node1 = new Node(38, node0, node0, node0, 15, (-1));
         boolean boolean0 = NodeUtil.mayHaveSideEffects(node1);
@@ -2884,7 +3003,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test282311() throws Throwable {
+    public void test282332() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -2894,7 +3013,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test282312() throws Throwable {
+    public void test282333() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -2904,7 +3023,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test282313() throws Throwable {
+    public void test282334() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -2914,7 +3033,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test283314() throws Throwable {
+    public void test283335() throws Throwable {
         Node node0 = new Node(688, 99, (-1774));
         Node node1 = new Node(86, node0, node0, 33, (-41));
         boolean boolean0 = NodeUtil.mayEffectMutableState(node1);
@@ -2922,7 +3041,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test284315() throws Throwable {
+    public void test284336() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "com.google.javascript.jscomp.AnalyzePrototypeProperties$ProcessExternProperties", 803, 803);
         Compiler compiler0 = new Compiler();
@@ -2939,7 +3058,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test285316() throws Throwable {
+    public void test285337() throws Throwable {
         Node node0 = new Node(76);
         // Undeclared exception!
         try {
@@ -2954,7 +3073,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test286317() throws Throwable {
+    public void test286338() throws Throwable {
         Node node0 = Node.newNumber((double) 51);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -2963,7 +3082,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test286318() throws Throwable {
+    public void test286339() throws Throwable {
         Node node0 = Node.newNumber((double) 51);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -2972,7 +3091,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test287319() throws Throwable {
+    public void test287340() throws Throwable {
         Node node0 = new Node(115);
         // Undeclared exception!
         try {
@@ -2987,28 +3106,28 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test288320() throws Throwable {
+    public void test288341() throws Throwable {
         Node node0 = new Node(30, 30, 30);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test289321() throws Throwable {
+    public void test289342() throws Throwable {
         Node node0 = new Node(94, 94, 94);
         boolean boolean0 = NodeUtil.nodeTypeMayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test290322() throws Throwable {
+    public void test290343() throws Throwable {
         Node node0 = new Node(31, 31, 31);
         boolean boolean0 = NodeUtil.nodeTypeMayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test291323() throws Throwable {
+    public void test291344() throws Throwable {
         Node node0 = Node.newNumber((double) 64);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -3017,7 +3136,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test292324() throws Throwable {
+    public void test292345() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node1 = NodeUtil.newQualifiedNameNode((CodingConvention) closureCodingConvention0, "undefined", node0, "undefined");
@@ -3026,7 +3145,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test292325() throws Throwable {
+    public void test292346() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node1 = NodeUtil.newQualifiedNameNode((CodingConvention) closureCodingConvention0, "undefined", node0, "undefined");
@@ -3035,7 +3154,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test292326() throws Throwable {
+    public void test292347() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node1 = NodeUtil.newQualifiedNameNode((CodingConvention) closureCodingConvention0, "undefined", node0, "undefined");
@@ -3044,21 +3163,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test293327() throws Throwable {
+    public void test293348() throws Throwable {
         Node node0 = Node.newString(49, "9k[g@a(avp:M");
         boolean boolean0 = NodeUtil.nodeTypeMayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test294328() throws Throwable {
+    public void test294349() throws Throwable {
         Node node0 = new Node(102);
         boolean boolean0 = NodeUtil.nodeTypeMayHaveSideEffects(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test295329() throws Throwable {
+    public void test295350() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "msg.let.redecl", 3127, 3127);
         NodeUtil.canBeSideEffected(node0);
@@ -3066,7 +3185,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test295330() throws Throwable {
+    public void test295351() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "msg.let.redecl", 3127, 3127);
         NodeUtil.canBeSideEffected(node0);
@@ -3074,7 +3193,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test295331() throws Throwable {
+    public void test295352() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "msg.let.redecl", 3127, 3127);
         NodeUtil.canBeSideEffected(node0);
@@ -3082,21 +3201,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test296332() throws Throwable {
+    public void test296353() throws Throwable {
         Node node0 = new Node(35, 35, 35);
         boolean boolean0 = NodeUtil.canBeSideEffected(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test297333() throws Throwable {
+    public void test297354() throws Throwable {
         Node node0 = new Node(37);
         boolean boolean0 = NodeUtil.canBeSideEffected(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test298334() throws Throwable {
+    public void test298355() throws Throwable {
         Node node0 = new Node(105);
         // Undeclared exception!
         try {
@@ -3111,7 +3230,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test299335() throws Throwable {
+    public void test299356() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "II>#M", 114, 158);
         boolean boolean0 = NodeUtil.canBeSideEffected(node0);
@@ -3119,7 +3238,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test299336() throws Throwable {
+    public void test299357() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "II>#M", 114, 158);
         boolean boolean0 = NodeUtil.canBeSideEffected(node0);
@@ -3127,7 +3246,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test300337() throws Throwable {
+    public void test300358() throws Throwable {
         Node node0 = new Node(126, 126, 126);
         Node node1 = new Node(31, node0, node0, 17, 35);
         boolean boolean0 = NodeUtil.canBeSideEffected(node1, (Set<String>) null);
@@ -3135,7 +3254,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test301338() throws Throwable {
+    public void test301359() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("kH", "kH");
         boolean boolean0 = NodeUtil.canBeSideEffected(node0);
@@ -3143,163 +3262,163 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test302339() throws Throwable {
+    public void test302360() throws Throwable {
         int int0 = NodeUtil.precedence(9);
         assertEquals(5, int0);
     }
 
     @Test(timeout = 4000)
-    public void test303340() throws Throwable {
+    public void test303361() throws Throwable {
         int int0 = NodeUtil.precedence(44);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test304341() throws Throwable {
+    public void test304362() throws Throwable {
         int int0 = NodeUtil.precedence(10);
         assertEquals(6, int0);
     }
 
     @Test(timeout = 4000)
-    public void test305342() throws Throwable {
+    public void test305363() throws Throwable {
         int int0 = NodeUtil.precedence(11);
         assertEquals(7, int0);
     }
 
     @Test(timeout = 4000)
-    public void test306343() throws Throwable {
+    public void test306364() throws Throwable {
         int int0 = NodeUtil.precedence(12);
         assertEquals(8, int0);
     }
 
     @Test(timeout = 4000)
-    public void test307344() throws Throwable {
+    public void test307365() throws Throwable {
         int int0 = NodeUtil.precedence(13);
         assertEquals(8, int0);
     }
 
     @Test(timeout = 4000)
-    public void test308345() throws Throwable {
+    public void test308366() throws Throwable {
         int int0 = NodeUtil.precedence(14);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test309346() throws Throwable {
+    public void test309367() throws Throwable {
         int int0 = NodeUtil.precedence(15);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test310347() throws Throwable {
+    public void test310368() throws Throwable {
         int int0 = NodeUtil.precedence(16);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test311348() throws Throwable {
+    public void test311369() throws Throwable {
         int int0 = NodeUtil.precedence(17);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test312349() throws Throwable {
+    public void test312370() throws Throwable {
         int int0 = NodeUtil.precedence(18);
         assertEquals(10, int0);
     }
 
     @Test(timeout = 4000)
-    public void test313350() throws Throwable {
+    public void test313371() throws Throwable {
         int int0 = NodeUtil.precedence(19);
         assertEquals(10, int0);
     }
 
     @Test(timeout = 4000)
-    public void test314351() throws Throwable {
+    public void test314372() throws Throwable {
         int int0 = NodeUtil.precedence(20);
         assertEquals(10, int0);
     }
 
     @Test(timeout = 4000)
-    public void test315352() throws Throwable {
+    public void test315373() throws Throwable {
         int int0 = NodeUtil.precedence(21);
         assertEquals(11, int0);
     }
 
     @Test(timeout = 4000)
-    public void test316353() throws Throwable {
+    public void test316374() throws Throwable {
         int int0 = NodeUtil.precedence(22);
         assertEquals(11, int0);
     }
 
     @Test(timeout = 4000)
-    public void test317354() throws Throwable {
+    public void test317375() throws Throwable {
         int int0 = NodeUtil.precedence(23);
         assertEquals(12, int0);
     }
 
     @Test(timeout = 4000)
-    public void test318355() throws Throwable {
+    public void test318376() throws Throwable {
         int int0 = NodeUtil.precedence(24);
         assertEquals(12, int0);
     }
 
     @Test(timeout = 4000)
-    public void test319356() throws Throwable {
+    public void test319377() throws Throwable {
         int int0 = NodeUtil.precedence(25);
         assertEquals(12, int0);
     }
 
     @Test(timeout = 4000)
-    public void test320357() throws Throwable {
+    public void test320378() throws Throwable {
         int int0 = NodeUtil.precedence(26);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test321358() throws Throwable {
+    public void test321379() throws Throwable {
         int int0 = NodeUtil.precedence(27);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test322359() throws Throwable {
+    public void test322380() throws Throwable {
         int int0 = NodeUtil.precedence(28);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test323360() throws Throwable {
+    public void test323381() throws Throwable {
         int int0 = NodeUtil.precedence(29);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test324361() throws Throwable {
+    public void test324382() throws Throwable {
         int int0 = NodeUtil.precedence(30);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test325362() throws Throwable {
+    public void test325383() throws Throwable {
         int int0 = NodeUtil.precedence(31);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test326363() throws Throwable {
+    public void test326384() throws Throwable {
         int int0 = NodeUtil.precedence(32);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test327364() throws Throwable {
+    public void test327385() throws Throwable {
         int int0 = NodeUtil.precedence(33);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test328365() throws Throwable {
+    public void test328386() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(34);
@@ -3313,13 +3432,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test329366() throws Throwable {
+    public void test329387() throws Throwable {
         int int0 = NodeUtil.precedence(35);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test330367() throws Throwable {
+    public void test330388() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(36);
@@ -3333,67 +3452,67 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test331368() throws Throwable {
+    public void test331389() throws Throwable {
         int int0 = NodeUtil.precedence(37);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test332369() throws Throwable {
+    public void test332390() throws Throwable {
         int int0 = NodeUtil.precedence(38);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test333370() throws Throwable {
+    public void test333391() throws Throwable {
         int int0 = NodeUtil.precedence(39);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test334371() throws Throwable {
+    public void test334392() throws Throwable {
         int int0 = NodeUtil.precedence(40);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test335372() throws Throwable {
+    public void test335393() throws Throwable {
         int int0 = NodeUtil.precedence(41);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test336373() throws Throwable {
+    public void test336394() throws Throwable {
         int int0 = NodeUtil.precedence(42);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test337374() throws Throwable {
+    public void test337395() throws Throwable {
         int int0 = NodeUtil.precedence(43);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test338375() throws Throwable {
+    public void test338396() throws Throwable {
         int int0 = NodeUtil.precedence(45);
         assertEquals(8, int0);
     }
 
     @Test(timeout = 4000)
-    public void test339376() throws Throwable {
+    public void test339397() throws Throwable {
         int int0 = NodeUtil.precedence(46);
         assertEquals(8, int0);
     }
 
     @Test(timeout = 4000)
-    public void test340377() throws Throwable {
+    public void test340398() throws Throwable {
         int int0 = NodeUtil.precedence(47);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test341378() throws Throwable {
+    public void test341399() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(48);
@@ -3407,7 +3526,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test342379() throws Throwable {
+    public void test342400() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(49);
@@ -3421,7 +3540,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test343380() throws Throwable {
+    public void test343401() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(50);
@@ -3435,19 +3554,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test344381() throws Throwable {
+    public void test344402() throws Throwable {
         int int0 = NodeUtil.precedence(51);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test345382() throws Throwable {
+    public void test345403() throws Throwable {
         int int0 = NodeUtil.precedence(52);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test346383() throws Throwable {
+    public void test346404() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(53);
@@ -3461,7 +3580,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test347384() throws Throwable {
+    public void test347405() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(56);
@@ -3475,7 +3594,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test348385() throws Throwable {
+    public void test348406() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence((byte) 57);
@@ -3489,7 +3608,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test349386() throws Throwable {
+    public void test349407() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(58);
@@ -3503,7 +3622,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test350387() throws Throwable {
+    public void test350408() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(59);
@@ -3517,7 +3636,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test351388() throws Throwable {
+    public void test351409() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(60);
@@ -3531,7 +3650,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test352389() throws Throwable {
+    public void test352410() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(61);
@@ -3545,7 +3664,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test353390() throws Throwable {
+    public void test353411() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(62);
@@ -3559,19 +3678,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test354391() throws Throwable {
+    public void test354412() throws Throwable {
         int int0 = NodeUtil.precedence(63);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test355392() throws Throwable {
+    public void test355413() throws Throwable {
         int int0 = NodeUtil.precedence(64);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test356393() throws Throwable {
+    public void test356414() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(65);
@@ -3585,7 +3704,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test357394() throws Throwable {
+    public void test357415() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(66);
@@ -3599,7 +3718,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test358395() throws Throwable {
+    public void test358416() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(67);
@@ -3613,7 +3732,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test359396() throws Throwable {
+    public void test359417() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(68);
@@ -3627,7 +3746,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test360397() throws Throwable {
+    public void test360418() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(69);
@@ -3641,7 +3760,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test361398() throws Throwable {
+    public void test361419() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(70);
@@ -3655,7 +3774,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test362399() throws Throwable {
+    public void test362420() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(71);
@@ -3669,7 +3788,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test363400() throws Throwable {
+    public void test363421() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(72);
@@ -3683,7 +3802,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test364401() throws Throwable {
+    public void test364422() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(73);
@@ -3697,7 +3816,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test365402() throws Throwable {
+    public void test365423() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(74);
@@ -3711,7 +3830,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test366403() throws Throwable {
+    public void test366424() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(75);
@@ -3725,7 +3844,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test367404() throws Throwable {
+    public void test367425() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(76);
@@ -3739,7 +3858,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test368405() throws Throwable {
+    public void test368426() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(77);
@@ -3753,7 +3872,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test369406() throws Throwable {
+    public void test369427() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(78);
@@ -3767,7 +3886,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test370407() throws Throwable {
+    public void test370428() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(79);
@@ -3781,7 +3900,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test371408() throws Throwable {
+    public void test371429() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(80);
@@ -3795,7 +3914,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test372409() throws Throwable {
+    public void test372430() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(81);
@@ -3809,7 +3928,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test373410() throws Throwable {
+    public void test373431() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(82);
@@ -3823,7 +3942,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test374411() throws Throwable {
+    public void test374432() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(83);
@@ -3837,7 +3956,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test375412() throws Throwable {
+    public void test375433() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(84);
@@ -3851,91 +3970,91 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test376413() throws Throwable {
+    public void test376434() throws Throwable {
         int int0 = NodeUtil.precedence(85);
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test377414() throws Throwable {
+    public void test377435() throws Throwable {
         int int0 = NodeUtil.precedence(86);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test378415() throws Throwable {
+    public void test378436() throws Throwable {
         int int0 = NodeUtil.precedence(87);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test379416() throws Throwable {
+    public void test379437() throws Throwable {
         int int0 = NodeUtil.precedence(88);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test380417() throws Throwable {
+    public void test380438() throws Throwable {
         int int0 = NodeUtil.precedence(89);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test381418() throws Throwable {
+    public void test381439() throws Throwable {
         int int0 = NodeUtil.precedence(90);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test382419() throws Throwable {
+    public void test382440() throws Throwable {
         int int0 = NodeUtil.precedence(91);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test383420() throws Throwable {
+    public void test383441() throws Throwable {
         int int0 = NodeUtil.precedence(92);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test384421() throws Throwable {
+    public void test384442() throws Throwable {
         int int0 = NodeUtil.precedence(93);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test385422() throws Throwable {
+    public void test385443() throws Throwable {
         int int0 = NodeUtil.precedence(94);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test386423() throws Throwable {
+    public void test386444() throws Throwable {
         int int0 = NodeUtil.precedence(95);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test387424() throws Throwable {
+    public void test387445() throws Throwable {
         int int0 = NodeUtil.precedence(96);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test388425() throws Throwable {
+    public void test388446() throws Throwable {
         int int0 = NodeUtil.precedence(97);
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test389426() throws Throwable {
+    public void test389447() throws Throwable {
         int int0 = NodeUtil.precedence(98);
         assertEquals(2, int0);
     }
 
     @Test(timeout = 4000)
-    public void test390427() throws Throwable {
+    public void test390448() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(99);
@@ -3949,31 +4068,31 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test391428() throws Throwable {
+    public void test391449() throws Throwable {
         int int0 = NodeUtil.precedence(100);
         assertEquals(3, int0);
     }
 
     @Test(timeout = 4000)
-    public void test392429() throws Throwable {
+    public void test392450() throws Throwable {
         int int0 = NodeUtil.precedence(101);
         assertEquals(4, int0);
     }
 
     @Test(timeout = 4000)
-    public void test393430() throws Throwable {
+    public void test393451() throws Throwable {
         int int0 = NodeUtil.precedence(102);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test394431() throws Throwable {
+    public void test394452() throws Throwable {
         int int0 = NodeUtil.precedence(103);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test395432() throws Throwable {
+    public void test395453() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(104);
@@ -3987,13 +4106,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test396433() throws Throwable {
+    public void test396454() throws Throwable {
         int int0 = NodeUtil.precedence(105);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test397434() throws Throwable {
+    public void test397455() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(106);
@@ -4007,7 +4126,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test398435() throws Throwable {
+    public void test398456() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(107);
@@ -4021,7 +4140,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test399436() throws Throwable {
+    public void test399457() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(108);
@@ -4035,7 +4154,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test400437() throws Throwable {
+    public void test400458() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(109);
@@ -4049,7 +4168,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test401438() throws Throwable {
+    public void test401459() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(110);
@@ -4063,7 +4182,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test402439() throws Throwable {
+    public void test402460() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(111);
@@ -4077,7 +4196,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test403440() throws Throwable {
+    public void test403461() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(112);
@@ -4091,7 +4210,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test404441() throws Throwable {
+    public void test404462() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(113);
@@ -4105,7 +4224,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test405442() throws Throwable {
+    public void test405463() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(114);
@@ -4119,7 +4238,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test406443() throws Throwable {
+    public void test406464() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(115);
@@ -4133,7 +4252,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test407444() throws Throwable {
+    public void test407465() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(116);
@@ -4147,7 +4266,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test408445() throws Throwable {
+    public void test408466() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(117);
@@ -4161,7 +4280,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test409446() throws Throwable {
+    public void test409467() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(118);
@@ -4175,7 +4294,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test410447() throws Throwable {
+    public void test410468() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(119);
@@ -4189,7 +4308,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test411448() throws Throwable {
+    public void test411469() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(120);
@@ -4203,7 +4322,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test412449() throws Throwable {
+    public void test412470() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(121);
@@ -4217,13 +4336,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test413450() throws Throwable {
+    public void test413471() throws Throwable {
         int int0 = NodeUtil.precedence(122);
         assertEquals(13, int0);
     }
 
     @Test(timeout = 4000)
-    public void test414451() throws Throwable {
+    public void test414472() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence(123);
@@ -4237,13 +4356,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test415452() throws Throwable {
+    public void test415473() throws Throwable {
         int int0 = NodeUtil.precedence(124);
         assertEquals(15, int0);
     }
 
     @Test(timeout = 4000)
-    public void test416453() throws Throwable {
+    public void test416474() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.precedence((-37));
@@ -4257,7 +4376,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test417454() throws Throwable {
+    public void test417475() throws Throwable {
         Node node0 = new Node(85, 85, 85);
         // Undeclared exception!
         try {
@@ -4271,7 +4390,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test418455() throws Throwable {
+    public void test418476() throws Throwable {
         Node node0 = new Node(86);
         // Undeclared exception!
         try {
@@ -4285,7 +4404,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test419456() throws Throwable {
+    public void test419477() throws Throwable {
         Node node0 = new Node(98, 98, 98);
         // Undeclared exception!
         try {
@@ -4299,7 +4418,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test420457() throws Throwable {
+    public void test420478() throws Throwable {
         Node node0 = new Node(101);
         // Undeclared exception!
         try {
@@ -4313,7 +4432,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test421458() throws Throwable {
+    public void test421479() throws Throwable {
         Node node0 = new Node(100);
         Node node1 = new Node(37);
         node0.addChildToFront(node1);
@@ -4322,28 +4441,28 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test422459() throws Throwable {
+    public void test422480() throws Throwable {
         Node node0 = new Node(9, 9, 9);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test423460() throws Throwable {
+    public void test423481() throws Throwable {
         Node node0 = new Node(10);
         boolean boolean0 = NodeUtil.isNumericResult(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test424461() throws Throwable {
+    public void test424482() throws Throwable {
         Node node0 = new Node(18);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test425462() throws Throwable {
+    public void test425483() throws Throwable {
         Node node0 = new Node(95, 110, 425);
         Node node1 = new Node(19, node0, node0, node0, node0, 3966, 31);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node1);
@@ -4351,7 +4470,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test426463() throws Throwable {
+    public void test426484() throws Throwable {
         Node node0 = Node.newNumber((double) 26, 26, 26);
         Node node1 = new Node(20, node0, node0, node0, node0, 25, 35);
         boolean boolean0 = NodeUtil.isNumericResult(node1);
@@ -4359,7 +4478,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test427464() throws Throwable {
+    public void test427485() throws Throwable {
         Node node0 = new Node(23, 23, 147);
         NodeUtil.MayBeStringResultPredicate nodeUtil_MayBeStringResultPredicate0 = NodeUtil.MAY_BE_STRING_PREDICATE;
         int int0 = NodeUtil.getCount(node0, nodeUtil_MayBeStringResultPredicate0, nodeUtil_MayBeStringResultPredicate0);
@@ -4367,14 +4486,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test428465() throws Throwable {
+    public void test428486() throws Throwable {
         Node node0 = new Node(25, (-2639), 4114);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test429466() throws Throwable {
+    public void test429487() throws Throwable {
         Node node0 = new Node(94, 94, 94);
         Node node1 = new Node(27, node0);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node1);
@@ -4382,21 +4501,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test430467() throws Throwable {
+    public void test430488() throws Throwable {
         Node node0 = Node.newString(28, "Muy`^e)u[Af");
         boolean boolean0 = NodeUtil.mayBeString(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test431468() throws Throwable {
+    public void test431489() throws Throwable {
         Node node0 = new Node(29);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test432469() throws Throwable {
+    public void test432490() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         NodeUtil.MayBeStringResultPredicate nodeUtil_MayBeStringResultPredicate0 = NodeUtil.MAY_BE_STRING_PREDICATE;
@@ -4405,7 +4524,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test432470() throws Throwable {
+    public void test432491() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         NodeUtil.MayBeStringResultPredicate nodeUtil_MayBeStringResultPredicate0 = NodeUtil.MAY_BE_STRING_PREDICATE;
@@ -4414,7 +4533,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test432471() throws Throwable {
+    public void test432492() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         NodeUtil.MayBeStringResultPredicate nodeUtil_MayBeStringResultPredicate0 = NodeUtil.MAY_BE_STRING_PREDICATE;
@@ -4423,28 +4542,28 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test433472() throws Throwable {
+    public void test433493() throws Throwable {
         Node node0 = Node.newNumber((double) 26, 1957, 1957);
         boolean boolean0 = NodeUtil.isNumericResult(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test434473() throws Throwable {
+    public void test434494() throws Throwable {
         Node node0 = new Node(102);
         boolean boolean0 = NodeUtil.isNumericResult(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test435474() throws Throwable {
+    public void test435495() throws Throwable {
         Node node0 = new Node(103, 103, 103);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test436475() throws Throwable {
+    public void test436496() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 98, 47);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
@@ -4452,7 +4571,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test436476() throws Throwable {
+    public void test436497() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "NaN", 98, 47);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
@@ -4460,7 +4579,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test437477() throws Throwable {
+    public void test437498() throws Throwable {
         Node node0 = new Node(37);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node1 = NodeUtil.newName(defaultCodingConvention0, "Infinity", node0);
@@ -4469,7 +4588,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test437478() throws Throwable {
+    public void test437499() throws Throwable {
         Node node0 = new Node(37);
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node1 = NodeUtil.newName(defaultCodingConvention0, "Infinity", node0);
@@ -4478,35 +4597,35 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test438479() throws Throwable {
+    public void test438500() throws Throwable {
         Node node0 = new Node(12, 12, 12);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test439480() throws Throwable {
+    public void test439501() throws Throwable {
         Node node0 = new Node(13, 94, 65535);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test440481() throws Throwable {
+    public void test440502() throws Throwable {
         Node node0 = new Node(14);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test441482() throws Throwable {
+    public void test441503() throws Throwable {
         Node node0 = new Node(15);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test442483() throws Throwable {
+    public void test442504() throws Throwable {
         Node node0 = new Node(118);
         Node node1 = new Node(16, node0, node0);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node1);
@@ -4514,7 +4633,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test443484() throws Throwable {
+    public void test443505() throws Throwable {
         Node node0 = new Node(113, (-2247), (-2247));
         Node node1 = new Node(17, node0, node0, node0, 49, 23);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node1);
@@ -4522,14 +4641,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test444485() throws Throwable {
+    public void test444506() throws Throwable {
         Node node0 = new Node(18, 23, 98);
         boolean boolean0 = NodeUtil.isBooleanResult(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test445486() throws Throwable {
+    public void test445507() throws Throwable {
         Node node0 = new Node(95, 110, 425);
         Node node1 = new Node(19, node0, node0, node0, node0, 3966, 281);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node1);
@@ -4537,7 +4656,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test446487() throws Throwable {
+    public void test446508() throws Throwable {
         Node node0 = new Node(102, (-664), 102);
         Node node1 = new Node(20, node0, node0, 4, 0);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node1);
@@ -4545,77 +4664,77 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test447488() throws Throwable {
+    public void test447509() throws Throwable {
         Node node0 = new Node(21, 21, 4114);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test448489() throws Throwable {
+    public void test448510() throws Throwable {
         Node node0 = new Node(22, 22, 136);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test449490() throws Throwable {
+    public void test449511() throws Throwable {
         Node node0 = new Node(24, 97, 4886);
         boolean boolean0 = NodeUtil.isBooleanResult(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test450491() throws Throwable {
+    public void test450512() throws Throwable {
         Node node0 = new Node(25, (-2639), 4114);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test451492() throws Throwable {
+    public void test451513() throws Throwable {
         Node node0 = new Node(26);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test452493() throws Throwable {
+    public void test452514() throws Throwable {
         Node node0 = new Node(27, 27, 37);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test453494() throws Throwable {
+    public void test453515() throws Throwable {
         Node node0 = Node.newString(28, "Z*|Y5BtckE-JB");
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test454495() throws Throwable {
+    public void test454516() throws Throwable {
         Node node0 = new Node(29, 29, 29);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test455496() throws Throwable {
+    public void test455517() throws Throwable {
         Node node0 = new Node(30, 30, 30);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test456497() throws Throwable {
+    public void test456518() throws Throwable {
         Node node0 = new Node(31);
         boolean boolean0 = NodeUtil.mayBeString(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test457498() throws Throwable {
+    public void test457519() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Node node1 = new Node(34, node0);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node1);
@@ -4623,7 +4742,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test458499() throws Throwable {
+    public void test458520() throws Throwable {
         Node node0 = new Node(35, 35, 35);
         NodeUtil.BooleanResultPredicate nodeUtil_BooleanResultPredicate0 = NodeUtil.BOOLEAN_RESULT_PREDICATE;
         boolean boolean0 = NodeUtil.valueCheck(node0, nodeUtil_BooleanResultPredicate0);
@@ -4631,35 +4750,35 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test459500() throws Throwable {
+    public void test459521() throws Throwable {
         Node node0 = new Node(36, (-534), 11);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test460501() throws Throwable {
+    public void test460522() throws Throwable {
         Node node0 = Node.newNumber((double) 51);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test461502() throws Throwable {
+    public void test461523() throws Throwable {
         Node node0 = new Node(42, 17, 4095);
         boolean boolean0 = NodeUtil.isBooleanResult(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test462503() throws Throwable {
+    public void test462524() throws Throwable {
         Node node0 = new Node(43, 1397, 1535);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test463504() throws Throwable {
+    public void test463525() throws Throwable {
         Node node0 = new Node(115, 115, 115);
         Node node1 = new Node(44, node0, node0, node0, node0);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node1);
@@ -4667,56 +4786,56 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test464505() throws Throwable {
+    public void test464526() throws Throwable {
         Node node0 = new Node(45);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test465506() throws Throwable {
+    public void test465527() throws Throwable {
         Node node0 = new Node(46, (-1743), 38);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test466507() throws Throwable {
+    public void test466528() throws Throwable {
         Node node0 = new Node(47, 47, 47);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test467508() throws Throwable {
+    public void test467529() throws Throwable {
         Node node0 = Node.newString(48, "Muy`^e)u[af");
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test468509() throws Throwable {
+    public void test468530() throws Throwable {
         Node node0 = Node.newString(49, "9k[g@a(avp:M");
         boolean boolean0 = NodeUtil.mayBeString(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test469510() throws Throwable {
+    public void test469531() throws Throwable {
         Node node0 = new Node(50, 50, 50);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test470511() throws Throwable {
+    public void test470532() throws Throwable {
         Node node0 = Node.newString(51, "W(%UJ7s`vyd<%##5", 51, 51);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test471512() throws Throwable {
+    public void test471533() throws Throwable {
         Node node0 = new Node(2119, 2119, 2119);
         Node node1 = new Node(52, node0, node0, node0, 403, 2);
         boolean boolean0 = NodeUtil.isBooleanResultHelper(node1);
@@ -4724,14 +4843,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test472513() throws Throwable {
+    public void test472534() throws Throwable {
         Node node0 = new Node(122);
         boolean boolean0 = NodeUtil.mayBeStringHelper(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test473514() throws Throwable {
+    public void test473535() throws Throwable {
         Node node0 = new Node(41);
         Node node1 = new Node(0, node0, node0, 49, 12);
         String string0 = NodeUtil.arrayToString(node1);
@@ -4739,7 +4858,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test473515() throws Throwable {
+    public void test473536() throws Throwable {
         Node node0 = new Node(41);
         Node node1 = new Node(0, node0, node0, 49, 12);
         String string0 = NodeUtil.arrayToString(node1);
@@ -4747,74 +4866,74 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test474516() throws Throwable {
+    public void test474537() throws Throwable {
         boolean boolean0 = NodeUtil.isAssociative(2);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test475517() throws Throwable {
+    public void test475538() throws Throwable {
         boolean boolean0 = NodeUtil.isAssociative(10);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test476518() throws Throwable {
+    public void test476539() throws Throwable {
         boolean boolean0 = NodeUtil.isAssociative(11);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test477519() throws Throwable {
+    public void test477540() throws Throwable {
         boolean boolean0 = NodeUtil.isAssociative(23);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test478520() throws Throwable {
+    public void test478541() throws Throwable {
         boolean boolean0 = NodeUtil.isAssociative(100);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test479521() throws Throwable {
+    public void test479542() throws Throwable {
         boolean boolean0 = NodeUtil.isAssociative(101);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test480522() throws Throwable {
+    public void test480543() throws Throwable {
         boolean boolean0 = NodeUtil.isCommutative(30);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test481523() throws Throwable {
+    public void test481544() throws Throwable {
         boolean boolean0 = NodeUtil.isCommutative(10);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test482524() throws Throwable {
+    public void test482545() throws Throwable {
         boolean boolean0 = NodeUtil.isCommutative(11);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test483525() throws Throwable {
+    public void test483546() throws Throwable {
         boolean boolean0 = NodeUtil.isCommutative(23);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test484526() throws Throwable {
+    public void test484547() throws Throwable {
         Node node0 = new Node(87, 87, 65);
         int int0 = NodeUtil.getOpFromAssignmentOp(node0);
         assertEquals(9, int0);
     }
 
     @Test(timeout = 4000)
-    public void test485527() throws Throwable {
+    public void test485548() throws Throwable {
         Node node0 = new Node(123);
         // Undeclared exception!
         try {
@@ -4829,7 +4948,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test486528() throws Throwable {
+    public void test486549() throws Throwable {
         Node node0 = Node.newString("case expresmion doesn't match switch", 1547, 1547);
         Node node1 = new Node(89, node0, node0, node0, node0);
         int int0 = NodeUtil.getOpFromAssignmentOp(node1);
@@ -4837,35 +4956,35 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test487529() throws Throwable {
+    public void test487550() throws Throwable {
         Node node0 = Node.newString(90, "test", 109, 109);
         int int0 = NodeUtil.getOpFromAssignmentOp(node0);
         assertEquals(18, int0);
     }
 
     @Test(timeout = 4000)
-    public void test488530() throws Throwable {
+    public void test488551() throws Throwable {
         Node node0 = new Node(91);
         int int0 = NodeUtil.getOpFromAssignmentOp(node0);
         assertEquals(19, int0);
     }
 
     @Test(timeout = 4000)
-    public void test489531() throws Throwable {
+    public void test489552() throws Throwable {
         Node node0 = new Node(94, 94, 94);
         int int0 = NodeUtil.getOpFromAssignmentOp(node0);
         assertEquals(22, int0);
     }
 
     @Test(timeout = 4000)
-    public void test490532() throws Throwable {
+    public void test490553() throws Throwable {
         Node node0 = new Node(95, 95, 425);
         int int0 = NodeUtil.getOpFromAssignmentOp(node0);
         assertEquals(23, int0);
     }
 
     @Test(timeout = 4000)
-    public void test491533() throws Throwable {
+    public void test491554() throws Throwable {
         Node node0 = Node.newString("case expression doesn't match switch", 1536, 1536);
         Node node1 = new Node(97, node0, node0, 1, 76);
         int int0 = NodeUtil.getOpFromAssignmentOp(node1);
@@ -4873,14 +4992,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test492534() throws Throwable {
+    public void test492555() throws Throwable {
         Node node0 = Node.newNumber(Double.POSITIVE_INFINITY, 26, 2676);
         boolean boolean0 = NodeUtil.isExpressionNode(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test493535() throws Throwable {
+    public void test493556() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "my", 58, 10);
         Node node1 = NodeUtil.newExpr(node0);
@@ -4889,7 +5008,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test493536() throws Throwable {
+    public void test493557() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "my", 58, 10);
         Node node1 = NodeUtil.newExpr(node0);
@@ -4898,7 +5017,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test494537() throws Throwable {
+    public void test494558() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -4907,7 +5026,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test494538() throws Throwable {
+    public void test494559() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -4916,7 +5035,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test494539() throws Throwable {
+    public void test494560() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -4925,7 +5044,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test494540() throws Throwable {
+    public void test494561() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -4934,7 +5053,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test495541() throws Throwable {
+    public void test495562() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "?y.`ze<N3[ZiYI[gK'", 6, 6);
         Node[] nodeArray0 = new Node[2];
@@ -4951,14 +5070,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test496542() throws Throwable {
+    public void test496563() throws Throwable {
         Node node0 = new Node(35, 35, 35);
         boolean boolean0 = NodeUtil.isGet(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test497543() throws Throwable {
+    public void test497564() throws Throwable {
         Node node0 = Node.newString("y[@>az[*wUri@", 1429, (-987));
         Node node1 = new Node(33, node0, node0, node0, node0);
         Node node2 = NodeUtil.getPrototypeClassName(node1);
@@ -4966,7 +5085,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test498544() throws Throwable {
+    public void test498565() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "", 71, 1176);
         boolean boolean0 = NodeUtil.isReferenceName(node0);
@@ -4974,7 +5093,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test498545() throws Throwable {
+    public void test498566() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "", 71, 1176);
         boolean boolean0 = NodeUtil.isReferenceName(node0);
@@ -4982,14 +5101,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test499546() throws Throwable {
+    public void test499567() throws Throwable {
         Node node0 = new Node(30, 8, (-865));
         boolean boolean0 = NodeUtil.isCallOrNew(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test500547() throws Throwable {
+    public void test500568() throws Throwable {
         Node node0 = new Node(53, 29, 148);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.isVar(node1);
@@ -4997,7 +5116,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test500548() throws Throwable {
+    public void test500569() throws Throwable {
         Node node0 = new Node(53, 29, 148);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.isVar(node1);
@@ -5005,7 +5124,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test500549() throws Throwable {
+    public void test500570() throws Throwable {
         Node node0 = new Node(53, 29, 148);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.isVar(node1);
@@ -5013,14 +5132,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501550() throws Throwable {
+    public void test501571() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.NodeUtil$NumbericResultPredicate", "com.google.javascript.jscomp.NodeUtil$NumbericResultPredicate");
         assertEquals(1, Node.TARGET_PROP);
     }
 
     @Test(timeout = 4000)
-    public void test502551() throws Throwable {
+    public void test502572() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "Z*|Y5BtckE-JB", 2486, 2486);
         Node node1 = NodeUtil.newExpr(node0);
@@ -5028,7 +5147,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test502552() throws Throwable {
+    public void test502573() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "Z*|Y5BtckE-JB", 2486, 2486);
         Node node1 = NodeUtil.newExpr(node0);
@@ -5037,21 +5156,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test503553() throws Throwable {
+    public void test503574() throws Throwable {
         Node node0 = Node.newString("3EF|WB+c#<&");
         boolean boolean0 = NodeUtil.isString(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test504554() throws Throwable {
+    public void test504575() throws Throwable {
         Node node0 = new Node(97);
         boolean boolean0 = NodeUtil.isPrototypePropertyDeclaration(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test505555() throws Throwable {
+    public void test505576() throws Throwable {
         Node node0 = new Node(92, 92, 92);
         Node node1 = NodeUtil.newExpr(node0);
         boolean boolean0 = NodeUtil.isPrototypePropertyDeclaration(node1);
@@ -5059,7 +5178,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test505556() throws Throwable {
+    public void test505577() throws Throwable {
         Node node0 = new Node(92, 92, 92);
         Node node1 = NodeUtil.newExpr(node0);
         boolean boolean0 = NodeUtil.isPrototypePropertyDeclaration(node1);
@@ -5067,7 +5186,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test506557() throws Throwable {
+    public void test506578() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         boolean boolean0 = NodeUtil.isExprCall(node0);
@@ -5075,7 +5194,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test506558() throws Throwable {
+    public void test506579() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         boolean boolean0 = NodeUtil.isExprCall(node0);
@@ -5083,7 +5202,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test506559() throws Throwable {
+    public void test506580() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         boolean boolean0 = NodeUtil.isExprCall(node0);
@@ -5091,7 +5210,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test506560() throws Throwable {
+    public void test506581() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 23, 147);
         boolean boolean0 = NodeUtil.isExprCall(node0);
@@ -5099,7 +5218,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test507561() throws Throwable {
+    public void test507582() throws Throwable {
         Node node0 = Node.newNumber((double) 92);
         Node node1 = NodeUtil.newExpr(node0);
         boolean boolean0 = NodeUtil.isExprCall(node1);
@@ -5107,7 +5226,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test507562() throws Throwable {
+    public void test507583() throws Throwable {
         Node node0 = Node.newNumber((double) 92);
         Node node1 = NodeUtil.newExpr(node0);
         boolean boolean0 = NodeUtil.isExprCall(node1);
@@ -5115,7 +5234,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test508563() throws Throwable {
+    public void test508584() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         Node node1 = new Node(2, node0);
@@ -5124,7 +5243,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test508564() throws Throwable {
+    public void test508585() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "infinity", 115, 115);
         Node node1 = new Node(2, node0);
@@ -5133,21 +5252,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test509565() throws Throwable {
+    public void test509586() throws Throwable {
         Node node0 = new Node(115);
         boolean boolean0 = NodeUtil.isForIn(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test510566() throws Throwable {
+    public void test510587() throws Throwable {
         Node node0 = new Node(113, (-2247), (-2247));
         boolean boolean0 = NodeUtil.isLoopStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test511567() throws Throwable {
+    public void test511588() throws Throwable {
         Node node0 = new Node(94, 94, 94);
         Node node1 = new Node(27, node0);
         boolean boolean0 = NodeUtil.isWithinLoop(node0);
@@ -5155,42 +5274,42 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test512568() throws Throwable {
+    public void test512589() throws Throwable {
         Node node0 = new Node(114, 114, 114);
         boolean boolean0 = NodeUtil.isLoopStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test513569() throws Throwable {
+    public void test513590() throws Throwable {
         Node node0 = new Node(115);
         boolean boolean0 = NodeUtil.isLoopStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test514570() throws Throwable {
+    public void test514591() throws Throwable {
         Node node0 = new Node(111);
         Node node1 = NodeUtil.getLoopCodeBlock(node0);
         assertNull(node1);
     }
 
     @Test(timeout = 4000)
-    public void test515571() throws Throwable {
+    public void test515592() throws Throwable {
         Node node0 = Node.newString(114, "J]!m|?pMddgw qX5%");
         Node node1 = NodeUtil.getLoopCodeBlock(node0);
         assertNull(node1);
     }
 
     @Test(timeout = 4000)
-    public void test516572() throws Throwable {
+    public void test516593() throws Throwable {
         Node node0 = new Node(115, 115, 115);
         Node node1 = NodeUtil.getLoopCodeBlock(node0);
         assertNull(node1);
     }
 
     @Test(timeout = 4000)
-    public void test517573() throws Throwable {
+    public void test517594() throws Throwable {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         Node node0 = Node.newString(1237, "g=");
         Node node1 = NodeUtil.newFunctionNode("g=", linkedList0, node0, (-2102), 4);
@@ -5198,7 +5317,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test517574() throws Throwable {
+    public void test517595() throws Throwable {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         Node node0 = Node.newString(1237, "g=");
         Node node1 = NodeUtil.newFunctionNode("g=", linkedList0, node0, (-2102), 4);
@@ -5206,7 +5325,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test517575() throws Throwable {
+    public void test517596() throws Throwable {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         Node node0 = Node.newString(1237, "g=");
         Node node1 = NodeUtil.newFunctionNode("g=", linkedList0, node0, (-2102), 4);
@@ -5214,7 +5333,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test517576() throws Throwable {
+    public void test517597() throws Throwable {
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         Node node0 = Node.newString(1237, "g=");
         Node node1 = NodeUtil.newFunctionNode("g=", linkedList0, node0, (-2102), 4);
@@ -5223,56 +5342,56 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test518577() throws Throwable {
+    public void test518598() throws Throwable {
         Node node0 = Node.newString(77, "x'}|ECbh\"&O");
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test519578() throws Throwable {
+    public void test519599() throws Throwable {
         Node node0 = new Node(108, 108, 108);
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test520579() throws Throwable {
+    public void test520600() throws Throwable {
         Node node0 = new Node(110);
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test521580() throws Throwable {
+    public void test521601() throws Throwable {
         Node node0 = new Node(111, (-2100), (-2100));
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test522581() throws Throwable {
+    public void test522602() throws Throwable {
         Node node0 = new Node(112);
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test523582() throws Throwable {
+    public void test523603() throws Throwable {
         Node node0 = new Node(113, 113, 113);
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test524583() throws Throwable {
+    public void test524604() throws Throwable {
         Node node0 = Node.newString(114, "Imls\"*Bw2+zmM^{w");
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test525584() throws Throwable {
+    public void test525605() throws Throwable {
         Node node0 = new Node(115);
         node0.addChildToBack(node0);
         NodeUtil.MatchShallowStatement nodeUtil_MatchShallowStatement0 = new NodeUtil.MatchShallowStatement();
@@ -5281,84 +5400,84 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test526585() throws Throwable {
+    public void test526606() throws Throwable {
         Node node0 = Node.newString(119, "NaN");
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test527586() throws Throwable {
+    public void test527607() throws Throwable {
         Node node0 = new Node(120);
         boolean boolean0 = NodeUtil.isControlStructure(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test528587() throws Throwable {
+    public void test528608() throws Throwable {
         Node node0 = Node.newString(77, "x'}|ECbh\"&O");
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test529588() throws Throwable {
+    public void test529609() throws Throwable {
         Node node0 = new Node(110, 110, 110);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test530589() throws Throwable {
+    public void test530610() throws Throwable {
         Node node0 = new Node(108, 108, 108);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test531590() throws Throwable {
+    public void test531611() throws Throwable {
         Node node0 = Node.newString(112, "JSC_EGATING_A_NON_NUBER_ERROR", 112, 112);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test532591() throws Throwable {
+    public void test532612() throws Throwable {
         Node node0 = new Node(113, (-2247), (-2247));
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, (Node) null);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test533592() throws Throwable {
+    public void test533613() throws Throwable {
         Node node0 = Node.newString(114, "II>#M");
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test534593() throws Throwable {
+    public void test534614() throws Throwable {
         Node node0 = new Node(115);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test535594() throws Throwable {
+    public void test535615() throws Throwable {
         Node node0 = Node.newString(119, "NaN");
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test536595() throws Throwable {
+    public void test536616() throws Throwable {
         Node node0 = new Node(120);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test537596() throws Throwable {
+    public void test537617() throws Throwable {
         Node node0 = new Node(43, 1535, 43);
         // Undeclared exception!
         try {
@@ -5373,7 +5492,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test538597() throws Throwable {
+    public void test538618() throws Throwable {
         Node node0 = new Node(77, 77, 23);
         node0.addChildrenToBack(node0);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
@@ -5381,7 +5500,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test539598() throws Throwable {
+    public void test539619() throws Throwable {
         Node node0 = new Node(120);
         node0.addChildrenToFront(node0);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
@@ -5389,7 +5508,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test540599() throws Throwable {
+    public void test540620() throws Throwable {
         Node node0 = new Node(110, 110, 110);
         node0.addChildToFront(node0);
         boolean boolean0 = NodeUtil.isControlStructureCodeBlock(node0, node0);
@@ -5397,14 +5516,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test541600() throws Throwable {
+    public void test541621() throws Throwable {
         Node node0 = new Node(108, 108, 108);
         Node node1 = NodeUtil.getConditionExpression(node0);
         assertNull(node1);
     }
 
     @Test(timeout = 4000)
-    public void test542601() throws Throwable {
+    public void test542622() throws Throwable {
         Node node0 = new Node(48);
         // Undeclared exception!
         try {
@@ -5419,7 +5538,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test543602() throws Throwable {
+    public void test543623() throws Throwable {
         Node node0 = new Node(109, 109, 109);
         // Undeclared exception!
         try {
@@ -5434,7 +5553,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test544603() throws Throwable {
+    public void test544624() throws Throwable {
         Node node0 = Node.newString(110, "JSC_EATING_A_NON_NUBER_ERROR", 110, 110);
         // Undeclared exception!
         try {
@@ -5449,14 +5568,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test545604() throws Throwable {
+    public void test545625() throws Throwable {
         Node node0 = new Node(113, (-2247), (-2247));
         Node node1 = NodeUtil.getConditionExpression(node0);
         assertNull(node1);
     }
 
     @Test(timeout = 4000)
-    public void test546605() throws Throwable {
+    public void test546626() throws Throwable {
         Node node0 = Node.newString(114, "I>.#M");
         PeepholeRemoveDeadCode peepholeRemoveDeadCode0 = new PeepholeRemoveDeadCode();
         // Undeclared exception!
@@ -5472,7 +5591,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test547606() throws Throwable {
+    public void test547627() throws Throwable {
         Node node0 = new Node(115);
         // Undeclared exception!
         try {
@@ -5487,7 +5606,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test548607() throws Throwable {
+    public void test548628() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("g6glO<^H9[u[1UhXn", "g6glO<^H9[u[1UhXn");
         boolean boolean0 = NodeUtil.isStatementParent(node0);
@@ -5495,7 +5614,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test549608() throws Throwable {
+    public void test549629() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("kH", "kH");
         NameReferenceGraphConstruction nameReferenceGraphConstruction0 = new NameReferenceGraphConstruction(compiler0);
@@ -5504,21 +5623,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test550609() throws Throwable {
+    public void test550630() throws Throwable {
         Node node0 = new Node(111, 111, 967);
         boolean boolean0 = NodeUtil.isSwitchCase(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test551610() throws Throwable {
+    public void test551631() throws Throwable {
         Node node0 = Node.newString("W(%UJ7s`vyd<%##5");
         boolean boolean0 = NodeUtil.isReferenceName(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test552611() throws Throwable {
+    public void test552632() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(442);
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         Compiler compiler0 = new Compiler(mockPrintStream0);
@@ -5529,7 +5648,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test552612() throws Throwable {
+    public void test552633() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(442);
         MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayOutputStream0);
         Compiler compiler0 = new Compiler(mockPrintStream0);
@@ -5540,20 +5659,20 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test553613() throws Throwable {
+    public void test553634() throws Throwable {
         boolean boolean0 = NodeUtil.isLabelName((Node) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test554614() throws Throwable {
+    public void test554635() throws Throwable {
         Node node0 = Node.newNumber(0.0, 144, 144);
         boolean boolean0 = NodeUtil.isLabelName(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test555615() throws Throwable {
+    public void test555636() throws Throwable {
         Node node0 = new Node(108, 108, 108);
         Node node1 = new Node(27, node0);
         // Undeclared exception!
@@ -5569,7 +5688,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test556616() throws Throwable {
+    public void test556637() throws Throwable {
         Node node0 = new Node(73);
         // Undeclared exception!
         try {
@@ -5584,21 +5703,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test557617() throws Throwable {
+    public void test557638() throws Throwable {
         Node node0 = Node.newString(77, "x'}|ECbh\"&O");
         NodeUtil.maybeAddFinally(node0);
         assertTrue(node0.hasOneChild());
     }
 
     @Test(timeout = 4000)
-    public void test557618() throws Throwable {
+    public void test557639() throws Throwable {
         Node node0 = Node.newString(77, "x'}|ECbh\"&O");
         NodeUtil.maybeAddFinally(node0);
         assertTrue(node0.hasChildren());
     }
 
     @Test(timeout = 4000)
-    public void test558619() throws Throwable {
+    public void test558640() throws Throwable {
         Node node0 = new Node(43, 1397, 1397);
         // Undeclared exception!
         try {
@@ -5613,7 +5732,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test559620() throws Throwable {
+    public void test559641() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("PR}`e)Hc(cA7v<0W", "Recording function information");
         // Undeclared exception!
@@ -5629,42 +5748,42 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test560621() throws Throwable {
+    public void test560642() throws Throwable {
         Node node0 = new Node(124);
         boolean boolean0 = NodeUtil.isThis(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test561622() throws Throwable {
+    public void test561643() throws Throwable {
         Node node0 = Node.newString(42, "NaN");
         boolean boolean0 = NodeUtil.isThis(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test562623() throws Throwable {
+    public void test562644() throws Throwable {
         Node node0 = new Node(44, 80, 44);
         boolean boolean0 = NodeUtil.isArrayLiteral(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test563624() throws Throwable {
+    public void test563645() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         boolean boolean0 = NodeUtil.isArrayLiteral(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test564625() throws Throwable {
+    public void test564646() throws Throwable {
         Node node0 = new Node(41);
         boolean boolean0 = NodeUtil.isEmptyFunctionExpression(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test565626() throws Throwable {
+    public void test565647() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -5674,7 +5793,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test565627() throws Throwable {
+    public void test565648() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -5684,7 +5803,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test565628() throws Throwable {
+    public void test565649() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -5694,7 +5813,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test565629() throws Throwable {
+    public void test565650() throws Throwable {
         Node node0 = Node.newString("#em~3+7r8o]#f#|ijf");
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("+?Q=+)\"|7>-X", stack0, node0, 28, 48);
@@ -5704,7 +5823,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test566630() throws Throwable {
+    public void test566651() throws Throwable {
         Node node0 = Node.newNumber((double) 64);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -5713,7 +5832,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test566631() throws Throwable {
+    public void test566652() throws Throwable {
         Node node0 = Node.newNumber((double) 64);
         Node[] nodeArray0 = new Node[0];
         Node node1 = NodeUtil.newCallNode(node0, nodeArray0);
@@ -5722,27 +5841,27 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test567632() throws Throwable {
+    public void test567653() throws Throwable {
         Node node0 = new Node(86, 86, 86);
         boolean boolean0 = NodeUtil.isVarOrSimpleAssignLhs(node0, node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test568633() throws Throwable {
+    public void test568654() throws Throwable {
         Node node0 = NodeUtil.newVarNode("-", (Node) null);
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test568634() throws Throwable {
+    public void test568655() throws Throwable {
         Node node0 = NodeUtil.newVarNode("-", (Node) null);
         boolean boolean0 = NodeUtil.isVarOrSimpleAssignLhs(node0, node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test569635() throws Throwable {
+    public void test569656() throws Throwable {
         Node node0 = new Node(31, 31, 31);
         // Undeclared exception!
         try {
@@ -5757,7 +5876,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test570636() throws Throwable {
+    public void test570657() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "#G!A.jNM<#_H/vx6?5", 1717, 147);
         // Undeclared exception!
@@ -5773,7 +5892,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test571637() throws Throwable {
+    public void test571658() throws Throwable {
         Node node0 = new Node(2119, 2119, 2119);
         Node node1 = new Node(35, node0, node0, node0, 405, 2);
         // Undeclared exception!
@@ -5789,21 +5908,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test572638() throws Throwable {
+    public void test572659() throws Throwable {
         Node node0 = new Node(147);
         boolean boolean0 = NodeUtil.isObjectLitKey(node0, node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test573639() throws Throwable {
+    public void test573660() throws Throwable {
         Node node0 = Node.newString("Y3$thk3h8iMyq2", (-886), (-886));
         String string0 = NodeUtil.getObjectLitKeyName(node0);
         assertEquals("Y3$thk3h8iMyq2", string0);
     }
 
     @Test(timeout = 4000)
-    public void test574640() throws Throwable {
+    public void test574661() throws Throwable {
         Node node0 = new Node(126, 126, 126);
         // Undeclared exception!
         try {
@@ -5818,7 +5937,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test575641() throws Throwable {
+    public void test575662() throws Throwable {
         Node node0 = new Node(147);
         // Undeclared exception!
         try {
@@ -5833,13 +5952,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test576642() throws Throwable {
+    public void test576663() throws Throwable {
         JSType jSType0 = NodeUtil.getObjectLitKeyTypeFromValueType((Node) null, (JSType) null);
         assertNull(jSType0);
     }
 
     @Test(timeout = 4000)
-    public void test577643() throws Throwable {
+    public void test577664() throws Throwable {
         Node node0 = Node.newString(90, "test", 109, 109);
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -5849,164 +5968,164 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test578644() throws Throwable {
+    public void test578665() throws Throwable {
         Node node0 = new Node(113, (-2175), 967);
         boolean boolean0 = NodeUtil.isGetOrSetKey(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test579645() throws Throwable {
+    public void test579666() throws Throwable {
         String string0 = NodeUtil.opToStr(9);
         assertEquals("|", string0);
     }
 
     @Test(timeout = 4000)
-    public void test579646() throws Throwable {
+    public void test579667() throws Throwable {
         String string0 = NodeUtil.opToStr(9);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test580647() throws Throwable {
+    public void test580668() throws Throwable {
         String string0 = NodeUtil.opToStr(64);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test581648() throws Throwable {
+    public void test581669() throws Throwable {
         String string0 = NodeUtil.opToStr(10);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test581649() throws Throwable {
+    public void test581670() throws Throwable {
         String string0 = NodeUtil.opToStr(10);
         assertEquals("^", string0);
     }
 
     @Test(timeout = 4000)
-    public void test582650() throws Throwable {
+    public void test582671() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(11);
         assertEquals("&", string0);
     }
 
     @Test(timeout = 4000)
-    public void test583651() throws Throwable {
+    public void test583672() throws Throwable {
         String string0 = NodeUtil.opToStr(12);
         assertEquals("==", string0);
     }
 
     @Test(timeout = 4000)
-    public void test584652() throws Throwable {
+    public void test584673() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(13);
         assertEquals("!=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test585653() throws Throwable {
+    public void test585674() throws Throwable {
         String string0 = NodeUtil.opToStr(14);
         assertEquals("<", string0);
     }
 
     @Test(timeout = 4000)
-    public void test586654() throws Throwable {
+    public void test586675() throws Throwable {
         String string0 = NodeUtil.opToStr(15);
         assertEquals("<=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test587655() throws Throwable {
+    public void test587676() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(16);
         assertEquals(">", string0);
     }
 
     @Test(timeout = 4000)
-    public void test588656() throws Throwable {
+    public void test588677() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(17);
         assertEquals(">=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test589657() throws Throwable {
+    public void test589678() throws Throwable {
         String string0 = NodeUtil.opToStr(18);
         assertEquals("<<", string0);
     }
 
     @Test(timeout = 4000)
-    public void test590658() throws Throwable {
+    public void test590679() throws Throwable {
         String string0 = NodeUtil.opToStr(19);
         assertEquals(">>", string0);
     }
 
     @Test(timeout = 4000)
-    public void test591659() throws Throwable {
+    public void test591680() throws Throwable {
         String string0 = NodeUtil.opToStr(20);
         assertEquals(">>>", string0);
     }
 
     @Test(timeout = 4000)
-    public void test592660() throws Throwable {
+    public void test592681() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(21);
         assertEquals("+", string0);
     }
 
     @Test(timeout = 4000)
-    public void test593661() throws Throwable {
+    public void test593682() throws Throwable {
         String string0 = NodeUtil.opToStr(22);
         assertEquals("-", string0);
     }
 
     @Test(timeout = 4000)
-    public void test594662() throws Throwable {
+    public void test594683() throws Throwable {
         String string0 = NodeUtil.opToStr(23);
         assertEquals("*", string0);
     }
 
     @Test(timeout = 4000)
-    public void test595663() throws Throwable {
+    public void test595684() throws Throwable {
         String string0 = NodeUtil.opToStr(24);
         assertEquals("/", string0);
     }
 
     @Test(timeout = 4000)
-    public void test596664() throws Throwable {
+    public void test596685() throws Throwable {
         String string0 = NodeUtil.opToStr(25);
         assertEquals("%", string0);
     }
 
     @Test(timeout = 4000)
-    public void test597665() throws Throwable {
+    public void test597686() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(26);
         assertEquals("!", string0);
     }
 
     @Test(timeout = 4000)
-    public void test598666() throws Throwable {
+    public void test598687() throws Throwable {
         String string0 = NodeUtil.opToStr(27);
         assertEquals("~", string0);
     }
 
     @Test(timeout = 4000)
-    public void test599667() throws Throwable {
+    public void test599688() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(28);
         assertEquals("+", string0);
     }
 
     @Test(timeout = 4000)
-    public void test600668() throws Throwable {
+    public void test600689() throws Throwable {
         String string0 = NodeUtil.opToStr(29);
         assertEquals("-", string0);
     }
 
     @Test(timeout = 4000)
-    public void test600669() throws Throwable {
+    public void test600690() throws Throwable {
         String string0 = NodeUtil.opToStr(29);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test601670() throws Throwable {
+    public void test601691() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(30);
@@ -6020,19 +6139,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test602671() throws Throwable {
+    public void test602692() throws Throwable {
         String string0 = NodeUtil.opToStr(31);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test603672() throws Throwable {
+    public void test603693() throws Throwable {
         String string0 = NodeUtil.opToStr(32);
         assertEquals("typeof", string0);
     }
 
     @Test(timeout = 4000)
-    public void test604673() throws Throwable {
+    public void test604694() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(33);
@@ -6046,7 +6165,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test605674() throws Throwable {
+    public void test605695() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(34);
@@ -6060,19 +6179,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test606675() throws Throwable {
+    public void test606696() throws Throwable {
         String string0 = NodeUtil.opToStr(35);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test607676() throws Throwable {
+    public void test607697() throws Throwable {
         String string0 = NodeUtil.opToStr(36);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test608677() throws Throwable {
+    public void test608698() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(37);
@@ -6086,25 +6205,25 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test609678() throws Throwable {
+    public void test609699() throws Throwable {
         String string0 = NodeUtil.opToStr(38);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test610679() throws Throwable {
+    public void test610700() throws Throwable {
         String string0 = NodeUtil.opToStr(39);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test611680() throws Throwable {
+    public void test611701() throws Throwable {
         String string0 = NodeUtil.opToStr(40);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test612681() throws Throwable {
+    public void test612702() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(41);
@@ -6118,7 +6237,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test613682() throws Throwable {
+    public void test613703() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(42);
@@ -6132,13 +6251,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test614683() throws Throwable {
+    public void test614704() throws Throwable {
         String string0 = NodeUtil.opToStr(43);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test615684() throws Throwable {
+    public void test615705() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(44);
@@ -6152,43 +6271,43 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test616685() throws Throwable {
+    public void test616706() throws Throwable {
         String string0 = NodeUtil.opToStr(45);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test616686() throws Throwable {
+    public void test616707() throws Throwable {
         String string0 = NodeUtil.opToStr(45);
         assertEquals("===", string0);
     }
 
     @Test(timeout = 4000)
-    public void test617687() throws Throwable {
+    public void test617708() throws Throwable {
         String string0 = NodeUtil.opToStr(46);
         assertEquals("!==", string0);
     }
 
     @Test(timeout = 4000)
-    public void test617688() throws Throwable {
+    public void test617709() throws Throwable {
         String string0 = NodeUtil.opToStr(46);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test618689() throws Throwable {
+    public void test618710() throws Throwable {
         String string0 = NodeUtil.opToStr(47);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test619690() throws Throwable {
+    public void test619711() throws Throwable {
         String string0 = NodeUtil.opToStr(48);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test620691() throws Throwable {
+    public void test620712() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(49);
@@ -6202,7 +6321,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test621692() throws Throwable {
+    public void test621713() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(50);
@@ -6216,31 +6335,31 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test622693() throws Throwable {
+    public void test622714() throws Throwable {
         String string0 = NodeUtil.opToStr(51);
         assertEquals("in", string0);
     }
 
     @Test(timeout = 4000)
-    public void test622694() throws Throwable {
+    public void test622715() throws Throwable {
         String string0 = NodeUtil.opToStr(51);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test623695() throws Throwable {
+    public void test623716() throws Throwable {
         String string0 = NodeUtil.opToStr(52);
         assertEquals("instanceof", string0);
     }
 
     @Test(timeout = 4000)
-    public void test623696() throws Throwable {
+    public void test623717() throws Throwable {
         String string0 = NodeUtil.opToStr(52);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test624697() throws Throwable {
+    public void test624718() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(53);
@@ -6254,31 +6373,31 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test625698() throws Throwable {
+    public void test625719() throws Throwable {
         String string0 = NodeUtil.opToStr(54);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test626699() throws Throwable {
+    public void test626720() throws Throwable {
         String string0 = NodeUtil.opToStr(55);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test627700() throws Throwable {
+    public void test627721() throws Throwable {
         String string0 = NodeUtil.opToStr(56);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test628701() throws Throwable {
+    public void test628722() throws Throwable {
         String string0 = NodeUtil.opToStr(57);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test629702() throws Throwable {
+    public void test629723() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(58);
@@ -6292,13 +6411,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test630703() throws Throwable {
+    public void test630724() throws Throwable {
         String string0 = NodeUtil.opToStr(59);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test631704() throws Throwable {
+    public void test631725() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(61);
@@ -6312,7 +6431,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test632705() throws Throwable {
+    public void test632726() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(62);
@@ -6326,19 +6445,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test633706() throws Throwable {
+    public void test633727() throws Throwable {
         String string0 = NodeUtil.opToStr(63);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test634707() throws Throwable {
+    public void test634728() throws Throwable {
         String string0 = NodeUtil.opToStr(65);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test635708() throws Throwable {
+    public void test635729() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(66);
@@ -6352,7 +6471,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test636709() throws Throwable {
+    public void test636730() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(67);
@@ -6366,13 +6485,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test637710() throws Throwable {
+    public void test637731() throws Throwable {
         String string0 = NodeUtil.opToStr(69);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test638711() throws Throwable {
+    public void test638732() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(70);
@@ -6386,13 +6505,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test639712() throws Throwable {
+    public void test639733() throws Throwable {
         String string0 = NodeUtil.opToStr(71);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test640713() throws Throwable {
+    public void test640734() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(72);
@@ -6406,7 +6525,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test641714() throws Throwable {
+    public void test641735() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(73);
@@ -6420,7 +6539,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test642715() throws Throwable {
+    public void test642736() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(74);
@@ -6434,7 +6553,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test643716() throws Throwable {
+    public void test643737() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(75);
@@ -6448,37 +6567,37 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test644717() throws Throwable {
+    public void test644738() throws Throwable {
         String string0 = NodeUtil.opToStr(76);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test645718() throws Throwable {
+    public void test645739() throws Throwable {
         String string0 = NodeUtil.opToStr(77);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test646719() throws Throwable {
+    public void test646740() throws Throwable {
         String string0 = NodeUtil.opToStr(78);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test647720() throws Throwable {
+    public void test647741() throws Throwable {
         String string0 = NodeUtil.opToStr(79);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test648721() throws Throwable {
+    public void test648742() throws Throwable {
         String string0 = NodeUtil.opToStr(80);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test649722() throws Throwable {
+    public void test649743() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(81);
@@ -6492,7 +6611,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test650723() throws Throwable {
+    public void test650744() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(82);
@@ -6506,13 +6625,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test651724() throws Throwable {
+    public void test651745() throws Throwable {
         String string0 = NodeUtil.opToStr(83);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test652725() throws Throwable {
+    public void test652746() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(84);
@@ -6526,97 +6645,97 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test653726() throws Throwable {
+    public void test653747() throws Throwable {
         String string0 = NodeUtil.opToStr(85);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test654727() throws Throwable {
+    public void test654748() throws Throwable {
         String string0 = NodeUtil.opToStr(86);
         assertEquals("=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test654728() throws Throwable {
+    public void test654749() throws Throwable {
         String string0 = NodeUtil.opToStr(86);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test655729() throws Throwable {
+    public void test655750() throws Throwable {
         String string0 = NodeUtil.opToStr(87);
         assertEquals("|=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test656730() throws Throwable {
+    public void test656751() throws Throwable {
         String string0 = NodeUtil.opToStr(88);
         assertEquals("^=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test657731() throws Throwable {
+    public void test657752() throws Throwable {
         String string0 = NodeUtil.opToStr(89);
         assertEquals("&=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test658732() throws Throwable {
+    public void test658753() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(90);
         assertEquals("<<=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test659733() throws Throwable {
+    public void test659754() throws Throwable {
         String string0 = NodeUtil.opToStr(91);
         assertEquals(">>=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test660734() throws Throwable {
+    public void test660755() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(92);
         assertEquals(">>>=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test661735() throws Throwable {
+    public void test661756() throws Throwable {
         String string0 = NodeUtil.opToStr(93);
         assertEquals("+=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test662736() throws Throwable {
+    public void test662757() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(94);
         assertEquals("-=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test663737() throws Throwable {
+    public void test663758() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(95);
         assertEquals("*=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test664738() throws Throwable {
+    public void test664759() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(96);
         assertEquals("/=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test665739() throws Throwable {
+    public void test665760() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(97);
         assertEquals("%=", string0);
     }
 
     @Test(timeout = 4000)
-    public void test666740() throws Throwable {
+    public void test666761() throws Throwable {
         String string0 = NodeUtil.opToStr(98);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test667741() throws Throwable {
+    public void test667762() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(99);
@@ -6630,19 +6749,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test668742() throws Throwable {
+    public void test668763() throws Throwable {
         String string0 = NodeUtil.opToStrNoFail(100);
         assertEquals("||", string0);
     }
 
     @Test(timeout = 4000)
-    public void test669743() throws Throwable {
+    public void test669764() throws Throwable {
         String string0 = NodeUtil.opToStr(101);
         assertEquals("&&", string0);
     }
 
     @Test(timeout = 4000)
-    public void test670744() throws Throwable {
+    public void test670765() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(102);
@@ -6656,19 +6775,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test671745() throws Throwable {
+    public void test671766() throws Throwable {
         String string0 = NodeUtil.opToStr(103);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test672746() throws Throwable {
+    public void test672767() throws Throwable {
         String string0 = NodeUtil.opToStr(104);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test673747() throws Throwable {
+    public void test673768() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(105);
@@ -6682,13 +6801,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test674748() throws Throwable {
+    public void test674769() throws Throwable {
         String string0 = NodeUtil.opToStr(106);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test675749() throws Throwable {
+    public void test675770() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(107);
@@ -6702,7 +6821,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test676750() throws Throwable {
+    public void test676771() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(108);
@@ -6716,7 +6835,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test677751() throws Throwable {
+    public void test677772() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(109);
@@ -6730,13 +6849,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test678752() throws Throwable {
+    public void test678773() throws Throwable {
         String string0 = NodeUtil.opToStr(110);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test679753() throws Throwable {
+    public void test679774() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(111);
@@ -6750,19 +6869,19 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test680754() throws Throwable {
+    public void test680775() throws Throwable {
         String string0 = NodeUtil.opToStr(112);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test681755() throws Throwable {
+    public void test681776() throws Throwable {
         String string0 = NodeUtil.opToStr(113);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test682756() throws Throwable {
+    public void test682777() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(114);
@@ -6776,7 +6895,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test683757() throws Throwable {
+    public void test683778() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(115);
@@ -6790,13 +6909,13 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test684758() throws Throwable {
+    public void test684779() throws Throwable {
         String string0 = NodeUtil.opToStr(116);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test685759() throws Throwable {
+    public void test685780() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(117);
@@ -6810,7 +6929,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test686760() throws Throwable {
+    public void test686781() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(118);
@@ -6824,7 +6943,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test687761() throws Throwable {
+    public void test687782() throws Throwable {
         // Undeclared exception!
         try {
             NodeUtil.opToStrNoFail(119);
@@ -6838,31 +6957,31 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test688762() throws Throwable {
+    public void test688783() throws Throwable {
         String string0 = NodeUtil.opToStr(120);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test689763() throws Throwable {
+    public void test689784() throws Throwable {
         String string0 = NodeUtil.opToStr(121);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test690764() throws Throwable {
+    public void test690785() throws Throwable {
         String string0 = NodeUtil.opToStr(122);
         assertEquals("void", string0);
     }
 
     @Test(timeout = 4000)
-    public void test691765() throws Throwable {
+    public void test691786() throws Throwable {
         String string0 = NodeUtil.opToStr((-2405));
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test692766() throws Throwable {
+    public void test692787() throws Throwable {
         Node node0 = Node.newString("case expression doesn't match switch", 1536, 1536);
         Node node1 = NodeUtil.newVarNode("case expression doesn't match switch", node0);
         Node node2 = new Node((-2082), 38, 24);
@@ -6880,14 +6999,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test693767() throws Throwable {
+    public void test693788() throws Throwable {
         Node node0 = new Node(64);
         NodeUtil.copyNameAnnotations(node0, node0);
         assertEquals(17, Node.TYPE_PROP);
     }
 
     @Test(timeout = 4000)
-    public void test694768() throws Throwable {
+    public void test694789() throws Throwable {
         Node node0 = Node.newString(100, "2");
         LinkedList<Node> linkedList0 = new LinkedList<Node>();
         linkedList0.addLast(node0);
@@ -6904,28 +7023,28 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test695769() throws Throwable {
+    public void test695790() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "!1.J", 118, 118);
         assertEquals(483446, node0.getSourcePosition());
     }
 
     @Test(timeout = 4000)
-    public void test695770() throws Throwable {
+    public void test695791() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "!1.J", 118, 118);
         assertEquals(33, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test695771() throws Throwable {
+    public void test695792() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "!1.J", 118, 118);
         assertTrue(node0.hasMoreThanOneChild());
     }
 
     @Test(timeout = 4000)
-    public void test696772() throws Throwable {
+    public void test696793() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "B&?r/.gcJFr+')AJ", 800, (-959));
         Node node1 = NodeUtil.getRootOfQualifiedName(node0);
@@ -6933,7 +7052,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test696773() throws Throwable {
+    public void test696794() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "B&?r/.gcJFr+')AJ", 800, (-959));
         Node node1 = NodeUtil.getRootOfQualifiedName(node0);
@@ -6941,7 +7060,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test696774() throws Throwable {
+    public void test696795() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "B&?r/.gcJFr+')AJ", 800, (-959));
         Node node1 = NodeUtil.getRootOfQualifiedName(node0);
@@ -6949,7 +7068,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test696775() throws Throwable {
+    public void test696796() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "B&?r/.gcJFr+')AJ", 800, (-959));
         Node node1 = NodeUtil.getRootOfQualifiedName(node0);
@@ -6957,7 +7076,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test696776() throws Throwable {
+    public void test696797() throws Throwable {
         ClosureCodingConvention closureCodingConvention0 = new ClosureCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(closureCodingConvention0, "B&?r/.gcJFr+')AJ", 800, (-959));
         Node node1 = NodeUtil.getRootOfQualifiedName(node0);
@@ -6965,7 +7084,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test697777() throws Throwable {
+    public void test697798() throws Throwable {
         Node node0 = new Node(82, 103, 103);
         // Undeclared exception!
         try {
@@ -6980,7 +7099,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test698778() throws Throwable {
+    public void test698799() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         // Undeclared exception!
         try {
@@ -6995,25 +7114,25 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test699779() throws Throwable {
+    public void test699800() throws Throwable {
         boolean boolean0 = NodeUtil.isValidPropertyName(".prototype");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test700780() throws Throwable {
+    public void test700801() throws Throwable {
         boolean boolean0 = NodeUtil.isValidPropertyName("Kpiw");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test701781() throws Throwable {
+    public void test701802() throws Throwable {
         boolean boolean0 = NodeUtil.isValidPropertyName("true");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test702782() throws Throwable {
+    public void test702803() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, ".toV[|/Lse9bBNi|2", 33, 160);
         NodeUtil.redeclareVarsInsideBranch(node0);
@@ -7021,7 +7140,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test702783() throws Throwable {
+    public void test702804() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, ".toV[|/Lse9bBNi|2", 33, 160);
         NodeUtil.redeclareVarsInsideBranch(node0);
@@ -7029,7 +7148,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test703784() throws Throwable {
+    public void test703805() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "eX'`", 2805, 2805);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
@@ -7037,7 +7156,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test703785() throws Throwable {
+    public void test703806() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "eX'`", 2805, 2805);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
@@ -7045,14 +7164,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test704786() throws Throwable {
+    public void test704807() throws Throwable {
         Node node0 = new Node(124);
         boolean boolean0 = NodeUtil.isPrototypeProperty(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test705787() throws Throwable {
+    public void test705808() throws Throwable {
         Node node0 = new Node(2119);
         Node node1 = Node.newNumber((-467.49), (-2), 15);
         Node node2 = new Node(54, node0, node1, node0, 405, 2);
@@ -7069,7 +7188,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test706788() throws Throwable {
+    public void test706809() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "1bARjaVIE", 85, 93);
         int int0 = NodeUtil.getNameReferenceCount(node0, "#cc[3bQ");
@@ -7077,7 +7196,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test706789() throws Throwable {
+    public void test706810() throws Throwable {
         DefaultCodingConvention defaultCodingConvention0 = new DefaultCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(defaultCodingConvention0, "1bARjaVIE", 85, 93);
         int int0 = NodeUtil.getNameReferenceCount(node0, "#cc[3bQ");
@@ -7085,14 +7204,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test707790() throws Throwable {
+    public void test707811() throws Throwable {
         Node node0 = new Node(113, (-2175), 967);
         boolean boolean0 = NodeUtil.containsType(node0, 113);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test708791() throws Throwable {
+    public void test708812() throws Throwable {
         Node node0 = new Node(111, (-2100), (-2100));
         NodeUtil.MatchDeclaration nodeUtil_MatchDeclaration0 = new NodeUtil.MatchDeclaration();
         boolean boolean0 = nodeUtil_MatchDeclaration0.apply(node0);
@@ -7100,7 +7219,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test709792() throws Throwable {
+    public void test709813() throws Throwable {
         Node node0 = new Node(26);
         Node node1 = NodeUtil.newVarNode("Z1<{#GlM", node0);
         NodeUtil.MatchDeclaration nodeUtil_MatchDeclaration0 = new NodeUtil.MatchDeclaration();
@@ -7109,7 +7228,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test709793() throws Throwable {
+    public void test709814() throws Throwable {
         Node node0 = new Node(26);
         Node node1 = NodeUtil.newVarNode("Z1<{#GlM", node0);
         NodeUtil.MatchDeclaration nodeUtil_MatchDeclaration0 = new NodeUtil.MatchDeclaration();
@@ -7118,7 +7237,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test710794() throws Throwable {
+    public void test710815() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("CGUL||Nl*k$5%z)h");
         NodeUtil.MatchShallowStatement nodeUtil_MatchShallowStatement0 = new NodeUtil.MatchShallowStatement();
@@ -7127,7 +7246,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test711795() throws Throwable {
+    public void test711816() throws Throwable {
         Node node0 = new Node(63, 63, 63);
         NodeUtil.MatchShallowStatement nodeUtil_MatchShallowStatement0 = new NodeUtil.MatchShallowStatement();
         boolean boolean0 = nodeUtil_MatchShallowStatement0.apply(node0);
@@ -7135,7 +7254,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test712796() throws Throwable {
+    public void test712817() throws Throwable {
         Node node0 = Node.newString("aLZoHT6", 10, 10);
         Node node1 = new Node(0, node0, node0, node0, 50, 17);
         NodeUtil.MatchShallowStatement nodeUtil_MatchShallowStatement0 = new NodeUtil.MatchShallowStatement();
@@ -7144,7 +7263,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test713797() throws Throwable {
+    public void test713818() throws Throwable {
         Node node0 = Node.newString("valueOf", 1536, 1536);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.containsFunction(node1);
@@ -7152,7 +7271,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test713798() throws Throwable {
+    public void test713819() throws Throwable {
         Node node0 = Node.newString("valueOf", 1536, 1536);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.containsFunction(node1);
@@ -7160,7 +7279,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test713799() throws Throwable {
+    public void test713820() throws Throwable {
         Node node0 = Node.newString("valueOf", 1536, 1536);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.containsFunction(node1);
@@ -7168,7 +7287,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test713800() throws Throwable {
+    public void test713821() throws Throwable {
         Node node0 = Node.newString("valueOf", 1536, 1536);
         Node node1 = NodeUtil.newVarNode("valueOf", node0);
         boolean boolean0 = NodeUtil.containsFunction(node1);
@@ -7176,7 +7295,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test714801() throws Throwable {
+    public void test714822() throws Throwable {
         Node node0 = new Node((-1084));
         Node node1 = NodeUtil.newVarNode("split", node0);
         Node node2 = new Node(4096, node1);
@@ -7185,7 +7304,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test714802() throws Throwable {
+    public void test714823() throws Throwable {
         Node node0 = new Node((-1084));
         Node node1 = NodeUtil.newVarNode("split", node0);
         Node node2 = new Node(4096, node1);
@@ -7194,7 +7313,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test714803() throws Throwable {
+    public void test714824() throws Throwable {
         Node node0 = new Node((-1084));
         Node node1 = NodeUtil.newVarNode("split", node0);
         Node node2 = new Node(4096, node1);
@@ -7203,7 +7322,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test715804() throws Throwable {
+    public void test715825() throws Throwable {
         Node node0 = new Node(64, 64, 64);
         NodeUtil.BooleanResultPredicate nodeUtil_BooleanResultPredicate0 = new NodeUtil.BooleanResultPredicate();
         // Undeclared exception!
@@ -7219,7 +7338,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test716805() throws Throwable {
+    public void test716826() throws Throwable {
         Node node0 = new Node(34, 34, 34);
         Predicate<Node> predicate0 = NodeUtil.MATCH_NOT_FUNCTION;
         // Undeclared exception!
@@ -7235,7 +7354,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test717806() throws Throwable {
+    public void test717827() throws Throwable {
         Node node0 = new Node(78);
         // Undeclared exception!
         try {
@@ -7250,7 +7369,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test718807() throws Throwable {
+    public void test718828() throws Throwable {
         Node node0 = new Node(115);
         // Undeclared exception!
         try {
@@ -7265,7 +7384,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test719808() throws Throwable {
+    public void test719829() throws Throwable {
         Node node0 = new Node(77, 77, 77);
         // Undeclared exception!
         try {
@@ -7280,7 +7399,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test720809() throws Throwable {
+    public void test720830() throws Throwable {
         Node node0 = new Node(87);
         // Undeclared exception!
         try {
@@ -7295,7 +7414,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test721810() throws Throwable {
+    public void test721831() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("CGUL||Nl*k$5%z)h");
         boolean boolean0 = NodeUtil.hasCatchHandler(node0);
@@ -7303,7 +7422,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test722811() throws Throwable {
+    public void test722832() throws Throwable {
         Node node0 = new Node((-5619));
         // Undeclared exception!
         try {
@@ -7318,7 +7437,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test723812() throws Throwable {
+    public void test723833() throws Throwable {
         Node node0 = new Node(1545, 1545, 1545);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("vWZ", stack0, node0, (-1418), 89);
@@ -7326,7 +7445,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test723813() throws Throwable {
+    public void test723834() throws Throwable {
         Node node0 = new Node(1545, 1545, 1545);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("vWZ", stack0, node0, (-1418), 89);
@@ -7335,7 +7454,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test723814() throws Throwable {
+    public void test723835() throws Throwable {
         Node node0 = new Node(1545, 1545, 1545);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("vWZ", stack0, node0, (-1418), 89);
@@ -7344,7 +7463,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test723815() throws Throwable {
+    public void test723836() throws Throwable {
         Node node0 = new Node(1545, 1545, 1545);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("vWZ", stack0, node0, (-1418), 89);
@@ -7353,7 +7472,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test723816() throws Throwable {
+    public void test723837() throws Throwable {
         Node node0 = new Node(1545, 1545, 1545);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("vWZ", stack0, node0, (-1418), 89);
@@ -7362,21 +7481,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test724817() throws Throwable {
+    public void test724838() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "substr", "substr");
         assertEquals(4096, node0.getSourcePosition());
     }
 
     @Test(timeout = 4000)
-    public void test725818() throws Throwable {
+    public void test725839() throws Throwable {
         Node node0 = new Node(74);
         JSDocInfo jSDocInfo0 = NodeUtil.getInfoForNameNode(node0);
         assertNull(jSDocInfo0);
     }
 
     @Test(timeout = 4000)
-    public void test726819() throws Throwable {
+    public void test726840() throws Throwable {
         Node node0 = new Node(74);
         node0.addSuppression("Kci");
         JSDocInfo jSDocInfo0 = NodeUtil.getInfoForNameNode(node0);
@@ -7384,7 +7503,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test727820() throws Throwable {
+    public void test727841() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -7392,7 +7511,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test727821() throws Throwable {
+    public void test727842() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -7400,7 +7519,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test727822() throws Throwable {
+    public void test727843() throws Throwable {
         Node node0 = new Node(41);
         Stack<Node> stack0 = new Stack<Node>();
         Node node1 = NodeUtil.newFunctionNode("ze{EzS+}", stack0, node0, 38, 4095);
@@ -7409,21 +7528,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test728823() throws Throwable {
+    public void test728844() throws Throwable {
         Node node0 = Node.newString("0*U", 94, 94);
         Node node1 = NodeUtil.newVarNode("0*U", node0);
         assertEquals(118, node1.getType());
     }
 
     @Test(timeout = 4000)
-    public void test728824() throws Throwable {
+    public void test728845() throws Throwable {
         Node node0 = Node.newString("0*U", 94, 94);
         Node node1 = NodeUtil.newVarNode("0*U", node0);
         assertEquals(94, node1.getCharno());
     }
 
     @Test(timeout = 4000)
-    public void test728825() throws Throwable {
+    public void test728846() throws Throwable {
         Node node0 = Node.newString("0*U", 94, 94);
         Node node1 = NodeUtil.newVarNode("0*U", node0);
         NodeUtil.getInfoForNameNode(node0);
@@ -7431,7 +7550,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test728826() throws Throwable {
+    public void test728847() throws Throwable {
         Node node0 = Node.newString("0*U", 94, 94);
         Node node1 = NodeUtil.newVarNode("0*U", node0);
         NodeUtil.getInfoForNameNode(node0);
@@ -7439,7 +7558,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test729827() throws Throwable {
+    public void test729848() throws Throwable {
         Node node0 = new Node((-640));
         // Undeclared exception!
         try {
@@ -7454,7 +7573,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test730828() throws Throwable {
+    public void test730849() throws Throwable {
         Node node0 = new Node(105);
         // Undeclared exception!
         try {
@@ -7469,7 +7588,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test731829() throws Throwable {
+    public void test731850() throws Throwable {
         Node node0 = new Node(105);
         AstParallelizer astParallelizer0 = AstParallelizer.createNewFunctionLevelAstParallelizer(node0, false);
         List<Node> list0 = astParallelizer0.split();
@@ -7478,7 +7597,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test731830() throws Throwable {
+    public void test731851() throws Throwable {
         Node node0 = new Node(105);
         AstParallelizer astParallelizer0 = AstParallelizer.createNewFunctionLevelAstParallelizer(node0, false);
         List<Node> list0 = astParallelizer0.split();
@@ -7487,7 +7606,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test731831() throws Throwable {
+    public void test731852() throws Throwable {
         Node node0 = new Node(105);
         AstParallelizer astParallelizer0 = AstParallelizer.createNewFunctionLevelAstParallelizer(node0, false);
         List<Node> list0 = astParallelizer0.split();
@@ -7497,21 +7616,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test732832() throws Throwable {
+    public void test732853() throws Throwable {
         Node node0 = new Node(2108);
         String string0 = NodeUtil.getSourceName(node0);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test733833() throws Throwable {
+    public void test733854() throws Throwable {
         Node node0 = new Node(31, 31, 31);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test734834() throws Throwable {
+    public void test734855() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "com.google.javascript.jscomp.AnalyzePrototypeProperties$ProcessExternProperties", (-1342), (-1342));
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
@@ -7519,7 +7638,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test734835() throws Throwable {
+    public void test734856() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "com.google.javascript.jscomp.AnalyzePrototypeProperties$ProcessExternProperties", (-1342), (-1342));
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
@@ -7527,7 +7646,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test735836() throws Throwable {
+    public void test735857() throws Throwable {
         Node node0 = new Node(34);
         // Undeclared exception!
         try {
@@ -7543,14 +7662,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test736837() throws Throwable {
+    public void test736858() throws Throwable {
         Node node0 = new Node(35, 35, 35);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test737838() throws Throwable {
+    public void test737859() throws Throwable {
         Node node0 = new Node(36);
         // Undeclared exception!
         try {
@@ -7566,21 +7685,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test738839() throws Throwable {
+    public void test738860() throws Throwable {
         Node node0 = new Node(42);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test739840() throws Throwable {
+    public void test739861() throws Throwable {
         Node node0 = new Node(45);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test740841() throws Throwable {
+    public void test740862() throws Throwable {
         Node node0 = new Node(48, 48, 48);
         // Undeclared exception!
         try {
@@ -7596,14 +7715,14 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test741842() throws Throwable {
+    public void test741863() throws Throwable {
         Node node0 = new Node(51);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test742843() throws Throwable {
+    public void test742864() throws Throwable {
         Node node0 = new Node(53, 27591, 27591);
         // Undeclared exception!
         try {
@@ -7619,7 +7738,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test743844() throws Throwable {
+    public void test743865() throws Throwable {
         Node node0 = new Node(54, 54, 54);
         // Undeclared exception!
         try {
@@ -7635,7 +7754,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test744845() throws Throwable {
+    public void test744866() throws Throwable {
         Node node0 = new Node((byte) 57, 133, 133);
         // Undeclared exception!
         try {
@@ -7651,21 +7770,21 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test745846() throws Throwable {
+    public void test745867() throws Throwable {
         Node node0 = new Node(63);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test746847() throws Throwable {
+    public void test746868() throws Throwable {
         Node node0 = new Node(64);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test747848() throws Throwable {
+    public void test747869() throws Throwable {
         Node node0 = new Node(65);
         // Undeclared exception!
         try {
@@ -7681,7 +7800,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test748849() throws Throwable {
+    public void test748870() throws Throwable {
         Node node0 = new Node(67, 67, 67);
         // Undeclared exception!
         try {
@@ -7697,7 +7816,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test749850() throws Throwable {
+    public void test749871() throws Throwable {
         Node node0 = new Node(73);
         // Undeclared exception!
         try {
@@ -7713,7 +7832,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test750851() throws Throwable {
+    public void test750872() throws Throwable {
         Node node0 = new Node(74, 74, 74);
         // Undeclared exception!
         try {
@@ -7729,7 +7848,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test751852() throws Throwable {
+    public void test751873() throws Throwable {
         Node node0 = new Node(78, 78, 78);
         // Undeclared exception!
         try {
@@ -7745,7 +7864,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test752853() throws Throwable {
+    public void test752874() throws Throwable {
         Node node0 = new Node(81);
         // Undeclared exception!
         try {
@@ -7761,7 +7880,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test753854() throws Throwable {
+    public void test753875() throws Throwable {
         Node node0 = new Node(85);
         // Undeclared exception!
         try {
@@ -7776,7 +7895,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test754855() throws Throwable {
+    public void test754876() throws Throwable {
         Node node0 = new Node(86);
         // Undeclared exception!
         try {
@@ -7791,77 +7910,77 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test755856() throws Throwable {
+    public void test755877() throws Throwable {
         Node node0 = new Node(87);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test756857() throws Throwable {
+    public void test756878() throws Throwable {
         Node node0 = new Node(88);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test757858() throws Throwable {
+    public void test757879() throws Throwable {
         Node node0 = new Node(89);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test758859() throws Throwable {
+    public void test758880() throws Throwable {
         Node node0 = Node.newString(90, "test", 109, 109);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test759860() throws Throwable {
+    public void test759881() throws Throwable {
         Node node0 = new Node(91);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test760861() throws Throwable {
+    public void test760882() throws Throwable {
         Node node0 = Node.newString(93, "3EF|WB+c#<&");
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test761862() throws Throwable {
+    public void test761883() throws Throwable {
         Node node0 = new Node(94, 94, 94);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test762863() throws Throwable {
+    public void test762884() throws Throwable {
         Node node0 = new Node(95, 95, 425);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test763864() throws Throwable {
+    public void test763885() throws Throwable {
         Node node0 = new Node(96, 74, 96);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test764865() throws Throwable {
+    public void test764886() throws Throwable {
         Node node0 = new Node(97);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test765866() throws Throwable {
+    public void test765887() throws Throwable {
         Node node0 = new Node(98);
         // Undeclared exception!
         try {
@@ -7876,7 +7995,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test766867() throws Throwable {
+    public void test766888() throws Throwable {
         Node node0 = new Node(99);
         // Undeclared exception!
         try {
@@ -7892,7 +8011,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test767868() throws Throwable {
+    public void test767889() throws Throwable {
         Node node0 = new Node(101, 118, 1227);
         // Undeclared exception!
         try {
@@ -7907,28 +8026,28 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test768869() throws Throwable {
+    public void test768890() throws Throwable {
         Node node0 = new Node(102);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test769870() throws Throwable {
+    public void test769891() throws Throwable {
         Node node0 = new Node(103);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test770871() throws Throwable {
+    public void test770892() throws Throwable {
         Node node0 = new Node(105);
         boolean boolean0 = NodeUtil.evaluatesToLocalValue(node0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test771872() throws Throwable {
+    public void test771893() throws Throwable {
         Node node0 = new Node(100, 100, 100);
         Node node1 = new Node(47);
         node0.addChildToFront(node1);
@@ -7937,7 +8056,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test772873() throws Throwable {
+    public void test772894() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "\naent:", 803, 803);
         SourceMap.DetailLevel sourceMap_DetailLevel0 = SourceMap.DetailLevel.ALL;
@@ -7946,7 +8065,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test772874() throws Throwable {
+    public void test772895() throws Throwable {
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         Node node0 = NodeUtil.newQualifiedNameNode(googleCodingConvention0, "\naent:", 803, 803);
         SourceMap.DetailLevel sourceMap_DetailLevel0 = SourceMap.DetailLevel.ALL;
@@ -7955,7 +8074,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test773875() throws Throwable {
+    public void test773896() throws Throwable {
         Node node0 = Node.newNumber(8233.0);
         Node node1 = new Node(41);
         Node[] nodeArray0 = new Node[1];
@@ -7966,7 +8085,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test773876() throws Throwable {
+    public void test773897() throws Throwable {
         Node node0 = Node.newNumber(8233.0);
         Node node1 = new Node(41);
         Node[] nodeArray0 = new Node[1];
@@ -7977,7 +8096,7 @@ public class NodeUtil_ESTest extends NodeUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test773877() throws Throwable {
+    public void test773898() throws Throwable {
         Node node0 = Node.newNumber(8233.0);
         Node node1 = new Node(41);
         Node[] nodeArray0 = new Node[1];

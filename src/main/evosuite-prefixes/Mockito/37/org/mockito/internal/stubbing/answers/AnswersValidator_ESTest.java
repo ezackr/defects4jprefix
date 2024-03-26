@@ -31,21 +31,37 @@ public class AnswersValidator_ESTest extends AnswersValidator_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test11() throws Throwable {
+        AnswersValidator answersValidator0 = new AnswersValidator();
+        MockError mockError0 = new MockError();
+        ThrowsException throwsException0 = new ThrowsException(mockError0);
+        answersValidator0.validate(throwsException0, (Invocation) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         DoesNothing doesNothing0 = new DoesNothing();
         AnswersValidator answersValidator0 = new AnswersValidator();
         answersValidator0.validate(doesNothing0, (Invocation) null);
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         AnswersValidator answersValidator0 = new AnswersValidator();
         ThrowsException throwsException0 = new ThrowsException((Throwable) null);
         answersValidator0.validate(throwsException0, (Invocation) null);
     }
 
     @Test(timeout = 4000)
-    public void test53() throws Throwable {
+    public void test44() throws Throwable {
+        AnswersValidator answersValidator0 = new AnswersValidator();
+        MockRuntimeException mockRuntimeException0 = new MockRuntimeException();
+        ThrowsException throwsException0 = new ThrowsException(mockRuntimeException0);
+        answersValidator0.validate(throwsException0, (Invocation) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test55() throws Throwable {
         AnswersValidator answersValidator0 = new AnswersValidator();
         MockThrowable mockThrowable0 = new MockThrowable();
         ThrowsException throwsException0 = new ThrowsException(mockThrowable0);

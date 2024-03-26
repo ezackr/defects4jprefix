@@ -60,7 +60,17 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test33() throws Throwable {
+        Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
+        doReturn((List) null, (List) null).when(invocation0).argumentsToMatchers();
+        doReturn((String) null).when(invocation0).toString();
+        InvocationMatcher invocationMatcher0 = new InvocationMatcher(invocation0);
+        Answer<String> answer0 = (Answer<String>) mock(Answer.class, new ViolatedAssumptionAnswer());
+        StubbedInvocationMatcher stubbedInvocationMatcher0 = new StubbedInvocationMatcher(invocationMatcher0, answer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
         Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
         doReturn((List) null).when(invocation0).argumentsToMatchers();
         doReturn("org.hamcrest.CustomMatcher").when(invocation0).toString(anyList(), any(org.mockito.internal.reporting.PrintSettings.class));
@@ -69,7 +79,7 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
         doReturn((List) null).when(invocation0).argumentsToMatchers();
         doReturn((Location) null).when(invocation0).getLocation();
@@ -78,7 +88,7 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         IsCloseTo isCloseTo0 = new IsCloseTo((-2.063293813265762), (-2.063293813265762));
         Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
         doReturn((List) null).when(invocation0).argumentsToMatchers();
@@ -90,7 +100,7 @@ public class InvocationMatcher_ESTest extends InvocationMatcher_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test76() throws Throwable {
+    public void test77() throws Throwable {
         Description.NullDescription description_NullDescription0 = new Description.NullDescription();
         Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
         doReturn((List) null).when(invocation0).argumentsToMatchers();

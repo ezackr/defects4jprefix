@@ -190,7 +190,12 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1111() throws Throwable {
+        BeanSerializerFactory beanSerializerFactory0 = new BeanSerializerFactory((SerializerFactoryConfig) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
         objectMapper0.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, ": can not instantiate from JSON object (missing default constructor or creator, or perhaps need to add/enable type information?)");
@@ -200,7 +205,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         AtomicReference<BigIntegerNode> atomicReference0 = new AtomicReference<BigIntegerNode>();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
@@ -208,7 +213,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         SerializerFactoryConfig serializerFactoryConfig0 = new SerializerFactoryConfig();
         Class<SQLWarning> class0 = SQLWarning.class;
@@ -224,14 +229,14 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
         objectMapper0.convertValue((Object) objectMapper0, class0);
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MissingNode missingNode0 = MissingNode.getInstance();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
@@ -239,7 +244,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar((-1281), 1, (-1281));
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
@@ -247,7 +252,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
         MockDate mockDate0 = new MockDate(1, 1, 0, 1728, 0);
@@ -255,7 +260,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
@@ -265,7 +270,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         InetAddress inetAddress0 = MockInetAddress.anyLocalAddress();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
@@ -273,14 +278,14 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MockInetSocketAddress mockInetSocketAddress0 = new MockInetSocketAddress(2);
         String string0 = objectMapper0.writeValueAsString(mockInetSocketAddress0);
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TimeZone timeZone0 = TimeZone.getDefault();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
@@ -288,7 +293,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         Class<Charset> class0 = Charset.class;
@@ -304,7 +309,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_FINAL;
@@ -312,7 +317,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MapperFeature[] mapperFeatureArray0 = new MapperFeature[2];
         MapperFeature mapperFeature0 = MapperFeature.AUTO_DETECT_SETTERS;
@@ -327,7 +332,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<SimpleTimeZone> class0 = SimpleTimeZone.class;
@@ -344,7 +349,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         Class<Character> class0 = Character.TYPE;
         POJOPropertiesCollector pOJOPropertiesCollector0 = mock(POJOPropertiesCollector.class, new ViolatedAssumptionAnswer());
@@ -362,7 +367,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializerFactoryConfig serializerFactoryConfig0 = new SerializerFactoryConfig();
         BeanSerializerModifier beanSerializerModifier0 = mock(BeanSerializerModifier.class, new ViolatedAssumptionAnswer());
@@ -379,7 +384,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SQLNonTransientConnectionException sQLNonTransientConnectionException0 = new SQLNonTransientConnectionException();
         BatchUpdateException batchUpdateException0 = new BatchUpdateException();
@@ -389,7 +394,7 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3030() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BeanPropertyDefinition> class0 = BeanPropertyDefinition.class;
         SerializerFactoryConfig serializerFactoryConfig0 = new SerializerFactoryConfig();
@@ -406,21 +411,21 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3131() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         Class<Boolean> class0 = Boolean.class;
         Class<?> class1 = beanSerializerFactory0._verifyAsClass((Object) null, "LocX'eqN(^<}mzl@2", class0);
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         Class<CharBuffer> class0 = CharBuffer.class;
         beanSerializerFactory0._verifyAsClass("4swheD@jq{(h$l", "4swheD@jq{(h$l", class0);
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         Class<Timestamp> class0 = Timestamp.class;
         Class<?> class1 = beanSerializerFactory0._verifyAsClass(class0, "4swheD@jq{(h$l", class0);

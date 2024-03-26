@@ -1176,16 +1176,6 @@ public class CoreFunction_ESTest extends CoreFunction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test094135() throws Throwable {
-        Constant constant0 = new Constant("Te etym refer5ne\"");
-        Expression[] expressionArray0 = new Expression[2];
-        expressionArray0[0] = (Expression) constant0;
-        expressionArray0[1] = (Expression) constant0;
-        CoreFunction coreFunction0 = new CoreFunction(9, expressionArray0);
-        Object object0 = coreFunction0.compute((EvalContext) null);
-    }
-
-    @Test(timeout = 4000)
     public void test095136() throws Throwable {
         Expression[] expressionArray0 = new Expression[2];
         Float float0 = new Float((double) (-287));
@@ -1825,23 +1815,6 @@ public class CoreFunction_ESTest extends CoreFunction_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test124190() throws Throwable {
-        Long long0 = new Long(30);
-        Constant constant0 = new Constant(long0);
-        Expression[] expressionArray0 = new Expression[2];
-        expressionArray0[0] = (Expression) constant0;
-        expressionArray0[1] = (Expression) constant0;
-        CoreFunction coreFunction0 = new CoreFunction(30, expressionArray0);
-        PredicateContext predicateContext0 = new PredicateContext((EvalContext) null, coreFunction0);
-        QName qName0 = new QName("3030", "drUmJYs`u)/hhsg");
-        Locale locale0 = Locale.KOREAN;
-        NodePointer nodePointer0 = NodePointer.newNodePointer(qName0, (Object) null, locale0);
-        JXPathContextReferenceImpl jXPathContextReferenceImpl0 = new JXPathContextReferenceImpl((JXPathContext) null, predicateContext0, nodePointer0);
-        RootContext rootContext0 = new RootContext(jXPathContextReferenceImpl0, nodePointer0);
-        Object object0 = coreFunction0.compute(rootContext0);
-    }
-
-    @Test(timeout = 4000)
-    public void test124191() throws Throwable {
         Long long0 = new Long(30);
         Constant constant0 = new Constant(long0);
         Expression[] expressionArray0 = new Expression[2];

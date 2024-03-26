@@ -20,7 +20,40 @@ import org.junit.runner.RunWith;
 public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test020() throws Throwable {
+    public void test000() throws Throwable {
+        int[] intArray0 = new int[2];
+        intArray0[0] = 1215;
+        intArray0[1] = 8388607;
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        multidimensionalCounter0.spliterator();
+        multidimensionalCounter0.getSize();
+        int[] intArray1 = multidimensionalCounter0.getCounts(8388607);
+        multidimensionalCounter0.getDimension();
+        multidimensionalCounter0.getSizes();
+        multidimensionalCounter0.getCount(intArray1);
+        MultidimensionalCounter.Iterator multidimensionalCounter_Iterator0 = multidimensionalCounter0.iterator();
+        Consumer<Integer> consumer0 = (Consumer<Integer>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+        // Undeclared exception!
+        multidimensionalCounter_Iterator0.forEachRemaining(consumer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        int[] intArray0 = new int[6];
+        intArray0[0] = (-4411);
+        intArray0[1] = (-5939);
+        intArray0[2] = 2766;
+        intArray0[3] = 515;
+        intArray0[4] = 2890;
+        intArray0[5] = 1;
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        Consumer<Object> consumer0 = (Consumer<Object>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+        // Undeclared exception!
+        multidimensionalCounter0.forEach(consumer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = 2097;
         intArray0[1] = 1383;
@@ -45,7 +78,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test033() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = (-672);
         intArray0[1] = (-672);
@@ -66,7 +99,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test044() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = 2097;
         intArray0[1] = 1383;
@@ -99,7 +132,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test055() throws Throwable {
         int[] intArray0 = new int[6];
         intArray0[1] = (-529);
         intArray0[1] = 12;
@@ -128,7 +161,22 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test074() throws Throwable {
+    public void test066() throws Throwable {
+        int[] intArray0 = new int[3];
+        intArray0[0] = (-1166);
+        intArray0[1] = 1821;
+        intArray0[2] = (-778);
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        multidimensionalCounter0.getDimension();
+        MultidimensionalCounter.Iterator multidimensionalCounter_Iterator0 = multidimensionalCounter0.iterator();
+        multidimensionalCounter_Iterator0.next();
+        Consumer<Integer> consumer0 = (Consumer<Integer>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+        // Undeclared exception!
+        multidimensionalCounter0.forEach(consumer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         int[] intArray0 = new int[1];
         int int0 = 1860;
         intArray0[0] = 1860;
@@ -153,7 +201,24 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test095() throws Throwable {
+    public void test088() throws Throwable {
+        int[] intArray0 = new int[2];
+        intArray0[0] = 1215;
+        intArray0[1] = 8388607;
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        multidimensionalCounter0.spliterator();
+        multidimensionalCounter0.getSize();
+        multidimensionalCounter0.getCounts(8388607);
+        multidimensionalCounter0.getDimension();
+        multidimensionalCounter0.getSizes();
+        MultidimensionalCounter.Iterator multidimensionalCounter_Iterator0 = multidimensionalCounter0.iterator();
+        Consumer<Integer> consumer0 = (Consumer<Integer>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+        // Undeclared exception!
+        multidimensionalCounter_Iterator0.forEachRemaining(consumer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = 2097;
         intArray0[1] = 1383;
@@ -177,7 +242,21 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test116() throws Throwable {
+    public void test1010() throws Throwable {
+        int[] intArray0 = new int[3];
+        intArray0[0] = (-924);
+        int int0 = 1189;
+        intArray0[1] = 1189;
+        intArray0[2] = (-1743);
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        multidimensionalCounter0.getSizes();
+        multidimensionalCounter0.spliterator();
+        // Undeclared exception!
+        multidimensionalCounter0.getCounts(1189);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 1;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -195,7 +274,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test127() throws Throwable {
+    public void test1212() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 1;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -212,7 +291,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test138() throws Throwable {
+    public void test1313() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 3047;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -233,7 +312,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test149() throws Throwable {
+    public void test1414() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = (-483);
         intArray0[1] = (-2744);
@@ -251,7 +330,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1510() throws Throwable {
+    public void test1515() throws Throwable {
         int[] intArray0 = new int[3];
         intArray0[0] = 35;
         intArray0[1] = 1;
@@ -271,7 +350,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1611() throws Throwable {
+    public void test1616() throws Throwable {
         int[] intArray0 = new int[7];
         intArray0[0] = (-2014);
         intArray0[1] = (-817);
@@ -295,7 +374,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1712() throws Throwable {
+    public void test1717() throws Throwable {
         int[] intArray0 = new int[3];
         intArray0[0] = (-4460);
         intArray0[1] = (-1677);
@@ -313,7 +392,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1813() throws Throwable {
+    public void test1818() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 188;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -329,7 +408,17 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2014() throws Throwable {
+    public void test1919() throws Throwable {
+        int[] intArray0 = new int[3];
+        intArray0[0] = (-757);
+        intArray0[1] = (-900);
+        intArray0[2] = 367;
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        multidimensionalCounter0.getSize();
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
         MultidimensionalCounter multidimensionalCounter0 = null;
         try {
             multidimensionalCounter0 = new MultidimensionalCounter((int[]) null);
@@ -343,7 +432,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2115() throws Throwable {
+    public void test2121() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = (-176);
         intArray0[1] = (-1207);
@@ -364,7 +453,29 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2416() throws Throwable {
+    public void test2222() throws Throwable {
+        int[] intArray0 = new int[1];
+        intArray0[0] = 4197;
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        multidimensionalCounter0.toString();
+        MultidimensionalCounter.Iterator multidimensionalCounter_Iterator0 = multidimensionalCounter0.iterator();
+        multidimensionalCounter_Iterator0.getCounts();
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
+        int[] intArray0 = new int[3];
+        intArray0[0] = (-1);
+        intArray0[1] = 2063;
+        intArray0[2] = (-1501);
+        MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
+        Consumer<Integer> consumer0 = (Consumer<Integer>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+        // Undeclared exception!
+        multidimensionalCounter0.forEach(consumer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
         int[] intArray0 = new int[0];
         MultidimensionalCounter multidimensionalCounter0 = null;
         try {
@@ -379,7 +490,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2517() throws Throwable {
+    public void test2525() throws Throwable {
         int[] intArray0 = new int[6];
         intArray0[0] = 0;
         intArray0[1] = 750;
@@ -400,7 +511,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2618() throws Throwable {
+    public void test2626() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 567;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -412,7 +523,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2619() throws Throwable {
+    public void test2627() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 567;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -424,7 +535,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2720() throws Throwable {
+    public void test2728() throws Throwable {
         int[] intArray0 = new int[4];
         intArray0[0] = 2454;
         intArray0[1] = 113;
@@ -437,7 +548,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2721() throws Throwable {
+    public void test2729() throws Throwable {
         int[] intArray0 = new int[4];
         intArray0[0] = 2454;
         intArray0[1] = 113;
@@ -450,7 +561,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2722() throws Throwable {
+    public void test2730() throws Throwable {
         int[] intArray0 = new int[4];
         intArray0[0] = 2454;
         intArray0[1] = 113;
@@ -463,7 +574,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2823() throws Throwable {
+    public void test2831() throws Throwable {
         int[] intArray0 = new int[8];
         intArray0[0] = (-322);
         intArray0[1] = 127;
@@ -481,7 +592,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2824() throws Throwable {
+    public void test2832() throws Throwable {
         int[] intArray0 = new int[8];
         intArray0[0] = (-322);
         intArray0[1] = 127;
@@ -500,7 +611,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2825() throws Throwable {
+    public void test2833() throws Throwable {
         int[] intArray0 = new int[8];
         intArray0[0] = (-322);
         intArray0[1] = 127;
@@ -519,7 +630,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2926() throws Throwable {
+    public void test2934() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = 2504;
         intArray0[1] = 8;
@@ -538,7 +649,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3027() throws Throwable {
+    public void test3035() throws Throwable {
         int[] intArray0 = new int[5];
         int int0 = 2083;
         intArray0[0] = 2083;
@@ -559,7 +670,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3128() throws Throwable {
+    public void test3136() throws Throwable {
         int[] intArray0 = new int[5];
         intArray0[0] = 0;
         intArray0[1] = 0;
@@ -579,7 +690,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3229() throws Throwable {
+    public void test3237() throws Throwable {
         int[] intArray0 = new int[5];
         intArray0[0] = 0;
         intArray0[1] = 2128;
@@ -599,7 +710,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3330() throws Throwable {
+    public void test3338() throws Throwable {
         int[] intArray0 = new int[1];
         intArray0[0] = 3064;
         MultidimensionalCounter multidimensionalCounter0 = new MultidimensionalCounter(intArray0);
@@ -620,7 +731,7 @@ public class MultidimensionalCounter_ESTest extends MultidimensionalCounter_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3431() throws Throwable {
+    public void test3439() throws Throwable {
         int[] intArray0 = new int[2];
         intArray0[0] = 1215;
         intArray0[1] = 8388607;

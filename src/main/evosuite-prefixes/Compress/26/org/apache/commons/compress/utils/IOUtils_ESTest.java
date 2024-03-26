@@ -203,7 +203,12 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2123() throws Throwable {
+        IOUtils.closeQuietly((Closeable) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2224() throws Throwable {
         byte[] byteArray0 = new byte[0];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
@@ -211,33 +216,24 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2325() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         IOUtils.readFully((InputStream) byteArrayInputStream0, byteArray0, 543, 8024);
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2426() throws Throwable {
         byte[] byteArray0 = new byte[4];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         IOUtils.readFully((InputStream) byteArrayInputStream0, byteArray0, (int) (byte) (-44), 0);
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2527() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 1, (-809));
         IOUtils.readFully((InputStream) byteArrayInputStream0, byteArray0, (int) (byte) 1, (-322));
-    }
-
-    @Test(timeout = 4000)
-    public void test2627() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 69, 0);
-        PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
-        long long0 = IOUtils.skip(pushbackInputStream0, 1291L);
-        byteArrayInputStream0.available();
     }
 
     @Test(timeout = 4000)
@@ -246,22 +242,22 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 69, 0);
         PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
         long long0 = IOUtils.skip(pushbackInputStream0, 1291L);
+        byteArrayInputStream0.available();
     }
 
     @Test(timeout = 4000)
-    public void test2729() throws Throwable {
+    public void test2629() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 69, 0);
+        PushbackInputStream pushbackInputStream0 = new PushbackInputStream(byteArrayInputStream0);
+        long long0 = IOUtils.skip(pushbackInputStream0, 1291L);
+    }
+
+    @Test(timeout = 4000)
+    public void test2730() throws Throwable {
         byte[] byteArray0 = new byte[3];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         long long0 = IOUtils.skip(byteArrayInputStream0, (-1157L));
-    }
-
-    @Test(timeout = 4000)
-    public void test2830() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        MockFile mockFile0 = new MockFile("qayi", "/GC`");
-        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
-        long long0 = IOUtils.copy((InputStream) byteArrayInputStream0, (OutputStream) mockFileOutputStream0);
     }
 
     @Test(timeout = 4000)
@@ -271,11 +267,20 @@ public class IOUtils_ESTest extends IOUtils_ESTest_scaffolding {
         MockFile mockFile0 = new MockFile("qayi", "/GC`");
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
         long long0 = IOUtils.copy((InputStream) byteArrayInputStream0, (OutputStream) mockFileOutputStream0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2832() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+        MockFile mockFile0 = new MockFile("qayi", "/GC`");
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0);
+        long long0 = IOUtils.copy((InputStream) byteArrayInputStream0, (OutputStream) mockFileOutputStream0);
         mockFile0.length();
     }
 
     @Test(timeout = 4000)
-    public void test2932() throws Throwable {
+    public void test2933() throws Throwable {
         Enumeration<MockFileInputStream> enumeration0 = (Enumeration<MockFileInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
         doReturn(false).when(enumeration0).hasMoreElements();
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);

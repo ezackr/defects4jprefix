@@ -385,22 +385,6 @@ public class RecordType_ESTest extends RecordType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1724() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        RecordType recordType0 = jSTypeRegistry0.createRecordType(hashMap0);
-        Node node0 = new Node(0);
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(recordType0, node0);
-        hashMap0.put("Not declared as a type name", recordTypeBuilder_RecordProperty0);
-        RecordType recordType1 = new RecordType(jSTypeRegistry0, hashMap0);
-        JSType jSType0 = recordType0.getLeastSupertype(recordType1);
-        boolean boolean0 = recordType1.removeProperty("Not declared as a type name");
-        NoObjectType noObjectType0 = (NoObjectType) recordType1.getGreatestSubtypeHelper(jSType0);
-        boolean boolean1 = RecordType.isSubtype((ObjectType) noObjectType0, recordType1);
-    }
-
-    @Test(timeout = 4000)
     public void test1825() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);

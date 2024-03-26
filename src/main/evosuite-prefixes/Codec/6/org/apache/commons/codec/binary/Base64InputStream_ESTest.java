@@ -43,18 +43,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test002() throws Throwable {
-        byte[] byteArray0 = new byte[0];
-        Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1866), byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test003() throws Throwable {
-        byte[] byteArray0 = new byte[0];
-        Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1866), byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test004() throws Throwable {
         byte[] byteArray0 = new byte[0];
         Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1866), byteArray0);
@@ -70,20 +58,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test006() throws Throwable {
-        byte[] byteArray0 = new byte[0];
-        Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1866), byteArray0);
-        int int0 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test007() throws Throwable {
-        byte[] byteArray0 = new byte[0];
-        Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1866), byteArray0);
-        int int0 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test018() throws Throwable {
         byte[] byteArray0 = new byte[5];
         Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1378), byteArray0);
@@ -94,18 +68,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         byte[] byteArray0 = new byte[5];
         Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1378), byteArray0);
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0110() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1378), byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0111() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        Base64InputStream base64InputStream0 = new Base64InputStream((InputStream) null, true, (-1378), byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -129,18 +91,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0215() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
-    }
-
-    @Test(timeout = 4000)
-    public void test0216() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
-    }
-
-    @Test(timeout = 4000)
     public void test0217() throws Throwable {
         byte[] byteArray0 = new byte[5];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
@@ -153,20 +103,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
         BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
         byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0219() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
-        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0220() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
-        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
     }
 
     @Test(timeout = 4000)
@@ -193,22 +129,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
         Base64InputStream base64InputStream0 = new Base64InputStream(bufferedInputStream0, false);
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0224() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
-        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(bufferedInputStream0, false);
-    }
-
-    @Test(timeout = 4000)
-    public void test0225() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) (-43), 256);
-        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(bufferedInputStream0, false);
     }
 
     @Test(timeout = 4000)
@@ -290,18 +210,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0537() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
-    }
-
-    @Test(timeout = 4000)
-    public void test0538() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
-    }
-
-    @Test(timeout = 4000)
     public void test0539() throws Throwable {
         byte[] byteArray0 = new byte[9];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
@@ -314,20 +222,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
         byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0541() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0542() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
     }
 
     @Test(timeout = 4000)
@@ -357,22 +251,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0546() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test0547() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true);
-    }
-
-    @Test(timeout = 4000)
     public void test0548() throws Throwable {
         byte[] byteArray0 = new byte[9];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 4096, (byte) (-120));
@@ -393,18 +271,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         byte[] byteArray0 = new byte[6];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
         byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0651() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test0652() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
     }
 
     @Test(timeout = 4000)
@@ -431,20 +297,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0656() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0657() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
     public void test0658() throws Throwable {
         byte[] byteArray0 = new byte[6];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
@@ -468,22 +320,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
         int int0 = base64InputStream0.read(byteArray0, 0, (int) (byte) 3);
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0661() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0, 0, (int) (byte) 3);
-    }
-
-    @Test(timeout = 4000)
-    public void test0662() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0, 0, (int) (byte) 3);
     }
 
     @Test(timeout = 4000)
@@ -516,33 +352,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0666() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0, 0, (int) (byte) 3);
-        int int1 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0667() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0, 0, (int) (byte) 3);
-        int int1 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0668() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0, 0, (int) (byte) 3);
-        int int1 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test0769() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
@@ -553,18 +362,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0771() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0772() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -580,20 +377,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
         byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0775() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0776() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
     }
 
     @Test(timeout = 4000)
@@ -623,22 +406,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0780() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true, (byte) 125, byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0781() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true, (byte) 125, byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test0782() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
@@ -665,86 +432,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true, (byte) 125, byteArray0);
         int int0 = base64InputStream0.read();
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0785() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true, (byte) 125, byteArray0);
-        int int0 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test0786() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(byteArrayInputStream0, byteArrayInputStream0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(sequenceInputStream0, true, (byte) 125, byteArray0);
-        int int0 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test0887() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test0888() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0889() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test0890() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test0891() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0892() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test0893() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test0894() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0895() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
     }
 
     @Test(timeout = 4000)
@@ -838,18 +525,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test10108() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10109() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test10110() throws Throwable {
         byte[] byteArray0 = new byte[5];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
@@ -870,20 +545,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0, true);
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test10113() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test10114() throws Throwable {
-        byte[] byteArray0 = new byte[5];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0, true);
     }
 
     @Test(timeout = 4000)
@@ -929,22 +590,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12121() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[1] = (byte) 110;
-        byteArray0[2] = (byte) 45;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12122() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[1] = (byte) 110;
-        byteArray0[2] = (byte) 45;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test12123() throws Throwable {
         byte[] byteArray0 = new byte[4];
         byteArray0[1] = (byte) 110;
@@ -971,24 +616,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
         Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test12126() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[1] = (byte) 110;
-        byteArray0[2] = (byte) 45;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12127() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[1] = (byte) 110;
-        byteArray0[2] = (byte) 45;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
     }
 
     @Test(timeout = 4000)
@@ -1024,26 +651,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test12131() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[1] = (byte) 110;
-        byteArray0[2] = (byte) 45;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test12132() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[1] = (byte) 110;
-        byteArray0[2] = (byte) 45;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
     public void test13133() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byteArray0[1] = (byte) 98;
@@ -1056,20 +663,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         byteArray0[1] = (byte) 98;
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
         byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test13135() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test13136() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
     }
 
     @Test(timeout = 4000)
@@ -1096,22 +689,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
         Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test13140() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13141() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
     }
 
     @Test(timeout = 4000)
@@ -1144,24 +721,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13145() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13146() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test13147() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byteArray0[1] = (byte) 98;
@@ -1185,16 +744,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
 
     @Test(timeout = 4000)
     public void test13149() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0);
-        base64InputStream0.reset();
-    }
-
-    @Test(timeout = 4000)
-    public void test13150() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byteArray0[1] = (byte) 98;
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
@@ -1239,101 +788,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test13154() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0);
-        base64InputStream0.reset();
-        int int1 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test13155() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0);
-        base64InputStream0.reset();
-        int int1 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test13156() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        byteArray0[1] = (byte) 98;
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read(byteArray0);
-        base64InputStream0.reset();
-        int int1 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test14157() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test14158() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test14159() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test14160() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test14161() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14162() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test14163() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test14164() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14165() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
     public void test14166() throws Throwable {
         byte[] byteArray0 = new byte[6];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
@@ -1360,84 +814,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test14169() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test14170() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        int int0 = base64InputStream0.read();
-    }
-
-    @Test(timeout = 4000)
-    public void test15171() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test15172() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test15173() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test15174() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-    }
-
-    @Test(timeout = 4000)
-    public void test15175() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15176() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        byteArrayInputStream0.available();
-    }
-
-    @Test(timeout = 4000)
-    public void test15177() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test15178() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15179() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-    }
-
-    @Test(timeout = 4000)
     public void test15180() throws Throwable {
         byte[] byteArray0 = new byte[6];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
@@ -1461,22 +837,6 @@ public class Base64InputStream_ESTest extends Base64InputStream_ESTest_scaffoldi
         Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
         boolean boolean0 = base64InputStream0.markSupported();
         base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test15183() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        boolean boolean0 = base64InputStream0.markSupported();
-    }
-
-    @Test(timeout = 4000)
-    public void test15184() throws Throwable {
-        byte[] byteArray0 = new byte[6];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, (byte) 0, (byte) 98);
-        Base64InputStream base64InputStream0 = new Base64InputStream(byteArrayInputStream0);
-        boolean boolean0 = base64InputStream0.markSupported();
     }
 
     @Test(timeout = 4000)

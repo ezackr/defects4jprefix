@@ -27,7 +27,13 @@ public class Weight_ESTest extends Weight_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test11() throws Throwable {
+        Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(3318, 3318);
+        Weight weight0 = new Weight(array2DRowRealMatrix0);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         Array2DRowRealMatrix array2DRowRealMatrix0 = new Array2DRowRealMatrix(31, 2300);
         Weight weight0 = null;
         weight0 = new Weight(array2DRowRealMatrix0);

@@ -76,7 +76,12 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test044() throws Throwable {
+        NumberDeserializers numberDeserializers0 = new NumberDeserializers();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         Class<Character> class0 = Character.class;
         Character character0 = new Character('z');
         NumberDeserializers.CharacterDeserializer numberDeserializers_CharacterDeserializer0 = new NumberDeserializers.CharacterDeserializer(class0, character0);
@@ -84,7 +89,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Class<Short> class0 = Short.class;
         Short short0 = new Short((short) (-1610));
         NumberDeserializers.ShortDeserializer numberDeserializers_ShortDeserializer0 = new NumberDeserializers.ShortDeserializer(class0, short0);
@@ -101,7 +106,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Class<Byte> class0 = Byte.class;
         Byte byte0 = new Byte((byte) (-34));
         NumberDeserializers.ByteDeserializer numberDeserializers_ByteDeserializer0 = new NumberDeserializers.ByteDeserializer(class0, byte0);
@@ -109,7 +114,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         NumberDeserializers.ByteDeserializer numberDeserializers_ByteDeserializer0 = NumberDeserializers.ByteDeserializer.primitiveInstance;
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
@@ -119,7 +124,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         NumberDeserializers.BooleanDeserializer numberDeserializers_BooleanDeserializer0 = NumberDeserializers.BooleanDeserializer.primitiveInstance;
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, numberDeserializers_BooleanDeserializer0, true);
@@ -132,7 +137,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Boolean boolean0 = Boolean.valueOf(false);
         Class<Boolean> class0 = Boolean.class;
         NumberDeserializers.BooleanDeserializer numberDeserializers_BooleanDeserializer0 = new NumberDeserializers.BooleanDeserializer(class0, boolean0);
@@ -140,7 +145,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         NumberDeserializers.BooleanDeserializer numberDeserializers_BooleanDeserializer0 = NumberDeserializers.BooleanDeserializer.primitiveInstance;
         JsonNodeFactory jsonNodeFactory0 = JsonNodeFactory.withExactBigDecimals(false);
         ArrayNode arrayNode0 = jsonNodeFactory0.arrayNode();
@@ -154,7 +159,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         Class<Float> class0 = Float.class;
         Float float0 = new Float(Double.NEGATIVE_INFINITY);
         NumberDeserializers.FloatDeserializer numberDeserializers_FloatDeserializer0 = new NumberDeserializers.FloatDeserializer(class0, float0);
@@ -162,7 +167,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         NumberDeserializers.FloatDeserializer numberDeserializers_FloatDeserializer0 = NumberDeserializers.FloatDeserializer.primitiveInstance;
         JsonFactory jsonFactory0 = new JsonFactory();
         byte[] byteArray0 = new byte[5];
@@ -176,7 +181,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Class<Double> class0 = Double.class;
         Double double0 = new Double((-3799.436));
         NumberDeserializers.DoubleDeserializer numberDeserializers_DoubleDeserializer0 = new NumberDeserializers.DoubleDeserializer(class0, double0);
@@ -184,7 +189,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         NumberDeserializers.DoubleDeserializer numberDeserializers_DoubleDeserializer0 = NumberDeserializers.DoubleDeserializer.wrapperInstance;
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         JsonFactory jsonFactory0 = new JsonFactory();
@@ -202,7 +207,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper();
         NumberDeserializers.DoubleDeserializer numberDeserializers_DoubleDeserializer0 = NumberDeserializers.DoubleDeserializer.wrapperInstance;
@@ -214,90 +219,84 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         Class<Float> class0 = Float.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         Class<Integer> class0 = Integer.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         Class<Boolean> class0 = Boolean.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         Class<Long> class0 = Long.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         Class<Double> class0 = Double.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "com.fasterxml.jackson.databind.deser.std.NumberDeserializers$ShortDeserializer");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2222() throws Throwable {
         Class<Character> class0 = Character.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2323() throws Throwable {
         Class<Byte> class0 = Byte.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2424() throws Throwable {
         Class<Short> class0 = Short.TYPE;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2525() throws Throwable {
         Class<Float> class0 = Float.class;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "JSON");
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2626() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Boolean> class0 = Boolean.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2727() throws Throwable {
         Class<BigDecimal> class0 = BigDecimal.class;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "java.math.BigInteger");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2728() throws Throwable {
         Class<BigDecimal> class0 = BigDecimal.class;
-        JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "java.math.BigInteger");
-    }
-
-    @Test(timeout = 4000)
-    public void test2828() throws Throwable {
-        Class<Double> class0 = Double.class;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "java.math.BigInteger");
     }
 
@@ -305,52 +304,58 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     public void test2829() throws Throwable {
         Class<Double> class0 = Double.class;
         JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "java.math.BigInteger");
+    }
+
+    @Test(timeout = 4000)
+    public void test2830() throws Throwable {
+        Class<Double> class0 = Double.class;
+        JsonDeserializer<?> jsonDeserializer0 = NumberDeserializers.find(class0, "java.math.BigInteger");
         jsonDeserializer0.isCachable();
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
+    public void test2931() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Character> class0 = Character.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test3031() throws Throwable {
+    public void test3032() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Byte> class0 = Byte.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test3132() throws Throwable {
+    public void test3133() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Short> class0 = Short.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3234() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Float> class0 = Float.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test3334() throws Throwable {
+    public void test3335() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Object> class0 = Object.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test3435() throws Throwable {
+    public void test3436() throws Throwable {
         Class<String> class0 = String.class;
         NumberDeserializers.find(class0, "java.math.BigInteger");
     }
 
     @Test(timeout = 4000)
-    public void test3536() throws Throwable {
+    public void test3537() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         Class<BigInteger> class0 = BigInteger.class;
@@ -358,13 +363,13 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3638() throws Throwable {
         NumberDeserializers.CharacterDeserializer numberDeserializers_CharacterDeserializer0 = NumberDeserializers.CharacterDeserializer.wrapperInstance;
         Character character0 = numberDeserializers_CharacterDeserializer0.getNullValue((DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3739() throws Throwable {
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
         DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
         NumberDeserializers.IntegerDeserializer numberDeserializers_IntegerDeserializer0 = NumberDeserializers.IntegerDeserializer.primitiveInstance;
@@ -372,7 +377,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3840() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.CharacterDeserializer numberDeserializers_CharacterDeserializer0 = NumberDeserializers.CharacterDeserializer.primitiveInstance;
@@ -380,7 +385,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3941() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.IntegerDeserializer numberDeserializers_IntegerDeserializer0 = NumberDeserializers.IntegerDeserializer.wrapperInstance;
@@ -388,7 +393,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4042() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.IntegerDeserializer numberDeserializers_IntegerDeserializer0 = NumberDeserializers.IntegerDeserializer.wrapperInstance;
@@ -396,7 +401,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4143() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.LongDeserializer numberDeserializers_LongDeserializer0 = NumberDeserializers.LongDeserializer.wrapperInstance;
@@ -404,7 +409,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4244() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.NumberDeserializer numberDeserializers_NumberDeserializer0 = NumberDeserializers.NumberDeserializer.instance;
@@ -412,7 +417,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4344() throws Throwable {
+    public void test4345() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.NumberDeserializer numberDeserializers_NumberDeserializer0 = new NumberDeserializers.NumberDeserializer();
@@ -420,7 +425,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4445() throws Throwable {
+    public void test4446() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.BigIntegerDeserializer numberDeserializers_BigIntegerDeserializer0 = new NumberDeserializers.BigIntegerDeserializer();
@@ -428,7 +433,7 @@ public class NumberDeserializers_ESTest extends NumberDeserializers_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4546() throws Throwable {
+    public void test4547() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         JsonParser jsonParser0 = jsonFactory0.createParser("JSON");
         NumberDeserializers.BigDecimalDeserializer numberDeserializers_BigDecimalDeserializer0 = new NumberDeserializers.BigDecimalDeserializer();

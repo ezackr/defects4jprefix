@@ -48,15 +48,9 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test055() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
-        Double double0 = new Double((-1.0F));
-        defaultKeyedValues2D0.setValue(double0, double0, double0);
-        Float float0 = new Float((-1.0F));
-        defaultKeyedValues2D0.setValue(float0, float0, float0);
-        Object object0 = defaultKeyedValues2D0.clone();
-        boolean boolean0 = defaultKeyedValues2D0.equals(object0);
-        defaultKeyedValues2D0.getColumnCount();
+        defaultKeyedValues2D0.hashCode();
     }
 
     @Test(timeout = 4000)
@@ -68,10 +62,22 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
         defaultKeyedValues2D0.setValue(float0, float0, float0);
         Object object0 = defaultKeyedValues2D0.clone();
         boolean boolean0 = defaultKeyedValues2D0.equals(object0);
+        defaultKeyedValues2D0.getColumnCount();
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test067() throws Throwable {
+        DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
+        Double double0 = new Double((-1.0F));
+        defaultKeyedValues2D0.setValue(double0, double0, double0);
+        Float float0 = new Float((-1.0F));
+        defaultKeyedValues2D0.setValue(float0, float0, float0);
+        Object object0 = defaultKeyedValues2D0.clone();
+        boolean boolean0 = defaultKeyedValues2D0.equals(object0);
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
         Float float0 = new Float(0.0F);
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D(true);
         defaultKeyedValues2D0.setValue(float0, float0, float0);
@@ -79,20 +85,20 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test089() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Float float0 = new Float(0.0F);
         int int0 = defaultKeyedValues2D0.getColumnIndex(float0);
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test0910() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         defaultKeyedValues2D0.getColumnIndex((Comparable) null);
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test1011() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Double double0 = new Double((-1.0F));
         Float float0 = new Float((-1.0F));
@@ -100,19 +106,19 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1112() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         defaultKeyedValues2D0.getValue((Comparable) null, (Comparable) null);
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
+    public void test1213() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         defaultKeyedValues2D0.getValue((Comparable) 871, (Comparable) null);
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1314() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Double double0 = new Double((-1.0F));
         defaultKeyedValues2D0.setValue(double0, double0, double0);
@@ -121,7 +127,7 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1415() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Double double0 = new Double((-1.0F));
         defaultKeyedValues2D0.setValue(double0, double0, double0);
@@ -131,7 +137,7 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1516() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Float float0 = new Float(0.0F);
         defaultKeyedValues2D0.setValue(float0, float0, float0);
@@ -139,7 +145,7 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Long long0 = new Long((-2546L));
         defaultKeyedValues2D0.setValue(long0, long0, long0);
@@ -149,7 +155,7 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1718() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Float float0 = new Float(2915.86213);
         defaultKeyedValues2D0.setValue(float0, float0, float0);
@@ -159,7 +165,7 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1819() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Float float0 = new Float(8.42F);
         defaultKeyedValues2D0.setValue(float0, float0, float0);
@@ -168,37 +174,27 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1920() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         boolean boolean0 = defaultKeyedValues2D0.equals((Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2021() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         boolean boolean0 = defaultKeyedValues2D0.equals(defaultKeyedValues2D0);
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2122() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         boolean boolean0 = defaultKeyedValues2D0.equals("YW*-M");
-    }
-
-    @Test(timeout = 4000)
-    public void test2222() throws Throwable {
-        DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
-        DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
-        defaultKeyedValues2D1.equals((Object) defaultKeyedValues2D0);
     }
 
     @Test(timeout = 4000)
     public void test2223() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
-        Short short0 = new Short((short) 2440);
-        defaultKeyedValues2D1.addValue(short0, short0, short0);
-        boolean boolean0 = defaultKeyedValues2D1.equals(defaultKeyedValues2D0);
         defaultKeyedValues2D1.equals((Object) defaultKeyedValues2D0);
     }
 
@@ -209,17 +205,16 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
         Short short0 = new Short((short) 2440);
         defaultKeyedValues2D1.addValue(short0, short0, short0);
         boolean boolean0 = defaultKeyedValues2D1.equals(defaultKeyedValues2D0);
+        defaultKeyedValues2D1.equals((Object) defaultKeyedValues2D0);
     }
 
     @Test(timeout = 4000)
-    public void test2325() throws Throwable {
+    public void test2225() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
-        Float float0 = new Float((-51.948048F));
-        defaultKeyedValues2D0.setValue(float0, float0, float0);
         DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
-        defaultKeyedValues2D1.removeColumn((Comparable) float0);
-        boolean boolean0 = defaultKeyedValues2D0.equals(defaultKeyedValues2D1);
-        defaultKeyedValues2D0.getColumnCount();
+        Short short0 = new Short((short) 2440);
+        defaultKeyedValues2D1.addValue(short0, short0, short0);
+        boolean boolean0 = defaultKeyedValues2D1.equals(defaultKeyedValues2D0);
     }
 
     @Test(timeout = 4000)
@@ -230,15 +225,17 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
         DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
         defaultKeyedValues2D1.removeColumn((Comparable) float0);
         boolean boolean0 = defaultKeyedValues2D0.equals(defaultKeyedValues2D1);
+        defaultKeyedValues2D0.getColumnCount();
     }
 
     @Test(timeout = 4000)
-    public void test2427() throws Throwable {
+    public void test2327() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
-        Float float0 = new Float(0.0F);
+        Float float0 = new Float((-51.948048F));
         defaultKeyedValues2D0.setValue(float0, float0, float0);
         DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
-        defaultKeyedValues2D1.equals((Object) defaultKeyedValues2D0);
+        defaultKeyedValues2D1.removeColumn((Comparable) float0);
+        boolean boolean0 = defaultKeyedValues2D0.equals(defaultKeyedValues2D1);
     }
 
     @Test(timeout = 4000)
@@ -247,8 +244,6 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
         Float float0 = new Float(0.0F);
         defaultKeyedValues2D0.setValue(float0, float0, float0);
         DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
-        defaultKeyedValues2D1.addValue((Number) null, float0, float0);
-        boolean boolean0 = defaultKeyedValues2D1.equals(defaultKeyedValues2D0);
         defaultKeyedValues2D1.equals((Object) defaultKeyedValues2D0);
     }
 
@@ -260,19 +255,21 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
         DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
         defaultKeyedValues2D1.addValue((Number) null, float0, float0);
         boolean boolean0 = defaultKeyedValues2D1.equals(defaultKeyedValues2D0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2530() throws Throwable {
-        DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
-        Float float0 = new Float(0.0F);
-        defaultKeyedValues2D0.setValue(float0, float0, float0);
-        DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
         defaultKeyedValues2D1.equals((Object) defaultKeyedValues2D0);
     }
 
     @Test(timeout = 4000)
-    public void test2531() throws Throwable {
+    public void test2430() throws Throwable {
+        DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
+        Float float0 = new Float(0.0F);
+        defaultKeyedValues2D0.setValue(float0, float0, float0);
+        DefaultKeyedValues2D defaultKeyedValues2D1 = (DefaultKeyedValues2D) defaultKeyedValues2D0.clone();
+        defaultKeyedValues2D1.addValue((Number) null, float0, float0);
+        boolean boolean0 = defaultKeyedValues2D1.equals(defaultKeyedValues2D0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2532() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Float float0 = new Float(0.0F);
         defaultKeyedValues2D0.setValue(float0, float0, float0);
@@ -282,7 +279,7 @@ public class DefaultKeyedValues2D_ESTest extends DefaultKeyedValues2D_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2532() throws Throwable {
+    public void test2533() throws Throwable {
         DefaultKeyedValues2D defaultKeyedValues2D0 = new DefaultKeyedValues2D();
         Float float0 = new Float(0.0F);
         defaultKeyedValues2D0.setValue(float0, float0, float0);

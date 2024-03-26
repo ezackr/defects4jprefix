@@ -506,26 +506,31 @@ public class StringEscapeUtils_ESTest extends StringEscapeUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6565() throws Throwable {
+    public void test6465() throws Throwable {
+        StringEscapeUtils stringEscapeUtils0 = new StringEscapeUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test6566() throws Throwable {
         StringWriter stringWriter0 = new StringWriter();
         StringEscapeUtils.unescapeJavaScript((Writer) stringWriter0, (String) null);
         assertEquals("", stringWriter0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test6666() throws Throwable {
+    public void test6667() throws Throwable {
         String string0 = StringEscapeUtils.escapeJavaScript("Unable to parse unicode value: ");
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test6667() throws Throwable {
+    public void test6668() throws Throwable {
         String string0 = StringEscapeUtils.escapeJavaScript("Unable to parse unicode value: ");
         assertEquals("Unable to parse unicode value: ", string0);
     }
 
     @Test(timeout = 4000)
-    public void test6768() throws Throwable {
+    public void test6769() throws Throwable {
         // Undeclared exception!
         try {
             StringEscapeUtils.escapeJava((Writer) null, "8");
@@ -539,14 +544,14 @@ public class StringEscapeUtils_ESTest extends StringEscapeUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6869() throws Throwable {
+    public void test6870() throws Throwable {
         String string0 = "\\u0";
         String string1 = StringEscapeUtils.unescapeJavaScript(string0);
         assertEquals("", string1);
     }
 
     @Test(timeout = 4000)
-    public void test6870() throws Throwable {
+    public void test6871() throws Throwable {
         String string0 = "\\u0";
         String string1 = StringEscapeUtils.unescapeJavaScript(string0);
         assertNotNull(string1);

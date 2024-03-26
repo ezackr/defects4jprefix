@@ -554,14 +554,21 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4747() throws Throwable {
+    public void test4647() throws Throwable {
+        Frequency frequency0 = new Frequency();
+        Integer integer0 = new Integer(1);
+        frequency0.addValue((Comparable<?>) integer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4748() throws Throwable {
         Frequency frequency0 = new Frequency();
         long long0 = frequency0.getCumFreq(791L);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test4848() throws Throwable {
+    public void test4849() throws Throwable {
         Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         doReturn(1610612736, (-1), 1610612736, (-1), 1610612736).when(comparator0).compare(any(), any());
         Frequency frequency0 = new Frequency(comparator0);
@@ -571,7 +578,7 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4949() throws Throwable {
+    public void test4950() throws Throwable {
         Frequency frequency0 = new Frequency();
         Integer integer0 = new Integer(0);
         frequency0.addValue((Object) integer0);
@@ -580,7 +587,16 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5150() throws Throwable {
+    public void test5051() throws Throwable {
+        Frequency frequency0 = new Frequency();
+        Comparable<Object> comparable0 = (Comparable<Object>) mock(Comparable.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0).when(comparable0).compareTo(any());
+        frequency0.addValue((-399L));
+        frequency0.addValue(comparable0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5152() throws Throwable {
         Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         doReturn(1567, 1567, 1567, 1567, 0).when(comparator0).compare(any(), any());
         Frequency frequency0 = new Frequency(comparator0);
@@ -590,7 +606,7 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5251() throws Throwable {
+    public void test5253() throws Throwable {
         Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         Frequency frequency0 = new Frequency(comparator0);
         long long0 = frequency0.getCount((-1L));
@@ -598,14 +614,14 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5352() throws Throwable {
+    public void test5354() throws Throwable {
         Frequency frequency0 = new Frequency();
         long long0 = frequency0.getCount((int) 'w');
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test5453() throws Throwable {
+    public void test5455() throws Throwable {
         Frequency frequency0 = new Frequency();
         Integer integer0 = new Integer((-721));
         frequency0.addValue((-66));
@@ -615,21 +631,21 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5554() throws Throwable {
+    public void test5556() throws Throwable {
         Frequency frequency0 = new Frequency();
         long long0 = frequency0.getCumFreq('E');
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test5655() throws Throwable {
+    public void test5657() throws Throwable {
         Frequency frequency0 = new Frequency();
         long long0 = frequency0.getCount('~');
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test5756() throws Throwable {
+    public void test5758() throws Throwable {
         Frequency frequency0 = new Frequency();
         Integer integer0 = new Integer(1);
         frequency0.addValue((Object) integer0);
@@ -638,7 +654,13 @@ public class Frequency_ESTest extends Frequency_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5957() throws Throwable {
+    public void test5859() throws Throwable {
+        Frequency frequency0 = new Frequency((Comparator) null);
+        frequency0.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test5960() throws Throwable {
         Frequency frequency0 = new Frequency();
         frequency0.addValue((-399L));
         long long0 = frequency0.getCumFreq(0);

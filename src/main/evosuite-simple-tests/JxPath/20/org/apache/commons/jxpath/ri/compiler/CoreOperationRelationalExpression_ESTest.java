@@ -66,7 +66,18 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        Expression[] expressionArray0 = new Expression[4];
+        CoreOperationAnd coreOperationAnd0 = new CoreOperationAnd(expressionArray0);
+        expressionArray0[0] = (Expression) coreOperationAnd0;
+        CoreOperationMultiply coreOperationMultiply0 = new CoreOperationMultiply(expressionArray0[0], coreOperationAnd0);
+        CoreOperationGreaterThan coreOperationGreaterThan0 = new CoreOperationGreaterThan(coreOperationAnd0, coreOperationMultiply0);
+        // Undeclared exception!
+        coreOperationGreaterThan0.computeValue((EvalContext) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         JXPathContextReferenceImpl jXPathContextReferenceImpl0 = (JXPathContextReferenceImpl) JXPathContext.newContext((JXPathContext) null, (Object) ".1Ak)=pVPJ;z|U+dod");
         BasicVariables basicVariables0 = new BasicVariables();
         Expression[] expressionArray0 = new Expression[3];
@@ -94,7 +105,7 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual((Expression) null, (Expression) null);
         QName qName0 = new QName("W");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
@@ -112,7 +123,7 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Expression[] expressionArray0 = new Expression[0];
         CoreOperationAdd coreOperationAdd0 = new CoreOperationAdd(expressionArray0);
         CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual(coreOperationAdd0, coreOperationAdd0);
@@ -131,7 +142,7 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Constant constant0 = new Constant("org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression");
         CoreOperationMod coreOperationMod0 = new CoreOperationMod(constant0, constant0);
         CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(coreOperationMod0, coreOperationMod0);
@@ -149,7 +160,7 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         QName qName0 = new QName("org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression");
         VariableReference variableReference0 = new VariableReference(qName0);
         CoreOperationLessThan coreOperationLessThan0 = new CoreOperationLessThan(variableReference0, variableReference0);
@@ -162,14 +173,14 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         JXPathContext jXPathContext0 = JXPathContext.newContext((JXPathContext) null, (Object) ".1Ak)=pVPJ;z|U+dod");
         Object object0 = jXPathContext0.selectSingleNode("/>g");
         assertEquals(false, object0);
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Expression[] expressionArray0 = new Expression[0];
         CoreOperationAdd coreOperationAdd0 = new CoreOperationAdd(expressionArray0);
         CoreOperationLessThanOrEqual coreOperationLessThanOrEqual0 = new CoreOperationLessThanOrEqual(coreOperationAdd0, coreOperationAdd0);
@@ -178,7 +189,7 @@ public class CoreOperationRelationalExpression_ESTest extends CoreOperationRelat
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Expression[] expressionArray0 = new Expression[0];
         CoreOperationAnd coreOperationAnd0 = new CoreOperationAnd(expressionArray0);
         CoreOperationDivide coreOperationDivide0 = new CoreOperationDivide(coreOperationAnd0, coreOperationAnd0);

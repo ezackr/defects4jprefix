@@ -133,20 +133,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1618() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        byteArray0[0] = (byte) 3;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1619() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        byteArray0[0] = (byte) 3;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test1720() throws Throwable {
         byte[] byteArray0 = new byte[9];
         Base64.encodeBase64(byteArray0, false, true, 1509);
@@ -179,14 +165,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test2225() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.ZERO;
-        byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
-        Base64 base64_0 = new Base64(0, byteArray0, false);
-        boolean boolean0 = base64_0.isUrlSafe();
-    }
-
-    @Test(timeout = 4000)
-    public void test2226() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
         Base64 base64_0 = new Base64(0, byteArray0, false);
@@ -246,20 +224,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2935() throws Throwable {
-        byte[] byteArray0 = new byte[8];
-        byteArray0[6] = (byte) 9;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2936() throws Throwable {
-        byte[] byteArray0 = new byte[8];
-        byteArray0[6] = (byte) 9;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test3037() throws Throwable {
         byte[] byteArray0 = Base64.encodeBase64((byte[]) null, true, true, 0);
     }
@@ -293,14 +257,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test3542() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        byteArray0[0] = (byte) (-1);
-        Base64 base64_0 = new Base64(1, byteArray0);
-        byte[] byteArray1 = base64_0.encode(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3543() throws Throwable {
         byte[] byteArray0 = new byte[3];
         byteArray0[0] = (byte) (-1);
         Base64 base64_0 = new Base64(1, byteArray0);

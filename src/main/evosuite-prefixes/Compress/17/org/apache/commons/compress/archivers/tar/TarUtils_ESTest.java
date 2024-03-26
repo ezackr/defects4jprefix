@@ -65,13 +65,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
-        int int0 = TarUtils.formatNameBytes("AEp]<", byteArray0, (int) (byte) 0, (int) (byte) 0, zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
     public void test078() throws Throwable {
         byte[] byteArray0 = new byte[3];
         int int0 = TarUtils.formatNameBytes("IBM850", byteArray0, (int) (byte) 0, 0);
@@ -337,13 +330,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test5152() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
-        int int0 = TarUtils.formatNameBytes("dv@VnX%", byteArray0, 0, (-668), zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5153() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
         int int0 = TarUtils.formatNameBytes("dv@VnX%", byteArray0, 0, (-668), zipEncoding0);

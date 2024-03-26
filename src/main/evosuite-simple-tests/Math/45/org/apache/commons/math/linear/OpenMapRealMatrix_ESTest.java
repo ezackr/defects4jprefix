@@ -110,7 +110,14 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test055() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1359, 5627);
+        OpenMapRealMatrix openMapRealMatrix1 = new OpenMapRealMatrix(openMapRealMatrix0);
+        openMapRealMatrix1.createMatrix(1359, 156);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         int int0 = 1479;
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1479, 1479);
         openMapRealMatrix0.copy();
@@ -127,7 +134,20 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test077() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(4112, 4112);
+        OpenMapRealMatrix openMapRealMatrix1 = new OpenMapRealMatrix(openMapRealMatrix0);
+        openMapRealMatrix1.subtract(openMapRealMatrix0);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(51, 51);
+        openMapRealMatrix0.addToEntry(0, 0, 3878.83901075);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1, 1);
         openMapRealMatrix0.multiplyEntry(0, 0, 0.0);
         OpenMapRealMatrix openMapRealMatrix1 = null;
@@ -143,7 +163,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         OpenMapRealMatrix openMapRealMatrix0 = null;
         OpenMapRealMatrix openMapRealMatrix1 = null;
         try {
@@ -158,7 +178,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         int int0 = (-744);
         OpenMapRealMatrix openMapRealMatrix0 = null;
         try {
@@ -173,7 +193,16 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test139() throws Throwable {
+    public void test1212() throws Throwable {
+        int int0 = 218;
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(218, 218);
+        int int1 = 0;
+        // Undeclared exception!
+        openMapRealMatrix0.scalarAdd(218);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         OpenMapRealMatrix openMapRealMatrix0 = null;
         try {
             openMapRealMatrix0 = new OpenMapRealMatrix(0, 0);
@@ -187,7 +216,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1410() throws Throwable {
+    public void test1414() throws Throwable {
         int int0 = (-385);
         OpenMapRealMatrix openMapRealMatrix0 = null;
         try {
@@ -202,7 +231,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1511() throws Throwable {
+    public void test1515() throws Throwable {
         int int0 = 1968;
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1968, 1968);
         openMapRealMatrix0.getColumnDimension();
@@ -223,7 +252,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1612() throws Throwable {
+    public void test1616() throws Throwable {
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1037, 1037);
         openMapRealMatrix0.getTrace();
         OpenMapRealMatrix openMapRealMatrix1 = new OpenMapRealMatrix(openMapRealMatrix0);
@@ -243,7 +272,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1713() throws Throwable {
+    public void test1717() throws Throwable {
         int int0 = 665;
         OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(665, 665);
         OpenMapRealMatrix openMapRealMatrix1 = openMapRealMatrix0.createMatrix(665, 665);
@@ -260,7 +289,7 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1814() throws Throwable {
+    public void test1818() throws Throwable {
         int int0 = (-3661);
         OpenMapRealMatrix openMapRealMatrix0 = null;
         try {
@@ -272,5 +301,22 @@ public class OpenMapRealMatrix_ESTest extends OpenMapRealMatrix_ESTest_scaffoldi
             //
             verifyException("org.apache.commons.math.linear.AbstractRealMatrix", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1117, 1117);
+        OpenMapRealMatrix openMapRealMatrix1 = new OpenMapRealMatrix(openMapRealMatrix0);
+        // Undeclared exception!
+        openMapRealMatrix1.transpose();
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        int int0 = 1270;
+        OpenMapRealMatrix openMapRealMatrix0 = new OpenMapRealMatrix(1270, 1270);
+        OpenMapRealMatrix openMapRealMatrix1 = new OpenMapRealMatrix(1270, 1270);
+        // Undeclared exception!
+        openMapRealMatrix0.add(openMapRealMatrix1);
     }
 }

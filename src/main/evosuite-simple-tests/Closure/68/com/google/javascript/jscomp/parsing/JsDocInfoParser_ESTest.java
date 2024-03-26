@@ -70,7 +70,29 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test044() throws Throwable {
+        LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
+        Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
+        Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, true);
+        ErrorCollector errorCollector0 = new ErrorCollector();
+        JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("\n");
+        JsDocInfoParser jsDocInfoParser0 = new JsDocInfoParser(jsDocTokenStream0, (Comment) null, "\n", config0, errorCollector0);
+        jsDocInfoParser0.setFileLevelJsDocBuilder((Node.FileLevelJsDocBuilder) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
+        Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
+        Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, true);
+        ErrorCollector errorCollector0 = new ErrorCollector();
+        JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("\n");
+        JsDocInfoParser jsDocInfoParser0 = new JsDocInfoParser(jsDocTokenStream0, (Comment) null, "\n", config0, errorCollector0);
+        jsDocInfoParser0.setFileOverviewJSDocInfo((JSDocInfo) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5_STRICT;
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, false, config_LanguageMode0, false);
@@ -82,25 +104,25 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;");
         assertEquals(301, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test078() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test079() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;");
         assertTrue(node0.hasOneChild());
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test0810() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(treeSet0, treeSet0, false, config_LanguageMode0, false);
@@ -112,7 +134,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test0911() throws Throwable {
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, true);
@@ -126,7 +148,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test1012() throws Throwable {
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -146,7 +168,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1113() throws Throwable {
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, false, config_LanguageMode0, false);
@@ -158,7 +180,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
+    public void test1214() throws Throwable {
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, false, config_LanguageMode0, false);
@@ -171,7 +193,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1315() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, false, config_LanguageMode0, false);
@@ -191,7 +213,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1416() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(treeSet0, treeSet0, false, config_LanguageMode0, false);
@@ -211,7 +233,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1517() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5_STRICT;
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, true);
@@ -231,7 +253,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1618() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5_STRICT;
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -251,7 +273,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1719() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT3;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -263,7 +285,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1820() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, true);
@@ -283,7 +305,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1921() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -303,7 +325,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2022() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -323,7 +345,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2123() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5_STRICT;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -343,7 +365,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2224() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT3;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -363,7 +385,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2325() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -383,7 +405,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2426() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT3;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -402,7 +424,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2527() throws Throwable {
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, true);
@@ -422,7 +444,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2628() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT3;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -442,7 +464,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2729() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(linkedHashSet0, linkedHashSet0, true, config_LanguageMode0, false);
@@ -454,7 +476,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2828() throws Throwable {
+    public void test2830() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT5;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -474,7 +496,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2929() throws Throwable {
+    public void test2931() throws Throwable {
         TreeSet<String> treeSet0 = new TreeSet<String>();
         Config.LanguageMode config_LanguageMode0 = Config.LanguageMode.ECMASCRIPT3;
         Config config0 = new Config(treeSet0, treeSet0, true, config_LanguageMode0, true);
@@ -494,265 +516,265 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3030() throws Throwable {
+    public void test3032() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{/E:62f");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
+    public void test3133() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("2c.<f");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3234() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("2j.<");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3235() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("2j.<");
         assertEquals(2, node0.getCharno());
     }
 
     @Test(timeout = 4000)
-    public void test3334() throws Throwable {
+    public void test3336() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?,R");
         assertEquals(304, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test3335() throws Throwable {
+    public void test3337() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?,R");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3436() throws Throwable {
+    public void test3438() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?}q");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3437() throws Throwable {
+    public void test3439() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?}q");
         assertEquals(304, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test3538() throws Throwable {
+    public void test3540() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?)n|[%");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3539() throws Throwable {
+    public void test3541() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?)n|[%");
         assertEquals(304, node0.getType());
-    }
-
-    @Test(timeout = 4000)
-    public void test3640() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("?.\n");
-        assertEquals(304, node0.getType());
-    }
-
-    @Test(timeout = 4000)
-    public void test3641() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("?.\n");
-        assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
     public void test3642() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?.\n");
+        assertEquals(304, node0.getType());
+    }
+
+    @Test(timeout = 4000)
+    public void test3643() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("?.\n");
+        assertNotNull(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3644() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("?.\n");
         assertEquals(2, node0.getCharno());
     }
 
     @Test(timeout = 4000)
-    public void test3743() throws Throwable {
+    public void test3745() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("!");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3844() throws Throwable {
+    public void test3846() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("0q?-");
         assertEquals(304, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test3845() throws Throwable {
+    public void test3847() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("0q?-");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3946() throws Throwable {
+    public void test3948() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("ob;stJh0CXN.!D$5*O[");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3947() throws Throwable {
+    public void test3949() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("ob;stJh0CXN.!D$5*O[");
         assertEquals(306, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test4048() throws Throwable {
+    public void test4050() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("*E21\"T\"p&tclv%");
         assertEquals(302, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test4049() throws Throwable {
+    public void test4051() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("*E21\"T\"p&tclv%");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4150() throws Throwable {
+    public void test4152() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("function");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4251() throws Throwable {
+    public void test4253() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("null");
         assertEquals(40, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test4252() throws Throwable {
+    public void test4254() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("null");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4253() throws Throwable {
+    public void test4255() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("null");
         assertEquals(0, node0.getSourcePosition());
     }
 
     @Test(timeout = 4000)
-    public void test4354() throws Throwable {
+    public void test4356() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("undefined");
         assertEquals(40, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test4355() throws Throwable {
+    public void test4357() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("undefined");
         assertEquals(0, node0.getCharno());
     }
 
     @Test(timeout = 4000)
-    public void test4356() throws Throwable {
+    public void test4358() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("undefined");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4457() throws Throwable {
+    public void test4459() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("M\n");
         assertEquals(1, node0.getSourcePosition());
     }
 
     @Test(timeout = 4000)
-    public void test4458() throws Throwable {
+    public void test4460() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("M\n");
         assertEquals(0, node0.getChildCount());
     }
 
     @Test(timeout = 4000)
-    public void test4459() throws Throwable {
+    public void test4461() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("M\n");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4560() throws Throwable {
+    public void test4562() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("_\"|7eK,[");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4661() throws Throwable {
+    public void test4663() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("#WvKa|UsJ_|4Ip9]#1");
         assertEquals(301, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test4662() throws Throwable {
+    public void test4664() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("#WvKa|UsJ_|4Ip9]#1");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4663() throws Throwable {
+    public void test4665() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("#WvKa|UsJ_|4Ip9]#1");
         assertEquals(3, node0.getChildCount());
     }
 
     @Test(timeout = 4000)
-    public void test4764() throws Throwable {
+    public void test4766() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("(6Uk&6dj");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4865() throws Throwable {
+    public void test4867() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("[Ucf_BWCd4,\"s");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4966() throws Throwable {
+    public void test4968() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("[wctc47B60]Q}$");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test4967() throws Throwable {
+    public void test4969() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("[wctc47B60]Q}$");
         assertEquals(79, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test4968() throws Throwable {
+    public void test4970() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("[wctc47B60]Q}$");
         assertTrue(node0.hasChildren());
     }
 
     @Test(timeout = 4000)
-    public void test5069() throws Throwable {
+    public void test5071() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{A\",!fv@es-A +J");
         assertNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test5170() throws Throwable {
+    public void test5172() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{ge}");
         assertEquals(81, node0.getType());
     }
 
     @Test(timeout = 4000)
-    public void test5171() throws Throwable {
+    public void test5173() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{ge}");
         assertNotNull(node0);
     }
 
     @Test(timeout = 4000)
-    public void test5172() throws Throwable {
+    public void test5174() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{ge}");
         assertTrue(node0.hasOneChild());
     }
 
     @Test(timeout = 4000)
-    public void test5273() throws Throwable {
+    public void test5275() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{proxy:");
         assertNull(node0);
     }

@@ -230,93 +230,104 @@ public class Matchers_ESTest extends Matchers_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3030() throws Throwable {
+        RoundingMode roundingMode0 = RoundingMode.HALF_EVEN;
+        Matchers.same(roundingMode0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
         String string0 = Matchers.matches("");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3232() throws Throwable {
         float float0 = Matchers.eq(0.0F);
         assertEquals(0.0F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3333() throws Throwable {
         IsAnything<Boolean> isAnything0 = new IsAnything<Boolean>();
         Object object0 = Matchers.eq((Object) isAnything0);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3434() throws Throwable {
         long long0 = Matchers.anyLong();
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3535() throws Throwable {
         double double0 = Matchers.eq((-1.0));
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3636() throws Throwable {
         short short0 = Matchers.anyShort();
         assertEquals((short) 0, short0);
     }
 
     @Test(timeout = 4000)
-    public void test3736() throws Throwable {
+    public void test3737() throws Throwable {
         boolean boolean0 = Matchers.anyBoolean();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3837() throws Throwable {
+    public void test3838() throws Throwable {
         float float0 = Matchers.anyFloat();
         assertEquals(0.0F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test3938() throws Throwable {
+    public void test3939() throws Throwable {
         double double0 = Matchers.anyDouble();
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test4039() throws Throwable {
+    public void test4040() throws Throwable {
         long long0 = Matchers.eq((long) 0);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test4140() throws Throwable {
+    public void test4141() throws Throwable {
         Set set0 = Matchers.anySet();
         assertEquals(0, set0.size());
     }
 
     @Test(timeout = 4000)
-    public void test4241() throws Throwable {
+    public void test4242() throws Throwable {
         Class<Double> class0 = Double.class;
         List<Double> list0 = Matchers.anyListOf(class0);
         assertTrue(list0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test4342() throws Throwable {
+    public void test4343() throws Throwable {
         List list0 = Matchers.anyList();
         assertTrue(list0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test4443() throws Throwable {
+    public void test4444() throws Throwable {
         Byte byte0 = Matchers.any();
         assertNull(byte0);
     }
 
     @Test(timeout = 4000)
-    public void test4644() throws Throwable {
+    public void test4545() throws Throwable {
+        Matchers matchers0 = new Matchers();
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
         boolean boolean0 = Matchers.eq(false);
         assertFalse(boolean0);
     }

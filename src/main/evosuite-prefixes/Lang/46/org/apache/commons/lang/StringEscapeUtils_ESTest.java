@@ -303,11 +303,6 @@ public class StringEscapeUtils_ESTest extends StringEscapeUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4849() throws Throwable {
-        String string0 = StringEscapeUtils.unescapeHtml(";tI{s)H=H`$W");
-    }
-
-    @Test(timeout = 4000)
     public void test4950() throws Throwable {
         StringWriter stringWriter0 = new StringWriter(265);
         StringEscapeUtils.escapeHtml((Writer) stringWriter0, (String) null);
@@ -390,15 +385,15 @@ public class StringEscapeUtils_ESTest extends StringEscapeUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6565() throws Throwable {
-        StringWriter stringWriter0 = new StringWriter();
-        StringEscapeUtils.unescapeJavaScript((Writer) stringWriter0, (String) null);
-        stringWriter0.toString();
+    public void test6465() throws Throwable {
+        StringEscapeUtils stringEscapeUtils0 = new StringEscapeUtils();
     }
 
     @Test(timeout = 4000)
-    public void test6666() throws Throwable {
-        String string0 = StringEscapeUtils.escapeJavaScript("Unable to parse unicode value: ");
+    public void test6566() throws Throwable {
+        StringWriter stringWriter0 = new StringWriter();
+        StringEscapeUtils.unescapeJavaScript((Writer) stringWriter0, (String) null);
+        stringWriter0.toString();
     }
 
     @Test(timeout = 4000)
@@ -407,14 +402,8 @@ public class StringEscapeUtils_ESTest extends StringEscapeUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6768() throws Throwable {
+    public void test6769() throws Throwable {
         StringEscapeUtils.escapeJava((Writer) null, "8");
-    }
-
-    @Test(timeout = 4000)
-    public void test6869() throws Throwable {
-        String string0 = "\\u0";
-        String string1 = StringEscapeUtils.unescapeJavaScript(string0);
     }
 
     @Test(timeout = 4000)

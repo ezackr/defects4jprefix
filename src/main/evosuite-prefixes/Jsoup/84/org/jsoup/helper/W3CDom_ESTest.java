@@ -36,7 +36,13 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test011() throws Throwable {
+        W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder((Document) null);
+        w3CDom_W3CBuilder0.tail((Node) null, 108);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         DataNode dataNode0 = new DataNode(">-^m9ph'l[e]7");
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = Parser.parse(">-^m9ph'l[e]7", "async");
@@ -46,14 +52,14 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = Parser.parseBodyFragment("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>", ")VwiHR&N=");
         Document document1 = w3CDom0.fromJsoup(document0);
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = Parser.parseBodyFragmentRelaxed("xmlns", "xmlns");
         w3CDom0.factory = null;
@@ -61,27 +67,27 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = new org.jsoup.nodes.Document("b.");
         w3CDom0.fromJsoup(document0);
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         w3CDom0.fromJsoup((org.jsoup.nodes.Document) null);
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = org.jsoup.nodes.Document.createShell("xmlns");
         w3CDom0.convert(document0, (Document) null);
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = org.jsoup.nodes.Document.createShell("");
         Document document1 = w3CDom0.fromJsoup(document0);
@@ -89,7 +95,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = new org.jsoup.nodes.Document("22hE4)6o");
         org.jsoup.nodes.Document document1 = Parser.parseBodyFragment("22hE4)6o", "22hE4)6o");
@@ -98,7 +104,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = Parser.parseBodyFragment("2%<WTBa", "2%<WTBa");
         document0.prependElement("xmlns:");
@@ -106,7 +112,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder((Document) null);
         org.jsoup.nodes.Document document0 = org.jsoup.nodes.Document.createShell("7$ZhU<Fos3D;");
         Tag tag0 = document0.tag();
@@ -118,7 +124,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         org.jsoup.nodes.Document document0 = org.jsoup.nodes.Document.createShell("5_");
         W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder((Document) null);
         document0.attr("xmlns", "<html>\n <head></head>\n <body></body>\n</html>");
@@ -126,7 +132,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = Parser.parseBodyFragmentRelaxed("~T5)[=2E+u!pZD+he", "~T5)[=2E+u!pZD+he");
         Charset charset0 = Charset.defaultCharset();
@@ -135,7 +141,13 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1414() throws Throwable {
+        W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder((Document) null);
+        w3CDom_W3CBuilder0.head((Node) null, (-6));
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         org.jsoup.nodes.Document document0 = org.jsoup.nodes.Document.createShell("[^-a-zA-Z0-9_:.]");
         Document document1 = w3CDom0.fromJsoup(document0);

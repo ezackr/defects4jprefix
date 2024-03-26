@@ -17,45 +17,50 @@ import org.junit.runner.RunWith;
 public class SoundexUtils_ESTest extends SoundexUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        SoundexUtils soundexUtils0 = new SoundexUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         int int0 = SoundexUtils.difference(doubleMetaphone0, "_}OLcxW09Vw<b:K~`|", "");
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test22() throws Throwable {
         String string0 = SoundexUtils.clean((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         String string0 = SoundexUtils.clean("");
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         String string0 = SoundexUtils.clean(")Rl|!:5");
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         String string0 = SoundexUtils.clean("H");
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         int int0 = SoundexUtils.difference(doubleMetaphone0, "", (String) null);
     }
 
     @Test(timeout = 4000)
-    public void test76() throws Throwable {
+    public void test77() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         int int0 = SoundexUtils.difference(doubleMetaphone0, "ILLO", "pS{q6zGQ?+REZy+?Js");
     }
 
     @Test(timeout = 4000)
-    public void test87() throws Throwable {
+    public void test88() throws Throwable {
         int int0 = SoundexUtils.differenceEncoded("L", "L");
     }
 }

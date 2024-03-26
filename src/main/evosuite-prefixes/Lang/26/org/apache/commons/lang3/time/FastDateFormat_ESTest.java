@@ -157,24 +157,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0118() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0119() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0120() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0121() throws Throwable {
         Locale locale0 = Locale.forLanguageTag("6");
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
@@ -238,34 +220,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0130() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0131() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-        fastDateFormat0.init();
-    }
-
-    @Test(timeout = 4000)
-    public void test0132() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-        fastDateFormat0.init();
-    }
-
-    @Test(timeout = 4000)
-    public void test0133() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("6");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
-        fastDateFormat0.init();
-    }
-
-    @Test(timeout = 4000)
-    public void test0134() throws Throwable {
         Locale locale0 = Locale.forLanguageTag("6");
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, locale0);
         fastDateFormat0.init();
@@ -349,21 +304,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0245() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0246() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0247() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
     public void test0248() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
         fastDateFormat0.getMaxLengthEstimate();
@@ -382,33 +322,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0251() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
     public void test0252() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0253() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0254() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0255() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
         int[] intArray0 = new int[7];
         String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
@@ -436,34 +350,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         int[] intArray0 = new int[7];
         String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
         fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test0259() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0260() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0261() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0262() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        int[] intArray0 = new int[7];
-        String string0 = fastDateFormat0.parseToken("Urk}#", intArray0);
     }
 
     @Test(timeout = 4000)
@@ -509,24 +395,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0370() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0371() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0372() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0373() throws Throwable {
         Locale locale0 = Locale.forLanguageTag("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
     }
@@ -595,34 +463,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0383() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test0384() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test0385() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test0386() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test0387() throws Throwable {
         Locale locale0 = Locale.forLanguageTag("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
         boolean boolean0 = fastDateFormat0.getTimeZoneOverridesCalendar();
@@ -698,24 +539,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
         boolean boolean0 = fastDateFormat0.getTimeZoneOverridesCalendar();
         fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test0397() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test0498() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test0499() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
     }
 
     @Test(timeout = 4000)
@@ -830,73 +653,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04115() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = FastDateFormat.getTimeZoneDisplay(timeZone0, false, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test05116() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test05117() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test05118() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test05119() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test05120() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test05121() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test05122() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-    }
-
-    @Test(timeout = 4000)
     public void test05123() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test05124() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test05125() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test05126() throws Throwable {
         Locale locale0 = Locale.forLanguageTag("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, (TimeZone) null, locale0);
     }
@@ -965,23 +722,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05136() throws Throwable {
-        Locale locale0 = Locale.forLanguageTag("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06137() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test06138() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
     public void test06139() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.ITALY;
@@ -1031,27 +771,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test06146() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06147() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06148() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test06149() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.ITALY;
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
@@ -1138,38 +857,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06160() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test06161() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test06162() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test06163() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test06164() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.ITALY;
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
@@ -1267,14 +955,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06175() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(0, timeZone0, locale0);
-        int int0 = fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
     public void test07176() throws Throwable {
         Locale locale0 = Locale.US;
         locale0.getVariant();
@@ -1317,24 +997,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test07183() throws Throwable {
-        Locale locale0 = Locale.US;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07184() throws Throwable {
-        Locale locale0 = Locale.US;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07185() throws Throwable {
-        Locale locale0 = Locale.US;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07186() throws Throwable {
         Locale locale0 = Locale.US;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null, locale0);
     }
@@ -1403,12 +1065,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07196() throws Throwable {
-        Locale locale0 = Locale.US;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test08197() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         timeZone0.getID();
@@ -1469,27 +1125,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test08206() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("6/1/10", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08207() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("6/1/10", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08208() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("6/1/10", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test08209() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("6/1/10", timeZone0, locale0);
@@ -1576,29 +1211,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08220() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("6/1/10", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test09221() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09222() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09223() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test09224() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null);
     }
 
@@ -1618,11 +1231,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test09227() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null);
         fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test09228() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (TimeZone) null);
     }
 
     @Test(timeout = 4000)
@@ -1691,30 +1299,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test10238() throws Throwable {
-        DateFormatSymbols dateFormatSymbols0 = new DateFormatSymbols();
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("@,0", dateFormatSymbols0);
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("@,0", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10239() throws Throwable {
-        DateFormatSymbols dateFormatSymbols0 = new DateFormatSymbols();
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("@,0", dateFormatSymbols0);
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("@,0", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10240() throws Throwable {
-        DateFormatSymbols dateFormatSymbols0 = new DateFormatSymbols();
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("@,0", dateFormatSymbols0);
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("@,0", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10241() throws Throwable {
         DateFormatSymbols dateFormatSymbols0 = new DateFormatSymbols();
         MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("@,0", dateFormatSymbols0);
         TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
@@ -1794,30 +1378,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10250() throws Throwable {
-        DateFormatSymbols dateFormatSymbols0 = new DateFormatSymbols();
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("@,0", dateFormatSymbols0);
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("@,0", timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test11251() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test11252() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test11253() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test11254() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) null);
     }
 
@@ -1840,41 +1401,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11258() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test12259() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test12260() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-    }
-
-    @Test(timeout = 4000)
     public void test12261() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12262() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12263() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12264() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
     }
@@ -1905,12 +1432,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
         fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test12269() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
     }
 
     @Test(timeout = 4000)
@@ -1948,33 +1469,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test12274() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12275() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12276() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12277() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
         MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
@@ -2073,44 +1567,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12287() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12288() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test12289() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Date) mockDate0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13290() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test13291() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-    }
-
-    @Test(timeout = 4000)
     public void test13292() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.GERMAN;
@@ -2160,27 +1616,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test13299() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13300() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13301() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13302() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.GERMAN;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
@@ -2267,13 +1702,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13313() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test13314() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.GERMAN;
@@ -2283,33 +1711,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test13315() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-        MockDate mockDate0 = new MockDate((-2848), 1, 284, (-2305), (-2305), 1916);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13316() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-        MockDate mockDate0 = new MockDate((-2848), 1, 284, (-2305), (-2305), 1916);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13317() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-        MockDate mockDate0 = new MockDate((-2848), 1, 284, (-2305), (-2305), 1916);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13318() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.GERMAN;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
@@ -2428,40 +1829,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13330() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-        MockDate mockDate0 = new MockDate((-2848), 1, 284, (-2305), (-2305), 1916);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13331() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.GERMAN;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0, locale0);
-        MockDate mockDate0 = new MockDate((-2848), 1, 284, (-2305), (-2305), 1916);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
     public void test14332() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test14333() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test14334() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test14335() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
     }
 
@@ -2481,11 +1849,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test14338() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
         fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test14339() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
     }
 
     @Test(timeout = 4000)
@@ -2623,33 +1986,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14356() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("");
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0);
-        String string0 = fastDateFormat0.format(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14357() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("");
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0);
-        String string0 = fastDateFormat0.format(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14358() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("");
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0);
-        String string0 = fastDateFormat0.format(calendar0);
-    }
-
-    @Test(timeout = 4000)
     public void test14359() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
         MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("");
@@ -2760,67 +2096,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14370() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("");
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0);
-        String string0 = fastDateFormat0.format(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test14371() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("");
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0);
-        String string0 = fastDateFormat0.format(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15372() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test15373() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test15374() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test15375() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test15376() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test15377() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test15378() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test15379() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
-    }
-
-    @Test(timeout = 4000)
     public void test15380() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", (Locale) null);
         int[] intArray0 = new int[5];
@@ -2829,21 +2104,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test16381() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test16382() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test16383() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test16384() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(1);
     }
 
@@ -2863,11 +2123,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test16387() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(1);
         fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test16388() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(1);
     }
 
     @Test(timeout = 4000)
@@ -2962,27 +2217,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test17403() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3, "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test17404() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3, "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test17405() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3, "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test17406() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3, "");
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
         FastDateFormat fastDateFormat0 = new FastDateFormat("", simpleTimeZone0, locale0);
@@ -3101,13 +2335,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17421() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3, "");
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test17422() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3, "");
         Locale locale0 = Locale.TRADITIONAL_CHINESE;
@@ -3154,17 +2381,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test18429() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(3673, "");
         FastDateFormat.getTimeZoneDisplay(simpleTimeZone0, true, 3673, (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test19430() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test19431() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
     }
 
     @Test(timeout = 4000)
@@ -3298,21 +2514,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test27455() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test27456() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test27457() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
     public void test27458() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         fastDateFormat0.getPattern();
@@ -3328,11 +2529,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test27460() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test27461() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
     }
 
     @Test(timeout = 4000)
@@ -3384,24 +2580,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test28470() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("9]Y~%Db~VyH", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test28471() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("9]Y~%Db~VyH", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test28472() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("9]Y~%Db~VyH", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test28473() throws Throwable {
         Locale locale0 = Locale.KOREAN;
         FastDateFormat fastDateFormat0 = new FastDateFormat("9]Y~%Db~VyH", (TimeZone) null, locale0);
     }
@@ -3470,12 +2648,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test28483() throws Throwable {
-        Locale locale0 = Locale.KOREAN;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("9]Y~%Db~VyH", (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test28484() throws Throwable {
         Locale locale0 = Locale.KOREAN;
         FastDateFormat fastDateFormat0 = new FastDateFormat("9]Y~%Db~VyH", (TimeZone) null, locale0);
@@ -3496,21 +2668,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test29487() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test29488() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test29489() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(1);
-    }
-
-    @Test(timeout = 4000)
     public void test29490() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(1);
         fastDateFormat0.getTimeZoneOverridesCalendar();
@@ -3526,11 +2683,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test29492() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(1);
         fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test29493() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getTimeInstance(1);
     }
 
     @Test(timeout = 4000)
@@ -3589,21 +2741,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test30501() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test30502() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test30503() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test30504() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         fastDateFormat0.getPattern();
@@ -3619,11 +2756,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     public void test30506() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test30507() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
     }
 
     @Test(timeout = 4000)
@@ -3693,27 +2825,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test31518() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test31519() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test31520() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test31521() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
         Locale locale0 = Locale.ITALY;
         FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
@@ -3800,13 +2911,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test31532() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
-        Locale locale0 = Locale.ITALY;
-        FastDateFormat fastDateFormat0 = new FastDateFormat("", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test31533() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
         Locale locale0 = Locale.ITALY;
@@ -3815,68 +2919,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test32534() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test32535() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test32536() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test32537() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
-    public void test32538() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test32539() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test32540() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test32541() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-    }
-
-    @Test(timeout = 4000)
     public void test32542() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test32543() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test32544() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test32545() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("");
         fastDateFormat0.hashCode();
     }
@@ -3903,68 +2946,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test33549() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33550() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33551() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33552() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test33553() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test33554() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test33555() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test33556() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-    }
-
-    @Test(timeout = 4000)
     public void test33557() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test33558() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test33559() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test33560() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0);
         fastDateFormat0.hashCode();
     }
@@ -3996,21 +2978,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test34565() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test34566() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test34567() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
     public void test34568() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
         fastDateFormat0.getMaxLengthEstimate();
@@ -4029,30 +2996,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test34571() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
     public void test34572() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test34573() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test34574() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test34575() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
         boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
     }
@@ -4076,55 +3020,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
         boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
         fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test34579() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35580() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35581() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35582() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35583() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35584() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test35585() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test35586() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test35587() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
     }
 
     @Test(timeout = 4000)
@@ -4234,22 +3129,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test35600() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35601() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35602() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
         MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
         char[] charArray0 = new char[4];
@@ -4396,55 +3275,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test35617() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35618() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-    }
-
-    @Test(timeout = 4000)
     public void test35619() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35620() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35621() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35622() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
         MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
         char[] charArray0 = new char[4];
@@ -4696,67 +3527,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test35645() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35646() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35647() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35648() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test35649() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 1, (-2177), 0, 0, 54);
-        char[] charArray0 = new char[4];
-        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
-        StringBuffer stringBuffer0 = new StringBuffer(charBuffer0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Calendar) mockGregorianCalendar0, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36650() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test36651() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
     public void test36652() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
@@ -4890,14 +3660,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36668() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test36669() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
@@ -4977,26 +3739,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36677() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test36678() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-    }
-
-    @Test(timeout = 4000)
-    public void test36679() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
         Locale locale0 = Locale.CANADA_FRENCH;
@@ -5970,38 +4713,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36744() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36745() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
     public void test36746() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
@@ -6075,74 +4786,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test36750() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-    }
-
-    @Test(timeout = 4000)
-    public void test36751() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-    }
-
-    @Test(timeout = 4000)
-    public void test36752() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-    }
-
-    @Test(timeout = 4000)
-    public void test36753() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-    }
-
-    @Test(timeout = 4000)
-    public void test36754() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
         Locale locale0 = Locale.CANADA_FRENCH;
@@ -6768,168 +5411,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test36787() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36788() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36789() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36790() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36791() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36792() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36793() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36794() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36795() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-    }
-
-    @Test(timeout = 4000)
-    public void test36796() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
         Locale locale0 = Locale.CANADA_FRENCH;
@@ -7763,310 +6244,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36836() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36837() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36838() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36839() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36840() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36841() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36842() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36843() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36844() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36845() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36846() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36847() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
     public void test36848() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36849() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36850() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test36851() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         TimeZone.setDefault(timeZone0);
         Locale locale0 = Locale.CANADA_FRENCH;
@@ -8307,27 +6485,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36862() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        TimeZone.setDefault(timeZone0);
-        Locale locale0 = Locale.CANADA_FRENCH;
-        String string0 = timeZone0.getDisplayName(false, 0, locale0);
-        String string1 = timeZone0.getDisplayName(false, 0, locale0);
-        Long long0 = new Long(1L);
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        DecimalFormat decimalFormat0 = (DecimalFormat) NumberFormat.getPercentInstance(locale0);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = decimalFormat0.format(0.0, stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer2 = stringBuffer0.append((CharSequence) "GMT");
-        StringBuffer stringBuffer3 = stringBuffer1.insert(0, true);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        StringBuffer stringBuffer4 = stringBuffer1.append((Object) mockGregorianCalendar0);
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test37863() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         simpleTimeZone0.useDaylightTime();
@@ -8369,61 +6526,9 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test38870() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test38871() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test38872() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test38873() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test38874() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test38875() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test38876() throws Throwable {
-        Locale locale0 = Locale.CHINESE;
-    }
-
-    @Test(timeout = 4000)
     public void test38877() throws Throwable {
         Locale locale0 = Locale.CHINESE;
         FastDateFormat.getDateTimeInstance(801, 2210, (TimeZone) null, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test39878() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test39879() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("org.apache.commons.lang3.time.FastDateFormat$TimeZoneDisplayKey");
     }
 
     @Test(timeout = 4000)
@@ -8541,27 +6646,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test41899() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41900() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test41901() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test41902() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         TimeZone timeZone0 = TimeZone.getDefault();
@@ -8642,48 +6726,12 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test41912() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test42913() throws Throwable {
         FastDateFormat.getDateInstance(65, (TimeZone) null, (Locale) null);
     }
 
     @Test(timeout = 4000)
-    public void test43914() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test43915() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-    }
-
-    @Test(timeout = 4000)
     public void test43916() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43917() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43918() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43919() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
     }
@@ -8717,12 +6765,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43924() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test43925() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
@@ -8731,30 +6773,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test43926() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43927() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43928() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43929() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
         MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
@@ -8807,82 +6825,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43935() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43936() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 89, 1, 4, 648);
-        String string0 = fastDateFormat0.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44937() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test44938() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test44939() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test44940() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test44941() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test44942() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test44943() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-    }
-
-    @Test(timeout = 4000)
     public void test44944() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44945() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44946() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44947() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
     }
@@ -8951,81 +6894,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test44957() throws Throwable {
-        Locale locale0 = Locale.ENGLISH;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45958() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test45959() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-    }
-
-    @Test(timeout = 4000)
-    public void test45960() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45961() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45962() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45963() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45964() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test45965() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test45966() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test45967() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test45968() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test45969() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
@@ -9082,30 +6950,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test45976() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45977() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45978() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45979() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
         Locale locale0 = Locale.CANADA;
@@ -9203,86 +7047,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test45990() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test45991() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test45992() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45993() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45994() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45995() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45996() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45997() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45998() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test45999() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
         Locale locale0 = Locale.CANADA;
@@ -9441,87 +7206,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test451015() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test451016() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test451017() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("", timeZone0);
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance("", locale0);
-        boolean boolean0 = fastDateFormat0.equals(fastDateFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test461018() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getDSTSavings();
-    }
-
-    @Test(timeout = 4000)
-    public void test461019() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test461020() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getRawOffset();
-    }
-
-    @Test(timeout = 4000)
-    public void test461021() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test461022() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.useDaylightTime();
-    }
-
-    @Test(timeout = 4000)
-    public void test461023() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-    }
-
-    @Test(timeout = 4000)
     public void test461024() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461025() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461026() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461027() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
     }
@@ -9580,12 +7265,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test461036() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
     }
 
     @Test(timeout = 4000)
@@ -9648,33 +7327,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test461044() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461045() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461046() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461047() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -9793,15 +7445,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test461059() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
     public void test461060() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
@@ -9856,60 +7499,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test461065() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test461066() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-    }
-
-    @Test(timeout = 4000)
     public void test461067() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461068() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461069() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461070() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -10064,98 +7654,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test461083() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461084() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461085() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461086() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461087() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
     public void test461088() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test461089() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test461090() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-    }
-
-    @Test(timeout = 4000)
-    public void test461091() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -10369,48 +7868,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test461107() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461108() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461109() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461110() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -10649,34 +8106,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test461126() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test461127() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test461128() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
@@ -10812,22 +8241,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test461136() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.hashCode();
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-    }
-
-    @Test(timeout = 4000)
-    public void test461137() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -11393,83 +8806,13 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test471165() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test471166() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test471167() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test471168() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
-    public void test471169() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test471170() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test471171() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test471172() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-    }
-
-    @Test(timeout = 4000)
     public void test471173() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         Long long0 = new Long(1951L);
     }
 
     @Test(timeout = 4000)
-    public void test471174() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(1951L);
-    }
-
-    @Test(timeout = 4000)
     public void test471175() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(1951L);
-        boolean boolean0 = fastDateFormat0.equals(long0);
-    }
-
-    @Test(timeout = 4000)
-    public void test471176() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(1951L);
-        boolean boolean0 = fastDateFormat0.equals(long0);
-    }
-
-    @Test(timeout = 4000)
-    public void test471177() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(1951L);
-        boolean boolean0 = fastDateFormat0.equals(long0);
-    }
-
-    @Test(timeout = 4000)
-    public void test471178() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         Long long0 = new Long(1951L);
         boolean boolean0 = fastDateFormat0.equals(long0);
@@ -11500,92 +8843,13 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test471182() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        Long long0 = new Long(1951L);
-        boolean boolean0 = fastDateFormat0.equals(long0);
-    }
-
-    @Test(timeout = 4000)
-    public void test481183() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test481184() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test481185() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test481186() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test481187() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test481188() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test481189() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test481190() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
-    }
-
-    @Test(timeout = 4000)
     public void test481191() throws Throwable {
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateTimeInstance(0, 0);
         fastDateFormat0.format((Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test491192() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test491193() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
     public void test491194() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491195() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491196() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491197() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
     }
@@ -11619,20 +8883,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test491202() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test491203() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-    }
-
-    @Test(timeout = 4000)
-    public void test491204() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
         Long long0 = new Long(1L);
@@ -11709,39 +8960,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test491212() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491213() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491214() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491215() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
         Long long0 = new Long(1L);
@@ -11884,120 +9102,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test491227() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491228() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test491229() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, timeZone0);
-        Long long0 = new Long(1L);
-        StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "GMT");
-        Format.Field format_Field0 = mock(Format.Field.class, new ViolatedAssumptionAnswer());
-        FieldPosition fieldPosition0 = new FieldPosition(format_Field0);
-        StringBuffer stringBuffer1 = fastDateFormat0.format((Object) long0, stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501230() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test501231() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-    }
-
-    @Test(timeout = 4000)
-    public void test501232() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test501233() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test501234() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test501235() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test501236() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test501237() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test501238() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-    }
-
-    @Test(timeout = 4000)
     public void test501239() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501240() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501241() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501242() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -12076,13 +9181,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501252() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test501253() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
@@ -12120,36 +9218,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test501257() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test501258() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test501259() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test501260() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -12200,26 +9268,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         boolean boolean0 = timeZone0.observesDaylightTime();
         FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
         fastDateFormat1.equals((Object) fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501265() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test501266() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
     }
 
     @Test(timeout = 4000)
@@ -12308,17 +9356,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test501274() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501275() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -12432,58 +9469,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501284() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-    }
-
-    @Test(timeout = 4000)
     public void test501285() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501286() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501287() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501288() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -12664,101 +9650,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501301() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501302() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501303() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501304() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test501305() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501306() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501307() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501308() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -12967,122 +9859,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501322() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501323() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501324() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501325() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test501326() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
     public void test501327() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501328() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501329() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501330() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -13321,130 +10098,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501345() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501346() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501347() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501348() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
-    public void test501349() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
     public void test501350() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501351() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501352() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501353() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -13596,86 +10250,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501362() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501363() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501364() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501365() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501366() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-    }
-
-    @Test(timeout = 4000)
     public void test501367() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
@@ -13694,60 +10268,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test501368() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501369() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501370() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501371() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -13974,114 +10494,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501383() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501384() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501385() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501386() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501387() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501388() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-    }
-
-    @Test(timeout = 4000)
     public void test501389() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
@@ -14162,66 +10574,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test501393() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501394() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501395() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501396() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -14574,106 +10926,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         ParsePosition parsePosition0 = new ParsePosition((-888));
         Object object0 = fastDateFormat2.parseObject("", parsePosition0);
         fastDateFormat2.equals((Object) fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501413() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501414() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501415() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501416() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501417() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
     }
 
     @Test(timeout = 4000)
@@ -15305,54 +11557,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test501445() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501446() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501447() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -16206,192 +12410,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501479() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501480() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501481() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501482() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-    }
-
-    @Test(timeout = 4000)
     public void test501483() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501484() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501485() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501486() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -17594,496 +13613,7 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501529() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501530() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501531() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501532() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501533() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501534() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501535() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501536() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501537() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501538() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501539() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501540() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501541() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501542() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
-    public void test501543() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-    }
-
-    @Test(timeout = 4000)
     public void test501544() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501545() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501546() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501547() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
@@ -18575,146 +14105,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501564() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501565() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501566() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501567() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501568() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
     public void test501569() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
@@ -18834,64 +14224,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test501573() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-        TimeZone timeZone2 = TimeZone.getTimeZone("Greenwich Mean Time");
-    }
-
-    @Test(timeout = 4000)
-    public void test501574() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance("E", locale0);
-        ZoneId zoneId0 = timeZone0.toZoneId();
-        boolean boolean0 = timeZone0.observesDaylightTime();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getDateInstance(1);
-        String string0 = timeZone0.getDisplayName(locale0);
-        Locale locale1 = Locale.forLanguageTag("E");
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateTimeInstance(3, 1, locale0);
-        String string1 = fastDateFormat0.getPattern();
-        TimeZone timeZone1 = fastDateFormat0.getTimeZone();
-        FastDateFormat fastDateFormat3 = FastDateFormat.getDateInstance(3, timeZone0);
-        MockDate mockDate0 = new MockDate(3, 71, 1, 4, 648);
-        String string2 = fastDateFormat3.format((Date) mockDate0);
-        ParsePosition parsePosition0 = new ParsePosition((-888));
-        Object object0 = fastDateFormat2.parseObject("", parsePosition0);
-        MockDate mockDate1 = new MockDate(0, 1, 2, 3, (-888), 0);
-        DecimalFormat decimalFormat0 = new DecimalFormat();
-        StringBuffer stringBuffer0 = new StringBuffer("E");
-        StringBuffer stringBuffer1 = stringBuffer0.append(0);
-        FieldPosition fieldPosition0 = new FieldPosition(1);
-        StringBuffer stringBuffer2 = decimalFormat0.format((-1837L), stringBuffer0, fieldPosition0);
-        StringBuffer stringBuffer3 = fastDateFormat2.format((Date) mockDate1, stringBuffer2);
-        Object object1 = fastDateFormat2.parseObject("I+iH4", parsePosition0);
-        TimeZone timeZone2 = TimeZone.getTimeZone("Greenwich Mean Time");
-    }
-
-    @Test(timeout = 4000)
     public void test511575() throws Throwable {
         String string0 = "";
         TimeZone timeZone0 = TimeZone.getDefault();
@@ -18961,30 +14293,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test511584() throws Throwable {
-        String string0 = "";
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ROOT;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test511585() throws Throwable {
-        String string0 = "";
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ROOT;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test511586() throws Throwable {
-        String string0 = "";
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ROOT;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test511587() throws Throwable {
         String string0 = "";
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.ROOT;
@@ -19079,14 +14387,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         Locale locale0 = Locale.ROOT;
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
         fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test511598() throws Throwable {
-        String string0 = "";
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ROOT;
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(2, timeZone0, locale0);
     }
 
     @Test(timeout = 4000)
@@ -19222,17 +14522,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test561620() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test561621() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
     public void test561622() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.US;
@@ -19285,65 +14574,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.US;
         FastDateFormat.getInstance("<null>", timeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test571630() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test571631() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-    }
-
-    @Test(timeout = 4000)
-    public void test571632() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test571633() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test571634() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test571635() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test571636() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test571637() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test571638() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.ITALY;
     }
 
     @Test(timeout = 4000)
@@ -19538,45 +14768,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test611670() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-    }
-
-    @Test(timeout = 4000)
-    public void test611671() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        mockSimpleDateFormat0.toLocalizedPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test611672() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        mockSimpleDateFormat0.toPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test611673() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        mockSimpleDateFormat0.isLenient();
-    }
-
-    @Test(timeout = 4000)
-    public void test611674() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test611675() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-        TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
-    }
-
-    @Test(timeout = 4000)
     public void test611676() throws Throwable {
         MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
         TimeZone timeZone0 = mockSimpleDateFormat0.getTimeZone();
@@ -19633,41 +14824,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     @Test(timeout = 4000)
     public void test631685() throws Throwable {
         FastDateFormat.getInstance("3(Wd<XHT", (TimeZone) null, (Locale) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test641686() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test641687() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test641688() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getRawOffset();
-    }
-
-    @Test(timeout = 4000)
-    public void test641689() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getDSTSavings();
-    }
-
-    @Test(timeout = 4000)
-    public void test641690() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.useDaylightTime();
-    }
-
-    @Test(timeout = 4000)
-    public void test641691() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
     }
 
     @Test(timeout = 4000)
@@ -19781,65 +14937,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test691711() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test691712() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-    }
-
-    @Test(timeout = 4000)
-    public void test691713() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getLanguage();
-    }
-
-    @Test(timeout = 4000)
-    public void test691714() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test691715() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getCountry();
-    }
-
-    @Test(timeout = 4000)
-    public void test691716() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getVariant();
-    }
-
-    @Test(timeout = 4000)
-    public void test691717() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getISO3Language();
-    }
-
-    @Test(timeout = 4000)
-    public void test691718() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-        locale0.getISO3Country();
-    }
-
-    @Test(timeout = 4000)
-    public void test691719() throws Throwable {
-        TimeZone timeZone0 = TimeZone.getTimeZone("");
-        Locale locale0 = Locale.CANADA;
-    }
-
-    @Test(timeout = 4000)
     public void test691720() throws Throwable {
         TimeZone timeZone0 = TimeZone.getTimeZone("");
         Locale locale0 = Locale.CANADA;
@@ -19894,679 +14991,10 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test711729() throws Throwable {
-        ZoneId zoneId0 = ZoneId.systemDefault();
-    }
-
-    @Test(timeout = 4000)
-    public void test711730() throws Throwable {
-        ZoneId zoneId0 = ZoneId.systemDefault();
-        TimeZone timeZone0 = TimeZone.getTimeZone(zoneId0);
-        timeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test711731() throws Throwable {
-        ZoneId zoneId0 = ZoneId.systemDefault();
-        TimeZone timeZone0 = TimeZone.getTimeZone(zoneId0);
-    }
-
-    @Test(timeout = 4000)
     public void test711732() throws Throwable {
         ZoneId zoneId0 = ZoneId.systemDefault();
         TimeZone timeZone0 = TimeZone.getTimeZone(zoneId0);
         FastDateFormat.getInstance("#%F=JFk6A5Dbi1LAQ", timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721733() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test721734() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getRawOffset();
-    }
-
-    @Test(timeout = 4000)
-    public void test721735() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.getDSTSavings();
-    }
-
-    @Test(timeout = 4000)
-    public void test721736() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721737() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        simpleTimeZone0.useDaylightTime();
-    }
-
-    @Test(timeout = 4000)
-    public void test721738() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-    }
-
-    @Test(timeout = 4000)
-    public void test721739() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721740() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721741() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721742() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721743() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        simpleTimeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test721744() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        simpleTimeZone0.getRawOffset();
-    }
-
-    @Test(timeout = 4000)
-    public void test721745() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        simpleTimeZone0.getDSTSavings();
-    }
-
-    @Test(timeout = 4000)
-    public void test721746() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        simpleTimeZone0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721747() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        simpleTimeZone0.useDaylightTime();
-    }
-
-    @Test(timeout = 4000)
-    public void test721748() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test721749() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test721750() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test721751() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721752() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test721753() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        stringBuffer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721754() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-    }
-
-    @Test(timeout = 4000)
-    public void test721755() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        parsePosition0.getErrorIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test721756() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        parsePosition0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test721757() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        parsePosition0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721758() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-    }
-
-    @Test(timeout = 4000)
-    public void test721759() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721760() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721761() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721762() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721763() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        simpleTimeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test721764() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        simpleTimeZone0.getRawOffset();
-    }
-
-    @Test(timeout = 4000)
-    public void test721765() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        simpleTimeZone0.getDSTSavings();
-    }
-
-    @Test(timeout = 4000)
-    public void test721766() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        simpleTimeZone0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721767() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        simpleTimeZone0.useDaylightTime();
-    }
-
-    @Test(timeout = 4000)
-    public void test721768() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test721769() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test721770() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test721771() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        parsePosition0.getErrorIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test721772() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        parsePosition0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721773() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        parsePosition0.getIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test721774() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721775() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test721776() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        stringBuffer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721777() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        stringBuffer1.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721778() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        stringBuffer1.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test721779() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test721780() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test721781() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test721782() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721783() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721784() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721785() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721786() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        simpleTimeZone0.getID();
-    }
-
-    @Test(timeout = 4000)
-    public void test721787() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        simpleTimeZone0.getRawOffset();
-    }
-
-    @Test(timeout = 4000)
-    public void test721788() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        simpleTimeZone0.getDSTSavings();
-    }
-
-    @Test(timeout = 4000)
-    public void test721789() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        simpleTimeZone0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721790() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        simpleTimeZone0.useDaylightTime();
-    }
-
-    @Test(timeout = 4000)
-    public void test721791() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test721792() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.getTimeZoneOverridesCalendar();
-    }
-
-    @Test(timeout = 4000)
-    public void test721793() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        fastDateFormat0.getPattern();
-    }
-
-    @Test(timeout = 4000)
-    public void test721794() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        stringBuffer0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721795() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        stringBuffer0.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test721796() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        stringBuffer2.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test721797() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        stringBuffer2.length();
-    }
-
-    @Test(timeout = 4000)
-    public void test721798() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721799() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721800() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721801() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721802() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
     }
 
     @Test(timeout = 4000)
@@ -20661,45 +15089,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test721810() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721811() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721812() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721813() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -20922,32 +15311,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test721829() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721830() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-    }
-
-    @Test(timeout = 4000)
     public void test721831() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
@@ -21075,21 +15438,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test721839() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-    }
-
-    @Test(timeout = 4000)
-    public void test721840() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
         StringBuffer stringBuffer0 = new StringBuffer("");
@@ -21538,66 +15886,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test721864() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test721865() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test721866() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
-    }
-
-    @Test(timeout = 4000)
     public void test721867() throws Throwable {
         SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
         FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
@@ -21847,86 +16135,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         Locale locale2 = Locale.lookup(linkedList0, list0);
         FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
         fastDateFormat2.equals((Object) fastDateFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test721879() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test721880() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test721881() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test721882() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        FastDateFormat fastDateFormat0 = FastDateFormat.getDateInstance(0, (TimeZone) simpleTimeZone0);
-        StringBuffer stringBuffer0 = new StringBuffer("");
-        ParsePosition parsePosition0 = new ParsePosition((-2803));
-        Object object0 = fastDateFormat0.parseObject("YW*-M", parsePosition0);
-        StringBuffer stringBuffer1 = stringBuffer0.append((Object) null);
-        StringBuffer stringBuffer2 = fastDateFormat0.format(48L, stringBuffer0);
-        Locale locale0 = Locale.GERMANY;
-        FastDateFormat fastDateFormat1 = FastDateFormat.getTimeInstance(0, (TimeZone) simpleTimeZone0, locale0);
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat("", locale0);
-        Locale locale1 = Locale.CHINA;
-        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
-        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
-        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0);
-        Locale locale2 = Locale.lookup(linkedList0, list0);
-        FastDateFormat fastDateFormat2 = FastDateFormat.getDateInstance(0, locale1);
     }
 
     @Test(timeout = 4000)
@@ -22185,12 +16393,6 @@ public class FastDateFormat_ESTest extends FastDateFormat_ESTest_scaffolding {
         FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
         FastDateFormat fastDateFormat1 = FastDateFormat.getInstance();
         fastDateFormat1.getMaxLengthEstimate();
-    }
-
-    @Test(timeout = 4000)
-    public void test831907() throws Throwable {
-        FastDateFormat fastDateFormat0 = FastDateFormat.getInstance();
-        FastDateFormat fastDateFormat1 = FastDateFormat.getInstance();
     }
 
     @Test(timeout = 4000)

@@ -54,7 +54,18 @@ public class AbstractLeastSquaresOptimizer_ESTest extends AbstractLeastSquaresOp
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
+        OptimizationData[] optimizationDataArray0 = new OptimizationData[6];
+        DiagonalMatrix diagonalMatrix0 = new DiagonalMatrix(719);
+        Weight weight0 = new Weight(diagonalMatrix0);
+        optimizationDataArray0[1] = (OptimizationData) weight0;
+        // Undeclared exception!
+        levenbergMarquardtOptimizer0.optimize(optimizationDataArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         double[] doubleArray0 = new double[0];
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         OptimizationData[] optimizationDataArray0 = new OptimizationData[8];
@@ -65,7 +76,7 @@ public class AbstractLeastSquaresOptimizer_ESTest extends AbstractLeastSquaresOp
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         SimplePointChecker<PointVectorValuePair> simplePointChecker0 = new SimplePointChecker<PointVectorValuePair>((-1.0), (-1.0));
         GaussNewtonOptimizer gaussNewtonOptimizer0 = new GaussNewtonOptimizer(true, simplePointChecker0);
         double[] doubleArray0 = new double[5];
@@ -73,33 +84,33 @@ public class AbstractLeastSquaresOptimizer_ESTest extends AbstractLeastSquaresOp
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         double[] doubleArray0 = new double[0];
         levenbergMarquardtOptimizer0.computeSigma(doubleArray0, 0.0);
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         double[] doubleArray0 = new double[8];
         levenbergMarquardtOptimizer0.computeResiduals(doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer((-453.9606066), (-453.9606066), (-453.9606066), (-453.9606066), (-453.9606066));
         double double0 = levenbergMarquardtOptimizer0.getChiSquare();
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         levenbergMarquardtOptimizer0.getWeightSquareRoot();
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         OptimizationData[] optimizationDataArray0 = new OptimizationData[8];
         double[] doubleArray0 = new double[6];
@@ -110,20 +121,20 @@ public class AbstractLeastSquaresOptimizer_ESTest extends AbstractLeastSquaresOp
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer(9.394561, 9.394561, 9.394561, 9.394561, 9.394561);
         levenbergMarquardtOptimizer0.getRMS();
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         OptimizationData[] optimizationDataArray0 = new OptimizationData[2];
         levenbergMarquardtOptimizer0.optimize(optimizationDataArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         LevenbergMarquardtOptimizer levenbergMarquardtOptimizer0 = new LevenbergMarquardtOptimizer();
         double[] doubleArray0 = new double[7];
         levenbergMarquardtOptimizer0.computeCovariances(doubleArray0, 0.0);

@@ -368,14 +368,6 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03740() throws Throwable {
-        Period period0 = new Period();
-        Period period1 = period0.plusDays(2527);
-        Period period2 = period1.plusSeconds(2527);
-        int int0 = period2.getDays();
-    }
-
-    @Test(timeout = 4000)
     public void test03841() throws Throwable {
         PeriodType periodType0 = PeriodType.yearWeekDay();
         PeriodType periodType1 = periodType0.withYearsRemoved();
@@ -1094,19 +1086,32 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123128() throws Throwable {
+    public void test122128() throws Throwable {
+        Period period0 = new Period((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test123129() throws Throwable {
         Period period0 = Period.months((-5051));
         int int0 = period0.getWeeks();
     }
 
     @Test(timeout = 4000)
-    public void test124129() throws Throwable {
+    public void test124130() throws Throwable {
         Period period0 = new Period((-2233L));
         period0.multipliedBy((-292269337));
     }
 
     @Test(timeout = 4000)
-    public void test126130() throws Throwable {
+    public void test125131() throws Throwable {
+        Duration duration0 = new Duration(0L, 0L);
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        Instant instant0 = gJChronology0.getGregorianCutover();
+        Period period0 = new Period(duration0, instant0);
+    }
+
+    @Test(timeout = 4000)
+    public void test126132() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         DateTime dateTime0 = DateTime.now((Chronology) copticChronology0);
         PeriodType periodType0 = PeriodType.minutes();
@@ -1115,13 +1120,13 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test127131() throws Throwable {
+    public void test127133() throws Throwable {
         Period period0 = Period.hours(839);
         int int0 = period0.getYears();
     }
 
     @Test(timeout = 4000)
-    public void test128132() throws Throwable {
+    public void test128134() throws Throwable {
         Duration duration0 = Duration.millis(1000L);
         Seconds seconds0 = duration0.toStandardSeconds();
         PeriodType periodType0 = seconds0.getPeriodType();
@@ -1130,33 +1135,50 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130133() throws Throwable {
+    public void test129135() throws Throwable {
+        PeriodType periodType0 = PeriodType.hours();
+        Period period0 = new Period((Object) null, periodType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test130136() throws Throwable {
         LocalTime localTime0 = new LocalTime(0L);
         Period period0 = new Period(localTime0, localTime0, (PeriodType) null);
         int int0 = period0.getDays();
     }
 
     @Test(timeout = 4000)
-    public void test131134() throws Throwable {
+    public void test131137() throws Throwable {
         Period period0 = Period.minutes(10209375);
         int int0 = period0.getMinutes();
     }
 
     @Test(timeout = 4000)
-    public void test132135() throws Throwable {
+    public void test132138() throws Throwable {
         Period period0 = Period.minutes((-2229));
         int int0 = period0.getMonths();
     }
 
     @Test(timeout = 4000)
-    public void test134136() throws Throwable {
+    public void test133139() throws Throwable {
+        Period period0 = new Period(843L, (PeriodType) null, (Chronology) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test134140() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Period period0 = new Period((Object) null, iSOChronology0);
         int int0 = period0.ZERO.getMillis();
     }
 
     @Test(timeout = 4000)
-    public void test136137() throws Throwable {
+    public void test135141() throws Throwable {
+        LocalDateTime localDateTime0 = new LocalDateTime((Chronology) null);
+        Period period0 = new Period(localDateTime0, localDateTime0);
+    }
+
+    @Test(timeout = 4000)
+    public void test136142() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Period period0 = new Period((Object) null, iSOChronology0);
         Minutes minutes0 = period0.toStandardMinutes();
@@ -1164,7 +1186,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test137138() throws Throwable {
+    public void test137143() throws Throwable {
         Period period0 = new Period();
         PeriodType periodType0 = PeriodType.yearWeekDay();
         Period period1 = period0.withYears(137);
@@ -1173,26 +1195,26 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test138139() throws Throwable {
+    public void test138144() throws Throwable {
         Period period0 = Period.months(8);
         Period period1 = period0.normalizedStandard();
         period1.equals((Object) period0);
     }
 
     @Test(timeout = 4000)
-    public void test139140() throws Throwable {
+    public void test139145() throws Throwable {
         Period period0 = Period.years(4);
         period0.toStandardDuration();
     }
 
     @Test(timeout = 4000)
-    public void test140141() throws Throwable {
+    public void test140146() throws Throwable {
         Period period0 = new Period((-41), (-3005), (-3005), (-41), (-3005), (-230), (-230), (-230));
         period0.toStandardDays();
     }
 
     @Test(timeout = 4000)
-    public void test141142() throws Throwable {
+    public void test141147() throws Throwable {
         Period period0 = new Period();
         Period period1 = period0.plusDays(2527);
         Period period2 = period1.multipliedBy(2527);
@@ -1200,27 +1222,27 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test142143() throws Throwable {
+    public void test142148() throws Throwable {
         MutableDateTime mutableDateTime0 = new MutableDateTime(10080L);
         Period period0 = new Period(mutableDateTime0, mutableDateTime0);
         Period period1 = period0.ZERO.minus((ReadablePeriod) null);
     }
 
     @Test(timeout = 4000)
-    public void test143144() throws Throwable {
+    public void test143149() throws Throwable {
         Period period0 = Period.millis(0);
         Period period1 = period0.minusMillis(0);
     }
 
     @Test(timeout = 4000)
-    public void test144145() throws Throwable {
+    public void test144150() throws Throwable {
         Period period0 = Period.weeks(0);
         Period period1 = period0.ZERO.plusSeconds(0);
         period1.equals((Object) period0);
     }
 
     @Test(timeout = 4000)
-    public void test145146() throws Throwable {
+    public void test145151() throws Throwable {
         Duration duration0 = Duration.standardDays(86400L);
         PeriodType periodType0 = PeriodType.yearDayTime();
         Period period0 = duration0.toPeriodTo((ReadableInstant) null, periodType0);
@@ -1228,14 +1250,14 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test146147() throws Throwable {
+    public void test146152() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Period period0 = new Period((Object) null, iSOChronology0);
         Period period1 = period0.plusDays(0);
     }
 
     @Test(timeout = 4000)
-    public void test147148() throws Throwable {
+    public void test147153() throws Throwable {
         Duration duration0 = Duration.standardDays(86400L);
         PeriodType periodType0 = PeriodType.yearDayTime();
         Period period0 = duration0.toPeriodTo((ReadableInstant) null, periodType0);
@@ -1243,14 +1265,14 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test148149() throws Throwable {
+    public void test148154() throws Throwable {
         PeriodType periodType0 = PeriodType.millis();
         Period period0 = new Period(0L, 0L, periodType0);
         Period period1 = period0.ZERO.plus((ReadablePeriod) null);
     }
 
     @Test(timeout = 4000)
-    public void test149150() throws Throwable {
+    public void test149155() throws Throwable {
         Duration duration0 = Duration.standardDays(86400L);
         Minutes minutes0 = duration0.toStandardMinutes();
         PeriodType periodType0 = PeriodType.yearDayTime();
@@ -1259,7 +1281,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test150151() throws Throwable {
+    public void test150156() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(0, 0);
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance(dateTimeZone0);
         Period period0 = new Period((-1L), (Chronology) ethiopicChronology0);
@@ -1268,7 +1290,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151152() throws Throwable {
+    public void test151157() throws Throwable {
         Days days0 = Days.TWO;
         Weeks weeks0 = days0.toStandardWeeks();
         Duration duration0 = weeks0.toStandardDuration();
@@ -1277,7 +1299,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test152153() throws Throwable {
+    public void test152158() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         Period period0 = new Period((Object) null, iSOChronology0);
         Years years0 = Years.MIN_VALUE;
@@ -1286,13 +1308,13 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test153154() throws Throwable {
+    public void test153159() throws Throwable {
         Period period0 = Period.millis((-1869));
         period0.withField((DurationFieldType) null, (-1869));
     }
 
     @Test(timeout = 4000)
-    public void test154155() throws Throwable {
+    public void test154160() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ISOChronology iSOChronology0 = ISOChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
         LenientChronology lenientChronology0 = LenientChronology.getInstance(iSOChronology0);
@@ -1302,14 +1324,14 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test155156() throws Throwable {
+    public void test155161() throws Throwable {
         MutableDateTime mutableDateTime0 = new MutableDateTime(10080L);
         Period period0 = new Period(mutableDateTime0, mutableDateTime0);
         Period period1 = period0.ZERO.withFields((ReadablePeriod) null);
     }
 
     @Test(timeout = 4000)
-    public void test156157() throws Throwable {
+    public void test156162() throws Throwable {
         MockDate mockDate0 = new MockDate(0L);
         LocalDateTime localDateTime0 = LocalDateTime.fromDateFields(mockDate0);
         PeriodType periodType0 = PeriodType.millis();
@@ -1318,14 +1340,14 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test157158() throws Throwable {
+    public void test157163() throws Throwable {
         YearMonth yearMonth0 = new YearMonth(0L);
         MonthDay monthDay0 = new MonthDay();
         Period.fieldDifference(yearMonth0, monthDay0);
     }
 
     @Test(timeout = 4000)
-    public void test158159() throws Throwable {
+    public void test158164() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstance();
         YearMonth yearMonth0 = YearMonth.now((Chronology) copticChronology0);
         LocalTime localTime0 = LocalTime.now();
@@ -1333,7 +1355,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test159160() throws Throwable {
+    public void test159165() throws Throwable {
         LocalDate localDate0 = LocalDate.now();
         ZoneOffset zoneOffset0 = ZoneOffset.MAX;
         TimeZone timeZone0 = TimeZone.getTimeZone((ZoneId) zoneOffset0);
@@ -1344,19 +1366,19 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test160161() throws Throwable {
+    public void test160166() throws Throwable {
         LocalTime localTime0 = new LocalTime();
         Period period0 = Period.fieldDifference(localTime0, localTime0);
         period0.plusWeeks(24);
     }
 
     @Test(timeout = 4000)
-    public void test161162() throws Throwable {
+    public void test161167() throws Throwable {
         Period.fieldDifference((ReadablePartial) null, (ReadablePartial) null);
     }
 
     @Test(timeout = 4000)
-    public void test162163() throws Throwable {
+    public void test162168() throws Throwable {
         int[] intArray0 = new int[3];
         PeriodType periodType0 = new PeriodType("7ht", (DurationFieldType[]) null, intArray0);
         Period period0 = null;
@@ -1364,20 +1386,20 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test163164() throws Throwable {
+    public void test163169() throws Throwable {
         Period period0 = new Period((-41), (-3005), (-3005), (-41), (-3005), (-230), (-230), (-230));
         Period period1 = period0.normalizedStandard();
     }
 
     @Test(timeout = 4000)
-    public void test164165() throws Throwable {
+    public void test164170() throws Throwable {
         Period period0 = Period.years((-1877));
         PeriodType.MONTH_INDEX = 0;
         int int0 = period0.getMonths();
     }
 
     @Test(timeout = 4000)
-    public void test165166() throws Throwable {
+    public void test165171() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ISOChronology iSOChronology0 = ISOChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
         LenientChronology lenientChronology0 = LenientChronology.getInstance(iSOChronology0);
@@ -1388,7 +1410,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test165167() throws Throwable {
+    public void test165172() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ISOChronology iSOChronology0 = ISOChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
         LenientChronology lenientChronology0 = LenientChronology.getInstance(iSOChronology0);
@@ -1398,21 +1420,21 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test166168() throws Throwable {
+    public void test166173() throws Throwable {
         Period period0 = new Period();
         Seconds seconds0 = period0.toStandardSeconds();
         seconds0.getSeconds();
     }
 
     @Test(timeout = 4000)
-    public void test167169() throws Throwable {
+    public void test167174() throws Throwable {
         Period period0 = Period.months(8);
         Period period1 = period0.minusDays(8);
         int int0 = period1.getDays();
     }
 
     @Test(timeout = 4000)
-    public void test168170() throws Throwable {
+    public void test168175() throws Throwable {
         Hours hours0 = Hours.TWO;
         Duration duration0 = hours0.toStandardDuration();
         Period period0 = duration0.toPeriod();
@@ -1422,14 +1444,14 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test169171() throws Throwable {
+    public void test169176() throws Throwable {
         Period period0 = new Period((-3624), 10, (-2171), (-3624));
         PeriodType.SECOND_INDEX = (-2066);
         period0.ZERO.toStandardSeconds();
     }
 
     @Test(timeout = 4000)
-    public void test170172() throws Throwable {
+    public void test170177() throws Throwable {
         Object object0 = new Object();
         PeriodType periodType0 = PeriodType.standard();
         JulianChronology julianChronology0 = JulianChronology.getInstanceUTC();
@@ -1438,14 +1460,21 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test172173() throws Throwable {
+    public void test171178() throws Throwable {
+        Weeks weeks0 = Weeks.ZERO;
+        Duration duration0 = weeks0.toStandardDuration();
+        Period period0 = new Period((ReadableInstant) null, duration0);
+    }
+
+    @Test(timeout = 4000)
+    public void test172179() throws Throwable {
         IslamicChronology islamicChronology0 = IslamicChronology.getInstanceUTC();
         Period period0 = new Period(576L, (Chronology) islamicChronology0);
         Period period1 = period0.withMonths(67);
     }
 
     @Test(timeout = 4000)
-    public void test173174() throws Throwable {
+    public void test173180() throws Throwable {
         MutableDateTime mutableDateTime0 = new MutableDateTime((-283L));
         DateTime dateTime0 = mutableDateTime0.toDateTimeISO();
         Period period0 = new Period(dateTime0, dateTime0);
@@ -1454,12 +1483,12 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test174175() throws Throwable {
+    public void test174181() throws Throwable {
         Period.parse("Positive hours must not have negative minutes: ");
     }
 
     @Test(timeout = 4000)
-    public void test175176() throws Throwable {
+    public void test175182() throws Throwable {
         Period period0 = new Period();
         Hours hours0 = period0.toStandardHours();
         Period period1 = period0.withFields(hours0);
@@ -1467,28 +1496,28 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175177() throws Throwable {
+    public void test175183() throws Throwable {
         Period period0 = new Period();
         Hours hours0 = period0.toStandardHours();
         Period period1 = period0.withFields(hours0);
     }
 
     @Test(timeout = 4000)
-    public void test176178() throws Throwable {
+    public void test176184() throws Throwable {
         IslamicChronology islamicChronology0 = IslamicChronology.getInstanceUTC();
         Period period0 = new Period(576L, (Chronology) islamicChronology0);
         Period period1 = period0.toPeriod();
     }
 
     @Test(timeout = 4000)
-    public void test177179() throws Throwable {
+    public void test177185() throws Throwable {
         PeriodType periodType0 = PeriodType.standard();
         Period period0 = new Period((-1783), (-1783), (-990), (-1783), (-1783), (-1083), 805, 1783, periodType0);
         Period period1 = period0.withMillis((-919));
     }
 
     @Test(timeout = 4000)
-    public void test178180() throws Throwable {
+    public void test178186() throws Throwable {
         Duration duration0 = Duration.standardMinutes(60L);
         PeriodType periodType0 = PeriodType.yearMonthDayTime();
         Period period0 = duration0.toPeriod(periodType0);
@@ -1496,34 +1525,34 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test179181() throws Throwable {
+    public void test179187() throws Throwable {
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance((DateTimeZone) null);
         Period period0 = null;
         period0 = new Period("", islamicChronology0);
     }
 
     @Test(timeout = 4000)
-    public void test180182() throws Throwable {
+    public void test180188() throws Throwable {
         Period period0 = null;
         period0 = new Period((ReadablePartial) null, (ReadablePartial) null);
     }
 
     @Test(timeout = 4000)
-    public void test181183() throws Throwable {
+    public void test181189() throws Throwable {
         Period period0 = Period.weeks(0);
         Period period1 = period0.ZERO.negated();
         period1.equals((Object) period0);
     }
 
     @Test(timeout = 4000)
-    public void test182184() throws Throwable {
+    public void test182190() throws Throwable {
         Period period0 = Period.minutes(10209375);
         Period period1 = period0.withSeconds(10209375);
         period1.equals((Object) period0);
     }
 
     @Test(timeout = 4000)
-    public void test183185() throws Throwable {
+    public void test183191() throws Throwable {
         Duration duration0 = Duration.standardDays(86400L);
         PeriodType periodType0 = PeriodType.yearDayTime();
         Period period0 = duration0.toPeriodTo((ReadableInstant) null, periodType0);
@@ -1531,7 +1560,7 @@ public class Period_ESTest extends Period_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test184186() throws Throwable {
+    public void test184192() throws Throwable {
         MockDate mockDate0 = new MockDate(0L);
         LocalDateTime localDateTime0 = LocalDateTime.fromDateFields(mockDate0);
         PeriodType periodType0 = PeriodType.millis();

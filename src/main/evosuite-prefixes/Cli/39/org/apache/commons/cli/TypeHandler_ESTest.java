@@ -33,46 +33,51 @@ public class TypeHandler_ESTest extends TypeHandler_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        TypeHandler typeHandler0 = new TypeHandler();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         TypeHandler.createURL("");
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         TypeHandler.createDate("Unable to find the class: ");
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         File file0 = TypeHandler.createFile("");
         file0.getTotalSpace();
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Class<Object> class0 = Object.class;
         TypeHandler.createValue("", class0);
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Class<String> class0 = String.class;
         Object object0 = TypeHandler.createValue("Not yet implemented", class0);
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Class<Integer> class0 = Integer.class;
         Object object0 = TypeHandler.createValue("Not yet implemented", class0);
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         TypeHandler.createNumber("Not yet implemented");
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         TypeHandler.createNumber("org.apache.commons.cli.PatternOptionBuilder");
     }
 }

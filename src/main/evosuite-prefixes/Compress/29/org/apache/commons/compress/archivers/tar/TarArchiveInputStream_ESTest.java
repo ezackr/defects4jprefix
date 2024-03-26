@@ -225,14 +225,6 @@ public class TarArchiveInputStream_ESTest extends TarArchiveInputStream_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1624() throws Throwable {
-        byte[] byteArray0 = new byte[0];
-        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
-        TarArchiveInputStream tarArchiveInputStream0 = new TarArchiveInputStream(byteArrayInputStream0);
-        byte[] byteArray1 = tarArchiveInputStream0.getLongNameData();
-    }
-
-    @Test(timeout = 4000)
     public void test1625() throws Throwable {
         byte[] byteArray0 = new byte[0];
         ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);

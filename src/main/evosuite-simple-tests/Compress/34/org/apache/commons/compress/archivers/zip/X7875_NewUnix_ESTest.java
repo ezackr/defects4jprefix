@@ -34,11 +34,11 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test022() throws Throwable {
+    public void test012() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = new byte[4];
-        Object object0 = x7875_NewUnix0.clone();
-        assertTrue(object0.equals((Object) x7875_NewUnix0));
+        x7875_NewUnix0.parseFromLocalFileData(byteArray0, 1, 1);
+        x7875_NewUnix0.hashCode();
     }
 
     @Test(timeout = 4000)
@@ -46,10 +46,7 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = new byte[4];
         Object object0 = x7875_NewUnix0.clone();
-        byteArray0[0] = (byte) (-1);
-        x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (-1285));
-        boolean boolean0 = x7875_NewUnix0.equals(object0);
-        assertFalse(object0.equals((Object) x7875_NewUnix0));
+        assertTrue(object0.equals((Object) x7875_NewUnix0));
     }
 
     @Test(timeout = 4000)
@@ -60,11 +57,22 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
         byteArray0[0] = (byte) (-1);
         x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (-1285));
         boolean boolean0 = x7875_NewUnix0.equals(object0);
+        assertFalse(object0.equals((Object) x7875_NewUnix0));
+    }
+
+    @Test(timeout = 4000)
+    public void test025() throws Throwable {
+        X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
+        byte[] byteArray0 = new byte[4];
+        Object object0 = x7875_NewUnix0.clone();
+        byteArray0[0] = (byte) (-1);
+        x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (-1285));
+        boolean boolean0 = x7875_NewUnix0.equals(object0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test035() throws Throwable {
+    public void test036() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         x7875_NewUnix0.setUID(0L);
         ZipShort zipShort0 = x7875_NewUnix0.getCentralDirectoryLength();
@@ -72,14 +80,14 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test046() throws Throwable {
+    public void test047() throws Throwable {
         byte[] byteArray0 = new byte[3];
         byte[] byteArray1 = X7875_NewUnix.trimLeadingZeroesForceMinLength(byteArray0);
         assertEquals(1, byteArray1.length);
     }
 
     @Test(timeout = 4000)
-    public void test057() throws Throwable {
+    public void test058() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = new byte[13];
         x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (byte) 0);
@@ -88,7 +96,7 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test068() throws Throwable {
+    public void test069() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         x7875_NewUnix0.setGID(0L);
         long long0 = x7875_NewUnix0.getGID();
@@ -96,7 +104,7 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test079() throws Throwable {
+    public void test0710() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         // Undeclared exception!
         try {
@@ -111,7 +119,7 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0810() throws Throwable {
+    public void test0811() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = new byte[9];
         byteArray0[4] = (byte) 3;
@@ -125,27 +133,27 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0911() throws Throwable {
+    public void test0912() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         ZipShort zipShort0 = x7875_NewUnix0.getLocalFileDataLength();
         assertEquals(7, zipShort0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test1012() throws Throwable {
+    public void test1013() throws Throwable {
         byte[] byteArray0 = X7875_NewUnix.trimLeadingZeroesForceMinLength((byte[]) null);
         assertNull(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1113() throws Throwable {
+    public void test1114() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         X7875_NewUnix x7875_NewUnix1 = new X7875_NewUnix();
         assertTrue(x7875_NewUnix1.equals((Object) x7875_NewUnix0));
     }
 
     @Test(timeout = 4000)
-    public void test1114() throws Throwable {
+    public void test1115() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         X7875_NewUnix x7875_NewUnix1 = new X7875_NewUnix();
         x7875_NewUnix0.setGID((-16L));
@@ -154,14 +162,14 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1215() throws Throwable {
+    public void test1216() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         X7875_NewUnix x7875_NewUnix1 = new X7875_NewUnix();
         assertTrue(x7875_NewUnix1.equals((Object) x7875_NewUnix0));
     }
 
     @Test(timeout = 4000)
-    public void test1216() throws Throwable {
+    public void test1217() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         X7875_NewUnix x7875_NewUnix1 = new X7875_NewUnix();
         x7875_NewUnix1.setUID(1167L);
@@ -170,21 +178,11 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1317() throws Throwable {
-        X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
-        byte[] byteArray0 = new byte[4];
-        Object object0 = x7875_NewUnix0.clone();
-        assertTrue(object0.equals((Object) x7875_NewUnix0));
-    }
-
-    @Test(timeout = 4000)
     public void test1318() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = new byte[4];
         Object object0 = x7875_NewUnix0.clone();
-        x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (-1285));
-        boolean boolean0 = x7875_NewUnix0.equals(object0);
-        assertFalse(object0.equals((Object) x7875_NewUnix0));
+        assertTrue(object0.equals((Object) x7875_NewUnix0));
     }
 
     @Test(timeout = 4000)
@@ -194,25 +192,35 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
         Object object0 = x7875_NewUnix0.clone();
         x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (-1285));
         boolean boolean0 = x7875_NewUnix0.equals(object0);
+        assertFalse(object0.equals((Object) x7875_NewUnix0));
+    }
+
+    @Test(timeout = 4000)
+    public void test1320() throws Throwable {
+        X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
+        byte[] byteArray0 = new byte[4];
+        Object object0 = x7875_NewUnix0.clone();
+        x7875_NewUnix0.parseFromLocalFileData(byteArray0, (byte) 0, (-1285));
+        boolean boolean0 = x7875_NewUnix0.equals(object0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1420() throws Throwable {
+    public void test1421() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         boolean boolean0 = x7875_NewUnix0.equals(x7875_NewUnix0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1521() throws Throwable {
+    public void test1522() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         boolean boolean0 = x7875_NewUnix0.equals("0x7875 Zip Extra Field: UID=1000 GID=0");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1622() throws Throwable {
+    public void test1623() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = new byte[8];
         x7875_NewUnix0.parseFromCentralDirectoryData(byteArray0, 0, (byte) 84);
@@ -220,35 +228,41 @@ public class X7875_NewUnix_ESTest extends X7875_NewUnix_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1723() throws Throwable {
+    public void test1724() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         long long0 = x7875_NewUnix0.getGID();
         assertEquals(1000L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test1924() throws Throwable {
+    public void test1825() throws Throwable {
+        X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
+        x7875_NewUnix0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test1926() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         byte[] byteArray0 = x7875_NewUnix0.getCentralDirectoryData();
         assertEquals(0, byteArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test2025() throws Throwable {
+    public void test2027() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         ZipShort zipShort0 = x7875_NewUnix0.getHeaderId();
         assertEquals(30837, zipShort0.getValue());
     }
 
     @Test(timeout = 4000)
-    public void test2126() throws Throwable {
+    public void test2128() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         long long0 = x7875_NewUnix0.getUID();
         assertEquals(1000L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test2227() throws Throwable {
+    public void test2229() throws Throwable {
         X7875_NewUnix x7875_NewUnix0 = new X7875_NewUnix();
         String string0 = x7875_NewUnix0.toString();
         assertEquals("0x7875 Zip Extra Field: UID=1000 GID=1000", string0);

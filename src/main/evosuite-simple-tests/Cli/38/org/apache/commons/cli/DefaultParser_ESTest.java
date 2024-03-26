@@ -57,7 +57,16 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        Properties properties0 = new Properties();
+        defaultParser0.parse(options0, (String[]) null, properties0, true);
+        defaultParser0.handleConcatenatedOptions("--]R+;2-HIc");
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[2];
@@ -67,7 +76,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Properties properties0 = new Properties();
@@ -84,7 +93,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addRequiredOption("", "", false, "");
@@ -101,7 +110,20 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test066() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("1", true, "1");
+        Properties properties0 = new Properties();
+        String[] stringArray0 = new String[17];
+        stringArray0[0] = "1";
+        defaultParser0.parse(options1, stringArray0, properties0, true);
+        defaultParser0.handleConcatenatedOptions("$1#U{D5s`p");
+        defaultParser0.handleConcatenatedOptions("$1#U{D5s`p");
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addRequiredOption("1", "1", true, "-");
@@ -124,7 +146,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[2];
@@ -141,7 +163,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addRequiredOption("1", "-1", true, "1");
@@ -160,7 +182,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         Options options1 = options0.addRequiredOption("1", "1", true, "--1");
@@ -179,7 +201,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         Options options0 = new Options();
         String[] stringArray0 = new String[3];
         stringArray0[0] = "-6=";
@@ -196,7 +218,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -213,7 +235,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -230,7 +252,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -247,7 +269,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         Options options0 = new Options();
         DefaultParser defaultParser0 = new DefaultParser();
         String[] stringArray0 = new String[5];
@@ -266,7 +288,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         Options options0 = new Options();
         options0.addRequiredOption("1", "^u", true, "^u");
         DefaultParser defaultParser0 = new DefaultParser();
@@ -286,7 +308,7 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         DefaultParser defaultParser0 = new DefaultParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[2];
@@ -300,5 +322,57 @@ public class DefaultParser_ESTest extends DefaultParser_ESTest_scaffolding {
             //
             verifyException("org.apache.commons.cli.DefaultParser", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("1", false, "1");
+        Properties properties0 = new Properties();
+        String[] stringArray0 = new String[1];
+        stringArray0[0] = "$1HU/S{D5s`p";
+        defaultParser0.parse(options1, stringArray0, properties0, false);
+        defaultParser0.handleConcatenatedOptions("$1HU/S{D5s`p");
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        OptionGroup optionGroup0 = new OptionGroup();
+        Option option0 = new Option("1", "1");
+        OptionGroup optionGroup1 = optionGroup0.addOption(option0);
+        Options options1 = options0.addOptionGroup(optionGroup1);
+        Properties properties0 = new Properties();
+        String[] stringArray0 = new String[17];
+        stringArray0[0] = "1";
+        defaultParser0.parse(options1, stringArray0, properties0, true);
+        defaultParser0.handleConcatenatedOptions("$1HU/S{D5s`p");
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        OptionGroup optionGroup0 = new OptionGroup();
+        Option option0 = new Option("1", "1");
+        OptionGroup optionGroup1 = optionGroup0.addOption(option0);
+        String[] stringArray0 = new String[0];
+        defaultParser0.parse(options0, stringArray0, (Properties) null, true);
+        optionGroup1.setRequired(true);
+        options0.addOptionGroup(optionGroup1);
+        defaultParser0.handleConcatenatedOptions("$1HU/S{D5s`p");
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
+        DefaultParser defaultParser0 = new DefaultParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("1", true, "1");
+        String[] stringArray0 = new String[1];
+        stringArray0[0] = "1";
+        defaultParser0.parse(options1, stringArray0);
+        defaultParser0.handleConcatenatedOptions("-1");
     }
 }

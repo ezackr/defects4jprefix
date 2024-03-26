@@ -32,7 +32,46 @@ import org.junit.runner.RunWith;
 public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test20() throws Throwable {
+    public void test00() throws Throwable {
+        DifferentiableMultivariateVectorOptimizer differentiableMultivariateVectorOptimizer0 = mock(DifferentiableMultivariateVectorOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((PointVectorValuePair) null).when(differentiableMultivariateVectorOptimizer0).optimize(anyInt(), any(org.apache.commons.math3.analysis.DifferentiableMultivariateVectorFunction.class), any(double[].class), any(double[].class), any(double[].class));
+        doReturn(0, 0, 0, 0, 0).when(differentiableMultivariateVectorOptimizer0).getEvaluations();
+        int[] intArray0 = new int[7];
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        UnitSphereRandomVectorGenerator unitSphereRandomVectorGenerator0 = new UnitSphereRandomVectorGenerator(1092, well1024a0);
+        DifferentiableMultivariateVectorMultiStartOptimizer differentiableMultivariateVectorMultiStartOptimizer0 = new DifferentiableMultivariateVectorMultiStartOptimizer(differentiableMultivariateVectorOptimizer0, 1092, unitSphereRandomVectorGenerator0);
+        HarmonicFitter harmonicFitter0 = new HarmonicFitter(differentiableMultivariateVectorMultiStartOptimizer0);
+        double[] doubleArray0 = new double[1];
+        // Undeclared exception!
+        harmonicFitter0.fit(doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[9];
+        WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint((-649.361113), 3238.74448133, (-1061.55549));
+        weightedObservedPointArray0[0] = weightedObservedPoint0;
+        weightedObservedPointArray0[1] = weightedObservedPointArray0[0];
+        weightedObservedPointArray0[2] = weightedObservedPointArray0[0];
+        weightedObservedPointArray0[3] = weightedObservedPointArray0[1];
+        weightedObservedPointArray0[4] = weightedObservedPointArray0[2];
+        weightedObservedPointArray0[5] = weightedObservedPointArray0[1];
+        weightedObservedPointArray0[6] = weightedObservedPointArray0[4];
+        weightedObservedPointArray0[7] = weightedObservedPoint0;
+        weightedObservedPointArray0[8] = weightedObservedPointArray0[1];
+        HarmonicFitter.ParameterGuesser harmonicFitter_ParameterGuesser0 = new HarmonicFitter.ParameterGuesser(weightedObservedPointArray0);
+        double[] doubleArray0 = harmonicFitter_ParameterGuesser0.guess();
+        DifferentiableMultivariateVectorOptimizer differentiableMultivariateVectorOptimizer0 = mock(DifferentiableMultivariateVectorOptimizer.class, new ViolatedAssumptionAnswer());
+        GaussianRandomGenerator gaussianRandomGenerator0 = new GaussianRandomGenerator((RandomGenerator) null);
+        UncorrelatedRandomVectorGenerator uncorrelatedRandomVectorGenerator0 = new UncorrelatedRandomVectorGenerator(doubleArray0, doubleArray0, gaussianRandomGenerator0);
+        DifferentiableMultivariateVectorMultiStartOptimizer differentiableMultivariateVectorMultiStartOptimizer0 = new DifferentiableMultivariateVectorMultiStartOptimizer(differentiableMultivariateVectorOptimizer0, 2145948725, uncorrelatedRandomVectorGenerator0);
+        HarmonicFitter harmonicFitter0 = new HarmonicFitter(differentiableMultivariateVectorMultiStartOptimizer0);
+        // Undeclared exception!
+        harmonicFitter0.fit(doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[9];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint((-649.361113), 3238.74448133, 3238.74448133);
         weightedObservedPointArray0[0] = weightedObservedPoint0;
@@ -51,7 +90,7 @@ public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test31() throws Throwable {
+    public void test33() throws Throwable {
         DifferentiableMultivariateVectorOptimizer differentiableMultivariateVectorOptimizer0 = mock(DifferentiableMultivariateVectorOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((PointVectorValuePair) null).when(differentiableMultivariateVectorOptimizer0).optimize(anyInt(), any(org.apache.commons.math3.analysis.DifferentiableMultivariateVectorFunction.class), any(double[].class), any(double[].class), any(double[].class));
         doReturn(0, 0, 0, 0).when(differentiableMultivariateVectorOptimizer0).getEvaluations();
@@ -64,14 +103,14 @@ public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test42() throws Throwable {
+    public void test44() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[0];
         HarmonicFitter.ParameterGuesser harmonicFitter_ParameterGuesser0 = null;
         harmonicFitter_ParameterGuesser0 = new HarmonicFitter.ParameterGuesser(weightedObservedPointArray0);
     }
 
     @Test(timeout = 4000)
-    public void test53() throws Throwable {
+    public void test55() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[4];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint((-1444.79391271338), (-1444.79391271338), 1.671311907037975E-113);
         weightedObservedPointArray0[0] = weightedObservedPoint0;
@@ -86,7 +125,7 @@ public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test64() throws Throwable {
+    public void test66() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[4];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint((-1444.79391271338), (-1444.79391271338), (-2194.79828177));
         weightedObservedPointArray0[0] = weightedObservedPoint0;
@@ -101,7 +140,7 @@ public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test75() throws Throwable {
+    public void test77() throws Throwable {
         WeightedObservedPoint[] weightedObservedPointArray0 = new WeightedObservedPoint[4];
         WeightedObservedPoint weightedObservedPoint0 = new WeightedObservedPoint((-1444.79391271338), (-1444.79391271338), (-2194.79828177));
         weightedObservedPointArray0[0] = weightedObservedPoint0;
@@ -114,7 +153,7 @@ public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test86() throws Throwable {
+    public void test88() throws Throwable {
         DifferentiableMultivariateVectorOptimizer differentiableMultivariateVectorOptimizer0 = mock(DifferentiableMultivariateVectorOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[3];
         Well19937a well19937a0 = new Well19937a(intArray0);
@@ -126,7 +165,7 @@ public class HarmonicFitter_ESTest extends HarmonicFitter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test97() throws Throwable {
+    public void test99() throws Throwable {
         DifferentiableMultivariateVectorOptimizer differentiableMultivariateVectorOptimizer0 = mock(DifferentiableMultivariateVectorOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((PointVectorValuePair) null).when(differentiableMultivariateVectorOptimizer0).optimize(anyInt(), any(org.apache.commons.math3.analysis.DifferentiableMultivariateVectorFunction.class), any(double[].class), any(double[].class), any(double[].class));
         doReturn(0, 0).when(differentiableMultivariateVectorOptimizer0).getEvaluations();

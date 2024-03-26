@@ -1906,15 +1906,6 @@ public class BigMatrixImpl_ESTest extends BigMatrixImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119220() throws Throwable {
-        BigDecimal[] bigDecimalArray0 = new BigDecimal[1];
-        BigDecimal bigDecimal0 = BigMatrixImpl.ONE;
-        bigDecimalArray0[0] = bigDecimal0;
-        BigMatrixImpl bigMatrixImpl0 = new BigMatrixImpl(bigDecimalArray0);
-        BigDecimal[] bigDecimalArray1 = bigMatrixImpl0.preMultiply(bigDecimalArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test119221() throws Throwable {
         BigDecimal[] bigDecimalArray0 = new BigDecimal[1];
         BigDecimal bigDecimal0 = BigMatrixImpl.ONE;

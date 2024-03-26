@@ -19,4 +19,14 @@ public class HtmlTreeBuilderState_ESTest extends HtmlTreeBuilderState_ESTest_sca
     public void test00() throws Throwable {
         HtmlTreeBuilderState[] htmlTreeBuilderStateArray0 = HtmlTreeBuilderState.values();
     }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        HtmlTreeBuilderState.valueOf("InCaption");
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
+        HtmlTreeBuilderState.Constants htmlTreeBuilderState_Constants0 = new HtmlTreeBuilderState.Constants();
+    }
 }

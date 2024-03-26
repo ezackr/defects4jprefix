@@ -676,14 +676,22 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5961() throws Throwable {
+    public void test5861() throws Throwable {
+        Document document0 = new Document("s+");
+        document0.prependChild(document0);
+        // Undeclared exception!
+        document0.getElementsByAttributeValueMatching("", "");
+    }
+
+    @Test(timeout = 4000)
+    public void test5962() throws Throwable {
         Document document0 = new Document("p^X8qT");
         Elements elements0 = document0.getElementsContainingOwnText("p^X8qT");
         assertEquals(0, elements0.size());
     }
 
     @Test(timeout = 4000)
-    public void test6062() throws Throwable {
+    public void test6063() throws Throwable {
         Tag tag0 = Tag.valueOf("{sT*zNV");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "{sT*zNV", attributes0);
@@ -692,7 +700,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6163() throws Throwable {
+    public void test6164() throws Throwable {
         Tag tag0 = Tag.valueOf("[");
         Element element0 = new Element(tag0, "[");
         Element element1 = element0.clone();
@@ -700,14 +708,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6264() throws Throwable {
+    public void test6265() throws Throwable {
         Document document0 = new Document("=6+\"|M&Us4");
         Elements elements0 = document0.getElementsByAttributeValueStarting("=6+\"|M&Us4", "=6+\"|M&Us4");
         assertTrue(elements0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test6365() throws Throwable {
+    public void test6366() throws Throwable {
         Document document0 = new Document("|W.V'qlW*S");
         // Undeclared exception!
         try {
@@ -722,7 +730,13 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6566() throws Throwable {
+    public void test6467() throws Throwable {
+        Document document0 = new Document("p^X8qT");
+        document0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test6568() throws Throwable {
         Document document0 = new Document("Pattern syntax error: ");
         Element element0 = document0.prependElement("Pattern syntax error: ");
         Element element1 = element0.nextElementSibling();
@@ -730,7 +744,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6667() throws Throwable {
+    public void test6669() throws Throwable {
         Tag tag0 = Tag.valueOf("00}nq%<");
         Element element0 = new Element(tag0, "m~");
         Element element1 = element0.nextElementSibling();
@@ -738,7 +752,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6768() throws Throwable {
+    public void test6770() throws Throwable {
         Document document0 = new Document("p^X8qT");
         List<TextNode> list0 = document0.textNodes();
         // Undeclared exception!
@@ -754,7 +768,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6869() throws Throwable {
+    public void test6871() throws Throwable {
         Tag tag0 = Tag.valueOf("Tf?<%");
         Element element0 = new Element(tag0, "Tf?<%");
         LinkedList<Comment> linkedList0 = new LinkedList<Comment>();
@@ -771,7 +785,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6970() throws Throwable {
+    public void test6972() throws Throwable {
         Tag tag0 = Tag.valueOf("9");
         Element element0 = new Element(tag0, "");
         // Undeclared exception!
@@ -787,7 +801,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7071() throws Throwable {
+    public void test7073() throws Throwable {
         Document document0 = new Document("J<");
         // Undeclared exception!
         try {
@@ -803,7 +817,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7172() throws Throwable {
+    public void test7174() throws Throwable {
         Tag tag0 = Tag.valueOf("oJf>2G,`c=WEV p");
         Element element0 = new Element(tag0, "u=XqjtMlP-[");
         // Undeclared exception!
@@ -820,7 +834,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7273() throws Throwable {
+    public void test7275() throws Throwable {
         // Undeclared exception!
         try {
             Document.createShell(" />");

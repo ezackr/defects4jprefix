@@ -91,4 +91,9 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.escapeMode(entities_EscapeMode0);
         String string0 = Entities.escape("sfr", document_OutputSettings1);
     }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        Entities entities0 = new Entities();
+    }
 }

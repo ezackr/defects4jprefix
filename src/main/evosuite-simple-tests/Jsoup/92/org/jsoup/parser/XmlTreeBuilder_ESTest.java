@@ -25,7 +25,14 @@ import org.junit.runner.RunWith;
 public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
+        Parser parser0 = Parser.htmlParser();
+        xmlTreeBuilder0.parseFragment("k`FVihJ<?hz", (Element) null, "k`FVihJ<?hz", parser0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.Doctype token_Doctype0 = new Token.Doctype();
         // Undeclared exception!
@@ -41,7 +48,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         PipedReader pipedReader0 = new PipedReader();
         // Undeclared exception!
@@ -57,7 +64,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("k`FVKhJ<?hz", "k`FVKhJ<?hz");
         Token.StartTag token_StartTag0 = new Token.StartTag();
@@ -69,7 +76,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("k`FVKhJ<?hz", "k`FVKhJ<?hz");
         Token.StartTag token_StartTag0 = new Token.StartTag();
@@ -82,7 +89,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.Comment token_Comment0 = new Token.Comment();
         // Undeclared exception!
@@ -98,26 +105,26 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         List<Node> list0 = Parser.parseXmlFragment("<![CDAA[", "<![CDAA[");
         assertEquals(1, list0.size());
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Document document0 = xmlTreeBuilder0.parse("k`-Vh7c[<?z", "k`-Vh7c[<?z");
         assertEquals("k`-Vh7c[<?z", document0.baseUri());
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         List<Node> list0 = Parser.parseXmlFragment("<![CDATA[", "<![CDATA[");
         assertEquals(1, list0.size());
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("org.jsoup.parser.XmlTreeBuilder$1", "org.jsoup.parser.XmlTreeBuilder$1");
         boolean boolean0 = xmlTreeBuilder0.processEndTag("org.jsoup.parser.XmlTreeBuilder$1");
@@ -125,7 +132,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("k`FVKhJ<?hz", "k`FVKhJ<?hz");
         xmlTreeBuilder0.processStartTag("k`FVKhJ<?hz");
@@ -134,7 +141,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("Scrpz2IDat/nYTYgOpTn", "Scrpz2IDat/nYTYgOpTn");
         xmlTreeBuilder0.processStartTag("Scrpz2IDat/nYTYgOpTn");

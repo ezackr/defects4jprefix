@@ -545,16 +545,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01348() throws Throwable {
-        Hour hour0 = new Hour();
-        Minute minute0 = new Minute((-3500), hour0);
-        TimeSeriesDataItem timeSeriesDataItem0 = new TimeSeriesDataItem((RegularTimePeriod) minute0, (Number) 0);
-        TimeSeries timeSeries0 = new TimeSeries(timeSeriesDataItem0);
-        timeSeries0.addOrUpdate((RegularTimePeriod) hour0, (-1.0));
-        Number number0 = timeSeries0.getValue((RegularTimePeriod) hour0);
-    }
-
-    @Test(timeout = 4000)
     public void test01349() throws Throwable {
         Hour hour0 = new Hour();
         Minute minute0 = new Minute((-3500), hour0);
@@ -677,16 +667,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
         timeSeries0.addOrUpdate((RegularTimePeriod) hour0, (double) 1392409281320L);
         Number number0 = timeSeries0.getValue((RegularTimePeriod) hour0);
         timeSeries0.getMaximumItemCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test01561() throws Throwable {
-        Hour hour0 = new Hour();
-        Minute minute0 = new Minute((-3500), hour0);
-        TimeSeriesDataItem timeSeriesDataItem0 = new TimeSeriesDataItem((RegularTimePeriod) minute0, (Number) 0);
-        TimeSeries timeSeries0 = new TimeSeries(timeSeriesDataItem0);
-        timeSeries0.addOrUpdate((RegularTimePeriod) hour0, (double) 1392409281320L);
-        Number number0 = timeSeries0.getValue((RegularTimePeriod) hour0);
     }
 
     @Test(timeout = 4000)
@@ -1766,14 +1746,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075180() throws Throwable {
-        Week week0 = new Week();
-        TimeSeries timeSeries0 = new TimeSeries(week0);
-        TimeSeries timeSeries1 = timeSeries0.createCopy(1, 1);
-        timeSeries1.equals((Object) timeSeries0);
-    }
-
-    @Test(timeout = 4000)
     public void test075181() throws Throwable {
         Week week0 = new Week();
         TimeSeries timeSeries0 = new TimeSeries(week0);
@@ -1898,14 +1870,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(4);
         boolean boolean0 = timeSeries0.equals(fixedMillisecond0);
         timeSeries0.getDomainDescription();
-    }
-
-    @Test(timeout = 4000)
-    public void test078193() throws Throwable {
-        Week week0 = new Week();
-        TimeSeries timeSeries0 = new TimeSeries(week0);
-        TimeSeries timeSeries1 = timeSeries0.createCopy(1, 1);
-        timeSeries1.equals((Object) timeSeries0);
     }
 
     @Test(timeout = 4000)
@@ -2552,14 +2516,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test111261() throws Throwable {
-        Week week0 = new Week();
-        TimeSeries timeSeries0 = new TimeSeries(week0);
-        TimeSeries timeSeries1 = timeSeries0.createCopy(1, 1);
-        boolean boolean0 = timeSeries1.equals(timeSeries0);
-    }
-
-    @Test(timeout = 4000)
-    public void test111262() throws Throwable {
         Week week0 = new Week();
         TimeSeries timeSeries0 = new TimeSeries(week0);
         TimeSeries timeSeries1 = timeSeries0.createCopy(1, 1);

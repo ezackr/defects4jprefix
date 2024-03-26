@@ -226,13 +226,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1825() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-    }
-
-    @Test(timeout = 4000)
     public void test1826() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
@@ -256,21 +249,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
         char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
         boolean boolean0 = textBuffer0.hasTextAsCharacters();
         textBuffer0.size();
-    }
-
-    @Test(timeout = 4000)
-    public void test1929() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-    }
-
-    @Test(timeout = 4000)
-    public void test1930() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-        char[] charArray1 = textBuffer0.contentsAsArray();
     }
 
     @Test(timeout = 4000)
@@ -319,23 +297,7 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2236() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-    }
-
-    @Test(timeout = 4000)
     public void test2237() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-        textBuffer0.contentsAsArray();
-        char[] charArray1 = textBuffer0.getTextBuffer();
-    }
-
-    @Test(timeout = 4000)
-    public void test2238() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
         char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
@@ -377,22 +339,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
         char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
         char[] charArray1 = textBuffer0.getTextBuffer();
         textBuffer0.getCurrentSegmentSize();
-    }
-
-    @Test(timeout = 4000)
-    public void test2443() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-        char[] charArray1 = textBuffer0.getTextBuffer();
-    }
-
-    @Test(timeout = 4000)
-    public void test2444() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-        char[] charArray1 = textBuffer0.getTextBuffer();
     }
 
     @Test(timeout = 4000)
@@ -514,13 +460,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test3859() throws Throwable {
-        TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
-        char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
-        char[] charArray1 = textBuffer0.getCurrentSegment();
-    }
-
-    @Test(timeout = 4000)
-    public void test3860() throws Throwable {
         TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
         char[] charArray0 = textBuffer0.emptyAndGetCurrentSegment();
         char[] charArray1 = textBuffer0.getCurrentSegment();

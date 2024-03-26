@@ -666,7 +666,37 @@ public class ReferenceCollectingCallback_ESTest extends ReferenceCollectingCallb
     }
 
     @Test(timeout = 4000)
-    public void test4845() throws Throwable {
+    public void test4545() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        Stack<JSType> stack0 = new Stack<JSType>();
+        Node node0 = jSTypeRegistry0.createParameters((List<JSType>) stack0);
+        Node node1 = new Node(114, node0, node0, node0, node0);
+        ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        Stack<JSType> stack0 = new Stack<JSType>();
+        Node node0 = jSTypeRegistry0.createParameters((List<JSType>) stack0);
+        Node node1 = new Node(113, node0, node0, node0, node0);
+        ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        Stack<JSType> stack0 = new Stack<JSType>();
+        Node node0 = jSTypeRegistry0.createParameters((List<JSType>) stack0);
+        Node node1 = new Node(115, node0, node0, node0, node0);
+        ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4848() throws Throwable {
         Node node0 = Node.newString("j4");
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
         boolean boolean0 = referenceCollectingCallback_BasicBlock0.provablyExecutesBefore((ReferenceCollectingCallback.BasicBlock) null);
@@ -674,7 +704,7 @@ public class ReferenceCollectingCallback_ESTest extends ReferenceCollectingCallb
     }
 
     @Test(timeout = 4000)
-    public void test4946() throws Throwable {
+    public void test4949() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("mom.qoogle.aasript.jscomp.RefereneClllec,ingCalbnck", "mom.qoogle.aasript.jscomp.RefereneClllec,ingCalbnck");
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);

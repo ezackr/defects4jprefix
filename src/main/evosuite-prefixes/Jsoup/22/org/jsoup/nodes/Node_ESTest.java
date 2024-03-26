@@ -229,7 +229,27 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
+    public void test2630() throws Throwable {
+        TextNode textNode0 = new TextNode("succJneqq", "succJneqq");
+        textNode0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2731() throws Throwable {
+        Document document0 = Document.createShell("lqV?8Gyj");
+        document0.parentNode = (Node) document0;
+        // Undeclared exception!
+        document0.parentNode.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2832() throws Throwable {
+        XmlDeclaration xmlDeclaration0 = new XmlDeclaration(">cz@9R", ">cz@9R", false);
+        xmlDeclaration0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2933() throws Throwable {
         Document document0 = Document.createShell("abs:!m%iczr");
         Element element0 = document0.prependText("abs:!m%iczr");
         Document document1 = document0.clone();

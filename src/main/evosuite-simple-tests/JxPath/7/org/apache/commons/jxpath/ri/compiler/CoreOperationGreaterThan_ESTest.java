@@ -81,7 +81,25 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        Expression[] expressionArray0 = new Expression[3];
+        CoreFunction coreFunction0 = new CoreFunction(0, expressionArray0);
+        expressionArray0[0] = (Expression) coreFunction0;
+        expressionArray0[1] = (Expression) coreFunction0;
+        CoreOperationAdd coreOperationAdd0 = new CoreOperationAdd(expressionArray0);
+        expressionArray0[2] = (Expression) coreOperationAdd0;
+        CoreOperationOr coreOperationOr0 = new CoreOperationOr(expressionArray0);
+        CoreOperationGreaterThan coreOperationGreaterThan0 = new CoreOperationGreaterThan(coreOperationOr0, expressionArray0[0]);
+        PredicateContext predicateContext0 = new PredicateContext((EvalContext) null, coreOperationOr0);
+        AttributeContext attributeContext0 = new AttributeContext(predicateContext0, (NodeTest) null);
+        PrecedingOrFollowingContext precedingOrFollowingContext0 = new PrecedingOrFollowingContext(attributeContext0, (NodeTest) null, false);
+        AncestorContext ancestorContext0 = new AncestorContext(precedingOrFollowingContext0, false, (NodeTest) null);
+        // Undeclared exception!
+        coreOperationGreaterThan0.computeValue(ancestorContext0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         QName qName0 = new QName("ODS Qf$?;i9{MW` qI", ":SQ#JHu?");
         Expression[] expressionArray0 = new Expression[0];
         ExtensionFunction extensionFunction0 = new ExtensionFunction(qName0, expressionArray0);
@@ -105,7 +123,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         CoreOperationEqual coreOperationEqual0 = new CoreOperationEqual((Expression) null, (Expression) null);
         CoreOperationLessThanOrEqual coreOperationLessThanOrEqual0 = new CoreOperationLessThanOrEqual(coreOperationEqual0, (Expression) null);
         CoreOperationSubtract coreOperationSubtract0 = new CoreOperationSubtract(coreOperationLessThanOrEqual0, coreOperationEqual0);
@@ -125,7 +143,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         CoreOperationGreaterThan coreOperationGreaterThan0 = new CoreOperationGreaterThan((Expression) null, (Expression) null);
         AttributeContext attributeContext0 = new AttributeContext((EvalContext) null, (NodeTest) null);
         SelfContext selfContext0 = new SelfContext(attributeContext0, (NodeTest) null);
@@ -146,7 +164,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         CoreOperationGreaterThan coreOperationGreaterThan0 = new CoreOperationGreaterThan((Expression) null, (Expression) null);
         Expression[] expressionArray0 = new Expression[0];
         coreOperationGreaterThan0.args = expressionArray0;
@@ -163,7 +181,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         QName qName0 = new QName("");
         Expression[] expressionArray0 = new Expression[3];
         CoreFunction coreFunction0 = new CoreFunction((-1342), expressionArray0);
@@ -190,7 +208,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         CoreFunction coreFunction0 = new CoreFunction((-1342), (Expression[]) null);
         Long long0 = new Long((-1342));
         Constant constant0 = new Constant(long0);
@@ -200,7 +218,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Constant constant0 = new Constant("L@`Y");
         CoreOperationSubtract coreOperationSubtract0 = new CoreOperationSubtract(constant0, constant0);
         CoreOperationGreaterThan coreOperationGreaterThan0 = new CoreOperationGreaterThan(coreOperationSubtract0, constant0);
@@ -212,7 +230,7 @@ public class CoreOperationGreaterThan_ESTest extends CoreOperationGreaterThan_ES
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Constant constant0 = new Constant("L@`Y");
         CoreOperationSubtract coreOperationSubtract0 = new CoreOperationSubtract(constant0, constant0);
         CoreOperationGreaterThan coreOperationGreaterThan0 = new CoreOperationGreaterThan(coreOperationSubtract0, constant0);

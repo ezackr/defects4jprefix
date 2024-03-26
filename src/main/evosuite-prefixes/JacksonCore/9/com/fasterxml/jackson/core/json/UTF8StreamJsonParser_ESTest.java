@@ -1865,7 +1865,20 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test132139() throws Throwable {
+    public void test131139() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
+        ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) 13;
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+        UTF8StreamJsonParser uTF8StreamJsonParser0 = new UTF8StreamJsonParser(iOContext0, (-1433), byteArrayInputStream0, objectCodec0, byteQuadsCanonicalizer0, byteArray0, 53, 2, false);
+        uTF8StreamJsonParser0.nextToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test132140() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
@@ -1879,7 +1892,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test133140() throws Throwable {
+    public void test133141() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
@@ -1891,7 +1904,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test134141() throws Throwable {
+    public void test134142() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[6];
@@ -1905,7 +1918,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test135142() throws Throwable {
+    public void test135143() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
@@ -1917,7 +1930,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test136143() throws Throwable {
+    public void test136144() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         FileDescriptor fileDescriptor0 = new FileDescriptor();
@@ -1929,7 +1942,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test137144() throws Throwable {
+    public void test137145() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[6];
@@ -1943,7 +1956,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test138145() throws Throwable {
+    public void test138146() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
@@ -1956,7 +1969,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test139146() throws Throwable {
+    public void test139147() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedInputStream pipedInputStream0 = new PipedInputStream(2);
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(pipedInputStream0, pipedInputStream0);
@@ -1969,7 +1982,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test140147() throws Throwable {
+    public void test140148() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         byte[] byteArray0 = new byte[2];
@@ -1981,7 +1994,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test141148() throws Throwable {
+    public void test141149() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         byte[] byteArray0 = new byte[7];
         byteArray0[0] = (byte) (-24);
@@ -1995,7 +2008,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test142149() throws Throwable {
+    public void test142150() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         byte[] byteArray0 = new byte[5];
@@ -2009,7 +2022,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test143150() throws Throwable {
+    public void test143151() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         byte[] byteArray0 = new byte[7];
         byteArray0[0] = (byte) (-24);
@@ -2024,7 +2037,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test144151() throws Throwable {
+    public void test144152() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
@@ -2038,7 +2051,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test145152() throws Throwable {
+    public void test145153() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[2];
@@ -2051,7 +2064,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test146153() throws Throwable {
+    public void test146154() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         byte[] byteArray0 = new byte[6];
@@ -2064,7 +2077,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test147154() throws Throwable {
+    public void test147155() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         Enumeration<InputStream> enumeration0 = (Enumeration<InputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
@@ -2081,7 +2094,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test148155() throws Throwable {
+    public void test148156() throws Throwable {
         IOContext iOContext0 = new IOContext((BufferRecycler) null, (Object) null, false);
         ByteQuadsCanonicalizer byteQuadsCanonicalizer0 = ByteQuadsCanonicalizer.createRoot();
         byte[] byteArray0 = new byte[9];
@@ -2093,7 +2106,7 @@ public class UTF8StreamJsonParser_ESTest extends UTF8StreamJsonParser_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test149156() throws Throwable {
+    public void test149157() throws Throwable {
         int[] intArray0 = UTF8StreamJsonParser.growArrayBy((int[]) null, 3);
     }
 }

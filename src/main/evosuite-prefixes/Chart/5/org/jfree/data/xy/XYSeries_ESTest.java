@@ -38,14 +38,16 @@ import org.junit.runner.RunWith;
 public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
-        Year year0 = new Year(1433);
+    public void test000() throws Throwable {
+        Year year0 = new Year(1431);
         XYSeries xYSeries0 = new XYSeries(year0);
-        xYSeries0.setMaximumItemCount(0);
-        Object object0 = xYSeries0.clone();
-        xYSeries0.setMaximumItemCount(9999);
-        boolean boolean0 = xYSeries0.equals(object0);
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.add((double) 9999, (Number) 9999, true);
+        XYDataItem xYDataItem0 = new XYDataItem((Number) 9999, (Number) 9999);
+        xYSeries0.add(xYDataItem0, false);
+        xYSeries0.add((double) 1431, 1945.925, true);
+        xYSeries0.add(xYDataItem0);
+        xYSeries0.add((double) year0.MINIMUM_YEAR, 495.8750692);
+        xYSeries0.hashCode();
     }
 
     @Test(timeout = 4000)
@@ -56,10 +58,21 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Object object0 = xYSeries0.clone();
         xYSeries0.setMaximumItemCount(9999);
         boolean boolean0 = xYSeries0.equals(object0);
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test022() throws Throwable {
+    public void test012() throws Throwable {
+        Year year0 = new Year(1433);
+        XYSeries xYSeries0 = new XYSeries(year0);
+        xYSeries0.setMaximumItemCount(0);
+        Object object0 = xYSeries0.clone();
+        xYSeries0.setMaximumItemCount(9999);
+        boolean boolean0 = xYSeries0.equals(object0);
+    }
+
+    @Test(timeout = 4000)
+    public void test023() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, false, false);
         Float float0 = new Float((double) 9999);
@@ -69,7 +82,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test033() throws Throwable {
+    public void test034() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         Float float0 = new Float((float) 1L);
@@ -80,7 +93,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test044() throws Throwable {
+    public void test045() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         Integer integer0 = new Integer((-9999));
@@ -92,7 +105,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test055() throws Throwable {
+    public void test056() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Day day0 = new Day(mockDate0);
         Hour hour0 = new Hour(0, day0);
@@ -102,7 +115,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066() throws Throwable {
+    public void test067() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0, true);
         xYSeries0.addOrUpdate((Number) 23, (Number) 0);
@@ -111,7 +124,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test078() throws Throwable {
         SerialDate serialDate0 = SerialDate.createInstance(3019);
         XYSeries xYSeries0 = new XYSeries(serialDate0);
         xYSeries0.add((double) 1, (Number) 6, true);
@@ -122,7 +135,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test089() throws Throwable {
         Year year0 = new Year((-4));
         XYSeries xYSeries0 = new XYSeries(year0, true);
         Short short0 = new Short((short) (-1));
@@ -132,7 +145,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test0910() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         Integer integer0 = new Integer((-9999));
@@ -143,21 +156,12 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
-        XYSeries xYSeries0 = new XYSeries("rg.frWe.data.Ra_ge", false, true);
-        Integer integer0 = JLayeredPane.DEFAULT_LAYER;
-        xYSeries0.addOrUpdate((Number) integer0, (Number) integer0);
-        xYSeries0.remove((Number) integer0);
-        xYSeries0.getAutoSort();
-    }
-
-    @Test(timeout = 4000)
     public void test1011() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("rg.frWe.data.Ra_ge", false, true);
         Integer integer0 = JLayeredPane.DEFAULT_LAYER;
         xYSeries0.addOrUpdate((Number) integer0, (Number) integer0);
         xYSeries0.remove((Number) integer0);
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -166,15 +170,16 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Integer integer0 = JLayeredPane.DEFAULT_LAYER;
         xYSeries0.addOrUpdate((Number) integer0, (Number) integer0);
         xYSeries0.remove((Number) integer0);
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test1113() throws Throwable {
-        Second second0 = new Second();
-        XYSeries xYSeries0 = new XYSeries(second0, true, true);
-        xYSeries0.add((double) 59, (Number) 59, false);
-        xYSeries0.getAutoSort();
+    public void test1013() throws Throwable {
+        XYSeries xYSeries0 = new XYSeries("rg.frWe.data.Ra_ge", false, true);
+        Integer integer0 = JLayeredPane.DEFAULT_LAYER;
+        xYSeries0.addOrUpdate((Number) integer0, (Number) integer0);
+        xYSeries0.remove((Number) integer0);
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -182,19 +187,16 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Second second0 = new Second();
         XYSeries xYSeries0 = new XYSeries(second0, true, true);
         xYSeries0.add((double) 59, (Number) 59, false);
-        xYSeries0.remove((Number) 59);
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test1215() throws Throwable {
-        MockDate mockDate0 = new MockDate();
-        Day day0 = new Day(mockDate0);
-        Hour hour0 = new Hour(0, day0);
-        XYSeries xYSeries0 = new XYSeries(hour0, false);
-        xYSeries0.addOrUpdate((Number) 23, (Number) 0);
-        XYDataItem xYDataItem0 = xYSeries0.remove(0);
-        xYSeries0.getAutoSort();
+    public void test1115() throws Throwable {
+        Second second0 = new Second();
+        XYSeries xYSeries0 = new XYSeries(second0, true, true);
+        xYSeries0.add((double) 59, (Number) 59, false);
+        xYSeries0.remove((Number) 59);
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -205,7 +207,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0, false);
         xYSeries0.addOrUpdate((Number) 23, (Number) 0);
         XYDataItem xYDataItem0 = xYSeries0.remove(0);
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -216,7 +218,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0, false);
         xYSeries0.addOrUpdate((Number) 23, (Number) 0);
         XYDataItem xYDataItem0 = xYSeries0.remove(0);
-        xYDataItem0.getYValue();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
@@ -227,15 +229,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0, false);
         xYSeries0.addOrUpdate((Number) 23, (Number) 0);
         XYDataItem xYDataItem0 = xYSeries0.remove(0);
-        xYSeries0.getMaximumItemCount();
+        xYDataItem0.getYValue();
     }
 
     @Test(timeout = 4000)
-    public void test1319() throws Throwable {
-        Hour hour0 = new Hour();
-        XYSeries xYSeries0 = new XYSeries(hour0);
-        xYSeries0.addOrUpdate((Number) 23, (Number) 23);
-        xYSeries0.remove(0);
+    public void test1219() throws Throwable {
+        MockDate mockDate0 = new MockDate();
+        Day day0 = new Day(mockDate0);
+        Hour hour0 = new Hour(0, day0);
+        XYSeries xYSeries0 = new XYSeries(hour0, false);
+        xYSeries0.addOrUpdate((Number) 23, (Number) 0);
+        XYDataItem xYDataItem0 = xYSeries0.remove(0);
         xYSeries0.getMaximumItemCount();
     }
 
@@ -245,18 +249,16 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.addOrUpdate((Number) 23, (Number) 23);
         xYSeries0.remove(0);
-        xYSeries0.getAutoSort();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test1421() throws Throwable {
-        Year year0 = new Year(1433);
-        XYSeries xYSeries0 = new XYSeries(year0);
-        XYDataItem xYDataItem0 = new XYDataItem((Number) 9999, (Number) 9999);
-        xYSeries0.add(xYDataItem0);
-        xYSeries0.add((double) 0, 495.8750692);
-        int int0 = xYSeries0.indexOf(9999);
-        xYSeries0.getMaximumItemCount();
+    public void test1321() throws Throwable {
+        Hour hour0 = new Hour();
+        XYSeries xYSeries0 = new XYSeries(hour0);
+        xYSeries0.addOrUpdate((Number) 23, (Number) 23);
+        xYSeries0.remove(0);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -267,16 +269,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.add(xYDataItem0);
         xYSeries0.add((double) 0, 495.8750692);
         int int0 = xYSeries0.indexOf(9999);
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test1523() throws Throwable {
-        Minute minute0 = new Minute();
-        XYSeries xYSeries0 = new XYSeries(minute0, false);
-        XYDataItem xYDataItem0 = new XYDataItem(Double.POSITIVE_INFINITY, (double) 0);
+    public void test1423() throws Throwable {
+        Year year0 = new Year(1433);
+        XYSeries xYSeries0 = new XYSeries(year0);
+        XYDataItem xYDataItem0 = new XYDataItem((Number) 9999, (Number) 9999);
         xYSeries0.add(xYDataItem0);
-        xYSeries0.getY(0);
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.add((double) 0, 495.8750692);
+        int int0 = xYSeries0.indexOf(9999);
     }
 
     @Test(timeout = 4000)
@@ -286,7 +289,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYDataItem xYDataItem0 = new XYDataItem(Double.POSITIVE_INFINITY, (double) 0);
         xYSeries0.add(xYDataItem0);
         xYSeries0.getY(0);
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -296,15 +299,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYDataItem xYDataItem0 = new XYDataItem(Double.POSITIVE_INFINITY, (double) 0);
         xYSeries0.add(xYDataItem0);
         xYSeries0.getY(0);
-        xYSeries0.getAutoSort();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test1626() throws Throwable {
+    public void test1526() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
-        xYSeries0.addOrUpdate((double) Integer.MAX_VALUE, (-1011.0262385));
-        Number number0 = xYSeries0.getY(0);
+        XYDataItem xYDataItem0 = new XYDataItem(Double.POSITIVE_INFINITY, (double) 0);
+        xYSeries0.add(xYDataItem0);
+        xYSeries0.getY(0);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -313,7 +318,6 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.addOrUpdate((double) Integer.MAX_VALUE, (-1011.0262385));
         Number number0 = xYSeries0.getY(0);
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -322,7 +326,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.addOrUpdate((double) Integer.MAX_VALUE, (-1011.0262385));
         Number number0 = xYSeries0.getY(0);
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -331,16 +335,16 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.addOrUpdate((double) Integer.MAX_VALUE, (-1011.0262385));
         Number number0 = xYSeries0.getY(0);
-        xYSeries0.getAutoSort();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test1730() throws Throwable {
-        Year year0 = new Year(1433);
-        XYSeries xYSeries0 = new XYSeries(year0);
-        xYSeries0.add((double) 0, 495.8750692);
-        Number number0 = xYSeries0.getX(0);
-        xYSeries0.getMaximumItemCount();
+    public void test1630() throws Throwable {
+        Minute minute0 = new Minute();
+        XYSeries xYSeries0 = new XYSeries(minute0, false);
+        xYSeries0.addOrUpdate((double) Integer.MAX_VALUE, (-1011.0262385));
+        Number number0 = xYSeries0.getY(0);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -349,7 +353,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.add((double) 0, 495.8750692);
         Number number0 = xYSeries0.getX(0);
-        xYSeries0.getAutoSort();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -358,15 +362,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.add((double) 0, 495.8750692);
         Number number0 = xYSeries0.getX(0);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test1833() throws Throwable {
-        Hour hour0 = new Hour();
-        XYSeries xYSeries0 = new XYSeries(hour0);
-        xYSeries0.addOrUpdate((Number) 23, (Number) 23);
-        xYSeries0.getX(0);
-        xYSeries0.getMaximumItemCount();
+    public void test1733() throws Throwable {
+        Year year0 = new Year(1433);
+        XYSeries xYSeries0 = new XYSeries(year0);
+        xYSeries0.add((double) 0, 495.8750692);
+        Number number0 = xYSeries0.getX(0);
     }
 
     @Test(timeout = 4000)
@@ -375,15 +379,16 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.addOrUpdate((Number) 23, (Number) 23);
         xYSeries0.getX(0);
-        xYSeries0.getAutoSort();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test1935() throws Throwable {
-        SerialDate serialDate0 = SerialDate.createInstance(3019);
-        XYSeries xYSeries0 = new XYSeries(serialDate0);
-        xYSeries0.add((-1597.7069284375646), (Number) 0);
-        Number number0 = xYSeries0.getX(0);
+    public void test1835() throws Throwable {
+        Hour hour0 = new Hour();
+        XYSeries xYSeries0 = new XYSeries(hour0);
+        xYSeries0.addOrUpdate((Number) 23, (Number) 23);
+        xYSeries0.getX(0);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -392,7 +397,6 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(serialDate0);
         xYSeries0.add((-1597.7069284375646), (Number) 0);
         Number number0 = xYSeries0.getX(0);
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -401,25 +405,24 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(serialDate0);
         xYSeries0.add((-1597.7069284375646), (Number) 0);
         Number number0 = xYSeries0.getX(0);
+        xYSeries0.getMaximumItemCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test1938() throws Throwable {
+        SerialDate serialDate0 = SerialDate.createInstance(3019);
+        XYSeries xYSeries0 = new XYSeries(serialDate0);
+        xYSeries0.add((-1597.7069284375646), (Number) 0);
+        Number number0 = xYSeries0.getX(0);
         xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test2038() throws Throwable {
+    public void test2039() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.setMaximumItemCount(0);
         int int0 = xYSeries0.getMaximumItemCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test2139() throws Throwable {
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
-        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
-        Float float0 = new Float((float) 1L);
-        xYSeries0.add((double) 1L, (Number) float0);
-        xYSeries0.getItemCount();
-        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -429,7 +432,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Float float0 = new Float((float) 1L);
         xYSeries0.add((double) 1L, (Number) float0);
         xYSeries0.getItemCount();
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -439,16 +442,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Float float0 = new Float((float) 1L);
         xYSeries0.add((double) 1L, (Number) float0);
         xYSeries0.getItemCount();
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test2242() throws Throwable {
-        Minute minute0 = new Minute();
-        XYSeries xYSeries0 = new XYSeries(minute0, false, true);
-        xYSeries0.add((Number) 0, (Number) 0);
-        xYSeries0.getDataItem(0);
-        xYSeries0.getAutoSort();
+    public void test2142() throws Throwable {
+        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
+        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
+        Float float0 = new Float((float) 1L);
+        xYSeries0.add((double) 1L, (Number) float0);
+        xYSeries0.getItemCount();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -457,7 +461,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(minute0, false, true);
         xYSeries0.add((Number) 0, (Number) 0);
         xYSeries0.getDataItem(0);
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -466,11 +470,20 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(minute0, false, true);
         xYSeries0.add((Number) 0, (Number) 0);
         xYSeries0.getDataItem(0);
+        xYSeries0.getAllowDuplicateXValues();
+    }
+
+    @Test(timeout = 4000)
+    public void test2245() throws Throwable {
+        Minute minute0 = new Minute();
+        XYSeries xYSeries0 = new XYSeries(minute0, false, true);
+        xYSeries0.add((Number) 0, (Number) 0);
+        xYSeries0.getDataItem(0);
         xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test2345() throws Throwable {
+    public void test2346() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.addOrUpdate(1537.2601524381548, (double) 23);
@@ -478,7 +491,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2346() throws Throwable {
+    public void test2347() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.addOrUpdate(1537.2601524381548, (double) 23);
@@ -487,18 +500,10 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2447() throws Throwable {
-        Quarter quarter0 = new Quarter();
-        XYSeries xYSeries0 = new XYSeries(quarter0, false);
-        boolean boolean0 = xYSeries0.getAutoSort();
-    }
-
-    @Test(timeout = 4000)
     public void test2448() throws Throwable {
         Quarter quarter0 = new Quarter();
         XYSeries xYSeries0 = new XYSeries(quarter0, false);
         boolean boolean0 = xYSeries0.getAutoSort();
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -506,15 +511,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Quarter quarter0 = new Quarter();
         XYSeries xYSeries0 = new XYSeries(quarter0, false);
         boolean boolean0 = xYSeries0.getAutoSort();
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test2550() throws Throwable {
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(0L);
-        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true, true);
+    public void test2450() throws Throwable {
+        Quarter quarter0 = new Quarter();
+        XYSeries xYSeries0 = new XYSeries(quarter0, false);
+        boolean boolean0 = xYSeries0.getAutoSort();
         xYSeries0.getAllowDuplicateXValues();
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -522,15 +527,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(0L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true, true);
         xYSeries0.getAllowDuplicateXValues();
-        xYSeries0.getAutoSort();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test2652() throws Throwable {
-        Hour hour0 = new Hour();
-        XYSeries xYSeries0 = new XYSeries(hour0);
-        xYSeries0.setNotify(false);
-        XYSeries xYSeries1 = xYSeries0.createCopy(0, 0);
+    public void test2552() throws Throwable {
+        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(0L);
+        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true, true);
+        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -539,7 +544,6 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.setNotify(false);
         XYSeries xYSeries1 = xYSeries0.createCopy(0, 0);
-        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -548,11 +552,20 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.setNotify(false);
         XYSeries xYSeries1 = xYSeries0.createCopy(0, 0);
+        xYSeries1.getMaximumItemCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test2655() throws Throwable {
+        Hour hour0 = new Hour();
+        XYSeries xYSeries0 = new XYSeries(hour0);
+        xYSeries0.setNotify(false);
+        XYSeries xYSeries1 = xYSeries0.createCopy(0, 0);
         xYSeries1.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test2755() throws Throwable {
+    public void test2756() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Day day0 = new Day(mockDate0);
         Hour hour0 = new Hour(0, day0);
@@ -563,7 +576,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2856() throws Throwable {
+    public void test2857() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, false, false);
         Float float0 = new Float((double) (-9999));
@@ -573,7 +586,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2957() throws Throwable {
+    public void test2958() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.data = null;
@@ -581,14 +594,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3058() throws Throwable {
+    public void test3059() throws Throwable {
         Integer integer0 = Integer.valueOf((-1314));
         XYSeries xYSeries0 = new XYSeries(integer0);
         xYSeries0.updateByIndex((-1314), integer0);
     }
 
     @Test(timeout = 4000)
-    public void test3159() throws Throwable {
+    public void test3160() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.data = null;
@@ -596,7 +609,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3260() throws Throwable {
+    public void test3261() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         BigInteger bigInteger0 = BigInteger.ONE;
@@ -604,14 +617,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3361() throws Throwable {
+    public void test3362() throws Throwable {
         Integer integer0 = JLayeredPane.DRAG_LAYER;
         XYSeries xYSeries0 = new XYSeries(integer0);
         xYSeries0.setMaximumItemCount((-1858));
     }
 
     @Test(timeout = 4000)
-    public void test3462() throws Throwable {
+    public void test3463() throws Throwable {
         Second second0 = new Second();
         XYSeries xYSeries0 = new XYSeries(second0, true, true);
         LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
@@ -620,14 +633,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3563() throws Throwable {
+    public void test3564() throws Throwable {
         XYDataItem xYDataItem0 = new XYDataItem((double) 1605, 0.0);
         XYSeries xYSeries0 = new XYSeries(xYDataItem0, true, true);
         xYSeries0.remove((Number) null);
     }
 
     @Test(timeout = 4000)
-    public void test3664() throws Throwable {
+    public void test3665() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, true, false);
         xYSeries0.data = null;
@@ -635,7 +648,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3765() throws Throwable {
+    public void test3766() throws Throwable {
         Quarter quarter0 = new Quarter();
         XYSeries xYSeries0 = new XYSeries(quarter0, true);
         java.util.Vector<String> vector0 = new java.util.Vector<String>();
@@ -646,14 +659,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3866() throws Throwable {
+    public void test3867() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.remove((-607));
     }
 
     @Test(timeout = 4000)
-    public void test3967() throws Throwable {
+    public void test3968() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false, false);
         xYSeries0.data = null;
@@ -661,7 +674,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4068() throws Throwable {
+    public void test4069() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         ArrayList<Object> arrayList0 = new ArrayList<Object>();
@@ -671,7 +684,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4169() throws Throwable {
+    public void test4170() throws Throwable {
         MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
         Date date0 = mockSimpleDateFormat0.get2DigitYearStart();
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(date0);
@@ -680,13 +693,13 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4270() throws Throwable {
+    public void test4271() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("No observation for x = ", false, false);
         xYSeries0.getX((-915));
     }
 
     @Test(timeout = 4000)
-    public void test4371() throws Throwable {
+    public void test4372() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false, false);
         xYSeries0.data = null;
@@ -694,21 +707,21 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4472() throws Throwable {
+    public void test4473() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond();
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true, false);
         xYSeries0.getDataItem(6);
     }
 
     @Test(timeout = 4000)
-    public void test4573() throws Throwable {
+    public void test4574() throws Throwable {
         MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar((-413), (-1869), (-413));
         XYSeries xYSeries0 = new XYSeries(mockGregorianCalendar0, true);
         xYSeries0.delete((-413), 748);
     }
 
     @Test(timeout = 4000)
-    public void test4674() throws Throwable {
+    public void test4675() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.addOrUpdate((Number) 23, (Number) 23);
@@ -716,7 +729,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4775() throws Throwable {
+    public void test4776() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(0L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true, true);
         xYSeries0.add(0.0, 0.0);
@@ -724,7 +737,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4876() throws Throwable {
+    public void test4877() throws Throwable {
         Quarter quarter0 = new Quarter();
         XYSeries xYSeries0 = new XYSeries(quarter0, true);
         java.util.Vector<String> vector0 = new java.util.Vector<String>();
@@ -734,7 +747,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4977() throws Throwable {
+    public void test4978() throws Throwable {
         Year year0 = new Year((-3235));
         XYSeries xYSeries0 = new XYSeries(year0, true);
         XYSeries xYSeries1 = xYSeries0.createCopy((-3235), 9999);
@@ -744,14 +757,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5078() throws Throwable {
+    public void test5079() throws Throwable {
         SimpleHistogramBin simpleHistogramBin0 = new SimpleHistogramBin((-1297.567131072433), 0.0);
         XYSeries xYSeries0 = new XYSeries(simpleHistogramBin0, false);
         xYSeries0.add((Number) null, (Number) null, false);
     }
 
     @Test(timeout = 4000)
-    public void test5179() throws Throwable {
+    public void test5180() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("", false, false);
         Integer integer0 = JLayeredPane.MODAL_LAYER;
         XYDataItem xYDataItem0 = new XYDataItem((Number) integer0, (Number) integer0);
@@ -760,36 +773,27 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5280() throws Throwable {
+    public void test5281() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("No observation for x = ", false, false);
         xYSeries0.add((Number) null, (Number) null);
     }
 
     @Test(timeout = 4000)
-    public void test5381() throws Throwable {
+    public void test5382() throws Throwable {
         XYSeries xYSeries0 = null;
         xYSeries0 = new XYSeries((Comparable) null, false, false);
     }
 
     @Test(timeout = 4000)
-    public void test5482() throws Throwable {
+    public void test5483() throws Throwable {
         XYSeries xYSeries0 = null;
         xYSeries0 = new XYSeries((Comparable) null, false);
     }
 
     @Test(timeout = 4000)
-    public void test5583() throws Throwable {
+    public void test5584() throws Throwable {
         XYSeries xYSeries0 = null;
         xYSeries0 = new XYSeries((Comparable) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test5684() throws Throwable {
-        Year year0 = new Year(0);
-        XYSeries xYSeries0 = new XYSeries(year0, false, false);
-        xYSeries0.addOrUpdate((Number) 9999, (Number) 9999);
-        int int0 = xYSeries0.indexOf(9999);
-        xYSeries0.getItemCount();
     }
 
     @Test(timeout = 4000)
@@ -798,18 +802,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(year0, false, false);
         xYSeries0.addOrUpdate((Number) 9999, (Number) 9999);
         int int0 = xYSeries0.indexOf(9999);
+        xYSeries0.getItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test5786() throws Throwable {
-        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
-        Date date0 = mockSimpleDateFormat0.get2DigitYearStart();
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(date0);
-        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
-        XYDataItem xYDataItem0 = new XYDataItem(0.0, 1.0);
-        xYSeries0.add(xYDataItem0, false);
-        Double double0 = new Double(1.0);
-        int int0 = xYSeries0.indexOf(double0);
+    public void test5686() throws Throwable {
+        Year year0 = new Year(0);
+        XYSeries xYSeries0 = new XYSeries(year0, false, false);
+        xYSeries0.addOrUpdate((Number) 9999, (Number) 9999);
+        int int0 = xYSeries0.indexOf(9999);
     }
 
     @Test(timeout = 4000)
@@ -822,7 +823,6 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.add(xYDataItem0, false);
         Double double0 = new Double(1.0);
         int int0 = xYSeries0.indexOf(double0);
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -835,11 +835,24 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.add(xYDataItem0, false);
         Double double0 = new Double(1.0);
         int int0 = xYSeries0.indexOf(double0);
+        xYSeries0.getMaximumItemCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test5789() throws Throwable {
+        MockSimpleDateFormat mockSimpleDateFormat0 = new MockSimpleDateFormat();
+        Date date0 = mockSimpleDateFormat0.get2DigitYearStart();
+        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(date0);
+        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
+        XYDataItem xYDataItem0 = new XYDataItem(0.0, 1.0);
+        xYSeries0.add(xYDataItem0, false);
+        Double double0 = new Double(1.0);
+        int int0 = xYSeries0.indexOf(double0);
         xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test5889() throws Throwable {
+    public void test5890() throws Throwable {
         MockDate mockDate0 = new MockDate();
         OHLCDataItem oHLCDataItem0 = new OHLCDataItem(mockDate0, (-3988.109824807), (-2171.037731516), (-3988.109824807), 0.0, 0.0);
         XYSeries xYSeries0 = new XYSeries(oHLCDataItem0);
@@ -847,23 +860,12 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5990() throws Throwable {
+    public void test5991() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.setMaximumItemCount(0);
         xYSeries0.addOrUpdate((Number) 9999, (Number) year0.MINIMUM_YEAR);
         xYSeries0.getMaximumItemCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test6091() throws Throwable {
-        Year year0 = new Year(1431);
-        XYSeries xYSeries0 = new XYSeries(year0);
-        xYSeries0.add((double) 9999, (Number) 9999, true);
-        XYDataItem xYDataItem0 = new XYDataItem((Number) (-9999), (Number) 1);
-        xYSeries0.add(xYDataItem0);
-        xYSeries0.add(xYDataItem0, true);
-        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -874,43 +876,46 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYDataItem xYDataItem0 = new XYDataItem((Number) (-9999), (Number) 1);
         xYSeries0.add(xYDataItem0);
         xYSeries0.add(xYDataItem0, true);
+        xYSeries0.getAutoSort();
+    }
+
+    @Test(timeout = 4000)
+    public void test6093() throws Throwable {
+        Year year0 = new Year(1431);
+        XYSeries xYSeries0 = new XYSeries(year0);
+        xYSeries0.add((double) 9999, (Number) 9999, true);
+        XYDataItem xYDataItem0 = new XYDataItem((Number) (-9999), (Number) 1);
+        xYSeries0.add(xYDataItem0);
+        xYSeries0.add(xYDataItem0, true);
         xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test6193() throws Throwable {
+    public void test6194() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, true, false);
         xYSeries0.add((XYDataItem) null, false);
     }
 
     @Test(timeout = 4000)
-    public void test6294() throws Throwable {
+    public void test6295() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.getX(0);
     }
 
     @Test(timeout = 4000)
-    public void test6395() throws Throwable {
+    public void test6396() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond();
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true);
         xYSeries0.getDataItem((-688));
     }
 
     @Test(timeout = 4000)
-    public void test6496() throws Throwable {
+    public void test6497() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.remove(1);
-    }
-
-    @Test(timeout = 4000)
-    public void test6597() throws Throwable {
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
-        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
-        xYSeries0.getItemCount();
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -918,7 +923,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         xYSeries0.getItemCount();
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -926,13 +931,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         xYSeries0.getItemCount();
-        xYSeries0.getAutoSort();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test66100() throws Throwable {
-        XYSeries xYSeries0 = new XYSeries("", false, false);
-        xYSeries0.hashCode();
+    public void test65100() throws Throwable {
+        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
+        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
+        xYSeries0.getItemCount();
         xYSeries0.getAutoSort();
     }
 
@@ -940,17 +946,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     public void test66101() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("", false, false);
         xYSeries0.hashCode();
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test67102() throws Throwable {
-        Year year0 = new Year(1433);
-        XYSeries xYSeries0 = new XYSeries(year0);
-        xYSeries0.add((double) 9999, 495.8750692);
-        xYSeries0.add((double) 0, (Number) (-9999), false);
+    public void test66102() throws Throwable {
+        XYSeries xYSeries0 = new XYSeries("", false, false);
         xYSeries0.hashCode();
-        xYSeries0.getAutoSort();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -960,24 +963,23 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.add((double) 9999, 495.8750692);
         xYSeries0.add((double) 0, (Number) (-9999), false);
         xYSeries0.hashCode();
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test68104() throws Throwable {
-        XYSeries xYSeries0 = new XYSeries("", false, false);
-        XYSeries xYSeries1 = xYSeries0.createCopy(1556, 1556);
-        xYSeries1.equals((Object) xYSeries0);
+    public void test67104() throws Throwable {
+        Year year0 = new Year(1433);
+        XYSeries xYSeries0 = new XYSeries(year0);
+        xYSeries0.add((double) 9999, 495.8750692);
+        xYSeries0.add((double) 0, (Number) (-9999), false);
+        xYSeries0.hashCode();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
     public void test68105() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("", false, false);
         XYSeries xYSeries1 = xYSeries0.createCopy(1556, 1556);
-        Integer integer0 = JLayeredPane.MODAL_LAYER;
-        XYDataItem xYDataItem0 = new XYDataItem((Number) integer0, (Number) integer0);
-        xYSeries1.add(xYDataItem0, false);
-        boolean boolean0 = xYSeries0.equals(xYSeries1);
         xYSeries1.equals((Object) xYSeries0);
     }
 
@@ -989,15 +991,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYDataItem xYDataItem0 = new XYDataItem((Number) integer0, (Number) integer0);
         xYSeries1.add(xYDataItem0, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
+        xYSeries1.equals((Object) xYSeries0);
     }
 
     @Test(timeout = 4000)
-    public void test69107() throws Throwable {
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
-        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
-        XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, false, false);
+    public void test68107() throws Throwable {
+        XYSeries xYSeries0 = new XYSeries("", false, false);
+        XYSeries xYSeries1 = xYSeries0.createCopy(1556, 1556);
+        Integer integer0 = JLayeredPane.MODAL_LAYER;
+        XYDataItem xYDataItem0 = new XYDataItem((Number) integer0, (Number) integer0);
+        xYSeries1.add(xYDataItem0, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1006,6 +1010,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, false, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
+        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1014,16 +1019,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, false, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test70110() throws Throwable {
+    public void test69110() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
-        XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, true);
+        XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, false, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries1.getAutoSort();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -1032,7 +1036,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, true);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries1.getMaximumItemCount();
+        xYSeries1.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -1041,6 +1045,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, true);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
+        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1049,19 +1054,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, true);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test71114() throws Throwable {
-        MockDate mockDate0 = new MockDate();
-        Day day0 = new Day(mockDate0);
-        Hour hour0 = new Hour((-18), day0);
-        XYSeries xYSeries0 = new XYSeries(hour0, false);
-        XYSeries xYSeries1 = xYSeries0.createCopy(23, 0);
-        xYSeries1.setMaximumItemCount(0);
-        boolean boolean0 = xYSeries1.equals(xYSeries0);
-        xYSeries1.getMaximumItemCount();
+    public void test70114() throws Throwable {
+        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
+        XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
+        XYSeries xYSeries1 = new XYSeries(fixedMillisecond0, true);
+        boolean boolean0 = xYSeries0.equals(xYSeries1);
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
@@ -1073,17 +1074,18 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         XYSeries xYSeries1 = xYSeries0.createCopy(23, 0);
         xYSeries1.setMaximumItemCount(0);
         boolean boolean0 = xYSeries1.equals(xYSeries0);
+        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test72116() throws Throwable {
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
-        RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
-        XYSeries xYSeries0 = new XYSeries(regularTimePeriod0, false);
-        xYSeries0.setKey(fixedMillisecond0);
-        XYSeries xYSeries1 = new XYSeries(regularTimePeriod0, false, false);
-        boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries0.getAllowDuplicateXValues();
+    public void test71116() throws Throwable {
+        MockDate mockDate0 = new MockDate();
+        Day day0 = new Day(mockDate0);
+        Hour hour0 = new Hour((-18), day0);
+        XYSeries xYSeries0 = new XYSeries(hour0, false);
+        XYSeries xYSeries1 = xYSeries0.createCopy(23, 0);
+        xYSeries1.setMaximumItemCount(0);
+        boolean boolean0 = xYSeries1.equals(xYSeries0);
     }
 
     @Test(timeout = 4000)
@@ -1094,7 +1096,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.setKey(fixedMillisecond0);
         XYSeries xYSeries1 = new XYSeries(regularTimePeriod0, false, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries0.getAutoSort();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
@@ -1105,6 +1107,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.setKey(fixedMillisecond0);
         XYSeries xYSeries1 = new XYSeries(regularTimePeriod0, false, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -1115,15 +1118,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         xYSeries0.setKey(fixedMillisecond0);
         XYSeries xYSeries1 = new XYSeries(regularTimePeriod0, false, false);
         boolean boolean0 = xYSeries0.equals(xYSeries1);
-        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test73120() throws Throwable {
-        Year year0 = new Year(1433);
-        XYSeries xYSeries0 = new XYSeries(year0);
-        boolean boolean0 = xYSeries0.equals(xYSeries0);
-        xYSeries0.getAutoSort();
+    public void test72120() throws Throwable {
+        FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
+        RegularTimePeriod regularTimePeriod0 = fixedMillisecond0.previous();
+        XYSeries xYSeries0 = new XYSeries(regularTimePeriod0, false);
+        xYSeries0.setKey(fixedMillisecond0);
+        XYSeries xYSeries1 = new XYSeries(regularTimePeriod0, false, false);
+        boolean boolean0 = xYSeries0.equals(xYSeries1);
+        xYSeries1.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1131,7 +1136,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         boolean boolean0 = xYSeries0.equals(xYSeries0);
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
@@ -1139,16 +1144,14 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         boolean boolean0 = xYSeries0.equals(xYSeries0);
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test74123() throws Throwable {
-        MockDate mockDate0 = new MockDate();
-        Day day0 = new Day(mockDate0);
-        Hour hour0 = new Hour((-18), day0);
-        XYSeries xYSeries0 = new XYSeries(hour0, false);
-        boolean boolean0 = xYSeries0.equals(hour0);
-        xYSeries0.getAllowDuplicateXValues();
+    public void test73123() throws Throwable {
+        Year year0 = new Year(1433);
+        XYSeries xYSeries0 = new XYSeries(year0);
+        boolean boolean0 = xYSeries0.equals(xYSeries0);
     }
 
     @Test(timeout = 4000)
@@ -1158,7 +1161,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Hour hour0 = new Hour((-18), day0);
         XYSeries xYSeries0 = new XYSeries(hour0, false);
         boolean boolean0 = xYSeries0.equals(hour0);
-        xYSeries0.getMaximumItemCount();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
@@ -1168,7 +1171,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Hour hour0 = new Hour((-18), day0);
         XYSeries xYSeries0 = new XYSeries(hour0, false);
         boolean boolean0 = xYSeries0.equals(hour0);
-        xYSeries0.getAutoSort();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1178,25 +1181,25 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Hour hour0 = new Hour((-18), day0);
         XYSeries xYSeries0 = new XYSeries(hour0, false);
         boolean boolean0 = xYSeries0.equals(hour0);
+        xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test75127() throws Throwable {
+    public void test74127() throws Throwable {
+        MockDate mockDate0 = new MockDate();
+        Day day0 = new Day(mockDate0);
+        Hour hour0 = new Hour((-18), day0);
+        XYSeries xYSeries0 = new XYSeries(hour0, false);
+        boolean boolean0 = xYSeries0.equals(hour0);
+    }
+
+    @Test(timeout = 4000)
+    public void test75128() throws Throwable {
         Hour hour0 = new Hour();
         XYSeries xYSeries0 = new XYSeries(hour0);
         xYSeries0.addOrUpdate((Number) 23, (Number) 23);
         xYSeries0.createCopy(0, 0);
         xYSeries0.getItemCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test76128() throws Throwable {
-        MockDate mockDate0 = new MockDate();
-        Day day0 = new Day(mockDate0);
-        Hour hour0 = new Hour((-18), day0);
-        XYSeries xYSeries0 = new XYSeries(hour0, false);
-        XYSeries xYSeries1 = xYSeries0.createCopy(23, 0);
-        boolean boolean0 = xYSeries1.equals(xYSeries0);
     }
 
     @Test(timeout = 4000)
@@ -1210,7 +1213,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test76130() throws Throwable {
+    public void test76131() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Day day0 = new Day(mockDate0);
         Hour hour0 = new Hour((-18), day0);
@@ -1221,7 +1224,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test76131() throws Throwable {
+    public void test76132() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Day day0 = new Day(mockDate0);
         Hour hour0 = new Hour((-18), day0);
@@ -1232,7 +1235,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test76132() throws Throwable {
+    public void test76133() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Day day0 = new Day(mockDate0);
         Hour hour0 = new Hour((-18), day0);
@@ -1243,7 +1246,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test77133() throws Throwable {
+    public void test77134() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.addOrUpdate((Number) 0, (Number) null);
@@ -1252,7 +1255,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test78134() throws Throwable {
+    public void test78135() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.add((double) year0.MINIMUM_YEAR, 495.8750692);
@@ -1260,21 +1263,21 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test79135() throws Throwable {
+    public void test79136() throws Throwable {
         XYDataItem xYDataItem0 = new XYDataItem((double) 1611, (double) 1611);
         XYSeries xYSeries0 = new XYSeries(xYDataItem0, true, true);
         xYSeries0.addOrUpdate((Number) null, (Number) null);
     }
 
     @Test(timeout = 4000)
-    public void test80136() throws Throwable {
+    public void test80137() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.update((-9999), (-9999));
     }
 
     @Test(timeout = 4000)
-    public void test81137() throws Throwable {
+    public void test81138() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond(1L);
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, false);
         Float float0 = new Float((float) 1L);
@@ -1284,7 +1287,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test82138() throws Throwable {
+    public void test82139() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.clear();
@@ -1292,7 +1295,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test82139() throws Throwable {
+    public void test82140() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.clear();
@@ -1300,7 +1303,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test82140() throws Throwable {
+    public void test82141() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.clear();
@@ -1308,7 +1311,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test83141() throws Throwable {
+    public void test83142() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         XYDataItem xYDataItem0 = new XYDataItem((Number) 9999, (Number) 9999);
@@ -1318,7 +1321,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test84142() throws Throwable {
+    public void test84143() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("", false, false);
         Integer integer0 = JLayeredPane.MODAL_LAYER;
         XYDataItem xYDataItem0 = new XYDataItem((Number) integer0, (Number) integer0);
@@ -1327,7 +1330,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test85143() throws Throwable {
+    public void test85144() throws Throwable {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, true, false);
         Float float0 = new Float((double) 9999);
@@ -1337,7 +1340,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test86144() throws Throwable {
+    public void test86145() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.add((double) 0, 495.8750692);
@@ -1346,7 +1349,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test86145() throws Throwable {
+    public void test86146() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.add((double) 0, 495.8750692);
@@ -1356,7 +1359,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test87146() throws Throwable {
+    public void test87147() throws Throwable {
         MockDate mockDate0 = new MockDate();
         Day day0 = new Day(mockDate0);
         Hour hour0 = new Hour((-18), day0);
@@ -1365,18 +1368,10 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test88147() throws Throwable {
-        Quarter quarter0 = new Quarter();
-        XYSeries xYSeries0 = new XYSeries(quarter0, true);
-        boolean boolean0 = xYSeries0.getAutoSort();
-    }
-
-    @Test(timeout = 4000)
     public void test88148() throws Throwable {
         Quarter quarter0 = new Quarter();
         XYSeries xYSeries0 = new XYSeries(quarter0, true);
         boolean boolean0 = xYSeries0.getAutoSort();
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1384,14 +1379,15 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Quarter quarter0 = new Quarter();
         XYSeries xYSeries0 = new XYSeries(quarter0, true);
         boolean boolean0 = xYSeries0.getAutoSort();
-        xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test89150() throws Throwable {
-        Year year0 = new Year();
-        XYSeries xYSeries0 = new XYSeries(year0, true, false);
-        boolean boolean0 = xYSeries0.getAllowDuplicateXValues();
+    public void test88150() throws Throwable {
+        Quarter quarter0 = new Quarter();
+        XYSeries xYSeries0 = new XYSeries(quarter0, true);
+        boolean boolean0 = xYSeries0.getAutoSort();
+        xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
@@ -1399,7 +1395,6 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, true, false);
         boolean boolean0 = xYSeries0.getAllowDuplicateXValues();
-        xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1407,18 +1402,26 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Year year0 = new Year();
         XYSeries xYSeries0 = new XYSeries(year0, true, false);
         boolean boolean0 = xYSeries0.getAllowDuplicateXValues();
+        xYSeries0.getMaximumItemCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test89153() throws Throwable {
+        Year year0 = new Year();
+        XYSeries xYSeries0 = new XYSeries(year0, true, false);
+        boolean boolean0 = xYSeries0.getAllowDuplicateXValues();
         xYSeries0.getAutoSort();
     }
 
     @Test(timeout = 4000)
-    public void test90153() throws Throwable {
+    public void test90154() throws Throwable {
         Second second0 = new Second();
         XYSeries xYSeries0 = new XYSeries(second0, true, true);
         xYSeries0.remove((Number) 59);
     }
 
     @Test(timeout = 4000)
-    public void test91154() throws Throwable {
+    public void test91155() throws Throwable {
         Year year0 = new Year(1433);
         XYSeries xYSeries0 = new XYSeries(year0);
         XYDataItem xYDataItem0 = new XYDataItem((Number) 9999, (Number) 9999);
@@ -1428,25 +1431,17 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test92155() throws Throwable {
+    public void test92156() throws Throwable {
         Year year0 = new Year(1431);
         XYSeries xYSeries0 = new XYSeries(year0);
         xYSeries0.updateByIndex(1431, (-9999));
     }
 
     @Test(timeout = 4000)
-    public void test93156() throws Throwable {
+    public void test93157() throws Throwable {
         Second second0 = new Second();
         XYSeries xYSeries0 = new XYSeries(second0, true, true);
         xYSeries0.getY(0);
-    }
-
-    @Test(timeout = 4000)
-    public void test94157() throws Throwable {
-        Second second0 = new Second();
-        XYSeries xYSeries0 = new XYSeries(second0, true, true);
-        xYSeries0.add((double) 59, (Number) 59, false);
-        xYSeries0.getItemCount();
     }
 
     @Test(timeout = 4000)
@@ -1454,11 +1449,19 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
         Second second0 = new Second();
         XYSeries xYSeries0 = new XYSeries(second0, true, true);
         xYSeries0.add((double) 59, (Number) 59, false);
+        xYSeries0.getItemCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test94159() throws Throwable {
+        Second second0 = new Second();
+        XYSeries xYSeries0 = new XYSeries(second0, true, true);
+        xYSeries0.add((double) 59, (Number) 59, false);
         Number number0 = xYSeries0.getY(0);
     }
 
     @Test(timeout = 4000)
-    public void test95159() throws Throwable {
+    public void test95160() throws Throwable {
         Minute minute0 = new Minute();
         XYSeries xYSeries0 = new XYSeries(minute0, false);
         xYSeries0.add((double) 0, (double) 59, false);
@@ -1467,7 +1470,7 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test96160() throws Throwable {
+    public void test96161() throws Throwable {
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond((-13L));
         XYSeries xYSeries0 = new XYSeries(fixedMillisecond0, true);
         Float float0 = new Float((float) (-13L));
@@ -1476,20 +1479,20 @@ public class XYSeries_ESTest extends XYSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test97161() throws Throwable {
+    public void test97162() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("No observation for x = ", false, false);
         int int0 = xYSeries0.getMaximumItemCount();
     }
 
     @Test(timeout = 4000)
-    public void test97162() throws Throwable {
+    public void test97163() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("No observation for x = ", false, false);
         int int0 = xYSeries0.getMaximumItemCount();
         xYSeries0.getAllowDuplicateXValues();
     }
 
     @Test(timeout = 4000)
-    public void test97163() throws Throwable {
+    public void test97164() throws Throwable {
         XYSeries xYSeries0 = new XYSeries("No observation for x = ", false, false);
         int int0 = xYSeries0.getMaximumItemCount();
         xYSeries0.getAutoSort();

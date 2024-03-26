@@ -47,7 +47,14 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test011() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        AssembledChronology.Fields assembledChronology_Fields0 = new AssembledChronology.Fields();
+        gJChronology0.assemble(assembledChronology_Fields0);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(0, 0);
         // Undeclared exception!
         try {
@@ -62,7 +69,48 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092() throws Throwable {
+    public void test033() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.julianToGregorianByYear(1209600004L);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.julianToGregorianByWeekyear(1209600000L);
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.julianToGregorianByWeekyear(31536000000L);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
+        gJChronology0.gregorianToJulianByYear((-62072525218914L));
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
+        gJChronology0.gregorianToJulianByWeekyear((-62072525218914L));
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0, (long) 4, 4);
+        gJChronology0.getGregorianCutover();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         // Undeclared exception!
         try {
@@ -77,7 +125,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103() throws Throwable {
+    public void test1010() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
         GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
         // Undeclared exception!
@@ -93,7 +141,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test114() throws Throwable {
+    public void test1111() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
         DateTime dateTime0 = new DateTime(292278993, 1, 5, 1, 1, 1);
@@ -110,7 +158,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125() throws Throwable {
+    public void test1212() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         // Undeclared exception!
         try {
@@ -125,7 +173,13 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test146() throws Throwable {
+    public void test1313() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.getDateTimeMillis(9, 9, 9, 9, 9, 9, 9);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         try {
             gJChronology0.getDateTimeMillis((-1), 2, 2, 2, 5006, 5006, (-1));
@@ -139,7 +193,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test157() throws Throwable {
+    public void test1515() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         try {
             gJChronology0.getDateTimeMillis(0, 0, 0, 4, (-222), (-222), (-2839));
@@ -153,7 +207,13 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178() throws Throwable {
+    public void test1616() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.getDateTimeMillis(3, 4, 2, 4);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         try {
             gJChronology0.getDateTimeMillis(91, 2311, 91, 91);
@@ -167,7 +227,26 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test219() throws Throwable {
+    public void test1818() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
+        gJChronology0.withZone(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.getZone();
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        gJChronology0.getZone();
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         // Undeclared exception!
         try {
@@ -182,7 +261,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2210() throws Throwable {
+    public void test2222() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(1253);
         MonthDay monthDay0 = MonthDay.now(dateTimeZone0);
         LocalDate localDate0 = monthDay0.toLocalDate(0);
@@ -200,7 +279,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2311() throws Throwable {
+    public void test2323() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone((TimeZone) null);
         DateTime dateTime0 = DateTime.now();
         GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0, (ReadableInstant) dateTime0, 1);
@@ -216,7 +295,68 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3212() throws Throwable {
+    public void test2424() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
+        gJChronology0.getGregorianCutover();
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
+        gJChronology0.getMinimumDaysInFirstWeek();
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        Months months0 = Months.TEN;
+        gJChronology0.add((ReadablePeriod) months0, (-667L), 4);
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
+        MutableDateTime mutableDateTime0 = new MutableDateTime((DateTimeZone) null);
+        Months months0 = Months.TEN;
+        DateTime dateTime0 = mutableDateTime0.toDateTime();
+        GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) dateTime0);
+        gJChronology0.add((ReadablePeriod) months0, 392L, (-2578));
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        Months months0 = Months.TEN;
+        Chronology chronology0 = gJChronology0.withZone((DateTimeZone) null);
+        chronology0.get((ReadablePeriod) months0, (-12219292800000L), 131327999333L);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        Months months0 = Months.MAX_VALUE;
+        gJChronology0.get((ReadablePeriod) months0, (-2414L), 1583L);
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
+        MutableDateTime mutableDateTime0 = new MutableDateTime((DateTimeZone) null);
+        Months months0 = Months.TEN;
+        DateTime dateTime0 = mutableDateTime0.toDateTime();
+        GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) dateTime0);
+        gJChronology0.get((ReadablePeriod) months0, (-12219292800000L), (-20958393600667L));
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        LocalDate localDate0 = new LocalDate((Chronology) gJChronology0);
+        localDate0.withWeekyear(178);
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         LocalDateTime localDateTime0 = new LocalDateTime((-12219321178000L));
         // Undeclared exception!
@@ -232,7 +372,59 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4113() throws Throwable {
+    public void test3333() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        LocalDateTime localDateTime0 = LocalDateTime.now();
+        gJChronology0.set(localDateTime0, (-79302582000000L));
+    }
+
+    @Test(timeout = 4000)
+    public void test3434() throws Throwable {
+        MutableDateTime mutableDateTime0 = new MutableDateTime((DateTimeZone) null);
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        LocalDateTime localDateTime0 = new LocalDateTime(mutableDateTime0, buddhistChronology0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        gJChronology0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        GJChronology gJChronology1 = GJChronology.getInstanceUTC();
+        gJChronology0.equals(gJChronology1);
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        gJChronology0.equals(gJChronology0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
+        GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
+        gJChronology0.equals(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3939() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstance();
+        gJChronology0.getDateTimeMillis(2597, 2, 2, 2597);
+    }
+
+    @Test(timeout = 4000)
+    public void test4040() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        GJChronology.getInstance((DateTimeZone) fixedDateTimeZone0, (-12219292800000L), 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4141() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
         GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0, (-1076L), 1);
         String string0 = gJChronology0.toString();
@@ -240,7 +432,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4214() throws Throwable {
+    public void test4242() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         Months months0 = Months.TEN;
         long long0 = gJChronology0.add((ReadablePeriod) months0, (-667L), (-797));
@@ -248,7 +440,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4215() throws Throwable {
+    public void test4243() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         Months months0 = Months.TEN;
         long long0 = gJChronology0.add((ReadablePeriod) months0, (-667L), (-797));
@@ -256,35 +448,35 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4316() throws Throwable {
+    public void test4344() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         StrictChronology.getInstance(gJChronology0);
         assertEquals(4, gJChronology0.getMinimumDaysInFirstWeek());
     }
 
     @Test(timeout = 4000)
-    public void test4417() throws Throwable {
+    public void test4445() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.gregorianToJulianByWeekyear(4);
         assertEquals(1209600004L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test4418() throws Throwable {
+    public void test4446() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.gregorianToJulianByWeekyear(4);
         assertEquals(4, gJChronology0.getMinimumDaysInFirstWeek());
     }
 
     @Test(timeout = 4000)
-    public void test4519() throws Throwable {
+    public void test4547() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         gJChronology0.hashCode();
         assertEquals(4, gJChronology0.getMinimumDaysInFirstWeek());
     }
 
     @Test(timeout = 4000)
-    public void test4620() throws Throwable {
+    public void test4648() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
         GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
         GJChronology gJChronology1 = (GJChronology) gJChronology0.withUTC();
@@ -292,7 +484,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4621() throws Throwable {
+    public void test4649() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forID("America/Sao_Paulo");
         GJChronology gJChronology0 = GJChronology.getInstance(dateTimeZone0);
         GJChronology gJChronology1 = (GJChronology) gJChronology0.withUTC();
@@ -300,35 +492,35 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4722() throws Throwable {
+    public void test4750() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.gregorianToJulianByYear(1280L);
         assertEquals(1123201280L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test4723() throws Throwable {
+    public void test4751() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.gregorianToJulianByYear(1280L);
         assertEquals(4, gJChronology0.getMinimumDaysInFirstWeek());
     }
 
     @Test(timeout = 4000)
-    public void test4824() throws Throwable {
+    public void test4852() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.julianToGregorianByYear(4);
         assertEquals(4, gJChronology0.getMinimumDaysInFirstWeek());
     }
 
     @Test(timeout = 4000)
-    public void test4825() throws Throwable {
+    public void test4853() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.julianToGregorianByYear(4);
         assertEquals((-1123199996L), long0);
     }
 
     @Test(timeout = 4000)
-    public void test4926() throws Throwable {
+    public void test4954() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         Months months0 = Months.TEN;
         int[] intArray0 = gJChronology0.get((ReadablePeriod) months0, (long) 44481320, (-20958393600667L));
@@ -336,7 +528,7 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4927() throws Throwable {
+    public void test4955() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         Months months0 = Months.TEN;
         int[] intArray0 = gJChronology0.get((ReadablePeriod) months0, (long) 44481320, (-20958393600667L));
@@ -344,14 +536,14 @@ public class GJChronology_ESTest extends GJChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5028() throws Throwable {
+    public void test5056() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.julianToGregorianByWeekyear(0);
         assertEquals(4, gJChronology0.getMinimumDaysInFirstWeek());
     }
 
     @Test(timeout = 4000)
-    public void test5029() throws Throwable {
+    public void test5057() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         long long0 = gJChronology0.julianToGregorianByWeekyear(0);
         assertEquals((-1209600000L), long0);

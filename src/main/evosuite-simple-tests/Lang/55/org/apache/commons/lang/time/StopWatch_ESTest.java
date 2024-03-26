@@ -29,7 +29,17 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test011() throws Throwable {
+        StopWatch stopWatch0 = new StopWatch();
+        stopWatch0.start();
+        stopWatch0.split();
+        stopWatch0.suspend();
+        stopWatch0.unsplit();
+        stopWatch0.resume();
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.suspend();
@@ -46,7 +56,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         System.setCurrentTimeMillis((-503L));
@@ -55,7 +65,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.split();
@@ -66,7 +76,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.split();
@@ -75,7 +85,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -90,7 +100,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         long long0 = stopWatch0.getTime();
@@ -98,7 +108,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.stop();
@@ -107,14 +117,14 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         long long0 = stopWatch0.getTime();
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.suspend();
@@ -123,7 +133,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.split();
@@ -132,7 +142,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -147,7 +157,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -162,7 +172,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -177,7 +187,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -192,7 +202,15 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1616() throws Throwable {
+        StopWatch stopWatch0 = new StopWatch();
+        stopWatch0.start();
+        stopWatch0.suspend();
+        stopWatch0.stop();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -207,7 +225,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         stopWatch0.start();
         stopWatch0.stop();
@@ -224,7 +242,7 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         StopWatch stopWatch0 = new StopWatch();
         // Undeclared exception!
         try {
@@ -236,5 +254,11 @@ public class StopWatch_ESTest extends StopWatch_ESTest_scaffolding {
             //
             verifyException("org.apache.commons.lang.time.StopWatch", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        StopWatch stopWatch0 = new StopWatch();
+        stopWatch0.reset();
     }
 }

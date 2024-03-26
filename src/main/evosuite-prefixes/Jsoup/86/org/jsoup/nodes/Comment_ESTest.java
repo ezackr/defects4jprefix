@@ -66,7 +66,15 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test055() throws Throwable {
+    public void test045() throws Throwable {
+        Comment comment0 = new Comment("j7)*@new9&DAC-ekb8W", "j7)*@new9&DAC-ekb8W");
+        comment0.reparentChild(comment0);
+        // Undeclared exception!
+        comment0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
         Comment comment0 = new Comment("?EF'5F+\"", "comment");
         Object object0 = new Object();
         comment0.value = object0;
@@ -74,7 +82,7 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066() throws Throwable {
+    public void test067() throws Throwable {
         Comment comment0 = new Comment(";ZMy", ";ZMy");
         Parser parser0 = Parser.xmlParser();
         Document document0 = parser0.parseInput("+!_]D7gjO9H]'9|", "+!_]D7gjO9H]'9|");
@@ -84,7 +92,17 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test078() throws Throwable {
+        Comment comment0 = new Comment("comment", "em");
+        StringWriter stringWriter0 = new StringWriter();
+        Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
+        document_OutputSettings0.indentAmount(35);
+        // Undeclared exception!
+        comment0.outerHtmlHead(stringWriter0, 958, document_OutputSettings0);
+    }
+
+    @Test(timeout = 4000)
+    public void test089() throws Throwable {
         Comment comment0 = new Comment("org.jsoup.SerializationException");
         CharBuffer charBuffer0 = CharBuffer.wrap((CharSequence) "#comment");
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
@@ -92,7 +110,7 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test0910() throws Throwable {
         Comment comment0 = new Comment("");
         char[] charArray0 = new char[6];
         CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
@@ -101,13 +119,13 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1011() throws Throwable {
         Comment comment0 = new Comment("org.jsoup.nodes.Comment");
         comment0.outerHtmlHead((Appendable) null, 3720, (Document.OutputSettings) null);
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1112() throws Throwable {
         Comment comment0 = new Comment("GXy}3", "GXy}3");
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         StringBuilder stringBuilder0 = new StringBuilder(1);
@@ -115,7 +133,7 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1213() throws Throwable {
         Comment comment0 = new Comment("", "!>206&d5");
         MockPrintStream mockPrintStream0 = new MockPrintStream("!>206&d5");
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
@@ -124,7 +142,7 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1314() throws Throwable {
         Comment comment0 = new Comment(">206&d5", ">206&d5");
         PipedWriter pipedWriter0 = new PipedWriter();
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
@@ -132,13 +150,13 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1415() throws Throwable {
         Comment comment0 = new Comment((String) null);
         comment0.isXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1516() throws Throwable {
         Comment comment0 = new Comment("");
         Object object0 = new Object();
         comment0.value = object0;
@@ -146,7 +164,7 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1617() throws Throwable {
         Comment comment0 = new Comment("?EF'5F+\"", "comment");
         Object object0 = new Object();
         comment0.value = object0;
@@ -154,19 +172,19 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1718() throws Throwable {
         Comment comment0 = new Comment("", "");
         comment0.asXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1819() throws Throwable {
         Comment comment0 = new Comment((String) null);
         comment0.asXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1920() throws Throwable {
         Comment comment0 = new Comment("!stZ9RYK_*dt!B:`e8h", "^4pj{Mp:,@&");
         Tag tag0 = Tag.valueOf("<");
         Attributes attributes0 = new Attributes();
@@ -176,91 +194,91 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2021() throws Throwable {
         Comment comment0 = new Comment("?NV^SU^", "");
         boolean boolean0 = comment0.isXmlDeclaration();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2022() throws Throwable {
         Comment comment0 = new Comment("?NV^SU^", "");
         boolean boolean0 = comment0.isXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2123() throws Throwable {
         Comment comment0 = new Comment("comment", "em");
         comment0.getData();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2224() throws Throwable {
         Comment comment0 = new Comment("org.jsoup.SerializationException");
         String string0 = comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2325() throws Throwable {
         Comment comment0 = new Comment("m/i4B(xa", "m/i4B(xa");
         XmlDeclaration xmlDeclaration0 = comment0.asXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2326() throws Throwable {
         Comment comment0 = new Comment("m/i4B(xa", "m/i4B(xa");
         XmlDeclaration xmlDeclaration0 = comment0.asXmlDeclaration();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2425() throws Throwable {
+    public void test2427() throws Throwable {
         Comment comment0 = new Comment("m?j49`a");
         comment0.asXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
+    public void test2528() throws Throwable {
         Comment comment0 = new Comment("GXy}3", "GXy}3");
         boolean boolean0 = comment0.isXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test2527() throws Throwable {
+    public void test2529() throws Throwable {
         Comment comment0 = new Comment("GXy}3", "GXy}3");
         boolean boolean0 = comment0.isXmlDeclaration();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2628() throws Throwable {
+    public void test2630() throws Throwable {
         Comment comment0 = new Comment("", "!>206&d5");
         boolean boolean0 = comment0.isXmlDeclaration();
     }
 
     @Test(timeout = 4000)
-    public void test2629() throws Throwable {
+    public void test2631() throws Throwable {
         Comment comment0 = new Comment("", "!>206&d5");
         boolean boolean0 = comment0.isXmlDeclaration();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2730() throws Throwable {
+    public void test2732() throws Throwable {
         Comment comment0 = new Comment(";ZMy", ";ZMy");
         String string0 = comment0.toString();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2731() throws Throwable {
+    public void test2733() throws Throwable {
         Comment comment0 = new Comment(";ZMy", ";ZMy");
         String string0 = comment0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test2832() throws Throwable {
+    public void test2834() throws Throwable {
         Comment comment0 = new Comment("", "!>206&d5");
         MockPrintStream mockPrintStream0 = new MockPrintStream("!>206&d5");
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
@@ -270,14 +288,14 @@ public class Comment_ESTest extends Comment_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2933() throws Throwable {
+    public void test2935() throws Throwable {
         Comment comment0 = new Comment("!+PV");
         boolean boolean0 = comment0.isXmlDeclaration();
         comment0.nodeName();
     }
 
     @Test(timeout = 4000)
-    public void test2934() throws Throwable {
+    public void test2936() throws Throwable {
         Comment comment0 = new Comment("!+PV");
         boolean boolean0 = comment0.isXmlDeclaration();
     }

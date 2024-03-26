@@ -65,7 +65,15 @@ public class VerificationOverTimeImpl_ESTest extends VerificationOverTimeImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test46() throws Throwable {
+    public void test36() throws Throwable {
+        After after0 = new After(0L, (-1257L), (VerificationMode) null);
+        VerificationOverTimeImpl verificationOverTimeImpl0 = new VerificationOverTimeImpl(0L, 0L, after0, false);
+        // Undeclared exception!
+        verificationOverTimeImpl0.verify((VerificationData) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test47() throws Throwable {
         VerificationOverTimeImpl verificationOverTimeImpl0 = new VerificationOverTimeImpl(360L, 360L, (VerificationMode) null, true);
         // Undeclared exception!
         try {
@@ -80,7 +88,7 @@ public class VerificationOverTimeImpl_ESTest extends VerificationOverTimeImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test57() throws Throwable {
+    public void test58() throws Throwable {
         AtMost atMost0 = new AtMost(37);
         Timer timer0 = new Timer(37);
         VerificationOverTimeImpl verificationOverTimeImpl0 = new VerificationOverTimeImpl(0L, 0L, atMost0, false, timer0);
@@ -89,7 +97,7 @@ public class VerificationOverTimeImpl_ESTest extends VerificationOverTimeImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test68() throws Throwable {
+    public void test69() throws Throwable {
         Timer timer0 = new Timer(0L);
         VerificationOverTimeImpl verificationOverTimeImpl0 = new VerificationOverTimeImpl(0L, 0L, (VerificationMode) null, false, timer0);
         boolean boolean0 = verificationOverTimeImpl0.canRecoverFromFailure((VerificationMode) null);
@@ -97,7 +105,7 @@ public class VerificationOverTimeImpl_ESTest extends VerificationOverTimeImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test79() throws Throwable {
+    public void test710() throws Throwable {
         NoMoreInteractions noMoreInteractions0 = new NoMoreInteractions();
         Timer timer0 = new Timer(0L);
         VerificationOverTimeImpl verificationOverTimeImpl0 = new VerificationOverTimeImpl(0L, 0L, noMoreInteractions0, true, timer0);

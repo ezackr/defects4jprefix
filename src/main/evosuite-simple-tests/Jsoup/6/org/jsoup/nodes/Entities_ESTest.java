@@ -126,7 +126,12 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1010() throws Throwable {
+        Entities entities0 = new Entities();
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         Document document0 = new Document("");
         Document.OutputSettings document_OutputSettings0 = document0.outputSettings();
         String string0 = Entities.escape("qJh", document_OutputSettings0);

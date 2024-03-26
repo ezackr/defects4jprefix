@@ -55,14 +55,22 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        Document document0 = Document.createShell("O=(3KH.9.)(>0P*");
+        Element element0 = document0.prependChild(document0);
+        // Undeclared exception!
+        Selector.select("NOSCRIPT", element0);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         Document document0 = new Document("?+b");
         Elements elements0 = document0.getAllElements();
         Selector.select("?+b", (Iterable<Element>) elements0);
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Document document0 = Document.createShell(":M.");
         Element element0 = document0.text(",!iyHx;LGjoGE");
         Pattern pattern0 = Pattern.compile(",!iyHx;LGjoGE", 856);
@@ -72,12 +80,18 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Selector.filterOut((Collection<Element>) null, (Collection<Element>) null);
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test077() throws Throwable {
+        Object[] objectArray0 = new Object[9];
+        Selector.SelectorParseException selector_SelectorParseException0 = new Selector.SelectorParseException("1V}\"VycY", objectArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         Document document0 = Document.createShell("O=(3KH.9.)(>0P*");
         Elements elements0 = document0.getAllElements();
         Elements elements1 = Selector.filterOut(elements0, elements0);
@@ -85,59 +99,59 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         Document document0 = Document.createShell("O=(3KH.9.)(>0P*");
         Elements elements0 = Selector.select("N~SCRIPT", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         Document document0 = Document.createShell(":has(el) subselect must not be empty");
         Selector.select("wu[sx=", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         Document document0 = Document.createShell("MENU");
         Selector.select("F7|(2,|H>|~Rnbe!9`", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         Document document0 = new Document("Kq.)gNG^9HEwi/w7LcC");
         Selector.select(":matchesOwn(", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         Document document0 = Document.createShell("gX8b[tzFGEbA,#.*%Qe");
         Elements elements0 = Selector.select(":matches(regex) query must not be empty", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         Document document0 = Document.createShell("O=(3KH.9.)(>0P*");
         Elements elements0 = document0.getAllElements();
         Selector.select(":contains(", (Iterable<Element>) elements0);
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         Document document0 = new Document("?+b");
         Elements elements0 = Selector.select("BAS[5", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         Document document0 = new Document("*EG>~.");
         Selector.select(",", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         Document document0 = Document.createShell("pxNv!/^A}@6hHb");
         Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         PriorityQueue<Element> priorityQueue0 = new PriorityQueue<Element>(8770, comparator0);
@@ -147,21 +161,21 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         Document document0 = Document.createShell("O=(3KH.9.)(>0P*");
         Elements elements0 = Selector.select("G,M>XM Lx0]Dj%3Fy", (Element) document0);
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         Document document0 = Document.createShell("MENU");
         Elements elements0 = document0.getElementsByAttributeValueNot("1V}\"VycY", "ObiSSF:$%RX*");
         Selector.select(":gt(%d)", (Iterable<Element>) elements0);
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         Tag tag0 = Tag.valueOf("`Y2");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "^(z,C2REO^.q8>\"G", attributes0);
@@ -169,27 +183,27 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         Document document0 = new Document("?+b");
         Selector.select("~.y6V@Ai4w].gnH|M8", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         Document document0 = new Document(":not(selector) subselect must not be empty");
         Elements elements0 = Selector.select(":not(selector) subselect must not be empty", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         Document document0 = Document.createShell(":has(el) subselect must not be empty");
         Elements elements0 = Selector.select(":has(el) subselect must not be empty", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         Document document0 = Document.createShell("MENU");
         Selector.select("J*B#4v:'[~\"M_* <F", (Element) document0);
     }

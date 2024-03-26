@@ -28,7 +28,34 @@ import org.junit.runner.RunWith;
 public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBrentSolver_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test030() throws Throwable {
+    public void test000() throws Throwable {
+        Log10 log10_0 = new Log10();
+        AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
+        BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(948.8898, 0, 5);
+        bracketingNthOrderBrentSolver0.solve(5, (UnivariateFunction) log10_0, (-2.185293416871393E-12), (double) 5, (double) 0, allowedSolution0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        Log10 log10_0 = new Log10();
+        AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
+        UnivariateFunction univariateFunction0 = log10_0.derivative();
+        BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(948.8898, 1759, 5);
+        bracketingNthOrderBrentSolver0.solve(1759, univariateFunction0, (-3314.8624839745), (double) 1759, 948.8898, allowedSolution0);
+        bracketingNthOrderBrentSolver0.doSolve();
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-1.0), 1630);
+        Inverse inverse0 = new Inverse();
+        AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
+        // Undeclared exception!
+        bracketingNthOrderBrentSolver0.solve(1630, (UnivariateFunction) inverse0, (-1.0), 2125.439409557961, allowedSolution0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(0.5, 0.5, 2);
         Sigmoid sigmoid0 = new Sigmoid(2, 0);
         AllowedSolution allowedSolution0 = AllowedSolution.ABOVE_SIDE;
@@ -45,7 +72,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test041() throws Throwable {
+    public void test044() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.37036033754146), (-336.37036033754146), 870);
         Gaussian gaussian0 = new Gaussian();
         AllowedSolution allowedSolution0 = AllowedSolution.ABOVE_SIDE;
@@ -62,7 +89,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test052() throws Throwable {
+    public void test055() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Minus minus0 = new Minus();
         AllowedSolution allowedSolution0 = AllowedSolution.LEFT_SIDE;
@@ -79,7 +106,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test063() throws Throwable {
+    public void test066() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         AllowedSolution allowedSolution0 = AllowedSolution.RIGHT_SIDE;
@@ -96,7 +123,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test074() throws Throwable {
+    public void test077() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         AllowedSolution allowedSolution0 = AllowedSolution.RIGHT_SIDE;
         // Undeclared exception!
@@ -112,7 +139,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test088() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         // Undeclared exception!
         try {
@@ -127,7 +154,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test099() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(0.0, 386.18255718, (-3862.0), 1707);
         Sqrt sqrt0 = new Sqrt();
         bracketingNthOrderBrentSolver0.setup(5, sqrt0, 1162.05718041954, 386.18255718, Double.NaN);
@@ -144,7 +171,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-1.0), 1485);
         Asinh asinh0 = new Asinh();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
@@ -153,7 +180,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1011() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-1.0), 1485);
         Asinh asinh0 = new Asinh();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
@@ -162,7 +189,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1112() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Log10 log10_0 = new Log10();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
@@ -171,7 +198,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1213() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.37036033754146), (-336.37036033754146), 870);
         Atanh atanh0 = new Atanh();
         AllowedSolution allowedSolution0 = AllowedSolution.ABOVE_SIDE;
@@ -180,7 +207,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1214() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.37036033754146), (-336.37036033754146), 870);
         Atanh atanh0 = new Atanh();
         AllowedSolution allowedSolution0 = AllowedSolution.ABOVE_SIDE;
@@ -189,7 +216,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1315() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.4448868689607), (-336.4448868689607), 870, 870);
         Gaussian gaussian0 = new Gaussian();
         UnivariateFunction univariateFunction0 = gaussian0.derivative();
@@ -199,7 +226,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1316() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.4448868689607), (-336.4448868689607), 870, 870);
         Gaussian gaussian0 = new Gaussian();
         UnivariateFunction univariateFunction0 = gaussian0.derivative();
@@ -209,7 +236,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1417() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         bracketingNthOrderBrentSolver0.solve(3065, (UnivariateFunction) sinc0, (double) 3065, 5595.40184475436);
@@ -218,7 +245,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1415() throws Throwable {
+    public void test1418() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         bracketingNthOrderBrentSolver0.solve(3065, (UnivariateFunction) sinc0, (double) 3065, 5595.40184475436);
@@ -227,7 +254,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1516() throws Throwable {
+    public void test1519() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         AllowedSolution allowedSolution0 = AllowedSolution.LEFT_SIDE;
@@ -236,7 +263,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1517() throws Throwable {
+    public void test1520() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         AllowedSolution allowedSolution0 = AllowedSolution.LEFT_SIDE;
@@ -245,7 +272,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1618() throws Throwable {
+    public void test1621() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         double double0 = bracketingNthOrderBrentSolver0.solve(3068, (UnivariateFunction) sinc0, (double) 3068, 5595.40184475436);
@@ -253,7 +280,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1619() throws Throwable {
+    public void test1622() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         double double0 = bracketingNthOrderBrentSolver0.solve(3068, (UnivariateFunction) sinc0, (double) 3068, 5595.40184475436);
@@ -261,7 +288,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1720() throws Throwable {
+    public void test1723() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.37036033754146), (-336.37036033754146), 870);
         Gaussian gaussian0 = new Gaussian();
         UnivariateFunction univariateFunction0 = gaussian0.derivative();
@@ -271,7 +298,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1821() throws Throwable {
+    public void test1824() throws Throwable {
         Log10 log10_0 = new Log10();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(948.8898, 1759, 5);
@@ -289,7 +316,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1922() throws Throwable {
+    public void test1925() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.4448868689607), (-336.4448868689607), 870);
         Gaussian gaussian0 = new Gaussian();
         UnivariateFunction univariateFunction0 = gaussian0.derivative();
@@ -299,7 +326,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test1923() throws Throwable {
+    public void test1926() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.4448868689607), (-336.4448868689607), 870);
         Gaussian gaussian0 = new Gaussian();
         UnivariateFunction univariateFunction0 = gaussian0.derivative();
@@ -309,7 +336,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2024() throws Throwable {
+    public void test2027() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(0.0, 0.0, 0.0, 1707);
         Sqrt sqrt0 = new Sqrt();
         bracketingNthOrderBrentSolver0.setup(5, sqrt0, 0, 0.0, Double.NaN);
@@ -318,7 +345,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2025() throws Throwable {
+    public void test2028() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(0.0, 0.0, 0.0, 1707);
         Sqrt sqrt0 = new Sqrt();
         bracketingNthOrderBrentSolver0.setup(5, sqrt0, 0, 0.0, Double.NaN);
@@ -327,7 +354,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2126() throws Throwable {
+    public void test2129() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.4448868689607), (-336.4448868689607), 870);
         Gaussian gaussian0 = new Gaussian();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
@@ -336,7 +363,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2127() throws Throwable {
+    public void test2130() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-336.4448868689607), (-336.4448868689607), 870);
         Gaussian gaussian0 = new Gaussian();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
@@ -345,7 +372,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2228() throws Throwable {
+    public void test2231() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = null;
         try {
             bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(0.0, (-176), 2553.8937608706196, (-176));
@@ -359,7 +386,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2329() throws Throwable {
+    public void test2332() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = null;
         try {
             bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(733.043805, (-713.8371), 0);
@@ -373,7 +400,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2430() throws Throwable {
+    public void test2433() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = null;
         try {
             bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver((-792), (-792));
@@ -387,7 +414,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2531() throws Throwable {
+    public void test2534() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         Sinc sinc0 = new Sinc(true);
         AllowedSolution allowedSolution0 = AllowedSolution.RIGHT_SIDE;
@@ -396,7 +423,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2632() throws Throwable {
+    public void test2635() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(0.0, 0.0, 0.0, 1707);
         Sqrt sqrt0 = new Sqrt();
         AllowedSolution allowedSolution0 = AllowedSolution.ANY_SIDE;
@@ -413,7 +440,7 @@ public class BracketingNthOrderBrentSolver_ESTest extends BracketingNthOrderBren
     }
 
     @Test(timeout = 4000)
-    public void test2733() throws Throwable {
+    public void test2736() throws Throwable {
         BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver();
         int int0 = bracketingNthOrderBrentSolver0.getMaximalOrder();
         assertEquals(5, int0);

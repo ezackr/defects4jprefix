@@ -60,7 +60,26 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test044() throws Throwable {
+        JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("*Y@pv4<=M2C");
+        Locale locale0 = Locale.TAIWAN;
+        Set<String> set0 = locale0.getUnicodeLocaleAttributes();
+        Config config0 = new Config((JSTypeRegistry) null, set0, true);
+        JsDocInfoParser jsDocInfoParser0 = new JsDocInfoParser(jsDocTokenStream0, "*Y@pv4<=M2C", config0, (ErrorReporter) null);
+        jsDocInfoParser0.setFileLevelJsDocBuilder((Node.FileLevelJsDocBuilder) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
+        Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
+        JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("=V8yK\"0RFN%F]z");
+        JsDocInfoParser jsDocInfoParser0 = new JsDocInfoParser(jsDocTokenStream0, "=V8yK\"0RFN%F]z", config0, (ErrorReporter) null);
+        jsDocInfoParser0.setFileOverviewJSDocInfo((JSDocInfo) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("@*}p=$BV$i6eF");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
@@ -70,12 +89,12 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("(e8%bz_,9lPF");
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("!,&*/4y1j*'>T()");
@@ -84,7 +103,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("@[d-TK1\n");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, false);
@@ -94,7 +113,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream(".<");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -104,7 +123,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
@@ -114,7 +133,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream(":!gKmi7n]RSo0u</");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -124,7 +143,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream(">!!K)os@ XD$?$l\"#)");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -134,7 +153,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("[JVqvaConstructfrc ");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -144,7 +163,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
@@ -154,7 +173,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, false);
@@ -164,7 +183,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("?o+6m\"KHvS");
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, false);
@@ -173,7 +192,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("|c+F#6epY-0''knu78");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -183,7 +202,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("];ejT0&zo~}");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
@@ -192,7 +211,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, false);
@@ -202,7 +221,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream(")c)TF#69pYJ-D''kn78");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -212,7 +231,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("...");
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, false);
@@ -221,7 +240,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, false);
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("=V8yK\"0RF[?F]z");
@@ -230,7 +249,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("*Y@pv4<=M2C");
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -240,7 +259,7 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
         Config config0 = new Config((JSTypeRegistry) null, linkedHashSet0, true);
         JsDocTokenStream jsDocTokenStream0 = new JsDocTokenStream("Node cannot be refined. \n");
@@ -249,214 +268,214 @@ public class JsDocInfoParser_ESTest extends JsDocInfoParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("$&.<NE>");
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2627() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("$&.<NE>");
         node0.hasChildren();
-    }
-
-    @Test(timeout = 4000)
-    public void test2726() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("0&|A|#TTyq2");
-        node0.getType();
-    }
-
-    @Test(timeout = 4000)
-    public void test2727() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("0&|A|#TTyq2");
     }
 
     @Test(timeout = 4000)
     public void test2728() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("0&|A|#TTyq2");
+        node0.getType();
+    }
+
+    @Test(timeout = 4000)
+    public void test2729() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("0&|A|#TTyq2");
+    }
+
+    @Test(timeout = 4000)
+    public void test2730() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("0&|A|#TTyq2");
         node0.getChildCount();
     }
 
     @Test(timeout = 4000)
-    public void test2829() throws Throwable {
+    public void test2831() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("s%T.<");
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2832() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("s%T.<");
         node0.getType();
-    }
-
-    @Test(timeout = 4000)
-    public void test2931() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("?VFt;*Hp>:Ng{");
-        node0.getType();
-    }
-
-    @Test(timeout = 4000)
-    public void test2932() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("?VFt;*Hp>:Ng{");
-        node0.getCharno();
     }
 
     @Test(timeout = 4000)
     public void test2933() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("?VFt;*Hp>:Ng{");
+        node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test3034() throws Throwable {
+    public void test2934() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("?VFt;*Hp>:Ng{");
+        node0.getCharno();
+    }
+
+    @Test(timeout = 4000)
+    public void test2935() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("?VFt;*Hp>:Ng{");
+    }
+
+    @Test(timeout = 4000)
+    public void test3036() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("!");
     }
 
     @Test(timeout = 4000)
-    public void test3135() throws Throwable {
+    public void test3137() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("x?5,mc@y@C");
     }
 
     @Test(timeout = 4000)
-    public void test3136() throws Throwable {
+    public void test3138() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("x?5,mc@y@C");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test3237() throws Throwable {
+    public void test3239() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("NL6e~7sR!");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test3238() throws Throwable {
+    public void test3240() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("NL6e~7sR!");
     }
 
     @Test(timeout = 4000)
-    public void test3339() throws Throwable {
+    public void test3341() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("*Y@pv4<=2C");
     }
 
     @Test(timeout = 4000)
-    public void test3340() throws Throwable {
+    public void test3342() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("*Y@pv4<=2C");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test3441() throws Throwable {
+    public void test3443() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("[s,+\n");
     }
 
     @Test(timeout = 4000)
-    public void test3542() throws Throwable {
+    public void test3544() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{Eg:n9;5q3 ");
     }
 
     @Test(timeout = 4000)
-    public void test3643() throws Throwable {
+    public void test3645() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("null");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test3644() throws Throwable {
+    public void test3646() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("null");
     }
 
     @Test(timeout = 4000)
-    public void test3745() throws Throwable {
+    public void test3747() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("undefined");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test3746() throws Throwable {
+    public void test3748() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("undefined");
     }
 
     @Test(timeout = 4000)
-    public void test3847() throws Throwable {
+    public void test3849() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("s%T.<n[w");
     }
 
     @Test(timeout = 4000)
-    public void test3948() throws Throwable {
+    public void test3950() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("function");
     }
 
     @Test(timeout = 4000)
-    public void test4049() throws Throwable {
+    public void test4051() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("ed`;\"5ha4Hp13I|");
-    }
-
-    @Test(timeout = 4000)
-    public void test4150() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("(Lorg/mozilla/javascript/Context;)Lorg/mozilla/javascript/RegExpProxy;");
-        node0.getType();
-    }
-
-    @Test(timeout = 4000)
-    public void test4151() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("(Lorg/mozilla/javascript/Context;)Lorg/mozilla/javascript/RegExpProxy;");
     }
 
     @Test(timeout = 4000)
     public void test4152() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("(Lorg/mozilla/javascript/Context;)Lorg/mozilla/javascript/RegExpProxy;");
-        node0.hasChildren();
-    }
-
-    @Test(timeout = 4000)
-    public void test4253() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("[\n");
-    }
-
-    @Test(timeout = 4000)
-    public void test4354() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("[EJavaConsNr]cttfrc ");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test4355() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("[EJavaConsNr]cttfrc ");
+    public void test4153() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("(Lorg/mozilla/javascript/Context;)Lorg/mozilla/javascript/RegExpProxy;");
+    }
+
+    @Test(timeout = 4000)
+    public void test4154() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("(Lorg/mozilla/javascript/Context;)Lorg/mozilla/javascript/RegExpProxy;");
+        node0.hasChildren();
+    }
+
+    @Test(timeout = 4000)
+    public void test4255() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("[\n");
     }
 
     @Test(timeout = 4000)
     public void test4356() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("[EJavaConsNr]cttfrc ");
-        node0.getChildCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test4457() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("{'q^eM2rJVlr:@,y9AE");
-    }
-
-    @Test(timeout = 4000)
-    public void test4558() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("{wKbM&}p{$]G>05T2e");
         node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test4559() throws Throwable {
-        Node node0 = JsDocInfoParser.parseTypeString("{wKbM&}p{$]G>05T2e");
-        node0.hasOneChild();
+    public void test4357() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("[EJavaConsNr]cttfrc ");
+    }
+
+    @Test(timeout = 4000)
+    public void test4358() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("[EJavaConsNr]cttfrc ");
+        node0.getChildCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test4459() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("{'q^eM2rJVlr:@,y9AE");
     }
 
     @Test(timeout = 4000)
     public void test4560() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{wKbM&}p{$]G>05T2e");
+        node0.getType();
     }
 
     @Test(timeout = 4000)
-    public void test4661() throws Throwable {
+    public void test4561() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("{wKbM&}p{$]G>05T2e");
+        node0.hasOneChild();
+    }
+
+    @Test(timeout = 4000)
+    public void test4562() throws Throwable {
+        Node node0 = JsDocInfoParser.parseTypeString("{wKbM&}p{$]G>05T2e");
+    }
+
+    @Test(timeout = 4000)
+    public void test4663() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{QP,dNQ3V>VP*Hf");
     }
 
     @Test(timeout = 4000)
-    public void test4762() throws Throwable {
+    public void test4764() throws Throwable {
         Node node0 = JsDocInfoParser.parseTypeString("{");
     }
 }

@@ -17,7 +17,99 @@ import org.junit.runner.RunWith;
 public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test140() throws Throwable {
+    public void test000() throws Throwable {
+        TokenQueue.unescape("X-kXc[-oD(+(y?l!");
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
+        tokenQueue0.consumeElementSelector();
+        tokenQueue0.chompBalanced('#', '#');
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
+        tokenQueue0.addFirst("Queue did not match expected sequence");
+        tokenQueue0.consumeWord();
+        tokenQueue0.chompTo("Queue did not match expected sequence");
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("-^1");
+        tokenQueue0.consume("-^1");
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("p`DL^");
+        tokenQueue0.matchesStartTag();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
+        tokenQueue0.consumeAttributeKey();
+        tokenQueue0.matchesStartTag();
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        TokenQueue.unescape("");
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
+        tokenQueue0.consumeAttributeKey();
+        tokenQueue0.chompBalanced('/', '/');
+        tokenQueue0.consumeWord();
+        tokenQueue0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("");
+        tokenQueue0.remainder();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
+        tokenQueue0.chompBalanced('*', 'C');
+        tokenQueue0.peek();
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("MunxBE4TmJ$O6brhQZ6");
+        tokenQueue0.consumeWord();
+        tokenQueue0.matchesCS("MunxBE4TmJ");
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("ET1.K7YMPRyV");
+        tokenQueue0.matches("i`g%R6{fv:n");
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("");
+        tokenQueue0.consumeWord();
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
+        tokenQueue0.consumeAttributeKey();
+        tokenQueue0.consumeTo("C-c}Cvo");
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
         tokenQueue0.consumeElementSelector();
         tokenQueue0.consumeAttributeKey();
@@ -25,7 +117,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151() throws Throwable {
+    public void test1515() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
         tokenQueue0.consumeTagName();
         tokenQueue0.consume();
@@ -34,7 +126,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test152() throws Throwable {
+    public void test1516() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
         tokenQueue0.consumeTagName();
         tokenQueue0.consume();
@@ -43,14 +135,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test163() throws Throwable {
+    public void test1617() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.chompToIgnoreCase("ZPENtVIS-1O4V");
         assertEquals('#', tokenQueue0.peek());
     }
 
     @Test(timeout = 4000)
-    public void test174() throws Throwable {
+    public void test1718() throws Throwable {
         // Undeclared exception!
         try {
             TokenQueue.unescape((String) null);
@@ -64,7 +156,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test185() throws Throwable {
+    public void test1819() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
         // Undeclared exception!
         try {
@@ -75,7 +167,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test196() throws Throwable {
+    public void test1920() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("zV}gOohc<nl");
         // Undeclared exception!
         try {
@@ -90,7 +182,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test207() throws Throwable {
+    public void test2021() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         // Undeclared exception!
         try {
@@ -104,7 +196,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test218() throws Throwable {
+    public void test2122() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         // Undeclared exception!
         try {
@@ -118,7 +210,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test229() throws Throwable {
+    public void test2223() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         // Undeclared exception!
         try {
@@ -129,7 +221,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2310() throws Throwable {
+    public void test2324() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("1^=$YvJ?!Czi]S{%s");
         // Undeclared exception!
         try {
@@ -144,7 +236,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2411() throws Throwable {
+    public void test2425() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("WPI");
         // Undeclared exception!
         try {
@@ -159,7 +251,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2512() throws Throwable {
+    public void test2526() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         // Undeclared exception!
         try {
@@ -173,7 +265,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2613() throws Throwable {
+    public void test2627() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("7LS<jn2]+9v");
         // Undeclared exception!
         try {
@@ -187,7 +279,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2714() throws Throwable {
+    public void test2728() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         // Undeclared exception!
         try {
@@ -198,7 +290,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2815() throws Throwable {
+    public void test2829() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         // Undeclared exception!
         try {
@@ -209,7 +301,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2916() throws Throwable {
+    public void test2930() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("foma::+6g|fqwm}a");
         // Undeclared exception!
         try {
@@ -224,7 +316,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3017() throws Throwable {
+    public void test3031() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
         // Undeclared exception!
         try {
@@ -238,7 +330,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3118() throws Throwable {
+    public void test3132() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         // Undeclared exception!
         try {
@@ -253,7 +345,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3219() throws Throwable {
+    public void test3233() throws Throwable {
         TokenQueue tokenQueue0 = null;
         try {
             tokenQueue0 = new TokenQueue((String) null);
@@ -267,14 +359,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3320() throws Throwable {
+    public void test3334() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("_U\u0006");
         tokenQueue0.chompBalanced('_', 'c');
         assertEquals("", tokenQueue0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test3421() throws Throwable {
+    public void test3435() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.addFirst("\"xiJ&`M[0Y_* x");
         tokenQueue0.consumeToIgnoreCase("*`l@X17Z[");
@@ -282,14 +374,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3522() throws Throwable {
+    public void test3536() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$t/2XW");
         tokenQueue0.consumeToIgnoreCase("$t/2XW");
         assertEquals('$', tokenQueue0.peek());
     }
 
     @Test(timeout = 4000)
-    public void test3623() throws Throwable {
+    public void test3637() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         tokenQueue0.consumeWord();
         tokenQueue0.consumeTo("PsQsP");
@@ -297,14 +389,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3724() throws Throwable {
+    public void test3738() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
         tokenQueue0.consumeTo("");
         assertEquals("8rVVhr[", tokenQueue0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test3825() throws Throwable {
+    public void test3839() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         boolean boolean0 = tokenQueue0.matchesWord();
@@ -312,7 +404,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3826() throws Throwable {
+    public void test3840() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         boolean boolean0 = tokenQueue0.matchesWord();
@@ -320,7 +412,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3927() throws Throwable {
+    public void test3941() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         tokenQueue0.chompToIgnoreCase("(@#fgg0X");
         boolean boolean0 = tokenQueue0.matchesWord();
@@ -328,7 +420,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3928() throws Throwable {
+    public void test3942() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         tokenQueue0.chompToIgnoreCase("(@#fgg0X");
         boolean boolean0 = tokenQueue0.matchesWord();
@@ -336,14 +428,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4029() throws Throwable {
+    public void test4043() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         boolean boolean0 = tokenQueue0.matchesWord();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4130() throws Throwable {
+    public void test4144() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         tokenQueue0.consumeWord();
         boolean boolean0 = tokenQueue0.matchesWhitespace();
@@ -351,7 +443,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4131() throws Throwable {
+    public void test4145() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         tokenQueue0.consumeWord();
         boolean boolean0 = tokenQueue0.matchesWhitespace();
@@ -359,21 +451,21 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4232() throws Throwable {
+    public void test4246() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         boolean boolean0 = tokenQueue0.matchesWhitespace();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4233() throws Throwable {
+    public void test4247() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         boolean boolean0 = tokenQueue0.matchesWhitespace();
         assertFalse(tokenQueue0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test4334() throws Throwable {
+    public void test4348() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         Character character0 = Character.valueOf('u');
         tokenQueue0.addFirst(character0);
@@ -382,7 +474,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4335() throws Throwable {
+    public void test4349() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         Character character0 = Character.valueOf('u');
         tokenQueue0.addFirst(character0);
@@ -391,21 +483,21 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4436() throws Throwable {
+    public void test4450() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         boolean boolean0 = tokenQueue0.matchChomp("");
         assertTrue(tokenQueue0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test4437() throws Throwable {
+    public void test4451() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         boolean boolean0 = tokenQueue0.matchChomp("");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4538() throws Throwable {
+    public void test4552() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         Character character0 = new Character('!');
         tokenQueue0.addFirst(character0);
@@ -416,7 +508,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4539() throws Throwable {
+    public void test4553() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         Character character0 = new Character('!');
         tokenQueue0.addFirst(character0);
@@ -427,7 +519,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4640() throws Throwable {
+    public void test4654() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         Character character0 = new Character('!');
         tokenQueue0.addFirst(character0);
@@ -437,7 +529,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4641() throws Throwable {
+    public void test4655() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         Character character0 = new Character('!');
         tokenQueue0.addFirst(character0);
@@ -447,7 +539,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4742() throws Throwable {
+    public void test4756() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         String[] stringArray0 = new String[8];
         stringArray0[0] = "";
@@ -456,7 +548,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4843() throws Throwable {
+    public void test4857() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("MKf2*BS>:okK]H<");
         String[] stringArray0 = new String[1];
         stringArray0[0] = "y9?Q{4";
@@ -465,7 +557,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4944() throws Throwable {
+    public void test4958() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         String[] stringArray0 = new String[8];
         // Undeclared exception!
@@ -480,7 +572,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5045() throws Throwable {
+    public void test5059() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("s@zD6]");
         Character character0 = new Character('L');
         tokenQueue0.addFirst(character0);
@@ -490,7 +582,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5046() throws Throwable {
+    public void test5060() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("s@zD6]");
         Character character0 = new Character('L');
         tokenQueue0.addFirst(character0);
@@ -500,28 +592,28 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5147() throws Throwable {
+    public void test5161() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         boolean boolean0 = tokenQueue0.isEmpty();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5248() throws Throwable {
+    public void test5262() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("s@zD6]");
         String string0 = tokenQueue0.remainder();
         assertEquals("s@zD6]", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5349() throws Throwable {
+    public void test5363() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("s@zD6]");
         boolean boolean0 = tokenQueue0.matches("s@zD6]");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5450() throws Throwable {
+    public void test5464() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -530,7 +622,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5551() throws Throwable {
+    public void test5565() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.addFirst("0Z-T~R7~7 izo");
         tokenQueue0.consumeCssIdentifier();
@@ -538,7 +630,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5652() throws Throwable {
+    public void test5666() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         tokenQueue0.consume();
         tokenQueue0.consumeToIgnoreCase("Queue did not match expected sequence");
@@ -547,14 +639,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5753() throws Throwable {
+    public void test5767() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         tokenQueue0.consumeElementSelector();
         assertEquals('$', tokenQueue0.peek());
     }
 
     @Test(timeout = 4000)
-    public void test5854() throws Throwable {
+    public void test5868() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -563,14 +655,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5955() throws Throwable {
+    public void test5969() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("I:xt}ChItIVC=~!{");
         tokenQueue0.consumeTagName();
         assertEquals("}ChItIVC=~!{", tokenQueue0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test6056() throws Throwable {
+    public void test6070() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
         tokenQueue0.consumeTagName();
         tokenQueue0.chompToIgnoreCase("X");
@@ -579,14 +671,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6157() throws Throwable {
+    public void test6171() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("_U\u0006");
         tokenQueue0.chompBalanced('c', '_');
         assertTrue(tokenQueue0.matchesWord());
     }
 
     @Test(timeout = 4000)
-    public void test6258() throws Throwable {
+    public void test6272() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("String must not be empty");
         tokenQueue0.advance();
         String[] stringArray0 = new String[7];
@@ -603,7 +695,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6359() throws Throwable {
+    public void test6373() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(".Rw %Y-cF[9:Oy");
         Character character0 = Character.valueOf('#');
         tokenQueue0.addFirst(character0);
@@ -620,14 +712,14 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6460() throws Throwable {
+    public void test6474() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consume("");
         assertEquals('Z', tokenQueue0.peek());
     }
 
     @Test(timeout = 4000)
-    public void test6561() throws Throwable {
+    public void test6575() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue did not match expected sequence");
         tokenQueue0.consume();
         tokenQueue0.consumeToIgnoreCase("Queue did not match expected sequence");
@@ -636,7 +728,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6662() throws Throwable {
+    public void test6676() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("String must not be empty");
         tokenQueue0.consumeTagName();
         boolean boolean0 = tokenQueue0.consumeWhitespace();
@@ -644,7 +736,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6663() throws Throwable {
+    public void test6677() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("String must not be empty");
         tokenQueue0.consumeTagName();
         boolean boolean0 = tokenQueue0.consumeWhitespace();
@@ -652,21 +744,21 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6764() throws Throwable {
+    public void test6778() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         boolean boolean0 = tokenQueue0.consumeWhitespace();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test6765() throws Throwable {
+    public void test6779() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         boolean boolean0 = tokenQueue0.consumeWhitespace();
         assertTrue(tokenQueue0.matchesWord());
     }
 
     @Test(timeout = 4000)
-    public void test6866() throws Throwable {
+    public void test6880() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -676,7 +768,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6867() throws Throwable {
+    public void test6881() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -686,28 +778,28 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6968() throws Throwable {
+    public void test6982() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.chompTo("");
         assertEquals('Z', tokenQueue0.peek());
     }
 
     @Test(timeout = 4000)
-    public void test7069() throws Throwable {
+    public void test7083() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("<]CY\"1}kOU&tb3>#)*");
         boolean boolean0 = tokenQueue0.matchesStartTag();
         assertFalse(tokenQueue0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test7070() throws Throwable {
+    public void test7084() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("<]CY\"1}kOU&tb3>#)*");
         boolean boolean0 = tokenQueue0.matchesStartTag();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test7171() throws Throwable {
+    public void test7185() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("FL<x48V1,UNy`}6o");
         tokenQueue0.consumeTagName();
         boolean boolean0 = tokenQueue0.matchesStartTag();
@@ -715,7 +807,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7172() throws Throwable {
+    public void test7186() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("FL<x48V1,UNy`}6o");
         tokenQueue0.consumeTagName();
         boolean boolean0 = tokenQueue0.matchesStartTag();
@@ -723,7 +815,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7273() throws Throwable {
+    public void test7287() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -732,7 +824,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7274() throws Throwable {
+    public void test7288() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -741,7 +833,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7375() throws Throwable {
+    public void test7389() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         String[] stringArray0 = new String[18];
         stringArray0[0] = "";
@@ -750,7 +842,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7476() throws Throwable {
+    public void test7490() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("String must not be empty");
         tokenQueue0.advance();
         String[] stringArray0 = new String[7];
@@ -768,7 +860,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7477() throws Throwable {
+    public void test7491() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("String must not be empty");
         tokenQueue0.advance();
         String[] stringArray0 = new String[7];
@@ -786,7 +878,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7578() throws Throwable {
+    public void test7592() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -796,7 +888,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7579() throws Throwable {
+    public void test7593() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         tokenQueue0.consumeAttributeKey();
         tokenQueue0.chompBalanced('/', '/');
@@ -806,21 +898,21 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7680() throws Throwable {
+    public void test7694() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         char char0 = tokenQueue0.peek();
         assertEquals('Z', char0);
     }
 
     @Test(timeout = 4000)
-    public void test7781() throws Throwable {
+    public void test7795() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("ZPENtVIS-1O4V#f");
         String string0 = tokenQueue0.toString();
         assertEquals("ZPENtVIS-1O4V#f", string0);
     }
 
     @Test(timeout = 4000)
-    public void test7882() throws Throwable {
+    public void test7896() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         boolean boolean0 = tokenQueue0.matchesCS("");
         assertTrue(boolean0);

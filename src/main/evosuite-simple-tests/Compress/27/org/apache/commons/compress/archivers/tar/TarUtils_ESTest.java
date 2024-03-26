@@ -18,7 +18,14 @@ import org.junit.runner.RunWith;
 public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) (-15);
+        TarUtils.verifyCheckSum(byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         byte[] byteArray0 = new byte[5];
         // Undeclared exception!
         try {
@@ -29,7 +36,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.formatLongOctalOrBinaryBytes(8589934591L, (byte[]) null, 1, 1);
@@ -43,7 +50,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         byte[] byteArray0 = new byte[3];
         // Undeclared exception!
         try {
@@ -58,7 +65,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         byte[] byteArray0 = new byte[17];
         byteArray0[0] = (byte) 38;
         byteArray0[1] = (byte) (-111);
@@ -75,7 +82,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         byte[] byteArray0 = new byte[9];
         byteArray0[8] = (byte) (-86);
         // Undeclared exception!
@@ -91,7 +98,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         byte[] byteArray0 = new byte[5];
         // Undeclared exception!
         try {
@@ -106,7 +113,59 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test156() throws Throwable {
+    public void test077() throws Throwable {
+        byte[] byteArray0 = new byte[17];
+        byteArray0[0] = (byte) 61;
+        TarUtils.parseName(byteArray0, 0, 10);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        byte[] byteArray0 = new byte[22];
+        TarUtils.formatOctalBytes(0L, byteArray0, (byte) 20, (byte) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
+        TarUtils.formatNameBytes("AEp]<", byteArray0, (int) (byte) 0, (int) (byte) 0, zipEncoding0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        byte[] byteArray0 = new byte[14];
+        ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
+        TarUtils.formatNameBytes("{NUL}", byteArray0, (int) (byte) 1, (int) (byte) 1, zipEncoding0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        TarUtils.formatNameBytes("org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding", byteArray0, (int) (byte) 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        TarUtils.formatNameBytes(" is too large for ", byteArray0, (int) (byte) 1, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        byte[] byteArray0 = new byte[7];
+        TarUtils.formatNameBytes("Jx0DNRLj<alwcB8)!l", byteArray0, 0, (int) (byte) (-7));
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        byte[] byteArray0 = new byte[14];
+        byteArray0[0] = (byte) 43;
+        TarUtils.computeCheckSum(byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.verifyCheckSum((byte[]) null);
@@ -120,7 +179,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test167() throws Throwable {
+    public void test1616() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.parseOctalOrBinary((byte[]) null, (-1010), 2270);
@@ -134,7 +193,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178() throws Throwable {
+    public void test1717() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.parseOctal((byte[]) null, (-2971), 9);
@@ -148,7 +207,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test189() throws Throwable {
+    public void test1818() throws Throwable {
         ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
         // Undeclared exception!
         try {
@@ -163,7 +222,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1910() throws Throwable {
+    public void test1919() throws Throwable {
         byte[] byteArray0 = new byte[4];
         ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
         // Undeclared exception!
@@ -179,7 +238,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2011() throws Throwable {
+    public void test2020() throws Throwable {
         byte[] byteArray0 = new byte[7];
         // Undeclared exception!
         try {
@@ -194,7 +253,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2112() throws Throwable {
+    public void test2121() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.parseBoolean((byte[]) null, (-49));
@@ -208,7 +267,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2213() throws Throwable {
+    public void test2222() throws Throwable {
         byte[] byteArray0 = new byte[8];
         // Undeclared exception!
         try {
@@ -223,7 +282,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2314() throws Throwable {
+    public void test2323() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.formatOctalBytes(0L, (byte[]) null, 3293, 3293);
@@ -237,7 +296,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2415() throws Throwable {
+    public void test2424() throws Throwable {
         byte[] byteArray0 = new byte[7];
         // Undeclared exception!
         try {
@@ -252,7 +311,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2516() throws Throwable {
+    public void test2525() throws Throwable {
         byte[] byteArray0 = new byte[3];
         // Undeclared exception!
         try {
@@ -267,7 +326,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2617() throws Throwable {
+    public void test2626() throws Throwable {
         byte[] byteArray0 = new byte[0];
         // Undeclared exception!
         try {
@@ -278,7 +337,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2718() throws Throwable {
+    public void test2727() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.formatLongOctalOrBinaryBytes(818L, (byte[]) null, 8730, 8730);
@@ -292,7 +351,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2819() throws Throwable {
+    public void test2828() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.formatLongOctalBytes(0L, (byte[]) null, 9, 2);
@@ -306,7 +365,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2920() throws Throwable {
+    public void test2929() throws Throwable {
         byte[] byteArray0 = new byte[5];
         // Undeclared exception!
         try {
@@ -321,7 +380,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3021() throws Throwable {
+    public void test3030() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.formatCheckSumOctalBytes(0L, (byte[]) null, 789, 789);
@@ -335,7 +394,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3122() throws Throwable {
+    public void test3131() throws Throwable {
         byte[] byteArray0 = new byte[1];
         // Undeclared exception!
         try {
@@ -350,7 +409,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3223() throws Throwable {
+    public void test3232() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.computeCheckSum((byte[]) null);
@@ -364,7 +423,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3324() throws Throwable {
+    public void test3333() throws Throwable {
         byte[] byteArray0 = new byte[5];
         // Undeclared exception!
         try {
@@ -379,7 +438,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3425() throws Throwable {
+    public void test3434() throws Throwable {
         byte[] byteArray0 = new byte[0];
         // Undeclared exception!
         try {
@@ -394,7 +453,14 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3626() throws Throwable {
+    public void test3535() throws Throwable {
+        byte[] byteArray0 = new byte[0];
+        ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
+        TarUtils.parseName(byteArray0, (-1173), (-1173), zipEncoding0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
         byte[] byteArray0 = new byte[9];
         byteArray0[2] = (byte) 24;
         // Undeclared exception!
@@ -410,7 +476,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3727() throws Throwable {
+    public void test3737() throws Throwable {
         byte[] byteArray0 = new byte[9];
         byteArray0[0] = (byte) 116;
         // Undeclared exception!
@@ -426,7 +492,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3828() throws Throwable {
+    public void test3838() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) 33;
         boolean boolean0 = TarUtils.verifyCheckSum(byteArray0);
@@ -434,21 +500,21 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3929() throws Throwable {
+    public void test3939() throws Throwable {
         byte[] byteArray0 = new byte[1];
         boolean boolean0 = TarUtils.verifyCheckSum(byteArray0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4030() throws Throwable {
+    public void test4040() throws Throwable {
         byte[] byteArray0 = new byte[14];
         long long0 = TarUtils.computeCheckSum(byteArray0);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test4131() throws Throwable {
+    public void test4141() throws Throwable {
         byte[] byteArray0 = new byte[9];
         // Undeclared exception!
         try {
@@ -459,7 +525,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4232() throws Throwable {
+    public void test4242() throws Throwable {
         byte[] byteArray0 = new byte[9];
         // Undeclared exception!
         try {
@@ -474,7 +540,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4333() throws Throwable {
+    public void test4343() throws Throwable {
         byte[] byteArray0 = new byte[9];
         // Undeclared exception!
         try {
@@ -485,7 +551,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4434() throws Throwable {
+    public void test4444() throws Throwable {
         byte[] byteArray0 = new byte[2];
         // Undeclared exception!
         try {
@@ -500,7 +566,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4535() throws Throwable {
+    public void test4545() throws Throwable {
         byte[] byteArray0 = new byte[14];
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
         // Undeclared exception!
@@ -516,7 +582,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4636() throws Throwable {
+    public void test4646() throws Throwable {
         byte[] byteArray0 = new byte[14];
         byteArray0[1] = (byte) 1;
         boolean boolean0 = TarUtils.parseBoolean(byteArray0, (byte) 1);
@@ -524,14 +590,14 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4737() throws Throwable {
+    public void test4747() throws Throwable {
         byte[] byteArray0 = new byte[14];
         boolean boolean0 = TarUtils.parseBoolean(byteArray0, (byte) 1);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4838() throws Throwable {
+    public void test4848() throws Throwable {
         byte[] byteArray0 = new byte[3];
         byteArray0[1] = (byte) (-71);
         long long0 = TarUtils.parseOctalOrBinary(byteArray0, 1, (byte) (-71));
@@ -539,7 +605,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4939() throws Throwable {
+    public void test4949() throws Throwable {
         byte[] byteArray0 = new byte[5];
         byteArray0[0] = (byte) (-1);
         long long0 = TarUtils.parseOctalOrBinary(byteArray0, 0, (byte) (-1));
@@ -547,7 +613,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5040() throws Throwable {
+    public void test5050() throws Throwable {
         byte[] byteArray0 = new byte[3];
         byteArray0[1] = (byte) (-7);
         // Undeclared exception!
@@ -559,7 +625,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5141() throws Throwable {
+    public void test5151() throws Throwable {
         byte[] byteArray0 = new byte[9];
         TarUtils.formatUnsignedOctalString(540L, byteArray0, 0, 9);
         long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 2);
@@ -567,7 +633,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5142() throws Throwable {
+    public void test5152() throws Throwable {
         byte[] byteArray0 = new byte[9];
         TarUtils.formatUnsignedOctalString(540L, byteArray0, 0, 9);
         long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 2);
@@ -575,14 +641,14 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5243() throws Throwable {
+    public void test5253() throws Throwable {
         byte[] byteArray0 = new byte[9];
         long long0 = TarUtils.parseOctal(byteArray0, 8, 5396);
         assertEquals(0L, long0);
     }
 
     @Test(timeout = 4000)
-    public void test5344() throws Throwable {
+    public void test5354() throws Throwable {
         // Undeclared exception!
         try {
             TarUtils.parseOctal((byte[]) null, (-2971), (-2971));
@@ -596,7 +662,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5445() throws Throwable {
+    public void test5455() throws Throwable {
         byte[] byteArray0 = new byte[4];
         byteArray0[2] = (byte) 3;
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
@@ -605,7 +671,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5546() throws Throwable {
+    public void test5556() throws Throwable {
         byte[] byteArray0 = new byte[4];
         byteArray0[0] = (byte) 3;
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
@@ -614,7 +680,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5647() throws Throwable {
+    public void test5657() throws Throwable {
         byte[] byteArray0 = new byte[14];
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
         int int0 = TarUtils.formatNameBytes("{NUL}", byteArray0, (int) (byte) 1, (-668), zipEncoding0);
@@ -622,14 +688,14 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5748() throws Throwable {
+    public void test5758() throws Throwable {
         byte[] byteArray0 = new byte[0];
         String string0 = TarUtils.parseName(byteArray0, 0, 0);
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5849() throws Throwable {
+    public void test5859() throws Throwable {
         byte[] byteArray0 = new byte[4];
         // Undeclared exception!
         try {
@@ -644,7 +710,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5950() throws Throwable {
+    public void test5960() throws Throwable {
         byte[] byteArray0 = new byte[0];
         // Undeclared exception!
         try {
@@ -659,7 +725,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6051() throws Throwable {
+    public void test6061() throws Throwable {
         byte[] byteArray0 = new byte[7];
         // Undeclared exception!
         try {

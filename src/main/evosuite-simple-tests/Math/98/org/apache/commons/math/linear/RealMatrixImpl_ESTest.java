@@ -984,7 +984,14 @@ public class RealMatrixImpl_ESTest extends RealMatrixImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6578() throws Throwable {
+    public void test6478() throws Throwable {
+        double[] doubleArray0 = new double[1];
+        RealMatrixImpl realMatrixImpl0 = new RealMatrixImpl(doubleArray0);
+        realMatrixImpl0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test6579() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 920.529;
         RealMatrixImpl realMatrixImpl0 = new RealMatrixImpl(doubleArray0);
@@ -992,7 +999,7 @@ public class RealMatrixImpl_ESTest extends RealMatrixImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6579() throws Throwable {
+    public void test6580() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 920.529;
         RealMatrixImpl realMatrixImpl0 = new RealMatrixImpl(doubleArray0);
@@ -1001,7 +1008,7 @@ public class RealMatrixImpl_ESTest extends RealMatrixImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6580() throws Throwable {
+    public void test6581() throws Throwable {
         double[] doubleArray0 = new double[1];
         doubleArray0[0] = 920.529;
         RealMatrixImpl realMatrixImpl0 = new RealMatrixImpl(doubleArray0);
@@ -1011,7 +1018,7 @@ public class RealMatrixImpl_ESTest extends RealMatrixImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6681() throws Throwable {
+    public void test6682() throws Throwable {
         double[][] doubleArray0 = new double[20][8];
         RealMatrixImpl realMatrixImpl0 = new RealMatrixImpl(doubleArray0, false);
         try {

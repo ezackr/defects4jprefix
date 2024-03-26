@@ -66,12 +66,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test057() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.ONE;
-        byte[] byteArray0 = Base64.encodeInteger(bigInteger0);
-    }
-
-    @Test(timeout = 4000)
     public void test068() throws Throwable {
         String string0 = Base64.encodeBase64URLSafeString((byte[]) null);
     }
@@ -91,14 +85,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
         byte[] byteArray1 = base64_0.encode(byteArray0);
         String string0 = Base64.encodeBase64URLSafeString(byteArray1);
         base64_0.isUrlSafe();
-    }
-
-    @Test(timeout = 4000)
-    public void test0711() throws Throwable {
-        Base64 base64_0 = new Base64();
-        byte[] byteArray0 = new byte[0];
-        byte[] byteArray1 = base64_0.encode(byteArray0);
-        String string0 = Base64.encodeBase64URLSafeString(byteArray1);
     }
 
     @Test(timeout = 4000)
@@ -157,20 +143,16 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1721() throws Throwable {
-        byte[] byteArray0 = new byte[0];
-        byte[] byteArray1 = Base64.encodeBase64(byteArray0);
+    public void test1621() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        byte[] byteArray1 = Base64.encodeBase64(byteArray0, true);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)65, (byte)65, (byte)65, (byte)65, (byte) (-8), (byte)0}, byteArray1);
     }
 
     @Test(timeout = 4000)
-    public void test1822() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        Base64 base64_0 = new Base64((-1438), byteArray0);
-        byte[] byteArray1 = new byte[5];
-        byteArray1[3] = (byte) (-57);
-        byte[] byteArray2 = base64_0.encode(byteArray1);
-        BigInteger bigInteger0 = Base64.decodeInteger(byteArray2);
-        bigInteger0.shortValue();
+    public void test1722() throws Throwable {
+        byte[] byteArray0 = new byte[0];
+        byte[] byteArray1 = Base64.encodeBase64(byteArray0);
     }
 
     @Test(timeout = 4000)
@@ -181,10 +163,21 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
         byteArray1[3] = (byte) (-57);
         byte[] byteArray2 = base64_0.encode(byteArray1);
         BigInteger bigInteger0 = Base64.decodeInteger(byteArray2);
+        bigInteger0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test1924() throws Throwable {
+    public void test1824() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        Base64 base64_0 = new Base64((-1438), byteArray0);
+        byte[] byteArray1 = new byte[5];
+        byteArray1[3] = (byte) (-57);
+        byte[] byteArray2 = base64_0.encode(byteArray1);
+        BigInteger bigInteger0 = Base64.decodeInteger(byteArray2);
+    }
+
+    @Test(timeout = 4000)
+    public void test1925() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byteArray0[1] = (byte) 73;
         byteArray0[2] = (byte) 45;
@@ -193,7 +186,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2025() throws Throwable {
+    public void test2026() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byteArray0[3] = (byte) 43;
         byteArray0[5] = (byte) 56;
@@ -201,41 +194,41 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2126() throws Throwable {
+    public void test2127() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byte[] byteArray1 = Base64.decodeBase64(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test2227() throws Throwable {
+    public void test2228() throws Throwable {
         byte[] byteArray0 = Base64.decodeBase64((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test2328() throws Throwable {
+    public void test2329() throws Throwable {
         byte[] byteArray0 = Base64.decodeBase64("))%");
-    }
-
-    @Test(timeout = 4000)
-    public void test2429() throws Throwable {
-        Base64 base64_0 = new Base64(false);
-        byte[] byteArray0 = base64_0.decode((String) null);
     }
 
     @Test(timeout = 4000)
     public void test2430() throws Throwable {
         Base64 base64_0 = new Base64(false);
         byte[] byteArray0 = base64_0.decode((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2431() throws Throwable {
+        Base64 base64_0 = new Base64(false);
+        byte[] byteArray0 = base64_0.decode((String) null);
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test2531() throws Throwable {
+    public void test2532() throws Throwable {
         Base64.toIntegerBytes((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test2632() throws Throwable {
+    public void test2633() throws Throwable {
         Base64 base64_0 = new Base64((-1783));
         byte[] byteArray0 = new byte[6];
         base64_0.encode(byteArray0, (int) (byte) (-118), (int) (byte) (-45));
@@ -243,22 +236,22 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2733() throws Throwable {
+    public void test2734() throws Throwable {
         Base64.isBase64((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test2834() throws Throwable {
+    public void test2835() throws Throwable {
         Base64.isBase64((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test2935() throws Throwable {
+    public void test2936() throws Throwable {
         Base64.isArrayByteBase64((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3036() throws Throwable {
+    public void test3037() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         byte[] byteArray0 = Base64.encodeInteger(bigInteger0);
         Base64 base64_0 = new Base64((-485), byteArray0);
@@ -267,61 +260,43 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3137() throws Throwable {
+    public void test3138() throws Throwable {
         Base64.discardWhitespace((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3238() throws Throwable {
+    public void test3239() throws Throwable {
         Base64.decodeInteger((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3439() throws Throwable {
+    public void test3340() throws Throwable {
+        byte[] byteArray0 = new byte[5];
+        byte[] byteArray1 = Base64.encodeBase64(byteArray0, true, true, (int) (byte) 102);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte) (-8), (byte)0}, byteArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test3441() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byte[] byteArray1 = Base64.encodeBase64(byteArray0, false, false, 64);
     }
 
     @Test(timeout = 4000)
-    public void test3440() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        byte[] byteArray1 = Base64.encodeBase64(byteArray0, false, false, 64);
-    }
-
-    @Test(timeout = 4000)
-    public void test3541() throws Throwable {
+    public void test3543() throws Throwable {
         byte[] byteArray0 = Base64.encodeBase64((byte[]) null, false, false, 76);
     }
 
     @Test(timeout = 4000)
-    public void test3642() throws Throwable {
+    public void test3644() throws Throwable {
         Base64 base64_0 = new Base64(0, (byte[]) null);
         byte[] byteArray0 = base64_0.decode((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test3643() throws Throwable {
+    public void test3645() throws Throwable {
         Base64 base64_0 = new Base64(0, (byte[]) null);
         byte[] byteArray0 = base64_0.decode((byte[]) null);
-        base64_0.isUrlSafe();
-    }
-
-    @Test(timeout = 4000)
-    public void test3744() throws Throwable {
-        Base64 base64_0 = new Base64(103);
-        byte[] byteArray0 = new byte[0];
-        byte[] byteArray1 = base64_0.decode(byteArray0);
-        byte[] byteArray2 = Base64.encodeBase64URLSafe(byteArray1);
-        byte[] byteArray3 = Base64.discardWhitespace(byteArray2);
-    }
-
-    @Test(timeout = 4000)
-    public void test3745() throws Throwable {
-        Base64 base64_0 = new Base64(103);
-        byte[] byteArray0 = new byte[0];
-        byte[] byteArray1 = base64_0.decode(byteArray0);
-        byte[] byteArray2 = Base64.encodeBase64URLSafe(byteArray1);
-        byte[] byteArray3 = Base64.discardWhitespace(byteArray2);
         base64_0.isUrlSafe();
     }
 
@@ -341,35 +316,46 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
         byte[] byteArray1 = base64_0.decode(byteArray0);
         byte[] byteArray2 = Base64.encodeBase64URLSafe(byteArray1);
         byte[] byteArray3 = Base64.discardWhitespace(byteArray2);
+        base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test3948() throws Throwable {
+    public void test3850() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        byte[] byteArray1 = Base64.encodeBase64(byteArray0, true, false);
+        boolean boolean0 = Base64.isBase64(byteArray1);
+        //  // Unstable assertion: assertFalse(boolean0);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)65, (byte)65, (byte)65, (byte)65, (byte) (-8), (byte)0}, byteArray1);
+        //  // Unstable assertion: assertEquals(6, byteArray1.length);
+    }
+
+    @Test(timeout = 4000)
+    public void test3951() throws Throwable {
         boolean boolean0 = Base64.isBase64((byte) 81);
     }
 
     @Test(timeout = 4000)
-    public void test4049() throws Throwable {
+    public void test4052() throws Throwable {
         boolean boolean0 = Base64.isBase64((byte) 0);
     }
 
     @Test(timeout = 4000)
-    public void test4150() throws Throwable {
+    public void test4153() throws Throwable {
         boolean boolean0 = Base64.isBase64((byte) 126);
     }
 
     @Test(timeout = 4000)
-    public void test4251() throws Throwable {
+    public void test4254() throws Throwable {
         boolean boolean0 = Base64.isBase64((byte) (-126));
     }
 
     @Test(timeout = 4000)
-    public void test4352() throws Throwable {
+    public void test4355() throws Throwable {
         boolean boolean0 = Base64.isBase64((byte) 61);
     }
 
     @Test(timeout = 4000)
-    public void test4453() throws Throwable {
+    public void test4456() throws Throwable {
         Base64 base64_0 = new Base64(false);
         byte[] byteArray0 = new byte[0];
         byte[] byteArray1 = base64_0.decode("+&OxR7{L] |au,X");
@@ -377,16 +363,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4454() throws Throwable {
-        Base64 base64_0 = new Base64(false);
-        byte[] byteArray0 = new byte[0];
-        byte[] byteArray1 = base64_0.decode("+&OxR7{L] |au,X");
-        byte[] byteArray2 = base64_0.encode(byteArray0);
-        base64_0.decode(byteArray1, 0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test4455() throws Throwable {
+    public void test4457() throws Throwable {
         Base64 base64_0 = new Base64(false);
         byte[] byteArray0 = new byte[0];
         byte[] byteArray1 = base64_0.decode("+&OxR7{L] |au,X");
@@ -395,7 +372,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4556() throws Throwable {
+    public void test4559() throws Throwable {
         byte[] byteArray0 = new byte[8];
         byteArray0[4] = (byte) 118;
         Base64 base64_0 = new Base64();
@@ -403,7 +380,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4657() throws Throwable {
+    public void test4660() throws Throwable {
         byte[] byteArray0 = new byte[8];
         byteArray0[1] = (byte) (-35);
         Base64 base64_0 = new Base64();
@@ -411,27 +388,36 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4858() throws Throwable {
+    public void test4761() throws Throwable {
+        Base64 base64_0 = new Base64(14);
+        byte[] byteArray0 = new byte[5];
+        byte[] byteArray1 = Base64.encodeBase64Chunked(byteArray0);
+        base64_0.decode(byteArray1, 7, (int) (byte) 6);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)61, (byte)0, (byte)0}, byteArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4862() throws Throwable {
         Base64 base64_0 = new Base64();
         base64_0.decode((byte[]) null, (int) (byte) (-43), 1);
     }
 
     @Test(timeout = 4000)
-    public void test4959() throws Throwable {
+    public void test4963() throws Throwable {
         Base64 base64_0 = new Base64((-2737), (byte[]) null);
         base64_0.decode((byte[]) null, 76, (-1));
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test5060() throws Throwable {
+    public void test5064() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64();
         base64_0.encode(byteArray0, (int) (byte) 0, (int) (byte) 49);
     }
 
     @Test(timeout = 4000)
-    public void test5161() throws Throwable {
+    public void test5165() throws Throwable {
         byte[] byteArray0 = new byte[7];
         byteArray0[4] = (byte) (-26);
         Base64 base64_0 = new Base64(true);
@@ -439,7 +425,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5262() throws Throwable {
+    public void test5266() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Base64 base64_0 = new Base64();
         base64_0.encode(byteArray0, (-728), (int) (byte) 0);
@@ -447,20 +433,20 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5363() throws Throwable {
+    public void test5367() throws Throwable {
         Base64 base64_0 = new Base64(0);
         base64_0.encode((byte[]) null, 0, 40);
     }
 
     @Test(timeout = 4000)
-    public void test5464() throws Throwable {
+    public void test5468() throws Throwable {
         byte[] byteArray0 = new byte[2];
         Base64 base64_0 = new Base64((-289), byteArray0, true);
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test5565() throws Throwable {
+    public void test5569() throws Throwable {
         byte[] byteArray0 = new byte[2];
         byteArray0[0] = (byte) 79;
         Base64 base64_0 = null;
@@ -468,45 +454,45 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5666() throws Throwable {
+    public void test5670() throws Throwable {
         Base64 base64_0 = new Base64((-2149), (byte[]) null, false);
         String string0 = base64_0.encodeToString((byte[]) null);
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test5667() throws Throwable {
+    public void test5671() throws Throwable {
         Base64 base64_0 = new Base64((-2149), (byte[]) null, false);
         String string0 = base64_0.encodeToString((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test5768() throws Throwable {
+    public void test5772() throws Throwable {
         byte[] byteArray0 = new byte[0];
         byte[] byteArray1 = Base64.encodeBase64(byteArray0, false);
         byte[] byteArray2 = Base64.encodeBase64(byteArray1, false, false, 567);
     }
 
     @Test(timeout = 4000)
-    public void test5869() throws Throwable {
+    public void test5873() throws Throwable {
         Base64.encodeInteger((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test5970() throws Throwable {
+    public void test5974() throws Throwable {
         Base64 base64_0 = new Base64(0, (byte[]) null);
         byte[] byteArray0 = base64_0.encode((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test5971() throws Throwable {
+    public void test5975() throws Throwable {
         Base64 base64_0 = new Base64(0, (byte[]) null);
         byte[] byteArray0 = base64_0.encode((byte[]) null);
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test6072() throws Throwable {
+    public void test6076() throws Throwable {
         byte[] byteArray0 = new byte[3];
         Base64 base64_0 = new Base64((byte) 36, byteArray0);
         BigInteger bigInteger0 = BigInteger.TEN;
@@ -514,14 +500,14 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6173() throws Throwable {
+    public void test6177() throws Throwable {
         Base64 base64_0 = new Base64(0, (byte[]) null);
         Object object0 = base64_0.decode((Object) "]%3(Mbn@0l6/vRxq+=x");
         Object object1 = base64_0.encode(object0);
     }
 
     @Test(timeout = 4000)
-    public void test6174() throws Throwable {
+    public void test6178() throws Throwable {
         Base64 base64_0 = new Base64(0, (byte[]) null);
         Object object0 = base64_0.decode((Object) "]%3(Mbn@0l6/vRxq+=x");
         Object object1 = base64_0.encode(object0);
@@ -529,61 +515,54 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6275() throws Throwable {
+    public void test6279() throws Throwable {
         boolean boolean0 = Base64.isBase64("Parameter supplied to Base64 encode is not a byte[]");
     }
 
     @Test(timeout = 4000)
-    public void test6376() throws Throwable {
+    public void test6380() throws Throwable {
         byte[] byteArray0 = new byte[7];
         byteArray0[0] = (byte) 9;
         boolean boolean0 = Base64.isBase64(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test6477() throws Throwable {
+    public void test6481() throws Throwable {
         byte[] byteArray0 = new byte[8];
         byteArray0[0] = (byte) 32;
         byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test6478() throws Throwable {
-        byte[] byteArray0 = new byte[8];
-        byteArray0[0] = (byte) 32;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
+    public void test6584() throws Throwable {
+        byte[] byteArray0 = new byte[4];
+        byte[] byteArray1 = Base64.encodeBase64Chunked(byteArray0);
+        byte[] byteArray2 = Base64.discardWhitespace(byteArray1);
+        //  // Unstable assertion: assertEquals(10, byteArray2.length);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)61, (byte)61, (byte)0, (byte)0}, byteArray2);
     }
 
     @Test(timeout = 4000)
-    public void test6479() throws Throwable {
-        byte[] byteArray0 = new byte[8];
-        byteArray0[0] = (byte) 32;
+    public void test6685() throws Throwable {
+        byte[] byteArray0 = new byte[7];
+        byteArray0[0] = (byte) 10;
         byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
+        byte[] byteArray2 = Base64.encodeBase64(byteArray1, true, true, (int) (byte) 10);
+        //  // Unstable assertion: assertEquals(6, byteArray1.length);
+        //  // Unstable assertion: assertEquals(10, byteArray2.length);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)10, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0}, byteArray0);
+        //  // Unstable assertion: assertArrayEquals(new byte[] {(byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)65, (byte)0, (byte)0}, byteArray2);
     }
 
     @Test(timeout = 4000)
-    public void test6780() throws Throwable {
+    public void test6786() throws Throwable {
         byte[] byteArray0 = new byte[7];
         byteArray0[3] = (byte) 9;
         byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test6781() throws Throwable {
-        byte[] byteArray0 = new byte[7];
-        byteArray0[3] = (byte) 9;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test6782() throws Throwable {
-        byte[] byteArray0 = new byte[7];
-        byteArray0[3] = (byte) 9;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test6883() throws Throwable {
+    public void test6889() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64((byte) 1, byteArray0, false);
         base64_0.decode("");
@@ -591,7 +570,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6984() throws Throwable {
+    public void test6990() throws Throwable {
         byte[] byteArray0 = new byte[8];
         BigInteger bigInteger0 = Base64.decodeInteger(byteArray0);
         Base64 base64_0 = new Base64(false);
@@ -599,7 +578,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7085() throws Throwable {
+    public void test7091() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
         Base64 base64_0 = new Base64((-2998), byteArray0, false);
@@ -609,7 +588,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7086() throws Throwable {
+    public void test7092() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
         Base64 base64_0 = new Base64((-2998), byteArray0, false);
@@ -618,7 +597,14 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7287() throws Throwable {
+    public void test7193() throws Throwable {
+        byte[] byteArray0 = new byte[5];
+        byte[] byteArray1 = Base64.encodeBase64Chunked(byteArray0);
+        Base64.isArrayByteBase64(byteArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test7294() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Base64 base64_0 = new Base64((-3966), (byte[]) null);
         byte[] byteArray1 = Base64.encodeBase64(byteArray0, false, false);
@@ -626,29 +612,14 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7288() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        Base64 base64_0 = new Base64((-3966), (byte[]) null);
-        byte[] byteArray1 = Base64.encodeBase64(byteArray0, false, false);
-        byte[] byteArray2 = base64_0.decode(byteArray1);
-    }
-
-    @Test(timeout = 4000)
-    public void test7389() throws Throwable {
+    public void test7396() throws Throwable {
         Base64 base64_0 = new Base64();
         byte[] byteArray0 = new byte[5];
         byte[] byteArray1 = base64_0.encode(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test7390() throws Throwable {
-        Base64 base64_0 = new Base64();
-        byte[] byteArray0 = new byte[5];
-        byte[] byteArray1 = base64_0.encode(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test7391() throws Throwable {
+    public void test7398() throws Throwable {
         Base64 base64_0 = new Base64();
         byte[] byteArray0 = new byte[5];
         byte[] byteArray1 = base64_0.encode(byteArray0);
@@ -656,14 +627,14 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7492() throws Throwable {
+    public void test7499() throws Throwable {
         byte[] byteArray0 = new byte[9];
         Base64 base64_0 = new Base64(4, byteArray0);
         byte[] byteArray1 = base64_0.encode(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test7493() throws Throwable {
+    public void test74100() throws Throwable {
         byte[] byteArray0 = new byte[9];
         Base64 base64_0 = new Base64(4, byteArray0);
         byte[] byteArray1 = base64_0.encode(byteArray0);
@@ -671,7 +642,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7594() throws Throwable {
+    public void test75101() throws Throwable {
         Base64 base64_0 = new Base64(true);
         byte[] byteArray0 = new byte[4];
         base64_0.encode(byteArray0, (int) (byte) (-19), (-148));
@@ -679,7 +650,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7695() throws Throwable {
+    public void test76102() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
         byte[] byteArray1 = Base64.encodeBase64URLSafe(byteArray0);
@@ -687,14 +658,14 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7796() throws Throwable {
+    public void test77103() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Base64 base64_0 = new Base64((-3966), (byte[]) null);
         byte[] byteArray1 = base64_0.decode(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test7797() throws Throwable {
+    public void test77104() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Base64 base64_0 = new Base64((-3966), (byte[]) null);
         byte[] byteArray1 = base64_0.decode(byteArray0);
@@ -703,21 +674,14 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7898() throws Throwable {
+    public void test78105() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64(1, byteArray0);
         byte[] byteArray1 = base64_0.decode("4%*Y'ZxA");
     }
 
     @Test(timeout = 4000)
-    public void test7899() throws Throwable {
-        byte[] byteArray0 = new byte[7];
-        Base64 base64_0 = new Base64(1, byteArray0);
-        byte[] byteArray1 = base64_0.decode("4%*Y'ZxA");
-    }
-
-    @Test(timeout = 4000)
-    public void test78100() throws Throwable {
+    public void test78107() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64(1, byteArray0);
         byte[] byteArray1 = base64_0.decode("4%*Y'ZxA");
@@ -725,20 +689,20 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test79101() throws Throwable {
+    public void test79108() throws Throwable {
         Base64 base64_0 = new Base64(true);
         int int0 = base64_0.readResults((byte[]) null, 2563, 2563);
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test79102() throws Throwable {
+    public void test79109() throws Throwable {
         Base64 base64_0 = new Base64(true);
         int int0 = base64_0.readResults((byte[]) null, 2563, 2563);
     }
 
     @Test(timeout = 4000)
-    public void test80103() throws Throwable {
+    public void test80110() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
         Base64 base64_0 = new Base64((-2998), byteArray0, false);
@@ -746,15 +710,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test80104() throws Throwable {
-        BigInteger bigInteger0 = BigInteger.ONE;
-        byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
-        Base64 base64_0 = new Base64((-2998), byteArray0, false);
-        int int0 = base64_0.avail();
-    }
-
-    @Test(timeout = 4000)
-    public void test80105() throws Throwable {
+    public void test80112() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         byte[] byteArray0 = Base64.toIntegerBytes(bigInteger0);
         Base64 base64_0 = new Base64((-2998), byteArray0, false);
@@ -763,7 +719,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test81106() throws Throwable {
+    public void test81113() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64((byte) 1, byteArray0, false);
         base64_0.encode(byteArray0, (int) (byte) (-1), (int) (byte) (-1));
@@ -771,7 +727,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test81107() throws Throwable {
+    public void test81114() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64((byte) 1, byteArray0, false);
         base64_0.encode(byteArray0, (int) (byte) (-1), (int) (byte) (-1));
@@ -780,20 +736,20 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test82108() throws Throwable {
+    public void test82115() throws Throwable {
         Base64 base64_0 = new Base64(true);
         boolean boolean0 = base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test83109() throws Throwable {
+    public void test83116() throws Throwable {
         byte[] byteArray0 = new byte[7];
         Base64 base64_0 = new Base64(1, byteArray0);
         boolean boolean0 = base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test84110() throws Throwable {
+    public void test84117() throws Throwable {
         byte[] byteArray0 = new byte[32];
         byte[] byteArray1 = Base64.encodeBase64(byteArray0, true, true);
         Base64 base64_0 = null;
@@ -801,69 +757,62 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test85111() throws Throwable {
+    public void test85118() throws Throwable {
         byte[] byteArray0 = new byte[1];
         boolean boolean0 = Base64.isArrayByteBase64(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test86112() throws Throwable {
+    public void test86119() throws Throwable {
         byte[] byteArray0 = Base64.decodeBase64("x$PW bOeg1/`gL<X|");
         BigInteger bigInteger0 = Base64.decodeInteger(byteArray0);
         byte[] byteArray1 = Base64.encodeInteger(bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test86113() throws Throwable {
-        byte[] byteArray0 = Base64.decodeBase64("x$PW bOeg1/`gL<X|");
-        BigInteger bigInteger0 = Base64.decodeInteger(byteArray0);
-        byte[] byteArray1 = Base64.encodeInteger(bigInteger0);
-    }
-
-    @Test(timeout = 4000)
-    public void test87114() throws Throwable {
+    public void test87121() throws Throwable {
         byte[] byteArray0 = Base64.decodeBase64("lineSeperator must not contain base64 characters: [");
         String string0 = Base64.encodeBase64URLSafeString(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test88115() throws Throwable {
+    public void test88122() throws Throwable {
         byte[] byteArray0 = Base64.decodeBase64("org.apache.commons.codec.DecoderException");
         Base64.encodeBase64(byteArray0, true, false, 12);
     }
 
     @Test(timeout = 4000)
-    public void test89116() throws Throwable {
+    public void test89123() throws Throwable {
         String string0 = Base64.encodeBase64String((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test90117() throws Throwable {
+    public void test90124() throws Throwable {
         byte[] byteArray0 = new byte[1];
         Base64 base64_0 = new Base64((-3966), (byte[]) null);
         String string0 = base64_0.encodeToString(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test91118() throws Throwable {
+    public void test91125() throws Throwable {
         byte[] byteArray0 = Base64.decodeBase64((byte[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test92119() throws Throwable {
+    public void test92126() throws Throwable {
         Base64 base64_0 = new Base64();
         boolean boolean0 = base64_0.hasData();
         base64_0.isUrlSafe();
     }
 
     @Test(timeout = 4000)
-    public void test92120() throws Throwable {
+    public void test92127() throws Throwable {
         Base64 base64_0 = new Base64();
         boolean boolean0 = base64_0.hasData();
     }
 
     @Test(timeout = 4000)
-    public void test93121() throws Throwable {
+    public void test93128() throws Throwable {
         byte[] byteArray0 = Base64.encodeBase64((byte[]) null);
     }
 }

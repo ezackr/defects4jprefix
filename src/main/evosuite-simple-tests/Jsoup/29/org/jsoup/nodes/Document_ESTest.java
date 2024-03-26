@@ -327,7 +327,25 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2336() throws Throwable {
+    public void test2236() throws Throwable {
+        Document document0 = Document.createShell("colgroup");
+        Node[] nodeArray0 = new Node[9];
+        nodeArray0[0] = (Node) document0;
+        nodeArray0[1] = (Node) document0;
+        nodeArray0[2] = (Node) document0;
+        nodeArray0[3] = (Node) document0;
+        nodeArray0[4] = (Node) document0;
+        nodeArray0[5] = (Node) document0;
+        nodeArray0[6] = (Node) document0;
+        nodeArray0[7] = (Node) document0;
+        nodeArray0[8] = (Node) document0;
+        document0.addChildren(nodeArray0);
+        // Undeclared exception!
+        document0.title("colgroup");
+    }
+
+    @Test(timeout = 4000)
+    public void test2337() throws Throwable {
         Document document0 = new Document("$VALUES");
         // Undeclared exception!
         try {
@@ -342,7 +360,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2437() throws Throwable {
+    public void test2438() throws Throwable {
         Document document0 = Document.createShell("");
         // Undeclared exception!
         try {
@@ -357,7 +375,15 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2638() throws Throwable {
+    public void test2539() throws Throwable {
+        Document document0 = new Document("oHk");
+        document0.appendChild(document0);
+        // Undeclared exception!
+        document0.title();
+    }
+
+    @Test(timeout = 4000)
+    public void test2640() throws Throwable {
         Document document0 = new Document(".(<bf7E_[['");
         // Undeclared exception!
         try {
@@ -372,7 +398,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2739() throws Throwable {
+    public void test2741() throws Throwable {
         Document document0 = Document.createShell("4cylgroup");
         // Undeclared exception!
         try {
@@ -387,7 +413,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2840() throws Throwable {
+    public void test2842() throws Throwable {
         Document document0 = new Document("extended");
         // Undeclared exception!
         try {
@@ -402,7 +428,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2941() throws Throwable {
+    public void test2943() throws Throwable {
         Document document0 = Document.createShell("body");
         document0.childNodes = null;
         // Undeclared exception!
@@ -418,7 +444,15 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3142() throws Throwable {
+    public void test3044() throws Throwable {
+        Document document0 = Document.createShell("colgroup");
+        document0.appendChild(document0);
+        // Undeclared exception!
+        document0.normalise();
+    }
+
+    @Test(timeout = 4000)
+    public void test3145() throws Throwable {
         Document document0 = Document.createShell("n8B$F");
         document0.childNodes = null;
         // Undeclared exception!
@@ -434,7 +468,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3243() throws Throwable {
+    public void test3246() throws Throwable {
         // Undeclared exception!
         try {
             Document.createShell((String) null);
@@ -448,7 +482,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3344() throws Throwable {
+    public void test3347() throws Throwable {
         Document document0 = new Document("");
         // Undeclared exception!
         try {
@@ -463,7 +497,23 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3545() throws Throwable {
+    public void test3448() throws Throwable {
+        Document document0 = Document.createShell("73aa");
+        Node[] nodeArray0 = new Node[7];
+        nodeArray0[0] = (Node) document0;
+        nodeArray0[1] = (Node) document0;
+        nodeArray0[2] = (Node) document0;
+        nodeArray0[3] = (Node) document0;
+        nodeArray0[4] = (Node) document0;
+        nodeArray0[5] = (Node) document0;
+        nodeArray0[6] = (Node) document0;
+        document0.addChildren(nodeArray0);
+        // Undeclared exception!
+        document0.clone();
+    }
+
+    @Test(timeout = 4000)
+    public void test3549() throws Throwable {
         Document document0 = null;
         try {
             document0 = new Document((String) null);
@@ -477,42 +527,42 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3646() throws Throwable {
+    public void test3650() throws Throwable {
         Document document0 = Document.createShell("");
         document0.title("");
         assertEquals("#document", document0.nodeName());
     }
 
     @Test(timeout = 4000)
-    public void test3747() throws Throwable {
+    public void test3751() throws Throwable {
         Document document0 = Document.createShell("");
         Element element0 = document0.body();
         assertEquals("#document", document0.nodeName());
     }
 
     @Test(timeout = 4000)
-    public void test3748() throws Throwable {
+    public void test3752() throws Throwable {
         Document document0 = Document.createShell("");
         Element element0 = document0.body();
         assertNotNull(element0);
     }
 
     @Test(timeout = 4000)
-    public void test3849() throws Throwable {
+    public void test3853() throws Throwable {
         Document document0 = Document.createShell("73aa");
         String string0 = document0.nodeName();
         assertEquals("#document", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3950() throws Throwable {
+    public void test3954() throws Throwable {
         Document document0 = Document.createShell("E68g,JVlDRY$bK\"z");
         document0.head();
         assertEquals("#document", document0.nodeName());
     }
 
     @Test(timeout = 4000)
-    public void test4051() throws Throwable {
+    public void test4055() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Charset charset0 = Charset.defaultCharset();
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.charset(charset0);
@@ -520,7 +570,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4052() throws Throwable {
+    public void test4056() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Charset charset0 = Charset.defaultCharset();
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.charset(charset0);
@@ -528,14 +578,14 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4153() throws Throwable {
+    public void test4157() throws Throwable {
         Document document0 = new Document("UTF-8");
         Document.QuirksMode document_QuirksMode0 = document0.quirksMode();
         assertEquals(Document.QuirksMode.noQuirks, document_QuirksMode0);
     }
 
     @Test(timeout = 4000)
-    public void test4254() throws Throwable {
+    public void test4258() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         // Undeclared exception!
         try {
@@ -550,7 +600,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4355() throws Throwable {
+    public void test4359() throws Throwable {
         Document document0 = new Document("");
         document0.prependText("");
         Document document1 = document0.normalise();
@@ -558,7 +608,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4456() throws Throwable {
+    public void test4460() throws Throwable {
         Document document0 = Document.createShell("/VKt");
         document0.title("/VKt");
         document0.title("/VKt");
@@ -566,7 +616,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4557() throws Throwable {
+    public void test4561() throws Throwable {
         Document document0 = Document.createShell("/VKt");
         document0.title("/VKt");
         document0.title();
@@ -574,14 +624,14 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4658() throws Throwable {
+    public void test4662() throws Throwable {
         Document document0 = new Document("oHk");
         String string0 = document0.title();
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4759() throws Throwable {
+    public void test4763() throws Throwable {
         Document document0 = new Document("oHk");
         Element element0 = document0.append("t)d");
         List<Node> list0 = document0.siblingNodes();
@@ -599,7 +649,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4860() throws Throwable {
+    public void test4864() throws Throwable {
         Document document0 = Document.createShell("/VKt");
         Document document1 = (Document) document0.text("/VKt");
         document1.childNodes = null;
@@ -615,7 +665,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4961() throws Throwable {
+    public void test4965() throws Throwable {
         Document document0 = Document.createShell("colgroup");
         Document document1 = document0.clone();
         document1.appendChild(document0);
@@ -624,14 +674,14 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5062() throws Throwable {
+    public void test5066() throws Throwable {
         Document document0 = new Document("body");
         Element element0 = document0.createElement("body");
         assertEquals("body", element0.tagName());
     }
 
     @Test(timeout = 4000)
-    public void test5163() throws Throwable {
+    public void test5167() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Entities.EscapeMode entities_EscapeMode0 = Entities.EscapeMode.xhtml;
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.escapeMode(entities_EscapeMode0);
@@ -639,7 +689,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5164() throws Throwable {
+    public void test5168() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Entities.EscapeMode entities_EscapeMode0 = Entities.EscapeMode.xhtml;
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.escapeMode(entities_EscapeMode0);
@@ -647,42 +697,42 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5265() throws Throwable {
+    public void test5269() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         document_OutputSettings0.charset();
         assertTrue(document_OutputSettings0.prettyPrint());
     }
 
     @Test(timeout = 4000)
-    public void test5266() throws Throwable {
+    public void test5270() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         document_OutputSettings0.charset();
         assertEquals(1, document_OutputSettings0.indentAmount());
     }
 
     @Test(timeout = 4000)
-    public void test5367() throws Throwable {
+    public void test5371() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.clone();
         assertTrue(document_OutputSettings1.prettyPrint());
     }
 
     @Test(timeout = 4000)
-    public void test5368() throws Throwable {
+    public void test5372() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.clone();
         assertEquals(1, document_OutputSettings1.indentAmount());
     }
 
     @Test(timeout = 4000)
-    public void test5369() throws Throwable {
+    public void test5373() throws Throwable {
         Document.OutputSettings document_OutputSettings0 = new Document.OutputSettings();
         Document.OutputSettings document_OutputSettings1 = document_OutputSettings0.clone();
         assertNotSame(document_OutputSettings1, document_OutputSettings0);
     }
 
     @Test(timeout = 4000)
-    public void test5470() throws Throwable {
+    public void test5474() throws Throwable {
         Document document0 = Document.createShell("/VKt");
         document0.title("/VKt");
         String string0 = document0.outerHtml();
@@ -690,7 +740,7 @@ public class Document_ESTest extends Document_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5471() throws Throwable {
+    public void test5475() throws Throwable {
         Document document0 = Document.createShell("/VKt");
         document0.title("/VKt");
         String string0 = document0.outerHtml();

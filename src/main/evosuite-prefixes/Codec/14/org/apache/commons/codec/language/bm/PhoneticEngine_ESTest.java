@@ -42,20 +42,34 @@ public class PhoneticEngine_ESTest extends PhoneticEngine_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test42() throws Throwable {
+    public void test22() throws Throwable {
+        PhoneticEngine.PhonemeBuilder phoneticEngine_PhonemeBuilder0 = PhoneticEngine.PhonemeBuilder.empty((Languages.LanguageSet) null);
+        phoneticEngine_PhonemeBuilder0.append("");
+    }
+
+    @Test(timeout = 4000)
+    public void test33() throws Throwable {
+        PhoneticEngine.PhonemeBuilder phoneticEngine_PhonemeBuilder0 = PhoneticEngine.PhonemeBuilder.empty((Languages.LanguageSet) null);
+        LinkedList<Rule.Phoneme> linkedList0 = new LinkedList<Rule.Phoneme>();
+        Rule.PhonemeList rule_PhonemeList0 = new Rule.PhonemeList(linkedList0);
+        phoneticEngine_PhonemeBuilder0.apply(rule_PhonemeList0, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
         PhoneticEngine.PhonemeBuilder phoneticEngine_PhonemeBuilder0 = PhoneticEngine.PhonemeBuilder.empty((Languages.LanguageSet) null);
         Rule.Phoneme rule_Phoneme0 = new Rule.Phoneme("", (Languages.LanguageSet) null);
         phoneticEngine_PhonemeBuilder0.apply(rule_Phoneme0, 2);
     }
 
     @Test(timeout = 4000)
-    public void test53() throws Throwable {
+    public void test55() throws Throwable {
         PhoneticEngine.PhonemeBuilder phoneticEngine_PhonemeBuilder0 = PhoneticEngine.PhonemeBuilder.empty((Languages.LanguageSet) null);
         String string0 = phoneticEngine_PhonemeBuilder0.makeString();
     }
 
     @Test(timeout = 4000)
-    public void test64() throws Throwable {
+    public void test66() throws Throwable {
         NameType nameType0 = NameType.ASHKENAZI;
         RuleType ruleType0 = RuleType.RULES;
         PhoneticEngine phoneticEngine0 = null;

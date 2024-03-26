@@ -106,7 +106,21 @@ public class CMAESOptimizer_ESTest extends CMAESOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test044() throws Throwable {
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(44);
+        double[][] doubleArray0 = new double[1][3];
+        double[] doubleArray1 = new double[1];
+        doubleArray0[0] = doubleArray1;
+        UnitSphereRandomVectorGenerator unitSphereRandomVectorGenerator0 = new UnitSphereRandomVectorGenerator(0, cMAESOptimizer0.DEFAULT_RANDOMGENERATOR);
+        MicrosphereInterpolatingFunction microsphereInterpolatingFunction0 = new MicrosphereInterpolatingFunction(doubleArray0, doubleArray1, 2628, 0, unitSphereRandomVectorGenerator0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        cMAESOptimizer0.optimize(2628, (MultivariateFunction) microsphereInterpolatingFunction0, goalType0, doubleArray1, doubleArray1, doubleArray1);
+        // Undeclared exception!
+        cMAESOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer();
         // Undeclared exception!
         try {
@@ -121,7 +135,7 @@ public class CMAESOptimizer_ESTest extends CMAESOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Well44497a well44497a0 = new Well44497a();
         SimplePointChecker<PointValuePair> simplePointChecker0 = new SimplePointChecker<PointValuePair>(0.0, (-2157.173657120076));
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer((-633066204), (double[]) null, 0, (-633066204), true, (-961), (-633066204), well44497a0, true, simplePointChecker0);
@@ -129,21 +143,57 @@ public class CMAESOptimizer_ESTest extends CMAESOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         double[] doubleArray0 = new double[0];
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(2, doubleArray0, 2, 2, true, 0, 2, (RandomGenerator) null, true, (ConvergenceChecker<PointValuePair>) null);
         assertNull(cMAESOptimizer0.getGoalType());
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Well19937a well19937a0 = new Well19937a();
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer((-1796), (double[]) null, (-1796), (-1796), false, 0, 62, well19937a0, true);
         assertEquals(0, CMAESOptimizer.DEFAULT_DIAGONALONLY);
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test099() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[2] = (double) 1187;
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer();
+        cMAESOptimizer0.getMaxEvaluations();
+        cMAESOptimizer0.getStatisticsDHistory();
+        double[][] doubleArray1 = new double[3][8];
+        doubleArray1[0] = doubleArray0;
+        doubleArray1[1] = doubleArray0;
+        doubleArray1[2] = doubleArray0;
+        MicrosphereInterpolatingFunction microsphereInterpolatingFunction0 = new MicrosphereInterpolatingFunction(doubleArray1, doubleArray0, 0, 0, (UnitSphereRandomVectorGenerator) null);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        cMAESOptimizer0.optimize(1187, microsphereInterpolatingFunction0, goalType0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        doubleArray0[2] = (double) 1187;
+        doubleArray0[1] = (double) 1187;
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer();
+        cMAESOptimizer0.getEvaluations();
+        cMAESOptimizer0.getMaxEvaluations();
+        cMAESOptimizer0.getStatisticsDHistory();
+        double[][] doubleArray1 = new double[3][8];
+        doubleArray1[0] = doubleArray0;
+        doubleArray1[1] = doubleArray0;
+        doubleArray1[2] = doubleArray0;
+        MicrosphereInterpolatingFunction microsphereInterpolatingFunction0 = new MicrosphereInterpolatingFunction(doubleArray1, doubleArray0, 0, 0, (UnitSphereRandomVectorGenerator) null);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        // Undeclared exception!
+        cMAESOptimizer0.optimize(1187, microsphereInterpolatingFunction0, goalType0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer();
         double[][] doubleArray0 = new double[1][3];
         double[] doubleArray1 = new double[1];
@@ -156,21 +206,35 @@ public class CMAESOptimizer_ESTest extends CMAESOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(1998);
         List<Double> list0 = cMAESOptimizer0.getStatisticsFitnessHistory();
         assertTrue(list0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer();
         List<RealMatrix> list0 = cMAESOptimizer0.getStatisticsMeanHistory();
         assertEquals(0, list0.size());
     }
 
     @Test(timeout = 4000)
-    public void test1511() throws Throwable {
+    public void test1414() throws Throwable {
+        double[] doubleArray0 = new double[3];
+        CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(1187, doubleArray0);
+        double[][] doubleArray1 = new double[3][8];
+        doubleArray1[0] = doubleArray0;
+        doubleArray1[1] = doubleArray0;
+        doubleArray1[2] = doubleArray0;
+        MicrosphereInterpolatingFunction microsphereInterpolatingFunction0 = new MicrosphereInterpolatingFunction(doubleArray1, doubleArray0, 0, 0, (UnitSphereRandomVectorGenerator) null);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        cMAESOptimizer0.optimize(1187, microsphereInterpolatingFunction0, goalType0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
         CMAESOptimizer cMAESOptimizer0 = new CMAESOptimizer(1998);
         List<Double> list0 = cMAESOptimizer0.getStatisticsSigmaHistory();
         assertEquals(0, list0.size());

@@ -361,16 +361,6 @@ public class PrototypeObjectType_ESTest extends PrototypeObjectType_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1230() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "String");
-        boolean boolean0 = errorFunctionType0.defineDeclaredProperty("String", errorFunctionType0, (Node) null);
-        JSType.TypePair jSType_TypePair0 = errorFunctionType0.getTypesUnderEquality(errorFunctionType0);
-        boolean boolean1 = errorFunctionType0.defineProperty("String", jSType_TypePair0.typeB, false, (Node) null);
-    }
-
-    @Test(timeout = 4000)
     public void test1331() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -947,38 +937,7 @@ public class PrototypeObjectType_ESTest extends PrototypeObjectType_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test4187() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        NumberType numberType0 = new NumberType(jSTypeRegistry0);
-        JSType jSType0 = numberType0.autoboxesTo();
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(jSType0, (Node) null);
-        hashMap0.put("a^vr(A?hM>", recordTypeBuilder_RecordProperty0);
-        hashMap0.put("Unknown class name", recordTypeBuilder_RecordProperty0);
-        RecordType recordType0 = jSTypeRegistry0.createRecordType(hashMap0);
-        String string0 = recordType0.toStringHelper(false);
-    }
-
-    @Test(timeout = 4000)
     public void test4288() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();
-        NumberType numberType0 = new NumberType(jSTypeRegistry0);
-        JSType jSType0 = numberType0.autoboxesTo();
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty0 = new RecordTypeBuilder.RecordProperty(jSType0, (Node) null);
-        hashMap0.put("a^vr(A?hM>", recordTypeBuilder_RecordProperty0);
-        hashMap0.put("Unknown class name", recordTypeBuilder_RecordProperty0);
-        hashMap0.put("Named type with empty name component", recordTypeBuilder_RecordProperty0);
-        RecordTypeBuilder.RecordProperty recordTypeBuilder_RecordProperty1 = new RecordTypeBuilder.RecordProperty(jSType0, (Node) null);
-        hashMap0.put("Not declared as a constructor", recordTypeBuilder_RecordProperty1);
-        RecordType recordType0 = jSTypeRegistry0.createRecordType(hashMap0);
-        String string0 = recordType0.toStringHelper(false);
-    }
-
-    @Test(timeout = 4000)
-    public void test4289() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         HashMap<String, RecordTypeBuilder.RecordProperty> hashMap0 = new HashMap<String, RecordTypeBuilder.RecordProperty>();

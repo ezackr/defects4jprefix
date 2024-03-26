@@ -26,13 +26,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test001() throws Throwable {
-        TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
-        char[] charArray1 = textBuffer0.expandCurrentSegment(1000);
-    }
-
-    @Test(timeout = 4000)
     public void test002() throws Throwable {
         TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
         char[] charArray0 = textBuffer0.getCurrentSegment();
@@ -403,14 +396,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3945() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
-        char[] charArray1 = textBuffer0.expandCurrentSegment((int) '6');
-    }
-
-    @Test(timeout = 4000)
     public void test3946() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
@@ -545,13 +530,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4962() throws Throwable {
-        TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
-        textBuffer0.resetWithEmpty();
-        textBuffer0.getTextOffset();
-    }
-
-    @Test(timeout = 4000)
     public void test4963() throws Throwable {
         TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
         textBuffer0.resetWithEmpty();
@@ -655,22 +633,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5975() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler(654, 654);
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
-        char[] charArray1 = textBuffer0.getTextBuffer();
-    }
-
-    @Test(timeout = 4000)
-    public void test5976() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler(654, 654);
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
-        char[] charArray1 = textBuffer0.getTextBuffer();
-    }
-
-    @Test(timeout = 4000)
     public void test6077() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
@@ -679,15 +641,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test6078() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
-        textBuffer0.contentsAsArray();
-        char[] charArray1 = textBuffer0.getTextBuffer();
-    }
-
-    @Test(timeout = 4000)
-    public void test6079() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
         char[] charArray0 = textBuffer0.getCurrentSegment();
@@ -735,13 +688,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
         textBuffer0.resetWithString("");
         boolean boolean0 = textBuffer0.hasTextAsCharacters();
-    }
-
-    @Test(timeout = 4000)
-    public void test6485() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
     }
 
     @Test(timeout = 4000)
@@ -819,13 +765,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6895() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
-    }
-
-    @Test(timeout = 4000)
     public void test6896() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
@@ -874,13 +813,6 @@ public class TextBuffer_ESTest extends TextBuffer_ESTest_scaffolding {
     public void test71101() throws Throwable {
         TextBuffer textBuffer0 = new TextBuffer((BufferRecycler) null);
         int int0 = textBuffer0.size();
-    }
-
-    @Test(timeout = 4000)
-    public void test72102() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        TextBuffer textBuffer0 = new TextBuffer(bufferRecycler0);
-        char[] charArray0 = textBuffer0.getCurrentSegment();
     }
 
     @Test(timeout = 4000)

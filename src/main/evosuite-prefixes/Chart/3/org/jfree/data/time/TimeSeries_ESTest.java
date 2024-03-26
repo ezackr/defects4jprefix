@@ -549,13 +549,6 @@ public class TimeSeries_ESTest extends TimeSeries_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02457() throws Throwable {
-        Quarter quarter0 = new Quarter();
-        TimeSeries timeSeries0 = new TimeSeries(quarter0, "Null 'seriesKeys' argument.", "Null 'seriesKeys' argument.");
-        timeSeries0.getMaximumItemAge();
-    }
-
-    @Test(timeout = 4000)
     public void test02458() throws Throwable {
         Quarter quarter0 = new Quarter();
         TimeSeries timeSeries0 = new TimeSeries(quarter0, "Null 'seriesKeys' argument.", "Null 'seriesKeys' argument.");

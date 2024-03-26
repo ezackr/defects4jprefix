@@ -692,11 +692,4 @@ public class StdDeserializer_ESTest extends StdDeserializer_ESTest_scaffolding {
         StdDelegatingDeserializer<String> stdDelegatingDeserializer0 = new StdDelegatingDeserializer<String>(converter0);
         Number number0 = stdDelegatingDeserializer0._nonNullNumber((Number) null);
     }
-
-    @Test(timeout = 4000)
-    public void test7578() throws Throwable {
-        Converter<Object, String> converter0 = (Converter<Object, String>) mock(Converter.class, new ViolatedAssumptionAnswer());
-        StdDelegatingDeserializer<String> stdDelegatingDeserializer0 = new StdDelegatingDeserializer<String>(converter0);
-        Number number0 = stdDelegatingDeserializer0._nonNullNumber((Number) null);
-    }
 }

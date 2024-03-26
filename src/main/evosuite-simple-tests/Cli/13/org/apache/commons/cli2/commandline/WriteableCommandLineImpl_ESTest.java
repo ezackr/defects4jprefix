@@ -44,7 +44,15 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        PropertyOption propertyOption0 = new PropertyOption();
+        LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
+        writeableCommandLineImpl0.addProperty("-D", "-D");
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -53,7 +61,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -62,7 +70,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -71,7 +79,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -80,7 +88,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -90,7 +98,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -100,7 +108,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         DateValidator dateValidator0 = DateValidator.getDateInstance();
         ArgumentImpl argumentImpl0 = new ArgumentImpl("Passes properties and values to the application", "Passes properties and values to the application", 1, 1, '#', '#', dateValidator0, "-D", linkedList0, 1);
@@ -110,7 +118,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -128,7 +136,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -137,7 +145,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -147,21 +155,11 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, (List) null);
         List list0 = writeableCommandLineImpl0.getValues((Option) propertyOption0, (List) null);
         assertEquals(0, list0.size());
-    }
-
-    @Test(timeout = 4000)
-    public void test1413() throws Throwable {
-        PropertyOption propertyOption0 = new PropertyOption("?", "?", (-30));
-        LinkedList<DefaultOption> linkedList0 = new LinkedList<DefaultOption>();
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
-        writeableCommandLineImpl0.addSwitch(propertyOption0, true);
-        Boolean boolean0 = writeableCommandLineImpl0.getSwitch((Option) propertyOption0, (Boolean) null);
-        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -171,11 +169,21 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
         writeableCommandLineImpl0.addSwitch(propertyOption0, true);
         Boolean boolean0 = writeableCommandLineImpl0.getSwitch((Option) propertyOption0, (Boolean) null);
+        assertTrue(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1415() throws Throwable {
+        PropertyOption propertyOption0 = new PropertyOption("?", "?", (-30));
+        LinkedList<DefaultOption> linkedList0 = new LinkedList<DefaultOption>();
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
+        writeableCommandLineImpl0.addSwitch(propertyOption0, true);
+        Boolean boolean0 = writeableCommandLineImpl0.getSwitch((Option) propertyOption0, (Boolean) null);
         assertNotNull(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1516() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -184,7 +192,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -193,7 +201,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1718() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -202,7 +210,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1819() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -212,7 +220,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1920() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -223,7 +231,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2021() throws Throwable {
         PropertyOption propertyOption0 = new PropertyOption();
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -232,7 +240,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2122() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, (List) null);
         writeableCommandLineImpl0.setDefaultValues(propertyOption0, (List) null);
@@ -240,7 +248,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2223() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
@@ -250,7 +258,7 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2324() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Switch> linkedList0 = new LinkedList<Switch>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);

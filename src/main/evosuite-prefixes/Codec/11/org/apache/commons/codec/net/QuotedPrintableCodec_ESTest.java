@@ -66,19 +66,7 @@ public class QuotedPrintableCodec_ESTest extends QuotedPrintableCodec_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test067() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        String string0 = quotedPrintableCodec0.encode("");
-    }
-
-    @Test(timeout = 4000)
     public void test078() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        Object object0 = quotedPrintableCodec0.encode((Object) "");
-    }
-
-    @Test(timeout = 4000)
-    public void test079() throws Throwable {
         QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
         Object object0 = quotedPrintableCodec0.encode((Object) "");
     }
@@ -118,19 +106,7 @@ public class QuotedPrintableCodec_ESTest extends QuotedPrintableCodec_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1215() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        String string0 = quotedPrintableCodec0.decode("b.");
-    }
-
-    @Test(timeout = 4000)
     public void test1316() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        String string0 = quotedPrintableCodec0.decode("");
-    }
-
-    @Test(timeout = 4000)
-    public void test1317() throws Throwable {
         QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
         String string0 = quotedPrintableCodec0.decode("");
     }
@@ -295,12 +271,6 @@ public class QuotedPrintableCodec_ESTest extends QuotedPrintableCodec_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test3843() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        Object object0 = quotedPrintableCodec0.decode((Object) "VM=7F");
-    }
-
-    @Test(timeout = 4000)
     public void test3944() throws Throwable {
         QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
         quotedPrintableCodec0.decode("UTF-8", (String) null);
@@ -340,32 +310,13 @@ public class QuotedPrintableCodec_ESTest extends QuotedPrintableCodec_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4450() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        byte[] byteArray0 = new byte[1];
-        byte[] byteArray1 = quotedPrintableCodec0.encode(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test4551() throws Throwable {
         QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
         String string0 = quotedPrintableCodec0.encode("8Nmlf.>\"5Zl");
     }
 
     @Test(timeout = 4000)
-    public void test4552() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec();
-        String string0 = quotedPrintableCodec0.encode("8Nmlf.>\"5Zl");
-    }
-
-    @Test(timeout = 4000)
     public void test4653() throws Throwable {
-        QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec("");
-        String string0 = quotedPrintableCodec0.decode("", "UTF-8");
-    }
-
-    @Test(timeout = 4000)
-    public void test4654() throws Throwable {
         QuotedPrintableCodec quotedPrintableCodec0 = new QuotedPrintableCodec("");
         String string0 = quotedPrintableCodec0.decode("", "UTF-8");
     }

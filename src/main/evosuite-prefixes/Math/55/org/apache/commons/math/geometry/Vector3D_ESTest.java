@@ -2229,4 +2229,10 @@ public class Vector3D_ESTest extends Vector3D_ESTest_scaffolding {
         Vector3D vector3D1 = new Vector3D(0.0, vector3D0);
         Vector3D.angle(vector3D0, vector3D1);
     }
+
+    @Test(timeout = 4000)
+    public void test109298() throws Throwable {
+        Vector3D vector3D0 = Vector3D.MINUS_I;
+        Vector3D.angle(vector3D0, vector3D0);
+    }
 }

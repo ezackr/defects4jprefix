@@ -43,9 +43,34 @@ public class MultiDirectional_ESTest extends MultiDirectional_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test22() throws Throwable {
+        MultiDirectional multiDirectional0 = new MultiDirectional();
+        double[] doubleArray0 = new double[5];
+        doubleArray0[0] = (double) 306;
+        MultivariateVectorialFunction multivariateVectorialFunction0 = mock(MultivariateVectorialFunction.class, new ViolatedAssumptionAnswer());
+        doReturn((Object) doubleArray0, (Object) doubleArray0, (Object) doubleArray0, (Object) doubleArray0, (Object) doubleArray0).when(multivariateVectorialFunction0).value(any(double[].class));
+        LeastSquaresConverter leastSquaresConverter0 = new LeastSquaresConverter(multivariateVectorialFunction0, doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        multiDirectional0.optimize(leastSquaresConverter0, goalType0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test33() throws Throwable {
         MultiDirectional multiDirectional0 = new MultiDirectional((-163.956534124), (-163.956534124));
         Comparator<RealPointValuePair> comparator0 = (Comparator<RealPointValuePair>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         multiDirectional0.iterateSimplex(comparator0);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
+        MultiDirectional multiDirectional0 = new MultiDirectional();
+        double[] doubleArray0 = new double[5];
+        MultivariateVectorialFunction multivariateVectorialFunction0 = mock(MultivariateVectorialFunction.class, new ViolatedAssumptionAnswer());
+        doReturn((Object) doubleArray0, (Object) doubleArray0, (Object) doubleArray0, (Object) doubleArray0, (Object) doubleArray0).when(multivariateVectorialFunction0).value(any(double[].class));
+        LeastSquaresConverter leastSquaresConverter0 = new LeastSquaresConverter(multivariateVectorialFunction0, doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        multiDirectional0.optimize(leastSquaresConverter0, goalType0, doubleArray0);
     }
 }

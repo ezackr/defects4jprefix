@@ -46,13 +46,25 @@ public class ShapeList_ESTest extends ShapeList_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test33() throws Throwable {
+        ShapeList shapeList0 = new ShapeList();
+        ShapeList shapeList1 = (ShapeList) shapeList0.clone();
+        Rectangle2D.Float rectangle2D_Float0 = new Rectangle2D.Float();
+        Rectangle rectangle0 = new Rectangle(8, 8);
+        Rectangle2D.Double rectangle2D_Double0 = (Rectangle2D.Double) rectangle2D_Float0.createIntersection(rectangle0);
+        shapeList1.setShape(65535, rectangle2D_Double0);
+        // Undeclared exception!
+        shapeList1.equals(shapeList0);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
         ShapeList shapeList0 = new ShapeList();
         boolean boolean0 = shapeList0.equals(shapeList0);
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         ShapeList shapeList0 = new ShapeList();
         Dimension dimension0 = new Dimension((-1999), 8);
         Rectangle rectangle0 = new Rectangle(dimension0);
@@ -60,8 +72,14 @@ public class ShapeList_ESTest extends ShapeList_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test65() throws Throwable {
+    public void test66() throws Throwable {
         ShapeList shapeList0 = new ShapeList();
         Shape shape0 = shapeList0.getShape((-1999));
+    }
+
+    @Test(timeout = 4000)
+    public void test77() throws Throwable {
+        ShapeList shapeList0 = new ShapeList();
+        shapeList0.hashCode();
     }
 }

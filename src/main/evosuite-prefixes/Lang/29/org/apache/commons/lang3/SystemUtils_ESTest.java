@@ -229,11 +229,6 @@ public class SystemUtils_ESTest extends SystemUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
-        int[] intArray0 = SystemUtils.toJavaVersionIntArray("1.8.0_382");
-    }
-
-    @Test(timeout = 4000)
     public void test3839() throws Throwable {
         float float0 = SystemUtils.toJavaVersionFloat("_");
     }

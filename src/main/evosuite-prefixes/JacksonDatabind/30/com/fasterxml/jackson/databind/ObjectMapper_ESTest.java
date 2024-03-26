@@ -377,13 +377,21 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03029() throws Throwable {
+    public void test02929() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        JsonFormatVisitorWrapper.Base jsonFormatVisitorWrapper_Base0 = new JsonFormatVisitorWrapper.Base();
+        Class<CollectionLikeType> class0 = CollectionLikeType.class;
+        objectMapper0.acceptJsonFormatVisitor((Class<?>) class0, (JsonFormatVisitorWrapper) jsonFormatVisitorWrapper_Base0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03030() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.setConfig((DeserializationConfig) null);
     }
 
     @Test(timeout = 4000)
-    public void test03130() throws Throwable {
+    public void test03131() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleFilterProvider simpleFilterProvider0 = new SimpleFilterProvider();
         ObjectWriter objectWriter0 = objectMapper0.writer((FilterProvider) simpleFilterProvider0);
@@ -391,7 +399,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03231() throws Throwable {
+    public void test03232() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<ArrayNode> class0 = ArrayNode.class;
@@ -402,7 +410,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03332() throws Throwable {
+    public void test03333() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleFilterProvider simpleFilterProvider0 = new SimpleFilterProvider();
         objectMapper0.setFilters(simpleFilterProvider0);
@@ -410,7 +418,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03433() throws Throwable {
+    public void test03434() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MockFile mockFile0 = new MockFile("TX_cnk'[~|H7Ld", "TX_cnk'[~|H7Ld");
         byte[] byteArray0 = new byte[9];
@@ -420,14 +428,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03534() throws Throwable {
+    public void test03535() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writerWithType((JavaType) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test03635() throws Throwable {
+    public void test03636() throws Throwable {
         Class<BeanDeserializer> class0 = BeanDeserializer.class;
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writerWithView(class0);
@@ -435,7 +443,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03736() throws Throwable {
+    public void test03737() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.enableDefaultTyping();
         Class<ByteArrayOutputStream> class0 = ByteArrayOutputStream.class;
@@ -443,7 +451,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03837() throws Throwable {
+    public void test03838() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         byte[] byteArray0 = new byte[1];
         TypeReference<InputStreamReader> typeReference0 = (TypeReference<InputStreamReader>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
@@ -452,13 +460,13 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03938() throws Throwable {
+    public void test03939() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.valueToTree((Object) objectMapper0);
     }
 
     @Test(timeout = 4000)
-    public void test04039() throws Throwable {
+    public void test04040() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MissingNode missingNode0 = MissingNode.getInstance();
         Class<DataInputStream> class0 = DataInputStream.class;
@@ -466,7 +474,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04140() throws Throwable {
+    public void test04141() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
@@ -481,20 +489,20 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04241() throws Throwable {
+    public void test04242() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MapperFeature[] mapperFeatureArray0 = new MapperFeature[2];
         objectMapper0.disable(mapperFeatureArray0);
     }
 
     @Test(timeout = 4000)
-    public void test04342() throws Throwable {
+    public void test04343() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader((FormatSchema) null);
     }
 
     @Test(timeout = 4000)
-    public void test04443() throws Throwable {
+    public void test04444() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeReference<Integer> typeReference0 = (TypeReference<Integer>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         doReturn((Type) null).when(typeReference0).getType();
@@ -502,7 +510,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04544() throws Throwable {
+    public void test04545() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ArrayNode arrayNode0 = objectMapper0.createArrayNode();
         JsonParser jsonParser0 = arrayNode0.traverse((ObjectCodec) objectMapper0);
@@ -512,27 +520,27 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04645() throws Throwable {
+    public void test04646() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = objectMapper0.getJsonFactory();
         jsonFactory0.canHandleBinaryNatively();
     }
 
     @Test(timeout = 4000)
-    public void test04746() throws Throwable {
+    public void test04747() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         VisibilityChecker<?> visibilityChecker0 = objectMapper0.getVisibilityChecker();
     }
 
     @Test(timeout = 4000)
-    public void test04847() throws Throwable {
+    public void test04848() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.CLOSE_CLOSEABLE;
         ObjectMapper objectMapper1 = objectMapper0.enable(serializationFeature0);
     }
 
     @Test(timeout = 4000)
-    public void test04948() throws Throwable {
+    public void test04949() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.EAGER_DESERIALIZER_FETCH;
         DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[3];
@@ -540,14 +548,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05049() throws Throwable {
+    public void test05050() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<ByteArrayOutputStream> class0 = ByteArrayOutputStream.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test05150() throws Throwable {
+    public void test05151() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         URL uRL0 = MockURL.getHttpExample();
         Class<POJONode> class0 = POJONode.class;
@@ -559,7 +567,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05251() throws Throwable {
+    public void test05252() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         File file0 = MockFile.createTempFile("com.fasterxml.jackson.databind.ser.BeanSerializerFactory", ",*1l^T+%'DZ&");
@@ -570,60 +578,60 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05352() throws Throwable {
+    public void test05353() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
         ObjectMapper objectMapper1 = objectMapper0.setSerializerFactory(beanSerializerFactory0);
     }
 
     @Test(timeout = 4000)
-    public void test05453() throws Throwable {
+    public void test05454() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MockFileWriter mockFileWriter0 = new MockFileWriter("Module without defined name", false);
         byte[] byteArray0 = objectMapper0.writeValueAsBytes(mockFileWriter0);
     }
 
     @Test(timeout = 4000)
-    public void test05554() throws Throwable {
+    public void test05555() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonParser.Feature jsonParser_Feature0 = JsonParser.Feature.ALLOW_NUMERIC_LEADING_ZEROS;
         boolean boolean0 = objectMapper0.isEnabled(jsonParser_Feature0);
     }
 
     @Test(timeout = 4000)
-    public void test05655() throws Throwable {
+    public void test05656() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.readValues((JsonParser) null, (TypeReference<?>) null);
     }
 
     @Test(timeout = 4000)
-    public void test05756() throws Throwable {
+    public void test05757() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         PropertyNamingStrategy propertyNamingStrategy0 = objectMapper0.getPropertyNamingStrategy();
     }
 
     @Test(timeout = 4000)
-    public void test05857() throws Throwable {
+    public void test05858() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.writeValue((OutputStream) null, (Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test05958() throws Throwable {
+    public void test05959() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.writeValue((Writer) null, (Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test06059() throws Throwable {
+    public void test06060() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DefaultPrettyPrinter defaultPrettyPrinter0 = (DefaultPrettyPrinter) ObjectMapper._defaultPrettyPrinter;
         ObjectMapper objectMapper1 = objectMapper0.setDefaultPrettyPrinter(defaultPrettyPrinter0);
     }
 
     @Test(timeout = 4000)
-    public void test06160() throws Throwable {
+    public void test06161() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         JsonParser.Feature jsonParser_Feature0 = JsonParser.Feature.ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER;
@@ -631,7 +639,15 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06361() throws Throwable {
+    public void test06262() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        Class<LongNode> class0 = LongNode.class;
+        Class<Object> class1 = Object.class;
+        objectMapper0.addMixInAnnotations(class0, class1);
+    }
+
+    @Test(timeout = 4000)
+    public void test06363() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonNodeFactory jsonNodeFactory0 = new JsonNodeFactory(false);
         ArrayNode arrayNode0 = new ArrayNode(jsonNodeFactory0);
@@ -647,34 +663,34 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06462() throws Throwable {
+    public void test06464() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonNodeFactory jsonNodeFactory0 = objectMapper0.getNodeFactory();
     }
 
     @Test(timeout = 4000)
-    public void test06563() throws Throwable {
+    public void test06565() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writer();
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test06664() throws Throwable {
+    public void test06666() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationContext deserializationContext0 = objectMapper0.getDeserializationContext();
         deserializationContext0.getDeserializationFeatures();
     }
 
     @Test(timeout = 4000)
-    public void test06765() throws Throwable {
+    public void test06767() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JacksonAnnotationIntrospector jacksonAnnotationIntrospector0 = (JacksonAnnotationIntrospector) ObjectMapper.DEFAULT_ANNOTATION_INTROSPECTOR;
         ObjectMapper objectMapper1 = objectMapper0.setAnnotationIntrospector(jacksonAnnotationIntrospector0);
     }
 
     @Test(timeout = 4000)
-    public void test06866() throws Throwable {
+    public void test06868() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         PropertyAccessor propertyAccessor0 = PropertyAccessor.IS_GETTER;
         JsonAutoDetect.Visibility jsonAutoDetect_Visibility0 = JsonAutoDetect.Visibility.PROTECTED_AND_PUBLIC;
@@ -682,14 +698,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06967() throws Throwable {
+    public void test06969() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
         ObjectMapper objectMapper1 = objectMapper0.setSubtypeResolver(stdSubtypeResolver0);
     }
 
     @Test(timeout = 4000)
-    public void test07068() throws Throwable {
+    public void test07070() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         IntNode intNode0 = IntNode.valueOf(1246);
         JsonParser jsonParser0 = objectMapper0.treeAsTokens(intNode0);
@@ -698,48 +714,48 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07169() throws Throwable {
+    public void test07171() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         InjectableValues.Std injectableValues_Std0 = new InjectableValues.Std();
         ObjectMapper objectMapper1 = objectMapper0.setInjectableValues(injectableValues_Std0);
     }
 
     @Test(timeout = 4000)
-    public void test07270() throws Throwable {
+    public void test07272() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializerProvider serializerProvider0 = objectMapper0.getSerializerProvider();
     }
 
     @Test(timeout = 4000)
-    public void test07371() throws Throwable {
+    public void test07373() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy propertyNamingStrategy_LowerCaseWithUnderscoresStrategy0 = new PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy();
         ObjectMapper objectMapper1 = objectMapper0.setPropertyNamingStrategy(propertyNamingStrategy_LowerCaseWithUnderscoresStrategy0);
     }
 
     @Test(timeout = 4000)
-    public void test07472() throws Throwable {
+    public void test07474() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<OutputStreamWriter> class0 = OutputStreamWriter.class;
         ObjectReader objectReader0 = objectMapper0.reader(class0);
     }
 
     @Test(timeout = 4000)
-    public void test07573() throws Throwable {
+    public void test07575() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         HandlerInstantiator handlerInstantiator0 = mock(HandlerInstantiator.class, new ViolatedAssumptionAnswer());
         Object object0 = objectMapper0.setHandlerInstantiator(handlerInstantiator0);
     }
 
     @Test(timeout = 4000)
-    public void test07674() throws Throwable {
+    public void test07676() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Throwable> class0 = Throwable.class;
         boolean boolean0 = objectMapper0.canSerialize(class0);
     }
 
     @Test(timeout = 4000)
-    public void test07775() throws Throwable {
+    public void test07777() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE;
@@ -747,7 +763,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07876() throws Throwable {
+    public void test07878() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         Class<String> class0 = String.class;
@@ -755,20 +771,20 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07977() throws Throwable {
+    public void test07979() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writer((CharacterEscapes) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test08078() throws Throwable {
+    public void test08080() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DateFormat dateFormat0 = objectMapper0.getDateFormat();
     }
 
     @Test(timeout = 4000)
-    public void test08179() throws Throwable {
+    public void test08181() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<Map> class0 = Map.class;
@@ -778,7 +794,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08280() throws Throwable {
+    public void test08282() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper();
         char[] charArray0 = new char[5];
@@ -792,34 +808,34 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08381() throws Throwable {
+    public void test08383() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
         objectMapper0.reader(deserializationFeature0, (DeserializationFeature[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test08482() throws Throwable {
+    public void test08484() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         InjectableValues.Std injectableValues_Std0 = new InjectableValues.Std();
         ObjectReader objectReader0 = objectMapper0.reader((InjectableValues) injectableValues_Std0);
     }
 
     @Test(timeout = 4000)
-    public void test08583() throws Throwable {
+    public void test08585() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory.Feature jsonFactory_Feature0 = JsonFactory.Feature.USE_THREAD_LOCAL_FOR_BUFFER_RECYCLING;
         boolean boolean0 = objectMapper0.isEnabled(jsonFactory_Feature0);
     }
 
     @Test(timeout = 4000)
-    public void test08684() throws Throwable {
+    public void test08686() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         int int0 = objectMapper0.mixInCount();
     }
 
     @Test(timeout = 4000)
-    public void test08785() throws Throwable {
+    public void test08787() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BigInteger bigInteger0 = BigInteger.ONE;
         BigIntegerNode bigIntegerNode0 = BigIntegerNode.valueOf(bigInteger0);
@@ -827,7 +843,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08886() throws Throwable {
+    public void test08888() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.CLOSE_CLOSEABLE;
         ObjectWriter objectWriter0 = objectMapper0.writer(serializationFeature0);
@@ -835,7 +851,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08987() throws Throwable {
+    public void test08989() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory((ObjectCodec) null);
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectNode objectNode0 = objectMapper0.createObjectNode();
@@ -843,7 +859,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09088() throws Throwable {
+    public void test09090() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<MockFileInputStream> class0 = MockFileInputStream.class;
         AtomicReference<Throwable> atomicReference0 = new AtomicReference<Throwable>();
@@ -851,7 +867,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09189() throws Throwable {
+    public void test09191() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         SerializationFeature serializationFeature0 = SerializationFeature.CLOSE_CLOSEABLE;
@@ -859,60 +875,60 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09290() throws Throwable {
+    public void test09292() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializerFactory serializerFactory0 = objectMapper0.getSerializerFactory();
     }
 
     @Test(timeout = 4000)
-    public void test09391() throws Throwable {
+    public void test09393() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
     }
 
     @Test(timeout = 4000)
-    public void test09492() throws Throwable {
+    public void test09494() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeReference<TypeIdResolver> typeReference0 = (TypeReference<TypeIdResolver>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         objectMapper0.readValue((URL) null, (TypeReference) typeReference0);
     }
 
     @Test(timeout = 4000)
-    public void test09593() throws Throwable {
+    public void test09595() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.setBase64Variant((Base64Variant) null);
     }
 
     @Test(timeout = 4000)
-    public void test09694() throws Throwable {
+    public void test09696() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writerWithDefaultPrettyPrinter();
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test09795() throws Throwable {
+    public void test09797() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         PrettyPrinter prettyPrinter0 = objectMapper0._defaultPrettyPrinter();
     }
 
     @Test(timeout = 4000)
-    public void test09896() throws Throwable {
+    public void test09898() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         byte[] byteArray0 = new byte[0];
         objectMapper0.readValue(byteArray0, 1649, 1649, (JavaType) null);
     }
 
     @Test(timeout = 4000)
-    public void test09997() throws Throwable {
+    public void test09999() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_DEFAULT;
         ObjectMapper objectMapper1 = objectMapper0.setSerializationInclusion(jsonInclude_Include0);
     }
 
     @Test(timeout = 4000)
-    public void test10098() throws Throwable {
+    public void test100100() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.WRITE_DURATIONS_AS_TIMESTAMPS;
         SerializationFeature[] serializationFeatureArray0 = new SerializationFeature[1];
@@ -920,13 +936,13 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10199() throws Throwable {
+    public void test101101() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         InjectableValues injectableValues0 = objectMapper0.getInjectableValues();
     }
 
     @Test(timeout = 4000)
-    public void test102100() throws Throwable {
+    public void test102102() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
         DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[2];
@@ -934,7 +950,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103101() throws Throwable {
+    public void test103103() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         URL uRL0 = MockURL.getHttpExample();
@@ -943,7 +959,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104102() throws Throwable {
+    public void test104104() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         byte[] byteArray0 = new byte[2];
         Class<ObjectMapper> class0 = ObjectMapper.class;
@@ -951,14 +967,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105103() throws Throwable {
+    public void test105105() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<ReferenceType> class0 = ReferenceType.class;
         Class<?> class1 = objectMapper0.findMixInClassFor(class0);
     }
 
     @Test(timeout = 4000)
-    public void test106104() throws Throwable {
+    public void test106106() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
@@ -970,13 +986,13 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107105() throws Throwable {
+    public void test107107() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.enable((MapperFeature[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test108106() throws Throwable {
+    public void test108108() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
@@ -986,7 +1002,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109107() throws Throwable {
+    public void test109109() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule("");
         NamedType[] namedTypeArray0 = new NamedType[4];
@@ -995,7 +1011,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110108() throws Throwable {
+    public void test110110() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MockFile mockFile0 = new MockFile("");
         TypeReference<LongNode> typeReference0 = (TypeReference<LongNode>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
@@ -1003,7 +1019,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111109() throws Throwable {
+    public void test111111() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Module> class0 = Module.class;
         JavaType javaType0 = objectMapper0.constructType(class0);
@@ -1011,21 +1027,21 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112110() throws Throwable {
+    public void test112112() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.WRITE_NULL_MAP_VALUES;
         ObjectMapper objectMapper1 = objectMapper0.disable(serializationFeature0);
     }
 
     @Test(timeout = 4000)
-    public void test113111() throws Throwable {
+    public void test113113() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writer((Base64Variant) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test114112() throws Throwable {
+    public void test114114() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         Charset charset0 = Charset.defaultCharset();
@@ -1036,13 +1052,13 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test115113() throws Throwable {
+    public void test115115() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.setFilterProvider((FilterProvider) null);
     }
 
     @Test(timeout = 4000)
-    public void test116114() throws Throwable {
+    public void test116116() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper((JsonFactory) null);
         TypeReference<MockRandomAccessFile> typeReference0 = (TypeReference<MockRandomAccessFile>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         doReturn((Type) null).when(typeReference0).getType();
@@ -1050,20 +1066,20 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117115() throws Throwable {
+    public void test117117() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writer((ContextAttributes) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test118116() throws Throwable {
+    public void test118118() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.addHandler((DeserializationProblemHandler) null);
     }
 
     @Test(timeout = 4000)
-    public void test119117() throws Throwable {
+    public void test119119() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeReference<AbstractDeserializer> typeReference0 = (TypeReference<AbstractDeserializer>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         doReturn((Type) null).when(typeReference0).getType();
@@ -1071,20 +1087,20 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test120118() throws Throwable {
+    public void test120120() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeFactory typeFactory0 = objectMapper0.getTypeFactory();
     }
 
     @Test(timeout = 4000)
-    public void test121119() throws Throwable {
+    public void test121121() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
         ObjectMapper objectMapper1 = objectMapper0.disable(deserializationFeature0);
     }
 
     @Test(timeout = 4000)
-    public void test122120() throws Throwable {
+    public void test122122() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JavaType javaType0 = TypeFactory.unknownType();
         ObjectWriter objectWriter0 = objectMapper0.writerFor(javaType0);
@@ -1092,27 +1108,27 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123121() throws Throwable {
+    public void test123123() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.QUOTE_FIELD_NAMES;
         ObjectMapper objectMapper1 = objectMapper0.configure(jsonGenerator_Feature0, false);
     }
 
     @Test(timeout = 4000)
-    public void test124122() throws Throwable {
+    public void test124124() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
     }
 
     @Test(timeout = 4000)
-    public void test125123() throws Throwable {
+    public void test125125() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.UNWRAP_SINGLE_VALUE_ARRAYS;
         boolean boolean0 = objectMapper0.isEnabled(deserializationFeature0);
     }
 
     @Test(timeout = 4000)
-    public void test126124() throws Throwable {
+    public void test126126() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<LongNode> class0 = LongNode.class;
         SimpleType simpleType0 = (SimpleType) TypeBindings.UNBOUND;
@@ -1122,14 +1138,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test127125() throws Throwable {
+    public void test127127() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         ObjectMapper objectMapper1 = objectMapper0.setTypeFactory(typeFactory0);
     }
 
     @Test(timeout = 4000)
-    public void test128126() throws Throwable {
+    public void test128128() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeReference<ArrayNode> typeReference0 = (TypeReference<ArrayNode>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         doReturn((Type) null).when(typeReference0).getType();
@@ -1137,21 +1153,21 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129127() throws Throwable {
+    public void test129129() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         ObjectMapper objectMapper1 = objectMapper0.setSerializerProvider(defaultSerializerProvider_Impl0);
     }
 
     @Test(timeout = 4000)
-    public void test130128() throws Throwable {
+    public void test130130() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JacksonAnnotationIntrospector jacksonAnnotationIntrospector0 = (JacksonAnnotationIntrospector) ObjectMapper.DEFAULT_ANNOTATION_INTROSPECTOR;
         ObjectMapper objectMapper1 = objectMapper0.setAnnotationIntrospectors(jacksonAnnotationIntrospector0, jacksonAnnotationIntrospector0);
     }
 
     @Test(timeout = 4000)
-    public void test131129() throws Throwable {
+    public void test131131() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule();
         Class<CharArrayReader> class0 = CharArrayReader.class;
@@ -1161,7 +1177,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test132130() throws Throwable {
+    public void test132132() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         Version version0 = jsonFactory0.version();
@@ -1172,7 +1188,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test133131() throws Throwable {
+    public void test133133() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule();
         Class<BufferedInputStream> class0 = BufferedInputStream.class;
@@ -1182,7 +1198,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test134132() throws Throwable {
+    public void test134134() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule();
         Class<StringWriter> class0 = StringWriter.class;
@@ -1191,7 +1207,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test135133() throws Throwable {
+    public void test135135() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         Version version0 = jsonFactory0.version();
@@ -1203,7 +1219,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test136134() throws Throwable {
+    public void test136136() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule("");
         BeanSerializerModifier beanSerializerModifier0 = mock(BeanSerializerModifier.class, new ViolatedAssumptionAnswer());
@@ -1212,7 +1228,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test137135() throws Throwable {
+    public void test137137() throws Throwable {
         Class<TextNode> class0 = TextNode.class;
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_FINAL;
         ObjectMapper.DefaultTypeResolverBuilder objectMapper_DefaultTypeResolverBuilder0 = new ObjectMapper.DefaultTypeResolverBuilder(objectMapper_DefaultTyping0);
@@ -1225,7 +1241,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test138136() throws Throwable {
+    public void test138138() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.enableDefaultTyping();
         Class<CoreXMLDeserializers.Std> class0 = CoreXMLDeserializers.Std.class;
@@ -1233,7 +1249,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139137() throws Throwable {
+    public void test139139() throws Throwable {
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
         ObjectMapper.DefaultTypeResolverBuilder objectMapper_DefaultTypeResolverBuilder0 = new ObjectMapper.DefaultTypeResolverBuilder(objectMapper_DefaultTyping0);
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
@@ -1248,7 +1264,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140138() throws Throwable {
+    public void test140140() throws Throwable {
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
         ObjectMapper.DefaultTypeResolverBuilder objectMapper_DefaultTypeResolverBuilder0 = new ObjectMapper.DefaultTypeResolverBuilder(objectMapper_DefaultTyping0);
         JavaType javaType0 = TypeFactory.unknownType();
@@ -1256,7 +1272,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141139() throws Throwable {
+    public void test141141() throws Throwable {
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_FINAL;
         ObjectMapper.DefaultTypeResolverBuilder objectMapper_DefaultTypeResolverBuilder0 = new ObjectMapper.DefaultTypeResolverBuilder(objectMapper_DefaultTyping0);
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
@@ -1266,7 +1282,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test142140() throws Throwable {
+    public void test142142() throws Throwable {
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<ArrayType> class0 = ArrayType.class;
         Class<BeanDeserializer> class1 = BeanDeserializer.class;
@@ -1277,7 +1293,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test143141() throws Throwable {
+    public void test143143() throws Throwable {
         Class<DecimalNode> class0 = DecimalNode.class;
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         CollectionLikeType collectionLikeType0 = typeFactory0.constructCollectionLikeType(class0, class0);
@@ -1287,7 +1303,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test144142() throws Throwable {
+    public void test144144() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
@@ -1298,42 +1314,42 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test145143() throws Throwable {
+    public void test145145() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<BooleanNode> class0 = BooleanNode.class;
         objectMapper0._checkInvalidCopy(class0);
     }
 
     @Test(timeout = 4000)
-    public void test146144() throws Throwable {
+    public void test146146() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule((String) null);
         objectMapper0.registerModule(simpleModule0);
     }
 
     @Test(timeout = 4000)
-    public void test147145() throws Throwable {
+    public void test147147() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleModule simpleModule0 = new SimpleModule("Current token not START_OBJECT (needed to unwrap root name '", (Version) null);
         objectMapper0.registerModule(simpleModule0);
     }
 
     @Test(timeout = 4000)
-    public void test148146() throws Throwable {
+    public void test148148() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Module[] moduleArray0 = new Module[0];
         ObjectMapper objectMapper1 = objectMapper0.registerModules(moduleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test149147() throws Throwable {
+    public void test149149() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Module[] moduleArray0 = new Module[7];
         objectMapper0.registerModules(moduleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test150148() throws Throwable {
+    public void test150150() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         HashSet<Module> hashSet0 = new HashSet<Module>();
         Version version0 = objectMapper0.version();
@@ -1343,21 +1359,21 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151149() throws Throwable {
+    public void test151151() throws Throwable {
         ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
         List<Module> list0 = ObjectMapper.findModules(classLoader0);
         list0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test152150() throws Throwable {
+    public void test152152() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleMixInResolver simpleMixInResolver0 = objectMapper0._mixIns;
         ObjectMapper objectMapper1 = objectMapper0.setMixInResolver(simpleMixInResolver0);
     }
 
     @Test(timeout = 4000)
-    public void test153151() throws Throwable {
+    public void test153153() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE;
@@ -1366,49 +1382,49 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test154152() throws Throwable {
+    public void test154154() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MapperFeature mapperFeature0 = MapperFeature.AUTO_DETECT_SETTERS;
         ObjectMapper objectMapper1 = objectMapper0.configure(mapperFeature0, false);
     }
 
     @Test(timeout = 4000)
-    public void test155153() throws Throwable {
+    public void test155155() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MapperFeature mapperFeature0 = MapperFeature.AUTO_DETECT_GETTERS;
         ObjectMapper objectMapper1 = objectMapper0.configure(mapperFeature0, true);
     }
 
     @Test(timeout = 4000)
-    public void test156154() throws Throwable {
+    public void test156156() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.USE_EQUALITY_FOR_OBJECT_ID;
         ObjectMapper objectMapper1 = objectMapper0.configure(serializationFeature0, false);
     }
 
     @Test(timeout = 4000)
-    public void test157155() throws Throwable {
+    public void test157157() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.USE_EQUALITY_FOR_OBJECT_ID;
         ObjectMapper objectMapper1 = objectMapper0.configure(serializationFeature0, true);
     }
 
     @Test(timeout = 4000)
-    public void test158156() throws Throwable {
+    public void test158158() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
         ObjectMapper objectMapper1 = objectMapper0.configure(deserializationFeature0, false);
     }
 
     @Test(timeout = 4000)
-    public void test159157() throws Throwable {
+    public void test159159() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationFeature deserializationFeature0 = DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY;
         ObjectMapper objectMapper1 = objectMapper0.configure(deserializationFeature0, true);
     }
 
     @Test(timeout = 4000)
-    public void test160158() throws Throwable {
+    public void test160160() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonParser.Feature[] jsonParser_FeatureArray0 = new JsonParser.Feature[1];
         JsonParser.Feature jsonParser_Feature0 = JsonParser.Feature.STRICT_DUPLICATE_DETECTION;
@@ -1417,7 +1433,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test161159() throws Throwable {
+    public void test161161() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonParser.Feature[] jsonParser_FeatureArray0 = new JsonParser.Feature[4];
         JsonParser.Feature jsonParser_Feature0 = JsonParser.Feature.ALLOW_NUMERIC_LEADING_ZEROS;
@@ -1429,7 +1445,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test162160() throws Throwable {
+    public void test162162() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonGenerator.Feature[] jsonGenerator_FeatureArray0 = new JsonGenerator.Feature[8];
         JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.AUTO_CLOSE_JSON_CONTENT;
@@ -1445,21 +1461,21 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test163161() throws Throwable {
+    public void test163163() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonGenerator.Feature[] jsonGenerator_FeatureArray0 = new JsonGenerator.Feature[0];
         ObjectMapper objectMapper1 = objectMapper0.disable(jsonGenerator_FeatureArray0);
     }
 
     @Test(timeout = 4000)
-    public void test164162() throws Throwable {
+    public void test164164() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonGenerator.Feature[] jsonGenerator_FeatureArray0 = new JsonGenerator.Feature[3];
         objectMapper0.disable(jsonGenerator_FeatureArray0);
     }
 
     @Test(timeout = 4000)
-    public void test165163() throws Throwable {
+    public void test165165() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         JsonParser jsonParser0 = jsonFactory0.createParser("");
@@ -1467,14 +1483,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test166164() throws Throwable {
+    public void test166166() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonNode jsonNode0 = objectMapper0.readTree("-2");
         jsonNode0.intValue();
     }
 
     @Test(timeout = 4000)
-    public void test167165() throws Throwable {
+    public void test167167() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, objectMapper0, false);
@@ -1485,7 +1501,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test168166() throws Throwable {
+    public void test168168() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IntNode intNode0 = new IntNode(2);
@@ -1496,7 +1512,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test169167() throws Throwable {
+    public void test169169() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IntNode intNode0 = IntNode.valueOf(1);
@@ -1507,13 +1523,13 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test170168() throws Throwable {
+    public void test170170() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MissingNode missingNode0 = objectMapper0.valueToTree((Object) null);
     }
 
     @Test(timeout = 4000)
-    public void test171169() throws Throwable {
+    public void test171171() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeReference<Integer> typeReference0 = (TypeReference<Integer>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         doReturn((Type) null).when(typeReference0).getType();
@@ -1521,14 +1537,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test172170() throws Throwable {
+    public void test172172() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writerFor((TypeReference<?>) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test173171() throws Throwable {
+    public void test173173() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         MinimalPrettyPrinter minimalPrettyPrinter0 = new MinimalPrettyPrinter("JSON");
         ObjectWriter objectWriter0 = objectMapper0.writer((PrettyPrinter) minimalPrettyPrinter0);
@@ -1536,7 +1552,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test174172() throws Throwable {
+    public void test174174() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory((ObjectCodec) null);
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
@@ -1548,7 +1564,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test175173() throws Throwable {
+    public void test175175() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<FloatNode> class0 = FloatNode.class;
         ObjectWriter objectWriter0 = objectMapper0.writerWithType(class0);
@@ -1556,14 +1572,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test176174() throws Throwable {
+    public void test176176() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writerWithType((Class<?>) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test177175() throws Throwable {
+    public void test177177() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TypeReference<OutputStreamWriter> typeReference0 = (TypeReference<OutputStreamWriter>) mock(TypeReference.class, new ViolatedAssumptionAnswer());
         doReturn((Type) null).when(typeReference0).getType();
@@ -1571,21 +1587,21 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test178176() throws Throwable {
+    public void test178178() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writerWithType((TypeReference<?>) null);
         objectWriter0.hasPrefetchedSerializer();
     }
 
     @Test(timeout = 4000)
-    public void test179177() throws Throwable {
+    public void test179179() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<CollectionType> class0 = CollectionType.class;
         CollectionType collectionType0 = objectMapper0.convertValue((Object) null, class0);
     }
 
     @Test(timeout = 4000)
-    public void test180178() throws Throwable {
+    public void test180180() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<DecimalNode> class0 = DecimalNode.class;
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
@@ -1594,13 +1610,13 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test181179() throws Throwable {
+    public void test181181() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Integer integer0 = objectMapper0.convertValue((Object) null, (JavaType) null);
     }
 
     @Test(timeout = 4000)
-    public void test182180() throws Throwable {
+    public void test182182() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Object> class0 = Object.class;
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
@@ -1611,7 +1627,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test183181() throws Throwable {
+    public void test183183() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<CollectionType> class0 = CollectionType.class;
         NullNode nullNode0 = NullNode.instance;
@@ -1619,14 +1635,14 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test184182() throws Throwable {
+    public void test184184() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper((JsonFactory) null);
         JsonFormatVisitorWrapper.Base jsonFormatVisitorWrapper_Base0 = new JsonFormatVisitorWrapper.Base();
         objectMapper0.acceptJsonFormatVisitor((JavaType) null, (JsonFormatVisitorWrapper) jsonFormatVisitorWrapper_Base0);
     }
 
     @Test(timeout = 4000)
-    public void test185183() throws Throwable {
+    public void test185185() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectReader objectReader0 = objectMapper0.reader();
@@ -1640,7 +1656,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test186184() throws Throwable {
+    public void test186186() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
@@ -1653,7 +1669,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test187185() throws Throwable {
+    public void test187187() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         NullNode nullNode0 = NullNode.getInstance();
         Class<Throwable> class0 = Throwable.class;

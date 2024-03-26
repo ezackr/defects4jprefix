@@ -1464,14 +1464,6 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test60172() throws Throwable {
-        MockFile mockFile0 = new MockFile("", "");
-        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "/");
-        ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
-        boolean boolean0 = zipArchiveEntry0.equals(zipArchiveEntry1);
-    }
-
-    @Test(timeout = 4000)
     public void test60173() throws Throwable {
         MockFile mockFile0 = new MockFile("", "");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "/");

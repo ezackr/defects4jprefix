@@ -59,7 +59,17 @@ import org.junit.runner.RunWith;
 public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
+        TypeValidator typeValidator0 = compiler0.getTypeValidator();
+        ClosureRewriteClass closureRewriteClass0 = new ClosureRewriteClass(compiler0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, closureRewriteClass0);
+        typeValidator0.expectValidTypeofName(nodeTraversal0, node0, "com.google.javascript.rhino.head.ast.XmlRef");
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -75,7 +85,14 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test022() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.parseTestCode("s4A[XTD");
+        InlineProperties inlineProperties0 = new InlineProperties(compiler0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         JSType[] jSTypeArray0 = new JSType[0];
@@ -90,7 +107,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test044() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("[n]A.97h/d,n");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -102,7 +119,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("#M!Td_9QdzpvwM;W[C");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -113,7 +130,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -128,7 +145,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -144,7 +161,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(hH 20;-Q7>&-");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -159,7 +176,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -174,7 +191,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -190,7 +207,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -205,7 +222,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -222,7 +239,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1213() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -239,7 +256,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1314() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -250,7 +267,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1415() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -262,7 +279,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1516() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -279,7 +296,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1517() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -296,7 +313,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1618() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(hH s0;Q7>&-");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -312,7 +329,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1719() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -327,7 +344,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1820() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A [XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -342,7 +359,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1819() throws Throwable {
+    public void test1821() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A [XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -357,7 +374,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1920() throws Throwable {
+    public void test1922() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -372,7 +389,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2021() throws Throwable {
+    public void test2023() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("ohH 2;Q7>&-");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -383,7 +400,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2122() throws Throwable {
+    public void test2124() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -398,7 +415,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2223() throws Throwable {
+    public void test2225() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -413,7 +430,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2326() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -431,7 +448,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2325() throws Throwable {
+    public void test2327() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -448,7 +465,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2426() throws Throwable {
+    public void test2428() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -463,7 +480,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2527() throws Throwable {
+    public void test2529() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -479,7 +496,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2628() throws Throwable {
+    public void test2630() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -497,7 +514,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2729() throws Throwable {
+    public void test2731() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -511,7 +528,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2830() throws Throwable {
+    public void test2832() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("sA[XD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -525,7 +542,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2931() throws Throwable {
+    public void test2933() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -541,7 +558,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2932() throws Throwable {
+    public void test2934() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -556,7 +573,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3033() throws Throwable {
+    public void test3035() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -572,7 +589,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3034() throws Throwable {
+    public void test3036() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -587,7 +604,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3135() throws Throwable {
+    public void test3137() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("4\">e:P9G%oD*");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -603,7 +620,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3136() throws Throwable {
+    public void test3138() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("4\">e:P9G%oD*");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -620,7 +637,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3237() throws Throwable {
+    public void test3239() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -634,7 +651,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3338() throws Throwable {
+    public void test3340() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s`4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -650,7 +667,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3339() throws Throwable {
+    public void test3341() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s`4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -665,7 +682,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3440() throws Throwable {
+    public void test3442() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -683,7 +700,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3441() throws Throwable {
+    public void test3443() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -700,7 +717,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3542() throws Throwable {
+    public void test3544() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(hH 20;-Q7>&-");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -717,7 +734,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3543() throws Throwable {
+    public void test3545() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(hH 20;-Q7>&-");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -733,7 +750,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3644() throws Throwable {
+    public void test3646() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -748,7 +765,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3745() throws Throwable {
+    public void test3747() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("ohH 2;Q7>&-");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -762,7 +779,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3846() throws Throwable {
+    public void test3848() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -778,7 +795,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3947() throws Throwable {
+    public void test3949() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -794,7 +811,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3948() throws Throwable {
+    public void test3950() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -810,7 +827,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4049() throws Throwable {
+    public void test4051() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A [XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -825,7 +842,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4050() throws Throwable {
+    public void test4052() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A [XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -840,7 +857,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4151() throws Throwable {
+    public void test4153() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("ohH 2;Q7>&-");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -854,7 +871,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4252() throws Throwable {
+    public void test4254() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("#M!Td_9QdzpvwM;W[C");
         ReferenceCollectingCallback.Behavior referenceCollectingCallback_Behavior0 = ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR;
@@ -871,7 +888,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4353() throws Throwable {
+    public void test4355() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -886,7 +903,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4354() throws Throwable {
+    public void test4356() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -901,7 +918,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4455() throws Throwable {
+    public void test4457() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -916,7 +933,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4556() throws Throwable {
+    public void test4558() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -932,7 +949,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4657() throws Throwable {
+    public void test4659() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -949,7 +966,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4658() throws Throwable {
+    public void test4660() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -966,7 +983,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4759() throws Throwable {
+    public void test4761() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -983,7 +1000,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4860() throws Throwable {
+    public void test4862() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -999,7 +1016,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4961() throws Throwable {
+    public void test4963() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("ta}F&nIMbeOlqI:e,(");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -1017,7 +1034,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5062() throws Throwable {
+    public void test5064() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -1034,7 +1051,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5063() throws Throwable {
+    public void test5065() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -1050,7 +1067,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5164() throws Throwable {
+    public void test5166() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.javascript.rhino.head.ast.XmlRef");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -1058,7 +1075,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5265() throws Throwable {
+    public void test5267() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -1076,7 +1093,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5266() throws Throwable {
+    public void test5268() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -1093,7 +1110,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5367() throws Throwable {
+    public void test5369() throws Throwable {
         Compiler compiler0 = new Compiler();
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -1104,7 +1121,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5468() throws Throwable {
+    public void test5470() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1119,7 +1136,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5569() throws Throwable {
+    public void test5571() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(hH 20;-Q7>&-");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1137,7 +1154,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5670() throws Throwable {
+    public void test5672() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1154,7 +1171,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5671() throws Throwable {
+    public void test5673() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1170,7 +1187,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5772() throws Throwable {
+    public void test5774() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1187,7 +1204,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5773() throws Throwable {
+    public void test5775() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("s4A[XTD");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();

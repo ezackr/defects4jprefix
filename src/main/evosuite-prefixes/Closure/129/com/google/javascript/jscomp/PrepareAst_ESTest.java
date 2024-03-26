@@ -30,7 +30,14 @@ public class PrepareAst_ESTest extends PrepareAst_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test21() throws Throwable {
+    public void test11() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        PrepareAst prepareAst0 = new PrepareAst(compiler0);
+        prepareAst0.process((Node) null, (Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newString(108, "i)=mbX|RwV1q:", 108, 108);
         PrepareAst prepareAst0 = new PrepareAst(compiler0, true);
@@ -40,14 +47,14 @@ public class PrepareAst_ESTest extends PrepareAst_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test32() throws Throwable {
+    public void test33() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("vZ0bc$RRC");
         compiler0.ensureLibraryInjected("vZ0bc$RRC");
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test44() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("A function call cannot be of the form: new Object.call()");
         PrepareAst prepareAst0 = new PrepareAst(compiler0);
@@ -57,7 +64,7 @@ public class PrepareAst_ESTest extends PrepareAst_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         PrepareAst.PrepareAnnotations prepareAst_PrepareAnnotations0 = new PrepareAst.PrepareAnnotations();
         NodeTraversal nodeTraversal0 = new NodeTraversal((AbstractCompiler) null, prepareAst_PrepareAnnotations0);
         Node node0 = new Node(105);

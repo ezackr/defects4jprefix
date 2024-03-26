@@ -1022,13 +1022,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076135() throws Throwable {
-        Node node0 = Node.newString("!", 119, 385);
-        Node node1 = Node.newNumber((double) 49, 57, 38);
-        String string0 = node0.checkTreeEquals(node1);
-    }
-
-    @Test(timeout = 4000)
     public void test076136() throws Throwable {
         Node node0 = Node.newString("!", 119, 385);
         Node node1 = Node.newNumber((double) 49, 57, 38);
@@ -2876,12 +2869,6 @@ public class Node_ESTest extends Node_ESTest_scaffolding {
         Node node0 = Node.newString("4");
         node0.setType(38);
         boolean boolean0 = node0.isUnscopedQualifiedName();
-    }
-
-    @Test(timeout = 4000)
-    public void test185368() throws Throwable {
-        Node node0 = Node.newString("");
-        node0.isName();
     }
 
     @Test(timeout = 4000)

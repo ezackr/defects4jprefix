@@ -67,13 +67,6 @@ public class LightweightMessageFormatter_ESTest extends LightweightMessageFormat
     }
 
     @Test(timeout = 4000)
-    public void test56() throws Throwable {
-        LightweightMessageFormatter.LineNumberingFormatter lightweightMessageFormatter_LineNumberingFormatter0 = new LightweightMessageFormatter.LineNumberingFormatter();
-        SimpleRegion simpleRegion0 = new SimpleRegion((-1700), (-1700), "^\n");
-        String string0 = lightweightMessageFormatter_LineNumberingFormatter0.formatRegion(simpleRegion0);
-    }
-
-    @Test(timeout = 4000)
     public void test67() throws Throwable {
         LightweightMessageFormatter.LineNumberingFormatter lightweightMessageFormatter_LineNumberingFormatter0 = new LightweightMessageFormatter.LineNumberingFormatter();
         String string0 = lightweightMessageFormatter_LineNumberingFormatter0.formatRegion((Region) null);
@@ -88,13 +81,6 @@ public class LightweightMessageFormatter_ESTest extends LightweightMessageFormat
 
     @Test(timeout = 4000)
     public void test89() throws Throwable {
-        LightweightMessageFormatter.LineNumberingFormatter lightweightMessageFormatter_LineNumberingFormatter0 = new LightweightMessageFormatter.LineNumberingFormatter();
-        SimpleRegion simpleRegion0 = new SimpleRegion(1, 1, "Q{S?=!KjIJWd");
-        String string0 = lightweightMessageFormatter_LineNumberingFormatter0.formatRegion(simpleRegion0);
-    }
-
-    @Test(timeout = 4000)
-    public void test810() throws Throwable {
         LightweightMessageFormatter.LineNumberingFormatter lightweightMessageFormatter_LineNumberingFormatter0 = new LightweightMessageFormatter.LineNumberingFormatter();
         SimpleRegion simpleRegion0 = new SimpleRegion(1, 1, "Q{S?=!KjIJWd");
         String string0 = lightweightMessageFormatter_LineNumberingFormatter0.formatRegion(simpleRegion0);

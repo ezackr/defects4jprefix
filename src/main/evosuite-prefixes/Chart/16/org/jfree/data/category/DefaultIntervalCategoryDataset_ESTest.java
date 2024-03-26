@@ -629,14 +629,6 @@ public class DefaultIntervalCategoryDataset_ESTest extends DefaultIntervalCatego
     }
 
     @Test(timeout = 4000)
-    public void test4770() throws Throwable {
-        double[][] doubleArray0 = new double[6][1];
-        DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);
-        DefaultIntervalCategoryDataset defaultIntervalCategoryDataset1 = (DefaultIntervalCategoryDataset) defaultIntervalCategoryDataset0.clone();
-        boolean boolean0 = defaultIntervalCategoryDataset0.equals(defaultIntervalCategoryDataset1);
-    }
-
-    @Test(timeout = 4000)
     public void test4871() throws Throwable {
         double[][] doubleArray0 = new double[6][1];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(doubleArray0, doubleArray0);

@@ -211,7 +211,30 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1616() throws Throwable {
+        File file0 = MockFile.createTempFile("The comment start and the escape character cannot be the same ('", "The comment start and the escape character cannot be the same ('");
+        MockPrintStream mockPrintStream0 = new MockPrintStream(file0);
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        cSVPrinter0.println();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("G=SE(HGw-");
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        ResultSetMetaData resultSetMetaData0 = mock(ResultSetMetaData.class, new ViolatedAssumptionAnswer());
+        doReturn(16).when(resultSetMetaData0).getColumnCount();
+        ResultSet resultSet0 = mock(ResultSet.class, new ViolatedAssumptionAnswer());
+        doReturn(resultSetMetaData0).when(resultSet0).getMetaData();
+        doReturn((String) null, (String) null, (String) null, (String) null, (String) null).when(resultSet0).getString(anyInt());
+        doReturn(true, false).when(resultSet0).next();
+        cSVPrinter0.printRecords(resultSet0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         MockFileWriter mockFileWriter0 = new MockFileWriter("[{", false);
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVPrinter cSVPrinter0 = new CSVPrinter(mockFileWriter0, cSVFormat0);
@@ -222,7 +245,27 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test1919() throws Throwable {
+        MockFile mockFile0 = new MockFile("QuoteChar=<");
+        MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockFile0);
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentStart('w');
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintWriter0, cSVFormat1);
+        cSVPrinter0.print(mockFile0);
+        cSVPrinter0.printComment("QuoteChar=<");
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        File file0 = MockFile.createTempFile("The comment start and the escape character cannot be the same ('", "The comment start and the escape character cannot be the same ('");
+        MockPrintStream mockPrintStream0 = new MockPrintStream(file0);
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintStream0, cSVFormat0);
+        cSVPrinter0.printComment("The quoteChar cannot be a line break");
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
         File file0 = MockFile.createTempFile("The comment start and the escape character cannot be the same ('", "The comment start and the escape character cannot be the same ('");
         MockPrintStream mockPrintStream0 = new MockPrintStream(file0);
         CSVFormat cSVFormat0 = CSVFormat.EXCEL;
@@ -235,7 +278,18 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2318() throws Throwable {
+    public void test2222() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(0);
+        Charset charset0 = Charset.defaultCharset();
+        OutputStreamWriter outputStreamWriter0 = new OutputStreamWriter(byteArrayOutputStream0, charset0);
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withQuoteChar('o');
+        CSVPrinter cSVPrinter0 = new CSVPrinter(outputStreamWriter0, cSVFormat1);
+        cSVPrinter0.print(outputStreamWriter0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
         MockFile mockFile0 = new MockFile("QuoteChar=<");
         MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockFile0);
         CSVFormat cSVFormat0 = CSVFormat.EXCEL;
@@ -247,7 +301,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2419() throws Throwable {
+    public void test2424() throws Throwable {
         MockFile mockFile0 = new MockFile("QuoteChar=<");
         MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockFile0);
         CSVFormat cSVFormat0 = CSVFormat.EXCEL;
@@ -259,7 +313,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2520() throws Throwable {
+    public void test2525() throws Throwable {
         CharArrayWriter charArrayWriter0 = new CharArrayWriter(29);
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withEscape('i');
@@ -271,7 +325,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2621() throws Throwable {
+    public void test2626() throws Throwable {
         MockFileWriter mockFileWriter0 = new MockFileWriter("[{", false);
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVPrinter cSVPrinter0 = new CSVPrinter(mockFileWriter0, cSVFormat0);
@@ -285,7 +339,34 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3022() throws Throwable {
+    public void test2727() throws Throwable {
+        MockFile mockFile0 = new MockFile("QuoteChar=<");
+        MockPrintWriter mockPrintWriter0 = new MockPrintWriter(mockFile0);
+        CSVFormat cSVFormat0 = CSVFormat.EXCEL;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(mockPrintWriter0, cSVFormat0);
+        cSVPrinter0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
+        char[] charArray0 = new char[7];
+        CharBuffer charBuffer0 = CharBuffer.wrap(charArray0, 0, 0);
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(charBuffer0, cSVFormat0);
+        cSVPrinter0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        StringWriter stringWriter0 = new StringWriter();
+        StringBuffer stringBuffer0 = stringWriter0.getBuffer();
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVPrinter cSVPrinter0 = new CSVPrinter(stringBuffer0, cSVFormat0);
+        cSVPrinter0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
         StringWriter stringWriter0 = new StringWriter();
         StringBuffer stringBuffer0 = stringWriter0.getBuffer();
         CSVFormat cSVFormat0 = CSVFormat.TDF;
@@ -294,7 +375,7 @@ public class CSVPrinter_ESTest extends CSVPrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3123() throws Throwable {
+    public void test3131() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVPrinter cSVPrinter0 = null;
         cSVPrinter0 = new CSVPrinter((Appendable) null, cSVFormat0);

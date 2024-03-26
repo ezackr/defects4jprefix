@@ -265,7 +265,20 @@ public class Parser_ESTest extends Parser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1515() throws Throwable {
+        Option option0 = new Option("", "", false, "");
+        ListIterator<OptionGroup> listIterator0 = (ListIterator<OptionGroup>) mock(ListIterator.class, new ViolatedAssumptionAnswer());
+        GnuParser gnuParser0 = new GnuParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption(option0);
+        option0.setRequired(true);
+        String[] stringArray0 = new String[0];
+        gnuParser0.parse(options1, stringArray0, false);
+        gnuParser0.processOption("", listIterator0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         Option option0 = new Option("4", "4", true, "4");
         GnuParser gnuParser0 = new GnuParser();
         Options options0 = new Options();

@@ -20,4 +20,9 @@ public class TokeniserState_ESTest extends TokeniserState_ESTest_scaffolding {
         TokeniserState[] tokeniserStateArray0 = TokeniserState.values();
         assertEquals(67, tokeniserStateArray0.length);
     }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        TokeniserState.valueOf("ScriptDataDoubleEscapeEnd");
+    }
 }

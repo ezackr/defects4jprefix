@@ -84,14 +84,26 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1010() throws Throwable {
+        Charset charset0 = Charset.forName("default");
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        Charset charset0 = Charset.defaultCharset();
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         Node node0 = Node.newNumber((-32.092457627454955));
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         codeGenerator0.addExpr(node0, 47);
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = Node.newString("-^LmUek7'&^Q$,qPju");
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -99,49 +111,61 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1612() throws Throwable {
+    public void test1414() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addList((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         String string0 = CodeGenerator.jsString("Mei[&'=f^.k", (CharsetEncoder) null);
     }
 
     @Test(timeout = 4000)
-    public void test1713() throws Throwable {
+    public void test1717() throws Throwable {
         Charset charset0 = Charset.defaultCharset();
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.strEscape("\n\ndeprecated\u0018\u0003 \u0001(\b:\u0005false\u0012\u001C\n\u0014experimental_map_key\u0018\t \u0001(\t\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption\"/\n\u0005CType\u0012\n\n\u0006STRING\u0010\u0000\u0012\b\n\u0004CORD\u0010\u0001\u0012\u0010\n\fSTRING_PIECE\u0010\u0002*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"]\n\u000BEnumOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"b\n\u0010EnumValueOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"`\n\u000EServiceOptions\u0012C\n", 'x', "\n\ndeprecated\u0018\u0003 \u0001(\b:\u0005false\u0012\u001C\n\u0014experimental_map_key\u0018\t \u0001(\t\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption\"/\n\u0005CType\u0012\n\n\u0006STRING\u0010\u0000\u0012\b\n\u0004CORD\u0010\u0001\u0012\u0010\n\fSTRING_PIECE\u0010\u0002*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"]\n\u000BEnumOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"b\n\u0010EnumValueOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"`\n\u000EServiceOptions\u0012C\n", "\n\ndeprecated\u0018\u0003 \u0001(\b:\u0005false\u0012\u001C\n\u0014experimental_map_key\u0018\t \u0001(\t\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption\"/\n\u0005CType\u0012\n\n\u0006STRING\u0010\u0000\u0012\b\n\u0004CORD\u0010\u0001\u0012\u0010\n\fSTRING_PIECE\u0010\u0002*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"]\n\u000BEnumOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"b\n\u0010EnumValueOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"`\n\u000EServiceOptions\u0012C\n", "\n\ndeprecated\u0018\u0003 \u0001(\b:\u0005false\u0012\u001C\n\u0014experimental_map_key\u0018\t \u0001(\t\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption\"/\n\u0005CType\u0012\n\n\u0006STRING\u0010\u0000\u0012\b\n\u0004CORD\u0010\u0001\u0012\u0010\n\fSTRING_PIECE\u0010\u0002*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"]\n\u000BEnumOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"b\n\u0010EnumValueOptions\u0012C\n\u0014uninterpreted_option\u0018\u00E7\u0007 \u0003(\u000B2$.google.protobuf.UninterpretedOption*\t\b\u00E8\u0007\u0010\u0080\u0080\u0080\u0080\u0002\"`\n\u000EServiceOptions\u0012C\n", charsetEncoder0);
     }
 
     @Test(timeout = 4000)
-    public void test1814() throws Throwable {
+    public void test1818() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString(":a&<!-->");
     }
 
     @Test(timeout = 4000)
-    public void test1915() throws Throwable {
+    public void test1919() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("*>$b/l)A}m*qS");
     }
 
     @Test(timeout = 4000)
-    public void test2016() throws Throwable {
+    public void test2020() throws Throwable {
         String string0 = CodeGenerator.regexpEscape(":a&!-4qn->");
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("&m_3</scriptf}");
     }
 
     @Test(timeout = 4000)
-    public void test2218() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("`<sRFfLs");
     }
 
     @Test(timeout = 4000)
-    public void test2319() throws Throwable {
+    public void test2323() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("E_DOUBLE\u0010\u0001\u0012\u000E\n\nTYPE_FLOAT\u0010\u0002\u0012\u000E\n\nTYPE_INT64\u0010\u0003\u0012\u000F\n\u000BTYPE_UINT64\u0010\u0004\u0012\u000E\n\nTYPE_INT32\u0010\u0005\u0012\u0010\n\fTYPE_FIXED64\u0010\u0006\u0012\u0010\n\fTYPE_FIXED32\u0010\u0007\u0012\r\n\tTYPE_BOOL\u0010\b\u0012\u000F\n\u000BTYPE_STRING\u0010\t\u0012\u000E\n\nTYPE_GROUP\u0010\n\u0012\u0010\n\fYPE_MESSAGE\u0010\u000B\u0012\u000E\n\nTYPE_BYTES\u0010\f\u0012\u000F\n\u000BTYPE_UINT32\u0010\r\u0012\r\n\tTYPE_ENUM\u0010\u000E\u0012\u0011\n\rTYPE_SFIXED32\u0010\u000F\u0012\u0011\n\rTYPE_SFIXED64\u0010\u0010\u0012\u000F\n\u000BTYPE_SINT32\u0010\u0011\u0012\u000F\n\u000BTYPE_SINT64\u0010\u0012\"C\n\u0005Label\u0012\u0012\n\u000ELABEL_OPTIONAL\u0010\u0001\u0012\u0012\n\u000ELABEL_REQUIRED\u0010\u0002\u0012\u0012\n\u000ELABEL_REPEATED\u0010\u0003\"\u008C\u0001\n\u0013EnumDescriptorProto\u0012\f\n\u0004name\u0018\u0001");
     }
 
     @Test(timeout = 4000)
-    public void test2420() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("OTHER");
     }
 }

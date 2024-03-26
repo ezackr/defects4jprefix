@@ -80,7 +80,14 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test068() throws Throwable {
+    public void test058() throws Throwable {
+        PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(5.650007086920087E-9, (double) (-17));
+        // Undeclared exception!
+        poissonDistributionImpl0.cumulativeProbability(2396);
+    }
+
+    @Test(timeout = 4000)
+    public void test069() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(2322.1383677551, (-1425.3620083599687));
         try {
             poissonDistributionImpl0.cumulativeProbability(95);
@@ -94,7 +101,7 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test079() throws Throwable {
+    public void test0710() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(5.650007086920087E-9, 5.650007086920087E-9, 0);
         try {
             poissonDistributionImpl0.cumulativeProbability(2396);
@@ -108,7 +115,7 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test0810() throws Throwable {
+    public void test0811() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = null;
         try {
             poissonDistributionImpl0 = new PoissonDistributionImpl((-2289.0505632029985), (-36));
@@ -122,7 +129,7 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test0911() throws Throwable {
+    public void test0912() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = null;
         try {
             poissonDistributionImpl0 = new PoissonDistributionImpl(0.0);
@@ -136,7 +143,7 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1012() throws Throwable {
+    public void test1013() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = null;
         try {
             poissonDistributionImpl0 = new PoissonDistributionImpl((-1067.2315), 0.0, 10000000);
@@ -150,65 +157,58 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1113() throws Throwable {
+    public void test1114() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.cumulativeProbability(Integer.MAX_VALUE);
         assertEquals(1.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1114() throws Throwable {
+    public void test1115() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.cumulativeProbability(Integer.MAX_VALUE);
         assertEquals(1427.9729143405275, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1215() throws Throwable {
+    public void test1216() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.cumulativeProbability((-603));
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1216() throws Throwable {
+    public void test1217() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.cumulativeProbability((-603));
         assertEquals(1427.9729143405275, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1317() throws Throwable {
+    public void test1318() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl((double) 5775, 5775);
         double double0 = poissonDistributionImpl0.probability(5775);
         assertEquals(0.005249619238996912, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1418() throws Throwable {
+    public void test1419() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.probability(Integer.MAX_VALUE);
         assertEquals(1427.9729143405275, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1419() throws Throwable {
+    public void test1420() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.probability(Integer.MAX_VALUE);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1520() throws Throwable {
+    public void test1521() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.probability(0);
-        assertEquals(0.0, double0, 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test1621() throws Throwable {
-        PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(853.1);
-        double double0 = poissonDistributionImpl0.probability((-278));
         assertEquals(0.0, double0, 0.01);
     }
 
@@ -216,11 +216,18 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     public void test1622() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(853.1);
         double double0 = poissonDistributionImpl0.probability((-278));
+        assertEquals(0.0, double0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test1623() throws Throwable {
+        PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(853.1);
+        double double0 = poissonDistributionImpl0.probability((-278));
         assertEquals(853.1, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1723() throws Throwable {
+    public void test1724() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = null;
         try {
             poissonDistributionImpl0 = new PoissonDistributionImpl((-278.599), (-278.599));
@@ -234,51 +241,64 @@ public class PoissonDistributionImpl_ESTest extends PoissonDistributionImpl_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1824() throws Throwable {
+    public void test1825() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.normalApproximateProbability(1439);
         assertEquals(1427.9729143405275, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1825() throws Throwable {
+    public void test1826() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         double double0 = poissonDistributionImpl0.normalApproximateProbability(1439);
         assertEquals(0.6198328899546514, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2026() throws Throwable {
+    public void test1927() throws Throwable {
+        PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(2097151, 543.590923799);
+        // Undeclared exception!
+        poissonDistributionImpl0.sample();
+    }
+
+    @Test(timeout = 4000)
+    public void test2028() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         int int0 = poissonDistributionImpl0.getDomainUpperBound(10000000);
         assertEquals(1427.9729143405275, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2027() throws Throwable {
+    public void test2029() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         int int0 = poissonDistributionImpl0.getDomainUpperBound(10000000);
         assertEquals(Integer.MAX_VALUE, int0);
     }
 
     @Test(timeout = 4000)
-    public void test2128() throws Throwable {
+    public void test2130() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         int int0 = poissonDistributionImpl0.sample();
         assertEquals(1427.9729143405275, poissonDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2129() throws Throwable {
+    public void test2131() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
         int int0 = poissonDistributionImpl0.sample();
         assertEquals(1435, int0);
     }
 
     @Test(timeout = 4000)
-    public void test2230() throws Throwable {
+    public void test2232() throws Throwable {
         PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(853.1);
         double double0 = poissonDistributionImpl0.getMean();
         assertEquals(853.1, double0, 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test2333() throws Throwable {
+        PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(1427.9729143405275, 1427.9729143405275, 1439);
+        poissonDistributionImpl0.getDomainLowerBound(1439);
     }
 }

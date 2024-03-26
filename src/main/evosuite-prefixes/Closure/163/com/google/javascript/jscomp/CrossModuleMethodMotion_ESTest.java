@@ -18,20 +18,28 @@ import org.junit.runner.RunWith;
 public class CrossModuleMethodMotion_ESTest extends CrossModuleMethodMotion_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test10() throws Throwable {
+    public void test00() throws Throwable {
+        Compiler compiler0 = new Compiler();
         CrossModuleMethodMotion.IdGenerator crossModuleMethodMotion_IdGenerator0 = new CrossModuleMethodMotion.IdGenerator();
-        int int0 = crossModuleMethodMotion_IdGenerator0.newId();
+        CrossModuleMethodMotion crossModuleMethodMotion0 = new CrossModuleMethodMotion(compiler0, crossModuleMethodMotion_IdGenerator0, false);
+        crossModuleMethodMotion0.process((Node) null, (Node) null);
     }
 
     @Test(timeout = 4000)
     public void test11() throws Throwable {
         CrossModuleMethodMotion.IdGenerator crossModuleMethodMotion_IdGenerator0 = new CrossModuleMethodMotion.IdGenerator();
         int int0 = crossModuleMethodMotion_IdGenerator0.newId();
+    }
+
+    @Test(timeout = 4000)
+    public void test12() throws Throwable {
+        CrossModuleMethodMotion.IdGenerator crossModuleMethodMotion_IdGenerator0 = new CrossModuleMethodMotion.IdGenerator();
+        int int0 = crossModuleMethodMotion_IdGenerator0.newId();
         boolean boolean0 = crossModuleMethodMotion_IdGenerator0.hasGeneratedAnyIds();
     }
 
     @Test(timeout = 4000)
-    public void test22() throws Throwable {
+    public void test23() throws Throwable {
         CrossModuleMethodMotion.IdGenerator crossModuleMethodMotion_IdGenerator0 = new CrossModuleMethodMotion.IdGenerator();
         boolean boolean0 = crossModuleMethodMotion_IdGenerator0.hasGeneratedAnyIds();
     }

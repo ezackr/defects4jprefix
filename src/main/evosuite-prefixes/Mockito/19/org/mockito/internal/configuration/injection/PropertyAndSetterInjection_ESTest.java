@@ -14,4 +14,9 @@ import org.mockito.internal.configuration.injection.PropertyAndSetterInjection;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class PropertyAndSetterInjection_ESTest extends PropertyAndSetterInjection_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        PropertyAndSetterInjection propertyAndSetterInjection0 = new PropertyAndSetterInjection();
+    }
 }

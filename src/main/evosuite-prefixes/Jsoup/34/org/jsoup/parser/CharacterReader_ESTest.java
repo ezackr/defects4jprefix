@@ -342,12 +342,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03046() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Et(z(Rnu");
-        String string0 = characterReader0.consumeLetterThenDigitSequence();
-    }
-
-    @Test(timeout = 4000)
     public void test03047() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Et(z(Rnu");
         String string0 = characterReader0.consumeLetterThenDigitSequence();
@@ -693,13 +687,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08098() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test08099() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         char[] charArray0 = new char[0];
@@ -765,13 +752,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087108() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test087109() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         char[] charArray0 = new char[0];
@@ -783,12 +763,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     public void test088110() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         boolean boolean0 = characterReader0.matches("Array must not contain any null objects");
-    }
-
-    @Test(timeout = 4000)
-    public void test089111() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
-        String string0 = characterReader0.consumeTo('a');
     }
 
     @Test(timeout = 4000)
@@ -818,13 +792,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091115() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test091116() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         char[] charArray0 = new char[0];
@@ -846,14 +813,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093119() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("EI.Twzz%y<+s,,Q");
-        char[] charArray0 = new char[7];
-        charArray0[1] = '.';
-        String string0 = characterReader0.consumeToAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test093120() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("EI.Twzz%y<+s,,Q");
         char[] charArray0 = new char[7];
@@ -866,12 +825,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     public void test094121() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         String string0 = characterReader0.consumeDigitSequence();
-    }
-
-    @Test(timeout = 4000)
-    public void test095122() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
-        String string0 = characterReader0.consumeTo('a');
     }
 
     @Test(timeout = 4000)
@@ -908,12 +861,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097127() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("0}nq");
-        String string0 = characterReader0.consumeHexSequence();
-    }
-
-    @Test(timeout = 4000)
     public void test097128() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("0}nq");
         String string0 = characterReader0.consumeHexSequence();
@@ -921,23 +868,10 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098129() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("KHD,HZm?C");
-        String string0 = characterReader0.consumeLetterSequence();
-    }
-
-    @Test(timeout = 4000)
     public void test098130() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("KHD,HZm?C");
         String string0 = characterReader0.consumeLetterSequence();
         String string1 = characterReader0.consumeHexSequence();
-    }
-
-    @Test(timeout = 4000)
-    public void test099131() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
     }
 
     @Test(timeout = 4000)
@@ -952,13 +886,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     public void test100133() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("xv|Kd&WY&}H~");
         String string0 = characterReader0.consumeLetterThenDigitSequence();
-    }
-
-    @Test(timeout = 4000)
-    public void test101134() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
     }
 
     @Test(timeout = 4000)
@@ -989,24 +916,11 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104139() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test104140() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         char[] charArray0 = new char[0];
         String string0 = characterReader0.consumeToAny(charArray0);
         String string1 = characterReader0.consumeLetterSequence();
-    }
-
-    @Test(timeout = 4000)
-    public void test105141() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Et(z(Rnu");
-        String string0 = characterReader0.consumeLetterThenDigitSequence();
     }
 
     @Test(timeout = 4000)
@@ -1045,12 +959,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109147() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        String string0 = characterReader0.consumeHexSequence();
-    }
-
-    @Test(timeout = 4000)
     public void test109148() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
         String string0 = characterReader0.consumeHexSequence();
@@ -1062,13 +970,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         CharacterReader characterReader0 = new CharacterReader("");
         characterReader0.consume();
         characterReader0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test111150() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("Array must not contain any null objects");
-        char[] charArray0 = new char[0];
-        String string0 = characterReader0.consumeToAny(charArray0);
     }
 
     @Test(timeout = 4000)
@@ -1115,5 +1016,17 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         CharacterReader characterReader0 = new CharacterReader("");
         characterReader0.advance();
         characterReader0.consumeHexSequence();
+    }
+
+    @Test(timeout = 4000)
+    public void test118158() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        characterReader0.mark();
+    }
+
+    @Test(timeout = 4000)
+    public void test119159() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        characterReader0.rewindToMark();
     }
 }

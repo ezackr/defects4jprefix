@@ -535,21 +535,6 @@ public class ClassUtils_ESTest extends ClassUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07781() throws Throwable {
-        Class<Object> class0 = Object.class;
-        Object[] objectArray0 = new Object[6];
-        objectArray0[0] = (Object) "Object";
-        objectArray0[1] = (Object) "\":d*gb";
-        objectArray0[2] = (Object) class0;
-        objectArray0[3] = (Object) "Object";
-        objectArray0[4] = (Object) "\":d*gb";
-        objectArray0[5] = objectArray0[0];
-        Class<?>[] classArray0 = ClassUtils.toClass(objectArray0);
-        Class<?>[] classArray1 = ClassUtils.wrappersToPrimitives(classArray0);
-        boolean boolean0 = ClassUtils.isAssignable(classArray1, classArray0, false);
-    }
-
-    @Test(timeout = 4000)
     public void test07882() throws Throwable {
         boolean boolean0 = ClassUtils.isAssignable((Class<?>[]) null, (Class<?>[]) null, false);
     }

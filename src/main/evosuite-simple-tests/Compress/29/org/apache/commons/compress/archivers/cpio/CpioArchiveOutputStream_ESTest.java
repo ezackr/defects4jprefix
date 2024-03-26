@@ -276,7 +276,32 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1618() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
+        CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry("E:~");
+        cpioArchiveEntry0.setDeviceMin(1L);
+        cpioArchiveOutputStream0.putArchiveEntry(cpioArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1719() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 4);
+        cpioArchiveOutputStream0.finish();
+    }
+
+    @Test(timeout = 4000)
+    public void test1820() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 4);
+        CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry((short) 4, "uE:~");
+        cpioArchiveEntry0.setInode(2L);
+        cpioArchiveOutputStream0.putArchiveEntry(cpioArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1921() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 4);
         CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry((short) 4);
@@ -294,7 +319,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2022() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry((short) 8);
         cpioArchiveEntry0.setInode(262139L);
@@ -312,7 +337,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2123() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 8);
         CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry((short) 8);
@@ -330,7 +355,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2224() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         cpioArchiveOutputStream0.finish();
@@ -346,7 +371,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2325() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         byte[] byteArray0 = new byte[1];
@@ -363,7 +388,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2426() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 4);
         try {
@@ -378,7 +403,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2527() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0, (short) 2);
         byte[] byteArray0 = new byte[0];
@@ -395,7 +420,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2628() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         byte[] byteArray0 = new byte[0];
@@ -412,7 +437,15 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2826() throws Throwable {
+    public void test2729() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
+        byte[] byteArray0 = new byte[0];
+        cpioArchiveOutputStream0.write(byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2830() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         cpioArchiveOutputStream0.finish();
@@ -428,7 +461,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test2927() throws Throwable {
+    public void test2931() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry(">Rh9kLBerkW>t7dxUnY");
@@ -445,7 +478,32 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3328() throws Throwable {
+    public void test3032() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("$z5YcO{Qh!-zLrhAvr");
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0, (short) 2);
+        cpioArchiveOutputStream0.finish();
+        cpioArchiveOutputStream0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test3133() throws Throwable {
+        MockPrintStream mockPrintStream0 = new MockPrintStream("$z5YcO{Qh!-zLrhAvr");
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(mockPrintStream0, (short) 8);
+        cpioArchiveOutputStream0.close();
+        cpioArchiveOutputStream0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test3234() throws Throwable {
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
+        CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
+        CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry(">Rh9kLBerkW>t7dxUlnY");
+        cpioArchiveEntry0.setRemoteDeviceMin(4294967296L);
+        cpioArchiveOutputStream0.putArchiveEntry(cpioArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3335() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         // Undeclared exception!
@@ -461,7 +519,7 @@ public class CpioArchiveOutputStream_ESTest extends CpioArchiveOutputStream_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test3429() throws Throwable {
+    public void test3436() throws Throwable {
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
         CpioArchiveOutputStream cpioArchiveOutputStream0 = new CpioArchiveOutputStream(byteArrayOutputStream0);
         cpioArchiveOutputStream0.finish();

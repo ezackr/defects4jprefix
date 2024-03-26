@@ -23,12 +23,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test001() throws Throwable {
-        byte[] byteArray0 = new byte[8];
-        int int0 = TarUtils.formatCheckSumOctalBytes(0L, byteArray0, (byte) 7, (byte) 0);
-    }
-
-    @Test(timeout = 4000)
     public void test012() throws Throwable {
         byte[] byteArray0 = new byte[7];
         TarUtils.formatUnsignedOctalString((-1423L), byteArray0, 0, (byte) 55);
@@ -236,21 +230,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3436() throws Throwable {
-        byte[] byteArray0 = new byte[2];
-        TarUtils.formatUnsignedOctalString(3L, byteArray0, 0, (byte) 1);
-        long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 1);
-    }
-
-    @Test(timeout = 4000)
     public void test3537() throws Throwable {
-        byte[] byteArray0 = new byte[2];
-        TarUtils.formatUnsignedOctalString(0L, byteArray0, 0, (byte) 1);
-        long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 1);
-    }
-
-    @Test(timeout = 4000)
-    public void test3538() throws Throwable {
         byte[] byteArray0 = new byte[2];
         TarUtils.formatUnsignedOctalString(0L, byteArray0, 0, (byte) 1);
         long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 1);

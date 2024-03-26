@@ -35,4 +35,12 @@ public class CollapseVariableDeclarations_ESTest extends CollapseVariableDeclara
             verifyException("com.google.common.base.Preconditions", e);
         }
     }
+
+    @Test(timeout = 4000)
+    public void test11() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseTestCode("vgwa2=Vp=D");
+        CollapseVariableDeclarations collapseVariableDeclarations0 = new CollapseVariableDeclarations(compiler0);
+        collapseVariableDeclarations0.process(node0, node0);
+    }
 }

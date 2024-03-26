@@ -132,18 +132,6 @@ public class BeanSerializerFactory_ESTest extends BeanSerializerFactory_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test056() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        AtomicReference<Throwable> atomicReference0 = new AtomicReference<Throwable>();
-        BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-        SimpleSerializers simpleSerializers0 = new SimpleSerializers();
-        SerializerFactory serializerFactory0 = beanSerializerFactory0.withAdditionalSerializers(simpleSerializers0);
-        ObjectMapper objectMapper1 = objectMapper0.setSerializerFactory(serializerFactory0);
-        Class<CoreXMLDeserializers.Std> class0 = CoreXMLDeserializers.Std.class;
-        boolean boolean0 = objectMapper1.canSerialize(class0, atomicReference0);
-    }
-
-    @Test(timeout = 4000)
     public void test067() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         AtomicReference<Throwable> atomicReference0 = new AtomicReference<Throwable>();
@@ -168,20 +156,6 @@ public class BeanSerializerFactory_ESTest extends BeanSerializerFactory_ESTest_s
 
     @Test(timeout = 4000)
     public void test079() throws Throwable {
-        SerializerFactoryConfig serializerFactoryConfig0 = new SerializerFactoryConfig();
-        BeanSerializerFactory beanSerializerFactory0 = new BeanSerializerFactory(serializerFactoryConfig0);
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        AtomicReference<Throwable> atomicReference0 = new AtomicReference<Throwable>();
-        BeanSerializerModifier beanSerializerModifier0 = mock(BeanSerializerModifier.class, new ViolatedAssumptionAnswer());
-        doReturn((JsonSerializer) null).when(beanSerializerModifier0).modifySerializer(any(com.fasterxml.jackson.databind.SerializationConfig.class), any(com.fasterxml.jackson.databind.BeanDescription.class), any(com.fasterxml.jackson.databind.JsonSerializer.class));
-        SerializerFactory serializerFactory0 = beanSerializerFactory0.withSerializerModifier(beanSerializerModifier0);
-        ObjectMapper objectMapper1 = objectMapper0.setSerializerFactory(serializerFactory0);
-        Class<Object> class0 = Object.class;
-        objectMapper1.canSerialize(class0, atomicReference0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0710() throws Throwable {
         SerializerFactoryConfig serializerFactoryConfig0 = new SerializerFactoryConfig();
         BeanSerializerFactory beanSerializerFactory0 = new BeanSerializerFactory(serializerFactoryConfig0);
         ObjectMapper objectMapper0 = new ObjectMapper();

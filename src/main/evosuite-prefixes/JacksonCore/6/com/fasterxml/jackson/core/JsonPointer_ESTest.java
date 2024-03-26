@@ -236,12 +236,6 @@ public class JsonPointer_ESTest extends JsonPointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0932() throws Throwable {
-        JsonPointer jsonPointer0 = JsonPointer._parseQuotedTail("$mL", 0);
-        String string0 = jsonPointer0.toString();
-    }
-
-    @Test(timeout = 4000)
     public void test0933() throws Throwable {
         JsonPointer jsonPointer0 = JsonPointer._parseQuotedTail("$mL", 0);
         String string0 = jsonPointer0.toString();
@@ -928,5 +922,11 @@ public class JsonPointer_ESTest extends JsonPointer_ESTest_scaffolding {
     public void test50136() throws Throwable {
         JsonPointer jsonPointer0 = JsonPointer.compile((String) null);
         String string0 = jsonPointer0.getMatchingProperty();
+    }
+
+    @Test(timeout = 4000)
+    public void test51137() throws Throwable {
+        JsonPointer jsonPointer0 = JsonPointer.compile((String) null);
+        jsonPointer0.hashCode();
     }
 }

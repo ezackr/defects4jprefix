@@ -336,7 +336,17 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2929() throws Throwable {
+    public void test2829() throws Throwable {
+        Document document0 = new Document("Xrh");
+        LinkedList<Node> linkedList0 = new LinkedList<Node>();
+        document0.childNodes = (List<Node>) linkedList0;
+        linkedList0.add((Node) document0);
+        // Undeclared exception!
+        document0.getElementsByIndexEquals(22);
+    }
+
+    @Test(timeout = 4000)
+    public void test2930() throws Throwable {
         Tag tag0 = Tag.valueOf("yRt2'T");
         Element element0 = new Element(tag0, "");
         // Undeclared exception!
@@ -352,7 +362,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3030() throws Throwable {
+    public void test3031() throws Throwable {
         Document document0 = new Document("org.jsoup.select.Evaluator");
         // Undeclared exception!
         try {
@@ -367,7 +377,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
+    public void test3132() throws Throwable {
         Document document0 = new Document("@Qn(k@");
         // Undeclared exception!
         try {
@@ -382,7 +392,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3233() throws Throwable {
         Document document0 = new Document("");
         // Undeclared exception!
         try {
@@ -397,7 +407,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3334() throws Throwable {
         Document document0 = new Document("DpoM-as|6AmfaJ[$`'");
         // Undeclared exception!
         try {
@@ -412,7 +422,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3435() throws Throwable {
         Document document0 = new Document("dfn");
         // Undeclared exception!
         try {
@@ -427,7 +437,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3536() throws Throwable {
         Document document0 = new Document("");
         // Undeclared exception!
         try {
@@ -442,7 +452,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3637() throws Throwable {
         Document document0 = new Document("P");
         // Undeclared exception!
         try {
@@ -456,7 +466,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3738() throws Throwable {
         Tag tag0 = Tag.valueOf("%|r<");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "%|r<", attributes0);
@@ -473,7 +483,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3839() throws Throwable {
         Document document0 = new Document("+x4RH@Amv\u00079P&");
         // Undeclared exception!
         try {
@@ -488,7 +498,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3940() throws Throwable {
         Tag tag0 = Tag.valueOf("br");
         TextNode textNode0 = TextNode.createFromEncoded("p3m##Y#<5_6P62Ku3N", "&y2/ql|slJ");
         Attributes attributes0 = textNode0.attributes();
@@ -506,7 +516,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4041() throws Throwable {
         Tag tag0 = Tag.valueOf("itemscope");
         Element element0 = null;
         try {
@@ -521,7 +531,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4142() throws Throwable {
         Element element0 = null;
         try {
             element0 = new Element((Tag) null, "B#H2Cf1%+I/(e");
@@ -535,42 +545,42 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4242() throws Throwable {
+    public void test4243() throws Throwable {
         Document document0 = new Document("");
         String string0 = document0.html();
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4343() throws Throwable {
+    public void test4344() throws Throwable {
         Document document0 = new Document("#=Q_1K'KenM!,");
         Element element0 = document0.val("#=Q_1K'KenM!,");
         assertEquals(0, element0.childNodeSize());
     }
 
     @Test(timeout = 4000)
-    public void test4444() throws Throwable {
+    public void test4445() throws Throwable {
         Document document0 = new Document("XPg)rWY^Nm.b5+/");
         String string0 = document0.val();
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4545() throws Throwable {
+    public void test4546() throws Throwable {
         Document document0 = new Document("");
         Integer integer0 = document0.elementSiblingIndex();
         assertEquals(0, (int) integer0);
     }
 
     @Test(timeout = 4000)
-    public void test4646() throws Throwable {
+    public void test4647() throws Throwable {
         Document document0 = new Document("pEqpZb${bEh%!a*");
         String string0 = document0.cssSelector();
         assertEquals("#root", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4747() throws Throwable {
+    public void test4748() throws Throwable {
         Document document0 = new Document("+h");
         LinkedList<Comment> linkedList0 = new LinkedList<Comment>();
         // Undeclared exception!
@@ -586,7 +596,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4848() throws Throwable {
+    public void test4849() throws Throwable {
         Tag tag0 = Tag.valueOf("yRt2'T");
         Element element0 = new Element(tag0, "");
         List<TextNode> list0 = element0.textNodes();
@@ -594,14 +604,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4949() throws Throwable {
+    public void test4950() throws Throwable {
         Document document0 = new Document("#=Q_1K'KenM!,");
         Elements elements0 = document0.getElementsByTag("CRH[K");
         assertEquals(0, elements0.size());
     }
 
     @Test(timeout = 4000)
-    public void test5050() throws Throwable {
+    public void test5051() throws Throwable {
         Document document0 = new Document("");
         Pattern pattern0 = Pattern.compile("");
         Elements elements0 = document0.getElementsMatchingOwnText(pattern0);
@@ -609,21 +619,21 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5151() throws Throwable {
+    public void test5152() throws Throwable {
         Document document0 = new Document("");
         Elements elements0 = document0.getElementsMatchingText("");
         assertFalse(elements0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test5252() throws Throwable {
+    public void test5253() throws Throwable {
         Document document0 = new Document("");
         boolean boolean0 = document0.isBlock();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5353() throws Throwable {
+    public void test5354() throws Throwable {
         Tag tag0 = Tag.valueOf("}a,n}hgw");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "}a,n}hgw", attributes0);
@@ -632,14 +642,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5454() throws Throwable {
+    public void test5455() throws Throwable {
         Document document0 = new Document("");
         Elements elements0 = document0.getElementsByAttribute("6W`u@AC s8.y'");
         assertTrue(elements0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test5555() throws Throwable {
+    public void test5556() throws Throwable {
         Tag tag0 = Tag.valueOf("(XL7[");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "(XL7[", attributes0);
@@ -648,7 +658,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5656() throws Throwable {
+    public void test5657() throws Throwable {
         Document document0 = new Document("C}ffUrV~rm4dY");
         // Undeclared exception!
         try {
@@ -663,14 +673,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5757() throws Throwable {
+    public void test5758() throws Throwable {
         Document document0 = new Document("#=Q_1K'KenM!,");
         Elements elements0 = document0.getElementsByAttributeValueContaining("meta", "6cz");
         assertTrue(elements0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test5858() throws Throwable {
+    public void test5859() throws Throwable {
         Document document0 = new Document("#=Q_1K'KenM!,");
         // Undeclared exception!
         try {
@@ -685,7 +695,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5959() throws Throwable {
+    public void test5960() throws Throwable {
         Tag tag0 = Tag.valueOf("[jyKV>");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "[jyKV>", attributes0);
@@ -694,7 +704,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6060() throws Throwable {
+    public void test6061() throws Throwable {
         Document document0 = new Document("output");
         document0.appendText("9]T<;)");
         Elements elements0 = document0.children();
@@ -702,42 +712,42 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6161() throws Throwable {
+    public void test6162() throws Throwable {
         Document document0 = new Document("html");
         Elements elements0 = document0.getElementsByAttributeValueStarting("html", "     ");
         assertEquals(0, elements0.size());
     }
 
     @Test(timeout = 4000)
-    public void test6262() throws Throwable {
+    public void test6263() throws Throwable {
         Document document0 = new Document("u@;uw1LS`{,s8u`5");
         Elements elements0 = document0.getElementsByClass("systemId");
         assertEquals(0, elements0.size());
     }
 
     @Test(timeout = 4000)
-    public void test6363() throws Throwable {
+    public void test6364() throws Throwable {
         Document document0 = new Document("");
         Map<String, String> map0 = document0.dataset();
         assertEquals(0, map0.size());
     }
 
     @Test(timeout = 4000)
-    public void test6464() throws Throwable {
+    public void test6465() throws Throwable {
         TextNode textNode0 = new TextNode("cite", "cite");
         boolean boolean0 = Element.preserveWhitespace(textNode0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test6565() throws Throwable {
+    public void test6566() throws Throwable {
         Document document0 = new Document("P");
         Element element0 = document0.previousElementSibling();
         assertNull(element0);
     }
 
     @Test(timeout = 4000)
-    public void test6666() throws Throwable {
+    public void test6667() throws Throwable {
         Tag tag0 = Tag.valueOf("[jyKV>");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "[jyKV>", attributes0);
@@ -747,7 +757,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6767() throws Throwable {
+    public void test6768() throws Throwable {
         Tag tag0 = Tag.valueOf("[jyKV>");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "[jyKV>", attributes0);
@@ -765,7 +775,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6868() throws Throwable {
+    public void test6869() throws Throwable {
         Tag tag0 = Tag.valueOf("[jyKV>");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "[jyKV>", attributes0);
@@ -775,14 +785,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6969() throws Throwable {
+    public void test6970() throws Throwable {
         Document document0 = new Document("String must not be empty");
         Elements elements0 = document0.getElementsByAttributeValueNot("BMYm&8I^d1}M;", "String must not be empty");
         assertFalse(elements0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test7070() throws Throwable {
+    public void test7071() throws Throwable {
         Tag tag0 = Tag.valueOf("l");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "", attributes0);
@@ -799,7 +809,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7171() throws Throwable {
+    public void test7172() throws Throwable {
         Tag tag0 = Tag.valueOf("[jyKV>");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "[jyKV>", attributes0);
@@ -808,14 +818,14 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7272() throws Throwable {
+    public void test7273() throws Throwable {
         Document document0 = new Document("");
         Elements elements0 = document0.getElementsByIndexEquals((-1282));
         assertTrue(elements0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test7373() throws Throwable {
+    public void test7374() throws Throwable {
         Tag tag0 = Tag.valueOf("[jyKV>");
         Attributes attributes0 = new Attributes();
         FormElement formElement0 = new FormElement(tag0, "[jyKV>", attributes0);
@@ -832,7 +842,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7474() throws Throwable {
+    public void test7475() throws Throwable {
         Document document0 = new Document("String must not be empty");
         document0.addClass("String must not be empty");
         Set<String> set0 = document0.classNames();
@@ -840,7 +850,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7575() throws Throwable {
+    public void test7576() throws Throwable {
         Tag tag0 = Tag.valueOf("l");
         Attributes attributes0 = new Attributes();
         Element element0 = new Element(tag0, "", attributes0);
@@ -849,7 +859,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7676() throws Throwable {
+    public void test7677() throws Throwable {
         Document document0 = new Document("A;7c}W35$8 Oo<n");
         // Undeclared exception!
         try {
@@ -865,7 +875,7 @@ public class Element_ESTest extends Element_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7777() throws Throwable {
+    public void test7778() throws Throwable {
         // Undeclared exception!
         try {
             Document.createShell("");

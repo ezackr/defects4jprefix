@@ -20,7 +20,320 @@ import org.junit.runner.RunWith;
 public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test0480() throws Throwable {
+    public void test0000() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_QUARTER;
+        BigInteger bigInteger0 = BigInteger.ZERO;
+        bigFraction0.TWO.pow(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0011() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE;
+        bigFraction0.ONE.pow(2089L);
+    }
+
+    @Test(timeout = 4000)
+    public void test0022() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(0.0);
+        bigFraction0.pow(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0033() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(0.0025000000000545697, 4);
+        bigFraction0.ZERO.abs();
+    }
+
+    @Test(timeout = 4000)
+    public void test0044() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.getReducedFraction(2277, 1);
+        BigInteger bigInteger0 = BigInteger.ONE;
+        bigFraction0.subtract(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0055() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        byte[] byteArray0 = new byte[5];
+        byteArray0[3] = (byte) 17;
+        BigInteger bigInteger0 = new BigInteger(byteArray0);
+        bigFraction0.THREE_QUARTERS.subtract(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0066() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.TWO;
+        bigFraction0.subtract(1037L);
+    }
+
+    @Test(timeout = 4000)
+    public void test0077() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ZERO;
+        bigFraction0.subtract(9223372036854775807L);
+    }
+
+    @Test(timeout = 4000)
+    public void test0088() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
+        bigFraction0.subtract((-1105));
+    }
+
+    @Test(timeout = 4000)
+    public void test0099() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        bigFraction0.subtract(603);
+    }
+
+    @Test(timeout = 4000)
+    public void test01010() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.MINUS_ONE;
+        bigFraction0.reduce();
+    }
+
+    @Test(timeout = 4000)
+    public void test01111() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        BigFraction bigFraction1 = bigFraction0.TWO.divide(bigFraction0);
+        bigFraction1.reciprocal();
+    }
+
+    @Test(timeout = 4000)
+    public void test01212() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        bigFraction0.reciprocal();
+    }
+
+    @Test(timeout = 4000)
+    public void test01313() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(0.0);
+        bigFraction0.MINUS_ONE.reciprocal();
+    }
+
+    @Test(timeout = 4000)
+    public void test01414() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ZERO;
+        BigFraction bigFraction1 = bigFraction0.add(1852L);
+        bigFraction1.pow((-664L));
+    }
+
+    @Test(timeout = 4000)
+    public void test01515() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE;
+        bigFraction0.ONE_HALF.pow((-1302));
+    }
+
+    @Test(timeout = 4000)
+    public void test01616() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_THIRD;
+        bigFraction0.ONE_QUARTER.pow(1.7976931348623157E308);
+    }
+
+    @Test(timeout = 4000)
+    public void test01717() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.MINUS_ONE;
+        bigFraction0.pow((double) 1239);
+    }
+
+    @Test(timeout = 4000)
+    public void test01818() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(0.0025000000000545697, 4);
+        bigFraction0.percentageValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test01919() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.MINUS_ONE;
+        bigFraction0.percentageValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test02020() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction((-1));
+        bigFraction0.negate();
+    }
+
+    @Test(timeout = 4000)
+    public void test02121() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE;
+        bigFraction0.negate();
+    }
+
+    @Test(timeout = 4000)
+    public void test02222() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.MINUS_ONE;
+        BigFraction bigFraction1 = bigFraction0.add(3);
+        bigFraction1.multiply(bigFraction0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02323() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.TWO;
+        BigInteger bigInteger0 = BigInteger.ZERO;
+        bigFraction0.multiply(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02424() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.getReducedFraction((-1482), 1045);
+        BigInteger bigInteger0 = bigFraction0.getDenominator();
+        bigFraction0.multiply(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02525() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
+        bigFraction0.TWO_QUARTERS.multiply(676L);
+    }
+
+    @Test(timeout = 4000)
+    public void test02626() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.TWO_QUARTERS;
+        bigFraction0.multiply((-114L));
+    }
+
+    @Test(timeout = 4000)
+    public void test02727() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction((-3763.34035));
+        bigFraction0.multiply(121);
+    }
+
+    @Test(timeout = 4000)
+    public void test02828() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE;
+        bigFraction0.longValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test02929() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        BigInteger bigInteger0 = BigInteger.TEN;
+        BigFraction bigFraction1 = bigFraction0.MINUS_ONE.pow(bigInteger0);
+        bigFraction1.intValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test03030() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction((-1464.0718), 3530.3516753794024, 76);
+        bigFraction0.intValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test03131() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ZERO;
+        bigFraction0.getNumeratorAsLong();
+    }
+
+    @Test(timeout = 4000)
+    public void test03232() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction((-2139));
+        bigFraction0.getNumeratorAsLong();
+    }
+
+    @Test(timeout = 4000)
+    public void test03333() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ZERO;
+        bigFraction0.getNumeratorAsInt();
+    }
+
+    @Test(timeout = 4000)
+    public void test03434() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        bigFraction0.MINUS_ONE.getNumeratorAsInt();
+    }
+
+    @Test(timeout = 4000)
+    public void test03535() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        BigFraction bigFraction1 = bigFraction0.negate();
+        bigFraction1.getNumerator();
+    }
+
+    @Test(timeout = 4000)
+    public void test03636() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(0.649738073348999);
+        bigFraction0.getDenominator();
+    }
+
+    @Test(timeout = 4000)
+    public void test03737() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(0.649738073348999);
+        BigFraction bigFraction1 = bigFraction0.pow((-2755L));
+        bigFraction1.getDenominator();
+    }
+
+    @Test(timeout = 4000)
+    public void test03838() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE;
+        BigInteger bigInteger0 = BigInteger.ONE;
+        BigFraction bigFraction1 = bigFraction0.subtract(bigInteger0);
+        BigFraction bigFraction2 = bigFraction1.divide((-1446L));
+        bigFraction2.floatValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test03939() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
+        BigFraction bigFraction1 = bigFraction0.TWO_THIRDS.add((-692));
+        bigFraction1.floatValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test04040() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.getReducedFraction(0, 0);
+        bigFraction0.doubleValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test04141() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        BigInteger bigInteger0 = bigFraction0.getNumerator();
+        BigFraction bigFraction1 = bigFraction0.TWO_FIFTHS.subtract(bigInteger0);
+        bigFraction1.doubleValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test04242() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction(2037, 2037);
+        BigFraction bigFraction1 = BigFraction.MINUS_ONE;
+        bigFraction0.divide(bigFraction1);
+    }
+
+    @Test(timeout = 4000)
+    public void test04343() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
+        BigFraction bigFraction1 = bigFraction0.TWO_THIRDS.add((-692));
+        BigInteger bigInteger0 = BigInteger.ONE;
+        bigFraction1.divide(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04444() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
+        BigFraction bigFraction1 = bigFraction0.TWO_QUARTERS.multiply(406);
+        BigInteger bigInteger0 = bigFraction0.getNumerator();
+        bigFraction1.divide(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04545() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction((-618.0), 3136.5699010956746, 0);
+        bigFraction0.divide((-1L));
+    }
+
+    @Test(timeout = 4000)
+    public void test04646() throws Throwable {
+        BigFraction bigFraction0 = new BigFraction((-858));
+        bigFraction0.divide((long) 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test04747() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.ZERO;
+        bigFraction0.MINUS_ONE.divide((-1));
+    }
+
+    @Test(timeout = 4000)
+    public void test04848() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-717.224843262248));
         BigFraction bigFraction1 = bigFraction0.pow(1245);
         BigFraction bigFraction2 = bigFraction1.divide(3);
@@ -28,27 +341,27 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0491() throws Throwable {
+    public void test04949() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-858));
         int int0 = bigFraction0.compareTo(bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test0492() throws Throwable {
+    public void test04950() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-858));
         int int0 = bigFraction0.compareTo(bigFraction0);
         bigFraction0.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test0503() throws Throwable {
+    public void test05051() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.pow((-608L));
         int int0 = bigFraction0.compareTo(bigFraction1);
     }
 
     @Test(timeout = 4000)
-    public void test0504() throws Throwable {
+    public void test05052() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.pow((-608L));
         int int0 = bigFraction0.compareTo(bigFraction1);
@@ -56,49 +369,49 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0515() throws Throwable {
+    public void test05153() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigDecimal bigDecimal0 = bigFraction0.TWO_QUARTERS.bigDecimalValue(0, 0);
         bigDecimal0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test0526() throws Throwable {
+    public void test05254() throws Throwable {
         BigFraction bigFraction0 = new BigFraction(1239);
         BigDecimal bigDecimal0 = bigFraction0.bigDecimalValue(1670, 0);
         bigDecimal0.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test0537() throws Throwable {
+    public void test05355() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigDecimal bigDecimal0 = bigFraction0.bigDecimalValue(1);
         bigDecimal0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test0548() throws Throwable {
+    public void test05456() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO_QUARTERS;
         BigDecimal bigDecimal0 = bigFraction0.bigDecimalValue(2);
         bigDecimal0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test0559() throws Throwable {
+    public void test05557() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE;
         BigDecimal bigDecimal0 = bigFraction0.bigDecimalValue();
         bigDecimal0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test05610() throws Throwable {
+    public void test05658() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigDecimal bigDecimal0 = bigFraction0.MINUS_ONE.bigDecimalValue();
         bigDecimal0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test05711() throws Throwable {
+    public void test05759() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = bigFraction0.multiply((-1));
         BigFraction bigFraction2 = bigFraction1.subtract(bigFraction0);
@@ -107,7 +420,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05712() throws Throwable {
+    public void test05760() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = bigFraction0.multiply((-1));
         BigFraction bigFraction2 = bigFraction1.subtract(bigFraction0);
@@ -116,7 +429,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05813() throws Throwable {
+    public void test05861() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigInteger bigInteger0 = BigInteger.ONE;
         BigFraction bigFraction1 = bigFraction0.ONE.add(bigInteger0);
@@ -124,7 +437,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05914() throws Throwable {
+    public void test05962() throws Throwable {
         BigFraction bigFraction0 = BigFraction.MINUS_ONE;
         byte[] byteArray0 = new byte[3];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
@@ -133,7 +446,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05915() throws Throwable {
+    public void test05963() throws Throwable {
         BigFraction bigFraction0 = BigFraction.MINUS_ONE;
         byte[] byteArray0 = new byte[3];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
@@ -142,7 +455,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06016() throws Throwable {
+    public void test06064() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigFraction bigFraction1 = bigFraction0.TWO_THIRDS.add((-692));
         BigFraction bigFraction2 = bigFraction1.add((long) (-692));
@@ -150,28 +463,28 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06117() throws Throwable {
+    public void test06165() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.THREE_FIFTHS.add(0);
         bigFraction1.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test06118() throws Throwable {
+    public void test06166() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.THREE_FIFTHS.add(0);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test06219() throws Throwable {
+    public void test06267() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.add(2448);
         bigFraction1.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test06320() throws Throwable {
+    public void test06368() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.subtract(406);
         BigFraction bigFraction2 = bigFraction1.abs();
@@ -179,78 +492,78 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06421() throws Throwable {
+    public void test06469() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-974L));
         bigFraction0.TWO.pow((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test06522() throws Throwable {
+    public void test06570() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         bigFraction0.pow(Integer.MAX_VALUE);
     }
 
     @Test(timeout = 4000)
-    public void test06623() throws Throwable {
+    public void test06671() throws Throwable {
         BigFraction.getReducedFraction(3630, 0);
     }
 
     @Test(timeout = 4000)
-    public void test06724() throws Throwable {
+    public void test06772() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE;
         bigFraction0.ONE_QUARTER.divide(0L);
     }
 
     @Test(timeout = 4000)
-    public void test06825() throws Throwable {
+    public void test06873() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-467.49498417), 59);
         bigFraction0.compareTo((BigFraction) null);
     }
 
     @Test(timeout = 4000)
-    public void test06926() throws Throwable {
+    public void test06974() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE;
         bigFraction0.bigDecimalValue((-719), 1043);
     }
 
     @Test(timeout = 4000)
-    public void test07027() throws Throwable {
+    public void test07075() throws Throwable {
         BigFraction bigFraction0 = BigFraction.MINUS_ONE;
         bigFraction0.ONE_THIRD.bigDecimalValue();
     }
 
     @Test(timeout = 4000)
-    public void test07128() throws Throwable {
+    public void test07176() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         bigFraction0.add((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test07229() throws Throwable {
+    public void test07277() throws Throwable {
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction((BigInteger) null, (BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test07330() throws Throwable {
+    public void test07378() throws Throwable {
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test07431() throws Throwable {
+    public void test07479() throws Throwable {
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction(0L, 0L);
     }
 
     @Test(timeout = 4000)
-    public void test07532() throws Throwable {
+    public void test07580() throws Throwable {
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction(0.0, (-1));
     }
 
     @Test(timeout = 4000)
-    public void test07633() throws Throwable {
+    public void test07681() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE;
         BigInteger bigInteger0 = BigInteger.ONE;
         BigFraction bigFraction1 = bigFraction0.subtract(bigInteger0);
@@ -259,7 +572,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07634() throws Throwable {
+    public void test07682() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE;
         BigInteger bigInteger0 = BigInteger.ONE;
         BigFraction bigFraction1 = bigFraction0.subtract(bigInteger0);
@@ -268,7 +581,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07735() throws Throwable {
+    public void test07783() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_QUARTER;
         BigInteger bigInteger0 = BigInteger.TEN;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.multiply(bigInteger0);
@@ -276,26 +589,26 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07836() throws Throwable {
+    public void test07884() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO_THIRDS;
         boolean boolean0 = bigFraction0.equals(bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test07937() throws Throwable {
+    public void test07985() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         double double0 = bigFraction0.doubleValue();
     }
 
     @Test(timeout = 4000)
-    public void test08038() throws Throwable {
+    public void test08086() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_QUARTER;
         BigInteger bigInteger0 = BigInteger.ZERO;
         bigFraction0.TWO_QUARTERS.divide(bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test08139() throws Throwable {
+    public void test08187() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigInteger bigInteger0 = BigInteger.ONE;
         BigFraction bigFraction1 = bigFraction0.divide(bigInteger0);
@@ -303,7 +616,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08140() throws Throwable {
+    public void test08188() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigInteger bigInteger0 = BigInteger.ONE;
         BigFraction bigFraction1 = bigFraction0.divide(bigInteger0);
@@ -311,7 +624,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08241() throws Throwable {
+    public void test08289() throws Throwable {
         byte[] byteArray0 = new byte[8];
         byteArray0[0] = (byte) (-116);
         BigInteger bigInteger0 = new BigInteger(byteArray0);
@@ -320,35 +633,35 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08342() throws Throwable {
+    public void test08390() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ONE;
         BigFraction bigFraction0 = new BigFraction(bigInteger0, bigInteger0);
         bigFraction0.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test08443() throws Throwable {
+    public void test08491() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction(bigInteger0, bigInteger0);
     }
 
     @Test(timeout = 4000)
-    public void test08544() throws Throwable {
+    public void test08592() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-858));
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.reduce();
         bigFraction0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test08545() throws Throwable {
+    public void test08593() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-858));
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.reduce();
         bigFraction1.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test08646() throws Throwable {
+    public void test08694() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigFraction bigFraction1 = bigFraction0.FOUR_FIFTHS.add(bigInteger0);
@@ -356,7 +669,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08747() throws Throwable {
+    public void test08795() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigFraction bigFraction1 = bigFraction0.FOUR_FIFTHS.add(bigInteger0);
@@ -365,7 +678,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08748() throws Throwable {
+    public void test08796() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigFraction bigFraction1 = bigFraction0.FOUR_FIFTHS.add(bigInteger0);
@@ -374,7 +687,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08749() throws Throwable {
+    public void test08797() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigFraction bigFraction1 = bigFraction0.FOUR_FIFTHS.add(bigInteger0);
@@ -383,20 +696,20 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08850() throws Throwable {
+    public void test08898() throws Throwable {
         BigFraction bigFraction0 = new BigFraction(1075);
         bigFraction0.subtract((BigFraction) null);
     }
 
     @Test(timeout = 4000)
-    public void test08951() throws Throwable {
+    public void test08999() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.ONE.subtract(bigFraction0);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test09052() throws Throwable {
+    public void test090100() throws Throwable {
         byte[] byteArray0 = new byte[7];
         BigInteger bigInteger0 = new BigInteger(byteArray0);
         BigFraction bigFraction0 = new BigFraction(bigInteger0);
@@ -404,7 +717,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09153() throws Throwable {
+    public void test091101() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         byte[] byteArray0 = new byte[3];
         byteArray0[0] = (byte) (-1);
@@ -414,7 +727,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09154() throws Throwable {
+    public void test091102() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         byte[] byteArray0 = new byte[3];
         byteArray0[0] = (byte) (-1);
@@ -424,7 +737,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09255() throws Throwable {
+    public void test092103() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.pow((-608L));
         BigFraction bigFraction2 = bigFraction1.ONE.subtract(bigFraction1);
@@ -432,7 +745,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09256() throws Throwable {
+    public void test092104() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.pow((-608L));
         BigFraction bigFraction2 = bigFraction1.ONE.subtract(bigFraction1);
@@ -440,7 +753,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09357() throws Throwable {
+    public void test093105() throws Throwable {
         BigInteger bigInteger0 = BigInteger.ZERO;
         BigFraction bigFraction0 = new BigFraction(bigInteger0);
         BigFraction bigFraction1 = bigFraction0.pow(0L);
@@ -448,19 +761,19 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09458() throws Throwable {
+    public void test094106() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.TWO.multiply(bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test09559() throws Throwable {
+    public void test095107() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         float float0 = bigFraction0.floatValue();
     }
 
     @Test(timeout = 4000)
-    public void test09660() throws Throwable {
+    public void test096108() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = BigFraction.ONE_HALF;
         BigFraction bigFraction2 = bigFraction0.multiply(bigFraction1);
@@ -469,7 +782,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09661() throws Throwable {
+    public void test096109() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = BigFraction.ONE_HALF;
         BigFraction bigFraction2 = bigFraction0.multiply(bigFraction1);
@@ -478,7 +791,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09662() throws Throwable {
+    public void test096110() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = BigFraction.ONE_HALF;
         BigFraction bigFraction2 = bigFraction0.multiply(bigFraction1);
@@ -486,7 +799,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09663() throws Throwable {
+    public void test096111() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = BigFraction.ONE_HALF;
         BigFraction bigFraction2 = bigFraction0.multiply(bigFraction1);
@@ -495,7 +808,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09664() throws Throwable {
+    public void test096112() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = BigFraction.ONE_HALF;
         BigFraction bigFraction2 = bigFraction0.multiply(bigFraction1);
@@ -504,32 +817,32 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09765() throws Throwable {
+    public void test097113() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         Object object0 = new Object();
         boolean boolean0 = bigFraction0.equals(object0);
     }
 
     @Test(timeout = 4000)
-    public void test09866() throws Throwable {
+    public void test098114() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_HALF;
         bigFraction0.TWO_THIRDS.divide((BigFraction) null);
     }
 
     @Test(timeout = 4000)
-    public void test09967() throws Throwable {
+    public void test099115() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO_QUARTERS;
         bigFraction0.divide(0);
     }
 
     @Test(timeout = 4000)
-    public void test10068() throws Throwable {
+    public void test100116() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         bigFraction0.divide((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test10169() throws Throwable {
+    public void test101117() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigFraction bigFraction1 = bigFraction0.TWO_THIRDS.add((-692));
         BigFraction bigFraction2 = bigFraction0.add(bigFraction1);
@@ -537,7 +850,7 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10270() throws Throwable {
+    public void test102118() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigFraction bigFraction1 = new BigFraction(0.8F, 2322.37, 1);
         BigFraction bigFraction2 = bigFraction0.add(bigFraction1);
@@ -545,174 +858,174 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10271() throws Throwable {
+    public void test102119() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigFraction bigFraction1 = new BigFraction(0.8F, 2322.37, 1);
         BigFraction bigFraction2 = bigFraction0.add(bigFraction1);
     }
 
     @Test(timeout = 4000)
-    public void test10372() throws Throwable {
+    public void test103120() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_QUARTER;
         bigFraction0.FOUR_FIFTHS.add((BigFraction) null);
     }
 
     @Test(timeout = 4000)
-    public void test10473() throws Throwable {
+    public void test104121() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigFraction bigFraction1 = bigFraction0.add(bigFraction0);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test10474() throws Throwable {
+    public void test104122() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         BigFraction bigFraction1 = bigFraction0.add(bigFraction0);
         bigFraction1.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test10575() throws Throwable {
+    public void test105123() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigFraction bigFraction1 = bigFraction0.TWO_THIRDS.abs();
     }
 
     @Test(timeout = 4000)
-    public void test10676() throws Throwable {
+    public void test106124() throws Throwable {
         BigFraction bigFraction0 = BigFraction.getReducedFraction(0, 0);
         bigFraction0.divide(bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test10777() throws Throwable {
+    public void test107125() throws Throwable {
         BigFraction bigFraction0 = new BigFraction(2421.19, 629);
         bigFraction0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test10878() throws Throwable {
+    public void test108126() throws Throwable {
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction(0.028507909084964922, 0.028507909084964922, (-1846));
     }
 
     @Test(timeout = 4000)
-    public void test10979() throws Throwable {
+    public void test109127() throws Throwable {
         BigFraction bigFraction0 = null;
         bigFraction0 = new BigFraction(1.7976931348623157E308, 1.7976931348623157E308, 382);
     }
 
     @Test(timeout = 4000)
-    public void test11080() throws Throwable {
+    public void test110128() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((double) (-692));
         String string0 = bigFraction0.toString();
     }
 
     @Test(timeout = 4000)
-    public void test11081() throws Throwable {
+    public void test110129() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((double) (-692));
         String string0 = bigFraction0.toString();
         bigFraction0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test11182() throws Throwable {
+    public void test111130() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-717.224843262248));
         bigFraction0.multiply((BigInteger) null);
     }
 
     @Test(timeout = 4000)
-    public void test11283() throws Throwable {
+    public void test112131() throws Throwable {
         BigFraction bigFraction0 = new BigFraction(0.0);
         int int0 = bigFraction0.getDenominatorAsInt();
     }
 
     @Test(timeout = 4000)
-    public void test11384() throws Throwable {
+    public void test113132() throws Throwable {
         BigFraction bigFraction0 = new BigFraction(1362.6);
         BigFraction bigFraction1 = bigFraction0.ZERO.divide(bigFraction0);
         bigFraction1.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test11385() throws Throwable {
+    public void test113133() throws Throwable {
         BigFraction bigFraction0 = new BigFraction(1362.6);
         BigFraction bigFraction1 = bigFraction0.ZERO.divide(bigFraction0);
         bigFraction0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test11486() throws Throwable {
+    public void test114134() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO_QUARTERS;
         BigFraction bigFraction1 = bigFraction0.multiply((long) 0);
         bigFraction1.reciprocal();
     }
 
     @Test(timeout = 4000)
-    public void test11587() throws Throwable {
+    public void test115135() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         double double0 = bigFraction0.ONE_QUARTER.pow((-1.0));
     }
 
     @Test(timeout = 4000)
-    public void test11688() throws Throwable {
+    public void test116136() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         long long0 = bigFraction0.getNumeratorAsLong();
     }
 
     @Test(timeout = 4000)
-    public void test11789() throws Throwable {
+    public void test117137() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         boolean boolean0 = bigFraction0.TWO_QUARTERS.equals(bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test11890() throws Throwable {
+    public void test118138() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-1192L), (-3512299194304650054L));
         BigFraction bigFraction1 = bigFraction0.multiply((-270L));
         int int0 = bigFraction1.getDenominatorAsInt();
     }
 
     @Test(timeout = 4000)
-    public void test11991() throws Throwable {
+    public void test119139() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         int int0 = bigFraction0.getDenominatorAsInt();
     }
 
     @Test(timeout = 4000)
-    public void test12092() throws Throwable {
+    public void test120140() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         bigFraction0.bigDecimalValue(69);
     }
 
     @Test(timeout = 4000)
-    public void test12193() throws Throwable {
+    public void test121141() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO_QUARTERS;
         BigDecimal bigDecimal0 = bigFraction0.ONE_FIFTH.bigDecimalValue(1770, 0);
         bigDecimal0.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test12294() throws Throwable {
+    public void test122142() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.multiply(2);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test12295() throws Throwable {
+    public void test122143() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = bigFraction0.ONE_FIFTH.multiply(2);
         bigFraction1.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test12396() throws Throwable {
+    public void test123144() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         long long0 = bigFraction0.longValue();
     }
 
     @Test(timeout = 4000)
-    public void test12497() throws Throwable {
+    public void test124145() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigInteger bigInteger0 = BigInteger.TEN;
         BigFraction bigFraction1 = bigFraction0.subtract(bigInteger0);
@@ -721,121 +1034,127 @@ public class BigFraction_ESTest extends BigFraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12598() throws Throwable {
+    public void test125146() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = bigFraction0.subtract(2);
         bigFraction1.byteValue();
     }
 
     @Test(timeout = 4000)
-    public void test12599() throws Throwable {
+    public void test125147() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO;
         BigFraction bigFraction1 = bigFraction0.subtract(2);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test127100() throws Throwable {
+    public void test126148() throws Throwable {
+        BigFraction bigFraction0 = BigFraction.TWO;
+        bigFraction0.TWO_THIRDS.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test127149() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         long long0 = bigFraction0.ONE.getDenominatorAsLong();
     }
 
     @Test(timeout = 4000)
-    public void test128101() throws Throwable {
+    public void test128150() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         double double0 = bigFraction0.percentageValue();
     }
 
     @Test(timeout = 4000)
-    public void test129102() throws Throwable {
+    public void test129151() throws Throwable {
         BigFraction bigFraction0 = BigFraction.getReducedFraction(1, 1);
         BigFraction bigFraction1 = bigFraction0.reduce();
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test129103() throws Throwable {
+    public void test129152() throws Throwable {
         BigFraction bigFraction0 = BigFraction.getReducedFraction(1, 1);
         BigFraction bigFraction1 = bigFraction0.reduce();
         bigFraction1.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test130104() throws Throwable {
+    public void test130153() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigDecimal bigDecimal0 = bigFraction0.bigDecimalValue();
         bigDecimal0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test131105() throws Throwable {
+    public void test131154() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.add(4503599627370496L);
         bigFraction1.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test131106() throws Throwable {
+    public void test131155() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.add(4503599627370496L);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test132107() throws Throwable {
+    public void test132156() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         int int0 = bigFraction0.THREE_QUARTERS.compareTo(bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test133108() throws Throwable {
+    public void test133157() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-974L));
         BigFraction bigFraction1 = bigFraction0.subtract((-974L));
         bigFraction0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test133109() throws Throwable {
+    public void test133158() throws Throwable {
         BigFraction bigFraction0 = new BigFraction((-974L));
         BigFraction bigFraction1 = bigFraction0.subtract((-974L));
         bigFraction1.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test134110() throws Throwable {
+    public void test134159() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.TWO_FIFTHS.divide(1951);
         bigFraction1.equals((Object) bigFraction0);
     }
 
     @Test(timeout = 4000)
-    public void test134111() throws Throwable {
+    public void test134160() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ONE_FIFTH;
         BigFraction bigFraction1 = bigFraction0.TWO_FIFTHS.divide(1951);
         bigFraction1.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test135112() throws Throwable {
+    public void test135161() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         int int0 = bigFraction0.ONE.getNumeratorAsInt();
     }
 
     @Test(timeout = 4000)
-    public void test136113() throws Throwable {
+    public void test136162() throws Throwable {
         BigFraction bigFraction0 = BigFraction.TWO_QUARTERS;
         BigFractionField bigFractionField0 = bigFraction0.ONE_FIFTH.getField();
     }
 
     @Test(timeout = 4000)
-    public void test137114() throws Throwable {
+    public void test137163() throws Throwable {
         BigFraction bigFraction0 = BigFraction.ZERO;
         BigInteger bigInteger0 = bigFraction0.getNumerator();
         bigInteger0.shortValue();
     }
 
     @Test(timeout = 4000)
-    public void test138115() throws Throwable {
+    public void test138164() throws Throwable {
         BigFraction bigFraction0 = BigFraction.FOUR_FIFTHS;
         int int0 = bigFraction0.ONE_FIFTH.intValue();
     }

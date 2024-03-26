@@ -341,7 +341,14 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2244() throws Throwable {
+    public void test2144() throws Throwable {
+        NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl(468.56833404566, 468.56833404566);
+        // Undeclared exception!
+        normalDistributionImpl0.inverseCumulativeProbability(1.0E-9);
+    }
+
+    @Test(timeout = 4000)
+    public void test2245() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-1914.57745749), 782.268, 0.0);
         // Undeclared exception!
         try {
@@ -356,7 +363,7 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2345() throws Throwable {
+    public void test2346() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-1.7976931348623157E308), 209.088917880791, 209.088917880791);
         try {
             normalDistributionImpl0.cumulativeProbability(0.0);
@@ -370,7 +377,7 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2446() throws Throwable {
+    public void test2447() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = null;
         try {
             normalDistributionImpl0 = new NormalDistributionImpl((-2289.0505632029985), (-36.04));
@@ -384,70 +391,70 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test2547() throws Throwable {
+    public void test2548() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.getInitialDomain(0.5);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2548() throws Throwable {
+    public void test2549() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.getInitialDomain(0.5);
         assertEquals(1.0, normalDistributionImpl0.getStandardDeviation(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2649() throws Throwable {
+    public void test2650() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(1.0E-9);
         assertEquals((-5.997807014826545), double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2750() throws Throwable {
+    public void test2751() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl(0.0, 0.008333333333333333);
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(1.0);
         assertEquals(0.008333333333333333, normalDistributionImpl0.getStandardDeviation(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2751() throws Throwable {
+    public void test2752() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl(0.0, 0.008333333333333333);
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(1.0);
         assertEquals(0.0, normalDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2752() throws Throwable {
+    public void test2753() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl(0.0, 0.008333333333333333);
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(1.0);
         assertEquals(Double.POSITIVE_INFINITY, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2853() throws Throwable {
+    public void test2854() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-1914.57745749), 782.268, 0.0);
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(0.0);
         assertEquals(Double.NEGATIVE_INFINITY, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2854() throws Throwable {
+    public void test2855() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-1914.57745749), 782.268, 0.0);
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(0.0);
         assertEquals((-1914.57745749), normalDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2855() throws Throwable {
+    public void test2856() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-1914.57745749), 782.268, 0.0);
         double double0 = normalDistributionImpl0.inverseCumulativeProbability(0.0);
         assertEquals(782.268, normalDistributionImpl0.getStandardDeviation(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2956() throws Throwable {
+    public void test2957() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = null;
         try {
             normalDistributionImpl0 = new NormalDistributionImpl((-1507.8600820797808), (-1507.8600820797808), (-1507.8600820797808));
@@ -461,7 +468,7 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test3057() throws Throwable {
+    public void test3058() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-3298.3076802071), Double.POSITIVE_INFINITY);
         try {
             normalDistributionImpl0.inverseCumulativeProbability(0.9999997615814209);
@@ -475,25 +482,17 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test3158() throws Throwable {
+    public void test3159() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.getStandardDeviation();
         assertEquals(0.0, normalDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3159() throws Throwable {
+    public void test3160() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.getStandardDeviation();
         assertEquals(1.0, double0, 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test3260() throws Throwable {
-        NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-3298.3076802071), Double.POSITIVE_INFINITY);
-        normalDistributionImpl0.sample();
-        double double0 = normalDistributionImpl0.sample();
-        assertEquals((-3298.3076802071), normalDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -501,7 +500,7 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-3298.3076802071), Double.POSITIVE_INFINITY);
         normalDistributionImpl0.sample();
         double double0 = normalDistributionImpl0.sample();
-        assertEquals(Double.POSITIVE_INFINITY, normalDistributionImpl0.getStandardDeviation(), 0.01);
+        assertEquals((-3298.3076802071), normalDistributionImpl0.getMean(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -509,32 +508,40 @@ public class NormalDistributionImpl_ESTest extends NormalDistributionImpl_ESTest
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-3298.3076802071), Double.POSITIVE_INFINITY);
         normalDistributionImpl0.sample();
         double double0 = normalDistributionImpl0.sample();
-        assertEquals(Double.POSITIVE_INFINITY, double0, 0.01);
+        assertEquals(Double.POSITIVE_INFINITY, normalDistributionImpl0.getStandardDeviation(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3363() throws Throwable {
-        NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
-        double double0 = normalDistributionImpl0.density(0.5000000003989423);
-        assertEquals(0.0, normalDistributionImpl0.getMean(), 0.01);
+    public void test3263() throws Throwable {
+        NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl((-3298.3076802071), Double.POSITIVE_INFINITY);
+        normalDistributionImpl0.sample();
+        double double0 = normalDistributionImpl0.sample();
+        assertEquals(Double.POSITIVE_INFINITY, double0, 0.01);
     }
 
     @Test(timeout = 4000)
     public void test3364() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.density(0.5000000003989423);
+        assertEquals(0.0, normalDistributionImpl0.getMean(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test3365() throws Throwable {
+        NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
+        double double0 = normalDistributionImpl0.density(0.5000000003989423);
         assertEquals(0.35206532669407264, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3465() throws Throwable {
+    public void test3466() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.getMean();
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3466() throws Throwable {
+    public void test3467() throws Throwable {
         NormalDistributionImpl normalDistributionImpl0 = new NormalDistributionImpl();
         double double0 = normalDistributionImpl0.getMean();
         assertEquals(1.0, normalDistributionImpl0.getStandardDeviation(), 0.01);

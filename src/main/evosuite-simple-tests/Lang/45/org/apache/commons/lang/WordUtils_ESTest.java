@@ -350,25 +350,30 @@ public class WordUtils_ESTest extends WordUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5152() throws Throwable {
+    public void test5052() throws Throwable {
+        WordUtils wordUtils0 = new WordUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test5153() throws Throwable {
         String string0 = WordUtils.wrap("", (-2030));
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5253() throws Throwable {
+    public void test5254() throws Throwable {
         String string0 = WordUtils.initials("");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5354() throws Throwable {
+    public void test5355() throws Throwable {
         String string0 = WordUtils.capitalizeFully("N})Ip4*^{6]PkL{6");
         assertEquals("N})ip4*^{6]pkl{6", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5455() throws Throwable {
+    public void test5456() throws Throwable {
         String string0 = WordUtils.capitalize("}-)Y`s:");
         assertEquals("}-)Y`s:", string0);
     }

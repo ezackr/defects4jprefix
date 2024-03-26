@@ -42,13 +42,6 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test023() throws Throwable {
-        Attributes attributes0 = new Attributes();
-        Attributes attributes1 = attributes0.clone();
-        boolean boolean0 = attributes1.equals(attributes0);
-    }
-
-    @Test(timeout = 4000)
     public void test034() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = attributes0.put("(k$x {", "R54DlR@:L@<");

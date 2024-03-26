@@ -82,7 +82,112 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test082() throws Throwable {
+    public void test022() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = new ZipLong((long) (byte) 1);
+        x5455_ExtendedTimestamp0.setCreateTime(zipLong0);
+        x5455_ExtendedTimestamp0.getAccessTime();
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.getCreateTime();
+        ZipLong zipLong1 = ZipLong.AED_SIG;
+        zipLong1.toString();
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong1);
+        MockDate mockDate0 = new MockDate((byte) 2, (byte) 4, (byte) 2, (-1), (byte) 1);
+        x5455_ExtendedTimestamp0.setModifyJavaTime(mockDate0);
+        byte[] byteArray0 = new byte[5];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) 2;
+        byteArray0[2] = (byte) 4;
+        byteArray0[3] = (byte) 2;
+        byteArray0[4] = (byte) 1;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 2, (byte) 2);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.CFH_SIG;
+        x5455_ExtendedTimestamp0.setCreateTime(zipLong0);
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 2;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 4;
+        byteArray0[4] = (byte) 2;
+        byteArray0[5] = (byte) 2;
+        byteArray0[6] = (byte) 1;
+        byteArray0[7] = (byte) 2;
+        byteArray0[8] = (byte) 4;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, (byte) 4, (byte) 4);
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.isBit0_modifyTimePresent();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        Object object0 = x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.equals(object0);
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        byte[] byteArray0 = new byte[4];
+        ZipLong zipLong0 = null;
+        x5455_ExtendedTimestamp0.setModifyTime((ZipLong) null);
+        byteArray0[0] = (byte) 2;
+        byteArray0[1] = (byte) 1;
+        byteArray0[2] = (byte) 4;
+        byteArray0[3] = (byte) 4;
+        ZipLong zipLong1 = new ZipLong(byteArray0, 1185);
+        byte[] byteArray1 = new byte[9];
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        MockDate mockDate0 = new MockDate((-1282), (byte) 1, 590, (byte) 4, (byte) 2);
+        mockDate0.clone();
+        x5455_ExtendedTimestamp0.setModifyJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.setFlags((byte) 0);
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.equals(x5455_ExtendedTimestamp1);
+        x5455_ExtendedTimestamp1.isBit2_createTimePresent();
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.equals("0x5455 Zip Extra Field: Flags=0 ");
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.setFlags((byte) (-114));
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = (X5455_ExtendedTimestamp) x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp1.getLocalFileDataLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         MockDate mockDate0 = new MockDate(1509L);
         ZipLong zipLong0 = new ZipLong(33639248L);
@@ -104,7 +209,7 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test093() throws Throwable {
+    public void test099() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         byte byte0 = (byte) 3;
         x5455_ExtendedTimestamp0.setFlags((byte) 3);
@@ -115,7 +220,7 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test104() throws Throwable {
+    public void test1010() throws Throwable {
         long long0 = 284L;
         System.setCurrentTimeMillis(284L);
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
@@ -131,7 +236,56 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test165() throws Throwable {
+    public void test1111() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 2;
+        byteArray0[1] = (byte) 4;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 1;
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        byteArray0[4] = (byte) 2;
+        byteArray0[5] = (byte) 4;
+        byteArray0[6] = (byte) 1;
+        byteArray0[7] = (byte) (-94);
+        byteArray0[8] = (byte) 0;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 1, 1830);
+        ZipLong zipLong0 = new ZipLong((-2426));
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.isBit0_modifyTimePresent();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.LFH_SIG;
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        Object object0 = new Object();
+        x5455_ExtendedTimestamp0.equals(object0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getFlags();
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.isBit0_modifyTimePresent();
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         x5455_ExtendedTimestamp0.getCreateJavaTime();
         x5455_ExtendedTimestamp0.getCentralDirectoryData();
@@ -151,7 +305,48 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test216() throws Throwable {
+    public void test1717() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        MockDate mockDate0 = new MockDate((byte) 2, (byte) 4, (-2866), (byte) 4, (-208), (-2866));
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        x5455_ExtendedTimestamp0.setAccessJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        byte[] byteArray0 = new byte[3];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) 4;
+        byteArray0[2] = (byte) 2;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 1, 4);
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.setCreateJavaTime((Date) null);
+        byte[] byteArray0 = new byte[5];
+        byteArray0[0] = (byte) 4;
+        byteArray0[1] = (byte) 2;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 2;
+        byteArray0[4] = (byte) 2;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, (byte) 2, (-3895));
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         byte[] byteArray0 = x5455_ExtendedTimestamp0.getCentralDirectoryData();
         byte[] byteArray1 = x5455_ExtendedTimestamp0.getCentralDirectoryData();
@@ -166,7 +361,42 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test237() throws Throwable {
+    public void test2222() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.LFH_SIG;
+        byte[] byteArray0 = new byte[6];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) (-1);
+        byteArray0[2] = (byte) 4;
+        byteArray0[3] = (byte) 2;
+        byteArray0[4] = (byte) 1;
+        byteArray0[5] = (byte) 4;
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        ZipLong.putLong((-1L), byteArray0, (int) (byte) (-1));
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong0);
+        x5455_ExtendedTimestamp0.getFlags();
+        Instant instant0 = MockInstant.ofEpochSecond((long) (byte) 4, (-77L));
+        Date date0 = x5455_ExtendedTimestamp0.getAccessJavaTime();
+        Date date1 = Date.from(instant0);
+        MockDate mockDate0 = new MockDate(0, (byte) (-1), (-1504), (byte) 4, (-3454), (byte) 4);
+        x5455_ExtendedTimestamp0.setModifyJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.setCreateJavaTime(date1);
+        x5455_ExtendedTimestamp0.setModifyJavaTime(date1);
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.setCreateJavaTime(date1);
+        Date date2 = x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.setModifyJavaTime(date2);
+        x5455_ExtendedTimestamp0.isBit0_modifyTimePresent();
+        x5455_ExtendedTimestamp0.equals(date2);
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong0);
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.setAccessJavaTime(date0);
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, 1728, 0);
+        x5455_ExtendedTimestamp0.setFlags(byteArray0[0]);
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         x5455_ExtendedTimestamp0.toString();
         x5455_ExtendedTimestamp0.getModifyJavaTime();
@@ -178,7 +408,32 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test278() throws Throwable {
+    public void test2424() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.setCreateTime((ZipLong) null);
+        MockDate mockDate0 = new MockDate(518L);
+        x5455_ExtendedTimestamp0.setCreateJavaTime(mockDate0);
+        Object object0 = x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.equals(object0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.LFH_SIG;
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.getFlags();
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         x5455_ExtendedTimestamp0.setFlags((byte) 65);
         x5455_ExtendedTimestamp0.getCentralDirectoryData();
@@ -186,7 +441,174 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test409() throws Throwable {
+    public void test2828() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        MockDate mockDate0 = new MockDate();
+        x5455_ExtendedTimestamp0.setModifyJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.equals((Object) null);
+        x5455_ExtendedTimestamp0.getHeaderId();
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.AED_SIG;
+        x5455_ExtendedTimestamp0.setCreateTime(zipLong0);
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        byte[] byteArray0 = new byte[8];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) 4;
+        byteArray0[2] = (byte) (-126);
+        byteArray0[3] = (byte) 4;
+        byteArray0[4] = (byte) 71;
+        byteArray0[5] = (byte) 4;
+        byteArray0[6] = (byte) 1;
+        byteArray0[7] = (byte) 4;
+        ZipLong zipLong0 = new ZipLong(byteArray0);
+        x5455_ExtendedTimestamp0.setCreateTime(zipLong0);
+        zipLong0.getBytes();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp0.equals(zipLong0);
+        x5455_ExtendedTimestamp0.getHeaderId();
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        byte[] byteArray0 = new byte[7];
+        byteArray0[0] = (byte) 2;
+        byteArray0[1] = (byte) 4;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 4;
+        byteArray0[4] = (byte) 4;
+        byteArray0[5] = (byte) 4;
+        byteArray0[6] = (byte) 1;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, 0, (-2718));
+        x5455_ExtendedTimestamp0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.setFlags((byte) 0);
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.isBit1_accessTimePresent();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test3434() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.setAccessTime((ZipLong) null);
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.setFlags((byte) (-13));
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.setFlags((byte) (-76));
+        x5455_ExtendedTimestamp0.setFlags((byte) 46);
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.CFH_SIG;
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong0);
+        x5455_ExtendedTimestamp0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        MockDate mockDate0 = new MockDate((byte) 2, 0, (byte) 1);
+        MockDate.UTC((byte) 2, (byte) 2, 11, 310, (byte) 2, (-1515));
+        x5455_ExtendedTimestamp0.setAccessJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.setFlags((byte) 2);
+        x5455_ExtendedTimestamp0.isBit1_accessTimePresent();
+        Instant instant0 = mockDate0.toInstant();
+        Date date0 = Date.from(instant0);
+        x5455_ExtendedTimestamp0.setAccessJavaTime(date0);
+        Date date1 = x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.setModifyJavaTime(date1);
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        byte[] byteArray0 = new byte[6];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) 1;
+        byteArray0[2] = (byte) 1;
+        byteArray0[3] = (byte) 2;
+        byteArray0[4] = (byte) 0;
+        byteArray0[5] = (byte) 2;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, (-1), 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3939() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        MockDate mockDate0 = new MockDate((byte) 1, 2, 543, 4, 0, 4);
+        MockDate mockDate1 = new MockDate((-2342L));
+        mockDate1.toInstant();
+        mockDate0.before(mockDate1);
+        x5455_ExtendedTimestamp0.setModifyJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        ZipLong zipLong0 = x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong0);
+        x5455_ExtendedTimestamp0.getAccessTime();
+        byte[] byteArray0 = new byte[8];
+        byteArray0[0] = (byte) 4;
+        byteArray0[1] = (byte) 4;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 1;
+        byteArray0[4] = (byte) 4;
+        byteArray0[5] = (byte) 4;
+        byteArray0[6] = (byte) 2;
+        byteArray0[7] = (byte) 2;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, 721, 543);
+    }
+
+    @Test(timeout = 4000)
+    public void test4040() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         byte[] byteArray0 = new byte[6];
         byteArray0[0] = (byte) 4;
@@ -199,7 +621,21 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test4210() throws Throwable {
+    public void test4141() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        byte[] byteArray0 = new byte[7];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) 2;
+        byteArray0[2] = (byte) 1;
+        byteArray0[3] = (byte) 1;
+        byteArray0[4] = (byte) 2;
+        byteArray0[5] = (byte) 1;
+        byteArray0[6] = (byte) 2;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 2, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4242() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         x5455_ExtendedTimestamp0.getHeaderId();
         MockDate mockDate0 = new MockDate(1068, (byte) 2, 1068, (byte) 2, (byte) 1, (byte) 2);
@@ -208,7 +644,35 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test4511() throws Throwable {
+    public void test4343() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        Object object0 = x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.equals(object0);
+        x5455_ExtendedTimestamp0.setFlags((byte) 4);
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp1.hashCode();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test4444() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = (X5455_ExtendedTimestamp) x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.equals(x5455_ExtendedTimestamp1);
+        x5455_ExtendedTimestamp0.setFlags((byte) 21);
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp2 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.equals(x5455_ExtendedTimestamp2);
+        x5455_ExtendedTimestamp2.hashCode();
+        x5455_ExtendedTimestamp1.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getModifyTime();
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         ZipLong zipLong0 = ZipLong.SINGLE_SEGMENT_SPLIT_MARKER;
         byte[] byteArray0 = new byte[8];
@@ -230,7 +694,214 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test5612() throws Throwable {
+    public void test4646() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.setFlags((byte) 102);
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.isBit2_createTimePresent();
+        x5455_ExtendedTimestamp0.clone();
+        ZipLong zipLong0 = ZipLong.ZIP64_MAGIC;
+        zipLong0.getBytes();
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 4;
+        byteArray0[1] = (byte) 102;
+        byteArray0[2] = (byte) 1;
+        byteArray0[3] = (byte) 4;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, (byte) 4, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4848() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.toString();
+        ZipLong zipLong0 = ZipLong.DD_SIG;
+        zipLong0.getBytes();
+        ZipLong.getBytes(1L);
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.isBit2_createTimePresent();
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getAccessTime();
+        MockDate mockDate0 = new MockDate();
+        mockDate0.toInstant();
+        MockDate mockDate1 = new MockDate(1144, 197, (-1), (-1), 250, 250);
+        mockDate0.after(mockDate1);
+        MockDate.UTC((byte) 1, 197, (byte) 2, (byte) 2, (-2468), (-433));
+        x5455_ExtendedTimestamp0.setAccessJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.getAccessTime();
+        x5455_ExtendedTimestamp0.getFlags();
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) 1;
+        byteArray0[1] = (byte) 2;
+        x5455_ExtendedTimestamp0.setFlags((byte) 1);
+        byteArray0[2] = (byte) 1;
+        byteArray0[3] = (byte) 4;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, (byte) 1, 0);
+        x5455_ExtendedTimestamp0.setFlags((byte) 121);
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.setFlags((byte) 0);
+        ZipLong zipLong0 = new ZipLong(11);
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        ZipLong zipLong1 = x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong1);
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.getFlags();
+    }
+
+    @Test(timeout = 4000)
+    public void test5151() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 2;
+        byteArray0[1] = (byte) 4;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 1;
+        byteArray0[4] = (byte) 2;
+        byteArray0[5] = (byte) 4;
+        byteArray0[6] = (byte) 1;
+        byteArray0[7] = (byte) (-94);
+        byteArray0[8] = (byte) 0;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 1, 1830);
+        ZipLong zipLong0 = new ZipLong((-2426));
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.isBit0_modifyTimePresent();
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp1.getModifyTime();
+        x5455_ExtendedTimestamp0.setModifyTime((ZipLong) null);
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.clone();
+    }
+
+    @Test(timeout = 4000)
+    public void test5353() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 2;
+        byteArray0[1] = (byte) 1;
+        byteArray0[2] = (byte) 2;
+        byteArray0[3] = (byte) 1;
+        byteArray0[4] = (byte) 2;
+        byteArray0[5] = (byte) 2;
+        byteArray0[6] = (byte) 2;
+        byteArray0[7] = (byte) 2;
+        byteArray0[8] = (byte) 4;
+        ZipLong zipLong0 = new ZipLong(byteArray0);
+        byte[] byteArray1 = zipLong0.getBytes();
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray1, (byte) 2, 4);
+        ZipShort zipShort0 = x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getAccessTime();
+        ZipLong.getBytes(470L);
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        ZipLong.getValue(byteArray0, (int) (byte) 2);
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.setAccessTime(zipLong0);
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        x5455_ExtendedTimestamp0.equals(zipShort0);
+        x5455_ExtendedTimestamp0.setAccessTime((ZipLong) null);
+        x5455_ExtendedTimestamp0.isBit0_modifyTimePresent();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.parseFromLocalFileData((byte[]) null, (-1756), (byte) 2);
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        x5455_ExtendedTimestamp0.isBit2_createTimePresent();
+    }
+
+    @Test(timeout = 4000)
+    public void test5454() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        MockDate mockDate0 = new MockDate((byte) 1, (byte) 2, 1269, 1269, 0, (byte) 2);
+        x5455_ExtendedTimestamp0.setModifyJavaTime(mockDate0);
+        MockDate mockDate1 = new MockDate();
+        mockDate0.after(mockDate1);
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.setCreateJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.setFlags((byte) 0);
+        x5455_ExtendedTimestamp0.setCreateJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getAccessTime();
+        x5455_ExtendedTimestamp0.setAccessJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.isBit2_createTimePresent();
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test5555() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        x5455_ExtendedTimestamp0.setFlags((byte) (-98));
+        x5455_ExtendedTimestamp0.getAccessJavaTime();
+        x5455_ExtendedTimestamp0.setCreateJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.setModifyJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.isBit1_accessTimePresent();
+        x5455_ExtendedTimestamp0.setFlags((byte) (-98));
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.getFlags();
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp1.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.equals(x5455_ExtendedTimestamp1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5656() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         x5455_ExtendedTimestamp0.getAccessJavaTime();
         x5455_ExtendedTimestamp0.getAccessJavaTime();
@@ -245,7 +916,99 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test6113() throws Throwable {
+    public void test5757() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        Instant instant0 = MockInstant.ofEpochMilli((-5427L));
+        LocalDate localDate0 = MockLocalDate.ofEpochDay(2558L);
+        Period period0 = Period.between(localDate0, localDate0);
+        Instant instant1 = MockInstant.minus(instant0, (TemporalAmount) period0);
+        Instant instant2 = MockInstant.plusSeconds(instant1, (-1544L));
+        Date date0 = Date.from(instant2);
+        x5455_ExtendedTimestamp0.setModifyJavaTime(date0);
+        ZipLong zipLong0 = ZipLong.LFH_SIG;
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.getLocalFileDataLength();
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) (-1);
+        byteArray0[1] = (byte) 2;
+        byteArray0[2] = (byte) 1;
+        byteArray0[3] = (byte) 2;
+        byteArray0[4] = (byte) 4;
+        byteArray0[5] = (byte) (-8);
+        byteArray0[6] = (byte) 71;
+        byteArray0[7] = (byte) 1;
+        byteArray0[8] = (byte) 4;
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 1, (byte) 71);
+    }
+
+    @Test(timeout = 4000)
+    public void test5858() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = ZipLong.SINGLE_SEGMENT_SPLIT_MARKER;
+        ZipLong.getBytes((long) (byte) 2);
+        zipLong0.toString();
+        x5455_ExtendedTimestamp0.setCreateTime(zipLong0);
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        MockDate mockDate0 = new MockDate((byte) 4, (byte) 4, (-2852), (byte) 2, 806);
+        mockDate0.setTime(0L);
+        x5455_ExtendedTimestamp0.setCreateJavaTime(mockDate0);
+        Date date0 = x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData((byte[]) null, 707, 494);
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp0.setModifyJavaTime(date0);
+        x5455_ExtendedTimestamp0.clone();
+    }
+
+    @Test(timeout = 4000)
+    public void test5959() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.setFlags((byte) 4);
+        byte[] byteArray0 = new byte[8];
+        byteArray0[4] = (byte) 4;
+        byteArray0[1] = (byte) 2;
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (byte) 4, (byte) 4);
+        byteArray0[2] = (byte) 4;
+        byteArray0[3] = (byte) 1;
+        byteArray0[4] = (byte) 4;
+        byteArray0[5] = (byte) 2;
+        byteArray0[6] = (byte) 52;
+        byteArray0[7] = (byte) 1;
+        x5455_ExtendedTimestamp0.parseFromCentralDirectoryData(byteArray0, 0, 0);
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp1 = new X5455_ExtendedTimestamp();
+        MockDate mockDate0 = new MockDate((byte) 2);
+        x5455_ExtendedTimestamp1.setModifyJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.equals(x5455_ExtendedTimestamp1);
+        x5455_ExtendedTimestamp1.setModifyJavaTime((Date) null);
+        x5455_ExtendedTimestamp1.setFlags((byte) 0);
+        x5455_ExtendedTimestamp1.getAccessTime();
+        ZipLong.putLong((-4302L), byteArray0, (int) (byte) (-1));
+        ZipLong.getValue(byteArray0);
+        x5455_ExtendedTimestamp1.isBit2_createTimePresent();
+        x5455_ExtendedTimestamp0.getFlags();
+        x5455_ExtendedTimestamp0.setModifyTime((ZipLong) null);
+        x5455_ExtendedTimestamp0.parseFromLocalFileData(byteArray0, (-3), (-3));
+        x5455_ExtendedTimestamp0.getModifyTime();
+        x5455_ExtendedTimestamp1.isBit0_modifyTimePresent();
+    }
+
+    @Test(timeout = 4000)
+    public void test6060() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        MockDate mockDate0 = new MockDate((byte) 1, (byte) 2, 1324);
+        Instant instant0 = MockInstant.ofEpochSecond((long) (byte) 4, (long) (byte) 2);
+        Date.from(instant0);
+        mockDate0.setTime((byte) 2);
+        x5455_ExtendedTimestamp0.setAccessJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.hashCode();
+        x5455_ExtendedTimestamp0.getFlags();
+        x5455_ExtendedTimestamp0.getAccessTime();
+    }
+
+    @Test(timeout = 4000)
+    public void test6161() throws Throwable {
         X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
         Object object0 = x5455_ExtendedTimestamp0.clone();
         x5455_ExtendedTimestamp0.hashCode();
@@ -256,5 +1019,48 @@ public class X5455_ExtendedTimestamp_ESTest extends X5455_ExtendedTimestamp_ESTe
         x5455_ExtendedTimestamp1.getCentralDirectoryLength();
         x5455_ExtendedTimestamp0.getLocalFileDataData();
         x5455_ExtendedTimestamp0.getLocalFileDataLength();
+    }
+
+    @Test(timeout = 4000)
+    public void test6262() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+        MockDate mockDate0 = new MockDate((byte) 1);
+        x5455_ExtendedTimestamp0.setAccessJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.getModifyJavaTime();
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getLocalFileDataData();
+        x5455_ExtendedTimestamp0.equals("0x5455 Zip Extra Field: Flags=10  Access:[Thu Jan 01 00:00:00 GMT 1970] ");
+        x5455_ExtendedTimestamp0.toString();
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.setFlags((byte) (-114));
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.setCreateJavaTime(mockDate0);
+        x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.equals("0x5455 Zip Extra Field: Flags=10  Access:[Thu Jan 01 00:00:00 GMT 1970] ");
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.getAccessTime();
+        x5455_ExtendedTimestamp0.getCentralDirectoryData();
+    }
+
+    @Test(timeout = 4000)
+    public void test6363() throws Throwable {
+        X5455_ExtendedTimestamp x5455_ExtendedTimestamp0 = new X5455_ExtendedTimestamp();
+        ZipLong zipLong0 = new ZipLong(0L);
+        x5455_ExtendedTimestamp0.getCreateJavaTime();
+        x5455_ExtendedTimestamp0.setAccessJavaTime((Date) null);
+        x5455_ExtendedTimestamp0.setModifyTime(zipLong0);
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.clone();
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.getCentralDirectoryLength();
+        x5455_ExtendedTimestamp0.equals((Object) null);
+        x5455_ExtendedTimestamp0.getHeaderId();
+        x5455_ExtendedTimestamp0.getCreateTime();
+        x5455_ExtendedTimestamp0.getModifyTime();
     }
 }

@@ -224,7 +224,22 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1416() throws Throwable {
+    public void test1316() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        CompilerOptions compilerOptions0 = new CompilerOptions();
+        JSSourceFile jSSourceFile0 = JSSourceFile.fromCode((String) null, (String) null);
+        Node node0 = compiler0.parseSyntheticCode("&}(_mPH[8]wQ9>YZVE*", "0f?*Hk)N@gccgYO?]");
+        Charset charset0 = Charset.defaultCharset();
+        JSSourceFile jSSourceFile1 = JSSourceFile.fromFile("", charset0);
+        compiler0.compile(jSSourceFile1, jSSourceFile0, compilerOptions0);
+        node0.addChildToBack(node0);
+        FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("", compiler0, node0, (String) null, (Scope) null);
+        // Undeclared exception!
+        functionTypeBuilder0.inferReturnStatementsAsLastResort(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1417() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("0");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("0", compiler0, node0, "0", (Scope) null);
@@ -232,7 +247,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1517() throws Throwable {
+    public void test1518() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("0");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("0", compiler0, node0, "0", (Scope) null);
@@ -242,7 +257,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1618() throws Throwable {
+    public void test1619() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("\"h");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("\"h", compiler0, node0, "\"h", (Scope) null);
@@ -251,7 +266,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1719() throws Throwable {
+    public void test1720() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("prefix must start with one of: ");
         TightenTypes tightenTypes0 = new TightenTypes(compiler0);
@@ -264,7 +279,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1820() throws Throwable {
+    public void test1821() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("rsT*.f:u}P7j");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("rsT*.f:u}P7j", compiler0, node0, "rsT*.f:u}P7j", (Scope) null);
@@ -275,7 +290,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1821() throws Throwable {
+    public void test1822() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("rsT*.f:u}P7j");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("rsT*.f:u}P7j", compiler0, node0, "rsT*.f:u}P7j", (Scope) null);
@@ -286,7 +301,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test1922() throws Throwable {
+    public void test1923() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("XD+veW*l#=w[qQ");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("XD+veW*l#=w[qQ", compiler0, node0, "XD+veW*l#=w[qQ", (Scope) null);
@@ -294,7 +309,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2023() throws Throwable {
+    public void test2024() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("g=g.typedef");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("g=g.typedef", compiler0, node0, "g=g.typedef", (Scope) null);
@@ -303,7 +318,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2124() throws Throwable {
+    public void test2125() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("yeq");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("yeq", compiler0, node0, "yeq", (Scope) null);
@@ -313,7 +328,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2225() throws Throwable {
+    public void test2226() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("0");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("0", compiler0, node0, "0", (Scope) null);
@@ -321,23 +336,12 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2326() throws Throwable {
+    public void test2327() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("0");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("0", compiler0, node0, "0", (Scope) null);
         JSDocInfo jSDocInfo0 = new JSDocInfo();
         FunctionTypeBuilder functionTypeBuilder1 = functionTypeBuilder0.inferParameterTypes((Node) null, jSDocInfo0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2427() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = compiler0.parseSyntheticCode("2", "2");
-        FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("2", compiler0, node0, "2", (Scope) null);
-        JSDocInfo jSDocInfo0 = new JSDocInfo();
-        FunctionTypeBuilder functionTypeBuilder1 = functionTypeBuilder0.inferParameterTypes(jSDocInfo0);
-        FunctionType functionType0 = functionTypeBuilder1.buildAndRegister();
-        functionType0.isReturnTypeInferred();
     }
 
     @Test(timeout = 4000)
@@ -348,11 +352,22 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
         JSDocInfo jSDocInfo0 = new JSDocInfo();
         FunctionTypeBuilder functionTypeBuilder1 = functionTypeBuilder0.inferParameterTypes(jSDocInfo0);
         FunctionType functionType0 = functionTypeBuilder1.buildAndRegister();
-        functionType0.hasCachedValues();
+        functionType0.isReturnTypeInferred();
     }
 
     @Test(timeout = 4000)
     public void test2429() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseSyntheticCode("2", "2");
+        FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("2", compiler0, node0, "2", (Scope) null);
+        JSDocInfo jSDocInfo0 = new JSDocInfo();
+        FunctionTypeBuilder functionTypeBuilder1 = functionTypeBuilder0.inferParameterTypes(jSDocInfo0);
+        FunctionType functionType0 = functionTypeBuilder1.buildAndRegister();
+        functionType0.hasCachedValues();
+    }
+
+    @Test(timeout = 4000)
+    public void test2430() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("2", "2");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("2", compiler0, node0, "2", (Scope) null);
@@ -368,7 +383,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2530() throws Throwable {
+    public void test2531() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("JSC_THIS_TYPE_NON_OBJECT", "JSC_THIS_TYPE_NON_OBJECT");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("JSC_THIS_TYPE_NON_OBJECT", compiler0, node0, "JSC_THIS_TYPE_NON_OBJECT", (Scope) null);
@@ -386,7 +401,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2631() throws Throwable {
+    public void test2632() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("JSC_THIS_TYPE_NON_OBJECT", "JSC_THIS_TYPE_NON_OBJECT");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("JSC_THIS_TYPE_NON_OBJECT", compiler0, node0, "JSC_THIS_TYPE_NON_OBJECT", (Scope) null);
@@ -404,7 +419,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2732() throws Throwable {
+    public void test2733() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("0");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("0", compiler0, node0, "0", (Scope) null);
@@ -412,7 +427,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2833() throws Throwable {
+    public void test2834() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("prefix must start with one of: ");
         TightenTypes tightenTypes0 = new TightenTypes(compiler0);
@@ -425,7 +440,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test2934() throws Throwable {
+    public void test2935() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("Cy9eq]");
         FunctionTypeBuilder functionTypeBuilder0 = new FunctionTypeBuilder("Cy9eq]", compiler0, node0, "Cy9eq]", (Scope) null);
@@ -433,7 +448,7 @@ public class FunctionTypeBuilder_ESTest extends FunctionTypeBuilder_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test3035() throws Throwable {
+    public void test3036() throws Throwable {
         JSDocInfo jSDocInfo0 = new JSDocInfo();
         boolean boolean0 = FunctionTypeBuilder.isFunctionTypeDeclaration(jSDocInfo0);
     }

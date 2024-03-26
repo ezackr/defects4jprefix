@@ -269,13 +269,6 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2930() throws Throwable {
-        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name(")5q;{Ww3MRJ", (GlobalNamespace.Name) null, true);
-        globalNamespace_Name0.addProperty(")5q;{Ww3MRJ", true);
-        GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty(")5q;{Ww3MRJ", false);
-    }
-
-    @Test(timeout = 4000)
     public void test3031() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name(".rototype.", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Name globalNamespace_Name1 = new GlobalNamespace.Name(".rototype.", globalNamespace_Name0, false);

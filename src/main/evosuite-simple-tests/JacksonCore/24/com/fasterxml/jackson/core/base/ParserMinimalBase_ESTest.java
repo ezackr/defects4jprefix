@@ -73,7 +73,18 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
+        StringReader stringReader0 = new StringReader("");
+        char[] charArray0 = new char[0];
+        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 1, stringReader0, (ObjectCodec) null, charsToNameCanonicalizer0, charArray0, 3399, (-2678), false);
+        readerBasedJsonParser0.getLastClearedToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("u3|2|");
@@ -92,7 +103,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         byte[] byteArray0 = iOContext0.allocReadIOBuffer();
@@ -111,7 +122,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("Broken surrogate pair: first char 0x");
@@ -130,7 +141,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -150,14 +161,23 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         byte[] byteArray0 = new byte[0];
         String string0 = ParserMinimalBase._ascii(byteArray0);
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test088() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
+        UTF8DataInputJsonParser uTF8DataInputJsonParser0 = new UTF8DataInputJsonParser(iOContext0, 3, (DataInput) null, objectCodec0, (ByteQuadsCanonicalizer) null, 2);
+        uTF8DataInputJsonParser0.getCurrentToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("+");
@@ -176,7 +196,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -188,7 +208,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("u3|2|");
@@ -199,7 +219,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         PipedInputStream pipedInputStream0 = new PipedInputStream();
@@ -211,7 +231,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("7");
@@ -223,7 +243,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("7");
@@ -235,7 +255,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -246,7 +266,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -257,7 +277,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         StringReader stringReader0 = new StringReader("7");
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -269,7 +289,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -281,7 +301,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -292,7 +312,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -304,7 +324,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2119() throws Throwable {
+    public void test2121() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -316,7 +336,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2220() throws Throwable {
+    public void test2222() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("Broken surrogate pair: first char 0x");
@@ -327,7 +347,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2321() throws Throwable {
+    public void test2323() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -338,7 +358,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2424() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         StringReader stringReader0 = new StringReader("7");
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -350,7 +370,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2525() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("u3|2|");
@@ -361,7 +381,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2624() throws Throwable {
+    public void test2626() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("7");
@@ -373,7 +393,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2725() throws Throwable {
+    public void test2727() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -386,7 +406,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2728() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -399,7 +419,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2829() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -410,7 +430,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2930() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         StringReader stringReader0 = new StringReader("7");
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -422,7 +442,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3031() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -433,7 +453,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3132() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Float float0 = new Float((float) 1);
         IOContext iOContext0 = new IOContext(bufferRecycler0, float0, false);
@@ -445,7 +465,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3233() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         StringReader stringReader0 = new StringReader("7");
         CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
@@ -457,7 +477,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3334() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("");
@@ -468,7 +488,7 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3435() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         StringReader stringReader0 = new StringReader("+`t!F");
@@ -487,13 +507,13 @@ public class ParserMinimalBase_ESTest extends ParserMinimalBase_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3536() throws Throwable {
         String string0 = ParserMinimalBase._getCharDesc(3684);
         assertEquals("'\u0E64' (code 3684 / 0xe64)", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3637() throws Throwable {
         byte[] byteArray0 = ParserMinimalBase._asciiBytes("q");
         assertArrayEquals(new byte[] { (byte) 113 }, byteArray0);
     }

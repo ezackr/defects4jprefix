@@ -818,16 +818,6 @@ public class PiePlot_ESTest extends PiePlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test00888() throws Throwable {
-        DefaultPieDataset defaultPieDataset0 = new DefaultPieDataset();
-        PiePlot piePlot0 = new PiePlot(defaultPieDataset0);
-        AffineTransform affineTransform0 = AffineTransform.getQuadrantRotateInstance(14);
-        FontRenderContext fontRenderContext0 = new FontRenderContext(affineTransform0, true, true);
-        Rectangle2D rectangle2D0 = piePlot0.DEFAULT_LABEL_FONT.getStringBounds("Null 'distributor' argument.", fontRenderContext0);
-        Rectangle2D.Double rectangle2D_Double0 = (Rectangle2D.Double) piePlot0.getArcBounds(rectangle2D0, rectangle2D0, 14, (-2.147483648E9), 1.0F);
-    }
-
-    @Test(timeout = 4000)
     public void test00889() throws Throwable {
         DefaultPieDataset defaultPieDataset0 = new DefaultPieDataset();
         PiePlot piePlot0 = new PiePlot(defaultPieDataset0);
@@ -4062,13 +4052,6 @@ public class PiePlot_ESTest extends PiePlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066479() throws Throwable {
-        DefaultKeyedValuesDataset defaultKeyedValuesDataset0 = new DefaultKeyedValuesDataset();
-        PiePlot piePlot0 = new PiePlot(defaultKeyedValuesDataset0);
-        Comparable comparable0 = piePlot0.getSectionKey((-1117));
-    }
-
-    @Test(timeout = 4000)
     public void test067480() throws Throwable {
         Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
         JDBCPieDataset jDBCPieDataset0 = new JDBCPieDataset(connection0);
@@ -4110,14 +4093,6 @@ public class PiePlot_ESTest extends PiePlot_ESTest_scaffolding {
         PiePlot3D piePlot3D0 = new PiePlot3D(jDBCPieDataset0);
         Comparable comparable0 = piePlot3D0.getSectionKey(100);
         piePlot3D0.getPieIndex();
-    }
-
-    @Test(timeout = 4000)
-    public void test067485() throws Throwable {
-        Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
-        JDBCPieDataset jDBCPieDataset0 = new JDBCPieDataset(connection0);
-        PiePlot3D piePlot3D0 = new PiePlot3D(jDBCPieDataset0);
-        Comparable comparable0 = piePlot3D0.getSectionKey(100);
     }
 
     @Test(timeout = 4000)
@@ -4194,12 +4169,6 @@ public class PiePlot_ESTest extends PiePlot_ESTest_scaffolding {
         PiePlot piePlot0 = new PiePlot();
         Comparable comparable0 = piePlot0.getSectionKey((-1455));
         piePlot0.getLabelLinkMargin();
-    }
-
-    @Test(timeout = 4000)
-    public void test068495() throws Throwable {
-        PiePlot piePlot0 = new PiePlot();
-        Comparable comparable0 = piePlot0.getSectionKey((-1455));
     }
 
     @Test(timeout = 4000)
@@ -4292,14 +4261,6 @@ public class PiePlot_ESTest extends PiePlot_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test069508() throws Throwable {
-        PiePlot3D piePlot3D0 = new PiePlot3D();
-        FixedMillisecond fixedMillisecond0 = new FixedMillisecond();
-        Paint paint0 = piePlot3D0.lookupSectionPaint(fixedMillisecond0, true);
-        Color color0 = (Color) piePlot3D0.lookupSectionPaint(fixedMillisecond0);
-    }
-
-    @Test(timeout = 4000)
-    public void test069509() throws Throwable {
         PiePlot3D piePlot3D0 = new PiePlot3D();
         FixedMillisecond fixedMillisecond0 = new FixedMillisecond();
         Paint paint0 = piePlot3D0.lookupSectionPaint(fixedMillisecond0, true);

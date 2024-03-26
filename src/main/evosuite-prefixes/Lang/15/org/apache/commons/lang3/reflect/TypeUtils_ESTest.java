@@ -232,15 +232,6 @@ public class TypeUtils_ESTest extends TypeUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2122() throws Throwable {
-        Type[] typeArray0 = new Type[8];
-        WildcardType wildcardType0 = mock(WildcardType.class, new ViolatedAssumptionAnswer());
-        doReturn(typeArray0).when(wildcardType0).getUpperBounds();
-        Type[] typeArray1 = TypeUtils.getImplicitUpperBounds(wildcardType0);
-        Type[] typeArray2 = TypeUtils.normalizeUpperBounds(typeArray1);
-    }
-
-    @Test(timeout = 4000)
     public void test2223() throws Throwable {
         Class<Object> class0 = Object.class;
         boolean boolean0 = TypeUtils.isInstance((Object) null, class0);
@@ -351,14 +342,19 @@ public class TypeUtils_ESTest extends TypeUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3537() throws Throwable {
+        TypeUtils typeUtils0 = new TypeUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test3638() throws Throwable {
         Class<Object> class0 = Object.class;
         Class<String> class1 = String.class;
         Map<TypeVariable<?>, Type> map0 = TypeUtils.getTypeArguments((Type) class0, (Class<?>) class1);
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3739() throws Throwable {
         TypeUtils.getTypeArguments((ParameterizedType) null);
     }
 }

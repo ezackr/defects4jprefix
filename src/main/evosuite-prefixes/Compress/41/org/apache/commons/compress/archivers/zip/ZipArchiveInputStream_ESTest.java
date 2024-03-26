@@ -89,26 +89,75 @@ public class ZipArchiveInputStream_ESTest extends ZipArchiveInputStream_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test088() throws Throwable {
+        ZipArchiveInputStream zipArchiveInputStream0 = new ZipArchiveInputStream((InputStream) null);
+        zipArchiveInputStream0.skip(1041L);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         ZipArchiveInputStream.matches((byte[]) null, 703);
     }
 
     @Test(timeout = 4000)
-    public void test139() throws Throwable {
+    public void test1010() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        ZipArchiveInputStream.matches(byteArray0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        ZipArchiveInputStream.matches(byteArray0, 2048);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        byte[] byteArray0 = new byte[4];
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+        ZipArchiveInputStream zipArchiveInputStream0 = new ZipArchiveInputStream(byteArrayInputStream0, "0");
+        zipArchiveInputStream0.getNextEntry();
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         ZipArchiveInputStream zipArchiveInputStream0 = new ZipArchiveInputStream((InputStream) null, (String) null, false);
         zipArchiveInputStream0.getNextZipEntry();
     }
 
     @Test(timeout = 4000)
-    public void test1410() throws Throwable {
+    public void test1414() throws Throwable {
         ZipArchiveInputStream zipArchiveInputStream0 = null;
         zipArchiveInputStream0 = new ZipArchiveInputStream((InputStream) null, "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream$1");
     }
 
     @Test(timeout = 4000)
-    public void test1511() throws Throwable {
+    public void test1515() throws Throwable {
         PipedInputStream pipedInputStream0 = new PipedInputStream(407);
         ZipArchiveInputStream zipArchiveInputStream0 = null;
         zipArchiveInputStream0 = new ZipArchiveInputStream(pipedInputStream0, "", false);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0, 0, (byte) 11);
+        ZipArchiveInputStream zipArchiveInputStream0 = new ZipArchiveInputStream(byteArrayInputStream0);
+        zipArchiveInputStream0.getNextZipEntry();
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        PipedInputStream pipedInputStream0 = new PipedInputStream(1576);
+        ZipArchiveInputStream zipArchiveInputStream0 = new ZipArchiveInputStream(pipedInputStream0, "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp");
+        PushbackInputStream pushbackInputStream0 = new PushbackInputStream(zipArchiveInputStream0, 1576);
+        ZipArchiveInputStream zipArchiveInputStream1 = new ZipArchiveInputStream(pushbackInputStream0, "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp", true, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        byteArray0[0] = (byte) 117;
+        ZipArchiveInputStream.matches(byteArray0, 1367);
     }
 }

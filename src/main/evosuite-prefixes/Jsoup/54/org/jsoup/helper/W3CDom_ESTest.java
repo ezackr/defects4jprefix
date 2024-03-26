@@ -34,7 +34,16 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test011() throws Throwable {
+        W3CDom w3CDom0 = new W3CDom();
+        Document document0 = Document.createShell("");
+        org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
+        W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder(document1);
+        w3CDom_W3CBuilder0.tail((Node) null, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = new Document("/");
         Document document1 = document0.normalise();
@@ -45,7 +54,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = new Document("xmlns:class");
         document0.appendElement("xmlns:class");
@@ -53,7 +62,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = new Document("org.jsoup.select.Evaluator$IndexEvaluator");
         w3CDom0.factory = null;
@@ -61,26 +70,26 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = new Document("");
         w3CDom0.fromJsoup(document0);
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         w3CDom0.fromJsoup((Document) null);
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         w3CDom0.convert((Document) null, (org.w3c.dom.Document) null);
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell("");
         Charset charset0 = Charset.defaultCharset();
@@ -89,7 +98,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell("");
         org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
@@ -97,7 +106,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell("WrW6");
         org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
@@ -108,7 +117,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell(":");
         org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
@@ -119,14 +128,14 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         DataNode dataNode0 = new DataNode(":jnin(gOw(", ":jnin(gOw(");
         W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder((org.w3c.dom.Document) null);
         w3CDom_W3CBuilder0.head(dataNode0, (-1792943173));
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         Comment comment0 = new Comment("k%", "k%");
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell("SFi6yO");
@@ -136,7 +145,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Document document0 = Document.createShell("U=Eo(Gz'NrC%:");
         W3CDom w3CDom0 = new W3CDom();
         document0.title("U=Eo(Gz'NrC%:");
@@ -144,7 +153,16 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1515() throws Throwable {
+        W3CDom w3CDom0 = new W3CDom();
+        Document document0 = Document.createShell(":");
+        org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
+        W3CDom.W3CBuilder w3CDom_W3CBuilder0 = new W3CDom.W3CBuilder(document1);
+        w3CDom_W3CBuilder0.head((Node) null, (-4947));
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell("");
         org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);
@@ -153,7 +171,7 @@ public class W3CDom_ESTest extends W3CDom_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         W3CDom w3CDom0 = new W3CDom();
         Document document0 = Document.createShell(":");
         org.w3c.dom.Document document1 = w3CDom0.fromJsoup(document0);

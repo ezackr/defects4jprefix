@@ -131,28 +131,34 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1115() throws Throwable {
+    public void test1015() throws Throwable {
+        Fraction fraction0 = Fraction.ONE_THIRD;
+        fraction0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test1116() throws Throwable {
         Fraction fraction0 = Fraction.THREE_QUARTERS;
         int int0 = fraction0.getNumerator();
         assertEquals(3, int0);
     }
 
     @Test(timeout = 4000)
-    public void test1216() throws Throwable {
+    public void test1217() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         float float0 = fraction0.floatValue();
         assertEquals(0.5F, float0, 0.01F);
     }
 
     @Test(timeout = 4000)
-    public void test1317() throws Throwable {
+    public void test1318() throws Throwable {
         Fraction fraction0 = Fraction.THREE_QUARTERS;
         double double0 = fraction0.percentageValue();
         assertEquals(75.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1418() throws Throwable {
+    public void test1419() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction((double) 4, 4);
@@ -166,7 +172,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1519() throws Throwable {
+    public void test1520() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction((double) Integer.MIN_VALUE);
@@ -180,7 +186,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1620() throws Throwable {
+    public void test1621() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction((double) 9, 9);
@@ -194,7 +200,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1721() throws Throwable {
+    public void test1722() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction(4.671341494509873E-4, 4.671341494509873E-4, (-87));
@@ -208,19 +214,19 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1822() throws Throwable {
+    public void test1823() throws Throwable {
         Fraction fraction0 = new Fraction((-1044.2346729));
         assertEquals(473, fraction0.getDenominator());
     }
 
     @Test(timeout = 4000)
-    public void test1923() throws Throwable {
+    public void test1924() throws Throwable {
         Fraction fraction0 = new Fraction(425.11148473894536, 2288);
         assertEquals(42511.14848630466, fraction0.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2024() throws Throwable {
+    public void test2025() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction(0, 0);
@@ -234,19 +240,19 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2125() throws Throwable {
+    public void test2126() throws Throwable {
         Fraction fraction0 = new Fraction((-2059), (-2059));
         assertEquals(1, fraction0.getNumerator());
     }
 
     @Test(timeout = 4000)
-    public void test2126() throws Throwable {
+    public void test2127() throws Throwable {
         Fraction fraction0 = new Fraction((-2059), (-2059));
         assertEquals(100.0, fraction0.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2227() throws Throwable {
+    public void test2228() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction(Integer.MIN_VALUE, Integer.MIN_VALUE);
@@ -260,7 +266,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2328() throws Throwable {
+    public void test2329() throws Throwable {
         Fraction fraction0 = null;
         try {
             fraction0 = new Fraction(2, Integer.MIN_VALUE);
@@ -274,39 +280,31 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2429() throws Throwable {
+    public void test2430() throws Throwable {
         Fraction fraction0 = Fraction.ONE_HALF;
         Fraction fraction1 = fraction0.MINUS_ONE.abs();
         assertEquals(1, fraction1.getDenominator());
     }
 
     @Test(timeout = 4000)
-    public void test2430() throws Throwable {
+    public void test2431() throws Throwable {
         Fraction fraction0 = Fraction.ONE_HALF;
         Fraction fraction1 = fraction0.MINUS_ONE.abs();
         assertEquals((short) 1, fraction1.shortValue());
     }
 
     @Test(timeout = 4000)
-    public void test2531() throws Throwable {
+    public void test2532() throws Throwable {
         Fraction fraction0 = Fraction.ONE_FIFTH;
         Fraction fraction1 = fraction0.abs();
         assertEquals(0.2, fraction1.doubleValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2632() throws Throwable {
+    public void test2633() throws Throwable {
         Fraction fraction0 = Fraction.ONE;
         int int0 = fraction0.compareTo(fraction0);
         assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2733() throws Throwable {
-        Fraction fraction0 = Fraction.TWO_THIRDS;
-        Fraction fraction1 = fraction0.MINUS_ONE.add(2);
-        int int0 = fraction0.compareTo(fraction1);
-        assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
@@ -314,15 +312,15 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
         Fraction fraction0 = Fraction.TWO_THIRDS;
         Fraction fraction1 = fraction0.MINUS_ONE.add(2);
         int int0 = fraction0.compareTo(fraction1);
-        assertEquals(1.0F, fraction1.floatValue(), 0.01F);
+        assertEquals((-1), int0);
     }
 
     @Test(timeout = 4000)
-    public void test2835() throws Throwable {
+    public void test2735() throws Throwable {
         Fraction fraction0 = Fraction.TWO_THIRDS;
-        Fraction fraction1 = fraction0.MINUS_ONE.add((-2682));
+        Fraction fraction1 = fraction0.MINUS_ONE.add(2);
         int int0 = fraction0.compareTo(fraction1);
-        assertEquals(1, int0);
+        assertEquals(1.0F, fraction1.floatValue(), 0.01F);
     }
 
     @Test(timeout = 4000)
@@ -330,15 +328,15 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
         Fraction fraction0 = Fraction.TWO_THIRDS;
         Fraction fraction1 = fraction0.MINUS_ONE.add((-2682));
         int int0 = fraction0.compareTo(fraction1);
-        assertEquals((short) (-2683), fraction1.shortValue());
+        assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test2937() throws Throwable {
-        Fraction fraction0 = Fraction.ONE_THIRD;
-        Fraction fraction1 = Fraction.ONE_HALF;
-        boolean boolean0 = fraction1.equals(fraction0);
-        assertFalse(fraction0.equals((Object) fraction1));
+    public void test2837() throws Throwable {
+        Fraction fraction0 = Fraction.TWO_THIRDS;
+        Fraction fraction1 = fraction0.MINUS_ONE.add((-2682));
+        int int0 = fraction0.compareTo(fraction1);
+        assertEquals((short) (-2683), fraction1.shortValue());
     }
 
     @Test(timeout = 4000)
@@ -346,29 +344,29 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
         Fraction fraction0 = Fraction.ONE_THIRD;
         Fraction fraction1 = Fraction.ONE_HALF;
         boolean boolean0 = fraction1.equals(fraction0);
+        assertFalse(fraction0.equals((Object) fraction1));
+    }
+
+    @Test(timeout = 4000)
+    public void test2939() throws Throwable {
+        Fraction fraction0 = Fraction.ONE_THIRD;
+        Fraction fraction1 = Fraction.ONE_HALF;
+        boolean boolean0 = fraction1.equals(fraction0);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3039() throws Throwable {
+    public void test3040() throws Throwable {
         Fraction fraction0 = Fraction.ONE_THIRD;
         boolean boolean0 = fraction0.equals(fraction0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3140() throws Throwable {
+    public void test3141() throws Throwable {
         Fraction fraction0 = Fraction.ONE_THIRD;
         Object object0 = new Object();
         boolean boolean0 = fraction0.equals(object0);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3241() throws Throwable {
-        Fraction fraction0 = Fraction.ONE_THIRD;
-        Fraction fraction1 = Fraction.TWO_THIRDS;
-        boolean boolean0 = fraction1.equals(fraction0);
         assertFalse(boolean0);
     }
 
@@ -377,11 +375,19 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
         Fraction fraction0 = Fraction.ONE_THIRD;
         Fraction fraction1 = Fraction.TWO_THIRDS;
         boolean boolean0 = fraction1.equals(fraction0);
+        assertFalse(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3243() throws Throwable {
+        Fraction fraction0 = Fraction.ONE_THIRD;
+        Fraction fraction1 = Fraction.TWO_THIRDS;
+        boolean boolean0 = fraction1.equals(fraction0);
         assertFalse(fraction0.equals((Object) fraction1));
     }
 
     @Test(timeout = 4000)
-    public void test3343() throws Throwable {
+    public void test3344() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         Fraction fraction1 = Fraction.ONE_HALF;
         boolean boolean0 = fraction1.equals(fraction0);
@@ -389,7 +395,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3444() throws Throwable {
+    public void test3445() throws Throwable {
         Fraction fraction0 = Fraction.ONE;
         // Undeclared exception!
         try {
@@ -404,28 +410,28 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3545() throws Throwable {
+    public void test3546() throws Throwable {
         Fraction fraction0 = Fraction.ONE_QUARTER;
         Fraction fraction1 = fraction0.ZERO.subtract(fraction0);
         assertEquals((-25.0), fraction1.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3546() throws Throwable {
+    public void test3547() throws Throwable {
         Fraction fraction0 = Fraction.ONE_QUARTER;
         Fraction fraction1 = fraction0.ZERO.subtract(fraction0);
         assertEquals((-1), fraction1.getNumerator());
     }
 
     @Test(timeout = 4000)
-    public void test3647() throws Throwable {
+    public void test3648() throws Throwable {
         Fraction fraction0 = Fraction.ONE_HALF;
         Fraction fraction1 = fraction0.ZERO.add(fraction0);
         assertSame(fraction1, fraction0);
     }
 
     @Test(timeout = 4000)
-    public void test3748() throws Throwable {
+    public void test3749() throws Throwable {
         Fraction fraction0 = Fraction.ONE_THIRD;
         Fraction fraction1 = Fraction.ZERO;
         Fraction fraction2 = fraction0.TWO_FIFTHS.add(fraction1);
@@ -433,35 +439,35 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3849() throws Throwable {
+    public void test3850() throws Throwable {
         Fraction fraction0 = Fraction.ONE_THIRD;
         Fraction fraction1 = fraction0.TWO_FIFTHS.add(fraction0);
         assertEquals(11, fraction1.getNumerator());
     }
 
     @Test(timeout = 4000)
-    public void test3850() throws Throwable {
+    public void test3851() throws Throwable {
         Fraction fraction0 = Fraction.ONE_THIRD;
         Fraction fraction1 = fraction0.TWO_FIFTHS.add(fraction0);
         assertEquals(73.33333333333333, fraction1.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3951() throws Throwable {
+    public void test3952() throws Throwable {
         Fraction fraction0 = Fraction.TWO_THIRDS;
         Fraction fraction1 = fraction0.subtract(fraction0);
         assertEquals(0.0, fraction1.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3952() throws Throwable {
+    public void test3953() throws Throwable {
         Fraction fraction0 = Fraction.TWO_THIRDS;
         Fraction fraction1 = fraction0.subtract(fraction0);
         assertEquals(1, fraction1.getDenominator());
     }
 
     @Test(timeout = 4000)
-    public void test4053() throws Throwable {
+    public void test4054() throws Throwable {
         Fraction fraction0 = Fraction.ONE_FIFTH;
         Fraction fraction1 = Fraction.getReducedFraction(Integer.MAX_VALUE, 2880);
         // Undeclared exception!
@@ -477,28 +483,28 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4154() throws Throwable {
+    public void test4155() throws Throwable {
         Fraction fraction0 = new Fraction(11, 11);
         Fraction fraction1 = fraction0.ZERO.divide(fraction0);
         assertEquals(0, fraction1.getNumerator());
     }
 
     @Test(timeout = 4000)
-    public void test4155() throws Throwable {
+    public void test4156() throws Throwable {
         Fraction fraction0 = new Fraction(11, 11);
         Fraction fraction1 = fraction0.ZERO.divide(fraction0);
         assertEquals(1, fraction0.getDenominator());
     }
 
     @Test(timeout = 4000)
-    public void test4156() throws Throwable {
+    public void test4157() throws Throwable {
         Fraction fraction0 = new Fraction(11, 11);
         Fraction fraction1 = fraction0.ZERO.divide(fraction0);
         assertEquals(100.0, fraction0.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test4257() throws Throwable {
+    public void test4258() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         // Undeclared exception!
         try {
@@ -513,21 +519,21 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4358() throws Throwable {
+    public void test4359() throws Throwable {
         Fraction fraction0 = Fraction.TWO_QUARTERS;
         Fraction fraction1 = fraction0.FOUR_FIFTHS.multiply(fraction0);
         assertEquals(0.4, fraction1.doubleValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test4459() throws Throwable {
+    public void test4460() throws Throwable {
         Fraction fraction0 = Fraction.ZERO;
         Fraction fraction1 = fraction0.FOUR_FIFTHS.multiply(fraction0);
         assertEquals(0, fraction1.getNumerator());
     }
 
     @Test(timeout = 4000)
-    public void test4560() throws Throwable {
+    public void test4561() throws Throwable {
         Fraction fraction0 = Fraction.ONE_QUARTER;
         // Undeclared exception!
         try {
@@ -542,7 +548,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4661() throws Throwable {
+    public void test4662() throws Throwable {
         Fraction fraction0 = Fraction.ZERO;
         // Undeclared exception!
         try {
@@ -557,7 +563,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4762() throws Throwable {
+    public void test4763() throws Throwable {
         // Undeclared exception!
         try {
             Fraction.getReducedFraction(0, 0);
@@ -571,19 +577,19 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4863() throws Throwable {
+    public void test4864() throws Throwable {
         Fraction fraction0 = Fraction.getReducedFraction(0, (-14612));
         assertEquals(0.0, fraction0.doubleValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test4964() throws Throwable {
+    public void test4965() throws Throwable {
         Fraction fraction0 = Fraction.getReducedFraction(Integer.MIN_VALUE, Integer.MIN_VALUE);
         assertEquals(100.0, fraction0.percentageValue(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test5065() throws Throwable {
+    public void test5066() throws Throwable {
         // Undeclared exception!
         try {
             Fraction.getReducedFraction(4507, Integer.MIN_VALUE);
@@ -597,7 +603,7 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5166() throws Throwable {
+    public void test5167() throws Throwable {
         // Undeclared exception!
         try {
             Fraction.getReducedFraction(Integer.MIN_VALUE, (-2212));
@@ -611,14 +617,14 @@ public class Fraction_ESTest extends Fraction_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5267() throws Throwable {
+    public void test5268() throws Throwable {
         Fraction fraction0 = Fraction.ONE_FIFTH;
         String string0 = fraction0.toString();
         assertEquals("1 / 5", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5368() throws Throwable {
+    public void test5369() throws Throwable {
         Fraction fraction0 = Fraction.MINUS_ONE;
         String string0 = fraction0.toString();
         assertEquals("-1", string0);

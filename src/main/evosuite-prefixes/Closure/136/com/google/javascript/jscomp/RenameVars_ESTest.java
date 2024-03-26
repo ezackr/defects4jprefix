@@ -87,7 +87,14 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test033() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        char[] charArray0 = new char[13];
+        RenameVars renameVars0 = new RenameVars(compiler0, "0tI", false, false, false, (VariableMap) null, charArray0, (Set<String>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = compiler0.getOptions();
         char[] charArray0 = new char[30];
@@ -99,7 +106,7 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = new CompilerOptions();
         char[] charArray0 = new char[3];
@@ -112,7 +119,7 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = compiler0.options_;
         char[] charArray0 = new char[6];
@@ -124,7 +131,7 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = compiler0.getOptions();
         char[] charArray0 = new char[11];
@@ -144,7 +151,7 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Compiler compiler0 = new Compiler();
         char[] charArray0 = new char[1];
         CompilerOptions compilerOptions0 = compiler0.getOptions();
@@ -158,7 +165,7 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Compiler compiler0 = new Compiler();
         CompilerOptions compilerOptions0 = compiler0.createDefaultOptions();
         char[] charArray0 = new char[4];
@@ -175,7 +182,7 @@ public class RenameVars_ESTest extends RenameVars_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         NameAnonymousFunctionsMapped nameAnonymousFunctionsMapped0 = new NameAnonymousFunctionsMapped((AbstractCompiler) null);
         VariableMap variableMap0 = nameAnonymousFunctionsMapped0.getFunctionMap();
         char[] charArray0 = new char[5];

@@ -357,7 +357,16 @@ public class FastDateParser_ESTest extends FastDateParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3739() throws Throwable {
+        ZoneOffset zoneOffset0 = ZoneOffset.ofTotalSeconds(3359);
+        TimeZone timeZone0 = TimeZone.getTimeZone((ZoneId) zoneOffset0);
+        Locale locale0 = Locale.KOREA;
+        FastDateParser fastDateParser0 = new FastDateParser(":EW{h5z :fAa", timeZone0, locale0);
+        fastDateParser0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test3840() throws Throwable {
         ZoneId zoneId0 = ZoneId.systemDefault();
         TimeZone timeZone0 = TimeZone.getTimeZone(zoneId0);
         Locale locale0 = Locale.ROOT;
@@ -366,7 +375,7 @@ public class FastDateParser_ESTest extends FastDateParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3941() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = new Locale("36", "y>0m-0L0K)", "3sUSw_PJd2]a#wEY\f");
         FastDateParser fastDateParser0 = new FastDateParser("FZ=5?Et#%bJ]<D/", timeZone0, locale0);
@@ -374,7 +383,7 @@ public class FastDateParser_ESTest extends FastDateParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4042() throws Throwable {
         TimeZone timeZone0 = TimeZone.getDefault();
         Locale locale0 = Locale.ITALIAN;
         FastDateParser fastDateParser0 = new FastDateParser("k/Zp#v;7", timeZone0, locale0);

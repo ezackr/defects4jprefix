@@ -777,12 +777,6 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test75105() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
-        characterReader0.toString();
-    }
-
-    @Test(timeout = 4000)
     public void test75106() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("org.jsoup.parser.CharacterReader");
         characterReader0.consumeToEnd();

@@ -212,7 +212,17 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1415() throws Throwable {
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
+        Node node0 = iIOMetadataNode0.insertBefore(iIOMetadataNode0, iIOMetadataNode0);
+        Locale locale0 = Locale.PRC;
+        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(node0, locale0);
+        // Undeclared exception!
+        dOMNodePointer0.getValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test1516() throws Throwable {
         Locale locale0 = Locale.FRANCE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, (String) null);
         // Undeclared exception!
@@ -228,7 +238,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1617() throws Throwable {
         // Undeclared exception!
         try {
             DOMNodePointer.getPrefix((Node) null);
@@ -242,7 +252,15 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1718() throws Throwable {
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("org.apache.commons.jxpath.util.TypeUtils$1");
+        iIOMetadataNode0.insertBefore(iIOMetadataNode0, iIOMetadataNode0);
+        // Undeclared exception!
+        DOMNodePointer.getNamespaceURI((Node) iIOMetadataNode0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1819() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         // Undeclared exception!
         try {
@@ -257,7 +275,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1920() throws Throwable {
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, (Locale) null, "SR2xw+9Lr#}&r&(e^^");
         // Undeclared exception!
         try {
@@ -271,7 +289,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2021() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, "");
         // Undeclared exception!
@@ -287,7 +305,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2122() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("org.apache.commons.jxpath.ri.model.dom.DOMNodePointer");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -305,7 +323,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2223() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((NodePointer) null, iIOMetadataNode0);
         // Undeclared exception!
@@ -321,7 +339,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2324() throws Throwable {
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0);
         JXPathContext jXPathContext0 = JXPathContext.newContext((Object) null);
@@ -339,7 +357,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2425() throws Throwable {
         Locale locale0 = Locale.US;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, "[");
         QName qName0 = new QName("<<unknown namespace>>");
@@ -357,7 +375,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2526() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("org.apache.commons.jxpath.ri.model.dom.DOMNodePointer");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -377,7 +395,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2627() throws Throwable {
         QName qName0 = new QName("");
         VariablePointer variablePointer0 = new VariablePointer(qName0);
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(variablePointer0, (Node) null);
@@ -394,7 +412,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2728() throws Throwable {
         BasicVariables basicVariables0 = new BasicVariables();
         QName qName0 = new QName("`");
         VariablePointer variablePointer0 = new VariablePointer(basicVariables0, qName0);
@@ -413,7 +431,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2829() throws Throwable {
         Locale locale0 = Locale.CHINESE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, "4");
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("4");
@@ -432,7 +450,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2930() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("xml:space");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -449,7 +467,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3031() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.KOREAN;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -467,7 +485,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3132() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -476,14 +494,14 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3233() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         String string0 = DOMNodePointer.getLocalName(iIOMetadataNode0);
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3334() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         // Undeclared exception!
         try {
@@ -498,28 +516,28 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3435() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("xml:space");
         String string0 = DOMNodePointer.getPrefix(iIOMetadataNode0);
         assertEquals("xml", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3436() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("xml:space");
         String string0 = DOMNodePointer.getPrefix(iIOMetadataNode0);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3537() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("02z<");
         String string0 = DOMNodePointer.getPrefix(iIOMetadataNode0);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3638() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         IIOMetadataNode iIOMetadataNode1 = new IIOMetadataNode("79t<8=6$\"(>T");
         Node node0 = iIOMetadataNode1.cloneNode(false);
@@ -533,7 +551,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3639() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         IIOMetadataNode iIOMetadataNode1 = new IIOMetadataNode("79t<8=6$\"(>T");
         Node node0 = iIOMetadataNode1.cloneNode(false);
@@ -547,7 +565,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3740() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((NodePointer) null, iIOMetadataNode0);
         String string0 = dOMNodePointer0.asPath();
@@ -555,7 +573,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3841() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -564,7 +582,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3942() throws Throwable {
         Locale locale0 = new Locale("org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory");
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, "org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory");
         JXPathContext jXPathContext0 = JXPathContext.newContext((Object) null);
@@ -581,7 +599,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4043() throws Throwable {
         Locale locale0 = Locale.KOREAN;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, "");
         dOMNodePointer0.getDefaultNamespaceURI();
@@ -590,7 +608,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4144() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.PRC;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -599,7 +617,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4143() throws Throwable {
+    public void test4145() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.PRC;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -608,7 +626,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4244() throws Throwable {
+    public void test4246() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "Lwlq8hR*hLL`$^%");
@@ -617,7 +635,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4345() throws Throwable {
+    public void test4347() throws Throwable {
         Locale locale0 = new Locale("java.util.concurrent.atomic.AtomicBoolean", "{*", "{*");
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0, ".0");
         String string0 = dOMNodePointer0.getNamespaceURI("");
@@ -625,7 +643,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4446() throws Throwable {
+    public void test4448() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("http://www.w3.org/XML/1998/namespace");
         boolean boolean0 = DOMNodePointer.testNode((Node) iIOMetadataNode0, (NodeTest) processingInstructionTest0);
@@ -633,7 +651,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4547() throws Throwable {
+    public void test4549() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -644,7 +662,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4548() throws Throwable {
+    public void test4550() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -655,7 +673,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4649() throws Throwable {
+    public void test4651() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -666,7 +684,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4650() throws Throwable {
+    public void test4652() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -677,7 +695,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4751() throws Throwable {
+    public void test4753() throws Throwable {
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0);
         Object object0 = dOMNodePointer0.getImmediateNode();
@@ -685,7 +703,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4852() throws Throwable {
+    public void test4854() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.GERMANY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -694,7 +712,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4953() throws Throwable {
+    public void test4955() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.GERMANY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -703,7 +721,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5054() throws Throwable {
+    public void test5056() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((NodePointer) null, iIOMetadataNode0);
         // Undeclared exception!
@@ -719,7 +737,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5155() throws Throwable {
+    public void test5157() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         iIOMetadataNode0.setAttribute("", (String) null);
         Locale locale0 = Locale.ITALY;
@@ -729,7 +747,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5256() throws Throwable {
+    public void test5258() throws Throwable {
         Locale locale0 = Locale.US;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0);
         BasicVariables basicVariables0 = new BasicVariables();
@@ -741,7 +759,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5357() throws Throwable {
+    public void test5359() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.GERMANY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -750,7 +768,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5458() throws Throwable {
+    public void test5460() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("79t<8=6$\"(>T");
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -771,7 +789,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5559() throws Throwable {
+    public void test5561() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("\"descendant:");
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, (Locale) null);
         // Undeclared exception!
@@ -787,7 +805,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5660() throws Throwable {
+    public void test5662() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Node node0 = iIOMetadataNode0.insertBefore(iIOMetadataNode0, iIOMetadataNode0);
         Locale locale0 = Locale.ENGLISH;
@@ -797,7 +815,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5761() throws Throwable {
+    public void test5763() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         iIOMetadataNode0.setAttribute("", (String) null);
         Locale locale0 = Locale.ITALY;
@@ -810,7 +828,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5762() throws Throwable {
+    public void test5764() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         iIOMetadataNode0.setAttribute("", (String) null);
         Locale locale0 = Locale.ITALY;
@@ -823,7 +841,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5863() throws Throwable {
+    public void test5865() throws Throwable {
         Locale locale0 = Locale.CHINESE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0);
         JXPathContext jXPathContext0 = JXPathContext.newContext((Object) null);
@@ -841,7 +859,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5964() throws Throwable {
+    public void test5966() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.SIMPLIFIED_CHINESE;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "org.apache.commons.jxpath.ri.compiler.NodeTypeTest@0000000003");
@@ -850,7 +868,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6065() throws Throwable {
+    public void test6067() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.ITALIAN;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -862,7 +880,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6166() throws Throwable {
+    public void test6168() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "");
@@ -880,7 +898,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6267() throws Throwable {
+    public void test6269() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "");
@@ -889,7 +907,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6368() throws Throwable {
+    public void test6370() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         iIOMetadataNode0.setAttribute("", (String) null);
         String string0 = DOMNodePointer.findEnclosingAttribute(iIOMetadataNode0, "");
@@ -897,7 +915,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6469() throws Throwable {
+    public void test6471() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -906,7 +924,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6570() throws Throwable {
+    public void test6572() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("\"descendant:");
         iIOMetadataNode0.insertBefore(iIOMetadataNode0, iIOMetadataNode0);
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, (Locale) null);
@@ -915,7 +933,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6671() throws Throwable {
+    public void test6673() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "");
@@ -925,7 +943,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6772() throws Throwable {
+    public void test6774() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         Locale locale0 = Locale.GERMAN;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0);
@@ -946,7 +964,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6873() throws Throwable {
+    public void test6875() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("xml:space");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "xml:space");
@@ -966,7 +984,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6974() throws Throwable {
+    public void test6976() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "");
@@ -977,7 +995,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7075() throws Throwable {
+    public void test7077() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("org.apache.commons.jxpath.ri.model.dom.DOMNodePointer");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -987,7 +1005,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7176() throws Throwable {
+    public void test7178() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(0);
         boolean boolean0 = DOMNodePointer.testNode((Node) iIOMetadataNode0, (NodeTest) nodeTypeTest0);
@@ -995,7 +1013,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7277() throws Throwable {
+    public void test7279() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         NodeTypeTest nodeTypeTest0 = new NodeTypeTest(3);
         boolean boolean0 = DOMNodePointer.testNode((Node) iIOMetadataNode0, (NodeTest) nodeTypeTest0);
@@ -1003,7 +1021,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7378() throws Throwable {
+    public void test7380() throws Throwable {
         QName qName0 = new QName(" o|=cMEo\n`&rLa/ae", " of ");
         NodeNameTest nodeNameTest0 = new NodeNameTest(qName0, " o|=cMEo\n`&rLa/ae");
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("**&lLY&Mh");
@@ -1012,7 +1030,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7479() throws Throwable {
+    public void test7481() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ITALY;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "");
@@ -1022,14 +1040,14 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7580() throws Throwable {
+    public void test7582() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         boolean boolean0 = DOMNodePointer.testNode((Node) iIOMetadataNode0, (NodeTest) null);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test7681() throws Throwable {
+    public void test7683() throws Throwable {
         Locale locale0 = Locale.JAPAN;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((Node) null, locale0);
         ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest("VcO&&zth");
@@ -1038,7 +1056,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7782() throws Throwable {
+    public void test7784() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode();
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer((NodePointer) null, iIOMetadataNode0);
         boolean boolean0 = dOMNodePointer0.isActual();
@@ -1046,7 +1064,15 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7983() throws Throwable {
+    public void test7885() throws Throwable {
+        IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
+        Locale locale0 = Locale.ITALY;
+        DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "");
+        dOMNodePointer0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test7986() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "Lwlq8hR*hLL`$^%");
@@ -1055,7 +1081,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8084() throws Throwable {
+    public void test8087() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -1064,7 +1090,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8185() throws Throwable {
+    public void test8188() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("org.apache.commons.jxpath.ri.model.dom.DOMNodePointer");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -1073,7 +1099,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8286() throws Throwable {
+    public void test8289() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -1084,7 +1110,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8287() throws Throwable {
+    public void test8290() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("[");
         Locale locale0 = Locale.KOREA;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "]");
@@ -1095,7 +1121,7 @@ public class DOMNodePointer_ESTest extends DOMNodePointer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8388() throws Throwable {
+    public void test8391() throws Throwable {
         IIOMetadataNode iIOMetadataNode0 = new IIOMetadataNode("");
         Locale locale0 = Locale.ENGLISH;
         DOMNodePointer dOMNodePointer0 = new DOMNodePointer(iIOMetadataNode0, locale0, "Lwlq8hR*hLL`$^%");

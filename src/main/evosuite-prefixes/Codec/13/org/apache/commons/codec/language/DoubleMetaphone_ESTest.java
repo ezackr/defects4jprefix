@@ -43,12 +43,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0014() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.encode("GNGNEY");
-    }
-
-    @Test(timeout = 4000)
     public void test0025() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("SCHc:%\"-IGe");
@@ -63,12 +57,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0037() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.doubleMetaphone("GlIrQ9BhA4\"9'0C8-Q");
-    }
-
-    @Test(timeout = 4000)
-    public void test0038() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.doubleMetaphone("GlIrQ9BhA4\"9'0C8-Q");
     }
@@ -95,12 +83,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test00712() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.encode("DSGNIgER");
-    }
-
-    @Test(timeout = 4000)
-    public void test00713() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("DSGNIgER");
     }
@@ -137,12 +119,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01119() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.doubleMetaphone("GEti./E U}ws'L");
-    }
-
-    @Test(timeout = 4000)
     public void test01220() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.doubleMetaphone("WRBV&EGH");
@@ -157,12 +133,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test01322() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.encode("`/[#l dFf1EL#K>");
-    }
-
-    @Test(timeout = 4000)
-    public void test01323() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("`/[#l dFf1EL#K>");
     }
@@ -199,12 +169,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test01929() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        Object object0 = doubleMetaphone0.encode((Object) "gX>dl_");
-    }
-
-    @Test(timeout = 4000)
-    public void test01930() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         Object object0 = doubleMetaphone0.encode((Object) "gX>dl_");
     }
@@ -279,12 +243,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02842() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.encode("UCCHU{D");
-    }
-
-    @Test(timeout = 4000)
     public void test02943() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("CQ");
@@ -295,12 +253,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("CQ");
         doubleMetaphone0.getMaxCodeLen();
-    }
-
-    @Test(timeout = 4000)
-    public void test02945() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.encode("CQ");
     }
 
     @Test(timeout = 4000)
@@ -375,12 +327,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03657() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.encode("7CHAE");
-    }
-
-    @Test(timeout = 4000)
     public void test03658() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("7CHAE");
@@ -396,12 +342,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test03760() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.doubleMetaphone("CHOR");
-    }
-
-    @Test(timeout = 4000)
-    public void test03761() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.doubleMetaphone("CHOR");
     }
@@ -470,12 +410,6 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04672() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.doubleMetaphone("GYJB!A>9JC");
-    }
-
-    @Test(timeout = 4000)
     public void test04773() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.encode("GiE'bL]Yv|I<*y(|K");
@@ -514,19 +448,7 @@ public class DoubleMetaphone_ESTest extends DoubleMetaphone_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05079() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.doubleMetaphone("K_ GY");
-    }
-
-    @Test(timeout = 4000)
     public void test05180() throws Throwable {
-        DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
-        String string0 = doubleMetaphone0.doubleMetaphone("OGGI");
-    }
-
-    @Test(timeout = 4000)
-    public void test05181() throws Throwable {
         DoubleMetaphone doubleMetaphone0 = new DoubleMetaphone();
         String string0 = doubleMetaphone0.doubleMetaphone("OGGI");
     }

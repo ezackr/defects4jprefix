@@ -52,7 +52,15 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
+        xmlTreeBuilder0.parse("", "");
+        Token.CData token_CData0 = new Token.CData("");
+        xmlTreeBuilder0.insert(token_CData0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         StringReader stringReader0 = new StringReader("header");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(56);
@@ -62,7 +70,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("org.jsoup.parser.XmlTreeBuilder$1", "org.jsoup.parser.XmlTreeBuilder$1");
         Tokeniser tokeniser0 = xmlTreeBuilder0.tokeniser;
@@ -71,7 +79,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("o<g.jsoup.parser.XmlTreeBuilder$1", "o<g.jsoup.parser.XmlTreeBuilder$1");
         Token.Doctype token_Doctype0 = new Token.Doctype();
@@ -79,7 +87,16 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test066() throws Throwable {
+        XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
+        xmlTreeBuilder0.parse("org.jsoup.parser.XmlTreeBuilder$1", "org.jsoup.parser.XmlTreeBuilder$1");
+        Tokeniser tokeniser0 = xmlTreeBuilder0.tokeniser;
+        Token.Comment token_Comment0 = tokeniser0.commentPending;
+        xmlTreeBuilder0.insert(token_Comment0);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         StringReader stringReader0 = new StringReader("");
         Document document0 = xmlTreeBuilder0.parse(stringReader0, "");
@@ -87,7 +104,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086() throws Throwable {
+    public void test088() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         StringReader stringReader0 = new StringReader("uD,vU#Vq9&Cl(W(s4[");
         Document document0 = xmlTreeBuilder0.parse(stringReader0, "uD,vU#Vq9&Cl(W(s4[");
@@ -95,14 +112,14 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test099() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         xmlTreeBuilder0.process(token_StartTag0);
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         ParseErrorList parseErrorList0 = xmlTreeBuilder0.errors;
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -110,19 +127,19 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse((String) null, "tbody");
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("", (String) null);
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         StringReader stringReader0 = new StringReader("uD,vU#Vq9&Cl(W(s4[");
         stringReader0.close();
@@ -130,7 +147,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         CDataNode cDataNode0 = new CDataNode("i#IWVpcB''hy7");
@@ -140,27 +157,27 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         xmlTreeBuilder0.insert(token_StartTag0);
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.insert((Token.Doctype) null);
     }
 
     @Test(timeout = 4000)
-    public void test1715() throws Throwable {
+    public void test1717() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.CData token_CData0 = new Token.CData("");
         xmlTreeBuilder0.insert(token_CData0);
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1818() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         PipedReader pipedReader0 = new PipedReader();
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(0);
@@ -168,7 +185,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("org.jsoup.parser.XmlTreeBuilder$1", "org.jsoup.parser.XmlTreeBuilder$1");
         xmlTreeBuilder0.processStartTag("org.jsoup.parser.XmlTreeBuilder$1");
@@ -179,7 +196,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1920() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("org.jsoup.parser.XmlTreeBuilder$1", "org.jsoup.parser.XmlTreeBuilder$1");
         xmlTreeBuilder0.processStartTag("org.jsoup.parser.XmlTreeBuilder$1");
@@ -190,21 +207,21 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2021() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parseFragment("wGr+4Cn,Y", "wGr+4Cn,Y", (ParseErrorList) null, (ParseSettings) null);
         boolean boolean0 = xmlTreeBuilder0.processEndTag("wGr+4Cn,Y");
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2122() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.CData token_CData0 = new Token.CData("");
         xmlTreeBuilder0.process(token_CData0);
     }
 
     @Test(timeout = 4000)
-    public void test2221() throws Throwable {
+    public void test2223() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.Comment token_Comment0 = new Token.Comment();
         token_Comment0.bogus = true;
@@ -212,7 +229,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2322() throws Throwable {
+    public void test2324() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         xmlTreeBuilder0.parse("VG[P1*NJN", "VG[P1*NJN");
         Token.StartTag token_StartTag0 = new Token.StartTag();
@@ -224,7 +241,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2423() throws Throwable {
+    public void test2425() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         Token.Comment token_Comment0 = new Token.Comment();
         Token.TokenType token_TokenType0 = Token.TokenType.StartTag;
@@ -233,7 +250,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2526() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         PipedWriter pipedWriter0 = new PipedWriter();
         PipedReader pipedReader0 = new PipedReader(pipedWriter0, 1);
@@ -241,7 +258,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2627() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         ParseErrorList parseErrorList0 = ParseErrorList.tracking((-1097));
         List<Node> list0 = xmlTreeBuilder0.parseFragment("", "", parseErrorList0, (ParseSettings) null);
@@ -249,7 +266,7 @@ public class XmlTreeBuilder_ESTest extends XmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2728() throws Throwable {
         XmlTreeBuilder xmlTreeBuilder0 = new XmlTreeBuilder();
         ParseSettings parseSettings0 = xmlTreeBuilder0.defaultSettings();
         xmlTreeBuilder0.parseFragment("uc]U&&@?mjUgx_,e;", (String) null, (ParseErrorList) null, parseSettings0);

@@ -96,31 +96,49 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test066() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addList((Node) null, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        Charset charset0 = Charset.forName("default");
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        Charset charset0 = Charset.defaultCharset();
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null, charset0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("4");
         assertEquals(4.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber(")");
         assertEquals(Double.NaN, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("0|GI<!--s|");
         assertEquals(Double.NaN, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         double double0 = CodeGenerator.getSimpleNumber("");
         assertEquals(Double.NaN, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         Node node0 = Node.newString("<!--8Yt2z5W^h");
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         // Undeclared exception!
@@ -136,7 +154,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1414() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = Node.newNumber(2237.52844996644);
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.IN_FOR_INIT_CLAUSE;
@@ -153,7 +171,7 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         Node node0 = Node.newNumber(1842.2608345);
         CodeGenerator.Context codeGenerator_Context0 = CodeGenerator.Context.PRESERVE_BLOCK;
@@ -170,7 +188,13 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1713() throws Throwable {
+    public void test1616() throws Throwable {
+        CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
+        codeGenerator0.addAllSiblings((Node) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         Node node0 = Node.newString("<!--?OkJL_");
         CodeGenerator codeGenerator0 = new CodeGenerator((CodeConsumer) null);
         // Undeclared exception!
@@ -186,55 +210,55 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1814() throws Throwable {
+    public void test1818() throws Throwable {
         String string0 = CodeGenerator.jsString("R|]7'^]>y(k7qFnk_", (CharsetEncoder) null);
         assertEquals("\"R|]7'^]>y(k7qFnk_\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test1915() throws Throwable {
+    public void test1919() throws Throwable {
         String string0 = CodeGenerator.jsString("ts\",>mt", (CharsetEncoder) null);
         assertEquals("'ts\",>mt'", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2016() throws Throwable {
+    public void test2020() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("\t\n\u000B\f\r \u0085\u1680\u2028\u2029\u205F\u3000\u00A0\u180E\u202F");
         assertEquals("\"\\t\\n\\u000b\\u000c\\r \\u0085\\u1680\\u2028\\u2029\\u205f\\u3000\\u00a0\\u180e\\u202f\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2117() throws Throwable {
+    public void test2121() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("\u0003i<!--");
         assertEquals("\"\\u0003i<\\!--\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2218() throws Throwable {
+    public void test2222() throws Throwable {
         String string0 = CodeGenerator.jsString("[>ativeI coM]\n", (CharsetEncoder) null);
         assertEquals("\"[>ativeI coM]\\n\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2319() throws Throwable {
+    public void test2323() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("<!->VLj:'");
         assertEquals("\"<!->VLj:'\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2420() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("^@]]>");
         assertEquals("\"^@]]\\>\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2521() throws Throwable {
+    public void test2525() throws Throwable {
         String string0 = CodeGenerator.escapeToDoubleQuotedJsString("&:></script");
         assertEquals("\"&:><\\/script\"", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2622() throws Throwable {
+    public void test2626() throws Throwable {
         Charset charset0 = Charset.defaultCharset();
         CharsetEncoder charsetEncoder0 = charset0.newEncoder();
         String string0 = CodeGenerator.regexpEscape("a+/G+|vq", charsetEncoder0);
@@ -242,13 +266,13 @@ public class CodeGenerator_ESTest extends CodeGenerator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2723() throws Throwable {
+    public void test2727() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("\t\n\u000B\f\r \u0085\u1680\u2028\u2029\u205F\u3000\u00A0\u180Esq\u202F");
         assertEquals("\\u0009\\u000a\\u000b\\u000c\\u000d \\u0085\\u1680\\u2028\\u2029\\u205f\\u3000\\u00a0\\u180esq\\u202f", string0);
     }
 
     @Test(timeout = 4000)
-    public void test2824() throws Throwable {
+    public void test2828() throws Throwable {
         String string0 = CodeGenerator.identifierEscape("p");
         assertEquals("p", string0);
     }

@@ -346,7 +346,17 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2626() throws Throwable {
+        Enumeration<ObjectInputStream> enumeration0 = (Enumeration<ObjectInputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
+        doReturn(false).when(enumeration0).hasMoreElements();
+        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
+        PushbackInputStream pushbackInputStream0 = new PushbackInputStream(sequenceInputStream0);
+        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(pushbackInputStream0);
+        DataUtil.crossStreams(bufferedInputStream0, (OutputStream) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0);
         pipedOutputStream0.close();
@@ -358,7 +368,7 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2828() throws Throwable {
         File file0 = MockFile.createTempFile("y7:", "y7:");
         // Undeclared exception!
         try {
@@ -373,7 +383,7 @@ public class DataUtil_ESTest extends DataUtil_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2929() throws Throwable {
         ByteBuffer byteBuffer0 = DataUtil.emptyByteBuffer();
         assertEquals(0, byteBuffer0.remaining());
     }

@@ -85,7 +85,12 @@ public class Entities_ESTest extends Entities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1111() throws Throwable {
+        Entities entities0 = new Entities();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         Document document0 = new Document("/`j=ZW-WY>o1vM");
         Document.OutputSettings document_OutputSettings0 = document0.new OutputSettings();
         String string0 = Entities.escape("/`j=ZW-WY>o1vM", document_OutputSettings0);

@@ -301,7 +301,35 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2622() throws Throwable {
+    public void test2322() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
+        arrowType0.returnType = (JSType) null;
+        arrowType0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2423() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
+        ArrowType arrowType1 = new ArrowType(jSTypeRegistry0, (Node) null, arrowType0, true);
+        arrowType1.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2524() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        Node node0 = new Node((-2257));
+        Node node1 = new Node(2, node0, node0);
+        ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node1);
+        arrowType0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2625() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
@@ -311,7 +339,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2723() throws Throwable {
+    public void test2726() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         Node node0 = Node.newString(304, "NmWwShC&Q;x`{6$G", 304, 304);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node0, (JSType) null);
@@ -320,7 +348,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2824() throws Throwable {
+    public void test2827() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         Node node0 = new Node(1);
@@ -331,7 +359,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2925() throws Throwable {
+    public void test2928() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "");
@@ -341,7 +369,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2926() throws Throwable {
+    public void test2929() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "");
@@ -351,7 +379,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3027() throws Throwable {
+    public void test3030() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
@@ -360,7 +388,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3128() throws Throwable {
+    public void test3131() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         Node node0 = Node.newString(304, "NmWwShC&Q;x`{6$G", 304, 304);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node0, (JSType) null);
@@ -370,7 +398,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3229() throws Throwable {
+    public void test3232() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Node node0 = new Node((-285));
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -381,7 +409,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3330() throws Throwable {
+    public void test3333() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -394,7 +422,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3331() throws Throwable {
+    public void test3334() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NoObjectType noObjectType0 = new NoObjectType(jSTypeRegistry0);
@@ -407,7 +435,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3432() throws Throwable {
+    public void test3435() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         Node node0 = new Node((-2257));

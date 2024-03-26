@@ -113,12 +113,6 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01617() throws Throwable {
-        Boolean boolean0 = Boolean.FALSE;
-        String string0 = BooleanUtils.toStringYesNo(boolean0);
-    }
-
-    @Test(timeout = 4000)
     public void test01718() throws Throwable {
         String string0 = BooleanUtils.toStringTrueFalse((Boolean) null);
     }
@@ -398,18 +392,7 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06467() throws Throwable {
-        Boolean boolean0 = BooleanUtils.toBooleanObject("no");
-        String string0 = BooleanUtils.toStringTrueFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
     public void test06568() throws Throwable {
-        Boolean boolean0 = BooleanUtils.toBooleanObject("yes");
-    }
-
-    @Test(timeout = 4000)
-    public void test06569() throws Throwable {
         Boolean boolean0 = BooleanUtils.toBooleanObject("yes");
     }
 
@@ -419,27 +402,12 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06671() throws Throwable {
-        Boolean boolean0 = BooleanUtils.toBooleanObject("off");
-    }
-
-    @Test(timeout = 4000)
     public void test06772() throws Throwable {
         Boolean boolean0 = BooleanUtils.toBooleanObject("on");
     }
 
     @Test(timeout = 4000)
-    public void test06773() throws Throwable {
-        Boolean boolean0 = BooleanUtils.toBooleanObject("on");
-    }
-
-    @Test(timeout = 4000)
     public void test06874() throws Throwable {
-        Boolean boolean0 = BooleanUtils.toBooleanObject("false");
-    }
-
-    @Test(timeout = 4000)
-    public void test06875() throws Throwable {
         Boolean boolean0 = BooleanUtils.toBooleanObject("false");
     }
 
@@ -561,12 +529,6 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08896() throws Throwable {
-        Integer integer0 = new Integer((-908));
-        Boolean boolean0 = BooleanUtils.toBooleanObject((Integer) null, integer0, (Integer) null, (Integer) null);
-    }
-
-    @Test(timeout = 4000)
     public void test08997() throws Throwable {
         Integer integer0 = new Integer(0);
         Boolean boolean0 = BooleanUtils.toBooleanObject((Integer) null, integer0, integer0, (Integer) null);
@@ -653,12 +615,6 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test104112() throws Throwable {
-        Integer integer0 = new Integer(0);
-        Boolean boolean0 = BooleanUtils.toBooleanObject(integer0);
-    }
-
-    @Test(timeout = 4000)
-    public void test104113() throws Throwable {
         Integer integer0 = new Integer(0);
         Boolean boolean0 = BooleanUtils.toBooleanObject(integer0);
     }
@@ -782,23 +738,22 @@ public class BooleanUtils_ESTest extends BooleanUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124135() throws Throwable {
-        Boolean boolean0 = BooleanUtils.toBooleanObject((-1668), (-1668), (-1668), 0);
-        String string0 = BooleanUtils.toStringOnOff(boolean0);
-    }
-
-    @Test(timeout = 4000)
     public void test125136() throws Throwable {
         String string0 = BooleanUtils.toStringOnOff(false);
     }
 
     @Test(timeout = 4000)
-    public void test127137() throws Throwable {
+    public void test126137() throws Throwable {
+        BooleanUtils booleanUtils0 = new BooleanUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test127138() throws Throwable {
         String string0 = BooleanUtils.toStringYesNo(false);
     }
 
     @Test(timeout = 4000)
-    public void test128138() throws Throwable {
+    public void test128139() throws Throwable {
         String string0 = BooleanUtils.toStringYesNo((Boolean) null);
     }
 }

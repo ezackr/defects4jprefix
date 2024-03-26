@@ -1105,17 +1105,6 @@ public class SerializationConfig_ESTest extends SerializationConfig_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test5696() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        SerializationConfig serializationConfig0 = new SerializationConfig(baseSettings0, stdSubtypeResolver0, (SimpleMixInResolver) null, rootNameLookup0);
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.WRITE_NUMBERS_AS_STRINGS;
-        SerializationConfig serializationConfig1 = serializationConfig0.without(jsonGenerator_Feature0);
-        SerializationConfig serializationConfig2 = serializationConfig1.without(jsonGenerator_Feature0);
-    }
-
-    @Test(timeout = 4000)
     public void test5697() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
@@ -1304,24 +1293,6 @@ public class SerializationConfig_ESTest extends SerializationConfig_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test63112() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        SerializationConfig serializationConfig0 = new SerializationConfig(baseSettings0, stdSubtypeResolver0, (SimpleMixInResolver) null, rootNameLookup0);
-        FormatFeature[] formatFeatureArray0 = new FormatFeature[5];
-        FormatFeature formatFeature0 = mock(FormatFeature.class, new ViolatedAssumptionAnswer());
-        doReturn(4, 4, 72, 1068991, 4).when(formatFeature0).getMask();
-        formatFeatureArray0[0] = formatFeature0;
-        formatFeatureArray0[1] = formatFeature0;
-        formatFeatureArray0[2] = formatFeature0;
-        formatFeatureArray0[3] = formatFeature0;
-        formatFeatureArray0[4] = formatFeature0;
-        SerializationConfig serializationConfig1 = serializationConfig0.withFeatures(formatFeatureArray0);
-        SerializationConfig serializationConfig2 = serializationConfig1.withoutFeatures(formatFeatureArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test63113() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
@@ -1458,21 +1429,6 @@ public class SerializationConfig_ESTest extends SerializationConfig_ESTest_scaff
         SerializationConfig serializationConfig1 = serializationConfig0.withFeatures(formatFeatureArray0);
         SerializationConfig serializationConfig2 = serializationConfig1.without(formatFeature0);
         serializationConfig2.getSerializationFeatures();
-    }
-
-    @Test(timeout = 4000)
-    public void test65121() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        SerializationConfig serializationConfig0 = new SerializationConfig(baseSettings0, stdSubtypeResolver0, (SimpleMixInResolver) null, rootNameLookup0);
-        FormatFeature[] formatFeatureArray0 = new FormatFeature[2];
-        FormatFeature formatFeature0 = mock(FormatFeature.class, new ViolatedAssumptionAnswer());
-        doReturn(1, 1, 1, 1).when(formatFeature0).getMask();
-        formatFeatureArray0[0] = formatFeature0;
-        formatFeatureArray0[1] = formatFeature0;
-        SerializationConfig serializationConfig1 = serializationConfig0.withFeatures(formatFeatureArray0);
-        SerializationConfig serializationConfig2 = serializationConfig1.without(formatFeature0);
     }
 
     @Test(timeout = 4000)
@@ -1836,17 +1792,6 @@ public class SerializationConfig_ESTest extends SerializationConfig_ESTest_scaff
         SerializationConfig serializationConfig1 = serializationConfig0.withRootName(propertyName0);
         boolean boolean0 = serializationConfig1.useRootWrapping();
         serializationConfig1.getSerializationFeatures();
-    }
-
-    @Test(timeout = 4000)
-    public void test81147() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        SerializationConfig serializationConfig0 = new SerializationConfig(baseSettings0, stdSubtypeResolver0, (SimpleMixInResolver) null, rootNameLookup0);
-        PropertyName propertyName0 = PropertyName.NO_NAME;
-        SerializationConfig serializationConfig1 = serializationConfig0.withRootName(propertyName0);
-        boolean boolean0 = serializationConfig1.useRootWrapping();
     }
 
     @Test(timeout = 4000)

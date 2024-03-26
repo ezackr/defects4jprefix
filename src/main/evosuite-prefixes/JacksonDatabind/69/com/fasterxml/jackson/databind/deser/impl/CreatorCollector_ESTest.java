@@ -47,7 +47,20 @@ import org.junit.runner.RunWith;
 public class CreatorCollector_ESTest extends CreatorCollector_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test020() throws Throwable {
+    public void test000() throws Throwable {
+        CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(3274);
+        creatorCollector_Vanilla0.getValueTypeDesc();
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(3);
+        creatorCollector_Vanilla0.createUsingDelegate((DeserializationContext) null, (Object) null);
+        creatorCollector_Vanilla0.canCreateUsingDefault();
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(2);
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
         Deserializers.Base deserializers_Base0 = new Deserializers.Base();
@@ -66,7 +79,33 @@ public class CreatorCollector_ESTest extends CreatorCollector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test061() throws Throwable {
+    public void test033() throws Throwable {
+        CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla((-2400));
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        creatorCollector_Vanilla0.createUsingDefault(defaultDeserializationContext_Impl0);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(3274);
+        creatorCollector_Vanilla0.canInstantiate();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(3);
+        creatorCollector_Vanilla0.canCreateUsingDefault();
+        DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
+        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory(deserializerFactoryConfig0);
+        SimpleAbstractTypeResolver simpleAbstractTypeResolver0 = new SimpleAbstractTypeResolver();
+        DeserializerFactory deserializerFactory0 = beanDeserializerFactory0.withAbstractTypeResolver(simpleAbstractTypeResolver0);
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(deserializerFactory0);
+        creatorCollector_Vanilla0.createUsingDefault(defaultDeserializationContext_Impl0);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
         CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(2);
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
         Deserializers.Base deserializers_Base0 = new Deserializers.Base();
@@ -88,7 +127,7 @@ public class CreatorCollector_ESTest extends CreatorCollector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test072() throws Throwable {
+    public void test077() throws Throwable {
         CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(404);
         CreatorCollector.Vanilla creatorCollector_Vanilla1 = new CreatorCollector.Vanilla(1);
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
@@ -100,7 +139,46 @@ public class CreatorCollector_ESTest extends CreatorCollector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test123() throws Throwable {
+    public void test088() throws Throwable {
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        defaultDeserializationContext_Impl0.getConfig();
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        Class<MinimalClassNameIdResolver> class0 = MinimalClassNameIdResolver.class;
+        objectMapper0.readerFor(class0);
+        CreatorCollector creatorCollector0 = new CreatorCollector((BeanDescription) null, (MapperConfig<?>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        Class<Object> class0 = Object.class;
+        objectMapper0.readerFor(class0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        defaultDeserializationContext_Impl0.getConfig();
+        CreatorCollector creatorCollector0 = new CreatorCollector((BeanDescription) null, (MapperConfig<?>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        defaultDeserializationContext_Impl0.getConfig();
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        Class<SimpleModule> class0 = SimpleModule.class;
+        objectMapper0.readerFor(class0);
+        CreatorCollector creatorCollector0 = new CreatorCollector((BeanDescription) null, (MapperConfig<?>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         System.setCurrentTimeMillis((-1578L));
         CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(1);
         DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
@@ -124,7 +202,7 @@ public class CreatorCollector_ESTest extends CreatorCollector_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test134() throws Throwable {
+    public void test1313() throws Throwable {
         CreatorCollector.Vanilla creatorCollector_Vanilla0 = new CreatorCollector.Vanilla(3);
         DeserializerFactoryConfig deserializerFactoryConfig0 = new DeserializerFactoryConfig();
         BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory(deserializerFactoryConfig0);

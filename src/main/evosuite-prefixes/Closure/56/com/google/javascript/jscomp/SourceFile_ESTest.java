@@ -266,16 +266,6 @@ public class SourceFile_ESTest extends SourceFile_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2234() throws Throwable {
-        File file0 = MockFile.createTempFile("\nActual: ", "\nActual: ");
-        EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("/var/folders/vv/c7q6vm8920vc7d5p_87011w40000gn/T/\nActual: 0\nActual: ");
-        FileSystemHandling.appendLineToFile(evoSuiteFile0, "\nActual: ");
-        Charset charset0 = Charset.defaultCharset();
-        SourceFile.OnDisk sourceFile_OnDisk0 = new SourceFile.OnDisk(file0, charset0);
-        String string0 = sourceFile_OnDisk0.getLine(2);
-    }
-
-    @Test(timeout = 4000)
     public void test2335() throws Throwable {
         File file0 = MockFile.createTempFile("\nActual: ", "\nActual: ");
         EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("/var/folders/vv/c7q6vm8920vc7d5p_87011w40000gn/T/\nActual: 0\nActual: ");

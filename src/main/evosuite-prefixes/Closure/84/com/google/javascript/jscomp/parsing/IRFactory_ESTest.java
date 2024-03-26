@@ -382,7 +382,16 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2832() throws Throwable {
+    public void test2732() throws Throwable {
+        AstRoot astRoot0 = new AstRoot();
+        Name name0 = new Name(13);
+        ContinueStatement continueStatement0 = new ContinueStatement(name0);
+        astRoot0.addChildToBack(continueStatement0);
+        Context.getCurrentContext();
+    }
+
+    @Test(timeout = 4000)
+    public void test2833() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         Name name0 = new Name(14, 155, "i!kB1E");
         FunctionNode functionNode0 = new FunctionNode(26, name0);
@@ -392,7 +401,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2933() throws Throwable {
+    public void test2934() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         FunctionNode functionNode0 = new FunctionNode(189, (Name) null);
         functionNode0.addParam(astRoot0);
@@ -402,7 +411,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3034() throws Throwable {
+    public void test3035() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         LabeledStatement labeledStatement0 = new LabeledStatement(1, 13);
         astRoot0.addChildToBack(labeledStatement0);
@@ -411,7 +420,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3135() throws Throwable {
+    public void test3136() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         LabeledStatement labeledStatement0 = new LabeledStatement(16);
         Label label0 = new Label(2);
@@ -422,7 +431,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3236() throws Throwable {
+    public void test3237() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ObjectLiteral objectLiteral0 = new ObjectLiteral(21, 2);
         astRoot0.addChildrenToFront(objectLiteral0);
@@ -434,7 +443,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3337() throws Throwable {
+    public void test3338() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ObjectLiteral objectLiteral0 = new ObjectLiteral(21, 2);
         ObjectProperty objectProperty0 = new ObjectProperty();
@@ -447,7 +456,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3438() throws Throwable {
+    public void test3439() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ObjectLiteral objectLiteral0 = new ObjectLiteral(21, 2);
         ObjectProperty objectProperty0 = new ObjectProperty();
@@ -460,7 +469,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3539() throws Throwable {
+    public void test3540() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ReturnStatement returnStatement0 = new ReturnStatement(23);
         astRoot0.addChildToBack(returnStatement0);
@@ -470,7 +479,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3640() throws Throwable {
+    public void test3641() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ReturnStatement returnStatement0 = new ReturnStatement(2, 155, astRoot0);
         astRoot0.addChildToBack(returnStatement0);
@@ -479,7 +488,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3741() throws Throwable {
+    public void test3742() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         AstRoot astRoot1 = new AstRoot(3);
         SwitchCase switchCase0 = new SwitchCase(23);
@@ -491,7 +500,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3842() throws Throwable {
+    public void test3843() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         VariableDeclaration variableDeclaration0 = new VariableDeclaration(12, 0);
         astRoot0.addChildToBack(variableDeclaration0);
@@ -501,7 +510,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3943() throws Throwable {
+    public void test3944() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         VariableDeclaration variableDeclaration0 = new VariableDeclaration(12, 0);
         VariableInitializer variableInitializer0 = new VariableInitializer(24, 2);
@@ -512,7 +521,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4044() throws Throwable {
+    public void test4045() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         Assignment assignment0 = new Assignment(18, astRoot0, astRoot0, 1);
         assignment0.setOperator(10);
@@ -522,7 +531,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4145() throws Throwable {
+    public void test4146() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ErrorCollector errorCollector0 = new ErrorCollector();
         RegExpLiteral regExpLiteral0 = new RegExpLiteral(96);
@@ -532,7 +541,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4246() throws Throwable {
+    public void test4247() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         Assignment assignment0 = new Assignment(14, astRoot0, astRoot0, 1);
         astRoot0.addChildrenToFront(assignment0);
@@ -541,7 +550,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4347() throws Throwable {
+    public void test4348() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ErrorCollector errorCollector0 = new ErrorCollector();
         InfixExpression infixExpression0 = new InfixExpression(15, astRoot0, astRoot0, 10);
@@ -550,7 +559,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4448() throws Throwable {
+    public void test4449() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         Assignment assignment0 = new Assignment(18, astRoot0, astRoot0, 1);
         astRoot0.addChildToBack(assignment0);
@@ -559,7 +568,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4549() throws Throwable {
+    public void test4550() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ErrorCollector errorCollector0 = new ErrorCollector();
         RegExpLiteral regExpLiteral0 = new RegExpLiteral();
@@ -569,7 +578,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4650() throws Throwable {
+    public void test4651() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         VariableInitializer variableInitializer0 = new VariableInitializer(11, 9);
         ErrorCollector errorCollector0 = new ErrorCollector();
@@ -579,7 +588,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4751() throws Throwable {
+    public void test4752() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         FunctionCall functionCall0 = new FunctionCall(2, 1);
         astRoot0.addChildrenToFront(functionCall0);
@@ -588,7 +597,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4852() throws Throwable {
+    public void test4853() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         ErrorCollector errorCollector0 = new ErrorCollector();
         RegExpLiteral regExpLiteral0 = new RegExpLiteral(1);
@@ -598,7 +607,7 @@ public class IRFactory_ESTest extends IRFactory_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4953() throws Throwable {
+    public void test4954() throws Throwable {
         AstRoot astRoot0 = new AstRoot();
         SwitchCase switchCase0 = new SwitchCase();
         ExpressionStatement expressionStatement0 = new ExpressionStatement(switchCase0);

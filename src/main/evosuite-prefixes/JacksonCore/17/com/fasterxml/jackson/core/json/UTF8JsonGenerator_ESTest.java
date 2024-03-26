@@ -48,7 +48,17 @@ import org.junit.runner.RunWith;
 public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, (OutputStream) null);
+        byte[] byteArray0 = new byte[7];
+        byteArray0[2] = (byte) (-110);
+        uTF8JsonGenerator0.writeBinaryField("t", byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, "TGLGp,{$mug!SI", true);
         UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, (-183), (ObjectCodec) null, (OutputStream) null);
@@ -58,7 +68,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
@@ -68,7 +78,55 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test082() throws Throwable {
+    public void test033() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, false);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0._flushBuffer();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(bufferRecycler0);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, byteArrayBuilder0);
+        uTF8JsonGenerator0._verifyValueWrite(">CRnB(3fP^4NS.#r^_j");
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        PipedInputStream pipedInputStream0 = new PipedInputStream();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, pipedInputStream0, false);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder();
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 3, (ObjectCodec) null, byteArrayBuilder0);
+        SerializedString serializedString0 = (SerializedString) uTF8JsonGenerator0._rootValueSeparator;
+        uTF8JsonGenerator0.writeRaw((SerializableString) serializedString0);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0.writeNumber(1926);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
+        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(pipedInputStream0, 2);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferedInputStream0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 3, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0.writeString("~$N!z}q\"Q");
+        uTF8JsonGenerator0.getOutputBuffered();
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
@@ -79,7 +137,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test093() throws Throwable {
+    public void test099() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         byte[] byteArray0 = iOContext0.allocReadIOBuffer(0);
@@ -89,7 +147,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test104() throws Throwable {
+    public void test1010() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("n)E", false);
@@ -99,7 +157,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115() throws Throwable {
+    public void test1111() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         MockFile mockFile0 = new MockFile(">vnr|Tq33:");
@@ -110,7 +168,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test126() throws Throwable {
+    public void test1212() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
@@ -121,7 +179,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test137() throws Throwable {
+    public void test1313() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
@@ -130,7 +188,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test148() throws Throwable {
+    public void test1414() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         BigInteger bigInteger0 = BigInteger.ZERO;
@@ -140,7 +198,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test159() throws Throwable {
+    public void test1515() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, (-2108), (ObjectCodec) null, (OutputStream) null);
@@ -148,7 +206,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1610() throws Throwable {
+    public void test1616() throws Throwable {
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
         byte[] byteArray0 = new byte[3];
         BufferRecycler bufferRecycler0 = new BufferRecycler();
@@ -159,7 +217,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1711() throws Throwable {
+    public void test1717() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[3];
@@ -171,7 +229,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1812() throws Throwable {
+    public void test1818() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
@@ -183,7 +241,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1913() throws Throwable {
+    public void test1919() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
@@ -195,7 +253,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2014() throws Throwable {
+    public void test2020() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
@@ -206,7 +264,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2115() throws Throwable {
+    public void test2121() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(7);
@@ -215,7 +273,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2216() throws Throwable {
+    public void test2222() throws Throwable {
         IOContext iOContext0 = new IOContext((BufferRecycler) null, "", false);
         ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(0);
         UTF8JsonGenerator uTF8JsonGenerator0 = null;
@@ -223,7 +281,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2317() throws Throwable {
+    public void test2323() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         FileDescriptor fileDescriptor0 = new FileDescriptor();
         MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
@@ -238,7 +296,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2418() throws Throwable {
+    public void test2424() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(bufferRecycler0);
         UTF8JsonGenerator uTF8JsonGenerator0 = null;
@@ -246,7 +304,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2519() throws Throwable {
+    public void test2525() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(1);
@@ -256,7 +314,105 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3620() throws Throwable {
+    public void test2626() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
+        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(pipedInputStream0, 2);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferedInputStream0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 41, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0.writeString("~$N!z}q\"Q");
+        uTF8JsonGenerator0.writeNumber((short) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        MockFile mockFile0 = new MockFile("}q");
+        MockPrintStream mockPrintStream0 = new MockPrintStream(mockFile0);
+        BufferedOutputStream bufferedOutputStream0 = new BufferedOutputStream(mockPrintStream0);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, bufferedOutputStream0);
+        uTF8JsonGenerator0.writeBoolean(false);
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(2070);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayBuilder0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 48, (ObjectCodec) null, mockPrintStream0);
+        uTF8JsonGenerator0.writeRaw("write a boolean value", 2, 3);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(0);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, (-1133), (ObjectCodec) null, byteArrayBuilder0, byteArrayBuilder0.NO_BYTES, (-55), false);
+        // Undeclared exception!
+        uTF8JsonGenerator0.writeFieldName("com.fasterxml.jackson.core.type.ResolvedType");
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 115, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.writeRaw("");
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        byte[] byteArray0 = new byte[8];
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, (-236), (ObjectCodec) null, (OutputStream) null, byteArray0, 1, false);
+        uTF8JsonGenerator0._releaseBuffers();
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 115, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("n)E");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 982, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test3434() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(2070);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayBuilder0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 48, (ObjectCodec) null, mockPrintStream0);
+        uTF8JsonGenerator0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        byte[] byteArray0 = new byte[3];
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 170, (ObjectCodec) null, (OutputStream) null, byteArray0, (-1385), false);
+        uTF8JsonGenerator0.flush();
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         IOContext iOContext0 = new IOContext(bufferRecycler0, pipedInputStream0, true);
@@ -266,7 +422,37 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4021() throws Throwable {
+    public void test3737() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("n)E", false);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 1000, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.writeStartObject();
+        uTF8JsonGenerator0.writeBooleanField("n)E", false);
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, (OutputStream) null);
+        byte[] byteArray0 = new byte[24];
+        uTF8JsonGenerator0.writeBinaryField("t", byteArray0);
+        BigInteger bigInteger0 = BigInteger.TEN;
+        uTF8JsonGenerator0.writeNumber(bigInteger0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3939() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 115, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.writeBoolean(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test4040() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[7];
@@ -275,7 +461,29 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4322() throws Throwable {
+    public void test4141() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, pipedInputStream0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, pipedOutputStream0);
+        uTF8JsonGenerator0.writeNumber("ROOT");
+    }
+
+    @Test(timeout = 4000)
+    public void test4242() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
+        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(pipedInputStream0, 2);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferedInputStream0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 41, (ObjectCodec) null, (OutputStream) null);
+        BigDecimal bigDecimal0 = new BigDecimal(0.0);
+        uTF8JsonGenerator0.writeNumber(bigDecimal0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0);
@@ -286,7 +494,61 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5023() throws Throwable {
+    public void test4444() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, true);
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(0);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, byteArrayOutputStream0);
+        uTF8JsonGenerator0.writeNumber((double) 3);
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
+        PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
+        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(pipedInputStream0, 2);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferedInputStream0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 41, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0.writeNumber(0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0.writeNumber((BigInteger) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 115, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.writeNumber((long) 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4848() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, true);
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(0);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, byteArrayOutputStream0);
+        uTF8JsonGenerator0.writeNumber((long) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 34, (ObjectCodec) null, (OutputStream) null);
+        uTF8JsonGenerator0.writeNumber(46);
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream();
@@ -297,7 +559,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5124() throws Throwable {
+    public void test5151() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
         byte[] byteArray0 = new byte[6];
@@ -308,7 +570,17 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5325() throws Throwable {
+    public void test5252() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
+        byte[] byteArray0 = new byte[6];
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, mockFileOutputStream0, byteArray0, 13, false);
+        uTF8JsonGenerator0.writeNumber(82.04442F);
+    }
+
+    @Test(timeout = 4000)
+    public void test5353() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         byte[] byteArray0 = new byte[5];
@@ -317,7 +589,26 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5626() throws Throwable {
+    public void test5454() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("n)E", false);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 1000, (ObjectCodec) null, mockFileOutputStream0);
+        uTF8JsonGenerator0.writeRaw('k');
+    }
+
+    @Test(timeout = 4000)
+    public void test5555() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(0);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, (-1133), (ObjectCodec) null, byteArrayBuilder0, byteArrayBuilder0.NO_BYTES, (-55), false);
+        char[] charArray0 = new char[3];
+        uTF8JsonGenerator0.writeRaw(charArray0, 0, (-2433));
+    }
+
+    @Test(timeout = 4000)
+    public void test5656() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
@@ -328,7 +619,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5727() throws Throwable {
+    public void test5757() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(bufferRecycler0);
@@ -339,7 +630,17 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test5928() throws Throwable {
+    public void test5858() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 115, (ObjectCodec) null, mockFileOutputStream0);
+        SerializedString serializedString0 = (SerializedString) uTF8JsonGenerator0._rootValueSeparator;
+        uTF8JsonGenerator0.writeRawValue((SerializableString) serializedString0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5959() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
@@ -350,7 +651,17 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6129() throws Throwable {
+    public void test6060() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
+        byte[] byteArray0 = new byte[6];
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, mockFileOutputStream0, byteArray0, 13, false);
+        uTF8JsonGenerator0.writeUTF8String(byteArray0, (byte) 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test6161() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, "", true);
         StringReader stringReader0 = new StringReader("");
@@ -362,7 +673,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6230() throws Throwable {
+    public void test6262() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedInputStream pipedInputStream0 = new PipedInputStream(2);
         IOContext iOContext0 = new IOContext(bufferRecycler0, pipedInputStream0, false);
@@ -373,7 +684,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6331() throws Throwable {
+    public void test6363() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         char[] charArray0 = new char[0];
         IOContext iOContext0 = mock(IOContext.class, new ViolatedAssumptionAnswer());
@@ -384,7 +695,40 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6732() throws Throwable {
+    public void test6464() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(0);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, "hKbe(?", false);
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, byteArrayOutputStream0);
+        SerializedString serializedString0 = DefaultPrettyPrinter.DEFAULT_ROOT_VALUE_SEPARATOR;
+        uTF8JsonGenerator0.writeString((SerializableString) serializedString0);
+    }
+
+    @Test(timeout = 4000)
+    public void test6565() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(2070);
+        MockPrintStream mockPrintStream0 = new MockPrintStream(byteArrayBuilder0, true);
+        char[] charArray0 = iOContext0.allocTokenBuffer((-1431));
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 48, (ObjectCodec) null, mockPrintStream0);
+        uTF8JsonGenerator0.writeString(charArray0, 49, 48);
+    }
+
+    @Test(timeout = 4000)
+    public void test6666() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
+        MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("ECzWuWEu~l", true);
+        byte[] byteArray0 = new byte[6];
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, mockFileOutputStream0, byteArray0, 13, false);
+        char[] charArray0 = new char[0];
+        // Undeclared exception!
+        uTF8JsonGenerator0.writeString(charArray0, 255, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test6767() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
@@ -393,7 +737,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6833() throws Throwable {
+    public void test6868() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder(bufferRecycler0);
@@ -402,7 +746,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test6934() throws Throwable {
+    public void test6969() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, false);
         byte[] byteArray0 = new byte[9];
@@ -412,7 +756,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7035() throws Throwable {
+    public void test7070() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFile mockFile0 = new MockFile("ROOT", "");
@@ -422,7 +766,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7136() throws Throwable {
+    public void test7171() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2048);
@@ -433,7 +777,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7237() throws Throwable {
+    public void test7272() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("n)E", false);
@@ -443,7 +787,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7338() throws Throwable {
+    public void test7373() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, (OutputStream) null);
@@ -451,7 +795,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7439() throws Throwable {
+    public void test7474() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFile mockFile0 = new MockFile("ROOT", "");
@@ -463,7 +807,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7540() throws Throwable {
+    public void test7575() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, true);
         ByteArrayOutputStream byteArrayOutputStream0 = new ByteArrayOutputStream(0);
@@ -475,7 +819,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7641() throws Throwable {
+    public void test7676() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
@@ -489,7 +833,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7742() throws Throwable {
+    public void test7777() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
@@ -502,7 +846,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7843() throws Throwable {
+    public void test7878() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Unrecognized token '");
@@ -513,7 +857,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test7944() throws Throwable {
+    public void test7979() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, "", false);
         StringReader stringReader0 = new StringReader("");
@@ -526,7 +870,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test8045() throws Throwable {
+    public void test8080() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         char[] charArray0 = new char[0];
         IOContext iOContext0 = mock(IOContext.class, new ViolatedAssumptionAnswer());
@@ -537,7 +881,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test8046() throws Throwable {
+    public void test8081() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         char[] charArray0 = new char[0];
         IOContext iOContext0 = mock(IOContext.class, new ViolatedAssumptionAnswer());
@@ -549,7 +893,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test8147() throws Throwable {
+    public void test8182() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 2, (ObjectCodec) null, (OutputStream) null);
@@ -558,7 +902,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test8248() throws Throwable {
+    public void test8283() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         byte[] byteArray0 = new byte[3];
@@ -567,7 +911,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test8349() throws Throwable {
+    public void test8384() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);
@@ -579,7 +923,7 @@ public class UTF8JsonGenerator_ESTest extends UTF8JsonGenerator_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test8350() throws Throwable {
+    public void test8385() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         PipedOutputStream pipedOutputStream0 = new PipedOutputStream();
         PipedInputStream pipedInputStream0 = new PipedInputStream(pipedOutputStream0, 2);

@@ -234,14 +234,22 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2627() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Y");
+        PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
+        peepholeSubstituteAlternateSyntax0.isPure(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2728() throws Throwable {
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         Node node0 = Node.newString("\u2028");
         boolean boolean0 = peepholeSubstituteAlternateSyntax0.isPure(node0);
     }
 
     @Test(timeout = 4000)
-    public void test2828() throws Throwable {
+    public void test2829() throws Throwable {
         Node node0 = Node.newNumber(0.0);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         Node node1 = new Node(4, node0, node0, node0, node0, 54, 30);
@@ -249,21 +257,21 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test2929() throws Throwable {
+    public void test2930() throws Throwable {
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         Node node0 = Node.newNumber(0.0);
         peepholeSubstituteAlternateSyntax0.areMatchingExits(node0, node0);
     }
 
     @Test(timeout = 4000)
-    public void test3030() throws Throwable {
+    public void test3031() throws Throwable {
         Node node0 = new Node(4);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         boolean boolean0 = peepholeSubstituteAlternateSyntax0.isExceptionPossible(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
+    public void test3132() throws Throwable {
         Node node0 = new Node(115, 115, 115);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         Node node1 = new Node(4, node0, node0, node0, node0, 16, 441);
@@ -271,7 +279,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3233() throws Throwable {
         Node node0 = Node.newNumber(479.7);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         node0.setType(46);
@@ -280,7 +288,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3334() throws Throwable {
         Node node0 = Node.newNumber((-2584.919495491));
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         node0.setType(45);
@@ -289,7 +297,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3435() throws Throwable {
         Node node0 = Node.newNumber(0.0);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         Node node1 = new Node(26, node0, node0, node0, node0, 0, 40);
@@ -297,7 +305,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3435() throws Throwable {
+    public void test3436() throws Throwable {
         Node node0 = Node.newNumber(0.0);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         Node node1 = new Node(26, node0, node0, node0, node0, 0, 40);
@@ -306,7 +314,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3536() throws Throwable {
+    public void test3537() throws Throwable {
         Node node0 = Node.newNumber(0.0);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         Node node1 = new Node(108, node0, node0, node0, node0, 12, 4095);
@@ -314,7 +322,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3537() throws Throwable {
+    public void test3538() throws Throwable {
         Node node0 = Node.newNumber(0.0);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         Node node1 = new Node(108, node0, node0, node0, node0, 12, 4095);
@@ -323,7 +331,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3638() throws Throwable {
+    public void test3639() throws Throwable {
         Node node0 = Node.newNumber((-1.0));
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
         node0.setType(26);
@@ -332,7 +340,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3739() throws Throwable {
+    public void test3740() throws Throwable {
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         Node node0 = new Node(98);
         Node node1 = new Node(98, node0, node0, node0, node0, 55, 55);
@@ -340,14 +348,14 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test3840() throws Throwable {
+    public void test3841() throws Throwable {
         Node node0 = new Node(44);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         peepholeSubstituteAlternateSyntax0.optimizeSubtree(node0);
     }
 
     @Test(timeout = 4000)
-    public void test3941() throws Throwable {
+    public void test3942() throws Throwable {
         Node node0 = new Node(63);
         Node node1 = new Node(63, node0, node0, node0, node0, 4095, 39);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(false);
@@ -355,7 +363,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test4042() throws Throwable {
+    public void test4043() throws Throwable {
         Node node0 = new Node(63);
         PeepholeSubstituteAlternateSyntax peepholeSubstituteAlternateSyntax0 = new PeepholeSubstituteAlternateSyntax(true);
         Node node1 = peepholeSubstituteAlternateSyntax0.optimizeSubtree(node0);
@@ -363,7 +371,7 @@ public class PeepholeSubstituteAlternateSyntax_ESTest extends PeepholeSubstitute
     }
 
     @Test(timeout = 4000)
-    public void test4143() throws Throwable {
+    public void test4144() throws Throwable {
         boolean boolean0 = PeepholeSubstituteAlternateSyntax.containsUnicodeEscape("bcR4Qsho-Mo(G?");
     }
 }

@@ -248,7 +248,15 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1515() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        MockFile mockFile0 = new MockFile("jpp`nwG");
+        MockFileWriter mockFileWriter0 = new MockFileWriter(mockFile0, false);
+        attributes0.html((Appendable) mockFileWriter0, (Document.OutputSettings) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.dataset();
         Iterator<Attribute> iterator0 = attributes0.iterator();
@@ -256,7 +264,13 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1816() throws Throwable {
+    public void test1717() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.remove("P5ppK0A%uxd+qh]ONc");
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attribute attribute0 = Attribute.createFromEncoded("My?K}U1Qxkb*%", "");
         attributes0.put(attribute0);
@@ -265,7 +279,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1917() throws Throwable {
+    public void test1919() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.dataset();
         Attribute attribute0 = new Attribute("\"JVE@`", "");
@@ -274,7 +288,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test2020() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("(7z< exM", true);
         Map<String, String> map0 = attributes0.dataset();
@@ -282,7 +296,20 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2319() throws Throwable {
+    public void test2121() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.put("inert", "y|");
+        attributes0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = attributes0.clone();
         attributes1.dataset();
@@ -291,7 +318,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2320() throws Throwable {
+    public void test2324() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = attributes0.clone();
         attributes1.dataset();
@@ -300,7 +327,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2421() throws Throwable {
+    public void test2425() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = attributes0.clone();
         attributes0.put("FSNv)KVf=", "FSNv)KVf=");
@@ -309,7 +336,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2422() throws Throwable {
+    public void test2426() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = attributes0.clone();
         attributes0.put("FSNv)KVf=", "FSNv)KVf=");
@@ -318,7 +345,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2523() throws Throwable {
+    public void test2527() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("inert", "y|");
         Attributes attributes1 = attributes0.clone();
@@ -327,7 +354,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2524() throws Throwable {
+    public void test2528() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("inert", "y|");
         Attributes attributes1 = attributes0.clone();
@@ -336,7 +363,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2625() throws Throwable {
+    public void test2629() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = attributes0.clone();
         boolean boolean0 = attributes1.equals(attributes0);
@@ -344,21 +371,21 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2726() throws Throwable {
+    public void test2730() throws Throwable {
         Attributes attributes0 = new Attributes();
         boolean boolean0 = attributes0.equals(attributes0);
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test2827() throws Throwable {
+    public void test2831() throws Throwable {
         Attributes attributes0 = new Attributes();
         boolean boolean0 = attributes0.equals("Mg%Sh%.LJOm@^");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test2928() throws Throwable {
+    public void test2932() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("inert", "y|");
         String string0 = attributes0.toString();
@@ -366,14 +393,14 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3029() throws Throwable {
+    public void test3033() throws Throwable {
         Attributes attributes0 = new Attributes();
         List<Attribute> list0 = attributes0.asList();
         assertTrue(list0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test3130() throws Throwable {
+    public void test3134() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("W\"!ryb\"", "W\"!ryb\"");
         List<Attribute> list0 = attributes0.asList();
@@ -381,7 +408,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3231() throws Throwable {
+    public void test3235() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("inert", "y|");
         Iterator<Attribute> iterator0 = attributes0.iterator();
@@ -389,14 +416,14 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3336() throws Throwable {
         Attributes attributes0 = new Attributes();
         Iterator<Attribute> iterator0 = attributes0.iterator();
         assertNotNull(iterator0);
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3437() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = new Attributes();
         attributes0.put("(7z< exM", true);
@@ -404,7 +431,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3438() throws Throwable {
         Attributes attributes0 = new Attributes();
         Attributes attributes1 = new Attributes();
         attributes0.put("(7z< exM", true);
@@ -413,21 +440,34 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3539() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.addAll(attributes0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3640() throws Throwable {
         Attributes attributes0 = new Attributes();
         int int0 = attributes0.size();
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test3836() throws Throwable {
+    public void test3741() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.put("W\"!ryb\"", "W\"!ryb\"");
+        attributes0.addAll(attributes0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3842() throws Throwable {
         Attributes attributes0 = new Attributes();
         boolean boolean0 = attributes0.hasKeyIgnoreCase("FSNv)KVf=");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3937() throws Throwable {
+    public void test3943() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("W\"!ryb\"", "W\"!ryb\"");
         boolean boolean0 = attributes0.hasKeyIgnoreCase(" ");
@@ -435,7 +475,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4038() throws Throwable {
+    public void test4044() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("CommentStartDash", "CommentStartDash");
         boolean boolean0 = attributes0.hasKey("CommentStartDash");
@@ -443,7 +483,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4139() throws Throwable {
+    public void test4145() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("W\"!ryb\"", "W\"!ryb\"");
         boolean boolean0 = attributes0.hasKey("J9/iSo/u(:j8s");
@@ -451,14 +491,34 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4240() throws Throwable {
+    public void test4246() throws Throwable {
         Attributes attributes0 = new Attributes();
         boolean boolean0 = attributes0.hasKey("CommentStartDash");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4641() throws Throwable {
+    public void test4347() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.put("W\"!ryb\"", "W\"!ryb\"");
+        attributes0.removeIgnoreCase(" ");
+    }
+
+    @Test(timeout = 4000)
+    public void test4448() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.removeIgnoreCase(" ");
+    }
+
+    @Test(timeout = 4000)
+    public void test4549() throws Throwable {
+        Attributes attributes0 = new Attributes();
+        attributes0.put("FSNv)KVf=", "FSNv)KVf=");
+        attributes0.remove("FSNv)KVf=");
+    }
+
+    @Test(timeout = 4000)
+    public void test4650() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("entities-full.propert-es", true);
         String string0 = attributes0.getIgnoreCase("entities-full.propert-es");
@@ -466,14 +526,14 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4742() throws Throwable {
+    public void test4751() throws Throwable {
         Attributes attributes0 = new Attributes();
         String string0 = attributes0.getIgnoreCase("FSNv)KVf=");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test4843() throws Throwable {
+    public void test4852() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("W\"!ryb\"", "W\"!ryb\"");
         String string0 = attributes0.getIgnoreCase(" ");
@@ -481,7 +541,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4944() throws Throwable {
+    public void test4953() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("FSNv)KVf=", "FSNv)KVf=");
         String string0 = attributes0.get("FSNv)KVf=");
@@ -489,14 +549,14 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5045() throws Throwable {
+    public void test5054() throws Throwable {
         Attributes attributes0 = new Attributes();
         String string0 = attributes0.get("entities-full.propert-es");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5146() throws Throwable {
+    public void test5155() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("entities-full.properties", true);
         String string0 = attributes0.get(" ");
@@ -504,7 +564,7 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5247() throws Throwable {
+    public void test5256() throws Throwable {
         Attributes attributes0 = new Attributes();
         attributes0.put("inert", "y|");
         boolean boolean0 = attributes0.hasKeyIgnoreCase("inert");
@@ -512,14 +572,14 @@ public class Attributes_ESTest extends Attributes_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5348() throws Throwable {
+    public void test5357() throws Throwable {
         Attributes attributes0 = new Attributes();
         String string0 = attributes0.toString();
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test5449() throws Throwable {
+    public void test5458() throws Throwable {
         Attributes attributes0 = new Attributes();
         String string0 = attributes0.html();
         assertEquals("", string0);

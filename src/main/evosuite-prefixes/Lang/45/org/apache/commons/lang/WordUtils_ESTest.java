@@ -154,11 +154,6 @@ public class WordUtils_ESTest extends WordUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2526() throws Throwable {
-        String string0 = WordUtils.abbreviate(" erOn.E", (-2850), 1520, "n");
-    }
-
-    @Test(timeout = 4000)
     public void test2627() throws Throwable {
         char[] charArray0 = new char[5];
         charArray0[1] = 'y';
@@ -279,11 +274,6 @@ public class WordUtils_ESTest extends WordUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4749() throws Throwable {
-        String string0 = WordUtils.wrap("*O4cY!6-apl%[&-s", 2);
-    }
-
-    @Test(timeout = 4000)
     public void test4850() throws Throwable {
         String string0 = WordUtils.wrap("lOuDBz&e lv:\"W", 0, "fs6)>fSx", false);
     }
@@ -294,22 +284,27 @@ public class WordUtils_ESTest extends WordUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5152() throws Throwable {
+    public void test5052() throws Throwable {
+        WordUtils wordUtils0 = new WordUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test5153() throws Throwable {
         String string0 = WordUtils.wrap("", (-2030));
     }
 
     @Test(timeout = 4000)
-    public void test5253() throws Throwable {
+    public void test5254() throws Throwable {
         String string0 = WordUtils.initials("");
     }
 
     @Test(timeout = 4000)
-    public void test5354() throws Throwable {
+    public void test5355() throws Throwable {
         String string0 = WordUtils.capitalizeFully("N})Ip4*^{6]PkL{6");
     }
 
     @Test(timeout = 4000)
-    public void test5455() throws Throwable {
+    public void test5456() throws Throwable {
         String string0 = WordUtils.capitalize("}-)Y`s:");
     }
 }

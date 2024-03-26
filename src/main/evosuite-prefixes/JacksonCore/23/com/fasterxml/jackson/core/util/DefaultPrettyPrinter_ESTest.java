@@ -126,12 +126,6 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test067() throws Throwable {
-        DefaultPrettyPrinter.FixedSpaceIndenter defaultPrettyPrinter_FixedSpaceIndenter0 = DefaultPrettyPrinter.FixedSpaceIndenter.instance;
-        boolean boolean0 = defaultPrettyPrinter_FixedSpaceIndenter0.isInline();
-    }
-
-    @Test(timeout = 4000)
     public void test078() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
@@ -516,23 +510,17 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test4950() throws Throwable {
+    public void test4850() throws Throwable {
+        DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
+        defaultPrettyPrinter0.indentObjectsWith((DefaultPrettyPrinter.Indenter) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test4951() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         DefaultPrettyPrinter.FixedSpaceIndenter defaultPrettyPrinter_FixedSpaceIndenter0 = new DefaultPrettyPrinter.FixedSpaceIndenter();
         defaultPrettyPrinter0.indentArraysWith(defaultPrettyPrinter_FixedSpaceIndenter0);
         defaultPrettyPrinter_FixedSpaceIndenter0.isInline();
-    }
-
-    @Test(timeout = 4000)
-    public void test5051() throws Throwable {
-        DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter("\n");
-        DefaultPrettyPrinter defaultPrettyPrinter1 = defaultPrettyPrinter0.withRootSeparator((String) null);
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        Object object0 = new Object();
-        IOContext iOContext0 = new IOContext(bufferRecycler0, object0, false);
-        MockPrintStream mockPrintStream0 = new MockPrintStream("\n");
-        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, mockPrintStream0);
-        defaultPrettyPrinter1.writeRootValueSeparator(uTF8JsonGenerator0);
     }
 
     @Test(timeout = 4000)
@@ -545,23 +533,40 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
         MockPrintStream mockPrintStream0 = new MockPrintStream("\n");
         UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, mockPrintStream0);
         defaultPrettyPrinter1.writeRootValueSeparator(uTF8JsonGenerator0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5053() throws Throwable {
+        DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter("\n");
+        DefaultPrettyPrinter defaultPrettyPrinter1 = defaultPrettyPrinter0.withRootSeparator((String) null);
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        Object object0 = new Object();
+        IOContext iOContext0 = new IOContext(bufferRecycler0, object0, false);
+        MockPrintStream mockPrintStream0 = new MockPrintStream("\n");
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 0, (ObjectCodec) null, mockPrintStream0);
+        defaultPrettyPrinter1.writeRootValueSeparator(uTF8JsonGenerator0);
         uTF8JsonGenerator0.getOutputBuffered();
     }
 
     @Test(timeout = 4000)
-    public void test5253() throws Throwable {
+    public void test5154() throws Throwable {
+        DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test5255() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter("com.fasterxml.jackson.core.util.DefaultPrettyPrinter$NopIndenter");
         DefaultPrettyPrinter defaultPrettyPrinter1 = defaultPrettyPrinter0.withRootSeparator("");
     }
 
     @Test(timeout = 4000)
-    public void test5354() throws Throwable {
+    public void test5356() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         DefaultPrettyPrinter defaultPrettyPrinter1 = defaultPrettyPrinter0.withSpacesInObjectEntries();
     }
 
     @Test(timeout = 4000)
-    public void test5455() throws Throwable {
+    public void test5457() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Object object0 = new Object();
@@ -575,7 +580,7 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test5456() throws Throwable {
+    public void test5458() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Object object0 = new Object();
@@ -588,7 +593,7 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test5557() throws Throwable {
+    public void test5559() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, "=hhP'3C", false);
@@ -598,13 +603,13 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test5658() throws Throwable {
+    public void test5660() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         DefaultPrettyPrinter defaultPrettyPrinter1 = defaultPrettyPrinter0.createInstance();
     }
 
     @Test(timeout = 4000)
-    public void test5759() throws Throwable {
+    public void test5761() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         DefaultPrettyPrinter.FixedSpaceIndenter defaultPrettyPrinter_FixedSpaceIndenter0 = new DefaultPrettyPrinter.FixedSpaceIndenter();
         BufferRecycler bufferRecycler0 = new BufferRecycler(47, 1144);
@@ -617,7 +622,7 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test5860() throws Throwable {
+    public void test5862() throws Throwable {
         DefaultPrettyPrinter.FixedSpaceIndenter defaultPrettyPrinter_FixedSpaceIndenter0 = new DefaultPrettyPrinter.FixedSpaceIndenter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         Object object0 = new Object();
@@ -630,7 +635,7 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test5961() throws Throwable {
+    public void test5963() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, defaultPrettyPrinter0, false);
@@ -640,14 +645,14 @@ public class DefaultPrettyPrinter_ESTest extends DefaultPrettyPrinter_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test6062() throws Throwable {
+    public void test6064() throws Throwable {
         DefaultPrettyPrinter.NopIndenter defaultPrettyPrinter_NopIndenter0 = new DefaultPrettyPrinter.NopIndenter();
         defaultPrettyPrinter_NopIndenter0.writeIndentation((JsonGenerator) null, 3610);
         defaultPrettyPrinter_NopIndenter0.isInline();
     }
 
     @Test(timeout = 4000)
-    public void test6163() throws Throwable {
+    public void test6165() throws Throwable {
         DefaultPrettyPrinter defaultPrettyPrinter0 = new DefaultPrettyPrinter();
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         FileDescriptor fileDescriptor0 = new FileDescriptor();

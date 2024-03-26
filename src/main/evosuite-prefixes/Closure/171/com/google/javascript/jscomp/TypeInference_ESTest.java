@@ -95,7 +95,23 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0043() throws Throwable {
+    public void test0033() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        ClosureReverseAbstractInterpreter closureReverseAbstractInterpreter0 = new ClosureReverseAbstractInterpreter(googleCodingConvention0, jSTypeRegistry0);
+        JSTypeNative jSTypeNative0 = JSTypeNative.NUMBER_TYPE;
+        CodingConvention.AssertionFunctionSpec codingConvention_AssertionFunctionSpec0 = new CodingConvention.AssertionFunctionSpec("Object#Element", jSTypeNative0);
+        ImmutableSortedMap<String, CodingConvention.AssertionFunctionSpec> immutableSortedMap0 = ImmutableSortedMap.of("j_Gj5z", codingConvention_AssertionFunctionSpec0);
+        Scope scope0 = Scope.createGlobalScope(node0);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, closureReverseAbstractInterpreter0, scope0, immutableSortedMap0);
+        typeInference0.analyze();
+    }
+
+    @Test(timeout = 4000)
+    public void test0044() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -113,7 +129,22 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0064() throws Throwable {
+    public void test0055() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
+        GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        ClosureReverseAbstractInterpreter closureReverseAbstractInterpreter0 = new ClosureReverseAbstractInterpreter(googleCodingConvention0, jSTypeRegistry0);
+        CodingConvention.AssertionFunctionSpec codingConvention_AssertionFunctionSpec0 = new CodingConvention.AssertionFunctionSpec("Object#Key");
+        ImmutableSortedMap<String, CodingConvention.AssertionFunctionSpec> immutableSortedMap0 = ImmutableSortedMap.of("j_Gj5z", codingConvention_AssertionFunctionSpec0);
+        Scope scope0 = Scope.createLatticeBottom(node0);
+        Node node1 = new Node(30, node0, node0, node0, 37, (-830));
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
+        TypeInference typeInference0 = new TypeInference(compiler0, controlFlowGraph0, closureReverseAbstractInterpreter0, scope0, immutableSortedMap0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -129,7 +160,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0075() throws Throwable {
+    public void test0077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -149,7 +180,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0086() throws Throwable {
+    public void test0088() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("jGE", "jGE");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -168,7 +199,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0097() throws Throwable {
+    public void test0099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -187,7 +218,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0108() throws Throwable {
+    public void test01010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -204,7 +235,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0119() throws Throwable {
+    public void test01111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -222,7 +253,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01210() throws Throwable {
+    public void test01212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -239,7 +270,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01311() throws Throwable {
+    public void test01313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -255,7 +286,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01412() throws Throwable {
+    public void test01414() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -273,7 +304,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01513() throws Throwable {
+    public void test01515() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -289,7 +320,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01614() throws Throwable {
+    public void test01616() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("jGE", "jGE");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -307,7 +338,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01715() throws Throwable {
+    public void test01717() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -324,7 +355,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01816() throws Throwable {
+    public void test01818() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -341,7 +372,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01917() throws Throwable {
+    public void test01919() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -358,7 +389,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02018() throws Throwable {
+    public void test02020() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -376,7 +407,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02119() throws Throwable {
+    public void test02121() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -393,7 +424,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02220() throws Throwable {
+    public void test02222() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -412,7 +443,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02321() throws Throwable {
+    public void test02323() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -429,7 +460,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02422() throws Throwable {
+    public void test02424() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -448,7 +479,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02523() throws Throwable {
+    public void test02525() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -465,7 +496,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02624() throws Throwable {
+    public void test02626() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -482,7 +513,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02725() throws Throwable {
+    public void test02727() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -499,7 +530,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02826() throws Throwable {
+    public void test02828() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -516,7 +547,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02927() throws Throwable {
+    public void test02929() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -534,7 +565,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03028() throws Throwable {
+    public void test03030() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -553,7 +584,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03129() throws Throwable {
+    public void test03131() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager(logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -571,7 +602,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03230() throws Throwable {
+    public void test03232() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -589,7 +620,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03331() throws Throwable {
+    public void test03333() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("q_GJ5z", "q_GJ5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -607,7 +638,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03432() throws Throwable {
+    public void test03434() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -625,7 +656,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03533() throws Throwable {
+    public void test03535() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -642,7 +673,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03634() throws Throwable {
+    public void test03636() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -659,7 +690,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03735() throws Throwable {
+    public void test03737() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -676,7 +707,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03836() throws Throwable {
+    public void test03838() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -692,7 +723,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03937() throws Throwable {
+    public void test03939() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Glj7z", "j_Glj7z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -708,7 +739,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04038() throws Throwable {
+    public void test04040() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -727,7 +758,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04139() throws Throwable {
+    public void test04141() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -746,7 +777,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04240() throws Throwable {
+    public void test04242() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -764,7 +795,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04341() throws Throwable {
+    public void test04343() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("jGE", "jGE");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -782,7 +813,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04442() throws Throwable {
+    public void test04444() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -800,7 +831,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04543() throws Throwable {
+    public void test04545() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -817,7 +848,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04644() throws Throwable {
+    public void test04646() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -834,7 +865,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04745() throws Throwable {
+    public void test04747() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_u5", "j_u5");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -852,7 +883,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04846() throws Throwable {
+    public void test04848() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -871,7 +902,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04947() throws Throwable {
+    public void test04949() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -888,7 +919,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05048() throws Throwable {
+    public void test05050() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -905,7 +936,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05149() throws Throwable {
+    public void test05151() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager(logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -923,7 +954,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05250() throws Throwable {
+    public void test05252() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -940,7 +971,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05351() throws Throwable {
+    public void test05353() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -960,7 +991,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05452() throws Throwable {
+    public void test05454() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -978,7 +1009,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05553() throws Throwable {
+    public void test05555() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("q_GJ5z", "q_GJ5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -996,7 +1027,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05654() throws Throwable {
+    public void test05656() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1015,7 +1046,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05755() throws Throwable {
+    public void test05757() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1033,7 +1064,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05856() throws Throwable {
+    public void test05858() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1050,7 +1081,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05957() throws Throwable {
+    public void test05959() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1067,7 +1098,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06058() throws Throwable {
+    public void test06060() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1086,7 +1117,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06159() throws Throwable {
+    public void test06161() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1103,7 +1134,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06260() throws Throwable {
+    public void test06262() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1122,7 +1153,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06361() throws Throwable {
+    public void test06363() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1140,7 +1171,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06462() throws Throwable {
+    public void test06464() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1157,7 +1188,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06563() throws Throwable {
+    public void test06565() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1174,7 +1205,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06664() throws Throwable {
+    public void test06666() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1193,7 +1224,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06765() throws Throwable {
+    public void test06767() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1211,7 +1242,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06866() throws Throwable {
+    public void test06868() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1231,7 +1262,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06967() throws Throwable {
+    public void test06969() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1249,7 +1280,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07068() throws Throwable {
+    public void test07070() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1267,7 +1298,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07169() throws Throwable {
+    public void test07171() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1287,7 +1318,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07270() throws Throwable {
+    public void test07272() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1305,7 +1336,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07371() throws Throwable {
+    public void test07373() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("q_GJ5z", "q_GJ5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1323,7 +1354,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07472() throws Throwable {
+    public void test07474() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1342,7 +1373,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07573() throws Throwable {
+    public void test07575() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("{>5;*)#D", "com.google.javascript.jscomp.CreateSyntheticBlocks");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1361,7 +1392,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07674() throws Throwable {
+    public void test07676() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1380,7 +1411,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07775() throws Throwable {
+    public void test07777() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1396,7 +1427,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07876() throws Throwable {
+    public void test07878() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1414,7 +1445,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07977() throws Throwable {
+    public void test07979() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager(logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1432,7 +1463,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08078() throws Throwable {
+    public void test08080() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1450,7 +1481,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08179() throws Throwable {
+    public void test08181() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("jGE", "jGE");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1468,7 +1499,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08280() throws Throwable {
+    public void test08282() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1485,7 +1516,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08381() throws Throwable {
+    public void test08383() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1503,7 +1534,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08482() throws Throwable {
+    public void test08484() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1522,7 +1553,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08583() throws Throwable {
+    public void test08585() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1540,7 +1571,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08684() throws Throwable {
+    public void test08686() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1559,7 +1590,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08785() throws Throwable {
+    public void test08787() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
@@ -1576,7 +1607,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08886() throws Throwable {
+    public void test08888() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1594,7 +1625,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08987() throws Throwable {
+    public void test08989() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1610,7 +1641,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09088() throws Throwable {
+    public void test09090() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1626,7 +1657,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09189() throws Throwable {
+    public void test09191() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1645,7 +1676,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09290() throws Throwable {
+    public void test09292() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1663,7 +1694,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09391() throws Throwable {
+    public void test09393() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1680,7 +1711,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09492() throws Throwable {
+    public void test09494() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1699,7 +1730,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09593() throws Throwable {
+    public void test09595() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1717,7 +1748,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09694() throws Throwable {
+    public void test09696() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1735,7 +1766,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09795() throws Throwable {
+    public void test09797() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1753,7 +1784,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09896() throws Throwable {
+    public void test09898() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1770,7 +1801,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09997() throws Throwable {
+    public void test09999() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1786,7 +1817,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10098() throws Throwable {
+    public void test100100() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1803,7 +1834,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test10199() throws Throwable {
+    public void test101101() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1820,7 +1851,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102100() throws Throwable {
+    public void test102102() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1837,7 +1868,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103101() throws Throwable {
+    public void test103103() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager(logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1858,7 +1889,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104102() throws Throwable {
+    public void test104104() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1875,7 +1906,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105103() throws Throwable {
+    public void test105105() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1890,7 +1921,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106104() throws Throwable {
+    public void test106106() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -1907,7 +1938,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107105() throws Throwable {
+    public void test107107() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager((MessageFormatter) null, logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1927,7 +1958,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108106() throws Throwable {
+    public void test108108() throws Throwable {
         Logger logger0 = Tracer.logger;
         LoggerErrorManager loggerErrorManager0 = new LoggerErrorManager(logger0);
         Compiler compiler0 = new Compiler(loggerErrorManager0);
@@ -1945,7 +1976,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109107() throws Throwable {
+    public void test109109() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Gj5z", "j_Gj5z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -1962,7 +1993,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110108() throws Throwable {
+    public void test110110() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, false);
@@ -1979,7 +2010,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111109() throws Throwable {
+    public void test111111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("UNCOND", "UNCOND");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -1997,7 +2028,7 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112110() throws Throwable {
+    public void test112112() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("j_Glj7z", "j_Glj7z");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -2014,13 +2045,13 @@ public class TypeInference_ESTest extends TypeInference_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113111() throws Throwable {
+    public void test113113() throws Throwable {
         BooleanLiteralSet booleanLiteralSet0 = BooleanLiteralSet.FALSE;
         BooleanLiteralSet booleanLiteralSet1 = TypeInference.getBooleanOutcomes(booleanLiteralSet0, booleanLiteralSet0, true);
     }
 
     @Test(timeout = 4000)
-    public void test114112() throws Throwable {
+    public void test114114() throws Throwable {
         BooleanLiteralSet booleanLiteralSet0 = BooleanLiteralSet.FALSE;
         BooleanLiteralSet booleanLiteralSet1 = TypeInference.getBooleanOutcomes(booleanLiteralSet0, booleanLiteralSet0, false);
     }

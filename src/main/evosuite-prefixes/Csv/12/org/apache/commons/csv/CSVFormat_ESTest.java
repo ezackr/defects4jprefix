@@ -4541,72 +4541,78 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088533() throws Throwable {
+    public void test087533() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        cSVFormat0.getQuoteMode();
+    }
+
+    @Test(timeout = 4000)
+    public void test088534() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         Character character0 = cSVFormat0.getEscapeCharacter();
     }
 
     @Test(timeout = 4000)
-    public void test089534() throws Throwable {
+    public void test089535() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         boolean boolean0 = cSVFormat0.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
-    public void test090535() throws Throwable {
+    public void test090536() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         String string0 = cSVFormat0.getRecordSeparator();
     }
 
     @Test(timeout = 4000)
-    public void test091536() throws Throwable {
+    public void test091537() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.EXCEL;
         Character character0 = cSVFormat0.getQuoteCharacter();
-    }
-
-    @Test(timeout = 4000)
-    public void test092537() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
-        char char0 = cSVFormat0.getDelimiter();
-        cSVFormat0.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
     public void test092538() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         char char0 = cSVFormat0.getDelimiter();
+        cSVFormat0.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
     public void test092539() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         char char0 = cSVFormat0.getDelimiter();
-        cSVFormat0.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
     public void test092540() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         char char0 = cSVFormat0.getDelimiter();
-        cSVFormat0.getAllowMissingColumnNames();
+        cSVFormat0.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
     public void test092541() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         char char0 = cSVFormat0.getDelimiter();
+        cSVFormat0.getAllowMissingColumnNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test092542() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
+        char char0 = cSVFormat0.getDelimiter();
         cSVFormat0.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
-    public void test093542() throws Throwable {
+    public void test093543() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         QuoteMode quoteMode0 = QuoteMode.NONE;
         cSVFormat0.withQuoteMode(quoteMode0);
     }
 
     @Test(timeout = 4000)
-    public void test094543() throws Throwable {
+    public void test094544() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         CSVFormat cSVFormat1 = cSVFormat0.withEscape('r');
         Character character0 = new Character('r');
@@ -4614,7 +4620,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095544() throws Throwable {
+    public void test095545() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         Character character0 = Character.valueOf('s');
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker(character0);
@@ -4622,39 +4628,23 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096545() throws Throwable {
+    public void test096546() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.EXCEL;
         cSVFormat0.EXCEL.withCommentMarker(',');
     }
 
     @Test(timeout = 4000)
-    public void test097546() throws Throwable {
+    public void test097547() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('U');
         Character character0 = new Character('U');
         cSVFormat0.withEscape(character0);
     }
 
     @Test(timeout = 4000)
-    public void test098547() throws Throwable {
+    public void test098548() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('(');
         Character character0 = new Character('(');
         cSVFormat0.withQuote(character0);
-    }
-
-    @Test(timeout = 4000)
-    public void test099548() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        String[] stringArray0 = new String[8];
-        stringArray0[0] = "vE7j|07";
-        stringArray0[1] = "]G7;";
-        stringArray0[2] = "w5%hol.RC'kWi";
-        stringArray0[3] = "The header contains a duplicate entry: '";
-        stringArray0[4] = "1q#6hb?%~+|gP";
-        stringArray0[5] = "(line ";
-        stringArray0[6] = "\r\n";
-        CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
-        String string0 = cSVFormat1.toString();
-        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -4670,26 +4660,35 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         stringArray0[6] = "\r\n";
         CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
         String string0 = cSVFormat1.toString();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test100550() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
-        String string0 = cSVFormat0.toString();
-        cSVFormat0.getAllowMissingColumnNames();
+    public void test099550() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        String[] stringArray0 = new String[8];
+        stringArray0[0] = "vE7j|07";
+        stringArray0[1] = "]G7;";
+        stringArray0[2] = "w5%hol.RC'kWi";
+        stringArray0[3] = "The header contains a duplicate entry: '";
+        stringArray0[4] = "1q#6hb?%~+|gP";
+        stringArray0[5] = "(line ";
+        stringArray0[6] = "\r\n";
+        CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
+        String string0 = cSVFormat1.toString();
     }
 
     @Test(timeout = 4000)
     public void test100551() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         String string0 = cSVFormat0.toString();
+        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test101552() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
-        CSVFormat cSVFormat1 = cSVFormat0.withEscape('r');
-        String string0 = cSVFormat1.toString();
+    public void test100552() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
+        String string0 = cSVFormat0.toString();
     }
 
     @Test(timeout = 4000)
@@ -4697,13 +4696,12 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         CSVFormat cSVFormat1 = cSVFormat0.withEscape('r');
         String string0 = cSVFormat1.toString();
-        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test102554() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("IUgG1T[MPmf6/yGLlvX");
+    public void test101554() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
+        CSVFormat cSVFormat1 = cSVFormat0.withEscape('r');
         String string0 = cSVFormat1.toString();
         cSVFormat1.getAllowMissingColumnNames();
     }
@@ -4713,16 +4711,24 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("IUgG1T[MPmf6/yGLlvX");
         String string0 = cSVFormat1.toString();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test103556() throws Throwable {
+    public void test102556() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("IUgG1T[MPmf6/yGLlvX");
+        String string0 = cSVFormat1.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test103557() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         cSVFormat0.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
-    public void test103557() throws Throwable {
+    public void test103558() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         Object[] objectArray0 = new Object[7];
         cSVFormat0.format(objectArray0);
@@ -4730,14 +4736,14 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104558() throws Throwable {
+    public void test104559() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('1');
         String string0 = cSVFormat1.toString();
     }
 
     @Test(timeout = 4000)
-    public void test104559() throws Throwable {
+    public void test104560() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('1');
         String string0 = cSVFormat1.toString();
@@ -4745,17 +4751,9 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105560() throws Throwable {
+    public void test105561() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat0.isCommentMarkerSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test106561() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
-        cSVFormat1.hashCode();
-        cSVFormat1.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
@@ -4763,7 +4761,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         cSVFormat1.hashCode();
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
@@ -4771,7 +4769,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         cSVFormat1.hashCode();
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -4779,7 +4777,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         cSVFormat1.hashCode();
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -4787,23 +4785,21 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         cSVFormat1.hashCode();
+        cSVFormat1.getAllowMissingColumnNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test106566() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
+        cSVFormat1.hashCode();
         cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
-    public void test108566() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('F');
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("WL__2JE");
-        cSVFormat1.hashCode();
-        cSVFormat1.getSkipHeaderRecord();
-    }
-
-    @Test(timeout = 4000)
-    public void test108567() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('F');
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("WL__2JE");
-        cSVFormat1.hashCode();
-        cSVFormat0.getIgnoreEmptyLines();
+    public void test107567() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
+        cSVFormat0.TDF.hashCode();
     }
 
     @Test(timeout = 4000)
@@ -4811,7 +4807,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('F');
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("WL__2JE");
         cSVFormat1.hashCode();
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
@@ -4819,23 +4815,23 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('F');
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("WL__2JE");
         cSVFormat1.hashCode();
+        cSVFormat0.getIgnoreEmptyLines();
+    }
+
+    @Test(timeout = 4000)
+    public void test108570() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('F');
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("WL__2JE");
+        cSVFormat1.hashCode();
+        cSVFormat1.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test108571() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('F');
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("WL__2JE");
+        cSVFormat1.hashCode();
         cSVFormat0.getAllowMissingColumnNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test109570() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
-        cSVFormat1.hashCode();
-        cSVFormat1.isNullStringSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test109571() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
-        cSVFormat1.hashCode();
-        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -4843,7 +4839,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
         cSVFormat1.hashCode();
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
@@ -4851,7 +4847,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
         cSVFormat1.hashCode();
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -4859,25 +4855,23 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
         cSVFormat1.hashCode();
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
-    public void test110575() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
-        CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
-        cSVFormat1.hashCode();
-        cSVFormat1.isEscapeCharacterSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test110576() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
-        CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
+    public void test109575() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
         cSVFormat1.hashCode();
         cSVFormat1.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test109576() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('-');
+        cSVFormat1.hashCode();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -4886,7 +4880,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
         cSVFormat1.hashCode();
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -4895,7 +4889,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
         cSVFormat1.hashCode();
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -4904,7 +4898,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
         cSVFormat1.hashCode();
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -4913,39 +4907,25 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
         cSVFormat1.hashCode();
+        cSVFormat1.isQuoteCharacterSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test110581() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
+        CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
+        cSVFormat1.hashCode();
+        cSVFormat1.getIgnoreEmptyLines();
+    }
+
+    @Test(timeout = 4000)
+    public void test110582() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
+        CSVFormat cSVFormat1 = cSVFormat0.EXCEL.withQuoteMode(quoteMode0);
+        cSVFormat1.hashCode();
         cSVFormat1.getIgnoreSurroundingSpaces();
-    }
-
-    @Test(timeout = 4000)
-    public void test111581() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        String[] stringArray0 = new String[8];
-        stringArray0[0] = "vE7j|07";
-        stringArray0[1] = "]G7;";
-        stringArray0[2] = "w5%hol.RC'kWi";
-        stringArray0[3] = "The header contains a duplicate entry: '";
-        stringArray0[4] = "1q#6hb?%~+|gP";
-        stringArray0[5] = "(line ";
-        stringArray0[6] = "\r\n";
-        CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
-        cSVFormat1.format(stringArray0);
-        cSVFormat1.getDelimiter();
-    }
-
-    @Test(timeout = 4000)
-    public void test111582() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        String[] stringArray0 = new String[8];
-        stringArray0[0] = "vE7j|07";
-        stringArray0[1] = "]G7;";
-        stringArray0[2] = "w5%hol.RC'kWi";
-        stringArray0[3] = "The header contains a duplicate entry: '";
-        stringArray0[4] = "1q#6hb?%~+|gP";
-        stringArray0[5] = "(line ";
-        stringArray0[6] = "\r\n";
-        CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
-        cSVFormat1.format(stringArray0);
-        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -4961,7 +4941,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         stringArray0[6] = "\r\n";
         CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
         cSVFormat1.format(stringArray0);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -4977,7 +4957,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         stringArray0[6] = "\r\n";
         CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
         cSVFormat1.format(stringArray0);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -4993,7 +4973,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         stringArray0[6] = "\r\n";
         CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
         cSVFormat1.format(stringArray0);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5009,7 +4989,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         stringArray0[6] = "\r\n";
         CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
         cSVFormat1.format(stringArray0);
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5025,22 +5005,38 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         stringArray0[6] = "\r\n";
         CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
         cSVFormat1.format(stringArray0);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
-    public void test112588() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
+    public void test111588() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        String[] stringArray0 = new String[8];
+        stringArray0[0] = "vE7j|07";
+        stringArray0[1] = "]G7;";
+        stringArray0[2] = "w5%hol.RC'kWi";
+        stringArray0[3] = "The header contains a duplicate entry: '";
+        stringArray0[4] = "1q#6hb?%~+|gP";
+        stringArray0[5] = "(line ";
+        stringArray0[6] = "\r\n";
+        CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
+        cSVFormat1.format(stringArray0);
+        cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
-    public void test112589() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+    public void test111589() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        String[] stringArray0 = new String[8];
+        stringArray0[0] = "vE7j|07";
+        stringArray0[1] = "]G7;";
+        stringArray0[2] = "w5%hol.RC'kWi";
+        stringArray0[3] = "The header contains a duplicate entry: '";
+        stringArray0[4] = "1q#6hb?%~+|gP";
+        stringArray0[5] = "(line ";
+        stringArray0[6] = "\r\n";
+        CSVFormat cSVFormat1 = cSVFormat0.withHeader(stringArray0);
+        cSVFormat1.format(stringArray0);
         cSVFormat1.getIgnoreEmptyLines();
     }
 
@@ -5049,7 +5045,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5057,7 +5053,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5065,7 +5061,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5073,6 +5069,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5080,22 +5077,22 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test112595() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+    }
+
+    @Test(timeout = 4000)
+    public void test112596() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator("r,&,Izl?x01`c1z8");
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
         cSVFormat1.isQuoteCharacterSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test113595() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test113596() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5103,7 +5100,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5111,7 +5107,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5119,7 +5115,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5127,7 +5123,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
@@ -5135,30 +5131,30 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test113602() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.isQuoteCharacterSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test113603() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(true);
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
         cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test114602() throws Throwable {
+    public void test114604() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = CSVFormat.EXCEL;
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test115603() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test115604() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5166,7 +5162,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5174,7 +5170,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5182,6 +5178,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5189,7 +5186,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5197,7 +5194,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5205,7 +5201,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getRecordSeparator();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5213,22 +5209,23 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getNullString();
-    }
-
-    @Test(timeout = 4000)
-    public void test116612() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
         cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
-    public void test116613() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+    public void test115612() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getRecordSeparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test115613() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("r,&,Izl?x01`c1z8");
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getNullString();
     }
 
     @Test(timeout = 4000)
@@ -5236,7 +5233,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5244,7 +5241,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getRecordSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5252,7 +5248,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5260,7 +5256,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getNullString();
+        cSVFormat1.getRecordSeparator();
     }
 
     @Test(timeout = 4000)
@@ -5268,7 +5264,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5276,7 +5272,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getNullString();
     }
 
     @Test(timeout = 4000)
@@ -5284,23 +5280,21 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
-    public void test117621() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        Character character0 = Character.valueOf('?');
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
+    public void test116621() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
-    public void test117622() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        Character character0 = Character.valueOf('?');
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
+    public void test116622() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withNullString("org.apache.commons.csv.ExtendedBufferedReader");
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
         cSVFormat1.getAllowMissingColumnNames();
     }
@@ -5311,7 +5305,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = Character.valueOf('?');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getEscapeCharacter();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5320,7 +5314,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = Character.valueOf('?');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5329,7 +5323,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = Character.valueOf('?');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.getEscapeCharacter();
     }
 
     @Test(timeout = 4000)
@@ -5338,7 +5332,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = Character.valueOf('?');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5347,6 +5341,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = Character.valueOf('?');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
@@ -5355,24 +5350,24 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = Character.valueOf('?');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getQuoteCharacter();
-    }
-
-    @Test(timeout = 4000)
-    public void test118629() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
-        CSVFormat cSVFormat2 = CSVFormat.RFC4180;
-        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test118630() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
-        CSVFormat cSVFormat2 = CSVFormat.RFC4180;
-        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
         cSVFormat1.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test117629() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        Character character0 = Character.valueOf('?');
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+    }
+
+    @Test(timeout = 4000)
+    public void test117630() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        Character character0 = Character.valueOf('?');
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape(character0);
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.getQuoteCharacter();
     }
 
     @Test(timeout = 4000)
@@ -5381,7 +5376,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         CSVFormat cSVFormat2 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5390,7 +5384,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         CSVFormat cSVFormat2 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getEscapeCharacter();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5399,7 +5393,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         CSVFormat cSVFormat2 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5408,7 +5402,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         CSVFormat cSVFormat2 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getEscapeCharacter();
     }
 
     @Test(timeout = 4000)
@@ -5417,23 +5411,25 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         CSVFormat cSVFormat2 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
+        cSVFormat1.getAllowMissingColumnNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test118636() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
+        CSVFormat cSVFormat2 = CSVFormat.RFC4180;
+        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
+        cSVFormat1.getIgnoreSurroundingSpaces();
+    }
+
+    @Test(timeout = 4000)
+    public void test118637() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
+        CSVFormat cSVFormat2 = CSVFormat.RFC4180;
+        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
         cSVFormat1.isNullStringSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test119636() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getDelimiter();
-    }
-
-    @Test(timeout = 4000)
-    public void test119637() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5441,7 +5437,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getCommentMarker();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5449,7 +5445,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5457,7 +5453,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getCommentMarker();
     }
 
     @Test(timeout = 4000)
@@ -5465,7 +5461,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5473,7 +5469,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5481,7 +5477,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5489,22 +5485,22 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test120645() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+    public void test119645() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
         cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
-    public void test120646() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
+    public void test119646() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('?');
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
     }
 
     @Test(timeout = 4000)
@@ -5512,7 +5508,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
@@ -5520,6 +5516,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5527,7 +5524,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getCommentMarker();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5535,7 +5532,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5543,7 +5539,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getCommentMarker();
     }
 
     @Test(timeout = 4000)
@@ -5551,7 +5547,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5559,25 +5555,23 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getIgnoreEmptyLines();
+    }
+
+    @Test(timeout = 4000)
+    public void test120654() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.isQuoteCharacterSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test120655() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('K');
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
         cSVFormat1.isEscapeCharacterSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test121654() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
-        CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
-        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat2.getCommentMarker();
-    }
-
-    @Test(timeout = 4000)
-    public void test121655() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
-        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
-        CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
-        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat2.isNullStringSet();
     }
 
     @Test(timeout = 4000)
@@ -5586,7 +5580,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat2.getCommentMarker();
     }
 
     @Test(timeout = 4000)
@@ -5595,7 +5589,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
+        cSVFormat2.isNullStringSet();
     }
 
     @Test(timeout = 4000)
@@ -5604,7 +5598,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.equals((Object) cSVFormat0);
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5613,7 +5607,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat2.isEscapeCharacterSet();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5622,7 +5616,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat2.getIgnoreEmptyLines();
+        cSVFormat1.equals((Object) cSVFormat0);
     }
 
     @Test(timeout = 4000)
@@ -5631,7 +5625,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat2.getIgnoreSurroundingSpaces();
+        cSVFormat2.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5640,7 +5634,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat2.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5649,24 +5643,24 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
         CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
         boolean boolean0 = cSVFormat2.equals(cSVFormat1);
+        cSVFormat2.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
-    public void test122664() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
-        Character character0 = new Character('r');
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getAllowMissingColumnNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test122665() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
-        Character character0 = new Character('r');
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+    public void test121664() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
+        CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
+        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
         cSVFormat1.getIgnoreEmptyLines();
+    }
+
+    @Test(timeout = 4000)
+    public void test121665() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.MYSQL;
+        CSVFormat cSVFormat1 = cSVFormat0.withCommentMarker('5');
+        CSVFormat cSVFormat2 = cSVFormat1.withIgnoreSurroundingSpaces(true);
+        boolean boolean0 = cSVFormat2.equals(cSVFormat1);
     }
 
     @Test(timeout = 4000)
@@ -5675,7 +5669,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5684,7 +5678,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5693,7 +5687,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat0.equals((Object) cSVFormat1);
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5702,7 +5696,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5711,7 +5705,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat0.equals((Object) cSVFormat1);
     }
 
     @Test(timeout = 4000)
@@ -5720,7 +5714,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5729,28 +5723,31 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         Character character0 = new Character('r');
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
-    public void test123673() throws Throwable {
+    public void test122673() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
+        Character character0 = new Character('r');
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.isNullStringSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test122674() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.RFC4180;
+        Character character0 = new Character('r');
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withQuote(character0);
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+    }
+
+    @Test(timeout = 4000)
+    public void test123675() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = CSVFormat.TDF;
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test124674() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
-        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test124675() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
-        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
-        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5758,7 +5755,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5766,7 +5762,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5774,25 +5770,23 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
         boolean boolean0 = cSVFormat1.equals(cSVFormat0);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test125679() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
-        CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
+    public void test124679() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
+        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
-    public void test125680() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
-        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
-        CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
+    public void test124680() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
+        CSVFormat cSVFormat1 = cSVFormat0.withSkipHeaderRecord(false);
+        boolean boolean0 = cSVFormat1.equals(cSVFormat0);
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5801,7 +5795,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5810,7 +5804,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5819,7 +5813,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -5828,6 +5822,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5836,7 +5831,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -5845,22 +5840,24 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
         CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+    }
+
+    @Test(timeout = 4000)
+    public void test125687() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
+        CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.isEscapeCharacterSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test125688() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
+        QuoteMode quoteMode0 = QuoteMode.NON_NUMERIC;
+        CSVFormat cSVFormat1 = cSVFormat0.withQuoteMode(quoteMode0);
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
         cSVFormat1.isNullStringSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test126687() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
-        Object object0 = new Object();
-        boolean boolean0 = cSVFormat0.equals(object0);
-        cSVFormat0.getIgnoreSurroundingSpaces();
-    }
-
-    @Test(timeout = 4000)
-    public void test126688() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
-        Object object0 = new Object();
-        boolean boolean0 = cSVFormat0.equals(object0);
     }
 
     @Test(timeout = 4000)
@@ -5868,7 +5865,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         Object object0 = new Object();
         boolean boolean0 = cSVFormat0.equals(object0);
-        cSVFormat0.getIgnoreEmptyLines();
+        cSVFormat0.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -5876,7 +5873,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         Object object0 = new Object();
         boolean boolean0 = cSVFormat0.equals(object0);
-        cSVFormat0.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -5884,7 +5880,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         Object object0 = new Object();
         boolean boolean0 = cSVFormat0.equals(object0);
-        cSVFormat0.getAllowMissingColumnNames();
+        cSVFormat0.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -5892,65 +5888,81 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         Object object0 = new Object();
         boolean boolean0 = cSVFormat0.equals(object0);
+        cSVFormat0.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test126693() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
+        Object object0 = new Object();
+        boolean boolean0 = cSVFormat0.equals(object0);
+        cSVFormat0.getAllowMissingColumnNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test126694() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
+        Object object0 = new Object();
+        boolean boolean0 = cSVFormat0.equals(object0);
         cSVFormat0.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
-    public void test127693() throws Throwable {
+    public void test127695() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         boolean boolean0 = cSVFormat0.equals((Object) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test128694() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
-        boolean boolean0 = cSVFormat0.equals(cSVFormat0);
-    }
-
-    @Test(timeout = 4000)
-    public void test128695() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
-        boolean boolean0 = cSVFormat0.equals(cSVFormat0);
-        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
     public void test128696() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         boolean boolean0 = cSVFormat0.equals(cSVFormat0);
-        cSVFormat0.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
     public void test128697() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         boolean boolean0 = cSVFormat0.equals(cSVFormat0);
-        cSVFormat0.getDelimiter();
+        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
     public void test128698() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         boolean boolean0 = cSVFormat0.equals(cSVFormat0);
-        cSVFormat0.getIgnoreEmptyLines();
+        cSVFormat0.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
     public void test128699() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         boolean boolean0 = cSVFormat0.equals(cSVFormat0);
+        cSVFormat0.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test128700() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
+        boolean boolean0 = cSVFormat0.equals(cSVFormat0);
+        cSVFormat0.getIgnoreEmptyLines();
+    }
+
+    @Test(timeout = 4000)
+    public void test128701() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
+        boolean boolean0 = cSVFormat0.equals(cSVFormat0);
         cSVFormat0.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
-    public void test129700() throws Throwable {
+    public void test129702() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.RFC4180;
         String[] stringArray0 = new String[3];
         cSVFormat0.withHeader(stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test130701() throws Throwable {
+    public void test130703() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withEscape((Character) null);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
@@ -5958,81 +5970,66 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130702() throws Throwable {
+    public void test130704() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withEscape((Character) null);
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test131703() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.getAllowMissingColumnNames();
-    }
-
-    @Test(timeout = 4000)
-    public void test131704() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.getRecordSeparator();
     }
 
     @Test(timeout = 4000)
     public void test131705() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
     public void test131706() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getRecordSeparator();
     }
 
     @Test(timeout = 4000)
     public void test131707() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.getDelimiter();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
     public void test131708() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
     public void test131709() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
     public void test131710() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
+        cSVFormat1.isNullStringSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test131711() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
+        cSVFormat1.isQuoteCharacterSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test131712() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withRecordSeparator('7');
         cSVFormat1.isEscapeCharacterSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test132711() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-    }
-
-    @Test(timeout = 4000)
-    public void test132712() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
-        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -6040,7 +6037,6 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getEscapeCharacter();
     }
 
     @Test(timeout = 4000)
@@ -6048,7 +6044,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat1.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -6056,7 +6052,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getEscapeCharacter();
     }
 
     @Test(timeout = 4000)
@@ -6064,7 +6060,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getQuoteCharacter();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
@@ -6072,7 +6068,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
@@ -6080,7 +6076,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.getQuoteCharacter();
     }
 
     @Test(timeout = 4000)
@@ -6088,7 +6084,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
@@ -6096,176 +6092,176 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
         boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.getAllowMissingColumnNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test132721() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
+        cSVFormat1.isNullStringSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test132722() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.RFC4180.withEscape('7');
+        boolean boolean0 = cSVFormat0.equals(cSVFormat1);
         cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
-    public void test133721() throws Throwable {
+    public void test133723() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.EXCEL;
         boolean boolean0 = cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test134722() throws Throwable {
+    public void test134724() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString((String) null);
         cSVFormat1.equals((Object) cSVFormat0);
     }
 
     @Test(timeout = 4000)
-    public void test134723() throws Throwable {
+    public void test134725() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.MYSQL;
         CSVFormat cSVFormat1 = cSVFormat0.withNullString((String) null);
         cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
-    public void test135724() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.getIgnoreSurroundingSpaces();
-    }
-
-    @Test(timeout = 4000)
-    public void test135725() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.TDF;
-        CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.getQuoteCharacter();
-    }
-
-    @Test(timeout = 4000)
     public void test135726() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.isNullStringSet();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
     public void test135727() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.isEscapeCharacterSet();
+        cSVFormat1.getQuoteCharacter();
     }
 
     @Test(timeout = 4000)
     public void test135728() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.isNullStringSet();
     }
 
     @Test(timeout = 4000)
     public void test135729() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.getAllowMissingColumnNames();
+        cSVFormat1.isEscapeCharacterSet();
     }
 
     @Test(timeout = 4000)
     public void test135730() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.getDelimiter();
+        cSVFormat1.isQuoteCharacterSet();
     }
 
     @Test(timeout = 4000)
     public void test135731() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
-        cSVFormat1.getIgnoreEmptyLines();
-    }
-
-    @Test(timeout = 4000)
-    public void test136732() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
-        CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat0.getSkipHeaderRecord();
-    }
-
-    @Test(timeout = 4000)
-    public void test136733() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
-        CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
         cSVFormat1.getAllowMissingColumnNames();
+    }
+
+    @Test(timeout = 4000)
+    public void test135732() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
+        cSVFormat1.getDelimiter();
+    }
+
+    @Test(timeout = 4000)
+    public void test135733() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.TDF;
+        CSVFormat cSVFormat1 = cSVFormat0.withQuote('b');
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
     public void test136734() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat0.getDelimiter();
+        cSVFormat0.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
     public void test136735() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat1.getIgnoreSurroundingSpaces();
+        cSVFormat1.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
     public void test136736() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat0.getIgnoreSurroundingSpaces();
+        cSVFormat0.getDelimiter();
     }
 
     @Test(timeout = 4000)
     public void test136737() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat0.getIgnoreEmptyLines();
+        cSVFormat1.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
     public void test136738() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat0.getAllowMissingColumnNames();
+        cSVFormat0.getIgnoreSurroundingSpaces();
     }
 
     @Test(timeout = 4000)
     public void test136739() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat1.getIgnoreEmptyLines();
+        cSVFormat0.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
     public void test136740() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat1.isNullStringSet();
+        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
     public void test136741() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
-        cSVFormat1.isQuoteCharacterSet();
+        cSVFormat1.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
     public void test136742() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
         CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
+        cSVFormat1.isNullStringSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test136743() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
+        CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
+        cSVFormat1.isQuoteCharacterSet();
+    }
+
+    @Test(timeout = 4000)
+    public void test136744() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('A');
+        CSVFormat cSVFormat1 = cSVFormat0.TDF.withIgnoreEmptyLines(true);
         cSVFormat1.isEscapeCharacterSet();
-    }
-
-    @Test(timeout = 4000)
-    public void test137743() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
-        MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
-        cSVFormat0.print(mockPrintStream0);
-        cSVFormat0.getDelimiter();
-    }
-
-    @Test(timeout = 4000)
-    public void test137744() throws Throwable {
-        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
-        MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
-        cSVFormat0.print(mockPrintStream0);
-        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -6273,7 +6269,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
         cSVFormat0.print(mockPrintStream0);
-        cSVFormat0.getSkipHeaderRecord();
+        cSVFormat0.getDelimiter();
     }
 
     @Test(timeout = 4000)
@@ -6281,7 +6277,7 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
         cSVFormat0.print(mockPrintStream0);
-        cSVFormat0.getIgnoreSurroundingSpaces();
+        cSVFormat0.getAllowMissingColumnNames();
     }
 
     @Test(timeout = 4000)
@@ -6289,17 +6285,33 @@ public class CSVFormat_ESTest extends CSVFormat_ESTest_scaffolding {
         CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
         MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
         cSVFormat0.print(mockPrintStream0);
+        cSVFormat0.getSkipHeaderRecord();
+    }
+
+    @Test(timeout = 4000)
+    public void test137748() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
+        MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
+        cSVFormat0.print(mockPrintStream0);
+        cSVFormat0.getIgnoreSurroundingSpaces();
+    }
+
+    @Test(timeout = 4000)
+    public void test137749() throws Throwable {
+        CSVFormat cSVFormat0 = CSVFormat.newFormat('p');
+        MockPrintStream mockPrintStream0 = new MockPrintStream("GWS,4YX@?");
+        cSVFormat0.print(mockPrintStream0);
         cSVFormat0.getIgnoreEmptyLines();
     }
 
     @Test(timeout = 4000)
-    public void test138748() throws Throwable {
+    public void test138750() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.TDF;
         boolean boolean0 = cSVFormat0.getSkipHeaderRecord();
     }
 
     @Test(timeout = 4000)
-    public void test139749() throws Throwable {
+    public void test139751() throws Throwable {
         CSVFormat cSVFormat0 = CSVFormat.DEFAULT;
         PipedReader pipedReader0 = new PipedReader(1);
         CSVParser cSVParser0 = cSVFormat0.TDF.parse(pipedReader0);

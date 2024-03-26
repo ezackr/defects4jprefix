@@ -32,7 +32,13 @@ import org.junit.runner.RunWith;
 public class BZip2CompressorInputStream_ESTest extends BZip2CompressorInputStream_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        BZip2CompressorInputStream bZip2CompressorInputStream0 = new BZip2CompressorInputStream((InputStream) null);
+        byte[] byteArray0 = new byte[6];
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         byte[] byteArray0 = new byte[0];
         int int0 = 0;
         BZip2CompressorInputStream.matches(byteArray0, 0);
@@ -42,7 +48,7 @@ public class BZip2CompressorInputStream_ESTest extends BZip2CompressorInputStrea
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         BZip2CompressorInputStream.matches((byte[]) null, (-65));
         FileDescriptor fileDescriptor0 = new FileDescriptor();
         MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
@@ -54,7 +60,31 @@ public class BZip2CompressorInputStream_ESTest extends BZip2CompressorInputStrea
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test033() throws Throwable {
+        byte[] byteArray0 = new byte[8];
+        byteArray0[0] = (byte) 56;
+        byteArray0[1] = (byte) (-120);
+        byteArray0[2] = (byte) 0;
+        byteArray0[3] = (byte) 0;
+        byteArray0[4] = (byte) (-35);
+        byteArray0[5] = (byte) 1;
+        byteArray0[6] = (byte) 0;
+        byteArray0[7] = (byte) (-100);
+        BZip2CompressorInputStream.matches(byteArray0, 849);
+        boolean boolean0 = BZip2CompressorInputStream.matches(byteArray0, (byte) (-100));
+        int int0 = 762;
+        PipedInputStream pipedInputStream0 = new PipedInputStream(762);
+        ObjectInputStream objectInputStream0 = new ObjectInputStream(pipedInputStream0);
+        objectInputStream0.readFloat();
+        pipedInputStream0.read(byteArray0);
+        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(objectInputStream0, pipedInputStream0);
+        BZip2CompressorInputStream bZip2CompressorInputStream0 = new BZip2CompressorInputStream(sequenceInputStream0, boolean0);
+        BZip2CompressorInputStream.matches(byteArray0, int0);
+        bZip2CompressorInputStream0.read();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         Enumeration<InputStream> enumeration0 = (Enumeration<InputStream>) mock(Enumeration.class, new ViolatedAssumptionAnswer());
         doReturn(false).when(enumeration0).hasMoreElements();
         SequenceInputStream sequenceInputStream0 = new SequenceInputStream(enumeration0);
@@ -72,14 +102,14 @@ public class BZip2CompressorInputStream_ESTest extends BZip2CompressorInputStrea
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test055() throws Throwable {
         int int0 = (-1914);
         PipedInputStream pipedInputStream0 = null;
         pipedInputStream0 = new PipedInputStream((-1914));
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test066() throws Throwable {
         byte[] byteArray0 = new byte[2];
         byte byte0 = (byte) (-96);
         byteArray0[0] = (byte) (-96);
@@ -93,11 +123,40 @@ public class BZip2CompressorInputStream_ESTest extends BZip2CompressorInputStrea
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test077() throws Throwable {
         byte[] byteArray0 = null;
         int int0 = (-1434);
         int int1 = 715;
         ByteArrayInputStream byteArrayInputStream0 = null;
         byteArrayInputStream0 = new ByteArrayInputStream((byte[]) null, (-1434), 715);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        DataInputStream dataInputStream0 = new DataInputStream((InputStream) null);
+        SequenceInputStream sequenceInputStream0 = new SequenceInputStream(dataInputStream0, (InputStream) null);
+        BufferedInputStream bufferedInputStream0 = new BufferedInputStream(sequenceInputStream0);
+        BZip2CompressorInputStream bZip2CompressorInputStream0 = new BZip2CompressorInputStream(bufferedInputStream0, false);
+        bZip2CompressorInputStream0.close();
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 24;
+        byteArray0[1] = (byte) (-111);
+        BZip2CompressorInputStream.matches(byteArray0, 0);
+        BZip2CompressorInputStream.matches(byteArray0, (byte) (-111));
+        ByteArrayInputStream byteArrayInputStream0 = new ByteArrayInputStream(byteArray0);
+        BZip2CompressorInputStream bZip2CompressorInputStream0 = new BZip2CompressorInputStream(byteArrayInputStream0, false);
+        int int0 = (-1905510760);
+        bZip2CompressorInputStream0.read(byteArray0, int0, (int) byteArray0[1]);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        byte[] byteArray0 = null;
+        BZip2CompressorInputStream.matches((byte[]) null, 1027);
+        int int0 = (-2124);
     }
 }

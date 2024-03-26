@@ -225,7 +225,24 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test00612() throws Throwable {
+    public void test00512() throws Throwable {
+        AnnotationIntrospector.nopInstance();
+        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
+        BigInteger bigInteger0 = BigInteger.ONE;
+        BigInteger bigInteger1 = BigInteger.TEN;
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, true);
+        TokenBuffer tokenBuffer1 = (TokenBuffer) tokenBuffer0.useDefaultPrettyPrinter();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, true, true);
+        tokenBuffer_Parser0.version();
+        tokenBuffer0.writeNumber(16);
+        // Undeclared exception!
+        tokenBuffer0.append(tokenBuffer1);
+    }
+
+    @Test(timeout = 4000)
+    public void test00613() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         iOContext0.allocTokenBuffer();
@@ -241,20 +258,6 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test00713() throws Throwable {
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(5725, jsonToken0, (Object) jsonToken0, (Object) tokenBuffer0, (Object) tokenBuffer0);
-        TokenBuffer.Segment tokenBuffer_Segment2 = tokenBuffer_Segment1._next;
-        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
-        BigInteger bigInteger0 = BigInteger.ONE;
-        JsonToken jsonToken1 = JsonToken.VALUE_EMBEDDED_OBJECT;
-        tokenBuffer0._append(jsonToken1);
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
     public void test00714() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -265,29 +268,32 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         BigInteger bigInteger0 = BigInteger.ONE;
         JsonToken jsonToken1 = JsonToken.VALUE_EMBEDDED_OBJECT;
         tokenBuffer0._append(jsonToken1);
-        tokenBuffer0.getFeatureMask();
-    }
-
-    @Test(timeout = 4000)
-    public void test00915() throws Throwable {
-        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
-        JsonParser jsonParser0 = tokenBuffer_Parser0.skipChildren();
-        TokenBuffer tokenBuffer0 = new TokenBuffer(jsonParser0);
-        tokenBuffer0.writeNumber((BigDecimal) null);
         tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
-    public void test00916() throws Throwable {
-        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+    public void test00715() throws Throwable {
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(5725, jsonToken0, (Object) jsonToken0, (Object) tokenBuffer0, (Object) tokenBuffer0);
+        TokenBuffer.Segment tokenBuffer_Segment2 = tokenBuffer_Segment1._next;
+        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
+        BigInteger bigInteger0 = BigInteger.ONE;
+        JsonToken jsonToken1 = JsonToken.VALUE_EMBEDDED_OBJECT;
+        tokenBuffer0._append(jsonToken1);
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test00816() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
-        JsonParser jsonParser0 = tokenBuffer_Parser0.skipChildren();
-        TokenBuffer tokenBuffer0 = new TokenBuffer(jsonParser0);
-        tokenBuffer0.writeNumber((BigDecimal) null);
-        tokenBuffer0.canWriteTypeId();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        Byte byte0 = new Byte((byte) 85);
+        jsonGeneratorDelegate0.writeObjectField("com.fasterxml.jackson.databind.deser.DeserializerCache", byte0);
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
     }
 
     @Test(timeout = 4000)
@@ -298,7 +304,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonParser jsonParser0 = tokenBuffer_Parser0.skipChildren();
         TokenBuffer tokenBuffer0 = new TokenBuffer(jsonParser0);
         tokenBuffer0.writeNumber((BigDecimal) null);
-        tokenBuffer0.getFeatureMask();
+        tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
@@ -309,11 +315,33 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonParser jsonParser0 = tokenBuffer_Parser0.skipChildren();
         TokenBuffer tokenBuffer0 = new TokenBuffer(jsonParser0);
         tokenBuffer0.writeNumber((BigDecimal) null);
+        tokenBuffer0.canWriteTypeId();
+    }
+
+    @Test(timeout = 4000)
+    public void test00919() throws Throwable {
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        JsonParser jsonParser0 = tokenBuffer_Parser0.skipChildren();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(jsonParser0);
+        tokenBuffer0.writeNumber((BigDecimal) null);
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test00920() throws Throwable {
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        JsonParser jsonParser0 = tokenBuffer_Parser0.skipChildren();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(jsonParser0);
+        tokenBuffer0.writeNumber((BigDecimal) null);
         tokenBuffer0.firstToken();
     }
 
     @Test(timeout = 4000)
-    public void test01019() throws Throwable {
+    public void test01021() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
@@ -322,7 +350,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01120() throws Throwable {
+    public void test01122() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
@@ -334,7 +362,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01221() throws Throwable {
+    public void test01223() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         jsonFactory0.setRootValueSeparator(")?");
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
@@ -344,7 +372,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01222() throws Throwable {
+    public void test01224() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         jsonFactory0.setRootValueSeparator(")?");
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
@@ -354,34 +382,12 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01223() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.setRootValueSeparator(")?");
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        tokenBuffer0.writeEndArray();
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test01224() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.setRootValueSeparator(")?");
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        tokenBuffer0.writeEndArray();
-        tokenBuffer_Segment0.findObjectId(287);
-        tokenBuffer_Segment0.hasIds();
-    }
-
-    @Test(timeout = 4000)
     public void test01225() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         jsonFactory0.setRootValueSeparator(")?");
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
         tokenBuffer0.writeEndArray();
-        tokenBuffer_Segment0.findObjectId(287);
         tokenBuffer0.canWriteObjectId();
     }
 
@@ -393,7 +399,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
         tokenBuffer0.writeEndArray();
         tokenBuffer_Segment0.findObjectId(287);
-        tokenBuffer0.getFeatureMask();
+        tokenBuffer_Segment0.hasIds();
     }
 
     @Test(timeout = 4000)
@@ -404,11 +410,33 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
         tokenBuffer0.writeEndArray();
         tokenBuffer_Segment0.findObjectId(287);
+        tokenBuffer0.canWriteObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test01228() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        jsonFactory0.setRootValueSeparator(")?");
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
+        tokenBuffer0.writeEndArray();
+        tokenBuffer_Segment0.findObjectId(287);
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test01229() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        jsonFactory0.setRootValueSeparator(")?");
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null, false);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
+        tokenBuffer0.writeEndArray();
+        tokenBuffer_Segment0.findObjectId(287);
         tokenBuffer0.firstToken();
     }
 
     @Test(timeout = 4000)
-    public void test01328() throws Throwable {
+    public void test01330() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0, true);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -419,7 +447,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01429() throws Throwable {
+    public void test01431() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
@@ -429,7 +457,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01530() throws Throwable {
+    public void test01532() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         char[] charArray0 = new char[8];
         charArray0[0] = 'J';
@@ -444,7 +472,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01631() throws Throwable {
+    public void test01633() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -456,7 +484,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01632() throws Throwable {
+    public void test01634() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -468,7 +496,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01633() throws Throwable {
+    public void test01635() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -477,29 +505,6 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[0];
         tokenBuffer0.writeTree((TreeNode) null);
         tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test01734() throws Throwable {
-        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
-        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(4, 320, (Object) objectMapper1);
-    }
-
-    @Test(timeout = 4000)
-    public void test01735() throws Throwable {
-        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
-        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(4, 320, (Object) objectMapper1);
-        JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
-        objectMapper0.setSerializationInclusion(jsonInclude_Include0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
-        tokenBuffer0.flush();
-        tokenBuffer0.getFeatureMask();
     }
 
     @Test(timeout = 4000)
@@ -509,41 +514,34 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(4, 320, (Object) objectMapper1);
-        JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
-        objectMapper0.setSerializationInclusion(jsonInclude_Include0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
-        tokenBuffer0.flush();
-        tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
-    public void test01837() throws Throwable {
+    public void test01737() throws Throwable {
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
-        ObjectMapper objectMapper1 = objectMapper0.copy();
-        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
-        ObjectMapper objectMapper2 = objectMapper1.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, "");
+        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
+        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(4, 320, (Object) objectMapper1);
         JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
-        ObjectMapper objectMapper3 = objectMapper2.setSerializationInclusion(jsonInclude_Include0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
-        ShortNode shortNode0 = new ShortNode((short) 0);
-        tokenBuffer0.writeObjectField("com.fasterxml.jackson.core.JsonGenerationException", shortNode0);
+        objectMapper0.setSerializationInclusion(jsonInclude_Include0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
         tokenBuffer0.flush();
         tokenBuffer0.getFeatureMask();
     }
 
     @Test(timeout = 4000)
-    public void test01838() throws Throwable {
+    public void test01738() throws Throwable {
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
-        ObjectMapper objectMapper1 = objectMapper0.copy();
-        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
-        ObjectMapper objectMapper2 = objectMapper1.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, "");
+        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
+        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(4, 320, (Object) objectMapper1);
         JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
-        ObjectMapper objectMapper3 = objectMapper2.setSerializationInclusion(jsonInclude_Include0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
-        ShortNode shortNode0 = new ShortNode((short) 0);
-        tokenBuffer0.writeObjectField("com.fasterxml.jackson.core.JsonGenerationException", shortNode0);
+        objectMapper0.setSerializationInclusion(jsonInclude_Include0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
         tokenBuffer0.flush();
-        tokenBuffer0.firstToken();
+        tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
@@ -558,11 +556,41 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         ShortNode shortNode0 = new ShortNode((short) 0);
         tokenBuffer0.writeObjectField("com.fasterxml.jackson.core.JsonGenerationException", shortNode0);
         tokenBuffer0.flush();
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test01840() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        ObjectMapper objectMapper1 = objectMapper0.copy();
+        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
+        ObjectMapper objectMapper2 = objectMapper1.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, "");
+        JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
+        ObjectMapper objectMapper3 = objectMapper2.setSerializationInclusion(jsonInclude_Include0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
+        ShortNode shortNode0 = new ShortNode((short) 0);
+        tokenBuffer0.writeObjectField("com.fasterxml.jackson.core.JsonGenerationException", shortNode0);
+        tokenBuffer0.flush();
+        tokenBuffer0.firstToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test01841() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        ObjectMapper objectMapper1 = objectMapper0.copy();
+        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
+        ObjectMapper objectMapper2 = objectMapper1.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, "");
+        JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
+        ObjectMapper objectMapper3 = objectMapper2.setSerializationInclusion(jsonInclude_Include0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
+        ShortNode shortNode0 = new ShortNode((short) 0);
+        tokenBuffer0.writeObjectField("com.fasterxml.jackson.core.JsonGenerationException", shortNode0);
+        tokenBuffer0.flush();
         tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
-    public void test01940() throws Throwable {
+    public void test01942() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, (ObjectCodec) null, false, false);
@@ -576,7 +604,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02041() throws Throwable {
+    public void test02043() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
@@ -590,14 +618,14 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02142() throws Throwable {
+    public void test02144() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.VALUE_TRUE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(0, jsonToken0);
     }
 
     @Test(timeout = 4000)
-    public void test02143() throws Throwable {
+    public void test02145() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.VALUE_TRUE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(0, jsonToken0);
@@ -615,7 +643,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02144() throws Throwable {
+    public void test02146() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.VALUE_TRUE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(0, jsonToken0);
@@ -633,7 +661,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02245() throws Throwable {
+    public void test02247() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, (ObjectCodec) null, false, false);
@@ -643,7 +671,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02246() throws Throwable {
+    public void test02248() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, (ObjectCodec) null, false, false);
@@ -654,7 +682,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02247() throws Throwable {
+    public void test02249() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, (ObjectCodec) null, false, false);
@@ -666,7 +694,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02248() throws Throwable {
+    public void test02250() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, (ObjectCodec) null, false, false);
@@ -679,7 +707,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02349() throws Throwable {
+    public void test02351() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -692,36 +720,12 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02450() throws Throwable {
+    public void test02452() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
         jsonGeneratorDelegate0.writeRaw("3Wy@tV");
-    }
-
-    @Test(timeout = 4000)
-    public void test02551() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
-        tokenBuffer0.serialize(jsonGeneratorDelegate0);
-        tokenBuffer_Segment0.appendRaw(95, 95, (Object) jsonGeneratorDelegate0);
-        tokenBuffer_Segment0._tokenTypes = (-2793L);
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test02552() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
-        tokenBuffer0.serialize(jsonGeneratorDelegate0);
-        tokenBuffer_Segment0.appendRaw(95, 95, (Object) jsonGeneratorDelegate0);
-        tokenBuffer_Segment0._tokenTypes = (-2793L);
-        tokenBuffer0.getFeatureMask();
     }
 
     @Test(timeout = 4000)
@@ -733,11 +737,35 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         tokenBuffer0.serialize(jsonGeneratorDelegate0);
         tokenBuffer_Segment0.appendRaw(95, 95, (Object) jsonGeneratorDelegate0);
         tokenBuffer_Segment0._tokenTypes = (-2793L);
+        tokenBuffer0.canWriteObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test02554() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+        tokenBuffer_Segment0.appendRaw(95, 95, (Object) jsonGeneratorDelegate0);
+        tokenBuffer_Segment0._tokenTypes = (-2793L);
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test02555() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+        tokenBuffer_Segment0.appendRaw(95, 95, (Object) jsonGeneratorDelegate0);
+        tokenBuffer_Segment0._tokenTypes = (-2793L);
         tokenBuffer0.firstToken();
     }
 
     @Test(timeout = 4000)
-    public void test02654() throws Throwable {
+    public void test02656() throws Throwable {
         ObjectCodec objectCodec0 = null;
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -746,36 +774,6 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
         Double double0 = new Double((-1808));
         tokenBuffer_Segment0.appendRaw((-1808), 16, (Object) serializedString0, (Object) jsonToken0, (Object) double0);
-    }
-
-    @Test(timeout = 4000)
-    public void test02755() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.createParser("");
-        objectMapper0.reader((Base64Variant) null);
-        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        ObjectMapper objectMapper2 = objectMapper1.setSubtypeResolver(stdSubtypeResolver0);
-        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[5];
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper2, false);
-        tokenBuffer0.writeBoolean(false);
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test02756() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.createParser("");
-        objectMapper0.reader((Base64Variant) null);
-        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        ObjectMapper objectMapper2 = objectMapper1.setSubtypeResolver(stdSubtypeResolver0);
-        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[5];
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper2, false);
-        tokenBuffer0.writeBoolean(false);
-        tokenBuffer0.getFeatureMask();
     }
 
     @Test(timeout = 4000)
@@ -790,11 +788,41 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[5];
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper2, false);
         tokenBuffer0.writeBoolean(false);
+        tokenBuffer0.canWriteObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test02758() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        jsonFactory0.createParser("");
+        objectMapper0.reader((Base64Variant) null);
+        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
+        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
+        ObjectMapper objectMapper2 = objectMapper1.setSubtypeResolver(stdSubtypeResolver0);
+        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[5];
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper2, false);
+        tokenBuffer0.writeBoolean(false);
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test02759() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        jsonFactory0.createParser("");
+        objectMapper0.reader((Base64Variant) null);
+        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
+        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
+        ObjectMapper objectMapper2 = objectMapper1.setSubtypeResolver(stdSubtypeResolver0);
+        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[5];
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper2, false);
+        tokenBuffer0.writeBoolean(false);
         tokenBuffer0.firstToken();
     }
 
     @Test(timeout = 4000)
-    public void test02858() throws Throwable {
+    public void test02860() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -806,86 +834,6 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonParser.Feature jsonParser_Feature0 = JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS;
         tokenBuffer_Parser0.configure(jsonParser_Feature0, false);
         tokenBuffer0.copyCurrentEvent(tokenBuffer_Parser0);
-    }
-
-    @Test(timeout = 4000)
-    public void test02959() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, (DefaultSerializerProvider) null, defaultDeserializationContext_Impl0);
-        MapperFeature[] mapperFeatureArray0 = new MapperFeature[8];
-        MapperFeature mapperFeature0 = MapperFeature.USE_GETTERS_AS_SETTERS;
-        mapperFeatureArray0[0] = mapperFeature0;
-        MapperFeature mapperFeature1 = MapperFeature.AUTO_DETECT_GETTERS;
-        mapperFeatureArray0[1] = mapperFeature1;
-        MapperFeature mapperFeature2 = MapperFeature.AUTO_DETECT_SETTERS;
-        mapperFeatureArray0[2] = mapperFeature2;
-        MapperFeature mapperFeature3 = MapperFeature.USE_WRAPPER_NAME_AS_PROPERTY_NAME;
-        mapperFeatureArray0[3] = mapperFeature3;
-        MapperFeature mapperFeature4 = MapperFeature.USE_ANNOTATIONS;
-        mapperFeatureArray0[4] = mapperFeature4;
-        MapperFeature mapperFeature5 = MapperFeature.USE_ANNOTATIONS;
-        mapperFeatureArray0[5] = mapperFeature5;
-        MapperFeature mapperFeature6 = MapperFeature.INFER_PROPERTY_MUTATORS;
-        mapperFeatureArray0[6] = mapperFeature6;
-        MapperFeature mapperFeature7 = MapperFeature.REQUIRE_SETTERS_FOR_GETTERS;
-        mapperFeatureArray0[7] = mapperFeature7;
-        ObjectMapper objectMapper1 = objectMapper0.disable(mapperFeatureArray0);
-        DeserializationFeature deserializationFeature0 = DeserializationFeature.EAGER_DESERIALIZER_FETCH;
-        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[6];
-        deserializationFeatureArray0[0] = deserializationFeature0;
-        deserializationFeatureArray0[1] = deserializationFeature0;
-        deserializationFeatureArray0[2] = deserializationFeature0;
-        deserializationFeatureArray0[3] = deserializationFeature0;
-        DeserializationFeature deserializationFeature1 = DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY;
-        deserializationFeatureArray0[4] = deserializationFeature1;
-        deserializationFeatureArray0[5] = deserializationFeature0;
-        ObjectReader objectReader0 = objectMapper1.reader(deserializationFeature0, deserializationFeatureArray0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper1, false, false);
-        tokenBuffer_Parser0.getSchema();
-        tokenBuffer_Parser0.canReadTypeId();
-    }
-
-    @Test(timeout = 4000)
-    public void test02960() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, (DefaultSerializerProvider) null, defaultDeserializationContext_Impl0);
-        MapperFeature[] mapperFeatureArray0 = new MapperFeature[8];
-        MapperFeature mapperFeature0 = MapperFeature.USE_GETTERS_AS_SETTERS;
-        mapperFeatureArray0[0] = mapperFeature0;
-        MapperFeature mapperFeature1 = MapperFeature.AUTO_DETECT_GETTERS;
-        mapperFeatureArray0[1] = mapperFeature1;
-        MapperFeature mapperFeature2 = MapperFeature.AUTO_DETECT_SETTERS;
-        mapperFeatureArray0[2] = mapperFeature2;
-        MapperFeature mapperFeature3 = MapperFeature.USE_WRAPPER_NAME_AS_PROPERTY_NAME;
-        mapperFeatureArray0[3] = mapperFeature3;
-        MapperFeature mapperFeature4 = MapperFeature.USE_ANNOTATIONS;
-        mapperFeatureArray0[4] = mapperFeature4;
-        MapperFeature mapperFeature5 = MapperFeature.USE_ANNOTATIONS;
-        mapperFeatureArray0[5] = mapperFeature5;
-        MapperFeature mapperFeature6 = MapperFeature.INFER_PROPERTY_MUTATORS;
-        mapperFeatureArray0[6] = mapperFeature6;
-        MapperFeature mapperFeature7 = MapperFeature.REQUIRE_SETTERS_FOR_GETTERS;
-        mapperFeatureArray0[7] = mapperFeature7;
-        ObjectMapper objectMapper1 = objectMapper0.disable(mapperFeatureArray0);
-        DeserializationFeature deserializationFeature0 = DeserializationFeature.EAGER_DESERIALIZER_FETCH;
-        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[6];
-        deserializationFeatureArray0[0] = deserializationFeature0;
-        deserializationFeatureArray0[1] = deserializationFeature0;
-        deserializationFeatureArray0[2] = deserializationFeature0;
-        deserializationFeatureArray0[3] = deserializationFeature0;
-        DeserializationFeature deserializationFeature1 = DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY;
-        deserializationFeatureArray0[4] = deserializationFeature1;
-        deserializationFeatureArray0[5] = deserializationFeature0;
-        ObjectReader objectReader0 = objectMapper1.reader(deserializationFeature0, deserializationFeatureArray0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper1, false, false);
-        tokenBuffer_Parser0.getSchema();
-        tokenBuffer_Parser0.canReadObjectId();
     }
 
     @Test(timeout = 4000)
@@ -925,6 +873,86 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper1, false, false);
         tokenBuffer_Parser0.getSchema();
+        tokenBuffer_Parser0.canReadTypeId();
+    }
+
+    @Test(timeout = 4000)
+    public void test02962() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, (DefaultSerializerProvider) null, defaultDeserializationContext_Impl0);
+        MapperFeature[] mapperFeatureArray0 = new MapperFeature[8];
+        MapperFeature mapperFeature0 = MapperFeature.USE_GETTERS_AS_SETTERS;
+        mapperFeatureArray0[0] = mapperFeature0;
+        MapperFeature mapperFeature1 = MapperFeature.AUTO_DETECT_GETTERS;
+        mapperFeatureArray0[1] = mapperFeature1;
+        MapperFeature mapperFeature2 = MapperFeature.AUTO_DETECT_SETTERS;
+        mapperFeatureArray0[2] = mapperFeature2;
+        MapperFeature mapperFeature3 = MapperFeature.USE_WRAPPER_NAME_AS_PROPERTY_NAME;
+        mapperFeatureArray0[3] = mapperFeature3;
+        MapperFeature mapperFeature4 = MapperFeature.USE_ANNOTATIONS;
+        mapperFeatureArray0[4] = mapperFeature4;
+        MapperFeature mapperFeature5 = MapperFeature.USE_ANNOTATIONS;
+        mapperFeatureArray0[5] = mapperFeature5;
+        MapperFeature mapperFeature6 = MapperFeature.INFER_PROPERTY_MUTATORS;
+        mapperFeatureArray0[6] = mapperFeature6;
+        MapperFeature mapperFeature7 = MapperFeature.REQUIRE_SETTERS_FOR_GETTERS;
+        mapperFeatureArray0[7] = mapperFeature7;
+        ObjectMapper objectMapper1 = objectMapper0.disable(mapperFeatureArray0);
+        DeserializationFeature deserializationFeature0 = DeserializationFeature.EAGER_DESERIALIZER_FETCH;
+        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[6];
+        deserializationFeatureArray0[0] = deserializationFeature0;
+        deserializationFeatureArray0[1] = deserializationFeature0;
+        deserializationFeatureArray0[2] = deserializationFeature0;
+        deserializationFeatureArray0[3] = deserializationFeature0;
+        DeserializationFeature deserializationFeature1 = DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY;
+        deserializationFeatureArray0[4] = deserializationFeature1;
+        deserializationFeatureArray0[5] = deserializationFeature0;
+        ObjectReader objectReader0 = objectMapper1.reader(deserializationFeature0, deserializationFeatureArray0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper1, false, false);
+        tokenBuffer_Parser0.getSchema();
+        tokenBuffer_Parser0.canReadObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test02963() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, (DefaultSerializerProvider) null, defaultDeserializationContext_Impl0);
+        MapperFeature[] mapperFeatureArray0 = new MapperFeature[8];
+        MapperFeature mapperFeature0 = MapperFeature.USE_GETTERS_AS_SETTERS;
+        mapperFeatureArray0[0] = mapperFeature0;
+        MapperFeature mapperFeature1 = MapperFeature.AUTO_DETECT_GETTERS;
+        mapperFeatureArray0[1] = mapperFeature1;
+        MapperFeature mapperFeature2 = MapperFeature.AUTO_DETECT_SETTERS;
+        mapperFeatureArray0[2] = mapperFeature2;
+        MapperFeature mapperFeature3 = MapperFeature.USE_WRAPPER_NAME_AS_PROPERTY_NAME;
+        mapperFeatureArray0[3] = mapperFeature3;
+        MapperFeature mapperFeature4 = MapperFeature.USE_ANNOTATIONS;
+        mapperFeatureArray0[4] = mapperFeature4;
+        MapperFeature mapperFeature5 = MapperFeature.USE_ANNOTATIONS;
+        mapperFeatureArray0[5] = mapperFeature5;
+        MapperFeature mapperFeature6 = MapperFeature.INFER_PROPERTY_MUTATORS;
+        mapperFeatureArray0[6] = mapperFeature6;
+        MapperFeature mapperFeature7 = MapperFeature.REQUIRE_SETTERS_FOR_GETTERS;
+        mapperFeatureArray0[7] = mapperFeature7;
+        ObjectMapper objectMapper1 = objectMapper0.disable(mapperFeatureArray0);
+        DeserializationFeature deserializationFeature0 = DeserializationFeature.EAGER_DESERIALIZER_FETCH;
+        DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[6];
+        deserializationFeatureArray0[0] = deserializationFeature0;
+        deserializationFeatureArray0[1] = deserializationFeature0;
+        deserializationFeatureArray0[2] = deserializationFeature0;
+        deserializationFeatureArray0[3] = deserializationFeature0;
+        DeserializationFeature deserializationFeature1 = DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY;
+        deserializationFeatureArray0[4] = deserializationFeature1;
+        deserializationFeatureArray0[5] = deserializationFeature0;
+        ObjectReader objectReader0 = objectMapper1.reader(deserializationFeature0, deserializationFeatureArray0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper1, false, false);
+        tokenBuffer_Parser0.getSchema();
         ObjectReader objectReader1 = objectReader0.with((FormatSchema) null);
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectReader1);
         tokenBuffer0.writeNumber("zs_uyjM%qlg");
@@ -932,7 +960,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02962() throws Throwable {
+    public void test02964() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
         DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
@@ -975,7 +1003,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03063() throws Throwable {
+    public void test03065() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory1 = new JsonFactory(objectMapper0);
@@ -994,7 +1022,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03164() throws Throwable {
+    public void test03166() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.copy();
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
@@ -1006,7 +1034,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03265() throws Throwable {
+    public void test03267() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonNodeFactory jsonNodeFactory0 = JsonNodeFactory.withExactBigDecimals(true);
         ObjectReader objectReader0 = objectMapper0.reader(jsonNodeFactory0);
@@ -1023,7 +1051,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03366() throws Throwable {
+    public void test03368() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
@@ -1036,7 +1064,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03467() throws Throwable {
+    public void test03469() throws Throwable {
         ObjectCodec objectCodec0 = null;
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         tokenBuffer0.firstToken();
@@ -1047,7 +1075,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03568() throws Throwable {
+    public void test03570() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -1063,7 +1091,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03669() throws Throwable {
+    public void test03671() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -1083,33 +1111,6 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03770() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
-        AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
-        ObjectMapper objectMapper2 = objectMapper1.setAnnotationIntrospectors(annotationIntrospector0, annotationIntrospector0);
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        ObjectMapper objectMapper3 = objectMapper2.setSerializerProvider(defaultSerializerProvider_Impl0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test03771() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
-        AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
-        ObjectMapper objectMapper2 = objectMapper1.setAnnotationIntrospectors(annotationIntrospector0, annotationIntrospector0);
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        ObjectMapper objectMapper3 = objectMapper2.setSerializerProvider(defaultSerializerProvider_Impl0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
-        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0, true);
-        TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
-        tokenBuffer2.flush();
-        tokenBuffer0.canWriteTypeId();
-    }
-
-    @Test(timeout = 4000)
     public void test03772() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
@@ -1118,10 +1119,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         ObjectMapper objectMapper3 = objectMapper2.setSerializerProvider(defaultSerializerProvider_Impl0);
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
-        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0, true);
-        TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
-        tokenBuffer2.flush();
-        tokenBuffer1.canWriteTypeId();
+        tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
@@ -1136,11 +1134,41 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0, true);
         TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
         tokenBuffer2.flush();
-        tokenBuffer1.canWriteObjectId();
+        tokenBuffer0.canWriteTypeId();
     }
 
     @Test(timeout = 4000)
     public void test03774() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
+        AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
+        ObjectMapper objectMapper2 = objectMapper1.setAnnotationIntrospectors(annotationIntrospector0, annotationIntrospector0);
+        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
+        ObjectMapper objectMapper3 = objectMapper2.setSerializerProvider(defaultSerializerProvider_Impl0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
+        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0, true);
+        TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
+        tokenBuffer2.flush();
+        tokenBuffer1.canWriteTypeId();
+    }
+
+    @Test(timeout = 4000)
+    public void test03775() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
+        AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
+        ObjectMapper objectMapper2 = objectMapper1.setAnnotationIntrospectors(annotationIntrospector0, annotationIntrospector0);
+        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
+        ObjectMapper objectMapper3 = objectMapper2.setSerializerProvider(defaultSerializerProvider_Impl0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
+        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0, true);
+        TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
+        tokenBuffer2.flush();
+        tokenBuffer1.canWriteObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test03776() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -1160,7 +1188,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03875() throws Throwable {
+    public void test03877() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.copy();
         ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.NON_CONCRETE_AND_ARRAYS;
@@ -1179,7 +1207,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03976() throws Throwable {
+    public void test03978() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory1 = new JsonFactory(objectMapper0);
@@ -1196,7 +1224,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04077() throws Throwable {
+    public void test04079() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
@@ -1211,7 +1239,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04078() throws Throwable {
+    public void test04080() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
@@ -1226,7 +1254,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04079() throws Throwable {
+    public void test04081() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
@@ -1241,7 +1269,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04180() throws Throwable {
+    public void test04182() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -1252,7 +1280,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04281() throws Throwable {
+    public void test04283() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
@@ -1264,7 +1292,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04382() throws Throwable {
+    public void test04384() throws Throwable {
         EvoSuiteFile evoSuiteFile0 = null;
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "Z'XETJC>(;)qj'x'.-");
         ObjectMapper objectMapper0 = new ObjectMapper((JsonFactory) null);
@@ -1279,64 +1307,6 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3, false);
         AnnotationIntrospector.pair(annotationIntrospector0, annotationIntrospector0);
         tokenBuffer0.writeRawValue("", (-2625), (-2625));
-    }
-
-    @Test(timeout = 4000)
-    public void test04483() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE;
-        ObjectMapper objectMapper1 = objectMapper0.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, (String) null);
-        BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-        SerializationFeature serializationFeature0 = SerializationFeature.FAIL_ON_EMPTY_BEANS;
-        SerializationFeature[] serializationFeatureArray0 = new SerializationFeature[7];
-        serializationFeatureArray0[0] = serializationFeature0;
-        serializationFeatureArray0[1] = serializationFeature0;
-        SerializationFeature serializationFeature1 = SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS;
-        serializationFeatureArray0[2] = serializationFeature1;
-        serializationFeatureArray0[3] = serializationFeature0;
-        serializationFeatureArray0[4] = serializationFeature0;
-        serializationFeatureArray0[5] = serializationFeature0;
-        serializationFeatureArray0[6] = serializationFeature0;
-        objectMapper1.enable(serializationFeature0, serializationFeatureArray0);
-        ObjectMapper objectMapper2 = objectMapper1.setSerializerFactory(beanSerializerFactory0);
-        Class<Double> class0 = Double.class;
-        ObjectReader objectReader0 = objectMapper2.readerWithView(class0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectReader0, false);
-        tokenBuffer0.writeNumber(521.92996346);
-        tokenBuffer0.firstToken();
-    }
-
-    @Test(timeout = 4000)
-    public void test04484() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE;
-        ObjectMapper objectMapper1 = objectMapper0.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, (String) null);
-        BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-        SerializationFeature serializationFeature0 = SerializationFeature.FAIL_ON_EMPTY_BEANS;
-        SerializationFeature[] serializationFeatureArray0 = new SerializationFeature[7];
-        serializationFeatureArray0[0] = serializationFeature0;
-        serializationFeatureArray0[1] = serializationFeature0;
-        SerializationFeature serializationFeature1 = SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS;
-        serializationFeatureArray0[2] = serializationFeature1;
-        serializationFeatureArray0[3] = serializationFeature0;
-        serializationFeatureArray0[4] = serializationFeature0;
-        serializationFeatureArray0[5] = serializationFeature0;
-        serializationFeatureArray0[6] = serializationFeature0;
-        objectMapper1.enable(serializationFeature0, serializationFeatureArray0);
-        ObjectMapper objectMapper2 = objectMapper1.setSerializerFactory(beanSerializerFactory0);
-        Class<Double> class0 = Double.class;
-        ObjectReader objectReader0 = objectMapper2.readerWithView(class0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectReader0, false);
-        tokenBuffer0.writeNumber(521.92996346);
-        tokenBuffer0.getFeatureMask();
     }
 
     @Test(timeout = 4000)
@@ -1365,33 +1335,65 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         ObjectReader objectReader0 = objectMapper2.readerWithView(class0);
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectReader0, false);
         tokenBuffer0.writeNumber(521.92996346);
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test04586() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
-        Long long0 = new Long(239L);
-        jsonGeneratorDelegate0.writeTypeId(long0);
-        tokenBuffer0.serialize(jsonGeneratorDelegate0);
-        tokenBuffer_Segment0._tokenTypes = (-2793L);
         tokenBuffer0.firstToken();
     }
 
     @Test(timeout = 4000)
-    public void test04587() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
-        Long long0 = new Long(239L);
-        jsonGeneratorDelegate0.writeTypeId(long0);
-        tokenBuffer0.serialize(jsonGeneratorDelegate0);
-        tokenBuffer_Segment0._tokenTypes = (-2793L);
+    public void test04486() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
+        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE;
+        ObjectMapper objectMapper1 = objectMapper0.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, (String) null);
+        BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
+        SerializationFeature serializationFeature0 = SerializationFeature.FAIL_ON_EMPTY_BEANS;
+        SerializationFeature[] serializationFeatureArray0 = new SerializationFeature[7];
+        serializationFeatureArray0[0] = serializationFeature0;
+        serializationFeatureArray0[1] = serializationFeature0;
+        SerializationFeature serializationFeature1 = SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS;
+        serializationFeatureArray0[2] = serializationFeature1;
+        serializationFeatureArray0[3] = serializationFeature0;
+        serializationFeatureArray0[4] = serializationFeature0;
+        serializationFeatureArray0[5] = serializationFeature0;
+        serializationFeatureArray0[6] = serializationFeature0;
+        objectMapper1.enable(serializationFeature0, serializationFeatureArray0);
+        ObjectMapper objectMapper2 = objectMapper1.setSerializerFactory(beanSerializerFactory0);
+        Class<Double> class0 = Double.class;
+        ObjectReader objectReader0 = objectMapper2.readerWithView(class0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectReader0, false);
+        tokenBuffer0.writeNumber(521.92996346);
         tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test04487() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
+        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
+        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
+        ObjectMapper.DefaultTyping objectMapper_DefaultTyping0 = ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE;
+        ObjectMapper objectMapper1 = objectMapper0.enableDefaultTypingAsProperty(objectMapper_DefaultTyping0, (String) null);
+        BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
+        SerializationFeature serializationFeature0 = SerializationFeature.FAIL_ON_EMPTY_BEANS;
+        SerializationFeature[] serializationFeatureArray0 = new SerializationFeature[7];
+        serializationFeatureArray0[0] = serializationFeature0;
+        serializationFeatureArray0[1] = serializationFeature0;
+        SerializationFeature serializationFeature1 = SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS;
+        serializationFeatureArray0[2] = serializationFeature1;
+        serializationFeatureArray0[3] = serializationFeature0;
+        serializationFeatureArray0[4] = serializationFeature0;
+        serializationFeatureArray0[5] = serializationFeature0;
+        serializationFeatureArray0[6] = serializationFeature0;
+        objectMapper1.enable(serializationFeature0, serializationFeatureArray0);
+        ObjectMapper objectMapper2 = objectMapper1.setSerializerFactory(beanSerializerFactory0);
+        Class<Double> class0 = Double.class;
+        ObjectReader objectReader0 = objectMapper2.readerWithView(class0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectReader0, false);
+        tokenBuffer0.writeNumber(521.92996346);
+        tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
@@ -1404,53 +1406,54 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         jsonGeneratorDelegate0.writeTypeId(long0);
         tokenBuffer0.serialize(jsonGeneratorDelegate0);
         tokenBuffer_Segment0._tokenTypes = (-2793L);
+        tokenBuffer0.firstToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test04589() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        Long long0 = new Long(239L);
+        jsonGeneratorDelegate0.writeTypeId(long0);
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+        tokenBuffer_Segment0._tokenTypes = (-2793L);
+        tokenBuffer0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test04590() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        Long long0 = new Long(239L);
+        jsonGeneratorDelegate0.writeTypeId(long0);
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+        tokenBuffer_Segment0._tokenTypes = (-2793L);
         tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
-    public void test04789() throws Throwable {
+    public void test04691() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        jsonGeneratorDelegate0.writeStartObject();
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04792() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         boolean boolean0 = true;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
         tokenBuffer_Parser0.getTypeId();
         tokenBuffer_Parser0._handleEOF();
-    }
-
-    @Test(timeout = 4000)
-    public void test04890() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
-        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
-        tokenBuffer_Parser0.nextToken();
-        tokenBuffer0.canWriteObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test04891() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
-        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
-        tokenBuffer_Parser0.nextToken();
-        tokenBuffer0.getFeatureMask();
-    }
-
-    @Test(timeout = 4000)
-    public void test04892() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
-        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
-        tokenBuffer_Parser0.nextToken();
-        tokenBuffer_Parser0.canReadTypeId();
     }
 
     @Test(timeout = 4000)
@@ -1462,7 +1465,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
         tokenBuffer_Parser0.nextToken();
-        tokenBuffer_Parser0.canReadObjectId();
+        tokenBuffer0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
@@ -1474,49 +1477,43 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
         tokenBuffer_Parser0.nextToken();
-        tokenBuffer_Parser0.getCurrentTokenId();
+        tokenBuffer0.getFeatureMask();
     }
 
     @Test(timeout = 4000)
-    public void test04995() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+    public void test04895() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
+        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.FLUSH_PASSED_TO_STREAM;
-        JsonGenerator jsonGenerator0 = tokenBuffer0.configure(jsonGenerator_Feature0, true);
-        JsonToken jsonToken0 = JsonToken.FIELD_NAME;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer_Parser0.nextToken();
+        tokenBuffer_Parser0.canReadTypeId();
+    }
+
+    @Test(timeout = 4000)
+    public void test04896() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
+        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer_Parser0.nextToken();
         tokenBuffer_Parser0.canReadObjectId();
     }
 
     @Test(timeout = 4000)
-    public void test04996() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+    public void test04897() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
+        ObjectMapper objectMapper1 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper1);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.FLUSH_PASSED_TO_STREAM;
-        JsonGenerator jsonGenerator0 = tokenBuffer0.configure(jsonGenerator_Feature0, true);
-        JsonToken jsonToken0 = JsonToken.FIELD_NAME;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
-        tokenBuffer_Parser0.peekNextToken();
-    }
-
-    @Test(timeout = 4000)
-    public void test04997() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.FLUSH_PASSED_TO_STREAM;
-        JsonGenerator jsonGenerator0 = tokenBuffer0.configure(jsonGenerator_Feature0, true);
-        JsonToken jsonToken0 = JsonToken.FIELD_NAME;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
-        tokenBuffer_Parser0.canReadTypeId();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer_Parser0.nextToken();
+        tokenBuffer_Parser0.getCurrentTokenId();
     }
 
     @Test(timeout = 4000)
@@ -1530,10 +1527,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonToken jsonToken0 = JsonToken.FIELD_NAME;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
-        jsonGenerator0.writeEndObject();
-        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
-        tokenBuffer1.writeEndArray();
-        JsonToken jsonToken1 = tokenBuffer1.firstToken();
+        tokenBuffer_Parser0.canReadObjectId();
     }
 
     @Test(timeout = 4000)
@@ -1547,11 +1541,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonToken jsonToken0 = JsonToken.FIELD_NAME;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
-        jsonGenerator0.writeEndObject();
-        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
-        tokenBuffer1.writeEndArray();
-        JsonToken jsonToken1 = tokenBuffer1.firstToken();
-        boolean boolean0 = jsonGenerator0.isEnabled(jsonGenerator_Feature0);
+        tokenBuffer_Parser0.peekNextToken();
     }
 
     @Test(timeout = 4000)
@@ -1565,12 +1555,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         JsonToken jsonToken0 = JsonToken.FIELD_NAME;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
-        jsonGenerator0.writeEndObject();
-        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
-        tokenBuffer1.writeEndArray();
-        JsonToken jsonToken1 = tokenBuffer1.firstToken();
-        boolean boolean0 = jsonGenerator0.isEnabled(jsonGenerator_Feature0);
-        jsonGenerator0.getFeatureMask();
+        tokenBuffer_Parser0.canReadTypeId();
     }
 
     @Test(timeout = 4000)
@@ -1588,12 +1573,66 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
         tokenBuffer1.writeEndArray();
         JsonToken jsonToken1 = tokenBuffer1.firstToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test049102() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
+        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.FLUSH_PASSED_TO_STREAM;
+        JsonGenerator jsonGenerator0 = tokenBuffer0.configure(jsonGenerator_Feature0, true);
+        JsonToken jsonToken0 = JsonToken.FIELD_NAME;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
+        jsonGenerator0.writeEndObject();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
+        tokenBuffer1.writeEndArray();
+        JsonToken jsonToken1 = tokenBuffer1.firstToken();
+        boolean boolean0 = jsonGenerator0.isEnabled(jsonGenerator_Feature0);
+    }
+
+    @Test(timeout = 4000)
+    public void test049103() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
+        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.FLUSH_PASSED_TO_STREAM;
+        JsonGenerator jsonGenerator0 = tokenBuffer0.configure(jsonGenerator_Feature0, true);
+        JsonToken jsonToken0 = JsonToken.FIELD_NAME;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
+        jsonGenerator0.writeEndObject();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
+        tokenBuffer1.writeEndArray();
+        JsonToken jsonToken1 = tokenBuffer1.firstToken();
+        boolean boolean0 = jsonGenerator0.isEnabled(jsonGenerator_Feature0);
+        jsonGenerator0.getFeatureMask();
+    }
+
+    @Test(timeout = 4000)
+    public void test049104() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._first;
+        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.FLUSH_PASSED_TO_STREAM;
+        JsonGenerator jsonGenerator0 = tokenBuffer0.configure(jsonGenerator_Feature0, true);
+        JsonToken jsonToken0 = JsonToken.FIELD_NAME;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.append(34, jsonToken0, (Object) objectMapper0);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment1, objectMapper0, true, true);
+        jsonGenerator0.writeEndObject();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0);
+        tokenBuffer1.writeEndArray();
+        JsonToken jsonToken1 = tokenBuffer1.firstToken();
         boolean boolean0 = jsonGenerator0.isEnabled(jsonGenerator_Feature0);
         jsonGenerator0.canWriteObjectId();
     }
 
     @Test(timeout = 4000)
-    public void test050102() throws Throwable {
+    public void test050105() throws Throwable {
         ObjectCodec objectCodec0 = null;
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -1603,7 +1642,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test051103() throws Throwable {
+    public void test051106() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1613,7 +1652,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test051104() throws Throwable {
+    public void test051107() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1623,7 +1662,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test051105() throws Throwable {
+    public void test051108() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1633,7 +1672,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test052106() throws Throwable {
+    public void test052109() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -1647,7 +1686,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053107() throws Throwable {
+    public void test053110() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         objectMapper0.reader((Base64Variant) null);
@@ -1667,7 +1706,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053108() throws Throwable {
+    public void test053111() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         objectMapper0.reader((Base64Variant) null);
@@ -1687,59 +1726,19 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test055109() throws Throwable {
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
+    public void test054112() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
-        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
-        Double double0 = new Double((-1808));
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
-        tokenBuffer_Parser0.nextIntValue(0);
-        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
-        tokenBuffer_Parser0.canReadObjectId();
-    }
-
-    @Test(timeout = 4000)
-    public void test055110() throws Throwable {
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
-        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
-        Double double0 = new Double((-1808));
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
-        tokenBuffer_Parser0.nextIntValue(0);
-        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
-    }
-
-    @Test(timeout = 4000)
-    public void test055111() throws Throwable {
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
-        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
-        Double double0 = new Double((-1808));
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
-        tokenBuffer_Parser0.nextIntValue(0);
-        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
-        tokenBuffer0.writeEndObject();
-        tokenBuffer0.writeEndArray();
-        JsonToken jsonToken0 = tokenBuffer0.firstToken();
-    }
-
-    @Test(timeout = 4000)
-    public void test055112() throws Throwable {
-        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
-        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
-        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
-        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
-        Double double0 = new Double((-1808));
-        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
-        tokenBuffer_Parser0.nextIntValue(0);
-        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
-        tokenBuffer0.writeEndObject();
-        tokenBuffer0.writeEndArray();
-        JsonToken jsonToken0 = tokenBuffer0.firstToken();
-        tokenBuffer0.canWriteObjectId();
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        Byte byte0 = new Byte((byte) (-74));
+        tokenBuffer0.writeBoolean(true);
+        JsonWriteContext jsonWriteContext0 = tokenBuffer0.getOutputContext();
+        jsonWriteContext0.getParent();
+        tokenBuffer0._writeContext = null;
+        JsonGeneratorDelegate jsonGeneratorDelegate1 = new JsonGeneratorDelegate(tokenBuffer0);
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate1);
     }
 
     @Test(timeout = 4000)
@@ -1752,6 +1751,62 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
         tokenBuffer_Parser0.nextIntValue(0);
         boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
+        tokenBuffer_Parser0.canReadObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test055114() throws Throwable {
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
+        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
+        Double double0 = new Double((-1808));
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
+        tokenBuffer_Parser0.nextIntValue(0);
+        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
+    }
+
+    @Test(timeout = 4000)
+    public void test055115() throws Throwable {
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
+        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
+        Double double0 = new Double((-1808));
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
+        tokenBuffer_Parser0.nextIntValue(0);
+        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
+        tokenBuffer0.writeEndObject();
+        tokenBuffer0.writeEndArray();
+        JsonToken jsonToken0 = tokenBuffer0.firstToken();
+    }
+
+    @Test(timeout = 4000)
+    public void test055116() throws Throwable {
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
+        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
+        Double double0 = new Double((-1808));
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
+        tokenBuffer_Parser0.nextIntValue(0);
+        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
+        tokenBuffer0.writeEndObject();
+        tokenBuffer0.writeEndArray();
+        JsonToken jsonToken0 = tokenBuffer0.firstToken();
+        tokenBuffer0.canWriteObjectId();
+    }
+
+    @Test(timeout = 4000)
+    public void test055117() throws Throwable {
+        TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
+        SerializedString serializedString0 = new SerializedString("W``Y6ACjEjd5R|eeb");
+        Double double0 = new Double((-1808));
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser((TokenBuffer.Segment) null, (ObjectCodec) null, false, false);
+        tokenBuffer_Parser0.nextIntValue(0);
+        boolean boolean0 = tokenBuffer_Parser0.canReadTypeId();
         tokenBuffer0.writeEndObject();
         tokenBuffer0.writeEndArray();
         JsonToken jsonToken0 = tokenBuffer0.firstToken();
@@ -1759,7 +1814,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test056114() throws Throwable {
+    public void test056118() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
@@ -1772,7 +1827,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test056115() throws Throwable {
+    public void test056119() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
@@ -1785,7 +1840,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test056116() throws Throwable {
+    public void test056120() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
@@ -1798,7 +1853,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test056117() throws Throwable {
+    public void test056121() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
@@ -1811,7 +1866,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test057118() throws Throwable {
+    public void test057122() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer tokenBuffer1 = new TokenBuffer((ObjectCodec) null);
@@ -1822,7 +1877,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test057119() throws Throwable {
+    public void test057123() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer tokenBuffer1 = new TokenBuffer((ObjectCodec) null);
@@ -1835,7 +1890,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test057120() throws Throwable {
+    public void test057124() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer tokenBuffer1 = new TokenBuffer((ObjectCodec) null);
@@ -1848,7 +1903,18 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test059121() throws Throwable {
+    public void test058125() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        tokenBuffer0.setPrettyPrinter((PrettyPrinter) null);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        tokenBuffer_Segment0._tokenTypes = (-2793L);
+        TokenBuffer.Segment tokenBuffer_Segment1 = new TokenBuffer.Segment();
+        tokenBuffer_Segment1.type(56320);
+    }
+
+    @Test(timeout = 4000)
+    public void test059126() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -1864,7 +1930,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test059122() throws Throwable {
+    public void test059127() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -1880,7 +1946,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test060123() throws Throwable {
+    public void test060128() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1891,7 +1957,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test060124() throws Throwable {
+    public void test060129() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1903,7 +1969,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test060125() throws Throwable {
+    public void test060130() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1915,7 +1981,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test060126() throws Throwable {
+    public void test060131() throws Throwable {
         char[] charArray0 = new char[6];
         FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "[objectId=");
         ObjectMapper objectMapper0 = new ObjectMapper();
@@ -1927,7 +1993,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test061127() throws Throwable {
+    public void test061132() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -1940,7 +2006,33 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064128() throws Throwable {
+    public void test062133() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        byte byte0 = (byte) 85;
+        Byte byte1 = new Byte((byte) 85);
+        tokenBuffer0.writeBoolean(false);
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test063134() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        Byte byte0 = new Byte((byte) 4);
+        tokenBuffer0.writeBoolean(true);
+        JsonGeneratorDelegate jsonGeneratorDelegate1 = new JsonGeneratorDelegate(tokenBuffer0);
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate1);
+    }
+
+    @Test(timeout = 4000)
+    public void test064135() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -1956,7 +2048,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064129() throws Throwable {
+    public void test064136() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -1976,7 +2068,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064130() throws Throwable {
+    public void test064137() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -1996,7 +2088,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064131() throws Throwable {
+    public void test064138() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2015,7 +2107,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064132() throws Throwable {
+    public void test064139() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2039,7 +2131,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064133() throws Throwable {
+    public void test064140() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2062,7 +2154,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test064134() throws Throwable {
+    public void test064141() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2086,7 +2178,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065135() throws Throwable {
+    public void test065142() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2106,7 +2198,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065136() throws Throwable {
+    public void test065143() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2126,7 +2218,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065137() throws Throwable {
+    public void test065144() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2145,7 +2237,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066138() throws Throwable {
+    public void test066145() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2166,7 +2258,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066139() throws Throwable {
+    public void test066146() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2187,7 +2279,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066140() throws Throwable {
+    public void test066147() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2207,7 +2299,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066141() throws Throwable {
+    public void test066148() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2232,7 +2324,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066142() throws Throwable {
+    public void test066149() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2256,7 +2348,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066143() throws Throwable {
+    public void test066150() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2281,7 +2373,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066144() throws Throwable {
+    public void test066151() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonEncoding jsonEncoding0 = JsonEncoding.UTF16_LE;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0.appendRaw(16, 16, (Object) jsonEncoding0, (Object) jsonEncoding0, (Object) jsonEncoding0);
@@ -2307,7 +2399,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067145() throws Throwable {
+    public void test067152() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2326,7 +2418,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067146() throws Throwable {
+    public void test067153() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2345,7 +2437,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067147() throws Throwable {
+    public void test067154() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2365,7 +2457,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067148() throws Throwable {
+    public void test067155() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2385,7 +2477,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test068149() throws Throwable {
+    public void test068156() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2397,7 +2489,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test069150() throws Throwable {
+    public void test069157() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -2410,7 +2502,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test070151() throws Throwable {
+    public void test070158() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2422,7 +2514,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test071152() throws Throwable {
+    public void test071159() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         DeserializationFeature deserializationFeature0 = DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY;
@@ -2441,7 +2533,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test072153() throws Throwable {
+    public void test072160() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2454,7 +2546,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test073154() throws Throwable {
+    public void test073161() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) 41;
         FileSystemHandling.appendDataToFile((EvoSuiteFile) null, byteArray0);
@@ -2475,7 +2567,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test073155() throws Throwable {
+    public void test073162() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) 41;
         FileSystemHandling.appendDataToFile((EvoSuiteFile) null, byteArray0);
@@ -2496,7 +2588,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test073156() throws Throwable {
+    public void test073163() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) 41;
         FileSystemHandling.appendDataToFile((EvoSuiteFile) null, byteArray0);
@@ -2518,7 +2610,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test074157() throws Throwable {
+    public void test074164() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
@@ -2535,7 +2627,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test074158() throws Throwable {
+    public void test074165() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
@@ -2552,7 +2644,21 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076159() throws Throwable {
+    public void test075166() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0, true);
+        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.AUTO_CLOSE_JSON_CONTENT;
+        JsonGenerator jsonGenerator0 = tokenBuffer0.enable(jsonGenerator_Feature0);
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(jsonGenerator0);
+        Byte byte0 = new Byte((byte) (-44));
+        jsonGeneratorDelegate0.writeObjectField("JSON", jsonFactory0);
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test076167() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2570,7 +2676,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077160() throws Throwable {
+    public void test077168() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
@@ -2596,7 +2702,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test078161() throws Throwable {
+    public void test078169() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2608,7 +2714,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test079162() throws Throwable {
+    public void test079170() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0, false);
@@ -2619,7 +2725,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test079163() throws Throwable {
+    public void test079171() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0, false);
@@ -2631,7 +2737,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test079164() throws Throwable {
+    public void test079172() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         objectMapper0.disableDefaultTyping();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0, false);
@@ -2643,7 +2749,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test080165() throws Throwable {
+    public void test080173() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
@@ -2658,7 +2764,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test080166() throws Throwable {
+    public void test080174() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
@@ -2673,7 +2779,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test080167() throws Throwable {
+    public void test080175() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
@@ -2687,7 +2793,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test080168() throws Throwable {
+    public void test080176() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
@@ -2702,7 +2808,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test081169() throws Throwable {
+    public void test081177() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
@@ -2717,7 +2823,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test082170() throws Throwable {
+    public void test082178() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.START_ARRAY;
         ShortNode shortNode0 = new ShortNode((short) (-1));
@@ -2738,7 +2844,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test082171() throws Throwable {
+    public void test082179() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.START_ARRAY;
         ShortNode shortNode0 = new ShortNode((short) (-1));
@@ -2759,7 +2865,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test082172() throws Throwable {
+    public void test082180() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.START_ARRAY;
         ShortNode shortNode0 = new ShortNode((short) (-1));
@@ -2780,7 +2886,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test082173() throws Throwable {
+    public void test082181() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         JsonToken jsonToken0 = JsonToken.START_ARRAY;
         ShortNode shortNode0 = new ShortNode((short) (-1));
@@ -2801,7 +2907,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test083174() throws Throwable {
+    public void test083182() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
@@ -2817,7 +2923,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test083175() throws Throwable {
+    public void test083183() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
@@ -2836,7 +2942,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test083176() throws Throwable {
+    public void test083184() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
@@ -2855,7 +2961,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test083177() throws Throwable {
+    public void test083185() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
@@ -2874,7 +2980,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test084178() throws Throwable {
+    public void test084186() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("JSON", true);
         jsonFactory0.createGenerator((OutputStream) mockFileOutputStream0);
@@ -2890,7 +2996,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085179() throws Throwable {
+    public void test085187() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         JsonFactory jsonFactory1 = new JsonFactory(objectMapper0);
@@ -2906,7 +3012,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085180() throws Throwable {
+    public void test085188() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         JsonFactory jsonFactory1 = new JsonFactory(objectMapper0);
@@ -2922,7 +3028,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085181() throws Throwable {
+    public void test085189() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         JsonFactory jsonFactory1 = new JsonFactory(objectMapper0);
@@ -2944,7 +3050,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086182() throws Throwable {
+    public void test086190() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2958,7 +3064,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086183() throws Throwable {
+    public void test086191() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2974,7 +3080,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086184() throws Throwable {
+    public void test086192() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -2990,7 +3096,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086185() throws Throwable {
+    public void test086193() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3006,7 +3112,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086186() throws Throwable {
+    public void test086194() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3022,7 +3128,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087187() throws Throwable {
+    public void test087195() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3042,7 +3148,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087188() throws Throwable {
+    public void test087196() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3064,7 +3170,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087189() throws Throwable {
+    public void test087197() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3086,7 +3192,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087190() throws Throwable {
+    public void test087198() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3109,7 +3215,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087191() throws Throwable {
+    public void test087199() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3132,7 +3238,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088192() throws Throwable {
+    public void test088200() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
@@ -3148,7 +3254,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089193() throws Throwable {
+    public void test089201() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
@@ -3163,7 +3269,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089194() throws Throwable {
+    public void test089202() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
@@ -3178,7 +3284,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089195() throws Throwable {
+    public void test089203() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
@@ -3194,7 +3300,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089196() throws Throwable {
+    public void test089204() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer_Segment0._next;
@@ -3210,7 +3316,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090197() throws Throwable {
+    public void test090205() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         Class<Object> class0 = Object.class;
@@ -3229,7 +3335,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090198() throws Throwable {
+    public void test090206() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         Class<Object> class0 = Object.class;
@@ -3248,7 +3354,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090199() throws Throwable {
+    public void test090207() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         Class<Object> class0 = Object.class;
@@ -3267,7 +3373,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091200() throws Throwable {
+    public void test091208() throws Throwable {
         TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer.Segment tokenBuffer_Segment1 = new TokenBuffer.Segment();
@@ -3293,7 +3399,28 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093201() throws Throwable {
+    public void test092209() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        objectMapper0.writerWithDefaultPrettyPrinter();
+        FileSystemHandling.shouldAllThrowIOExceptions();
+        FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "9)U9l+IA(RTI");
+        BigDecimal bigDecimal0 = BigDecimal.ONE;
+        tokenBuffer0.writeNumber(bigDecimal0);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer0.useDefaultPrettyPrinter();
+        TokenBuffer.Parser tokenBuffer_Parser1 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, true, true);
+        tokenBuffer_Parser1.version();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(tokenBuffer_Parser1);
+        tokenBuffer1.writeNumber((-2739));
+        TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
+        // Undeclared exception!
+        tokenBuffer2.serialize(tokenBuffer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test093210() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonFactory jsonFactory0 = new JsonFactory(objectMapper0);
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
@@ -3320,7 +3447,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test094202() throws Throwable {
+    public void test094211() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = objectMapper0.disableDefaultTyping();
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
@@ -3343,7 +3470,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095203() throws Throwable {
+    public void test095212() throws Throwable {
         TokenBuffer tokenBuffer0 = new TokenBuffer((ObjectCodec) null);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
         JsonToken jsonToken0 = JsonToken.VALUE_NUMBER_INT;
@@ -3363,7 +3490,54 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098204() throws Throwable {
+    public void test096213() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        BigInteger bigInteger0 = BigInteger.ZERO;
+        TokenBuffer tokenBuffer0 = new TokenBuffer(tokenBuffer_Parser0);
+        tokenBuffer0.writeNumber((BigInteger) null);
+        JsonToken jsonToken0 = JsonToken.START_OBJECT;
+        tokenBuffer0._append(jsonToken0);
+        SerializationFeature serializationFeature0 = SerializationFeature.WRAP_EXCEPTIONS;
+        ObjectMapper objectMapper1 = objectMapper0.enable(serializationFeature0);
+        TokenBuffer.Segment tokenBuffer_Segment1 = tokenBuffer0._first;
+        tokenBuffer0.writeEndArray();
+        tokenBuffer0.firstToken();
+        JsonFactory jsonFactory0 = new JsonFactory(objectMapper1);
+        JsonFactory jsonFactory1 = jsonFactory0.setOutputDecorator((OutputDecorator) null);
+        jsonFactory0.copy();
+        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.AUTO_CLOSE_JSON_CONTENT;
+        jsonFactory1.configure(jsonGenerator_Feature0, false);
+        ByteArrayBuilder byteArrayBuilder0 = new ByteArrayBuilder();
+        tokenBuffer0.useDefaultPrettyPrinter();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(tokenBuffer_Parser0);
+        tokenBuffer1.serialize((JsonGenerator) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test097214() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        ObjectMapper objectMapper1 = objectMapper0.enableDefaultTyping();
+        AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
+        ObjectMapper objectMapper2 = objectMapper1.setAnnotationIntrospectors(annotationIntrospector0, annotationIntrospector0);
+        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
+        ObjectMapper objectMapper3 = objectMapper2.setSerializerProvider(defaultSerializerProvider_Impl0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper3);
+        TokenBuffer tokenBuffer1 = new TokenBuffer(objectMapper0, true);
+        TokenBuffer tokenBuffer2 = tokenBuffer0.append(tokenBuffer1);
+        tokenBuffer2.flush();
+        SerializedString serializedString0 = DefaultPrettyPrinter.DEFAULT_ROOT_VALUE_SEPARATOR;
+        tokenBuffer2.writeString((SerializableString) serializedString0);
+        Class<Object> class0 = Object.class;
+        objectMapper0.reader(class0);
+        tokenBuffer1.writeEndArray();
+        JsonToken jsonToken0 = JsonToken.VALUE_STRING;
+        tokenBuffer2.serialize(tokenBuffer1);
+    }
+
+    @Test(timeout = 4000)
+    public void test098215() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3388,7 +3562,7 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099205() throws Throwable {
+    public void test099216() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3412,7 +3586,41 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102206() throws Throwable {
+    public void test100217() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        objectMapper0.writerWithDefaultPrettyPrinter();
+        FileSystemHandling.shouldAllThrowIOExceptions();
+        FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "9)U9l+IA(RTI");
+        BigDecimal bigDecimal0 = BigDecimal.ONE;
+        tokenBuffer0.writeNumber(bigDecimal0);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer0.useDefaultPrettyPrinter();
+        TokenBuffer.Parser tokenBuffer_Parser1 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, true, true);
+        tokenBuffer_Parser1.version();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(tokenBuffer_Parser1);
+        tokenBuffer_Parser1.peekNextToken();
+        tokenBuffer_Parser0.getTextCharacters();
+    }
+
+    @Test(timeout = 4000)
+    public void test101218() throws Throwable {
+        TokenBuffer.Segment tokenBuffer_Segment0 = new TokenBuffer.Segment();
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
+        tokenBuffer_Parser0.getTypeId();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(tokenBuffer_Parser0);
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0, false);
+        String string0 = "$24/Rz";
+        jsonGeneratorDelegate0.writeObjectField("$24/Rz", "$24/Rz");
+        // Undeclared exception!
+        tokenBuffer0.serialize(jsonGeneratorDelegate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test102219() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
         TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
@@ -3431,5 +3639,41 @@ public class TokenBuffer_ESTest extends TokenBuffer_ESTest_scaffolding {
         Class<Integer> class0 = Integer.class;
         ObjectReader objectReader0 = objectMapper1.reader(class0);
         objectReader0.readTree((JsonParser) tokenBuffer_Parser0);
+    }
+
+    @Test(timeout = 4000)
+    public void test103220() throws Throwable {
+        ObjectMapper objectMapper0 = new ObjectMapper();
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        JsonGeneratorDelegate jsonGeneratorDelegate0 = new JsonGeneratorDelegate(tokenBuffer0);
+        ContextAttributes.Impl.getEmpty();
+        FileSystemHandling.shouldAllThrowIOExceptions();
+        FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "9)U9l+IA(RTI");
+        BigDecimal bigDecimal0 = BigDecimal.ONE;
+        tokenBuffer0.writeNumber(bigDecimal0);
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer0.useDefaultPrettyPrinter();
+        TokenBuffer.Parser tokenBuffer_Parser1 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, true);
+        TokenBuffer.Parser tokenBuffer_Parser2 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, true, true);
+        tokenBuffer_Parser2.version();
+        TokenBuffer tokenBuffer1 = new TokenBuffer(tokenBuffer_Parser1);
+        TokenBuffer tokenBuffer2 = new TokenBuffer(objectMapper0, false);
+        tokenBuffer2.writeNumber(1554);
+        tokenBuffer1.append(tokenBuffer2);
+        TokenBuffer tokenBuffer3 = new TokenBuffer(objectMapper0);
+        tokenBuffer0.serialize(tokenBuffer3);
+        tokenBuffer3.writeEndObject();
+        tokenBuffer_Segment0.rawType(1554);
+    }
+
+    @Test(timeout = 4000)
+    public void test104221() throws Throwable {
+        JsonFactory jsonFactory0 = new JsonFactory();
+        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
+        TokenBuffer tokenBuffer0 = new TokenBuffer(objectMapper0);
+        TokenBuffer.Segment tokenBuffer_Segment0 = tokenBuffer0._last;
+        TokenBuffer.Parser tokenBuffer_Parser0 = new TokenBuffer.Parser(tokenBuffer_Segment0, objectMapper0, false, false);
+        tokenBuffer_Parser0.getTextLength();
     }
 }

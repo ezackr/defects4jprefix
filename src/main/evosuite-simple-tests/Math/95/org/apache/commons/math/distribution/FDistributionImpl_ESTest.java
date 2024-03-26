@@ -123,7 +123,15 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0813() throws Throwable {
+    public void test0713() throws Throwable {
+        FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 1701.2);
+        fDistributionImpl0.setNumeratorDegreesOfFreedom(1.0E-6);
+        // Undeclared exception!
+        fDistributionImpl0.inverseCumulativeProbability(0.9999967531099152);
+    }
+
+    @Test(timeout = 4000)
+    public void test0814() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         // Undeclared exception!
         try {
@@ -138,14 +146,14 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test0914() throws Throwable {
+    public void test0915() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         fDistributionImpl0.setDenominatorDegreesOfFreedom(1023.111003045955);
         assertEquals(1023.111003045955, fDistributionImpl0.getDenominatorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1015() throws Throwable {
+    public void test1016() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(4347.3109934, 4347.3109934);
         // Undeclared exception!
         try {
@@ -160,56 +168,56 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1116() throws Throwable {
+    public void test1117() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
         double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
         assertEquals(1.7976931348623157E308, fDistributionImpl0.getDenominatorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1117() throws Throwable {
+    public void test1118() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
         double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
         assertEquals(1.0, fDistributionImpl0.getNumeratorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1118() throws Throwable {
+    public void test1119() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1.0, 1.7976931348623157E308);
         double double0 = fDistributionImpl0.cumulativeProbability((-1817.526));
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1219() throws Throwable {
+    public void test1220() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         double double0 = fDistributionImpl0.getDenominatorDegreesOfFreedom();
         assertEquals(1701.2, fDistributionImpl0.getNumeratorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1220() throws Throwable {
+    public void test1221() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         double double0 = fDistributionImpl0.getDenominatorDegreesOfFreedom();
         assertEquals(3161.329915527, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1321() throws Throwable {
+    public void test1322() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         double double0 = fDistributionImpl0.getNumeratorDegreesOfFreedom();
         assertEquals(3161.329915527, fDistributionImpl0.getDenominatorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1322() throws Throwable {
+    public void test1323() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1701.2, 3161.329915527);
         double double0 = fDistributionImpl0.getNumeratorDegreesOfFreedom();
         assertEquals(1701.2, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1423() throws Throwable {
+    public void test1424() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(8.441822398385275E-5, 0.9999999999999971);
         // Undeclared exception!
         try {
@@ -224,7 +232,7 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1524() throws Throwable {
+    public void test1525() throws Throwable {
         FDistributionImpl fDistributionImpl0 = null;
         try {
             fDistributionImpl0 = new FDistributionImpl((-2976.553895288), (-2976.553895288));
@@ -238,49 +246,49 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1625() throws Throwable {
+    public void test1626() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
         assertEquals(Double.POSITIVE_INFINITY, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1626() throws Throwable {
+    public void test1627() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
         assertEquals(1389.8747, fDistributionImpl0.getNumeratorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1627() throws Throwable {
+    public void test1628() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(1.0);
         assertEquals(1389.8747, fDistributionImpl0.getDenominatorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1728() throws Throwable {
+    public void test1729() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
         assertEquals(0.0, double0, 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1729() throws Throwable {
+    public void test1730() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
         assertEquals(2446.3075409, fDistributionImpl0.getNumeratorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1730() throws Throwable {
+    public void test1731() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(2446.3075409, 2446.3075409);
         double double0 = fDistributionImpl0.inverseCumulativeProbability(0.0);
         assertEquals(2446.3075409, fDistributionImpl0.getDenominatorDegreesOfFreedom(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1831() throws Throwable {
+    public void test1832() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(234.30556717516757, 234.30556717516757);
         try {
             fDistributionImpl0.inverseCumulativeProbability(0.9999999999999999);
@@ -294,7 +302,7 @@ public class FDistributionImpl_ESTest extends FDistributionImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1932() throws Throwable {
+    public void test1933() throws Throwable {
         FDistributionImpl fDistributionImpl0 = new FDistributionImpl(1389.8747, 1389.8747);
         double double0 = fDistributionImpl0.cumulativeProbability(1389.8747);
         assertEquals(1.0, double0, 0.01);

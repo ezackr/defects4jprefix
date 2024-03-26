@@ -20,7 +20,16 @@ import org.junit.runner.RunWith;
 public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options0, stringArray0, false);
+        posixParser0.burstToken("--[ Options: [ short java.util.HashMap@0000000004 ] [ long {} ]", false);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[29];
@@ -29,7 +38,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[2];
@@ -38,7 +47,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -47,7 +56,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
@@ -56,7 +65,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = Locale.getISOLanguages();
@@ -64,7 +73,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[9];
@@ -73,7 +82,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         options0.addOption("WF", true, "WF");
@@ -83,7 +92,7 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = Locale.getISOLanguages();
@@ -91,7 +100,28 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test099() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        options0.addOption("", true, "");
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options0, stringArray0, true);
+        posixParser0.burstToken("--", true);
+        posixParser0.burstToken("vo:`]-lTv", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        Options options1 = options0.addOption("", false, "");
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options1, stringArray0, false);
+        posixParser0.burstToken("--/b#GsvB.", true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         options0.addOption("j", "j", false, "j");
@@ -101,11 +131,21 @@ public class PosixParser_ESTest extends PosixParser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         PosixParser posixParser0 = new PosixParser();
         Options options0 = new Options();
         String[] stringArray0 = new String[1];
         stringArray0[0] = "-j";
         CommandLine commandLine0 = posixParser0.parse(options0, stringArray0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        PosixParser posixParser0 = new PosixParser();
+        Options options0 = new Options();
+        options0.addOption("", true, "");
+        String[] stringArray0 = new String[0];
+        posixParser0.flatten(options0, stringArray0, true);
+        posixParser0.burstToken("--[ Options: [ short java.util.HashMap@0000000004 ] [ long {} ]", true);
     }
 }

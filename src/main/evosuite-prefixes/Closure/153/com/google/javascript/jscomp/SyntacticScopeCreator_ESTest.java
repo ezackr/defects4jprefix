@@ -21,7 +21,13 @@ import org.junit.runner.RunWith;
 public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0, (SyntacticScopeCreator.RedeclarationHandler) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         node0.addChildToBack(node0);
@@ -33,7 +39,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("M&-2&wprH6VBXQ!!Yc");
         Scope scope0 = compiler0.getTopScope();
@@ -46,7 +52,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test033() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("iuKQ=,{jc2|fvlSo_j");
         SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
@@ -57,7 +63,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("M&-2#wprH6+BXQ!!Yc");
         Node node1 = Node.newString("M&-2#wprH6+BXQ!!Yc");
@@ -68,7 +74,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("exec");
         node0.setType(118);
@@ -77,7 +83,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("x", "x");
         node0.setType(120);
@@ -86,7 +92,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("Z");
         SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
@@ -95,7 +101,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(")Z=0'Q`YxH1Ue_{r");
         node0.setType(118);
@@ -105,7 +111,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("x", "x");
         node0.addChildrenToFront(node0);
@@ -115,7 +121,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("exec");
         node0.setType(108);
@@ -125,7 +131,7 @@ public class SyntacticScopeCreator_ESTest extends SyntacticScopeCreator_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("M&-2&wprH6VBXQ!!Yc");
         node0.addChildToBack(node0);

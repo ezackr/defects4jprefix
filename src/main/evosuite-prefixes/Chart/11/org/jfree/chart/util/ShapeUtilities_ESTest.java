@@ -108,16 +108,6 @@ public class ShapeUtilities_ESTest extends ShapeUtilities_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067() throws Throwable {
-        SystemColor systemColor0 = SystemColor.windowText;
-        BevelBorder bevelBorder0 = new BevelBorder(2147483646, systemColor0, systemColor0, systemColor0, systemColor0);
-        RenderingHints[] renderingHintsArray0 = new RenderingHints[0];
-        JList<RenderingHints> jList0 = new JList<RenderingHints>(renderingHintsArray0);
-        Rectangle rectangle0 = bevelBorder0.getInteriorRectangle((Component) jList0, (-984), 1, 1717, (-1));
-        Point2D.Double point2D_Double0 = (Point2D.Double) ShapeUtilities.getPointInRectangle(0.0F, 244, rectangle0);
-    }
-
-    @Test(timeout = 4000)
     public void test078() throws Throwable {
         Line2D.Double line2D_Double0 = new Line2D.Double((-2382.019298452849), 0.0, 0.5, (-2382.019298452849));
         GeneralPath generalPath0 = (GeneralPath) ShapeUtilities.createLineRegion(line2D_Double0, 2523.9216F);
@@ -535,22 +525,6 @@ public class ShapeUtilities_ESTest extends ShapeUtilities_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test6769() throws Throwable {
-        Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double();
-        Point2D point2D0 = ShapeUtilities.getPointInRectangle(82.0, 82.0, rectangle2D_Double0);
-        Line2D.Double line2D_Double0 = new Line2D.Double(point2D0, point2D0);
-        boolean boolean0 = ShapeUtilities.equal((Shape) line2D_Double0, (Shape) rectangle2D_Double0);
-    }
-
-    @Test(timeout = 4000)
-    public void test6770() throws Throwable {
-        Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double();
-        Point2D point2D0 = ShapeUtilities.getPointInRectangle(82.0, 82.0, rectangle2D_Double0);
-        Line2D.Double line2D_Double0 = new Line2D.Double(point2D0, point2D0);
-        boolean boolean0 = ShapeUtilities.equal((Shape) line2D_Double0, (Shape) rectangle2D_Double0);
-    }
-
-    @Test(timeout = 4000)
-    public void test6771() throws Throwable {
         Rectangle2D.Double rectangle2D_Double0 = new Rectangle2D.Double();
         Point2D point2D0 = ShapeUtilities.getPointInRectangle(82.0, 82.0, rectangle2D_Double0);
         Line2D.Double line2D_Double0 = new Line2D.Double(point2D0, point2D0);

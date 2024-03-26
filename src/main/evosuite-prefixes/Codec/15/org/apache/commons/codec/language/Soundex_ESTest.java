@@ -43,12 +43,6 @@ public class Soundex_ESTest extends Soundex_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test024() throws Throwable {
-        Soundex soundex0 = new Soundex();
-        soundex0.getMaxLength();
-    }
-
-    @Test(timeout = 4000)
     public void test025() throws Throwable {
         Soundex soundex0 = new Soundex();
         soundex0.setMaxLength((-1));
@@ -192,12 +186,6 @@ public class Soundex_ESTest extends Soundex_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test1927() throws Throwable {
-        Soundex soundex0 = new Soundex("org.apache.commons.codec.EncoderException");
-        String string0 = soundex0.encode("CH?75#hn");
-    }
-
-    @Test(timeout = 4000)
-    public void test1928() throws Throwable {
         Soundex soundex0 = new Soundex("org.apache.commons.codec.EncoderException");
         String string0 = soundex0.encode("CH?75#hn");
     }

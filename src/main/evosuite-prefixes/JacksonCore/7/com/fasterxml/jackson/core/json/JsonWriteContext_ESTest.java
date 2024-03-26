@@ -125,12 +125,6 @@ public class JsonWriteContext_ESTest extends JsonWriteContext_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0713() throws Throwable {
-        JsonWriteContext jsonWriteContext0 = JsonWriteContext.createRootContext();
-        jsonWriteContext0.inRoot();
-    }
-
-    @Test(timeout = 4000)
     public void test0714() throws Throwable {
         JsonWriteContext jsonWriteContext0 = JsonWriteContext.createRootContext();
         JsonWriteContext jsonWriteContext1 = jsonWriteContext0.reset(1);
@@ -219,14 +213,6 @@ public class JsonWriteContext_ESTest extends JsonWriteContext_ESTest_scaffolding
         JsonWriteContext jsonWriteContext2 = jsonWriteContext1.createChildArrayContext();
         JsonWriteContext jsonWriteContext3 = jsonWriteContext2.getParent();
         jsonWriteContext3.getEntryCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test1025() throws Throwable {
-        JsonWriteContext jsonWriteContext0 = JsonWriteContext.createRootContext();
-        JsonWriteContext jsonWriteContext1 = jsonWriteContext0.createChildArrayContext();
-        JsonWriteContext jsonWriteContext2 = jsonWriteContext1.createChildArrayContext();
-        JsonWriteContext jsonWriteContext3 = jsonWriteContext2.getParent();
     }
 
     @Test(timeout = 4000)
@@ -468,12 +454,6 @@ public class JsonWriteContext_ESTest extends JsonWriteContext_ESTest_scaffolding
         jsonWriteContext1.writeFieldName("z");
         JsonWriteContext jsonWriteContext2 = new JsonWriteContext(3, jsonWriteContext1, dupDetector0);
         jsonWriteContext2.writeFieldName((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test2257() throws Throwable {
-        JsonWriteContext jsonWriteContext0 = JsonWriteContext.createRootContext();
-        int int0 = jsonWriteContext0.writeFieldName("{?}");
     }
 
     @Test(timeout = 4000)

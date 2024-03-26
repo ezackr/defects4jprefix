@@ -67,7 +67,39 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test041() throws Throwable {
+    public void test011() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        ArchiveUtils.matchAsciiBuffer(".eDE7/)IC<@%c_|4d(", byteArray0);
+        ArchiveUtils.sanitize("");
+        ArchiveUtils.isEqual((byte[]) null, (int) (byte) 0, 0, byteArray0, (int) (byte) 0, (-2636));
+        System.setCurrentTimeMillis((-2636));
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
+        MockFile mockFile0 = new MockFile("", "");
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry(mockFile0, "");
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry("N8u9WyEI]'7rN");
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("-       0 N8u9WyEI]'7rN");
+        tarArchiveEntry0.setSize(1L);
+        tarArchiveEntry0.setName("-       0 N8u9WyEI]'7rN");
+        ArchiveUtils.matchAsciiBuffer("-       0 N8u9WyEI]'7rN", byteArray0);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        FileSystemHandling.createFolder((EvoSuiteFile) null);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        ArchiveUtils.isEqual(byteArray0, byteArray0, true);
+        ArchiveUtils.isArrayZero(byteArray0, 31);
+        System.setCurrentTimeMillis(31);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byte byte0 = (byte) (-4);
         byteArray0[0] = (byte) (-4);
@@ -92,7 +124,102 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test152() throws Throwable {
+    public void test055() throws Throwable {
+        byte[] byteArray0 = new byte[6];
+        byteArray0[5] = (byte) 2;
+        byteArray0[4] = (byte) 2;
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 2, (int) (byte) 2, byteArray0, (-2722), (int) (byte) (-5), false);
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 0, (int) (byte) 2, byteArray0, (int) (byte) 2, 409, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        ArchiveUtils.sanitize("p[K");
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        byteArray0[0] = (byte) (-55);
+        byteArray0[1] = (byte) 36;
+        FileSystemHandling.setPermissions((EvoSuiteFile) null, true, true, true);
+        byteArray0[2] = (byte) 7;
+        ArchiveUtils.toAsciiString(byteArray0);
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) (-55), (int) (byte) 7, byteArray0, (int) (byte) 7, (int) (byte) (-55), false);
+        System.setCurrentTimeMillis(4096L);
+        byte[] byteArray1 = ArchiveUtils.toAsciiBytes("\uFFFD$\u0007");
+        ArchiveUtils.sanitize("\uFFFD$\u0007");
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 7, (int) (byte) 36, byteArray1, 9, 32, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        byte[] byteArray0 = new byte[6];
+        byte byte0 = (byte) 0;
+        byteArray0[1] = (byte) 0;
+        byte byte1 = (byte) 32;
+        byteArray0[2] = (byte) 32;
+        byte byte2 = (byte) 0;
+        byte byte3 = (byte) 57;
+        byteArray0[5] = (byte) 57;
+        int int0 = 0;
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 0, (int) (byte) 57, byteArray0, (-2722), 0, true);
+        int int1 = (-4592);
+        ArchiveUtils.toAsciiString(byteArray0, (-4592), (int) (byte) 0);
+        int int2 = 63;
+        ArchiveUtils.toAsciiString(byteArray0);
+        String string0 = "C<uY43s";
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
+        FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "iA=K0M9Yl\"%-Oy]`");
+        byte[] byteArray0 = new byte[4];
+        ArchiveUtils.isEqual(byteArray0, 1, (-1), byteArray0, 1, 1, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) 0;
+        ArchiveUtils.matchAsciiBuffer(">_FwLvb.Fsa#", byteArray0, (int) (byte) 0, (int) (byte) 0);
+        ArchiveUtils.isEqualWithNull((byte[]) null, (byte) 0, 0, byteArray0, 32, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        FileSystemHandling.shouldAllThrowIOExceptions();
+        String string0 = "6StZP!&Z};i";
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("6StZP!&Z};i");
+        ArchiveUtils.toAsciiString(byteArray0);
+        System.setCurrentTimeMillis((-125L));
+        ArchiveUtils.matchAsciiBuffer("6StZP!&Z};i", byteArray0, 1494, 1494);
+        ArchiveUtils.toAsciiString(byteArray0);
+        int int0 = (-1323);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) 0;
+        byteArray0[2] = (byte) 0;
+        ArchiveUtils.isEqual(byteArray0, byteArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        ArchiveUtils.matchAsciiBuffer("", (byte[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry("");
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1515() throws Throwable {
         byte[] byteArray0 = null;
         // Undeclared exception!
         try {
@@ -103,7 +230,7 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test163() throws Throwable {
+    public void test1616() throws Throwable {
         byte[] byteArray0 = null;
         // Undeclared exception!
         try {
@@ -118,7 +245,42 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test194() throws Throwable {
+    public void test1717() throws Throwable {
+        byte[] byteArray0 = new byte[7];
+        byte byte0 = (byte) (-26);
+        byteArray0[0] = (byte) (-26);
+        byte byte1 = (byte) 27;
+        byteArray0[1] = (byte) 27;
+        byteArray0[2] = (byte) 125;
+        byteArray0[3] = (byte) 52;
+        byteArray0[4] = (byte) 0;
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) 0;
+        ArchiveUtils.matchAsciiBuffer((String) null, byteArray0);
+        boolean boolean0 = false;
+        ArchiveUtils.isEqual(byteArray0, byteArray0, boolean0);
+        ArchiveUtils.isEqual(byteArray0, byteArray0);
+        ArchiveUtils.toAsciiString(byteArray0);
+        ArchiveUtils.toAsciiString(byteArray0, (int) byte0, (int) byte1);
+        int int0 = 0;
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        byte[] byteArray0 = new byte[8];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) (-103);
+        byteArray0[2] = (byte) 85;
+        byteArray0[3] = (byte) 47;
+        byteArray0[4] = (byte) (-45);
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) 68;
+        byteArray0[7] = (byte) 29;
+        ArchiveUtils.isEqual(byteArray0, 1020, 1020, byteArray0, (int) (byte) (-45), (int) (byte) 47, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         byte[] byteArray0 = new byte[7];
         byteArray0[0] = (byte) (-105);
         byteArray0[1] = (byte) 68;
@@ -152,7 +314,60 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test265() throws Throwable {
+    public void test2020() throws Throwable {
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("-6Zz^j k?ow");
+        ArchiveUtils.isEqual(byteArray0, byteArray0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) 63;
+        ArchiveUtils.isArrayZero(byteArray0, (byte) 63);
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 76;
+        byteArray0[1] = (byte) 0;
+        ArchiveUtils.isArrayZero(byteArray0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("");
+        ArchiveUtils.matchAsciiBuffer("", byteArray0, (-2516), 0);
+        ArchiveUtils.sanitize("");
+        ArchiveUtils.isEqual(byteArray0, byteArray0, false);
+        ArchiveUtils.isEqual(byteArray0, byteArray0);
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry(",WVp0", (byte) 0);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
+        String string0 = "?[$";
+        ArchiveUtils.sanitize("?[$");
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("?[$");
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry("", (byte) 81, false);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        ArchiveUtils.toAsciiString(byteArray0, (int) (byte) 81, 1601);
+        String string1 = "m,hyz";
+        ArchiveUtils.matchAsciiBuffer(string1, byteArray0);
+        ArchiveUtils.sanitize(string0);
+        int int0 = (-1769);
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) 0;
+        ArchiveUtils.isEqual(byteArray0, (-1139), (int) (byte) 0, byteArray0, 5800, 4574);
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
         byte[] byteArray0 = ArchiveUtils.toAsciiBytes("F~+?x1bgjG2'0");
         ArchiveUtils.isEqual(byteArray0, byteArray0);
         byte[] byteArray1 = ArchiveUtils.toAsciiBytes("F~+?x1bgjG2'0");
@@ -172,7 +387,7 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test276() throws Throwable {
+    public void test2727() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byte byte0 = (byte) 45;
         byteArray0[0] = (byte) 45;
@@ -186,7 +401,154 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test437() throws Throwable {
+    public void test2828() throws Throwable {
+        ArchiveUtils.isEqual((byte[]) null, (-1433), 4095, (byte[]) null, 0, 0, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) (-58);
+        byteArray0[1] = (byte) (-114);
+        ArchiveUtils.isEqual(byteArray0, 7, (int) (byte) (-114), byteArray0, (int) (byte) (-58), 1142, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) (-110);
+        byte[] byteArray1 = new byte[5];
+        byteArray1[0] = (byte) (-110);
+        byteArray1[1] = (byte) (-110);
+        byteArray1[2] = (byte) (-110);
+        byteArray1[3] = (byte) (-110);
+        byteArray1[4] = (byte) (-110);
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) (-110), (int) (byte) (-110), byteArray1, (int) (byte) (-110), (int) (byte) (-110));
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
+        byte[] byteArray0 = new byte[7];
+        byteArray0[0] = (byte) 125;
+        byteArray0[1] = (byte) 14;
+        byteArray0[2] = (byte) 0;
+        byteArray0[3] = (byte) (-7);
+        byteArray0[4] = (byte) (-99);
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) (-84);
+        byte[] byteArray1 = new byte[6];
+        byteArray1[0] = (byte) (-99);
+        byteArray1[1] = (byte) (-7);
+        byteArray1[2] = (byte) 14;
+        byteArray1[3] = (byte) (-99);
+        byteArray1[4] = (byte) 0;
+        byteArray1[5] = (byte) 14;
+        ArchiveUtils.isEqual(byteArray0, byteArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 109;
+        byteArray0[1] = (byte) 0;
+        ArchiveUtils.isEqualWithNull(byteArray0, (byte) 109, (byte) 0, byteArray0, (byte) 109, (byte) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("ql(=UKz+F3W=");
+        ArchiveUtils.isEqualWithNull(byteArray0, (-2447), 32, byteArray0, 146, (-2280));
+    }
+
+    @Test(timeout = 4000)
+    public void test3434() throws Throwable {
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry("N8u9WyEI]'7rN", true);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("-       0 N8u9WyEI]'7rN");
+        tarArchiveEntry0.setSize(1L);
+        tarArchiveEntry0.setName("-       0 N8u9WyEI]'7rN");
+        ArchiveUtils.matchAsciiBuffer("-       0 N8u9WyEI]'7rN", byteArray0);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        ArchiveUtils.isEqual(byteArray0, byteArray0, true);
+        ArchiveUtils.isArrayZero(byteArray0, 31);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        ArchiveUtils.sanitize((String) null);
+        String string0 = "";
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byte byte0 = (byte) 0;
+        byteArray0[0] = (byte) 0;
+        ArchiveUtils.isEqual(byteArray0, 7, 4328, byteArray0, (int) (byte) 0, 0);
+        ArchiveUtils.matchAsciiBuffer("f9~V.(\u0006}-BeBAV&OK", byteArray0, 7, 7);
+        String string0 = "AES256";
+        byte[] byteArray1 = new byte[4];
+        byteArray1[0] = byte0;
+        byteArray1[1] = byte0;
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
+        byte[] byteArray0 = new byte[4];
+        byteArray0[0] = (byte) (-32);
+        byteArray0[1] = (byte) (-44);
+        byteArray0[2] = (byte) 0;
+        byteArray0[3] = (byte) 121;
+        byte[] byteArray1 = new byte[2];
+        byteArray1[0] = (byte) 121;
+        byteArray1[1] = (byte) (-44);
+        ArchiveUtils.isEqualWithNull(byteArray0, 0, 7, byteArray1, 5899, (byte) (-44));
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
+        ArchiveUtils.isArrayZero((byte[]) null, (-874));
+        ArchiveUtils.isEqual((byte[]) null, (-1207), (-2876), (byte[]) null, 3161, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3939() throws Throwable {
+        byte[] byteArray0 = new byte[3];
+        byteArray0[0] = (byte) (-3);
+        byteArray0[1] = (byte) (-33);
+        byteArray0[2] = (byte) 62;
+        ArchiveUtils.toAsciiString(byteArray0);
+        ArchiveUtils.matchAsciiBuffer("{2", byteArray0);
+        ArchiveUtils.isEqual(byteArray0, (-3614), (int) (byte) (-33), byteArray0, (-820), 7);
+    }
+
+    @Test(timeout = 4000)
+    public void test4040() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) 0;
+        ArchiveUtils.isArrayZero(byteArray0, 7);
+    }
+
+    @Test(timeout = 4000)
+    public void test4141() throws Throwable {
+        byte[] byteArray0 = new byte[5];
+        byteArray0[0] = (byte) 30;
+        byteArray0[1] = (byte) 25;
+        byteArray0[2] = (byte) 63;
+        byteArray0[3] = (byte) 0;
+        byteArray0[4] = (byte) 16;
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 63, (int) (byte) 30, byteArray0, 0, 832);
+    }
+
+    @Test(timeout = 4000)
+    public void test4242() throws Throwable {
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("");
+        ArchiveUtils.isEqual(byteArray0, (-766), 0, byteArray0, 45, (-4159), true);
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byte byte0 = (byte) 0;
         byteArray0[0] = (byte) 0;
@@ -208,7 +570,15 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test458() throws Throwable {
+    public void test4444() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) (-128);
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) (-128), 0, byteArray0, 0, (-982), false);
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
         byte[] byteArray0 = null;
         ArchiveUtils.isEqual((byte[]) null, (-2141), (-2141), (byte[]) null, (-2141), (-2141), false);
         String string0 = "";
@@ -236,7 +606,18 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test479() throws Throwable {
+    public void test4646() throws Throwable {
+        byte[] byteArray0 = new byte[5];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) 0;
+        byteArray0[2] = (byte) 32;
+        byteArray0[3] = (byte) (-35);
+        byteArray0[4] = (byte) 0;
+        ArchiveUtils.toAsciiString(byteArray0, (int) (byte) 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
         byte[] byteArray0 = new byte[3];
         byteArray0[0] = (byte) (-8);
         byteArray0[1] = (byte) 100;
@@ -259,7 +640,37 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5010() throws Throwable {
+    public void test4848() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) 126;
+        byte[] byteArray1 = new byte[3];
+        byteArray1[0] = (byte) 0;
+        byteArray1[1] = (byte) 0;
+        byteArray1[2] = (byte) (-62);
+        ArchiveUtils.isEqual(byteArray0, byteArray1, false);
+        ArchiveUtils.matchAsciiBuffer("", byteArray1, (int) (byte) 0, (int) (byte) (-62));
+        byte[] byteArray2 = new byte[9];
+        byteArray2[0] = (byte) (-62);
+        byteArray2[1] = (byte) 126;
+        byteArray2[2] = (byte) 126;
+        byteArray2[3] = (byte) 0;
+        byteArray2[4] = (byte) 126;
+        byteArray2[5] = (byte) 126;
+        byteArray2[6] = (byte) 0;
+        byteArray2[7] = (byte) 0;
+        byteArray2[8] = (byte) 0;
+        ArchiveUtils.isEqual(byteArray2, (-1306), (-780), byteArray0, (int) (byte) 0, 3312);
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
+        ArchiveUtils.toAsciiBytes((String) null);
+        String string0 = null;
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
         String string0 = " but is ";
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) 125;
@@ -278,7 +689,127 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5811() throws Throwable {
+    public void test5151() throws Throwable {
+        byte[] byteArray0 = null;
+        ArchiveUtils.isArrayZero((byte[]) null, 352);
+        byte[] byteArray1 = new byte[5];
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
+        ArchiveUtils.sanitize("uX':elDq# !hTb=");
+        ArchiveUtils.isEqual((byte[]) null, 1779, 0, (byte[]) null, 0, 904);
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("");
+        ArchiveUtils.toAsciiString(byteArray0);
+        byte[] byteArray1 = new byte[2];
+        byteArray1[0] = (byte) 0;
+        byteArray1[1] = (byte) (-82);
+        ArchiveUtils.isEqual(byteArray1, 707, (-61), byteArray0, (int) (byte) (-82), 327, false);
+    }
+
+    @Test(timeout = 4000)
+    public void test5353() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) (-94);
+        ArchiveUtils.isEqualWithNull(byteArray0, 430, (byte) (-94), byteArray0, (byte) (-94), (byte) (-94));
+        ArchiveUtils.sanitize("Lwlq8hR*hLL`$^%");
+        ArchiveUtils.toAsciiString(byteArray0);
+        ArchiveUtils.matchAsciiBuffer("", byteArray0, (-1096), (int) (byte) 0);
+        byte[] byteArray1 = new byte[8];
+        byteArray1[0] = (byte) (-1);
+        byteArray1[1] = (byte) 32;
+        byteArray1[2] = (byte) 100;
+        byteArray1[3] = (byte) (-94);
+        byteArray1[4] = (byte) 0;
+        byteArray1[5] = (byte) (-94);
+        byteArray1[6] = (byte) 0;
+        byteArray1[7] = (byte) (-94);
+        ArchiveUtils.toAsciiString(byteArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test5454() throws Throwable {
+        byte[] byteArray0 = new byte[6];
+        byte byte0 = (byte) (-4);
+        byteArray0[0] = (byte) (-4);
+        byteArray0[1] = (byte) 0;
+        byteArray0[2] = (byte) (-5);
+        byteArray0[3] = (byte) 32;
+        byteArray0[4] = (byte) 0;
+        byteArray0[5] = (byte) 21;
+        int int0 = 0;
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 0, (int) (byte) 21, byteArray0, (-2722), 0, true);
+        int int1 = 96;
+        ArchiveUtils.toAsciiString(byteArray0, (-4592), 96);
+        int int2 = 63;
+        ArchiveUtils.isEqualWithNull(byteArray0, int1, int2, byteArray0, byteArray0[3], byte0);
+        String string0 = "C<uY43s";
+        CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry(string0);
+        String string1 = ArchiveUtils.toString((ArchiveEntry) cpioArchiveEntry0);
+        ArchiveUtils.matchAsciiBuffer(string1, byteArray0);
+        int int3 = 2425;
+        boolean boolean0 = true;
+    }
+
+    @Test(timeout = 4000)
+    public void test5555() throws Throwable {
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 45;
+        byteArray0[1] = (byte) 0;
+        byteArray0[2] = (byte) 53;
+        byteArray0[3] = (byte) 0;
+        byteArray0[4] = (byte) 45;
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) (-126);
+        byteArray0[7] = (byte) (-46);
+        byteArray0[8] = (byte) 0;
+        ArchiveUtils.matchAsciiBuffer((String) null, byteArray0, (-846), (int) (byte) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5656() throws Throwable {
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) (-79);
+        byteArray0[1] = (byte) (-55);
+        byteArray0[2] = (byte) (-65);
+        byteArray0[3] = (byte) 0;
+        byteArray0[4] = (byte) 79;
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) 56;
+        byteArray0[7] = (byte) 0;
+        byteArray0[8] = (byte) 108;
+        ArchiveUtils.isEqualWithNull(byteArray0, (byte) (-79), 0, byteArray0, (byte) 0, 198);
+    }
+
+    @Test(timeout = 4000)
+    public void test5757() throws Throwable {
+        byte[] byteArray0 = new byte[5];
+        byteArray0[0] = (byte) (-116);
+        byte byte0 = (byte) (-54);
+        byteArray0[1] = (byte) (-54);
+        byte byte1 = (byte) 1;
+        byteArray0[2] = (byte) 1;
+        byteArray0[3] = (byte) (-30);
+        byteArray0[4] = (byte) 27;
+        int int0 = 0;
+        ArchiveUtils.matchAsciiBuffer("SoQ0ad", byteArray0, 0, 0);
+        ArchiveUtils.isEqual(byteArray0, 0, (int) (byte) 1, byteArray0, (int) (byte) 27, (-1441), false);
+        ArchiveUtils.toAsciiString(byteArray0);
+        ArchiveUtils.isEqual(byteArray0, 0, 0, byteArray0, (int) (byte) 1, 0, false);
+        ArchiveUtils.toAsciiString(byteArray0, 0, (int) (byte) 1);
+        ArchiveUtils.isArrayZero(byteArray0, 600);
+        ArchiveUtils.toAsciiString(byteArray0, (int) (byte) 1, 100);
+        int int1 = (-5274);
+        ArchiveUtils.toAsciiString(byteArray0, (int) byte0, int1);
+        int int2 = 498;
+        int int3 = 0;
+        boolean boolean0 = false;
+        ArchiveUtils.isEqual(byteArray0, int0, int2, byteArray0, int3, (int) byte1, boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5858() throws Throwable {
         byte[] byteArray0 = new byte[1];
         byteArray0[0] = (byte) 0;
         ArchiveUtils.isEqual(byteArray0, byteArray0);
@@ -299,7 +830,30 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6112() throws Throwable {
+    public void test5959() throws Throwable {
+        byte[] byteArray0 = null;
+        ArchiveUtils.toAsciiString((byte[]) null, 1895, 1895);
+        byte[] byteArray1 = new byte[2];
+    }
+
+    @Test(timeout = 4000)
+    public void test6060() throws Throwable {
+        byte[] byteArray0 = null;
+        ArchiveUtils.matchAsciiBuffer("org.apache.commons.compress.archivers.dump.DumpArchiveEntry", (byte[]) null, 0, 0);
+        String string0 = "";
+        ArchiveUtils.sanitize("");
+        ArchiveUtils.isEqualWithNull((byte[]) null, 0, 0, (byte[]) null, 0, 0);
+        ArchiveUtils.sanitize("");
+        ArchiveUtils.isEqual((byte[]) null, 1182, 1182, (byte[]) null, (-5186), 26370);
+        ArchiveUtils.toAsciiBytes(string0);
+        ArchiveUtils.toAsciiString(byteArray0);
+        String string1 = "DtW\\Ka.jb1AOICWz}P";
+        byte[] byteArray1 = new byte[0];
+        int int0 = (-1054);
+    }
+
+    @Test(timeout = 4000)
+    public void test6161() throws Throwable {
         byte[] byteArray0 = new byte[6];
         byte byte0 = (byte) 0;
         byteArray0[1] = (byte) 0;
@@ -324,7 +878,73 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6613() throws Throwable {
+    public void test6262() throws Throwable {
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 63;
+        byteArray0[1] = (byte) 63;
+        byteArray0[2] = (byte) (-65);
+        byteArray0[3] = (byte) 0;
+        byteArray0[4] = (byte) 79;
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) 56;
+        byteArray0[7] = (byte) 0;
+        byteArray0[8] = (byte) 108;
+        ArchiveUtils.isEqualWithNull(byteArray0, (byte) 63, 0, byteArray0, (byte) 0, 198);
+    }
+
+    @Test(timeout = 4000)
+    public void test6363() throws Throwable {
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) 0;
+        ArchiveUtils.isArrayZero(byteArray0, (-252));
+        ArchiveUtils.matchAsciiBuffer("", byteArray0, (int) (byte) 0, (int) (byte) 0);
+        ArchiveUtils.matchAsciiBuffer("", byteArray0, 0, 667);
+        ArchiveUtils.matchAsciiBuffer("CRC32", byteArray0, (int) (byte) 0, (-252));
+        ArchiveUtils.isEqual(byteArray0, byteArray0);
+        byte[] byteArray1 = ArchiveUtils.toAsciiBytes("org.apache.commons.compress.utils.ArchiveUtils");
+        byte[] byteArray2 = new byte[4];
+        byteArray2[0] = (byte) 0;
+        byteArray2[1] = (byte) 0;
+        FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "OF$a?$p(%q.");
+        byteArray2[2] = (byte) 0;
+        byteArray2[3] = (byte) 0;
+        ArchiveUtils.isArrayZero(byteArray2, (byte) 0);
+        ArchiveUtils.isEqual(byteArray1, (int) (byte) 0, (int) (byte) 0, byteArray2, (int) (byte) 0, (int) (byte) 0, true);
+        ArArchiveEntry arArchiveEntry0 = new ArArchiveEntry("", (byte) 0);
+        arArchiveEntry0.getLastModifiedDate();
+        arArchiveEntry0.getLastModifiedDate();
+        ArchiveUtils.toString((ArchiveEntry) arArchiveEntry0);
+        ArchiveUtils.isEqual(byteArray1, byteArray0, true);
+        ArchiveUtils.isEqual(byteArray1, (int) (byte) 0, 22, byteArray2, (int) (byte) 0, 7, false);
+        ArchiveUtils.isEqualWithNull(byteArray2, 0, (byte) 0, byteArray1, (byte) 0, (-2090));
+    }
+
+    @Test(timeout = 4000)
+    public void test6464() throws Throwable {
+        byte[] byteArray0 = new byte[0];
+        FileSystemHandling.appendDataToFile((EvoSuiteFile) null, byteArray0);
+        MockFile mockFile0 = new MockFile("");
+        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "");
+        ArchiveUtils.toString((ArchiveEntry) zipArchiveEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test6565() throws Throwable {
+        byte[] byteArray0 = new byte[1];
+        byteArray0[0] = (byte) 0;
+        ArchiveUtils.isArrayZero(byteArray0, (byte) 0);
+        ArchiveUtils.matchAsciiBuffer("%Xg{Rzf)", byteArray0);
+        ArchiveUtils.sanitize("");
+        ArchiveUtils.isEqualWithNull((byte[]) null, (byte) 0, (-358), (byte[]) null, (-358), (byte) 0);
+        byte[] byteArray1 = null;
+        int int0 = 0;
+        int int1 = (-2648);
+        ArchiveUtils.isEqual(byteArray1, (int) byteArray0[0], int0, byteArray0, (int) byteArray0[0], int1);
+    }
+
+    @Test(timeout = 4000)
+    public void test6666() throws Throwable {
         byte[] byteArray0 = new byte[3];
         byteArray0[0] = (byte) 1;
         byteArray0[0] = (byte) (-8);
@@ -356,5 +976,66 @@ public class ArchiveUtils_ESTest extends ArchiveUtils_ESTest_scaffolding {
             //
             verifyException("org.apache.commons.compress.utils.ArchiveUtils", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test6767() throws Throwable {
+        byte[] byteArray0 = new byte[6];
+        byte byte0 = (byte) 10;
+        byteArray0[0] = (byte) 10;
+        byteArray0[1] = (byte) 0;
+        byteArray0[2] = (byte) (-5);
+        byteArray0[3] = (byte) 32;
+        byteArray0[5] = (byte) 21;
+        FileSystemHandling.createFolder((EvoSuiteFile) null);
+        int int0 = 0;
+        FileSystemHandling.shouldAllThrowIOExceptions();
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 0, (int) (byte) 21, byteArray0, (-2722), 0, true);
+        int int1 = 96;
+        ArchiveUtils.toAsciiString(byteArray0, (-4592), 96);
+        int int2 = 63;
+        ArchiveUtils.isEqualWithNull(byteArray0, int1, int2, byteArray0, byteArray0[3], byte0);
+        String string0 = "C<uY43s";
+        CpioArchiveEntry cpioArchiveEntry0 = new CpioArchiveEntry(string0);
+        FileSystemHandling.shouldAllThrowIOExceptions();
+        String string1 = ArchiveUtils.toString((ArchiveEntry) cpioArchiveEntry0);
+        ArchiveUtils.matchAsciiBuffer(string1, byteArray0);
+        int int3 = 2425;
+        boolean boolean0 = true;
+    }
+
+    @Test(timeout = 4000)
+    public void test6868() throws Throwable {
+        byte[] byteArray0 = new byte[6];
+        byteArray0[0] = (byte) 2;
+        byteArray0[4] = (byte) 2;
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 2, (int) (byte) 0, byteArray0, (-2722), (int) (byte) (-5), false);
+        ArchiveUtils.sanitize("p[K");
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 2, (int) (byte) 2, byteArray0, (int) (byte) 2, 409, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test6969() throws Throwable {
+        byte[] byteArray0 = new byte[6];
+        byteArray0[0] = (byte) 2;
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 0, (int) (byte) 0, byteArray0, (-2722), (int) (byte) (-5), false);
+        ArchiveUtils.sanitize("p[K");
+        ArchiveUtils.isEqual(byteArray0, (int) (byte) 2, (int) (byte) 2, byteArray0, (int) (byte) 2, 409, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test7070() throws Throwable {
+        TarArchiveEntry tarArchiveEntry0 = new TarArchiveEntry("N8u9WyEI]'7rN");
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        byte[] byteArray0 = ArchiveUtils.toAsciiBytes("-       0 N8u9WyEI]'7rN");
+        tarArchiveEntry0.setSize(4294967296L);
+        tarArchiveEntry0.setName("-       0 N8u9WyEI]'7rN");
+        ArchiveUtils.matchAsciiBuffer("-       0 N8u9WyEI]'7rN", byteArray0);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        FileSystemHandling.createFolder((EvoSuiteFile) null);
+        ArchiveUtils.toString((ArchiveEntry) tarArchiveEntry0);
+        ArchiveUtils.isEqual(byteArray0, byteArray0, true);
+        ArchiveUtils.isArrayZero(byteArray0, 31);
+        System.setCurrentTimeMillis(31);
     }
 }

@@ -59,7 +59,21 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
+        gillIntegrator0.addEventHandler(eventHandler0, 570.4101323738074, 570.4101323738074, 1017);
+        SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
+        FirstOrderConverter firstOrderConverter0 = new FirstOrderConverter(secondOrderDifferentialEquations0);
+        ExpandableStatefulODE expandableStatefulODE0 = new ExpandableStatefulODE(firstOrderConverter0);
+        // Undeclared exception!
+        gillIntegrator0.integrate(expandableStatefulODE0, 570.4101323738074);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         double[] doubleArray0 = new double[0];
         DormandPrince54Integrator dormandPrince54Integrator0 = new DormandPrince54Integrator((-220.8858634), (-220.8858634), doubleArray0, doubleArray0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -69,21 +83,21 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(1203.928542009299, 1203.928542009299, 1203.928542009299, Double.NaN);
         graggBulirschStoerIntegrator0.setMaxEvaluations(0);
         int int0 = graggBulirschStoerIntegrator0.getMaxEvaluations();
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         double[] doubleArray0 = new double[6];
         DormandPrince54Integrator dormandPrince54Integrator0 = new DormandPrince54Integrator(0.0, 0.0, doubleArray0, doubleArray0);
         double double0 = dormandPrince54Integrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         MidpointIntegrator midpointIntegrator0 = new MidpointIntegrator((-1062.793099660106));
         midpointIntegrator0.setMaxEvaluations(0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -94,7 +108,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         HighamHall54Integrator highamHall54Integrator0 = new HighamHall54Integrator(2596.669037036749, 2596.669037036749, 0.78125, 0.0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
@@ -103,7 +117,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         double[] doubleArray0 = new double[0];
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(2.384185791015625E-4, (-421.461515), doubleArray0, doubleArray0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -113,7 +127,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         double[] doubleArray0 = new double[4];
         DormandPrince853Integrator dormandPrince853Integrator0 = new DormandPrince853Integrator(0.0, (-1.0), doubleArray0, doubleArray0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -124,13 +138,13 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         HighamHall54Integrator highamHall54Integrator0 = new HighamHall54Integrator(2481.1941896976573, 2481.1941896976573, 2481.1941896976573, 1.0);
         highamHall54Integrator0.integrate((ExpandableStatefulODE) null, 2481.1941896976573);
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         double[] doubleArray0 = new double[0];
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(0.0, 0.0, doubleArray0, doubleArray0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -141,7 +155,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.setMaxEvaluations(0);
         double[] doubleArray0 = new double[0];
@@ -149,7 +163,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         AdamsBashforthIntegrator adamsBashforthIntegrator0 = new AdamsBashforthIntegrator(3, 2632.11502318578, 3, 3, 2632.11502318578);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
@@ -159,7 +173,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(5, 0, 505.29965, 4.450312892752409);
         graggBulirschStoerIntegrator0.addStepHandler((StepHandler) null);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -170,14 +184,14 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(5, 0, 505.29965, 4.450312892752409);
         graggBulirschStoerIntegrator0.setMaxEvaluations((-1211));
         graggBulirschStoerIntegrator0.getMinStep();
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         double[] doubleArray0 = new double[1];
         HighamHall54Integrator highamHall54Integrator0 = new HighamHall54Integrator((-3730.0862259082087), 0.0, doubleArray0, doubleArray0);
         FixedStepHandler fixedStepHandler0 = mock(FixedStepHandler.class, new ViolatedAssumptionAnswer());
@@ -187,7 +201,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         gillIntegrator0.addEventHandler(eventHandler0, 0.0, (-450.374), 0, (UnivariateSolver) null);
@@ -195,7 +209,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1718() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         gillIntegrator0.addEventHandler(eventHandler0, 0.0, (-450.374), 0, (UnivariateSolver) null);
@@ -203,28 +217,28 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1819() throws Throwable {
         ClassicalRungeKuttaIntegrator classicalRungeKuttaIntegrator0 = new ClassicalRungeKuttaIntegrator((-1.1270175653862835));
         classicalRungeKuttaIntegrator0.clearEventHandlers();
         classicalRungeKuttaIntegrator0.getCurrentStepStart();
     }
 
     @Test(timeout = 4000)
-    public void test1819() throws Throwable {
+    public void test1820() throws Throwable {
         ClassicalRungeKuttaIntegrator classicalRungeKuttaIntegrator0 = new ClassicalRungeKuttaIntegrator((-1.1270175653862835));
         classicalRungeKuttaIntegrator0.clearEventHandlers();
         classicalRungeKuttaIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test1920() throws Throwable {
+    public void test1921() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         double[] doubleArray0 = new double[0];
         gillIntegrator0.computeDerivatives(0, doubleArray0, doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test2021() throws Throwable {
+    public void test2022() throws Throwable {
         double[] doubleArray0 = new double[2];
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(1523.4801996885988, 1523.4801996885988, doubleArray0, doubleArray0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
@@ -234,7 +248,18 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2123() throws Throwable {
+        double[] doubleArray0 = new double[0];
+        DormandPrince54Integrator dormandPrince54Integrator0 = new DormandPrince54Integrator(0.0, 2260.9539330813764, doubleArray0, doubleArray0);
+        SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
+        FirstOrderConverter firstOrderConverter0 = new FirstOrderConverter(secondOrderDifferentialEquations0);
+        // Undeclared exception!
+        dormandPrince54Integrator0.integrate((FirstOrderDifferentialEquations) firstOrderConverter0, (-220.8858634), doubleArray0, 0.0, doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2224() throws Throwable {
         ThreeEighthesIntegrator threeEighthesIntegrator0 = new ThreeEighthesIntegrator(0.0);
         SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
@@ -245,7 +270,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2325() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(570.4101323738074, 570.4101323738074, 570.4101323738074, 570.4101323738074, (-1829.963)).when(eventHandler0).g(anyDouble(), any(double[].class));
@@ -254,7 +279,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2324() throws Throwable {
+    public void test2326() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(570.4101323738074, 570.4101323738074, 570.4101323738074, 570.4101323738074, (-1829.963)).when(eventHandler0).g(anyDouble(), any(double[].class));
@@ -263,7 +288,7 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2325() throws Throwable {
+    public void test2327() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(570.4101323738074, 570.4101323738074, 570.4101323738074, 570.4101323738074, (-1829.963)).when(eventHandler0).g(anyDouble(), any(double[].class));
@@ -276,31 +301,11 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2426() throws Throwable {
+    public void test2428() throws Throwable {
         double[] doubleArray0 = new double[7];
         GraggBulirschStoerIntegrator graggBulirschStoerIntegrator0 = new GraggBulirschStoerIntegrator(0.0, (-193.6399867), doubleArray0, doubleArray0);
         graggBulirschStoerIntegrator0.setMaxEvaluations(58);
         graggBulirschStoerIntegrator0.getCurrentStepStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test2527() throws Throwable {
-        EulerIntegrator eulerIntegrator0 = new EulerIntegrator(0.075);
-        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn("5e~bUB;g").when(eventHandler0).toString();
-        eulerIntegrator0.addEventHandler(eventHandler0, 0.0, 0.075, (-7));
-        Collection<EventHandler> collection0 = eulerIntegrator0.getEventHandlers();
-        collection0.contains(eventHandler0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2528() throws Throwable {
-        EulerIntegrator eulerIntegrator0 = new EulerIntegrator(0.075);
-        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn("5e~bUB;g").when(eventHandler0).toString();
-        eulerIntegrator0.addEventHandler(eventHandler0, 0.0, 0.075, (-7));
-        Collection<EventHandler> collection0 = eulerIntegrator0.getEventHandlers();
-        eulerIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
@@ -310,99 +315,119 @@ public class AbstractIntegrator_ESTest extends AbstractIntegrator_ESTest_scaffol
         doReturn("5e~bUB;g").when(eventHandler0).toString();
         eulerIntegrator0.addEventHandler(eventHandler0, 0.0, 0.075, (-7));
         Collection<EventHandler> collection0 = eulerIntegrator0.getEventHandlers();
+        collection0.contains(eventHandler0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2530() throws Throwable {
+        EulerIntegrator eulerIntegrator0 = new EulerIntegrator(0.075);
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn("5e~bUB;g").when(eventHandler0).toString();
+        eulerIntegrator0.addEventHandler(eventHandler0, 0.0, 0.075, (-7));
+        Collection<EventHandler> collection0 = eulerIntegrator0.getEventHandlers();
+        eulerIntegrator0.getCurrentSignedStepsize();
+    }
+
+    @Test(timeout = 4000)
+    public void test2531() throws Throwable {
+        EulerIntegrator eulerIntegrator0 = new EulerIntegrator(0.075);
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn("5e~bUB;g").when(eventHandler0).toString();
+        eulerIntegrator0.addEventHandler(eventHandler0, 0.0, 0.075, (-7));
+        Collection<EventHandler> collection0 = eulerIntegrator0.getEventHandlers();
         eulerIntegrator0.getCurrentStepStart();
     }
 
     @Test(timeout = 4000)
-    public void test2630() throws Throwable {
+    public void test2632() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.getName();
         gillIntegrator0.getCurrentStepStart();
     }
 
     @Test(timeout = 4000)
-    public void test2631() throws Throwable {
+    public void test2633() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.getName();
         gillIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test2732() throws Throwable {
+    public void test2734() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.getStepHandlers();
         gillIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test2733() throws Throwable {
+    public void test2735() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.getStepHandlers();
         gillIntegrator0.getCurrentStepStart();
     }
 
     @Test(timeout = 4000)
-    public void test2834() throws Throwable {
+    public void test2836() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
         double double0 = gillIntegrator0.getCurrentStepStart();
         gillIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test2835() throws Throwable {
+    public void test2837() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
         double double0 = gillIntegrator0.getCurrentStepStart();
-    }
-
-    @Test(timeout = 4000)
-    public void test2936() throws Throwable {
-        GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
-        int int0 = gillIntegrator0.getMaxEvaluations();
-    }
-
-    @Test(timeout = 4000)
-    public void test2937() throws Throwable {
-        GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
-        int int0 = gillIntegrator0.getMaxEvaluations();
-        gillIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
     public void test2938() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
         int int0 = gillIntegrator0.getMaxEvaluations();
+    }
+
+    @Test(timeout = 4000)
+    public void test2939() throws Throwable {
+        GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
+        int int0 = gillIntegrator0.getMaxEvaluations();
+        gillIntegrator0.getCurrentSignedStepsize();
+    }
+
+    @Test(timeout = 4000)
+    public void test2940() throws Throwable {
+        GillIntegrator gillIntegrator0 = new GillIntegrator(570.4101323738074);
+        int int0 = gillIntegrator0.getMaxEvaluations();
         gillIntegrator0.getCurrentStepStart();
     }
 
     @Test(timeout = 4000)
-    public void test3039() throws Throwable {
+    public void test3041() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.getEvaluations();
         gillIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test3040() throws Throwable {
+    public void test3042() throws Throwable {
         GillIntegrator gillIntegrator0 = new GillIntegrator((-450.374));
         gillIntegrator0.getEvaluations();
         gillIntegrator0.getCurrentStepStart();
     }
 
     @Test(timeout = 4000)
-    public void test3141() throws Throwable {
+    public void test3143() throws Throwable {
         DormandPrince54Integrator dormandPrince54Integrator0 = new DormandPrince54Integrator((-9.147934308113573), (-9.147934308113573), (-3005.0), (-3005.0));
         double double0 = dormandPrince54Integrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test3242() throws Throwable {
+    public void test3244() throws Throwable {
         MidpointIntegrator midpointIntegrator0 = new MidpointIntegrator((-1062.793099660106));
         midpointIntegrator0.clearStepHandlers();
         midpointIntegrator0.getCurrentSignedStepsize();
     }
 
     @Test(timeout = 4000)
-    public void test3243() throws Throwable {
+    public void test3245() throws Throwable {
         MidpointIntegrator midpointIntegrator0 = new MidpointIntegrator((-1062.793099660106));
         midpointIntegrator0.clearStepHandlers();
         midpointIntegrator0.getCurrentStepStart();

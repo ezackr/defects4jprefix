@@ -46,7 +46,18 @@ import org.junit.runner.RunWith;
 public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test0010() throws Throwable {
+    public void test0000() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Node.newNumber(100.0);
+        compiler0.toSource(node0);
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
+        NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
+        typeCheck0.getTypedPercent();
+    }
+
+    @Test(timeout = 4000)
+    public void test0011() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
         compiler0.toSource(node0);
@@ -58,7 +69,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0021() throws Throwable {
+    public void test0022() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
@@ -68,7 +79,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0032() throws Throwable {
+    public void test0033() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3822.821875544676));
         compiler0.toSource(node0);
@@ -80,7 +91,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0043() throws Throwable {
+    public void test0044() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3822.821875544676));
@@ -93,7 +104,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0054() throws Throwable {
+    public void test0055() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
@@ -106,7 +117,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0065() throws Throwable {
+    public void test0066() throws Throwable {
         Compiler compiler0 = new Compiler();
         GoogleCodingConvention googleCodingConvention0 = new GoogleCodingConvention();
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -122,7 +133,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0076() throws Throwable {
+    public void test0077() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
@@ -133,7 +144,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0087() throws Throwable {
+    public void test0088() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -148,7 +159,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0098() throws Throwable {
+    public void test0099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3799.2415238348367));
         compiler0.toSource(node0);
@@ -159,7 +170,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0109() throws Throwable {
+    public void test01010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
         compiler0.toSource(node0);
@@ -175,7 +186,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01110() throws Throwable {
+    public void test01111() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3822.821875544676));
@@ -190,7 +201,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01211() throws Throwable {
+    public void test01212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -202,7 +213,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01312() throws Throwable {
+    public void test01313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -214,7 +225,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01413() throws Throwable {
+    public void test01414() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-1256.818033));
         compiler0.toSource(node0);
@@ -226,7 +237,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01514() throws Throwable {
+    public void test01515() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);
@@ -238,7 +249,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01615() throws Throwable {
+    public void test01616() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
         compiler0.toSource(node0);
@@ -250,7 +261,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01716() throws Throwable {
+    public void test01717() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(100.0);
         compiler0.toSource(node0);
@@ -263,7 +274,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01817() throws Throwable {
+    public void test01818() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -276,7 +287,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01818() throws Throwable {
+    public void test01819() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -289,7 +300,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01919() throws Throwable {
+    public void test01920() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.361670421556));
         compiler0.toSource(node0);
@@ -301,7 +312,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02020() throws Throwable {
+    public void test02021() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -315,7 +326,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02121() throws Throwable {
+    public void test02122() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -329,7 +340,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02222() throws Throwable {
+    public void test02223() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3848.777093703922));
         compiler0.toSource(node0);
@@ -342,7 +353,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02323() throws Throwable {
+    public void test02324() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -354,7 +365,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02424() throws Throwable {
+    public void test02425() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -367,7 +378,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02525() throws Throwable {
+    public void test02526() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -383,7 +394,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02626() throws Throwable {
+    public void test02627() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
         compiler0.toSource(node0);
@@ -395,7 +406,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02727() throws Throwable {
+    public void test02728() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
         compiler0.toSource(node0);
@@ -407,7 +418,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02828() throws Throwable {
+    public void test02829() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3799.2415238348367));
         compiler0.toSource(node0);
@@ -419,7 +430,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02929() throws Throwable {
+    public void test02930() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.9136336228316));
         compiler0.toSource(node0);
@@ -433,7 +444,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03030() throws Throwable {
+    public void test03031() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -444,7 +455,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03131() throws Throwable {
+    public void test03132() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
         compiler0.toSource(node0);
@@ -456,7 +467,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03232() throws Throwable {
+    public void test03233() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.3970322));
         compiler0.toSource(node0);
@@ -467,7 +478,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03333() throws Throwable {
+    public void test03334() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-1256.818033));
         compiler0.toSource(node0);
@@ -480,7 +491,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03434() throws Throwable {
+    public void test03435() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.9136336228316));
         compiler0.toSource(node0);
@@ -494,7 +505,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03535() throws Throwable {
+    public void test03536() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3822.821875544676));
         compiler0.toSource(node0);
@@ -508,7 +519,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03636() throws Throwable {
+    public void test03637() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -520,7 +531,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03737() throws Throwable {
+    public void test03738() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3799.2415238348367));
         compiler0.toSource(node0);
@@ -532,7 +543,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03838() throws Throwable {
+    public void test03839() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -544,7 +555,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03939() throws Throwable {
+    public void test03940() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -558,7 +569,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04040() throws Throwable {
+    public void test04041() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -569,7 +580,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04141() throws Throwable {
+    public void test04142() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -582,7 +593,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04242() throws Throwable {
+    public void test04243() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.9136336228316));
         compiler0.toSource(node0);
@@ -594,7 +605,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04343() throws Throwable {
+    public void test04344() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -606,7 +617,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04444() throws Throwable {
+    public void test04445() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.9136336228316));
         compiler0.toSource(node0);
@@ -618,7 +629,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04545() throws Throwable {
+    public void test04546() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -631,7 +642,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04646() throws Throwable {
+    public void test04647() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(100.0);
         compiler0.toSource(node0);
@@ -644,7 +655,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04747() throws Throwable {
+    public void test04748() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3848.777093703922));
         compiler0.toSource(node0);
@@ -658,7 +669,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04848() throws Throwable {
+    public void test04849() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -670,7 +681,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04949() throws Throwable {
+    public void test04950() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -682,7 +693,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05050() throws Throwable {
+    public void test05051() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-1256.818033));
         compiler0.toSource(node0);
@@ -693,7 +704,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05151() throws Throwable {
+    public void test05152() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -707,7 +718,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05252() throws Throwable {
+    public void test05253() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
@@ -720,7 +731,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05353() throws Throwable {
+    public void test05354() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3848.777093703922));
         compiler0.toSource(node0);
@@ -734,7 +745,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05454() throws Throwable {
+    public void test05455() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.3970322));
         compiler0.toSource(node0);
@@ -746,7 +757,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05555() throws Throwable {
+    public void test05556() throws Throwable {
         Compiler compiler0 = new Compiler();
         compiler0.parseTestCode("s{^d|&[+'");
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -760,7 +771,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05656() throws Throwable {
+    public void test05657() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.9136336228316));
         compiler0.toSource(node0);
@@ -772,7 +783,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05757() throws Throwable {
+    public void test05758() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(Fissing)");
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -786,7 +797,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05858() throws Throwable {
+    public void test05859() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -799,7 +810,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05959() throws Throwable {
+    public void test05960() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -811,7 +822,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06060() throws Throwable {
+    public void test06061() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -822,7 +833,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06161() throws Throwable {
+    public void test06162() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -833,7 +844,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06262() throws Throwable {
+    public void test06263() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -846,7 +857,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06363() throws Throwable {
+    public void test06364() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
         compiler0.toSource(node0);
@@ -855,19 +866,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = new Node(84, node0, node0);
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-    }
-
-    @Test(timeout = 4000)
-    public void test06464() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Node.newNumber((-3799.2415238348367));
-        compiler0.toSource(node0);
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
-        Node node1 = new Node(87, node0, node0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        typeCheck0.visit(nodeTraversal0, node1, node0);
-        compiler0.hasErrors();
     }
 
     @Test(timeout = 4000)
@@ -880,11 +878,24 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = new Node(87, node0, node0);
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
+        compiler0.hasErrors();
+    }
+
+    @Test(timeout = 4000)
+    public void test06466() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Node.newNumber((-3799.2415238348367));
+        compiler0.toSource(node0);
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
+        Node node1 = new Node(87, node0, node0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        typeCheck0.visit(nodeTraversal0, node1, node0);
         compiler0.getErrorCount();
     }
 
     @Test(timeout = 4000)
-    public void test06566() throws Throwable {
+    public void test06567() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -895,7 +906,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06667() throws Throwable {
+    public void test06668() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);
@@ -907,7 +918,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06768() throws Throwable {
+    public void test06769() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.39703215344));
         compiler0.toSource(node0);
@@ -922,7 +933,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06869() throws Throwable {
+    public void test06870() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("(Fissing)");
         CompilerOptions compilerOptions0 = new CompilerOptions();
@@ -936,7 +947,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06970() throws Throwable {
+    public void test06971() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.103125621546));
         compiler0.toSource(node0);
@@ -950,7 +961,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07071() throws Throwable {
+    public void test07072() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);
@@ -962,7 +973,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07172() throws Throwable {
+    public void test07173() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.833598160275));
         compiler0.toSource(node0);
@@ -977,7 +988,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07273() throws Throwable {
+    public void test07274() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);
@@ -989,7 +1000,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07374() throws Throwable {
+    public void test07375() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.103125621546));
         compiler0.toSource(node0);
@@ -1004,7 +1015,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07475() throws Throwable {
+    public void test07476() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.39703215344));
         compiler0.toSource(node0);
@@ -1017,7 +1028,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07576() throws Throwable {
+    public void test07577() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -1028,7 +1039,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07677() throws Throwable {
+    public void test07678() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
         compiler0.toSource(node0);
@@ -1039,7 +1050,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07778() throws Throwable {
+    public void test07779() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-0.5912830825981322));
         compiler0.toSource(node0);
@@ -1050,7 +1061,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07879() throws Throwable {
+    public void test07880() throws Throwable {
         Compiler compiler0 = new Compiler();
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Node node0 = Node.newNumber(0.0);
@@ -1063,7 +1074,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07980() throws Throwable {
+    public void test07981() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Node node0 = Node.newNumber(0.0);
         Compiler compiler0 = new Compiler();
@@ -1082,7 +1093,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08081() throws Throwable {
+    public void test08082() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -1095,7 +1106,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08182() throws Throwable {
+    public void test08183() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
         compiler0.toSource(node0);
@@ -1107,7 +1118,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08283() throws Throwable {
+    public void test08284() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.39703215344));
         compiler0.toSource(node0);
@@ -1120,7 +1131,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08384() throws Throwable {
+    public void test08385() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-337.2963172611317));
         compiler0.toSource(node0);
@@ -1133,7 +1144,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08485() throws Throwable {
+    public void test08486() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -1145,7 +1156,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08586() throws Throwable {
+    public void test08587() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
@@ -1160,7 +1171,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08687() throws Throwable {
+    public void test08688() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -1171,7 +1182,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08788() throws Throwable {
+    public void test08789() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -1184,7 +1195,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08889() throws Throwable {
+    public void test08890() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -1196,7 +1207,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08990() throws Throwable {
+    public void test08991() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.39703215344));
         compiler0.toSource(node0);
@@ -1208,7 +1219,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09091() throws Throwable {
+    public void test09092() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3799.2415238348367));
         compiler0.toSource(node0);
@@ -1221,7 +1232,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09192() throws Throwable {
+    public void test09193() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Node node0 = Node.newNumber(0.0);
         Compiler compiler0 = new Compiler();
@@ -1233,7 +1244,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09293() throws Throwable {
+    public void test09294() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
         compiler0.toSource(node0);
@@ -1244,7 +1255,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09394() throws Throwable {
+    public void test09395() throws Throwable {
         Node node0 = Node.newNumber((-1302.779));
         Compiler compiler0 = new Compiler();
         compiler0.toSource(node0);
@@ -1256,7 +1267,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09495() throws Throwable {
+    public void test09496() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(555.79856696);
         compiler0.toSource(node0);
@@ -1269,7 +1280,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09596() throws Throwable {
+    public void test09597() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-1812.2566530474));
         compiler0.toSource(node0);
@@ -1280,7 +1291,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09697() throws Throwable {
+    public void test09698() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
@@ -1293,7 +1304,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09798() throws Throwable {
+    public void test09799() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.361670421556));
         compiler0.toSource(node0);
@@ -1304,7 +1315,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09899() throws Throwable {
+    public void test098100() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -1317,7 +1328,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099100() throws Throwable {
+    public void test099101() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
         compiler0.toSource(node0);
@@ -1329,7 +1340,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100101() throws Throwable {
+    public void test100102() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.103125621546));
         compiler0.toSource(node0);
@@ -1342,7 +1353,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101102() throws Throwable {
+    public void test101103() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.095944977192));
@@ -1356,7 +1367,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102103() throws Throwable {
+    public void test102104() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
@@ -1370,7 +1381,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103104() throws Throwable {
+    public void test103105() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-1256.818033));
         compiler0.toSource(node0);
@@ -1383,7 +1394,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104105() throws Throwable {
+    public void test104106() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3845.997638529466));
         compiler0.toSource(node0);
@@ -1394,7 +1405,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105106() throws Throwable {
+    public void test105107() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.3970322));
         compiler0.toSource(node0);
@@ -1405,7 +1416,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106107() throws Throwable {
+    public void test106108() throws Throwable {
         Node node0 = Node.newNumber(0.0);
         Compiler compiler0 = new Compiler();
         compiler0.toSource(node0);
@@ -1417,7 +1428,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107108() throws Throwable {
+    public void test107109() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3797.397032153444));
         compiler0.toSource(node0);
@@ -1429,7 +1440,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108109() throws Throwable {
+    public void test108110() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3799.2415238348367));
         compiler0.toSource(node0);
@@ -1442,7 +1453,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109110() throws Throwable {
+    public void test109111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-6276.1144453));
         compiler0.toSource(node0);
@@ -1455,7 +1466,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109111() throws Throwable {
+    public void test109112() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-6276.1144453));
         compiler0.toSource(node0);
@@ -1468,7 +1479,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110112() throws Throwable {
+    public void test110113() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -1481,7 +1492,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111113() throws Throwable {
+    public void test111114() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3796.392558868223));
         compiler0.toSource(node0);
@@ -1494,7 +1505,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112114() throws Throwable {
+    public void test112115() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3798.9136336228316));
         compiler0.toSource(node0);
@@ -1510,7 +1521,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113115() throws Throwable {
+    public void test113116() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(53.0);
         compiler0.toSource(node0);
@@ -1524,7 +1535,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test114116() throws Throwable {
+    public void test114117() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(0.0);
         compiler0.toSource(node0);
@@ -1535,7 +1546,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test115117() throws Throwable {
+    public void test115118() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);
@@ -1545,21 +1556,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
-    }
-
-    @Test(timeout = 4000)
-    public void test116118() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        Compiler compiler0 = new Compiler();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
-        ClosureReverseAbstractInterpreter closureReverseAbstractInterpreter0 = new ClosureReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
-        Node node0 = compiler0.parseTestCode("(Fissing)");
-        CompilerOptions compilerOptions0 = new CompilerOptions();
-        CheckLevel checkLevel0 = CheckLevel.ERROR;
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, closureReverseAbstractInterpreter0, jSTypeRegistry0, (Scope) null, (ScopeCreator) null, compilerOptions0.checkMissingGetCssNameLevel, checkLevel0);
-        NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
-        compiler0.getErrorCount();
     }
 
     @Test(timeout = 4000)
@@ -1574,11 +1570,26 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         CheckLevel checkLevel0 = CheckLevel.ERROR;
         TypeCheck typeCheck0 = new TypeCheck(compiler0, closureReverseAbstractInterpreter0, jSTypeRegistry0, (Scope) null, (ScopeCreator) null, compilerOptions0.checkMissingGetCssNameLevel, checkLevel0);
         NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
+        compiler0.getErrorCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test116120() throws Throwable {
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        Compiler compiler0 = new Compiler();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
+        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        ClosureReverseAbstractInterpreter closureReverseAbstractInterpreter0 = new ClosureReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
+        Node node0 = compiler0.parseTestCode("(Fissing)");
+        CompilerOptions compilerOptions0 = new CompilerOptions();
+        CheckLevel checkLevel0 = CheckLevel.ERROR;
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, closureReverseAbstractInterpreter0, jSTypeRegistry0, (Scope) null, (ScopeCreator) null, compilerOptions0.checkMissingGetCssNameLevel, checkLevel0);
+        NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
         compiler0.hasErrors();
     }
 
     @Test(timeout = 4000)
-    public void test117120() throws Throwable {
+    public void test117121() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2523.33497);
         compiler0.toSource(node0);
@@ -1592,7 +1603,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118121() throws Throwable {
+    public void test118122() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-337.2963172611317));
         compiler0.toSource(node0);
@@ -1604,7 +1615,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119122() throws Throwable {
+    public void test119123() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         Compiler compiler0 = new Compiler();
         compiler0.initCompilerOptionsIfTesting();
@@ -1618,7 +1629,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test120123() throws Throwable {
+    public void test120124() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3799.2415238348367));
         compiler0.toSource(node0);
@@ -1630,7 +1641,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test121124() throws Throwable {
+    public void test121125() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);
@@ -1639,20 +1650,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         typeCheck0.visit(nodeTraversal0, node0, node0);
         boolean boolean0 = typeCheck0.visitName(nodeTraversal0, node0, node0);
-    }
-
-    @Test(timeout = 4000)
-    public void test122125() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Node.newNumber((-1256.818033));
-        compiler0.toSource(node0);
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
-        Node node1 = new Node(30, node0, node0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
-        typeCheck0.visit(nodeTraversal0, node1, node0);
-        compiler0.getWarningCount();
     }
 
     @Test(timeout = 4000)
@@ -1666,11 +1663,25 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
+        compiler0.getWarningCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test122127() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Node.newNumber((-1256.818033));
+        compiler0.toSource(node0);
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
+        Node node1 = new Node(30, node0, node0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        NodeTraversal.traverse((AbstractCompiler) compiler0, node0, (NodeTraversal.Callback) typeCheck0);
+        typeCheck0.visit(nodeTraversal0, node1, node0);
         compiler0.hasErrors();
     }
 
     @Test(timeout = 4000)
-    public void test123127() throws Throwable {
+    public void test123128() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3822.821875544676));
         compiler0.toSource(node0);
@@ -1680,21 +1691,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         TypeCheck typeCheck0 = cleanupPasses0.makeTypeCheck(compiler0);
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-        compiler0.getWarningCount();
-    }
-
-    @Test(timeout = 4000)
-    public void test124128() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Node.newNumber(120.23565214940986);
-        compiler0.toSource(node0);
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
-        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0, syntacticScopeCreator0);
-        Node node1 = Node.newString(18, "120.23565214940986", 42, 50);
-        node1.addChildrenToFront(node0);
-        typeCheck0.visit(nodeTraversal0, node1, node0);
         compiler0.getWarningCount();
     }
 
@@ -1710,7 +1706,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = Node.newString(18, "120.23565214940986", 42, 50);
         node1.addChildrenToFront(node0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
-        compiler0.getErrorCount();
+        compiler0.getWarningCount();
     }
 
     @Test(timeout = 4000)
@@ -1725,11 +1721,26 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = Node.newString(18, "120.23565214940986", 42, 50);
         node1.addChildrenToFront(node0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
+        compiler0.getErrorCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test124131() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Node.newNumber(120.23565214940986);
+        compiler0.toSource(node0);
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0, syntacticScopeCreator0);
+        Node node1 = Node.newString(18, "120.23565214940986", 42, 50);
+        node1.addChildrenToFront(node0);
+        typeCheck0.visit(nodeTraversal0, node1, node0);
         compiler0.hasErrors();
     }
 
     @Test(timeout = 4000)
-    public void test125131() throws Throwable {
+    public void test125132() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber((-3822.821875544676));
         compiler0.toSource(node0);
@@ -1742,7 +1753,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126132() throws Throwable {
+    public void test126133() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Node.newNumber(2796.94971040167);
         compiler0.toSource(node0);

@@ -566,15 +566,6 @@ public class DeserializationContext_ESTest extends DeserializationContext_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test5157() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        DeserializationContext deserializationContext0 = objectMapper0.getDeserializationContext();
-        ObjectBuffer objectBuffer0 = new ObjectBuffer();
-        deserializationContext0.returnObjectBuffer(objectBuffer0);
-        ObjectBuffer objectBuffer1 = deserializationContext0.leaseObjectBuffer();
-    }
-
-    @Test(timeout = 4000)
     public void test5258() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DeserializationContext deserializationContext0 = objectMapper0.getDeserializationContext();

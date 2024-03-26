@@ -201,28 +201,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0124() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver((-3470.627599577));
-        double[] doubleArray0 = new double[8];
-        doubleArray0[0] = (double) 2141536214;
-        doubleArray0[3] = (double) 2141536214;
-        doubleArray0[4] = (-3470.627599577);
-        doubleArray0[7] = (double) 2141536214;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0125() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver((-3470.627599577));
-        double[] doubleArray0 = new double[8];
-        doubleArray0[0] = (double) 2141536214;
-        doubleArray0[3] = (double) 2141536214;
-        doubleArray0[4] = (-3470.627599577);
-        doubleArray0[7] = (double) 2141536214;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test0126() throws Throwable {
         IllinoisSolver illinoisSolver0 = new IllinoisSolver((-3470.627599577));
         double[] doubleArray0 = new double[8];
@@ -315,30 +293,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
 
     @Test(timeout = 4000)
     public void test0133() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver((-3470.627599577));
-        double[] doubleArray0 = new double[8];
-        doubleArray0[0] = (double) 2141536214;
-        doubleArray0[3] = (double) 2141536214;
-        doubleArray0[4] = (-3470.627599577);
-        doubleArray0[7] = (double) 2141536214;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        double double0 = illinoisSolver0.solve(2141536214, (UnivariateRealFunction) polynomialFunction0, (-3470.627599577), 2.141536214E9);
-    }
-
-    @Test(timeout = 4000)
-    public void test0134() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver((-3470.627599577));
-        double[] doubleArray0 = new double[8];
-        doubleArray0[0] = (double) 2141536214;
-        doubleArray0[3] = (double) 2141536214;
-        doubleArray0[4] = (-3470.627599577);
-        doubleArray0[7] = (double) 2141536214;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        double double0 = illinoisSolver0.solve(2141536214, (UnivariateRealFunction) polynomialFunction0, (-3470.627599577), 2.141536214E9);
-    }
-
-    @Test(timeout = 4000)
-    public void test0135() throws Throwable {
         IllinoisSolver illinoisSolver0 = new IllinoisSolver((-3470.627599577));
         double[] doubleArray0 = new double[8];
         doubleArray0[0] = (double) 2141536214;
@@ -760,56 +714,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test0490() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver(1.176342548272881E-8, 1.176342548272881E-8);
-        HarmonicOscillator harmonicOscillator0 = new HarmonicOscillator(1.176342548272881E-8, 0.0, 1.176342548272881E-8);
-        UnivariateRealFunction univariateRealFunction0 = harmonicOscillator0.derivative();
-        double double0 = regulaFalsiSolver0.solve(62, univariateRealFunction0, 0.0, 0.0, 0.0);
-        double double1 = regulaFalsiSolver0.doSolve();
-    }
-
-    @Test(timeout = 4000)
-    public void test0591() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0592() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test0593() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test0594() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test0595() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test0596() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test0597() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
     public void test0598() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
         Gaussian gaussian0 = new Gaussian(0.0, 2719.82);
@@ -968,16 +872,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test05114() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        Gaussian gaussian0 = new Gaussian(0.0, 2719.82);
-        UnivariateRealFunction univariateRealFunction0 = gaussian0.derivative();
-        AllowedSolution allowedSolution0 = AllowedSolution.ANY_SIDE;
-        double double0 = pegasusSolver0.solve(8, univariateRealFunction0, (-1.504961346353674E-8), 2608.0, allowedSolution0);
-        double double1 = pegasusSolver0.doSolve();
-    }
-
-    @Test(timeout = 4000)
     public void test06115() throws Throwable {
         IllinoisSolver illinoisSolver0 = new IllinoisSolver((-69.934811), (-69.934811));
     }
@@ -1030,47 +924,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
         Atanh atanh0 = new Atanh();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
         illinoisSolver0.solve(1, (UnivariateRealFunction) atanh0, (-2621.940926377), (-269.5762), allowedSolution0);
-    }
-
-    @Test(timeout = 4000)
-    public void test07124() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test07125() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test07126() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test07127() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test07128() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test07129() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test07130() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getStartValue();
     }
 
     @Test(timeout = 4000)
@@ -1361,104 +1214,10 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test13178() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-    }
-
-    @Test(timeout = 4000)
-    public void test13179() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test13180() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test13181() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test13182() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test13183() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test13184() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test13185() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
-        Gaussian gaussian0 = new Gaussian(0.0, 2719.82);
-    }
-
-    @Test(timeout = 4000)
     public void test13186() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver(0.0);
         Gaussian gaussian0 = new Gaussian(0.0, 2719.82);
         pegasusSolver0.solve((-3237), (UnivariateRealFunction) gaussian0, 6.4281638347818415E-6, 1.9868161777724352E-8, 1055.616);
-    }
-
-    @Test(timeout = 4000)
-    public void test14187() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test14188() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test14189() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test14190() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test14191() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test14192() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test14193() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test14194() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        Floor floor0 = new Floor();
     }
 
     @Test(timeout = 4000)
@@ -1560,47 +1319,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     public void test16211() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
         pegasusSolver0.doSolve();
-    }
-
-    @Test(timeout = 4000)
-    public void test17212() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-    }
-
-    @Test(timeout = 4000)
-    public void test17213() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-        illinoisSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test17214() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-        illinoisSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test17215() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-        illinoisSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test17216() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-        illinoisSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test17217() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-        illinoisSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test17218() throws Throwable {
-        IllinoisSolver illinoisSolver0 = new IllinoisSolver();
-        illinoisSolver0.getRelativeAccuracy();
     }
 
     @Test(timeout = 4000)
@@ -1892,53 +1610,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test20258() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-    }
-
-    @Test(timeout = 4000)
-    public void test20259() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test20260() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test20261() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test20262() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test20263() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test20264() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test20265() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        Sinc sinc0 = new Sinc();
-    }
-
-    @Test(timeout = 4000)
     public void test20266() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
         Sinc sinc0 = new Sinc();
@@ -1998,53 +1669,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
         Sinc sinc0 = new Sinc();
         AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
         double double0 = pegasusSolver0.solve(5, (UnivariateRealFunction) sinc0, 1.0E-6, (double) 5, (double) 5, allowedSolution0);
-    }
-
-    @Test(timeout = 4000)
-    public void test21273() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-    }
-
-    @Test(timeout = 4000)
-    public void test21274() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test21275() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test21276() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test21277() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test21278() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test21279() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test21280() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(2725.29567932, (-360.07737924462));
-        Sinc sinc0 = new Sinc();
     }
 
     @Test(timeout = 4000)
@@ -2288,62 +1912,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test22310() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver(6.849234071909364E-14);
-        Cbrt cbrt0 = new Cbrt();
-        AllowedSolution allowedSolution0 = AllowedSolution.LEFT_SIDE;
-        double double0 = pegasusSolver0.solve(283, (UnivariateRealFunction) cbrt0, (-732.0), 0.5, 3128.7, allowedSolution0);
-        double double1 = pegasusSolver0.doSolve();
-    }
-
-    @Test(timeout = 4000)
-    public void test23311() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test23312() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test23313() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test23314() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test23315() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test23316() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test23317() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test23318() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        Sinc sinc0 = new Sinc();
-    }
-
-    @Test(timeout = 4000)
     public void test23319() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
         Sinc sinc0 = new Sinc();
@@ -2406,47 +1974,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test24326() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-    }
-
-    @Test(timeout = 4000)
-    public void test24327() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-        regulaFalsiSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test24328() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-        regulaFalsiSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test24329() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-        regulaFalsiSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test24330() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-        regulaFalsiSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test24331() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-        regulaFalsiSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test24332() throws Throwable {
-        RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
-        regulaFalsiSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
     public void test24333() throws Throwable {
         RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
         Sin sin0 = new Sin();
@@ -2505,53 +2032,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
         RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver();
         Sin sin0 = new Sin();
         double double0 = regulaFalsiSolver0.solve(43, (UnivariateRealFunction) sin0, (-2248.6), 3113.5035287079068);
-    }
-
-    @Test(timeout = 4000)
-    public void test25341() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test25342() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test25343() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test25344() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test25345() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test25346() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test25347() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test25348() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        Sinc sinc0 = new Sinc();
     }
 
     @Test(timeout = 4000)
@@ -2617,53 +2097,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test26356() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test26357() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test26358() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test26359() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test26360() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test26361() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test26362() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test26363() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        Sinc sinc0 = new Sinc();
-    }
-
-    @Test(timeout = 4000)
     public void test26364() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
         Sinc sinc0 = new Sinc();
@@ -2723,53 +2156,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
         Sinc sinc0 = new Sinc();
         AllowedSolution allowedSolution0 = AllowedSolution.RIGHT_SIDE;
         double double0 = pegasusSolver0.solve(5, (UnivariateRealFunction) sinc0, (-1207.0657488), 951.9258407496, 951.9258407496, allowedSolution0);
-    }
-
-    @Test(timeout = 4000)
-    public void test27371() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test27372() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test27373() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test27374() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test27375() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
-    public void test27376() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test27377() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test27378() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), 2725.29567932, 3128.7);
-        Sinc sinc0 = new Sinc();
     }
 
     @Test(timeout = 4000)
@@ -2944,47 +2330,6 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
     }
 
     @Test(timeout = 4000)
-    public void test29401() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-    }
-
-    @Test(timeout = 4000)
-    public void test29402() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-        pegasusSolver0.getFunctionValueAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test29403() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-        pegasusSolver0.getRelativeAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test29404() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-        pegasusSolver0.getMin();
-    }
-
-    @Test(timeout = 4000)
-    public void test29405() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-        pegasusSolver0.getAbsoluteAccuracy();
-    }
-
-    @Test(timeout = 4000)
-    public void test29406() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-        pegasusSolver0.getMax();
-    }
-
-    @Test(timeout = 4000)
-    public void test29407() throws Throwable {
-        PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
-        pegasusSolver0.getStartValue();
-    }
-
-    @Test(timeout = 4000)
     public void test29408() throws Throwable {
         PegasusSolver pegasusSolver0 = new PegasusSolver((-360.07737924462), (-360.07737924462), 3128.7);
         Sinc sinc0 = new Sinc();
@@ -3115,5 +2460,13 @@ public class BaseSecantSolver_ESTest extends BaseSecantSolver_ESTest_scaffolding
         PegasusSolver pegasusSolver0 = new PegasusSolver(0.0, 0.0, 0.0);
         AllowedSolution allowedSolution0 = AllowedSolution.ANY_SIDE;
         pegasusSolver0.solve(0, (UnivariateRealFunction) null, (double) 0, (-1645.0), allowedSolution0);
+    }
+
+    @Test(timeout = 4000)
+    public void test35424() throws Throwable {
+        PegasusSolver pegasusSolver0 = new PegasusSolver();
+        Sinc sinc0 = new Sinc();
+        AllowedSolution allowedSolution0 = AllowedSolution.ABOVE_SIDE;
+        pegasusSolver0.solve(5, (UnivariateRealFunction) sinc0, 1.0E-6, 951.9258407496, 951.9258407496, allowedSolution0);
     }
 }

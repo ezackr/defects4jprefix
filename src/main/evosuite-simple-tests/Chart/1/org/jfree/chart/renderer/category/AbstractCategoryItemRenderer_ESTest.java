@@ -1076,28 +1076,34 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8182() throws Throwable {
+    public void test8082() throws Throwable {
+        ScatterRenderer scatterRenderer0 = new ScatterRenderer();
+        scatterRenderer0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test8183() throws Throwable {
         BarRenderer barRenderer0 = new BarRenderer();
         int int0 = barRenderer0.getPassCount();
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test8283() throws Throwable {
+    public void test8284() throws Throwable {
         GroupedStackedBarRenderer groupedStackedBarRenderer0 = new GroupedStackedBarRenderer();
         int int0 = groupedStackedBarRenderer0.getColumnCount();
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test8384() throws Throwable {
+    public void test8385() throws Throwable {
         BoxAndWhiskerRenderer boxAndWhiskerRenderer0 = new BoxAndWhiskerRenderer();
         boxAndWhiskerRenderer0.setLegendItemURLGenerator((CategorySeriesLabelGenerator) null);
         assertEquals(1.0, boxAndWhiskerRenderer0.getMaximumBarWidth(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test8485() throws Throwable {
+    public void test8486() throws Throwable {
         BarRenderer3D barRenderer3D0 = new BarRenderer3D(759.363, 0.0);
         Number[][] numberArray0 = new Number[9][1];
         DefaultIntervalCategoryDataset defaultIntervalCategoryDataset0 = new DefaultIntervalCategoryDataset(numberArray0, numberArray0);
@@ -1106,7 +1112,7 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8586() throws Throwable {
+    public void test8587() throws Throwable {
         CategoryStepRenderer categoryStepRenderer0 = new CategoryStepRenderer();
         DateAxis dateAxis0 = new DateAxis();
         CombinedRangeCategoryPlot combinedRangeCategoryPlot0 = new CombinedRangeCategoryPlot(dateAxis0);
@@ -1125,7 +1131,7 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8687() throws Throwable {
+    public void test8688() throws Throwable {
         LineAndShapeRenderer lineAndShapeRenderer0 = new LineAndShapeRenderer();
         CategoryPointerAnnotation categoryPointerAnnotation0 = new CategoryPointerAnnotation("1R_-?.w~e'", lineAndShapeRenderer0.ZERO, (-1149.0), (double) lineAndShapeRenderer0.ZERO);
         lineAndShapeRenderer0.addAnnotation((CategoryAnnotation) categoryPointerAnnotation0);
@@ -1133,14 +1139,14 @@ public class AbstractCategoryItemRenderer_ESTest extends AbstractCategoryItemRen
     }
 
     @Test(timeout = 4000)
-    public void test8788() throws Throwable {
+    public void test8789() throws Throwable {
         ScatterRenderer scatterRenderer0 = new ScatterRenderer();
         CategoryToolTipGenerator categoryToolTipGenerator0 = scatterRenderer0.getBaseToolTipGenerator();
         assertNull(categoryToolTipGenerator0);
     }
 
     @Test(timeout = 4000)
-    public void test8889() throws Throwable {
+    public void test8890() throws Throwable {
         StackedBarRenderer3D stackedBarRenderer3D0 = new StackedBarRenderer3D();
         IntervalCategoryItemLabelGenerator intervalCategoryItemLabelGenerator0 = new IntervalCategoryItemLabelGenerator();
         stackedBarRenderer3D0.setSeriesItemLabelGenerator(3, (CategoryItemLabelGenerator) intervalCategoryItemLabelGenerator0);

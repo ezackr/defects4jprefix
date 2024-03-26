@@ -152,7 +152,20 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1212() throws Throwable {
+        int[] intArray0 = new int[7];
+        Well1024a well1024a0 = new Well1024a(intArray0);
+        LinkedList<Pair<String, Double>> linkedList0 = new LinkedList<Pair<String, Double>>();
+        Double double0 = new Double(2743.928701244215);
+        Pair<String, Double> pair0 = new Pair<String, Double>("s,$A$Zh?;NOno~", double0);
+        linkedList0.add(pair0);
+        DiscreteDistribution<String> discreteDistribution0 = new DiscreteDistribution<String>(well1024a0, linkedList0);
+        // Undeclared exception!
+        discreteDistribution0.sample(168507691);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
         int[] intArray0 = new int[7];
         Well1024a well1024a0 = new Well1024a(intArray0);
         LinkedList<Pair<String, Double>> linkedList0 = new LinkedList<Pair<String, Double>>();
@@ -165,7 +178,7 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         int[] intArray0 = new int[7];
         Well1024a well1024a0 = new Well1024a(intArray0);
         LinkedList<Pair<String, Double>> linkedList0 = new LinkedList<Pair<String, Double>>();
@@ -177,7 +190,7 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         int[] intArray0 = new int[7];
         Well1024a well1024a0 = new Well1024a(intArray0);
         LinkedList<Pair<String, Double>> linkedList0 = new LinkedList<Pair<String, Double>>();
@@ -189,7 +202,7 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         int[] intArray0 = new int[7];
         Well1024a well1024a0 = new Well1024a(intArray0);
         LinkedList<Pair<String, Double>> linkedList0 = new LinkedList<Pair<String, Double>>();
@@ -201,7 +214,7 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         int[] intArray0 = new int[4];
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
         LinkedList<Pair<Integer, Double>> linkedList0 = new LinkedList<Pair<Integer, Double>>();
@@ -218,7 +231,7 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         LinkedList<Pair<Byte, Double>> linkedList0 = new LinkedList<Pair<Byte, Double>>();
         Byte byte0 = new Byte((byte) 96);
         Double double0 = new Double((-1.0));
@@ -229,7 +242,19 @@ public class DiscreteDistribution_ESTest extends DiscreteDistribution_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test2018() throws Throwable {
+    public void test1919() throws Throwable {
+        int[] intArray0 = new int[4];
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        LinkedList<Pair<Integer, Double>> linkedList0 = new LinkedList<Pair<Integer, Double>>();
+        Double double0 = new Double(1702);
+        Pair<Integer, Double> pair0 = new Pair<Integer, Double>((Integer) intArray0[0], double0);
+        linkedList0.add(pair0);
+        DiscreteDistribution<Integer> discreteDistribution0 = new DiscreteDistribution<Integer>(mersenneTwister0, linkedList0);
+        discreteDistribution0.reseedRandomGenerator(0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
         DiscreteDistribution<String> discreteDistribution0 = null;
         discreteDistribution0 = new DiscreteDistribution<String>((List<Pair<String, Double>>) null);
     }

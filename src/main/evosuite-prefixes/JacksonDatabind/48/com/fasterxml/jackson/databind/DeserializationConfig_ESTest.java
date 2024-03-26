@@ -992,19 +992,6 @@ public class DeserializationConfig_ESTest extends DeserializationConfig_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test5687() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        SimpleMixInResolver simpleMixInResolver0 = new SimpleMixInResolver((ClassIntrospector.MixInResolver) null);
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        DeserializationConfig deserializationConfig0 = new DeserializationConfig(baseSettings0, stdSubtypeResolver0, simpleMixInResolver0, rootNameLookup0);
-        JsonParser.Feature jsonParser_Feature0 = JsonParser.Feature.ALLOW_SINGLE_QUOTES;
-        DeserializationConfig deserializationConfig1 = deserializationConfig0.without(jsonParser_Feature0);
-        JsonFactory jsonFactory0 = new JsonFactory();
-        boolean boolean0 = deserializationConfig1.isEnabled(jsonParser_Feature0, jsonFactory0);
-    }
-
-    @Test(timeout = 4000)
     public void test5788() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
@@ -1236,28 +1223,6 @@ public class DeserializationConfig_ESTest extends DeserializationConfig_ESTest_s
         DeserializationConfig deserializationConfig1 = deserializationConfig0.withFeatures(formatFeatureArray0);
         DeserializationConfig deserializationConfig2 = deserializationConfig1.without(formatFeature0);
         deserializationConfig1.useRootWrapping();
-    }
-
-    @Test(timeout = 4000)
-    public void test63104() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        SimpleMixInResolver simpleMixInResolver0 = objectMapper0._mixIns;
-        DeserializationConfig deserializationConfig0 = new DeserializationConfig(baseSettings0, stdSubtypeResolver0, simpleMixInResolver0, rootNameLookup0);
-        FormatFeature[] formatFeatureArray0 = new FormatFeature[7];
-        FormatFeature formatFeature0 = mock(FormatFeature.class, new ViolatedAssumptionAnswer());
-        doReturn(7, 7, 7, 7, 1511).when(formatFeature0).getMask();
-        formatFeatureArray0[0] = formatFeature0;
-        formatFeatureArray0[1] = formatFeature0;
-        formatFeatureArray0[2] = formatFeature0;
-        formatFeatureArray0[3] = formatFeature0;
-        formatFeatureArray0[4] = formatFeature0;
-        formatFeatureArray0[5] = formatFeature0;
-        formatFeatureArray0[6] = formatFeature0;
-        DeserializationConfig deserializationConfig1 = deserializationConfig0.withFeatures(formatFeatureArray0);
-        DeserializationConfig deserializationConfig2 = deserializationConfig1.without(formatFeature0);
     }
 
     @Test(timeout = 4000)
@@ -1513,17 +1478,6 @@ public class DeserializationConfig_ESTest extends DeserializationConfig_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test71123() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        SimpleMixInResolver simpleMixInResolver0 = new SimpleMixInResolver((ClassIntrospector.MixInResolver) null);
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        DeserializationConfig deserializationConfig0 = new DeserializationConfig(baseSettings0, stdSubtypeResolver0, simpleMixInResolver0, rootNameLookup0);
-        DeserializationConfig deserializationConfig1 = deserializationConfig0.withHandler((DeserializationProblemHandler) null);
-        DeserializationConfig deserializationConfig2 = deserializationConfig1.withHandler((DeserializationProblemHandler) null);
-    }
-
-    @Test(timeout = 4000)
     public void test72124() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
@@ -1758,17 +1712,6 @@ public class DeserializationConfig_ESTest extends DeserializationConfig_ESTest_s
 
     @Test(timeout = 4000)
     public void test80140() throws Throwable {
-        BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
-        StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
-        SimpleMixInResolver simpleMixInResolver0 = new SimpleMixInResolver((ClassIntrospector.MixInResolver) null);
-        RootNameLookup rootNameLookup0 = new RootNameLookup();
-        DeserializationConfig deserializationConfig0 = new DeserializationConfig(baseSettings0, stdSubtypeResolver0, simpleMixInResolver0, rootNameLookup0);
-        DeserializationConfig deserializationConfig1 = deserializationConfig0.withRootName("");
-        boolean boolean0 = deserializationConfig1.useRootWrapping();
-    }
-
-    @Test(timeout = 4000)
-    public void test80141() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
         SimpleMixInResolver simpleMixInResolver0 = new SimpleMixInResolver((ClassIntrospector.MixInResolver) null);

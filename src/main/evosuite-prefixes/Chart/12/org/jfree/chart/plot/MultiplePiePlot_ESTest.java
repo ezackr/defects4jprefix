@@ -439,13 +439,6 @@ public class MultiplePiePlot_ESTest extends MultiplePiePlot_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3243() throws Throwable {
-        DefaultKeyedValues2DDataset defaultKeyedValues2DDataset0 = new DefaultKeyedValues2DDataset();
-        MultiplePiePlot multiplePiePlot0 = new MultiplePiePlot(defaultKeyedValues2DDataset0);
-        multiplePiePlot0.getLimit();
-    }
-
-    @Test(timeout = 4000)
     public void test3244() throws Throwable {
         DefaultKeyedValues2DDataset defaultKeyedValues2DDataset0 = new DefaultKeyedValues2DDataset();
         MultiplePiePlot multiplePiePlot0 = new MultiplePiePlot(defaultKeyedValues2DDataset0);

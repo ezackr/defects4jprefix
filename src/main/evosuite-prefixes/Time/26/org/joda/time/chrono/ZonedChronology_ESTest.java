@@ -569,7 +569,16 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5152() throws Throwable {
+    public void test5052() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(buddhistChronology0, dateTimeZone0);
+        AssembledChronology.Fields assembledChronology_Fields0 = new AssembledChronology.Fields();
+        zonedChronology0.assemble(assembledChronology_Fields0);
+    }
+
+    @Test(timeout = 4000)
+    public void test5153() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(0);
         ISOChronology iSOChronology0 = ISOChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(iSOChronology0, dateTimeZone0);
@@ -578,7 +587,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5253() throws Throwable {
+    public void test5254() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
@@ -586,13 +595,13 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5354() throws Throwable {
+    public void test5355() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         ZonedChronology.getInstance((Chronology) null, dateTimeZone0);
     }
 
     @Test(timeout = 4000)
-    public void test5455() throws Throwable {
+    public void test5456() throws Throwable {
         MillisDurationField millisDurationField0 = (MillisDurationField) MillisDurationField.INSTANCE;
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ZonedChronology.ZonedDurationField zonedChronology_ZonedDurationField0 = new ZonedChronology.ZonedDurationField(millisDurationField0, fixedDateTimeZone0);
@@ -600,7 +609,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5556() throws Throwable {
+    public void test5557() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(buddhistChronology0, dateTimeZone0);
@@ -609,7 +618,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5657() throws Throwable {
+    public void test5658() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
         IslamicChronology.LeapYearPatternType islamicChronology_LeapYearPatternType0 = IslamicChronology.LEAP_YEAR_15_BASED;
         IslamicChronology islamicChronology0 = new IslamicChronology(gregorianChronology0, gregorianChronology0, islamicChronology_LeapYearPatternType0);
@@ -621,7 +630,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5758() throws Throwable {
+    public void test5759() throws Throwable {
         MillisDurationField millisDurationField0 = (MillisDurationField) MillisDurationField.INSTANCE;
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ZonedChronology.ZonedDurationField zonedChronology_ZonedDurationField0 = new ZonedChronology.ZonedDurationField(millisDurationField0, fixedDateTimeZone0);
@@ -629,7 +638,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5859() throws Throwable {
+    public void test5860() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         BasicMonthOfYearDateTimeField basicMonthOfYearDateTimeField0 = new BasicMonthOfYearDateTimeField(ethiopicChronology0, 1);
         DurationField durationField0 = basicMonthOfYearDateTimeField0.getRangeDurationField();
@@ -640,7 +649,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5960() throws Throwable {
+    public void test5961() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(0);
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance(dateTimeZone0);
         BasicYearDateTimeField basicYearDateTimeField0 = new BasicYearDateTimeField(ethiopicChronology0);
@@ -652,7 +661,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6061() throws Throwable {
+    public void test6062() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
@@ -663,7 +672,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6162() throws Throwable {
+    public void test6163() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
@@ -673,7 +682,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6263() throws Throwable {
+    public void test6264() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(copticChronology0, fixedDateTimeZone0);
@@ -683,7 +692,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6364() throws Throwable {
+    public void test6365() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(1, 1);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(ethiopicChronology0, dateTimeZone0);
@@ -695,7 +704,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6465() throws Throwable {
+    public void test6466() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         TimeZone timeZone0 = TimeZone.getTimeZone("]H(%=&g");
         DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
@@ -706,7 +715,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6566() throws Throwable {
+    public void test6567() throws Throwable {
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance();
         ZoneOffset zoneOffset0 = ZoneOffset.MIN;
         TimeZone timeZone0 = TimeZone.getTimeZone((ZoneId) zoneOffset0);
@@ -717,24 +726,13 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6667() throws Throwable {
+    public void test6668() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(gJChronology0, fixedDateTimeZone0);
         DateTimeField dateTimeField0 = zonedChronology0.yearOfCentury();
         SkipDateTimeField skipDateTimeField0 = new SkipDateTimeField(gJChronology0, dateTimeField0);
         DurationField durationField0 = skipDateTimeField0.getLeapDurationField();
-    }
-
-    @Test(timeout = 4000)
-    public void test6768() throws Throwable {
-        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
-        TimeZone timeZone0 = TimeZone.getTimeZone("]H(%=&g");
-        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
-        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(copticChronology0, dateTimeZone0);
-        DateTimeField dateTimeField0 = zonedChronology0.dayOfMonth();
-        GJYearOfEraDateTimeField gJYearOfEraDateTimeField0 = new GJYearOfEraDateTimeField(dateTimeField0, copticChronology0);
-        DurationField durationField0 = gJYearOfEraDateTimeField0.getDurationField();
     }
 
     @Test(timeout = 4000)
@@ -746,11 +744,22 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
         DateTimeField dateTimeField0 = zonedChronology0.dayOfMonth();
         GJYearOfEraDateTimeField gJYearOfEraDateTimeField0 = new GJYearOfEraDateTimeField(dateTimeField0, copticChronology0);
         DurationField durationField0 = gJYearOfEraDateTimeField0.getDurationField();
+    }
+
+    @Test(timeout = 4000)
+    public void test6770() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        TimeZone timeZone0 = TimeZone.getTimeZone("]H(%=&g");
+        DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(copticChronology0, dateTimeZone0);
+        DateTimeField dateTimeField0 = zonedChronology0.dayOfMonth();
+        GJYearOfEraDateTimeField gJYearOfEraDateTimeField0 = new GJYearOfEraDateTimeField(dateTimeField0, copticChronology0);
+        DurationField durationField0 = gJYearOfEraDateTimeField0.getDurationField();
         long long0 = durationField0.add((long) 30, 1);
     }
 
     @Test(timeout = 4000)
-    public void test6870() throws Throwable {
+    public void test6871() throws Throwable {
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         BasicYearDateTimeField basicYearDateTimeField0 = new BasicYearDateTimeField(gregorianChronology0);
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
@@ -762,7 +771,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6971() throws Throwable {
+    public void test6972() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(1, 1);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(ethiopicChronology0, dateTimeZone0);
@@ -771,7 +780,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7072() throws Throwable {
+    public void test7073() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(1, 1);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(ethiopicChronology0, dateTimeZone0);
@@ -780,23 +789,12 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7173() throws Throwable {
+    public void test7174() throws Throwable {
         ISOYearOfEraDateTimeField iSOYearOfEraDateTimeField0 = (ISOYearOfEraDateTimeField) ISOYearOfEraDateTimeField.INSTANCE;
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(0);
         ZonedChronology.ZonedDateTimeField zonedChronology_ZonedDateTimeField0 = new ZonedChronology.ZonedDateTimeField(iSOYearOfEraDateTimeField0, dateTimeZone0, (DurationField) null, (DurationField) null, (DurationField) null);
         Locale locale0 = Locale.ENGLISH;
         String string0 = zonedChronology_ZonedDateTimeField0.getAsShortText((-249), locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test7274() throws Throwable {
-        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
-        IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
-        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
-        DateTimeField dateTimeField0 = zonedChronology0.minuteOfHour();
-        SkipDateTimeField skipDateTimeField0 = new SkipDateTimeField(zonedChronology0, dateTimeField0, 0);
-        DurationField durationField0 = skipDateTimeField0.getRangeDurationField();
-        boolean boolean0 = ZonedChronology.useTimeArithmetic(durationField0);
     }
 
     @Test(timeout = 4000)
@@ -808,11 +806,22 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
         SkipDateTimeField skipDateTimeField0 = new SkipDateTimeField(zonedChronology0, dateTimeField0, 0);
         DurationField durationField0 = skipDateTimeField0.getRangeDurationField();
         boolean boolean0 = ZonedChronology.useTimeArithmetic(durationField0);
+    }
+
+    @Test(timeout = 4000)
+    public void test7276() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
+        DateTimeField dateTimeField0 = zonedChronology0.minuteOfHour();
+        SkipDateTimeField skipDateTimeField0 = new SkipDateTimeField(zonedChronology0, dateTimeField0, 0);
+        DurationField durationField0 = skipDateTimeField0.getRangeDurationField();
+        boolean boolean0 = ZonedChronology.useTimeArithmetic(durationField0);
         durationField0.getName();
     }
 
     @Test(timeout = 4000)
-    public void test7376() throws Throwable {
+    public void test7377() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         TimeZone timeZone0 = TimeZone.getTimeZone("]H(%=&g");
         DateTimeZone dateTimeZone0 = DateTimeZone.forTimeZone(timeZone0);
@@ -823,7 +832,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7477() throws Throwable {
+    public void test7478() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstanceUTC();
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(gJChronology0, fixedDateTimeZone0);
@@ -832,7 +841,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7578() throws Throwable {
+    public void test7579() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
@@ -841,7 +850,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7679() throws Throwable {
+    public void test7680() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(islamicChronology0, dateTimeZone0);
@@ -849,7 +858,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7780() throws Throwable {
+    public void test7781() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(gregorianChronology0, dateTimeZone0);
@@ -857,7 +866,15 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test7981() throws Throwable {
+    public void test7882() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        GregorianChronology gregorianChronology0 = GregorianChronology.getInstance();
+        ZonedChronology zonedChronology0 = ZonedChronology.getInstance(gregorianChronology0, dateTimeZone0);
+        zonedChronology0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test7983() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(1, 1);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(ethiopicChronology0, dateTimeZone0);
@@ -865,7 +882,7 @@ public class ZonedChronology_ESTest extends ZonedChronology_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test8082() throws Throwable {
+    public void test8084() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance(dateTimeZone0);
         ZonedChronology zonedChronology0 = ZonedChronology.getInstance(buddhistChronology0, dateTimeZone0);

@@ -121,59 +121,146 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1112() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
-        GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
-        GlobalNamespace.Name globalNamespace_Name2 = globalNamespace_Name0.addProperty("}9:x5", false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_GLOBAL;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
     }
 
     @Test(timeout = 4000)
-    public void test2212() throws Throwable {
+    public void test1213() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.CALL_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1314() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_LOCAL;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1415() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("SlUfZ9", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.PROTOTYPE_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1516() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1617() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.declaration = globalNamespace_Ref0;
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1718() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.CALL_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1819() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.declaration = globalNamespace_Ref0;
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1920() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_GLOBAL;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.addRefInternal(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2021() throws Throwable {
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.DIRECT_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("", (GlobalNamespace.Name) null, true);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.removeRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2122() throws Throwable {
+        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("", (GlobalNamespace.Name) null, false);
+        GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
+        GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+        globalNamespace_Name0.addRef(globalNamespace_Ref0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2223() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("", (GlobalNamespace.Name) null, false);
         boolean boolean0 = globalNamespace_Name0.canEliminate();
     }
 
     @Test(timeout = 4000)
-    public void test2313() throws Throwable {
+    public void test2324() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:5", (GlobalNamespace.Name) null, true);
         boolean boolean0 = globalNamespace_Name0.canCollapse();
     }
 
     @Test(timeout = 4000)
-    public void test2414() throws Throwable {
+    public void test2425() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         boolean boolean0 = globalNamespace_Name0.canCollapse();
     }
 
     @Test(timeout = 4000)
-    public void test2515() throws Throwable {
+    public void test2526() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         globalNamespace_Name0.setIsClassOrEnum();
         boolean boolean0 = globalNamespace_Name0.canCollapse();
     }
 
     @Test(timeout = 4000)
-    public void test2616() throws Throwable {
+    public void test2627() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
     }
 
     @Test(timeout = 4000)
-    public void test2617() throws Throwable {
-        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
-        GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
-        boolean boolean0 = globalNamespace_Name1.canCollapse();
-    }
-
-    @Test(timeout = 4000)
-    public void test2618() throws Throwable {
+    public void test2628() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
         boolean boolean0 = globalNamespace_Name1.canCollapse();
     }
 
     @Test(timeout = 4000)
-    public void test2719() throws Throwable {
+    public void test2730() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_GLOBAL;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
@@ -182,40 +269,40 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2820() throws Throwable {
+    public void test2831() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("\"GWz8", (GlobalNamespace.Name) null, false);
         globalNamespace_Name0.localSets = 415;
         boolean boolean0 = globalNamespace_Name0.canCollapse();
     }
 
     @Test(timeout = 4000)
-    public void test2921() throws Throwable {
+    public void test2932() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("SlUfZ9", (GlobalNamespace.Name) null, false);
         boolean boolean0 = globalNamespace_Name0.shouldKeepKeys();
     }
 
     @Test(timeout = 4000)
-    public void test3022() throws Throwable {
+    public void test3033() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("H}hcvx>rY\"d{chtWT*!", (GlobalNamespace.Name) null, false);
         globalNamespace_Name0.globalSets = 115;
         boolean boolean0 = globalNamespace_Name0.needsToBeStubbed();
     }
 
     @Test(timeout = 4000)
-    public void test3123() throws Throwable {
+    public void test3134() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("JSC_INEXISTENT_PROPERTY", (GlobalNamespace.Name) null, true);
         boolean boolean0 = globalNamespace_Name0.needsToBeStubbed();
     }
 
     @Test(timeout = 4000)
-    public void test3224() throws Throwable {
+    public void test3235() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("JSC_INEXISTENT_PROPERTY", (GlobalNamespace.Name) null, true);
         globalNamespace_Name0.localSets = 98;
         boolean boolean0 = globalNamespace_Name0.needsToBeStubbed();
     }
 
     @Test(timeout = 4000)
-    public void test3325() throws Throwable {
+    public void test3336() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
         globalNamespace_Name1.setIsClassOrEnum();
@@ -223,69 +310,61 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3326() throws Throwable {
-        GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
-        GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
-        globalNamespace_Name1.setIsClassOrEnum();
-        boolean boolean0 = globalNamespace_Name0.isNamespace();
-    }
-
-    @Test(timeout = 4000)
-    public void test3427() throws Throwable {
+    public void test3438() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         boolean boolean0 = globalNamespace_Name0.isNamespace();
     }
 
     @Test(timeout = 4000)
-    public void test3528() throws Throwable {
+    public void test3539() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("> 2$q @(zkv()&", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Name globalNamespace_Name1 = new GlobalNamespace.Name(".p[ototy!e", globalNamespace_Name0, true);
         boolean boolean0 = globalNamespace_Name1.isSimpleName();
     }
 
     @Test(timeout = 4000)
-    public void test3629() throws Throwable {
+    public void test3640() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("> 2$q @(zkv()&", (GlobalNamespace.Name) null, false);
         boolean boolean0 = globalNamespace_Name0.isSimpleName();
     }
 
     @Test(timeout = 4000)
-    public void test3730() throws Throwable {
+    public void test3741() throws Throwable {
         GlobalNamespace.Name globalNamespace_Name0 = new GlobalNamespace.Name("}9:x5", (GlobalNamespace.Name) null, false);
         GlobalNamespace.Name globalNamespace_Name1 = globalNamespace_Name0.addProperty("}9:x5", false);
         String string0 = globalNamespace_Name1.toString();
     }
 
     @Test(timeout = 4000)
-    public void test3831() throws Throwable {
+    public void test3842() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_GLOBAL;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         boolean boolean0 = globalNamespace_Ref0.isSet();
     }
 
     @Test(timeout = 4000)
-    public void test3932() throws Throwable {
+    public void test3943() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         boolean boolean0 = globalNamespace_Ref0.isSet();
     }
 
     @Test(timeout = 4000)
-    public void test4033() throws Throwable {
+    public void test4044() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_LOCAL;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         boolean boolean0 = globalNamespace_Ref0.isSet();
     }
 
     @Test(timeout = 4000)
-    public void test4134() throws Throwable {
+    public void test4145() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         GlobalNamespace.Ref.markTwins(globalNamespace_Ref0, globalNamespace_Ref0);
     }
 
     @Test(timeout = 4000)
-    public void test4235() throws Throwable {
+    public void test4246() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type1 = GlobalNamespace.Ref.Type.SET_FROM_GLOBAL;
@@ -295,14 +374,14 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4336() throws Throwable {
+    public void test4347() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_LOCAL;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         GlobalNamespace.Ref.markTwins(globalNamespace_Ref0, globalNamespace_Ref0);
     }
 
     @Test(timeout = 4000)
-    public void test4437() throws Throwable {
+    public void test4448() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.SET_FROM_LOCAL;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type1 = GlobalNamespace.Ref.Type.ALIASING_GET;
@@ -312,7 +391,7 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4538() throws Throwable {
+    public void test4549() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type1 = GlobalNamespace.Ref.Type.SET_FROM_GLOBAL;
@@ -322,7 +401,7 @@ public class GlobalNamespace_ESTest extends GlobalNamespace_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4639() throws Throwable {
+    public void test4650() throws Throwable {
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type0 = GlobalNamespace.Ref.Type.ALIASING_GET;
         GlobalNamespace.Ref globalNamespace_Ref0 = GlobalNamespace.Ref.createRefForTesting(globalNamespace_Ref_Type0);
         GlobalNamespace.Ref.Type globalNamespace_Ref_Type1 = GlobalNamespace.Ref.Type.SET_FROM_LOCAL;

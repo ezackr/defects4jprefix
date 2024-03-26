@@ -22,11 +22,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test001() throws Throwable {
-        String string0 = TokenQueue.unescape("(9,g5k)gArvQ#q9al");
-    }
-
-    @Test(timeout = 4000)
     public void test012() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.matchesStartTag();
@@ -144,13 +139,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0119() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.addFirst("Js'S9{B9xJr");
-        String string0 = tokenQueue0.consumeWord();
-    }
-
-    @Test(timeout = 4000)
     public void test0120() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.addFirst("Js'S9{B9xJr");
@@ -206,14 +194,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0126() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.addFirst("Js'S9{B9xJr");
-        String string0 = tokenQueue0.consumeWord();
-        String string1 = tokenQueue0.chompBalanced('!', '!');
-    }
-
-    @Test(timeout = 4000)
-    public void test0127() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.addFirst("Js'S9{B9xJr");
         String string0 = tokenQueue0.consumeWord();
@@ -332,13 +312,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0244() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("s7,]zDXFG>2mpqc'&5");
-        tokenQueue0.addFirst("X`2*j.pd*IbJ_");
-        String string0 = tokenQueue0.consumeTo("s7,]zDXFG>2mpqc'&5");
-    }
-
-    @Test(timeout = 4000)
-    public void test0245() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("s7,]zDXFG>2mpqc'&5");
         tokenQueue0.addFirst("X`2*j.pd*IbJ_");
         String string0 = tokenQueue0.consumeTo("s7,]zDXFG>2mpqc'&5");
@@ -496,17 +469,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0570() throws Throwable {
-        String string0 = TokenQueue.unescape("\\1hrMjv");
-    }
-
-    @Test(timeout = 4000)
     public void test0671() throws Throwable {
-        String string0 = TokenQueue.unescape("");
-    }
-
-    @Test(timeout = 4000)
-    public void test0672() throws Throwable {
         String string0 = TokenQueue.unescape("");
     }
 
@@ -574,41 +537,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0883() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test0884() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test0885() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test0886() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test0887() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test0888() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-    }
-
-    @Test(timeout = 4000)
     public void test0889() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         String string0 = tokenQueue0.remainder();
@@ -645,12 +573,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test0894() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        String string0 = tokenQueue0.remainder();
-    }
-
-    @Test(timeout = 4000)
-    public void test0895() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         String string0 = tokenQueue0.remainder();
     }
@@ -732,12 +654,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09108() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-        String string0 = tokenQueue0.chompBalanced('*', 'C');
-    }
-
-    @Test(timeout = 4000)
     public void test09109() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         String string0 = tokenQueue0.chompBalanced('*', 'C');
@@ -782,41 +698,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         String string0 = tokenQueue0.chompBalanced('*', 'C');
         char char0 = tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test10115() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test10116() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test10117() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test10118() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test10119() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test10120() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
     }
 
     @Test(timeout = 4000)
@@ -1013,12 +894,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12151() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        String string0 = tokenQueue0.consumeAttributeKey();
-    }
-
-    @Test(timeout = 4000)
     public void test12152() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
         String string0 = tokenQueue0.consumeAttributeKey();
@@ -1068,13 +943,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test12158() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        String string0 = tokenQueue0.consumeAttributeKey();
-        String string1 = tokenQueue0.consumeTo("C-c}Cvo");
-    }
-
-    @Test(timeout = 4000)
-    public void test12159() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
         String string0 = tokenQueue0.consumeAttributeKey();
         String string1 = tokenQueue0.consumeTo("C-c}Cvo");
@@ -1157,12 +1025,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13172() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        String string0 = tokenQueue0.consumeCssIdentifier();
-    }
-
-    @Test(timeout = 4000)
     public void test14173() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
         tokenQueue0.peek();
@@ -1234,12 +1096,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test14184() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
-        String string0 = tokenQueue0.consumeTagName();
-    }
-
-    @Test(timeout = 4000)
-    public void test14185() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
         String string0 = tokenQueue0.consumeTagName();
     }
@@ -1345,14 +1201,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14198() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("xc?1>u8j]awS\"t\"PufP");
-        String string0 = tokenQueue0.consumeTagName();
-        char char0 = tokenQueue0.consume();
-        char char1 = tokenQueue0.consume();
-    }
-
-    @Test(timeout = 4000)
     public void test15199() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("JfT\"0wbkOCfxRdb%F");
         tokenQueue0.matchesStartTag();
@@ -1434,41 +1282,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17212() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test17213() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test17214() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test17215() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test17216() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test17217() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
-    }
-
-    @Test(timeout = 4000)
     public void test17218() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("C-c}Cvo");
         tokenQueue0.matchesCS((String) null);
@@ -1516,41 +1329,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test19226() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test19227() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test19228() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test19229() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test19230() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test19231() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-    }
-
-    @Test(timeout = 4000)
     public void test19232() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
         tokenQueue0.matches((String) null);
@@ -1595,41 +1373,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     public void test20239() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         tokenQueue0.matchChomp((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test21240() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test21241() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test21242() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test21243() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test21244() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test21245() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
     }
 
     @Test(timeout = 4000)
@@ -1718,41 +1461,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     public void test23260() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("WPI");
         tokenQueue0.consumeToAny((String[]) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test24261() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test24262() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test24263() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test24264() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test24265() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test24266() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
     }
 
     @Test(timeout = 4000)
@@ -1879,12 +1587,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test26287() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(";}&+Bk.?");
-        String string0 = tokenQueue0.consumeToIgnoreCase("org.jsoup.parser.TokenQueue");
-    }
-
-    @Test(timeout = 4000)
     public void test26288() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(";}&+Bk.?");
         String string0 = tokenQueue0.consumeToIgnoreCase("org.jsoup.parser.TokenQueue");
@@ -1892,79 +1594,9 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test27289() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test27290() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test27291() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test27292() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test27293() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test27294() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-    }
-
-    @Test(timeout = 4000)
     public void test27295() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.chompToIgnoreCase("");
-    }
-
-    @Test(timeout = 4000)
-    public void test28296() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test28297() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test28298() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test28299() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test28300() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test28301() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
     }
 
     @Test(timeout = 4000)
@@ -2013,41 +1645,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     public void test29309() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
         tokenQueue0.chompTo((String) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test30310() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test30311() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test30312() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test30313() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test30314() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test30315() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
     }
 
     @Test(timeout = 4000)
@@ -2186,48 +1783,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test32336() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("*|");
-        char char0 = tokenQueue0.consume();
-        String string0 = tokenQueue0.consumeToIgnoreCase("*|");
-    }
-
-    @Test(timeout = 4000)
-    public void test33337() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test33338() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test33339() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test33340() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test33341() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test33342() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-    }
-
-    @Test(timeout = 4000)
     public void test33343() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
         String string0 = tokenQueue0.consumeToIgnoreCase(":8l8 ");
@@ -2269,47 +1824,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test33349() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        String string0 = tokenQueue0.consumeToIgnoreCase(":8l8 ");
-    }
-
-    @Test(timeout = 4000)
-    public void test34350() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test34351() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test34352() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test34353() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test34354() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test34355() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-    }
-
-    @Test(timeout = 4000)
     public void test34356() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         String string0 = tokenQueue0.consumeWord();
@@ -2346,12 +1860,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test34361() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        String string0 = tokenQueue0.consumeWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test34362() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
         String string0 = tokenQueue0.consumeWord();
     }
@@ -2412,55 +1920,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test34370() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        String string0 = tokenQueue0.consumeWord();
-        String string1 = tokenQueue0.consumeTo("PsQsP");
-    }
-
-    @Test(timeout = 4000)
-    public void test35371() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test35372() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test35373() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test35374() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test35375() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test35376() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-    }
-
-    @Test(timeout = 4000)
     public void test35377() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-    }
-
-    @Test(timeout = 4000)
-    public void test35378() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         Character character0 = new Character('!');
     }
@@ -2635,12 +2095,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test36402() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Queue not long enough to consume sequence");
-        String string0 = tokenQueue0.chompToIgnoreCase("(@#fgg0X");
-    }
-
-    @Test(timeout = 4000)
     public void test36403() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Queue not long enough to consume sequence");
         String string0 = tokenQueue0.chompToIgnoreCase("(@#fgg0X");
@@ -2685,41 +2139,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
         TokenQueue tokenQueue0 = new TokenQueue("Queue not long enough to consume sequence");
         String string0 = tokenQueue0.chompToIgnoreCase("(@#fgg0X");
         boolean boolean0 = tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test37409() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test37410() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test37411() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test37412() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test37413() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test37414() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("PsQsP");
     }
 
     @Test(timeout = 4000)
@@ -2840,41 +2259,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test39433() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test39434() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test39435() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test39436() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test39437() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test39438() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
-    }
-
-    @Test(timeout = 4000)
     public void test39439() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("$79t<8");
         boolean boolean0 = tokenQueue0.matchesWhitespace();
@@ -2916,41 +2300,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test40445() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test40446() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test40447() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test40448() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test40449() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test40450() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-    }
-
-    @Test(timeout = 4000)
     public void test40451() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
         String string0 = tokenQueue0.consumeElementSelector();
@@ -2987,12 +2336,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test40456() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
-        String string0 = tokenQueue0.consumeElementSelector();
-    }
-
-    @Test(timeout = 4000)
-    public void test40457() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("8rVVhr[");
         String string0 = tokenQueue0.consumeElementSelector();
     }
@@ -3091,41 +2434,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test41469() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test41470() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test41471() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test41472() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test41473() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test41474() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
-    }
-
-    @Test(timeout = 4000)
     public void test41475() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
         boolean boolean0 = tokenQueue0.matchChomp("|Ey7@T|GTw?");
@@ -3164,41 +2472,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     public void test41480() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(":8l8 ");
         boolean boolean0 = tokenQueue0.matchChomp("|Ey7@T|GTw?");
-    }
-
-    @Test(timeout = 4000)
-    public void test42481() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test42482() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test42483() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test42484() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test42485() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test42486() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
     }
 
     @Test(timeout = 4000)
@@ -3243,104 +2516,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43493() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test43494() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test43495() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test43496() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test43497() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test43498() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-    }
-
-    @Test(timeout = 4000)
-    public void test43499() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-    }
-
-    @Test(timeout = 4000)
-    public void test43500() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-    }
-
-    @Test(timeout = 4000)
-    public void test43501() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test43502() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test43503() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test43504() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test43505() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
     public void test43506() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        char[] charArray0 = new char[6];
-        charArray0[0] = '!';
-        boolean boolean0 = tokenQueue0.matchesAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test43507() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("");
         Character character0 = new Character('!');
         tokenQueue0.addFirst(character0);
@@ -3405,59 +2581,7 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43513() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
-        Character character0 = new Character('!');
-        tokenQueue0.addFirst(character0);
-        char[] charArray0 = new char[6];
-        charArray0[0] = '!';
-        boolean boolean0 = tokenQueue0.matchesAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44514() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test44515() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test44516() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test44517() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test44518() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test44519() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-    }
-
-    @Test(timeout = 4000)
     public void test44520() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        char[] charArray0 = new char[9];
-        boolean boolean0 = tokenQueue0.matchesAny(charArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test44521() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(" ");
         char[] charArray0 = new char[9];
         boolean boolean0 = tokenQueue0.matchesAny(charArray0);
@@ -3501,13 +2625,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
         char[] charArray0 = new char[9];
         boolean boolean0 = tokenQueue0.matchesAny(charArray0);
         tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test44527() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        char[] charArray0 = new char[9];
-        boolean boolean0 = tokenQueue0.matchesAny(charArray0);
     }
 
     @Test(timeout = 4000)
@@ -3599,14 +2716,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test45540() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("=BxLN+");
-        String[] stringArray0 = new String[1];
-        stringArray0[0] = "";
-        boolean boolean0 = tokenQueue0.matchesAny(stringArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test46541() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("-");
         tokenQueue0.matchesWord();
@@ -3678,12 +2787,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test46552() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        String string0 = tokenQueue0.consumeCssIdentifier();
-    }
-
-    @Test(timeout = 4000)
-    public void test46553() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("-");
         String string0 = tokenQueue0.consumeCssIdentifier();
     }
@@ -3780,48 +2883,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test47567() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("       ");
-        String[] stringArray0 = new String[0];
-        boolean boolean0 = tokenQueue0.matchesAny(stringArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test48568() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test48569() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test48570() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test48571() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test48572() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test48573() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-    }
-
-    @Test(timeout = 4000)
     public void test48574() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(" ");
         String string0 = tokenQueue0.consumeToIgnoreCase("  ");
@@ -3858,12 +2919,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test48579() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-    }
-
-    @Test(timeout = 4000)
-    public void test48580() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(" ");
         String string0 = tokenQueue0.consumeToIgnoreCase("  ");
     }
@@ -3916,41 +2971,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test49587() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test49588() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test49589() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test49590() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test49591() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test49592() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-    }
-
-    @Test(timeout = 4000)
     public void test49593() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(" ");
         boolean boolean0 = tokenQueue0.isEmpty();
@@ -3992,41 +3012,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test50599() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test50600() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test50601() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test50602() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test50603() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test50604() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-    }
-
-    @Test(timeout = 4000)
     public void test50605() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
         String string0 = tokenQueue0.remainder();
@@ -4063,12 +3048,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test50610() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
-        String string0 = tokenQueue0.remainder();
-    }
-
-    @Test(timeout = 4000)
-    public void test50611() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr");
         String string0 = tokenQueue0.remainder();
     }
@@ -4150,88 +3129,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test52624() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test52625() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test52626() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test52627() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test52628() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test52629() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-    }
-
-    @Test(timeout = 4000)
-    public void test52630() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test52631() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test52632() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test52633() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test52634() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test52635() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-    }
-
-    @Test(timeout = 4000)
-    public void test52636() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-    }
-
-    @Test(timeout = 4000)
     public void test52637() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue(" ");
         String string0 = tokenQueue0.consumeToIgnoreCase("  ");
@@ -4287,48 +3184,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test52644() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue(" ");
-        String string0 = tokenQueue0.consumeToIgnoreCase("  ");
-        String string1 = tokenQueue0.consumeAttributeKey();
-    }
-
-    @Test(timeout = 4000)
-    public void test53645() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test53646() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test53647() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test53648() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test53649() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test53650() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-    }
-
-    @Test(timeout = 4000)
     public void test53651() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
         String string0 = tokenQueue0.consumeCssIdentifier();
@@ -4365,12 +3220,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test53656() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
-        String string0 = tokenQueue0.consumeCssIdentifier();
-    }
-
-    @Test(timeout = 4000)
-    public void test53657() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("kBNV|dXq&bBD1O");
         String string0 = tokenQueue0.consumeCssIdentifier();
     }
@@ -4452,47 +3301,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test54670() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("et1*|7ympryv");
-        String string0 = tokenQueue0.consumeElementSelector();
-    }
-
-    @Test(timeout = 4000)
-    public void test55671() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test55672() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test55673() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test55674() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test55675() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test55676() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-    }
-
-    @Test(timeout = 4000)
     public void test55677() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("-");
         String string0 = tokenQueue0.consumeTagName();
@@ -4534,12 +3342,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test55683() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("-");
-        String string0 = tokenQueue0.consumeTagName();
-    }
-
-    @Test(timeout = 4000)
     public void test56684() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
         tokenQueue0.toString();
@@ -4576,12 +3378,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test56690() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-    }
-
-    @Test(timeout = 4000)
-    public void test56691() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
         Character character0 = Character.valueOf('H');
     }
@@ -4680,101 +3476,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test56703() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        String string0 = tokenQueue0.chompBalanced('7', 'H');
-    }
-
-    @Test(timeout = 4000)
-    public void test57704() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test57705() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test57706() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test57707() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test57708() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
-    public void test57709() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-    }
-
-    @Test(timeout = 4000)
-    public void test57710() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-    }
-
-    @Test(timeout = 4000)
-    public void test57711() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-    }
-
-    @Test(timeout = 4000)
-    public void test57712() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test57713() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.peek();
-    }
-
-    @Test(timeout = 4000)
-    public void test57714() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.matchesWord();
-    }
-
-    @Test(timeout = 4000)
-    public void test57715() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.toString();
-    }
-
-    @Test(timeout = 4000)
-    public void test57716() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        tokenQueue0.matchesStartTag();
-    }
-
-    @Test(timeout = 4000)
     public void test57717() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
         Character character0 = Character.valueOf('H');
@@ -4828,14 +3529,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test57723() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("Js'S9{B9xJrJs'S9{B9xJr ");
-        Character character0 = Character.valueOf('H');
-        tokenQueue0.addFirst(character0);
-        String string0 = tokenQueue0.chompBalanced('H', 'H');
-    }
-
-    @Test(timeout = 4000)
     public void test58724() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("IsN%4W93r0-\"");
         tokenQueue0.matchesStartTag();
@@ -4872,12 +3565,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test58730() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("IsN%4W93r0-\"");
-        Character character0 = new Character('*');
-    }
-
-    @Test(timeout = 4000)
-    public void test58731() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("IsN%4W93r0-\"");
         Character character0 = new Character('*');
     }
@@ -4969,14 +3656,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test58742() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("IsN%4W93r0-\"");
-        Character character0 = new Character('*');
-        tokenQueue0.addFirst(character0);
-        String string0 = tokenQueue0.chompBalanced('*', '\uDC05');
-    }
-
-    @Test(timeout = 4000)
-    public void test58743() throws Throwable {
         TokenQueue tokenQueue0 = new TokenQueue("IsN%4W93r0-\"");
         Character character0 = new Character('*');
         tokenQueue0.addFirst(character0);
@@ -5169,12 +3848,6 @@ public class TokenQueue_ESTest extends TokenQueue_ESTest_scaffolding {
         String[] stringArray0 = new String[6];
         stringArray0[0] = "       ";
         String string0 = tokenQueue0.consumeToAny(stringArray0);
-        tokenQueue0.isEmpty();
-    }
-
-    @Test(timeout = 4000)
-    public void test77770() throws Throwable {
-        TokenQueue tokenQueue0 = new TokenQueue("");
         tokenQueue0.isEmpty();
     }
 

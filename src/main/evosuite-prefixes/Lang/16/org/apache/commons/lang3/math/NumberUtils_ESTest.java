@@ -395,11 +395,6 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06061() throws Throwable {
-        Number number0 = NumberUtils.createNumber("9");
-    }
-
-    @Test(timeout = 4000)
     public void test06162() throws Throwable {
         Long long0 = NumberUtils.createLong("3");
     }

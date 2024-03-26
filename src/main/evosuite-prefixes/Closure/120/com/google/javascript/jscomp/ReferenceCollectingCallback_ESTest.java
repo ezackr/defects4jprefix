@@ -329,7 +329,14 @@ public class ReferenceCollectingCallback_ESTest extends ReferenceCollectingCallb
     }
 
     @Test(timeout = 4000)
-    public void test3736() throws Throwable {
+    public void test3636() throws Throwable {
+        Node node0 = new Node(15, 15, 15);
+        Node node1 = new Node(121, node0, node0);
+        ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
         Node node0 = new Node(40);
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock1 = new ReferenceCollectingCallback.BasicBlock(referenceCollectingCallback_BasicBlock0, node0);
@@ -337,14 +344,14 @@ public class ReferenceCollectingCallback_ESTest extends ReferenceCollectingCallb
     }
 
     @Test(timeout = 4000)
-    public void test3837() throws Throwable {
+    public void test3838() throws Throwable {
         Node node0 = new Node(2);
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
         boolean boolean0 = referenceCollectingCallback_BasicBlock0.provablyExecutesBefore(referenceCollectingCallback_BasicBlock0);
     }
 
     @Test(timeout = 4000)
-    public void test3938() throws Throwable {
+    public void test3939() throws Throwable {
         Node node0 = new Node(40);
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock0 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);
         ReferenceCollectingCallback.BasicBlock referenceCollectingCallback_BasicBlock1 = new ReferenceCollectingCallback.BasicBlock((ReferenceCollectingCallback.BasicBlock) null, node0);

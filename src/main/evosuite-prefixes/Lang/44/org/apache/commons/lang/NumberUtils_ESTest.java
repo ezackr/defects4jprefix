@@ -51,7 +51,65 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093() throws Throwable {
+    public void test033() throws Throwable {
+        NumberUtils.maximum(0, 0, 0);
+        NumberUtils.isDigits("9wi!*mYxvM_.$");
+        NumberUtils.minimum(0, (-328), (-254));
+        NumberUtils.isDigits("9wi!*mYxvM_.$");
+        NumberUtils.isDigits("--");
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        NumberUtils.stringToInt("--");
+        NumberUtils.stringToInt("--", 0);
+        NumberUtils.createNumber("--");
+        NumberUtils.maximum(0, 0, 0);
+        NumberUtils.isDigits("");
+        NumberUtils numberUtils0 = new NumberUtils();
+        NumberUtils.isNumber("");
+        NumberUtils.isNumber("--");
+        NumberUtils.createNumber("{JavKs!");
+        String string0 = "+1vZbk@@{ks[";
+        NumberUtils.isNumber(string0);
+        String string1 = "-0x";
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        NumberUtils.isDigits("");
+        float float0 = 0.0F;
+        NumberUtils.compare(0.0F, 0.0F);
+        NumberUtils.maximum((long) 0, 0L, (long) 0);
+        NumberUtils.createNumber((String) null);
+        long long0 = 1172L;
+        NumberUtils.minimum(1172L, (long) 0, (-736L));
+        NumberUtils.createNumber("");
+        String string0 = "f96##[U";
+        NumberUtils.stringToInt(string0);
+        String string1 = "->lf?z1% ";
+        NumberUtils.createFloat(string1);
+        String string2 = "";
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        NumberUtils.compare(1001.01864075434, 1001.01864075434);
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
+        NumberUtils.compare((-1.0F), (-2397.77F));
+        NumberUtils.maximum((-2284L), (-1247L), 788L);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
+        NumberUtils.createFloat("v2@S");
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         int int0 = (-1);
         int int1 = (-2342);
         NumberUtils.maximum((-1), (-1), (-2342));
@@ -62,31 +120,51 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104() throws Throwable {
+    public void test1010() throws Throwable {
         String string0 = "?@{%;&56t6i";
         NumberUtils.createNumber("?@{%;&56t6i");
     }
 
     @Test(timeout = 4000)
-    public void test125() throws Throwable {
+    public void test1111() throws Throwable {
+        String string0 = "YZtm_``3&_";
+        NumberUtils.stringToInt("YZtm_``3&_", (-257));
+        NumberUtils.maximum(852L, 852L, 852L);
+        int int0 = 1;
+        int int1 = 0;
+        NumberUtils.minimum((-257), 1, 0);
+        NumberUtils.maximum(288L, 852L, (-1895L));
+        NumberUtils.maximum(852L, 1146L, (-1L));
+        NumberUtils.compare((double) 1146L, (double) 1146L);
+        NumberUtils.createLong("YZtm_``3&_");
+        float float0 = (-1.0F);
+        NumberUtils.compare((float) int0, float0);
+        NumberUtils.isNumber(string0);
+        String string1 = "";
+        NumberUtils.stringToInt(string1);
+        int int2 = 0;
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         String string0 = " f71I9!oAMBoC)8pkBv";
         NumberUtils.createFloat(" f71I9!oAMBoC)8pkBv");
     }
 
     @Test(timeout = 4000)
-    public void test136() throws Throwable {
+    public void test1313() throws Throwable {
         String string0 = "";
         NumberUtils.createBigDecimal("");
     }
 
     @Test(timeout = 4000)
-    public void test147() throws Throwable {
+    public void test1414() throws Throwable {
         String string0 = null;
         NumberUtils.createBigInteger((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test158() throws Throwable {
+    public void test1515() throws Throwable {
         int int0 = 1919;
         NumberUtils.maximum(1919, 1, 1919);
         String string0 = "";
@@ -95,7 +173,45 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test219() throws Throwable {
+    public void test1616() throws Throwable {
+        NumberUtils.minimum((-466), 2074, (-5394));
+        NumberUtils.stringToInt("");
+        NumberUtils.createBigDecimal("");
+        double double0 = 361.7;
+        double double1 = 0.0;
+        NumberUtils.compare(double0, double1);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        NumberUtils.minimum(0L, 0L, 0L);
+        NumberUtils.createFloat("aRZ");
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        NumberUtils.minimum((-3510), (-3510), 678);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        NumberUtils.minimum((-667), (-667), 1252);
+        String string0 = null;
+        NumberUtils.stringToInt((String) null, 2);
+        NumberUtils.compare((double) (-667), (double) 2);
+        NumberUtils.createBigDecimal((String) null);
+        int int0 = 3104;
+        NumberUtils.stringToInt(string0, int0);
+        String string1 = "";
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        NumberUtils.createNumber("\"\" is not a valid number.");
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
         long long0 = 168L;
         NumberUtils.maximum((-767L), 168L, 168L);
         String string0 = "MDw.`n~_g|U=[{<D";
@@ -104,7 +220,71 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3010() throws Throwable {
+    public void test2222() throws Throwable {
+        NumberUtils.maximum(241L, 0L, 0L);
+        NumberUtils.createFloat("");
+    }
+
+    @Test(timeout = 4000)
+    public void test2323() throws Throwable {
+        int int0 = (-1);
+        NumberUtils.maximum((-5583), (-1), (-1));
+        String string0 = "F,usHa3wRgun]P&~";
+        NumberUtils.createBigInteger("F,usHa3wRgun]P&~");
+        String string1 = "";
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
+        NumberUtils.stringToInt("", 2515);
+        NumberUtils.maximum((long) 2515, (long) 2515, (-1L));
+        NumberUtils.isNumber("j|c");
+        NumberUtils.maximum(1132, 2515, (-3173));
+        NumberUtils.maximum(0L, (long) 2515, (long) (-3173));
+        NumberUtils.createBigDecimal("");
+        String string0 = "2b|W";
+        int int0 = (-1);
+        NumberUtils.stringToInt(string0, int0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
+        NumberUtils numberUtils0 = new NumberUtils();
+        NumberUtils.createBigInteger("");
+        String string0 = "";
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
+        NumberUtils.isDigits("}p*z.T\"YQp;IDCa");
+        NumberUtils.isDigits("");
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
+        NumberUtils.minimum((-397), (-2065), (-2065));
+        NumberUtils.createBigDecimal("");
+        String string0 = null;
+        NumberUtils.isDigits(string0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2828() throws Throwable {
+        NumberUtils.minimum(0L, 0L, 2222L);
+        NumberUtils.isNumber("");
+        NumberUtils.maximum(0L, 2428L, 0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        NumberUtils.minimum(43, 43, 43);
+        NumberUtils.minimum(0, 43, 43);
+        NumberUtils.stringToInt("TVYGd7CQrF>JH`M#3KC");
+        NumberUtils.createBigInteger((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
         long long0 = 6024L;
         NumberUtils.minimum(6024L, 6024L, 1L);
         int int0 = 68;
@@ -119,7 +299,33 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3311() throws Throwable {
+    public void test3131() throws Throwable {
+        NumberUtils.createNumber((String) null);
+        NumberUtils.isDigits((String) null);
+        NumberUtils.minimum((-81L), (-81L), (-81L));
+        NumberUtils.isNumber((String) null);
+        NumberUtils.compare((double) (-81L), 3958.34361937761);
+        NumberUtils.maximum((-81L), 1L, (-4488L));
+        NumberUtils.isDigits((String) null);
+        NumberUtils.createFloat((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test3232() throws Throwable {
+        int int0 = 2788;
+        int int1 = 100;
+        NumberUtils.minimum(2788, 100, 2788);
+        NumberUtils.maximum(0, 100, 100);
+        NumberUtils.isDigits("fqh^ xd/<EG");
+        NumberUtils.minimum((long) 0, (long) 100, (long) 100);
+        NumberUtils.createDouble("0x");
+        long long0 = 2216L;
+        long long1 = 0L;
+        long long2 = 554L;
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
         NumberUtils.compare((-38.4689), (-38.4689));
         int int0 = NumberUtils.compare((-38.4689), (-3928.3036262));
         NumberUtils.maximum(1, 0, 0);
@@ -131,34 +337,77 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3812() throws Throwable {
+    public void test3434() throws Throwable {
+        float float0 = (-3336.0767F);
+        NumberUtils.compare((-3336.0767F), (-3336.0767F));
+        NumberUtils.createFloat((String) null);
+        double double0 = 0.0;
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        NumberUtils.isNumber("9f.PFI7z-;T#.");
+        NumberUtils.compare((-512.11), (-512.11));
+        NumberUtils.compare(0.0, 0.0);
+        NumberUtils.createLong("");
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        NumberUtils.isNumber("52)8[j/NZF");
+        NumberUtils.createFloat("52)8[j/NZF");
+        String string0 = "&HEK;grpthJx3";
+        NumberUtils.createNumber(string0);
+        String string1 = "XTWFk9nQ%;`";
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
+        double double0 = 750.506679032;
+        NumberUtils.compare(750.506679032, (-1.0));
+        String string0 = null;
+        NumberUtils.createBigDecimal((String) null);
+        String string1 = "wSPL1]%5";
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
         String string0 = null;
         NumberUtils.createInteger((String) null);
     }
 
     @Test(timeout = 4000)
-    public void test3913() throws Throwable {
+    public void test3939() throws Throwable {
         String string0 = " is not a valid number.";
         NumberUtils.isNumber(" is not a valid number.");
         NumberUtils.createDouble(" is not a valid number.");
     }
 
     @Test(timeout = 4000)
-    public void test4114() throws Throwable {
+    public void test4040() throws Throwable {
+        NumberUtils.compare((-1759.39F), 1718.882F);
+        String string0 = "";
+        NumberUtils.createLong("");
+        NumberUtils.createDouble(string0);
+        String string1 = "v4XxU8!2b[";
+    }
+
+    @Test(timeout = 4000)
+    public void test4141() throws Throwable {
         String string0 = "0x";
         NumberUtils.isNumber("0x");
         NumberUtils.createBigDecimal("0x");
     }
 
     @Test(timeout = 4000)
-    public void test4215() throws Throwable {
+    public void test4242() throws Throwable {
         NumberUtils.createNumber("=~S~Le");
         NumberUtils numberUtils0 = null;
         numberUtils0 = new NumberUtils();
     }
 
     @Test(timeout = 4000)
-    public void test4316() throws Throwable {
+    public void test4343() throws Throwable {
         int int0 = (-5222);
         NumberUtils.maximum((-5222), (-5222), (-5222));
         NumberUtils.maximum((long) (-5222), 0L, 0L);
@@ -168,7 +417,39 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4717() throws Throwable {
+    public void test4444() throws Throwable {
+        int int0 = 1;
+        NumberUtils.maximum(0, 0, 1);
+        String string0 = "\"\" is not a valid number.";
+        NumberUtils.createBigDecimal("\"\" is not a valid number.");
+        int int1 = 412;
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
+        String string0 = "6";
+        NumberUtils.isDigits("6");
+        String string1 = "[?>F1M/!Ax'";
+        NumberUtils.stringToInt("[?>F1M/!Ax'", 0);
+        NumberUtils numberUtils0 = new NumberUtils();
+        NumberUtils.createInteger("[?>F1M/!Ax'");
+        String string2 = "";
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
+        NumberUtils.compare(1258.5579753887, (-1.0));
+        NumberUtils.stringToInt("?9[ D3(7Zr!~cfS", (-2558));
+        NumberUtils.createDouble("1");
+        NumberUtils.maximum((long) (-2558), (long) (-2558), (-2293L));
+        NumberUtils numberUtils0 = new NumberUtils();
+        NumberUtils.isNumber("");
+        NumberUtils.compare((double) (-2558), 1.0);
+        NumberUtils.createNumber("1.Ly");
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
         String string0 = "-0x6D(CP2dt";
         NumberUtils.isNumber("-0x6D(CP2dt");
         NumberUtils.createLong((String) null);
@@ -176,7 +457,7 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4818() throws Throwable {
+    public void test4848() throws Throwable {
         NumberUtils.compare((-1.0F), (-1.0F));
         NumberUtils.stringToInt("pE|&");
         String string0 = "...";
@@ -186,5 +467,11 @@ public class NumberUtils_ESTest extends NumberUtils_ESTest_scaffolding {
         NumberUtils.createBigInteger(string0);
         String string1 = " \t\r\n\b";
         NumberUtils.createBigInteger(string1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4949() throws Throwable {
+        NumberUtils.compare((-512.11), (-667.0));
+        NumberUtils.createNumber("Search and Replace array lengths don't match: ");
     }
 }

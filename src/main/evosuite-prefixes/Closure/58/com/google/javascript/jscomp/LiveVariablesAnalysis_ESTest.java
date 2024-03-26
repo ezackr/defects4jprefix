@@ -49,7 +49,20 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test032() throws Throwable {
+    public void test022() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        ControlFlowGraph.Branch controlFlowGraph_Branch0 = ControlFlowGraph.Branch.ON_EX;
+        controlFlowGraph0.connectToImplicitReturn(node0, controlFlowGraph_Branch0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node0, (Scope) null);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        liveVariablesAnalysis0.analyze(5);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -61,7 +74,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test043() throws Throwable {
+    public void test044() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, true);
@@ -73,7 +86,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, false, false);
@@ -85,7 +98,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "}A=P@Yq[Qhyj", "}A=P@Yq[Qhyj");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -97,7 +110,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "g5xD3>UE?$(/^Ayc{\"o", "g5xD3>UE?$(/^Ayc{\"o");
         ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
@@ -109,7 +122,20 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test088() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "g5xD3>UE?$(/^Ayc{\"o", "g5xD3>UE?$(/^Ayc{\"o");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        ControlFlowGraph.Branch controlFlowGraph_Branch0 = ControlFlowGraph.Branch.ON_FALSE;
+        controlFlowGraph0.connect(node0, controlFlowGraph_Branch0, node0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node0, (Scope) null);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        liveVariablesAnalysis0.analyze(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("R", "R");
         Node node1 = Node.newString(118, "R");
@@ -122,7 +148,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("eJp {+KUEi:~ !9q=Xw,", "eJp {+KUEi:~ !9q=Xw,");
         Node node1 = Node.newString(98, "eJp {+KUEi:~ !9q=Xw,");
@@ -134,7 +160,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ")Gg8=cacX>>r|gD", ")Gg8=cacX>>r|gD");
         Node node1 = Node.newString(100, "Should be unreachable.");
@@ -146,7 +172,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "%", "%");
         Node node1 = Node.newString(101, "%");
@@ -158,7 +184,19 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1313() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = compiler0.parseSyntheticCode("ep {+KEi:~ !q=Xw9", "ep {+KEi:~ !q=Xw9");
+        Node node1 = Node.newString(105, "ep {+KEi:~ !q=Xw9");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node0, (Scope) null);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        liveVariablesAnalysis0.analyze(14);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         Node node0 = Node.newString(108, "");
@@ -170,7 +208,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "%", "%");
         Node node1 = Node.newString(113, "%");
@@ -182,7 +220,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1616() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "U.Pv<", "U.Pv<");
         Node node0 = Node.newString(114, "U.Pv<");
@@ -194,7 +232,7 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1714() throws Throwable {
+    public void test1717() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscmp.LiveVaiabesAnalysis$LiveVariableJoinOp", "com.google.javascript.jscmp.LiveVaiabesAnalysis$LiveVariableJoinOp");
         Node node1 = Node.newString(115, "com.google.javascript.jscmp.LiveVaiabesAnalysis$LiveVariableJoinOp");
@@ -206,7 +244,45 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2115() throws Throwable {
+    public void test1818() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Normalize.parseAndNormalizeTestCode(compiler0, "R", "R");
+        Node node0 = Node.newString(125, "9TS[fA;KO;9<kLRW");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node0, (Scope) null);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        liveVariablesAnalysis0.analyze(1024);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
+        Node node1 = Node.newString(118, "");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node1, (Scope) null);
+        node1.addChildrenToFront(node0);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        liveVariablesAnalysis0.analyze(20);
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "`", "`");
+        Node node1 = Node.newString(97, "`");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node1, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node1, (Scope) null);
+        node1.addChildrenToFront(node0);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        liveVariablesAnalysis0.analyze(19);
+    }
+
+    @Test(timeout = 4000)
+    public void test2121() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("R", "R");
         Node node1 = Node.newString(118, "R");
@@ -217,5 +293,17 @@ public class LiveVariablesAnalysis_ESTest extends LiveVariablesAnalysis_ESTest_s
         node1.addChildrenToFront(node0);
         LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
         liveVariablesAnalysis0.analyze(32);
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "OBJECT_NUMBER_STRING_BOOLEAN", "OBJECT_NUMBER_STRING_BOOLEAN");
+        ControlFlowGraph<Node> controlFlowGraph0 = new ControlFlowGraph<Node>(node0, true, true);
+        SyntacticScopeCreator syntacticScopeCreator0 = new SyntacticScopeCreator(compiler0);
+        Scope scope0 = syntacticScopeCreator0.createScope(node0, (Scope) null);
+        LiveVariablesAnalysis liveVariablesAnalysis0 = new LiveVariablesAnalysis(controlFlowGraph0, scope0, compiler0);
+        node0.addChildrenToFront(node0);
+        liveVariablesAnalysis0.markAllParametersEscaped();
     }
 }

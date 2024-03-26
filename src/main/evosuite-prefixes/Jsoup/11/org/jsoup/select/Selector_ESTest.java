@@ -43,7 +43,28 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test022() throws Throwable {
+        Document document0 = Document.createShell(":matches(regex) query must not be empty");
+        document0.appendChild(document0);
+        // Undeclared exception!
+        Selector.select(":matches(regex) query must not be empty", (Element) document0);
+    }
+
+    @Test(timeout = 4000)
+    public void test033() throws Throwable {
+        Comparator<Element> comparator0 = (Comparator<Element>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        doReturn(0).when(comparator0).compare(any(org.jsoup.nodes.Element.class), any(org.jsoup.nodes.Element.class));
+        TreeSet<Element> treeSet0 = new TreeSet<Element>(comparator0);
+        Tag tag0 = Tag.valueOf("B^");
+        Element element0 = new Element(tag0, "B^");
+        Element element1 = element0.prependChild(element0);
+        treeSet0.add(element1);
+        // Undeclared exception!
+        Selector.select("org.jsoup.select.Selector$SelectorParseException", (Iterable<Element>) treeSet0);
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
         Document document0 = Document.createShell("9");
         PriorityQueue<Element> priorityQueue0 = new PriorityQueue<Element>();
         priorityQueue0.add(document0);
@@ -51,55 +72,60 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test055() throws Throwable {
         Document document0 = Document.createShell("");
         Elements elements0 = document0.getElementsByAttributeValueMatching("", "");
         Selector.select("", (Iterable<Element>) elements0);
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test066() throws Throwable {
         Document document0 = Document.createShell("#document");
         Elements elements0 = Selector.select("#document", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test077() throws Throwable {
+        Selector.SelectorParseException selector_SelectorParseException0 = new Selector.SelectorParseException("a E!VIPqv^n? *", (Object[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         Document document0 = new Document("a E!VIPqv^n? *");
         Elements elements0 = Selector.select("DI+9", (Element) document0);
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test099() throws Throwable {
         Document document0 = Document.createShell("~NJ|Fun");
         Elements elements0 = Selector.select("~NJ|Fun", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1010() throws Throwable {
         Document document0 = Document.createShell(":matchesOwn(");
         Selector.select(":matchesOwn(", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test118() throws Throwable {
+    public void test1111() throws Throwable {
         Document document0 = Document.createShell(":matches(regex) query must not be empty");
         Elements elements0 = Selector.select(":matches(regex) query must not be empty", (Element) document0);
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test129() throws Throwable {
+    public void test1212() throws Throwable {
         Document document0 = Document.createShell("9");
         Elements elements0 = Selector.select(":contains(text) query must not be empty", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test1310() throws Throwable {
+    public void test1313() throws Throwable {
         Stack<Element> stack0 = new Stack<Element>();
         Tag tag0 = Tag.valueOf("G[;'e\"9(GQMW*");
         Attributes attributes0 = new Attributes();
@@ -110,52 +136,52 @@ public class Selector_ESTest extends Selector_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1411() throws Throwable {
+    public void test1414() throws Throwable {
         Document document0 = new Document("7>O.?=f~#_ ?g");
         Elements elements0 = Selector.select("7>O.?=f~#_ ?g", (Element) document0);
         elements0.isEmpty();
     }
 
     @Test(timeout = 4000)
-    public void test1512() throws Throwable {
+    public void test1515() throws Throwable {
         Document document0 = Document.createShell(":contains(text) query must not be empty");
         Selector.select(",", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1616() throws Throwable {
         Document document0 = Document.createShell("");
         Selector.select(":gt(", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test1714() throws Throwable {
+    public void test1717() throws Throwable {
         Document document0 = new Document(":lt(");
         Selector.select(":lt(", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test1815() throws Throwable {
+    public void test1818() throws Throwable {
         Document document0 = Document.createShell(";p%NHpo40W+k;$J4L");
         Elements elements0 = Selector.select(":has(el) subselect must not be empty", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test1916() throws Throwable {
+    public void test1919() throws Throwable {
         Document document0 = Document.createShell("#document");
         Elements elements0 = Selector.select("e-*4,Zz", (Element) document0);
         elements0.size();
     }
 
     @Test(timeout = 4000)
-    public void test2017() throws Throwable {
+    public void test2020() throws Throwable {
         Document document0 = Document.createShell("k[z3~.y6V@Ai4");
         Selector.select(":eq(", (Element) document0);
     }
 
     @Test(timeout = 4000)
-    public void test2118() throws Throwable {
+    public void test2121() throws Throwable {
         Comparator<Element> comparator0 = (Comparator<Element>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(comparator0).compare(any(org.jsoup.nodes.Element.class), any(org.jsoup.nodes.Element.class));
         TreeSet<Element> treeSet0 = new TreeSet<Element>(comparator0);

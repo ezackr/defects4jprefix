@@ -424,7 +424,22 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1441() throws Throwable {
+    public void test1341() throws Throwable {
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
+        EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
+        double[] doubleArray0 = new double[6];
+        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
+        eventState0.evaluateStep(dummyStepInterpolator0);
+        dummyStepInterpolator0.storeTime(0.0);
+        eventState0.reset(0.0, doubleArray0);
+        eventState0.stepAccepted(2146763342, doubleArray0);
+        // Undeclared exception!
+        eventState0.evaluateStep(dummyStepInterpolator0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1442() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn((-748.584), 1.0, (-748.584)).when(eventHandler0).g(anyDouble(), any(double[].class));
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
@@ -442,7 +457,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1542() throws Throwable {
+    public void test1543() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2880.083445), 0.0, 2655);
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator();
@@ -458,24 +473,12 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1643() throws Throwable {
-        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn(2146763342, 2).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
-        doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
-        EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
-        assertEquals(3, eventState0.getMaxIterationCount());
-    }
-
-    @Test(timeout = 4000)
     public void test1644() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(2146763342, 2).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
         doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
         EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
-        double[] doubleArray0 = new double[6];
-        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
-        eventState0.evaluateStep(dummyStepInterpolator0);
-        assertFalse(eventState0.stop());
+        assertEquals(3, eventState0.getMaxIterationCount());
     }
 
     @Test(timeout = 4000)
@@ -487,10 +490,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         double[] doubleArray0 = new double[6];
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
         eventState0.evaluateStep(dummyStepInterpolator0);
-        eventState0.stepAccepted((-4390.858), doubleArray0);
-        eventState0.stepAccepted((-1.0), doubleArray0);
-        boolean boolean0 = eventState0.reset(0.0, doubleArray0);
-        assertTrue(boolean0);
+        assertFalse(eventState0.stop());
     }
 
     @Test(timeout = 4000)
@@ -505,16 +505,22 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.stepAccepted((-4390.858), doubleArray0);
         eventState0.stepAccepted((-1.0), doubleArray0);
         boolean boolean0 = eventState0.reset(0.0, doubleArray0);
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test1747() throws Throwable {
+    public void test1647() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn(2146763342, 2).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
+        doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
         EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
         double[] doubleArray0 = new double[6];
+        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
+        eventState0.evaluateStep(dummyStepInterpolator0);
+        eventState0.stepAccepted((-4390.858), doubleArray0);
+        eventState0.stepAccepted((-1.0), doubleArray0);
         boolean boolean0 = eventState0.reset(0.0, doubleArray0);
-        assertFalse(boolean0);
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -523,7 +529,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
         double[] doubleArray0 = new double[6];
         boolean boolean0 = eventState0.reset(0.0, doubleArray0);
-        assertFalse(eventState0.stop());
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -532,7 +538,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
         double[] doubleArray0 = new double[6];
         boolean boolean0 = eventState0.reset(0.0, doubleArray0);
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        assertFalse(eventState0.stop());
     }
 
     @Test(timeout = 4000)
@@ -541,11 +547,20 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
         double[] doubleArray0 = new double[6];
         boolean boolean0 = eventState0.reset(0.0, doubleArray0);
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test1751() throws Throwable {
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
+        double[] doubleArray0 = new double[6];
+        boolean boolean0 = eventState0.reset(0.0, doubleArray0);
         assertEquals(3, eventState0.getMaxIterationCount());
     }
 
     @Test(timeout = 4000)
-    public void test1851() throws Throwable {
+    public void test1852() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(2146763341, 0).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
         doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
@@ -560,7 +575,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1952() throws Throwable {
+    public void test1953() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
         boolean boolean0 = eventState0.stop();
@@ -568,7 +583,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1953() throws Throwable {
+    public void test1954() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
         boolean boolean0 = eventState0.stop();
@@ -576,7 +591,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1954() throws Throwable {
+    public void test1955() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
         boolean boolean0 = eventState0.stop();
@@ -584,7 +599,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1955() throws Throwable {
+    public void test1956() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
         boolean boolean0 = eventState0.stop();
@@ -592,7 +607,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2056() throws Throwable {
+    public void test2057() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn((-1619)).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
         doReturn(13.1043514962, Double.NaN, 25.486786159349, Double.NaN, 2656.17622683).when(eventHandler0).g(anyDouble(), any(double[].class));
@@ -603,21 +618,6 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.evaluateStep(dummyStepInterpolator0);
         eventState0.stepAccepted(1146.3058360164546, doubleArray0);
         assertEquals(25.486786159349, eventState0.getEventTime(), 0.01);
-    }
-
-    @Test(timeout = 4000)
-    public void test2157() throws Throwable {
-        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn(2146763342).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
-        doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
-        EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
-        double[] doubleArray0 = new double[6];
-        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
-        eventState0.evaluateStep(dummyStepInterpolator0);
-        dummyStepInterpolator0.storeTime(1.0E-14);
-        eventState0.stepAccepted(1.0, doubleArray0);
-        boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertEquals(1.0, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -632,21 +632,22 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         dummyStepInterpolator0.storeTime(1.0E-14);
         eventState0.stepAccepted(1.0, doubleArray0);
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertFalse(boolean0);
+        assertEquals(1.0, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2259() throws Throwable {
+    public void test2159() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(2146763342).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
         doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
-        EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
+        EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
         double[] doubleArray0 = new double[6];
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
         eventState0.evaluateStep(dummyStepInterpolator0);
-        eventState0.stepAccepted((-4390.858), doubleArray0);
+        dummyStepInterpolator0.storeTime(1.0E-14);
+        eventState0.stepAccepted(1.0, doubleArray0);
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertEquals((-4390.858), dummyStepInterpolator0.getInterpolatedTime(), 0.01);
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -660,22 +661,21 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.evaluateStep(dummyStepInterpolator0);
         eventState0.stepAccepted((-4390.858), doubleArray0);
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertFalse(boolean0);
+        assertEquals((-4390.858), dummyStepInterpolator0.getInterpolatedTime(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2361() throws Throwable {
+    public void test2261() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn(2146763341).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
+        doReturn(2146763342).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
         doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
-        EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
+        EventState eventState0 = new EventState(eventHandler0, Double.NaN, Double.NaN, 3);
         double[] doubleArray0 = new double[6];
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
         eventState0.evaluateStep(dummyStepInterpolator0);
-        dummyStepInterpolator0.storeTime(4.891109038513414);
-        eventState0.stepAccepted((-1.0), doubleArray0);
+        eventState0.stepAccepted((-4390.858), doubleArray0);
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertEquals(1.9274060256756091, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
+        assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -690,20 +690,22 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         dummyStepInterpolator0.storeTime(4.891109038513414);
         eventState0.stepAccepted((-1.0), doubleArray0);
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertTrue(boolean0);
+        assertEquals(1.9274060256756091, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2463() throws Throwable {
+    public void test2363() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn((-748.584), 1.0, (-748.584), 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
-        EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
+        doReturn(2146763341).when(eventHandler0).eventOccurred(anyDouble(), any(double[].class), anyBoolean());
+        doReturn((-1863.0), 1.0, (-1863.0), 1.0, 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
+        EventState eventState0 = new EventState(eventHandler0, 1.0, 1.0, 1589);
         double[] doubleArray0 = new double[6];
-        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, true);
-        eventState0.stepAccepted((-619.85245), doubleArray0);
-        dummyStepInterpolator0.storeTime((-619.85245));
+        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
+        eventState0.evaluateStep(dummyStepInterpolator0);
+        dummyStepInterpolator0.storeTime(4.891109038513414);
+        eventState0.stepAccepted((-1.0), doubleArray0);
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertEquals(Double.POSITIVE_INFINITY, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -716,20 +718,20 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.stepAccepted((-619.85245), doubleArray0);
         dummyStepInterpolator0.storeTime((-619.85245));
         boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
-        assertTrue(boolean0);
+        assertEquals(Double.POSITIVE_INFINITY, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2565() throws Throwable {
+    public void test2465() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn(Double.NEGATIVE_INFINITY, 2840.0, 2840.0, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY).when(eventHandler0).g(anyDouble(), any(double[].class));
-        EventState eventState0 = new EventState(eventHandler0, (-2099.0), Double.NEGATIVE_INFINITY, 1211);
-        double[] doubleArray0 = new double[2];
-        eventState0.reinitializeBegin(Double.NaN, doubleArray0);
-        eventState0.reinitializeBegin(1211.0, doubleArray0);
-        eventState0.stepAccepted(Double.NEGATIVE_INFINITY, doubleArray0);
-        eventState0.reinitializeBegin(1211, doubleArray0);
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        doReturn((-748.584), 1.0, (-748.584), 0.0).when(eventHandler0).g(anyDouble(), any(double[].class));
+        EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
+        double[] doubleArray0 = new double[6];
+        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, true);
+        eventState0.stepAccepted((-619.85245), doubleArray0);
+        dummyStepInterpolator0.storeTime((-619.85245));
+        boolean boolean0 = eventState0.evaluateStep(dummyStepInterpolator0);
+        assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
@@ -742,9 +744,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.reinitializeBegin(1211.0, doubleArray0);
         eventState0.stepAccepted(Double.NEGATIVE_INFINITY, doubleArray0);
         eventState0.reinitializeBegin(1211, doubleArray0);
-        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
-        eventState0.evaluateStep(dummyStepInterpolator0);
-        assertEquals(1211, eventState0.getMaxIterationCount());
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -759,7 +759,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.reinitializeBegin(1211, doubleArray0);
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
         eventState0.evaluateStep(dummyStepInterpolator0);
-        assertFalse(eventState0.stop());
+        assertEquals(1211, eventState0.getMaxIterationCount());
     }
 
     @Test(timeout = 4000)
@@ -774,7 +774,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.reinitializeBegin(1211, doubleArray0);
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
         eventState0.evaluateStep(dummyStepInterpolator0);
-        assertEquals(Double.NaN, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
+        assertFalse(eventState0.stop());
     }
 
     @Test(timeout = 4000)
@@ -789,11 +789,26 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         eventState0.reinitializeBegin(1211, doubleArray0);
         DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
         eventState0.evaluateStep(dummyStepInterpolator0);
+        assertEquals(Double.NaN, dummyStepInterpolator0.getInterpolatedTime(), 0.01);
+    }
+
+    @Test(timeout = 4000)
+    public void test2570() throws Throwable {
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn(Double.NEGATIVE_INFINITY, 2840.0, 2840.0, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY).when(eventHandler0).g(anyDouble(), any(double[].class));
+        EventState eventState0 = new EventState(eventHandler0, (-2099.0), Double.NEGATIVE_INFINITY, 1211);
+        double[] doubleArray0 = new double[2];
+        eventState0.reinitializeBegin(Double.NaN, doubleArray0);
+        eventState0.reinitializeBegin(1211.0, doubleArray0);
+        eventState0.stepAccepted(Double.NEGATIVE_INFINITY, doubleArray0);
+        eventState0.reinitializeBegin(1211, doubleArray0);
+        DummyStepInterpolator dummyStepInterpolator0 = new DummyStepInterpolator(doubleArray0, false);
+        eventState0.evaluateStep(dummyStepInterpolator0);
         assertEquals((-2099.0), eventState0.getMaxCheckInterval(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2670() throws Throwable {
+    public void test2671() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(Double.NEGATIVE_INFINITY, 2840.0, 2840.0).when(eventHandler0).g(anyDouble(), any(double[].class));
         EventState eventState0 = new EventState(eventHandler0, (-2099.0), Double.NEGATIVE_INFINITY, 1211);
@@ -812,7 +827,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2771() throws Throwable {
+    public void test2772() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getConvergence();
@@ -820,19 +835,11 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2772() throws Throwable {
-        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
-        double double0 = eventState0.getConvergence();
-        assertEquals(0, eventState0.getMaxIterationCount());
-    }
-
-    @Test(timeout = 4000)
     public void test2773() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getConvergence();
-        assertEquals((-2637.9), eventState0.getMaxCheckInterval(), 0.01);
+        assertEquals(0, eventState0.getMaxIterationCount());
     }
 
     @Test(timeout = 4000)
@@ -840,7 +847,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getConvergence();
-        assertFalse(eventState0.stop());
+        assertEquals((-2637.9), eventState0.getMaxCheckInterval(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -848,15 +855,15 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getConvergence();
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        assertFalse(eventState0.stop());
     }
 
     @Test(timeout = 4000)
-    public void test2876() throws Throwable {
+    public void test2776() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
-        double double0 = eventState0.getMaxCheckInterval();
-        assertEquals((-2637.9), double0, 0.01);
+        double double0 = eventState0.getConvergence();
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -864,7 +871,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getMaxCheckInterval();
-        assertFalse(eventState0.stop());
+        assertEquals((-2637.9), double0, 0.01);
     }
 
     @Test(timeout = 4000)
@@ -872,7 +879,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getMaxCheckInterval();
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        assertFalse(eventState0.stop());
     }
 
     @Test(timeout = 4000)
@@ -880,7 +887,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getMaxCheckInterval();
-        assertEquals(Double.POSITIVE_INFINITY, eventState0.getConvergence(), 0.01);
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -888,15 +895,15 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         double double0 = eventState0.getMaxCheckInterval();
-        assertEquals(0, eventState0.getMaxIterationCount());
+        assertEquals(Double.POSITIVE_INFINITY, eventState0.getConvergence(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test2981() throws Throwable {
+    public void test2881() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
-        int int0 = eventState0.getMaxIterationCount();
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        double double0 = eventState0.getMaxCheckInterval();
+        assertEquals(0, eventState0.getMaxIterationCount());
     }
 
     @Test(timeout = 4000)
@@ -904,7 +911,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         int int0 = eventState0.getMaxIterationCount();
-        assertEquals(0, int0);
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -912,7 +919,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         int int0 = eventState0.getMaxIterationCount();
-        assertEquals((-2637.9), eventState0.getMaxCheckInterval(), 0.01);
+        assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
@@ -920,7 +927,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         int int0 = eventState0.getMaxIterationCount();
-        assertFalse(eventState0.stop());
+        assertEquals((-2637.9), eventState0.getMaxCheckInterval(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -928,16 +935,15 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
         int int0 = eventState0.getMaxIterationCount();
-        assertEquals(Double.POSITIVE_INFINITY, eventState0.getConvergence(), 0.01);
+        assertFalse(eventState0.stop());
     }
 
     @Test(timeout = 4000)
-    public void test3086() throws Throwable {
+    public void test2986() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
-        doReturn("7RA#IlJ9-4poj4/6G]").when(eventHandler0).toString();
-        EventState eventState0 = new EventState(eventHandler0, (-1619), (-1619), (-1925));
-        eventState0.getEventHandler();
-        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
+        EventState eventState0 = new EventState(eventHandler0, (-2637.9), Double.NEGATIVE_INFINITY, 0);
+        int int0 = eventState0.getMaxIterationCount();
+        assertEquals(Double.POSITIVE_INFINITY, eventState0.getConvergence(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -946,7 +952,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         doReturn("7RA#IlJ9-4poj4/6G]").when(eventHandler0).toString();
         EventState eventState0 = new EventState(eventHandler0, (-1619), (-1619), (-1925));
         eventState0.getEventHandler();
-        assertEquals((-1925), eventState0.getMaxIterationCount());
+        assertEquals(Double.NaN, eventState0.getEventTime(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -955,7 +961,7 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         doReturn("7RA#IlJ9-4poj4/6G]").when(eventHandler0).toString();
         EventState eventState0 = new EventState(eventHandler0, (-1619), (-1619), (-1925));
         eventState0.getEventHandler();
-        assertFalse(eventState0.stop());
+        assertEquals((-1925), eventState0.getMaxIterationCount());
     }
 
     @Test(timeout = 4000)
@@ -964,11 +970,20 @@ public class EventState_ESTest extends EventState_ESTest_scaffolding {
         doReturn("7RA#IlJ9-4poj4/6G]").when(eventHandler0).toString();
         EventState eventState0 = new EventState(eventHandler0, (-1619), (-1619), (-1925));
         eventState0.getEventHandler();
+        assertFalse(eventState0.stop());
+    }
+
+    @Test(timeout = 4000)
+    public void test3090() throws Throwable {
+        EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
+        doReturn("7RA#IlJ9-4poj4/6G]").when(eventHandler0).toString();
+        EventState eventState0 = new EventState(eventHandler0, (-1619), (-1619), (-1925));
+        eventState0.getEventHandler();
         assertEquals((-1619.0), eventState0.getMaxCheckInterval(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test3190() throws Throwable {
+    public void test3191() throws Throwable {
         EventHandler eventHandler0 = mock(EventHandler.class, new ViolatedAssumptionAnswer());
         doReturn(13.1043514962, Double.NaN, 25.486786159349, Double.NaN).when(eventHandler0).g(anyDouble(), any(double[].class));
         EventState eventState0 = new EventState(eventHandler0, (-1619), (-1619), (-1925));

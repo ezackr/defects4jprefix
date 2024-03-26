@@ -84,7 +84,36 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test075() throws Throwable {
+    public void test045() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(1249.2, 1249.2);
+        Ceil ceil0 = new Ceil();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        brentOptimizer0.optimize(2145249207, (UnivariateFunction) ceil0, goalType0, 1249.2, (-1.8740018211089393E288), (double) 2145249207);
+        brentOptimizer0.doOptimize();
+        brentOptimizer0.doOptimize();
+        // Undeclared exception!
+        brentOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(3038.8573290628333, 3038.8573290628333);
+        HarmonicOscillator harmonicOscillator0 = new HarmonicOscillator((-2153.3921348511344), 2918, 3038.8573290628333);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        brentOptimizer0.optimize(2144511069, (UnivariateFunction) harmonicOscillator0, goalType0, (-508.0), (-7.049068240916723E166), (double) 2144511069);
+    }
+
+    @Test(timeout = 4000)
+    public void test067() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(1.0, 1.0);
+        Abs abs0 = new Abs();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        brentOptimizer0.optimize(17, (UnivariateFunction) abs0, goalType0, 2654.49, 549.35120909645, 1.0);
+        brentOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test078() throws Throwable {
         ConvergenceChecker<UnivariatePointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariatePointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
         BrentOptimizer brentOptimizer0 = null;
         try {
@@ -99,7 +128,12 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096() throws Throwable {
+    public void test089() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(0.9808930158615112, 0.9808930158615112, (ConvergenceChecker<UnivariatePointValuePair>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test0910() throws Throwable {
         ConvergenceChecker<UnivariatePointValuePair> convergenceChecker0 = (ConvergenceChecker<UnivariatePointValuePair>) mock(ConvergenceChecker.class, new ViolatedAssumptionAnswer());
         BrentOptimizer brentOptimizer0 = null;
         try {
@@ -114,7 +148,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107() throws Throwable {
+    public void test1011() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer(1.0, 1.0);
         // Undeclared exception!
         try {
@@ -126,5 +160,22 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
             //
             verifyException("org.apache.commons.math3.optimization.univariate.BaseAbstractUnivariateOptimizer", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test1112() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(1881.1, 3.0);
+        Cbrt cbrt0 = new Cbrt();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        brentOptimizer0.optimize(42, (UnivariateFunction) cbrt0, goalType0, 5.0, (double) 0, (double) 0);
+        brentOptimizer0.doOptimize();
+    }
+
+    @Test(timeout = 4000)
+    public void test1213() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(3052.9454376443, 3052.9454376443);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        Acos acos0 = new Acos();
+        brentOptimizer0.optimize(2944, (UnivariateFunction) acos0, goalType0, 3.1780704338483322E165, (-1451.669414), 1445.23141598);
     }
 }

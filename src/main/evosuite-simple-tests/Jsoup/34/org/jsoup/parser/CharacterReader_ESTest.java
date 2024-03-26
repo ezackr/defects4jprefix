@@ -1557,4 +1557,16 @@ public class CharacterReader_ESTest extends CharacterReader_ESTest_scaffolding {
         } catch (StringIndexOutOfBoundsException e) {
         }
     }
+
+    @Test(timeout = 4000)
+    public void test118158() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        characterReader0.mark();
+    }
+
+    @Test(timeout = 4000)
+    public void test119159() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("");
+        characterReader0.rewindToMark();
+    }
 }

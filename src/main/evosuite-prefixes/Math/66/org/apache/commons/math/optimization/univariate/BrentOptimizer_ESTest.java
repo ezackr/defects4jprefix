@@ -111,7 +111,25 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
+    public void test079() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer();
+        double[] doubleArray0 = new double[8];
+        brentOptimizer0.setMaximalIterationCount(2547);
+        doubleArray0[1] = (-3656.405725);
+        doubleArray0[2] = 1.0E-14;
+        doubleArray0[3] = (-1274.250662265888);
+        doubleArray0[4] = (-1734.05);
+        doubleArray0[5] = 731.6591591721103;
+        doubleArray0[6] = Double.POSITIVE_INFINITY;
+        doubleArray0[7] = (-3133.241054);
+        PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunctionLagrangeForm0, goalType0, (-1274.250662265888), Double.POSITIVE_INFINITY, 16.88489091);
+    }
+
+    @Test(timeout = 4000)
+    public void test0810() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         brentOptimizer0.setMaxEvaluations(0);
         GoalType goalType0 = GoalType.MAXIMIZE;
@@ -119,7 +137,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0910() throws Throwable {
+    public void test0911() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[3];
         doubleArray0[0] = (-1172.8104503318166);
@@ -131,14 +149,14 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1012() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         GoalType goalType0 = GoalType.MAXIMIZE;
         brentOptimizer0.optimize((UnivariateRealFunction) null, goalType0, 0.0, 3.0, 0.0);
     }
 
     @Test(timeout = 4000)
-    public void test1112() throws Throwable {
+    public void test1113() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         GoalType goalType0 = GoalType.MINIMIZE;
         brentOptimizer0.setMaxEvaluations(0);
@@ -146,7 +164,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1213() throws Throwable {
+    public void test1214() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[2];
         brentOptimizer0.resetMaximalIterationCount();
@@ -154,19 +172,6 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         PolynomialFunctionLagrangeForm polynomialFunctionLagrangeForm0 = new PolynomialFunctionLagrangeForm(doubleArray0, doubleArray0);
         GoalType goalType0 = GoalType.MINIMIZE;
         brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunctionLagrangeForm0, goalType0, (-1219.81998077402), (-3308.29));
-    }
-
-    @Test(timeout = 4000)
-    public void test1314() throws Throwable {
-        BrentOptimizer brentOptimizer0 = new BrentOptimizer();
-        double[] doubleArray0 = new double[8];
-        doubleArray0[4] = 3650.0;
-        doubleArray0[6] = (-1628.9462);
-        doubleArray0[7] = 1.0;
-        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        GoalType goalType0 = GoalType.MAXIMIZE;
-        double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 0.0, (-2953.8713042624));
-        brentOptimizer0.getEvaluations();
     }
 
     @Test(timeout = 4000)
@@ -179,20 +184,19 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         GoalType goalType0 = GoalType.MAXIMIZE;
         double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 0.0, (-2953.8713042624));
+        brentOptimizer0.getEvaluations();
     }
 
     @Test(timeout = 4000)
-    public void test1416() throws Throwable {
+    public void test1316() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[8];
         doubleArray0[4] = 3650.0;
         doubleArray0[6] = (-1628.9462);
         doubleArray0[7] = 1.0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
         GoalType goalType0 = GoalType.MAXIMIZE;
-        double double0 = brentOptimizer0.optimize(univariateRealFunction0, goalType0, 3650.0, 1.0, 0.0);
-        brentOptimizer0.getIterationCount();
+        double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 0.0, (-2953.8713042624));
     }
 
     @Test(timeout = 4000)
@@ -206,19 +210,20 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
         GoalType goalType0 = GoalType.MAXIMIZE;
         double double0 = brentOptimizer0.optimize(univariateRealFunction0, goalType0, 3650.0, 1.0, 0.0);
+        brentOptimizer0.getIterationCount();
     }
 
     @Test(timeout = 4000)
-    public void test1518() throws Throwable {
+    public void test1418() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[8];
         doubleArray0[4] = 3650.0;
+        doubleArray0[6] = (-1628.9462);
         doubleArray0[7] = 1.0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
-        GoalType goalType0 = GoalType.MINIMIZE;
-        double double0 = brentOptimizer0.optimize(univariateRealFunction0, goalType0, 0.0, 0.0, (-2953.8713042624));
-        brentOptimizer0.getIterationCount();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        double double0 = brentOptimizer0.optimize(univariateRealFunction0, goalType0, 3650.0, 1.0, 0.0);
     }
 
     @Test(timeout = 4000)
@@ -231,17 +236,19 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
         GoalType goalType0 = GoalType.MINIMIZE;
         double double0 = brentOptimizer0.optimize(univariateRealFunction0, goalType0, 0.0, 0.0, (-2953.8713042624));
+        brentOptimizer0.getIterationCount();
     }
 
     @Test(timeout = 4000)
-    public void test1620() throws Throwable {
+    public void test1520() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[8];
-        doubleArray0[6] = (-1628.9462);
+        doubleArray0[4] = 3650.0;
+        doubleArray0[7] = 1.0;
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
-        GoalType goalType0 = GoalType.MAXIMIZE;
-        double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 3650.0, 1.0, 0.0);
-        brentOptimizer0.getIterationCount();
+        UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        double double0 = brentOptimizer0.optimize(univariateRealFunction0, goalType0, 0.0, 0.0, (-2953.8713042624));
     }
 
     @Test(timeout = 4000)
@@ -252,16 +259,17 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         GoalType goalType0 = GoalType.MAXIMIZE;
         double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 3650.0, 1.0, 0.0);
+        brentOptimizer0.getIterationCount();
     }
 
     @Test(timeout = 4000)
-    public void test1722() throws Throwable {
+    public void test1622() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[8];
+        doubleArray0[6] = (-1628.9462);
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         GoalType goalType0 = GoalType.MAXIMIZE;
-        double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 0.0);
-        brentOptimizer0.getEvaluations();
+        double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 3650.0, 1.0, 0.0);
     }
 
     @Test(timeout = 4000)
@@ -271,17 +279,27 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
         GoalType goalType0 = GoalType.MAXIMIZE;
         double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 0.0);
+        brentOptimizer0.getEvaluations();
     }
 
     @Test(timeout = 4000)
-    public void test1824() throws Throwable {
+    public void test1724() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer();
+        double[] doubleArray0 = new double[8];
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        double double0 = brentOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1825() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         GoalType goalType0 = GoalType.MINIMIZE;
         brentOptimizer0.optimize((UnivariateRealFunction) null, goalType0, (-4078.947425775824), 2.0);
     }
 
     @Test(timeout = 4000)
-    public void test1925() throws Throwable {
+    public void test1926() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[3];
         brentOptimizer0.setRelativeAccuracy(0.0);
@@ -291,7 +309,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2026() throws Throwable {
+    public void test2027() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[7];
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
@@ -301,7 +319,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2027() throws Throwable {
+    public void test2028() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         double[] doubleArray0 = new double[7];
         PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
@@ -310,7 +328,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2128() throws Throwable {
+    public void test2129() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer();
         brentOptimizer0.doOptimize();
     }

@@ -145,4 +145,19 @@ public class SevenZOutputFile_ESTest extends SevenZOutputFile_ESTest_scaffolding
         sevenZOutputFile0.close();
         mockFile0.length();
     }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
+        MockFile mockFile0 = new MockFile("XDuAy@Z^kD:[0", "CWU");
+        SevenZOutputFile sevenZOutputFile0 = new SevenZOutputFile(mockFile0);
+        SevenZMethod sevenZMethod0 = SevenZMethod.LZMA;
+        sevenZOutputFile0.setContentCompression(sevenZMethod0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
+        MockFile mockFile0 = new MockFile("", "}Ht~ ;Vp;bS+s");
+        SevenZOutputFile sevenZOutputFile0 = new SevenZOutputFile(mockFile0);
+        sevenZOutputFile0.putArchiveEntry((ArchiveEntry) null);
+    }
 }

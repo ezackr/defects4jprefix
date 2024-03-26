@@ -456,15 +456,6 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1352() throws Throwable {
-        MockFile mockFile0 = new MockFile("KS!!0%&{&8{b(W'LqVf");
-        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "/Users/elliottzackrone/IdeaProjects/defects4jprefix/KS!!0%&{&8{b(W'LqVf");
-        byte[] byteArray0 = zipArchiveEntry0.getLocalFileDataExtra();
-        zipArchiveEntry0.setName("/Users/elliottzackrone/IdeaProjects/defects4jprefix/KS!!0%&{&8{b(W'LqVf", byteArray0);
-        byte[] byteArray1 = zipArchiveEntry0.getRawName();
-    }
-
-    @Test(timeout = 4000)
     public void test1353() throws Throwable {
         MockFile mockFile0 = new MockFile("KS!!0%&{&8{b(W'LqVf");
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry(mockFile0, "/Users/elliottzackrone/IdeaProjects/defects4jprefix/KS!!0%&{&8{b(W'LqVf");
@@ -1314,13 +1305,6 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test51158() throws Throwable {
-        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
-        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry();
-        zipArchiveEntry1.equals((Object) zipArchiveEntry0);
-    }
-
-    @Test(timeout = 4000)
     public void test51159() throws Throwable {
         ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
         ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry();
@@ -1456,13 +1440,6 @@ public class ZipArchiveEntry_ESTest extends ZipArchiveEntry_ESTest_scaffolding {
         ZipArchiveEntry zipArchiveEntry1 = (ZipArchiveEntry) zipArchiveEntry0.clone();
         boolean boolean0 = zipArchiveEntry0.equals(zipArchiveEntry1);
         zipArchiveEntry1.getInternalAttributes();
-    }
-
-    @Test(timeout = 4000)
-    public void test58175() throws Throwable {
-        ZipArchiveEntry zipArchiveEntry0 = new ZipArchiveEntry();
-        ZipArchiveEntry zipArchiveEntry1 = new ZipArchiveEntry();
-        zipArchiveEntry1.equals((Object) zipArchiveEntry0);
     }
 
     @Test(timeout = 4000)

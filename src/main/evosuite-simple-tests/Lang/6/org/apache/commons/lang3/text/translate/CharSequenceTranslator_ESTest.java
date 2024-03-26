@@ -70,7 +70,17 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test044() throws Throwable {
+        UnicodeEscaper unicodeEscaper0 = UnicodeEscaper.outsideOf(3976, 3976);
+        CharBuffer charBuffer0 = CharBuffer.allocate(3926);
+        String string0 = unicodeEscaper0.translate((CharSequence) charBuffer0);
+        StringWriter stringWriter0 = new StringWriter(4879);
+        // Undeclared exception!
+        unicodeEscaper0.translate((CharSequence) string0, (Writer) stringWriter0);
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[3];
         NumericEntityEscaper numericEntityEscaper0 = NumericEntityEscaper.above(43);
         charSequenceTranslatorArray0[2] = (CharSequenceTranslator) numericEntityEscaper0;
@@ -84,7 +94,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         NumericEntityEscaper numericEntityEscaper0 = NumericEntityEscaper.above(428);
         // Undeclared exception!
         try {
@@ -99,7 +109,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         UnicodeEscaper unicodeEscaper0 = UnicodeEscaper.between(0, 0);
         char[] charArray0 = new char[3];
         CharBuffer charBuffer0 = CharBuffer.wrap(charArray0, 0, 0);
@@ -116,7 +126,15 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test097() throws Throwable {
+    public void test088() throws Throwable {
+        NumericEntityEscaper numericEntityEscaper0 = NumericEntityEscaper.outsideOf(97, 97);
+        CharBuffer charBuffer0 = CharBuffer.allocate(5183);
+        // Undeclared exception!
+        numericEntityEscaper0.translate((CharSequence) charBuffer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[6];
         AggregateTranslator aggregateTranslator0 = new AggregateTranslator(charSequenceTranslatorArray0);
         // Undeclared exception!
@@ -132,7 +150,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test108() throws Throwable {
+    public void test1010() throws Throwable {
         NumericEntityEscaper numericEntityEscaper0 = NumericEntityEscaper.between(255, 1004);
         CharBuffer charBuffer0 = CharBuffer.allocate(65);
         StringWriter stringWriter0 = new StringWriter();
@@ -141,7 +159,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test119() throws Throwable {
+    public void test1111() throws Throwable {
         CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[3];
         AggregateTranslator aggregateTranslator0 = new AggregateTranslator(charSequenceTranslatorArray0);
         StringWriter stringWriter0 = new StringWriter(43);
@@ -158,7 +176,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1212() throws Throwable {
         UnicodeEscaper unicodeEscaper0 = new UnicodeEscaper();
         StringWriter stringWriter0 = new StringWriter();
         unicodeEscaper0.translate((CharSequence) null, (Writer) stringWriter0);
@@ -166,7 +184,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         UnicodeEscaper unicodeEscaper0 = UnicodeEscaper.below(693);
         // Undeclared exception!
         try {
@@ -181,7 +199,7 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         NumericEntityEscaper numericEntityEscaper0 = NumericEntityEscaper.below(110);
         CharSequenceTranslator[] charSequenceTranslatorArray0 = new CharSequenceTranslator[11];
         CharSequenceTranslator charSequenceTranslator0 = numericEntityEscaper0.with(charSequenceTranslatorArray0);
@@ -189,14 +207,14 @@ public class CharSequenceTranslator_ESTest extends CharSequenceTranslator_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test1513() throws Throwable {
+    public void test1515() throws Throwable {
         UnicodeUnescaper unicodeUnescaper0 = new UnicodeUnescaper();
         String string0 = unicodeUnescaper0.translate((CharSequence) null);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test1614() throws Throwable {
+    public void test1616() throws Throwable {
         String string0 = CharSequenceTranslator.hex(1157);
         assertEquals("485", string0);
     }

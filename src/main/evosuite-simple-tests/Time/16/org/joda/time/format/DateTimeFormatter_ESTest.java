@@ -1855,7 +1855,19 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test051171() throws Throwable {
+    public void test050171() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(719527);
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+        DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
+        JulianChronology julianChronology0 = JulianChronology.getInstance((DateTimeZone) null);
+        DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
+        YearMonth yearMonth0 = new YearMonth((-28800926L), (Chronology) julianChronology0);
+        // Undeclared exception!
+        dateTimeFormatter0.printTo(stringBuffer0, (ReadablePartial) yearMonth0);
+    }
+
+    @Test(timeout = 4000)
+    public void test051172() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -1875,7 +1887,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test052172() throws Throwable {
+    public void test052173() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         MutableDateTime mutableDateTime0 = dateTimeFormatter0.parseMutableDateTime("");
@@ -1892,7 +1904,17 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test054173() throws Throwable {
+    public void test053174() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(719527);
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+        DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
+        DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
+        // Undeclared exception!
+        dateTimeFormatter0.printTo(stringBuffer0, 59737472L);
+    }
+
+    @Test(timeout = 4000)
+    public void test054175() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Composite0, dateTimeFormatterBuilder_Composite0);
@@ -1910,7 +1932,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test055174() throws Throwable {
+    public void test055176() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.millisOfDay();
         DateTimeFormatterBuilder.TextField dateTimeFormatterBuilder_TextField0 = new DateTimeFormatterBuilder.TextField(dateTimeFieldType0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TextField0, dateTimeFormatterBuilder_TextField0);
@@ -1927,7 +1949,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test056175() throws Throwable {
+    public void test056177() throws Throwable {
         DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter(0, 0, 1665);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormat_StyleFormatter0, dateTimeFormat_StyleFormatter0);
         StringWriter stringWriter0 = new StringWriter();
@@ -1945,7 +1967,19 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test058176() throws Throwable {
+    public void test057178() throws Throwable {
+        StringBuffer stringBuffer0 = new StringBuffer(719527);
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+        DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
+        LocalTime localTime0 = new LocalTime((long) 20503125, dateTimeZone0);
+        // Undeclared exception!
+        dateTimeFormatter0.printTo((Appendable) stringBuffer0, (ReadablePartial) localTime0);
+    }
+
+    @Test(timeout = 4000)
+    public void test058179() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfYear();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, (byte) 89, (byte) 89);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_Fraction0);
@@ -1963,7 +1997,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test059177() throws Throwable {
+    public void test059180() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_Composite0);
@@ -1981,7 +2015,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test060178() throws Throwable {
+    public void test060181() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         CharBuffer charBuffer0 = CharBuffer.allocate(2000);
@@ -1998,7 +2032,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test061179() throws Throwable {
+    public void test061182() throws Throwable {
         DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter((-748), 1029, 1029);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormat_StyleFormatter0, dateTimeFormat_StyleFormatter0);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter(0);
@@ -2015,7 +2049,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test062180() throws Throwable {
+    public void test062183() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         IslamicChronology islamicChronology0 = IslamicChronology.getInstance();
@@ -2034,7 +2068,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test063181() throws Throwable {
+    public void test063184() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Composite0, dateTimeFormatterBuilder_Composite0);
@@ -2054,7 +2088,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test064182() throws Throwable {
+    public void test064185() throws Throwable {
         DateTimeFormatterBuilder.CharacterLiteral dateTimeFormatterBuilder_CharacterLiteral0 = new DateTimeFormatterBuilder.CharacterLiteral('+');
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_CharacterLiteral0, dateTimeFormatterBuilder_CharacterLiteral0);
         // Undeclared exception!
@@ -2070,7 +2104,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test065183() throws Throwable {
+    public void test065186() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -2091,7 +2125,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test066184() throws Throwable {
+    public void test066187() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral((String) null);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         LocalDate localDate0 = LocalDate.now();
@@ -2108,7 +2142,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test067185() throws Throwable {
+    public void test067188() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyearOfCentury();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-1150), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2127,7 +2161,17 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test069186() throws Throwable {
+    public void test068189() throws Throwable {
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.millisOfDay();
+        DateTimeFormatterBuilder.PaddedNumber dateTimeFormatterBuilder_PaddedNumber0 = new DateTimeFormatterBuilder.PaddedNumber(dateTimeFieldType0, 2146327844, true, 2146327844);
+        DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_PaddedNumber0, dateTimeFormatterBuilder_PaddedNumber0);
+        DateMidnight dateMidnight0 = new DateMidnight((long) 4317);
+        // Undeclared exception!
+        dateTimeFormatter0.print((ReadableInstant) dateMidnight0);
+    }
+
+    @Test(timeout = 4000)
+    public void test069190() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         MutableDateTime mutableDateTime0 = dateTimeFormatter0.parseMutableDateTime("");
@@ -2144,7 +2188,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test070187() throws Throwable {
+    public void test070191() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfYear();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 24, (-37));
         DateTimeParser[] dateTimeParserArray0 = new DateTimeParser[1];
@@ -2163,7 +2207,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test071188() throws Throwable {
+    public void test071192() throws Throwable {
         DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter(122, 122, 122);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormat_StyleFormatter0, dateTimeFormat_StyleFormatter0);
         DateTime dateTime0 = new DateTime();
@@ -2180,7 +2224,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test072189() throws Throwable {
+    public void test072193() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_Composite0);
@@ -2197,7 +2241,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test073190() throws Throwable {
+    public void test073194() throws Throwable {
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction((DateTimeFieldType) null, 0, 0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Fraction0, dateTimeFormatterBuilder_Fraction0);
         // Undeclared exception!
@@ -2213,7 +2257,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test074191() throws Throwable {
+    public void test074195() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfHalfday();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 2147483582, (-5530));
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Fraction0, dateTimeFormatterBuilder_Fraction0);
@@ -2230,7 +2274,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test075192() throws Throwable {
+    public void test075196() throws Throwable {
         DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter(1789, 0, 0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormat_StyleFormatter0, dateTimeFormat_StyleFormatter0);
         // Undeclared exception!
@@ -2246,7 +2290,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test076193() throws Throwable {
+    public void test076197() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Composite0, dateTimeFormatterBuilder_Composite0);
@@ -2263,7 +2307,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test077194() throws Throwable {
+    public void test077198() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyearOfCentury();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 13, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2280,7 +2324,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test078195() throws Throwable {
+    public void test078199() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -2297,7 +2341,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test079196() throws Throwable {
+    public void test079200() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(929, (Map<String, DateTimeZone>) null);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
         // Undeclared exception!
@@ -2313,7 +2357,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test080197() throws Throwable {
+    public void test080201() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_Composite0);
@@ -2330,7 +2374,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test081198() throws Throwable {
+    public void test081202() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyear();
         DateTimeFormatterBuilder.TextField dateTimeFormatterBuilder_TextField0 = new DateTimeFormatterBuilder.TextField(dateTimeFieldType0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TextField0, dateTimeFormatterBuilder_TextField0);
@@ -2347,7 +2391,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test082199() throws Throwable {
+    public void test082203() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_Composite0);
@@ -2364,7 +2408,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test083200() throws Throwable {
+    public void test083204() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfYear();
         DateTimeFormatterBuilder.TwoDigitYear dateTimeFormatterBuilder_TwoDigitYear0 = new DateTimeFormatterBuilder.TwoDigitYear(dateTimeFieldType0, 20, true);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TwoDigitYear0, dateTimeFormatterBuilder_TwoDigitYear0);
@@ -2381,7 +2425,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test084201() throws Throwable {
+    public void test084205() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_Composite0);
@@ -2398,7 +2442,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test085202() throws Throwable {
+    public void test085206() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         // Undeclared exception!
@@ -2414,7 +2458,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test086203() throws Throwable {
+    public void test086207() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         MutableDateTime mutableDateTime0 = new MutableDateTime((DateTimeZone) null);
@@ -2427,7 +2471,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test087204() throws Throwable {
+    public void test087208() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         MutableDateTime mutableDateTime0 = new MutableDateTime((long) 2000, (Chronology) null);
@@ -2445,7 +2489,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test088205() throws Throwable {
+    public void test088209() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Composite0, dateTimeFormatterBuilder_Composite0);
@@ -2462,7 +2506,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test089206() throws Throwable {
+    public void test089210() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -2479,7 +2523,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test090207() throws Throwable {
+    public void test090211() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         dateTimeFormatter0.parseLocalDateTime("");
@@ -2487,7 +2531,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test090208() throws Throwable {
+    public void test090212() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         dateTimeFormatter0.parseLocalDateTime("");
@@ -2495,7 +2539,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test091209() throws Throwable {
+    public void test091213() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfWeek();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 1900, 39);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Fraction0, dateTimeFormatterBuilder_Fraction0);
@@ -2512,7 +2556,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test092210() throws Throwable {
+    public void test092214() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfWeek();
         DateTimeFormatterBuilder.TextField dateTimeFormatterBuilder_TextField0 = new DateTimeFormatterBuilder.TextField(dateTimeFieldType0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TextField0, dateTimeFormatterBuilder_TextField0);
@@ -2530,7 +2574,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test093211() throws Throwable {
+    public void test093215() throws Throwable {
         DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter((-2147483562), (-1035), 2147483603);
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
@@ -2548,7 +2592,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test094212() throws Throwable {
+    public void test094216() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyearOfCentury();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 13, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2559,7 +2603,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test094213() throws Throwable {
+    public void test094217() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyearOfCentury();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 13, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2570,7 +2614,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test094214() throws Throwable {
+    public void test094218() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyearOfCentury();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 13, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2581,7 +2625,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test094215() throws Throwable {
+    public void test094219() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekyearOfCentury();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 13, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2592,7 +2636,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test095216() throws Throwable {
+    public void test095220() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         StringBuffer stringBuffer0 = new StringBuffer(0);
@@ -2602,7 +2646,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test095217() throws Throwable {
+    public void test095221() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         StringBuffer stringBuffer0 = new StringBuffer(0);
@@ -2612,7 +2656,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test096218() throws Throwable {
+    public void test096222() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfMinute();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 1, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2621,7 +2665,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test096219() throws Throwable {
+    public void test096223() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfMinute();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 1, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -2630,7 +2674,16 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test098220() throws Throwable {
+    public void test097224() throws Throwable {
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfHalfday();
+        DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 2147483627, false);
+        DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
+        // Undeclared exception!
+        dateTimeFormatter0.print(1L);
+    }
+
+    @Test(timeout = 4000)
+    public void test098225() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfWeek();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 1900, 39);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Fraction0, dateTimeFormatterBuilder_Fraction0);
@@ -2640,7 +2693,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test098221() throws Throwable {
+    public void test098226() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfWeek();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, 1900, 39);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Fraction0, dateTimeFormatterBuilder_Fraction0);
@@ -2650,7 +2703,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test099222() throws Throwable {
+    public void test099227() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getPrinter();
@@ -2658,7 +2711,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test099223() throws Throwable {
+    public void test099228() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getPrinter();
@@ -2666,7 +2719,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test100224() throws Throwable {
+    public void test100229() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfWeek();
         DateTimeFormatterBuilder.TextField dateTimeFormatterBuilder_TextField0 = new DateTimeFormatterBuilder.TextField(dateTimeFieldType0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TextField0, dateTimeFormatterBuilder_TextField0);
@@ -2683,7 +2736,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test101225() throws Throwable {
+    public void test101230() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(929, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -2692,7 +2745,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test101226() throws Throwable {
+    public void test101231() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(929, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -2701,7 +2754,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test102227() throws Throwable {
+    public void test102232() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -2718,7 +2771,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test103228() throws Throwable {
+    public void test103233() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -2728,7 +2781,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test103229() throws Throwable {
+    public void test103234() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -2738,7 +2791,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test103230() throws Throwable {
+    public void test103235() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -2748,7 +2801,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test103231() throws Throwable {
+    public void test103236() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -2758,7 +2811,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test103232() throws Throwable {
+    public void test103237() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -2768,7 +2821,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test104233() throws Throwable {
+    public void test104238() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2777,7 +2830,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test104234() throws Throwable {
+    public void test104239() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2786,7 +2839,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test104235() throws Throwable {
+    public void test104240() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2795,7 +2848,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test104236() throws Throwable {
+    public void test104241() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2804,7 +2857,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test105237() throws Throwable {
+    public void test105242() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         // Undeclared exception!
@@ -2820,7 +2873,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test106238() throws Throwable {
+    public void test106243() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -2837,7 +2890,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test107239() throws Throwable {
+    public void test107244() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -2846,7 +2899,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test107240() throws Throwable {
+    public void test107245() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -2855,7 +2908,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test107241() throws Throwable {
+    public void test107246() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -2864,7 +2917,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test107242() throws Throwable {
+    public void test107247() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -2873,7 +2926,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test108243() throws Throwable {
+    public void test108248() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2882,7 +2935,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test108244() throws Throwable {
+    public void test108249() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2891,7 +2944,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test108245() throws Throwable {
+    public void test108250() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2900,7 +2953,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test108246() throws Throwable {
+    public void test108251() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -2909,7 +2962,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test109247() throws Throwable {
+    public void test109252() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_TimeZoneName0);
@@ -2926,7 +2979,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test110248() throws Throwable {
+    public void test110253() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneOffset dateTimeFormatterBuilder_TimeZoneOffset0 = new DateTimeFormatterBuilder.TimeZoneOffset("i@,+Nw", "", false, 5, 5);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneOffset0, dateTimeFormatterBuilder_TimeZoneOffset0);
         dateTimeFormatter0.parseLocalDateTime("");
@@ -2934,7 +2987,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test110249() throws Throwable {
+    public void test110254() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneOffset dateTimeFormatterBuilder_TimeZoneOffset0 = new DateTimeFormatterBuilder.TimeZoneOffset("i@,+Nw", "", false, 5, 5);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneOffset0, dateTimeFormatterBuilder_TimeZoneOffset0);
         dateTimeFormatter0.parseLocalDateTime("");
@@ -2942,7 +2995,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test111250() throws Throwable {
+    public void test111255() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         dateTimeFormatter0.parseLocalTime("");
@@ -2950,7 +3003,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test111251() throws Throwable {
+    public void test111256() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         dateTimeFormatter0.parseLocalTime("");
@@ -2958,7 +3011,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test112252() throws Throwable {
+    public void test112257() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.yearOfCentury();
         DateTimeFormatterBuilder.UnpaddedNumber dateTimeFormatterBuilder_UnpaddedNumber0 = new DateTimeFormatterBuilder.UnpaddedNumber(dateTimeFieldType0, 0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_UnpaddedNumber0, dateTimeFormatterBuilder_UnpaddedNumber0);
@@ -2975,7 +3028,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test113253() throws Throwable {
+    public void test113258() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         // Undeclared exception!
@@ -2991,7 +3044,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test114254() throws Throwable {
+    public void test114259() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(929, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3008,7 +3061,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115255() throws Throwable {
+    public void test115260() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -3019,7 +3072,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115256() throws Throwable {
+    public void test115261() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -3030,7 +3083,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115257() throws Throwable {
+    public void test115262() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -3041,7 +3094,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115258() throws Throwable {
+    public void test115263() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -3052,7 +3105,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115259() throws Throwable {
+    public void test115264() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -3063,7 +3116,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test115260() throws Throwable {
+    public void test115265() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
@@ -3074,7 +3127,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test116261() throws Throwable {
+    public void test116266() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3085,7 +3138,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test116262() throws Throwable {
+    public void test116267() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3096,7 +3149,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test116263() throws Throwable {
+    public void test116268() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3107,7 +3160,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test116264() throws Throwable {
+    public void test116269() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3118,7 +3171,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test116265() throws Throwable {
+    public void test116270() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3129,7 +3182,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test117266() throws Throwable {
+    public void test117271() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfMinute();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 1, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -3146,7 +3199,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test118267() throws Throwable {
+    public void test118272() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateMidnight dateMidnight0 = new DateMidnight((long) 1900, (Chronology) null);
@@ -3163,7 +3216,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test119268() throws Throwable {
+    public void test119273() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         DateTimeFormatterBuilder.Composite dateTimeFormatterBuilder_Composite0 = new DateTimeFormatterBuilder.Composite(linkedList0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Composite0, dateTimeFormatterBuilder_Composite0);
@@ -3182,7 +3235,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test120269() throws Throwable {
+    public void test120274() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("y&wP.N_\"3T.(S(5 F\"'");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -3193,7 +3246,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test120270() throws Throwable {
+    public void test120275() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("y&wP.N_\"3T.(S(5 F\"'");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         CharArrayWriter charArrayWriter0 = new CharArrayWriter();
@@ -3204,7 +3257,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test121271() throws Throwable {
+    public void test121276() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.monthOfYear();
         DateTimeFormatterBuilder.Fraction dateTimeFormatterBuilder_Fraction0 = new DateTimeFormatterBuilder.Fraction(dateTimeFieldType0, (byte) 73, (byte) 73);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_Fraction0, dateTimeFormatterBuilder_Fraction0);
@@ -3222,7 +3275,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test122272() throws Throwable {
+    public void test122277() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3233,7 +3286,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test122273() throws Throwable {
+    public void test122278() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3244,7 +3297,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test122274() throws Throwable {
+    public void test122279() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3255,7 +3308,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test122275() throws Throwable {
+    public void test122280() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3266,7 +3319,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test123276() throws Throwable {
+    public void test123281() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3277,7 +3330,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test123277() throws Throwable {
+    public void test123282() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3288,7 +3341,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test123278() throws Throwable {
+    public void test123283() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3299,7 +3352,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test123279() throws Throwable {
+    public void test123284() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3310,7 +3363,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test124280() throws Throwable {
+    public void test124285() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withChronology((Chronology) null);
@@ -3318,7 +3371,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test124281() throws Throwable {
+    public void test124286() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withChronology((Chronology) null);
@@ -3326,7 +3379,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test124282() throws Throwable {
+    public void test124287() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_StringLiteral0, dateTimeFormatterBuilder_StringLiteral0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withChronology((Chronology) null);
@@ -3334,7 +3387,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test125283() throws Throwable {
+    public void test125288() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -3343,7 +3396,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test125284() throws Throwable {
+    public void test125289() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -3352,7 +3405,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test125285() throws Throwable {
+    public void test125290() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -3361,7 +3414,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test125286() throws Throwable {
+    public void test125291() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withOffsetParsed();
@@ -3370,7 +3423,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test126287() throws Throwable {
+    public void test126292() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withLocale((Locale) null);
@@ -3378,7 +3431,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test126288() throws Throwable {
+    public void test126293() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withLocale((Locale) null);
@@ -3386,7 +3439,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test126289() throws Throwable {
+    public void test126294() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withLocale((Locale) null);
@@ -3394,7 +3447,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test127290() throws Throwable {
+    public void test127295() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         boolean boolean0 = dateTimeFormatter0.isParser();
@@ -3402,7 +3455,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test127291() throws Throwable {
+    public void test127296() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         boolean boolean0 = dateTimeFormatter0.isParser();
@@ -3410,7 +3463,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test127292() throws Throwable {
+    public void test127297() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         boolean boolean0 = dateTimeFormatter0.isParser();
@@ -3418,7 +3471,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test128293() throws Throwable {
+    public void test128298() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3427,7 +3480,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test128294() throws Throwable {
+    public void test128299() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3436,7 +3489,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test128295() throws Throwable {
+    public void test128300() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 20503125, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, (DateTimeParser) null);
@@ -3445,7 +3498,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test129296() throws Throwable {
+    public void test129301() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3454,7 +3507,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test129297() throws Throwable {
+    public void test129302() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3463,7 +3516,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test129298() throws Throwable {
+    public void test129303() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3472,7 +3525,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test130299() throws Throwable {
+    public void test130304() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3481,7 +3534,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test130300() throws Throwable {
+    public void test130305() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3490,7 +3543,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test130301() throws Throwable {
+    public void test130306() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName(592, hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3499,7 +3552,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test131302() throws Throwable {
+    public void test131307() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getZone();
@@ -3507,7 +3560,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test131303() throws Throwable {
+    public void test131308() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getZone();
@@ -3515,7 +3568,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test132304() throws Throwable {
+    public void test132309() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getPivotYear();
@@ -3523,7 +3576,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test132305() throws Throwable {
+    public void test132310() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getPivotYear();
@@ -3531,7 +3584,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test133306() throws Throwable {
+    public void test133311() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getChronolgy();
@@ -3539,7 +3592,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test133307() throws Throwable {
+    public void test133312() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         dateTimeFormatter0.getChronolgy();
@@ -3547,7 +3600,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test134308() throws Throwable {
+    public void test134313() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -3556,7 +3609,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test134309() throws Throwable {
+    public void test134314() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -3565,7 +3618,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test134310() throws Throwable {
+    public void test134315() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -3574,7 +3627,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test134311() throws Throwable {
+    public void test134316() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
@@ -3583,7 +3636,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test135312() throws Throwable {
+    public void test135317() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         Instant instant0 = new Instant((-1L));
@@ -3600,7 +3653,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test136313() throws Throwable {
+    public void test136318() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName((-477), hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3609,7 +3662,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test136314() throws Throwable {
+    public void test136319() throws Throwable {
         HashMap<String, DateTimeZone> hashMap0 = new HashMap<String, DateTimeZone>();
         DateTimeFormatterBuilder.TimeZoneName dateTimeFormatterBuilder_TimeZoneName0 = new DateTimeFormatterBuilder.TimeZoneName((-477), hashMap0);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneName0, dateTimeFormatterBuilder_TimeZoneName0);
@@ -3618,7 +3671,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test137315() throws Throwable {
+    public void test137320() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.centuryOfEra();
         DateTimeFormatterBuilder.TextField dateTimeFormatterBuilder_TextField0 = new DateTimeFormatterBuilder.TextField(dateTimeFieldType0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TextField0, dateTimeFormatterBuilder_TextField0);
@@ -3637,7 +3690,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test138316() throws Throwable {
+    public void test138321() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         // Undeclared exception!
@@ -3653,7 +3706,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test139317() throws Throwable {
+    public void test139322() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfMinute();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 1, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -3662,7 +3715,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test139318() throws Throwable {
+    public void test139323() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfMinute();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 1, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_FixedNumber0, dateTimeFormatterBuilder_FixedNumber0);
@@ -3671,7 +3724,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test140319() throws Throwable {
+    public void test140324() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateMidnight dateMidnight0 = new DateMidnight((long) 1900, (Chronology) null);
@@ -3680,7 +3733,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test140320() throws Throwable {
+    public void test140325() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateMidnight dateMidnight0 = new DateMidnight((long) 1900, (Chronology) null);
@@ -3689,7 +3742,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test140321() throws Throwable {
+    public void test140326() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         DateMidnight dateMidnight0 = new DateMidnight((long) 1900, (Chronology) null);
@@ -3698,7 +3751,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test141322() throws Throwable {
+    public void test141327() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3707,7 +3760,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test141323() throws Throwable {
+    public void test141328() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3716,7 +3769,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test141324() throws Throwable {
+    public void test141329() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3725,7 +3778,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test141325() throws Throwable {
+    public void test141330() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.hourOfDay();
         DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, (-631), false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_FixedNumber0);
@@ -3734,7 +3787,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test142326() throws Throwable {
+    public void test142331() throws Throwable {
         DateTimeFormatterBuilder.StringLiteral dateTimeFormatterBuilder_StringLiteral0 = new DateTimeFormatterBuilder.StringLiteral("");
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter((DateTimePrinter) null, dateTimeFormatterBuilder_StringLiteral0);
         MutableDateTime mutableDateTime0 = dateTimeFormatter0.parseMutableDateTime("");
@@ -3751,7 +3804,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test143327() throws Throwable {
+    public void test143332() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneId dateTimeFormatterBuilder_TimeZoneId0 = DateTimeFormatterBuilder.TimeZoneId.INSTANCE;
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneId0, dateTimeFormatterBuilder_TimeZoneId0);
         PipedWriter pipedWriter0 = new PipedWriter();
@@ -3767,7 +3820,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test144328() throws Throwable {
+    public void test144333() throws Throwable {
         // Undeclared exception!
         try {
             MutableDateTime.parse("6`'Jp");
@@ -3781,7 +3834,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test145329() throws Throwable {
+    public void test145334() throws Throwable {
         DateTimeFormatterBuilder.TimeZoneOffset dateTimeFormatterBuilder_TimeZoneOffset0 = new DateTimeFormatterBuilder.TimeZoneOffset("i@,+Nw", "", false, 5, 5);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TimeZoneOffset0, dateTimeFormatterBuilder_TimeZoneOffset0);
         // Undeclared exception!
@@ -3797,7 +3850,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test146330() throws Throwable {
+    public void test146335() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.monthOfYear();
         DateTimeFormatterBuilder.TextField dateTimeFormatterBuilder_TextField0 = new DateTimeFormatterBuilder.TextField(dateTimeFieldType0, false);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TextField0, dateTimeFormatterBuilder_TextField0);
@@ -3814,7 +3867,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test147331() throws Throwable {
+    public void test147336() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfYear();
         DateTimeFormatterBuilder.TwoDigitYear dateTimeFormatterBuilder_TwoDigitYear0 = new DateTimeFormatterBuilder.TwoDigitYear(dateTimeFieldType0, 20, true);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TwoDigitYear0, dateTimeFormatterBuilder_TwoDigitYear0);
@@ -3823,7 +3876,7 @@ public class DateTimeFormatter_ESTest extends DateTimeFormatter_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test147332() throws Throwable {
+    public void test147337() throws Throwable {
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfYear();
         DateTimeFormatterBuilder.TwoDigitYear dateTimeFormatterBuilder_TwoDigitYear0 = new DateTimeFormatterBuilder.TwoDigitYear(dateTimeFieldType0, 20, true);
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimeFormatterBuilder_TwoDigitYear0, dateTimeFormatterBuilder_TwoDigitYear0);

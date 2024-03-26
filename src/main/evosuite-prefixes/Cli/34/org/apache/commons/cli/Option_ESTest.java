@@ -306,12 +306,6 @@ public class Option_ESTest extends Option_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2541() throws Throwable {
-        Option option0 = new Option((String) null, (String) null);
-        option0.hasArgs();
-    }
-
-    @Test(timeout = 4000)
     public void test2542() throws Throwable {
         Option option0 = new Option((String) null, (String) null);
         option0.setArgs((-2));
@@ -589,13 +583,6 @@ public class Option_ESTest extends Option_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4381() throws Throwable {
-        Option option0 = new Option("", "", false, "");
-        Option option1 = (Option) option0.clone();
-        boolean boolean0 = option0.equals(option1);
-    }
-
-    @Test(timeout = 4000)
     public void test4482() throws Throwable {
         Option option0 = new Option("", "");
         Option option1 = (Option) option0.clone();
@@ -618,24 +605,22 @@ public class Option_ESTest extends Option_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4785() throws Throwable {
-        Option option0 = new Option((String) null, (String) null);
-        boolean boolean0 = option0.requiresArg();
+    public void test4685() throws Throwable {
+        Option option0 = new Option("eiU", "eiU", true, "eiU");
+        option0.hashCode();
     }
 
     @Test(timeout = 4000)
     public void test4786() throws Throwable {
         Option option0 = new Option((String) null, (String) null);
         boolean boolean0 = option0.requiresArg();
-        option0.getArgs();
     }
 
     @Test(timeout = 4000)
-    public void test4887() throws Throwable {
-        Option option0 = new Option("", "");
-        option0.setOptionalArg(true);
+    public void test4787() throws Throwable {
+        Option option0 = new Option((String) null, (String) null);
         boolean boolean0 = option0.requiresArg();
-        option0.hasOptionalArg();
+        option0.getArgs();
     }
 
     @Test(timeout = 4000)
@@ -643,16 +628,18 @@ public class Option_ESTest extends Option_ESTest_scaffolding {
         Option option0 = new Option("", "");
         option0.setOptionalArg(true);
         boolean boolean0 = option0.requiresArg();
+        option0.hasOptionalArg();
     }
 
     @Test(timeout = 4000)
-    public void test4989() throws Throwable {
-        Option option0 = new Option((String) null, (String) null);
-        option0.hasArgs();
+    public void test4889() throws Throwable {
+        Option option0 = new Option("", "");
+        option0.setOptionalArg(true);
+        boolean boolean0 = option0.requiresArg();
     }
 
     @Test(timeout = 4000)
-    public void test4990() throws Throwable {
+    public void test4991() throws Throwable {
         Option option0 = new Option((String) null, (String) null);
         option0.setArgs((-2));
         boolean boolean0 = option0.requiresArg();

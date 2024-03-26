@@ -132,15 +132,6 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
-        PropertyOption propertyOption0 = new PropertyOption();
-        LinkedList<Command> linkedList0 = new LinkedList<Command>();
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
-        writeableCommandLineImpl0.addSwitch(propertyOption0, false);
-        Boolean boolean0 = writeableCommandLineImpl0.getSwitch((Option) propertyOption0);
-    }
-
-    @Test(timeout = 4000)
     public void test1112() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         PropertyOption propertyOption0 = new PropertyOption();

@@ -368,112 +368,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0542() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-    }
-
-    @Test(timeout = 4000)
-    public void test0543() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test0544() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0545() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test0546() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test0547() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test0548() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test0549() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0550() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test0551() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0552() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test0553() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test0554() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test0555() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
     public void test0556() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        SerializationFeature serializationFeature0 = SerializationFeature.FLUSH_AFTER_WRITE_VALUE;
-        ObjectMapper objectMapper1 = objectMapper0.enable(serializationFeature0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0557() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
-        SerializationFeature serializationFeature0 = SerializationFeature.FLUSH_AFTER_WRITE_VALUE;
-        ObjectMapper objectMapper1 = objectMapper0.enable(serializationFeature0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0558() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0);
         SerializationFeature serializationFeature0 = SerializationFeature.FLUSH_AFTER_WRITE_VALUE;
@@ -544,47 +439,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<NullNode> class0 = NullNode.class;
         ObjectReader objectReader0 = objectMapper0.readerFor(class0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0767() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-    }
-
-    @Test(timeout = 4000)
-    public void test0768() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test0769() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test0770() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test0771() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test0772() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test0773() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getRootValueSeparator();
     }
 
     @Test(timeout = 4000)
@@ -792,11 +646,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0894() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test0895() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<FloatNode> class0 = FloatNode.class;
@@ -804,20 +653,10 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0996() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test0997() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<Object> class0 = Object.class;
         boolean boolean0 = objectMapper0.canSerialize(class0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1098() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -839,156 +678,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         PipedInputStream pipedInputStream0 = new PipedInputStream();
         Class<PipedInputStream> class0 = PipedInputStream.class;
         objectMapper0.readValue((InputStream) pipedInputStream0, class0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11102() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-    }
-
-    @Test(timeout = 4000)
-    public void test11103() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test11104() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test11105() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test11106() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test11107() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test11108() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test11109() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-    }
-
-    @Test(timeout = 4000)
-    public void test11110() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test11111() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11112() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        defaultDeserializationContext_Impl0.getDeserializationFeatures();
-    }
-
-    @Test(timeout = 4000)
-    public void test11113() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11114() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test11115() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test11116() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test11117() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test11118() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test11119() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test11120() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        defaultDeserializationContext_Impl0.getDeserializationFeatures();
     }
 
     @Test(timeout = 4000)
@@ -1087,11 +776,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12129() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test12130() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writer((FormatSchema) null);
@@ -1102,11 +786,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectWriter objectWriter0 = objectMapper0.writer((FormatSchema) null);
         objectWriter0.hasPrefetchedSerializer();
-    }
-
-    @Test(timeout = 4000)
-    public void test13132() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -1228,20 +907,10 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14150() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test14151() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SerializationFeature serializationFeature0 = SerializationFeature.FAIL_ON_EMPTY_BEANS;
         boolean boolean0 = objectMapper0.isEnabled(serializationFeature0);
-    }
-
-    @Test(timeout = 4000)
-    public void test15152() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -1251,177 +920,7 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16154() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-    }
-
-    @Test(timeout = 4000)
-    public void test16155() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test16156() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test16157() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test16158() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test16159() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test16160() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test16161() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-    }
-
-    @Test(timeout = 4000)
-    public void test16162() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test16163() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16164() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        defaultDeserializationContext_Impl0.getDeserializationFeatures();
-    }
-
-    @Test(timeout = 4000)
-    public void test16165() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16166() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test16167() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test16168() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test16169() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test16170() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test16171() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test16172() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        defaultDeserializationContext_Impl0.getDeserializationFeatures();
-    }
-
-    @Test(timeout = 4000)
     public void test16173() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
-    }
-
-    @Test(timeout = 4000)
-    public void test16174() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        ObjectMapper objectMapper1 = objectMapper0.clearProblemHandlers();
-    }
-
-    @Test(timeout = 4000)
-    public void test16175() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
@@ -1508,179 +1007,10 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17183() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test17184() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_DEFAULT;
         ObjectMapper objectMapper1 = objectMapper0.setSerializationInclusion(jsonInclude_Include0);
-    }
-
-    @Test(timeout = 4000)
-    public void test17185() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_DEFAULT;
-        ObjectMapper objectMapper1 = objectMapper0.setSerializationInclusion(jsonInclude_Include0);
-    }
-
-    @Test(timeout = 4000)
-    public void test17186() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_DEFAULT;
-        ObjectMapper objectMapper1 = objectMapper0.setSerializationInclusion(jsonInclude_Include0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18187() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-    }
-
-    @Test(timeout = 4000)
-    public void test18188() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test18189() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test18190() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test18191() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test18192() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test18193() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test18194() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-    }
-
-    @Test(timeout = 4000)
-    public void test18195() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-    }
-
-    @Test(timeout = 4000)
-    public void test18196() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18197() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        defaultDeserializationContext_Impl0.getDeserializationFeatures();
-    }
-
-    @Test(timeout = 4000)
-    public void test18198() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18199() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test18200() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test18201() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test18202() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test18203() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test18204() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test18205() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = new BeanDeserializerFactory((DeserializerFactoryConfig) null);
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        defaultDeserializationContext_Impl0.getDeserializationFeatures();
     }
 
     @Test(timeout = 4000)
@@ -1693,11 +1023,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         DeserializationFeature deserializationFeature0 = DeserializationFeature.UNWRAP_SINGLE_VALUE_ARRAYS;
         DeserializationFeature[] deserializationFeatureArray0 = new DeserializationFeature[5];
         objectMapper0.disable(deserializationFeature0, deserializationFeatureArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test19207() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -1895,24 +1220,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test19230() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Class<String> class0 = String.class;
-        TypeBindings typeBindings0 = TypeBindings.emptyBindings();
-        ResolvedRecursiveType resolvedRecursiveType0 = new ResolvedRecursiveType(class0, typeBindings0);
-        JavaType javaType0 = objectMapper0.constructType(resolvedRecursiveType0);
-    }
-
-    @Test(timeout = 4000)
-    public void test19231() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Class<String> class0 = String.class;
-        TypeBindings typeBindings0 = TypeBindings.emptyBindings();
-        ResolvedRecursiveType resolvedRecursiveType0 = new ResolvedRecursiveType(class0, typeBindings0);
-        JavaType javaType0 = objectMapper0.constructType(resolvedRecursiveType0);
-    }
-
-    @Test(timeout = 4000)
-    public void test19232() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Class<String> class0 = String.class;
         TypeBindings typeBindings0 = TypeBindings.emptyBindings();
@@ -2261,11 +1568,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test20267() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test20268() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
@@ -2276,25 +1578,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         ObjectMapper objectMapper0 = new ObjectMapper();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         ObjectMapper objectMapper1 = objectMapper0.setSerializerProvider(defaultSerializerProvider_Impl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test20270() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        ObjectMapper objectMapper1 = objectMapper0.setSerializerProvider(defaultSerializerProvider_Impl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test20271() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        ObjectMapper objectMapper1 = objectMapper0.setSerializerProvider(defaultSerializerProvider_Impl0);
-    }
-
-    @Test(timeout = 4000)
-    public void test21272() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -2469,28 +1752,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test21293() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        moduleArray0[0] = (Module) simpleModule0;
-        BeanSerializerModifier beanSerializerModifier0 = mock(BeanSerializerModifier.class, new ViolatedAssumptionAnswer());
-        SimpleModule simpleModule1 = simpleModule0.setSerializerModifier(beanSerializerModifier0);
-    }
-
-    @Test(timeout = 4000)
-    public void test21294() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        moduleArray0[0] = (Module) simpleModule0;
-        BeanSerializerModifier beanSerializerModifier0 = mock(BeanSerializerModifier.class, new ViolatedAssumptionAnswer());
-        SimpleModule simpleModule1 = simpleModule0.setSerializerModifier(beanSerializerModifier0);
-    }
-
-    @Test(timeout = 4000)
     public void test21295() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Module[] moduleArray0 = new Module[2];
@@ -2623,11 +1884,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test22306() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
     public void test22307() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = new ObjectMapper(objectMapper0);
@@ -2638,11 +1894,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     public void test22308() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         ObjectMapper objectMapper1 = new ObjectMapper(objectMapper0);
-    }
-
-    @Test(timeout = 4000)
-    public void test23309() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -2757,171 +2008,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test24325() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-    }
-
-    @Test(timeout = 4000)
-    public void test24326() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-    }
-
-    @Test(timeout = 4000)
-    public void test24327() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.isUnknownVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24328() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.getMajorVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24329() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.getMinorVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24330() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.isUknownVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24331() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.getArtifactId();
-    }
-
-    @Test(timeout = 4000)
-    public void test24332() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.isSnapshot();
-    }
-
-    @Test(timeout = 4000)
-    public void test24333() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.getPatchLevel();
-    }
-
-    @Test(timeout = 4000)
-    public void test24334() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        version0.getGroupId();
-    }
-
-    @Test(timeout = 4000)
-    public void test24335() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-    }
-
-    @Test(timeout = 4000)
-    public void test24336() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.isUnknownVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24337() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.getMajorVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24338() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.getMinorVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24339() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.isUknownVersion();
-    }
-
-    @Test(timeout = 4000)
-    public void test24340() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.getArtifactId();
-    }
-
-    @Test(timeout = 4000)
-    public void test24341() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.isSnapshot();
-    }
-
-    @Test(timeout = 4000)
-    public void test24342() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.getPatchLevel();
-    }
-
-    @Test(timeout = 4000)
-    public void test24343() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        version0.getGroupId();
-    }
-
-    @Test(timeout = 4000)
-    public void test24344() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        simpleModule0.getModuleName();
-    }
-
-    @Test(timeout = 4000)
     public void test24345() throws Throwable {
         ObjectMapper objectMapper0 = new ObjectMapper();
         Module[] moduleArray0 = new Module[2];
@@ -2930,44 +2016,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         moduleArray0[0] = (Module) simpleModule0;
         moduleArray0[1] = (Module) simpleModule0;
         ObjectMapper objectMapper1 = objectMapper0.registerModules(moduleArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test24346() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        moduleArray0[0] = (Module) simpleModule0;
-        moduleArray0[1] = (Module) simpleModule0;
-        ObjectMapper objectMapper1 = objectMapper0.registerModules(moduleArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test24347() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        moduleArray0[0] = (Module) simpleModule0;
-        moduleArray0[1] = (Module) simpleModule0;
-        ObjectMapper objectMapper1 = objectMapper0.registerModules(moduleArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test24348() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        Module[] moduleArray0 = new Module[2];
-        Version version0 = new Version(954, (-555), (-3491), "", "", "");
-        SimpleModule simpleModule0 = new SimpleModule("-y.]1r5", version0);
-        moduleArray0[0] = (Module) simpleModule0;
-        moduleArray0[1] = (Module) simpleModule0;
-        ObjectMapper objectMapper1 = objectMapper0.registerModules(moduleArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25349() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)
@@ -2981,67 +2029,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         ObjectMapper objectMapper0 = new ObjectMapper();
         SimpleMixInResolver simpleMixInResolver0 = objectMapper0._mixIns;
         ObjectMapper objectMapper1 = objectMapper0.setMixInResolver(simpleMixInResolver0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25352() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        SimpleMixInResolver simpleMixInResolver0 = objectMapper0._mixIns;
-        ObjectMapper objectMapper1 = objectMapper0.setMixInResolver(simpleMixInResolver0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25353() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
-        SimpleMixInResolver simpleMixInResolver0 = objectMapper0._mixIns;
-        ObjectMapper objectMapper1 = objectMapper0.setMixInResolver(simpleMixInResolver0);
-    }
-
-    @Test(timeout = 4000)
-    public void test26354() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-    }
-
-    @Test(timeout = 4000)
-    public void test26355() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getFormatName();
-    }
-
-    @Test(timeout = 4000)
-    public void test26356() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresCustomCodec();
-    }
-
-    @Test(timeout = 4000)
-    public void test26357() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canHandleBinaryNatively();
-    }
-
-    @Test(timeout = 4000)
-    public void test26358() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.canUseCharArrays();
-    }
-
-    @Test(timeout = 4000)
-    public void test26359() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.getRootValueSeparator();
-    }
-
-    @Test(timeout = 4000)
-    public void test26360() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        jsonFactory0.requiresPropertyOrdering();
-    }
-
-    @Test(timeout = 4000)
-    public void test26361() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
     }
 
     @Test(timeout = 4000)
@@ -3149,69 +2136,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test26373() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        JsonGenerator.Feature[] jsonGenerator_FeatureArray0 = new JsonGenerator.Feature[9];
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.QUOTE_FIELD_NAMES;
-        jsonGenerator_FeatureArray0[0] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[1] = jsonGenerator_FeatureArray0[0];
-        jsonGenerator_FeatureArray0[2] = jsonGenerator_FeatureArray0[1];
-        jsonGenerator_FeatureArray0[3] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[4] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[5] = jsonGenerator_FeatureArray0[4];
-        jsonGenerator_FeatureArray0[6] = jsonGenerator_FeatureArray0[5];
-        jsonGenerator_FeatureArray0[7] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[8] = jsonGenerator_Feature0;
-        ObjectMapper objectMapper1 = objectMapper0.enable(jsonGenerator_FeatureArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test26374() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        JsonGenerator.Feature[] jsonGenerator_FeatureArray0 = new JsonGenerator.Feature[9];
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.QUOTE_FIELD_NAMES;
-        jsonGenerator_FeatureArray0[0] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[1] = jsonGenerator_FeatureArray0[0];
-        jsonGenerator_FeatureArray0[2] = jsonGenerator_FeatureArray0[1];
-        jsonGenerator_FeatureArray0[3] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[4] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[5] = jsonGenerator_FeatureArray0[4];
-        jsonGenerator_FeatureArray0[6] = jsonGenerator_FeatureArray0[5];
-        jsonGenerator_FeatureArray0[7] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[8] = jsonGenerator_Feature0;
-        ObjectMapper objectMapper1 = objectMapper0.enable(jsonGenerator_FeatureArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test26375() throws Throwable {
-        JsonFactory jsonFactory0 = new JsonFactory();
-        DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-        BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
-        DefaultDeserializationContext.Impl defaultDeserializationContext_Impl0 = new DefaultDeserializationContext.Impl(beanDeserializerFactory0);
-        ObjectMapper objectMapper0 = new ObjectMapper(jsonFactory0, defaultSerializerProvider_Impl0, defaultDeserializationContext_Impl0);
-        JsonGenerator.Feature[] jsonGenerator_FeatureArray0 = new JsonGenerator.Feature[9];
-        JsonGenerator.Feature jsonGenerator_Feature0 = JsonGenerator.Feature.QUOTE_FIELD_NAMES;
-        jsonGenerator_FeatureArray0[0] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[1] = jsonGenerator_FeatureArray0[0];
-        jsonGenerator_FeatureArray0[2] = jsonGenerator_FeatureArray0[1];
-        jsonGenerator_FeatureArray0[3] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[4] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[5] = jsonGenerator_FeatureArray0[4];
-        jsonGenerator_FeatureArray0[6] = jsonGenerator_FeatureArray0[5];
-        jsonGenerator_FeatureArray0[7] = jsonGenerator_Feature0;
-        jsonGenerator_FeatureArray0[8] = jsonGenerator_Feature0;
-        ObjectMapper objectMapper1 = objectMapper0.enable(jsonGenerator_FeatureArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test26376() throws Throwable {
         JsonFactory jsonFactory0 = new JsonFactory();
         DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
@@ -3383,11 +2307,6 @@ public class ObjectMapper_ESTest extends ObjectMapper_ESTest_scaffolding {
         jsonGenerator_FeatureArray0[8] = jsonGenerator_Feature0;
         ObjectMapper objectMapper1 = objectMapper0.enable(jsonGenerator_FeatureArray0);
         defaultDeserializationContext_Impl0.getDeserializationFeatures();
-    }
-
-    @Test(timeout = 4000)
-    public void test27384() throws Throwable {
-        ObjectMapper objectMapper0 = new ObjectMapper();
     }
 
     @Test(timeout = 4000)

@@ -45,7 +45,20 @@ import org.junit.runner.RunWith;
 public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test0010() throws Throwable {
+    public void test0000() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "C.Y*5", "C.Y*5");
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        nodeTraversal0.traverse(node0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0011() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -66,7 +79,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0021() throws Throwable {
+    public void test0022() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -78,7 +91,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0032() throws Throwable {
+    public void test0033() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -99,7 +112,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0043() throws Throwable {
+    public void test0044() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -120,7 +133,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0054() throws Throwable {
+    public void test0055() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -143,7 +156,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0065() throws Throwable {
+    public void test0066() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "j", "j");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -162,7 +175,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0076() throws Throwable {
+    public void test0077() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -175,7 +188,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0087() throws Throwable {
+    public void test0088() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -195,7 +208,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0098() throws Throwable {
+    public void test0099() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("DXt-(ejHHx5");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -208,7 +221,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0109() throws Throwable {
+    public void test01010() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("G_E", "G_E");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -230,7 +243,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01110() throws Throwable {
+    public void test01111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -251,7 +264,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01211() throws Throwable {
+    public void test01212() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -272,7 +285,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01312() throws Throwable {
+    public void test01313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "+", "+");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -294,7 +307,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01413() throws Throwable {
+    public void test01414() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -317,19 +330,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01514() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        Node node1 = new Node(9, node0, node0);
-        typeCheck0.visit(nodeTraversal0, node1, (Node) null);
-        assertEquals(0, compiler0.getWarningCount());
-    }
-
-    @Test(timeout = 4000)
     public void test01515() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
@@ -339,22 +339,20 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(9, node0, node0);
         typeCheck0.visit(nodeTraversal0, node1, (Node) null);
-        assertEquals(1, compiler0.getErrorCount());
+        assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
-    public void test01616() throws Throwable {
+    public void test01516() throws Throwable {
         Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "d$g0TEhcEpJ7za>goEQ", "d$g0TEhcEpJ7za>goEQ");
-        ReferenceCollectingCallback.Behavior referenceCollectingCallback_Behavior0 = ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR;
-        Predicate<Scope.Var> predicate0 = (Predicate<Scope.Var>) mock(Predicate.class, new ViolatedAssumptionAnswer());
-        ReferenceCollectingCallback referenceCollectingCallback0 = new ReferenceCollectingCallback(compiler0, referenceCollectingCallback_Behavior0, predicate0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, referenceCollectingCallback0);
-        Node node1 = new Node(11, node0, node0);
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
-        typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertEquals(0, compiler0.getWarningCount());
+        ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        Node node1 = new Node(9, node0, node0);
+        typeCheck0.visit(nodeTraversal0, node1, (Node) null);
+        assertEquals(1, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
@@ -369,11 +367,26 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
         TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
         typeCheck0.visit(nodeTraversal0, node1, node1);
+        assertEquals(0, compiler0.getWarningCount());
+    }
+
+    @Test(timeout = 4000)
+    public void test01618() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "d$g0TEhcEpJ7za>goEQ", "d$g0TEhcEpJ7za>goEQ");
+        ReferenceCollectingCallback.Behavior referenceCollectingCallback_Behavior0 = ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR;
+        Predicate<Scope.Var> predicate0 = (Predicate<Scope.Var>) mock(Predicate.class, new ViolatedAssumptionAnswer());
+        ReferenceCollectingCallback referenceCollectingCallback0 = new ReferenceCollectingCallback(compiler0, referenceCollectingCallback_Behavior0, predicate0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, referenceCollectingCallback0);
+        Node node1 = new Node(11, node0, node0);
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, (ReverseAbstractInterpreter) null, jSTypeRegistry0);
+        typeCheck0.visit(nodeTraversal0, node1, node1);
         assertEquals(0, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
-    public void test01718() throws Throwable {
+    public void test01719() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -386,7 +399,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01819() throws Throwable {
+    public void test01820() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -401,7 +414,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01920() throws Throwable {
+    public void test01921() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "c/xz`. z,xX<C>");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -415,7 +428,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02021() throws Throwable {
+    public void test02022() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -427,7 +440,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02122() throws Throwable {
+    public void test02123() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -440,7 +453,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02223() throws Throwable {
+    public void test02224() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "c/xz`. z,xX<C>");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -464,7 +477,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02324() throws Throwable {
+    public void test02325() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -477,7 +490,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02325() throws Throwable {
+    public void test02326() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -487,21 +500,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = new Node(20, node0, (-2479), 46);
         typeCheck0.visit(nodeTraversal0, node1, node0);
         assertEquals(0, compiler0.getWarningCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test02426() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "C.Y*5", "C.Y*5");
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
-        VarCheck varCheck0 = new VarCheck(compiler0, false);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, varCheck0, (ScopeCreator) null);
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
-        Node node1 = new Node(21, node0, 55, 47);
-        typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertEquals(0, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
@@ -516,7 +514,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
         Node node1 = new Node(21, node0, 55, 47);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertEquals(0, compiler0.getWarningCount());
+        assertEquals(0, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
@@ -531,21 +529,22 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
         Node node1 = new Node(21, node0, 55, 47);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertFalse(compiler0.hasErrors());
+        assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
-    public void test02529() throws Throwable {
+    public void test02429() throws Throwable {
         Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "z$-", "sg.invalid.type");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "C.Y*5", "C.Y*5");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
         SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
+        VarCheck varCheck0 = new VarCheck(compiler0, false);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, varCheck0, (ScopeCreator) null);
         TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        Node node1 = new Node(22, node0, node0, node0, node0);
-        typeCheck0.visit(nodeTraversal0, node1, node0);
-        assertEquals(0, compiler0.getWarningCount());
+        Node node1 = new Node(21, node0, 55, 47);
+        typeCheck0.visit(nodeTraversal0, node1, node1);
+        assertFalse(compiler0.hasErrors());
     }
 
     @Test(timeout = 4000)
@@ -559,11 +558,25 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(22, node0, node0, node0, node0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
+        assertEquals(0, compiler0.getWarningCount());
+    }
+
+    @Test(timeout = 4000)
+    public void test02531() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "z$-", "sg.invalid.type");
+        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        Node node1 = new Node(22, node0, node0, node0, node0);
+        typeCheck0.visit(nodeTraversal0, node1, node0);
         assertEquals(1, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
-    public void test02631() throws Throwable {
+    public void test02632() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "+", "+");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -585,7 +598,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02732() throws Throwable {
+    public void test02733() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -598,7 +611,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02733() throws Throwable {
+    public void test02734() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -611,7 +624,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02734() throws Throwable {
+    public void test02735() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -624,7 +637,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02835() throws Throwable {
+    public void test02836() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
@@ -637,7 +650,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02936() throws Throwable {
+    public void test02937() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -651,7 +664,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03037() throws Throwable {
+    public void test03038() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -667,7 +680,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03138() throws Throwable {
+    public void test03139() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseSyntheticCode("G_E", "G_E");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -680,7 +693,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03239() throws Throwable {
+    public void test03240() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "JSC_TEMPLATE_TYPE_EXPECTED", "JSC_TEMPLATE_TYPE_EXPECTED");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -693,7 +706,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03340() throws Throwable {
+    public void test03341() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "z#/dC>Q,ed-D}[l73F$", "z#/dC>Q,ed-D}[l73F$");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -706,7 +719,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03441() throws Throwable {
+    public void test03442() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -720,7 +733,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03542() throws Throwable {
+    public void test03543() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -741,7 +754,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03643() throws Throwable {
+    public void test03644() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*u5L", ".*u5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -762,7 +775,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03744() throws Throwable {
+    public void test03745() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -775,7 +788,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03845() throws Throwable {
+    public void test03846() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "M", "M");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -796,7 +809,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03946() throws Throwable {
+    public void test03947() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "o#vI5%.Xf?4{])<@", (String) null);
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -809,7 +822,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04047() throws Throwable {
+    public void test04048() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -822,7 +835,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04148() throws Throwable {
+    public void test04149() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -835,7 +848,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04249() throws Throwable {
+    public void test04250() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -848,7 +861,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04350() throws Throwable {
+    public void test04351() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "+", "+");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -862,7 +875,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04451() throws Throwable {
+    public void test04452() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -883,7 +896,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04552() throws Throwable {
+    public void test04553() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -897,7 +910,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04653() throws Throwable {
+    public void test04654() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -918,7 +931,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04754() throws Throwable {
+    public void test04755() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -931,7 +944,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04855() throws Throwable {
+    public void test04856() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -951,7 +964,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04956() throws Throwable {
+    public void test04957() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -971,7 +984,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05057() throws Throwable {
+    public void test05058() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "5!v|6+HbQhL/zlkq _", "5!v|6+HbQhL/zlkq _");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -992,7 +1005,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05158() throws Throwable {
+    public void test05159() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "FieldCleaupPassFactory", (String) null);
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1013,7 +1026,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05259() throws Throwable {
+    public void test05260() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "no a StringNPde", "no a StringNPde");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1034,7 +1047,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05360() throws Throwable {
+    public void test05361() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "SpkCC'(%GO\"T!'$FBi", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1056,7 +1069,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05461() throws Throwable {
+    public void test05462() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "+", "+");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1078,7 +1091,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05562() throws Throwable {
+    public void test05563() throws Throwable {
         Compiler compiler0 = new Compiler();
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "C.Y*5", "C.Y*5");
@@ -1101,7 +1114,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05663() throws Throwable {
+    public void test05664() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1122,7 +1135,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05764() throws Throwable {
+    public void test05765() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1143,7 +1156,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05865() throws Throwable {
+    public void test05866() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1164,7 +1177,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05966() throws Throwable {
+    public void test05967() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1185,7 +1198,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06067() throws Throwable {
+    public void test06068() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "C6*5", "C6*5");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1207,7 +1220,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06168() throws Throwable {
+    public void test06169() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1228,7 +1241,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06269() throws Throwable {
+    public void test06270() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "+", "+");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1250,7 +1263,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06370() throws Throwable {
+    public void test06371() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "+", "+");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1272,7 +1285,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06471() throws Throwable {
+    public void test06472() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1286,7 +1299,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06572() throws Throwable {
+    public void test06573() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1307,7 +1320,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06673() throws Throwable {
+    public void test06674() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1328,7 +1341,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06774() throws Throwable {
+    public void test06775() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1349,7 +1362,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06875() throws Throwable {
+    public void test06876() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "E*5L", "E*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1363,7 +1376,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06976() throws Throwable {
+    public void test06977() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "ai*L0", "hNeqrUg/ONy/v,Nc`");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1385,7 +1398,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07077() throws Throwable {
+    public void test07078() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "com.google.javascript.jscomp.NodeUtil$MatchDeclaration");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1399,7 +1412,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07178() throws Throwable {
+    public void test07179() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1412,7 +1425,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07179() throws Throwable {
+    public void test07180() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1425,7 +1438,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07180() throws Throwable {
+    public void test07181() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1438,7 +1451,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07281() throws Throwable {
+    public void test07282() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1451,7 +1464,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07282() throws Throwable {
+    public void test07283() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1460,19 +1473,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = new Node(89, node0, node0);
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
-        assertEquals(0, compiler0.getWarningCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test07383() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        Node node1 = new Node(91, node0, 31, 47);
-        typeCheck0.visit(nodeTraversal0, node1, node1);
         assertEquals(0, compiler0.getWarningCount());
     }
 
@@ -1486,20 +1486,19 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(91, node0, 31, 47);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertFalse(compiler0.hasErrors());
+        assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
-    public void test07485() throws Throwable {
+    public void test07385() throws Throwable {
         Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
         ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
         TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
-        Normalize.PropagateConstantAnnotationsOverVars normalize_PropagateConstantAnnotationsOverVars0 = new Normalize.PropagateConstantAnnotationsOverVars(compiler0, false);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, normalize_PropagateConstantAnnotationsOverVars0);
-        Node node1 = new Node(92, node0, node0);
-        typeCheck0.visit(nodeTraversal0, node1, node0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        Node node1 = new Node(91, node0, 31, 47);
+        typeCheck0.visit(nodeTraversal0, node1, node1);
         assertFalse(compiler0.hasErrors());
     }
 
@@ -1514,20 +1513,21 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, normalize_PropagateConstantAnnotationsOverVars0);
         Node node1 = new Node(92, node0, node0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
-        assertEquals(0, compiler0.getWarningCount());
+        assertFalse(compiler0.hasErrors());
     }
 
     @Test(timeout = 4000)
-    public void test07587() throws Throwable {
+    public void test07487() throws Throwable {
         Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
         ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
         TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        Node node1 = new Node(93, node0, 2, 4);
-        typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertFalse(compiler0.hasErrors());
+        Normalize.PropagateConstantAnnotationsOverVars normalize_PropagateConstantAnnotationsOverVars0 = new Normalize.PropagateConstantAnnotationsOverVars(compiler0, false);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, normalize_PropagateConstantAnnotationsOverVars0);
+        Node node1 = new Node(92, node0, node0);
+        typeCheck0.visit(nodeTraversal0, node1, node0);
+        assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
@@ -1540,7 +1540,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(93, node0, 2, 4);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertEquals(0, compiler0.getWarningCount());
+        assertFalse(compiler0.hasErrors());
     }
 
     @Test(timeout = 4000)
@@ -1553,20 +1553,20 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(93, node0, 2, 4);
         typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertEquals(0, compiler0.getErrorCount());
+        assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
-    public void test07690() throws Throwable {
+    public void test07590() throws Throwable {
         Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
         ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
         TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        Node node1 = new Node(94, node0, node0);
-        typeCheck0.visit(nodeTraversal0, node1, node0);
-        assertEquals(1, compiler0.getErrorCount());
+        Node node1 = new Node(93, node0, 2, 4);
+        typeCheck0.visit(nodeTraversal0, node1, node1);
+        assertEquals(0, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
@@ -1579,20 +1579,19 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(94, node0, node0);
         typeCheck0.visit(nodeTraversal0, node1, node0);
-        assertEquals(0, compiler0.getWarningCount());
+        assertEquals(1, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
-    public void test07792() throws Throwable {
+    public void test07692() throws Throwable {
         Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
-        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
+        ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0);
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
-        Node node1 = new Node(97, node0, node0, node0, node0);
-        typeCheck0.visit(nodeTraversal0, node1, node1);
+        Node node1 = new Node(94, node0, node0);
+        typeCheck0.visit(nodeTraversal0, node1, node0);
         assertEquals(0, compiler0.getWarningCount());
     }
 
@@ -1607,11 +1606,25 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
         Node node1 = new Node(97, node0, node0, node0, node0);
         typeCheck0.visit(nodeTraversal0, node1, node1);
+        assertEquals(0, compiler0.getWarningCount());
+    }
+
+    @Test(timeout = 4000)
+    public void test07794() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
+        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, typeCheck0);
+        Node node1 = new Node(97, node0, node0, node0, node0);
+        typeCheck0.visit(nodeTraversal0, node1, node1);
         assertEquals(0, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
-    public void test07894() throws Throwable {
+    public void test07895() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "kwUWdf&7(1:+", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1634,7 +1647,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07995() throws Throwable {
+    public void test07996() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1649,7 +1662,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08096() throws Throwable {
+    public void test08097() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1664,7 +1677,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08197() throws Throwable {
+    public void test08198() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1685,7 +1698,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08298() throws Throwable {
+    public void test08299() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "e", "c/xz`. z,xX<C>");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1706,7 +1719,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08399() throws Throwable {
+    public void test083100() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Cannot add a property to a struct instance after it is constructed.", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1730,7 +1743,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test084100() throws Throwable {
+    public void test084101() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1744,7 +1757,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test085101() throws Throwable {
+    public void test085102() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1766,7 +1779,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test086102() throws Throwable {
+    public void test086103() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", (String) null);
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1779,7 +1792,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087103() throws Throwable {
+    public void test087104() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -1801,7 +1814,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088104() throws Throwable {
+    public void test088105() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1814,7 +1827,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089105() throws Throwable {
+    public void test089106() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1827,7 +1840,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090106() throws Throwable {
+    public void test090107() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1841,7 +1854,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091107() throws Throwable {
+    public void test091108() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1854,7 +1867,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092108() throws Throwable {
+    public void test092109() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1867,7 +1880,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093109() throws Throwable {
+    public void test093110() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1881,7 +1894,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test094110() throws Throwable {
+    public void test094111() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1903,7 +1916,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test095111() throws Throwable {
+    public void test095112() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1916,7 +1929,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test096112() throws Throwable {
+    public void test096113() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -1931,7 +1944,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test097113() throws Throwable {
+    public void test097114() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1952,7 +1965,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098114() throws Throwable {
+    public void test098115() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1968,7 +1981,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099115() throws Throwable {
+    public void test099116() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "!P0Ev};Xn.R:6Q33?*I", "!P0Ev};Xn.R:6Q33?*I");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -1989,7 +2002,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100116() throws Throwable {
+    public void test100117() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "j", "j");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2003,7 +2016,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101117() throws Throwable {
+    public void test101118() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "5!v|6+HbQhL/zlkq _", "5!v|6+HbQhL/zlkq _");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2015,7 +2028,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test102118() throws Throwable {
+    public void test102119() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2028,7 +2041,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103119() throws Throwable {
+    public void test103120() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "j", "j");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2050,7 +2063,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104120() throws Throwable {
+    public void test104121() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2071,7 +2084,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105121() throws Throwable {
+    public void test105122() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2092,7 +2105,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106122() throws Throwable {
+    public void test106123() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "E*5L", "E*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2113,7 +2126,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107123() throws Throwable {
+    public void test107124() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2133,7 +2146,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108124() throws Throwable {
+    public void test108125() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "j", "j");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2155,7 +2168,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109125() throws Throwable {
+    public void test109126() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2176,7 +2189,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110126() throws Throwable {
+    public void test110127() throws Throwable {
         Compiler compiler0 = new Compiler();
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
@@ -2198,7 +2211,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111127() throws Throwable {
+    public void test111128() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "j", "j");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2219,7 +2232,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112128() throws Throwable {
+    public void test112129() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "LNu5qL", "LNu5qL");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2240,7 +2253,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113129() throws Throwable {
+    public void test113130() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "o", "o");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2261,7 +2274,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test114130() throws Throwable {
+    public void test114131() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "5!v|6+HbQhL/zlkq (`_", "5!v|6+HbQhL/zlkq (`_");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2281,7 +2294,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test115131() throws Throwable {
+    public void test115132() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("z,l");
         NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, (NodeTraversal.Callback) null);
@@ -2303,7 +2316,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test116132() throws Throwable {
+    public void test116133() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "c/xz`. z,xX<C>");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2325,7 +2338,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117133() throws Throwable {
+    public void test117134() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2347,7 +2360,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118134() throws Throwable {
+    public void test118135() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -2370,7 +2383,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119135() throws Throwable {
+    public void test119136() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Cannot add a property to a struct instance after it is constructed.", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2391,7 +2404,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test120136() throws Throwable {
+    public void test120137() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "j", "j");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2412,7 +2425,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test121137() throws Throwable {
+    public void test121138() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2425,7 +2438,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test122138() throws Throwable {
+    public void test122139() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2438,7 +2451,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123139() throws Throwable {
+    public void test123140() throws Throwable {
         Compiler compiler0 = new Compiler();
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
@@ -2452,7 +2465,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124140() throws Throwable {
+    public void test124141() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "AV", "AV");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2473,7 +2486,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125141() throws Throwable {
+    public void test125142() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2494,7 +2507,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126142() throws Throwable {
+    public void test126143() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "G_E", "G_E");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2508,7 +2521,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test127143() throws Throwable {
+    public void test127144() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "JSC_TEMPLATE_TYPE_EXPECTED", "JSC_TEMPLATE_TYPE_EXPECTED");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2521,7 +2534,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test128144() throws Throwable {
+    public void test128145() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2535,7 +2548,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129145() throws Throwable {
+    public void test129146() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "Tsm1d`pvoy", "Tsm1d`pvoy");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2556,7 +2569,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130146() throws Throwable {
+    public void test130147() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "not a StringNode", "not a StringNode");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2570,7 +2583,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test131147() throws Throwable {
+    public void test131148() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2582,7 +2595,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test131148() throws Throwable {
+    public void test131149() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2591,21 +2604,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node1 = new Node(31, node0, 1, 4095);
         typeCheck0.processForTesting(node0, node0);
         assertEquals(0, compiler0.getWarningCount());
-    }
-
-    @Test(timeout = 4000)
-    public void test132149() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "c/xz`. z,xX<C>");
-        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
-        ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
-        Normalize.PropagateConstantAnnotationsOverVars normalize_PropagateConstantAnnotationsOverVars0 = new Normalize.PropagateConstantAnnotationsOverVars(compiler0, true);
-        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, normalize_PropagateConstantAnnotationsOverVars0);
-        Node node1 = new Node(19, node0, node0);
-        CheckLevel checkLevel0 = CheckLevel.ERROR;
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0, checkLevel0, checkLevel0);
-        typeCheck0.visit(nodeTraversal0, node1, node1);
-        assertTrue(compiler0.hasErrors());
     }
 
     @Test(timeout = 4000)
@@ -2620,11 +2618,26 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         CheckLevel checkLevel0 = CheckLevel.ERROR;
         TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0, checkLevel0, checkLevel0);
         typeCheck0.visit(nodeTraversal0, node1, node1);
+        assertTrue(compiler0.hasErrors());
+    }
+
+    @Test(timeout = 4000)
+    public void test132151() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "c/xz`. z,xX<C>");
+        JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
+        ReverseAbstractInterpreter reverseAbstractInterpreter0 = compiler0.getReverseAbstractInterpreter();
+        Normalize.PropagateConstantAnnotationsOverVars normalize_PropagateConstantAnnotationsOverVars0 = new Normalize.PropagateConstantAnnotationsOverVars(compiler0, true);
+        NodeTraversal nodeTraversal0 = new NodeTraversal(compiler0, normalize_PropagateConstantAnnotationsOverVars0);
+        Node node1 = new Node(19, node0, node0);
+        CheckLevel checkLevel0 = CheckLevel.ERROR;
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, reverseAbstractInterpreter0, jSTypeRegistry0, checkLevel0, checkLevel0);
+        typeCheck0.visit(nodeTraversal0, node1, node1);
         assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
-    public void test133151() throws Throwable {
+    public void test133152() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2637,7 +2650,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test134152() throws Throwable {
+    public void test134153() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "", "");
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
@@ -2652,7 +2665,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test135153() throws Throwable {
+    public void test135154() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "E*5L", "E*5L");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2666,7 +2679,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test136154() throws Throwable {
+    public void test136155() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, ">", ">");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2676,20 +2689,6 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         Node node0 = Node.newString(118, "x?YAC");
         boolean boolean0 = typeCheck0.visitName(nodeTraversal0, node0, node0);
         assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test137155() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "msg.invalid.type", "Cannot set maximumInterpreterStackDepth to less than 1");
-        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
-        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
-        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
-        Node node1 = new Node(16, node0, node0, node0, node0);
-        typeCheck0.processForTesting(node0, node0);
-        assertEquals(0, compiler0.getWarningCount());
     }
 
     @Test(timeout = 4000)
@@ -2703,11 +2702,25 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
         TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
         Node node1 = new Node(16, node0, node0, node0, node0);
         typeCheck0.processForTesting(node0, node0);
+        assertEquals(0, compiler0.getWarningCount());
+    }
+
+    @Test(timeout = 4000)
+    public void test137157() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "msg.invalid.type", "Cannot set maximumInterpreterStackDepth to less than 1");
+        JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
+        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
+        SemanticReverseAbstractInterpreter semanticReverseAbstractInterpreter0 = new SemanticReverseAbstractInterpreter(jqueryCodingConvention0, jSTypeRegistry0);
+        TypeCheck typeCheck0 = new TypeCheck(compiler0, semanticReverseAbstractInterpreter0, jSTypeRegistry0);
+        Node node1 = new Node(16, node0, node0, node0, node0);
+        typeCheck0.processForTesting(node0, node0);
         assertEquals(0, compiler0.getErrorCount());
     }
 
     @Test(timeout = 4000)
-    public void test138157() throws Throwable {
+    public void test138158() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer", "com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2720,7 +2733,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test139158() throws Throwable {
+    public void test139159() throws Throwable {
         Compiler compiler0 = new Compiler();
         JqueryCodingConvention jqueryCodingConvention0 = new JqueryCodingConvention();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "", "");
@@ -2734,7 +2747,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140159() throws Throwable {
+    public void test140160() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "0g`X^-3", "0g`X^-3");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2748,7 +2761,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141160() throws Throwable {
+    public void test141161() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "operator {0} cannot be applied to {1}", "operator {0} cannot be applied to {1}");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2762,7 +2775,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141161() throws Throwable {
+    public void test141162() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, "operator {0} cannot be applied to {1}", "operator {0} cannot be applied to {1}");
         JSTypeRegistry jSTypeRegistry0 = compiler0.getTypeRegistry();
@@ -2776,7 +2789,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test142162() throws Throwable {
+    public void test142163() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, ".*5L", ".*5L");
         EmptyMessageBundle emptyMessageBundle0 = new EmptyMessageBundle();
@@ -2793,7 +2806,7 @@ public class TypeCheck_ESTest extends TypeCheck_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test143163() throws Throwable {
+    public void test143164() throws Throwable {
         Compiler compiler0 = new Compiler();
         Normalize.parseAndNormalizeTestCode(compiler0, "O", "O");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();

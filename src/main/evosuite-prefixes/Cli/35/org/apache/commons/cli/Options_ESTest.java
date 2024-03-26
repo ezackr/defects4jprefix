@@ -145,16 +145,6 @@ public class Options_ESTest extends Options_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1517() throws Throwable {
-        Options options0 = new Options();
-        OptionGroup optionGroup0 = new OptionGroup();
-        Option option0 = new Option("Vw", "org.apache.commons.cli.Options", false, "OJ,R!zRP");
-        OptionGroup optionGroup1 = optionGroup0.addOption(option0);
-        options0.addOptionGroup(optionGroup1);
-        option0.isRequired();
-    }
-
-    @Test(timeout = 4000)
     public void test1518() throws Throwable {
         Options options0 = new Options();
         OptionGroup optionGroup0 = new OptionGroup();

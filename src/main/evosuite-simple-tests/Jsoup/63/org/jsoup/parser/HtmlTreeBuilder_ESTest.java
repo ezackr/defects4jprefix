@@ -164,7 +164,24 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0109() throws Throwable {
+    public void test0089() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.BeforeHead;
+        htmlTreeBuilder0.error(htmlTreeBuilderState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test00910() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.InFrameset;
+        htmlTreeBuilder0.transition(htmlTreeBuilderState0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01011() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("marquee");
         htmlTreeBuilder0.setHeadElement(document0);
@@ -172,7 +189,23 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01310() throws Throwable {
+    public void test01112() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.framesetOk(false);
+    }
+
+    @Test(timeout = 4000)
+    public void test01213() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        StringReader stringReader0 = new StringReader("$?K5X-n2");
+        ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parse(stringReader0, "$?K5X-n2", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.push((Element) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test01314() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -183,7 +216,25 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01611() throws Throwable {
+    public void test01415() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.clearStackToTableRowContext();
+    }
+
+    @Test(timeout = 4000)
+    public void test01516() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.clearStackToTableBodyContext();
+    }
+
+    @Test(timeout = 4000)
+    public void test01617() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -194,7 +245,17 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01812() throws Throwable {
+    public void test01718() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking((-2511));
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.state();
+    }
+
+    @Test(timeout = 4000)
+    public void test01819() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -211,7 +272,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01813() throws Throwable {
+    public void test01820() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -228,7 +289,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test01914() throws Throwable {
+    public void test01921() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -244,7 +305,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02015() throws Throwable {
+    public void test02022() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -259,7 +320,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02116() throws Throwable {
+    public void test02123() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -270,7 +331,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02217() throws Throwable {
+    public void test02224() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -281,7 +342,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02318() throws Throwable {
+    public void test02325() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -291,7 +352,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02319() throws Throwable {
+    public void test02326() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -308,7 +369,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02320() throws Throwable {
+    public void test02327() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -325,7 +386,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02421() throws Throwable {
+    public void test02428() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -341,7 +402,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02522() throws Throwable {
+    public void test02529() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Element element0 = new Element("param");
         boolean boolean0 = htmlTreeBuilder0.isSpecial(element0);
@@ -349,7 +410,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02623() throws Throwable {
+    public void test02630() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("pre");
         boolean boolean0 = htmlTreeBuilder0.isSpecial(document0);
@@ -357,7 +418,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02724() throws Throwable {
+    public void test02731() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -367,7 +428,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02725() throws Throwable {
+    public void test02732() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -377,7 +438,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02726() throws Throwable {
+    public void test02733() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -388,14 +449,14 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02827() throws Throwable {
+    public void test02834() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         boolean boolean0 = htmlTreeBuilder0.isFosterInserts();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02928() throws Throwable {
+    public void test02935() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -405,7 +466,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test02929() throws Throwable {
+    public void test02936() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -421,7 +482,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03030() throws Throwable {
+    public void test03037() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -431,7 +492,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03031() throws Throwable {
+    public void test03038() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -441,7 +502,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03132() throws Throwable {
+    public void test03139() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -457,7 +518,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03233() throws Throwable {
+    public void test03240() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -472,7 +533,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03334() throws Throwable {
+    public void test03341() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -482,7 +543,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03335() throws Throwable {
+    public void test03342() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -498,7 +559,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03436() throws Throwable {
+    public void test03443() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -512,7 +573,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03537() throws Throwable {
+    public void test03544() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -526,7 +587,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03638() throws Throwable {
+    public void test03645() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -535,7 +596,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03639() throws Throwable {
+    public void test03646() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -545,7 +606,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03740() throws Throwable {
+    public void test03747() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -555,7 +616,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03741() throws Throwable {
+    public void test03748() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -566,7 +627,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03842() throws Throwable {
+    public void test03849() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -575,7 +636,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03843() throws Throwable {
+    public void test03850() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -585,7 +646,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03944() throws Throwable {
+    public void test03951() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -594,7 +655,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test03945() throws Throwable {
+    public void test03952() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -604,7 +665,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04046() throws Throwable {
+    public void test04053() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -614,7 +675,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04047() throws Throwable {
+    public void test04054() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -625,7 +686,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04148() throws Throwable {
+    public void test04155() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -634,7 +695,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04149() throws Throwable {
+    public void test04156() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -644,14 +705,14 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04250() throws Throwable {
+    public void test04257() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ArrayList<Element> arrayList0 = htmlTreeBuilder0.getStack();
         assertNull(arrayList0);
     }
 
     @Test(timeout = 4000)
-    public void test04351() throws Throwable {
+    public void test04358() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -661,7 +722,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04352() throws Throwable {
+    public void test04359() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -672,7 +733,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04453() throws Throwable {
+    public void test04460() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -683,7 +744,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04554() throws Throwable {
+    public void test04561() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -693,7 +754,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04555() throws Throwable {
+    public void test04562() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -703,7 +764,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04556() throws Throwable {
+    public void test04563() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -713,7 +774,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04657() throws Throwable {
+    public void test04664() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -724,7 +785,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04758() throws Throwable {
+    public void test04765() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         StringReader stringReader0 = new StringReader("ybS4X_Yz-!d");
         ParseErrorList parseErrorList0 = new ParseErrorList(2054, 2054);
@@ -734,7 +795,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04859() throws Throwable {
+    public void test04866() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("'c=RMmMJP+I^L7)");
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -743,7 +804,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04860() throws Throwable {
+    public void test04867() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("'c=RMmMJP+I^L7)");
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -753,7 +814,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04961() throws Throwable {
+    public void test04968() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -764,7 +825,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05062() throws Throwable {
+    public void test05069() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -780,14 +841,14 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05163() throws Throwable {
+    public void test05170() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         boolean boolean0 = htmlTreeBuilder0.framesetOk();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05264() throws Throwable {
+    public void test05271() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -802,7 +863,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05365() throws Throwable {
+    public void test05372() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -821,7 +882,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05466() throws Throwable {
+    public void test05473() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -836,7 +897,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05567() throws Throwable {
+    public void test05574() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -851,7 +912,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05668() throws Throwable {
+    public void test05675() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("P _r,Ji8EW^9@/");
         // Undeclared exception!
@@ -867,7 +928,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05769() throws Throwable {
+    public void test05776() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -881,7 +942,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05870() throws Throwable {
+    public void test05877() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("");
         // Undeclared exception!
@@ -897,7 +958,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05971() throws Throwable {
+    public void test05978() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.Initial;
@@ -914,7 +975,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06072() throws Throwable {
+    public void test06079() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -937,7 +998,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06173() throws Throwable {
+    public void test06180() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -961,7 +1022,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06274() throws Throwable {
+    public void test06281() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         // Undeclared exception!
@@ -977,7 +1038,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06375() throws Throwable {
+    public void test06382() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -992,7 +1053,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06476() throws Throwable {
+    public void test06483() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1007,7 +1068,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06577() throws Throwable {
+    public void test06584() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1022,7 +1083,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06678() throws Throwable {
+    public void test06685() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1041,7 +1102,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06779() throws Throwable {
+    public void test06786() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         // Undeclared exception!
@@ -1057,7 +1118,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06880() throws Throwable {
+    public void test06887() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = Document.createShell("");
         // Undeclared exception!
@@ -1073,7 +1134,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06981() throws Throwable {
+    public void test06988() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1088,7 +1149,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07082() throws Throwable {
+    public void test07089() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1102,7 +1163,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07183() throws Throwable {
+    public void test07190() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1117,7 +1178,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07284() throws Throwable {
+    public void test07291() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1131,7 +1192,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07385() throws Throwable {
+    public void test07392() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1146,7 +1207,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07486() throws Throwable {
+    public void test07493() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1166,7 +1227,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07587() throws Throwable {
+    public void test07594() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1181,7 +1242,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07688() throws Throwable {
+    public void test07695() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         CharacterReader characterReader0 = new CharacterReader("AfterDoctypePublicIdentifier");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(0);
@@ -1200,7 +1261,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07789() throws Throwable {
+    public void test07796() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1215,7 +1276,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07890() throws Throwable {
+    public void test07897() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         // Undeclared exception!
@@ -1231,7 +1292,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07991() throws Throwable {
+    public void test07998() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         CharacterReader characterReader0 = new CharacterReader("org.jsoup.select.Evaluator$AttributeWithValueMatching");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
@@ -1251,7 +1312,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08092() throws Throwable {
+    public void test08099() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         // Undeclared exception!
@@ -1267,7 +1328,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08193() throws Throwable {
+    public void test081100() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1282,7 +1343,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08294() throws Throwable {
+    public void test082101() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Token.Character token_Character0 = new Token.Character();
         // Undeclared exception!
@@ -1298,7 +1359,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08395() throws Throwable {
+    public void test083102() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1313,7 +1374,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08496() throws Throwable {
+    public void test084103() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         StringReader stringReader0 = new StringReader("ybS4X_Yz-!d");
         ParseErrorList parseErrorList0 = new ParseErrorList(2062, 2062);
@@ -1331,7 +1392,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08597() throws Throwable {
+    public void test085104() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -1348,7 +1409,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08698() throws Throwable {
+    public void test086105() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1363,7 +1424,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08799() throws Throwable {
+    public void test087106() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         String[] stringArray0 = new String[8];
         // Undeclared exception!
@@ -1379,7 +1440,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088100() throws Throwable {
+    public void test088107() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         StringReader stringReader0 = new StringReader("ybS4X_Yz-!d");
         ParseErrorList parseErrorList0 = new ParseErrorList(2062, 2062);
@@ -1398,7 +1459,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089101() throws Throwable {
+    public void test089108() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1413,7 +1474,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test090102() throws Throwable {
+    public void test090109() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1428,7 +1489,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test091103() throws Throwable {
+    public void test091110() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1443,7 +1504,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test092104() throws Throwable {
+    public void test092111() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.InTableText;
         // Undeclared exception!
@@ -1459,7 +1520,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test093105() throws Throwable {
+    public void test093112() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1470,7 +1531,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test094106() throws Throwable {
+    public void test094113() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1482,7 +1543,42 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098107() throws Throwable {
+    public void test095114() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.removeFromActiveFormattingElements((Element) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test096115() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.insertMarkerToFormattingElements();
+        htmlTreeBuilder0.clearFormattingElementsToLastMarker();
+    }
+
+    @Test(timeout = 4000)
+    public void test097116() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        Tokeniser tokeniser0 = htmlTreeBuilder0.tokeniser;
+        Token.StartTag token_StartTag0 = tokeniser0.startPending;
+        Token.Tag token_Tag0 = token_StartTag0.name("b");
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.AfterHead;
+        htmlTreeBuilder0.process(token_Tag0, htmlTreeBuilderState0);
+        htmlTreeBuilder0.clearFormattingElementsToLastMarker();
+    }
+
+    @Test(timeout = 4000)
+    public void test098117() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1499,7 +1595,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099108() throws Throwable {
+    public void test099118() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1509,7 +1605,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099109() throws Throwable {
+    public void test099119() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1527,7 +1623,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test100110() throws Throwable {
+    public void test100120() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1539,7 +1635,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test101111() throws Throwable {
+    public void test101121() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1550,7 +1646,16 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test103112() throws Throwable {
+    public void test102122() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.generateImpliedEndTags("intabletext");
+    }
+
+    @Test(timeout = 4000)
+    public void test103123() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1565,7 +1670,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104113() throws Throwable {
+    public void test104124() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1575,7 +1680,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104114() throws Throwable {
+    public void test104125() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1585,7 +1690,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test104115() throws Throwable {
+    public void test104126() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1596,7 +1701,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test105116() throws Throwable {
+    public void test105127() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1616,7 +1721,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106117() throws Throwable {
+    public void test106128() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1626,7 +1731,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test106118() throws Throwable {
+    public void test106129() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1642,7 +1747,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107119() throws Throwable {
+    public void test107130() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1652,7 +1757,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107120() throws Throwable {
+    public void test107131() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1662,7 +1767,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test107121() throws Throwable {
+    public void test107132() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1677,7 +1782,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test108122() throws Throwable {
+    public void test108133() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1700,7 +1805,22 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test110123() throws Throwable {
+    public void test109134() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        Tokeniser tokeniser0 = htmlTreeBuilder0.tokeniser;
+        Token.StartTag token_StartTag0 = tokeniser0.startPending;
+        Token.Tag token_Tag0 = token_StartTag0.name("b");
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.AfterHead;
+        htmlTreeBuilder0.process(token_Tag0, htmlTreeBuilderState0);
+        htmlTreeBuilder0.resetInsertionMode();
+    }
+
+    @Test(timeout = 4000)
+    public void test110135() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, true);
@@ -1718,7 +1838,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test111124() throws Throwable {
+    public void test111136() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1737,7 +1857,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test112125() throws Throwable {
+    public void test112137() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1755,7 +1875,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113126() throws Throwable {
+    public void test113138() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1772,7 +1892,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113127() throws Throwable {
+    public void test113139() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1789,7 +1909,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113128() throws Throwable {
+    public void test113140() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1806,7 +1926,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test113129() throws Throwable {
+    public void test113141() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1823,7 +1943,41 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test117130() throws Throwable {
+    public void test114142() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.clearStackToTableContext();
+    }
+
+    @Test(timeout = 4000)
+    public void test115143() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Element element0 = new Element("noresize");
+        Pattern pattern0 = Pattern.compile("noresize", 501);
+        Elements elements0 = element0.getElementsMatchingOwnText(pattern0);
+        htmlTreeBuilder0.stack = (ArrayList<Element>) elements0;
+        htmlTreeBuilder0.clearStackToTableContext();
+    }
+
+    @Test(timeout = 4000)
+    public void test116144() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("|!3");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = htmlTreeBuilder0.defaultSettings();
+        htmlTreeBuilder0.parseFragment("|!3", document0, "|!3", parseErrorList0, parseSettings0);
+        Tokeniser tokeniser0 = htmlTreeBuilder0.tokeniser;
+        Token.StartTag token_StartTag0 = tokeniser0.startPending;
+        Token.Tag token_Tag0 = token_StartTag0.name("b");
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.AfterHead;
+        htmlTreeBuilder0.process(token_Tag0, htmlTreeBuilderState0);
+        htmlTreeBuilder0.popStackToBefore("b");
+    }
+
+    @Test(timeout = 4000)
+    public void test117145() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1843,7 +1997,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test118131() throws Throwable {
+    public void test118146() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1856,7 +2010,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test119132() throws Throwable {
+    public void test119147() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
         ParseSettings parseSettings0 = ParseSettings.preserveCase;
@@ -1873,7 +2027,18 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test121133() throws Throwable {
+    public void test120148() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        htmlTreeBuilder0.popStackToClose("html");
+        htmlTreeBuilder0.resetInsertionMode();
+    }
+
+    @Test(timeout = 4000)
+    public void test121149() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -1882,7 +2047,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test121134() throws Throwable {
+    public void test121150() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
         ParseSettings parseSettings0 = new ParseSettings(false, false);
@@ -1892,7 +2057,22 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123135() throws Throwable {
+    public void test122151() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        Tokeniser tokeniser0 = htmlTreeBuilder0.tokeniser;
+        Token.StartTag token_StartTag0 = tokeniser0.startPending;
+        Token.Tag token_Tag0 = token_StartTag0.name("b");
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.AfterHead;
+        htmlTreeBuilder0.process(token_Tag0, htmlTreeBuilderState0);
+        htmlTreeBuilder0.reconstructFormattingElements();
+    }
+
+    @Test(timeout = 4000)
+    public void test123152() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1902,7 +2082,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123136() throws Throwable {
+    public void test123153() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1912,7 +2092,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test123137() throws Throwable {
+    public void test123154() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1923,7 +2103,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test124138() throws Throwable {
+    public void test124155() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1937,7 +2117,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test125139() throws Throwable {
+    public void test125156() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         htmlTreeBuilder0.maybeSetBaseUri(document0);
@@ -1945,7 +2125,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126140() throws Throwable {
+    public void test126157() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Element element0 = new Element("l");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1955,7 +2135,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test126141() throws Throwable {
+    public void test126158() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Element element0 = new Element("l");
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
@@ -1965,7 +2145,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test127142() throws Throwable {
+    public void test127159() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1980,7 +2160,13 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test129143() throws Throwable {
+    public void test128160() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.originalState();
+    }
+
+    @Test(timeout = 4000)
+    public void test129161() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -1995,7 +2181,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test130144() throws Throwable {
+    public void test130162() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Token.Comment token_Comment0 = new Token.Comment();
         // Undeclared exception!
@@ -2011,7 +2197,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test131145() throws Throwable {
+    public void test131163() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("V'DgO6![}VK]5#a-w:");
         // Undeclared exception!
@@ -2027,14 +2213,30 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test133146() throws Throwable {
+    public void test132164() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.setFosterInserts(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test133165() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         boolean boolean0 = htmlTreeBuilder0.isFragmentParsing();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test135147() throws Throwable {
+    public void test134166() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        ParseErrorList parseErrorList0 = new ParseErrorList(3512, 501);
+        ParseSettings parseSettings0 = new ParseSettings(false, false);
+        htmlTreeBuilder0.parseFragment("InTableText", (Element) null, "noresize", parseErrorList0, parseSettings0);
+        Token.Comment token_Comment0 = new Token.Comment();
+        htmlTreeBuilder0.insert(token_Comment0);
+    }
+
+    @Test(timeout = 4000)
+    public void test135167() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = new Document("dl");
         // Undeclared exception!
@@ -2050,7 +2252,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test136148() throws Throwable {
+    public void test136168() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2065,21 +2267,21 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test137149() throws Throwable {
+    public void test137169() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         List<String> list0 = htmlTreeBuilder0.getPendingTableCharacters();
         assertNull(list0);
     }
 
     @Test(timeout = 4000)
-    public void test138150() throws Throwable {
+    public void test138170() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         String string0 = htmlTreeBuilder0.getBaseUri();
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test139151() throws Throwable {
+    public void test139171() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2094,7 +2296,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test140152() throws Throwable {
+    public void test140172() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2109,14 +2311,20 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test141153() throws Throwable {
+    public void test141173() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Document document0 = htmlTreeBuilder0.getDocument();
         assertNull(document0);
     }
 
     @Test(timeout = 4000)
-    public void test143154() throws Throwable {
+    public void test142174() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.setPendingTableCharacters((List<String>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test143175() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         String[] stringArray0 = new String[3];
         // Undeclared exception!
@@ -2132,7 +2340,13 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test145155() throws Throwable {
+    public void test144176() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.state();
+    }
+
+    @Test(timeout = 4000)
+    public void test145177() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2147,14 +2361,20 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test146156() throws Throwable {
+    public void test146178() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         FormElement formElement0 = htmlTreeBuilder0.getFormElement();
         assertNull(formElement0);
     }
 
     @Test(timeout = 4000)
-    public void test148157() throws Throwable {
+    public void test147179() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.newPendingTableCharacters();
+    }
+
+    @Test(timeout = 4000)
+    public void test148180() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2169,7 +2389,19 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test151158() throws Throwable {
+    public void test149181() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.generateImpliedEndTags();
+    }
+
+    @Test(timeout = 4000)
+    public void test150182() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.markInsertionMode();
+    }
+
+    @Test(timeout = 4000)
+    public void test151183() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2184,7 +2416,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test152159() throws Throwable {
+    public void test152184() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2199,7 +2431,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test153160() throws Throwable {
+    public void test153185() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2214,14 +2446,20 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test155161() throws Throwable {
+    public void test154186() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        htmlTreeBuilder0.setFormElement((FormElement) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test155187() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         Element element0 = htmlTreeBuilder0.getHeadElement();
         assertNull(element0);
     }
 
     @Test(timeout = 4000)
-    public void test156162() throws Throwable {
+    public void test156188() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2236,7 +2474,7 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test157163() throws Throwable {
+    public void test157189() throws Throwable {
         HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
         // Undeclared exception!
         try {
@@ -2248,5 +2486,20 @@ public class HtmlTreeBuilder_ESTest extends HtmlTreeBuilder_ESTest_scaffolding {
             //
             verifyException("org.jsoup.helper.Validate", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test158190() throws Throwable {
+        HtmlTreeBuilder htmlTreeBuilder0 = new HtmlTreeBuilder();
+        Document document0 = new Document("dl");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(30);
+        ParseSettings parseSettings0 = ParseSettings.preserveCase;
+        htmlTreeBuilder0.parseFragment("dl", document0, "dl", parseErrorList0, parseSettings0);
+        Tokeniser tokeniser0 = htmlTreeBuilder0.tokeniser;
+        Token.StartTag token_StartTag0 = tokeniser0.startPending;
+        Token.Tag token_Tag0 = token_StartTag0.name("b");
+        HtmlTreeBuilderState htmlTreeBuilderState0 = HtmlTreeBuilderState.AfterHead;
+        htmlTreeBuilder0.process(token_Tag0, htmlTreeBuilderState0);
+        htmlTreeBuilder0.isInActiveFormattingElements(document0);
     }
 }

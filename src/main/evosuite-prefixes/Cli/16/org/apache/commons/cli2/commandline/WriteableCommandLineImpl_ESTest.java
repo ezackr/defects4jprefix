@@ -113,16 +113,6 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
-        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
-        LinkedList<DefaultOption> linkedList0 = new LinkedList<DefaultOption>();
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
-        writeableCommandLineImpl0.addSwitch(propertyOption0, false);
-        Boolean boolean0 = Boolean.FALSE;
-        Boolean boolean1 = writeableCommandLineImpl0.getSwitch((Option) propertyOption0, boolean0);
-    }
-
-    @Test(timeout = 4000)
     public void test0910() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
@@ -243,15 +233,6 @@ public class WriteableCommandLineImpl_ESTest extends WriteableCommandLineImpl_ES
 
     @Test(timeout = 4000)
     public void test2122() throws Throwable {
-        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
-        LinkedList<Object> linkedList0 = new LinkedList<Object>();
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
-        writeableCommandLineImpl0.addProperty((Option) propertyOption0, "-D", "Passes properties and values to the application");
-        String string0 = writeableCommandLineImpl0.getProperty("-D");
-    }
-
-    @Test(timeout = 4000)
-    public void test2123() throws Throwable {
         PropertyOption propertyOption0 = PropertyOption.INSTANCE;
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);

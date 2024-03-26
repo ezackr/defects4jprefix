@@ -16,775 +16,780 @@ import org.junit.runner.RunWith;
 public class TokenStream_ESTest extends TokenStream_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test0010() throws Throwable {
+    public void test0000() throws Throwable {
+        TokenStream tokenStream0 = new TokenStream();
+    }
+
+    @Test(timeout = 4000)
+    public void test0011() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("in");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0021() throws Throwable {
+    public void test0022() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("c se");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0032() throws Throwable {
+    public void test0033() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("var");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0043() throws Throwable {
+    public void test0044() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("@5pLf");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0054() throws Throwable {
+    public void test0055() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("delete");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0065() throws Throwable {
+    public void test0066() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("finally");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0076() throws Throwable {
+    public void test0077() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("abstract");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0087() throws Throwable {
+    public void test0088() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("protected");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0098() throws Throwable {
+    public void test0099() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("instanceof");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test0109() throws Throwable {
+    public void test01010() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword(" ?HFE6lB`$");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01110() throws Throwable {
+    public void test01111() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("E|&'<N@Z29.R");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01211() throws Throwable {
+    public void test01212() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword(";9 htE1$J2%\"EXG]iC");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01312() throws Throwable {
+    public void test01313() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("if");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01413() throws Throwable {
+    public void test01414() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("xf");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01514() throws Throwable {
+    public void test01515() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("oo");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01615() throws Throwable {
+    public void test01616() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("mn");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01716() throws Throwable {
+    public void test01717() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("N^");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01817() throws Throwable {
+    public void test01818() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("do");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test01918() throws Throwable {
+    public void test01919() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("for");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02019() throws Throwable {
+    public void test02020() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("ift");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02120() throws Throwable {
+    public void test02121() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("nw");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02221() throws Throwable {
+    public void test02222() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("t\"y");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02322() throws Throwable {
+    public void test02323() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("fn1");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02423() throws Throwable {
+    public void test02424() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("fGr");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02524() throws Throwable {
+    public void test02525() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("igh");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02625() throws Throwable {
+    public void test02626() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("int");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02726() throws Throwable {
+    public void test02727() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("nll");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02827() throws Throwable {
+    public void test02828() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("tow");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test02928() throws Throwable {
+    public void test02929() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("vkh");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03029() throws Throwable {
+    public void test03030() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("vBr");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03130() throws Throwable {
+    public void test03131() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("byOe");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03231() throws Throwable {
+    public void test03232() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("d#M");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03332() throws Throwable {
+    public void test03333() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("edue");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03433() throws Throwable {
+    public void test03434() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("flse");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03534() throws Throwable {
+    public void test03535() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("g#Yd");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03635() throws Throwable {
+    public void test03636() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("h;6B");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03736() throws Throwable {
+    public void test03737() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("iU,]");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03837() throws Throwable {
+    public void test03838() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("jtPw");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test03938() throws Throwable {
+    public void test03939() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("k&Qf");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04039() throws Throwable {
+    public void test04040() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("long");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04140() throws Throwable {
+    public void test04141() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("nu|l");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04241() throws Throwable {
+    public void test04242() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("oeda");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04342() throws Throwable {
+    public void test04343() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("p5%3");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04443() throws Throwable {
+    public void test04444() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("qda~");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04544() throws Throwable {
+    public void test04545() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("rebk");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04645() throws Throwable {
+    public void test04646() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("sort");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04746() throws Throwable {
+    public void test04747() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("this");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04847() throws Throwable {
+    public void test04848() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("uy22");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test04948() throws Throwable {
+    public void test04949() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("void");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05049() throws Throwable {
+    public void test05050() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("wile");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05150() throws Throwable {
+    public void test05151() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("ciJr");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05251() throws Throwable {
+    public void test05252() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("cile");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05352() throws Throwable {
+    public void test05353() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("c$m-");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05453() throws Throwable {
+    public void test05454() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("e(um");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05554() throws Throwable {
+    public void test05555() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("erbu");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05655() throws Throwable {
+    public void test05656() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("e]Bm");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05756() throws Throwable {
+    public void test05757() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("type");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05857() throws Throwable {
+    public void test05858() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("th~T");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test05958() throws Throwable {
+    public void test05959() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("tnds");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06059() throws Throwable {
+    public void test06060() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("t&is");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06160() throws Throwable {
+    public void test06161() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("class");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06261() throws Throwable {
+    public void test06262() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("&^bwb");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06362() throws Throwable {
+    public void test06363() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("5Ecr>");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06463() throws Throwable {
+    public void test06464() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("6dd6?");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06564() throws Throwable {
+    public void test06565() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("bre/'");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06665() throws Throwable {
+    public void test06666() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("oqf;a");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06766() throws Throwable {
+    public void test06767() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("fUgrh");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06867() throws Throwable {
+    public void test06868() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("tGh~T");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test06968() throws Throwable {
+    public void test06969() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("while");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07069() throws Throwable {
+    public void test07070() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("Z}jh$");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07170() throws Throwable {
+    public void test07171() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("9ZkG6");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07271() throws Throwable {
+    public void test07272() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("false");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07372() throws Throwable {
+    public void test07373() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("brmfk");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07473() throws Throwable {
+    public void test07474() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("=endn");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07574() throws Throwable {
+    public void test07575() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("G;o3M");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07675() throws Throwable {
+    public void test07676() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("Ybq:");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07776() throws Throwable {
+    public void test07777() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("sort");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07877() throws Throwable {
+    public void test07878() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("Fss e");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test07978() throws Throwable {
+    public void test07979() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("catch");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08079() throws Throwable {
+    public void test08080() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("vf[z,");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08180() throws Throwable {
+    public void test08181() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("const");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08281() throws Throwable {
+    public void test08282() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("final");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08382() throws Throwable {
+    public void test08383() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("float");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08483() throws Throwable {
+    public void test08484() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("short");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08584() throws Throwable {
+    public void test08585() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("na1ewe");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08685() throws Throwable {
+    public void test08686() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("0brebk");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08786() throws Throwable {
+    public void test08787() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword(".c9!Re");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08887() throws Throwable {
+    public void test08888() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("fd~=8m");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test08988() throws Throwable {
+    public void test08989() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("ogsx=S");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09089() throws Throwable {
+    public void test09090() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("shojrt");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09190() throws Throwable {
+    public void test09191() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("<i7c,]");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09291() throws Throwable {
+    public void test09292() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("Njssf%");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09392() throws Throwable {
+    public void test09393() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("tkbype");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09493() throws Throwable {
+    public void test09494() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("sl*oIO");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09594() throws Throwable {
+    public void test09595() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("import");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09695() throws Throwable {
+    public void test09696() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("SnYgd4");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09796() throws Throwable {
+    public void test09797() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("double");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09897() throws Throwable {
+    public void test09898() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("fpu5=3");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test09998() throws Throwable {
+    public void test09999() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("oqf;Xa");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test10099() throws Throwable {
+    public void test100100() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("brhea+");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test101100() throws Throwable {
+    public void test101101() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("tsypeo");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test102101() throws Throwable {
+    public void test102102() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("-tuV?1");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test103102() throws Throwable {
+    public void test103103() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("pubc3c");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test104103() throws Throwable {
+    public void test104104() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("'v.K-{");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test105104() throws Throwable {
+    public void test105105() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("switch");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test106105() throws Throwable {
+    public void test106106() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("export");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test107106() throws Throwable {
+    public void test107107() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("typeof");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test108107() throws Throwable {
+    public void test108108() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("2K1~$F");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test109108() throws Throwable {
+    public void test109109() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("7eezCn");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test110109() throws Throwable {
+    public void test110110() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("return");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test111110() throws Throwable {
+    public void test111111() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("a{WnH3");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test112111() throws Throwable {
+    public void test112112() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword(";eJHdyg");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test113112() throws Throwable {
+    public void test113113() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("boolean");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test114113() throws Throwable {
+    public void test114114() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("orMYx^g");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test115114() throws Throwable {
+    public void test115115() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("extends");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test116115() throws Throwable {
+    public void test116116() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("Phm,i5B");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test117116() throws Throwable {
+    public void test117117() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("debugger");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test118117() throws Throwable {
+    public void test118118() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("continue");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test119118() throws Throwable {
+    public void test119119() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("function");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test120119() throws Throwable {
+    public void test120120() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("volatile");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test121120() throws Throwable {
+    public void test121121() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("u/BfgMx~");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test122121() throws Throwable {
+    public void test122122() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("interface");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test123122() throws Throwable {
+    public void test123123() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("EKP(n@\"M");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test124123() throws Throwable {
+    public void test124124() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("transient");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test125124() throws Throwable {
+    public void test125125() throws Throwable {
         boolean boolean0 = TokenStream.isKeyword("implements");
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test126125() throws Throwable {
+    public void test126126() throws Throwable {
         boolean boolean0 = TokenStream.isJSIdentifier("");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test127126() throws Throwable {
+    public void test127127() throws Throwable {
         boolean boolean0 = TokenStream.isJSIdentifier("fd~=8m");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test128127() throws Throwable {
+    public void test128128() throws Throwable {
         boolean boolean0 = TokenStream.isJSIdentifier("<i7c,]");
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test129128() throws Throwable {
+    public void test129129() throws Throwable {
         boolean boolean0 = TokenStream.isJSIdentifier("$W");
         assertTrue(boolean0);
     }

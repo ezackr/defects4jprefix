@@ -31,7 +31,25 @@ import org.junit.runner.RunWith;
 public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivariateRealOptimizer_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test010() throws Throwable {
+    public void test000() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(1, 1, 1, 1437, 1437).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 1).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(1437, 2793, 1437, 107, 1).when(univariateRealOptimizer0).getEvaluations();
+        doReturn((-392.63505723186324), (-1831.301294236), (-1831.301294236), (-1831.301294236), (double) 1).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn((double) 1437, (double) 2793, (-1831.301294236), (double) 1437, (double) 2793).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister(1987L);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 131, mersenneTwister0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) null, goalType0, 1137.6576, (double) 131);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getFunctionValue();
+        multiStartUnivariateRealOptimizer0.getOptimaValues();
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = Integer.MAX_VALUE;
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, Integer.MAX_VALUE, (RandomGenerator) null);
@@ -48,7 +66,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test021() throws Throwable {
+    public void test022() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[4];
         MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
@@ -70,7 +88,91 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test072() throws Throwable {
+    public void test033() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MersenneTwister mersenneTwister0 = new MersenneTwister((long) (-1237));
+        byte[] byteArray0 = new byte[8];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) 27;
+        byteArray0[2] = (byte) (-26);
+        byteArray0[3] = (byte) 82;
+        byteArray0[4] = (byte) 1;
+        byteArray0[5] = (byte) (-127);
+        byteArray0[6] = (byte) 67;
+        byteArray0[7] = (byte) 112;
+        mersenneTwister0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, (-1237), mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+    }
+
+    @Test(timeout = 4000)
+    public void test044() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        int[] intArray0 = new int[5];
+        intArray0[0] = (-2688);
+        intArray0[1] = (-2688);
+        intArray0[2] = (-2688);
+        intArray0[3] = 0;
+        intArray0[4] = (-2688);
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, (-2688), mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(0);
+        multiStartUnivariateRealOptimizer0.setAbsoluteAccuracy(0);
+        multiStartUnivariateRealOptimizer0.resetRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount((-2688));
+        multiStartUnivariateRealOptimizer0.resetMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy(0);
+        multiStartUnivariateRealOptimizer0.getIterationCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(1917.02030267747, 1448.143421483).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(20, 20, (-629), 20, 20).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 20, 1137.78731358741).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(6, 6, 1805, 18, 4352).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(1917.02030267747, 0.0, (double) 18, 1.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0).when(univariateRealOptimizer0).getResult();
+        doReturn(1448.143421483, (double) 1805, 0.5, (-4768.7876427765), 4012.984605767).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 96, mersenneTwister0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 96;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        mersenneTwister0.setSeed((long) 96);
+        UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        PolynomialFunction polynomialFunction1 = polynomialFunction0.polynomialDerivative();
+        mersenneTwister0.nextInt(241);
+        PolynomialFunction polynomialFunction2 = new PolynomialFunction(doubleArray0);
+        polynomialFunction1.multiply(polynomialFunction2);
+        mersenneTwister0.setSeed((long) 96);
+        polynomialFunction1.derivative();
+        polynomialFunction0.polynomialDerivative();
+        multiStartUnivariateRealOptimizer0.optimize(univariateRealFunction0, goalType0, 96.0, 96.0, (-2607.81902));
+        multiStartUnivariateRealOptimizer0.getResult();
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy(96);
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getIterationCount();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(96);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations((-2006));
+    }
+
+    @Test(timeout = 4000)
+    public void test066() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        Random.setNextRandom((-85));
+    }
+
+    @Test(timeout = 4000)
+    public void test077() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0.0).when(univariateRealOptimizer0).getAbsoluteAccuracy();
         doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
@@ -98,7 +200,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test083() throws Throwable {
+    public void test088() throws Throwable {
         int int0 = 1489;
         MersenneTwister mersenneTwister0 = new MersenneTwister();
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer((UnivariateRealOptimizer) null, 1489, mersenneTwister0);
@@ -115,7 +217,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test094() throws Throwable {
+    public void test099() throws Throwable {
         int[] intArray0 = null;
         MersenneTwister mersenneTwister0 = new MersenneTwister((int[]) null);
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer((UnivariateRealOptimizer) null, 0, mersenneTwister0);
@@ -141,7 +243,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test105() throws Throwable {
+    public void test1010() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 97;
         MersenneTwister mersenneTwister0 = new MersenneTwister((long) 97);
@@ -169,7 +271,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test116() throws Throwable {
+    public void test1111() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 0;
         MersenneTwister mersenneTwister0 = new MersenneTwister();
@@ -187,7 +289,27 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test147() throws Throwable {
+    public void test1212() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(univariateRealOptimizer0).getResult();
+        MersenneTwister mersenneTwister0 = new MersenneTwister(0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, (-1525), mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getIterationCount();
+        multiStartUnivariateRealOptimizer0.getResult();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
+        MersenneTwister mersenneTwister0 = new MersenneTwister((long) (-1));
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, (-1), mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         int int0 = 0;
         JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
         jDKRandomGenerator0.doubles();
@@ -209,7 +331,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test158() throws Throwable {
+    public void test1515() throws Throwable {
         int[] intArray0 = new int[6];
         intArray0[0] = 1106;
         intArray0[1] = 1106;
@@ -232,7 +354,14 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test179() throws Throwable {
+    public void test1616() throws Throwable {
+        MersenneTwister mersenneTwister0 = new MersenneTwister(0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer((UnivariateRealOptimizer) null, 0, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations((-1050));
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         MersenneTwister mersenneTwister0 = new MersenneTwister((-1468L));
         mersenneTwister0.nextBoolean();
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer((UnivariateRealOptimizer) null, (-3541), mersenneTwister0);
@@ -249,7 +378,16 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test1910() throws Throwable {
+    public void test1818() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MersenneTwister mersenneTwister0 = new MersenneTwister((long) 0);
+        RandomAdaptor randomAdaptor0 = new RandomAdaptor(mersenneTwister0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 0, randomAdaptor0);
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, (-779), jDKRandomGenerator0);
@@ -267,7 +405,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test2011() throws Throwable {
+    public void test2020() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(univariateRealOptimizer0).getIterationCount();
         doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
@@ -308,7 +446,35 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test2212() throws Throwable {
+    public void test2121() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(0.0).when(univariateRealOptimizer0).getFunctionValue();
+        MersenneTwister mersenneTwister0 = new MersenneTwister(1812433253L);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, Integer.MAX_VALUE, mersenneTwister0);
+        byte[] byteArray0 = new byte[9];
+        byteArray0[0] = (byte) 0;
+        byteArray0[1] = (byte) 31;
+        byteArray0[2] = (byte) (-11);
+        byteArray0[3] = (byte) (-1);
+        byteArray0[4] = (byte) 0;
+        mersenneTwister0.nextGaussian();
+        byteArray0[5] = (byte) 0;
+        byteArray0[6] = (byte) 35;
+        byteArray0[7] = (byte) (-122);
+        byteArray0[8] = (byte) 33;
+        mersenneTwister0.nextBoolean();
+        mersenneTwister0.nextBytes(byteArray0);
+        multiStartUnivariateRealOptimizer0.getFunctionValue();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(Integer.MAX_VALUE);
+        multiStartUnivariateRealOptimizer0.resetMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(0);
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int int0 = 0;
         MersenneTwister mersenneTwister0 = new MersenneTwister((long) 0);
@@ -338,7 +504,31 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test2513() throws Throwable {
+    public void test2323() throws Throwable {
+        MersenneTwister mersenneTwister0 = new MersenneTwister((long) Integer.MAX_VALUE);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer((UnivariateRealOptimizer) null, Integer.MAX_VALUE, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test2424() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister(1987L);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 131, mersenneTwister0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) null, goalType0, 1137.6576, (double) 131);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getFunctionValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test2525() throws Throwable {
         int[] intArray0 = new int[4];
         intArray0[0] = (-685);
         intArray0[1] = 0;
@@ -360,7 +550,29 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test2714() throws Throwable {
+    public void test2626() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 118, jDKRandomGenerator0);
+        multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 118;
+        doubleArray0[1] = (double) Integer.MAX_VALUE;
+        doubleArray0[2] = (double) Integer.MAX_VALUE;
+        doubleArray0[3] = (double) Integer.MAX_VALUE;
+        doubleArray0[4] = (double) Integer.MAX_VALUE;
+        doubleArray0[5] = (double) Integer.MAX_VALUE;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (-1235.169347908), (-1636.005026824798));
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, (-1511), (RandomGenerator) null);
         double[] doubleArray0 = new double[2];
@@ -381,7 +593,27 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test2915() throws Throwable {
+    public void test2828() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 357;
+        int int1 = 0;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 357, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations(0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 357;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (-1019.661629518), (-1019.661629518), 1059.6);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         MersenneTwister mersenneTwister0 = new MersenneTwister((-1));
         MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 0, mersenneTwister0);
@@ -407,7 +639,37 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test3116() throws Throwable {
+    public void test3030() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[7];
+        intArray0[0] = 31;
+        intArray0[1] = 31;
+        intArray0[2] = 31;
+        intArray0[3] = 31;
+        intArray0[4] = 31;
+        intArray0[5] = 31;
+        intArray0[6] = 31;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 31, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 31;
+        doubleArray0[1] = 0.0;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (double) 31, (double) 31, (-1459.0540161));
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
         MersenneTwister mersenneTwister0 = new MersenneTwister((long) (-2455));
@@ -446,7 +708,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test3217() throws Throwable {
+    public void test3232() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(univariateRealOptimizer0).getIterationCount();
         doReturn(0).when(univariateRealOptimizer0).getEvaluations();
@@ -468,7 +730,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test3318() throws Throwable {
+    public void test3333() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         int[] intArray0 = new int[4];
         int int0 = 0;
@@ -502,7 +764,86 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test3719() throws Throwable {
+    public void test3434() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int int0 = 3358;
+        MersenneTwister mersenneTwister0 = new MersenneTwister((-4795L));
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 3358, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(0);
+        mersenneTwister0.nextGaussian();
+        double[] doubleArray0 = new double[8];
+        doubleArray0[0] = (double) 0;
+        doubleArray0[1] = (double) (-4795L);
+        doubleArray0[2] = (double) 3358;
+        doubleArray0[3] = (-1425.7562);
+        doubleArray0[4] = 0.0;
+        doubleArray0[5] = (double) 0;
+        doubleArray0[6] = (double) 3358;
+        doubleArray0[7] = (-1.1147970683875246);
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        // Undeclared exception!
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (double) 0, 0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0.0, 0.0).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0.0, 0.0).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 101, mersenneTwister0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 101;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        mersenneTwister0.setSeed((long) 101);
+        UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        PolynomialFunction polynomialFunction1 = polynomialFunction0.polynomialDerivative();
+        mersenneTwister0.nextInt(241);
+        PolynomialFunction polynomialFunction2 = new PolynomialFunction(doubleArray0);
+        polynomialFunction1.multiply(polynomialFunction2);
+        mersenneTwister0.setSeed((long) 101);
+        polynomialFunction1.derivative();
+        polynomialFunction0.polynomialDerivative();
+        multiStartUnivariateRealOptimizer0.optimize(univariateRealFunction0, goalType0, 101.0, 101.0, (-2607.81902));
+        GoalType goalType1 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction1, goalType1, 1234.5736213204275, 101.0, (-2607.81902));
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy(101);
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getIterationCount();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(101);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations((-2006));
+    }
+
+    @Test(timeout = 4000)
+    public void test3636() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((-1478.94)).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        RandomAdaptor randomAdaptor0 = new RandomAdaptor(mersenneTwister0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 34, randomAdaptor0);
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(91.0).when(univariateRealOptimizer0).getAbsoluteAccuracy();
         JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
@@ -521,7 +862,45 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test4020() throws Throwable {
+    public void test3838() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(458.67).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn((-1779), (-1779), (-1779), (-1), 1915).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 1915).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(1509, (-2762), 3402, (-2762), 91).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(0.0, (double) 91, 0.0, Double.NaN, (-1253.126790531354)).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn((double) 3402, 500.46380688, 1129.3, 0.0, (-1253.126790531354)).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[7];
+        intArray0[0] = 31;
+        intArray0[1] = 31;
+        intArray0[2] = 31;
+        intArray0[3] = 31;
+        intArray0[4] = 31;
+        intArray0[5] = 31;
+        intArray0[6] = 31;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 31, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 31;
+        doubleArray0[1] = 458.67;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (double) 31, (double) 31, (-1459.0540161));
+    }
+
+    @Test(timeout = 4000)
+    public void test3939() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(2.0).when(univariateRealOptimizer0).getFunctionValue();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 0, (RandomGenerator) null);
+        multiStartUnivariateRealOptimizer0.getFunctionValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test4040() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((-892.0)).when(univariateRealOptimizer0).getRelativeAccuracy();
         MersenneTwister mersenneTwister0 = new MersenneTwister((-968L));
@@ -540,7 +919,7 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test4121() throws Throwable {
+    public void test4141() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(189, 2839, 189, 26, Integer.MAX_VALUE).when(univariateRealOptimizer0).getIterationCount();
         doReturn(58, (-958), 58, 26, 26).when(univariateRealOptimizer0).getEvaluations();
@@ -582,7 +961,172 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test4822() throws Throwable {
+    public void test4242() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(0, 0, 0, 0, 0).when(univariateRealOptimizer0).getEvaluations();
+        doReturn((-521.6812024478388), 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(0.0).when(univariateRealOptimizer0).getResult();
+        doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[9];
+        intArray0[0] = 77;
+        intArray0[1] = (-1772);
+        intArray0[2] = 77;
+        intArray0[3] = 77;
+        intArray0[4] = 77;
+        intArray0[4] = 77;
+        intArray0[6] = 77;
+        intArray0[7] = 77;
+        intArray0[8] = (-1495);
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 77, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getFunctionValue();
+        multiStartUnivariateRealOptimizer0.getResult();
+        double[] doubleArray0 = new double[7];
+        doubleArray0[0] = (-521.6812024478388);
+        doubleArray0[1] = (double) 77;
+        doubleArray0[2] = (double) 77;
+        doubleArray0[3] = (double) (-1495);
+        doubleArray0[4] = (double) (-1772);
+        doubleArray0[5] = (-521.6812024478388);
+        doubleArray0[6] = (-521.6812024478388);
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (-726.92802), Double.NaN, (-1495.0));
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((-1253.126790531354)).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn((-897), 231, 88, (-58), 25).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 231).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(25, 31, (-897), 88, 25).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(1822.03793, (-521.6812024478388), (-1253.126790531354), (-704.0), (-521.6812024478388)).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(1822.03793, (-1502.0), (-1253.126790531354), 2702.913652377001, (double) 88).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[7];
+        intArray0[0] = 31;
+        intArray0[1] = 31;
+        intArray0[2] = 31;
+        intArray0[3] = 31;
+        intArray0[4] = 31;
+        intArray0[5] = 31;
+        intArray0[6] = 31;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 31, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        double[] doubleArray0 = new double[2];
+        doubleArray0[0] = (double) 31;
+        doubleArray0[1] = (-1253.126790531354);
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (double) 31, (double) 31, (-1459.0540161));
+    }
+
+    @Test(timeout = 4000)
+    public void test4444() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(38, 38, (-892), (-892), 2358).when(univariateRealOptimizer0).getIterationCount();
+        doReturn(2358, (-892), 2358, 3833, 2358).when(univariateRealOptimizer0).getEvaluations();
+        doReturn((double) (-892), (double) 2358, 2.220446049250313E-16, 2.220446049250313E-16, (-1253.126790531354)).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn(719.915886, (double) 2358, (double) 2358, (double) 3833, 91.0).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        JDKRandomGenerator jDKRandomGenerator0 = new JDKRandomGenerator();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 118, jDKRandomGenerator0);
+        multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 118;
+        doubleArray0[2] = (double) Integer.MAX_VALUE;
+        doubleArray0[3] = (double) Integer.MAX_VALUE;
+        doubleArray0[4] = (double) Integer.MAX_VALUE;
+        doubleArray0[5] = (double) Integer.MAX_VALUE;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, (-1235.169347908), (-1636.005026824798));
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((-1.0)).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(1.0).when(univariateRealOptimizer0).getResult();
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        mersenneTwister0.setSeed((-566L));
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 153, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy((-1.0));
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getResult();
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        System.setCurrentTimeMillis(262L);
+    }
+
+    @Test(timeout = 4000)
+    public void test4646() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn((-182.391301), (-182.391301)).when(univariateRealOptimizer0).getResult();
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        byte[] byteArray0 = new byte[2];
+        byteArray0[0] = (byte) (-99);
+        byteArray0[1] = (byte) 97;
+        mersenneTwister0.setSeed((long) (byte) (-99));
+        mersenneTwister0.nextBytes(byteArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 226, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.getResult();
+        mersenneTwister0.nextFloat();
+        multiStartUnivariateRealOptimizer0.getResult();
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.resetMaximalIterationCount();
+    }
+
+    @Test(timeout = 4000)
+    public void test4747() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(411, 411, 411, 3, 411).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 3).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(87, (-445), (-445), 616, 616).when(univariateRealOptimizer0).getEvaluations();
+        doReturn((-850.1879669), 1511.66, 1511.66, 1979.2053091305, (double) (-445)).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn((double) 411).when(univariateRealOptimizer0).getResult();
+        doReturn(2.0, 2.220446049250313E-16, 1.0, 2.0, (-358.6890254228)).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        int[] intArray0 = new int[8];
+        intArray0[0] = 55;
+        intArray0[1] = 55;
+        intArray0[2] = 55;
+        intArray0[3] = 55;
+        intArray0[4] = 55;
+        intArray0[5] = 55;
+        intArray0[6] = 55;
+        intArray0[7] = 55;
+        MersenneTwister mersenneTwister0 = new MersenneTwister(intArray0);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 55, mersenneTwister0);
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+        double[] doubleArray0 = new double[6];
+        doubleArray0[0] = (double) 55;
+        doubleArray0[1] = (double) 55;
+        doubleArray0[2] = (double) 55;
+        doubleArray0[3] = (double) 55;
+        doubleArray0[4] = (double) 55;
+        doubleArray0[5] = (double) 55;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        GoalType goalType0 = GoalType.MINIMIZE;
+        polynomialFunction0.polynomialDerivative();
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction0, goalType0, 0.0, 1.0);
+        multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        multiStartUnivariateRealOptimizer0.getEvaluations();
+        multiStartUnivariateRealOptimizer0.resetMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.getResult();
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        mersenneTwister0.setSeed(55);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getOptimaValues();
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+    }
+
+    @Test(timeout = 4000)
+    public void test4848() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(univariateRealOptimizer0).getIterationCount();
         doReturn(0).when(univariateRealOptimizer0).getEvaluations();
@@ -613,7 +1157,104 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
     }
 
     @Test(timeout = 4000)
-    public void test5223() throws Throwable {
+    public void test4949() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(179.829, (-2.0)).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(74, 1, 94, (-1111), 94).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 94, (-2.0)).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(1, 1765, 97, 96, 1).when(univariateRealOptimizer0).getEvaluations();
+        doReturn(1.0, 0.0, (-1039.5549572521322), 179.829, 2358.0).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn((double) 1765, (-2008.335052), (-604.4557476678459), (double) (-1111), Double.POSITIVE_INFINITY).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 101, mersenneTwister0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 101;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        mersenneTwister0.setSeed((long) 101);
+        UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        PolynomialFunction polynomialFunction1 = polynomialFunction0.polynomialDerivative();
+        mersenneTwister0.nextInt(241);
+        PolynomialFunction polynomialFunction2 = new PolynomialFunction(doubleArray0);
+        polynomialFunction1.multiply(polynomialFunction2);
+        mersenneTwister0.setSeed((long) 101);
+        polynomialFunction1.derivative();
+        polynomialFunction0.polynomialDerivative();
+        multiStartUnivariateRealOptimizer0.optimize(univariateRealFunction0, goalType0, 101.0, 101.0, (-2607.81902));
+        GoalType goalType1 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction1, goalType1, 1234.5736213204275, 101.0, (-2607.81902));
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy(101);
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getIterationCount();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(101);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations((-2006));
+    }
+
+    @Test(timeout = 4000)
+    public void test5050() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(1, 0, 17, 1928, 17).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) 1928).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn(17, 18, 17, 3, 1).when(univariateRealOptimizer0).getEvaluations();
+        doReturn((double) 1928, (-1831.301294236), (-508.017154), (double) 0, (-1.0)).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn((-2164.039021799), (double) 17, (double) 0, 279.0818189505857, (double) 3).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister(1987L);
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 131, mersenneTwister0);
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) null, goalType0, 1137.6576, (double) 131);
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.resetAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getFunctionValue();
+    }
+
+    @Test(timeout = 4000)
+    public void test5151() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        doReturn(1172.93939895, 1172.93939895).when(univariateRealOptimizer0).getAbsoluteAccuracy();
+        doReturn(77, (-1), 77, (-1), (-1)).when(univariateRealOptimizer0).getIterationCount();
+        doReturn((double) (-1), (-807.0767907506947)).when(univariateRealOptimizer0).getRelativeAccuracy();
+        doReturn((-1452), 77, (-1452), 95, 25).when(univariateRealOptimizer0).getEvaluations();
+        doReturn((double) 25, (double) 77, 2900.1156751240483, (-1831.301294236), (-1.0)).when(univariateRealOptimizer0).getFunctionValue();
+        doReturn((-185.27168), (double) (-1), (-1.0), 2411.087572124363, 1172.93939895).when(univariateRealOptimizer0).optimize(any(org.apache.commons.math.analysis.UnivariateRealFunction.class), any(org.apache.commons.math.optimization.GoalType.class), anyDouble(), anyDouble());
+        MersenneTwister mersenneTwister0 = new MersenneTwister();
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 101, mersenneTwister0);
+        double[] doubleArray0 = new double[1];
+        doubleArray0[0] = (double) 101;
+        PolynomialFunction polynomialFunction0 = new PolynomialFunction(doubleArray0);
+        mersenneTwister0.setSeed((long) 101);
+        UnivariateRealFunction univariateRealFunction0 = polynomialFunction0.derivative();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        PolynomialFunction polynomialFunction1 = polynomialFunction0.polynomialDerivative();
+        mersenneTwister0.nextInt(241);
+        PolynomialFunction polynomialFunction2 = new PolynomialFunction(doubleArray0);
+        polynomialFunction1.multiply(polynomialFunction2);
+        mersenneTwister0.setSeed((long) 101);
+        polynomialFunction1.derivative();
+        polynomialFunction0.polynomialDerivative();
+        multiStartUnivariateRealOptimizer0.optimize(univariateRealFunction0, goalType0, 101.0, 101.0, (-2607.81902));
+        GoalType goalType1 = GoalType.MINIMIZE;
+        multiStartUnivariateRealOptimizer0.optimize((UnivariateRealFunction) polynomialFunction1, goalType1, 1234.5736213204275, 101.0, (-2607.81902));
+        multiStartUnivariateRealOptimizer0.setRelativeAccuracy(101);
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getRelativeAccuracy();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getOptima();
+        multiStartUnivariateRealOptimizer0.getAbsoluteAccuracy();
+        multiStartUnivariateRealOptimizer0.getIterationCount();
+        multiStartUnivariateRealOptimizer0.getMaximalIterationCount();
+        multiStartUnivariateRealOptimizer0.setMaximalIterationCount(101);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations((-2006));
+    }
+
+    @Test(timeout = 4000)
+    public void test5252() throws Throwable {
         UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
         doReturn((-1800), 41, (-1800), (-1800), 41).when(univariateRealOptimizer0).getIterationCount();
         doReturn((-2236), (-2236), (-1800), (-890), (-890)).when(univariateRealOptimizer0).getEvaluations();
@@ -631,5 +1272,14 @@ public class MultiStartUnivariateRealOptimizer_ESTest extends MultiStartUnivaria
             // no message in exception (getMessage() returned null)
             //
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test5353() throws Throwable {
+        UnivariateRealOptimizer univariateRealOptimizer0 = mock(UnivariateRealOptimizer.class, new ViolatedAssumptionAnswer());
+        MultiStartUnivariateRealOptimizer multiStartUnivariateRealOptimizer0 = new MultiStartUnivariateRealOptimizer(univariateRealOptimizer0, 63, (RandomGenerator) null);
+        multiStartUnivariateRealOptimizer0.setMaxEvaluations((-2259));
+        multiStartUnivariateRealOptimizer0.getMaxEvaluations();
+        Random.setNextRandom((-2259));
     }
 }

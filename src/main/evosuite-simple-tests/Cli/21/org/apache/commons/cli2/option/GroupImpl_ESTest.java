@@ -447,7 +447,18 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1735() throws Throwable {
+    public void test1635() throws Throwable {
+        LinkedList<GroupImpl> linkedList0 = new LinkedList<GroupImpl>();
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "kYk", "9<iME\nW^T", (-2596), 1882, false);
+        linkedList0.add(groupImpl0);
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(groupImpl0, linkedList0);
+        writeableCommandLineImpl0.addOption(groupImpl0);
+        // Undeclared exception!
+        groupImpl0.validate(writeableCommandLineImpl0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1736() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         UrlValidator urlValidator0 = new UrlValidator();
         ArgumentImpl argumentImpl0 = new ArgumentImpl("", "", (-1), (-1), 'g', 'g', urlValidator0, " ", linkedList0, 181);
@@ -467,7 +478,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1836() throws Throwable {
+    public void test1837() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 94, 94, true);
         LinkedHashSet<Locale.LanguageRange> linkedHashSet0 = new LinkedHashSet<Locale.LanguageRange>();
@@ -477,7 +488,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1837() throws Throwable {
+    public void test1838() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 94, 94, true);
         LinkedHashSet<Locale.LanguageRange> linkedHashSet0 = new LinkedHashSet<Locale.LanguageRange>();
@@ -487,24 +498,13 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1838() throws Throwable {
+    public void test1839() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, (String) null, (String) null, 94, 94, true);
         LinkedHashSet<Locale.LanguageRange> linkedHashSet0 = new LinkedHashSet<Locale.LanguageRange>();
         Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         groupImpl0.appendUsage((StringBuffer) null, (Set) linkedHashSet0, (Comparator) comparator0, (String) null);
         assertEquals(94, groupImpl0.getMaximum());
-    }
-
-    @Test(timeout = 4000)
-    public void test1939() throws Throwable {
-        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
-        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
-        linkedList0.add(propertyOption0);
-        linkedList0.add(propertyOption0);
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "-D", (-4288), (-1121), true);
-        String string0 = groupImpl0.toString();
-        assertTrue(linkedList0.contains(propertyOption0));
     }
 
     @Test(timeout = 4000)
@@ -515,19 +515,18 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         linkedList0.add(propertyOption0);
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "-D", (-4288), (-1121), true);
         String string0 = groupImpl0.toString();
-        assertEquals("[ (-D<property>=<value>|-D<property>=<value>)]", string0);
+        assertTrue(linkedList0.contains(propertyOption0));
     }
 
     @Test(timeout = 4000)
-    public void test2041() throws Throwable {
-        LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
-        NumberValidator numberValidator0 = NumberValidator.getIntegerInstance();
-        LinkedList<Object> linkedList1 = new LinkedList<Object>();
-        ArgumentImpl argumentImpl0 = new ArgumentImpl("Argument.to.any.va>ues", "Argument.to.any.va>ues", (-843), (-843), 'A', 'A', numberValidator0, "z<q3VEG^`2IJecgC>l", linkedList1, (-843));
-        linkedList0.add(argumentImpl0);
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Argument.to.any.va>ues", "Argument.to.any.va>ues", (-843), (-843), true);
+    public void test1941() throws Throwable {
+        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
+        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
+        linkedList0.add(propertyOption0);
+        linkedList0.add(propertyOption0);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "-D", (-4288), (-1121), true);
         String string0 = groupImpl0.toString();
-        assertFalse(linkedList0.contains(argumentImpl0));
+        assertEquals("[ (-D<property>=<value>|-D<property>=<value>)]", string0);
     }
 
     @Test(timeout = 4000)
@@ -539,17 +538,19 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         linkedList0.add(argumentImpl0);
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Argument.to.any.va>ues", "Argument.to.any.va>ues", (-843), (-843), true);
         String string0 = groupImpl0.toString();
-        assertEquals("[Argument.to.any.va>ues ()] ", string0);
+        assertFalse(linkedList0.contains(argumentImpl0));
     }
 
     @Test(timeout = 4000)
-    public void test2143() throws Throwable {
+    public void test2043() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Argument.too.many.values", "Argument.too.many.values", 842, 842, true);
-        LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
-        Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        List list0 = groupImpl0.helpLines(842, linkedHashSet0, comparator0);
-        assertEquals(842, groupImpl0.getMinimum());
+        NumberValidator numberValidator0 = NumberValidator.getIntegerInstance();
+        LinkedList<Object> linkedList1 = new LinkedList<Object>();
+        ArgumentImpl argumentImpl0 = new ArgumentImpl("Argument.to.any.va>ues", "Argument.to.any.va>ues", (-843), (-843), 'A', 'A', numberValidator0, "z<q3VEG^`2IJecgC>l", linkedList1, (-843));
+        linkedList0.add(argumentImpl0);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Argument.to.any.va>ues", "Argument.to.any.va>ues", (-843), (-843), true);
+        String string0 = groupImpl0.toString();
+        assertEquals("[Argument.to.any.va>ues ()] ", string0);
     }
 
     @Test(timeout = 4000)
@@ -559,7 +560,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
         Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         List list0 = groupImpl0.helpLines(842, linkedHashSet0, comparator0);
-        assertEquals(842, groupImpl0.getMaximum());
+        assertEquals(842, groupImpl0.getMinimum());
     }
 
     @Test(timeout = 4000)
@@ -569,17 +570,17 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
         Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         List list0 = groupImpl0.helpLines(842, linkedHashSet0, comparator0);
-        assertEquals(0, list0.size());
+        assertEquals(842, groupImpl0.getMaximum());
     }
 
     @Test(timeout = 4000)
-    public void test2246() throws Throwable {
-        LinkedList<DisplaySetting> linkedList0 = new LinkedList<DisplaySetting>();
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "org.apache.comm<ns.clO2.option.ArgumentItpl", "org.apache.comm<ns.clO2.option.ArgumentItpl", 233, (-3481), true);
-        DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
-        Comparator<Integer> comparator0 = (Comparator<Integer>) mock(Comparator.class, new ViolatedAssumptionAnswer());
-        List list0 = groupImpl0.helpLines((-4140), displaySetting0.ALL, comparator0);
-        assertEquals(1, list0.size());
+    public void test2146() throws Throwable {
+        LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Argument.too.many.values", "Argument.too.many.values", 842, 842, true);
+        LinkedHashSet<Object> linkedHashSet0 = new LinkedHashSet<Object>();
+        Comparator<Command> comparator0 = (Comparator<Command>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        List list0 = groupImpl0.helpLines(842, linkedHashSet0, comparator0);
+        assertEquals(0, list0.size());
     }
 
     @Test(timeout = 4000)
@@ -589,7 +590,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
         Comparator<Integer> comparator0 = (Comparator<Integer>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         List list0 = groupImpl0.helpLines((-4140), displaySetting0.ALL, comparator0);
-        assertEquals((-3481), groupImpl0.getMaximum());
+        assertEquals(1, list0.size());
     }
 
     @Test(timeout = 4000)
@@ -599,11 +600,21 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
         Comparator<Integer> comparator0 = (Comparator<Integer>) mock(Comparator.class, new ViolatedAssumptionAnswer());
         List list0 = groupImpl0.helpLines((-4140), displaySetting0.ALL, comparator0);
+        assertEquals((-3481), groupImpl0.getMaximum());
+    }
+
+    @Test(timeout = 4000)
+    public void test2249() throws Throwable {
+        LinkedList<DisplaySetting> linkedList0 = new LinkedList<DisplaySetting>();
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "org.apache.comm<ns.clO2.option.ArgumentItpl", "org.apache.comm<ns.clO2.option.ArgumentItpl", 233, (-3481), true);
+        DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
+        Comparator<Integer> comparator0 = (Comparator<Integer>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        List list0 = groupImpl0.helpLines((-4140), displaySetting0.ALL, comparator0);
         assertEquals(233, groupImpl0.getMinimum());
     }
 
     @Test(timeout = 4000)
-    public void test2349() throws Throwable {
+    public void test2350() throws Throwable {
         LinkedList<DisplaySetting> linkedList0 = new LinkedList<DisplaySetting>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "", "", 0, (-3481), false);
         DisplaySetting displaySetting0 = mock(DisplaySetting.class, new ViolatedAssumptionAnswer());
@@ -622,7 +633,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2450() throws Throwable {
+    public void test2451() throws Throwable {
         LinkedList<DefaultOption> linkedList0 = new LinkedList<DefaultOption>();
         LinkedHashSet<Integer> linkedHashSet0 = new LinkedHashSet<Integer>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, " (", " (", 1859, 1859, true);
@@ -633,7 +644,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2451() throws Throwable {
+    public void test2452() throws Throwable {
         LinkedList<DefaultOption> linkedList0 = new LinkedList<DefaultOption>();
         LinkedHashSet<Integer> linkedHashSet0 = new LinkedHashSet<Integer>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, " (", " (", 1859, 1859, true);
@@ -644,7 +655,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2452() throws Throwable {
+    public void test2453() throws Throwable {
         LinkedList<DefaultOption> linkedList0 = new LinkedList<DefaultOption>();
         LinkedHashSet<Integer> linkedHashSet0 = new LinkedHashSet<Integer>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, " (", " (", 1859, 1859, true);
@@ -655,7 +666,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2553() throws Throwable {
+    public void test2554() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "N4hr$9|djnLV!", "N4hr$9|djnLV!", 50, 50, false);
         ArgumentImpl argumentImpl0 = new ArgumentImpl("N4hr$9|djnLV!", "N4hr$9|djnLV!", 50, 50, 'Y', 'Y', (Validator) null, "N4hr$9|djnLV!", linkedList0, 50);
@@ -665,7 +676,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2554() throws Throwable {
+    public void test2555() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "N4hr$9|djnLV!", "N4hr$9|djnLV!", 50, 50, false);
         ArgumentImpl argumentImpl0 = new ArgumentImpl("N4hr$9|djnLV!", "N4hr$9|djnLV!", 50, 50, 'Y', 'Y', (Validator) null, "N4hr$9|djnLV!", linkedList0, 50);
@@ -675,7 +686,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2655() throws Throwable {
+    public void test2656() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "?'OC%f`oP%tU2-'.S", "?'OC%f`oP%tU2-'.S", 1, 1, true);
         PropertyOption propertyOption0 = new PropertyOption();
@@ -685,7 +696,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2656() throws Throwable {
+    public void test2657() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "?'OC%f`oP%tU2-'.S", "?'OC%f`oP%tU2-'.S", 1, 1, true);
         PropertyOption propertyOption0 = new PropertyOption();
@@ -695,24 +706,13 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2657() throws Throwable {
+    public void test2658() throws Throwable {
         LinkedList<Object> linkedList0 = new LinkedList<Object>();
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "?'OC%f`oP%tU2-'.S", "?'OC%f`oP%tU2-'.S", 1, 1, true);
         PropertyOption propertyOption0 = new PropertyOption();
         groupImpl0.setParent(propertyOption0);
         String string0 = groupImpl0.toString();
         assertEquals("?'OC%f`oP%tU2-'.S ()", string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2758() throws Throwable {
-        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
-        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
-        linkedList0.add(propertyOption0);
-        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Misming.option", "Misming.option", 2399, 2399, true);
-        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
-        groupImpl0.defaults(writeableCommandLineImpl0);
-        assertEquals(1, linkedList0.size());
     }
 
     @Test(timeout = 4000)
@@ -723,11 +723,22 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
         GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Misming.option", "Misming.option", 2399, 2399, true);
         WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
         groupImpl0.defaults(writeableCommandLineImpl0);
+        assertEquals(1, linkedList0.size());
+    }
+
+    @Test(timeout = 4000)
+    public void test2760() throws Throwable {
+        LinkedList<PropertyOption> linkedList0 = new LinkedList<PropertyOption>();
+        PropertyOption propertyOption0 = PropertyOption.INSTANCE;
+        linkedList0.add(propertyOption0);
+        GroupImpl groupImpl0 = new GroupImpl(linkedList0, "Misming.option", "Misming.option", 2399, 2399, true);
+        WriteableCommandLineImpl writeableCommandLineImpl0 = new WriteableCommandLineImpl(propertyOption0, linkedList0);
+        groupImpl0.defaults(writeableCommandLineImpl0);
         assertEquals(2399, groupImpl0.getMaximum());
     }
 
     @Test(timeout = 4000)
-    public void test2860() throws Throwable {
+    public void test2861() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         NumberValidator numberValidator0 = NumberValidator.getIntegerInstance();
         LinkedList<Object> linkedList1 = new LinkedList<Object>();
@@ -740,7 +751,7 @@ public class GroupImpl_ESTest extends GroupImpl_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2861() throws Throwable {
+    public void test2862() throws Throwable {
         LinkedList<ArgumentImpl> linkedList0 = new LinkedList<ArgumentImpl>();
         NumberValidator numberValidator0 = NumberValidator.getIntegerInstance();
         LinkedList<Object> linkedList1 = new LinkedList<Object>();

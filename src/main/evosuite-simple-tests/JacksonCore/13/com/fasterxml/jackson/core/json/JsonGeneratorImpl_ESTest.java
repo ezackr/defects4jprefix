@@ -333,7 +333,21 @@ public class JsonGeneratorImpl_ESTest extends JsonGeneratorImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2224() throws Throwable {
+    public void test2124() throws Throwable {
+        BufferRecycler bufferRecycler0 = new BufferRecycler();
+        FileDescriptor fileDescriptor0 = new FileDescriptor();
+        MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
+        PushbackInputStream pushbackInputStream0 = new PushbackInputStream(mockFileInputStream0);
+        IOContext iOContext0 = new IOContext(bufferRecycler0, pushbackInputStream0, true);
+        MockPrintStream mockPrintStream0 = new MockPrintStream("com.fasterxml.jackson.core.JsonParseException");
+        byte[] byteArray0 = new byte[6];
+        UTF8JsonGenerator uTF8JsonGenerator0 = new UTF8JsonGenerator(iOContext0, 1, (ObjectCodec) null, mockPrintStream0, byteArray0, 1, true);
+        // Undeclared exception!
+        uTF8JsonGenerator0.writeStringField("com.fasterxml.jackson.core.JsonParseException", "com.fasterxml.jackson.core.JsonParseException");
+    }
+
+    @Test(timeout = 4000)
+    public void test2225() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         FileDescriptor fileDescriptor0 = new FileDescriptor();
         MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
@@ -348,7 +362,7 @@ public class JsonGeneratorImpl_ESTest extends JsonGeneratorImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2325() throws Throwable {
+    public void test2326() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         WriterBasedJsonGenerator writerBasedJsonGenerator0 = new WriterBasedJsonGenerator(iOContext0, (-6), (ObjectCodec) null, (Writer) null);
@@ -357,7 +371,7 @@ public class JsonGeneratorImpl_ESTest extends JsonGeneratorImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2426() throws Throwable {
+    public void test2427() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         FileDescriptor fileDescriptor0 = new FileDescriptor();
         MockFileInputStream mockFileInputStream0 = new MockFileInputStream(fileDescriptor0);
@@ -371,7 +385,7 @@ public class JsonGeneratorImpl_ESTest extends JsonGeneratorImpl_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2527() throws Throwable {
+    public void test2528() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
         WriterBasedJsonGenerator writerBasedJsonGenerator0 = new WriterBasedJsonGenerator(iOContext0, (-6), (ObjectCodec) null, (Writer) null);

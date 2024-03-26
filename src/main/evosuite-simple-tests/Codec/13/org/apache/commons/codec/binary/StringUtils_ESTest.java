@@ -259,7 +259,12 @@ public class StringUtils_ESTest extends StringUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3332() throws Throwable {
+    public void test3232() throws Throwable {
+        StringUtils stringUtils0 = new StringUtils();
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
         // Undeclared exception!
         try {
             StringUtils.newStringUtf16((byte[]) null);
@@ -272,27 +277,27 @@ public class StringUtils_ESTest extends StringUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3433() throws Throwable {
+    public void test3434() throws Throwable {
         byte[] byteArray0 = StringUtils.getBytesUtf16Le((String) null);
         assertNull(byteArray0);
     }
 
     @Test(timeout = 4000)
-    public void test3534() throws Throwable {
+    public void test3535() throws Throwable {
         byte[] byteArray0 = new byte[7];
         String string0 = StringUtils.newStringUtf16Le(byteArray0);
         assertEquals("\u0000\u0000\u0000\uFFFD", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3635() throws Throwable {
+    public void test3636() throws Throwable {
         byte[] byteArray0 = StringUtils.getBytesUsAscii("o@kJusIi|n");
         String string0 = StringUtils.newStringUtf16Be(byteArray0);
         assertEquals("\u6F40\u6B4A\u7573\u4969\u7C6E", string0);
     }
 
     @Test(timeout = 4000)
-    public void test3736() throws Throwable {
+    public void test3737() throws Throwable {
         // Undeclared exception!
         try {
             StringUtils.newStringUsAscii((byte[]) null);
@@ -305,7 +310,7 @@ public class StringUtils_ESTest extends StringUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3837() throws Throwable {
+    public void test3838() throws Throwable {
         // Undeclared exception!
         try {
             StringUtils.getBytesUnchecked("]*'L#oc,5:]B-V'bp", "");
@@ -319,7 +324,7 @@ public class StringUtils_ESTest extends StringUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3938() throws Throwable {
+    public void test3939() throws Throwable {
         byte[] byteArray0 = StringUtils.getBytesUtf16Be("");
         String string0 = StringUtils.newStringIso8859_1(byteArray0);
         assertEquals("", string0);

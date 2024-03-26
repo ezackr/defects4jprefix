@@ -38,13 +38,6 @@ public class SummaryStatistics_ESTest extends SummaryStatistics_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test012() throws Throwable {
-        SummaryStatistics summaryStatistics0 = new SummaryStatistics();
-        SummaryStatistics summaryStatistics1 = summaryStatistics0.copy();
-        boolean boolean0 = summaryStatistics0.equals(summaryStatistics1);
-    }
-
-    @Test(timeout = 4000)
     public void test013() throws Throwable {
         SummaryStatistics summaryStatistics0 = new SummaryStatistics();
         SummaryStatistics summaryStatistics1 = summaryStatistics0.copy();
@@ -324,13 +317,6 @@ public class SummaryStatistics_ESTest extends SummaryStatistics_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2738() throws Throwable {
-        SummaryStatistics summaryStatistics0 = new SummaryStatistics();
-        SummaryStatistics summaryStatistics1 = new SummaryStatistics(summaryStatistics0);
-        summaryStatistics1.equals((Object) summaryStatistics0);
-    }
-
-    @Test(timeout = 4000)
     public void test2739() throws Throwable {
         SummaryStatistics summaryStatistics0 = new SummaryStatistics();
         SummaryStatistics summaryStatistics1 = new SummaryStatistics(summaryStatistics0);
@@ -383,13 +369,6 @@ public class SummaryStatistics_ESTest extends SummaryStatistics_ESTest_scaffoldi
         Variance variance0 = new Variance(secondMoment0);
         summaryStatistics1.setSumsqImpl(variance0);
         boolean boolean0 = summaryStatistics0.equals(summaryStatistics1);
-    }
-
-    @Test(timeout = 4000)
-    public void test3045() throws Throwable {
-        SummaryStatistics summaryStatistics0 = new SummaryStatistics();
-        SummaryStatistics summaryStatistics1 = new SummaryStatistics(summaryStatistics0);
-        summaryStatistics1.equals((Object) summaryStatistics0);
     }
 
     @Test(timeout = 4000)

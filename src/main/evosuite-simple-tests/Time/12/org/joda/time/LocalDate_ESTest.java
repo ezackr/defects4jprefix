@@ -58,7 +58,50 @@ import org.junit.runner.RunWith;
 public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test0060() throws Throwable {
+    public void test0000() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-2973));
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance(dateTimeZone0);
+        LocalDate localDate0 = new LocalDate((Chronology) ethiopicChronology0);
+        localDate0.minusDays((-2973));
+    }
+
+    @Test(timeout = 4000)
+    public void test0011() throws Throwable {
+        LocalDate localDate0 = LocalDate.now();
+        localDate0.minusMonths((-1946));
+    }
+
+    @Test(timeout = 4000)
+    public void test0022() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.plusDays((-2082));
+    }
+
+    @Test(timeout = 4000)
+    public void test0033() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        localDate0.plusWeeks((-368));
+    }
+
+    @Test(timeout = 4000)
+    public void test0044() throws Throwable {
+        MockDate mockDate0 = new MockDate((-27), (-1320), 1900);
+        LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
+        localDate0.plusMonths((-21));
+    }
+
+    @Test(timeout = 4000)
+    public void test0055() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        LocalDateTime localDateTime0 = new LocalDateTime(21600000L, (Chronology) buddhistChronology0);
+        LocalDate localDate0 = new LocalDate(localDateTime0, (DateTimeZone) null);
+        DurationFieldType durationFieldType0 = DurationFieldType.months();
+        localDate0.withFieldAdded(durationFieldType0, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test0066() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         LocalDate localDate0 = LocalDate.now((DateTimeZone) fixedDateTimeZone0);
         LocalDate.Property localDate_Property0 = localDate0.centuryOfEra();
@@ -76,7 +119,246 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0371() throws Throwable {
+    public void test0077() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-4071));
+        LocalDate localDate0 = new LocalDate((Object) null, dateTimeZone0);
+        LocalDate.Property localDate_Property0 = localDate0.yearOfCentury();
+        localDate_Property0.getMillis();
+    }
+
+    @Test(timeout = 4000)
+    public void test0088() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeField dateTimeField0 = buddhistChronology0.halfdayOfDay();
+        LocalDate.Property localDate_Property0 = new LocalDate.Property(localDate0, dateTimeField0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0099() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.weekOfWeekyear();
+        localDate0.withField(dateTimeFieldType0, 2);
+    }
+
+    @Test(timeout = 4000)
+    public void test01010() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.withDayOfWeek(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test01111() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes((-87), 1);
+        MonthDay monthDay0 = MonthDay.now(dateTimeZone0);
+        LocalDate localDate0 = monthDay0.toLocalDate(1);
+        LocalDate localDate1 = localDate0.minusYears((-2331));
+        localDate1.toInterval(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01212() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
+        LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
+        localDate0.toInterval((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01313() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        Days days0 = Days.MAX_VALUE;
+        LocalDate localDate1 = localDate0.minus(days0);
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        localDate1.toInterval((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01414() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        LocalDate localDate1 = localDate0.withYear((-28800000));
+        localDate1.toInterval();
+    }
+
+    @Test(timeout = 4000)
+    public void test01515() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        LocalDate localDate0 = new LocalDate();
+        LocalDate localDate1 = localDate0.withLocalMillis(21600000L);
+        localDate1.toDateTimeAtStartOfDay((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01616() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.toDateTimeAtStartOfDay(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01717() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        LocalDateTime localDateTime0 = new LocalDateTime(21600000L, (Chronology) buddhistChronology0);
+        LocalDate localDate0 = new LocalDate(localDateTime0, (DateTimeZone) null);
+        LocalDate localDate1 = localDate0.minusMonths(1840);
+        localDate1.toDateTimeAtStartOfDay();
+    }
+
+    @Test(timeout = 4000)
+    public void test01818() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        Chronology chronology0 = ethiopicChronology0.withZone(fixedDateTimeZone0);
+        LocalDate localDate0 = new LocalDate(0L, chronology0);
+        localDate0.toDateTimeAtMidnight((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01919() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        LocalDate localDate0 = LocalDate.now((DateTimeZone) fixedDateTimeZone0);
+        localDate0.toDateTimeAtMidnight((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02020() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        Chronology chronology0 = ethiopicChronology0.withZone(fixedDateTimeZone0);
+        LocalDate localDate0 = new LocalDate(0L, chronology0);
+        localDate0.toDateTimeAtMidnight();
+    }
+
+    @Test(timeout = 4000)
+    public void test02121() throws Throwable {
+        MockDate mockDate0 = new MockDate(0, (-1320), 1900);
+        LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        localDate0.toDateTimeAtCurrentTime(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02222() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        LocalDate localDate1 = localDate0.withYear(40);
+        localDate1.toDateTimeAtCurrentTime();
+    }
+
+    @Test(timeout = 4000)
+    public void test02323() throws Throwable {
+        LocalDate localDate0 = new LocalDate(1L);
+        LocalTime localTime0 = new LocalTime(2, 41);
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis(2);
+        localDate0.toDateTime(localTime0, dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02424() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
+        LocalDate localDate1 = localDate0.withLocalMillis(0L);
+        LocalDate localDate2 = localDate1.withDayOfMonth(1);
+        LocalTime localTime0 = new LocalTime(3600000L, (Chronology) copticChronology0);
+        localDate2.toDateTime(localTime0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02525() throws Throwable {
+        ISOChronology iSOChronology0 = ISOChronology.getInstance();
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        Chronology chronology0 = iSOChronology0.withUTC();
+        LocalDate localDate0 = new LocalDate(0L, chronology0);
+        localDate0.toDateMidnight(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02626() throws Throwable {
+        LocalDate localDate0 = new LocalDate(1L);
+        localDate0.toDateMidnight();
+    }
+
+    @Test(timeout = 4000)
+    public void test02727() throws Throwable {
+        LocalDate.parse("2014-02-14");
+    }
+
+    @Test(timeout = 4000)
+    public void test02828() throws Throwable {
+        Locale locale0 = Locale.TRADITIONAL_CHINESE;
+        Calendar calendar0 = MockCalendar.getInstance(locale0);
+        LocalDate localDate0 = LocalDate.fromCalendarFields(calendar0);
+        LocalDate localDate1 = localDate0.plusYears((-3969));
+        localDate1.getYear();
+    }
+
+    @Test(timeout = 4000)
+    public void test02929() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        LocalDate localDate1 = localDate0.withYear((-28800000));
+        localDate1.getWeekyear();
+    }
+
+    @Test(timeout = 4000)
+    public void test03030() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        Chronology chronology0 = ethiopicChronology0.withZone(fixedDateTimeZone0);
+        LocalDate localDate0 = new LocalDate(0L, chronology0);
+        localDate0.getLocalMillis();
+    }
+
+    @Test(timeout = 4000)
+    public void test03131() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        localDate0.getLocalMillis();
+    }
+
+    @Test(timeout = 4000)
+    public void test03232() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        LocalDate localDate0 = new LocalDate((-24L), (Chronology) ethiopicChronology0);
+        localDate0.getLocalMillis();
+    }
+
+    @Test(timeout = 4000)
+    public void test03333() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
+        localDate0.getField(1, (Chronology) copticChronology0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03434() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        Days days0 = Days.MAX_VALUE;
+        LocalDate localDate1 = localDate0.minus(days0);
+        localDate1.getEra();
+    }
+
+    @Test(timeout = 4000)
+    public void test03535() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes((-87), 1);
+        MonthDay monthDay0 = MonthDay.now(dateTimeZone0);
+        LocalDate localDate0 = monthDay0.toLocalDate(1);
+        localDate0.getCenturyOfEra();
+    }
+
+    @Test(timeout = 4000)
+    public void test03636() throws Throwable {
+        LocalDate localDate0 = LocalDate.now();
+        LocalDate localDate1 = localDate0.withYearOfCentury(0);
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.yearOfCentury();
+        localDate1.get(dateTimeFieldType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03737() throws Throwable {
         MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar((-4001), 44, 44, 40, (-4001), 2);
         LocalDate localDate0 = LocalDate.fromCalendarFields(mockGregorianCalendar0);
         // Undeclared exception!
@@ -92,7 +374,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0382() throws Throwable {
+    public void test03838() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         // Undeclared exception!
         try {
@@ -107,7 +389,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0393() throws Throwable {
+    public void test03939() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) gJChronology0);
         // Undeclared exception!
@@ -123,7 +405,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0404() throws Throwable {
+    public void test04040() throws Throwable {
         DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
         DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
         doReturn(87).when(dateTimeParser0).parseInto(any(org.joda.time.format.DateTimeParserBucket.class), anyString(), anyInt());
@@ -144,7 +426,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0415() throws Throwable {
+    public void test04141() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(3);
         LocalDate localDate0 = LocalDate.now(dateTimeZone0);
         // Undeclared exception!
@@ -160,7 +442,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0426() throws Throwable {
+    public void test04242() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         JulianChronology julianChronology0 = JulianChronology.getInstance();
@@ -179,7 +461,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0437() throws Throwable {
+    public void test04343() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         // Undeclared exception!
         try {
@@ -194,7 +476,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0448() throws Throwable {
+    public void test04444() throws Throwable {
         DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
         DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
         doReturn(1761).when(dateTimeParser0).parseInto(any(org.joda.time.format.DateTimeParserBucket.class), anyString(), anyInt());
@@ -213,7 +495,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0459() throws Throwable {
+    public void test04545() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         LocalDate localDate0 = new LocalDate((Chronology) copticChronology0);
         // Undeclared exception!
@@ -229,7 +511,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04610() throws Throwable {
+    public void test04646() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(37);
         LocalDate localDate0 = LocalDate.now(dateTimeZone0);
         // Undeclared exception!
@@ -245,7 +527,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04711() throws Throwable {
+    public void test04747() throws Throwable {
         MockDate mockDate0 = new MockDate(0, (-1320), 1900);
         LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
         // Undeclared exception!
@@ -261,7 +543,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04812() throws Throwable {
+    public void test04848() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-2973));
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance(dateTimeZone0);
         LocalDate localDate0 = new LocalDate((Chronology) ethiopicChronology0);
@@ -278,7 +560,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test04913() throws Throwable {
+    public void test04949() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         Years years0 = Years.MAX_VALUE;
         // Undeclared exception!
@@ -294,7 +576,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05014() throws Throwable {
+    public void test05050() throws Throwable {
         DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
         DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
         doReturn((-2147483646)).when(dateTimeParser0).parseInto(any(org.joda.time.format.DateTimeParserBucket.class), anyString(), anyInt());
@@ -308,7 +590,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05115() throws Throwable {
+    public void test05151() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.parse(">PN:7W}S(^", (DateTimeFormatter) null);
@@ -322,7 +604,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05216() throws Throwable {
+    public void test05252() throws Throwable {
         DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
         DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
         doReturn(0).when(dateTimeParser0).parseInto(any(org.joda.time.format.DateTimeParserBucket.class), anyString(), anyInt());
@@ -340,7 +622,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05317() throws Throwable {
+    public void test05353() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.parse((String) null);
@@ -354,7 +636,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05418() throws Throwable {
+    public void test05454() throws Throwable {
         MockDate mockDate0 = new MockDate((-3620), 2587, 623191204, (-1688), 2477, 2587);
         LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
         // Undeclared exception!
@@ -370,7 +652,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05519() throws Throwable {
+    public void test05555() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         // Undeclared exception!
         try {
@@ -385,7 +667,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05620() throws Throwable {
+    public void test05656() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate((Chronology) ethiopicChronology0);
         LocalDate localDate1 = localDate0.withWeekyear(1);
@@ -402,7 +684,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05721() throws Throwable {
+    public void test05757() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         Days days0 = Days.MIN_VALUE;
         // Undeclared exception!
@@ -418,7 +700,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05822() throws Throwable {
+    public void test05858() throws Throwable {
         Partial partial0 = new Partial();
         LocalDate localDate0 = null;
         try {
@@ -433,7 +715,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test05923() throws Throwable {
+    public void test05959() throws Throwable {
         LocalDate localDate0 = null;
         try {
             localDate0 = new LocalDate("eg1/`gL<X|%");
@@ -447,7 +729,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06024() throws Throwable {
+    public void test06060() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
         LocalDate localDate0 = null;
         try {
@@ -462,7 +744,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06125() throws Throwable {
+    public void test06161() throws Throwable {
         LocalDate localDate0 = null;
         try {
             localDate0 = new LocalDate(943, (-3028), (-1566), (Chronology) null);
@@ -476,7 +758,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06226() throws Throwable {
+    public void test06262() throws Throwable {
         LocalDate localDate0 = null;
         try {
             localDate0 = new LocalDate(0, 0, 0);
@@ -490,7 +772,32 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test06627() throws Throwable {
+    public void test06363() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        LocalDateTime localDateTime0 = new LocalDateTime((long) (-2174), (Chronology) buddhistChronology0);
+        LocalDate localDate0 = new LocalDate(localDateTime0, buddhistChronology0);
+        localDate0.plusDays(3304);
+    }
+
+    @Test(timeout = 4000)
+    public void test06464() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        JulianChronology julianChronology0 = JulianChronology.getInstance();
+        Period period0 = new Period(0L, (Chronology) julianChronology0);
+        localDate0.withPeriodAdded(period0, 10209375);
+    }
+
+    @Test(timeout = 4000)
+    public void test06565() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes((-87), 1);
+        MonthDay monthDay0 = MonthDay.now(dateTimeZone0);
+        LocalDate localDate0 = monthDay0.toLocalDate(1);
+        localDate0.withPeriodAdded((ReadablePeriod) null, 247);
+    }
+
+    @Test(timeout = 4000)
+    public void test06666() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstance();
         LocalDate localDate0 = new LocalDate((Chronology) copticChronology0);
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours((-288));
@@ -508,7 +815,35 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test07028() throws Throwable {
+    public void test06767() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        LocalDate localDate0 = new LocalDate();
+        LocalDateTime localDateTime0 = LocalDateTime.now((Chronology) ethiopicChronology0);
+        Date date0 = localDateTime0.toDate();
+        LocalTime localTime0 = LocalTime.fromDateFields(date0);
+        localDate0.toDateTime(localTime0, (DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test06868() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        LocalDate localDate1 = localDate0.minusWeeks((-3165));
+        localDate1.compareTo((ReadablePartial) localDate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test06969() throws Throwable {
+        MockDate mockDate0 = new MockDate((-27), (-1320), 1900);
+        LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
+        LocalDate localDate1 = localDate0.plusMonths(3);
+        LocalDate localDate2 = localDate0.plusMonths(3);
+        localDate2.compareTo((ReadablePartial) localDate1);
+    }
+
+    @Test(timeout = 4000)
+    public void test07070() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalTime localTime0 = new LocalTime((-2271L));
         // Undeclared exception!
@@ -524,7 +859,133 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test08729() throws Throwable {
+    public void test07171() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        LocalDate localDate1 = localDate0.minusWeeks((-3165));
+        localDate0.compareTo((ReadablePartial) localDate1);
+    }
+
+    @Test(timeout = 4000)
+    public void test07272() throws Throwable {
+        MockDate mockDate0 = new MockDate((-27), (-1320), 1900);
+        LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
+        localDate0.compareTo((ReadablePartial) localDate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07373() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
+        LocalDate.Property localDate_Property0 = localDate0.monthOfYear();
+        LocalDate localDate1 = localDate_Property0.roundFloorCopy();
+        localDate1.equals(localDate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07474() throws Throwable {
+        LocalDate localDate0 = LocalDate.now();
+        DurationFieldType durationFieldType0 = DurationFieldType.SECONDS_TYPE;
+        localDate0.isSupported(durationFieldType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07575() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfDay();
+        localDate0.isSupported(dateTimeFieldType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07676() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+        LocalDateTime localDateTime0 = new LocalDateTime((long) (-2174), (Chronology) buddhistChronology0);
+        LocalDate localDate0 = new LocalDate(localDateTime0, buddhistChronology0);
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.centuryOfEra();
+        localDate0.isSupported(dateTimeFieldType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07777() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.centuryOfEra();
+        localDate0.get(dateTimeFieldType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test07878() throws Throwable {
+        DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
+        DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
+        doReturn(1761).when(dateTimeParser0).parseInto(any(org.joda.time.format.DateTimeParserBucket.class), anyString(), anyInt());
+        DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimePrinter0, dateTimeParser0);
+        LocalDate localDate0 = LocalDate.parse("WB]X}Vjj", dateTimeFormatter0);
+        localDate0.getValue(2);
+    }
+
+    @Test(timeout = 4000)
+    public void test07979() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.getValue(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test08080() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.getDayOfMonth();
+    }
+
+    @Test(timeout = 4000)
+    public void test08181() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstanceUTC();
+        StrictChronology strictChronology0 = StrictChronology.getInstance(ethiopicChronology0);
+        LocalDate localDate0 = new LocalDate((long) (-1701), (Chronology) strictChronology0);
+        localDate0.toDateTimeAtStartOfDay((DateTimeZone) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test08282() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        LocalDate localDate0 = new LocalDate((-24L), (Chronology) ethiopicChronology0);
+        localDate0.toInterval((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test08383() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        LocalDateTime localDateTime0 = LocalDateTime.now((DateTimeZone) fixedDateTimeZone0);
+        Date date0 = localDateTime0.toDate();
+        LocalDate localDate0 = LocalDate.fromDateFields(date0);
+        localDate0.toDateMidnight((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test08484() throws Throwable {
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        ISOChronology iSOChronology0 = ISOChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
+        StrictChronology strictChronology0 = StrictChronology.getInstance(iSOChronology0);
+        LocalDate localDate0 = new LocalDate(2, 2, 2, strictChronology0);
+    }
+
+    @Test(timeout = 4000)
+    public void test08585() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        localDate0.getChronology();
+    }
+
+    @Test(timeout = 4000)
+    public void test08686() throws Throwable {
+        IslamicChronology islamicChronology0 = IslamicChronology.getInstanceUTC();
+        LocalDate localDate0 = new LocalDate((Chronology) islamicChronology0);
+        localDate0.getMonthOfYear();
+    }
+
+    @Test(timeout = 4000)
+    public void test08787() throws Throwable {
         DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
         DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimePrinter0, (DateTimeParser) null);
         // Undeclared exception!
@@ -540,7 +1001,33 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09230() throws Throwable {
+    public void test08888() throws Throwable {
+        LocalDate localDate0 = new LocalDate((DateTimeZone) null);
+        localDate0.size();
+    }
+
+    @Test(timeout = 4000)
+    public void test08989() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        localDate0.toDateTimeAtCurrentTime(dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09090() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
+        LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
+        localDate0.toDateTimeAtMidnight((DateTimeZone) fixedDateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09191() throws Throwable {
+        LocalDate localDate0 = new LocalDate(21, 8, 21);
+    }
+
+    @Test(timeout = 4000)
+    public void test09292() throws Throwable {
         GJChronology gJChronology0 = GJChronology.getInstance();
         LocalDate localDate0 = null;
         try {
@@ -555,7 +1042,30 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09631() throws Throwable {
+    public void test09393() throws Throwable {
+        LocalDate localDate0 = new LocalDate(1L);
+        Locale locale0 = Locale.ROOT;
+        localDate0.toString((String) null, locale0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09494() throws Throwable {
+        EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
+        LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
+        Locale locale0 = Locale.FRENCH;
+        localDate0.toString("4", locale0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09595() throws Throwable {
+        GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+        DateTimeZone dateTimeZone0 = gJChronology0.getZone();
+        LocalDate localDate0 = new LocalDate((-1269L), dateTimeZone0);
+        localDate0.toString((String) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test09696() throws Throwable {
         MockDate mockDate0 = new MockDate((-27), (-1320), 1900);
         LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
         // Undeclared exception!
@@ -571,7 +1081,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09732() throws Throwable {
+    public void test09797() throws Throwable {
         LocalDate localDate0 = LocalDate.now();
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfDay();
         // Undeclared exception!
@@ -587,7 +1097,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test09833() throws Throwable {
+    public void test09898() throws Throwable {
         MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(58, 58, (-2699));
         LocalDate localDate0 = LocalDate.fromCalendarFields(mockGregorianCalendar0);
         // Undeclared exception!
@@ -603,7 +1113,114 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11434() throws Throwable {
+    public void test09999() throws Throwable {
+        ISOChronology iSOChronology0 = ISOChronology.getInstance();
+        DateTime dateTime0 = new DateTime((Chronology) iSOChronology0);
+        LocalDate localDate0 = dateTime0.toLocalDate();
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.centuryOfEra();
+        localDate0.property(dateTimeFieldType0);
+    }
+
+    @Test(timeout = 4000)
+    public void test100100() throws Throwable {
+        BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
+        LocalDate localDate0 = new LocalDate((Chronology) buddhistChronology0);
+        localDate0.minusDays(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test101101() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.minusDays(14);
+    }
+
+    @Test(timeout = 4000)
+    public void test102102() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        localDate0.minusWeeks(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test103103() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.minusMonths(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test104104() throws Throwable {
+        LocalDate localDate0 = LocalDate.now();
+        localDate0.minusYears(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test105105() throws Throwable {
+        ISOChronology iSOChronology0 = ISOChronology.getInstance();
+        LocalDate localDate0 = new LocalDate((Chronology) iSOChronology0);
+        localDate0.plusDays(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test106106() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+        LocalDate localDate0 = new LocalDate(dateTimeZone0);
+        localDate0.plusWeeks(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test107107() throws Throwable {
+        LocalDate localDate0 = new LocalDate(1L);
+        localDate0.plusWeeks(51);
+    }
+
+    @Test(timeout = 4000)
+    public void test108108() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
+        localDate0.plusMonths(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test109109() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
+        localDate0.plusYears(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test110110() throws Throwable {
+        LocalDate localDate0 = new LocalDate(1L);
+        localDate0.plusYears(2);
+    }
+
+    @Test(timeout = 4000)
+    public void test111111() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
+        DateTime dateTime0 = DateTime.now((Chronology) copticChronology0);
+        Hours hours0 = Hours.hoursBetween((ReadableInstant) dateTime0, (ReadableInstant) dateTime0);
+        localDate0.withPeriodAdded(hours0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test112112() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.minuteOfDay();
+        DurationFieldType durationFieldType0 = dateTimeFieldType0.getRangeDurationType();
+        localDate0.withFieldAdded(durationFieldType0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test113113() throws Throwable {
+        LocalDate localDate0 = LocalDate.now();
+        DurationFieldType durationFieldType0 = DurationFieldType.WEEKYEARS_TYPE;
+        LocalDate localDate1 = localDate0.withFieldAdded(durationFieldType0, (-2803));
+        localDate1.toDateMidnight((DateTimeZone) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test114114() throws Throwable {
         LocalDate localDate0 = new LocalDate(0L);
         // Undeclared exception!
         try {
@@ -618,7 +1235,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11535() throws Throwable {
+    public void test115115() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         DurationFieldType durationFieldType0 = DurationFieldType.MILLIS_TYPE;
         // Undeclared exception!
@@ -634,7 +1251,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11636() throws Throwable {
+    public void test116116() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         DateTime dateTime0 = new DateTime((Chronology) iSOChronology0);
         LocalDate localDate0 = dateTime0.toLocalDate();
@@ -652,7 +1269,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11737() throws Throwable {
+    public void test117117() throws Throwable {
         LocalDate localDate0 = new LocalDate(1L);
         // Undeclared exception!
         try {
@@ -667,7 +1284,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test11838() throws Throwable {
+    public void test118118() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         DateTime dateTime0 = new DateTime((Chronology) iSOChronology0);
         LocalDate localDate0 = dateTime0.toLocalDate();
@@ -685,7 +1302,13 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12039() throws Throwable {
+    public void test119119() throws Throwable {
+        LocalDate localDate0 = new LocalDate(1L);
+        localDate0.withFields(localDate0);
+    }
+
+    @Test(timeout = 4000)
+    public void test120120() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(1);
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
@@ -703,7 +1326,14 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12240() throws Throwable {
+    public void test121121() throws Throwable {
+        DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(37);
+        LocalDate localDate0 = LocalDate.now(dateTimeZone0);
+        localDate0.toDateTime((LocalTime) null, dateTimeZone0);
+    }
+
+    @Test(timeout = 4000)
+    public void test122122() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         LocalDate localDate0 = LocalDate.now((DateTimeZone) fixedDateTimeZone0);
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
@@ -722,7 +1352,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12341() throws Throwable {
+    public void test123123() throws Throwable {
         IslamicChronology islamicChronology0 = IslamicChronology.getInstanceUTC();
         LocalDate localDate0 = new LocalDate(100000000000000000L, (Chronology) islamicChronology0);
         // Undeclared exception!
@@ -738,7 +1368,42 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test12942() throws Throwable {
+    public void test124124() throws Throwable {
+        CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+        LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
+        LocalTime localTime0 = new LocalTime(3600000L, (Chronology) copticChronology0);
+        localDate0.toLocalDateTime(localTime0);
+    }
+
+    @Test(timeout = 4000)
+    public void test125125() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        localDate0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test126126() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        Days days0 = Days.MAX_VALUE;
+        LocalDate localDate1 = localDate0.minus(days0);
+        localDate1.toDate();
+    }
+
+    @Test(timeout = 4000)
+    public void test127127() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        Integer integer0 = new Integer(5);
+        localDate0.equals(integer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test128128() throws Throwable {
+        LocalDate localDate0 = new LocalDate();
+        localDate0.toDate();
+    }
+
+    @Test(timeout = 4000)
+    public void test129129() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
         Date date0 = localDate0.toDate();
@@ -746,7 +1411,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13043() throws Throwable {
+    public void test130130() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         LocalDate localDate0 = LocalDate.now((DateTimeZone) fixedDateTimeZone0);
         DurationFieldType durationFieldType0 = DurationFieldType.MONTHS_TYPE;
@@ -755,7 +1420,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13144() throws Throwable {
+    public void test131131() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         boolean boolean0 = localDate0.isSupported((DurationFieldType) null);
@@ -763,7 +1428,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13245() throws Throwable {
+    public void test132132() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
         DateTime dateTime0 = DateTime.now((Chronology) copticChronology0);
@@ -773,7 +1438,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13346() throws Throwable {
+    public void test133133() throws Throwable {
         IslamicChronology islamicChronology0 = IslamicChronology.getInstanceUTC();
         LocalDate localDate0 = new LocalDate((Chronology) islamicChronology0);
         boolean boolean0 = localDate0.isSupported((DateTimeFieldType) null);
@@ -781,7 +1446,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13447() throws Throwable {
+    public void test134134() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.secondOfDay();
         // Undeclared exception!
@@ -797,7 +1462,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13548() throws Throwable {
+    public void test135135() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
         // Undeclared exception!
@@ -813,7 +1478,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13649() throws Throwable {
+    public void test136136() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         // Undeclared exception!
         try {
@@ -828,7 +1493,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13750() throws Throwable {
+    public void test137137() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         // Undeclared exception!
@@ -844,7 +1509,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13851() throws Throwable {
+    public void test138138() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.fromDateFields((Date) null);
@@ -858,7 +1523,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test13952() throws Throwable {
+    public void test139139() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.fromCalendarFields((Calendar) null);
@@ -872,7 +1537,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14053() throws Throwable {
+    public void test140140() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.now((Chronology) null);
@@ -886,7 +1551,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14154() throws Throwable {
+    public void test141141() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.now((DateTimeZone) null);
@@ -900,7 +1565,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14255() throws Throwable {
+    public void test142142() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
         LocalDate.Property localDate_Property0 = localDate0.dayOfYear();
@@ -909,7 +1574,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14356() throws Throwable {
+    public void test143143() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate.Property localDate_Property0 = localDate0.yearOfCentury();
         Chronology chronology0 = localDate_Property0.getChronology();
@@ -917,7 +1582,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14457() throws Throwable {
+    public void test144144() throws Throwable {
         ISOChronology iSOChronology0 = ISOChronology.getInstance();
         LocalDate localDate0 = new LocalDate((Chronology) iSOChronology0);
         LocalDate.Property localDate_Property0 = localDate0.centuryOfEra();
@@ -926,7 +1591,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14558() throws Throwable {
+    public void test145145() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate.Property localDate_Property0 = localDate0.year();
         LocalDate localDate1 = localDate_Property0.getLocalDate();
@@ -934,7 +1599,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14659() throws Throwable {
+    public void test146146() throws Throwable {
         LocalDate localDate0 = new LocalDate((DateTimeZone) null);
         LocalDate.Property localDate_Property0 = localDate0.centuryOfEra();
         LocalDate localDate1 = localDate_Property0.roundHalfFloorCopy();
@@ -942,7 +1607,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14760() throws Throwable {
+    public void test147147() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHours(0);
         LocalDate localDate0 = new LocalDate((Object) null, dateTimeZone0);
         LocalDate.Property localDate_Property0 = localDate0.yearOfCentury();
@@ -959,7 +1624,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14861() throws Throwable {
+    public void test148148() throws Throwable {
         LocalDate localDate0 = new LocalDate(0L);
         LocalDate.Property localDate_Property0 = localDate0.year();
         LocalDate localDate1 = localDate_Property0.addWrapFieldToCopy((-915));
@@ -967,7 +1632,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test14962() throws Throwable {
+    public void test149149() throws Throwable {
         MockDate mockDate0 = new MockDate((-27), (-1320), 1900);
         LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
         LocalDate.Property localDate_Property0 = localDate0.yearOfEra();
@@ -976,7 +1641,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15063() throws Throwable {
+    public void test150150() throws Throwable {
         BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
         LocalDateTime localDateTime0 = new LocalDateTime(21600000L, (Chronology) buddhistChronology0);
         LocalDate localDate0 = new LocalDate(localDateTime0, (DateTimeZone) null);
@@ -993,28 +1658,28 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15164() throws Throwable {
+    public void test151151() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         int int0 = localDate0.getEra();
         assertEquals(1, int0);
     }
 
     @Test(timeout = 4000)
-    public void test15265() throws Throwable {
+    public void test152152() throws Throwable {
         LocalDate localDate0 = new LocalDate((Object) null);
         DateTime dateTime0 = localDate0.toDateTimeAtStartOfDay();
         assertEquals(1392364800000L, dateTime0.getMillis());
     }
 
     @Test(timeout = 4000)
-    public void test15366() throws Throwable {
+    public void test153153() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         int int0 = localDate0.getWeekOfWeekyear();
         assertEquals(7, int0);
     }
 
     @Test(timeout = 4000)
-    public void test15467() throws Throwable {
+    public void test154154() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         // Undeclared exception!
@@ -1030,7 +1695,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15568() throws Throwable {
+    public void test155155() throws Throwable {
         CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
         LocalDate localDate0 = LocalDate.now((Chronology) copticChronology0);
         LocalTime localTime0 = new LocalTime(3600000L, (Chronology) copticChronology0);
@@ -1039,7 +1704,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15669() throws Throwable {
+    public void test156156() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         int int0 = localDate0.getYearOfEra();
@@ -1047,7 +1712,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15770() throws Throwable {
+    public void test157157() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         LocalDate.Property localDate_Property0 = localDate0.era();
@@ -1055,7 +1720,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15871() throws Throwable {
+    public void test158158() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         int int0 = localDate0.getWeekyear();
@@ -1063,14 +1728,14 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test15972() throws Throwable {
+    public void test159159() throws Throwable {
         LocalDate localDate0 = new LocalDate((Object) null);
         LocalDate.Property localDate_Property0 = localDate0.dayOfWeek();
         assertNotNull(localDate_Property0);
     }
 
     @Test(timeout = 4000)
-    public void test16073() throws Throwable {
+    public void test160160() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         int int0 = localDate0.getDayOfYear();
@@ -1078,7 +1743,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16174() throws Throwable {
+    public void test161161() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate.Property localDate_Property0 = localDate0.yearOfEra();
         LocalDate localDate1 = localDate_Property0.roundHalfEvenCopy();
@@ -1086,7 +1751,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16275() throws Throwable {
+    public void test162162() throws Throwable {
         LocalDate localDate0 = LocalDate.now();
         LocalDate.Property localDate_Property0 = localDate0.centuryOfEra();
         LocalDate localDate1 = localDate_Property0.withMaximumValue();
@@ -1094,21 +1759,21 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16376() throws Throwable {
+    public void test163163() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate.Property localDate_Property0 = localDate0.weekyear();
         assertNotNull(localDate_Property0);
     }
 
     @Test(timeout = 4000)
-    public void test16477() throws Throwable {
+    public void test164164() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate.Property localDate_Property0 = localDate0.dayOfMonth();
         assertNotNull(localDate_Property0);
     }
 
     @Test(timeout = 4000)
-    public void test16578() throws Throwable {
+    public void test165165() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         int int0 = localDate0.getYearOfCentury();
@@ -1116,7 +1781,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16679() throws Throwable {
+    public void test166166() throws Throwable {
         // Undeclared exception!
         try {
             LocalDate.parse("k+4%tE`lkM32");
@@ -1130,35 +1795,35 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test16780() throws Throwable {
+    public void test167167() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         int int0 = localDate0.getCenturyOfEra();
         assertEquals(20, int0);
     }
 
     @Test(timeout = 4000)
-    public void test16881() throws Throwable {
+    public void test168168() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate.Property localDate_Property0 = localDate0.weekOfWeekyear();
         assertNotNull(localDate_Property0);
     }
 
     @Test(timeout = 4000)
-    public void test16982() throws Throwable {
+    public void test169169() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         int int0 = localDate0.getDayOfWeek();
         assertEquals(5, int0);
     }
 
     @Test(timeout = 4000)
-    public void test17083() throws Throwable {
+    public void test170170() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate localDate1 = localDate0.withWeekOfWeekyear(1);
         assertNotSame(localDate1, localDate0);
     }
 
     @Test(timeout = 4000)
-    public void test17184() throws Throwable {
+    public void test171171() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         DateTime dateTime0 = localDate0.toDateTimeAtMidnight();
@@ -1166,14 +1831,14 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17285() throws Throwable {
+    public void test172172() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         LocalDate localDate1 = localDate0.withCenturyOfEra(14);
         assertNotSame(localDate1, localDate0);
     }
 
     @Test(timeout = 4000)
-    public void test17386() throws Throwable {
+    public void test173173() throws Throwable {
         MockDate mockDate0 = new MockDate((-27), (-1320), 1900);
         LocalDate localDate0 = LocalDate.fromDateFields(mockDate0);
         LocalDate localDate1 = localDate0.withYearOfEra(5);
@@ -1181,14 +1846,14 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17487() throws Throwable {
+    public void test174174() throws Throwable {
         LocalDate localDate0 = new LocalDate();
         DateMidnight dateMidnight0 = localDate0.toDateMidnight();
         assertEquals(1392364800000L, dateMidnight0.getMillis());
     }
 
     @Test(timeout = 4000)
-    public void test17588() throws Throwable {
+    public void test175175() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         int int0 = localDate0.getYear();
@@ -1196,7 +1861,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17689() throws Throwable {
+    public void test176176() throws Throwable {
         EthiopicChronology ethiopicChronology0 = EthiopicChronology.getInstance();
         LocalDate localDate0 = new LocalDate(0L, (Chronology) ethiopicChronology0);
         LocalDate localDate1 = localDate0.withMonthOfYear(1);
@@ -1204,14 +1869,14 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17790() throws Throwable {
+    public void test177177() throws Throwable {
         LocalDate localDate0 = new LocalDate(1L);
         LocalDate localDate1 = localDate0.withDayOfYear(2);
         assertNotSame(localDate1, localDate0);
     }
 
     @Test(timeout = 4000)
-    public void test17891() throws Throwable {
+    public void test178178() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         LocalDate localDate0 = LocalDate.now((DateTimeZone) fixedDateTimeZone0);
         DateTime dateTime0 = localDate0.toDateTimeAtCurrentTime();
@@ -1219,7 +1884,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17892() throws Throwable {
+    public void test178179() throws Throwable {
         FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone) DateTimeZone.UTC;
         LocalDate localDate0 = LocalDate.now((DateTimeZone) fixedDateTimeZone0);
         DateTime dateTime0 = localDate0.toDateTimeAtCurrentTime();
@@ -1227,7 +1892,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17993() throws Throwable {
+    public void test179180() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         Interval interval0 = localDate0.toInterval();
@@ -1235,7 +1900,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test17994() throws Throwable {
+    public void test179181() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         Interval interval0 = localDate0.toInterval();
@@ -1243,7 +1908,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test18095() throws Throwable {
+    public void test180182() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         LocalDate.Property localDate_Property0 = localDate0.yearOfCentury();
@@ -1252,7 +1917,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test18196() throws Throwable {
+    public void test181183() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         String string0 = localDate0.toString();
@@ -1260,7 +1925,7 @@ public class LocalDate_ESTest extends LocalDate_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test18297() throws Throwable {
+    public void test182184() throws Throwable {
         DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
         LocalDate localDate0 = new LocalDate(dateTimeZone0);
         LocalDate localDate1 = localDate0.withEra(0);

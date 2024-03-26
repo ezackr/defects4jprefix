@@ -196,7 +196,14 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test088() throws Throwable {
+        String string0 = "Tj>Crp\\ts''!gC0j";
+        HashMap<Locale.LanguageRange, String> hashMap0 = new HashMap<Locale.LanguageRange, String>();
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("Tj>Crp\ts''!gC0j", hashMap0);
+    }
+
+    @Test(timeout = 4000)
+    public void test099() throws Throwable {
         HashMap<Object, Object> hashMap0 = new HashMap<Object, Object>();
         ExtendedMessageFormat extendedMessageFormat0 = null;
         try {
@@ -211,7 +218,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Locale locale0 = Locale.TAIWAN;
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("", locale0);
         Locale locale1 = Locale.JAPANESE;
@@ -229,7 +236,14 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1210() throws Throwable {
+    public void test1111() throws Throwable {
+        HashMap<Integer, DecimalFormat> hashMap0 = new HashMap<Integer, DecimalFormat>();
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("Ubi*BVLuS\"c%", hashMap0);
+        extendedMessageFormat0.toPattern();
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
         HashMap<MessageFormat, String> hashMap0 = new HashMap<MessageFormat, String>();
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("org.apache.commons.lang.text.StrMatcher$StringMatcher", hashMap0);
         extendedMessageFormat0.applyPattern("org.apache.commons.lang.text.StrMatcher$StringMatcher");
@@ -247,7 +261,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1311() throws Throwable {
+    public void test1313() throws Throwable {
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("(le[JyF'8FT#C;Sb");
         Format[] formatArray0 = new Format[2];
         formatArray0[0] = (Format) extendedMessageFormat0;
@@ -265,7 +279,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1412() throws Throwable {
+    public void test1414() throws Throwable {
         String string0 = null;
         ExtendedMessageFormat extendedMessageFormat0 = null;
         try {
@@ -279,7 +293,19 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1613() throws Throwable {
+    public void test1515() throws Throwable {
+        Locale locale0 = Locale.SIMPLIFIED_CHINESE;
+        LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
+        LinkedHashSet<Locale> linkedHashSet0 = new LinkedHashSet<Locale>();
+        Locale.FilteringMode locale_FilteringMode0 = Locale.FilteringMode.EXTENDED_FILTERING;
+        List<Locale> list0 = Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) linkedHashSet0, locale_FilteringMode0);
+        Locale.filter((List<Locale.LanguageRange>) linkedList0, (Collection<Locale>) list0, locale_FilteringMode0);
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("", locale0);
+        extendedMessageFormat0.toPattern();
+    }
+
+    @Test(timeout = 4000)
+    public void test1616() throws Throwable {
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("a)BS[<b_S%1#Z7e}.");
         Format[] formatArray0 = new Format[5];
         formatArray0[0] = (Format) extendedMessageFormat0;
@@ -300,7 +326,22 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test1914() throws Throwable {
+    public void test1717() throws Throwable {
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("pA");
+        extendedMessageFormat0.applyPattern("pA");
+        extendedMessageFormat0.applyPattern("pA");
+    }
+
+    @Test(timeout = 4000)
+    public void test1818() throws Throwable {
+        Locale locale0 = Locale.ENGLISH;
+        HashMap<ChoiceFormat, NumberFormat> hashMap0 = new HashMap<ChoiceFormat, NumberFormat>();
+        hashMap0.clear();
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("'\"", locale0, hashMap0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1919() throws Throwable {
         Locale locale0 = Locale.KOREA;
         HashMap<MockDateFormat, Integer> hashMap0 = new HashMap<MockDateFormat, Integer>();
         ExtendedMessageFormat extendedMessageFormat0 = null;
@@ -316,7 +357,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2015() throws Throwable {
+    public void test2020() throws Throwable {
         String string0 = null;
         int int0 = 1433;
         HashMap<Integer, MockSimpleDateFormat> hashMap0 = new HashMap<Integer, MockSimpleDateFormat>(1433, 1433);
@@ -333,7 +374,14 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2216() throws Throwable {
+    public void test2121() throws Throwable {
+        String string0 = "''";
+        HashMap<Integer, MessageFormat> hashMap0 = new HashMap<Integer, MessageFormat>();
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("''", hashMap0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
         Locale locale0 = Locale.CHINA;
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("", locale0);
         MessageFormat messageFormat0 = new MessageFormat("", locale0);
@@ -350,7 +398,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2317() throws Throwable {
+    public void test2323() throws Throwable {
         ExtendedMessageFormat extendedMessageFormat0 = null;
         try {
             extendedMessageFormat0 = new ExtendedMessageFormat("IA6{k");
@@ -364,7 +412,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2418() throws Throwable {
+    public void test2424() throws Throwable {
         String string0 = "{t!";
         Locale locale0 = Locale.TAIWAN;
         HashMap<NumberFormat, ChoiceFormat> hashMap0 = new HashMap<NumberFormat, ChoiceFormat>();
@@ -381,7 +429,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2519() throws Throwable {
+    public void test2525() throws Throwable {
         Locale locale0 = new Locale("org.apache.commons.lang.text.StrMatcher$CharSetMatcher", "org.apache.commons.lang.text.StrMatcher$CharSetMatcher");
         HashMap<NumberFormat, String> hashMap0 = new HashMap<NumberFormat, String>();
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("JS@oDv3U,B ", locale0, hashMap0);
@@ -403,7 +451,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2620() throws Throwable {
+    public void test2626() throws Throwable {
         String string0 = null;
         Locale locale0 = Locale.JAPAN;
         ExtendedMessageFormat extendedMessageFormat0 = null;
@@ -418,7 +466,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2721() throws Throwable {
+    public void test2727() throws Throwable {
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("-P)u4%'Z\":d*gb.0KJ");
         extendedMessageFormat0.toPattern();
         // Undeclared exception!
@@ -433,7 +481,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2822() throws Throwable {
+    public void test2828() throws Throwable {
         Locale locale0 = Locale.CANADA_FRENCH;
         ExtendedMessageFormat extendedMessageFormat0 = null;
         try {
@@ -448,7 +496,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test2923() throws Throwable {
+    public void test2929() throws Throwable {
         HashMap<DecimalFormat, Integer> hashMap0 = new HashMap<DecimalFormat, Integer>();
         DecimalFormat decimalFormat0 = new DecimalFormat();
         int int0 = 2031;
@@ -471,7 +519,19 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test3124() throws Throwable {
+    public void test3030() throws Throwable {
+        HashMap<String, MockDateFormat> hashMap0 = new HashMap<String, MockDateFormat>();
+        ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("DssVG34\"5~cIH#JECW", hashMap0);
+        int int0 = 1923;
+        ParsePosition parsePosition0 = new ParsePosition(1923);
+        parsePosition0.setIndex(734);
+        extendedMessageFormat0.parseObject(" \t\n\r\f", parsePosition0);
+        // Undeclared exception!
+        extendedMessageFormat0.applyPattern("jHB0's~[?iM[2%y");
+    }
+
+    @Test(timeout = 4000)
+    public void test3131() throws Throwable {
         HashMap<Integer, String> hashMap0 = new HashMap<Integer, String>();
         hashMap0.put((Integer) null, "");
         ExtendedMessageFormat extendedMessageFormat0 = new ExtendedMessageFormat("");
@@ -488,7 +548,7 @@ public class ExtendedMessageFormat_ESTest extends ExtendedMessageFormat_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test3225() throws Throwable {
+    public void test3232() throws Throwable {
         String string0 = "{!";
         Locale locale0 = Locale.TAIWAN;
         HashMap<NumberFormat, ChoiceFormat> hashMap0 = new HashMap<NumberFormat, ChoiceFormat>();

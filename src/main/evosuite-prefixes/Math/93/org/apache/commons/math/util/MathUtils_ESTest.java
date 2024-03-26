@@ -22,549 +22,779 @@ public class MathUtils_ESTest extends MathUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0401() throws Throwable {
+    public void test0011() throws Throwable {
+        MathUtils.nextAfter(0.0, 0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0022() throws Throwable {
+        MathUtils.indicator((short) (byte) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0033() throws Throwable {
+        MathUtils.indicator(0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test0044() throws Throwable {
+        MathUtils.indicator(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test0055() throws Throwable {
+        MathUtils.indicator(1.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0066() throws Throwable {
+        MathUtils.indicator((byte) 107);
+    }
+
+    @Test(timeout = 4000)
+    public void test0077() throws Throwable {
+        double[] doubleArray0 = new double[6];
+        double[] doubleArray1 = new double[9];
+        MathUtils.equals(doubleArray0, doubleArray1);
+    }
+
+    @Test(timeout = 4000)
+    public void test0088() throws Throwable {
+        MathUtils.cosh((-1.0));
+    }
+
+    @Test(timeout = 4000)
+    public void test0099() throws Throwable {
+        MathUtils.binomialCoefficientLog(0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01010() throws Throwable {
+        MathUtils.addAndCheck(0L, (-2067L));
+    }
+
+    @Test(timeout = 4000)
+    public void test01111() throws Throwable {
+        MathUtils.subAndCheck(720L, 1L);
+    }
+
+    @Test(timeout = 4000)
+    public void test01212() throws Throwable {
+        MathUtils.subAndCheck(4718, 4718);
+    }
+
+    @Test(timeout = 4000)
+    public void test01313() throws Throwable {
+        MathUtils.subAndCheck(1892, 16);
+    }
+
+    @Test(timeout = 4000)
+    public void test01414() throws Throwable {
+        MathUtils.sinh(0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01515() throws Throwable {
+        MathUtils.sinh((-1.0));
+    }
+
+    @Test(timeout = 4000)
+    public void test01616() throws Throwable {
+        MathUtils.scalb((-1.0), (-1614));
+    }
+
+    @Test(timeout = 4000)
+    public void test01717() throws Throwable {
+        MathUtils.round((float) 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01818() throws Throwable {
+        MathUtils.round(0.0, 0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test01919() throws Throwable {
+        MathUtils.round(1588.09, (int) (short) 1, (int) (byte) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02020() throws Throwable {
+        MathUtils.round((double) 1L, (int) (short) 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test02121() throws Throwable {
+        MathUtils.round((-180.6522257959), (int) (byte) (-1));
+    }
+
+    @Test(timeout = 4000)
+    public void test02222() throws Throwable {
+        MathUtils.normalizeAngle(113.58579447, 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test02323() throws Throwable {
+        MathUtils.normalizeAngle((-2161.79362456336), 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02424() throws Throwable {
+        MathUtils.mulAndCheck(0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02525() throws Throwable {
+        MathUtils.mulAndCheck(1639, (-1057));
+    }
+
+    @Test(timeout = 4000)
+    public void test02626() throws Throwable {
+        MathUtils.log(544, 544);
+    }
+
+    @Test(timeout = 4000)
+    public void test02727() throws Throwable {
+        MathUtils.log(244.86671, 0.0);
+    }
+
+    @Test(timeout = 4000)
+    public void test02828() throws Throwable {
+        MathUtils.lcm(0, (-1477));
+    }
+
+    @Test(timeout = 4000)
+    public void test02929() throws Throwable {
+        MathUtils.hash((double[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test03030() throws Throwable {
+        double[] doubleArray0 = new double[9];
+        doubleArray0[1] = (double) (-1L);
+        doubleArray0[6] = (double) (-1L);
+        MathUtils.hash(doubleArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03131() throws Throwable {
+        MathUtils.hash((double) 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03232() throws Throwable {
+        MathUtils.hash((double) 1);
+    }
+
+    @Test(timeout = 4000)
+    public void test03333() throws Throwable {
+        MathUtils.factorialLog(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03434() throws Throwable {
+        MathUtils.binomialCoefficientLog(351, (-1));
+    }
+
+    @Test(timeout = 4000)
+    public void test03535() throws Throwable {
+        MathUtils.binomialCoefficientDouble((short) 739, (-1));
+    }
+
+    @Test(timeout = 4000)
+    public void test03636() throws Throwable {
+        MathUtils.addAndCheck(0L, 0L);
+    }
+
+    @Test(timeout = 4000)
+    public void test03737() throws Throwable {
+        MathUtils.addAndCheck((long) 0, 1999L);
+    }
+
+    @Test(timeout = 4000)
+    public void test03838() throws Throwable {
+        MathUtils.addAndCheck(0, 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test03939() throws Throwable {
+        MathUtils.addAndCheck((-1), 0);
+    }
+
+    @Test(timeout = 4000)
+    public void test04040() throws Throwable {
         MathUtils.round((double) (-1), 0, 3677);
     }
 
     @Test(timeout = 4000)
-    public void test0412() throws Throwable {
+    public void test04141() throws Throwable {
         MathUtils.lcm(0, 0);
     }
 
     @Test(timeout = 4000)
-    public void test0423() throws Throwable {
+    public void test04242() throws Throwable {
         MathUtils.lcm(1972, 2146517618);
     }
 
     @Test(timeout = 4000)
-    public void test0484() throws Throwable {
+    public void test04343() throws Throwable {
+        // Undeclared exception!
+        MathUtils.factorialLog((short) 10008);
+    }
+
+    @Test(timeout = 4000)
+    public void test04444() throws Throwable {
+        // Undeclared exception!
+        MathUtils.factorial(2144874311);
+    }
+
+    @Test(timeout = 4000)
+    public void test04545() throws Throwable {
+        // Undeclared exception!
+        MathUtils.binomialCoefficientLog(131810, 19);
+    }
+
+    @Test(timeout = 4000)
+    public void test04646() throws Throwable {
+        // Undeclared exception!
+        MathUtils.binomialCoefficientDouble(1696258207, 14);
+    }
+
+    @Test(timeout = 4000)
+    public void test04747() throws Throwable {
+        // Undeclared exception!
+        MathUtils.binomialCoefficient(846855, (-405));
+    }
+
+    @Test(timeout = 4000)
+    public void test04848() throws Throwable {
         double double0 = MathUtils.nextAfter((-249.9531578), 0);
     }
 
     @Test(timeout = 4000)
-    public void test0495() throws Throwable {
+    public void test04949() throws Throwable {
         double double0 = MathUtils.nextAfter((-1.0), (-1.0));
     }
 
     @Test(timeout = 4000)
-    public void test0506() throws Throwable {
+    public void test05050() throws Throwable {
         double double0 = MathUtils.nextAfter(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);
     }
 
     @Test(timeout = 4000)
-    public void test0517() throws Throwable {
+    public void test05151() throws Throwable {
         long long0 = MathUtils.mulAndCheck((-873L), (long) (short) 1);
     }
 
     @Test(timeout = 4000)
-    public void test0528() throws Throwable {
+    public void test05252() throws Throwable {
         long long0 = MathUtils.mulAndCheck((-2696L), (-2696L));
     }
 
     @Test(timeout = 4000)
-    public void test0539() throws Throwable {
+    public void test05353() throws Throwable {
         int int0 = MathUtils.mulAndCheck(731142, 1359);
     }
 
     @Test(timeout = 4000)
-    public void test05410() throws Throwable {
+    public void test05454() throws Throwable {
         float float0 = MathUtils.indicator((float) (-1630L));
     }
 
     @Test(timeout = 4000)
-    public void test05511() throws Throwable {
+    public void test05555() throws Throwable {
         float float0 = MathUtils.indicator((float) (short) 1);
     }
 
     @Test(timeout = 4000)
-    public void test05612() throws Throwable {
+    public void test05656() throws Throwable {
         int int0 = MathUtils.gcd((-1956), (-1956));
     }
 
     @Test(timeout = 4000)
-    public void test05713() throws Throwable {
+    public void test05757() throws Throwable {
         double double0 = MathUtils.factorialLog(1359);
     }
 
     @Test(timeout = 4000)
-    public void test05814() throws Throwable {
+    public void test05858() throws Throwable {
         MathUtils.factorialDouble((-3253));
     }
 
     @Test(timeout = 4000)
-    public void test05915() throws Throwable {
+    public void test05959() throws Throwable {
         double double0 = MathUtils.factorialDouble(3297);
     }
 
     @Test(timeout = 4000)
-    public void test06016() throws Throwable {
+    public void test06060() throws Throwable {
         boolean boolean0 = MathUtils.equals(0.464843750003638, 0.464843750003638);
     }
 
     @Test(timeout = 4000)
-    public void test06117() throws Throwable {
+    public void test06161() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(1535, 15);
     }
 
     @Test(timeout = 4000)
-    public void test06218() throws Throwable {
+    public void test06262() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(1, 0);
     }
 
     @Test(timeout = 4000)
-    public void test06319() throws Throwable {
+    public void test06363() throws Throwable {
         MathUtils.binomialCoefficientLog((-1800), 0);
     }
 
     @Test(timeout = 4000)
-    public void test06420() throws Throwable {
+    public void test06464() throws Throwable {
         int int0 = MathUtils.subAndCheck(0, 1);
     }
 
     @Test(timeout = 4000)
-    public void test06521() throws Throwable {
+    public void test06565() throws Throwable {
         short short0 = MathUtils.sign((short) (-1));
     }
 
     @Test(timeout = 4000)
-    public void test06622() throws Throwable {
+    public void test06666() throws Throwable {
         short short0 = MathUtils.sign((short) 0);
     }
 
     @Test(timeout = 4000)
-    public void test06723() throws Throwable {
+    public void test06767() throws Throwable {
         short short0 = MathUtils.sign((short) 899);
     }
 
     @Test(timeout = 4000)
-    public void test06824() throws Throwable {
+    public void test06868() throws Throwable {
         long long0 = MathUtils.sign((-1L));
     }
 
     @Test(timeout = 4000)
-    public void test06925() throws Throwable {
+    public void test06969() throws Throwable {
         long long0 = MathUtils.sign(0L);
     }
 
     @Test(timeout = 4000)
-    public void test07026() throws Throwable {
+    public void test07070() throws Throwable {
         long long0 = MathUtils.sign((long) (short) 1);
     }
 
     @Test(timeout = 4000)
-    public void test07127() throws Throwable {
+    public void test07171() throws Throwable {
         int int0 = MathUtils.sign((-1593));
     }
 
     @Test(timeout = 4000)
-    public void test07228() throws Throwable {
+    public void test07272() throws Throwable {
         int int0 = MathUtils.sign(0);
     }
 
     @Test(timeout = 4000)
-    public void test07329() throws Throwable {
+    public void test07373() throws Throwable {
         int int0 = MathUtils.sign(2);
     }
 
     @Test(timeout = 4000)
-    public void test07430() throws Throwable {
+    public void test07474() throws Throwable {
         float float0 = MathUtils.sign((-1138.658F));
     }
 
     @Test(timeout = 4000)
-    public void test07531() throws Throwable {
+    public void test07575() throws Throwable {
         float float0 = MathUtils.sign(0.0F);
     }
 
     @Test(timeout = 4000)
-    public void test07632() throws Throwable {
+    public void test07676() throws Throwable {
         float float0 = MathUtils.sign((float) (short) 1);
     }
 
     @Test(timeout = 4000)
-    public void test07733() throws Throwable {
+    public void test07777() throws Throwable {
         double double0 = MathUtils.sign((-759.6439791));
     }
 
     @Test(timeout = 4000)
-    public void test07834() throws Throwable {
+    public void test07878() throws Throwable {
         double double0 = MathUtils.sign(0.0);
     }
 
     @Test(timeout = 4000)
-    public void test07935() throws Throwable {
+    public void test07979() throws Throwable {
         double double0 = MathUtils.sign(Double.NaN);
     }
 
     @Test(timeout = 4000)
-    public void test08036() throws Throwable {
+    public void test08080() throws Throwable {
         double double0 = MathUtils.sign((double) 38);
     }
 
     @Test(timeout = 4000)
-    public void test08137() throws Throwable {
+    public void test08181() throws Throwable {
         byte byte0 = MathUtils.sign((byte) 31);
     }
 
     @Test(timeout = 4000)
-    public void test08238() throws Throwable {
+    public void test08282() throws Throwable {
         byte byte0 = MathUtils.sign((byte) 0);
     }
 
     @Test(timeout = 4000)
-    public void test08339() throws Throwable {
+    public void test08383() throws Throwable {
         byte byte0 = MathUtils.sign((byte) (-41));
     }
 
     @Test(timeout = 4000)
-    public void test08440() throws Throwable {
+    public void test08484() throws Throwable {
         float float0 = MathUtils.round((float) 120, (int) (short) (-1), 5);
     }
 
     @Test(timeout = 4000)
-    public void test08541() throws Throwable {
+    public void test08585() throws Throwable {
         float float0 = MathUtils.round(1.0F, 0, 0);
     }
 
     @Test(timeout = 4000)
-    public void test08642() throws Throwable {
+    public void test08686() throws Throwable {
         double double0 = MathUtils.round(Double.NEGATIVE_INFINITY, 1, 570);
     }
 
     @Test(timeout = 4000)
-    public void test08743() throws Throwable {
+    public void test08787() throws Throwable {
         double double0 = MathUtils.round(Double.NaN, (-2742), 356);
     }
 
     @Test(timeout = 4000)
-    public void test08844() throws Throwable {
+    public void test08888() throws Throwable {
         double double0 = MathUtils.scalb(1186.58, 0);
     }
 
     @Test(timeout = 4000)
-    public void test08945() throws Throwable {
+    public void test08989() throws Throwable {
         double double0 = MathUtils.scalb(0.0, 0);
     }
 
     @Test(timeout = 4000)
-    public void test09046() throws Throwable {
+    public void test09090() throws Throwable {
         double double0 = MathUtils.nextAfter(1.0, 0.0);
     }
 
     @Test(timeout = 4000)
-    public void test09147() throws Throwable {
+    public void test09191() throws Throwable {
         double double0 = MathUtils.nextAfter(0L, (-1386));
     }
 
     @Test(timeout = 4000)
-    public void test09248() throws Throwable {
+    public void test09292() throws Throwable {
         double double0 = MathUtils.nextAfter(Double.NaN, 0.0);
     }
 
     @Test(timeout = 4000)
-    public void test09349() throws Throwable {
+    public void test09393() throws Throwable {
         MathUtils.mulAndCheck(4503599627370495L, 2969L);
     }
 
     @Test(timeout = 4000)
-    public void test09450() throws Throwable {
+    public void test09494() throws Throwable {
         long long0 = MathUtils.mulAndCheck(0L, 0L);
     }
 
     @Test(timeout = 4000)
-    public void test09551() throws Throwable {
+    public void test09595() throws Throwable {
         MathUtils.mulAndCheck(2432902008176640000L, (long) (-1337364193));
     }
 
     @Test(timeout = 4000)
-    public void test09652() throws Throwable {
+    public void test09696() throws Throwable {
         long long0 = MathUtils.mulAndCheck((-1L), (long) 0);
     }
 
     @Test(timeout = 4000)
-    public void test09753() throws Throwable {
+    public void test09797() throws Throwable {
         long long0 = MathUtils.mulAndCheck((long) 21, (-2588L));
     }
 
     @Test(timeout = 4000)
-    public void test09854() throws Throwable {
+    public void test09898() throws Throwable {
         long long0 = MathUtils.mulAndCheck((long) 19, (long) 19);
     }
 
     @Test(timeout = 4000)
-    public void test09955() throws Throwable {
+    public void test09999() throws Throwable {
         MathUtils.mulAndCheck((-150), (-1046936661));
     }
 
     @Test(timeout = 4000)
-    public void test10056() throws Throwable {
+    public void test100100() throws Throwable {
         short short0 = MathUtils.indicator((short) 899);
     }
 
     @Test(timeout = 4000)
-    public void test10157() throws Throwable {
+    public void test101101() throws Throwable {
         short short0 = MathUtils.indicator((short) (-1));
     }
 
     @Test(timeout = 4000)
-    public void test10258() throws Throwable {
+    public void test102102() throws Throwable {
         long long0 = MathUtils.indicator(517L);
     }
 
     @Test(timeout = 4000)
-    public void test10359() throws Throwable {
+    public void test103103() throws Throwable {
         long long0 = MathUtils.indicator((-455L));
     }
 
     @Test(timeout = 4000)
-    public void test10460() throws Throwable {
+    public void test104104() throws Throwable {
         int int0 = MathUtils.indicator((int) (byte) 0);
     }
 
     @Test(timeout = 4000)
-    public void test10561() throws Throwable {
+    public void test105105() throws Throwable {
         int int0 = MathUtils.indicator((-5480));
     }
 
     @Test(timeout = 4000)
-    public void test10662() throws Throwable {
+    public void test106106() throws Throwable {
         float float0 = MathUtils.round(784.95306F, (int) (short) 1);
     }
 
     @Test(timeout = 4000)
-    public void test10763() throws Throwable {
+    public void test107107() throws Throwable {
         float float0 = MathUtils.indicator(Float.NaN);
     }
 
     @Test(timeout = 4000)
-    public void test10864() throws Throwable {
+    public void test108108() throws Throwable {
         double double0 = MathUtils.indicator((-5235.0));
     }
 
     @Test(timeout = 4000)
-    public void test10965() throws Throwable {
+    public void test109109() throws Throwable {
         double double0 = MathUtils.indicator(Double.NaN);
     }
 
     @Test(timeout = 4000)
-    public void test11066() throws Throwable {
+    public void test110110() throws Throwable {
         double double0 = MathUtils.indicator((double) 0);
     }
 
     @Test(timeout = 4000)
-    public void test11167() throws Throwable {
+    public void test111111() throws Throwable {
         byte byte0 = MathUtils.indicator((byte) 0);
     }
 
     @Test(timeout = 4000)
-    public void test11268() throws Throwable {
+    public void test112112() throws Throwable {
         byte byte0 = MathUtils.indicator((byte) (-1));
     }
 
     @Test(timeout = 4000)
-    public void test11369() throws Throwable {
+    public void test113113() throws Throwable {
         int int0 = MathUtils.gcd(2, 21);
     }
 
     @Test(timeout = 4000)
-    public void test11470() throws Throwable {
+    public void test114114() throws Throwable {
         int int0 = MathUtils.lcm(840, 840);
     }
 
     @Test(timeout = 4000)
-    public void test11571() throws Throwable {
+    public void test115115() throws Throwable {
         int int0 = MathUtils.gcd((-405), 0);
     }
 
     @Test(timeout = 4000)
-    public void test11672() throws Throwable {
+    public void test116116() throws Throwable {
         int int0 = MathUtils.gcd(0, 0);
     }
 
     @Test(timeout = 4000)
-    public void test11773() throws Throwable {
+    public void test117117() throws Throwable {
         MathUtils.factorialLog((-2545));
     }
 
     @Test(timeout = 4000)
-    public void test11874() throws Throwable {
+    public void test118118() throws Throwable {
         MathUtils.factorial((short) (-1));
     }
 
     @Test(timeout = 4000)
-    public void test11975() throws Throwable {
+    public void test119119() throws Throwable {
         MathUtils.factorial(570);
     }
 
     @Test(timeout = 4000)
-    public void test12076() throws Throwable {
+    public void test120120() throws Throwable {
         long long0 = MathUtils.factorial(0);
     }
 
     @Test(timeout = 4000)
-    public void test12177() throws Throwable {
+    public void test121121() throws Throwable {
         double[] doubleArray0 = new double[6];
         double[] doubleArray1 = new double[0];
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray1);
     }
 
     @Test(timeout = 4000)
-    public void test12278() throws Throwable {
+    public void test122122() throws Throwable {
         boolean boolean0 = MathUtils.equals((double[]) null, (double[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test12379() throws Throwable {
+    public void test123123() throws Throwable {
         double[] doubleArray0 = new double[3];
         boolean boolean0 = MathUtils.equals(doubleArray0, (double[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test12480() throws Throwable {
+    public void test124124() throws Throwable {
         double[] doubleArray0 = new double[6];
         boolean boolean0 = MathUtils.equals((double[]) null, doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test12581() throws Throwable {
+    public void test125125() throws Throwable {
         boolean boolean0 = MathUtils.equals(Double.NaN, 738.67692);
     }
 
     @Test(timeout = 4000)
-    public void test12682() throws Throwable {
+    public void test126126() throws Throwable {
         double[] doubleArray0 = new double[4];
         doubleArray0[2] = Double.NaN;
         boolean boolean0 = MathUtils.equals(doubleArray0, doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test12783() throws Throwable {
+    public void test127127() throws Throwable {
         boolean boolean0 = MathUtils.equals(379.65915000474, 0.0);
     }
 
     @Test(timeout = 4000)
-    public void test12884() throws Throwable {
+    public void test128128() throws Throwable {
         double double0 = MathUtils.binomialCoefficientLog(1638, (byte) 1);
     }
 
     @Test(timeout = 4000)
-    public void test12985() throws Throwable {
+    public void test129129() throws Throwable {
         double double0 = MathUtils.binomialCoefficientDouble(17, 0);
     }
 
     @Test(timeout = 4000)
-    public void test13086() throws Throwable {
+    public void test130130() throws Throwable {
         MathUtils.binomialCoefficientLog((-1109), (-1109));
     }
 
     @Test(timeout = 4000)
-    public void test13187() throws Throwable {
+    public void test131131() throws Throwable {
         MathUtils.binomialCoefficientDouble(0, 1);
     }
 
     @Test(timeout = 4000)
-    public void test13288() throws Throwable {
+    public void test132132() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(1, (-1));
     }
 
     @Test(timeout = 4000)
-    public void test13389() throws Throwable {
+    public void test133133() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(0, (-1));
     }
 
     @Test(timeout = 4000)
-    public void test13490() throws Throwable {
+    public void test134134() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(19, 0);
     }
 
     @Test(timeout = 4000)
-    public void test13591() throws Throwable {
+    public void test135135() throws Throwable {
         long long0 = MathUtils.binomialCoefficient(31, 31);
     }
 
     @Test(timeout = 4000)
-    public void test13692() throws Throwable {
+    public void test136136() throws Throwable {
         MathUtils.binomialCoefficient((-176), (-1207));
     }
 
     @Test(timeout = 4000)
-    public void test13793() throws Throwable {
+    public void test137137() throws Throwable {
         MathUtils.binomialCoefficient(7, 2826);
     }
 
     @Test(timeout = 4000)
-    public void test13894() throws Throwable {
+    public void test138138() throws Throwable {
         MathUtils.binomialCoefficient(974, 840);
     }
 
     @Test(timeout = 4000)
-    public void test13995() throws Throwable {
+    public void test139139() throws Throwable {
         MathUtils.addAndCheck(9223372036854775807L, 9223372036854775807L);
     }
 
     @Test(timeout = 4000)
-    public void test14096() throws Throwable {
+    public void test140140() throws Throwable {
         long long0 = MathUtils.subAndCheck((long) 0, (long) 0);
     }
 
     @Test(timeout = 4000)
-    public void test14197() throws Throwable {
+    public void test141141() throws Throwable {
         long long0 = MathUtils.subAndCheck((long) 1, 517L);
     }
 
     @Test(timeout = 4000)
-    public void test14298() throws Throwable {
+    public void test142142() throws Throwable {
         MathUtils.addAndCheck(2147390916, 2147390916);
     }
 
     @Test(timeout = 4000)
-    public void test14399() throws Throwable {
+    public void test143143() throws Throwable {
         int int0 = MathUtils.addAndCheck((int) (byte) 1, 0);
     }
 
     @Test(timeout = 4000)
-    public void test144100() throws Throwable {
+    public void test144144() throws Throwable {
         double double0 = MathUtils.log(0.9999999999999999, 1.0);
     }
 
     @Test(timeout = 4000)
-    public void test145101() throws Throwable {
+    public void test145145() throws Throwable {
         double double0 = MathUtils.round((double) 0, 6);
     }
 
     @Test(timeout = 4000)
-    public void test146102() throws Throwable {
+    public void test146146() throws Throwable {
         float float0 = MathUtils.round((-717.957F), 11);
     }
 
     @Test(timeout = 4000)
-    public void test147103() throws Throwable {
+    public void test147147() throws Throwable {
         double double0 = MathUtils.normalizeAngle(0L, 2.2909552562);
     }
 
     @Test(timeout = 4000)
-    public void test148104() throws Throwable {
+    public void test148148() throws Throwable {
         double double0 = MathUtils.sinh(6);
     }
 
     @Test(timeout = 4000)
-    public void test149105() throws Throwable {
+    public void test149149() throws Throwable {
         long long0 = MathUtils.addAndCheck((-1528L), (-1528L));
     }
 
     @Test(timeout = 4000)
-    public void test150106() throws Throwable {
+    public void test150150() throws Throwable {
         float float0 = MathUtils.round((float) (-1528L), (int) (short) 1, (int) (short) 1);
     }
 
     @Test(timeout = 4000)
-    public void test151107() throws Throwable {
+    public void test151151() throws Throwable {
         double[] doubleArray0 = new double[2];
         int int0 = MathUtils.hash(doubleArray0);
     }
 
     @Test(timeout = 4000)
-    public void test152108() throws Throwable {
+    public void test152152() throws Throwable {
         int int0 = MathUtils.hash((double) (-1528L));
     }
 }

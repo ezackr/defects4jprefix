@@ -33,13 +33,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test012() throws Throwable {
-        byte[] byteArray0 = new byte[4];
-        byteArray0[2] = (byte) 54;
-        byte[] byteArray1 = Base64.discardNonBase64(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test023() throws Throwable {
         byte[] byteArray0 = new byte[2];
         byteArray0[1] = (byte) 123;
@@ -372,20 +365,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5456() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        byteArray0[1] = (byte) 32;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5457() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        byteArray0[1] = (byte) 32;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test5558() throws Throwable {
         byte[] byteArray0 = new byte[2];
         Base64.encodeBase64Chunked(byteArray0);
@@ -393,20 +372,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test5659() throws Throwable {
-        byte[] byteArray0 = new byte[7];
-        byteArray0[3] = (byte) 9;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5660() throws Throwable {
-        byte[] byteArray0 = new byte[7];
-        byteArray0[3] = (byte) 9;
-        byte[] byteArray1 = Base64.discardWhitespace(byteArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test5661() throws Throwable {
         byte[] byteArray0 = new byte[7];
         byteArray0[3] = (byte) 9;
         byte[] byteArray1 = Base64.discardWhitespace(byteArray0);

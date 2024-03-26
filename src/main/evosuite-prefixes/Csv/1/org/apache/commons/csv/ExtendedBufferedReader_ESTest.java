@@ -29,15 +29,6 @@ public class ExtendedBufferedReader_ESTest extends ExtendedBufferedReader_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test001() throws Throwable {
-        StringReader stringReader0 = new StringReader("T|GTw?L]");
-        ExtendedBufferedReader extendedBufferedReader0 = new ExtendedBufferedReader(stringReader0);
-        ExtendedBufferedReader extendedBufferedReader1 = new ExtendedBufferedReader(extendedBufferedReader0);
-        char[] charArray0 = new char[1];
-        int int0 = extendedBufferedReader1.read(charArray0);
-    }
-
-    @Test(timeout = 4000)
     public void test012() throws Throwable {
         StringReader stringReader0 = new StringReader("#L';");
         ExtendedBufferedReader extendedBufferedReader0 = new ExtendedBufferedReader(stringReader0);
@@ -47,14 +38,6 @@ public class ExtendedBufferedReader_ESTest extends ExtendedBufferedReader_ESTest
 
     @Test(timeout = 4000)
     public void test023() throws Throwable {
-        StringReader stringReader0 = new StringReader("boZvf?Qd*`9`KeVb");
-        ExtendedBufferedReader extendedBufferedReader0 = new ExtendedBufferedReader(stringReader0);
-        char[] charArray0 = new char[4];
-        int int0 = extendedBufferedReader0.read(charArray0, 1, 1);
-    }
-
-    @Test(timeout = 4000)
-    public void test024() throws Throwable {
         StringReader stringReader0 = new StringReader("boZvf?Qd*`9`KeVb");
         ExtendedBufferedReader extendedBufferedReader0 = new ExtendedBufferedReader(stringReader0);
         char[] charArray0 = new char[4];

@@ -227,18 +227,6 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test01516() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        IOContext iOContext0 = new IOContext(bufferRecycler0, (Object) null, false);
-        StringReader stringReader0 = new StringReader("3(SI299");
-        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
-        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
-        char[] charArray0 = new char[8];
-        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 1, stringReader0, objectCodec0, charsToNameCanonicalizer0, charArray0, 0, (-2173), true);
-        char char0 = readerBasedJsonParser0.getNextChar("");
-    }
-
-    @Test(timeout = 4000)
     public void test01617() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, false);
@@ -1328,17 +1316,6 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
 
     @Test(timeout = 4000)
     public void test096107() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
-        StringReader stringReader0 = new StringReader("[");
-        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
-        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
-        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, 700, stringReader0, objectCodec0, charsToNameCanonicalizer0);
-        String string0 = readerBasedJsonParser0.getValueAsString("[");
-    }
-
-    @Test(timeout = 4000)
-    public void test096108() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
         StringReader stringReader0 = new StringReader("[");

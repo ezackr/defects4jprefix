@@ -157,7 +157,106 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test0126() throws Throwable {
+    public void test0066() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+        patriciaTrie0.put("@/$<UTx@O", "@/$<UTx@O");
+        patriciaTrie0.computeIfPresent("ToKey is out of range: ", biFunction0);
+        patriciaTrie0.floorEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+    }
+
+    @Test(timeout = 4000)
+    public void test0077() throws Throwable {
+        PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, String>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, String>>();
+        Integer integer0 = new Integer(2516);
+        AbstractMap.SimpleImmutableEntry<Integer, String> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<Integer, String>(integer0, "^S3Vg)0eoyu?O+iiK]");
+        AbstractMap.SimpleImmutableEntry<Integer, String> abstractMap_SimpleImmutableEntry1 = new AbstractMap.SimpleImmutableEntry<Integer, String>(abstractMap_SimpleImmutableEntry0);
+        patriciaTrie0.put("^S3Vg)0eoyu?O+iiK]", abstractMap_SimpleImmutableEntry1);
+        patriciaTrie0.higherEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        Integer integer1 = new Integer(0);
+        AbstractMap.SimpleEntry<String, Object> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<String, Object>("cud!S,}(KP?MY", "org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleEntry<String, Object>> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleEntry<String, Object>>(integer1, abstractMap_SimpleEntry0, 0);
+        abstractPatriciaTrie_TrieEntry0.toString();
+        AbstractPatriciaTrie.TrieEntry<Integer, Integer> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Integer, Integer>(integer1, integer1, (-891));
+        abstractPatriciaTrie_TrieEntry1.isEmpty();
+        AbstractMap.SimpleImmutableEntry<Integer, Integer> abstractMap_SimpleImmutableEntry2 = new AbstractMap.SimpleImmutableEntry<Integer, Integer>(integer1, integer1);
+        AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleImmutableEntry<Integer, Integer>> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleImmutableEntry<Integer, Integer>>(integer1, abstractMap_SimpleImmutableEntry2, 0);
+        abstractPatriciaTrie_TrieEntry2.isEmpty();
+    }
+
+    @Test(timeout = 4000)
+    public void test0088() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+        doReturn((Object) null).when(biFunction0).apply(any(), any());
+        patriciaTrie0.put("ToKey is out of range: ", "|F3EyPTp4zI*8,");
+        patriciaTrie0.put("ToKey is out of range: ", "ToKey is out of range: ");
+        patriciaTrie0.put("@/$<UTx@O", "@/$<UTx@O");
+        patriciaTrie0.computeIfPresent("ToKey is out of range: ", biFunction0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0099() throws Throwable {
+        HashMap<String, String> hashMap0 = new HashMap<String, String>();
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>(hashMap0);
+        patriciaTrie0.entrySet();
+        Set<Map.Entry<String, String>> set0 = (Set<Map.Entry<String, String>>) patriciaTrie0.entrySet();
+        AbstractPatriciaTrie.TrieEntry<Object, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Object, String>(set0, "Ur>+bf", 0);
+        patriciaTrie0.values();
+        AbstractPatriciaTrie.TrieEntry<Object, String> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, String>((Object) null, "'tcP#JyA{:\",n+F#HSq", (-1));
+        abstractPatriciaTrie_TrieEntry0.right = abstractPatriciaTrie_TrieEntry1;
+        Integer integer0 = new Integer(0);
+        patriciaTrie0.subtree("u@;uw1LS`{,s8u`5", 0, (-1));
+        Integer integer1 = new Integer(0);
+        AbstractPatriciaTrie.TrieEntry<Integer, Object> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Integer, Object>(integer0, integer1, (-55));
+        hashMap0.put("K4#n2I+47C?", "K4#n2I+47C?");
+        Integer integer2 = (Integer) abstractPatriciaTrie_TrieEntry2.value;
+        abstractPatriciaTrie_TrieEntry0.bitIndex = 0;
+        abstractPatriciaTrie_TrieEntry0.key = (Object) integer2;
+        AbstractPatriciaTrie.isValidUplink(abstractPatriciaTrie_TrieEntry0, abstractPatriciaTrie_TrieEntry0);
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>();
+        patriciaTrie1.entrySet();
+        patriciaTrie1.ceilingEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        patriciaTrie1.put("K4#n2I+47C?", integer1);
+        patriciaTrie1.floorEntry("Cannot determine prefix outside of Character boundaries");
+        PatriciaTrie<Object> patriciaTrie2 = new PatriciaTrie<Object>();
+        BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+        patriciaTrie2.computeIfPresent("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry", biFunction0);
+        patriciaTrie2.selectKey("Cannot determine prefix outside of Character boundaries");
+    }
+
+    @Test(timeout = 4000)
+    public void test01010() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.ceilingEntry("");
+        patriciaTrie0.put("", "");
+        patriciaTrie0.prefixMap("j($ldQy56");
+        HashMap<String, String> hashMap0 = new HashMap<String, String>();
+        PatriciaTrie<Comparable<String>> patriciaTrie1 = new PatriciaTrie<Comparable<String>>(hashMap0);
+        hashMap0.put("", "");
+        patriciaTrie1.headMap("");
+    }
+
+    @Test(timeout = 4000)
+    public void test01111() throws Throwable {
+        Integer integer0 = new Integer((-1));
+        AbstractPatriciaTrie.TrieEntry<Integer, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Integer, Object>(integer0, "-{y|?d|7DP y", (-1));
+        AbstractMap.SimpleImmutableEntry<String, String> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<String, String>("", "`-");
+        AbstractMap.SimpleEntry<String, Object> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<String, Object>(abstractMap_SimpleImmutableEntry0);
+        Comparator<String> comparator0 = (Comparator<String>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        Map.Entry.comparingByValue((Comparator<? super String>) comparator0);
+        AbstractPatriciaTrie.TrieEntry<Comparable<Integer>, AbstractMap.SimpleEntry<String, Object>> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Comparable<Integer>, AbstractMap.SimpleEntry<String, Object>>(integer0, abstractMap_SimpleEntry0, 4764);
+        Object object0 = abstractPatriciaTrie_TrieEntry1.getValue();
+        abstractPatriciaTrie_TrieEntry0.value = object0;
+        AbstractPatriciaTrie.TrieEntry<Integer, Object> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Integer, Object>(integer0, "-{y|?d|7DP y", 4764);
+        Map.Entry.comparingByKey();
+        abstractPatriciaTrie_TrieEntry0.parent = abstractPatriciaTrie_TrieEntry2;
+        abstractPatriciaTrie_TrieEntry0.toString();
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+    }
+
+    @Test(timeout = 4000)
+    public void test01212() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleEntry<Integer, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleEntry<Integer, Object>>();
         Integer integer0 = new Integer((-3));
         AbstractMap.SimpleEntry<Integer, Object> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<Integer, Object>(integer0, (Object) null);
@@ -165,20 +264,45 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test0167() throws Throwable {
+    public void test01313() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>(patriciaTrie0);
+        patriciaTrie1.comparator();
+    }
+
+    @Test(timeout = 4000)
+    public void test01414() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.put("Cannot determine prefix outside of Character boundaries", "Cannot determine prefix outside of Character boundaries");
+        patriciaTrie0.modCount = (-495);
+        patriciaTrie0.values();
+        PatriciaTrie<AbstractMap.SimpleImmutableEntry<String, String>> patriciaTrie1 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<String, String>>();
+        patriciaTrie1.keySet();
+    }
+
+    @Test(timeout = 4000)
+    public void test01515() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        HashMap<String, String> hashMap0 = new HashMap<String, String>(patriciaTrie0);
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(hashMap0);
+        patriciaTrie1.subMap("(G\u0002Ohkk{/%8tCT", "<B");
+    }
+
+    @Test(timeout = 4000)
+    public void test01616() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.subMap("kyYa;[.9|j|WbufZ", " is not an internal Entry!");
     }
 
     @Test(timeout = 4000)
-    public void test0178() throws Throwable {
+    public void test01717() throws Throwable {
         PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
         Object object0 = new Object();
         patriciaTrie0.containsKey(object0);
     }
 
     @Test(timeout = 4000)
-    public void test0189() throws Throwable {
+    public void test01818() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         patriciaTrie0.put("", (Object) null);
         patriciaTrie0.getOrDefault((Object) null, (Object) null);
@@ -190,7 +314,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test01910() throws Throwable {
+    public void test01919() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(patriciaTrie0);
         patriciaTrie1.put("org.apache.commons.collections4.trie.PatriciaTrie", "org.apache.commons.collections4.trie.PatriciaTrie");
@@ -200,7 +324,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02011() throws Throwable {
+    public void test02020() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleImmutableEntry<String, Integer>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<String, Integer>>();
         patriciaTrie0.decrementSize();
         patriciaTrie0.decrementSize();
@@ -212,7 +336,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02112() throws Throwable {
+    public void test02121() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleEntry<Object, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleEntry<Object, Object>>();
         Object object0 = new Object();
         AbstractPatriciaTrie.TrieEntry<Object, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Object, String>(object0, "w", 0);
@@ -240,7 +364,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02213() throws Throwable {
+    public void test02222() throws Throwable {
         PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
         String string0 = "p1v\\kXa(&=a='<@]7\"";
         Integer integer0 = new Integer(404);
@@ -255,7 +379,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02314() throws Throwable {
+    public void test02323() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>(patriciaTrie0);
         PatriciaTrie<Object> patriciaTrie2 = new PatriciaTrie<Object>(patriciaTrie1);
@@ -263,7 +387,48 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02715() throws Throwable {
+    public void test02424() throws Throwable {
+        PatriciaTrie<AbstractMap.SimpleEntry<Object, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleEntry<Object, Object>>();
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>((String) null, (String) null, 1251);
+        abstractPatriciaTrie_TrieEntry0.key = null;
+        abstractPatriciaTrie_TrieEntry0.isEmpty();
+        Integer integer0 = new Integer(1251);
+        AbstractPatriciaTrie.TrieEntry<Object, Integer> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, Integer>(abstractPatriciaTrie_TrieEntry0, integer0, 1251);
+        AbstractPatriciaTrie.TrieEntry<Integer, String> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Integer, String>(integer0, (String) null, 1251);
+        String string0 = abstractPatriciaTrie_TrieEntry2.value;
+        Integer integer1 = new Integer(1251);
+        abstractPatriciaTrie_TrieEntry1.setKeyValue((Object) null, integer1);
+        abstractPatriciaTrie_TrieEntry1.isEmpty();
+    }
+
+    @Test(timeout = 4000)
+    public void test02525() throws Throwable {
+        HashMap<String, String> hashMap0 = new HashMap<String, String>();
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>(hashMap0);
+        patriciaTrie0.headMap("");
+    }
+
+    @Test(timeout = 4000)
+    public void test02626() throws Throwable {
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("x M27h;a$jbgubb=y", "x M27h;a$jbgubb=y", 2595);
+        AbstractPatriciaTrie.isValidUplink(abstractPatriciaTrie_TrieEntry0, abstractPatriciaTrie_TrieEntry0);
+        AbstractPatriciaTrie.TrieEntry<Object, Object> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, Object>("The offsets and lengths must be at Character boundaries", "i(8Q~ DzaLo8", (-512));
+        abstractPatriciaTrie_TrieEntry1.isExternalNode();
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>(patriciaTrie0);
+        Integer integer0 = new Integer(1);
+        patriciaTrie1.put("", integer0);
+        Integer integer1 = new Integer(0);
+        AbstractPatriciaTrie.TrieEntry<String, Integer> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<String, Integer>("]", integer1, (-512));
+        patriciaTrie1.previousEntry(abstractPatriciaTrie_TrieEntry2);
+        PatriciaTrie<AbstractMap.SimpleEntry<Integer, String>> patriciaTrie2 = new PatriciaTrie<AbstractMap.SimpleEntry<Integer, String>>();
+        patriciaTrie2.selectValue("org.apache.commons.collections4.trie.AbstractPatriciaTrie$TrieMapIterator");
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry3 = new AbstractPatriciaTrie.TrieEntry<String, Object>("x M27h;a$jbgubb=y", patriciaTrie1, (-1722));
+        abstractPatriciaTrie_TrieEntry3.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test02727() throws Throwable {
         HashMap<String, Integer> hashMap0 = new HashMap<String, Integer>();
         Integer integer0 = new Integer(0);
         hashMap0.put("Tf", integer0);
@@ -284,7 +449,17 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test02916() throws Throwable {
+    public void test02828() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        AbstractMap.SimpleEntry<String, Object> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<String, Object>("-!d/_w$.nUCsF9i[S0", patriciaTrie0);
+        AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<String, Object>, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<String, Object>, String>(abstractMap_SimpleEntry0, "", (-1404));
+        String string0 = abstractPatriciaTrie_TrieEntry0.value;
+        patriciaTrie0.remove((Object) "");
+        patriciaTrie0.mapIterator();
+    }
+
+    @Test(timeout = 4000)
+    public void test02929() throws Throwable {
         int int0 = 16;
         Integer integer0 = new Integer(16);
         String string0 = "gc0FbxYswb$|}\\.:`?";
@@ -300,7 +475,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test03017() throws Throwable {
+    public void test03030() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(patriciaTrie0);
         int int0 = 32768;
@@ -310,7 +485,25 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test03418() throws Throwable {
+    public void test03131() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.lastEntry();
+    }
+
+    @Test(timeout = 4000)
+    public void test03232() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.get("org.apache.commons.collections4.trie.PatriciaTrie");
+    }
+
+    @Test(timeout = 4000)
+    public void test03333() throws Throwable {
+        PatriciaTrie<AbstractMap.SimpleEntry<String, String>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleEntry<String, String>>();
+        patriciaTrie0.higherEntry("");
+    }
+
+    @Test(timeout = 4000)
+    public void test03434() throws Throwable {
         Integer integer0 = new Integer((-1204));
         AbstractPatriciaTrie.TrieEntry<Integer, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Integer, String>(integer0, "org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry", (-1204));
         abstractPatriciaTrie_TrieEntry0.equals((Object) null);
@@ -322,7 +515,41 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test03719() throws Throwable {
+    public void test03535() throws Throwable {
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("", "", (-52));
+        AbstractPatriciaTrie.isValidUplink(abstractPatriciaTrie_TrieEntry0, abstractPatriciaTrie_TrieEntry0);
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.ceilingEntry("");
+        patriciaTrie0.size();
+        Integer integer0 = new Integer(0);
+        AbstractPatriciaTrie.TrieEntry<Object, Object> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, Object>((Object) null, integer0, (-52));
+        AbstractPatriciaTrie.TrieEntry<Object, Object> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Object, Object>(integer0, "", (-1));
+        abstractPatriciaTrie_TrieEntry2.value = (Object) abstractPatriciaTrie_TrieEntry1;
+        AbstractPatriciaTrie.TrieEntry abstractPatriciaTrie_TrieEntry3 = (AbstractPatriciaTrie.TrieEntry) abstractPatriciaTrie_TrieEntry2.value;
+        abstractPatriciaTrie_TrieEntry1.key = (Object) abstractPatriciaTrie_TrieEntry3;
+        abstractPatriciaTrie_TrieEntry1.isInternalNode();
+        HashMap<String, Integer> hashMap0 = new HashMap<String, Integer>();
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>(hashMap0);
+        patriciaTrie1.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test03636() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.lowerEntry("");
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(patriciaTrie0);
+        PatriciaTrie<Integer> patriciaTrie2 = new PatriciaTrie<Integer>();
+        patriciaTrie2.selectKey("H)dRl ]}I.+mb'");
+        patriciaTrie2.toString();
+        patriciaTrie2.floorEntry("");
+        Integer integer0 = new Integer(0);
+        AbstractPatriciaTrie.TrieEntry<Integer, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Integer, String>(integer0, "Trie[0]={\n}\n", 0);
+        abstractPatriciaTrie_TrieEntry0.isEmpty();
+        patriciaTrie1.subMap("", "");
+    }
+
+    @Test(timeout = 4000)
+    public void test03737() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleImmutableEntry<Object, String>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Object, String>>();
         patriciaTrie0.subtree(":&E9xrZLA=R{u", 1422, (-3));
         patriciaTrie0.getNearestEntryForKey(":&E9xrZLA=R{u", 1422);
@@ -334,7 +561,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test03820() throws Throwable {
+    public void test03838() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Object>((String) null, (Object) null, 0);
         AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry1 = abstractPatriciaTrie_TrieEntry0.right;
@@ -342,7 +569,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test03921() throws Throwable {
+    public void test03939() throws Throwable {
         HashMap<String, String> hashMap0 = new HashMap<String, String>();
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>(hashMap0);
         String string0 = "M&Us";
@@ -352,7 +579,39 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test04322() throws Throwable {
+    public void test04040() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(patriciaTrie0);
+        PatriciaTrie<String> patriciaTrie2 = new PatriciaTrie<String>(patriciaTrie1);
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("fqh^ xd/<EG", "Buy(g/,[+", 1052);
+        patriciaTrie1.nextEntry(abstractPatriciaTrie_TrieEntry0);
+        patriciaTrie2.put("", (String) null);
+        patriciaTrie2.entrySet();
+    }
+
+    @Test(timeout = 4000)
+    public void test04141() throws Throwable {
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        patriciaTrie0.previousKey("=");
+        patriciaTrie0.ceilingEntry("Mwm'[Qp!|Y");
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>();
+        PatriciaTrie<String> patriciaTrie2 = new PatriciaTrie<String>(patriciaTrie1);
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("!UZbyVBqi3D>\"G", "", 0);
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry1 = abstractPatriciaTrie_TrieEntry0.predecessor;
+        patriciaTrie1.addEntry(abstractPatriciaTrie_TrieEntry1, 2);
+        PatriciaTrie<String> patriciaTrie3 = new PatriciaTrie<String>(patriciaTrie2);
+        patriciaTrie3.selectKey("=");
+    }
+
+    @Test(timeout = 4000)
+    public void test04242() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(patriciaTrie0);
+        patriciaTrie1.firstEntry();
+    }
+
+    @Test(timeout = 4000)
+    public void test04343() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put("}\n", (String) null);
         patriciaTrie0.nextEntryInSubtree((AbstractPatriciaTrie.TrieEntry<String, String>) null, (AbstractPatriciaTrie.TrieEntry<String, String>) null);
@@ -368,7 +627,28 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test04723() throws Throwable {
+    public void test04444() throws Throwable {
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        patriciaTrie0.prefixMap("");
+    }
+
+    @Test(timeout = 4000)
+    public void test04545() throws Throwable {
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        PatriciaTrie<AbstractMap.SimpleImmutableEntry<String, Integer>> patriciaTrie1 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<String, Integer>>();
+        patriciaTrie1.containsKey("lXsl]^JP'A_");
+    }
+
+    @Test(timeout = 4000)
+    public void test04646() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>(patriciaTrie0);
+        PatriciaTrie<Object> patriciaTrie2 = new PatriciaTrie<Object>(patriciaTrie1);
+        patriciaTrie2.tailMap("");
+    }
+
+    @Test(timeout = 4000)
+    public void test04747() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         int int0 = (-3847);
         Integer integer0 = new Integer((-3847));
@@ -376,7 +656,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test04824() throws Throwable {
+    public void test04848() throws Throwable {
         PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
         patriciaTrie0.lowerEntry("d");
         PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>(patriciaTrie0);
@@ -390,7 +670,36 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test05025() throws Throwable {
+    public void test04949() throws Throwable {
+        HashMap<String, String> hashMap0 = new HashMap<String, String>();
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>(hashMap0);
+        patriciaTrie0.entrySet();
+        Set<Map.Entry<String, String>> set0 = (Set<Map.Entry<String, String>>) patriciaTrie0.entrySet();
+        AbstractPatriciaTrie.TrieEntry<Object, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Object, String>(set0, "Ur>+bf", 0);
+        patriciaTrie0.values();
+        AbstractPatriciaTrie.TrieEntry<Object, String> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, String>((Object) null, "'tc#JyA{:\",n+F#HSq", (-1));
+        abstractPatriciaTrie_TrieEntry0.right = abstractPatriciaTrie_TrieEntry1;
+        Integer integer0 = new Integer(0);
+        patriciaTrie0.subtree("u@;uw1LS`{,s8u`5", 0, (-1));
+        Integer integer1 = new Integer(0);
+        AbstractPatriciaTrie.TrieEntry<Integer, Object> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Integer, Object>(integer0, integer1, (-55));
+        hashMap0.put("K4#n2I+47C?", "K4#n2I+47C?");
+        Integer integer2 = (Integer) abstractPatriciaTrie_TrieEntry2.value;
+        abstractPatriciaTrie_TrieEntry0.bitIndex = 0;
+        abstractPatriciaTrie_TrieEntry0.key = (Object) integer2;
+        AbstractPatriciaTrie.isValidUplink(abstractPatriciaTrie_TrieEntry0, abstractPatriciaTrie_TrieEntry0);
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>();
+        patriciaTrie1.ceilingEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        patriciaTrie1.put("K4#n2I+47C?", integer1);
+        patriciaTrie1.floorEntry("Cannot determine prefix outside of Character boundaries");
+        PatriciaTrie<Object> patriciaTrie2 = new PatriciaTrie<Object>();
+        BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+        patriciaTrie2.computeIfPresent("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry", biFunction0);
+        patriciaTrie2.selectKey("Cannot determine prefix outside of Character boundaries");
+    }
+
+    @Test(timeout = 4000)
+    public void test05050() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put(":_;y3k{)Y64]NjJ", "[Mi*>9DTb%0H?K:}|");
         patriciaTrie0.remove((Object) null);
@@ -412,13 +721,23 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test05126() throws Throwable {
+    public void test05151() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, Object>>();
         patriciaTrie0.firstKey();
     }
 
     @Test(timeout = 4000)
-    public void test05327() throws Throwable {
+    public void test05252() throws Throwable {
+        HashMap<String, String> hashMap0 = new HashMap<String, String>();
+        hashMap0.put("\n", " is not an internal Entry!");
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>(hashMap0);
+        patriciaTrie0.replace("parent=", (Object) "parent=", (Object) "parent=");
+        PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>(patriciaTrie0);
+        patriciaTrie1.firstKey();
+    }
+
+    @Test(timeout = 4000)
+    public void test05353() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleImmutableEntry<Object, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Object, Object>>();
         int int0 = (-2446);
         patriciaTrie0.getNearestEntryForKey("+W8%!;6Y.}", (-2446));
@@ -426,7 +745,40 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test05728() throws Throwable {
+    public void test05454() throws Throwable {
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        Integer integer0 = new Integer(541);
+        patriciaTrie0.nextKey("9S3V1f&zERN`,(");
+        patriciaTrie0.put("", integer0);
+        patriciaTrie0.put("9S3V1f&zERN`,(", integer0);
+        patriciaTrie0.bitIndex((String) null, "9S3V1f&zERN`,(");
+        Integer integer1 = new Integer(541);
+        patriciaTrie0.replace("delegate", (Integer) null, integer1);
+        patriciaTrie0.getNearestEntryForKey((String) null, 1);
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>();
+        patriciaTrie1.firstEntry();
+    }
+
+    @Test(timeout = 4000)
+    public void test05555() throws Throwable {
+        AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<Object, Object>, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<Object, Object>, String>((AbstractMap.SimpleEntry<Object, Object>) null, "", (-1));
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<String, Object>("", (Object) null, 1);
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry2 = abstractPatriciaTrie_TrieEntry1.left;
+        patriciaTrie0.followLeft(abstractPatriciaTrie_TrieEntry2);
+    }
+
+    @Test(timeout = 4000)
+    public void test05656() throws Throwable {
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>(patriciaTrie0);
+        Integer integer0 = new Integer(1699);
+        patriciaTrie1.put("RR?y[B]/$?hq", integer0);
+        patriciaTrie1.lastKey();
+    }
+
+    @Test(timeout = 4000)
+    public void test05757() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         PatriciaTrie<AbstractMap.SimpleEntry<Object, String>> patriciaTrie1 = new PatriciaTrie<AbstractMap.SimpleEntry<Object, String>>();
         Integer integer0 = new Integer(1162);
@@ -436,7 +788,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test05829() throws Throwable {
+    public void test05858() throws Throwable {
         PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
         patriciaTrie0.firstEntry();
         Integer integer0 = new Integer(186);
@@ -445,7 +797,22 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test06030() throws Throwable {
+    public void test05959() throws Throwable {
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        patriciaTrie0.put("g}+*-#*QOtO7", "g}+*-#*QOtO7");
+        patriciaTrie0.put("MBy%", "MBy%");
+        patriciaTrie0.put("g}+*-#*QOtO7", (Object) null);
+        patriciaTrie0.lengthInBits("$e");
+        patriciaTrie0.prefixMap("");
+        patriciaTrie0.put("?w?yKGM<B=9%9IL)CL", "$e");
+        patriciaTrie0.select("T");
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("T", "zP}!x:2m\"5Ox^\"x#4", 32);
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry1 = abstractPatriciaTrie_TrieEntry0.left;
+        abstractPatriciaTrie_TrieEntry1.isEmpty();
+    }
+
+    @Test(timeout = 4000)
+    public void test06060() throws Throwable {
         PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
         Integer integer0 = new Integer((-1));
         Integer integer1 = new Integer((-7334));
@@ -463,7 +830,23 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test06231() throws Throwable {
+    public void test06161() throws Throwable {
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        Integer integer0 = new Integer(0);
+        patriciaTrie0.put("", integer0);
+        patriciaTrie0.previousKey("");
+        patriciaTrie0.nextKey("3PeJLNRnnQK/,](_");
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>(patriciaTrie0);
+        Integer integer1 = new Integer(0);
+        patriciaTrie1.putIfAbsent("", integer1);
+        PatriciaTrie<Integer> patriciaTrie2 = new PatriciaTrie<Integer>(patriciaTrie1);
+        AbstractPatriciaTrie.TrieEntry<Integer, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Integer, Object>(integer1, (Object) null, 0);
+        abstractPatriciaTrie_TrieEntry0.getValue();
+        patriciaTrie2.getEntry((Object) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test06262() throws Throwable {
         Integer integer0 = new Integer((-122));
         AbstractPatriciaTrie.TrieEntry<Object, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Object, Object>(integer0, integer0, (-122));
         abstractPatriciaTrie_TrieEntry0.isExternalNode();
@@ -483,7 +866,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test06332() throws Throwable {
+    public void test06363() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put("s{MX;X0n/.7C", "");
         AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("}d5[47a", "}d5[47a", 65);
@@ -492,14 +875,60 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test06733() throws Throwable {
+    public void test06464() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.firstEntry();
+        patriciaTrie0.putIfAbsent("ToKey is out of range: ", "ToKey is out of range: ");
+        patriciaTrie0.put("@/$<UTx@O", "@/$<UTx@O");
+        patriciaTrie0.floorEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>();
+        patriciaTrie1.headMap("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+    }
+
+    @Test(timeout = 4000)
+    public void test06565() throws Throwable {
+        Integer integer0 = new Integer(1);
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Object>(")D>pE/KPb:ub(d", integer0, (-647));
+        abstractPatriciaTrie_TrieEntry0.toString();
+        Object object0 = abstractPatriciaTrie_TrieEntry0.setValue(")D>pE/KPb:ub(d");
+        abstractPatriciaTrie_TrieEntry0.toString();
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        PatriciaTrie<Integer> patriciaTrie1 = new PatriciaTrie<Integer>(patriciaTrie0);
+        PatriciaTrie<Integer> patriciaTrie2 = new PatriciaTrie<Integer>(patriciaTrie1);
+        patriciaTrie0.nextKey("Entry(key=)D>pE/KPb:ub(d [-647], value=)D>pE/KPb:ub(d, parent=null, left=)D>pE/KPb:ub(d [-647], right=null, predecessor=)D>pE/KPb:ub(d [-647])");
+        PatriciaTrie<Integer> patriciaTrie3 = new PatriciaTrie<Integer>(patriciaTrie2);
+        patriciaTrie3.decrementSize();
+        abstractPatriciaTrie_TrieEntry0.value = object0;
+        BiFunction<Object, Integer, Integer> biFunction0 = (BiFunction<Object, Integer, Integer>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+        patriciaTrie3.computeIfPresent("IcqWo", biFunction0);
+        patriciaTrie3.size();
+        patriciaTrie1.put("6}%5!O?u@", integer0);
+        patriciaTrie1.prefixMap("*DfI3?H~");
+        Integer integer1 = new Integer(1);
+        AbstractPatriciaTrie.TrieEntry<Object, Object> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, Object>(integer1, patriciaTrie2, 1);
+        abstractPatriciaTrie_TrieEntry1.isExternalNode();
+        AbstractPatriciaTrie.isValidUplink(abstractPatriciaTrie_TrieEntry1, abstractPatriciaTrie_TrieEntry0);
+        patriciaTrie3.clear();
+    }
+
+    @Test(timeout = 4000)
+    public void test06666() throws Throwable {
+        PatriciaTrie<AbstractMap.SimpleEntry<Integer, Integer>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleEntry<Integer, Integer>>();
+        PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>();
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Object>(" > ", patriciaTrie0, 1092);
+        Map.Entry.comparingByValue();
+        patriciaTrie1.followRight(abstractPatriciaTrie_TrieEntry0);
+    }
+
+    @Test(timeout = 4000)
+    public void test06767() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.decrementSize();
         patriciaTrie0.firstKey();
     }
 
     @Test(timeout = 4000)
-    public void test06834() throws Throwable {
+    public void test06868() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleEntry<String, String>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleEntry<String, String>>();
         String string0 = "";
         String string1 = "  ";
@@ -518,7 +947,15 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test07035() throws Throwable {
+    public void test06969() throws Throwable {
+        HashMap<String, Integer> hashMap0 = new HashMap<String, Integer>();
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>(hashMap0);
+        patriciaTrie0.nextKey("");
+        patriciaTrie0.select("io,acXLpb#,Gs8");
+    }
+
+    @Test(timeout = 4000)
+    public void test07070() throws Throwable {
         HashMap<String, String> hashMap0 = new HashMap<String, String>();
         HashMap<String, String> hashMap1 = new HashMap<String, String>(hashMap0);
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>(hashMap1);
@@ -532,7 +969,17 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test07236() throws Throwable {
+    public void test07171() throws Throwable {
+        Integer integer0 = new Integer((-112));
+        AbstractMap.SimpleImmutableEntry<String, Object> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<String, Object>("5yy6zI*arf09spp", integer0);
+        AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<String, Object>> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<String, Object>>(integer0, abstractMap_SimpleImmutableEntry0, 3247);
+        AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<String, Object>> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<String, Object>>(abstractMap_SimpleImmutableEntry0, abstractMap_SimpleImmutableEntry0, 64);
+        abstractPatriciaTrie_TrieEntry0.left = abstractPatriciaTrie_TrieEntry1;
+        abstractPatriciaTrie_TrieEntry0.isInternalNode();
+    }
+
+    @Test(timeout = 4000)
+    public void test07272() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         patriciaTrie0.put(", ", ", ");
         patriciaTrie0.higherEntry("<Qe1H.+)QZ<ZjO *{X(");
@@ -542,7 +989,35 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test07537() throws Throwable {
+    public void test07373() throws Throwable {
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        patriciaTrie0.put("C]6DQ/ahxA", "C]6DQ/ahxA");
+        patriciaTrie0.nextEntry((AbstractPatriciaTrie.TrieEntry<String, Object>) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test07474() throws Throwable {
+        PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
+        PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>(patriciaTrie0);
+        patriciaTrie1.subMap("", "");
+        Integer integer0 = new Integer((-1));
+        patriciaTrie0.put("", integer0);
+        patriciaTrie1.put("", "");
+        patriciaTrie1.headMap("");
+        patriciaTrie1.size();
+        PatriciaTrie<String> patriciaTrie2 = new PatriciaTrie<String>();
+        PatriciaTrie<String> patriciaTrie3 = new PatriciaTrie<String>(patriciaTrie2);
+        patriciaTrie3.put("", "EivOMO-#cT");
+        patriciaTrie3.keySet();
+        Integer integer1 = new Integer(1258);
+        AbstractPatriciaTrie.TrieEntry<String, Integer> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Integer>("", integer1, 1);
+        AbstractPatriciaTrie.TrieEntry<String, Integer> abstractPatriciaTrie_TrieEntry1 = abstractPatriciaTrie_TrieEntry0.parent;
+        patriciaTrie0.nextEntry((AbstractPatriciaTrie.TrieEntry<String, Integer>) null);
+        patriciaTrie1.remove((Object) "VZU4)YcLr_nAw");
+    }
+
+    @Test(timeout = 4000)
+    public void test07575() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         String string0 = "";
         patriciaTrie0.put("", "");
@@ -558,7 +1033,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test07638() throws Throwable {
+    public void test07676() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put("", "");
         patriciaTrie0.put("", (String) null);
@@ -567,7 +1042,37 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test07939() throws Throwable {
+    public void test07777() throws Throwable {
+        HashMap<String, String> hashMap0 = new HashMap<String, String>();
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>(hashMap0);
+        hashMap0.put("W|81X$:qA", "W|81X$:qA");
+        patriciaTrie0.higherEntry("Cannot determine prefix outside of Character boundaries");
+        patriciaTrie0.size();
+        Object object0 = new Object();
+        AbstractMap.SimpleImmutableEntry<Object, String> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<Object, String>(object0, (String) null);
+        AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<Object, String>> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<Object, String>>("Cannot determine prefix outside of Character boundaries", abstractMap_SimpleImmutableEntry0, 0);
+        abstractPatriciaTrie_TrieEntry0.toString();
+    }
+
+    @Test(timeout = 4000)
+    public void test07878() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.put("", "");
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>("must have a from or to!", "must have a from or to!", 0);
+        abstractPatriciaTrie_TrieEntry0.setValue("must have a from or to!");
+        AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry1 = abstractPatriciaTrie_TrieEntry0.predecessor;
+        patriciaTrie0.nextEntryImpl(abstractPatriciaTrie_TrieEntry1, abstractPatriciaTrie_TrieEntry1, abstractPatriciaTrie_TrieEntry1);
+        patriciaTrie0.incrementSize();
+        Integer integer0 = new Integer((-3164));
+        Integer integer1 = new Integer(1);
+        AbstractMap.SimpleEntry<Integer, Object> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<Integer, Object>(integer0, integer1);
+        Integer integer2 = new Integer((-974));
+        AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<Integer, Object>, Integer> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<Integer, Object>, Integer>(abstractMap_SimpleEntry0, integer2, 0);
+        abstractPatriciaTrie_TrieEntry2.isExternalNode();
+    }
+
+    @Test(timeout = 4000)
+    public void test07979() throws Throwable {
         String string0 = "keyAnalyzer";
         AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<String, Object>, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<String, Object>, String>((AbstractMap.SimpleEntry<String, Object>) null, "keyAnalyzer", (-1455));
         abstractPatriciaTrie_TrieEntry0.bitIndex = (-384);
@@ -590,7 +1095,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08040() throws Throwable {
+    public void test08080() throws Throwable {
         String string0 = "keyAnalyzer";
         AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<String, Object>, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<AbstractMap.SimpleEntry<String, Object>, String>((AbstractMap.SimpleEntry<String, Object>) null, "keyAnalyzer", (-1455));
         abstractPatriciaTrie_TrieEntry0.bitIndex = (-384);
@@ -614,7 +1119,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08141() throws Throwable {
+    public void test08181() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.lengthInBits("");
         patriciaTrie0.put("Entry(", "");
@@ -624,7 +1129,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08242() throws Throwable {
+    public void test08282() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleImmutableEntry<Object, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Object, Object>>();
         patriciaTrie0.firstEntry();
         AbstractMap.SimpleEntry<String, String> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<String, String>("h9E>@K", "h9E>@K");
@@ -660,7 +1165,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08343() throws Throwable {
+    public void test08383() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         String string0 = "";
         patriciaTrie0.select("");
@@ -673,7 +1178,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08444() throws Throwable {
+    public void test08484() throws Throwable {
         Integer integer0 = new Integer((-1422));
         int int0 = (-486);
         AbstractPatriciaTrie.TrieEntry<String, Integer> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Integer>("owWc<MDV>n.!*Xq%Zg^", integer0, (-486));
@@ -690,7 +1195,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08545() throws Throwable {
+    public void test08585() throws Throwable {
         PatriciaTrie<Integer> patriciaTrie0 = new PatriciaTrie<Integer>();
         Integer integer0 = new Integer((-678));
         patriciaTrie0.put("}\n", integer0);
@@ -706,7 +1211,15 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08746() throws Throwable {
+    public void test08686() throws Throwable {
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        patriciaTrie0.put("", "org.apache.commons.collections4.trie.AbstractBitwiseTrie");
+        patriciaTrie0.values();
+        patriciaTrie0.containsKey("");
+    }
+
+    @Test(timeout = 4000)
+    public void test08787() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put("", "?Z");
         patriciaTrie0.put(" + ", ",ee)#(<d};,Q57g");
@@ -730,7 +1243,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test08847() throws Throwable {
+    public void test08888() throws Throwable {
         Function<String, String> function0 = Function.identity();
         Function<Object, String> function1 = (Function<Object, String>) mock(Function.class, new ViolatedAssumptionAnswer());
         Function<String, String> function2 = function0.andThen((Function<? super String, ? extends String>) function1);
@@ -742,7 +1255,17 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09048() throws Throwable {
+    public void test08989() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+        doReturn((Object) null).when(biFunction0).apply(any(), any());
+        patriciaTrie0.put("ToKey is out of range: ", "ToKey is out of range: ");
+        patriciaTrie0.computeIfPresent("ToKey is out of range: ", biFunction0);
+        patriciaTrie0.floorEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+    }
+
+    @Test(timeout = 4000)
+    public void test09090() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put("x", "?Z");
         patriciaTrie0.selectKey("@yV1Q[6*[jT");
@@ -766,7 +1289,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09149() throws Throwable {
+    public void test09191() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         patriciaTrie0.put("tX", "?Z");
         patriciaTrie0.put(" + ", ",ee)(<d};,Q57g");
@@ -789,7 +1312,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09250() throws Throwable {
+    public void test09292() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         patriciaTrie0.put("g}+*-#*QOtO7", "g}+*-#*QOtO7");
         patriciaTrie0.put("MBy%", "MBy%");
@@ -797,7 +1320,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09351() throws Throwable {
+    public void test09393() throws Throwable {
         PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, Object>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, Object>>();
         patriciaTrie0.values();
         patriciaTrie0.mapIterator();
@@ -817,7 +1340,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09452() throws Throwable {
+    public void test09494() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         String string0 = null;
         AbstractPatriciaTrie.TrieEntry<String, String> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, String>((String) null, (String) null, 3508);
@@ -830,7 +1353,7 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09553() throws Throwable {
+    public void test09595() throws Throwable {
         PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
         Collection<String> collection0 = patriciaTrie0.values();
         String string0 = "org.apache.commons.collections4.trie.KeyAnalyzer";
@@ -844,7 +1367,44 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
     }
 
     @Test(timeout = 4000)
-    public void test09854() throws Throwable {
+    public void test09696() throws Throwable {
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.put("@/$<UTx@O", "@/$<UTx@O");
+        patriciaTrie0.floorEntry(" is not an internal Entry!");
+    }
+
+    @Test(timeout = 4000)
+    public void test09797() throws Throwable {
+        PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
+        patriciaTrie0.select("");
+        patriciaTrie0.put("WW X", "WW X");
+        patriciaTrie0.prefixMap("");
+        patriciaTrie0.remove((Object) "");
+        Integer integer0 = new Integer(62);
+        patriciaTrie0.remove((Object) "9}F");
+        Object object0 = new Object();
+        PatriciaTrie<String> patriciaTrie1 = new PatriciaTrie<String>();
+        patriciaTrie1.higherEntry("#6~pB3");
+        patriciaTrie1.clear();
+        patriciaTrie1.entrySet();
+        patriciaTrie1.headMap("9}F");
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Object>("zW*SgLZ$UknaPxMw~", (Object) null, (-797));
+        abstractPatriciaTrie_TrieEntry0.bitIndex = 1;
+        Integer integer1 = new Integer((-797));
+        abstractPatriciaTrie_TrieEntry0.setValue(integer1);
+        patriciaTrie0.headMap("9}F");
+        Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+        Map.Entry.comparingByValue((Comparator<? super AbstractMap.SimpleEntry<Object, AbstractMap.SimpleImmutableEntry<String, Object>>>) comparator0);
+        Map.Entry.comparingByValue();
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<String, Object>("", patriciaTrie0, (-3));
+        abstractPatriciaTrie_TrieEntry0.equals((Object) null);
+        abstractPatriciaTrie_TrieEntry0.parent = abstractPatriciaTrie_TrieEntry1;
+        AbstractPatriciaTrie.TrieEntry<String, Object> abstractPatriciaTrie_TrieEntry2 = abstractPatriciaTrie_TrieEntry0.predecessor;
+        patriciaTrie0.previousEntry(abstractPatriciaTrie_TrieEntry2);
+    }
+
+    @Test(timeout = 4000)
+    public void test09898() throws Throwable {
         PatriciaTrie<Object> patriciaTrie0 = new PatriciaTrie<Object>();
         String string0 = "";
         patriciaTrie0.select("");
@@ -854,5 +1414,53 @@ public class AbstractPatriciaTrie_ESTest extends AbstractPatriciaTrie_ESTest_sca
         patriciaTrie0.remove((Object) "");
         Integer integer0 = new Integer(62);
         patriciaTrie0.remove((Object) integer0);
+    }
+
+    @Test(timeout = 4000)
+    public void test09999() throws Throwable {
+        PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, String>> patriciaTrie0 = new PatriciaTrie<AbstractMap.SimpleImmutableEntry<Integer, String>>();
+        Integer integer0 = new Integer(2516);
+        AbstractMap.SimpleImmutableEntry<Integer, String> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<Integer, String>(integer0, "^S3Vg)0eoyu?O+iiK]");
+        AbstractMap.SimpleImmutableEntry<Integer, String> abstractMap_SimpleImmutableEntry1 = new AbstractMap.SimpleImmutableEntry<Integer, String>(abstractMap_SimpleImmutableEntry0);
+        patriciaTrie0.incrementSize();
+        patriciaTrie0.put("^S3Vg)0eoyu?O+iiK]", abstractMap_SimpleImmutableEntry1);
+        patriciaTrie0.higherEntry("org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        Integer integer1 = new Integer(0);
+        AbstractMap.SimpleEntry<String, Object> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<String, Object>("cud!S,}(KP?MY", "org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry");
+        AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleEntry<String, Object>> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleEntry<String, Object>>(integer1, abstractMap_SimpleEntry0, 0);
+        abstractPatriciaTrie_TrieEntry0.toString();
+        AbstractPatriciaTrie.TrieEntry<Integer, Integer> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<Integer, Integer>(integer1, integer1, (-891));
+        abstractPatriciaTrie_TrieEntry1.isEmpty();
+        AbstractMap.SimpleImmutableEntry<Integer, Integer> abstractMap_SimpleImmutableEntry2 = new AbstractMap.SimpleImmutableEntry<Integer, Integer>(integer1, integer1);
+        AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleImmutableEntry<Integer, Integer>> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Integer, AbstractMap.SimpleImmutableEntry<Integer, Integer>>(integer1, abstractMap_SimpleImmutableEntry2, 0);
+        abstractPatriciaTrie_TrieEntry2.isEmpty();
+    }
+
+    @Test(timeout = 4000)
+    public void test100100() throws Throwable {
+        Integer integer0 = new Integer(1);
+        AbstractPatriciaTrie.TrieEntry<String, Integer> abstractPatriciaTrie_TrieEntry0 = new AbstractPatriciaTrie.TrieEntry<String, Integer>("A{CEcN}(;:+", integer0, 1);
+        AbstractPatriciaTrie.TrieEntry<String, Integer> abstractPatriciaTrie_TrieEntry1 = new AbstractPatriciaTrie.TrieEntry<String, Integer>("A{CEcN}(;:+", integer0, 1);
+        abstractPatriciaTrie_TrieEntry0.left = abstractPatriciaTrie_TrieEntry1;
+        Integer integer1 = new Integer(1);
+        abstractPatriciaTrie_TrieEntry0.setKeyValue("A{CEcN}(;:+", integer1);
+        abstractPatriciaTrie_TrieEntry0.isExternalNode();
+        PatriciaTrie<String> patriciaTrie0 = new PatriciaTrie<String>();
+        patriciaTrie0.put("A{CEcN}(;:+", "A{CEcN}(;:+");
+        patriciaTrie0.floorEntry("A{CEcN}(;:+");
+        abstractPatriciaTrie_TrieEntry1.setValue((Integer) null);
+        Collection<String> collection0 = patriciaTrie0.values();
+        AbstractPatriciaTrie.TrieEntry<Object, Object> abstractPatriciaTrie_TrieEntry2 = new AbstractPatriciaTrie.TrieEntry<Object, Object>("A{CEcN}(;:+", abstractPatriciaTrie_TrieEntry1, (-2426));
+        abstractPatriciaTrie_TrieEntry2.isExternalNode();
+        PatriciaTrie<Object> patriciaTrie1 = new PatriciaTrie<Object>();
+        patriciaTrie1.put("A{CEcN}(;:+", integer0);
+        patriciaTrie1.lowerEntry("A{CEcN}(;:+");
+        AbstractMap.SimpleImmutableEntry<Object, Object> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<Object, Object>(collection0, integer0);
+        patriciaTrie0.get((Object) null);
+        AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<Object, Object>> abstractPatriciaTrie_TrieEntry3 = new AbstractPatriciaTrie.TrieEntry<Object, AbstractMap.SimpleImmutableEntry<Object, Object>>(abstractPatriciaTrie_TrieEntry0, abstractMap_SimpleImmutableEntry0, (-1006));
+        abstractPatriciaTrie_TrieEntry3.isInternalNode();
+        patriciaTrie1.lastKey();
+        patriciaTrie1.higherEntry("QQ~u");
+        AbstractPatriciaTrie.isValidUplink(abstractPatriciaTrie_TrieEntry0, abstractPatriciaTrie_TrieEntry3);
     }
 }

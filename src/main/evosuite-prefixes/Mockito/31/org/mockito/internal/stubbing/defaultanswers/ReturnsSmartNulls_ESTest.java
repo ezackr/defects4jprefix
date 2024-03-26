@@ -14,4 +14,9 @@ import org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class ReturnsSmartNulls_ESTest extends ReturnsSmartNulls_ESTest_scaffolding {
+
+    @Test(timeout = 4000)
+    public void test00() throws Throwable {
+        ReturnsSmartNulls returnsSmartNulls0 = new ReturnsSmartNulls();
+    }
 }

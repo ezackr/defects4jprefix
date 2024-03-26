@@ -60,7 +60,12 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test044() throws Throwable {
+        CodePrinter codePrinter0 = new CodePrinter();
+    }
+
+    @Test(timeout = 4000)
+    public void test055() throws Throwable {
         Node node0 = Node.newString("com.google.javascript.jscomp.CodePrinter$Builder");
         Node node1 = new Node(132, node0, 37, 52);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -69,7 +74,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         Node node0 = Node.newString("O\"{S(");
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node0);
         codePrinter_Builder0.setLineLengthThreshold(0);
@@ -78,7 +83,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         Node node0 = Node.newString("y'9v=,J/4R*AP+");
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node0);
         SourceMap sourceMap0 = mock(SourceMap.class, new ViolatedAssumptionAnswer());
@@ -89,7 +94,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         Node node0 = Node.newString("");
         Node node1 = new Node(49, node0, 32, 54);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -103,7 +108,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         Node node0 = Node.newString("y'9v=,J.4R*AP+");
         Node node1 = new Node(49, node0, 47, 53);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -114,7 +119,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test109() throws Throwable {
+    public void test1010() throws Throwable {
         Node node0 = Node.newString("y'9=Jl/4R*AP+");
         Node node1 = new Node(49, node0, 32, 53);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -127,7 +132,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1110() throws Throwable {
+    public void test1111() throws Throwable {
         Node node0 = Node.newString("y'9=Jl/4R*AP+");
         Node node1 = new Node(49, node0, 32, 53);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -141,7 +146,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1211() throws Throwable {
+    public void test1212() throws Throwable {
         Node node0 = Node.newNumber((double) 32);
         Node node1 = new Node(16, node0, 46, 44);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -158,7 +163,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1312() throws Throwable {
+    public void test1313() throws Throwable {
         Node node0 = Node.newNumber((double) 32);
         Node node1 = new Node(16, node0, 46, 44);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -176,7 +181,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1413() throws Throwable {
+    public void test1414() throws Throwable {
         Node node0 = new Node(32);
         Node node1 = new Node(32, node0);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -194,7 +199,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1514() throws Throwable {
+    public void test1515() throws Throwable {
         Node node0 = Node.newNumber((double) 32);
         Node node1 = new Node(32, node0);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -214,7 +219,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1615() throws Throwable {
+    public void test1616() throws Throwable {
         Node node0 = Node.newString("~\"Yb=orGF");
         Node node1 = new Node(49, node0, 47, 53);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node1);
@@ -224,7 +229,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1716() throws Throwable {
+    public void test1717() throws Throwable {
         Node node0 = Node.newString("8ATCH");
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node0);
         codePrinter_Builder0.setLineLengthThreshold(1);
@@ -234,7 +239,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1817() throws Throwable {
+    public void test1818() throws Throwable {
         Node node0 = Node.newString("8ATCH");
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node0);
         CodePrinter.Builder codePrinter_Builder1 = codePrinter_Builder0.setPreferLineBreakAtEndOfFile(true);
@@ -243,7 +248,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1918() throws Throwable {
+    public void test1919() throws Throwable {
         Node node0 = new Node(0);
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node0);
         // Undeclared exception!
@@ -259,7 +264,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test2020() throws Throwable {
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder((Node) null);
         // Undeclared exception!
         try {
@@ -274,7 +279,7 @@ public class CodePrinter_ESTest extends CodePrinter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2120() throws Throwable {
+    public void test2121() throws Throwable {
         Node node0 = Node.newString("y'9v=,J/4R*AP+");
         CodePrinter.Builder codePrinter_Builder0 = new CodePrinter.Builder(node0);
         CodePrinter.Builder codePrinter_Builder1 = codePrinter_Builder0.setPrettyPrint(true);

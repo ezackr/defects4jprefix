@@ -1658,17 +1658,6 @@ public class ReaderBasedJsonParser_ESTest extends ReaderBasedJsonParser_ESTest_s
     }
 
     @Test(timeout = 4000)
-    public void test120136() throws Throwable {
-        BufferRecycler bufferRecycler0 = new BufferRecycler();
-        IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);
-        StringReader stringReader0 = new StringReader("E4&OL`r@");
-        ObjectCodec objectCodec0 = mock(ObjectCodec.class, new ViolatedAssumptionAnswer());
-        CharsToNameCanonicalizer charsToNameCanonicalizer0 = CharsToNameCanonicalizer.createRoot();
-        ReaderBasedJsonParser readerBasedJsonParser0 = new ReaderBasedJsonParser(iOContext0, (-2095), stringReader0, objectCodec0, charsToNameCanonicalizer0);
-        String string0 = readerBasedJsonParser0.getValueAsString("q");
-    }
-
-    @Test(timeout = 4000)
     public void test121137() throws Throwable {
         BufferRecycler bufferRecycler0 = new BufferRecycler();
         IOContext iOContext0 = new IOContext(bufferRecycler0, bufferRecycler0, true);

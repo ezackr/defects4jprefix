@@ -75,20 +75,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
-        int int0 = TarUtils.formatNameBytes("AEp]<", byteArray0, (int) (byte) 0, (int) (byte) 0, zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
     public void test0910() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        int int0 = TarUtils.formatNameBytes("org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding", byteArray0, (int) (byte) 0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0911() throws Throwable {
         byte[] byteArray0 = new byte[3];
         int int0 = TarUtils.formatNameBytes("org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding", byteArray0, (int) (byte) 0, 0);
     }
@@ -332,13 +319,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test4951() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
-        int int0 = TarUtils.formatNameBytes("dv@VnX%", byteArray0, 0, (-668), zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
-    public void test4952() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ZipEncoding zipEncoding0 = TarUtils.FALLBACK_ENCODING;
         int int0 = TarUtils.formatNameBytes("dv@VnX%", byteArray0, 0, (-668), zipEncoding0);

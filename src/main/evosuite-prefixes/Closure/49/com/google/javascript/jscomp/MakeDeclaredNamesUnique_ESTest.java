@@ -47,13 +47,6 @@ public class MakeDeclaredNamesUnique_ESTest extends MakeDeclaredNamesUnique_ESTe
     }
 
     @Test(timeout = 4000)
-    public void test033() throws Throwable {
-        MakeDeclaredNamesUnique makeDeclaredNamesUnique0 = new MakeDeclaredNamesUnique();
-        Compiler compiler0 = new Compiler();
-        compiler0.parseTestCode("function JSCompiler_mptyFn() {  return function() {}}");
-    }
-
-    @Test(timeout = 4000)
     public void test044() throws Throwable {
         RenameLabels.DefaultNameSupplier renameLabels_DefaultNameSupplier0 = new RenameLabels.DefaultNameSupplier();
         MakeDeclaredNamesUnique.BoilerplateRenamer makeDeclaredNamesUnique_BoilerplateRenamer0 = new MakeDeclaredNamesUnique.BoilerplateRenamer(renameLabels_DefaultNameSupplier0, "GJ");

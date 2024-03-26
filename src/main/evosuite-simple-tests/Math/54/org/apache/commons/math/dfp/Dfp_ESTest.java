@@ -46,4 +46,22 @@ public class Dfp_ESTest extends Dfp_ESTest_scaffolding {
             verifyException("org.apache.commons.math.dfp.Dfp", e);
         }
     }
+
+    @Test(timeout = 4000)
+    public void test22() throws Throwable {
+        int int0 = 531;
+        DfpField dfpField0 = new DfpField(531);
+    }
+
+    @Test(timeout = 4000)
+    public void test33() throws Throwable {
+        int int0 = 0;
+        DfpField dfpField0 = new DfpField(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
+        int int0 = (-985);
+        DfpField dfpField0 = new DfpField((-985));
+    }
 }

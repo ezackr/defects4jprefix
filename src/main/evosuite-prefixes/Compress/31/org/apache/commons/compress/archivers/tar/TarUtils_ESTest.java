@@ -69,13 +69,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test078() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        TarUtils.formatUnsignedOctalString(540L, byteArray0, 0, 9);
-        long long0 = TarUtils.parseOctal(byteArray0, 4, (byte) 2);
-    }
-
-    @Test(timeout = 4000)
     public void test089() throws Throwable {
         byte[] byteArray0 = new byte[1];
         ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
@@ -83,20 +76,7 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test0810() throws Throwable {
-        byte[] byteArray0 = new byte[1];
-        ZipEncoding zipEncoding0 = TarUtils.DEFAULT_ENCODING;
-        int int0 = TarUtils.formatNameBytes("AEp]<", byteArray0, (int) (byte) 0, (int) (byte) 0, zipEncoding0);
-    }
-
-    @Test(timeout = 4000)
     public void test0911() throws Throwable {
-        byte[] byteArray0 = new byte[3];
-        int int0 = TarUtils.formatNameBytes("org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding", byteArray0, (int) (byte) 0, 0);
-    }
-
-    @Test(timeout = 4000)
-    public void test0912() throws Throwable {
         byte[] byteArray0 = new byte[3];
         int int0 = TarUtils.formatNameBytes("org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding", byteArray0, (int) (byte) 0, 0);
     }
@@ -338,13 +318,6 @@ public class TarUtils_ESTest extends TarUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
     public void test4952() throws Throwable {
-        byte[] byteArray0 = new byte[9];
-        TarUtils.formatUnsignedOctalString(540L, byteArray0, 0, 9);
-        long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 2);
-    }
-
-    @Test(timeout = 4000)
-    public void test4953() throws Throwable {
         byte[] byteArray0 = new byte[9];
         TarUtils.formatUnsignedOctalString(540L, byteArray0, 0, 9);
         long long0 = TarUtils.parseOctal(byteArray0, 0, (byte) 2);

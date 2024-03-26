@@ -103,7 +103,22 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test054() throws Throwable {
+    public void test034() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.parseTestCode(" 9+NY");
+        InlineProperties inlineProperties0 = new InlineProperties(compiler0);
+    }
+
+    @Test(timeout = 4000)
+    public void test045() throws Throwable {
+        Compiler compiler0 = new Compiler();
+        compiler0.parseTestCode("");
+        TypeValidator typeValidator0 = new TypeValidator(compiler0);
+        typeValidator0.setShouldReport(true);
+    }
+
+    @Test(timeout = 4000)
+    public void test056() throws Throwable {
         DiagnosticType diagnosticType0 = PureFunctionIdentifier.INVALID_MODIFIES_ANNOTATION;
         JSError jSError0 = JSError.make(diagnosticType0, (String[]) null);
         TypeValidator.TypeMismatch typeValidator_TypeMismatch0 = new TypeValidator.TypeMismatch((JSType) null, (JSType) null, jSError0);
@@ -112,7 +127,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test065() throws Throwable {
+    public void test067() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -125,7 +140,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test076() throws Throwable {
+    public void test078() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -141,7 +156,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test079() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -157,7 +172,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test0810() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -171,7 +186,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test0911() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -185,7 +200,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test1012() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -201,7 +216,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1113() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -217,7 +232,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1112() throws Throwable {
+    public void test1114() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -233,7 +248,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1213() throws Throwable {
+    public void test1215() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -248,7 +263,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1314() throws Throwable {
+    public void test1316() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -264,7 +279,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1315() throws Throwable {
+    public void test1317() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -280,7 +295,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1416() throws Throwable {
+    public void test1418() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -295,7 +310,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1517() throws Throwable {
+    public void test1519() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -310,7 +325,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1618() throws Throwable {
+    public void test1620() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -324,7 +339,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1619() throws Throwable {
+    public void test1621() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -338,7 +353,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1720() throws Throwable {
+    public void test1722() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -353,7 +368,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1821() throws Throwable {
+    public void test1823() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -368,7 +383,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1822() throws Throwable {
+    public void test1824() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -383,7 +398,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1923() throws Throwable {
+    public void test1925() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("vH_ljC#t");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -397,7 +412,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2024() throws Throwable {
+    public void test2026() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -411,7 +426,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2025() throws Throwable {
+    public void test2027() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -425,7 +440,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2126() throws Throwable {
+    public void test2128() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -440,7 +455,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2227() throws Throwable {
+    public void test2229() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -455,7 +470,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2328() throws Throwable {
+    public void test2330() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -472,7 +487,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2429() throws Throwable {
+    public void test2431() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -489,7 +504,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2530() throws Throwable {
+    public void test2532() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         TypeValidator typeValidator0 = compiler0.getTypeValidator();
@@ -502,7 +517,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2631() throws Throwable {
+    public void test2633() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -516,7 +531,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2732() throws Throwable {
+    public void test2734() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -531,7 +546,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2733() throws Throwable {
+    public void test2735() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -546,7 +561,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2834() throws Throwable {
+    public void test2836() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -562,7 +577,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2935() throws Throwable {
+    public void test2937() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("H_ljC#t");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -585,7 +600,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3036() throws Throwable {
+    public void test3038() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -599,7 +614,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3137() throws Throwable {
+    public void test3139() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -627,7 +642,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3238() throws Throwable {
+    public void test3240() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -649,7 +664,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3339() throws Throwable {
+    public void test3341() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -664,7 +679,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3440() throws Throwable {
+    public void test3442() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("");
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
@@ -681,7 +696,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3541() throws Throwable {
+    public void test3543() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("vH_ljC#t");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -698,7 +713,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3642() throws Throwable {
+    public void test3644() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("array access");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -718,7 +733,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3743() throws Throwable {
+    public void test3745() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -731,7 +746,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3844() throws Throwable {
+    public void test3846() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -745,7 +760,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3845() throws Throwable {
+    public void test3847() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -759,7 +774,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3946() throws Throwable {
+    public void test3948() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -768,7 +783,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4047() throws Throwable {
+    public void test4049() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode(" 9+NY");
         TypeValidator typeValidator0 = new TypeValidator(compiler0);
@@ -778,7 +793,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4148() throws Throwable {
+    public void test4150() throws Throwable {
         DiagnosticType diagnosticType0 = PureFunctionIdentifier.INVALID_MODIFIES_ANNOTATION;
         JSError jSError0 = JSError.make(diagnosticType0, (String[]) null);
         TypeValidator.TypeMismatch typeValidator_TypeMismatch0 = new TypeValidator.TypeMismatch((JSType) null, (JSType) null, jSError0);
@@ -787,7 +802,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4249() throws Throwable {
+    public void test4251() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(1722, 1722, 1722);
         CheckLevel checkLevel0 = CheckLevel.WARNING;
@@ -802,7 +817,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4350() throws Throwable {
+    public void test4352() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node((-3449), (-3449), 249);
         String[] stringArray0 = new String[2];
@@ -819,7 +834,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4451() throws Throwable {
+    public void test4453() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(1722, 1722, 1722);
         CheckLevel checkLevel0 = CheckLevel.WARNING;
@@ -837,7 +852,7 @@ public class TypeValidator_ESTest extends TypeValidator_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4452() throws Throwable {
+    public void test4454() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = new Node(1722, 1722, 1722);
         CheckLevel checkLevel0 = CheckLevel.WARNING;

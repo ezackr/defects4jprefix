@@ -107,12 +107,12 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test098() throws Throwable {
-        BrentOptimizer brentOptimizer0 = new BrentOptimizer(2727.5728673977655, 2727.5728673977655);
-        Log1p log1p0 = new Log1p();
-        GoalType goalType0 = GoalType.MAXIMIZE;
-        UnivariatePointValuePair univariatePointValuePair0 = brentOptimizer0.optimize(1754, (UnivariateFunction) log1p0, goalType0, (double) 1754, (double) 1754, (double) 1754);
-        assertEquals(7.470224135899966, univariatePointValuePair0.getValue(), 0.01);
+    public void test088() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(2735.968463865598, 2735.968463865598);
+        Expm1 expm1_0 = new Expm1();
+        GoalType goalType0 = GoalType.MINIMIZE;
+        // Undeclared exception!
+        brentOptimizer0.optimize(2147483625, (UnivariateFunction) expm1_0, goalType0, 2735.968463865598, Double.NEGATIVE_INFINITY, (double) 2147483625);
     }
 
     @Test(timeout = 4000)
@@ -121,7 +121,7 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         Log1p log1p0 = new Log1p();
         GoalType goalType0 = GoalType.MAXIMIZE;
         UnivariatePointValuePair univariatePointValuePair0 = brentOptimizer0.optimize(1754, (UnivariateFunction) log1p0, goalType0, (double) 1754, (double) 1754, (double) 1754);
-        assertNotNull(univariatePointValuePair0);
+        assertEquals(7.470224135899966, univariatePointValuePair0.getValue(), 0.01);
     }
 
     @Test(timeout = 4000)
@@ -130,11 +130,20 @@ public class BrentOptimizer_ESTest extends BrentOptimizer_ESTest_scaffolding {
         Log1p log1p0 = new Log1p();
         GoalType goalType0 = GoalType.MAXIMIZE;
         UnivariatePointValuePair univariatePointValuePair0 = brentOptimizer0.optimize(1754, (UnivariateFunction) log1p0, goalType0, (double) 1754, (double) 1754, (double) 1754);
+        assertNotNull(univariatePointValuePair0);
+    }
+
+    @Test(timeout = 4000)
+    public void test0911() throws Throwable {
+        BrentOptimizer brentOptimizer0 = new BrentOptimizer(2727.5728673977655, 2727.5728673977655);
+        Log1p log1p0 = new Log1p();
+        GoalType goalType0 = GoalType.MAXIMIZE;
+        UnivariatePointValuePair univariatePointValuePair0 = brentOptimizer0.optimize(1754, (UnivariateFunction) log1p0, goalType0, (double) 1754, (double) 1754, (double) 1754);
         assertEquals(1754.0, univariatePointValuePair0.getPoint(), 0.01);
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1012() throws Throwable {
         BrentOptimizer brentOptimizer0 = new BrentOptimizer(2731.088474737597, 2731.088474737597);
         Asin asin0 = new Asin();
         GoalType goalType0 = GoalType.MINIMIZE;

@@ -822,17 +822,6 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5379() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        NoType noType0 = new NoType(jSTypeRegistry0);
-        UnknownType unknownType0 = new UnknownType(jSTypeRegistry0, true);
-        FunctionPrototypeType functionPrototypeType0 = new FunctionPrototypeType(jSTypeRegistry0, noType0, unknownType0);
-        boolean boolean0 = noType0.setPrototype(functionPrototypeType0);
-        boolean boolean1 = noType0.hasUnknownSupertype();
-    }
-
-    @Test(timeout = 4000)
     public void test5480() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);

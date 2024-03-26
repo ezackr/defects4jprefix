@@ -238,14 +238,21 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2019() throws Throwable {
+    public void test1919() throws Throwable {
+        DurationFieldType durationFieldType0 = DurationFieldType.weeks();
+        UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
+        unsupportedDurationField0.hashCode();
+    }
+
+    @Test(timeout = 4000)
+    public void test2020() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.years();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         assertNotNull(unsupportedDurationField0);
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2021() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.years();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         int int0 = unsupportedDurationField0.compareTo((DurationField) unsupportedDurationField0);
@@ -253,7 +260,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2122() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.weeks();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         // Undeclared exception!
@@ -269,7 +276,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2223() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.seconds();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         // Undeclared exception!
@@ -285,7 +292,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2324() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.years();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         // Undeclared exception!
@@ -301,7 +308,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2425() throws Throwable {
         Seconds seconds0 = Seconds.ONE;
         DurationFieldType durationFieldType0 = seconds0.getFieldType();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
@@ -318,7 +325,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2526() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.minutes();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         // Undeclared exception!
@@ -334,7 +341,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2627() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.centuries();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         // Undeclared exception!
@@ -350,7 +357,7 @@ public class UnsupportedDurationField_ESTest extends UnsupportedDurationField_ES
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2728() throws Throwable {
         DurationFieldType durationFieldType0 = DurationFieldType.weeks();
         UnsupportedDurationField unsupportedDurationField0 = UnsupportedDurationField.getInstance(durationFieldType0);
         // Undeclared exception!

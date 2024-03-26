@@ -19,7 +19,35 @@ import org.junit.runner.RunWith;
 public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test020() throws Throwable {
+    public void test000() throws Throwable {
+        // Undeclared exception!
+        RandomStringUtils.random(56319, "/");
+    }
+
+    @Test(timeout = 4000)
+    public void test011() throws Throwable {
+        int int0 = 250;
+        boolean boolean0 = false;
+        RandomStringUtils.random(250, false, false);
+        int int1 = 0;
+        RandomStringUtils.randomAlphanumeric(0);
+        RandomStringUtils.random(0, false, false);
+        char[] charArray0 = new char[6];
+        charArray0[0] = '0';
+        charArray0[1] = 'V';
+        charArray0[2] = '5';
+        charArray0[3] = 'T';
+        charArray0[4] = 'f';
+        charArray0[5] = '=';
+        MockRandom mockRandom0 = new MockRandom(0L);
+        mockRandom0.nextInt(123);
+        mockRandom0.ints();
+        // Undeclared exception!
+        RandomStringUtils.random(123, 0, (-914), true, false, charArray0, (Random) mockRandom0);
+    }
+
+    @Test(timeout = 4000)
+    public void test022() throws Throwable {
         RandomStringUtils.randomAscii(0);
         RandomStringUtils.randomAlphanumeric(0);
         RandomStringUtils.randomAlphabetic(0);
@@ -47,7 +75,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test031() throws Throwable {
+    public void test033() throws Throwable {
         int int0 = 822;
         int int1 = 1;
         int int2 = (-943);
@@ -74,7 +102,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test042() throws Throwable {
+    public void test044() throws Throwable {
         RandomStringUtils randomStringUtils0 = new RandomStringUtils();
         char[] charArray0 = new char[8];
         charArray0[0] = ' ';
@@ -98,7 +126,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test053() throws Throwable {
+    public void test055() throws Throwable {
         int int0 = 1059;
         boolean boolean0 = false;
         // Undeclared exception!
@@ -113,7 +141,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test064() throws Throwable {
+    public void test066() throws Throwable {
         char[] charArray0 = new char[6];
         charArray0[0] = '2';
         charArray0[1] = '&';
@@ -135,7 +163,21 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test085() throws Throwable {
+    public void test077() throws Throwable {
+        int int0 = 0;
+        boolean boolean0 = false;
+        char[] charArray0 = new char[1];
+        charArray0[0] = '\"';
+        MockRandom mockRandom0 = new MockRandom(0);
+        mockRandom0.doubles((double) 0, 1.0);
+        RandomStringUtils.random(0, 0, 0, true, false, charArray0, (Random) mockRandom0);
+        int int1 = 128;
+        // Undeclared exception!
+        RandomStringUtils.random(128, 0, 0, true, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test088() throws Throwable {
         MockRandom mockRandom0 = new MockRandom();
         // Undeclared exception!
         try {
@@ -149,7 +191,59 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test146() throws Throwable {
+    public void test099() throws Throwable {
+        RandomStringUtils.random(0, 0, (-66), true, false);
+        RandomStringUtils.random(0, "");
+        // Undeclared exception!
+        RandomStringUtils.random(32, true, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test1010() throws Throwable {
+        int int0 = 3269;
+        int int1 = 0;
+        boolean boolean0 = true;
+        char[] charArray0 = new char[4];
+        charArray0[0] = '`';
+        charArray0[1] = '~';
+        char char0 = 'H';
+        charArray0[2] = 'H';
+        char char1 = 'S';
+        charArray0[3] = 'S';
+        // Undeclared exception!
+        RandomStringUtils.random(3269, 0, (-1198), true, true, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        RandomStringUtils randomStringUtils0 = new RandomStringUtils();
+        RandomStringUtils.randomAscii(326);
+        int int0 = 1;
+        // Undeclared exception!
+        RandomStringUtils.randomAlphanumeric(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test1212() throws Throwable {
+        RandomStringUtils.random(3785);
+        RandomStringUtils.random(3785, (char[]) null);
+        RandomStringUtils.random(32, (char[]) null);
+        RandomStringUtils.random(32, 0, 0, false, false, (char[]) null);
+        RandomStringUtils.random(0, (char[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test1313() throws Throwable {
+        char[] charArray0 = new char[3];
+        charArray0[0] = 'j';
+        charArray0[1] = 'd';
+        charArray0[2] = '5';
+        MockRandom mockRandom0 = new MockRandom(0);
+        RandomStringUtils.random(0, (-2585), (-2585), false, false, charArray0, (Random) mockRandom0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1414() throws Throwable {
         int int0 = (-2531);
         // Undeclared exception!
         try {
@@ -164,7 +258,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test157() throws Throwable {
+    public void test1515() throws Throwable {
         char[] charArray0 = new char[1];
         charArray0[0] = '6';
         // Undeclared exception!
@@ -180,7 +274,17 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test178() throws Throwable {
+    public void test1616() throws Throwable {
+        RandomStringUtils.randomAscii(0);
+        RandomStringUtils.randomAlphabetic(0);
+        char[] charArray0 = new char[2];
+        charArray0[0] = '_';
+        charArray0[1] = 'I';
+        RandomStringUtils.random(0, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1717() throws Throwable {
         int int0 = 56320;
         // Undeclared exception!
         try {
@@ -195,7 +299,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test189() throws Throwable {
+    public void test1818() throws Throwable {
         char[] charArray0 = new char[4];
         charArray0[0] = '6';
         charArray0[1] = 'u';
@@ -213,7 +317,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test1910() throws Throwable {
+    public void test1919() throws Throwable {
         int int0 = 0;
         boolean boolean0 = false;
         char[] charArray0 = new char[5];
@@ -235,7 +339,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2011() throws Throwable {
+    public void test2020() throws Throwable {
         RandomStringUtils.random(21, "pf1?dV6");
         RandomStringUtils.randomAscii(0);
         // Undeclared exception!
@@ -251,7 +355,13 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2212() throws Throwable {
+    public void test2121() throws Throwable {
+        RandomStringUtils randomStringUtils0 = new RandomStringUtils();
+        RandomStringUtils.random(0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2222() throws Throwable {
         int int0 = 0;
         // Undeclared exception!
         try {
@@ -266,7 +376,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2313() throws Throwable {
+    public void test2323() throws Throwable {
         int int0 = (-1);
         // Undeclared exception!
         try {
@@ -281,7 +391,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2414() throws Throwable {
+    public void test2424() throws Throwable {
         char[] charArray0 = new char[9];
         charArray0[0] = '~';
         charArray0[1] = '.';
@@ -305,7 +415,27 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test2715() throws Throwable {
+    public void test2525() throws Throwable {
+        RandomStringUtils.random(0, false, false);
+        RandomStringUtils.randomNumeric(0);
+        RandomStringUtils.random(0, "");
+        RandomStringUtils.randomNumeric(0);
+        char[] charArray0 = new char[3];
+        charArray0[0] = 'D';
+        charArray0[1] = '%';
+        charArray0[2] = 'x';
+        // Undeclared exception!
+        RandomStringUtils.random(56320, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test2626() throws Throwable {
+        // Undeclared exception!
+        RandomStringUtils.randomAlphanumeric(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test2727() throws Throwable {
         int int0 = 0;
         RandomStringUtils.randomAlphanumeric(0);
         RandomStringUtils randomStringUtils0 = new RandomStringUtils();
@@ -322,7 +452,18 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3016() throws Throwable {
+    public void test2828() throws Throwable {
+        RandomStringUtils.random(0, (char[]) null);
+    }
+
+    @Test(timeout = 4000)
+    public void test2929() throws Throwable {
+        // Undeclared exception!
+        RandomStringUtils.random(55296);
+    }
+
+    @Test(timeout = 4000)
+    public void test3030() throws Throwable {
         char[] charArray0 = new char[7];
         charArray0[0] = '{';
         charArray0[1] = 'c';
@@ -345,7 +486,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3117() throws Throwable {
+    public void test3131() throws Throwable {
         int int0 = (-1134);
         // Undeclared exception!
         try {
@@ -360,7 +501,13 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3318() throws Throwable {
+    public void test3232() throws Throwable {
+        // Undeclared exception!
+        RandomStringUtils.randomNumeric(885);
+    }
+
+    @Test(timeout = 4000)
+    public void test3333() throws Throwable {
         int int0 = (-563);
         boolean boolean0 = false;
         // Undeclared exception!
@@ -376,7 +523,14 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3519() throws Throwable {
+    public void test3434() throws Throwable {
+        int int0 = 381;
+        // Undeclared exception!
+        RandomStringUtils.randomAlphabetic(381);
+    }
+
+    @Test(timeout = 4000)
+    public void test3535() throws Throwable {
         // Undeclared exception!
         try {
             RandomStringUtils.randomAlphabetic((-417));
@@ -390,7 +544,29 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3820() throws Throwable {
+    public void test3636() throws Throwable {
+        char[] charArray0 = new char[6];
+        charArray0[0] = 'e';
+        charArray0[1] = 'C';
+        charArray0[2] = ',';
+        charArray0[3] = '7';
+        charArray0[4] = 'T';
+        charArray0[5] = 'V';
+        RandomStringUtils.random(0, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3737() throws Throwable {
+        char[] charArray0 = new char[4];
+        charArray0[0] = 'R';
+        charArray0[1] = 'J';
+        charArray0[2] = 'n';
+        charArray0[3] = 'M';
+        RandomStringUtils.random(1, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3838() throws Throwable {
         boolean boolean0 = true;
         // Undeclared exception!
         try {
@@ -405,7 +581,7 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test3921() throws Throwable {
+    public void test3939() throws Throwable {
         char[] charArray0 = new char[1];
         charArray0[0] = 'f';
         MockRandom mockRandom0 = new MockRandom((-1L));
@@ -421,7 +597,14 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4122() throws Throwable {
+    public void test4040() throws Throwable {
+        RandomStringUtils randomStringUtils0 = new RandomStringUtils();
+        // Undeclared exception!
+        RandomStringUtils.randomAlphabetic(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4141() throws Throwable {
         // Undeclared exception!
         try {
             RandomStringUtils.random((-1333), (String) null);
@@ -435,7 +618,33 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
     }
 
     @Test(timeout = 4000)
-    public void test4423() throws Throwable {
+    public void test4242() throws Throwable {
+        int int0 = 0;
+        RandomStringUtils.random(0, (String) null);
+        boolean boolean0 = true;
+        RandomStringUtils.random(0, true, true);
+        int int1 = 1;
+        // Undeclared exception!
+        RandomStringUtils.randomAlphabetic(1);
+    }
+
+    @Test(timeout = 4000)
+    public void test4343() throws Throwable {
+        char[] charArray0 = new char[0];
+        RandomStringUtils.random(0, charArray0);
+        RandomStringUtils randomStringUtils0 = new RandomStringUtils();
+        RandomStringUtils.random(0, "");
+        RandomStringUtils.random(903, 301, 0, true, true);
+        RandomStringUtils.random(337, false, false);
+        RandomStringUtils.random(0, "A+*zJ9ODEQ)FF96g");
+        RandomStringUtils.random(0, 0, 337, false, true, charArray0);
+        RandomStringUtils.randomAlphanumeric(0);
+        // Undeclared exception!
+        RandomStringUtils.random(903, 903, 0, true, true);
+    }
+
+    @Test(timeout = 4000)
+    public void test4444() throws Throwable {
         int int0 = 0;
         boolean boolean0 = false;
         RandomStringUtils.random(0, (-2681), (-2426), false, false);
@@ -450,5 +659,12 @@ public class RandomStringUtils_ESTest extends RandomStringUtils_ESTest_scaffoldi
             //
             verifyException("org.apache.commons.lang3.RandomStringUtils", e);
         }
+    }
+
+    @Test(timeout = 4000)
+    public void test4545() throws Throwable {
+        int int0 = 55296;
+        // Undeclared exception!
+        RandomStringUtils.randomNumeric(55296);
     }
 }

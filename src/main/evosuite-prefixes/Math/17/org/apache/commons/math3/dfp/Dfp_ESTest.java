@@ -36,12 +36,17 @@ public class Dfp_ESTest extends Dfp_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test43() throws Throwable {
+    public void test33() throws Throwable {
+        DfpField dfpField0 = new DfpField((-1657));
+    }
+
+    @Test(timeout = 4000)
+    public void test44() throws Throwable {
         Dfp.copysign((Dfp) null, (Dfp) null);
     }
 
     @Test(timeout = 4000)
-    public void test54() throws Throwable {
+    public void test55() throws Throwable {
         Dfp dfp0 = null;
         dfp0 = new Dfp((DfpField) null, (byte) (-93));
     }
