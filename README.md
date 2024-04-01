@@ -1,14 +1,28 @@
 # Defects4JPrefix
 
-This repository generates test prefixes from the Defects4J buggy project versions using EvoSuite.
+This project generates test prefixes for each bug in [Defects4J](https://github.com/rjust/defects4j). A test prefix is defined as the non-assertion statements in a test case that set up a program state to be evaluated. For example:
+
+```java
+public class MyClassTest {
+    @Test
+    public void addTest() {
+        int a = 5;              // prefix
+        int b = 3;              // prefix cont.
+        int sum = add(a, b);    // prefix cont.
+        assertEqual(8, sum);    // oracle
+    }
+}
+```
+
+Defects4J contains both buggy and fixed versions of the same program. This repository uses the buggy program version to generate test prefixes. Specifically, this project uses the `gen_tests` command from Defects4J with EvoSuite to generate a test suite for each class modified between the buggy and fixed program versions. Then, the [OracleRemover](https://github.com/AML14/tratto/blob/experiment-end-to-end/experiment/src/main/java/OracleRemover.java) class from the Tratto project is used to remove all oracles from the test suite.
 
 ## Setup
 
 ### Defects4J
 
-Follow the instructions on the 
-[Defects4J GitHub page](https://github.com/rjust/defects4j) to clone and set 
-up the Defects4J repository. Then, add the Defects4J directory to your path 
+Follow the instructions on the
+[Defects4J GitHub page](https://github.com/rjust/defects4j) to clone and set
+up the Defects4J repository. Then, export the Defects4J directory to your path
 in a local terminal window:
 
 ```bash
@@ -25,29 +39,27 @@ bash ./script/util/init.sh
 
 ## Generate prefixes
 
-### Modified classes
-
 (1) Get a list of all modified classes in Defects4J:
 
 ```bash
-bash ./script/util/modified_classes.sh
+./script/util/modified_classes.sh
 ```
 
 (2) Generate prefixes for each class in each Defects4J bug:
 
 ```bash
-bash ./script/prefix.sh
+./script/prefix.sh
 ```
 
-(Optional) To only generate prefixes for a specific project bug, add the 
+**(Optional)** To only generate prefixes for a specific project bug, add the
 project name and bug id as arguments:
 
 ```bash
-bash ./script/prefix.sh [project-name] [bug-id]
+./script/prefix.sh [project-name] [bug-id]
 ```
 
 For example,
 
 ```bash
-bash ./script/prefix.sh Closure 2
+./script/prefix.sh Closure 2
 ```
