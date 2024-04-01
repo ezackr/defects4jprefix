@@ -24,8 +24,8 @@ while IFS=, read -r project_id bug_id _; do
   defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
   # cd into project and export information
   cd "${project_dir}" || exit 1
-  src_dir=$(defects4j export -p "dir.src.classes")
-  echo "Found source directory: ${src_dir}"
+  src_dir=$(defects4j export -p "cp.compile")
+  echo "Found classpath: ${src_dir}"
   cd - || exit 1
   # cleanup
   rm -r "${root_dir}/temp"
