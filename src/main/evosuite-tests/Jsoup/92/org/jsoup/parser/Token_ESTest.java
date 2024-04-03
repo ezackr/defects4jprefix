@@ -462,20 +462,6 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test33()  throws Throwable  {
-      Token.EOF token_EOF0 = new Token.EOF();
-      Token.StartTag token_StartTag0 = new Token.StartTag();
-      token_StartTag0.tokenType();
-      Token.EndTag token_EndTag0 = new Token.EndTag();
-      Token.reset((StringBuilder) null);
-      Token.Comment token_Comment0 = token_StartTag0.asComment();
-      boolean boolean0 = null;
-      try {  
-      boolean0 = token_Comment0.bogus;
-      } catch(ClassCastException e) {}
-  }
-
-  @Test(timeout = 4000)
   public void test34()  throws Throwable  {
       Token.EOF token_EOF0 = new Token.EOF();
       Token.EOF token_EOF1 = (Token.EOF)token_EOF0.reset();
