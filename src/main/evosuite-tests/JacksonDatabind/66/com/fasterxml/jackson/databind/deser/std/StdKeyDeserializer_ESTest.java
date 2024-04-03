@@ -209,33 +209,6 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
   }
 
   @Test(timeout = 4000)
-  public void test20()  throws Throwable  {
-      Class<Calendar> class0 = Calendar.class;
-      StdKeyDeserializer.StringKD stdKeyDeserializer_StringKD0 = StdKeyDeserializer.StringKD.forType(class0);
-      String string0 = "&A~XGmbLQMgG;c\"d^";
-      DeserializationContext deserializationContext0 = null;
-      stdKeyDeserializer_StringKD0.deserializeKey("&A~XGmbLQMgG;c\"d^", (DeserializationContext) null);
-      JsonDeserializer<Character> jsonDeserializer0 = (JsonDeserializer<Character>) mock(JsonDeserializer.class, new ViolatedAssumptionAnswer());
-      Class<Character> class1 = Character.class;
-      StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class1);
-      StdKeyDeserializer.DelegatingKD stdKeyDeserializer_DelegatingKD0 = new StdKeyDeserializer.DelegatingKD(class0, jsonDeserializer0);
-      stdKeyDeserializer_DelegatingKD0.deserializeKey((String) null, (DeserializationContext) null);
-      stdKeyDeserializer0._parse("&A~XGmbLQMgG;c\"d^", (DeserializationContext) null);
-      StdKeyDeserializer stdKeyDeserializer1 = StdKeyDeserializer.forType(class1);
-      double double0 = null;
-      try {
-        double0 = new Integer(stdKeyDeserializer1.TYPE_CLASS);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer", e);
-      }
-  }
-
-  @Test(timeout = 4000)
   public void test21()  throws Throwable  {
       Class<URL> class0 = URL.class;
       StdKeyDeserializer.StringKD.forType(class0);
