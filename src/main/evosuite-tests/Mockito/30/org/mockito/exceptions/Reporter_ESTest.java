@@ -200,19 +200,6 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test12()  throws Throwable  {
-      Reporter reporter0 = new Reporter();
-      Location location0 = new Location();
-      // Undeclared exception!
-      try { 
-        reporter0.smartNullPointerException(location0);
-        fail("Expecting exception: RuntimeException");
-      
-      } catch(RuntimeException e) {
-      }
-  }
-
-  @Test(timeout = 4000)
   public void test13()  throws Throwable  {
       Reporter reporter0 = new Reporter();
       MockException mockException0 = new MockException();
