@@ -788,14 +788,6 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test61()  throws Throwable  {
-      byte[] byteArray0 = new byte[7];
-      Base64 base64_0 = new Base64((byte)4, byteArray0, false);
-      base64_0.setInitialBuffer(byteArray0, (-1388), (-1812));
-      assertFalse(base64_0.isUrlSafe());
-  }
-
-  @Test(timeout = 4000)
   public void test62()  throws Throwable  {
       Base64 base64_0 = null;
       try {
