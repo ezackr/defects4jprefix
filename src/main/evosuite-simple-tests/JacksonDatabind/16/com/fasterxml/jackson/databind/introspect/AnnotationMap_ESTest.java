@@ -51,40 +51,20 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test033() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        Iterable<Annotation> iterable0 = annotationMap0.annotations();
-        assertNotNull(iterable0);
-    }
-
-    @Test(timeout = 4000)
-    public void test044() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        Class<Annotation> class0 = Annotation.class;
-        hashMap0.put(class0, (Annotation) null);
-        annotationMap0._annotations = hashMap0;
-        Iterable<Annotation> iterable0 = annotationMap0.annotations();
-        assertNotNull(iterable0);
-    }
-
-    @Test(timeout = 4000)
-    public void test055() throws Throwable {
+    public void test053() throws Throwable {
         AnnotationMap annotationMap0 = AnnotationMap.merge((AnnotationMap) null, (AnnotationMap) null);
         assertNull(annotationMap0);
     }
 
     @Test(timeout = 4000)
-    public void test066() throws Throwable {
+    public void test064() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         AnnotationMap annotationMap1 = AnnotationMap.merge(annotationMap0, annotationMap0);
         assertSame(annotationMap1, annotationMap0);
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test075() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -95,7 +75,7 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test078() throws Throwable {
+    public void test076() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -107,93 +87,14 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        AnnotationMap annotationMap1 = AnnotationMap.merge(annotationMap0, annotationMap0);
-        assertSame(annotationMap0, annotationMap1);
-    }
-
-    @Test(timeout = 4000)
-    public void test0910() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        Class<Annotation> class0 = Annotation.class;
-        hashMap0.put(class0, (Annotation) null);
-        AnnotationMap annotationMap1 = AnnotationMap.merge(annotationMap0, (AnnotationMap) null);
-        assertSame(annotationMap1, annotationMap0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1011() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        Class<Annotation> class0 = Annotation.class;
-        hashMap0.put(class0, (Annotation) null);
-        AnnotationMap annotationMap1 = new AnnotationMap();
-        AnnotationMap annotationMap2 = AnnotationMap.merge(annotationMap0, annotationMap1);
-        assertEquals(1, annotationMap2.size());
-    }
-
-    @Test(timeout = 4000)
-    public void test1112() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        AnnotationMap annotationMap1 = new AnnotationMap();
-        Class<Annotation> class0 = Annotation.class;
-        HashMap<Class<Annotation>, Annotation> hashMap1 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap1._annotations = hashMap1;
-        hashMap0.put(class0, (Annotation) null);
-        AnnotationMap annotationMap2 = AnnotationMap.merge(annotationMap0, annotationMap1);
-        assertEquals(1, annotationMap2.size());
-    }
-
-    @Test(timeout = 4000)
-    public void test1213() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        int int0 = annotationMap0.size();
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1314() throws Throwable {
+    public void test137() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         int int0 = annotationMap0.size();
         assertEquals(0, int0);
     }
 
     @Test(timeout = 4000)
-    public void test1415() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        Class<Annotation> class0 = Annotation.class;
-        Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
-        doReturn(class0, class0).when(annotation0).annotationType();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        boolean boolean0 = annotationMap0.addIfNotPresent(annotation0);
-        assertEquals(1, annotationMap0.size());
-    }
-
-    @Test(timeout = 4000)
-    public void test1416() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        Class<Annotation> class0 = Annotation.class;
-        Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
-        doReturn(class0, class0).when(annotation0).annotationType();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        boolean boolean0 = annotationMap0.addIfNotPresent(annotation0);
-        assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1517() throws Throwable {
+    public void test158() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -204,7 +105,7 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1518() throws Throwable {
+    public void test159() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -215,23 +116,14 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1619() throws Throwable {
-        AnnotationMap annotationMap0 = new AnnotationMap();
-        HashMap<Class<Annotation>, Annotation> hashMap0 = new HashMap<Class<Annotation>, Annotation>();
-        annotationMap0._annotations = hashMap0;
-        String string0 = annotationMap0.toString();
-        assertEquals("{}", string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1720() throws Throwable {
+    public void test1710() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         String string0 = annotationMap0.toString();
         assertEquals("[null]", string0);
     }
 
     @Test(timeout = 4000)
-    public void test1821() throws Throwable {
+    public void test1811() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -244,7 +136,7 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1822() throws Throwable {
+    public void test1812() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -257,7 +149,7 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1923() throws Throwable {
+    public void test1913() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());
@@ -270,7 +162,7 @@ public class AnnotationMap_ESTest extends AnnotationMap_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1924() throws Throwable {
+    public void test1914() throws Throwable {
         AnnotationMap annotationMap0 = new AnnotationMap();
         Class<Annotation> class0 = Annotation.class;
         Annotation annotation0 = mock(Annotation.class, new ViolatedAssumptionAnswer());

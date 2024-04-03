@@ -411,33 +411,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashSet<JSType> hashSet0 = new HashSet<JSType>();
-        UnionType unionType0 = new UnionType(jSTypeRegistry0, hashSet0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Unknown class name");
-        ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) errorFunctionType0, (JSType) errorFunctionType0, (JSType) errorFunctionType0, (JSType) unionType0, (JSType) unionType0);
-        UnionType unionType1 = new UnionType(jSTypeRegistry0, immutableList0);
-        boolean boolean0 = unionType0.checkUnionEquivalenceHelper(unionType1, true);
-        assertFalse(unionType1.equals((Object) unionType0));
-    }
-
-    @Test(timeout = 4000)
-    public void test3132() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        HashSet<JSType> hashSet0 = new HashSet<JSType>();
-        UnionType unionType0 = new UnionType(jSTypeRegistry0, hashSet0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Unknown class name");
-        ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) errorFunctionType0, (JSType) errorFunctionType0, (JSType) errorFunctionType0, (JSType) unionType0, (JSType) unionType0);
-        UnionType unionType1 = new UnionType(jSTypeRegistry0, immutableList0);
-        boolean boolean0 = unionType0.checkUnionEquivalenceHelper(unionType1, true);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3233() throws Throwable {
+    public void test3231() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -448,7 +422,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3334() throws Throwable {
+    public void test3332() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -461,7 +435,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3435() throws Throwable {
+    public void test3433() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         HashSet<JSType> hashSet0 = new HashSet<JSType>();
@@ -473,7 +447,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3536() throws Throwable {
+    public void test3534() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -484,7 +458,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3637() throws Throwable {
+    public void test3635() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -496,7 +470,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3738() throws Throwable {
+    public void test3736() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NamedType namedType0 = new NamedType(jSTypeRegistry0, "Not declared as a constructor", "Unknown class name", 1, 1);
@@ -508,7 +482,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3839() throws Throwable {
+    public void test3837() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -521,7 +495,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3940() throws Throwable {
+    public void test3938() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "");
@@ -533,7 +507,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4041() throws Throwable {
+    public void test4039() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -548,7 +522,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4142() throws Throwable {
+    public void test4140() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -560,7 +534,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4243() throws Throwable {
+    public void test4241() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -571,7 +545,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4344() throws Throwable {
+    public void test4342() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -582,7 +556,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4445() throws Throwable {
+    public void test4443() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ModificationVisitor modificationVisitor0 = new ModificationVisitor(jSTypeRegistry0);
@@ -594,7 +568,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4546() throws Throwable {
+    public void test4544() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -605,7 +579,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4647() throws Throwable {
+    public void test4645() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         HashSet<JSType> hashSet0 = new HashSet<JSType>();
@@ -617,7 +591,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4748() throws Throwable {
+    public void test4746() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -627,7 +601,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4849() throws Throwable {
+    public void test4847() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NamedType namedType0 = new NamedType(jSTypeRegistry0, "Not declared as a constructor", "Unknown class name", 1, 1);
@@ -639,7 +613,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4950() throws Throwable {
+    public void test4948() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -649,7 +623,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5051() throws Throwable {
+    public void test5049() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         NamedType namedType0 = new NamedType(jSTypeRegistry0, "Not declared as a constructor", "Unknown class name", 1, 1);
@@ -669,7 +643,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5152() throws Throwable {
+    public void test5150() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -683,7 +657,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5153() throws Throwable {
+    public void test5151() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -697,7 +671,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5254() throws Throwable {
+    public void test5252() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -708,7 +682,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5355() throws Throwable {
+    public void test5353() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -719,7 +693,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5456() throws Throwable {
+    public void test5454() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -732,7 +706,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5557() throws Throwable {
+    public void test5555() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ModificationVisitor modificationVisitor0 = new ModificationVisitor(jSTypeRegistry0);
@@ -744,7 +718,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5658() throws Throwable {
+    public void test5656() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
         NamedType namedType0 = new NamedType(jSTypeRegistry0, "Not declared as a type name", "Not declared as a constructor", 78, 0);
@@ -756,7 +730,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5759() throws Throwable {
+    public void test5757() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -767,7 +741,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5860() throws Throwable {
+    public void test5858() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Named type with empty name component");
@@ -777,7 +751,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5961() throws Throwable {
+    public void test5959() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -791,7 +765,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5962() throws Throwable {
+    public void test5960() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);
@@ -805,7 +779,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6063() throws Throwable {
+    public void test6061() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         HashSet<JSType> hashSet0 = new HashSet<JSType>();
@@ -817,7 +791,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6164() throws Throwable {
+    public void test6162() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         HashSet<JSType> hashSet0 = new HashSet<JSType>();
@@ -829,7 +803,7 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6265() throws Throwable {
+    public void test6263() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         BooleanType booleanType0 = new BooleanType(jSTypeRegistry0);

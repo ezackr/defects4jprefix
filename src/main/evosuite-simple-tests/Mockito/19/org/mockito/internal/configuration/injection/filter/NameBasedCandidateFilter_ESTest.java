@@ -18,22 +18,4 @@ import org.mockito.internal.configuration.injection.filter.NameBasedCandidateFil
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class NameBasedCandidateFilter_ESTest extends NameBasedCandidateFilter_ESTest_scaffolding {
-
-    @Test(timeout = 4000)
-    public void test00() throws Throwable {
-        FinalMockCandidateFilter finalMockCandidateFilter0 = new FinalMockCandidateFilter();
-        NameBasedCandidateFilter nameBasedCandidateFilter0 = new NameBasedCandidateFilter(finalMockCandidateFilter0);
-        LinkedList<Object> linkedList0 = new LinkedList<Object>();
-        nameBasedCandidateFilter0.filterCandidate(linkedList0, (Field) null, finalMockCandidateFilter0);
-    }
-
-    @Test(timeout = 4000)
-    public void test11() throws Throwable {
-        FinalMockCandidateFilter finalMockCandidateFilter0 = new FinalMockCandidateFilter();
-        LinkedList<Object> linkedList0 = new LinkedList<Object>();
-        linkedList0.add((Object) finalMockCandidateFilter0);
-        linkedList0.addLast((Object) null);
-        NameBasedCandidateFilter nameBasedCandidateFilter0 = new NameBasedCandidateFilter(finalMockCandidateFilter0);
-        nameBasedCandidateFilter0.filterCandidate(linkedList0, (Field) null, linkedList0);
-    }
 }

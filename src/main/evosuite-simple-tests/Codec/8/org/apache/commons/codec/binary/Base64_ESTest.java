@@ -820,15 +820,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6167() throws Throwable {
-        byte[] byteArray0 = new byte[7];
-        Base64 base64_0 = new Base64((byte) 4, byteArray0, false);
-        base64_0.setInitialBuffer(byteArray0, (-1388), (-1812));
-        assertFalse(base64_0.isUrlSafe());
-    }
-
-    @Test(timeout = 4000)
-    public void test6268() throws Throwable {
+    public void test6267() throws Throwable {
         Base64 base64_0 = null;
         try {
             base64_0 = new Base64((-1));
@@ -843,7 +835,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6369() throws Throwable {
+    public void test6368() throws Throwable {
         byte[] byteArray0 = new byte[7];
         byteArray0[5] = (byte) 68;
         Base64 base64_0 = null;
@@ -859,7 +851,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6470() throws Throwable {
+    public void test6469() throws Throwable {
         byte[] byteArray0 = new byte[3];
         // Undeclared exception!
         try {
@@ -875,7 +867,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6571() throws Throwable {
+    public void test6570() throws Throwable {
         byte[] byteArray0 = new byte[3];
         // Undeclared exception!
         try {
@@ -891,7 +883,7 @@ public class Base64_ESTest extends Base64_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test6672() throws Throwable {
+    public void test6671() throws Throwable {
         byte[] byteArray0 = new byte[3];
         // Undeclared exception!
         try {

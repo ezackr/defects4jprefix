@@ -208,33 +208,7 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
-        Class<Calendar> class0 = Calendar.class;
-        StdKeyDeserializer.StringKD stdKeyDeserializer_StringKD0 = StdKeyDeserializer.StringKD.forType(class0);
-        String string0 = "&A~XGmbLQMgG;c\"d^";
-        DeserializationContext deserializationContext0 = null;
-        stdKeyDeserializer_StringKD0.deserializeKey("&A~XGmbLQMgG;c\"d^", (DeserializationContext) null);
-        JsonDeserializer<Character> jsonDeserializer0 = (JsonDeserializer<Character>) mock(JsonDeserializer.class, new ViolatedAssumptionAnswer());
-        Class<Character> class1 = Character.class;
-        StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class1);
-        StdKeyDeserializer.DelegatingKD stdKeyDeserializer_DelegatingKD0 = new StdKeyDeserializer.DelegatingKD(class0, jsonDeserializer0);
-        stdKeyDeserializer_DelegatingKD0.deserializeKey((String) null, (DeserializationContext) null);
-        stdKeyDeserializer0._parse("&A~XGmbLQMgG;c\"d^", (DeserializationContext) null);
-        StdKeyDeserializer stdKeyDeserializer1 = StdKeyDeserializer.forType(class1);
-        double double0 = null;
-        try {
-            double0 = new Integer(stdKeyDeserializer1.TYPE_CLASS);
-            fail("Expecting exception: NullPointerException");
-        } catch (NullPointerException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2120() throws Throwable {
         Class<URL> class0 = URL.class;
         StdKeyDeserializer.StringKD.forType(class0);
         Class<String> class1 = String.class;
@@ -244,28 +218,28 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2221() throws Throwable {
         Class<Date> class0 = Date.class;
         StdKeyDeserializer.forType(class0);
         Random.setNextRandom(8);
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2322() throws Throwable {
         Class<Currency> class0 = Currency.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("n==C]?{nz<m8PZ", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2423() throws Throwable {
         Class<Date> class0 = Date.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("<", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2524() throws Throwable {
         Class<Calendar> class0 = Calendar.class;
         FromStringDeserializer<Double> fromStringDeserializer0 = (FromStringDeserializer<Double>) mock(FromStringDeserializer.class, new ViolatedAssumptionAnswer());
         StdKeyDeserializer stdKeyDeserializer0 = new StdKeyDeserializer((-2332), class0, fromStringDeserializer0);
@@ -292,28 +266,28 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2625() throws Throwable {
         Class<Locale> class0 = Locale.class;
         StdKeyDeserializer.StringKD stdKeyDeserializer_StringKD0 = StdKeyDeserializer.StringKD.forType(class0);
         stdKeyDeserializer_StringKD0.getKeyClass();
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2726() throws Throwable {
         Class<Float> class0 = Float.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0._parse("5", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test2828() throws Throwable {
+    public void test2827() throws Throwable {
         Class<URL> class0 = URL.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("5", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test2929() throws Throwable {
+    public void test2928() throws Throwable {
         Class<URL> class0 = URL.class;
         StdKeyDeserializer.StringKD.forType(class0);
         POJOPropertiesCollector pOJOPropertiesCollector0 = mock(POJOPropertiesCollector.class, new ViolatedAssumptionAnswer());
@@ -329,14 +303,14 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test3030() throws Throwable {
+    public void test3029() throws Throwable {
         Class<Locale> class0 = Locale.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("=Bp", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
+    public void test3130() throws Throwable {
         Class<Long> class0 = Long.class;
         FromStringDeserializer<Currency> fromStringDeserializer0 = (FromStringDeserializer<Currency>) mock(FromStringDeserializer.class, new ViolatedAssumptionAnswer());
         StdKeyDeserializer stdKeyDeserializer0 = new StdKeyDeserializer(14, class0, fromStringDeserializer0);
@@ -351,14 +325,14 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3231() throws Throwable {
         Class<Boolean> class0 = Boolean.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("Z&z.fT,?z!b=?5b*e", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3332() throws Throwable {
         Class<Integer> class0 = Integer.class;
         FromStringDeserializer<Boolean> fromStringDeserializer0 = (FromStringDeserializer<Boolean>) mock(FromStringDeserializer.class, new ViolatedAssumptionAnswer());
         StdKeyDeserializer stdKeyDeserializer0 = new StdKeyDeserializer(11, class0, fromStringDeserializer0);
@@ -380,7 +354,7 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3433() throws Throwable {
         Class<Object> class0 = Object.class;
         FromStringDeserializer<ObjectIdResolver> fromStringDeserializer0 = (FromStringDeserializer<ObjectIdResolver>) mock(FromStringDeserializer.class, new ViolatedAssumptionAnswer());
         doReturn((Object) null).when(fromStringDeserializer0)._deserialize(anyString(), any(com.fasterxml.jackson.databind.DeserializationContext.class));
@@ -389,35 +363,35 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3534() throws Throwable {
         Class<Short> class0 = Short.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("6", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3635() throws Throwable {
         Class<Character> class0 = Character.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0._parse("6", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3736() throws Throwable {
         Class<Byte> class0 = Byte.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         stdKeyDeserializer0.deserializeKey("6", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3837() throws Throwable {
         Class<Short> class0 = Short.class;
         StdKeyDeserializer stdKeyDeserializer0 = new StdKeyDeserializer(15, class0);
         stdKeyDeserializer0.deserializeKey("Unrecognized token '", (DeserializationContext) null);
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3938() throws Throwable {
         Class<Boolean> class0 = Boolean.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
         BeanDeserializerFactory beanDeserializerFactory0 = BeanDeserializerFactory.instance;
@@ -429,7 +403,7 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4039() throws Throwable {
         FileSystemHandling fileSystemHandling0 = new FileSystemHandling();
         Class<Byte> class0 = Byte.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);
@@ -443,7 +417,7 @@ public class StdKeyDeserializer_ESTest extends StdKeyDeserializer_ESTest_scaffol
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4140() throws Throwable {
         FileSystemHandling fileSystemHandling0 = new FileSystemHandling();
         Class<Boolean> class0 = Boolean.class;
         StdKeyDeserializer stdKeyDeserializer0 = StdKeyDeserializer.forType(class0);

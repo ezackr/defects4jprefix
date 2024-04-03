@@ -9819,2626 +9819,27 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test09493() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        assertNotNull(simpleTimeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09494() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        assertEquals("java.util.SimpleTimeZone[id= 1 minutes,offset=0,dstSavings=3600000,useDaylight=false,startYear=0,startMode=0,startMonth=0,startDay=0,startDayOfWeek=0,startTime=0,startTimeMode=0,endMode=0,endMonth=0,endDay=0,endDayOfWeek=77,endTime=77,endTimeMode=0]", simpleTimeZone0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09495() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        assertFalse(simpleTimeZone0.useDaylightTime());
-    }
-
-    @Test(timeout = 4000)
-    public void test09496() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        assertEquals(" 1 minutes", simpleTimeZone0.getID());
-    }
-
-    @Test(timeout = 4000)
-    public void test09497() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        assertEquals(0, simpleTimeZone0.getDSTSavings());
-    }
-
-    @Test(timeout = 4000)
-    public void test09498() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        assertEquals(0, simpleTimeZone0.getRawOffset());
-    }
-
-    @Test(timeout = 4000)
-    public void test09499() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertNotNull(locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09500() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09501() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09502() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09503() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09504() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09505() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09506() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09507() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertSame(locale1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09508() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertNotNull(locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09509() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09510() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09511() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09512() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09513() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09514() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09515() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("zh", locale1.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09516() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("", locale1.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09517() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("zho", locale1.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09518() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("zh", locale1.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09519() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("", locale1.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09520() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        assertEquals("", locale1.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09521() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertFalse(locale2.equals((Object) locale1));
-    }
-
-    @Test(timeout = 4000)
-    public void test09522() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertFalse(locale2.equals((Object) locale0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09523() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertNotSame(locale2, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09524() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertNotSame(locale2, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09525() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertNotNull(locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09526() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertEquals("", locale2.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09527() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertEquals("", locale2.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09528() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertEquals("", locale2.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09529() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertEquals("", locale2.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09530() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertEquals("", locale2.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09531() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        assertEquals("", locale2.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09532() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09533() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        assertFalse(locale1.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09534() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        assertNotNull(mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09535() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09536() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertFalse(calendar0.equals((Object) mockGregorianCalendar0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09537() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09538() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09539() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertNotSame(calendar0, mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09540() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertNotNull(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09541() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09542() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09543() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09544() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09545() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09546() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09547() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09548() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals(1, calendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09549() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertTrue(calendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test09550() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        assertEquals(1, calendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09551() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09552() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09553() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09554() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09555() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("Chinese", string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09556() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09557() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09558() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09559() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09560() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09561() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09562() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09563() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertFalse(locale1.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09564() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertFalse(mockGregorianCalendar0.equals((Object) calendar0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09565() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertFalse(calendar0.equals((Object) mockGregorianCalendar0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09566() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09567() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09568() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertSame(locale1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09569() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertNotSame(locale1, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09570() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertNotSame(mockGregorianCalendar0, calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09571() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertNotSame(calendar0, mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09572() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09573() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("java.util.SimpleTimeZone[id= 1 minutes,offset=0,dstSavings=3600000,useDaylight=false,startYear=0,startMode=0,startMonth=0,startDay=0,startDayOfWeek=0,startTime=0,startTimeMode=0,endMode=0,endMonth=0,endDay=0,endDayOfWeek=77,endTime=77,endTimeMode=0]", simpleTimeZone0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09574() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertFalse(simpleTimeZone0.useDaylightTime());
-    }
-
-    @Test(timeout = 4000)
-    public void test09575() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(" 1 minutes", simpleTimeZone0.getID());
-    }
-
-    @Test(timeout = 4000)
-    public void test09576() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(0, simpleTimeZone0.getDSTSavings());
-    }
-
-    @Test(timeout = 4000)
-    public void test09577() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(0, simpleTimeZone0.getRawOffset());
-    }
-
-    @Test(timeout = 4000)
-    public void test09578() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09579() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09580() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09581() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09582() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09583() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09584() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("zh", locale1.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09585() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("", locale1.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09586() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("zho", locale1.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09587() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("zh", locale1.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09588() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("", locale1.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09589() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("", locale1.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09590() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=java.util.SimpleTimeZone[id= 1 minutes,offset=0,dstSavings=3600000,useDaylight=false,startYear=0,startMode=0,startMonth=0,startDay=0,startDayOfWeek=0,startTime=0,startTimeMode=0,endMode=0,endMonth=0,endDay=0,endDayOfWeek=77,endTime=77,endTimeMode=0],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", mockGregorianCalendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09591() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(1, mockGregorianCalendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09592() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertTrue(mockGregorianCalendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test09593() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(1, mockGregorianCalendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09594() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09595() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(1, calendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09596() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertTrue(calendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test09597() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        assertEquals(1, calendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09598() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09599() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertNotNull(durationFormatUtils_Token0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09600() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09601() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09602() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09603() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09604() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09605() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09606() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09607() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09608() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09609() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09610() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09611() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09612() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09613() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09614() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09615() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09616() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertFalse(string1.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09617() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09618() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09619() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertNotNull(string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09620() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("", string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09621() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09622() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09623() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09624() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09625() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09626() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09627() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09628() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertFalse(string2.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09629() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09630() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09631() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertNotNull(string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09632() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("", string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09633() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09634() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09635() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09636() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09637() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09638() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09639() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertFalse(locale0.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09640() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertFalse(locale1.equals((Object) locale2));
-    }
-
-    @Test(timeout = 4000)
-    public void test09641() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertFalse(mockGregorianCalendar0.equals((Object) calendar0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09642() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertFalse(calendar0.equals((Object) mockGregorianCalendar0));
-    }
-
-    @Test(timeout = 4000)
-    public void test09643() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertTrue(int1 == int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09644() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertNotSame(locale0, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09645() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09646() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertSame(locale1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09647() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertNotSame(locale1, locale2);
-    }
-
-    @Test(timeout = 4000)
-    public void test09648() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertNotSame(mockGregorianCalendar0, calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09649() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertNotSame(calendar0, mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test09650() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(0, int1);
-    }
-
-    @Test(timeout = 4000)
-    public void test09651() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("java.util.SimpleTimeZone[id= 1 minutes,offset=0,dstSavings=3600000,useDaylight=false,startYear=0,startMode=0,startMonth=0,startDay=0,startDayOfWeek=0,startTime=0,startTimeMode=0,endMode=0,endMonth=0,endDay=0,endDayOfWeek=77,endTime=77,endTimeMode=0]", simpleTimeZone0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09652() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertFalse(simpleTimeZone0.useDaylightTime());
-    }
-
-    @Test(timeout = 4000)
-    public void test09653() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(" 1 minutes", simpleTimeZone0.getID());
-    }
-
-    @Test(timeout = 4000)
-    public void test09654() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(0, simpleTimeZone0.getDSTSavings());
-    }
-
-    @Test(timeout = 4000)
-    public void test09655() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(0, simpleTimeZone0.getRawOffset());
-    }
-
-    @Test(timeout = 4000)
-    public void test09656() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("zh", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09657() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09658() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09659() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09660() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09661() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09662() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("zh", locale1.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09663() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("", locale1.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test09664() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("zho", locale1.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test09665() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("zh", locale1.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test09666() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("", locale1.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test09667() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("", locale1.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test09668() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=java.util.SimpleTimeZone[id= 1 minutes,offset=0,dstSavings=3600000,useDaylight=false,startYear=0,startMode=0,startMonth=0,startDay=0,startDayOfWeek=0,startTime=0,startTimeMode=0,endMode=0,endMonth=0,endDay=0,endDayOfWeek=77,endTime=77,endTimeMode=0],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", mockGregorianCalendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09669() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(1, mockGregorianCalendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09670() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertTrue(mockGregorianCalendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test09671() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(1, mockGregorianCalendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09672() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test09673() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(1, calendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09674() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertTrue(calendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test09675() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        assertEquals(1, calendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test09676() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, " 1 minutes", 0, 0, 0, 0, 0, 0, 77, 77);
-        Locale locale0 = Locale.CHINESE;
-        Locale locale1 = locale0.stripExtensions();
-        Locale locale2 = Locale.forLanguageTag(" 1 minutes");
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(simpleTimeZone0, locale1);
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        String string0 = locale0.getDisplayLanguage();
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, calendar0, 0, 0);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(locale0, (-1735));
-        Locale.setDefault(locale0);
-        String string1 = durationFormatUtils_Token0.toString();
-        String string2 = durationFormatUtils_Token0.toString();
-        int int1 = DurationFormatUtils.reduceAndCorrect(calendar0, mockGregorianCalendar0, 0, 0);
-        // Undeclared exception!
-        try {
-            MockLocalDate.parse((CharSequence) "");
-            fail("Expecting exception: DateTimeParseException");
-        } catch (DateTimeParseException e) {
-            //
-            // Text '' could not be parsed at index 0
-            //
-            verifyException("java.time.format.DateTimeFormatter", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test10677() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        assertNotNull(durationFormatUtils0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10678() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10679() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        assertFalse(string1.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test10680() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        assertNotNull(string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test10681() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        assertEquals(15, durationFormatUtils_TokenArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test10682() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        assertNotNull(durationFormatUtils_TokenArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10683() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        assertFalse(string2.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test10684() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        assertFalse(string2.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test10685() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        assertNotNull(string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test10686() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        Calendar calendar0 = MockCalendar.getInstance();
-        assertNotNull(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test10687() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        Calendar calendar0 = MockCalendar.getInstance();
-        assertTrue(calendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test10688() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        Calendar calendar0 = MockCalendar.getInstance();
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test10689() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        Calendar calendar0 = MockCalendar.getInstance();
-        assertEquals(1, calendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test10690() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        Calendar calendar0 = MockCalendar.getInstance();
-        assertEquals(1, calendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test10691() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string0 = DurationFormatUtils.formatPeriod(1L, 1L, "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string1 = DurationFormatUtils.formatDuration((-1175L), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'", true);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        String string2 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        Calendar calendar0 = MockCalendar.getInstance();
-        int int0 = 401;
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect(calendar0, calendar0, 401, 401);
-            fail("Expecting exception: IllegalArgumentException");
-        } catch (IllegalArgumentException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("java.util.GregorianCalendar", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test11692() throws Throwable {
+    public void test11493() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test11693() throws Throwable {
+    public void test11494() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         assertFalse(string1.equals((Object) string0));
     }
 
     @Test(timeout = 4000)
-    public void test11694() throws Throwable {
+    public void test11495() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         assertNotNull(string1);
     }
 
     @Test(timeout = 4000)
-    public void test11695() throws Throwable {
+    public void test11496() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12446,7 +9847,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test11696() throws Throwable {
+    public void test11497() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12455,7 +9856,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test11697() throws Throwable {
+    public void test11498() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12464,7 +9865,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test11698() throws Throwable {
+    public void test11499() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12474,7 +9875,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test11699() throws Throwable {
+    public void test11500() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12484,7 +9885,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test11700() throws Throwable {
+    public void test11501() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12494,7 +9895,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test11701() throws Throwable {
+    public void test11502() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(0L, 1L, "ZyB}gFSlRyk<z7a/Yim");
         String string1 = DurationFormatUtils.formatDuration(0L, "java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000101java.lang.StringBuffer@00000000110java.lang.StringBuffer@00000000120");
         ZoneOffset zoneOffset0 = ZoneOffset.ofHoursMinutesSeconds(0, 0, 0);
@@ -12504,20 +9905,20 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12702() throws Throwable {
+    public void test12503() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         assertNotNull(durationFormatUtils0);
     }
 
     @Test(timeout = 4000)
-    public void test12703() throws Throwable {
+    public void test12504() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test12704() throws Throwable {
+    public void test12505() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12525,7 +9926,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12705() throws Throwable {
+    public void test12506() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12533,7 +9934,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12706() throws Throwable {
+    public void test12507() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12542,7 +9943,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12707() throws Throwable {
+    public void test12508() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12551,7 +9952,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12708() throws Throwable {
+    public void test12509() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12560,7 +9961,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12709() throws Throwable {
+    public void test12510() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12570,7 +9971,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12710() throws Throwable {
+    public void test12511() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12580,7 +9981,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12711() throws Throwable {
+    public void test12512() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12590,7 +9991,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12712() throws Throwable {
+    public void test12513() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12600,7 +10001,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12713() throws Throwable {
+    public void test12514() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12610,7 +10011,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12714() throws Throwable {
+    public void test12515() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12621,7 +10022,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12715() throws Throwable {
+    public void test12516() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12632,7 +10033,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12716() throws Throwable {
+    public void test12517() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12643,7 +10044,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12717() throws Throwable {
+    public void test12518() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12654,7 +10055,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12718() throws Throwable {
+    public void test12519() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12665,7 +10066,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12719() throws Throwable {
+    public void test12520() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12677,7 +10078,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test12720() throws Throwable {
+    public void test12521() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(60000L, (-1984L));
         String string1 = DurationFormatUtils.formatDurationWords(181L, true, true);
@@ -12690,7 +10091,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test13721() throws Throwable {
+    public void test13522() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", false);
         //  // Unstable assertion: assertNotNull(string0);
         //  // Unstable assertion: assertEquals("", string0);
@@ -12715,20 +10116,20 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14722() throws Throwable {
+    public void test14523() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         assertNotNull(durationFormatUtils0);
     }
 
     @Test(timeout = 4000)
-    public void test14723() throws Throwable {
+    public void test14524() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test14724() throws Throwable {
+    public void test14525() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12736,7 +10137,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14725() throws Throwable {
+    public void test14526() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12747,7 +10148,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14726() throws Throwable {
+    public void test14527() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12758,7 +10159,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14727() throws Throwable {
+    public void test14528() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12770,7 +10171,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14728() throws Throwable {
+    public void test14529() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12782,7 +10183,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14729() throws Throwable {
+    public void test14530() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12794,7 +10195,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14730() throws Throwable {
+    public void test14531() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12807,7 +10208,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14731() throws Throwable {
+    public void test14532() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12822,7 +10223,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14732() throws Throwable {
+    public void test14533() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12837,7 +10238,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14733() throws Throwable {
+    public void test14534() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12852,7 +10253,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14734() throws Throwable {
+    public void test14535() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12867,7 +10268,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14735() throws Throwable {
+    public void test14536() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12883,7 +10284,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14736() throws Throwable {
+    public void test14537() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12899,7 +10300,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14737() throws Throwable {
+    public void test14538() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12915,7 +10316,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test14738() throws Throwable {
+    public void test14539() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 39);
@@ -12940,7 +10341,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test15739() throws Throwable {
+    public void test15540() throws Throwable {
         String string0 = null;
         // Undeclared exception!
         try {
@@ -12954,816 +10355,26 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test16740() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16741() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        assertEquals("", string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16742() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertFalse(string1.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16743() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertNotNull(string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test16744() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        assertNotNull(durationFormatUtils0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16745() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        assertFalse(string2.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test16746() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        assertFalse(string2.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16747() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        assertNotNull(string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test16748() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        assertEquals(0, durationFormatUtils_TokenArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test16749() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        assertNotNull(durationFormatUtils_TokenArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16750() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertFalse(string4.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test16751() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertFalse(string4.equals((Object) string3));
-    }
-
-    @Test(timeout = 4000)
-    public void test16752() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertFalse(string4.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16753() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertFalse(string4.equals((Object) string2));
-    }
-
-    @Test(timeout = 4000)
-    public void test16754() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        assertNotNull(string4);
-    }
-
-    @Test(timeout = 4000)
-    public void test16755() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        assertNotNull(durationFormatUtils_Token0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16756() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        assertFalse(string5.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test16757() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        assertFalse(string5.equals((Object) string4));
-    }
-
-    @Test(timeout = 4000)
-    public void test16758() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        assertFalse(string5.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16759() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        assertFalse(string5.equals((Object) string3));
-    }
-
-    @Test(timeout = 4000)
-    public void test16760() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        assertFalse(string5.equals((Object) string2));
-    }
-
-    @Test(timeout = 4000)
-    public void test16761() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        assertNotNull(string5);
-    }
-
-    @Test(timeout = 4000)
-    public void test16762() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertFalse(string6.equals((Object) string3));
-    }
-
-    @Test(timeout = 4000)
-    public void test16763() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertFalse(string6.equals((Object) string4));
-    }
-
-    @Test(timeout = 4000)
-    public void test16764() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertFalse(string6.equals((Object) string2));
-    }
-
-    @Test(timeout = 4000)
-    public void test16765() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertFalse(string6.equals((Object) string5));
-    }
-
-    @Test(timeout = 4000)
-    public void test16766() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertFalse(string6.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16767() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertFalse(string6.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test16768() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        assertNotNull(string6);
-    }
-
-    @Test(timeout = 4000)
-    public void test16769() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string4));
-    }
-
-    @Test(timeout = 4000)
-    public void test16770() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string6));
-    }
-
-    @Test(timeout = 4000)
-    public void test16771() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test16772() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16773() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string3));
-    }
-
-    @Test(timeout = 4000)
-    public void test16774() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string2));
-    }
-
-    @Test(timeout = 4000)
-    public void test16775() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertFalse(string7.equals((Object) string5));
-    }
-
-    @Test(timeout = 4000)
-    public void test16776() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        assertNotNull(string7);
-    }
-
-    @Test(timeout = 4000)
-    public void test16777() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertTrue(string8.equals((Object) string3));
-    }
-
-    @Test(timeout = 4000)
-    public void test16778() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertFalse(string8.equals((Object) string4));
-    }
-
-    @Test(timeout = 4000)
-    public void test16779() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertFalse(string8.equals((Object) string6));
-    }
-
-    @Test(timeout = 4000)
-    public void test16780() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertTrue(string8.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test16781() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertFalse(string8.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test16782() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertFalse(string8.equals((Object) string7));
-    }
-
-    @Test(timeout = 4000)
-    public void test16783() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertFalse(string8.equals((Object) string2));
-    }
-
-    @Test(timeout = 4000)
-    public void test16784() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertFalse(string8.equals((Object) string5));
-    }
-
-    @Test(timeout = 4000)
-    public void test16785() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertNotNull(string8);
-    }
-
-    @Test(timeout = 4000)
-    public void test16786() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        assertEquals("", string8);
-    }
-
-    @Test(timeout = 4000)
-    public void test16787() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        int int0 = 3431;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(3431, 3431, 4367);
-        assertNotNull(mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test16788() throws Throwable {
-        String string0 = DurationFormatUtils.formatDuration(1L, "", false);
-        boolean boolean0 = false;
-        String string1 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string2 = DurationFormatUtils.formatDurationHMS(142L);
-        String string3 = "";
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        String string4 = DurationFormatUtils.formatDurationWords(1L, false, false);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("-.b8!,H/6RhUL8L}x", 0);
-        durationFormatUtils_Token0.increment();
-        String string5 = durationFormatUtils_Token0.toString();
-        String string6 = DurationFormatUtils.formatDuration(4242L, "->", true);
-        durationFormatUtils_Token0.increment();
-        String string7 = DurationFormatUtils.formatDurationWords(4242L, false, true);
-        String string8 = DurationFormatUtils.formatDuration((long) 0, "");
-        int int0 = 3431;
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(3431, 3431, 4367);
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 3431, 0);
-            fail("Expecting exception: ArrayIndexOutOfBoundsException");
-        } catch (ArrayIndexOutOfBoundsException e) {
-            //
-            // 3431
-            //
-            verifyException("java.util.Calendar", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test17789() throws Throwable {
+    public void test17541() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test17790() throws Throwable {
+    public void test17542() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         assertEquals("s", string0);
     }
 
     @Test(timeout = 4000)
-    public void test17791() throws Throwable {
+    public void test17543() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         assertNotNull(durationFormatUtils_Token0);
     }
 
     @Test(timeout = 4000)
-    public void test17792() throws Throwable {
+    public void test17544() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         durationFormatUtils_Token0.increment();
@@ -13772,7 +10383,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test17793() throws Throwable {
+    public void test17545() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         durationFormatUtils_Token0.increment();
@@ -13781,7 +10392,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test17794() throws Throwable {
+    public void test17546() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         durationFormatUtils_Token0.increment();
@@ -13792,7 +10403,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test17795() throws Throwable {
+    public void test17547() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         durationFormatUtils_Token0.increment();
@@ -13803,7 +10414,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test17796() throws Throwable {
+    public void test17548() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         durationFormatUtils_Token0.increment();
@@ -13814,7 +10425,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test17797() throws Throwable {
+    public void test17549() throws Throwable {
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s");
         durationFormatUtils_Token0.increment();
@@ -13836,816 +10447,13 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test18798() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18799() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        assertFalse(string1.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test18800() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        assertNotNull(string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test18801() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
+    public void test19550() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         assertNotNull(durationFormatUtils0);
     }
 
     @Test(timeout = 4000)
-    public void test18802() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        assertEquals(7, durationFormatUtils_TokenArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test18803() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        assertNotNull(durationFormatUtils_TokenArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18804() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        assertFalse(string2.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test18805() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        assertFalse(string2.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test18806() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        assertNotNull(string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test18807() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        assertNotNull(timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18808() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        assertEquals("GMT", timeZone0.getID());
-    }
-
-    @Test(timeout = 4000)
-    public void test18809() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertNotNull(locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18810() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertEquals("TW", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test18811() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test18812() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test18813() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test18814() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertEquals("zh_TW", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test18815() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        assertEquals("TWN", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test18816() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertNotNull(calendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18817() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("GMT", timeZone0.getID());
-    }
-
-    @Test(timeout = 4000)
-    public void test18818() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("TW", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test18819() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test18820() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test18821() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test18822() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("zh_TW", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test18823() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("TWN", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test18824() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertTrue(calendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test18825() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test18826() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals(1, calendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test18827() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        assertEquals(1, calendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test18828() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertFalse(locale1.equals((Object) locale0));
-    }
-
-    @Test(timeout = 4000)
-    public void test18829() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertNotSame(locale1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18830() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertNotNull(locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test18831() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertEquals("", locale1.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test18832() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertEquals("ita", locale1.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test18833() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertEquals("it", locale1.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test18834() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertEquals("", locale1.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test18835() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertEquals("it", locale1.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test18836() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        assertEquals("", locale1.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test18837() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertFalse(locale0.equals((Object) locale1));
-    }
-
-    @Test(timeout = 4000)
-    public void test18838() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertFalse(locale1.equals((Object) locale0));
-    }
-
-    @Test(timeout = 4000)
-    public void test18839() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertFalse(string3.equals((Object) string2));
-    }
-
-    @Test(timeout = 4000)
-    public void test18840() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertFalse(string3.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test18841() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertFalse(string3.equals((Object) string1));
-    }
-
-    @Test(timeout = 4000)
-    public void test18842() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertNotSame(locale0, locale1);
-    }
-
-    @Test(timeout = 4000)
-    public void test18843() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertNotSame(locale1, locale0);
-    }
-
-    @Test(timeout = 4000)
-    public void test18844() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertNotNull(string3);
-    }
-
-    @Test(timeout = 4000)
-    public void test18845() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("cinese (Taiwan)", string3);
-    }
-
-    @Test(timeout = 4000)
-    public void test18846() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("TW", locale0.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test18847() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("", locale0.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test18848() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("zho", locale0.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test18849() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("zh", locale0.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test18850() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("zh_TW", locale0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test18851() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("TWN", locale0.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test18852() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("", locale1.getCountry());
-    }
-
-    @Test(timeout = 4000)
-    public void test18853() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("ita", locale1.getISO3Language());
-    }
-
-    @Test(timeout = 4000)
-    public void test18854() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("it", locale1.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test18855() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("", locale1.getVariant());
-    }
-
-    @Test(timeout = 4000)
-    public void test18856() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("it", locale1.getLanguage());
-    }
-
-    @Test(timeout = 4000)
-    public void test18857() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        assertEquals("", locale1.getISO3Country());
-    }
-
-    @Test(timeout = 4000)
-    public void test18858() throws Throwable {
-        String string0 = DurationFormatUtils.formatDurationWords(0L, true, true);
-        String string1 = DurationFormatUtils.formatDuration(1359L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", true);
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("java.lang.StringBuffer@00000000191359java.lang.StringBuffer@0000000020java.lang.StringBuffer@0000000021java.lang.StringBuffer@0000000022java.lang.StringBuffer@0000000023");
-        String string2 = DurationFormatUtils.formatDurationHMS(0L);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        Locale locale0 = Locale.TRADITIONAL_CHINESE;
-        Calendar calendar0 = MockCalendar.getInstance(timeZone0, locale0);
-        Locale locale1 = Locale.ITALIAN;
-        String string3 = locale0.getDisplayName(locale1);
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect(calendar0, (Calendar) null, 1088, 1088);
-            fail("Expecting exception: NullPointerException");
-        } catch (NullPointerException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("org.apache.commons.lang.time.DurationFormatUtils", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test19859() throws Throwable {
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        assertNotNull(durationFormatUtils0);
-    }
-
-    @Test(timeout = 4000)
-    public void test19860() throws Throwable {
+    public void test19551() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14653,7 +10461,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19861() throws Throwable {
+    public void test19552() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14662,7 +10470,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19862() throws Throwable {
+    public void test19553() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14672,7 +10480,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19863() throws Throwable {
+    public void test19554() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14682,7 +10490,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19864() throws Throwable {
+    public void test19555() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14694,7 +10502,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19865() throws Throwable {
+    public void test19556() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14706,7 +10514,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19866() throws Throwable {
+    public void test19557() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14718,7 +10526,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19867() throws Throwable {
+    public void test19558() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14730,7 +10538,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19868() throws Throwable {
+    public void test19559() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14743,7 +10551,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19869() throws Throwable {
+    public void test19560() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14756,7 +10564,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test19870() throws Throwable {
+    public void test19561() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[1];
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(durationFormatUtils0, 121);
@@ -14769,20 +10577,20 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20871() throws Throwable {
+    public void test20562() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test20872() throws Throwable {
+    public void test20563() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         assertNotNull(durationFormatUtils_Token0);
     }
 
     @Test(timeout = 4000)
-    public void test20873() throws Throwable {
+    public void test20564() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14791,7 +10599,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20874() throws Throwable {
+    public void test20565() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14800,7 +10608,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20875() throws Throwable {
+    public void test20566() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14809,7 +10617,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20876() throws Throwable {
+    public void test20567() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14819,7 +10627,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20877() throws Throwable {
+    public void test20568() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14829,7 +10637,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20878() throws Throwable {
+    public void test20569() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14839,7 +10647,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20879() throws Throwable {
+    public void test20570() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14849,7 +10657,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20880() throws Throwable {
+    public void test20571() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14860,7 +10668,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20881() throws Throwable {
+    public void test20572() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14871,7 +10679,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20882() throws Throwable {
+    public void test20573() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14883,7 +10691,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20883() throws Throwable {
+    public void test20574() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14895,7 +10703,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20884() throws Throwable {
+    public void test20575() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14907,7 +10715,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20885() throws Throwable {
+    public void test20576() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14919,7 +10727,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20886() throws Throwable {
+    public void test20577() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14931,7 +10739,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test20887() throws Throwable {
+    public void test20578() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO((-3962L), 86400000L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000181java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@00000000213java.lang.StringBuffer@0000000022962java.lang.StringBuffer@0000000023");
         durationFormatUtils_Token0.increment();
@@ -14943,27 +10751,27 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21888() throws Throwable {
+    public void test21579() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test21889() throws Throwable {
+    public void test21580() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         assertFalse(string1.equals((Object) string0));
     }
 
     @Test(timeout = 4000)
-    public void test21890() throws Throwable {
+    public void test21581() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         assertNotNull(string1);
     }
 
     @Test(timeout = 4000)
-    public void test21891() throws Throwable {
+    public void test21582() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -14971,7 +10779,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21892() throws Throwable {
+    public void test21583() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -14979,7 +10787,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21893() throws Throwable {
+    public void test21584() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -14987,7 +10795,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21894() throws Throwable {
+    public void test21585() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -14996,7 +10804,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21895() throws Throwable {
+    public void test21586() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -15005,7 +10813,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21896() throws Throwable {
+    public void test21587() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -15014,7 +10822,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test21897() throws Throwable {
+    public void test21588() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(1L, 2419200000L, " ");
         String string1 = DurationFormatUtils.formatDuration(2419200000L, " 1 seconds", false);
         String string2 = DurationFormatUtils.formatDurationHMS(1L);
@@ -15023,39 +10831,39 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test22898() throws Throwable {
+    public void test22589() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(607L, 607L, "");
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test22899() throws Throwable {
+    public void test22590() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriod(607L, 607L, "");
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test23900() throws Throwable {
+    public void test23591() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test23901() throws Throwable {
+    public void test23592() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         assertEquals(0, durationFormatUtils_TokenArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test23902() throws Throwable {
+    public void test23593() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         assertNotNull(durationFormatUtils_TokenArray0);
     }
 
     @Test(timeout = 4000)
-    public void test23903() throws Throwable {
+    public void test23594() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15063,7 +10871,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23904() throws Throwable {
+    public void test23595() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15073,7 +10881,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23905() throws Throwable {
+    public void test23596() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15083,7 +10891,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23906() throws Throwable {
+    public void test23597() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15094,7 +10902,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23907() throws Throwable {
+    public void test23598() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15105,7 +10913,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23908() throws Throwable {
+    public void test23599() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15116,7 +10924,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23909() throws Throwable {
+    public void test23600() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15128,7 +10936,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23910() throws Throwable {
+    public void test23601() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15141,7 +10949,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23911() throws Throwable {
+    public void test23602() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15154,7 +10962,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23912() throws Throwable {
+    public void test23603() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15168,7 +10976,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23913() throws Throwable {
+    public void test23604() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15182,7 +10990,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23914() throws Throwable {
+    public void test23605() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15196,7 +11004,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23915() throws Throwable {
+    public void test23606() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15211,7 +11019,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23916() throws Throwable {
+    public void test23607() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15226,7 +11034,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test23917() throws Throwable {
+    public void test23608() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-1730L), false, false);
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@0000000011-1java.lang.StringBuffer@0000000012", 1000);
@@ -15241,21 +11049,21 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24918() throws Throwable {
+    public void test24609() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test24919() throws Throwable {
+    public void test24610() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         assertEquals("d", string0);
     }
 
     @Test(timeout = 4000)
-    public void test24920() throws Throwable {
+    public void test24611() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15263,7 +11071,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24921() throws Throwable {
+    public void test24612() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15272,7 +11080,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24922() throws Throwable {
+    public void test24613() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15281,7 +11089,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24923() throws Throwable {
+    public void test24614() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15292,7 +11100,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24924() throws Throwable {
+    public void test24615() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15303,7 +11111,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24925() throws Throwable {
+    public void test24616() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15314,7 +11122,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24926() throws Throwable {
+    public void test24617() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15325,7 +11133,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24927() throws Throwable {
+    public void test24618() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15337,7 +11145,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24928() throws Throwable {
+    public void test24619() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15349,7 +11157,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24929() throws Throwable {
+    public void test24620() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15361,7 +11169,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24930() throws Throwable {
+    public void test24621() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15373,7 +11181,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24931() throws Throwable {
+    public void test24622() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15385,7 +11193,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24932() throws Throwable {
+    public void test24623() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15397,7 +11205,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24933() throws Throwable {
+    public void test24624() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15409,7 +11217,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24934() throws Throwable {
+    public void test24625() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15421,7 +11229,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24935() throws Throwable {
+    public void test24626() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15435,7 +11243,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24936() throws Throwable {
+    public void test24627() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15449,7 +11257,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24937() throws Throwable {
+    public void test24628() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15463,7 +11271,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test24938() throws Throwable {
+    public void test24629() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[2];
         String string0 = (String) DurationFormatUtils.d;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("d", 12);
@@ -15477,148 +11285,20 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test25939() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        assertNotNull(mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25940() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25941() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        assertEquals(1, mockGregorianCalendar0.getMinimalDaysInFirstWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test25942() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        assertEquals(1, mockGregorianCalendar0.getFirstDayOfWeek());
-    }
-
-    @Test(timeout = 4000)
-    public void test25943() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=-61867346400000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=9,MONTH=6,WEEK_OF_YEAR=27,WEEK_OF_MONTH=1,DAY_OF_MONTH=4,DAY_OF_YEAR=185,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=1,AM_PM=1,HOUR=6,HOUR_OF_DAY=18,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=0,DST_OFFSET=0]", mockGregorianCalendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test25944() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        assertTrue(mockGregorianCalendar0.isLenient());
-    }
-
-    @Test(timeout = 4000)
-    public void test25945() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        assertNotNull(durationFormatUtils_Token0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25946() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        String string0 = (String) DurationFormatUtils.m;
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25947() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        String string0 = (String) DurationFormatUtils.m;
-        assertEquals("m", string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25948() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        String string0 = (String) DurationFormatUtils.m;
-        boolean boolean0 = durationFormatUtils_Token0.equals("m");
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25949() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        String string0 = (String) DurationFormatUtils.m;
-        boolean boolean0 = durationFormatUtils_Token0.equals("m");
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[5];
-        durationFormatUtils_TokenArray0[0] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[1] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[2] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[3] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[4] = durationFormatUtils_Token0;
-        boolean boolean1 = DurationFormatUtils.Token.containsTokenWithValue(durationFormatUtils_TokenArray0, durationFormatUtils_Token0);
-        assertTrue(boolean1 == boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test25950() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        String string0 = (String) DurationFormatUtils.m;
-        boolean boolean0 = durationFormatUtils_Token0.equals("m");
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[5];
-        durationFormatUtils_TokenArray0[0] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[1] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[2] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[3] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[4] = durationFormatUtils_Token0;
-        boolean boolean1 = DurationFormatUtils.Token.containsTokenWithValue(durationFormatUtils_TokenArray0, durationFormatUtils_Token0);
-        assertEquals(5, durationFormatUtils_TokenArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test25951() throws Throwable {
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 114, 0, 114, 0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 0, (-1));
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token((Object) null);
-        String string0 = (String) DurationFormatUtils.m;
-        boolean boolean0 = durationFormatUtils_Token0.equals("m");
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[5];
-        durationFormatUtils_TokenArray0[0] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[1] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[2] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[3] = durationFormatUtils_Token0;
-        durationFormatUtils_TokenArray0[4] = durationFormatUtils_Token0;
-        boolean boolean1 = DurationFormatUtils.Token.containsTokenWithValue(durationFormatUtils_TokenArray0, durationFormatUtils_Token0);
-        assertFalse(boolean1);
-    }
-
-    @Test(timeout = 4000)
-    public void test26952() throws Throwable {
+    public void test26630() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test26953() throws Throwable {
+    public void test26631() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         assertNotNull(durationFormatUtils_Token0);
     }
 
     @Test(timeout = 4000)
-    public void test26954() throws Throwable {
+    public void test26632() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15626,7 +11306,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26955() throws Throwable {
+    public void test26633() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15635,7 +11315,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26956() throws Throwable {
+    public void test26634() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15644,7 +11324,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26957() throws Throwable {
+    public void test26635() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15654,7 +11334,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26958() throws Throwable {
+    public void test26636() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15664,7 +11344,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26959() throws Throwable {
+    public void test26637() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15675,7 +11355,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26960() throws Throwable {
+    public void test26638() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15686,7 +11366,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test26961() throws Throwable {
+    public void test26639() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-4147L), "x9X@wFn#Teo$gd)&", false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("java.lang.StringBuffer@00000000040java.lang.StringBuffer@0000000005");
         int int0 = durationFormatUtils_Token0.getCount();
@@ -15697,117 +11377,33 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test27962() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test27963() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        assertNotNull(durationFormatUtils0);
-    }
-
-    @Test(timeout = 4000)
-    public void test27964() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string1 = DurationFormatUtils.formatDurationWords(0L, false, false);
-        assertFalse(string1.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test27965() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string1 = DurationFormatUtils.formatDurationWords(0L, false, false);
-        assertNotNull(string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test27966() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string1 = DurationFormatUtils.formatDurationWords(0L, false, false);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        assertNotNull(timeZone0);
-    }
-
-    @Test(timeout = 4000)
-    public void test27967() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string1 = DurationFormatUtils.formatDurationWords(0L, false, false);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        assertEquals("GMT", timeZone0.getID());
-    }
-
-    @Test(timeout = 4000)
-    public void test27968() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string1 = DurationFormatUtils.formatDurationWords(0L, false, false);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        assertNotNull(mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test27969() throws Throwable {
-        long long0 = 0L;
-        String string0 = DurationFormatUtils.formatDuration(0L, "!G'6'fEr[EH");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        String string1 = DurationFormatUtils.formatDurationWords(0L, false, false);
-        TimeZone timeZone0 = TimeZone.getDefault();
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(timeZone0);
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, 378, 378);
-            fail("Expecting exception: IllegalArgumentException");
-        } catch (IllegalArgumentException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("java.util.GregorianCalendar", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test28970() throws Throwable {
+    public void test28640() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test28971() throws Throwable {
+    public void test28641() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         assertEquals("", string0);
     }
 
     @Test(timeout = 4000)
-    public void test28972() throws Throwable {
+    public void test28642() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         assertNotNull(stringWriter0);
     }
 
     @Test(timeout = 4000)
-    public void test28973() throws Throwable {
+    public void test28643() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         assertEquals("", stringWriter0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test28974() throws Throwable {
+    public void test28644() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15815,7 +11411,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28975() throws Throwable {
+    public void test28645() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15823,7 +11419,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28976() throws Throwable {
+    public void test28646() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15831,7 +11427,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28977() throws Throwable {
+    public void test28647() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15839,7 +11435,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28978() throws Throwable {
+    public void test28648() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15847,7 +11443,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28979() throws Throwable {
+    public void test28649() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15856,7 +11452,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28980() throws Throwable {
+    public void test28650() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15865,7 +11461,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28981() throws Throwable {
+    public void test28651() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15874,7 +11470,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28982() throws Throwable {
+    public void test28652() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15883,7 +11479,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28983() throws Throwable {
+    public void test28653() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15892,7 +11488,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28984() throws Throwable {
+    public void test28654() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15901,7 +11497,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28985() throws Throwable {
+    public void test28655() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15910,7 +11506,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28986() throws Throwable {
+    public void test28656() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15920,7 +11516,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28987() throws Throwable {
+    public void test28657() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15930,7 +11526,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28988() throws Throwable {
+    public void test28658() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15940,7 +11536,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28989() throws Throwable {
+    public void test28659() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15950,7 +11546,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28990() throws Throwable {
+    public void test28660() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15960,7 +11556,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28991() throws Throwable {
+    public void test28661() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15971,7 +11567,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28992() throws Throwable {
+    public void test28662() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15982,7 +11578,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28993() throws Throwable {
+    public void test28663() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -15993,7 +11589,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28994() throws Throwable {
+    public void test28664() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -16004,7 +11600,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28995() throws Throwable {
+    public void test28665() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -16015,7 +11611,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28996() throws Throwable {
+    public void test28666() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -16026,7 +11622,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28997() throws Throwable {
+    public void test28667() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -16037,7 +11633,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test28998() throws Throwable {
+    public void test28668() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration((-1L), "", true);
         StringWriter stringWriter0 = new StringWriter();
         StringWriter stringWriter1 = stringWriter0.append((CharSequence) "");
@@ -16048,7 +11644,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test29999() throws Throwable {
+    public void test29669() throws Throwable {
         // Undeclared exception!
         try {
             DurationFormatUtils.format((DurationFormatUtils.Token[]) null, (-2335), (-2335), (-2335), 298, 1134, (-3119), (-2335), true);
@@ -16062,20 +11658,20 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301000() throws Throwable {
+    public void test30670() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test301001() throws Throwable {
+    public void test30671() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         assertNotNull(durationFormatUtils_Token0);
     }
 
     @Test(timeout = 4000)
-    public void test301002() throws Throwable {
+    public void test30672() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16084,7 +11680,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301003() throws Throwable {
+    public void test30673() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16093,7 +11689,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301004() throws Throwable {
+    public void test30674() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16104,7 +11700,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301005() throws Throwable {
+    public void test30675() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16115,7 +11711,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301006() throws Throwable {
+    public void test30676() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16126,7 +11722,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301007() throws Throwable {
+    public void test30677() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16138,7 +11734,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301008() throws Throwable {
+    public void test30678() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16151,7 +11747,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301009() throws Throwable {
+    public void test30679() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16164,7 +11760,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301010() throws Throwable {
+    public void test30680() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16177,7 +11773,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301011() throws Throwable {
+    public void test30681() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16190,7 +11786,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301012() throws Throwable {
+    public void test30682() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16204,7 +11800,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301013() throws Throwable {
+    public void test30683() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16219,7 +11815,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301014() throws Throwable {
+    public void test30684() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16234,7 +11830,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301015() throws Throwable {
+    public void test30685() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16249,7 +11845,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301016() throws Throwable {
+    public void test30686() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16264,7 +11860,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301017() throws Throwable {
+    public void test30687() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16279,7 +11875,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301018() throws Throwable {
+    public void test30688() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16296,7 +11892,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301019() throws Throwable {
+    public void test30689() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16313,7 +11909,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301020() throws Throwable {
+    public void test30690() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16330,7 +11926,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301021() throws Throwable {
+    public void test30691() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16347,7 +11943,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301022() throws Throwable {
+    public void test30692() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16364,7 +11960,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301023() throws Throwable {
+    public void test30693() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16381,7 +11977,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301024() throws Throwable {
+    public void test30694() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16399,7 +11995,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301025() throws Throwable {
+    public void test30695() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16418,7 +12014,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301026() throws Throwable {
+    public void test30696() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16437,7 +12033,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301027() throws Throwable {
+    public void test30697() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16456,7 +12052,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301028() throws Throwable {
+    public void test30698() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16475,7 +12071,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301029() throws Throwable {
+    public void test30699() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16494,7 +12090,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301030() throws Throwable {
+    public void test30700() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16513,7 +12109,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301031() throws Throwable {
+    public void test30701() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16532,7 +12128,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301032() throws Throwable {
+    public void test30702() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16552,7 +12148,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test301033() throws Throwable {
+    public void test30703() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1652L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000901java.lang.StringBuffer@0000000010652");
         durationFormatUtils_Token0.increment();
@@ -16572,259 +12168,40 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test311034() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test311035() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        assertNotNull(durationFormatUtils_Token0);
-    }
-
-    @Test(timeout = 4000)
-    public void test311036() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        assertFalse(string1.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test311037() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        assertNotNull(string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test311038() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        assertEquals("", string1);
-    }
-
-    @Test(timeout = 4000)
-    public void test311039() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertFalse(string2.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test311040() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertNotNull(string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test311041() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        assertEquals("", string2);
-    }
-
-    @Test(timeout = 4000)
-    public void test311042() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        assertFalse(string3.equals((Object) string0));
-    }
-
-    @Test(timeout = 4000)
-    public void test311043() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        assertNotNull(string3);
-    }
-
-    @Test(timeout = 4000)
-    public void test311044() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        assertEquals("", string3);
-    }
-
-    @Test(timeout = 4000)
-    public void test311045() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        int int0 = durationFormatUtils_Token0.getCount();
-        assertEquals((-1390), int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test311046() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        int int0 = durationFormatUtils_Token0.getCount();
-        boolean boolean1 = durationFormatUtils_Token0.equals("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
-        assertFalse(boolean1 == boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test311047() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        int int0 = durationFormatUtils_Token0.getCount();
-        boolean boolean1 = durationFormatUtils_Token0.equals("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
-        assertFalse(boolean1);
-    }
-
-    @Test(timeout = 4000)
-    public void test311048() throws Throwable {
-        boolean boolean0 = true;
-        String string0 = DurationFormatUtils.formatDurationWords(1L, true, true);
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012", (-1391));
-        String string1 = durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.increment();
-        String string2 = durationFormatUtils_Token0.toString();
-        String string3 = durationFormatUtils_Token0.toString();
-        int int0 = durationFormatUtils_Token0.getCount();
-        boolean boolean1 = durationFormatUtils_Token0.equals("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect((Calendar) null, (Calendar) null, 1, 1270);
-            fail("Expecting exception: NullPointerException");
-        } catch (NullPointerException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("org.apache.commons.lang.time.DurationFormatUtils", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test321049() throws Throwable {
+    public void test32704() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(2L, true, false);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test321050() throws Throwable {
+    public void test32705() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(2L, true, false);
         String string1 = DurationFormatUtils.formatDurationWords(0L, true, true);
         assertFalse(string1.equals((Object) string0));
     }
 
     @Test(timeout = 4000)
-    public void test321051() throws Throwable {
+    public void test32706() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(2L, true, false);
         String string1 = DurationFormatUtils.formatDurationWords(0L, true, true);
         assertNotNull(string1);
     }
 
     @Test(timeout = 4000)
-    public void test331052() throws Throwable {
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("M}dJ^i,E");
-        assertEquals(4, durationFormatUtils_TokenArray0.length);
-    }
-
-    @Test(timeout = 4000)
-    public void test331053() throws Throwable {
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("M}dJ^i,E");
-        assertNotNull(durationFormatUtils_TokenArray0);
-    }
-
-    @Test(timeout = 4000)
-    public void test331054() throws Throwable {
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("M}dJ^i,E");
-        String string0 = DurationFormatUtils.formatDuration(2884L, "`V;I`35Rf:?F0IK=S#G", false);
-        assertNotNull(string0);
-    }
-
-    @Test(timeout = 4000)
-    public void test331055() throws Throwable {
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("M}dJ^i,E");
-        String string0 = DurationFormatUtils.formatDuration(2884L, "`V;I`35Rf:?F0IK=S#G", false);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 0, 2710, 0, 0);
-        assertNotNull(mockGregorianCalendar0);
-    }
-
-    @Test(timeout = 4000)
-    public void test331056() throws Throwable {
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("M}dJ^i,E");
-        String string0 = DurationFormatUtils.formatDuration(2884L, "`V;I`35Rf:?F0IK=S#G", false);
-        MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar(0, 0, 2710, 0, 0);
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect(mockGregorianCalendar0, mockGregorianCalendar0, (-1), (-1));
-            fail("Expecting exception: IllegalArgumentException");
-        } catch (IllegalArgumentException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("java.util.GregorianCalendar", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test341057() throws Throwable {
+    public void test34707() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         assertNotNull(durationFormatUtils0);
     }
 
     @Test(timeout = 4000)
-    public void test341058() throws Throwable {
+    public void test34708() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(0L, 1L);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test341059() throws Throwable {
+    public void test34709() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(0L, 1L);
         String string1 = DurationFormatUtils.formatDuration(3600000L, "q_:+", true);
@@ -16832,7 +12209,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test341060() throws Throwable {
+    public void test34710() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(0L, 1L);
         String string1 = DurationFormatUtils.formatDuration(3600000L, "q_:+", true);
@@ -16840,7 +12217,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test341061() throws Throwable {
+    public void test34711() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(0L, 1L);
         String string1 = DurationFormatUtils.formatDuration(3600000L, "q_:+", true);
@@ -16849,7 +12226,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test341062() throws Throwable {
+    public void test34712() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(0L, 1L);
         String string1 = DurationFormatUtils.formatDuration(3600000L, "q_:+", true);
@@ -16858,7 +12235,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test341063() throws Throwable {
+    public void test34713() throws Throwable {
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
         String string0 = DurationFormatUtils.formatPeriodISO(0L, 1L);
         String string1 = DurationFormatUtils.formatDuration(3600000L, "q_:+", true);
@@ -16867,33 +12244,33 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test351064() throws Throwable {
+    public void test35714() throws Throwable {
         String string0 = DurationFormatUtils.formatDuration(2419200000L, "xs{*:,");
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test361065() throws Throwable {
+    public void test36715() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test361066() throws Throwable {
+    public void test36716() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         assertFalse(string1.equals((Object) string0));
     }
 
     @Test(timeout = 4000)
-    public void test361067() throws Throwable {
+    public void test36717() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         assertNotNull(string1);
     }
 
     @Test(timeout = 4000)
-    public void test361068() throws Throwable {
+    public void test36718() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16901,7 +12278,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361069() throws Throwable {
+    public void test36719() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16909,7 +12286,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361070() throws Throwable {
+    public void test36720() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16917,7 +12294,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361071() throws Throwable {
+    public void test36721() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16927,7 +12304,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361072() throws Throwable {
+    public void test36722() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16937,7 +12314,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361073() throws Throwable {
+    public void test36723() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16947,7 +12324,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361074() throws Throwable {
+    public void test36724() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16957,7 +12334,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361075() throws Throwable {
+    public void test36725() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16967,7 +12344,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361076() throws Throwable {
+    public void test36726() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16977,7 +12354,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361077() throws Throwable {
+    public void test36727() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16988,7 +12365,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361078() throws Throwable {
+    public void test36728() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -16999,7 +12376,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361079() throws Throwable {
+    public void test36729() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17010,7 +12387,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361080() throws Throwable {
+    public void test36730() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17021,7 +12398,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361081() throws Throwable {
+    public void test36731() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17032,7 +12409,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361082() throws Throwable {
+    public void test36732() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17044,7 +12421,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361083() throws Throwable {
+    public void test36733() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17056,7 +12433,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361084() throws Throwable {
+    public void test36734() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17068,7 +12445,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361085() throws Throwable {
+    public void test36735() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17080,7 +12457,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361086() throws Throwable {
+    public void test36736() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17092,7 +12469,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361087() throws Throwable {
+    public void test36737() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17104,7 +12481,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test361088() throws Throwable {
+    public void test36738() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords((-2053L), false, false);
         String string1 = DurationFormatUtils.formatDurationHMS((-2053L));
         String string2 = DurationFormatUtils.formatPeriodISO(1L, 1L);
@@ -17116,33 +12493,33 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test371089() throws Throwable {
+    public void test37739() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("yfL8t2\"|YP[c%Sx");
         assertEquals(4, durationFormatUtils_TokenArray0.length);
     }
 
     @Test(timeout = 4000)
-    public void test371090() throws Throwable {
+    public void test37740() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("yfL8t2\"|YP[c%Sx");
         assertNotNull(durationFormatUtils_TokenArray0);
     }
 
     @Test(timeout = 4000)
-    public void test371091() throws Throwable {
+    public void test37741() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("yfL8t2\"|YP[c%Sx");
         String string0 = (String) DurationFormatUtils.d;
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test371092() throws Throwable {
+    public void test37742() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("yfL8t2\"|YP[c%Sx");
         String string0 = (String) DurationFormatUtils.d;
         assertEquals("d", string0);
     }
 
     @Test(timeout = 4000)
-    public void test381093() throws Throwable {
+    public void test38743() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationHMS(1L);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@000000000800java.lang.StringBuffer@000000000900java.lang.StringBuffer@0000000010001", 0);
         DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
@@ -17151,7 +12528,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test391094() throws Throwable {
+    public void test39744() throws Throwable {
         // Undeclared exception!
         try {
             DurationFormatUtils.formatPeriod(60000L, (-1L), (String) null);
@@ -17164,7 +12541,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test401095() throws Throwable {
+    public void test40745() throws Throwable {
         long long0 = (-1L);
         String string0 = null;
         // Undeclared exception!
@@ -17179,20 +12556,20 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test411096() throws Throwable {
+    public void test41746() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO(2498L, 0L);
         String string1 = DurationFormatUtils.formatPeriod(2498L, 0L, "java.lang.StringBuffer@00000000160java.lang.StringBuffer@00000000170java.lang.StringBuffer@00000000180java.lang.StringBuffer@00000000190java.lang.StringBuffer@00000000200java.lang.StringBuffer@0000000021-2java.lang.StringBuffer@000000002202java.lang.StringBuffer@0000000023");
         assertFalse(string1.equals((Object) string0));
     }
 
     @Test(timeout = 4000)
-    public void test421097() throws Throwable {
+    public void test42747() throws Throwable {
         String string0 = DurationFormatUtils.formatPeriodISO(1L, 0L);
         assertNotNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test431098() throws Throwable {
+    public void test43748() throws Throwable {
         String string0 = (String) DurationFormatUtils.H;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("H", (-862));
         boolean boolean0 = durationFormatUtils_Token0.equals("d' days 'H' hours 'm' minutes 's' seconds'");
@@ -17200,14 +12577,14 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test441099() throws Throwable {
+    public void test44749() throws Throwable {
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token(" 1 days", 4165);
         Object object0 = durationFormatUtils_Token0.getValue();
         assertEquals(" 1 days", object0);
     }
 
     @Test(timeout = 4000)
-    public void test451100() throws Throwable {
+    public void test45750() throws Throwable {
         long long0 = 0L;
         DurationFormatUtils.formatPeriod(0L, 2419200000L, "WRs!dWao}m");
         Object object0 = null;
@@ -17229,7 +12606,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test461101() throws Throwable {
+    public void test46751() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, true, false);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17248,7 +12625,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test461102() throws Throwable {
+    public void test46752() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, true, false);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17270,7 +12647,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test461103() throws Throwable {
+    public void test46753() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, true, false);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17299,7 +12676,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test461104() throws Throwable {
+    public void test46754() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, true, false);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17329,7 +12706,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test471105() throws Throwable {
+    public void test47755() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, true);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17342,7 +12719,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test471106() throws Throwable {
+    public void test47756() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, true);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17360,7 +12737,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test471107() throws Throwable {
+    public void test47757() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, true);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17381,7 +12758,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test471108() throws Throwable {
+    public void test47758() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, true);
         DurationFormatUtils.formatDuration(2419200000L, "0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
@@ -17409,7 +12786,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test481109() throws Throwable {
+    public void test48759() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[6];
         Object object0 = new Object();
         int int0 = 2299;
@@ -17438,58 +12815,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test491110() throws Throwable {
-        String string0 = (String) DurationFormatUtils.H;
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("H", (-3000));
-        DurationFormatUtils.Token durationFormatUtils_Token1 = new DurationFormatUtils.Token(durationFormatUtils_Token0);
-        DurationFormatUtils.formatPeriod((long) (-3000), (long) (-3000), "'P'yyyy'Y'M'M'd'DT'H'H'm'M's.S'S'");
-        durationFormatUtils_Token1.increment();
-        durationFormatUtils_Token1.toString();
-        String string1 = (String) DurationFormatUtils.m;
-        durationFormatUtils_Token1.equals("m");
-        DurationFormatUtils.formatDurationISO((-3000));
-        durationFormatUtils_Token1.toString();
-        DurationFormatUtils.formatDurationWords((-2L), true, false);
-        durationFormatUtils_Token0.increment();
-        DurationFormatUtils.formatDurationWords(2193L, true, true);
-        DurationFormatUtils.formatDurationISO(2193L);
-        durationFormatUtils_Token1.increment();
-        // Undeclared exception!
-        try {
-            DurationFormatUtils.reduceAndCorrect((Calendar) null, (Calendar) null, (-3000), (-3000));
-            fail("Expecting exception: NullPointerException");
-        } catch (NullPointerException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("org.apache.commons.lang.time.DurationFormatUtils", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test501111() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        Locale locale0 = new Locale("", "AI<l~HS6");
-        simpleTimeZone0.observesDaylightTime();
-        locale0.getDisplayName();
-        Calendar calendar0 = MockCalendar.getInstance((TimeZone) simpleTimeZone0, locale0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(calendar0, calendar0, 0, 0);
-        assertEquals(0, int0);
-    }
-
-    @Test(timeout = 4000)
-    public void test501112() throws Throwable {
-        SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(0, "");
-        Locale locale0 = new Locale("", "AI<l~HS6");
-        simpleTimeZone0.observesDaylightTime();
-        locale0.getDisplayName();
-        Calendar calendar0 = MockCalendar.getInstance((TimeZone) simpleTimeZone0, locale0);
-        int int0 = DurationFormatUtils.reduceAndCorrect(calendar0, calendar0, 0, 0);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392409281320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=java.util.SimpleTimeZone[id=,offset=0,dstSavings=3600000,useDaylight=false,startYear=0,startMode=0,startMonth=0,startDay=0,startDayOfWeek=0,startTime=0,startTimeMode=0,endMode=0,endMonth=0,endDay=0,endDayOfWeek=0,endTime=0,endTimeMode=0],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=21,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test511113() throws Throwable {
+    public void test51760() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         durationFormatUtils_Token0.increment();
@@ -17505,7 +12831,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test511114() throws Throwable {
+    public void test51761() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         durationFormatUtils_Token0.increment();
@@ -17521,7 +12847,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test511115() throws Throwable {
+    public void test51762() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         durationFormatUtils_Token0.increment();
@@ -17539,7 +12865,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test511116() throws Throwable {
+    public void test51763() throws Throwable {
         String string0 = DurationFormatUtils.formatDurationWords(0L, false, false);
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("0java.lang.StringBuffer@00000000090java.lang.StringBuffer@00000000100java.lang.StringBuffer@00000000110java.lang.StringBuffer@0000000012");
         durationFormatUtils_Token0.increment();
@@ -17559,7 +12885,7 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
     }
 
     @Test(timeout = 4000)
-    public void test521117() throws Throwable {
+    public void test52764() throws Throwable {
         DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = new DurationFormatUtils.Token[6];
         String string0 = (String) DurationFormatUtils.s;
         DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("s", 1);
@@ -17591,62 +12917,5 @@ public class DurationFormatUtils_ESTest extends DurationFormatUtils_ESTest_scaff
             //
             verifyException("java.time.ZoneOffset", e);
         }
-    }
-
-    @Test(timeout = 4000)
-    public void test531118() throws Throwable {
-        String string0 = (String) DurationFormatUtils.H;
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("H");
-        durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.equals("H");
-        durationFormatUtils_Token0.toString();
-        DurationFormatUtils.Token durationFormatUtils_Token1 = new DurationFormatUtils.Token("java.lang.String@0000000002", 12);
-        durationFormatUtils_Token1.increment();
-        durationFormatUtils_Token1.toString();
-        DurationFormatUtils.formatDuration((long) 12, "_tbC-%xi+9l");
-        durationFormatUtils_Token1.equals("_tbC-%xi+9l");
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.formatDuration((-332L), "org.apache.commons.lang.time.DurationFormatUtils$Token");
-        DurationFormatUtils.formatDuration((-332L), "s", false);
-        DurationFormatUtils.formatDurationISO(1L);
-        DurationFormatUtils.Token durationFormatUtils_Token2 = new DurationFormatUtils.Token("");
-        boolean boolean0 = DurationFormatUtils.Token.containsTokenWithValue(durationFormatUtils_TokenArray0, durationFormatUtils_Token2);
-        Locale locale0 = Locale.JAPAN;
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        DurationFormatUtils.reduceAndCorrect(calendar0, calendar0, 12, 12);
-        assertEquals("org.evosuite.runtime.mock.java.util.MockGregorianCalendar[time=1392408561320,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"GMT\",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2014,MONTH=1,WEEK_OF_YEAR=7,WEEK_OF_MONTH=3,DAY_OF_MONTH=14,DAY_OF_YEAR=45,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=9,SECOND=21,MILLISECOND=320,ZONE_OFFSET=0,DST_OFFSET=0]", calendar0.toString());
-    }
-
-    @Test(timeout = 4000)
-    public void test531119() throws Throwable {
-        String string0 = (String) DurationFormatUtils.H;
-        DurationFormatUtils.Token durationFormatUtils_Token0 = new DurationFormatUtils.Token("H");
-        durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.toString();
-        durationFormatUtils_Token0.equals("H");
-        durationFormatUtils_Token0.toString();
-        DurationFormatUtils.Token durationFormatUtils_Token1 = new DurationFormatUtils.Token("java.lang.String@0000000002", 12);
-        durationFormatUtils_Token1.increment();
-        durationFormatUtils_Token1.toString();
-        DurationFormatUtils.formatDuration((long) 12, "_tbC-%xi+9l");
-        durationFormatUtils_Token1.equals("_tbC-%xi+9l");
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray0 = DurationFormatUtils.lexx("");
-        DurationFormatUtils durationFormatUtils0 = new DurationFormatUtils();
-        DurationFormatUtils.formatDuration((-332L), "org.apache.commons.lang.time.DurationFormatUtils$Token");
-        DurationFormatUtils.formatDuration((-332L), "s", false);
-        DurationFormatUtils.formatDurationISO(1L);
-        DurationFormatUtils.Token durationFormatUtils_Token2 = new DurationFormatUtils.Token("");
-        boolean boolean0 = DurationFormatUtils.Token.containsTokenWithValue(durationFormatUtils_TokenArray0, durationFormatUtils_Token2);
-        Locale locale0 = Locale.JAPAN;
-        Calendar calendar0 = MockCalendar.getInstance(locale0);
-        DurationFormatUtils.reduceAndCorrect(calendar0, calendar0, 12, 12);
-        DurationFormatUtils.Token[] durationFormatUtils_TokenArray1 = new DurationFormatUtils.Token[0];
-        locale0.getDisplayName();
-        DurationFormatUtils.format(durationFormatUtils_TokenArray1, 0, 0, 0, 0, 2628, 1059, 0, false);
-        String string1 = (String) DurationFormatUtils.S;
-        boolean boolean1 = durationFormatUtils_Token0.equals("S");
-        assertTrue(boolean1 == boolean0);
     }
 }

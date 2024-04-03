@@ -312,54 +312,42 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
-        AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
-        PropertyName propertyName0 = new PropertyName("Internal error: failed to refine value type of %s with concrete-type annotation (value %s), from '%s': %s", "Internal error: failed to refine value type of %s with concrete-type annotation (value %s), from '%s': %s");
-        Class<Integer> class0 = Integer.class;
-        Class<ObjectIdGenerator> class1 = ObjectIdGenerator.class;
-        Class<ObjectIdResolver> class2 = ObjectIdResolver.class;
-        ObjectIdInfo objectIdInfo0 = new ObjectIdInfo(propertyName0, class0, class1, class2);
-        ObjectIdInfo objectIdInfo1 = annotationIntrospector0.findObjectReferenceInfo((Annotated) null, objectIdInfo0);
-        assertSame(objectIdInfo1, objectIdInfo0);
-    }
-
-    @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3332() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Boolean boolean0 = annotationIntrospector0.isTypeId((AnnotatedMember) null);
         assertNull(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3433() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findSerializer((Annotated) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3534() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         List<NamedType> list0 = annotationIntrospector0.findSubtypes((Annotated) null);
         assertNull(list0);
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3635() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         PropertyName propertyName0 = annotationIntrospector0.findWrapperName((Annotated) null);
         assertNull(propertyName0);
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3736() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findFilterId((Annotated) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3837() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
         JsonInclude.Include jsonInclude_Include1 = annotationIntrospector0.findSerializationInclusion((Annotated) null, jsonInclude_Include0);
@@ -367,7 +355,7 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3938() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         HashSet<AnnotationIntrospector> hashSet0 = new HashSet<AnnotationIntrospector>();
         Collection<AnnotationIntrospector> collection0 = annotationIntrospector0.allIntrospectors((Collection<AnnotationIntrospector>) hashSet0);
@@ -375,42 +363,42 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4039() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findDeserializationContentConverter((AnnotatedMember) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4140() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findNullSerializer((Annotated) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test4242() throws Throwable {
+    public void test4241() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Class<?>[] classArray0 = annotationIntrospector0.findViews((Annotated) null);
         assertNull(classArray0);
     }
 
     @Test(timeout = 4000)
-    public void test4343() throws Throwable {
+    public void test4342() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         String[] stringArray0 = annotationIntrospector0.findPropertiesToIgnore((Annotated) null);
         assertNull(stringArray0);
     }
 
     @Test(timeout = 4000)
-    public void test4444() throws Throwable {
+    public void test4443() throws Throwable {
         JacksonAnnotationIntrospector jacksonAnnotationIntrospector0 = (JacksonAnnotationIntrospector) ObjectMapper.DEFAULT_ANNOTATION_INTROSPECTOR;
         Collection<AnnotationIntrospector> collection0 = jacksonAnnotationIntrospector0.allIntrospectors();
         assertNotNull(collection0);
     }
 
     @Test(timeout = 4000)
-    public void test4545() throws Throwable {
+    public void test4544() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         JsonInclude.Include jsonInclude_Include0 = JsonInclude.Include.NON_EMPTY;
         JsonInclude.Include jsonInclude_Include1 = annotationIntrospector0.findSerializationInclusionForContent((Annotated) null, jsonInclude_Include0);
@@ -418,14 +406,14 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test4646() throws Throwable {
+    public void test4645() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         boolean boolean0 = annotationIntrospector0.hasAsValueAnnotation((AnnotatedMethod) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test4747() throws Throwable {
+    public void test4746() throws Throwable {
         JacksonAnnotationIntrospector jacksonAnnotationIntrospector0 = (JacksonAnnotationIntrospector) ObjectMapper.DEFAULT_ANNOTATION_INTROSPECTOR;
         // Undeclared exception!
         try {
@@ -440,7 +428,7 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test4848() throws Throwable {
+    public void test4847() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Class<String> class0 = String.class;
         Class<MapLikeType> class1 = MapLikeType.class;
@@ -455,56 +443,56 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test4949() throws Throwable {
+    public void test4948() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         JsonInclude.Value jsonInclude_Value0 = annotationIntrospector0.findPropertyInclusion((Annotated) null);
         assertEquals(JsonInclude.Include.USE_DEFAULTS, jsonInclude_Value0.getContentInclusion());
     }
 
     @Test(timeout = 4000)
-    public void test5050() throws Throwable {
+    public void test5049() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findDeserializationConverter((Annotated) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test5151() throws Throwable {
+    public void test5150() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         boolean boolean0 = annotationIntrospector0.hasAnyGetterAnnotation((AnnotatedMethod) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5252() throws Throwable {
+    public void test5251() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         PropertyName propertyName0 = annotationIntrospector0.findNameForSerialization((Annotated) null);
         assertNull(propertyName0);
     }
 
     @Test(timeout = 4000)
-    public void test5353() throws Throwable {
+    public void test5352() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         boolean boolean0 = annotationIntrospector0.hasAnySetterAnnotation((AnnotatedMethod) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test5454() throws Throwable {
+    public void test5453() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         JsonFormat.Value jsonFormat_Value0 = annotationIntrospector0.findFormat((Annotated) null);
         assertNull(jsonFormat_Value0);
     }
 
     @Test(timeout = 4000)
-    public void test5555() throws Throwable {
+    public void test5554() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findSerializationConverter((Annotated) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test5656() throws Throwable {
+    public void test5655() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         TypeFactory typeFactory0 = TypeFactory.defaultInstance();
         Class<MapLikeType> class0 = MapLikeType.class;
@@ -514,14 +502,14 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test5757() throws Throwable {
+    public void test5756() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         String string0 = annotationIntrospector0.findPropertyDefaultValue((Annotated) null);
         assertNull(string0);
     }
 
     @Test(timeout = 4000)
-    public void test5858() throws Throwable {
+    public void test5857() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Class<BeanPropertyWriter> class0 = BeanPropertyWriter.class;
         AnnotatedClass annotatedClass0 = AnnotatedClass.constructWithoutSuperTypes((Class<?>) class0, (MapperConfig<?>) null, (ClassIntrospector.MixInResolver) null);
@@ -530,14 +518,14 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test5959() throws Throwable {
+    public void test5958() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Boolean boolean0 = annotationIntrospector0.hasRequiredMarker((AnnotatedMember) null);
         assertNull(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test6060() throws Throwable {
+    public void test6059() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Class<Annotation>[] classArray0 = (Class<Annotation>[]) Array.newInstance(Class.class, 0);
         // Undeclared exception!
@@ -553,21 +541,21 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test6161() throws Throwable {
+    public void test6160() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Integer integer0 = annotationIntrospector0.findPropertyIndex((Annotated) null);
         assertNull(integer0);
     }
 
     @Test(timeout = 4000)
-    public void test6262() throws Throwable {
+    public void test6261() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Object object0 = annotationIntrospector0.findNamingStrategy((AnnotatedClass) null);
         assertNull(object0);
     }
 
     @Test(timeout = 4000)
-    public void test6363() throws Throwable {
+    public void test6362() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         AnnotationIntrospector annotationIntrospector1 = AnnotationIntrospector.pair(annotationIntrospector0, annotationIntrospector0);
         Class<Object> class0 = Object.class;
@@ -578,14 +566,14 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test6464() throws Throwable {
+    public void test6463() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         boolean boolean0 = annotationIntrospector0.hasIgnoreMarker((AnnotatedMember) null);
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test6565() throws Throwable {
+    public void test6564() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         Class<StdTypeResolverBuilder> class0 = StdTypeResolverBuilder.class;
         JavaType[] javaTypeArray0 = new JavaType[0];
@@ -596,42 +584,42 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test6666() throws Throwable {
+    public void test6665() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         AnnotationIntrospector.ReferenceProperty annotationIntrospector_ReferenceProperty0 = annotationIntrospector0.findReferenceType((AnnotatedMember) null);
         assertNull(annotationIntrospector_ReferenceProperty0);
     }
 
     @Test(timeout = 4000)
-    public void test6767() throws Throwable {
+    public void test6766() throws Throwable {
         AnnotationIntrospector.ReferenceProperty annotationIntrospector_ReferenceProperty0 = AnnotationIntrospector.ReferenceProperty.back("S");
         boolean boolean0 = annotationIntrospector_ReferenceProperty0.isManagedReference();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test6868() throws Throwable {
+    public void test6867() throws Throwable {
         AnnotationIntrospector.ReferenceProperty annotationIntrospector_ReferenceProperty0 = AnnotationIntrospector.ReferenceProperty.managed("`");
         boolean boolean0 = annotationIntrospector_ReferenceProperty0.isManagedReference();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test6969() throws Throwable {
+    public void test6968() throws Throwable {
         AnnotationIntrospector.ReferenceProperty annotationIntrospector_ReferenceProperty0 = AnnotationIntrospector.ReferenceProperty.managed("I");
         boolean boolean0 = annotationIntrospector_ReferenceProperty0.isBackReference();
         assertFalse(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test7070() throws Throwable {
+    public void test7069() throws Throwable {
         AnnotationIntrospector.ReferenceProperty annotationIntrospector_ReferenceProperty0 = AnnotationIntrospector.ReferenceProperty.back("I");
         boolean boolean0 = annotationIntrospector_ReferenceProperty0.isBackReference();
         assertTrue(boolean0);
     }
 
     @Test(timeout = 4000)
-    public void test7171() throws Throwable {
+    public void test7170() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
         SimpleMixInResolver simpleMixInResolver0 = new SimpleMixInResolver((ClassIntrospector.MixInResolver) null);
@@ -645,7 +633,7 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test7272() throws Throwable {
+    public void test7271() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         AnnotationIntrospector.ReferenceProperty.Type[] annotationIntrospector_ReferenceProperty_TypeArray0 = AnnotationIntrospector.ReferenceProperty.Type.values();
         String[] stringArray0 = new String[8];
@@ -655,7 +643,7 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test7373() throws Throwable {
+    public void test7372() throws Throwable {
         AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
         AnnotationIntrospector.ReferenceProperty.Type[] annotationIntrospector_ReferenceProperty_TypeArray0 = AnnotationIntrospector.ReferenceProperty.Type.values();
         Class<String> class0 = String.class;
@@ -674,7 +662,7 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
     }
 
     @Test(timeout = 4000)
-    public void test7474() throws Throwable {
+    public void test7473() throws Throwable {
         BaseSettings baseSettings0 = ObjectMapper.DEFAULT_BASE;
         StdSubtypeResolver stdSubtypeResolver0 = new StdSubtypeResolver();
         SimpleMixInResolver simpleMixInResolver0 = new SimpleMixInResolver((ClassIntrospector.MixInResolver) null);

@@ -60,24 +60,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test033() throws Throwable {
-        MockitoCore mockitoCore0 = new MockitoCore();
-        Class<Object> class0 = Object.class;
-        MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
-        // Undeclared exception!
-        try {
-            mockitoCore0.mock(class0, (MockSettings) mockSettingsImpl0);
-            fail("Expecting exception: IncompatibleClassChangeError");
-        } catch (IncompatibleClassChangeError e) {
-            //
-            // Expected non-static field org.mockito.cglib.proxy.Enhancer.serialVersionUID
-            //
-            verifyException("org.mockito.cglib.proxy.Enhancer", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test044() throws Throwable {
+    public void test043() throws Throwable {
         Object[] objectArray0 = new Object[1];
         MockitoCore mockitoCore0 = new MockitoCore();
         // Undeclared exception!
@@ -89,7 +72,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test055() throws Throwable {
+    public void test054() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         // Undeclared exception!
         try {
@@ -100,7 +83,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test066() throws Throwable {
+    public void test065() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object object0 = new Object();
         // Undeclared exception!
@@ -112,7 +95,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test077() throws Throwable {
+    public void test076() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[1];
         objectArray0[0] = (Object) mockitoCore0;
@@ -125,7 +108,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test088() throws Throwable {
+    public void test087() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[1];
         objectArray0[0] = (Object) mockitoCore0;
@@ -138,13 +121,13 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test099() throws Throwable {
+    public void test098() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.validateMockitoUsage();
     }
 
     @Test(timeout = 4000)
-    public void test1010() throws Throwable {
+    public void test109() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         NoMoreInteractions noMoreInteractions0 = new NoMoreInteractions();
         // Undeclared exception!
@@ -156,7 +139,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1111() throws Throwable {
+    public void test1110() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         ClonesArguments clonesArguments0 = new ClonesArguments();
         mockitoCore0.doAnswer(clonesArguments0);
@@ -169,21 +152,21 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
+    public void test1211() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.when("void");
         Object[] objectArray0 = new Object[2];
     }
 
     @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1312() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Invocation[] invocationArray0 = new Invocation[0];
         mockitoCore0.reset(invocationArray0);
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1413() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.stubVoid("q_p[_5s8lrKw4&");
         // Undeclared exception!
@@ -195,7 +178,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1514() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[1];
         // Undeclared exception!
@@ -207,7 +190,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1615() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[0];
         // Undeclared exception!
@@ -219,13 +202,13 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1716() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.inOrder((Object[]) null);
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1817() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[1];
         objectArray0[0] = (Object) mockitoCore0;
@@ -238,7 +221,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1918() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         Object[] objectArray0 = new Object[0];
         // Undeclared exception!
@@ -250,7 +233,7 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2019() throws Throwable {
         MockitoCore mockitoCore0 = new MockitoCore();
         mockitoCore0.verifyNoMoreInteractions((Object[]) null);
     }

@@ -188,19 +188,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1212() throws Throwable {
-        Reporter reporter0 = new Reporter();
-        Location location0 = new Location();
-        // Undeclared exception!
-        try {
-            reporter0.smartNullPointerException(location0);
-            fail("Expecting exception: RuntimeException");
-        } catch (RuntimeException e) {
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test1313() throws Throwable {
+    public void test1312() throws Throwable {
         Reporter reporter0 = new Reporter();
         MockException mockException0 = new MockException();
         // Undeclared exception!
@@ -212,7 +200,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1414() throws Throwable {
+    public void test1413() throws Throwable {
         Reporter reporter0 = new Reporter();
         Location location0 = new Location();
         // Undeclared exception!
@@ -224,7 +212,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1515() throws Throwable {
+    public void test1514() throws Throwable {
         Reporter reporter0 = new Reporter();
         LinkedList<VerificationAwareInvocation> linkedList0 = new LinkedList<VerificationAwareInvocation>();
         // Undeclared exception!
@@ -240,7 +228,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1616() throws Throwable {
+    public void test1615() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -251,7 +239,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1717() throws Throwable {
+    public void test1716() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -262,7 +250,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1818() throws Throwable {
+    public void test1817() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -273,7 +261,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1919() throws Throwable {
+    public void test1918() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -284,7 +272,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2020() throws Throwable {
+    public void test2019() throws Throwable {
         Reporter reporter0 = new Reporter();
         Discrepancy discrepancy0 = new Discrepancy(2393, 2393);
         // Undeclared exception!
@@ -300,7 +288,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2121() throws Throwable {
+    public void test2120() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -311,7 +299,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2222() throws Throwable {
+    public void test2221() throws Throwable {
         Reporter reporter0 = new Reporter();
         Class<Integer> class0 = Integer.class;
         // Undeclared exception!
@@ -323,7 +311,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2323() throws Throwable {
+    public void test2322() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -338,7 +326,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2424() throws Throwable {
+    public void test2423() throws Throwable {
         Reporter reporter0 = new Reporter();
         MockException mockException0 = new MockException();
         // Undeclared exception!
@@ -350,7 +338,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2525() throws Throwable {
+    public void test2524() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -361,7 +349,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2626() throws Throwable {
+    public void test2625() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -372,7 +360,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2727() throws Throwable {
+    public void test2726() throws Throwable {
         Reporter reporter0 = new Reporter();
         Location location0 = new Location((StackTraceFilter) null);
         // Undeclared exception!
@@ -384,7 +372,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2828() throws Throwable {
+    public void test2827() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -399,7 +387,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2929() throws Throwable {
+    public void test2928() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -410,7 +398,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3030() throws Throwable {
+    public void test3029() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -421,7 +409,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3131() throws Throwable {
+    public void test3130() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -432,7 +420,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3232() throws Throwable {
+    public void test3231() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -443,7 +431,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
+    public void test3332() throws Throwable {
         Reporter reporter0 = new Reporter();
         Class<Object> class0 = Object.class;
         // Undeclared exception!
@@ -455,7 +443,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3433() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -466,7 +454,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3534() throws Throwable {
         Reporter reporter0 = new Reporter();
         Location location0 = new Location();
         // Undeclared exception!
@@ -478,7 +466,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3635() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -489,7 +477,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3736() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -500,7 +488,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3837() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -511,7 +499,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3938() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -522,7 +510,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4039() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -533,7 +521,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4140() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -544,7 +532,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4242() throws Throwable {
+    public void test4241() throws Throwable {
         Reporter reporter0 = new Reporter();
         Class<Object> class0 = Object.class;
         // Undeclared exception!
@@ -556,7 +544,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4343() throws Throwable {
+    public void test4342() throws Throwable {
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
         try {
@@ -567,7 +555,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4444() throws Throwable {
+    public void test4443() throws Throwable {
         Reporter reporter0 = new Reporter();
         Class<String> class0 = String.class;
         // Undeclared exception!
@@ -579,7 +567,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4545() throws Throwable {
+    public void test4544() throws Throwable {
         Reporter reporter0 = new Reporter();
         Location location0 = new Location();
         // Undeclared exception!
@@ -591,7 +579,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4646() throws Throwable {
+    public void test4645() throws Throwable {
         Reporter reporter0 = new Reporter();
         LinkedList<StubbedInvocationMatcher> linkedList0 = new LinkedList<StubbedInvocationMatcher>();
         linkedList0.addLast((StubbedInvocationMatcher) null);
@@ -608,7 +596,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4747() throws Throwable {
+    public void test4746() throws Throwable {
         LinkedList<Invocation> linkedList0 = new LinkedList<Invocation>();
         Reporter reporter0 = new Reporter();
         // Undeclared exception!
@@ -624,7 +612,7 @@ public class Reporter_ESTest extends Reporter_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4848() throws Throwable {
+    public void test4847() throws Throwable {
         Reporter reporter0 = new Reporter();
         Location location0 = new Location();
         Discrepancy discrepancy0 = new Discrepancy(5, 5);

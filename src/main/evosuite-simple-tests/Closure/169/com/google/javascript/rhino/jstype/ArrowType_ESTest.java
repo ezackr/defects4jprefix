@@ -293,126 +293,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1723() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-        Node node0 = Node.newString("o6\"!#FpE/724I):");
-        Node node1 = new Node(0, node0, node0, node0, node0);
-        ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node1);
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType0, true);
-        assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1824() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "f;cvjPG/");
-        ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
-        Node node0 = Node.newString(0, "Not declared as a type name");
-        ArrowType arrowType1 = jSTypeRegistry0.createArrowType(node0, arrowType0);
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, false);
-        assertFalse(errorFunctionType0.isReturnTypeInferred());
-    }
-
-    @Test(timeout = 4000)
-    public void test1825() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "f;cvjPG/");
-        ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
-        Node node0 = Node.newString(0, "Not declared as a type name");
-        ArrowType arrowType1 = jSTypeRegistry0.createArrowType(node0, arrowType0);
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, false);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test1926() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-        Node node0 = Node.newString("o6\"!#FpE/724I):");
-        Node node1 = new Node(0, node0, node0, node0, node0);
-        ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node1);
-        ArrowType arrowType1 = jSTypeRegistry0.createArrowType((Node) null);
-        boolean boolean0 = arrowType1.checkArrowEquivalenceHelper(arrowType0, false);
-        assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2027() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-        ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
-        boolean boolean0 = arrowType0.checkArrowEquivalenceHelper(arrowType0, false);
-        assertTrue(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2128() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "");
-        ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
-        ArrowType arrowType1 = new ArrowType(jSTypeRegistry0, (Node) null, arrowType0);
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, false);
-        assertFalse(errorFunctionType0.isReturnTypeInferred());
-    }
-
-    @Test(timeout = 4000)
-    public void test2129() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "");
-        ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
-        ArrowType arrowType1 = new ArrowType(jSTypeRegistry0, (Node) null, arrowType0);
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, false);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2130() throws Throwable {
-        SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "");
-        ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
-        ArrowType arrowType1 = new ArrowType(jSTypeRegistry0, (Node) null, arrowType0);
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, false);
-        assertFalse(errorFunctionType0.hasCachedValues());
-    }
-
-    @Test(timeout = 4000)
-    public void test2231() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-        Node node0 = Node.newString("o6\"!#FpE/724I):");
-        Node node1 = new Node(0, node0, node0, node0, node0);
-        ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node1);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Named type with empty name component");
-        ArrowType arrowType1 = errorFunctionType0.getInternalArrowType();
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, true);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2232() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-        Node node0 = Node.newString("o6\"!#FpE/724I):");
-        Node node1 = new Node(0, node0, node0, node0, node0);
-        ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node1);
-        ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Named type with empty name component");
-        ArrowType arrowType1 = errorFunctionType0.getInternalArrowType();
-        boolean boolean0 = arrowType0.hasEqualParameters(arrowType1, true);
-        assertFalse(errorFunctionType0.isReturnTypeInferred());
-    }
-
-    @Test(timeout = 4000)
-    public void test2333() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-        ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
-        ArrowType arrowType1 = jSTypeRegistry0.createArrowType((Node) null, arrowType0);
-        boolean boolean0 = arrowType0.checkArrowEquivalenceHelper(arrowType1, true);
-        assertFalse(boolean0);
-    }
-
-    @Test(timeout = 4000)
-    public void test2434() throws Throwable {
+    public void test2423() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         Node node0 = Node.newString("com.google.javascript.rhino.jstype.ArrowType", 3321, 3321);
@@ -422,7 +303,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2535() throws Throwable {
+    public void test2524() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "\"/}e[");
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) templateType0, (JSType) templateType0, (JSType) templateType0, (JSType) templateType0);
@@ -432,7 +313,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2636() throws Throwable {
+    public void test2625() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         Node node0 = Node.newNumber((double) 334);
@@ -442,7 +323,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2737() throws Throwable {
+    public void test2726() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "\"/}e[");
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) templateType0, (JSType) templateType0, (JSType) templateType0, (JSType) templateType0);
@@ -454,7 +335,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2838() throws Throwable {
+    public void test2827() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         Node node0 = Node.newString("o6\"!#FpE/724I):");
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType(node0);
@@ -463,7 +344,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2939() throws Throwable {
+    public void test2928() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         Node node0 = Node.newString("o6\"!#FpE/724I):");
         Node node1 = new Node(0, node0, node0, node0, node0);
@@ -473,7 +354,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3040() throws Throwable {
+    public void test3029() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Named type with empty name component");
         ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
@@ -482,7 +363,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3041() throws Throwable {
+    public void test3030() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Named type with empty name component");
         ArrowType arrowType0 = errorFunctionType0.getInternalArrowType();
@@ -491,7 +372,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3142() throws Throwable {
+    public void test3131() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         ArrowType arrowType0 = jSTypeRegistry0.createArrowType((Node) null);
         boolean boolean0 = arrowType0.hasUnknownParamsOrReturn();
@@ -499,7 +380,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3243() throws Throwable {
+    public void test3232() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
         Node node0 = Node.newString("com.google.javascript.rhino.jstype.ArrowType", 3321, 3321);
@@ -510,7 +391,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3344() throws Throwable {
+    public void test3333() throws Throwable {
         SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, false);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, " o8@WQ;+yC");
@@ -520,7 +401,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3445() throws Throwable {
+    public void test3434() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         TemplateType templateType0 = new TemplateType(jSTypeRegistry0, "\"/}e[");
         ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) templateType0, (JSType) templateType0, (JSType) templateType0, (JSType) templateType0);
@@ -531,7 +412,7 @@ public class ArrowType_ESTest extends ArrowType_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3546() throws Throwable {
+    public void test3535() throws Throwable {
         JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
         Node node0 = Node.newString("OBJECT_FUNCTION_TYPE");
         Node node1 = new Node(39, node0, node0, node0, 49, 38);

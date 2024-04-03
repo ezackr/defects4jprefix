@@ -38,14 +38,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test022() throws Throwable {
-        ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
-        Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
-        tokeniser0.acknowledgeSelfClosingFlag();
-    }
-
-    @Test(timeout = 4000)
-    public void test033() throws Throwable {
+    public void test032() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("numeric reference with no numerals");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -53,7 +46,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test044() throws Throwable {
+    public void test043() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("W<PM!,iwmAb;P>/2${[");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -62,7 +55,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test045() throws Throwable {
+    public void test044() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("W<PM!,iwmAb;P>/2${[");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -71,7 +64,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test056() throws Throwable {
+    public void test055() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("#hrB&;CEfG91dq-");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -79,7 +72,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test067() throws Throwable {
+    public void test066() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("kVab&Ox");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -87,7 +80,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test078() throws Throwable {
+    public void test077() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
         boolean boolean0 = tokeniser0.currentNodeInHtmlNS();
@@ -95,14 +88,14 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test089() throws Throwable {
+    public void test088() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
         tokeniser0.createDoctypePending();
     }
 
     @Test(timeout = 4000)
-    public void test0910() throws Throwable {
+    public void test099() throws Throwable {
         StringReader stringReader0 = new StringReader("kVab&Ox");
         CharacterReader characterReader0 = new CharacterReader(stringReader0);
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
@@ -111,13 +104,25 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1011() throws Throwable {
+    public void test1010() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("KD`%\"&#579gRO");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         char[] charArray0 = new char[0];
         tokeniser0.emit(charArray0);
         assertArrayEquals(new char[] {}, charArray0);
+    }
+
+    @Test(timeout = 4000)
+    public void test1111() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("kVab&Ox");
+        Token.StartTag token_StartTag0 = new Token.StartTag();
+        token_StartTag0.selfClosing = true;
+        ParseErrorList parseErrorList0 = new ParseErrorList(381, 381);
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
+        tokeniser0.emit(token_StartTag0);
+        tokeniser0.read();
+        assertEquals(1, parseErrorList0.size());
     }
 
     @Test(timeout = 4000)
@@ -129,23 +134,11 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         tokeniser0.emit(token_StartTag0);
         tokeniser0.read();
-        assertEquals(1, parseErrorList0.size());
-    }
-
-    @Test(timeout = 4000)
-    public void test1113() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("kVab&Ox");
-        Token.StartTag token_StartTag0 = new Token.StartTag();
-        token_StartTag0.selfClosing = true;
-        ParseErrorList parseErrorList0 = new ParseErrorList(381, 381);
-        Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
-        tokeniser0.emit(token_StartTag0);
-        tokeniser0.read();
         assertFalse(parseErrorList0.isEmpty());
     }
 
     @Test(timeout = 4000)
-    public void test1214() throws Throwable {
+    public void test1213() throws Throwable {
         StringReader stringReader0 = new StringReader("kVab&Ox");
         CharacterReader characterReader0 = new CharacterReader(stringReader0, 1750);
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(1750);
@@ -156,7 +149,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1215() throws Throwable {
+    public void test1214() throws Throwable {
         StringReader stringReader0 = new StringReader("kVab&Ox");
         CharacterReader characterReader0 = new CharacterReader(stringReader0, 1750);
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(1750);
@@ -164,6 +157,18 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         Token.EndTag token_EndTag0 = tokeniser0.endPending;
         tokeniser0.emit(token_EndTag0);
         assertEquals(0, parseErrorList0.size());
+    }
+
+    @Test(timeout = 4000)
+    public void test1315() throws Throwable {
+        StringReader stringReader0 = new StringReader("kVab&Ox");
+        CharacterReader characterReader0 = new CharacterReader(stringReader0, 1750);
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(1750);
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
+        Token.EndTag token_EndTag0 = tokeniser0.endPending;
+        token_EndTag0.newAttribute();
+        tokeniser0.emit(token_EndTag0);
+        assertFalse(parseErrorList0.isEmpty());
     }
 
     @Test(timeout = 4000)
@@ -175,23 +180,11 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         Token.EndTag token_EndTag0 = tokeniser0.endPending;
         token_EndTag0.newAttribute();
         tokeniser0.emit(token_EndTag0);
-        assertFalse(parseErrorList0.isEmpty());
-    }
-
-    @Test(timeout = 4000)
-    public void test1317() throws Throwable {
-        StringReader stringReader0 = new StringReader("kVab&Ox");
-        CharacterReader characterReader0 = new CharacterReader(stringReader0, 1750);
-        ParseErrorList parseErrorList0 = ParseErrorList.tracking(1750);
-        Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
-        Token.EndTag token_EndTag0 = tokeniser0.endPending;
-        token_EndTag0.newAttribute();
-        tokeniser0.emit(token_EndTag0);
         assertEquals(1, parseErrorList0.size());
     }
 
     @Test(timeout = 4000)
-    public void test1418() throws Throwable {
+    public void test1417() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("}K^Fa(r;p<(&");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -200,7 +193,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1419() throws Throwable {
+    public void test1418() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("}K^Fa(r;p<(&");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -209,7 +202,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1520() throws Throwable {
+    public void test1519() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("[&gg;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -228,7 +221,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1621() throws Throwable {
+    public void test1620() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("K\"&#3MgPFO");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -238,7 +231,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1722() throws Throwable {
+    public void test1721() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("\"&&#3MgPFO");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -247,7 +240,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1723() throws Throwable {
+    public void test1722() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("\"&&#3MgPFO");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -256,7 +249,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1824() throws Throwable {
+    public void test1823() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&#xa0;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -265,7 +258,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1925() throws Throwable {
+    public void test1924() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("K\"&#g3MgPFO");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -274,7 +267,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test1926() throws Throwable {
+    public void test1925() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("K\"&#g3MgPFO");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -283,7 +276,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2027() throws Throwable {
+    public void test2026() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("zF$xm_5&#8957792");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -292,7 +285,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2028() throws Throwable {
+    public void test2027() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("zF$xm_5&#8957792");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -301,7 +294,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2129() throws Throwable {
+    public void test2128() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Ny,&gt-");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -310,7 +303,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2130() throws Throwable {
+    public void test2129() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("Ny,&gt-");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -319,7 +312,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2231() throws Throwable {
+    public void test2230() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&gg@;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -328,7 +321,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2332() throws Throwable {
+    public void test2331() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&gg;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -337,7 +330,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2433() throws Throwable {
+    public void test2432() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&gt");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -346,7 +339,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2434() throws Throwable {
+    public void test2433() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&gt");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -355,7 +348,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2535() throws Throwable {
+    public void test2534() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
         Token.Tag token_Tag0 = tokeniser0.createTagPending(false);
@@ -363,7 +356,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2636() throws Throwable {
+    public void test2635() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
         boolean boolean0 = tokeniser0.isAppropriateEndTagToken();
@@ -371,7 +364,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2737() throws Throwable {
+    public void test2736() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("kVab&Ox");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -386,7 +379,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2838() throws Throwable {
+    public void test2837() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("kVab&Ox");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -400,7 +393,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test2939() throws Throwable {
+    public void test2938() throws Throwable {
         CharacterReader characterReader0 = new CharacterReader("kVab&Ox");
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -413,11 +406,20 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3040() throws Throwable {
+    public void test3039() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(5);
         Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
         String string0 = tokeniser0.appropriateEndTagName();
         assertNull(string0);
+    }
+
+    @Test(timeout = 4000)
+    public void test3140() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("yB|< u.s-");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(3843);
+        Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
+        Token token0 = tokeniser0.read();
+        assertEquals(1, parseErrorList0.size());
     }
 
     @Test(timeout = 4000)
@@ -426,16 +428,16 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(3843);
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         Token token0 = tokeniser0.read();
-        assertEquals(1, parseErrorList0.size());
+        assertEquals("yB|< u.s-", token0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test3142() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("yB|< u.s-");
-        ParseErrorList parseErrorList0 = ParseErrorList.tracking(3843);
+    public void test3242() throws Throwable {
+        ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
+        CharacterReader characterReader0 = new CharacterReader("W<Meu/@yX\"c%/Gjqxu");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         Token token0 = tokeniser0.read();
-        assertEquals("yB|< u.s-", token0.toString());
+        assertEquals(0, parseErrorList0.size());
     }
 
     @Test(timeout = 4000)
@@ -444,16 +446,16 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         CharacterReader characterReader0 = new CharacterReader("W<Meu/@yX\"c%/Gjqxu");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         Token token0 = tokeniser0.read();
-        assertEquals(0, parseErrorList0.size());
+        assertEquals("W", token0.toString());
     }
 
     @Test(timeout = 4000)
-    public void test3244() throws Throwable {
-        ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
-        CharacterReader characterReader0 = new CharacterReader("W<Meu/@yX\"c%/Gjqxu");
+    public void test3344() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("<U@A");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(71);
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
-        Token token0 = tokeniser0.read();
-        assertEquals("W", token0.toString());
+        tokeniser0.read();
+        assertFalse(parseErrorList0.isEmpty());
     }
 
     @Test(timeout = 4000)
@@ -462,16 +464,16 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(71);
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         tokeniser0.read();
-        assertFalse(parseErrorList0.isEmpty());
+        assertEquals(1, parseErrorList0.size());
     }
 
     @Test(timeout = 4000)
-    public void test3346() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("<U@A");
-        ParseErrorList parseErrorList0 = ParseErrorList.tracking(71);
+    public void test3446() throws Throwable {
+        CharacterReader characterReader0 = new CharacterReader("K\"&#532MgO");
+        ParseErrorList parseErrorList0 = ParseErrorList.tracking(1583);
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         tokeniser0.read();
-        assertEquals(1, parseErrorList0.size());
+        assertFalse(parseErrorList0.isEmpty());
     }
 
     @Test(timeout = 4000)
@@ -480,20 +482,11 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
         ParseErrorList parseErrorList0 = ParseErrorList.tracking(1583);
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
         tokeniser0.read();
-        assertFalse(parseErrorList0.isEmpty());
-    }
-
-    @Test(timeout = 4000)
-    public void test3448() throws Throwable {
-        CharacterReader characterReader0 = new CharacterReader("K\"&#532MgO");
-        ParseErrorList parseErrorList0 = ParseErrorList.tracking(1583);
-        Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
-        tokeniser0.read();
         assertEquals(1, parseErrorList0.size());
     }
 
     @Test(timeout = 4000)
-    public void test3549() throws Throwable {
+    public void test3548() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("*EK1_?");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -502,7 +495,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3550() throws Throwable {
+    public void test3549() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("*EK1_?");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -511,7 +504,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3651() throws Throwable {
+    public void test3650() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&gt;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);
@@ -520,7 +513,7 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3652() throws Throwable {
+    public void test3651() throws Throwable {
         ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
         CharacterReader characterReader0 = new CharacterReader("&gt;");
         Tokeniser tokeniser0 = new Tokeniser(characterReader0, parseErrorList0);

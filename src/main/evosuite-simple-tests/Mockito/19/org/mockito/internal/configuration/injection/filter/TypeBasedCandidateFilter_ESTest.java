@@ -20,30 +20,4 @@ import org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFil
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class TypeBasedCandidateFilter_ESTest extends TypeBasedCandidateFilter_ESTest_scaffolding {
-
-    @Test(timeout = 4000)
-    public void test00() throws Throwable {
-        TypeBasedCandidateFilter typeBasedCandidateFilter0 = new TypeBasedCandidateFilter((MockCandidateFilter) null);
-        LinkedList<Object> linkedList0 = new LinkedList<Object>();
-        linkedList0.add((Object) typeBasedCandidateFilter0);
-        // Undeclared exception!
-        try {
-            typeBasedCandidateFilter0.filterCandidate(linkedList0, (Field) null, linkedList0);
-            fail("Expecting exception: NullPointerException");
-        } catch (NullPointerException e) {
-            //
-            // no message in exception (getMessage() returned null)
-            //
-            verifyException("org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter", e);
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test11() throws Throwable {
-        FinalMockCandidateFilter finalMockCandidateFilter0 = new FinalMockCandidateFilter();
-        TypeBasedCandidateFilter typeBasedCandidateFilter0 = new TypeBasedCandidateFilter(finalMockCandidateFilter0);
-        LinkedList<Object> linkedList0 = new LinkedList<Object>();
-        OngoingInjecter ongoingInjecter0 = typeBasedCandidateFilter0.filterCandidate(linkedList0, (Field) null, finalMockCandidateFilter0);
-        assertNotNull(ongoingInjecter0);
-    }
 }

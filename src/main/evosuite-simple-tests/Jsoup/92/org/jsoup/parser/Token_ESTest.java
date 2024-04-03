@@ -453,22 +453,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3333() throws Throwable {
-        Token.EOF token_EOF0 = new Token.EOF();
-        Token.StartTag token_StartTag0 = new Token.StartTag();
-        token_StartTag0.tokenType();
-        Token.EndTag token_EndTag0 = new Token.EndTag();
-        Token.reset((StringBuilder) null);
-        Token.Comment token_Comment0 = token_StartTag0.asComment();
-        boolean boolean0 = null;
-        try {
-            boolean0 = token_Comment0.bogus;
-        } catch (ClassCastException e) {
-        }
-    }
-
-    @Test(timeout = 4000)
-    public void test3434() throws Throwable {
+    public void test3433() throws Throwable {
         Token.EOF token_EOF0 = new Token.EOF();
         Token.EOF token_EOF1 = (Token.EOF) token_EOF0.reset();
         Token.EOF token_EOF2 = new Token.EOF();
@@ -480,7 +465,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3535() throws Throwable {
+    public void test3534() throws Throwable {
         Token.EOF token_EOF0 = new Token.EOF();
         Token.EOF token_EOF1 = (Token.EOF) token_EOF0.reset();
         token_EOF1.tokenType();
@@ -503,7 +488,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3636() throws Throwable {
+    public void test3635() throws Throwable {
         Token.EOF token_EOF0 = new Token.EOF();
         Token.EOF token_EOF1 = (Token.EOF) token_EOF0.reset();
         String string0 = token_EOF1.tokenType();
@@ -527,7 +512,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3737() throws Throwable {
+    public void test3736() throws Throwable {
         Token.Doctype token_Doctype0 = new Token.Doctype();
         token_Doctype0.forceQuirks = true;
         token_Doctype0.reset();
@@ -539,7 +524,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3838() throws Throwable {
+    public void test3837() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         token_StartTag0.reset();
         token_StartTag0.newAttribute();
@@ -549,7 +534,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test3939() throws Throwable {
+    public void test3938() throws Throwable {
         Token.EOF token_EOF0 = new Token.EOF();
         Token.EOF token_EOF1 = (Token.EOF) token_EOF0.reset();
         token_EOF1.tokenType();
@@ -564,7 +549,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4040() throws Throwable {
+    public void test4039() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.finaliseTag();
         token_EndTag0.appendAttributeName('e');
@@ -585,7 +570,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4141() throws Throwable {
+    public void test4140() throws Throwable {
         Token.Comment token_Comment0 = new Token.Comment();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         token_StartTag0.tokenType();
@@ -599,7 +584,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4242() throws Throwable {
+    public void test4241() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.finaliseTag();
         token_EndTag0.getAttributes();
@@ -608,7 +593,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4343() throws Throwable {
+    public void test4342() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.finaliseTag();
         Token.EOF token_EOF0 = new Token.EOF();
@@ -621,7 +606,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4444() throws Throwable {
+    public void test4443() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.finaliseTag();
         token_EndTag0.appendAttributeName('e');
@@ -631,7 +616,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4545() throws Throwable {
+    public void test4544() throws Throwable {
         Token.Comment token_Comment0 = new Token.Comment();
         Token.StartTag token_StartTag0 = new Token.StartTag();
         token_StartTag0.tokenType();
@@ -648,7 +633,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4646() throws Throwable {
+    public void test4645() throws Throwable {
         Token.EOF token_EOF0 = new Token.EOF();
         Token.TokenType token_TokenType0 = Token.TokenType.Doctype;
         token_EOF0.tokenType();
@@ -657,7 +642,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4747() throws Throwable {
+    public void test4746() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         token_StartTag0.getAttributes();
         token_StartTag0.isStartTag();
@@ -676,7 +661,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4848() throws Throwable {
+    public void test4847() throws Throwable {
         Token.StartTag token_StartTag0 = new Token.StartTag();
         token_StartTag0.appendAttributeValue("g>);`1t7%`s");
         char[] charArray0 = new char[4];
@@ -691,7 +676,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test4949() throws Throwable {
+    public void test4948() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.appendAttributeValue("<!--");
         token_EndTag0.finaliseTag();
@@ -703,7 +688,7 @@ public class Token_ESTest extends Token_ESTest_scaffolding {
     }
 
     @Test(timeout = 4000)
-    public void test5050() throws Throwable {
+    public void test5049() throws Throwable {
         Token.EndTag token_EndTag0 = new Token.EndTag();
         token_EndTag0.finaliseTag();
         token_EndTag0.appendAttributeName('e');
