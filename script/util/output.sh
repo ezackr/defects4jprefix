@@ -1,7 +1,7 @@
 # get current directory
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
-# setup global variables
-. "${current_dir}/global_variables.sh"
+# Setup global variables
+source "${current_dir}/global_variables.sh"
 cd "${ROOT_DIR}" || exit 1
 
 project_id="${1}"

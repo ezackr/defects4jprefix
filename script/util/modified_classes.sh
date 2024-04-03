@@ -1,9 +1,10 @@
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
-root_dir="$(dirname "$(dirname "${current_dir}")")"
-# setup defects4j command
+# Setup global variables
+source "${current_dir}/global_variables.sh"
+# Setup defects4j command
 export PATH=$PATH:"${DEFECTS4J_HOME}"/framework/bin
 # create new modified classes list
-modified_classes="${root_dir}/modified_classes.csv"
+modified_classes="${ROOT_DIR}/modified_classes.csv"
 if [ -f "${modified_classes}" ]; then
   rm "${modified_classes}"
 fi

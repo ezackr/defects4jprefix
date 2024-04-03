@@ -185,13 +185,20 @@ if [[ "$sdkman_auto_env" == "true" ]]; then
 	sdkman_auto_env
 fi
 
+# Get current directory
+current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
+# Setup global variables
+source "${current_dir}/global_variables.sh"
+
 # Install Java 8
-sdk install java 8.0.382-amzn
+sdk install java "$JAVA8"
+# Install Java 8
+sdk install java "$JAVA11"
 # Install Java 17
-sdk install java 17.0.8-oracle
+sdk install java "$JAVA17"
 # Install maven
-sdk install maven 3.9.4
+sdk install maven "$MAVEN_VERSION"
 # Install ant
-sdk install ant 1.10.13
+sdk install ant "$ANT_VERSION"
 # Install gradle
-sdk install gradle 8.3
+sdk install gradle "$GRADLE_VERSION"

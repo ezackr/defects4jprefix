@@ -28,6 +28,9 @@ in a local terminal window:
 ```bash
 export DEFECTS4J_HOME="path/to/defects4j"
 ```
+The command must be repeated any time a new terminal window is opened. Alternatively, open the script `./script/util/global_variables.sh`,
+uncomment the line `#DEFECTS4J_HOME="path_to_defects4j"`and set the `DEFECTS4J_HOME` variable to the path of the Defects4J repository permanently.
+
 
 ### SDKMan
 

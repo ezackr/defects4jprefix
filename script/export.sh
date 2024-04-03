@@ -1,7 +1,9 @@
 #!/bin/bash
 # This script tests the Defects4J export command for future reference.
 current_dir=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
-root_dir=$(dirname "${current_dir}")
+ROOT_DIR=$(dirname "${current_dir}")
+# Setup global variables
+source "${current_dir}/util/global_variables.sh"
 # setup defects4j and sdkman
 export PATH=$PATH:"${DEFECTS4J_HOME}"/framework/bin
 source "${current_dir}/util/init_sdkman.sh"
@@ -18,9 +20,9 @@ while IFS=, read -r project_id bug_id _; do
       fi
     fi
   fi
-  sdk use java "8.0.382-amzn"
+  sdk use java "$JAVA8"
   # checkout project
-  project_dir="${root_dir}/temp/${project_id}_${bug_id}"
+  project_dir="${ROOT_DIR}/temp/${project_id}_${bug_id}"
   defects4j checkout -p "${project_id}" -v "${bug_id}b" -w "${project_dir}"
   # cd into project and export information
   cd "${project_dir}" || exit 1
@@ -28,5 +30,5 @@ while IFS=, read -r project_id bug_id _; do
   echo "Found classpath: ${src_dir}"
   cd - || exit 1
   # cleanup
-  rm -r "${root_dir}/temp"
-done < "${root_dir}/modified_classes.csv"
+  rm -r "${ROOT_DIR}/temp"
+done < "${ROOT_DIR}/modified_classes.csv"
