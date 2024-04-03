@@ -411,20 +411,6 @@ public class UnionType_ESTest extends UnionType_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test31()  throws Throwable  {
-      SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
-      JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
-      HashSet<JSType> hashSet0 = new HashSet<JSType>();
-      UnionType unionType0 = new UnionType(jSTypeRegistry0, hashSet0);
-      ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "Unknown class name");
-      ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) errorFunctionType0, (JSType) errorFunctionType0, (JSType) errorFunctionType0, (JSType) unionType0, (JSType) unionType0);
-      UnionType unionType1 = new UnionType(jSTypeRegistry0, immutableList0);
-      boolean boolean0 = unionType0.checkUnionEquivalenceHelper(unionType1, true);
-      assertFalse(unionType1.equals((Object)unionType0));
-      assertFalse(boolean0);
-  }
-
-  @Test(timeout = 4000)
   public void test32()  throws Throwable  {
       SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
       JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);

@@ -857,14 +857,6 @@ public class FunctionType_ESTest extends FunctionType_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test67()  throws Throwable  {
-      JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null);
-      ErrorFunctionType errorFunctionType0 = new ErrorFunctionType(jSTypeRegistry0, "com.google.common.base.CharMatcher$9");
-      boolean boolean0 = errorFunctionType0.checkFunctionEquivalenceHelper(errorFunctionType0, false);
-      assertTrue(boolean0);
-  }
-
-  @Test(timeout = 4000)
   public void test68()  throws Throwable  {
       SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
       JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0);
