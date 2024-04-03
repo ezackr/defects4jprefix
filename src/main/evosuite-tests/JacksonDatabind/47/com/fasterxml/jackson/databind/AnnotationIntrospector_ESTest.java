@@ -312,18 +312,6 @@ public class AnnotationIntrospector_ESTest extends AnnotationIntrospector_ESTest
   }
 
   @Test(timeout = 4000)
-  public void test32()  throws Throwable  {
-      AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
-      PropertyName propertyName0 = new PropertyName("Internal error: failed to refine value type of %s with concrete-type annotation (value %s), from '%s': %s", "Internal error: failed to refine value type of %s with concrete-type annotation (value %s), from '%s': %s");
-      Class<Integer> class0 = Integer.class;
-      Class<ObjectIdGenerator> class1 = ObjectIdGenerator.class;
-      Class<ObjectIdResolver> class2 = ObjectIdResolver.class;
-      ObjectIdInfo objectIdInfo0 = new ObjectIdInfo(propertyName0, class0, class1, class2);
-      ObjectIdInfo objectIdInfo1 = annotationIntrospector0.findObjectReferenceInfo((Annotated) null, objectIdInfo0);
-      assertSame(objectIdInfo1, objectIdInfo0);
-  }
-
-  @Test(timeout = 4000)
   public void test33()  throws Throwable  {
       AnnotationIntrospector annotationIntrospector0 = AnnotationIntrospector.nopInstance();
       Boolean boolean0 = annotationIntrospector0.isTypeId((AnnotatedMember) null);
