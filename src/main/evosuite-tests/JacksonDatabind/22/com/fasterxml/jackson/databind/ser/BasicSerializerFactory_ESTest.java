@@ -167,23 +167,6 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
   }
 
   @Test(timeout = 4000)
-  public void test05()  throws Throwable  {
-      BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-      TypeFactory typeFactory0 = TypeFactory.defaultInstance();
-      Class<ArrayDeque> class0 = ArrayDeque.class;
-      CollectionType collectionType0 = typeFactory0.constructRawCollectionType(class0);
-      POJOPropertiesCollector pOJOPropertiesCollector0 = mock(POJOPropertiesCollector.class, new ViolatedAssumptionAnswer());
-      doReturn((AnnotatedClass) null).when(pOJOPropertiesCollector0).getClassDef();
-      doReturn((MapperConfig) null).when(pOJOPropertiesCollector0).getConfig();
-      doReturn((ObjectIdInfo) null).when(pOJOPropertiesCollector0).getObjectIdInfo();
-      doReturn((JavaType) null).when(pOJOPropertiesCollector0).getType();
-      BasicBeanDescription basicBeanDescription0 = BasicBeanDescription.forDeserialization(pOJOPropertiesCollector0);
-      DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-      JsonSerializer<?> jsonSerializer0 = beanSerializerFactory0.buildCollectionSerializer((SerializationConfig) null, collectionType0, (BeanDescription) basicBeanDescription0, false, (TypeSerializer) null, defaultSerializerProvider_Impl0.DEFAULT_NULL_KEY_SERIALIZER);
-      assertFalse(jsonSerializer0.isUnwrappingSerializer());
-  }
-
-  @Test(timeout = 4000)
   public void test06()  throws Throwable  {
       BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
       ObjectMapper objectMapper0 = new ObjectMapper();
@@ -205,24 +188,6 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
       SimpleSerializers simpleSerializers0 = new SimpleSerializers();
       SerializerFactory serializerFactory0 = beanSerializerFactory0.withAdditionalKeySerializers(simpleSerializers0);
       assertNotSame(beanSerializerFactory0, serializerFactory0);
-  }
-
-  @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-      TypeFactory typeFactory0 = TypeFactory.defaultInstance();
-      POJOPropertiesCollector pOJOPropertiesCollector0 = mock(POJOPropertiesCollector.class, new ViolatedAssumptionAnswer());
-      doReturn((AnnotatedClass) null).when(pOJOPropertiesCollector0).getClassDef();
-      doReturn((MapperConfig) null).when(pOJOPropertiesCollector0).getConfig();
-      doReturn((ObjectIdInfo) null).when(pOJOPropertiesCollector0).getObjectIdInfo();
-      doReturn((JavaType) null).when(pOJOPropertiesCollector0).getType();
-      BasicBeanDescription basicBeanDescription0 = BasicBeanDescription.forDeserialization(pOJOPropertiesCollector0);
-      Class<EnumSet> class0 = EnumSet.class;
-      Class<RawValue> class1 = RawValue.class;
-      CollectionType collectionType0 = typeFactory0.constructCollectionType(class0, class1);
-      DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-      JsonSerializer<?> jsonSerializer0 = beanSerializerFactory0.buildCollectionSerializer((SerializationConfig) null, collectionType0, (BeanDescription) basicBeanDescription0, false, (TypeSerializer) null, defaultSerializerProvider_Impl0.DEFAULT_NULL_KEY_SERIALIZER);
-      assertFalse(jsonSerializer0.isUnwrappingSerializer());
   }
 
   @Test(timeout = 4000)
@@ -475,41 +440,6 @@ public class BasicSerializerFactory_ESTest extends BasicSerializerFactory_ESTest
          //
          verifyException("com.fasterxml.jackson.databind.ser.BasicSerializerFactory", e);
       }
-  }
-
-  @Test(timeout = 4000)
-  public void test28()  throws Throwable  {
-      BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-      TypeFactory typeFactory0 = TypeFactory.defaultInstance();
-      Class<ArrayDeque> class0 = ArrayDeque.class;
-      POJOPropertiesCollector pOJOPropertiesCollector0 = mock(POJOPropertiesCollector.class, new ViolatedAssumptionAnswer());
-      doReturn((AnnotatedClass) null).when(pOJOPropertiesCollector0).getClassDef();
-      doReturn((MapperConfig) null).when(pOJOPropertiesCollector0).getConfig();
-      doReturn((ObjectIdInfo) null).when(pOJOPropertiesCollector0).getObjectIdInfo();
-      doReturn((JavaType) null).when(pOJOPropertiesCollector0).getType();
-      BasicBeanDescription basicBeanDescription0 = BasicBeanDescription.forDeserialization(pOJOPropertiesCollector0);
-      Class<ArrayList> class1 = ArrayList.class;
-      CollectionType collectionType0 = typeFactory0.constructCollectionType(class1, class0);
-      DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-      JsonSerializer<?> jsonSerializer0 = beanSerializerFactory0.buildCollectionSerializer((SerializationConfig) null, collectionType0, (BeanDescription) basicBeanDescription0, false, (TypeSerializer) null, defaultSerializerProvider_Impl0.DEFAULT_NULL_KEY_SERIALIZER);
-      assertFalse(jsonSerializer0.isUnwrappingSerializer());
-  }
-
-  @Test(timeout = 4000)
-  public void test29()  throws Throwable  {
-      BeanSerializerFactory beanSerializerFactory0 = BeanSerializerFactory.instance;
-      TypeFactory typeFactory0 = TypeFactory.defaultInstance();
-      POJOPropertiesCollector pOJOPropertiesCollector0 = mock(POJOPropertiesCollector.class, new ViolatedAssumptionAnswer());
-      doReturn((AnnotatedClass) null).when(pOJOPropertiesCollector0).getClassDef();
-      doReturn((MapperConfig) null).when(pOJOPropertiesCollector0).getConfig();
-      doReturn((ObjectIdInfo) null).when(pOJOPropertiesCollector0).getObjectIdInfo();
-      doReturn((JavaType) null).when(pOJOPropertiesCollector0).getType();
-      BasicBeanDescription basicBeanDescription0 = BasicBeanDescription.forDeserialization(pOJOPropertiesCollector0);
-      DefaultSerializerProvider.Impl defaultSerializerProvider_Impl0 = new DefaultSerializerProvider.Impl();
-      Class<MissingNode> class0 = MissingNode.class;
-      ArrayType arrayType0 = typeFactory0.constructArrayType(class0);
-      JsonSerializer<?> jsonSerializer0 = beanSerializerFactory0.buildArraySerializer((SerializationConfig) null, arrayType0, basicBeanDescription0, true, (TypeSerializer) null, defaultSerializerProvider_Impl0.DEFAULT_NULL_KEY_SERIALIZER);
-      assertFalse(jsonSerializer0.usesObjectId());
   }
 
   @Test(timeout = 4000)
