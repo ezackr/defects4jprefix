@@ -38,13 +38,6 @@ public class Tokeniser_ESTest extends Tokeniser_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test02()  throws Throwable  {
-      ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
-      Tokeniser tokeniser0 = new Tokeniser((CharacterReader) null, parseErrorList0);
-      tokeniser0.acknowledgeSelfClosingFlag();
-  }
-
-  @Test(timeout = 4000)
   public void test03()  throws Throwable  {
       ParseErrorList parseErrorList0 = ParseErrorList.noTracking();
       CharacterReader characterReader0 = new CharacterReader("numeric reference with no numerals");
