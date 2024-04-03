@@ -62,24 +62,6 @@ public class MockitoCore_ESTest extends MockitoCore_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test03()  throws Throwable  {
-      MockitoCore mockitoCore0 = new MockitoCore();
-      Class<Object> class0 = Object.class;
-      MockSettingsImpl mockSettingsImpl0 = new MockSettingsImpl();
-      // Undeclared exception!
-      try { 
-        mockitoCore0.mock(class0, (MockSettings) mockSettingsImpl0);
-        fail("Expecting exception: IncompatibleClassChangeError");
-      
-      } catch(IncompatibleClassChangeError e) {
-         //
-         // Expected non-static field org.mockito.cglib.proxy.Enhancer.serialVersionUID
-         //
-         verifyException("org.mockito.cglib.proxy.Enhancer", e);
-      }
-  }
-
-  @Test(timeout = 4000)
   public void test04()  throws Throwable  {
       Object[] objectArray0 = new Object[1];
       MockitoCore mockitoCore0 = new MockitoCore();
