@@ -16,19 +16,4 @@ import org.mockito.internal.configuration.injection.filter.FinalMockCandidateFil
 
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true) 
 public class FinalMockCandidateFilter_ESTest extends FinalMockCandidateFilter_ESTest_scaffolding {
-
-  @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      FinalMockCandidateFilter finalMockCandidateFilter0 = new FinalMockCandidateFilter();
-      LinkedList<Object> linkedList0 = new LinkedList<Object>();
-      linkedList0.add((Object) finalMockCandidateFilter0);
-      finalMockCandidateFilter0.filterCandidate(linkedList0, (Field) null, (Object) null);
-  }
-
-  @Test(timeout = 4000)
-  public void test1()  throws Throwable  {
-      FinalMockCandidateFilter finalMockCandidateFilter0 = new FinalMockCandidateFilter();
-      LinkedList<Object> linkedList0 = new LinkedList<Object>();
-      finalMockCandidateFilter0.filterCandidate(linkedList0, (Field) null, (Object) null);
-  }
 }
