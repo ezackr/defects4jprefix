@@ -56,5 +56,5 @@ while IFS=, read -r project_id bug_id modified_class; do
   sdk use java "17.0.8-oracle"
   java -jar "${root_dir}/remover.jar" "remove_oracles" "${root_dir}/output/evosuite-tests"
   # move and cleanup output
-  bash "${current_dir}/util/output.sh" "${project_id}" "${bug_id}" "${modified_class}"
+  bash "${root_dir}/script/util/output.sh" "${project_id}" "${bug_id}" "${modified_class}"
 done < "${root_dir}/modified_classes.csv"
