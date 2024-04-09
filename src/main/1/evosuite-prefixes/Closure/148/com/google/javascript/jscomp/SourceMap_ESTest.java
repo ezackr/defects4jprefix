@@ -21,16 +21,6 @@ import org.junit.runner.RunWith;
 public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
 
     @Test(timeout = 4000)
-    public void test00() throws Throwable {
-        SourceMap.Mapping sourceMap_Mapping0 = new SourceMap.Mapping();
-        sourceMap_Mapping0.originalPosition = null;
-        MockFileWriter mockFileWriter0 = new MockFileWriter("nh1d.", false);
-        Position position0 = new Position((-596), (-596));
-        sourceMap_Mapping0.originalPosition = position0;
-        sourceMap_Mapping0.appendTo(mockFileWriter0);
-    }
-
-    @Test(timeout = 4000)
     public void test11() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         StringWriter stringWriter0 = new StringWriter();
@@ -47,17 +37,6 @@ public class SourceMap_ESTest extends SourceMap_ESTest_scaffolding {
     public void test33() throws Throwable {
         SourceMap sourceMap0 = new SourceMap();
         sourceMap0.reset();
-    }
-
-    @Test(timeout = 4000)
-    public void test44() throws Throwable {
-        SourceMap.Mapping sourceMap_Mapping0 = new SourceMap.Mapping();
-        sourceMap_Mapping0.originalPosition = null;
-        sourceMap_Mapping0.originalName = "nh1d.";
-        MockFileWriter mockFileWriter0 = new MockFileWriter("nh1d.");
-        Position position0 = new Position((-596), (-596));
-        sourceMap_Mapping0.originalPosition = position0;
-        sourceMap_Mapping0.appendTo(mockFileWriter0);
     }
 
     @Test(timeout = 4000)
