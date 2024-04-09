@@ -73,88 +73,12 @@ public class AnalyzePrototypeProperties_ESTest extends AnalyzePrototypePropertie
     }
 
     @Test(timeout = 4000)
-    public void test055() throws Throwable {
-        AnalyzePrototypeProperties.LiteralProperty analyzePrototypeProperties_LiteralProperty0 = new AnalyzePrototypeProperties.LiteralProperty((Node) null, (Node) null, (Node) null, (Node) null, (JSModule) null);
-        analyzePrototypeProperties_LiteralProperty0.getPrototype();
-    }
-
-    @Test(timeout = 4000)
-    public void test066() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        MockFile mockFile0 = new MockFile("valueOf");
-        JSSourceFile jSSourceFile0 = JSSourceFile.fromFile((File) mockFile0);
-        Node node0 = compiler0.parse(jSSourceFile0);
-        AnalyzePrototypeProperties.LiteralProperty analyzePrototypeProperties_LiteralProperty0 = new AnalyzePrototypeProperties.LiteralProperty(node0, node0, node0, node0, (JSModule) null);
-        Node node1 = analyzePrototypeProperties_LiteralProperty0.getValue();
-        node1.hasMoreThanOneChild();
-    }
-
-    @Test(timeout = 4000)
-    public void test077() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ",Re#3=oQ3?W)y", ",Re#3=oQ3?W)y");
-        AnalyzePrototypeProperties.LiteralProperty analyzePrototypeProperties_LiteralProperty0 = new AnalyzePrototypeProperties.LiteralProperty(node0, node0, node0, node0, (JSModule) null);
-        analyzePrototypeProperties_LiteralProperty0.remove();
-    }
-
-    @Test(timeout = 4000)
-    public void test088() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = Normalize.parseAndNormalizeTestCode(compiler0, ",Re#3=oQ3?W)y", ",Re#3=oQ3?W)y");
-        AnalyzePrototypeProperties.LiteralProperty analyzePrototypeProperties_LiteralProperty0 = new AnalyzePrototypeProperties.LiteralProperty(node0, node0, node0, node0, (JSModule) null);
-        JSModule jSModule0 = analyzePrototypeProperties_LiteralProperty0.getModule();
-    }
-
-    @Test(timeout = 4000)
-    public void test099() throws Throwable {
-        JSModule jSModule0 = new JSModule("%Fe;b}T37J");
-        AnalyzePrototypeProperties.AssignmentProperty analyzePrototypeProperties_AssignmentProperty0 = new AnalyzePrototypeProperties.AssignmentProperty((Node) null, jSModule0);
-        analyzePrototypeProperties_AssignmentProperty0.getPrototype();
-    }
-
-    @Test(timeout = 4000)
-    public void test1010() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null, false);
-        Stack<JSType> stack0 = new Stack<JSType>();
-        Node node0 = jSTypeRegistry0.createParametersWithVarArgs((List<JSType>) stack0);
-        JSModule jSModule0 = new JSModule("Y~;ry");
-        AnalyzePrototypeProperties.AssignmentProperty analyzePrototypeProperties_AssignmentProperty0 = new AnalyzePrototypeProperties.AssignmentProperty(node0, jSModule0);
-        JSModule jSModule1 = analyzePrototypeProperties_AssignmentProperty0.getModule();
-    }
-
-    @Test(timeout = 4000)
-    public void test1111() throws Throwable {
-        JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry((ErrorReporter) null, true);
-        Stack<JSType> stack0 = new Stack<JSType>();
-        Node node0 = jSTypeRegistry0.createParametersWithVarArgs((List<JSType>) stack0);
-        JSModule jSModule0 = new JSModule("Y~;ry");
-        AnalyzePrototypeProperties.AssignmentProperty analyzePrototypeProperties_AssignmentProperty0 = new AnalyzePrototypeProperties.AssignmentProperty(node0, jSModule0);
-        analyzePrototypeProperties_AssignmentProperty0.remove();
-    }
-
-    @Test(timeout = 4000)
-    public void test1212() throws Throwable {
-        JSModule jSModule0 = new JSModule("$!+*FCz*8fg$85vkSW");
-        AnalyzePrototypeProperties.AssignmentProperty analyzePrototypeProperties_AssignmentProperty0 = new AnalyzePrototypeProperties.AssignmentProperty((Node) null, jSModule0);
-        analyzePrototypeProperties_AssignmentProperty0.getValue();
-    }
-
-    @Test(timeout = 4000)
     public void test1313() throws Throwable {
         Compiler compiler0 = new Compiler();
         Node node0 = compiler0.parseTestCode("com.google.jrvascr;t.jscompGAnTlyzeProWotypeProvCrtis$l=bFution");
         AnalyzePrototypeProperties analyzePrototypeProperties0 = new AnalyzePrototypeProperties(compiler0, (JSModuleGraph) null, false, false);
         analyzePrototypeProperties0.process(node0, node0);
         node0.isQuotedString();
-    }
-
-    @Test(timeout = 4000)
-    public void test1414() throws Throwable {
-        Compiler compiler0 = new Compiler();
-        Node node0 = compiler0.parseTestCode("com.google.javascript.jscomp.AnalyzePrototypeProperties$GlobalFunction");
-        AnalyzePrototypeProperties analyzePrototypeProperties0 = new AnalyzePrototypeProperties(compiler0, (JSModuleGraph) null, true, true);
-        AnalyzePrototypeProperties.GlobalFunction analyzePrototypeProperties_GlobalFunction0 = null;
-        analyzePrototypeProperties_GlobalFunction0 = analyzePrototypeProperties0.new GlobalFunction(node0, node0, node0, (JSModule) null);
     }
 
     @Test(timeout = 4000)
