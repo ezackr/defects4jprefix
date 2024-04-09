@@ -6,6 +6,8 @@ source "${current_dir}/util/global_variables.sh"
 # setup defects4j and sdkman
 export PATH=$PATH:"${DEFECTS4J_HOME}"/framework/bin
 source "${current_dir}/util/init_sdkman.sh"
+# get suite number
+suite="${1}"
 
 # create bug detection output directory
 if [ ! -d "${ROOT_DIR}/test-suite" ]; then
@@ -14,22 +16,22 @@ fi
 sdk use java "$JAVA8"
 while IFS=, read -r project_id bug_id _; do
   # check for a given project or bug id
-  if [ ${#} -gt 0 ]; then
-    if [ "${project_id}" != "${1}" ]; then
+  if [ ${#} -gt 1 ]; then
+    if [ "${project_id}" != "${2}" ]; then
       continue
     fi
-    if [ ${#} -gt 1 ]; then
-      if [ "${bug_id}" != "${2}" ]; then
+    if [ ${#} -gt 2 ]; then
+      if [ "${bug_id}" != "${3}" ]; then
         continue
       fi
     fi
   fi
-  if [ ! -d "${ROOT_DIR}/src/main/evosuite-prefixes/${project_id}/${bug_id}" ]; then
+  if [ ! -d "${ROOT_DIR}/src/main/${suite}/evosuite-prefixes/${project_id}/${bug_id}" ]; then
     echo -e "Unable to find prefixes for project ${project_id} bug ${bug_id}"
     continue
   fi
   # compress test suite
-  cd "${ROOT_DIR}/src/main/evosuite-prefixes/${project_id}/${bug_id}" || exit 1
+  cd "${ROOT_DIR}/src/main/${suite}/evosuite-prefixes/${project_id}/${bug_id}" || exit 1
   tar -cvjSf "${project_id}-${bug_id}b-evosuite.tar.bz2" .
   mv "${project_id}-${bug_id}b-evosuite.tar.bz2" "${ROOT_DIR}/test-suite"
   cd - || exit 1
